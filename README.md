@@ -19,6 +19,18 @@ mantenerla.
 | `docs/` | Report di revisione, decisioni, problemi noti; `docs/history/` = cronologia dei lotti |
 | `patches/`, `font/` | Correzione UTF-8 dei glifi accentati e relativo report |
 
+## File di risorse upstream indispensabili
+
+Sono file del commit `b4aa3bac3` che il motore legge (o che la build richiede) e che **non vanno
+eliminati**: se mancano, il gioco parte ma si comporta in modo anomalo senza stampare errori evidenti.
+
+| File | Perché serve | blob git in `b4aa3bac3` |
+|---|---|---|
+| `keys.txt` | binding di tastiera **predefiniti**: `Command::LoadSettings()` non ha default nel codice, li legge solo da questo file. Senza, nessun tasto risulta assegnato e `PreferencesPanel::Exit()` rifiuta di salvare («Menu keybind is not bound»): le assegnazioni sembrano non essere mantenute | `45de4921` |
+| `icons/WinApp.ico` | richiesto da `source/windows/WinApp.rc` (windres) e da `CPACK_NSIS_MUI_ICON`: senza, la compilazione Windows si ferma sulla risorsa mancante | `f49c97c1` |
+| `license.txt` | richiesto da `install(FILES license.txt)` e da `CPACK_RESOURCE_FILE_LICENSE` | `9cecc1d4` |
+| `utils/vcpkg_bootstrap.cmake` | incluso da `CMakeLists.txt` solo con `ES_USE_VCPKG=ON`; serve per ricompilare via vcpkg | `f29d8852` |
+
 ## Avviare il gioco
 
 Nessuna installazione: doppio clic sul launcher scelto.
@@ -54,15 +66,23 @@ documentazione e ai riferimenti interni.
 ## Compilare
 
 Servono MinGW-w64 (MSYS2), CMake e le librerie SDL2/openal/libpng/libjpeg/libavif.
+Comando **verificato** (configure exit 0 → 228/228 unità → eseguibile 6.047.003 byte):
 
 ```bash
-export PATH="/c/msys64/mingw64/bin:$PATH"
-export PKG_CONFIG_PATH="C:/msys64/mingw64/lib/pkgconfig"
-cmake -G Ninja -B build-cmake \
-  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DES_USE_VCPKG=OFF -DES_USE_SYSTEM_LIBRARIES=ON \
-  -DBUILD_TESTING=OFF -DCMAKE_PKG_CONFIG_PC_PATH="C:/msys64/mingw64/lib/pkgconfig" .
-cmake --build build-cmake -j4
+export PATH="/c/msys64/mingw64/bin:$PATH"          # serve a g++ e a ninja
+export PKG_CONFIG_LIBDIR="C:/msys64/mingw64/lib/pkgconfig"   # CMake >= 3.31 usa cmake_pkg_config
+cmake -G Ninja -S . -B build-cmake -DCMAKE_BUILD_TYPE=Release \
+  -DES_USE_VCPKG=OFF -DES_USE_SYSTEM_LIBRARIES=ON -DBUILD_TESTING=OFF \
+  -DCMAKE_MAKE_PROGRAM=C:/msys64/mingw64/bin/ninja.exe \
+  -DCMAKE_C_COMPILER=C:/msys64/mingw64/bin/gcc.exe \
+  -DCMAKE_CXX_COMPILER=C:/msys64/mingw64/bin/g++.exe
+cmake --build build-cmake -j8
 ```
+
+`PKG_CONFIG_LIBDIR` è indispensabile: `cmake_pkg_config(EXTRACT minizip)` cerca i `.pc` nativi e senza
+quella variabile la configure si ferma con `Could not find pkg-config: 'minizip'`. Il messaggio
+`failed to create symbolic link 'build/compile_commands.json'` (privilegio non concesso) **non è fatale**:
+la configure prosegue e l'eseguibile viene prodotto.
 
 Windows blocca un eseguibile in esecuzione: chiudere il gioco prima di sostituire
 `build/Endless Sky.exe` (un `cp` senza `taskkill` fallisce con `Device or resource busy` e
