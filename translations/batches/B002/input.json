@@ -1,0 +1,328 @@
+{
+ "batch": "B002",
+ "name": "UI tooltips (sample 40)",
+ "source_hash": "37d65eeec5a77d8e",
+ "instructions": "return JSON array [{\"id\": ..., \"it\": ...}] with one entry per id",
+ "units": [
+  {
+   "id": "tip:parked|(parked)|16|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 16,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:parked",
+   "english": "(parked)"
+  },
+  {
+   "id": "tip:acceleration:|How quickly this ship gains speed. The higher a ship's mass (including the mass of any cargo or fighters it is carrying), the slower it accelerates.|22|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 22,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:acceleration:",
+   "english": "How quickly this ship gains speed. The higher a ship's mass (including the mass of any cargo or fighters it is carrying), the slower it accelerates."
+  },
+  {
+   "id": "tip:acceleration multiplier:|Modifies the ship's acceleration by the given factor.|25|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 25,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:acceleration multiplier:",
+   "english": "Modifies the ship's acceleration by the given factor."
+  },
+  {
+   "id": "tip:active cooling:|Cooling provided per second when running at full strength. Active cooling requires energy, but if your heat level is low it runs at a lower cooling rate and lower energy draw. The amount of cooling is proportional to the temperature of your ship, reaching the full level only if you are about to overheat.|28|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 28,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:active cooling:",
+   "english": "Cooling provided per second when running at full strength. Active cooling requires energy, but if your heat level is low it runs at a lower cooling rate and lower energy draw. The amount of cooling is proportional to the temperature of your ship, reaching the full level only if you are about to overheat."
+  },
+  {
+   "id": "tip:afterburner energy:|Energy consumed per second when firing this afterburner.|31|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 31,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner energy:",
+   "english": "Energy consumed per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner shields:|Shield damage dealt to the ship per second when firing this afterburner.|34|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 34,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner shields:",
+   "english": "Shield damage dealt to the ship per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner hull:|Hull damage dealt to the ship per second when firing this afterburner.|37|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 37,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner hull:",
+   "english": "Hull damage dealt to the ship per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner fuel:|Fuel consumed per second when firing this afterburner.|40|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 40,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner fuel:",
+   "english": "Fuel consumed per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner discharge:|Accumulated shield discharging per second when firing this afterburner.|43|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 43,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner discharge:",
+   "english": "Accumulated shield discharging per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner corrosion:|Accumulated hull corrosion per second when firing this afterburner.|46|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 46,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner corrosion:",
+   "english": "Accumulated hull corrosion per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner ion:|Accumulated ionization per second when firing this afterburner.|49|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 49,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner ion:",
+   "english": "Accumulated ionization per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner scramble:|Accumulated scrambling per second when firing this afterburner.|52|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 52,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner scramble:",
+   "english": "Accumulated scrambling per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner leakage:|Accumulated leaking fuel per second when firing this afterburner.|55|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 55,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner leakage:",
+   "english": "Accumulated leaking fuel per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner burn:|Accumulated exothermic interactions per second when firing this afterburner.|58|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 58,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner burn:",
+   "english": "Accumulated exothermic interactions per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner slowing:|Accumulated engine interference per second when firing this afterburner.|61|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 61,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner slowing:",
+   "english": "Accumulated engine interference per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner disruption:|Accumulated shield interference per second when firing this afterburner.|64|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 64,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner disruption:",
+   "english": "Accumulated shield interference per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner heat:|Heat created per second when firing this afterburner.|67|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 67,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner heat:",
+   "english": "Heat created per second when firing this afterburner."
+  },
+  {
+   "id": "tip:afterburner thrust:|Thrust produced by this afterburner.|70|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 70,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:afterburner thrust:",
+   "english": "Thrust produced by this afterburner."
+  },
+  {
+   "id": "tip:asteroid scan power:|Allows scanning of asteroids. The range of this asteroid scanner is proportional to the square root of this value.|73|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 73,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:asteroid scan power:",
+   "english": "Allows scanning of asteroids. The range of this asteroid scanner is proportional to the square root of this value."
+  },
+  {
+   "id": "tip:atmosphere scan:|This type of scanning cannot be performed by your ship, but this outfit might be useful for certain missions.|76|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 76,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:atmosphere scan:",
+   "english": "This type of scanning cannot be performed by your ship, but this outfit might be useful for certain missions."
+  },
+  {
+   "id": "tip:automaton:|A ship with this attribute does not need any crew to operate, even if it has outfits that normally require additional crew. However, you cannot use it as your flagship in this state.|79|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 79,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:automaton:",
+   "english": "A ship with this attribute does not need any crew to operate, even if it has outfits that normally require additional crew. However, you cannot use it as your flagship in this state."
+  },
+  {
+   "id": "tip:bunks:|The number of people (passengers or crew) your ship can hold.|82|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 82,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:bunks:",
+   "english": "The number of people (passengers or crew) your ship can hold."
+  },
+  {
+   "id": "tip:burn protection:|Protection provided against burn damage. Increases by the given factor how much burn damage a ship can withstand before its heat rises as much as an unprotected ship.|85|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 85,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:burn protection:",
+   "english": "Protection provided against burn damage. Increases by the given factor how much burn damage a ship can withstand before its heat rises as much as an unprotected ship."
+  },
+  {
+   "id": "tip:burn resistance:|Burn damage resisted per second.|88|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 88,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:burn resistance:",
+   "english": "Burn damage resisted per second."
+  },
+  {
+   "id": "tip:burn resistance energy:|Energy consumed per second when resisting burn damage.|91|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 91,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:burn resistance energy:",
+   "english": "Energy consumed per second when resisting burn damage."
+  },
+  {
+   "id": "tip:burn resistance fuel:|Fuel consumed per second when resisting burn damage.|94|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 94,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:burn resistance fuel:",
+   "english": "Fuel consumed per second when resisting burn damage."
+  },
+  {
+   "id": "tip:burn resistance heat:|Heat generated per second when resisting burn damage.|97|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 97,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:burn resistance heat:",
+   "english": "Heat generated per second when resisting burn damage."
+  },
+  {
+   "id": "tip:capture attack:|Increases the \"strength\" of one crew member when attacking another ship to capture it. Each crew member can only wield one weapon at a time, but they will use whichever weapons provide the highest power.|100|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 100,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:capture attack:",
+   "english": "Increases the \"strength\" of one crew member when attacking another ship to capture it. Each crew member can only wield one weapon at a time, but they will use whichever weapons provide the highest power."
+  },
+  {
+   "id": "tip:capture defense:|Increases the \"strength\" of one crew member when defending against an attempt to capture this ship. Each crew member can only wield one weapon at a time, but they will use whichever weapons provide the highest power.|103|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 103,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:capture defense:",
+   "english": "Increases the \"strength\" of one crew member when defending against an attempt to capture this ship. Each crew member can only wield one weapon at a time, but they will use whichever weapons provide the highest power."
+  },
+  {
+   "id": "tip:cargo:|Tons of cargo this ship is carrying right now, out of its maximum.|106|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 106,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cargo:",
+   "english": "Tons of cargo this ship is carrying right now, out of its maximum."
+  },
+  {
+   "id": "tip:cargo scan:|Allows scanning of your target ship's cargo from up to this distance away.|109|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 109,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cargo scan:",
+   "english": "Allows scanning of your target ship's cargo from up to this distance away."
+  },
+  {
+   "id": "tip:cargo scan power:|Allows scanning of your target ship's cargo. The range of this cargo scanner is proportional to the square root of this value.|112|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 112,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cargo scan power:",
+   "english": "Allows scanning of your target ship's cargo. The range of this cargo scanner is proportional to the square root of this value."
+  },
+  {
+   "id": "tip:cargo scan speed:|Determines how long it takes to perform a cargo scan. A higher value will correspond to a quicker scan.|115|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 115,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cargo scan speed:",
+   "english": "Determines how long it takes to perform a cargo scan. A higher value will correspond to a quicker scan."
+  },
+  {
+   "id": "tip:cargo scan efficiency:|The maximum speed of this cargo scanner is proportional to the square root of this value. The observed scan speed will be impacted by multiple factors. Targets which are farther away or have a larger cargo hold will take longer to scan.|118|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 118,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cargo scan efficiency:",
+   "english": "The maximum speed of this cargo scanner is proportional to the square root of this value. The observed scan speed will be impacted by multiple factors. Targets which are farther away or have a larger cargo hold will take longer to scan."
+  },
+  {
+   "id": "tip:cargo scan opacity:|Increases the time required for other ships to perform a cargo scan of this ship. A value of one has the same influence on the time taken as adding one more ton of cargo space to scan.|121|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 121,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cargo scan opacity:",
+   "english": "Increases the time required for other ships to perform a cargo scan of this ship. A value of one has the same influence on the time taken as adding one more ton of cargo space to scan."
+  },
+  {
+   "id": "tip:cargo space:|Tons of cargo (commodities, mission cargo, and plundered outfits) this ship can carry.|124|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 124,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cargo space:",
+   "english": "Tons of cargo (commodities, mission cargo, and plundered outfits) this ship can carry."
+  },
+  {
+   "id": "tip:cargo space needed:|Tons of cargo space this outfit uses up.|127|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 127,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cargo space needed:",
+   "english": "Tons of cargo space this outfit uses up."
+  },
+  {
+   "id": "tip:cloak:|This outfit allows your ship to cloak. The value represents how long it takes to fully activate or deactivate cloaking. Ships cannot fire while cloaked, except if they have the related \"cloaked firing\" attribute.|130|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 130,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloak:",
+   "english": "This outfit allows your ship to cloak. The value represents how long it takes to fully activate or deactivate cloaking. Ships cannot fire while cloaked, except if they have the related \"cloaked firing\" attribute."
+  },
+  {
+   "id": "tip:cloak by mass:|This outfit allows your ship to cloak. The value represents how long it takes to fully activate or deactivate cloaking for a ship with 1000 mass. The higher a ship's mass, the slower the cloak works, the lower its mass, the faster the cloak works. Ships cannot fire while cloaked, except if they have the related \"cloaked firing\" attribute.|133|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 133,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloak by mass:",
+   "english": "This outfit allows your ship to cloak. The value represents how long it takes to fully activate or deactivate cloaking for a ship with 1000 mass. The higher a ship's mass, the slower the cloak works, the lower its mass, the faster the cloak works. Ships cannot fire while cloaked, except if they have the related \"cloaked firing\" attribute."
+  },
+  {
+   "id": "tip:cloaking energy:|Energy consumed per second when cloaked.|136|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 136,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloaking energy:",
+   "english": "Energy consumed per second when cloaked."
+  }
+ ]
+}

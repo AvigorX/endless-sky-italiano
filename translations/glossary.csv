@@ -1,0 +1,81 @@
+english_term,existing_italian_variants,recommended_italian,context,rationale,severity,confidence
+ship,—,nave,entità pilotabile (hull + outfits),"Termine generico; le classi specifiche usano 'caccia', 'corvetta', ecc.",P1,high
+outfit,—,equipaggiamento,"modulo installabile (armi, motori, sistemi)","Non 'outfit' né 'equipaggiamento navale': è il termine del gioco, categoria 'outfit'.",P1,high
+system,—,sistema,sistema stellare,Mai 'sistema solare' se non è Sol.,P1,high
+planet,—,pianeta,corpo celeste atterrabile,Le stazioni orbitali sono pianeti nel motore: usare 'stazione'.,P1,high
+fleet,—,flotta,insieme di navi di una fazione,Anche 'flotta' per il gruppo del giocatore.,P2,medium
+flagship,—,ammiraglia,nave del giocatore,Concordanza femminile: 'l'ammiraglia è stata colpita'.,P1,high
+escort,—,scorta,nave che segue il giocatore,Sostantivo femminile; 'nave di scorta' se serve chiarezza.,P2,medium
+hull,—,scafo,integrità strutturale,Contrapposto a 'scudi'.,P1,high
+shields,—,scudi,difesa energetica,Plurale fisso; barra 'scudi'.,P1,high
+energy,—,energia,risorsa dei sistemi,Non 'energia elettrica'.,P1,high
+heat,—,calore,accumulo termico,Barra 'calore'; stato 'surriscaldamento'.,P1,high
+fuel,—,carburante,unità per il salto,Non 'benzina'.,P1,high
+cargo,—,carico,merci trasportate,'stiva' per lo spazio: 'spazio stiva'.,P1,high
+ton,tons,tonnellata / tonnellate,unità di carico,Concordanza al plurale nel testo narrativo.,P2,medium
+credit,credits,credito / crediti,valuta,Minuscolo; 'k'/'M' restano suffissi.,P1,high
+mission,—,missione,incarico con trama,Distinta da 'job'.,P1,high
+job,—,incarico,lavoro generico dalla bacheca,Non 'lavoro' (ambiguo) né 'missione'.,P1,high
+job board,—,bacheca degli incarichi,pannello degli incarichi,Non 'bacheca dei lavori'.,P2,medium
+passenger,—,passeggero,persona trasportata,Concordanza di genere nei template.,P2,medium
+crew,—,equipaggio,persone a bordo,'membro dell'equipaggio' per il singolo.,P1,high
+bunks,—,posti letto,alloggi,Non 'letti' da solo.,P2,medium
+weapon,—,arma,sistema offensivo,Categoria 'armi'.,P1,high
+turret,—,torretta,arma a rotazione,Distinta da 'cannone'.,P1,high
+gun,—,cannone,arma fissa frontale,Non 'pistola'.,P1,high
+missile,—,missile,proiettile guidato,Plurale invariato.,P1,high
+laser,—,laser,arma energetica,Invariato; 'raggio laser' se serve.,P1,high
+engine,—,motore,propulsione principale,'motore principale' per disambiguare.,P1,high
+thruster,—,propulsore,spinta direzionale,Distinto da 'motore'.,P1,high
+steering,—,timone,controllo di rotta,'motore di manovra' se serve precisione.,P2,medium
+reactor,—,reattore,generatore di energia,Non 'reattore nucleare' se non specificato.,P2,medium
+battery,—,batteria,accumulo di energia,Concordanza femminile.,P2,medium
+scanner,—,scanner,sensori,Invariato; 'sensori' nel testo narrativo.,P2,medium
+cloak,—,occultamento,dispositivo stealth,'dispositivo di occultamento' per l'oggetto.,P2,medium
+tractor beam,—,raggio tractor,attrazione di oggetti,Forma invalsa; in alternativa 'raggio di trazione'.,P2,medium
+landing,—,atterraggio,discesa su un pianeta,Non 'sbarco'.,P1,high
+takeoff,—,decollo,partenza dal pianeta,—,P1,high
+shipyard,—,cantiere,dove si comprano navi,'cantiere navale' nella prosa.,P1,high
+outfitter,—,fornitore,dove si comprano equipaggiamenti,Non 'outfitter'; 'negozio di equipaggiamenti' nella prosa.,P1,high
+spaceport,—,spazioporto,servizi del pianeta,—,P1,high
+reputation,—,reputazione,rapporto con una fazione,'reputazione presso'.,P1,high
+government,—,fazione,entità politica del motore,"Il motore la chiama 'government', il giocatore vede 'fazione'.",P1,high
+disable,—,neutralizzare,rendere inerte una nave,Non 'disabilitare': 'nave neutralizzata'.,P1,high
+destroy,—,distruggere,eliminare una nave,—,P1,high
+boarding,—,abbordaggio,assalto alla nave,'abbordare' come verbo.,P2,medium
+plunder,—,saccheggiare,prendere il carico,'bottino' come sostantivo.,P2,medium
+salvage,—,recupero,materiale recuperabile,'recuperare' come verbo.,P2,medium
+asteroid,—,asteroide,corpo minabile,—,P2,medium
+jump,—,salto,transito iperspaziale,'salto iperspaziale'.,P1,high
+hyperspace,—,iperspazio,dimensione di transito,—,P1,high
+Cancel,—,annulla,azione di annullamento (pulsante),"Voce verbale all'imperativo, come nelle UI italiane.",P1,high
+Quit,—,esci,voce di menu principale,Mai 'chiudi': si esce dal gioco.,P1,high
+Preferences,—,preferenze,menu impostazioni,Termine standard nelle UI.,P1,high
+Settings,—,impostazioni,pannello di configurazione,Distinto da 'preferenze' solo per contesto; usare uno dei due con coerenza.,P2,medium
+Controls,—,comandi,schermata dei tasti,Non 'controlli' (ambiguo con il verbo).,P1,high
+Plugins,—,plugin,estensioni,"Invariato, come in italiano tecnico.",P2,medium
+Pilot,—,pilota,profilo di gioco,"'Nuovo pilota', 'gestisci piloti'.",P1,high
+Save / Snapshot,—,salvataggio / istantanea,stato di gioco,'istantanea' per lo snapshot rapido; 'salvataggio' per il file.,P2,medium
+Load Game,—,carica partita,voce di menu,Non 'carica gioco'.,P1,high
+Start Game,—,inizia partita,avvio,—,P1,high
+Trading,—,commercio,pannello scambi,Sostantivo.,P1,high
+Job Board,—,bacheca degli incarichi,pannello incarichi,Vedi glossario principale.,P1,high
+Outfitter,—,fornitore,negozio equipaggiamenti,Vedi glossario principale.,P1,high
+Shipyard,—,cantiere,acquisto navi,Vedi glossario principale.,P1,high
+Player Info,—,dati pilota,pannello informazioni,Non 'info giocatore'.,P2,medium
+Fleet,—,flotta,insieme di navi,Vedi glossario principale.,P1,high
+Target,—,bersaglio,nave selezionata,"'bersaglio' se ostile, 'selezionata' se neutro.",P2,medium
+Zoom,—,ingrandimento,controllo vista,Mai 'zoom' come sostantivo nei pulsanti.,P3,medium
+Paused,—,in pausa,stato di gioco,—,P2,medium
+Warning,—,attenzione,avviso,Mai 'warning'.,P2,medium
+Error,—,errore,stato di errore,—,P1,high
+New Pilot,—,nuovo pilota,creazione profilo,—,P1,high
+Delete,—,elimina,azione distruttiva,—,P1,high
+Reload,—,ricarica,ripristino profilo,—,P2,medium
+Back to Menu,—,torna al menu,navigazione,—,P2,medium
+Name,—,nome,campo di testo,—,P1,high
+Date,—,data,campo informativo,—,P1,high
+Credits,—,crediti,valuta,Vedi glossario principale.,P1,high
+Debt,—,debito,situazione economica,—,P2,medium
+Playtime,—,tempo di gioco,statistica profilo,—,P2,medium
+Additional info,—,informazioni aggiuntive,etichetta di pannello,—,P3,medium

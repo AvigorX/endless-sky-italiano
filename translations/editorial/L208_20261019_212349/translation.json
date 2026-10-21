@@ -1,0 +1,220 @@
+{
+ "block": {
+  "path": "data/coalition/coalition news.txt",
+  "line_from": 177,
+  "line_to": 246,
+  "units": 19
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:coalition researcher|A Saryd engrossed in a tablet displayed strange characters almost walks into you. \"Excuse me,\" they mutter before continuing on their way.|177|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 177,
+   "kind": "NEWS",
+   "context": "news:coalition researcher",
+   "english": "A Saryd engrossed in a tablet displayed strange characters almost walks into you. \"Excuse me,\" they mutter before continuing on their way.",
+   "italian": "Un Saryd assorto in un tablet che mostra caratteri strani per poco non ti urta. \"Scusa,\" mormora, prima di proseguire per la sua strada.",
+   "ratio": 0.986
+  },
+  {
+   "idx": 2,
+   "id": "news:coalition researcher|\"A lecture in nanotechnology, I am here to present. Unclear on whether I would be teaching faculty or students, the invitation was.\"|178|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 178,
+   "kind": "NEWS",
+   "context": "news:coalition researcher",
+   "english": "\"A lecture in nanotechnology, I am here to present. Unclear on whether I would be teaching faculty or students, the invitation was.\"",
+   "italian": "\"Una lezione di nanotecnologia, sono qui per tenere. Non chiaro se avrei insegnato alla facoltà o agli studenti, l'invito era.\"",
+   "ratio": 0.962
+  },
+  {
+   "idx": 3,
+   "id": "news:coalition researcher|\"Earned a degree in xenobiology, I did some time ago. Under a top researcher in the field, I work now.\"|179|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 179,
+   "kind": "NEWS",
+   "context": "news:coalition researcher",
+   "english": "\"Earned a degree in xenobiology, I did some time ago. Under a top researcher in the field, I work now.\"",
+   "italian": "\"Conseguita una laurea in xenobiologia, tempo fa ho. Alle dipendenze di un ricercatore di primo piano del settore, lavoro ora.\"",
+   "ratio": 1.233
+  },
+  {
+   "idx": 4,
+   "id": "news:coalition researcher yottrite|\"Seems that interesting findings, the research on yottrite has yielded. Proud of having helped us learn more, you should be.\"|192|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 192,
+   "kind": "NEWS",
+   "context": "news:coalition researcher yottrite",
+   "english": "\"Seems that interesting findings, the research on yottrite has yielded. Proud of having helped us learn more, you should be.\"",
+   "italian": "\"Sembra che risultati interessanti, la ricerca sull'yottrite abbia prodotto. Orgoglioso di averci aiutato a saperne di più, dovresti essere.\"",
+   "ratio": 1.128
+  },
+  {
+   "idx": 5,
+   "id": "news:coalition researcher yottrite|\"Now that more information on yottrite we have, wonder if House Ablomab will ask for samples to experiment on, I do.\"|193|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 193,
+   "kind": "NEWS",
+   "context": "news:coalition researcher yottrite",
+   "english": "\"Now that more information on yottrite we have, wonder if House Ablomab will ask for samples to experiment on, I do.\"",
+   "italian": "\"Ora che più informazioni sull'yottrite abbiamo, se la House Ablomab chiederà campioni su cui sperimentare, mi domando.\"",
+   "ratio": 1.026
+  },
+  {
+   "idx": 6,
+   "id": "news:coalition researcher yottrite|\"Kill for the papers on the yottrite research, I would, but still confidential the information is.\"|194|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 194,
+   "kind": "NEWS",
+   "context": "news:coalition researcher yottrite",
+   "english": "\"Kill for the papers on the yottrite research, I would, but still confidential the information is.\"",
+   "italian": "\"Ucciderei per gli articoli sulla ricerca dell'yottrite, ma ancora riservata l'informazione è.\"",
+   "ratio": 0.96
+  },
+  {
+   "idx": 7,
+   "id": "news:coalition ringworld worker|\"Just arrived here, I have. So glad that finally accepted for this job, I was!\"|210|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 210,
+   "kind": "NEWS",
+   "context": "news:coalition ringworld worker",
+   "english": "\"Just arrived here, I have. So glad that finally accepted for this job, I was!\"",
+   "italian": "\"Appena arrivato qui, sono. Così contento che finalmente assunto per questo lavoro, sono stato!\"",
+   "ratio": 1.215
+  },
+  {
+   "idx": 8,
+   "id": "news:coalition ringworld worker|\"Food, lodging, an important job with a good pay, and a wonderful view. Ask for, what more could I?\"|211|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 211,
+   "kind": "NEWS",
+   "context": "news:coalition ringworld worker",
+   "english": "\"Food, lodging, an important job with a good pay, and a wonderful view. Ask for, what more could I?\"",
+   "italian": "\"Cibo, alloggio, un lavoro importante con una buona paga e una vista meravigliosa. Chiedere di più, cosa potrei?\"",
+   "ratio": 1.13
+  },
+  {
+   "idx": 9,
+   "id": "news:coalition ringworld worker|\"The means to finish construction of the two remaining rings, we still don't have, but one day, complete they shall be.\"|212|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 212,
+   "kind": "NEWS",
+   "context": "news:coalition ringworld worker",
+   "english": "\"The means to finish construction of the two remaining rings, we still don't have, but one day, complete they shall be.\"",
+   "italian": "\"I mezzi per finire la costruzione dei due anelli rimanenti, ancora non li abbiamo, ma un giorno, completati saranno.\"",
+   "ratio": 0.983
+  },
+  {
+   "idx": 10,
+   "id": "news:coalition ringworld worker|\"Wholly safe, our Coalition is, but here, even safer I feel. What is there to fear, when in an indestructible station you are?\"|213|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 213,
+   "kind": "NEWS",
+   "context": "news:coalition ringworld worker",
+   "english": "\"Wholly safe, our Coalition is, but here, even safer I feel. What is there to fear, when in an indestructible station you are?\"",
+   "italian": "\"Del tutto sicura, la nostra Coalizione è, ma qui, ancora più al sicuro mi sento. Cosa c'è da temere, quando in una stazione indistruttibile sei?\"",
+   "ratio": 1.15
+  },
+  {
+   "idx": 11,
+   "id": "news:coalition ringworld worker|\"Still researching the alloys that make up the rings, our top scientists are, so only adding supplementary solar panels, we are.\"|214|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 214,
+   "kind": "NEWS",
+   "context": "news:coalition ringworld worker",
+   "english": "\"Still researching the alloys that make up the rings, our top scientists are, so only adding supplementary solar panels, we are.\"",
+   "italian": "\"Ancora a studiare le leghe che compongono gli anelli, i nostri migliori scienziati sono, quindi solo pannelli solari supplementari stiamo aggiungendo.\"",
+   "ratio": 1.178
+  },
+  {
+   "idx": 12,
+   "id": "news:coalition ringworld worker|\"Friend, please step aside.\" A Kimek gestures to a large cart filled with tools and equipment, and you move to let them pass.|216|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 216,
+   "kind": "NEWS",
+   "context": "news:coalition ringworld worker",
+   "english": "\"Friend, please step aside.\" A Kimek gestures to a large cart filled with tools and equipment, and you move to let them pass.",
+   "italian": "\"Amico, fatti da parte, per favore.\" Un Kimek indica un grande carrello pieno di attrezzi e attrezzature, e tu ti sposti per lasciarlo passare.",
+   "ratio": 1.144
+  },
+  {
+   "idx": 13,
+   "id": "news:coalition spaceport worker|\"Since with captains of other species, we deal, translation boxes, we are issued. Simple tools for us, but too expensive for many to purchase, they are, so to enjoy the opportunity to use them, we try.\"|226|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 226,
+   "kind": "NEWS",
+   "context": "news:coalition spaceport worker",
+   "english": "\"Since with captains of other species, we deal, translation boxes, we are issued. Simple tools for us, but too expensive for many to purchase, they are, so to enjoy the opportunity to use them, we try.\"",
+   "italian": "\"Dato che con capitani di altre specie trattiamo, dei traduttori, ci vengono dati. Strumenti semplici per noi, ma troppo costosi perché molti li comprino, sono, quindi goderci l'opportunità di usarli, cerchiamo.\"",
+   "ratio": 1.05
+  },
+  {
+   "idx": 14,
+   "id": "news:coalition spaceport worker|\"Three different styles of ships, we deal with daily, so never on autopilot we can be, or else refuel one incorrectly, we might.\"|227|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 227,
+   "kind": "NEWS",
+   "context": "news:coalition spaceport worker",
+   "english": "\"Three different styles of ships, we deal with daily, so never on autopilot we can be, or else refuel one incorrectly, we might.\"",
+   "italian": "\"Tre stili diversi di navi, trattiamo ogni giorno, quindi mai in pilota automatico possiamo stare, altrimenti rifornirne una in modo sbagliato, potremmo.\"",
+   "ratio": 1.194
+  },
+  {
+   "idx": 15,
+   "id": "news:coalition spaceport worker|\"Inspect every crate before it is put on a ship, the Heliarchs do. A tedious process, it is.\"|228|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 228,
+   "kind": "NEWS",
+   "context": "news:coalition spaceport worker",
+   "english": "\"Inspect every crate before it is put on a ship, the Heliarchs do. A tedious process, it is.\"",
+   "italian": "\"Ispezionare ogni cassa prima che venga messa su una nave, gli Heliarch fanno. Un processo tedioso, è.\"",
+   "ratio": 1.108
+  },
+  {
+   "idx": 16,
+   "id": "news:coalition merchant|\"Enough money for my first ship, I didn't have, so split the cost of a Runabout, me and an online friend did. Picked another ship, we should have, because too difficult flying alone to their planet, it was.\"|243|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 243,
+   "kind": "NEWS",
+   "context": "news:coalition merchant",
+   "english": "\"Enough money for my first ship, I didn't have, so split the cost of a Runabout, me and an online friend did. Picked another ship, we should have, because too difficult flying alone to their planet, it was.\"",
+   "italian": "\"Abbastanza soldi per la mia prima nave, non li avevo, così dividere la spesa di un Runabout, io e un amico online abbiamo fatto. Un'altra nave, avremmo dovuto scegliere, perché troppo difficile volare da soli fino al suo pianeta, era.\"",
+   "ratio": 1.14
+  },
+  {
+   "idx": 17,
+   "id": "news:coalition merchant|\"Enough money for my first ship, I didn't have, so a loan from House Plumtab, I took. Read the interest rates a bit better, I should have...\"|244|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 244,
+   "kind": "NEWS",
+   "context": "news:coalition merchant",
+   "english": "\"Enough money for my first ship, I didn't have, so a loan from House Plumtab, I took. Read the interest rates a bit better, I should have...\"",
+   "italian": "\"Abbastanza soldi per la mia prima nave, non li avevo, così un prestito dalla House Plumtab, ho preso. Leggere un po' meglio i tassi d'interesse, avrei dovuto...\"",
+   "ratio": 1.149
+  },
+  {
+   "idx": 18,
+   "id": "news:coalition merchant|\"On a Hulk, my first job in a spaceship was. Thought falling apart it was, I had, when to a Spindle it switched.\"|245|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 245,
+   "kind": "NEWS",
+   "context": "news:coalition merchant",
+   "english": "\"On a Hulk, my first job in a spaceship was. Thought falling apart it was, I had, when to a Spindle it switched.\"",
+   "italian": "\"Su un Hulk, il mio primo lavoro su una nave spaziale è stato. Che stesse per disintegrarsi, avevo pensato, quando a uno Spindle è passato.\"",
+   "ratio": 1.239
+  },
+  {
+   "idx": 19,
+   "id": "news:coalition merchant|\"Liked my ship so much, a Kimek passenger did, that decided to live in it, they have. For 'transport' they still pay, so mind it I do not.\"|246|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 246,
+   "kind": "NEWS",
+   "context": "news:coalition merchant",
+   "english": "\"Liked my ship so much, a Kimek passenger did, that decided to live in it, they have. For 'transport' they still pay, so mind it I do not.\"",
+   "italian": "\"La mia nave è piaciuta così tanto, a un passeggero Kimek, che ha deciso di viverci, sì. Per il 'trasporto' paga ancora, quindi non mi dispiace.\"",
+   "ratio": 1.043
+  }
+ ]
+}

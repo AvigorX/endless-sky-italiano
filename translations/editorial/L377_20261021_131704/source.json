@@ -1,0 +1,50 @@
+{
+ "block": {
+  "path": "data/rulei/rulei outfits.txt",
+  "line_from": 42,
+  "line_to": 154,
+  "units": 3
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Fate Sealer|description|42|0",
+   "path": "data/rulei/rulei outfits.txt",
+   "line": 42,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Fate Sealer",
+   "english": "An energy particle weapon that intensifies a blast to a single location after a brief duration. The after-effect of the explosion pulls the target closer to the origin of the blast.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `An energy particle weapon that intensifies a blast to a single location after a brief duration. The after-effect of the explosion pulls the target closer to the origin of the blast.`",
+   "english_hash": "b50df64cf74603df"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Fate Divider|description|86|0",
+   "path": "data/rulei/rulei outfits.txt",
+   "line": 86,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Fate Divider",
+   "english": "An energy particle weapon that intensifies a blast to a single location after a brief duration. The after-effect of the explosion pushes the target farther from the origin of the blast.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `An energy particle weapon that intensifies a blast to a single location after a brief duration. The after-effect of the explosion pushes the target farther from the origin of the blast.`",
+   "english_hash": "ffac270f898c97eb"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Abyssal Composer|description|154|0",
+   "path": "data/rulei/rulei outfits.txt",
+   "line": 154,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Abyssal Composer",
+   "english": "This is an extremely dangerous device that uses graviton technology to pull a target's mass and energy apart, and then feeds the materials to the firing ship's systems.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `This is an extremely dangerous device that uses graviton technology to pull a target's mass and energy apart, and then feeds the materials to the firing ship's systems.`",
+   "english_hash": "ac600bf64c3b2dd0"
+  }
+ ]
+}

@@ -1,0 +1,286 @@
+{
+ "block": {
+  "path": "data/korath/korath missions.txt",
+  "line_from": 1,
+  "line_to": 120,
+  "units": 25
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:First Contact: Korati Efreti|A few of the Korath who inhabit this station greet you when you land, holding up both hands with their palms toward you. One of them says something that sounds like, \"Humani efreti, naskoor amasavarkta.\" It's clear that none of them speak your language, but they seem friendly and willing to trade with you.|21|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 21,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Korati Efreti",
+   "english": "A few of the Korath who inhabit this station greet you when you land, holding up both hands with their palms toward you. One of them says something that sounds like, \"Humani efreti, naskoor amasavarkta.\" It's clear that none of them speak your language, but they seem friendly and willing to trade with you.",
+   "italian": "Alcuni dei Korath che abitano questa stazione vi salutano quando atterrate, sollevando entrambe le mani con i palmi verso di voi. Uno di loro dice qualcosa che suona come: \"Humani efreti, naskoor amasavarkta.\" È chiaro che nessuno di loro parla la vostra lingua, ma sembrano amichevoli e disposti a commerciare con voi.",
+   "ratio": 1.039
+  },
+  {
+   "idx": 2,
+   "id": "mission:First Contact: Laki Nemparu|A few of the Korath in this spaceport greet you when you land, holding up both hands with their palms toward you. One of them says something that sounds like, \"Humani efreti, naskoor amasavarkta.\" It's clear that none of them speak your language, but they seem friendly and willing to trade with you.|31|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 31,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Laki Nemparu",
+   "english": "A few of the Korath in this spaceport greet you when you land, holding up both hands with their palms toward you. One of them says something that sounds like, \"Humani efreti, naskoor amasavarkta.\" It's clear that none of them speak your language, but they seem friendly and willing to trade with you.",
+   "italian": "Alcuni dei Korath in questo spazioporto vi salutano quando atterrate, sollevando entrambe le mani con i palmi verso di voi. Uno di loro dice qualcosa che suona come: \"Humani efreti, naskoor amasavarkta.\" È chiaro che nessuno di loro parla la vostra lingua, ma sembrano amichevoli e disposti a commerciare con voi.",
+   "ratio": 1.043
+  },
+  {
+   "idx": 3,
+   "id": "mission:First Contact: Karek Fornati|A few of the Korath in this spaceport greet you when you land, holding up both hands with their palms toward you. One of them says something that sounds like, \"Humani efreti, naskoor amasavarkta.\" It's clear that none of them speak your language, but they seem friendly and willing to trade with you.|41|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 41,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Karek Fornati",
+   "english": "A few of the Korath in this spaceport greet you when you land, holding up both hands with their palms toward you. One of them says something that sounds like, \"Humani efreti, naskoor amasavarkta.\" It's clear that none of them speak your language, but they seem friendly and willing to trade with you.",
+   "italian": "Alcuni dei Korath in questo spazioporto vi salutano quando atterrate, sollevando entrambe le mani con i palmi verso di voi. Uno di loro dice qualcosa che suona come: \"Humani efreti, naskoor amasavarkta.\" È chiaro che nessuno di loro parla la vostra lingua, ma sembrano amichevoli e disposti a commerciare con voi.",
+   "ratio": 1.043
+  },
+  {
+   "idx": 4,
+   "id": "mission:First Contact: Setar Fort|A few of the Korath in this spaceport greet you when you land, holding up both hands with their palms toward you. One of them says something that sounds like, \"Humani efreti, naskoor amasavarkta.\" It's clear that none of them speak your language, but they seem friendly and willing to trade with you.|51|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 51,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Setar Fort",
+   "english": "A few of the Korath in this spaceport greet you when you land, holding up both hands with their palms toward you. One of them says something that sounds like, \"Humani efreti, naskoor amasavarkta.\" It's clear that none of them speak your language, but they seem friendly and willing to trade with you.",
+   "italian": "Alcuni dei Korath in questo spazioporto vi salutano quando atterrate, sollevando entrambe le mani con i palmi verso di voi. Uno di loro dice qualcosa che suona come: \"Humani efreti, naskoor amasavarkta.\" È chiaro che nessuno di loro parla la vostra lingua, ma sembrano amichevoli e disposti a commerciare con voi.",
+   "ratio": 1.043
+  },
+  {
+   "idx": 5,
+   "id": "mission:Discovered Korath Space|log|62|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 62,
+   "kind": "LOGBOOK",
+   "context": "mission:Discovered Korath Space",
+   "english": "The Korath are reptilian, bipedal aliens whose territory is almost entirely in ruins: cities destroyed and entire planets scarred by what appears to have been a vicious civil war. Several factions of Korath survive. The \"Kor Efreti\" live in the shelter of a Quarg ringworld and are on peaceful terms with the Quarg. Other Korath, living as exiles near the galactic core, have been raiding human worlds to steal food and supplies. And deeper in Korath space, two massive armies of automated war drones, known as the Kor Mereti and the Kor Sestor, are locked in an unending struggle. They attack any visitors to their region of space, including the Quarg.",
+   "italian": "I Korath sono alieni rettiliani e bipedi, il cui territorio è quasi interamente in rovina: città distrutte e interi pianeti segnati da quella che sembra essere stata una feroce guerra civile. Sopravvivono diverse fazioni di Korath. I \"Kor Efreti\" vivono al riparo di un mondo ad anello dei Quarg e sono in rapporti pacifici con loro. Altri Korath, che vivono in esilio vicino al nucleo galattico, hanno saccheggiato i mondi umani per rubare cibo e provviste. E più in profondità nello spazio Korath, due enormi eserciti di droni da guerra automatici, noti come Kor Mereti e Kor Sestor, sono bloccati in una lotta senza fine. Attaccano chiunque visiti la loro regione di spazio, compresi i Quarg.",
+   "ratio": 1.064
+  },
+  {
+   "idx": 6,
+   "id": "mission:Setar Fort Heating|name|70|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 70,
+   "kind": "VALUE",
+   "context": "mission:Setar Fort Heating",
+   "english": "Supplies to <planet>",
+   "italian": "Provviste per <planet>",
+   "ratio": 1.1
+  },
+  {
+   "idx": 7,
+   "id": "mission:Setar Fort Heating|description|71|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 71,
+   "kind": "DESCRIPTION",
+   "context": "mission:Setar Fort Heating",
+   "english": "Take <cargo> from the Wanderers to the Kor Efreti on <destination>. Payment is <payment>.",
+   "italian": "Porta <cargo> dai Wanderer ai Kor Efreti su <destination>. Il pagamento è <payment>.",
+   "ratio": 0.944
+  },
+  {
+   "idx": 8,
+   "id": "mission:Setar Fort Heating|As you're exploring the spaceport, a Wanderer you've not met waves you down. It says, \"You are Captain <last>, correct?\"|83|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 83,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "As you're exploring the spaceport, a Wanderer you've not met waves you down. It says, \"You are Captain <last>, correct?\"",
+   "italian": "Mentre esplorate lo spazioporto, un Wanderer che non avete mai incontrato vi fa cenno di fermarvi. Dice: \"Lei è il Capitano <last>, giusto?\"",
+   "ratio": 1.167
+  },
+  {
+   "idx": 9,
+   "id": "mission:Setar Fort Heating|\t\"Yes, that's me.\"|85|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 85,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"Yes, that's me.\"",
+   "italian": "\t\"Sì, sono io.\"",
+   "ratio": 0.833
+  },
+  {
+   "idx": 10,
+   "id": "mission:Setar Fort Heating|\t\"The one and only.\"|86|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 86,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"The one and only.\"",
+   "italian": "\t\"L'unico e solo.\"",
+   "ratio": 0.9
+  },
+  {
+   "idx": 11,
+   "id": "mission:Setar Fort Heating|\t\"I am [relieved, happy] to see you, Captain. We have heard of your assistance in our migration here, and I [believe, assume] you have spent some time on Korath worlds. Would you be interested in taking <tons> of [supplies, aid] to <planet>? I can offer you <payment>.\"|87|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 87,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"I am [relieved, happy] to see you, Captain. We have heard of your assistance in our migration here, and I [believe, assume] you have spent some time on Korath worlds. Would you be interested in taking <tons> of [supplies, aid] to <planet>? I can offer you <payment>.\"",
+   "italian": "\t\"Sono [sollevato, felice] di vederla, Capitano. Abbiamo sentito del suo aiuto nella nostra migrazione qui, e [credo, suppongo] che abbia passato un po' di tempo sui mondi Korath. Le interesserebbe portare <tons> di [provviste, aiuti] su <planet>? Posso offrirle <payment>.\"",
+   "ratio": 1.019
+  },
+  {
+   "idx": 12,
+   "id": "mission:Setar Fort Heating|\t\"I can do that. Load it up, and I'll be ready to leave.\"|89|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 89,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"I can do that. Load it up, and I'll be ready to leave.\"",
+   "italian": "\t\"Posso farlo. Caricate, e sarò pronto a partire.\"",
+   "ratio": 0.877
+  },
+  {
+   "idx": 13,
+   "id": "mission:Setar Fort Heating|\t\"Only <payment>? That's an unusually low payment for the amount of cargo I'll be carrying.\"|91|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 91,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"Only <payment>? That's an unusually low payment for the amount of cargo I'll be carrying.\"",
+   "italian": "\t\"Solo <payment>? È un pagamento insolitamente basso per la quantità di carico che trasporterò.\"",
+   "ratio": 1.043
+  },
+  {
+   "idx": 14,
+   "id": "mission:Setar Fort Heating|\t\"What exactly would I be transporting?\"|93|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 93,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"What exactly would I be transporting?\"",
+   "italian": "\t\"Che cosa trasporterei esattamente?\"",
+   "ratio": 0.925
+  },
+  {
+   "idx": 15,
+   "id": "mission:Setar Fort Heating|\t\"Sorry, but I'm too busy at the moment to take on another job.\"|94|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 94,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"Sorry, but I'm too busy at the moment to take on another job.\"",
+   "italian": "\t\"Mi dispiace, ma al momento sono troppo impegnato per prendere un altro lavoro.\"",
+   "ratio": 1.266
+  },
+  {
+   "idx": 16,
+   "id": "mission:Setar Fort Heating|\t\"As I am sure you are aware, <planet> is cold - uncomfortably so for most species. Based on our [research, information], the planet is experiencing an accelerated [descent, transition] into an ice age. The Kor Efreti have no effective means of stopping this, and their [pride, honor] means they will not accept our terraforming assistance unless they have no other options. They will, however, pay us for equipment to offset this [descent, transition]. Your [supplies, aid] would include warmer clothing, greenhouse building material, [insulation, shelter], and other technology for the Korath to use. The payment, while [unfortunately, sadly] low, is all the Korath were able to offer.|97|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 97,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"As I am sure you are aware, <planet> is cold - uncomfortably so for most species. Based on our [research, information], the planet is experiencing an accelerated [descent, transition] into an ice age. The Kor Efreti have no effective means of stopping this, and their [pride, honor] means they will not accept our terraforming assistance unless they have no other options. They will, however, pay us for equipment to offset this [descent, transition]. Your [supplies, aid] would include warmer clothing, greenhouse building material, [insulation, shelter], and other technology for the Korath to use. The payment, while [unfortunately, sadly] low, is all the Korath were able to offer.",
+   "italian": "\t\"Come di certo saprà, <planet> è freddo - scomodamente freddo per la maggior parte delle specie. In base alle nostre [ricerche, informazioni], il pianeta sta vivendo una [discesa, transizione] accelerata verso un'era glaciale. I Kor Efreti non hanno mezzi efficaci per fermarla, e il loro [orgoglio, onore] fa sì che non accetteranno il nostro aiuto nella terraformazione finché non avranno altre opzioni. Ci pagheranno però per attrezzature che compensino questa [discesa, transizione]. Le sue [provviste, aiuti] includerebbero indumenti più caldi, materiale per costruire serre, [isolamento, ripari] e altra tecnologia che i Korath potranno usare. Il pagamento, per quanto [purtroppo, tristemente] basso, è tutto ciò che i Korath sono riusciti a offrire.",
+   "ratio": 1.102
+  },
+  {
+   "idx": 17,
+   "id": "mission:Setar Fort Heating|\t\"I was originally going to make the journey myself, but my ship has encountered [errors, complications] due to a faulty component. I need someone to go in my place.\"|98|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 98,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"I was originally going to make the journey myself, but my ship has encountered [errors, complications] due to a faulty component. I need someone to go in my place.\"",
+   "italian": "\t\"Avevo intenzione di fare il viaggio io stesso, ma la mia nave ha avuto [errori, complicazioni] per un componente difettoso. Ho bisogno di qualcuno che vada al mio posto.\"",
+   "ratio": 1.036
+  },
+  {
+   "idx": 18,
+   "id": "mission:Setar Fort Heating|\t\"I'd be happy to, especially since it's for a good cause. You're welcome to load it up onto my ship.\"|100|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 100,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"I'd be happy to, especially since it's for a good cause. You're welcome to load it up onto my ship.\"",
+   "italian": "\t\"Ne sarei felice, soprattutto perché è per una buona causa. Può caricare sulla mia nave.\"",
+   "ratio": 0.882
+  },
+  {
+   "idx": 19,
+   "id": "mission:Setar Fort Heating|\t\"Sorry, but I'm too busy at the moment to take on another job.\"|102|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 102,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"Sorry, but I'm too busy at the moment to take on another job.\"",
+   "italian": "\t\"Mi dispiace, ma al momento sono troppo impegnato per prendere un altro lavoro.\"",
+   "ratio": 1.266
+  },
+  {
+   "idx": 20,
+   "id": "mission:Setar Fort Heating|\tThe Wanderer shudders slightly, almost like it had hoped you wouldn't ask that. \"Well... yes, it is low. The rest of the Kor Efreti's payment was used to [purchase, acquire] the supplies, and it seemed they could not afford to pay much more than they already had. Given their situation, we found it [reasonable, justifiable] to accept the lower payment, as the cargo is a [collection, menagerie] of equipment to help with the cooling climate on <planet>, and without it the Kor Efreti might... [perish? expire?].\"|106|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 106,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\tThe Wanderer shudders slightly, almost like it had hoped you wouldn't ask that. \"Well... yes, it is low. The rest of the Kor Efreti's payment was used to [purchase, acquire] the supplies, and it seemed they could not afford to pay much more than they already had. Given their situation, we found it [reasonable, justifiable] to accept the lower payment, as the cargo is a [collection, menagerie] of equipment to help with the cooling climate on <planet>, and without it the Kor Efreti might... [perish? expire?].\"",
+   "italian": "\tIl Wanderer ha un leggero sussulto, quasi avesse sperato che non lo chiedeste. \"Beh... sì, è basso. Il resto del pagamento dei Kor Efreti è stato usato per [comprare, acquisire] le provviste, e sembra che non potessero permettersi di pagare molto più di quanto avessero già fatto. Vista la loro situazione, abbiamo trovato [ragionevole, giustificabile] accettare il pagamento più basso, dato che il carico è una [collezione, accozzaglia] di attrezzature per aiutare con il clima che si raffredda su <planet>, e senza di esso i Kor Efreti potrebbero... [perire? spegnersi?].\"",
+   "ratio": 1.119
+  },
+  {
+   "idx": 21,
+   "id": "mission:Setar Fort Heating|\t\"I understand, and the money isn't a huge problem. I was just curious. Load it up onto my ship, and I'll be ready to go.\"|108|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 108,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"I understand, and the money isn't a huge problem. I was just curious. Load it up onto my ship, and I'll be ready to go.\"",
+   "italian": "\t\"Capisco, e i soldi non sono un problema enorme. Ero solo curioso. Caricate sulla mia nave, e sarò pronto a partire.\"",
+   "ratio": 0.967
+  },
+  {
+   "idx": 22,
+   "id": "mission:Setar Fort Heating|\t\"Oh. Well, I'll make an exception too. Load it up, and I'll head out.\"|110|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 110,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"Oh. Well, I'll make an exception too. Load it up, and I'll head out.\"",
+   "italian": "\t\"Oh. Beh, farò un'eccezione anch'io. Caricate, e parto.\"",
+   "ratio": 0.803
+  },
+  {
+   "idx": 23,
+   "id": "mission:Setar Fort Heating|\t\"Sorry, but I can't make that trip for only <payment>. You'll have to find someone else.\"|112|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 112,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\t\"Sorry, but I can't make that trip for only <payment>. You'll have to find someone else.\"",
+   "italian": "\t\"Mi dispiace, ma non posso fare quel viaggio per soli <payment>. Dovrete trovare qualcun altro.\"",
+   "ratio": 1.078
+  },
+  {
+   "idx": 24,
+   "id": "mission:Setar Fort Heating|\tThe Wanderer deflates a little when it hears your response. \"Oh. I understand. Thank you for your time, Captain <last>,\" it says, then it wanders off to look for another pilot.|115|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 115,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\tThe Wanderer deflates a little when it hears your response. \"Oh. I understand. Thank you for your time, Captain <last>,\" it says, then it wanders off to look for another pilot.",
+   "italian": "\tIl Wanderer si sgonfia un po' quando sente la vostra risposta. \"Oh. Capisco. Grazie del tempo, Capitano <last>,\" dice, poi si allontana in cerca di un altro pilota.",
+   "ratio": 0.932
+  },
+  {
+   "idx": 25,
+   "id": "mission:Setar Fort Heating|\tThe Wanderer is happy to hear your response. \"Wonderful! I will ensure the supplies are loaded onto your ship [immediately, quickly]. Thank you, Captain.\" It hurries off to a group of Wanderers nearby and starts barking orders. The group breaks up, and within minutes they're at your ship loading the supplies.|119|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 119,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Setar Fort Heating",
+   "english": "\tThe Wanderer is happy to hear your response. \"Wonderful! I will ensure the supplies are loaded onto your ship [immediately, quickly]. Thank you, Captain.\" It hurries off to a group of Wanderers nearby and starts barking orders. The group breaks up, and within minutes they're at your ship loading the supplies.",
+   "italian": "\tIl Wanderer è felice di sentire la vostra risposta. \"Meraviglioso! Farò in modo che le provviste siano caricate sulla vostra nave [subito, in fretta]. Grazie, Capitano.\" Si affretta verso un gruppo di Wanderer lì vicino e comincia a impartire ordini. Il gruppo si separa, e nel giro di pochi minuti sono alla vostra nave a caricare le provviste.",
+   "ratio": 1.113
+  }
+ ]
+}

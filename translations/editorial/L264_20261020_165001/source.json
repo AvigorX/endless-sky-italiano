@@ -1,0 +1,128 @@
+{
+ "block": {
+  "path": "data/remnant/remnant jobs.txt",
+  "line_from": 703,
+  "line_to": 741,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Remnant: Rescue 5|Worried that they would never see the Embers again, the captain of the <npc> personally thanks you for bringing them home, even before your communicator notifies you of a resource allocation of <payment>.|703|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 703,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 5",
+   "english": "Worried that they would never see the Embers again, the captain of the <npc> personally thanks you for bringing them home, even before your communicator notifies you of a resource allocation of <payment>.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t\t`Worried that they would never see the Embers again, the captain of the <npc> personally thanks you for bringing them home, even before your communicator notifies you of a resource allocation of <payment>.`",
+   "english_hash": "0a6c5c3113d47a08"
+  },
+  {
+   "idx": 2,
+   "id": "mission:Remnant: Rescue 5|You have returned, but there is still no word from the missing ship.|706|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 706,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 5",
+   "english": "You have returned, but there is still no word from the missing ship.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t\t`You have returned, but there is still no word from the missing ship.`",
+   "english_hash": "4edfba94c3148738"
+  },
+  {
+   "idx": 3,
+   "id": "mission:Remnant: Disable 1|name|712|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 712,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Disable 1",
+   "english": "Disable Damaged Dathnak A'awoj",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tname \"Disable Damaged Dathnak A'awoj\"",
+   "english_hash": "37cfbcf8a2f1a43a"
+  },
+  {
+   "idx": 4,
+   "id": "mission:Remnant: Disable 1|description|713|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 713,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Disable 1",
+   "english": "A damaged Dathnak A'awoj is stuck in a newly accessible system, near Postverta. It has a large civilian population so we ask you to only disable it to avoid an atrocity. Once you return to <planet> you will receive a logistics adjustment of <payment>.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"A damaged Dathnak A'awoj is stuck in a newly accessible system, near Postverta. It has a large civilian population so we ask you to only disable it to avoid an atrocity. Once you return to <planet> you will receive a logistics adjustment of <payment>.\"",
+   "english_hash": "38a955f00e227f03"
+  },
+  {
+   "idx": 5,
+   "id": "mission:Remnant: Disable 1|dialog|730|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 730,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Disable 1",
+   "english": "You have disabled the Dathnak A'awoj. Time to report back to <planet>.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tdialog `You have disabled the Dathnak A'awoj. Time to report back to <planet>.`",
+   "english_hash": "d03b19c9d0056587"
+  },
+  {
+   "idx": 6,
+   "id": "mission:Remnant: Disable 1|dialog|732|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 732,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Disable 1",
+   "english": "You've landed on <planet>, but the stuck Dathnak A'awoj has not been disabled yet. Hunt it down and disable it before returning.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tdialog `You've landed on <planet>, but the stuck Dathnak A'awoj has not been disabled yet. Hunt it down and disable it before returning.`",
+   "english_hash": "61206c40ca7cd15b"
+  },
+  {
+   "idx": 7,
+   "id": "mission:Remnant: Disable 1|dialog|734|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 734,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Disable 1",
+   "english": "The Remnant are puzzled at your aborting of this mission, but they tell you they will send someone else to do this work. They advise you they will prioritize other teams for these missions in the future.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tdialog `The Remnant are puzzled at your aborting of this mission, but they tell you they will send someone else to do this work. They advise you they will prioritize other teams for these missions in the future.`",
+   "english_hash": "60d33f733aaff132"
+  },
+  {
+   "idx": 8,
+   "id": "mission:Remnant: Disable 1|dialog|737|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 737,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Disable 1",
+   "english": "You were unable to disable the Dathnak A'awoj without destroying it... The Remnant will not be pleased...",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tdialog `You were unable to disable the Dathnak A'awoj without destroying it... The Remnant will not be pleased...`",
+   "english_hash": "6d1e48b3fd676cd1"
+  },
+  {
+   "idx": 9,
+   "id": "mission:Remnant: Disable 1|dialog|741|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 741,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Disable 1",
+   "english": "A Remnant military prefect thanks you for disabling the Dathnak A'awoj <npc>, and gives you the agreed-upon logistics adjustment of <payment>.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\t\tdialog \"A Remnant military prefect thanks you for disabling the Dathnak A'awoj <npc>, and gives you the agreed-upon logistics adjustment of <payment>.\"",
+   "english_hash": "715f874d8b5c86ba"
+  }
+ ]
+}

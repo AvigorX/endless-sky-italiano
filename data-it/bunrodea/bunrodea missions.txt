@@ -1,0 +1,220 @@
+# Copyright (c) 2023 by Amazinite
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "First Contact: Bunrodea (Hostile)"
+	landing
+	name "An Intriguing Invitation"
+	description "Hai ricevuto un invito, o forse una convocazione, nel sistema indicato da parte di alieni simili a mantidi che sembrano averti seguito in giro per lo spazio umano."
+	source
+		near "Sol" 0 100
+		not attributes "urban" "station"
+		attributes "spaceport"
+	destination "Erabuthro"
+	clearance "After hailing the planet the map pointed you towards, you hear an alien voice respond. Before you can think of what to say, the small device that the aliens threw at you on <origin> responds for you. The voice on the other end says something short, then cuts the feed. It seems like you've been cleared to land."
+	to offer
+		random < 10
+		or
+			"reputation: Bunrodea" < 1
+			"reputation: Bunrodea (Megasa)" < 1
+			"reputation: Bunrodea (Erabu)" < 1
+			"reputation: Bunrodea (Guard)" < -1
+	
+	on offer
+		"bunrodea: guard rep" = "reputation: Bunrodea (Guard)"
+		"bunrodea: megasa rep" = "reputation: Bunrodea (Megasa)"
+		"bunrodea: erabu rep" = "reputation: Bunrodea (Erabu)"
+		"bunrodea: normal rep" = "reputation: Bunrodea"
+		conversation
+			`Quando scendi dalla nave, sussulti: una piccola astronave aliena si sta rendendo visibile proprio davanti a te. Ne scendono due eleganti creature simili a mantidi, ognuna con un'arma dall'aspetto strano puntata dritta verso di te. Hanno quattro lunghe zampe da insetto e due braccia. Sebbene le braccia terminino in qualcosa che sembra una mano, hanno anche strane strutture simili ad artigli che le racchiudono in parte, estendendosi in avanti dall'avambraccio per impugnare le armi. Ti guardi intorno per vedere se qualcun altro stia assistendo alla scena, ma sei atterrato nello spazioporto principale di <origin> nel cuore della notte, e sei l'unico umano in vista.`
+			`	Gli alieni cominciano a parlarti in una lingua che non capisci, le loro parole intervallate da rumori di clic. Quando uno dei due parla, suona quasi robotico, come se parlasse attraverso un sintetizzatore. Guardando meglio, noti quelle che puoi solo supporre siano modifiche cibernetiche su alcune parti del corpo dell'alieno: la gola e uno degli occhi sembrano non organici, così come le articolazioni delle zampe. L'altro però non ha modifiche visibili di questo tipo.`
+			choice
+				`	"Vieni in pace?"`
+				`	"Non capisco una parola di quello che dici."`
+				`	"Non sparare! Ti porto dal mio capo."`
+			`	Gli alieni si guardano e si scambiano qualche parola. Uno di loro prende un piccolo dispositivo da una cintura e lo getta a terra davanti a te.`
+			choice
+				`	(Raccoglilo.)`
+				`	(Schiva e mettiti al riparo.)`
+					goto dodge
+			`	Raccogli il dispositivo e lo guardi. Ti scatta aperto in mano, facendoti sobbalzare e cadere. Dopo che è caduto a terra, inizia a proiettare una mappa stellare olografica. Riconosci alcuni dei sistemi sulla mappa: sono quelli dove hai combattuto una flotta aliena, fatta di navi simili a quella davanti a te. Un solo sistema in quella regione è evidenziato. Gli alieni tornano sulla loro nave, che diventa di nuovo invisibile, e anche se non riesci a vederla, la senti decollare e allontanarsi.`
+				accept
+			label dodge
+			`	Schivi e ti metti al riparo dietro la tua nave. Dopo qualche secondo senti un rumore di scatto. Quando ti affacci da dietro la nave, gli alieni sono spariti e il dispositivo che ti hanno lanciato sta proiettando una mappa stellare olografica. Riconosci alcuni dei sistemi sulla mappa: sono quelli dove hai combattuto una flotta aliena, fatta di navi simili a quella davanti a te. Un solo sistema in quella regione è evidenziato. La nave aliena diventa di nuovo invisibile, e anche se non riesci a vederla, la senti decollare e allontanarsi.`
+				accept
+	
+	on accept
+		"reputation: Bunrodea" = 0
+		"reputation: Bunrodea (Guard)" = 0
+		"reputation: Bunrodea (Megasa)" = 0
+		"reputation: Bunrodea (Erabu)" = 0
+	
+	on complete
+		"reputation: Bunrodea" = 10
+		conversation
+			`Entrando nell'atmosfera, ti affiancano due grandi navi aliene che ti guidano verso la superficie, portandoti a una zona di atterraggio precisa. Quando esci dalla nave, ti accolgono due alieni simili a quelli che ti avevano fatto sussultare su <origin>, armi comprese.`
+			`	Mentre ti prendi un momento per guardarti intorno, ti ritrovi nel bel mezzo di una metropoli enorme. Grattacieli più alti di qualsiasi cosa tu abbia mai visto nello spazio umano coprono l'orizzonte, anche se la maggior parte degli edifici intorno a te sembra di architettura molto più elegante. Proprio davanti c'è un grande palazzo con una quantità considerevole di gradini che portano alle porte d'ingresso.`
+			`	Fai un passo avanti, ma uno degli alieni dice qualcosa agitando l'arma, e capisci al volo che non dovresti muoverti adesso. L'altro parla in un dispositivo di comunicazione, poi si siede a terra e ti fa cenno di fare lo stesso. Sospetti che dovrai aspettare qui per un po'.`
+			choice
+				`	(Siediti.)`
+					goto sit
+				`	(Girati e rientra nella mia nave.)`
+			`	Rientri nella nave e gli alieni non ti fermano. Decidi di riaccenderla e di provare a decollare, ma proprio mentre cerchi di attivare i motori repulsori senti un forte ronzio provenire dall'esterno. Ti affacci alla finestra più vicina e vedi che gli alieni hanno portato un qualche veicolo vicino alla tua nave, che ronza di energia. Provi a decollare, ma i motori repulsori non ti spostano di un metro. Il veicolo sembra disattivare tutti i repulsori nelle vicinanze.`
+			choice
+				`	(Colpisci il veicolo con una torretta.)`
+					to display
+						"flagship base attribute: turret mounts" > "flagship attribute: turret mounts"
+				`	(Esci dalla nave e siediti con gli alieni.)`
+					goto leave
+			action
+				"reputation: Bunrodea" = -10
+				"reputation: Bunrodea (Guard)" = -10
+				"reputation: Bunrodea (Megasa)" = -10
+				"reputation: Bunrodea (Erabu)" = -10
+			`	Giri una delle torrette verso il veicolo e spari, poi cerchi subito di sollevarti. Sembra che il colpo abbia distrutto il veicolo o lo abbia disturbato abbastanza da permetterti di sfuggire alla sua influenza, mentre la nave sale rapidamente nell'atmosfera. Però non sembra che gli alieni abbiano gradito il gesto: cominci a vedere navi che ti prendono di mira sul radar.`
+				flee
+			label leave
+			`	Esci dalla nave e ti siedi sulla rampa d'imbarco. Gli alieni che ti sorvegliano non sembrano preoccuparsi che tu abbia appena provato ad andartene.`
+				goto intro
+			label sit
+			`	Ti siedi sulla rampa d'imbarco della nave e guardi il panorama mentre aspetti.`
+			label intro
+			`	Dopo un po', alzi lo sguardo verso i gradini del palazzo e noti una creatura a sei arti, diversa dagli alieni simili a mantidi che ti sorvegliano. Mentre scende lentamente e arriva agli ultimi gradini, gli alieni di guardia si mettono sull'attenti. Ti chiedi se per tutto questo tempo non stessi aspettando altro che il momento in cui questo alieno avrebbe raggiunto il fondo delle scale.`
+			`	La creatura ti si avvicina su tutte e sei le zampe, ma si alza sulle due posteriori quando è a pochi passi da te. È piuttosto piccola: a tutta altezza le arriva a malapena al mento, con grandi occhi rotondi e un naso grosso e bulboso. Allunga le quattro braccia, mostrando i palmi delle mani. A parte il viso e i palmi, è coperta da un sottile strato di pelliccia bruno dorata. Comincia a parlare. Non capisci cosa dica, ma sembra passare in rassegna varie lingue diverse e fare una pausa dopo ogni frase, perché ogni frase suona completamente diversa dalla precedente. Sussulti quando dice perfettamente: "Salve."`
+			choice
+				`	"Salve?"`
+				`	"Aspetta, ripetilo."`
+			label loop
+			`	"Salve," ripete la creatura. "Salve. Salve. Salve," continua a dire.`
+			choice
+				`	"Sai dire qualcos'altro?"`
+				`	"Come fai a conoscere la mia lingua?"`
+					goto language
+				`	"Salve."`
+					goto loop
+			`	"Sai dire qualcos'altro?" ti ripete.`
+				goto human
+			label language
+			`	"Come fai a conoscere la mia lingua?" ti ripete.`
+			label human
+			`	"Umano?" chiede.`
+			choice
+				`	"Sì, sono un umano."`
+				`	"Ma tu cosa sei?"`
+			`	"Umano," si dice con sicurezza. "Umano. Umano. Umano," ripete, guardandosi intorno come se cercasse qualcosa nella propria mente. "Cento... anni fa. Umano," dice.`
+			choice
+				`	"Non sono il primo umano a venire qui?"`
+				`	"Cosa vuoi dire con cento anni fa?"`
+			`	"Visitatori umani, molti anni fa," dice. "Non importante. La Regina desidera la tua presenza." Poi dice qualcosa in una lingua che gli alieni simili a mantidi capiscono, e loro ti fanno cenno di seguirli mentre il piccolo alieno si incammina verso i gradini del palazzo. Hai la sensazione che la prossima mezz'ora sarà un calvario.`
+			`	Finalmente arrivi in cima alle scale del palazzo completamente esausto, anche se gli alieni che ti accompagnano sembrano del tutto imperturbabili.`
+			`	Gli alieni ti conducono dentro il palazzo e attraverso vari corridoi eleganti. Le pareti sono rivestite di statue di marmo e dipinti che sembrano raffigurare personaggi ed eventi storici di questa razza aliena, anche se non ti è permesso fermarti abbastanza da guardarli bene.`
+			`	Alla fine ti avvicini a una grande porta ornata che gli alieni spingono, rivelando quella che dev'essere la sala del trono della Regina. È una stanza lunga e stretta, rivestita di vetrate istoriate, con quella che supponi essere la sedia del trono dove siede la Regina aliena. La Regina appartiene alla specie simile alle mantidi ed è considerevolmente più grande di quelle che ti fanno da guardia.`
+			`	La piccola creatura dice qualcosa alla Regina mentre ti avvicini, e la Regina risponde. La creatura si gira verso di te per tradurre.`
+			branch royalty
+				"bunrodea: erabu rep" < 1
+			branch guard
+				"bunrodea: guard rep" < -1
+			branch civi
+				"bunrodea: normal rep" < 1
+			`	"Sento che hai attaccato uno dei miei Megasa."`
+			choice
+				`	"Uno dei tuoi cosa?"`
+					goto megasa
+				`	"Mi stavo solo difendendo."`
+					goto lie
+				`	"È vero, e per questo mi scuso."`
+					goto apologize
+				`	"Va bene, e allora?"`
+					goto and
+			
+			label civi
+			`	"Sento che hai attaccato uno dei miei civili."`
+			choice
+				`	"Mi stavo solo difendendo."`
+					goto lie
+				`	"È vero, e per questo mi scuso."`
+					goto apologize
+				`	"Va bene, e allora?"`
+					goto and
+			
+			label guard
+			`	"Sento che hai combattuto contro un membro della mia guardia."`
+			choice
+				`	"Mi stavo solo difendendo."`
+					goto defending
+				`	"Ehi, se lo meritavano. Hanno attaccato loro per primi."`
+					goto attacked
+				`	"È vero, e per questo mi scuso."`
+					goto apologize
+				`	"Va bene, e allora?"`
+					goto and
+			
+			label royalty
+			`	"Sento che hai attaccato uno dei miei Erabu."`
+			choice
+				`	"Uno dei tuoi cosa?"`
+					goto erabu
+				`	"Mi stavo solo difendendo."`
+					goto lie
+				`	"È vero, e per questo mi scuso."`
+					goto apologize
+				`	"Va bene, e allora?"`
+					goto and
+			
+			
+			label erabu
+			`	Mentre la piccola creatura traduce per te, la Regina sembra ridere in uno strano modo, con un suono di cinguettio. "Gli Erabu sono gli aristocratici della mia terra. Attaccarli è un grave reato," traduce la creatura per la Regina. "Cosa hai da dire a tua discolpa?"`
+				goto rechoice
+			
+			label megasa
+			`	Mentre la piccola creatura traduce per te, la Regina sembra ridere in uno strano modo, con un suono di cinguettio. "I Megasa sono i più umili del mio popolo, ma pur sempre mio popolo, da difendere," traduce la creatura per la Regina. "Cosa hai da dire a tua discolpa?"`
+			
+			label rechoice
+			choice
+				`	"Chiunque io abbia attaccato, mi stavo solo difendendo."`
+					goto lie
+				`	"Beh, allora per questo mi scuso."`
+					goto apologize
+				`	"Va bene, e allora?"`
+					goto and
+			
+			label defending
+			`	Mentre la piccola creatura traduce per te, la Regina sembra ridere in uno strano modo, con un suono di cinguettio. "Sì, la mia guardia reale è piuttosto... ansiosa di difendere, e per questo mi scuso," traduce la creatura mentre la Regina parla. "Ma la mia guardia reale farebbe davvero il proprio dovere se non difendesse le mie terre da minacce sconosciute? Anche se, forse, potrebbe essere più paziente nel valutare le minacce vere. Potrei punire i responsabili, ma sembra che tu abbia già sistemato chi ti ha offeso."`
+				goto slighted
+			
+			label attacked
+			`	Mentre la piccola creatura traduce per te, la Regina sembra ridere in uno strano modo, con un suono di cinguettio. "Meritato, dici?" traduce la creatura mentre la Regina parla. "Ma la mia guardia reale farebbe davvero il proprio dovere se non difendesse le mie terre da minacce sconosciute? Anche se, forse, potrebbe essere più paziente nel valutare le minacce vere. Potrei punire i responsabili, ma sembra che tu abbia già sistemato chi ti ha offeso."`
+				goto slighted
+			
+			label lie
+			`	Mentre la piccola creatura traduce per te, la Regina scende dal trono e si avvicina. Allunga le zampe così da torreggiare su di te per almeno il doppio della tua altezza. Parla, e la creatura traduce. "Quanto sei sfacciato, a mentire così davanti alla più alta autorità reale. O sei estremamente coraggioso, o estremamente stupido." La Regina si volta e torna al trono. "Mostrerò clemenza, solo per questa volta. Ma non sarai così fortunato la prossima."`
+				goto threatened
+			
+			label and
+			`	Mentre la piccola creatura traduce per te, la Regina scende dal trono e si avvicina. Allunga le zampe così da torreggiare su di te per almeno il doppio della tua altezza. Parla, e la creatura traduce. "Quanto sei sfacciato, a parlare così davanti alla più alta autorità reale. O sei estremamente coraggioso, o estremamente stupido." La Regina si volta e torna al trono. "Mostrerò clemenza, solo per questa volta. Ma non sarai così fortunato la prossima."`
+				goto threatened
+			
+			label apologize
+			`	Mentre la piccola creatura traduce per te, la Regina sembra sorridere. "Una scusa. Una risposta davvero... inattesa," continua a tradurre la creatura per la Regina. "Di solito, chi ha offeso la Regina cerca di giustificarsi. Le tue scuse sono accettate."`
+			`	La Regina fa cenno a una delle guardie e le dice qualcosa che la creatura non traduce. Poi parla a te, e la creatura traduce: "Poiché ti sei scusato, ti sarà permesso vivere. Alle mie guardie è stato ordinato di lasciarti in pace, e potrai entrare e uscire da un piccolo numero dei nostri mondi. Ma questo solo perché tu non causi altri guai e per permetterti di rifornire, se stai attraversando i miei sistemi. La tua presenza sarà soltanto tollerata, non gradita. Ora, per favore, lascia la mia corte."`
+				goto end
+			
+			label threatened
+			`	La Regina fa cenno a una delle guardie e le dice qualcosa che la creatura non traduce. Poi parla a te, e la creatura traduce: "Poiché ti ho mostrato clemenza, ti sarà permesso vivere. Alle mie guardie è stato ordinato di lasciarti in pace, e potrai entrare e uscire da un piccolo numero dei nostri mondi. Ma questo solo perché tu non causi altri guai e per permetterti di rifornire, se stai attraversando i miei sistemi. La tua presenza sarà soltanto tollerata, non gradita. Ora, per favore, lascia la mia corte."`
+				goto end
+			
+			label slighted
+			`	La Regina fa cenno a una delle guardie e le dice qualcosa che la creatura non traduce. Poi parla a te, e la creatura traduce: "Poiché sono le mie guardie ad averti mostrato mancanza di rispetto, ti sarà permesso vivere. Alle mie guardie è stato ordinato di lasciarti in pace, e potrai entrare e uscire da un piccolo numero dei nostri mondi. Ma questo solo perché tu non causi altri guai e per permetterti di rifornire, se stai attraversando i miei sistemi. La tua presenza sarà soltanto tollerata, non gradita. Ora, per favore, lascia la mia corte."`
+			
+			label end
+			`	Sei accompagnato fuori dalla sala del trono e la piccola creatura ti dice di andartene appena raggiungi la nave. Esci dal palazzo e ti rendi conto che devi affrontare di nuovo le scale. Fai un respiro profondo e ti prepari alla lunga discesa.`
+				launch

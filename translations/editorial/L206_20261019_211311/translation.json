@@ -1,0 +1,231 @@
+{
+ "block": {
+  "path": "data/coalition/coalition news.txt",
+  "line_from": 28,
+  "line_to": 94,
+  "units": 20
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:heliarch news|After the latest report on how the Heliarchs arrested some terrorists on a nearby world, the news shows various short clips with the same message, asking the public to \"stay vigilant\" and report any and all suspicious activity.|28|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 28,
+   "kind": "NEWS",
+   "context": "news:heliarch news",
+   "english": "After the latest report on how the Heliarchs arrested some terrorists on a nearby world, the news shows various short clips with the same message, asking the public to \"stay vigilant\" and report any and all suspicious activity.",
+   "italian": "Dopo l'ultimo servizio sull'arresto di alcuni terroristi da parte degli Heliarch su un mondo vicino, il notiziario manda in onda diversi brevi filmati con lo stesso messaggio, che chiedono al pubblico di \"restare vigili\" e di segnalare qualsiasi attività sospetta.",
+   "ratio": 1.163
+  },
+  {
+   "idx": 2,
+   "id": "news:longcow rancher|\"Caring for longcows, hard work it is. Too much space they take up. Too many legs.\"|52|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 52,
+   "kind": "NEWS",
+   "context": "news:longcow rancher",
+   "english": "\"Caring for longcows, hard work it is. Too much space they take up. Too many legs.\"",
+   "italian": "\"Occuparsi dei longcow, un duro lavoro è. Troppo spazio occupano. Troppe zampe.\"",
+   "ratio": 0.964
+  },
+  {
+   "idx": 3,
+   "id": "news:longcow rancher|\"Never been around an angry longcow, have you? Word of advice, avoid their sides you should.\"|53|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 53,
+   "kind": "NEWS",
+   "context": "news:longcow rancher",
+   "english": "\"Never been around an angry longcow, have you? Word of advice, avoid their sides you should.\"",
+   "italian": "\"Mai stato vicino a un longcow arrabbiato, vero? Un consiglio ti do: i loro fianchi evitare dovresti.\"",
+   "ratio": 1.097
+  },
+  {
+   "idx": 4,
+   "id": "news:longcow rancher|\"Stopped using vaccines on longcows, long ago we did. Remember which leg to apply them on, we never could.\"|54|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 54,
+   "kind": "NEWS",
+   "context": "news:longcow rancher",
+   "english": "\"Stopped using vaccines on longcows, long ago we did. Remember which leg to apply them on, we never could.\"",
+   "italian": "\"Smettere di usare i vaccini sui longcow, molto tempo fa abbiamo fatto. Ricordare su quale zampa applicarli, non ci siamo mai riusciti.\"",
+   "ratio": 1.271
+  },
+  {
+   "idx": 5,
+   "id": "news:longcow rancher|\"Wish understand my jokes, my beauties could. Many kicks out of them, they would get.\"|55|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 55,
+   "kind": "NEWS",
+   "context": "news:longcow rancher",
+   "english": "\"Wish understand my jokes, my beauties could. Many kicks out of them, they would get.\"",
+   "italian": "\"Le mie battute capissero, le mie bellezze vorrei. Un sacco di calci, ne ricaverebbero.\"",
+   "ratio": 1.023
+  },
+  {
+   "idx": 6,
+   "id": "news:longcow rancher|\"Fresh steak here! First leg steak, second leg steak... a discount for tenth leg steak there is!\"|56|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 56,
+   "kind": "NEWS",
+   "context": "news:longcow rancher",
+   "english": "\"Fresh steak here! First leg steak, second leg steak... a discount for tenth leg steak there is!\"",
+   "italian": "\"Bistecca fresca qui! Bistecca di prima zampa, bistecca di seconda zampa... uno sconto per la bistecca di decima zampa c'è!\"",
+   "ratio": 1.278
+  },
+  {
+   "idx": 7,
+   "id": "news:kimek farmer|\"When starting out on this business, I was, lost in the farm I got. Tricky to tell where you are, it is, when green is all you see.\"|69|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 69,
+   "kind": "NEWS",
+   "context": "news:kimek farmer",
+   "english": "\"When starting out on this business, I was, lost in the farm I got. Tricky to tell where you are, it is, when green is all you see.\"",
+   "italian": "\"All'inizio di questo mestiere, ero, perso nella fattoria mi sono ritrovato. Difficile capire dove ti trovi, è, quando tutto quello che vedi è verde.\"",
+   "ratio": 1.136
+  },
+  {
+   "idx": 8,
+   "id": "news:kimek farmer|\"A Heliarch agent, I once was. Too stressful, it was for me, so this job I took. Messages from colleagues, I still get, but if see the fruits I plant here, they could, definitely join me, they would.\"|70|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 70,
+   "kind": "NEWS",
+   "context": "news:kimek farmer",
+   "english": "\"A Heliarch agent, I once was. Too stressful, it was for me, so this job I took. Messages from colleagues, I still get, but if see the fruits I plant here, they could, definitely join me, they would.\"",
+   "italian": "\"Un agente Heliarch, una volta ero. Troppo stressante, era per me, così questo lavoro ho preso. Messaggi dai colleghi, ricevo ancora, ma se vedessero i frutti che pianto qui, potrebbero, di sicuro si unirebbero a me.\"",
+   "ratio": 1.085
+  },
+  {
+   "idx": 9,
+   "id": "news:kimek farmer|\"Some fresh produce would you like, Captain? If purchase these, you do, teach you a family recipe I could. I'm sure that love it, a human would. Probably.\"|71|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 71,
+   "kind": "NEWS",
+   "context": "news:kimek farmer",
+   "english": "\"Some fresh produce would you like, Captain? If purchase these, you do, teach you a family recipe I could. I'm sure that love it, a human would. Probably.\"",
+   "italian": "\"Un po' di prodotti freschi vorresti, Capitano? Se questi acquisti, insegnarti una ricetta di famiglia potrei. Sono sicuro che la amerebbe, un umano. Probabilmente.\"",
+   "ratio": 1.065
+  },
+  {
+   "idx": 10,
+   "id": "news:kimek farmer|Dozens of farmers in different stands call out to you as you walk by the spaceport, asking you to take a look at the special prices of today's \"food expo.\" You later look into it, and turns out yesterday there also was an expo, as well as the day before that. Tomorrow's starts the moment today's ends.|73|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 73,
+   "kind": "NEWS",
+   "context": "news:kimek farmer",
+   "english": "Dozens of farmers in different stands call out to you as you walk by the spaceport, asking you to take a look at the special prices of today's \"food expo.\" You later look into it, and turns out yesterday there also was an expo, as well as the day before that. Tomorrow's starts the moment today's ends.",
+   "italian": "Decine di contadini, da banchi diversi, ti chiamano mentre attraversi lo spazioporto e ti invitano a dare un'occhiata ai prezzi speciali della \"fiera del cibo\" di oggi. Più tardi ci guardi meglio e scopri che ieri c'era un'altra fiera, e anche il giorno prima. Quella di domani comincia appena finisce quella di oggi.",
+   "ratio": 1.05
+  },
+  {
+   "idx": 11,
+   "id": "news:heliarch agent|\"Protect and serve.\"|83|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 83,
+   "kind": "NEWS",
+   "context": "news:heliarch agent",
+   "english": "\"Protect and serve.\"",
+   "italian": "\"Proteggere e servire.\"",
+   "ratio": 1.15
+  },
+  {
+   "idx": 12,
+   "id": "news:heliarch agent|\"If any assistance you need, at your disposal I am.\"|84|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 84,
+   "kind": "NEWS",
+   "context": "news:heliarch agent",
+   "english": "\"If any assistance you need, at your disposal I am.\"",
+   "italian": "\"Se qualche assistenza ti serve, a tua disposizione sono.\"",
+   "ratio": 1.115
+  },
+  {
+   "idx": 13,
+   "id": "news:heliarch agent|\"If any trouble you find, report it to us you must.\"|85|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 85,
+   "kind": "NEWS",
+   "context": "news:heliarch agent",
+   "english": "\"If any trouble you find, report it to us you must.\"",
+   "italian": "\"Se qualche guaio trovi, riferirlo a noi devi.\"",
+   "ratio": 0.904
+  },
+  {
+   "idx": 14,
+   "id": "news:heliarch agent|\"Saryd, Kimek, Arach, human, no matter what species, to protect all of our citizens, committed we are.\"|86|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 86,
+   "kind": "NEWS",
+   "context": "news:heliarch agent",
+   "english": "\"Saryd, Kimek, Arach, human, no matter what species, to protect all of our citizens, committed we are.\"",
+   "italian": "\"Saryd, Kimek, Arach, umani, qualunque specie, proteggere tutti i nostri cittadini, impegnati siamo.\"",
+   "ratio": 0.981
+  },
+  {
+   "idx": 15,
+   "id": "news:heliarch agent|\"Enjoy my post well enough, I do, but still to get a break during the Coalition Games to watch them, I am.\"|87|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 87,
+   "kind": "NEWS",
+   "context": "news:heliarch agent",
+   "english": "\"Enjoy my post well enough, I do, but still to get a break during the Coalition Games to watch them, I am.\"",
+   "italian": "\"Il mio incarico mi piace abbastanza, ma comunque, una pausa durante i Giochi della Coalizione per guardarli, aspettando sto.\"",
+   "ratio": 1.178
+  },
+  {
+   "idx": 16,
+   "id": "news:heliarch agent|\"Part of a Punisher crew, I am. Land, refuel, rest, and back to working on that magnificent ship, I do!\"|88|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 88,
+   "kind": "NEWS",
+   "context": "news:heliarch agent",
+   "english": "\"Part of a Punisher crew, I am. Land, refuel, rest, and back to working on that magnificent ship, I do!\"",
+   "italian": "\"Parte di un equipaggio di Punisher, sono. Atterrare, rifornire, riposare, e di nuovo al lavoro su quella nave magnifica, torno!\"",
+   "ratio": 1.24
+  },
+  {
+   "idx": 17,
+   "id": "news:heliarch agent|\"Offered the position of magister, I actually have been. Only, not interested in that governing activity, I am.\"|89|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 89,
+   "kind": "NEWS",
+   "context": "news:heliarch agent",
+   "english": "\"Offered the position of magister, I actually have been. Only, not interested in that governing activity, I am.\"",
+   "italian": "\"Offerto il posto di magister, sono stato davvero. Solo che, non interessato a quell'attività di governo, sono.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "news:heliarch agent|\"Apologies, but make haste I must. Gone missing some garrison guns have, and back to cleaning Stalker engines I will be, if find them I don't!\"|90|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 90,
+   "kind": "NEWS",
+   "context": "news:heliarch agent",
+   "english": "\"Apologies, but make haste I must. Gone missing some garrison guns have, and back to cleaning Stalker engines I will be, if find them I don't!\"",
+   "italian": "\"Chiedo scusa, ma affrettarmi devo. Spariti alcuni fucili della guarnigione sono, e di nuovo a pulire i motori degli Stalker tornerò, se non li trovo!\"",
+   "ratio": 1.056
+  },
+  {
+   "idx": 19,
+   "id": "news:heliarch agent|\"Difficult sometimes it is, to be a mediator. If careful with my words I am not, a Saryd might think an Arach talking about longcows has insulted their mother.\"|91|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 91,
+   "kind": "NEWS",
+   "context": "news:heliarch agent",
+   "english": "\"Difficult sometimes it is, to be a mediator. If careful with my words I am not, a Saryd might think an Arach talking about longcows has insulted their mother.\"",
+   "italian": "\"Difficile a volte è, fare il mediatore. Se attento alle mie parole non sono, un Saryd potrebbe pensare che un Arach che parla di longcow abbia insultato sua madre.\"",
+   "ratio": 1.031
+  },
+  {
+   "idx": 20,
+   "id": "news:heliarch agent|\"A pilot, I once was. Learned from an older sibling, I did.\"|94|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 94,
+   "kind": "NEWS",
+   "context": "news:heliarch agent",
+   "english": "\"A pilot, I once was. Learned from an older sibling, I did.\"",
+   "italian": "\"Pilota, una volta ero. Imparato da un fratello maggiore, ho.\"",
+   "ratio": 1.033
+  }
+ ]
+}

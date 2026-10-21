@@ -1,0 +1,33 @@
+{
+ "block": {
+  "path": "data/globals.txt",
+  "line_from": 36,
+  "line_to": 37,
+  "units": 2
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Hai Start Unlocked|By completing the <campaign> campaign and discovering the conflict between the Hai and Unfettered Hai, you have unlocked the \"Hai Origins\" start for future playthroughs.|36|0",
+   "path": "data/globals.txt",
+   "line": 36,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Hai Start Unlocked",
+   "english": "By completing the <campaign> campaign and discovering the conflict between the Hai and Unfettered Hai, you have unlocked the \"Hai Origins\" start for future playthroughs.",
+   "italian": "Completando la campagna <campaign> e scoprendo il conflitto fra gli Hai e gli Unfettered Hai, hai sbloccato l'inizio \"Hai Origins\" per le partite future.",
+   "ratio": 0.905
+  },
+  {
+   "idx": 2,
+   "id": "mission:Hai Start Unlocked|\t(To begin a new game with this start, open the \"Manage Pilots\" panel on the main menu and select \"New Pilot.\")|37|0",
+   "path": "data/globals.txt",
+   "line": 37,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Hai Start Unlocked",
+   "english": "\t(To begin a new game with this start, open the \"Manage Pilots\" panel on the main menu and select \"New Pilot.\")",
+   "italian": "\t(Per iniziare una nuova partita con questo inizio, apri il pannello \"Gestisci piloti\" dal menu principale e scegli \"Nuovo pilota\".)",
+   "ratio": 1.189
+  }
+ ]
+}

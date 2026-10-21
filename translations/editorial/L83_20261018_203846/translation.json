@@ -1,0 +1,132 @@
+{
+ "block": {
+  "path": "data/successors/predecessors.txt",
+  "line_from": 401,
+  "line_to": 520,
+  "units": 11
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:\"Torji,\" Lethal Sight|description|446|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 446,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Torji,\" Lethal Sight",
+   "english": "Resja designed a complex loading system to enable this weapon to fire as quickly as it does. The drone ship Queru was built around it, a paired ship and weapon to surpass at range all prior designs of the Myiara.",
+   "italian": "Resja designed a complex loading system to enable this weapon to fire as quickly as it does. The drone ship Queru was built around it, a paired ship and weapon to surpass at range all prior designs of the Myiara.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Crimson Halo|description|461|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 461,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Crimson Halo",
+   "english": "Resja's ships didn't need shields for defense - only as fuel for powering their various aggressive technologies. Their favored shield cortex is unusually powerful for its size, though it proves much less useful for intercepting damage than for its intended purpose, feeding energy back into a starship's systems.",
+   "italian": "Resja's ships didn't need shields for defense - only as fuel for powering their various aggressive technologies. Their favored shield cortex is unusually powerful for its size, though it proves much less useful for intercepting damage than for its intended purpose, feeding energy back into a starship's systems.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Visions of Rime|description|475|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 475,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Visions of Rime",
+   "english": "Radiating excess heat through a starship's shield matrix, this compact, ancient cooling system is strikingly efficient. On Resja's furious drone ships, the shield strength that this saps is all but insignificant, but on lesser craft it may come with a cost to endurance.",
+   "italian": "Radiating excess heat through a starship's shield matrix, this compact, ancient cooling system is strikingly efficient. On Resja's furious drone ships, the shield strength that this saps is all but insignificant, but on lesser craft it may come with a cost to endurance.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Valkkyiara-Khorasaqra|plural|483|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 483,
+   "kind": "VALUE",
+   "context": "ship:Valkkyiara-Khorasaqra",
+   "english": "Valkkyiara-Khorasaqran",
+   "italian": "Valkkyiara-Khorasaqran",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Valkkyiara-Khorasaqra|\"Veusa\" Inductive Thruster|513|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 513,
+   "kind": "TEXT",
+   "context": "ship:Valkkyiara-Khorasaqra",
+   "english": "\"Veusa\" Inductive Thruster",
+   "italian": "\"Veusa\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Valkkyiara-Khorasaqra|\"Veusa\" Inductive Steering|514|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 514,
+   "kind": "TEXT",
+   "context": "ship:Valkkyiara-Khorasaqra",
+   "english": "\"Veusa\" Inductive Steering",
+   "italian": "\"Veusa\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Valkkyiara-Khorasaqra|\"Ija\" Heirloom Reactor|515|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 515,
+   "kind": "TEXT",
+   "context": "ship:Valkkyiara-Khorasaqra",
+   "english": "\"Ija\" Heirloom Reactor",
+   "italian": "\"Ija\" Heirloom Reactor",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "ship:Valkkyiara-Khorasaqra|Heirloom Power Reserve|516|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 516,
+   "kind": "TEXT",
+   "context": "ship:Valkkyiara-Khorasaqra",
+   "english": "Heirloom Power Reserve",
+   "italian": "Heirloom Power Reserve",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "ship:Valkkyiara-Khorasaqra|\"Jiita\" Heirloom Shielding|517|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 517,
+   "kind": "TEXT",
+   "context": "ship:Valkkyiara-Khorasaqra",
+   "english": "\"Jiita\" Heirloom Shielding",
+   "italian": "\"Jiita\" Heirloom Shielding",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "ship:Valkkyiara-Khorasaqra|\"Sarija\" Heirloom Coilgun|519|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 519,
+   "kind": "TEXT",
+   "context": "ship:Valkkyiara-Khorasaqra",
+   "english": "\"Sarija\" Heirloom Coilgun",
+   "italian": "\"Sarija\" Heirloom Coilgun",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "ship:Valkkyiara-Khorasaqra|\"Tijra\" Heirloom Lance|520|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 520,
+   "kind": "TEXT",
+   "context": "ship:Valkkyiara-Khorasaqra",
+   "english": "\"Tijra\" Heirloom Lance",
+   "italian": "\"Tijra\" Heirloom Lance",
+   "ratio": 1.0
+  }
+ ]
+}

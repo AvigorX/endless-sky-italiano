@@ -1,0 +1,132 @@
+{
+ "block": {
+  "path": "data/remnant/remnant events.txt",
+  "line_from": 217,
+  "line_to": 1417,
+  "units": 11
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "event:remnant: pantica void sprites|description|217|0",
+   "path": "data/remnant/remnant events.txt",
+   "line": 217,
+   "kind": "DESCRIPTION",
+   "context": "event:remnant: pantica void sprites",
+   "english": "While Esquiline used to be simply another planet the Remnant harvested valuable resources from, the introduction of void sprites and the activation of their station has turned this world into a hidden research lab: The first human astrobiology station studying void sprites.",
+   "italian": "Un tempo Esquiline era solo un altro pianeta da cui i Remnant ricavavano risorse preziose; poi l'introduzione degli void sprite e l'attivazione della loro stazione hanno trasformato questo mondo in un laboratorio di ricerca nascosto: la prima stazione di astrobiologia umana che studia gli void sprite.",
+   "ratio": 1.102
+  },
+  {
+   "idx": 2,
+   "id": "event:remnant: pantica void sprites|spaceport|218|0",
+   "path": "data/remnant/remnant events.txt",
+   "line": 218,
+   "kind": "DESCRIPTION",
+   "context": "event:remnant: pantica void sprites",
+   "english": "Although the facilities here are basic, the Remnant cafeteria boasts a food dispenser that is available at any time, along with a mesmerizing view of the clouds outside. Occasionally a void sprite will pass in front of the window, much to the delight of everyone.",
+   "italian": "Benché le strutture qui siano essenziali, la mensa dei Remnant vanta un distributore di cibo disponibile a qualsiasi ora, oltre a una vista ipnotica sulle nuvole fuori. Ogni tanto uno void sprite passa davanti alla finestra, con gran gioia di tutti.",
+   "ratio": 0.947
+  },
+  {
+   "idx": 3,
+   "id": "event:remnant: ssil vida inhabited|description|277|0",
+   "path": "data/remnant/remnant events.txt",
+   "line": 277,
+   "kind": "DESCRIPTION",
+   "context": "event:remnant: ssil vida inhabited",
+   "english": "The silence of this station rings in your ears, and as you explore you are increasingly surprised that it even has an atmosphere. It is obviously ancient, and patches of ambiguous green and purple material resembling fungus grow through the walls. Whoever built this station designed it for beings much larger than you - either that, or they liked spacious environments. Even the shortest doorway you pass through is easily double your height. They are always wider than they are tall.",
+   "italian": "Il silenzio di questa stazione ti ronza nelle orecchie, e mentre la esplori ti sorprende sempre di più che abbia perfino un'atmosfera. È chiaramente antichissima, e attraverso le pareti crescono chiazze di materiale verde e viola dall'aspetto ambiguo, simili a funghi. Chiunque abbia costruito questa stazione l'ha progettata per esseri molto più grandi di te - o forse amava gli ambienti spaziosi. Anche la porta più bassa che attraversi è facilmente alta il doppio di te. Sono sempre più larghe che alte.",
+   "ratio": 1.043
+  },
+  {
+   "idx": 4,
+   "id": "event:remnant: ssil vida inhabited|description|278|0",
+   "path": "data/remnant/remnant events.txt",
+   "line": 278,
+   "kind": "DESCRIPTION",
+   "context": "event:remnant: ssil vida inhabited",
+   "english": "\tExploring beyond the docks reveals that most of this facility is infrastructure for some type of massive emitter. It is not clear exactly what it's supposed to be emitting, but it might have something to do with how this system appeared in the first place.",
+   "italian": "\tEsplorando oltre i moli scopri che gran parte della struttura è l'infrastruttura di una specie di enorme emettitore. Non è chiaro che cosa dovrebbe emettere, ma potrebbe avere a che fare con il modo in cui questo sistema è comparso in origine.",
+   "ratio": 0.949
+  },
+  {
+   "idx": 5,
+   "id": "event:remnant: ssil vida inhabited|spaceport|279|0",
+   "path": "data/remnant/remnant events.txt",
+   "line": 279,
+   "kind": "DESCRIPTION",
+   "context": "event:remnant: ssil vida inhabited",
+   "english": "The Remnant have set up a fully self-contained base of operations in this part of the station. Independent life support, its own power system, and controls tapping into the rest of station occupy much of the space, while a Research Laboratory and additional equipment fill up the rest. A rudimentary cafeteria, communication links, basic repair equipment, and sleeping quarters round out the amenities of this research camp.",
+   "italian": "I Remnant hanno allestito in questa parte della stazione una base operativa del tutto autosufficiente. Il supporto vitale indipendente, un proprio sistema di alimentazione e i comandi collegati al resto della stazione occupano gran parte dello spazio, mentre un laboratorio di ricerca e altre attrezzature riempiono il resto. Una mensa rudimentale, i collegamenti per le comunicazioni, attrezzature di riparazione di base e alloggi completano i servizi di questo campo di ricerca.",
+   "ratio": 1.132
+  },
+  {
+   "idx": 6,
+   "id": "event:remnant: ssil vida activation|description|338|0",
+   "path": "data/remnant/remnant events.txt",
+   "line": 338,
+   "kind": "DESCRIPTION",
+   "context": "event:remnant: ssil vida activation",
+   "english": "You are not quite sure what Fertriery is. It lacks cohesive edges, and yet it has sufficient atmospheric pressure to threaten the hull integrity of ships not designed for high pressure environments. Despite such density, which would indicate a strong gravitational presence, your sensors are unable to find any kind of core.",
+   "italian": "Non sei del tutto sicuro di che cosa sia Fertriery. Non ha bordi definiti, eppure ha una pressione atmosferica sufficiente a minacciare l'integrità dello scafo delle navi non progettate per ambienti ad alta pressione. Nonostante una densità simile, che indicherebbe una forte presenza gravitazionale, i tuoi sensori non riescono a trovare alcun nucleo.",
+   "ratio": 1.086
+  },
+  {
+   "idx": 7,
+   "id": "event:remnant: ssil vida activation|spaceport|339|0",
+   "path": "data/remnant/remnant events.txt",
+   "line": 339,
+   "kind": "DESCRIPTION",
+   "context": "event:remnant: ssil vida activation",
+   "english": "Delving further into the clouds, it becomes obvious that the entire planet appears to be a mix of gases, aerosols, and suspended particles. Despite this, or perhaps because of it, void sprites appear to thrive in its depths, where they can be seen dancing among energy currents reminiscent of the ion storms.",
+   "italian": "Addentrandoti nelle nuvole, diventa evidente che l'intero pianeta sembra un miscuglio di gas, aerosol e particelle sospese. Nonostante questo, o forse proprio per questo, gli void sprite sembrano prosperare nelle sue profondità, dove li si vede danzare fra correnti di energia che ricordano le tempeste ioniche.",
+   "ratio": 1.01
+  },
+  {
+   "idx": 8,
+   "id": "event:remnant: ssil vida deactivation|description|744|0",
+   "path": "data/remnant/remnant events.txt",
+   "line": 744,
+   "kind": "DESCRIPTION",
+   "context": "event:remnant: ssil vida deactivation",
+   "english": "Fertriery is a fairly typical world with a particularly dense atmosphere that includes significant levels of chlorine and fluorine. The only unusual factor is the above-average temperatures, likely due to the decreased energy loss into the surrounding space.",
+   "italian": "Fertriery è un mondo abbastanza tipico, con un'atmosfera particolarmente densa che contiene livelli significativi di cloro e fluoro. L'unico fattore insolito sono le temperature sopra la media, probabilmente dovute alla minore dispersione di energia nello spazio circostante.",
+   "ratio": 1.066
+  },
+  {
+   "idx": 9,
+   "id": "event:remnant: ssil vida activation patir 3|description|1011|0",
+   "path": "data/remnant/remnant events.txt",
+   "line": 1011,
+   "kind": "DESCRIPTION",
+   "context": "event:remnant: ssil vida activation patir 3",
+   "english": "You are not quite sure what Fertriery is. It lacks cohesive edges, and yet it has sufficient atmospheric pressure to threaten the hull integrity of ships not designed for high pressure environments. Despite such density, which would indicate a strong gravitational presence, your sensors are unable to find any kind of core.",
+   "italian": "Non sei del tutto sicuro di che cosa sia Fertriery. Non ha bordi definiti, eppure ha una pressione atmosferica sufficiente a minacciare l'integrità dello scafo delle navi non progettate per ambienti ad alta pressione. Nonostante una densità simile, che indicherebbe una forte presenza gravitazionale, i tuoi sensori non riescono a trovare alcun nucleo.",
+   "ratio": 1.086
+  },
+  {
+   "idx": 10,
+   "id": "event:remnant: ssil vida activation patir 3|spaceport|1012|0",
+   "path": "data/remnant/remnant events.txt",
+   "line": 1012,
+   "kind": "DESCRIPTION",
+   "context": "event:remnant: ssil vida activation patir 3",
+   "english": "Delving further into the clouds, it becomes obvious that the entire planet appears to be a mix of gases, aerosols, and suspended particles. Despite this, or perhaps because of it, void sprites appear to thrive in its depths, where they can be seen dancing among energy currents reminiscent of the ion storms.",
+   "italian": "Addentrandoti nelle nuvole, diventa evidente che l'intero pianeta sembra un miscuglio di gas, aerosol e particelle sospese. Nonostante questo, o forse proprio per questo, gli void sprite sembrano prosperare nelle sue profondità, dove li si vede danzare fra correnti di energia che ricordano le tempeste ioniche.",
+   "ratio": 1.01
+  },
+  {
+   "idx": 11,
+   "id": "event:remnant: ssil vida deactivation patir 3|description|1417|0",
+   "path": "data/remnant/remnant events.txt",
+   "line": 1417,
+   "kind": "DESCRIPTION",
+   "context": "event:remnant: ssil vida deactivation patir 3",
+   "english": "Fertriery is a fairly typical world with a particularly dense atmosphere that includes significant levels of chlorine and fluorine. The only unusual factor is the above-average temperatures, likely due to the decreased energy loss into the surrounding space.",
+   "italian": "Fertriery è un mondo abbastanza tipico, con un'atmosfera particolarmente densa che contiene livelli significativi di cloro e fluoro. L'unico fattore insolito sono le temperature sopra la media, probabilmente dovute alla minore dispersione di energia nello spazio circostante.",
+   "ratio": 1.066
+  }
+ ]
+}

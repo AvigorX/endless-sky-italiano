@@ -1,0 +1,286 @@
+# Copyright (c) 2024 by Daeridanii
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+
+
+news "high houses emissary"
+	to show
+		has "language: Successor"
+	location
+		attributes "successor"
+		attributes "wealthy"
+		not attributes "uninhabited"
+	name
+		word
+			"Emissario di un'Alta Casata"
+			"Funzionario di un'Alta Casata"
+			"Agente di un'Alta Casata"
+			"Emissario dell'Alta Casata"
+			"Funzionario dell'Alta Casata"
+			"Agente dell'Alta Casata"
+	message
+		word
+			`"`
+		word
+			"Spero che ti sia gradito il tempo trascorso fra la nostra gente."
+			"Lo straniero! Rechi nuove da lontano, in questo cielo sconfinato?"
+			"Onesto viaggiatore, ho udito parlare di te. Come deve pesarti il viaggio sulla mente."
+			"Benvenuto nel nostro spazio, onorato straniero. È un piacere incontrarti."
+		word
+			`"`
+
+
+news "port official"
+	to show
+		has "language: Successor"
+	location
+		attributes "successor"
+		not attributes "crime" "uninhabited"
+	name
+		word
+			"Funzionario del porto"
+			"Ufficiale del porto"
+	message
+		word
+			`"`
+		word
+			"The Houses welcome thee as a guest among our people; "
+			"Please remain in concord with our people; "
+			"Informed, am I, of thy recent arrival; "
+			"Can I provide assistance, honored traveler? "
+			"Our noble house does greet thee full of joy; "
+		word
+			"I am at thy service if 'tis needed."
+			"La giornata è stata piuttosto intensa, ti prego di parlare in fretta."
+		word
+			`"`
+	message
+		word
+			`"`
+		word
+			"Please submit to scans if 'tis requested"
+			"Taxes on transactions are collected"
+			"Transactions in this area are surveilled"
+			"If thou see'st something suspect, report't promptly"
+		word
+			"; port rules and regulations should be posted."
+			" in accordance with our standard port procedure."
+		word
+			`"`
+
+
+news "successor student"
+	to show
+		has "language: Successor"
+	location
+		attributes "successor"
+		attributes "education" "wealthy"
+		not attributes "uninhabited"
+	name
+		word
+			"Studente"
+			"Studente Successor"
+	message
+		word
+			`"`
+		word
+			"Gli esami, temo, non avranno mai fine,"
+			"Ho forse scordato i termini di geografia?"
+			"Ho forse scordato i reagenti chimici?"
+			"Meccanica dell'iperspazio mi tormenta il cervello,"
+			"La storia dei Predecessori è una noia,"
+			"Dinamica del flusso di plasma è una palla,"
+			"Cinetica delle particelle è un supplizio,"
+		word
+			" "
+		word
+			"Non conosco sonno né cibo né riposo,"
+			"Vorrei poter imparare mentre dormo"
+			"Non so nemmeno come resti sveglio"
+			"Vorrei conoscere qualche trucco migliore per studiare"
+		word
+			"."
+			"!"
+		word
+			`"`
+
+
+news "successor merchant"
+	to show
+		has "language: Successor"
+	location
+		attributes "successor"
+		not attributes "uninhabited"
+	name
+		word
+			"Mercante indipendente"
+	message
+		word
+			`"`
+		word
+			"Interested in "
+		phrase
+			"successor commodities (2-syllable)"
+		word
+			", noble traveler?"
+			", canny buyer?"
+			", noble captain?"
+			", clever buyer?"
+			", newest friend?"
+			", thoughtful buyer?"
+			", thoughtful captain?"
+		word
+			`"`
+	message
+		word
+			`"`
+		word
+			"I miss the days I used to be a "
+			"I miss the times I used to be a "
+			"I still think back to when I was a "
+			"Thou remindeth me of when I was a "
+		word
+			"pilot, "
+			"captain, "
+			"ranger, "
+		word
+			"but alas, "
+		word
+			"now 'tis planetside I shall remain."
+			"'twas never brave enough to stay."
+			"I was a spacesick little knave."
+			"it's down at earth I feel at home."
+			"it's selling items that's for me."
+			"my family needed my return."
+			"possessed of talent I was not."
+		word
+			`"`
+	message
+		word
+			"A "
+		word
+			"pushy "
+			"friendly-looking "
+			"nervous-looking "
+			"furtive "
+			"brightly-colored "
+			"vibrantly-dressed "
+			"dour-looking "
+		word
+			"merchant "
+			"trader "
+			"artisan "
+			"Successor "
+		word
+			"tries to get you to "
+		word
+			"purchase "
+			"buy "
+		word
+			"some "
+		phrase
+			"successor commodities (2-syllable)"
+		word
+			"."
+
+
+news "high houses propaganda"
+	to show
+		has "language: Successor"
+	location
+		attributes "successor"
+		not attributes "quiet" "uninhabited"
+	name
+		word
+			"Trasmissione dell'Alta Casata"
+			"Trasmissione governativa"
+			"Schermo video"
+			"Trasmissione ufficiale"
+	message
+		word
+			"Una pubblicità mostra una nave da guerra Successor che esegue una serie di manovre abilmente condotte, prima di invitare lo spettatore ad arruolarsi nelle forze armate di una delle Alte Casate."
+			"Va in onda una pubblicità che mostra un gruppo di Successor vicini l'uno all'altro davanti alla facciata di una fabbrica, con la pelle tinta di un verde lieto. Segue una voce fuori campo che segnala un recente aumento dei salari."
+			"Un breve video mostra la costruzione di un nuovo spazioporto sulla superficie di un prospero pianeta Successor. Diverse navi da guerra delle Alte Casate, dipinte in livrea cerimoniale, attraversano lo schermo indicando chiaramente a chi vadano i ringraziamenti."
+			`Un ufficiale navale dei Successori dall'aria orgogliosa sta davanti a una nave da guerra dall'aspetto imponente: "Arruolati!", recita la didascalia. "Vedi le stelle oggi stesso!"`
+			`Si susseguono diverse brevi scene: un gruppo di Successori che dissotterra rovine, l'interno di un laboratorio, una calma scena pastorale. Una voce fuori campo dice: "Scoprire la nostra eredità; migliorare le nostre vite." Ufficiali delle Alte Casate vestiti con cura sono presenti in ogni situazione, presentati come supervisori benevoli.`
+			"Va in onda una pubblicità che mostra le linee eleganti di una nave da guerra Successor, la corazza lucida che brilla alla luce del sole. Prosegue per diversi minuti, mostrando il vascello da numerose angolazioni mentre scorre una colonna sonora avvolgente."
+
+news "successor advertisements"
+	to show
+		has "language: Successor"
+	location
+		attributes "successor"
+		not attributes "quiet" "uninhabited"
+	name
+		word
+			"Advertisement" 2
+			"Schermo video"
+			"Pubblicità commerciale"
+	message
+		word
+			"Una ciotola di un cibo filaccioso simile ad alga danza sullo schermo mentre vi si aggiungono vari condimenti. Dopo una trentina di secondi appare un Successor che ne aspira i fili, e la sua pelle si tinge di un rosa lieto."
+			"Un gruppo di piccole imbarcazioni da diporto è ripreso su un lago immacolato al tramonto, con gli equipaggi Successor che manovrano o si tuffano felici nell'acqua. Una didascalia in basso invita lo spettatore ad acquistarne una."
+			"Va in onda una pubblicità del Laser a impulsi Successor: lo si vede costruire in una fabbrica pulita e luminosa, installare su una nave ed estrarre minerali dagli asteroidi. Non viene mai mostrato in combattimento."
+			"Una pubblicità mostra gioielli attraenti e dall'aria costosa, in oro, argento e altri metalli più strani che non sai riconoscere. Vari modelli li indossano avvolti alle braccia o ad altre parti del corpo, ondeggiando piano mentre la camera si muove."
+			"Uno schermo mostra la pubblicità di una delle università Successor, con edifici eleganti e scultorei che emergono dal suolo sotto un cielo battuto dalla pioggia."
+			"Un campo di grandi piante floreali cresce in lunghi fili di metallo lucente, raccolti in fretta da robot agricoli."
+			"Una serie di immagini di modelli Successor si susseguono tanto in fretta che è difficile capire cosa stiano pubblicizzando."
+			"Un breve filmato pubblicizza uno spettacolo in una sala da concerto locale. Il palco è diviso in due: una parte è sott'acqua e l'altra è asciutta."
+			"Uno schermo video del porto mostra un gioco interattivo vivace e colorato. Attorno si raduna un gruppetto di giovani Successor, che paiono rapiti."
+			"Una copertura per gli occhi che ricorda vagamente una lente a contatto viene applicata agli occhi di diversi modelli, cambiandone colore e forma."
+			"Un'organizzazione di cantieri navali pubblicizza uno sconto per i soci sulle navette Kvelqde. Ci tiene a precisare che la propria attività è sostenuta da una delle Alte Casate."
+			"Un pilota indipendente pubblicizza brevemente il proprio servizio corriere con un messaggio preregistrato, garantendo la consegna più rapida possibile per pacchi sotto le dieci tonnellate."
+
+
+news "local news quiet"
+	to show
+		has "language: Successor"
+	location
+		attributes "successor"
+		attributes "quiet"
+		not attributes "station" "uninhabited"
+	name
+		word
+			"Notiziario locale"
+			"Notiziario"
+			"Programma di notizie"
+	message
+		word
+			"Una trasmissione elenca sommessamente i dettagli del recente guasto di un'unità di controllo del clima, che ha imposto una breve evacuazione senza feriti. Una foto mostra qualche decina di Successor radunati lungo una costa, mentre in lontananza brulicano diverse navi."
+			"Va in onda una pubblicità dal suono attutito, con rendering architettonici di piccole case sottomarine le cui pareti cambiano colore e consistenza: dal legno simulato al guscio simulato, fino a un metallo scuro e amorfo simile allo scafo di una nave stellare."
+			"Una breve trasmissione parla di un recente temporale, mostrando diverse foto colorate di fulmini e pioggia scattate dagli abitanti durante l'evento."
+			"Una trasmissione di solo testo parla di una recente performance artistica tattile. La scrittura ondeggia mentre muovi la testa, e il dispositivo di traduzione fa del suo meglio per trascriverla."
+			"Una trasmissione mostra una breve intervista a un fioraio locale, che presenta la propria collezione di piante di metallo vivo."
+			"Viene mostrato un documento formale con una colonna di testo a lato. Lo si descrive come una nuova ordinanza commerciale, elencandone gli effetti sui mercanti indipendenti."
+			"Un breve programma sul controllo e il ripristino dell'erosione è narrato, con voce monotona, da un Successor dall'aria stanca e in un abito altrettanto scialbo."
+			"Il notiziario sullo schermo video viene brevemente interrotto per mostrare una mappa dello spazioporto a uso generale."
+
+
+news "station report"
+	to show
+		has "language: Successor"
+	location
+		attributes "successor"
+		attributes "station"
+		not attributes "uninhabited"
+	name
+		word
+			"Rapporto della stazione"
+			"Sistema di annunci"
+			"Impianto di diffusione pubblica"
+	message
+		word
+			"Un annuncio pubblico chiarisce che un'inefficienza nelle unità di trattamento dell'atmosfera della stazione è stata risolta durante la notte."
+			"Un orario con partenze e arrivi delle navette planetarie viene aggiornato per tenere conto di un ritardo a terra."
+			"Una grafica mostra una mappa interattiva della stazione a disposizione dei visitatori."
+			"Un annuncio pubblico invita i residenti a risparmiare acqua."

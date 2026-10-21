@@ -1,0 +1,141 @@
+{
+ "block": {
+  "path": "data/human/weapons.txt",
+  "line_from": 36,
+  "line_to": 306,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Energy Blaster|description|36|0",
+   "path": "data/human/weapons.txt",
+   "line": 36,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Energy Blaster",
+   "english": "Although not the most accurate or damaging of weapons, the Energy Blaster is popular because it is small enough to be installed on even the tiniest of ships. One blaster is not enough to do appreciable damage to anything larger than a fighter, but a ship equipped with several of them becomes a force to be reckoned with.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Although not the most accurate or damaging of weapons, the Energy Blaster is popular because it is small enough to be installed on even the tiniest of ships. One blaster is not enough to do appreciable damage to anything larger than a fighter, but a ship equipped with several of them becomes a force to be reckoned with.\"",
+   "english_hash": "2b63803f6fd5b66e"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Twin Blaster|description|64|0",
+   "path": "data/human/weapons.txt",
+   "line": 64,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Twin Blaster",
+   "english": "The Energy Blaster's ubiquity, low price, and stable performance have made it irresistible to tinkerers from the day it was first introduced. These blasters have been bolted together to fit within a single gun port, offering twice the damage of a single blaster at the cost of twice the heat and power consumption, along with some additional mass.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Energy Blaster's ubiquity, low price, and stable performance have made it irresistible to tinkerers from the day it was first introduced. These blasters have been bolted together to fit within a single gun port, offering twice the damage of a single blaster at the cost of twice the heat and power consumption, along with some additional mass.\"",
+   "english_hash": "cfa7ad2385e24dbb"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Blaster Turret|description|101|0",
+   "path": "data/human/weapons.txt",
+   "line": 101,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Blaster Turret",
+   "english": "A Blaster Turret is a pair of Energy Blasters mounted on a rotating platform, allowing it to fire in any direction. Sophisticated software algorithms allow the turret to correct for a target's motion, making the Blaster Turret effective even against small, quickly moving fighters. Because it needs a special mounting point with a 360 degree field of view, not all ships are capable of being equipped with a turret.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"A Blaster Turret is a pair of Energy Blasters mounted on a rotating platform, allowing it to fire in any direction. Sophisticated software algorithms allow the turret to correct for a target's motion, making the Blaster Turret effective even against small, quickly moving fighters. Because it needs a special mounting point with a 360 degree field of view, not all ships are capable of being equipped with a turret.\"",
+   "english_hash": "e8fb6fc10de8007e"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Quad Blaster Turret|description|129|0",
+   "path": "data/human/weapons.txt",
+   "line": 129,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Quad Blaster Turret",
+   "english": "A Quad Blaster Turret carries four guns on a single turret mount, doubling the firepower of an ordinary Blaster Turret for ships with enough space to install one and energy to drive it.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"A Quad Blaster Turret carries four guns on a single turret mount, doubling the firepower of an ordinary Blaster Turret for ships with enough space to install one and energy to drive it.\"",
+   "english_hash": "203dcf79fff657e3"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Modified Blaster|description|162|0",
+   "path": "data/human/weapons.txt",
+   "line": 162,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Modified Blaster",
+   "english": "This is an Energy Blaster that has been tampered with to increase its power slightly, at the cost of reduced range and higher energy consumption. Modified Blasters also produce an extreme amount of heat when firing, increasing the risk that your ship will overheat.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This is an Energy Blaster that has been tampered with to increase its power slightly, at the cost of reduced range and higher energy consumption. Modified Blasters also produce an extreme amount of heat when firing, increasing the risk that your ship will overheat.\"",
+   "english_hash": "6287a347ce8f8b3c"
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Twin Modified Blaster|description|190|0",
+   "path": "data/human/weapons.txt",
+   "line": 190,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Twin Modified Blaster",
+   "english": "An enterprising engineer, presumably having decided that the Modified Blaster's already-frightening lack of safety control was insufficient, has taken two of the weapons and shoved them together in the same gun port, crudely welded together with fervid enthusiasm. Whether or not this weapon will destroy the target before it melts its own components is anyone's guess; perhaps the intent was that the twin barrels would intimidate enemies into submission before the weapon would have to be fired.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"An enterprising engineer, presumably having decided that the Modified Blaster's already-frightening lack of safety control was insufficient, has taken two of the weapons and shoved them together in the same gun port, crudely welded together with fervid enthusiasm. Whether or not this weapon will destroy the target before it melts its own components is anyone's guess; perhaps the intent was that the twin barrels would intimidate enemies into submission before the weapon would have to be fired.\"",
+   "english_hash": "d696cbb9e263f4af"
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Modified Blaster Turret|description|227|0",
+   "path": "data/human/weapons.txt",
+   "line": 227,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Modified Blaster Turret",
+   "english": "This is a turreted version of the Modified Blaster, which is an Energy Blaster modified for greater power at the cost of higher energy consumption and heat. These turrets are popular with pirates and others who are trying to cram as much firepower into their ships as possible.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This is a turreted version of the Modified Blaster, which is an Energy Blaster modified for greater power at the cost of higher energy consumption and heat. These turrets are popular with pirates and others who are trying to cram as much firepower into their ships as possible.\"",
+   "english_hash": "8300142d1f0c09c4"
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Heavy Blaster|description|251|0",
+   "path": "data/human/weapons.txt",
+   "line": 251,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Heavy Blaster",
+   "english": "The Heavy Blaster is a scaled-up variant of the ever-so-popular Energy Blaster design. These saw extensive use on several warships earlier in history, most notably as the main armament of the Firebird when it was first produced. Over time, the development of more advanced weapons such as the Particle Cannon and Plasma Cannon has supplanted the Heavy Blaster on newer craft, but it still performs consistently enough to be found on older serviceable ships.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Heavy Blaster is a scaled-up variant of the ever-so-popular Energy Blaster design. These saw extensive use on several warships earlier in history, most notably as the main armament of the Firebird when it was first produced. Over time, the development of more advanced weapons such as the Particle Cannon and Plasma Cannon has supplanted the Heavy Blaster on newer craft, but it still performs consistently enough to be found on older serviceable ships.\"",
+   "english_hash": "0fae4b8ae3da85bf"
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Beam Laser|description|277|0",
+   "path": "data/human/weapons.txt",
+   "line": 277,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Beam Laser",
+   "english": "In the early part of the space era, the settlements in the region of space known as the Deep developed in relative isolation from the rest of human space. One result of that isolation is that their weapons technology mostly uses beam weapons, instead of the energy projectile weapons that are more common elsewhere.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"In the early part of the space era, the settlements in the region of space known as the Deep developed in relative isolation from the rest of human space. One result of that isolation is that their weapons technology mostly uses beam weapons, instead of the energy projectile weapons that are more common elsewhere.\"",
+   "english_hash": "9414218b9c41d1f9"
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Laser Turret|description|306|0",
+   "path": "data/human/weapons.txt",
+   "line": 306,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Laser Turret",
+   "english": "Laser Turrets are hated by fighter pilots because it is nearly impossible to dodge them once you are within their reach. This turret carries a pair of lasers and can swivel almost instantly to fire on new targets as they approach. Laser Turrets are especially useful when mounted on slow-moving freighters to fend off packs of small pirate vessels.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Laser Turrets are hated by fighter pilots because it is nearly impossible to dodge them once you are within their reach. This turret carries a pair of lasers and can swivel almost instantly to fire on new targets as they approach. Laser Turrets are especially useful when mounted on slow-moving freighters to fend off packs of small pirate vessels.\"",
+   "english_hash": "0d5ba225a37794da"
+  }
+ ]
+}

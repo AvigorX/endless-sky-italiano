@@ -1,0 +1,275 @@
+{
+ "block": {
+  "path": "data/wanderer/wanderer news.txt",
+  "line_from": 83,
+  "line_to": 346,
+  "units": 24
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:Wanderers and Aliens|\"|83|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 83,
+   "kind": "NEWS",
+   "context": "news:Wanderers and Aliens",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "news:Wanderers and Aliens|\"|96|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 96,
+   "kind": "NEWS",
+   "context": "news:Wanderers and Aliens",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "news:Wanderer Linguistics 2|\"|110|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 110,
+   "kind": "NEWS",
+   "context": "news:Wanderer Linguistics 2",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "news:Wanderer Linguistics 2|\"|116|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 116,
+   "kind": "NEWS",
+   "context": "news:Wanderer Linguistics 2",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "news:Wanderer civilians, dialog|\"|132|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 132,
+   "kind": "NEWS",
+   "context": "news:Wanderer civilians, dialog",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "news:Wanderer civilians, dialog|\"|142|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 142,
+   "kind": "NEWS",
+   "context": "news:Wanderer civilians, dialog",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "news:Wanderer scientists|\"|158|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 158,
+   "kind": "NEWS",
+   "context": "news:Wanderer scientists",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "news:Wanderer scientists|\"|166|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 166,
+   "kind": "NEWS",
+   "context": "news:Wanderer scientists",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "news:Wanderer oil safety|\"|180|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 180,
+   "kind": "NEWS",
+   "context": "news:Wanderer oil safety",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "news:Wanderer oil safety|\"|185|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 185,
+   "kind": "NEWS",
+   "context": "news:Wanderer oil safety",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "news:Wanderer oil drilling|\"|199|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 199,
+   "kind": "NEWS",
+   "context": "news:Wanderer oil drilling",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "news:Wanderer oil drilling|\"|204|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 204,
+   "kind": "NEWS",
+   "context": "news:Wanderer oil drilling",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "news:wanderer farmer|\"|218|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 218,
+   "kind": "NEWS",
+   "context": "news:wanderer farmer",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "news:wanderer farmer|\"|225|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 225,
+   "kind": "NEWS",
+   "context": "news:wanderer farmer",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "news:Wanderer soldier|\"|240|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 240,
+   "kind": "NEWS",
+   "context": "news:Wanderer soldier",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "news:Wanderer soldier|\"|250|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 250,
+   "kind": "NEWS",
+   "context": "news:Wanderer soldier",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "news:Wanderer engineer|\"|264|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 264,
+   "kind": "NEWS",
+   "context": "news:Wanderer engineer",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "news:Wanderer engineer|\"|272|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 272,
+   "kind": "NEWS",
+   "context": "news:Wanderer engineer",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "news:Wanderers and the Eye|\"|290|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 290,
+   "kind": "NEWS",
+   "context": "news:Wanderers and the Eye",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "news:Wanderers and the Eye|\"|301|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 301,
+   "kind": "NEWS",
+   "context": "news:Wanderers and the Eye",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "news:Wanderers and Korath|\"|317|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 317,
+   "kind": "NEWS",
+   "context": "news:Wanderers and Korath",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "news:Wanderers and Korath|\"|327|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 327,
+   "kind": "NEWS",
+   "context": "news:Wanderers and Korath",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "news:Wanderer Linguistics|\"|341|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 341,
+   "kind": "NEWS",
+   "context": "news:Wanderer Linguistics",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "news:Wanderer Linguistics|\"|346|0",
+   "path": "data/wanderer/wanderer news.txt",
+   "line": 346,
+   "kind": "NEWS",
+   "context": "news:Wanderer Linguistics",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  }
+ ]
+}

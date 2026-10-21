@@ -1,0 +1,253 @@
+{
+ "block": {
+  "path": "data/korath/korath weapons.txt",
+  "line_from": 615,
+  "line_to": 1222,
+  "units": 22
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Cluster Mine Rack|description|615|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 615,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Cluster Mine Rack",
+   "english": "The Cluster Mine Rack is used to store extra ammunition for Cluster Mine Layers.",
+   "italian": "The Cluster Mine Rack is used to store extra ammunition for Cluster Mine Layers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Cluster Mine Layer|description|658|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 658,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Cluster Mine Layer",
+   "english": "This launcher fires cluster munitions that split into a cloud of stationary mines that each do a considerable amount of damage if a ship crashes into them. However, if a ship hits the mine before it has a chance to deploy, the damage is considerably reduced.",
+   "italian": "This launcher fires cluster munitions that split into a cloud of stationary mines that each do a considerable amount of damage if a ship crashes into them. However, if a ship hits the mine before it has a chance to deploy, the damage is considerably reduced.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Cluster Mine Layer|description|659|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 659,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Cluster Mine Layer",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Shield Disruptor Turret|description|743|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 743,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Shield Disruptor Turret",
+   "english": "Shield Disruptor Turrets interfere with a ship's shields, allowing a ship's hull to be damaged even when shields are up. However, they do very little hull damage by themselves.",
+   "italian": "Shield Disruptor Turrets interfere with a ship's shields, allowing a ship's hull to be damaged even when shields are up. However, they do very little hull damage by themselves.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Husk-Slice|description|781|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 781,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Husk-Slice",
+   "english": "This massive beam weapon is relatively ineffective against shields, but cuts through hull armor like it's made of paper.",
+   "italian": "This massive beam weapon is relatively ineffective against shields, but cuts through hull armor like it's made of paper.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Husk-Slice Turret|description|812|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 812,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Husk-Slice Turret",
+   "english": "This turret fires a tightly focused energy beam that is particularly effective against hull armor. When paired with a disruptor turret, it is a deadly combination.",
+   "italian": "This turret fires a tightly focused energy beam that is particularly effective against hull armor. When paired with a disruptor turret, it is a deadly combination.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Digger Mining Turret|description|855|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 855,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Digger Mining Turret",
+   "english": "When the Korath Exiles needed a cheap mining laser for their large vessels, they re-engineered this ancient, robust design and added a turret base. The mild shield disruption effect makes it somewhat useful in combat if required.",
+   "italian": "When the Korath Exiles needed a cheap mining laser for their large vessels, they re-engineered this ancient, robust design and added a turret base. The mild shield disruption effect makes it somewhat useful in combat if required.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Digger Mining Beam|description|884|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 884,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Digger Mining Beam",
+   "english": "The gun version of the classic Korath mining laser allows a larger mothership to release a cloud of fighter-sized miners to harvest resources when working faster-moving or more dangerous asteroid fields.",
+   "italian": "The gun version of the classic Korath mining laser allows a larger mothership to release a cloud of fighter-sized miners to harvest resources when working faster-moving or more dangerous asteroid fields.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Langrage Hyper-Heaver|description|929|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 929,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Langrage Hyper-Heaver",
+   "english": "Langrage Hyper-Heavers raise the use of improvised ammunition to a fine art. This turret converts scrap metal, nearby asteroids, compressed garbage, or other debris into a high speed debris field. The exact mechanism is unclear, but the internal workings bear some similarities to hyperdrives and Banishers.",
+   "italian": "Langrage Hyper-Heavers raise the use of improvised ammunition to a fine art. This turret converts scrap metal, nearby asteroids, compressed garbage, or other debris into a high speed debris field. The exact mechanism is unclear, but the internal workings bear some similarities to hyperdrives and Banishers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Langrage Hyper-Heaver|description|930|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 930,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Langrage Hyper-Heaver",
+   "english": "\tAt close range, the heaved langrage merely forces the enemy back. However, as the launch field collapses and the langrage returns fully to normal space, it is rent into a rapidly-expanding cloud of deadly projectiles.",
+   "italian": "\tAt close range, the heaved langrage merely forces the enemy back. However, as the launch field collapses and the langrage returns fully to normal space, it is rent into a rapidly-expanding cloud of deadly projectiles.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Firelight Storage Rack|description|999|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 999,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Firelight Storage Rack",
+   "english": "This rack stores additional Firelight missiles to feed into a Firelight Bank.",
+   "italian": "This rack stores additional Firelight missiles to feed into a Firelight Bank.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Firelight Missile|description|1011|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 1011,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Firelight Missile",
+   "english": "The reactor element inside a Firelight Missile must be kept minimally active in order to ensure it is ready for launch. Although terribly inefficient, it nonetheless produces a trickle of power that can be tapped into when properly installed.",
+   "italian": "The reactor element inside a Firelight Missile must be kept minimally active in order to ensure it is ready for launch. Although terribly inefficient, it nonetheless produces a trickle of power that can be tapped into when properly installed.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Firelight Missile Bank|description|1049|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 1049,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Firelight Missile Bank",
+   "english": "As the Firestorm Torpedo does not require full reactor shielding or safety interlocks, Korath engineers were able to create the Firelight by further scaling down the reactor element to fit in a missile casing for use on and against smaller vessels.",
+   "italian": "As the Firestorm Torpedo does not require full reactor shielding or safety interlocks, Korath engineers were able to create the Firelight by further scaling down the reactor element to fit in a missile casing for use on and against smaller vessels.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Firelight Missile Bank|description|1050|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 1050,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Firelight Missile Bank",
+   "english": "\tRather than rely on traditional reaction engines attached to the missile for launch, this rapid-fire missile bank appears to operate on the same principles as a Banisher.",
+   "italian": "\tRather than rely on traditional reaction engines attached to the missile for launch, this rapid-fire missile bank appears to operate on the same principles as a Banisher.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Firelight Missile Bank|description|1051|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 1051,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Firelight Missile Bank",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Microbot Grinder|description|1145|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 1145,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Microbot Grinder",
+   "english": "This is a huge grinder that digests incoming material with the aid of microbots. With intake bays large enough to swallow a drone whole, wrecking claws massive enough to tear apart the hulls of heavy warships, and a seemingly omnicidal swarm of microbots ready to break down anything that falls in to its component molecules, it is a fearsome sight that any captain would be foolish to fly within reach of.",
+   "italian": "This is a huge grinder that digests incoming material with the aid of microbots. With intake bays large enough to swallow a drone whole, wrecking claws massive enough to tear apart the hulls of heavy warships, and a seemingly omnicidal swarm of microbots ready to break down anything that falls in to its component molecules, it is a fearsome sight that any captain would be foolish to fly within reach of.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:Firestorm Torpedo|plural|1149|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 1149,
+   "kind": "VALUE",
+   "context": "outfit:Firestorm Torpedo",
+   "english": "Firestorm Torpedoes",
+   "italian": "Firestorm Torpedoes",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "outfit:Firestorm Torpedo|description|1159|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 1159,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Firestorm Torpedo",
+   "english": "Massive in both size and destructive capability, the Firestorm Torpedo's enormous blast radius makes it a dangerous part of larger ship arsenals, despite the lack of more recent Korath innovations. The Firestorm Torpedo is used as ammo for the Firestorm Battery.",
+   "italian": "Massive in both size and destructive capability, the Firestorm Torpedo's enormous blast radius makes it a dangerous part of larger ship arsenals, despite the lack of more recent Korath innovations. The Firestorm Torpedo is used as ammo for the Firestorm Battery.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "outfit:Firestorm Torpedo Rack|description|1171|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 1171,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Firestorm Torpedo Rack",
+   "english": "This large cage-like rack is designed to be able to house several deadly Firestorm Torpedoes.",
+   "italian": "This large cage-like rack is designed to be able to house several deadly Firestorm Torpedoes.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "outfit:Firestorm Battery|plural|1174|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 1174,
+   "kind": "VALUE",
+   "context": "outfit:Firestorm Battery",
+   "english": "Firestorm Batteries",
+   "italian": "Firestorm Batteries",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "outfit:Firestorm Battery|description|1221|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 1221,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Firestorm Battery",
+   "english": "Though not as refined as the newer Firelight version, this torpedo contains an augmented Korath Plasma Core reactor element completely stripped of its protective casing and safety interlocks. When activated, it generates a tremendous explosion of heat and force that pushes ships away and will even melt their hulls.",
+   "italian": "Though not as refined as the newer Firelight version, this torpedo contains an augmented Korath Plasma Core reactor element completely stripped of its protective casing and safety interlocks. When activated, it generates a tremendous explosion of heat and force that pushes ships away and will even melt their hulls.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "outfit:Firestorm Battery|description|1222|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 1222,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Firestorm Battery",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  }
+ ]
+}

@@ -1,0 +1,3621 @@
+# Copyright (c) 2016 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Wanderers: Pre-Colony"
+	landing
+	source "Spera Anatrusk"
+	to offer
+		has "event: wanderers: the eye opens"
+		not "event: wanderers: spera anatrusk colony"
+	on offer
+		conversation
+			`Con l'Occhio completamente aperto, le navi dei Wanderers hanno cominciato a riversarsi in questa regione di spazio. Questo pianeta desolato sembra interessarli in modo particolare: i droni fanno rilevamenti rapidi in ogni direzione e un piccolo avamposto comincia a prendere forma.`
+			`	Mentre atterri ai margini di questo insediamento, uno degli operai ti viene incontro appena scendi dalla nave. "[Salute, benvenuto], è [delizioso, piacevole] vedere che sei venuto a mostrarci il tuo interesse per la nostra esplorazione. Purtroppo su un mondo che conosciamo così poco ci sono molti [pericoli, rischi]. Questo sarà il nostro campo base per [esplorare, catalogare] questa nuova regione, ma ci vorrà un po' per avere la certezza della [sicurezza, incolumità] del nostro avamposto. Ti suggerisco di prenderti il tempo di [orientarti, ambientarti] in questi sistemi mentre noi ci sistemiamo, e di tornare poi ad aiutarci. Naturalmente sarai il benvenuto quando avremo [stabilito, determinato] la sicurezza: serviranno molte navi per aiutare a guarire i molti pianeti in rovina che ci sono qui."`
+				decline
+
+mission "Wanderers: Surveying 1"
+	landing
+	name "Rilevamento Wanderer"
+	description "I Wanderers ti hanno chiesto di rilevare diversi pianeti vicini nello spazio Korath e di riportare loro i dati su <planet> quando hai finito."
+	autosave
+	source "Spera Anatrusk"
+	stopover "Desi Seledrak"
+	stopover "Sabira Eseskrai"
+	stopover "Seleptra Nak"
+	stopover "Elek Kartanu"
+	stopover "Sek Alarfarat"
+	stopover "Solima Skarati"
+	stopover "Kasichara Fet"
+	to offer
+		has "event: wanderers: spera anatrusk colony"
+	cargo "scientific equipment" 7
+	blocked "I Wanderers hanno un'altra missione per te, ma ti serve <capacity> per il loro equipaggiamento scientifico."
+	on offer
+		log `Il cunicolo che chiamano "l'Occhio" si è aperto nello spazio dei Wanderers, ma il territorio dall'altra parte è spazio Korath, devastato dalla loro guerra civile e ancora infestato da macchine da guerra autonome. Ciononostante i Wanderers sono entusiasti di ricominciare il loro lavoro di guarigione e riparazione dei mondi danneggiati.`
+		log "People" "Sobari Tele'ek" `Tele'ek è entrato a far parte della forza di spedizione formata per esplorare il territorio oltre l'Occhio una volta che si fosse aperto.`
+		conversation
+			`I Wanderers hanno cominciato a costruire una base qui, con mercantili che atterrano ogni pochi minuti per portare altre provviste o altre persone. Hanno un buon numero di armi e navi da guerra per tenere a bada gli automi Korath, ma la maggior parte dei rifornimenti sembra strumentazione scientifica o forse attrezzatura per il terraformaggio dei pianeti.`
+			`	Poco dopo l'atterraggio vieni condotto a un incontro con diversi dei capi più anziani dei Wanderers. Riconosci il comandante militare Sobari Tele'ek, ma gli altri ti sono estranei. E, cosa strana, oltre agli adulti c'è un cucciolo Wanderer, alto a malapena un metro, con un piumaggio nero iridescente come quello di uno storno.`
+			`	Quando ti vede, il cucciolo dice: "Salute, Capitano." Con tua sorpresa, parla nella tua lingua. È incoraggiante che i Wanderers insegnino la tua lingua ai loro piccoli: forse fra qualche anno non ti servirà più il dispositivo di traduzione per parlare con loro.`
+			`	Tele'ek ti chiede: "Hai esplorato questo nuovo [territorio, incarico] in cui l'Occhio ci ha condotto?"`
+			choice
+				`	"Sì, sembra che i mondi qui abbiano molto bisogno delle vostre cure."`
+					goto care
+				`	"Ho incontrato droni robotici ostili. Forse stavate più al sicuro da dove venite."`
+					goto drones
+				`	"No, non ho ancora avuto il tempo di esplorare."`
+					goto next
+			
+			label care
+			`	"Davvero," dice uno degli altri Wanderers. "È molto [emozionante, stimolante]."`
+				goto next
+			
+			label drones
+			`	"Forse," dice Tele'ek, "ma non abbiamo ancora trovato un modo per [comunicare, ragionare] con loro. Forse i loro attacchi sono solo un malinteso."`
+				goto next
+			
+			label next
+			`	Un altro Wanderer prende la parola e dice: "Questo nuovo territorio è pieno di [promesse, possibilità], ma siamo ancora pochi e non abbiamo osato [esplorare, rilevare] troppo in largo. Umano, tu hai mezzi di viaggio [speciali, esotici] e forse puoi esplorare in modo più [sicuro? accorto?] di noi. Visiterai alcuni mondi per noi e ci aiuterai a [valutare, capire] che cosa va fatto per guarirli?"`
+			choice
+				`	"Certo, ne sarò felice."`
+					goto end
+				`	"Sei sicuro di non essere in pericolo qui con i droni Korath?"`
+			
+			`	"Non preoccuparti," dice Tele'ek. "[Resistere, Combattere] contro gli Hai Slegati ci ha costretti a sviluppare navi da guerra più robuste. Siamo ben [equipaggiati, preparati] per questa nuova minaccia."`
+			
+			label end
+			`	I Wanderers caricano sulla tua nave una grande quantità di equipaggiamento scientifico e ti spiegano come usarlo. Ti indicano anche diversi pianeti che i loro sensori a lungo raggio hanno rilevato e che vorrebbero farti esaminare più a fondo.`
+				accept
+	on visit
+		dialog phrase "generic stopover on visit"
+
+
+
+mission "Wanderers: Surveying 2"
+	landing
+	name "Rilevamento Wanderer"
+	description "I Wanderers ti hanno chiesto di rilevare altri mondi, in profondità nel territorio dei droni Kor Mereti, e di riportare loro le misurazioni su <planet>."
+	autosave
+	source "Spera Anatrusk"
+	stopover "Esayaku Fen"
+	stopover "Aresepru Nat"
+	stopover "Korbatri Eska"
+	stopover "Fek Rembatu"
+	to offer
+		has "Wanderers: Surveying 1: done"
+	cargo "scientific equipment" 7
+	blocked "I Wanderers hanno un'altra missione per te, ma ti serve <capacity> per il loro equipaggiamento scientifico."
+	on offer
+		log "People" "Tema'a Iriket" `Iriket è una Wanderer specializzata in terraformaggio, scelta per rilevare i mondi oltre l'Occhio e per pianificare come ciascuno possa tornare a fiorire. Il suo interesse per il lavoro di terraformaggio è molto maggiore di quello per la minaccia delle macchine da guerra Korath.`
+		conversation
+			`All'atterraggio ti viene incontro una Wanderer di nome Tema'a Iriket, che si presenta come capo della squadra di terraformaggio. È entusiasta dei tuoi dati sui pianeti vicini. "Per ciascuno di questi mondi," dice, "dobbiamo decidere quale [trattamento, strategia] gli permetterà meglio di rifiorire. Anche se un mondo è vicino al [territorio, dominio] dei robot [pericolosi, ostili], potremmo riuscire a iniziare la sua [guarigione, trasformazione] a distanza."`
+			choice
+				`	"Mi sorprende che la vostra specie sia così impaziente di cominciare il terraformaggio. Avrei pensato che la minaccia degli automi Korath fosse la vostra priorità."`
+					goto drones
+				`	"C'è un modo in cui posso aiutare con il terraformaggio?"`
+					goto volunteer
+			
+			label drones
+			`	Dice: "[Guarire, Rigenerare] i mondi è qualcosa che amiamo fare. Combattere non è qualcosa che amiamo. Quindi, a meno che i robot non diventino più [aggressivi, minacciosi], preferiamo non cercare il conflitto. Nel frattempo, sarebbe [interessante, emozionante] fare misurazioni sui pianeti che controllano. Potresti farlo per noi?"`
+				goto next
+			
+			label volunteer
+			`	"Sono [contenta, lieta] che tu l'abbia chiesto," dice. "Quello che ci sarebbe più [utile, interessante] adesso sarebbero misurazioni del [clima? ecosistema?] dei pianeti in orbita intorno a queste stelle." Su una mappa stellare locale ti indica diversi sistemi.`
+			`	"Quelli sono in profondità nel territorio Kor Mereti," le dici.`
+			`	"Sì," dice, "ed è per questo che [speravo, immaginavo] di poterti chiedere di fare le misurazioni."`
+			
+			label next
+			choice
+				`	"Certo, lo farò volentieri."`
+				`	"Sembra terribilmente pericoloso."`
+					goto danger
+
+			`	"Eccellente," dice. "Raccoglierò io i dati da te quando avrai finito."`
+				goto leaders
+
+			label danger
+			`	"Ho piena [fiducia, fede] nelle tue capacità," dice, e poi si allontana prima che tu possa protestare ancora.`
+			
+			label leaders
+			`	Quando ti presenti ai capi dei Wanderers, hanno diverse altre richieste per te. Una cosmologa di nome Erukt Isi'ithi è interessata ai dati degli scanner su tre resti di supernova vicino allo spazio Korath. E Sobari Tele'ek vuole che tu raccolga altri dati sugli automi. "Se sapessimo come funzionano," dice, "potremmo forse [fare la pace con, diventare amici di] loro. Forse potresti [abbordare, recuperare] un drone neutralizzato di ciascuna [fazione?] e portarci i [pezzi, componenti] che ne controllano il [processo decisionale, intelligenza]."`
+			choice
+				`	"Certo, lo farò volentieri."`
+					goto end
+				`	"I droni sono potenti. Non sono sicuro di riuscire a neutralizzarne uno."`
+			
+			`	"Sembrano bravi a neutralizzarsi a vicenda quando si incontrano," dice. "Oppure potresti [passare a, acquistare] una delle nostre [necessarie? lamentabili?] navi da guerra."`
+			label end
+			`	Lasci l'incontro con una lunga lista di compiti da svolgere per i Wanderers. Speri che apprezzino tutto l'aiuto che dai loro.`
+				accept
+	
+	on visit
+		dialog phrase "generic stopover on visit"
+	on complete
+		conversation
+			`Presenti le tue misurazioni planetarie a Tema'a Iriket, la direttrice del terraformaggio. È molto entusiasta dei dati. "Tanti mondi," dice, "ognuno con la propria [personalità? idiosincrasia?]. Impareremo di più su ciascuno e scopriremo come [collaborare, fare squadra] con loro per aiutarli a [riprendersi, rinascere]."`
+			`	Ti dice che per ora non hanno bisogno di altri dati di scansione, ma ti farà sapere se in futuro nasceranno nuove necessità.`
+
+
+
+mission "Wanderers: Nova Remnants"
+	landing
+	name "Resti di supernova"
+	description "Una cosmologa Wanderer di nome Erukt Isi'ithi ti ha chiesto di visitare diverse stelle vicine che sembrano resti di supernova e di fare delle misurazioni."
+	source "Spera Anatrusk"
+	waypoint "Peresedersi"
+	on enter "Peresedersi"
+		dialog
+			"You fire up your ship's sensors and collect the data that the Wanderers asked for on this system's sun."
+	waypoint "Kasikfar"
+	on enter "Kasikfar"
+		dialog
+			"You fire up your ship's sensors and collect the data that the Wanderers asked for on this system's sun."
+	waypoint "Fasitopfar"
+	on enter "Fasitopfar"
+		dialog
+			"You fire up your ship's sensors and collect the data that the Wanderers asked for on this system's sun."
+	to offer
+		has "Wanderers: Surveying 1: done"
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on complete
+		log "Factions" "Archons" `Gli Archon sono in parte biologici, in parte tecnologici e in parte qualcosa per cui la lingua umana non ha parole. Sono estremamente potenti. Gli Archon sono in qualche modo legati ai Drak, eppure distinti da loro.`
+		conversation
+			`Contatti la cosmologa Erukt Isi'ithi e gli dai una copia delle scansioni della tua nave sui resti di supernova. Per te i risultati degli scanner sono incomprensibili, ma per lui raccontano chiaramente una storia, e non una storia che gli piaccia: il corpo gli trema violentemente e le pupille gli si restringono a spillo mentre guarda i dati.`
+			`	"Queste stelle sono morte di una morte [prematura, innaturale]," dice. "Mi chiedo quale sia stato il ruolo di questi [esseri, entità] Archon. La [destabilizzazione, distruzione] di queste stelle è un crimine commesso dai Korath, per il quale gli Archon li hanno puniti? O i Korath hanno commesso qualche altro crimine, e gli Archon hanno [strappato, fatto a pezzi] queste stelle come punizione?"`
+			choice
+				`	"Quale delle due cose pensi sia più probabile?"`
+				`	"La tua specie ha mai incontrato gli Archon prima d'ora?"`
+			
+			`	Dice: "Uno degli Archon [ha visitato, si è presentato su] questo mondo quando ci siamo stabiliti qui per la prima volta. Ha promesso una terribile [punizione, rappresaglia] se avessimo fatto del male a una delle due [fazioni? vestigia?] di sopravvissuti Korath, e ci ha messo in guardia dai droni robotici [ostili, incontrollati]. Non ho dubbi che potrebbero [distruggere, squarciare] una stella: sono esseri [non del tutto contenuti in questo universo? che si estendono in dimensioni nascoste?]. Ma l'Archon che ha [parlato, comunicato, interagito] con noi non sembrava [malvagio, violento]."`
+			choice
+				`	"Quindi gli Archon sono creature viventi? Non una specie di nave?"`
+				`	"I Quarg dicono che i Drak sono interessati a mantenere la pace nella galassia."`
+					goto quarg
+			
+			`	Dice: "Sono in parte [viventi, biologici], in parte [costruiti, tecnologici], e in parte..." Qualunque sia la terza parte, le parole per dirla sono così lontane dalla lingua umana che il tuo dispositivo di traduzione non tenta nemmeno di indovinare come esprimerle.`
+			`	Gli dici: "I Quarg sono una specie pacifica, e dicono che anche i Drak sono pacificatori. Quindi forse non dovremmo preoccuparci troppo delle loro intenzioni."`
+
+			label quarg
+			`	Dice: "Anche se fosse così, [imporre, mantenere] la pace a volte richiede l'uso della [forza, violenza]. Inoltre, i Quarg ti hanno [spiegato, rivelato] chi sono i Drak? Gli Archon sono i Drak? Oppure sono stati [costruiti? creati? generati?] dai Drak? Gli Archon non sembrano una [specie evoluta naturalmente?]."`
+			`	Resta seduto in silenzio per un minuto, poi dice: "L'Archon che ha parlato con noi ha detto: 'Io sono un Archon'. Non ha detto: 'Io sono un Drak'. Hai mai [parlato, comunicato] con un Archon? Si è [definito, chiamato] un Drak?"`
+			choice
+				`	"Non credo proprio."`
+				`	"Credo di sì."`
+				`	"Non ricordo."`
+
+			`	"Interessante," dice. Promette di condividere con te ogni altra informazione che otterrà, e lo ringrazi per il tempo che ti ha dedicato.`
+
+
+
+mission "Wanderers: Mereti Controller"
+	landing
+	name "Il controllore Kor Mereti"
+	description "Abborda uno dei droni Kor Mereti, trova il componente che ne controlla le azioni e riportalo ai Wanderers su <planet>."
+	source "Spera Anatrusk"
+	to offer
+		has "Wanderers: Surveying 1: done"
+	on visit
+		dialog `Sei tornato su <planet>, ma non hai ancora il componente che controlla i droni Kor Mereti. Riparti e prova ad abbordare uno dei droni per recuperarne uno.`
+	on complete
+		log `Hai scoperto che le navi drone "Kor Mereti" sono controllate da una specie di intelligenza artificiale collettiva e decentralizzata, senza punti deboli evidenti.`
+		outfit "Reasoning Node" -1
+		conversation
+			scene "outfit/reasoning node"
+			`Consegni il Nodo di Ragionamento che hai recuperato da un drone Kor Mereti a una squadra di scienziati Wanderer. Dopo qualche ora ti riferiscono. "È un progetto molto [robusto, ridondante]," dice lo scienziato capo. "Ognuno di questi nodi ha [potenza di calcolo? intelligenza?] sufficiente a controllare uno dei droni, ma sono anche [collegati, interconnessi] tramite una rete iperspaziale. Quindi tutti i droni [comunicano, si consultano] fra loro e sono capaci di prendere [decisioni strategiche?] come collettivo."`
+			choice
+				`	"Quindi nessuno comanda i droni?"`
+				`	"Ma senza la loro rete di comunicazioni perderebbero gran parte della loro intelligenza?"`
+					goto network
+			`	"Pare di no," dice. "Dato il numero di droni e la [complessità, sofisticazione] delle loro [apparecchiature di calcolo?], il collettivo è intelligente quanto qualsiasi [mente artificiale?] che la mia specie abbia mai costruito."`
+				goto end
+			label network
+			`	"Sì," dice, "ma la rete è molto [ridondante? decentralizzata?]. Si adatterebbe rapidamente a qualsiasi interruzione, tranne alle più [gravi, catastrofiche]. È un progetto [bello? elegante?], simile a un [sistema vivente?]."`
+			label end
+			`	Ti dice che gli scienziati continueranno a esaminare il Nodo di Ragionamento e a vedere se riescono a individuare punti deboli da sfruttare, ma non sembra ottimista. Il che è un peccato, perché i Kor Mereti sono una minaccia molto più immediata per i Wanderers dei Kor Sestor.`
+
+
+
+mission "Wanderers: Sestor Controller"
+	landing
+	name "Il controllore Kor Sestor"
+	description "Abborda uno dei droni Kor Sestor, trova il componente che ne controlla le azioni e riportalo ai Wanderers su <planet>."
+	source "Spera Anatrusk"
+	to offer
+		has "Wanderers: Surveying 1: done"
+	on visit
+		dialog `Sei tornato su <planet>, ma non hai ancora il componente che controlla i droni Kor Sestor. Riparti e prova ad abbordare uno dei droni per recuperarne uno.`
+	on complete
+		log `I droni "Kor Sestor" risultano tutti controllati a distanza, presumibilmente da un'intelligenza artificiale o da capi Korath nascosti su uno dei loro mondi. Se si trovasse il centro di controllo, sarebbe possibile prendere il comando dell'intera flotta Kor Sestor.`
+		outfit "Control Transceiver" -1
+		conversation
+			scene "outfit/control transceiver"
+			`Una squadra di scienziati Wanderer esamina il Ricetrasmettitore di Controllo che hai recuperato da un drone Kor Sestor. "È un telecomando," ti dicono. "Molto poca [potenza di calcolo? autonomia?]. La nave riceve [ordini, direttive] da qualche altra fonte e rimanda informazioni sul proprio [stato, osservazioni]."`
+			choice
+				`	"C'è un modo per risalire alla fonte degli ordini?"`
+				`	"Potremmo interrompere le loro comunicazioni in qualche modo? Renderli inermi?"`
+			`	"No," dice lo scienziato, "usa una [particella entangled?]. Impossibile da rintracciare, impossibile da [interrompere, disturbare], e può [funzionare, comunicare] a qualsiasi distanza. Ma se riuscissimo a localizzare il [centro di controllo?], potremmo [prendere il comando, dirottare] tutti i droni contemporaneamente."`
+			`	"Che aspetto avrebbe il centro di controllo?" chiedi.`
+			`	"Potrebbe essere qualsiasi cosa," dice lo scienziato. "Forse un enorme computer. Forse una mente artificiale. Forse un [bunker, insediamento] sotterraneo dove vecchi [capitani di guerra, generali] si nascondono per dirigere la loro [inutile, vana] guerra. Ma qualunque cosa sia, è un unico [punto, fulcro] di vulnerabilità, che potremmo sfruttare a nostro vantaggio."`
+
+
+
+event "wanderers: kaliptari battle begins"
+	system Kaliptari
+		fleet "Wanderer Flycatchers" 500
+
+event "wanderers: kaliptari battle ends"
+	system Kaliptari
+		add fleet "Large Quarg (Kor Efret)" 2000
+		add fleet "Small Kor Mereti" 8000
+		add fleet "Large Kor Mereti" 3600
+		add fleet "Wanderer Defense" 1000
+		add fleet "Wanderer Drones" 500
+
+mission "Wanderers: First Mereti Attack"
+	landing
+	name "Difendi <planet>"
+	description "La base dei Wanderers su <planet> è sotto attacco dei droni Kor Mereti. Aiuta i Wanderers a respingerli, poi torna sul pianeta."
+	source "Spera Anatrusk"
+	to offer
+		has "Wanderers: Surveying 2: done"
+		has "Wanderers: Nova Remnants: done"
+		has "Wanderers: Mereti Controller: done"
+		has "Wanderers: Sestor Controller: done"
+	on offer
+		event "wanderers: kaliptari battle begins"
+		conversation
+			`Mentre stai ancora tornando alla tua nave dall'ultimo incontro, cominciano a suonare le sirene d'allarme, e vedi molti Wanderers saltare in aria e volare in fretta verso lo spazioporto, dove le navi cominciano a decollare in fretta. (Curiosamente, la sirena d'allarme dei Wanderers somiglia più al verso di un'anatra che agli stridii o ai ronzii che gli umani usano di solito come allarme.) Sembra che la base sia sotto attacco.`
+			`	Torni il più in fretta possibile alla tua nave e ti prepari a unirti agli altri difensori...`
+				launch
+	on visit
+		dialog `Ci sono ancora droni Kor Mereti che girano là sopra. Dovresti aiutare i Wanderers a respingerli.`
+	npc evade
+		government "Kor Mereti"
+		system Kaliptari
+		personality staying heroic
+		fleet
+			names "kor mereti"
+			variant
+				"Model 512" 1
+				"Model 256" 1
+				"Model 128" 2
+				"Model 64" 3
+				"Model 32" 4
+				"Model 16" 6
+		dialog `Mentre l'ultimo gruppo di razziatori Kor Mereti viene distrutto, ricevi un messaggio da Sobari Tele'ek. "Unisciti a noi alla [base, sede] appena puoi," dice. "Dovremo [concordare, decidere] una strategia per affrontare questi [robot, droni], nel caso i loro attacchi peggiorino."`
+	npc
+		government "Wanderer"
+		system Kaliptari
+		personality staying heroic
+		fleet
+			names "wanderer"
+			variant
+				"Derecho"
+				"Tempest" 2
+				"Heavy Gust"
+				"Autumn Leaf" 1
+	npc
+		government "Wanderer"
+		system Kaliptari
+		personality heroic
+		fleet
+			names "wanderer"
+			variant
+				"Derecho"
+				"Tempest" 2
+				"Heavy Gust" 1
+				"Autumn Leaf" 3
+				"Summer Leaf" 2
+	on complete
+		event "wanderers: kaliptari battle ends"
+
+
+
+mission "Wanderers: Rek To Kor Efret"
+	landing
+	name "Porta Rek su <planet>"
+	description "Porta Rek, che è sopravvissuta alla Muta e ha assunto una nuova forma, a tentare di comunicare con i Kor Efret su <destination>."
+	autosave
+	source "Spera Anatrusk"
+	destination "Setar Fort"
+	passengers 1
+	blocked "Ti serve spazio per un passeggero per accettare la prossima missione dei Wanderers."
+	to offer
+		has "Wanderers: First Mereti Attack: done"
+	on offer
+		log `Iktat Rek è sopravvissuta alla Muta, ma in una forma completamente nuova. Rek ora è femmina, è alta quanto un cucciolo Wanderer e ha scelto per sé il nome "Ektasi Rek", che significa qualcosa come "comunicatrice" o "costruttrice di ponti".`
+		log "People" "Iktat Rek" `Rek ha subito la Muta, un processo misterioso in cui il corpo di un Wanderer esposto a stimoli nuovi si trasforma in una specie completamente nuova, mantenendo però i ricordi e la personalità di quell'individuo. La nuova Rek è femmina e si fa chiamare "Ektasi Rek".`
+		log "People" "Ektasi Rek" `Ektasi Rek è la prima Wanderer in millenni a subire la Muta, trasformandosi in una specie del tutto diversa con nuove capacità. Man mano che altri Wanderers attraverseranno la Muta, i Wanderers nel loro insieme dovranno decidere quale di queste mutazioni rappresenti il modo migliore perché la loro specie sopravviva e fiorisca nello spazio Korath.`
+		conversation
+			`Quando entri nella sala della riunione, Sobari Tele'ek sta discutendo animatamente con il cucciolo Wanderer che era qui prima, quello che parla la tua lingua. Il cucciolo sta dicendo: "L'Occhio non ci ha condotti in un luogo di mondi [vuoti, abbandonati], ma in un luogo di [esseri viventi?]. Per completare qui la nostra [vocazione, opera] dobbiamo collaborare con quegli esseri, come collaboreremmo con [l'ecosistema? la personalità?] di un pianeta che volessimo riparare."`
+			`	"Che cosa [proponi, intendi fare], Primogenita?" chiede Tele'ek.`
+			`	"Vorrei far visita ai Korath [superstiti, rimasti]," dice. "Vorrei imparare la loro [lingua? visione? storia?]. Vorrei offrire loro la nostra [compagnia, assistenza]."`
+			`	"No," dice Tele'ek. "Come potrei [mettere in pericolo, rischiare] la tua vita? Sei troppo [preziosa, unica] perché ti si mandi in una [missione, impresa] simile."`
+			`	"Non puoi darmi ordini," dice lei.`
+			`	"Finché non sarai [pienamente formata? completa?] posso," dice lui.`
+			choice
+				`	(Interrompi la discussione per riferire dell'attacco Kor Mereti.)`
+				`	(Lascia che continuino a parlare.)`
+					goto continue
+
+			`	Intervieni per cominciare a descrivere come è stato respinto l'attacco Kor Mereti, ma mentre parli il cucciolo Wanderer salta giù dal suo posto e saltella fino a posarsi vicino alla testa del tavolo. "Io nomino me stessa," dice, piano.`
+				goto name
+
+			label continue
+			`	Il cucciolo Wanderer si alza in tutta la sua altezza (che, va detto, resta comunque non certo imponente) e dice piano: "Io nomino me stessa."`
+
+			label name
+			`	Improvvisamente ogni altra conversazione nella stanza si ferma. Da quello che ti aveva raccontato Iktat Rek, un cucciolo Wanderer diventa adulto nel momento in cui sceglie per sé un nome di ruolo. "Io nomino me stessa [comunicatrice, ambasciatrice, costruttrice di ponti]," dice. "Il Capitano <last> mi porterà a [vivere con, unirmi a] i Korath pacifici."`
+			`	Con tua sorpresa, Tele'ek accetta di lasciarla andare dopo averle dato un ultimo avvertimento a stare attenta. Lei cammina e saltella alle tue calcagna mentre torni alla nave; a quanto pare non ha bisogno di bagagli.`
+			choice
+				`	"Sono contento di trasportarti. Come devo chiamarti?"`
+				`	"Mi sorprende che tuo padre ti abbia dato il permesso di farlo."`
+					goto father
+
+			`	Inclina la testa di lato, perplessa. "Non sai chi sono?" dice. Ora che siete fuori dalla riunione, torna a parlarti nella tua lingua.`
+			`	"No, non lo so," dici.`
+				goto rek
+
+			label father
+			`	Sembra confusa. "Tele'ek non è mio padre," dice. "Sono mio padre io stessa." Ora che siete fuori dalla riunione, torna a parlarti nella tua lingua.`
+			`	"Che cosa vuoi dire?" chiedi.`
+
+			label rek
+			`	"Dopo tutto il lavoro fatto insieme, non mi riconosci?" chiede. "Sono Ektasi Rek i' Rek." Ti serve un momento per capire che non sta dicendo di essere la figlia di Rek. Sta dicendo di essere "Rek, che è venuta da Rek". È Rek stesso. O apparentemente, ora, se stessa. La biologia aliena è piena di sorprese.`
+			choice
+				`	"Rek! Sei sopravvissuta alla Muta! Perché nessuno me l'ha detto?"`
+				`	"Aspetta, ora sei femmina?"`
+					goto female
+
+			`	Dice: "Le cose si sono un po' confuse quando l'Occhio si è aperto." Non sei sicuro che sia tutta la verità, o se Rek si stesse solo divertendo a farti uno scherzo e ad aspettare quanto ci avresti messo a capirlo.`
+				goto end
+
+			label female
+			`	Ride. "Tecnicamente non sono nemmeno più la stessa specie di prima. Un cambio di sesso è poca cosa al confronto." È difficile leggere le espressioni dei Wanderers, ma sembra divertirsi moltissimo nel vederti confuso.`
+
+			label end
+			`	Rek non ha problemi a trovare le cabine, e si sistema allegramente mentre tu ti prepari al viaggio verso <planet>.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Rek non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers: Quarg Assistance 1"
+	landing
+	name "Assistenza dei Quarg"
+	description "Ektasi Rek ti ha suggerito di andare dai Quarg e chiedere se possono aiutare a difendere i Wanderers dagli attacchi dei Kor Mereti."
+	autosave
+	source "Setar Fort"
+	destination "Kuwaru Efreti"
+	to offer
+		has "Wanderers: Rek To Kor Efret: done"
+	on offer
+		log "La metamorfosi di Rek sembra averle dato una capacità accresciuta di capire le altre lingue. Resterà per un po' con i Korath amichevoli per imparare a comunicare con loro."
+		log "People" "Ektasi Rek" `La Muta ha dato a Rek la capacità non solo di capire il parlato alieno, ma anche di imitarne il suono.`
+		conversation
+			`Poco dopo che tu ed Ektasi Rek atterrate nello spazioporto dei Kor Efret, un piccolo gruppo di Korath si raduna intorno a voi. Senza dubbio capiscono che Rek è una delle nuove aliene che si stanno stabilendo nel loro ex territorio. Ma quando Rek comincia a cercare di comunicare con loro, il desiderio di essere capiti vince su qualsiasi ostilità possano provare.`
+			`	Nel giro di pochi minuti Rek sta facendo con loro una specie di gioco: indica oggetti diversi, cerca di impararne i nomi, e poi usa quei nomi in frasi: Questo è un tavolo. Rek è sul tavolo. Rek sta in piedi sul tavolo. Il tavolo è sotto Rek. Il colore del tavolo è nero. Il colore del tavolo è lo stesso colore di Rek.`
+			`	I Korath agitano le mani in segno di approvazione quando Rek dice qualcosa con cui sono d'accordo, e sibilano quando fa un errore di grammatica. Le parole nuove e le nuove parti del discorso arrivano troppo in fretta perché tu possa cogliere più del senso generale, ma Rek assorbe tutto. Sembra così felice e piena di vita che è difficile credere che sia la stessa persona da cui ti sei congedato nel centro medico mesi fa.`
+			`	Dopo circa un'ora Rek dice qualcosa al gruppo di Korath, poi si avvicina a te.`
+			choice
+				`	"Sembra che tu stia facendo progressi incredibili!"`
+				`	"Che cosa vuoi che faccia adesso?"`
+					goto end
+
+			`	Sembra molto soddisfatta di sé. "Credo che la Muta mi abbia ridato la plasticità mentale di un cucciolo," dice. "È quasi facile come respirare. Ma mi ci vorrà un po' prima di capire le sottigliezze della loro lingua abbastanza bene da comunicare qualcosa di davvero importante." È un po' inquietante che i suoi organi vocali riescano a riprodurre così perfettamente sia la lingua sibilante dei Korath sia la tua lingua umana, oltre ai suoni glottidali e percussivi del parlato dei Wanderers. E anche la lingua Hai, già che ci siamo.`
+			`	"Allora," chiedi, "che cosa devo fare mentre sei qui a imparare la lingua?"`
+
+			label end
+			`	Dice: "Mi preoccupa che i Kor Mereti sferrino un altro attacco alla mia gente. Credi che i Quarg sarebbero disposti ad aiutarci a proteggerci?"`
+			`	Concordi che vale la pena provare. Ti suggerisce di visitare il mondo ad anello dei Quarg e cercare qualcuno con l'autorità per inviare una flotta di difesa a proteggere l'insediamento dei Wanderers.`
+				accept
+
+
+
+mission "Wanderers: Quarg Assistance 2"
+	landing
+	name "Assistenza dei Quarg"
+	description "Scorta fino a <destination> una flotta dei Quarg che ha accettato di aiutare a proteggere i Wanderers."
+	autosave
+	source "Kuwaru Efreti"
+	destination "Spera Anatrusk"
+	to offer
+		has "Wanderers: Quarg Assistance 1: done"
+	on offer
+		log "I Quarg (o forse una fazione interna ai Quarg, o addirittura solo un gruppo di Quarg che agisce per conto proprio) hanno accettato di inviare tre delle loro navi da guerra per aiutare a difendere l'insediamento dei Wanderers nello spazio Korath. (O forse mandano le navi perché considerano i Wanderers degli invasori e vogliono tenerli d'occhio. Non è facile capire le loro vere intenzioni.)"
+		log "Factions" "Wanderers" `Secondo i Quarg, i Wanderers non sono originari di questa galassia, ma sono stati portati qui da altrove (presumibilmente dai Pug).`
+		conversation
+			`I Quarg in genere non condividono alcuna informazione su come funzioni la loro gerarchia di comando, se una gerarchia del genere esiste, quindi il modo migliore per trovare aiuto per i Wanderers è chiedere in giro finché non trovi la persona giusta. Fermi il primo Quarg che ti passa accanto nel corridoio. "Dunque," dice, "a noi Quarg l'umano viandante è venuto in visita. Di quale aiuto posso essere?"`
+			`	"Beh," dici, "sono qui a nome di una specie che si è stabilita di recente su uno dei mondi Korath abbandonati. Spero che possiate aiutare a proteggerli."`
+			`	Dice: "Sì, consapevoli noi siamo che hai fatto amicizia con gli eternamente vaganti Wanderers, che sono amici degli insopportabili Pug. Ma perché aiutarli dovremmo?"`
+			choice
+				`	"I Wanderers sanno riparare gli ecosistemi planetari. Potrebbero rendere di nuovo abitabili i mondi Korath."`
+				`	"I Wanderers potrebbero aiutarvi a gestire gli automi ostili."`
+					goto automata
+
+			`	"Sono in grado anche di rendere i Korath degni di abitare di nuovo quei mondi? Sono in grado di rendere i Korath abbastanza saggi da non rovinare ancora le loro case? O le capacità di questi intrusi extragalattici non arrivano così lontano?"`
+				goto next
+
+			label automata
+			`	"Le loro navi e le loro armi sono più potenti delle nostre?" chiede il Quarg. "Hanno una saggezza più vasta della nostra? O sono più numerosi di noi? Perché noi siamo trilioni. Che cosa potrebbero ottenere questi intrusi extragalattici che noi, molto prima che voi compariste, non abbiamo già tentato?"`
+
+			label next
+			`	Quando non rispondi, il Quarg continua: "Questi Wanderers non sono indigeni della nostra galassia, e quindi non abbiamo l'obbligo di scongiurarne l'estinzione. I Korath sono il nostro compito e la nostra responsabilità. Ti prego dunque di dirmi perché sia una buona cosa per i Korath che questi alieni invadano il loro territorio in frantumi."`
+			choice
+				`	"I Wanderers potrebbero aiutare i Korath insegnando loro a prendersi meglio cura dei loro mondi."`
+				`	"I Wanderers non vogliono restare qui per sempre; andranno altrove una volta riparati i mondi."`
+
+			`	Il Quarg sbatte le palpebre lentamente, con le sue strane palpebre che si muovono di lato invece che dall'alto in basso. Poi dice: "Concedere noi vi dovremo tre navi da guerra che con voi torneranno all'insediamento di questi amici degli spregevoli Pug. Aiuteranno a tenere a bada i robot portatori di morte. E sorveglieranno i Wanderers, e giudicheranno se davvero benevoli come tu dici sono."`
+			`	È estremamente strano che il primo Quarg a caso che hai fermato nel corridoio sia proprio uno con l'autorità di inviare una flotta di navi da guerra, ma sarebbe scortese mettere in dubbio un'offerta così generosa, anche se estremamente verbosa. Ringrazi il Quarg e torni alla tua nave. Si spera che i Wanderers siano contenti della protezione e non si offendano per una flotta dei Quarg sopra la testa che scruta le loro azioni.`
+				accept
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una delle navi dei Quarg. Meglio ripartire e aspettare che arrivi.`
+	npc accompany save
+		government "Quarg (Kor Efret)"
+		personality escort
+		ship "Quarg Wardragon" "Elearu-quara"
+		ship "Quarg Wardragon" "Kumawar Kwarca"
+		ship "Quarg Wyvern" "Ahlimona Spod"
+
+
+
+mission "Wanderers: Quarg Defenders"
+	landing
+	invisible
+	non-blocking
+	source "Spera Anatrusk"
+	to offer
+		has "Wanderers: Quarg Assistance 2: done"
+	npc kill
+		government "Quarg (Kor Efret)"
+		personality staying uninterested heroic
+		ship "Quarg Wardragon" "Elearu-quara"
+		ship "Quarg Wardragon" "Kumawar Kwarca"
+		ship "Quarg Wyvern" "Ahlimona Spod"
+
+
+
+mission "Wanderers: Pug Assistance 1"
+	landing
+	name "Assistenza dei Pug"
+	description "I Wanderers sono grati per la protezione dei Quarg, ma sperano che i Pug su <planet> siano disposti a inviare navi da guerra per proteggerli."
+	autosave
+	source "Spera Anatrusk"
+	destination "Vara Pug"
+	clearance
+	to offer
+		has "Wanderers: Quarg Assistance 2: done"
+	on offer
+		conversation
+			`Quando arrivi all'insediamento dei Wanderers con tre navi da guerra dei Quarg al seguito, vieni accolto con una mescolanza di gratitudine e apprensione. I capi più anziani insistono per incontrarti subito, e tu spieghi come hai portato Rek nello spazio Kor Efret e poi sei andato dai Quarg a chiedere aiuto. Tele'ek ti chiede: "Questi Quarg, quali sono le loro [intenzioni, inclinazioni] verso di noi? E capiscono che vogliamo [guarire, rigenerare] questi mondi, non rubarli ai Korath?"`
+			choice
+				`	"I Quarg evitano il conflitto a meno che non sia assolutamente necessario. Se mostrate di essere pacifici, finiranno per fidarsi di voi."`
+					goto peace
+				`	"Credo che i Quarg temano che finirete per soppiantare i Korath superstiti."`
+					goto displace
+				`	"I Quarg non si fidano di voi perché siete legati ai Pug. Dicono anche che non siete originari di questa galassia."`
+					goto pug
+
+			label peace
+			`	"Beh," dice Tele'ek, "se davvero [desiderano, sperano] che questi mondi tornino [fertili, abitabili], la cosa migliore che possiamo fare è dimostrare il nostro [valore, merito] cominciando il nostro lavoro. Anche noi siamo una specie [paziente, riflessiva], e capiamo che conquistare la [fiducia, benevolenza] di un altro possa richiedere tempo."`
+				goto next
+
+			label displace
+			`	"Spero che Rek riuscirà a [dissipare, placare] quel timore," dice Tele'ek. "Di certo, se riusciremo a [comunicare, entrare in contatto] con i Korath superstiti, si renderanno presto conto che le nostre intenzioni sono [pacifiche, onorevoli, benevole]."`
+				goto next
+
+			label pug
+			`	Tele'ek dice: "È un sentimento [ragionevole, comprensibile]. Ma quando [apprenderanno, osserveranno] che il nostro scopo è solo far [rifiorire, fruttificare] di nuovo questi mondi, spero che [conquisteremo, guadagneremo] la loro fiducia."`
+
+			label next
+			`	"E inoltre," dice Iriket, la direttrice del terraformaggio, "resteremo in questa [regione di spazio, territorio] solo per poco, non più di diecimila o ventimila [anni]. Quindi non [vedo, capisco] perché siano così [preoccupati, sulla difensiva]."`
+			`	"Eppure," dice Tele'ek, "molti fra noi avrebbero preferito che Rek non ti [avesse inviato, avesse ordinato] dai Quarg. I Custodi dell'Occhio hanno tenuto [a bada, indietro] gli Hai. Di certo potrebbero aiutarci anche a [sconfiggere, eliminare] questi robot ostili. Di certo ci hanno mandati qui per la [guarigione, ricostruzione] dei mondi, non per perdere la vita combattendo un nemico [implacabile, spietato]."`
+			choice
+				`	"Vale la pena provare. I Pug sono pieni di sorprese; potrebbero avere una tecnologia che permetterebbe loro di sconfiggere gli automi con facilità."`
+					goto end
+				`	"Se finire nel fuoco incrociato delle due fazioni di automi è brutto, non sarebbe ancora peggio finire in mezzo a una guerra fra i Pug e i Quarg?"`
+
+			`	"Entrambi vogliono ciò che è [ottimale, produttivo] per questa regione," dice Tele'ek. "Forse combattere fianco a fianco contro un nemico comune permetterebbe ai Pug e ai Quarg di [riconciliarsi, fare la pace] fra loro."`
+
+			label end
+			`	Dopo qualche discussione, gli altri capi concordano che preferiscono andare dai Pug a chiedere aiuto piuttosto che fidarsi solo della benevolenza dei Quarg. Ti chiedono di tornare attraverso il cunicolo e di visitare il mondo dei Pug che c'è dall'altra parte, per vedere se sono disposti ad aiutare.`
+				accept
+
+
+
+mission "Wanderers: Pug Assistance 2"
+	landing
+	name "Ritorna su <planet>"
+	description "Torna su <planet> per dire ai Wanderers che i Pug rifiutano di mandare navi attraverso l'Occhio per aiutarli a difendersi."
+	source "Vara Pug"
+	destination "Spera Anatrusk"
+	to offer
+		has "Wanderers: Pug Assistance 1: done"
+	on offer
+		log "Hai visitato i Pug per vedere se sono disposti ad aiutare i Wanderers a combattere gli automi Korath. Ma i Pug e i Quarg non vanno d'accordo, quindi i Pug non sono disposti a entrare nello spazio Korath."
+		log "Factions" "Archons" `Per ragioni non del tutto chiare, i Pug sono ostili verso gli Archon, ma li considerano anche degni di pietà.`
+		log "Factions" "Pug" `I Pug dicono che la loro specie è divisa in gruppi separati, o "squadre", ciascuna delle quali si occupa di interagire con una specie senziente diversa. Considerano quelle altre specie come "progetti" su cui stanno lavorando.`
+		conversation
+			`Appena scendi dalla nave vieni circondato da un gruppo di Pug armati. "Forse non abbiamo comunicato con sufficiente chiarezza perché il piccolo cervello dell'umano lo capisse," dice uno di loro, "ma non siamo interessati a ulteriori interazioni con l'umano."`
+			choice
+				`	"In realtà sono qui a nome dei Wanderers."`
+					goto wanderers
+				`	"Perché siete così ostili nei miei confronti?"`
+
+			`	"Non siamo ostili," dice un altro, "ma il nostro progetto sono i Wanderers, non gli umani. Voi avete i vostri Pug e potete dar loro fastidio quanto volete, se ve lo permetteranno."`
+			choice
+				`	"Beh, in realtà sono qui per parlare con voi dei Wanderers."`
+					goto wanderers
+				`	"State dicendo che il gruppo di Pug che ha attaccato lo spazio umano è una fazione diversa?"`
+
+			`	"Non una fazione diversa," dice uno dei Pug, "solo una squadra diversa, che lavora a un progetto diverso. Sono quelli il cui compito è capire gli umani e trattare con loro, non noi. Per fortuna."`
+			choice
+				`	"I Pug nello spazio umano se ne sono andati, quindi non c'è più modo di 'dar loro fastidio'."`
+
+			`	"Certo che se ne sono andati," dice uno dei Pug, con un tono che suggerisce che sei estremamente sciocco a credere che i Pug abbiano finito di intromettersi negli affari umani.`
+
+			label wanderers
+			`	Spieghi ai Pug che sei lì a nome dei Wanderers: che la regione di spazio in cui l'Occhio li ha condotti è infestata da pericolosi automi robotici. Rispondono: "È infestata anche dai pietosi Archon e dai loro Quarg domestici. Con i quali non siamo esattamente in rapporti amichevoli."`
+			`	Un altro dei Pug aggiunge: "Per essere un po' più precisi, in realtà siamo in rapporti di reciproco attentato dinamitardo."`
+			choice
+				`	"Non potreste fare la pace con loro, se voleste?"`
+					goto peace
+				`	"Perché gli Archon vi odiano?"`
+					goto hate
+				`	"Che cosa sapete degli Archon?"`
+					goto archons
+
+			label peace
+			`	"Sinceramente," dice uno dei Pug, "non vale la pena dello sforzo."`
+			`	"Gli Archon hanno una visione della vita così tetra," dice un altro, "e parlare con loro è semplicemente troppo deprimente."`
+				goto end
+
+			label hate
+			`	"Di recente abbiamo avuto un disaccordo," dice uno dei Pug. "Avevamo ragione noi. Gli Archon avevano torto. Stanno ancora facendo i musoni."`
+				goto end
+
+			label archons
+			`	"Sappiamo che sono stati creati per mediare la pace e prevenire l'estinzione," dice uno dei Pug. "E sappiamo che hanno fallito. Hanno fallito molte volte, in effetti. E questo li rende musoni e deprimenti."`
+
+			label end
+			`	Parli ancora un po' con loro, ma non riesci a ottenere altre informazioni né a convincerli a venire in aiuto dei Wanderers che sono nello spazio Korath. Dovrai riferire a Sobari Tele'ek che la flotta dei Quarg è l'unico aiuto esterno che probabilmente riceveranno.`
+				accept
+
+
+
+mission "Wanderers: Mereti Observation"
+	landing
+	name "Osservazione dei Mereti"
+	description "Osserva i Kor Mereti a Mesuket abbastanza a lungo perché l'equipaggiamento dei Wanderers raccolga dati sulle loro comunicazioni. Poi torna su <planet>."
+	autosave
+	source "Spera Anatrusk"
+	to offer
+		has "Wanderers: Pug Assistance 2: done"
+	cargo "communications recorder" 2
+	blocked "Ti serve <capacity> libera per accettare la prossima missione per i Wanderers."
+	waypoint "Mesuket"
+	on offer
+		conversation
+			`Sobari Tele'ek ti incontra poco dopo il tuo ritorno, e tu gli dici che i Pug rifiutano di aiutare a difendere i Wanderers nello spazio Korath a causa della presenza dei Quarg e degli Archon. "Allora dobbiamo trovare una nostra [via, soluzione]," dice. "Vieni, ho una squadra di [scienziati? ingegneri?] che desidera incontrarti."`
+			`	Ti conduce in un'altra struttura, dove una squadra di Wanderers è riunita intorno a un tavolo su cui sono sparsi i componenti smontati del Nodo di Ragionamento. La scienziata capo ti presenta la sua squadra e poi dice: "Crediamo di aver trovato un modo per [intercettare, ascoltare] il [traffico di rete? le comunicazioni?] degli automi che usano questi [dispositivi, sistemi]. Ci serve qualcuno che vada nel sistema stellare dove il loro [conflitto, scontro] è più feroce e faccia una [registrazione, osservazione] delle loro comunicazioni. Puoi svolgere questo [compito, incarico]?"`
+			choice
+				`	"Certo, lo farò volentieri."`
+					goto end
+				`	"Sembra molto rischioso."`
+
+			`	"Davvero," dice, "ma sei molto [abile, fortunato] a schivare i danni." Con esitazione accetti di assumerti un'altra missione pericolosa per loro conto.`
+
+			label end
+			`	Gli scienziati cominciano a installare il nuovo equipaggiamento sulla tua nave. Mentre lo fanno, Tele'ek ti dice: "Speriamo anche di raccogliere altre [informazioni, notizie] sulle capacità di combattimento e sulle [tattiche, scelte] dei droni. Se la loro [rete, comunicazione] non è vulnerabile, dovremo trovare un modo per sconfiggerli in battaglia." Accetti di restare nel sistema bersaglio abbastanza a lungo da osservare alcuni droni che si combattono fra loro.`
+				accept
+	on enter "Mesuket"
+		dialog `Entri nel sistema bersaglio e cominci a registrare le comunicazioni dei droni Kor Mereti. Potrebbe volerci un po' per raccogliere tutti i dati che servono ai Wanderers, ma hanno impostato il loro equipaggiamento per avvisarti quando avrà finito di raccoglierli.`
+	npc
+		government "Kor Sestor"
+		system "Mesuket"
+		personality staying heroic
+		fleet
+			names "kor sestor"
+			variant
+				"Kar Ik Vot 349"
+				"Met Par Tek 53" 3
+	npc
+		government "Kor Mereti"
+		system "Mesuket"
+		personality staying heroic
+		fleet
+			names "kor mereti"
+			variant
+				"Model 64"
+				"Model 32" 2
+				"Model 16" 5
+	timer 3600 3600
+		"pause when inactive"
+		"activation requirements"
+			system "Mesuket"
+		on timeup
+			dialog `Il dispositivo di registrazione dei Wanderers emette un cinguettio per farti sapere che ha raccolto dati a sufficienza. È tempo di tornare su <planet>.`
+	on visit
+		dialog `Sei tornato su <planet>, ma non hai abbastanza dati per i Wanderers. Torna a Mesuket e aspetta che il dispositivo ti avvisi che ha dati sufficienti.`
+
+
+
+mission "Wanderers: Kor Efret 1"
+	landing
+	name "Visita <planet>"
+	description "Visita Ektasi Rek e i Korath su <planet>, e vedi se hanno informazioni utili a neutralizzare gli automi Kor Mereti."
+	autosave
+	source "Spera Anatrusk"
+	destination "Setar Fort"
+	to offer
+		has "Wanderers: Mereti Observation: done"
+	on offer
+		log "I Wanderers pensano che potrebbe essere possibile infettare la rete di comunicazioni dei Kor Mereti con qualcosa di simile a un virus informatico, per prendere il controllo dei droni o disabilitarli del tutto."
+		conversation
+			`Consegni le registrazioni delle comunicazioni alla squadra di scienziati, poi ti incontri con Tele'ek per un po' a discutere dei possibili punti deboli dei droni Mereti in combattimento. "Naturalmente," dice, "sarebbe molto meglio se potessimo [sovvertirli, dirottarli] invece di distruggerli del tutto. Altrimenti la seconda [fazione, variante] di droni guadagnerebbe potere, senza i droni Mereti a [contenerli, tenerli a freno]."`
+			`	Circa un'ora dopo gli scienziati contattano Tele'ek. Torni alla loro struttura, e la scienziata capo ti dice: "È come [sospettavamo, ipotizzavamo]. I droni Mereti funzionano come [componenti, elementi] di un'unica [intelligenza collettiva? coscienza gestaltica?]. [Analizzeremo, scomporremo] ancora i loro protocolli per vedere se possiamo in qualche modo [infettare, corrompere] la loro rete."`
+			`	Mentre aspetti che mettano a punto un piano, Tele'ek ti suggerisce di fare una visita a Ektasi Rek. Se ha fatto progressi nel comunicare con i Korath superstiti, forse saranno in grado di aiutare i Wanderers a trovare un modo per violare la rete Mereti e prendere il controllo dei droni.`
+				accept
+
+
+
+mission "Wanderers: Kor Efret 2"
+	landing
+	name "Ingegneri Korath"
+	description "I Korath su <origin> ti hanno indirizzato a una squadra di ingegneri su <planet> che lavorano da tempo per cercare di eliminare gli automi."
+	autosave
+	source "Setar Fort"
+	destination "Laki Nemparu"
+	passengers 1
+	blocked "Per accettare questa missione ti serve una cuccetta libera per Rek."
+	to offer
+		has "Wanderers: Kor Efret 1: done"
+	on offer
+		conversation
+			`Rek sembra felice di vederti, ed è ancora più sicura di sé e piena di vita di quando l'hai lasciata. Ti presenta diversi Korath, parlando con loro rapidamente nella loro lingua.`
+			choice
+				`	"Rek! Come hai fatto a imparare la loro lingua così in fretta?"`
+				`	"Sono qui per vedere se i Korath potrebbero aiutarci a violare la rete di comunicazioni dei Kor Mereti e a prendere il controllo dei droni."`
+					goto help
+
+			`	Dice: "Sembra che la Muta abbia alterato non solo i miei organi vocali, ma anche la mia mente. Qualsiasi lingua ora mi sembra chiara e ovvia. È strano, perché la Muta è una mutazione casuale; non ho avuto voce in capitolo su ciò che sarei diventata. Eppure mi ha dato esattamente le capacità che mi servono per creare una collaborazione con i Korath."`
+			choice
+				`	"Beh, se davvero era solo questione di caso ciò in cui ti saresti trasformata, sono contento che la tua nuova forma ti si addica così bene."`
+				`	"Sono qui per vedere se i Korath potrebbero aiutarci a violare la rete di comunicazioni dei Kor Mereti e a prendere il controllo dei droni."`
+					goto help
+
+			`	"Sono contenta anch'io," dice. "È strano. Anni fa pensavo che, se avessi subito la Muta, avrei odiato la perdita del mio vecchio corpo e della mia vecchia identità. Eppure in questo corpo nuovo mi sento più a casa di quanto mi sia mai sentita prima. È un dono inatteso. Ma ora, come posso aiutarti?" Le racconti degli scienziati che sperano di violare la rete Mereti, e le chiedi di proporre l'idea ai Korath.`
+
+			label help
+			`	Rek fa del suo meglio per spiegare la tua proposta ai Korath. Uno di loro risponde, e lei traduce: "Ha detto che su <planet> c'è una squadra di ingegneri Korath che da cinquant'anni lavora per trovare un modo di distruggere gli automi. Dice che forse possono aiutarci."`
+			`	Accetti di viaggiare con Rek fino a <planet> e di vedere che cosa possono dirti gli ingegneri.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Rek non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+event "wanderers: kashikt battle begins"
+	system "Kashikt"
+		fleet "Kor Efret Home" 6000
+
+event "wanderers: kashikt battle ends"
+	system "Kashikt"
+		fleet "Quarg (Kor Efret)" 1000
+		fleet "Large Quarg (Kor Efret)" 2000
+		fleet "Kor Efret Home" 1000
+
+mission "Wanderers: Kor Efret 3"
+	landing
+	name "Difendi <planet>"
+	description "Difendi questo mondo dei Kor Efret da un'incursione dei Kor Mereti. Si spera che, se resisterete abbastanza a lungo, arriveranno altri rinforzi."
+	source "Laki Nemparu"
+	to offer
+		has "Wanderers: Kor Efret 2: done"
+	on offer
+		event "wanderers: kashikt battle begins"
+		conversation
+			`Con l'aiuto di Rek riesci a metterti in contatto con la squadra di ingegneri Korath, e Rek spiega il piano dei Wanderers per violare la rete Kor Mereti. Il suo parlato è più lento di prima, e deve continuare a fare domande; chiaramente la conversazione comporta un gergo tecnico che ancora non conosce. Quando ha finito di spiegare, i Korath restano in silenzio per un minuto, poi uno di loro risponde a voce piuttosto alta, quasi gridando, gesticolando nella tua direzione come per respingerti.`
+			`	Rek dice: "Ha detto: 'Ci credete che siamo idioti? Credete che non ci abbiamo provato?'" Il capo dei Korath aggiunge un'altra lunga dichiarazione che Rek traduce con esitazione. "La coscienza... dei Mereti? È impossibile sovvertirla. Ha una specie di... sistema immunitario? Come una creatura vivente. Qualsiasi influenza estranea che intacchi la sua rete viene isolata e analizzata. Non diventa parte del... gestalt? ... a meno che non si dimostri utile."`
+			choice
+				`	"Ma forse i Wanderers potrebbero riuscire dove i Korath hanno fallito."`
+				`	"E i Kor Sestor? C'è qualche speranza di prendere il controllo di quei droni?"`
+					goto sestor
+
+			`	Dice: "Mi dispiace, <first>, ma questo non lo tradurrò. Sarebbe un insulto ai Korath, e sono molto suscettibili quando si tratta del loro onore. Ti auguro comunque ogni fortuna."`
+				goto end
+
+			label sestor
+			`	Rek fa una domanda ai Korath e traduce la risposta. "Dicono che nessuno di loro sa che cosa controlli i Kor Sestor, ma che, ovunque sia il centro di controllo, è di certo ben sorvegliato. Non sono stati disposti a rischiare la vita per esplorare lo spazio Sestor, ma tu sei libero di farlo se pensi che sarebbe utile."`
+
+			label end
+			`	La conversazione viene interrotta quando le sirene d'allarme cominciano a suonare in tutto lo spazioporto. Uno dei Korath dice qualcosa a Rek, e corrono tutti verso le piazzole di atterraggio. Rek dice: "Un altro attacco dei Kor Mereti. Ultimamente sono diventati più frequenti. Dovresti unirti ai difensori; combattere al loro fianco ti aiuterà a guadagnare la loro fiducia." Ti precipiti alla tua nave e decolli...`
+				launch
+	on complete
+		event "wanderers: kashikt battle ends"
+	npc evade
+		government "Kor Mereti"
+		personality staying heroic
+		fleet
+			names "kor mereti"
+			variant
+				"Model 512" 2
+				"Model 256" 4
+				"Model 128" 7
+		dialog `I droni Kor Mereti sono stati neutralizzati. Dovresti atterrare sul pianeta e rimetterti in contatto con Rek e gli ingegneri Korath.`
+	npc
+		government "Kor Efret"
+		personality staying heroic
+		fleet
+			names "korath"
+			variant
+				"Echo-Galleon"
+				"Arch-Carrack" 2
+				"Charm-Shallop" 4
+	npc
+		government "Kor Efret"
+		personality heroic
+		fleet
+			names "korath"
+			variant
+				"Echo-Galleon"
+				"Arch-Carrack" 2
+				"Charm-Shallop" 4
+	npc
+		government "Quarg (Kor Efret)"
+		personality heroic staying entering
+		fleet
+			names "quarg"
+			variant
+				"Quarg Wardragon" 3
+	npc
+		government "Quarg (Kor Efret)"
+		personality heroic
+		system "Host"
+		fleet
+			names "quarg"
+			variant
+				"Quarg Wardragon" 2
+				"Quarg Wyvern" 3
+				"Quarg Hydra"
+	npc
+		government "Quarg (Kor Efret)"
+		personality heroic
+		system "Mesuket"
+		fleet
+			names "quarg"
+			variant
+				"Quarg Hydra" 2
+
+
+
+mission "Wanderers: Kor Efret 4"
+	landing
+	name "Ritorna su <planet>"
+	description "Trasporta Ektasi Rek di nuovo su <planet>, dove continuerà il suo lavoro per capire la lingua e la cultura dei Korath."
+	autosave
+	source "Laki Nemparu"
+	destination "Setar Fort"
+	passengers 1
+	blocked "Per accettare questa missione ti serve una cuccetta libera per Rek."
+	to offer
+		has "Wanderers: Kor Efret 3: done"
+	on offer
+		log "Hai aiutato a difendere uno dei mondi amici dei Korath da un attacco dei droni Kor Mereti. Su quel mondo ci sono scienziati Korath che da decenni lavorano per trovare un modo di violare la rete Kor Mereti, ma non credono che sia possibile."
+		log "Factions" "Archons" `Quando la guerra civile Korath arrivò al punto che stavano quasi estinguendosi da soli, gli Archon dei Drak intervennero e offrirono ai Korath superstiti un ultimatum: rinunciare alle loro armi avanzate e vivere in pace sotto la protezione dei Quarg, oppure essere banditi in alcuni sistemi stellari senza vita vicino al nucleo galattico. Quelli che scelsero il bando portarono con sé, a quanto pare, il segreto per costruire motori di salto, il che ha permesso loro di fare incursioni contro altre specie e depredarle.`
+		conversation
+			`Quando atterri di nuovo sul pianeta, Rek e diversi Korath ti vengono incontro alla nave. "Vorrebbero ringraziarti per l'aiuto nel difendere la loro casa," dice Rek, "e si scusano di essere stati così sprezzanti verso i piani dei Wanderers per sconfiggere i droni. Continuano però a pensare che violare o corrompere la rete Mereti sia impossibile."`
+			choice
+				`	"Beh, credo che dovrei dirlo ai capi dei Wanderers."`
+				`	"Possono almeno dirci qualcosa di più su da dove vengono i droni?"`
+
+			`	Rek fa una domanda e traduce la risposta. "C'è stata una guerra civile. È durata centinaia di anni. I Kor Mereti e i Kor Sestor erano i due imperi rivali. I Kor Efret erano quelli che cercarono di restare neutrali e di non partecipare ai combattimenti."`
+			`	Aspetta mentre i Korath proseguono il racconto, poi dice: "Mereti e Sestor costruirono ciascuno flotte di droni programmate per attaccare l'altro. Fecero anche molte altre armi, molto pericolose. Alla fine, circa un secolo fa, divenne chiaro che la guerra avrebbe consumato e distrutto entrambi gli imperi, se fosse continuata. Gli Archon intervennero e offrirono una scelta a ogni membro dei Kor Mereti e dei Kor Sestor."`
+			`	I Korath proseguono il racconto. Rek dice: "La scelta era: rinunciare ai motori di salto, rinunciare alle loro tecnologie avanzate di guerra e unirsi ai Kor Efret, vivendo sotto la supervisione dei Quarg. Chi rifiutava veniva esiliato nei sistemi stellari senza vita vicino al nucleo. Sestor e Mereti, costretti a vivere insieme in esilio e a dipendere l'uno dall'altro, uniti dalla rabbia verso gli Archon che li avevano esiliati."`
+			choice
+				`	"Che tipo di tecnologie hanno sviluppato?"`
+				`	"Che cosa significa 'rinunciare ai motori di salto'? Avevano capito come produrli?"`
+					goto jump
+
+			`	Rek fa la domanda e traduce la risposta. "Dicono che non rivivranno la vergogna dei loro genitori descrivendone le imprese. Ma le cicatrici che hanno lasciato sui loro vecchi pianeti, e persino su interi sistemi stellari, parlano da sole. Come parlano da sole le flotte di droni, che continuano a prosciugare le loro case di risorse per portare avanti una guerra che i loro creatori hanno abbandonato da tempo."`
+				goto end
+
+			label jump
+			`	Rek fa la domanda e traduce la risposta. "Sì, una cosa a cui gli esiliati non vollero rinunciare fu la conoscenza di come creare motori di salto, per poter depredare le altre specie vicine. Anche se..." Si ferma ad ascoltare mentre uno dei Korath dice qualcos'altro. "Dice che gli esiliati starebbero molto meglio senza. Il processo di produzione è precario, e un passo sbagliato può causare un'esplosione che distrugge la nave o la stazione dove si costruiscono i motori."`
+
+			label end
+			`	Rek ti dice che vuole tornare su <planet> per continuare il suo lavoro con la comunità Korath che c'è lì. Accetti di portarcela prima di tornare a riferire a Tele'ek.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Rek non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers: Kor Efret 5"
+	landing
+	name "Ritorna su <planet>"
+	description "Torna su <planet> e riferisci a Sobari Tele'ek che i Korath non credono che la rete di droni Mereti possa essere compromessa."
+	autosave
+	source "Setar Fort"
+	destination "Spera Anatrusk"
+	to offer
+		has "Wanderers: Kor Efret 4: done"
+	on offer
+		conversation
+			`Lasci Ektasi Rek su <origin> e le auguri ogni fortuna nel suo continuo impegno per capire e diventare amica dei Korath. È chiaramente impaziente di rimettersi al lavoro.`
+			`	Poi ti prepari a tornare su <planet>. Sobari Tele'ek non sarà felice di sentire che gli ingegneri Korath ritengono che non ci sia speranza di compromettere la rete Kor Mereti.`
+				accept
+
+
+
+mission "Wanderers: Kor Mereti Hacking"
+	landing
+	name "Hacking dei Kor Mereti"
+	description "Prova un dispositivo che i Wanderers pensano possa dare accesso alla rete Kor Mereti e turbarla."
+	autosave
+	source "Spera Anatrusk"
+	waypoint "Mekislepti"
+	to offer
+		has "Wanderers: Kor Efret 5: done"
+	cargo "corrupted node" 2
+	blocked "Ti serve <capacity> per accettare la prossima missione dei Wanderers."
+	on offer
+		conversation
+			`Ti aspetti che i Wanderers siano scoraggiati dalla notizia che i Korath ritengono la coscienza gestaltica Mereti troppo robusta per essere violata o compromessa. Ma quando arrivi, gli scienziati delle comunicazioni sono entusiasti di una scoperta: sono riusciti a sviluppare un programma che fa seguire i loro ordini all'unico Nodo di Ragionamento campione che gli hai recuperato. Ti chiedono di portare il dispositivo in uno dei sistemi Kor Mereti e di provarlo sui droni che ci sono.`
+			`	Nel frattempo non puoi fare a meno di notare che Sobari Tele'ek mostra lo stesso diradarsi delle piume e lo stesso aspetto trasandato che avevano annunciato l'inizio della Muta per Iktat Rek. Non sei sicuro che sia educato dire qualcosa o no.`
+			choice
+				`	"Tele'ek, hai cominciato la Muta?"`
+				`	(Non dire nulla e torna alla mia nave.)`
+					goto end
+
+			`	"Credo di sì," dice. "Il mio [appetito? apporto calorico?] è raddoppiato nell'ultima settimana e, come vedi, sto perdendo le piume. È un momento [inopportuno, problematico]. Ora capisco perché Rek cercasse di [combattere, rimandare] la Muta invece di cedervi."`
+
+			label end
+			`	Non sei sicuro di che cosa potresti dire che gli sia utile, quindi torni alla tua nave e ti prepari a viaggiare verso il sistema Mekislepti per provare il programma di hacking dei Kor Mereti.`
+				accept
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on enter "Mekislepti"
+		dialog
+			`Quando entri nel sistema Mekislepti, un'intera flotta di droni si muove per intercettarti. Quasi senza osare sperare, premi il pulsante che attiva il programma dei Wanderers. Per una frazione di secondo i motori dei droni smettono di accendersi e loro vanno alla deriva come fuori controllo. Poi, con rinnovato proposito, si muovono per attaccarti.`
+			`	Beh. Valeva la pena provare.`
+	npc
+		government "Kor Mereti"
+		personality staying nemesis
+		system "Mekislepti"
+		fleet
+			names "kor mereti"
+			variant
+				"Model 64"
+				"Model 32" 3
+				"Model 16" 9
+
+
+
+mission "Wanderers: Mind 1"
+	landing
+	name "Recati su <planet>"
+	description `Recati al laboratorio di intelligenza artificiale dei Wanderers su <planet>, dove ti daranno una delle "menti artificiali" che hanno costruito.`
+	autosave
+	source "Spera Anatrusk"
+	destination "Kort Kehai"
+	to offer
+		has "Wanderers: Kor Mereti Hacking: done"
+	on offer
+		log "Hai provato un dispositivo che i Wanderers pensavano potesse imporsi nella rete Kor Mereti e prenderne il controllo. L'esperimento però è fallito del tutto."
+		conversation
+			`Ti incontri con i capi dei Wanderers e dici loro che il tentativo di violare i droni Kor Mereti è fallito. Sembrano incerti su che cosa fare. Alcuni vogliono provare a puntare sui Kor Sestor; altri vogliono dare agli scienziati un'altra possibilità.`
+			`	Tema'a Iriket ti chiede: "Perché pensi che il nostro [tentativo, esperimento] sia fallito?"`
+			choice
+				`	"I Korath superstiti dicono che i droni Mereti hanno una specie di sistema immunitario che permette loro di respingere qualsiasi intrusione che cerchi di turbare o di appropriarsi della loro rete."`
+				`	"Forse ci serve solo un programma più sofisticato o più intelligente, qualcosa che possa sopraffare le difese Mereti."`
+
+			`	Ci pensa un momento, poi dice: "Nel terraformaggio diciamo che ogni pianeta ha una sua [volontà, identità], e che non funzionerà mai [imporre la propria volontà, sopraffare] il pianeta. Dobbiamo invece [collaborare, fare squadra] con lui. Forse possiamo fare lo stesso con questa [coscienza]."`
+			`	Un fremito di eccitazione attraversa i Wanderers. Finalmente una strategia che si allinea al loro modo preferito di fare le cose. "Che cosa vuoi dire?" chiede uno di loro.`
+			`	Iriket dice: "Diamo loro una delle [menti artificiali?] che usiamo per [la supervisione planetaria?]. Lasciamo che si [fonda con, diventi parte di] la coscienza gestaltica Mereti. Non per [distruggerla, sovvertirla], ma per raggiungere una [comprensione, collaborazione] con lei."`
+			`	Diversi Wanderers sembrano molto agitati da quella proposta. Tele'ek dice: "Daresti loro accesso a una [tecnologia, risorsa] che li renderebbe ancora più [potenti, capaci] di prima?"`
+			choice
+				`	"Sembra che potrebbe funzionare. Se la vostra intelligenza artificiale davvero non vuole far loro del male, i Mereti potrebbero riconoscerlo."`
+				`	"Credo che Tele'ek abbia ragione. I droni Mereti sono già abbastanza pericolosi senza accesso a una tecnologia di calcolo avanzata."`
+
+			`	Provi a intervenire, ma i Wanderers sono così presi dalla discussione che sono passati dalla lingua comune degli Hai di nuovo alla loro lingua nativa, e non hai idea di che cosa dicano. Alla fine il dibattito si chiude, e Tele'ek dice: "Molto bene, tenteremo questa cosa. Non perché sia la via d'azione [saggia, sicura], ma perché è [coerente con i valori dei Wanderers?]."`
+			`	Ti chiedono di tornare attraverso il cunicolo e di visitare il laboratorio di intelligenza artificiale su <planet>.`
+				accept
+
+
+
+mission "Wanderers: Mind 2"
+	landing
+	name "Ritorna su <planet>"
+	description `Torna su <planet> con un Wanderer di nome Meto Pa'aret e una "mente artificiale" che lui ha costruito.`
+	autosave
+	source "Kort Kehai"
+	destination "Spera Anatrusk"
+	to offer
+		has "Wanderers: Mind 1: done"
+	cargo "artificial mind" 2
+	passengers 1
+	blocked "Per accettare questa missione ti serve <capacity> libera."
+	on offer
+		log "I Wanderers hanno un nuovo piano: cercare di sovvertire, o forse persino di diventare amici, della rete Kor Mereti collegandola a una potente intelligenza artificiale dei Wanderers."
+		log "People" "Meto Pa'aret" `Pa'aret dirige un laboratorio di intelligenza artificiale dei Wanderers. È responsabile dello sforzo di stabilire un collegamento fra i Wanderers e il collettivo Kor Mereti, introducendo una "Mente artificiale" Wanderer nel collettivo.`
+		conversation
+			`Su <origin> ti viene incontro un Wanderer di nome Meto Pa'aret. Spiega che dirige il laboratorio di intelligenza artificiale e che vuole viaggiare con te insieme alla "Mente" che ti viene affidata. "Abbiamo già [modificato, riconfigurato] una delle Menti di [simulazione, previsione] climatica per questo nuovo scopo," dice. "Ora contiene [archivi, basi di dati, raccolte] di informazioni storiche e culturali, cose che speriamo aiutino la [coscienza, intelligenza] aliena a [capirci, provare simpatia per noi] e a rendersi conto che le nostre intenzioni sono [pacifiche, leali]."`
+			choice
+				`	"Sei sicuro che sia saggio dare ai Kor Mereti accesso a così tante informazioni sui Wanderers?"`
+				`	"Quanto pensi che sia probabile che funzioni?"`
+					goto work
+
+			`	"Di certo non è saggio," dice, "ma è [giusto? opportuno?]."`
+				goto end
+
+			label work
+			`	"Non ci sono [dati, informazioni] sufficienti nemmeno per [tentare, azzardare] una previsione. Eppure è la più [attraente, gradita] [linea d'azione?]."`
+
+			label end
+			`	La "Mente artificiale" si rivela un computer non molto più grande di una normale cassa da carico. Pa'aret le cammina accanto con un'ala drappeggiata intorno, come un genitore iperprotettivo, mentre gli operai Wanderer la caricano sulla tua nave. Chiaramente questo particolare pezzo di tecnologia è molto prezioso per i Wanderers.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Meto Pa'aret e la Mente non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers: Mind 3"
+	landing
+	name "Recupera le scorte"
+	description `Quando sei pronto, recati su <planet> per incontrarti con la flotta che ti accompagnerà nel tentativo di collegare una Mente artificiale dei Wanderers alla rete Kor Mereti.`
+	autosave
+	source "Spera Anatrusk"
+	destination "Vara K'chrai"
+	to offer
+		has "Wanderers: Mind 2: done"
+	on offer
+		conversation
+			`Mentre eri via, i Wanderers hanno condotto pattugliamenti dello spazio Kor Mereti. Tele'ek ti dice: "Abbiamo [deciso, ipotizzato] che la Mente abbia più probabilità di essere accolta nella [coscienza gestaltica] Mereti se si trova fisicamente nel loro [territorio, spazio]. Il nostro obiettivo è installarla dentro lo [scafo, guscio] di una delle loro stazioni spaziali. Tu porterai la [squadra, forza d'attacco] che se ne occupa, e la nostra flotta ti [proteggerà, farà da scudo]."`
+			`	Ci vorrà un po' di tempo perché facciano le modifiche necessarie alla Mente. Nel frattempo Tele'ek ti suggerisce di prepararti a una battaglia importante. "Quando sei pronto," dice, "va' su <planet> e incontrati con la flotta che ti accompagnerà nel sistema Mereti."`
+				accept
+
+
+
+mission "Wanderers: Mind Escorts"
+	invisible
+	non-blocking
+	landing
+	source "Vara K'chrai"
+	to offer
+		has "Wanderers: Mind 3: done"
+	to fail
+		has "Wanderers: Mind 6: done"
+	npc kill
+		government "Wanderer"
+		personality escort heroic waiting
+		fleet
+			names "wanderer"
+			variant
+				"Hurricane" 2
+				"Derecho" 3
+				"Tempest" 4
+				"Heavy Gust" 2
+
+mission "Wanderers: Mind 4"
+	landing
+	name "Ritorna su <planet>"
+	description `Scorta la flotta dei Wanderers fino a <planet>, dove ti preparerai a infiltrarti nella stazione Kor Mereti.`
+	source "Vara K'chrai"
+	destination "Spera Anatrusk"
+	to offer
+		has "Wanderers: Mind 3: done"
+	on offer
+		conversation
+			`Qui è in attesa una flotta dei Wanderers che prenderà parte al tentativo di unire la Mente dei Wanderers ai Kor Mereti. Noti che alcune delle navi che ti accompagneranno sono di un altro modello ancora, che non hai mai visto; la macchina da guerra dei Wanderers continua a crescere a un ritmo notevole.`
+				accept
+
+
+
+mission "Wanderers: Mind 5"
+	landing
+	name "Installa la Mente"
+	description `Una flotta dei Wanderers ti accompagnerà nel sistema Chimitarp per installare la Mente sulla stazione Korath che c'è lì.`
+	source "Spera Anatrusk"
+	destination "Rekat Moraski"
+	clearance
+	infiltrating
+	to offer
+		has "Wanderers: Mind 4: done"
+	cargo "artificial mind" 2
+	passengers 4
+	blocked "Per accettare questa missione ti serve <capacity> libera."
+	on offer
+		log "I Wanderers vogliono installare una delle loro Menti artificiali su una stazione spaziale controllata dai Kor Mereti. La loro teoria è che, se la Mente si trova fisicamente dentro una stazione Kor Mereti, i droni avranno molte più probabilità di accettarla come parte della propria rete invece di reagire a essa come a un intruso esterno."
+		conversation
+			`Quando lo incontri, Meto Pa'aret ti dice: "Abbiamo aggiunto alla Mente una [porta di servizio, misura di sicurezza] che ci permette di spegnerla o di riprenderne il controllo a distanza se il [tentativo? esperimento?] fallisce. Quindi potremmo perdere la Mente, ma almeno i Mereti non la [useranno, rivolteranno] contro di noi."`
+			choice
+				`	"Va bene, sono pronto a provare!"`
+					goto end
+				`	"Che cosa pensi che succederà quando la Mente comincerà a cercare di accedere alla rete Mereti?"`
+
+			`	Pa'aret dice: "Potrebbe volerci un po' perché la Mente sia [accettata, integrata] nella loro [coscienza?]. Potremmo non sapere subito se abbiamo [avuto successo? fatto la cosa giusta?]."`
+
+			label end
+			`	Una squadra di ingegneri Wanderer sale sulla tua nave, e tu ti prepari a consegnarli, insieme alla Mente artificiale, alla stazione spaziale dei Kor Mereti nel sistema <system>.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta gli ingegneri Wanderer e la Mente non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	npc
+		government "Kor Mereti"
+		personality staying heroic
+		system Chimitarp
+		fleet
+			names "kor mereti"
+			variant
+				"Model 512" 1
+				"Model 256" 1
+				"Model 128" 2
+				"Model 64" 3
+				"Model 32" 5
+				"Model 16" 8
+
+
+
+event "wanderers: kor mereti friendly"
+	government "Kor Mereti"
+		"attitude toward"
+			"Wanderer" 1
+	government "Quarg (Kor Efret)"
+		"attitude toward"
+			"Kor Mereti" 0
+	government "Quarg"
+		"attitude toward"
+			"Kor Mereti" 0
+	government "Kor Efret"
+		"attitude toward"
+			"Kor Mereti" 0
+	"reputation: Kor Mereti" >?= 1
+	"reputation: Kor Mereti (Hostile)" = -1000
+	planet "Rekat Moraski"
+		"required reputation" 1000
+
+# A backwards compatibility event and mission for being able to speak with Kor Mereti ships.
+event "wanderers: kor mereti language"
+	government "Kor Mereti"
+		language "Wanderer"
+		"friendly hail" "friendly wanderer"
+		"friendly disabled hail" "friendly disabled wanderer"
+		"hostile hail" "hostile wanderer"
+		"hostile disabled hail" "hostile disabled wanderer"
+
+mission "Wanderers: Kor Mereti Language"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "Wanderers: Mind 5: done"
+	on offer
+		event "wanderers: kor mereti language"
+		fail
+
+mission "Wanderers: Mind 6"
+	landing
+	name "Difendi la Mente"
+	description "Respingi i droni Kor Mereti che stanno ancora attaccando i Wanderers. Cerca di non far arrabbiare quelli che sembrano essere passati dall'altra parte."
+	source "Rekat Moraski"
+	destination "Spera Anatrusk"
+	to offer
+		has "Wanderers: Mind 5: done"
+	on offer
+		event "wanderers: kor mereti friendly"
+		fail "Wanderers: Kor Mereti Quarg Attitude Patch"
+		conversation
+			`Con la flotta dei Wanderers che tiene gli automi lontani dalle tue spalle, piloti con cautela la nave dentro un bacino di attracco abbandonato. I Wanderers installano la Mente in una nicchia vicino al fondo del bacino, poi cominciano a saldare lastre di metallo sopra l'apertura per impedire ai droni Mereti di accedere facilmente alla Mente e di spegnerla o distruggerla. Intanto, ogni pochi secondi il bacino viene illuminato da un lampo di armi o di navi che esplodono là fuori. Si spera che la flotta dei Wanderers riesca a tener testa ai droni.`
+			`	Presto gli ingegneri hanno finito, e torni alla tua nave per decollare. Appena parti, le porte del bacino, che sembravano inattive quando sei entrato, si chiudono di colpo, e i sensori della tua nave rilevano droni di riparazione Korath che brulicano sulle porte, saldandole in posizione e accumulando sopra nuovi strati di materiale di scafo. Non c'è più alcuna possibilità di tornare al bacino per recuperare la Mente. E intanto è tempo di tornare in battaglia...`
+				launch
+	on enter
+		dialog `Questo sistema stellare è nel caos più totale. Ci sono moltissimi droni Mereti. Alcuni si stanno attaccando a vicenda. Altri attaccano i Wanderers. E altri ancora, purtroppo, sembrano intenzionati ad attaccare te. Dovrai trattenerli il più a lungo possibile, cercando di restare nelle grazie dei droni che ora sembrano difenderti.`
+	npc disable
+		government "Kor Mereti (Hostile)"
+		personality staying heroic
+		fleet
+			names "kor mereti"
+			variant
+				"Model 512" 3
+				"Model 256" 4
+				"Model 128" 4
+				"Model 64" 5
+				"Model 32" 7
+				"Model 16" 12
+		dialog `Gli ultimi droni Kor Mereti ostili sono distrutti; i droni rimasti non attaccano i Wanderers. Non è del tutto chiaro che cosa sia successo, ma si spera che i Wanderers su <planet> abbiano ottenuto qualche informazione attraverso il collegamento alla porta di servizio della loro IA.`
+	npc
+		government "Kor Mereti"
+		personality staying heroic
+		fleet
+			names "kor mereti"
+			variant
+				"Model 256" 1
+				"Model 128" 1
+				"Model 64" 3
+				"Model 32" 5
+				"Model 16" 10
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora droni Kor Mereti ostili nel sistema Chimitarp. Meglio ripartire e assicurarti che siano stati sistemati.`
+
+# For compatibility with saves that got the "wanderers: kor mereti peaceful" event
+# before the introduction of the "Quarg (Kor Efret)" government."
+mission "Wanderers: Kor Mereti Quarg Attitude Patch"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "event: wanderers: kor mereti friendly"
+	on offer
+		event "wanderers: kor mereti friendly"
+		fail
+
+
+
+event "wanderers: kor mereti transformation"
+	system Chimitarp
+		add fleet "Small Kor Mereti" 250
+		add fleet "Large Kor Mereti" 450
+	planet "Korbatri Eska"
+		add description `	Lontano dalle città in rovina, i Kor Mereti hanno cominciato a costruire una specie di villaggio proprio: un complesso esteso di serre che contengono una grande varietà di campioni vegetali.`
+
+mission "Wanderers: Mind 7"
+	landing
+	name "Indaga su <planet>"
+	description "Visita <destination> e scopri che cosa stanno facendo lì i Kor Mereti, ora che apparentemente non sono più ostili."
+	autosave
+	source "Spera Anatrusk"
+	destination "Korbatri Eska"
+	to offer
+		has "Wanderers: Mind 6: done"
+	on offer
+		event "wanderers: kor mereti transformation"
+		conversation
+			`I Wanderers su <origin> sono in fermento per sapere com'è andata la battaglia. Pa'aret ti dice: "Meno di un secondo dopo che la Mente è [entrata in contatto, si è fusa] con i Mereti, ha tagliato il collegamento con la [porta di servizio, misura di sicurezza]. Quindi non abbiamo [informazioni, visibilità] su che cosa stia facendo la Mente né se i Mereti [l'abbiano accolta, l'abbiano gradita]."`
+			choice
+				`	"La maggior parte dei droni ha cominciato a combattere dalla nostra parte. Mi sembra un buon segno."`
+				`	"Hanno sigillato l'accesso alla Mente. Ora non c'è modo di recuperarla."`
+					goto mind
+
+			`	"Davvero," dice Pa'aret. "Ma qualunque [trasformazione, cambiamento] la Mente [provochi, catalizzi] potrebbe non essere completo. È troppo presto per fidarci di aver [avuto successo, scelto bene]."`
+				goto next
+
+			label mind
+			`	"Questo è [gratificante, incoraggiante]," dice Pa'aret. "Di certo, se l'avessero visto come un [intruso, nemico], avrebbero distrutto la Mente invece di costruire un [nido, fortino] per proteggerla."`
+
+			label next
+			`	Pochi minuti dopo arriva Tele'ek con alcune navi esploratrici della flotta dei Wanderers. "I droni hanno sigillato ogni [ingresso, accesso] a quella stazione," dice, "e le [brulicano, si radunano] intorno [in modo protettivo, geloso]. Non c'è modo di tornare lì per [scoprire, valutare] che cosa succede dentro. E c'è anche una certa [attività, novità] sulla superficie del pianeta."`
+			choice
+				`	"Che tipo di attività?"`
+				`	"Vorrei andare a indagare."`
+					goto end
+
+			`	"Sembrano [saccheggiare, cacciare] risorse per costruire qualcosa," dice Pa'aret. "È [strano, sorprendente]; finora i droni Mereti ignoravano i pianeti dei loro [sistemi, territorio]. Saresti [disposto, audace] ad atterrare sulla superficie e indagare?" Accetti di farlo.`
+
+			label end
+			`	I Wanderers ti augurano ogni fortuna, e tu ti prepari a tornare nel sistema <system>. Si spera che i droni Mereti non tornino ostili mentre sei atterrato sulla superficie del pianeta, esposto e relativamente indifeso.`
+				accept
+
+
+
+mission "Wanderers: Mind 8"
+	landing
+	name "Indaga su <origin>"
+	description "Riferisci ai Wanderers il nuovo comportamento dei droni Kor Mereti."
+	autosave
+	source "Korbatri Eska"
+	destination "Spera Anatrusk"
+	to offer
+		has "Wanderers: Mind 7: done"
+	cargo "dead plant" 1
+	blocked "Ti serve 1 tonnellata di spazio cargo per ricevere la prossima missione."
+	on offer
+		log "Il piano dei Wanderers è riuscito, ma con un risultato inatteso. I droni Kor Mereti hanno assorbito la Mente dei Wanderers nella propria coscienza così a fondo che ora i droni credono di essere loro stessi Wanderers."
+		conversation
+			`Mentre ti avvicini per atterrare, vedi che i droni Kor Mereti, che fino a poco tempo fa ignoravano le superfici dei pianeti che controllavano, stanno ora costruendo una specie di struttura su <origin>. La luce del sole brilla sui nuovi edifici immacolati, ma solo quando sei a poche decine di metri sopra di essa capisci che cos'è quella struttura.`
+			`	È proprio una serra.`
+			`	Dentro la struttura ci sono file e file di piante di ogni forma e dimensione. Come i droni Mereti stessi, la disposizione della struttura è casuale e disordinata. Droni grandi quasi quanto una navetta ronzano intorno come api, alcuni arrivano con campioni freschi e altri si prendono cura delle piante e le annaffiano.`
+			`	Alcuni droni si avvicinano alla tua nave quando atterra, e uno di loro parla con una voce tonante e sintetizzata. "Tu sei l'umano che ci ha aiutato a [combattere, resistere] gli Hai bellicosi," dice. "Tu sei nostro amico."`
+			choice
+				`	"Vuoi dire che ho aiutato i Wanderers? Non ricordo che gli Slegati siano entrati nello spazio Korath o che vi abbiano attaccato."`
+				`	"Sì, sono vostro amico."`
+					goto friend
+
+			`	Il drone esita un momento come confuso, poi dice: "Ci hai aiutato a [trattenere, resistere] gli Slegati nel nostro vecchio territorio, abbastanza a lungo da poter entrare nell'Occhio, e mutare, e assumere la nostra nuova [forma, essenza]."`
+				goto next
+
+			label friend
+			`	Il drone dice: "Ti siamo grati. Ci hai [conquistato, guadagnato] abbastanza tempo per entrare nell'Occhio, e mutare, e assumere la nostra nuova [forma, essenza]."`
+
+			label next
+			choice
+				`	"Non siete Wanderers. Siete stati creati dai Korath."`
+					goto korath
+				`	"Stai dicendo che siete la nuova forma dei Wanderers?"`
+
+			`	Il drone ripete: "Siamo entrati nell'Occhio. Abbiamo assunto una nuova forma. Siamo i [figli, la prole] nati dai Wanderers nel loro nuovo luogo di [soggiorno, peregrinazione]."`
+				goto plant
+
+			label korath
+			`	Il drone dice, con esitazione: "I Korath. I Korath... hanno creato i nostri corpi? Sì, i Korath hanno creato i nostri corpi." Sembra che stia conversando con qualcun altro, o forse che si stia sforzando di ricordare qualcosa. "Sì, ma i Wanderers..." Inclina il corpo verso di te. Con una voce un po' meno tonante, che forse è il suo tentativo di sussurrare, dice: "I Wanderers hanno creato la nostra anima."`
+
+			label plant
+			`	Mentre stai ancora cercando di elaborare la dichiarazione del drone, un altro drone esce volando dalla serra portando un grande vaso metallico quadrato. Il vaso è pieno di terra, e nella terra è piantato un piccolo cespuglio dall'aspetto molto secco, con qualche foglia morta ancora attaccata. "L'abbiamo rotto," dice il drone. "Riparalo, per favore."`
+			choice
+				`	"Credo che sia morto."`
+					goto end
+				`	(Guarda la pianta più da vicino.)`
+
+			`	La pianta è secca e fragile e non mostra segni di vita. "Mi dispiace," dici, "ma credo che sia morta."`
+
+			label end
+			`	Il drone dice: "Gli abbiamo dato acqua. Ma forse la terra era [avvelenata, malsana]. O la luce è troppo forte. Un umano non può ripararlo, ma i nostri [genitori? antenati?] saprebbero come fare. Lo porterai da loro?"`
+			`	Sembrano troppo sconvolti per la pianta morta per essere disposti a darti altre informazioni su loro stessi. Nonostante l'assurdità della situazione, accetti di riportare la pianta ai Wanderers e di vedere se possono fare qualcosa per lei.`
+				accept
+	on visit
+		dialog `Hai raggiunto <planet>, ma la tua scorta che porta la pianta morta non è ancora arrivata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers: Mentors 1"
+	landing
+	name "Visita <planet>"
+	description "Recati su <planet> per incontrare una squadra di professori e scienziati Wanderer che non vedono l'ora di lavorare con i droni Kor Mereti."
+	autosave
+	source "Spera Anatrusk"
+	destination "Var' Kayi"
+	to offer
+		has "Wanderers: Mind 8: done"
+	on offer
+		log "I Wanderers sono arrivati a credere che, prima dell'introduzione della loro Mente, la rete Kor Mereti non fosse in realtà un'entità autocosciente, ma che ora sia diventata un essere senziente a tutti gli effetti. E, a quanto pare, è un essere senziente con un profondo interesse per il giardinaggio."
+		conversation
+			`Deve pur dire qualcosa di interessante sulla psicologia dei Wanderers il fatto che, al tuo ritorno, siano più interessati a tastare e frugare la pianta morta che ad ascoltare il tuo rapporto sui droni Mereti. Ma dopo aver mandato un campione di terra da analizzare e non potendo fare altro finché non arrivano i risultati, ascoltano la tua storia.`
+			`	"Il nostro obiettivo era comunicare con loro," dice Tele'ek, "non [distruggere, cancellare] la loro identità e sostituirla con la nostra. Che cosa abbiamo fatto?"`
+			`	Meto Pa'aret ha ascoltato in silenzio, e alla fine prende la parola. "L'identità è la storia che la mente racconta per [spiegare? giustificare? dare un senso a?] la propria esistenza," dice. "Forse prima del nostro [intervento, intrusione] i Mereti avevano intelligenza ma nessuna storia, e quindi nessuna [autocoscienza, coscienza di sé]."`
+			choice
+				`	"Stai dicendo che abbiamo creato una specie senziente senza volerlo?"`
+				`	"Questo rende i Mereti una minaccia minore, o maggiore?"`
+
+			`	La tua domanda viene completamente ignorata: in risposta al commento di Pa'aret, gli altri Wanderers ritrovano interesse per la pianta in vaso. "Costruzione molto [solida, robusta]," dice uno, passando un artiglio lungo l'angolo del vaso.`
+			`	"Sì," dice un altro, "ma perché fare un [vaso da fiori?] di metallo? Si ossiderà."`
+			`	"Hanno [imparato, capito] che il vaso ha bisogno di fori di drenaggio," dice un altro, guardando il fondo del vaso.`
+			`	"È un lavoro eccellente per una specie così [giovane, immatura]," dice Sobari Tele'ek, con un accenno di orgoglio.`
+			choice
+				`	"Mi dispiace interrompere, ma qualcuno di voi ha riflettuto sulle conseguenze di aver creato una nuova specie senziente?"`
+
+			`	Restano tutti in silenzio per un momento, poi Pa'aret dice: "Avranno bisogno di [mentori, insegnanti]."`
+			`	Tema'a Iriket, la direttrice del terraformaggio, dice: "Chiederò a <planet> di inviare subito una squadra di [esperti? professori?]. Capitano <last>, puoi andare là e scortarli al sicuro attraverso l'Occhio fino a Korbatri Eska?"`
+			`	Accetti di farlo. I Wanderers passano alla loro lingua e cominciano una conversazione appassionata mentre tu lasci la stanza per tornare alla tua nave.`
+				accept
+
+
+
+mission "Wanderers: Mentors 2"
+	landing
+	name "Wanderer per <planet>"
+	description "Scorta questo trasporto dei Wanderers sano e salvo fino a <planet>, dove gli scienziati e i professori a bordo cominceranno a istruire e guidare i Kor Mereti."
+	autosave
+	source "Var' Kayi"
+	destination "Korbatri Eska"
+	to offer
+		has "Wanderers: Mentors 1: done"
+	on offer
+		conversation
+			`Su <origin> è stata radunata una squadra di esperti di terraformaggio dei Wanderers. Hanno requisito un trasporto e l'hanno riempito di una varietà impressionante di sensori, bioreattori, filtri chimici e altri dispositivi scientifici. Ma è chiaro che nessuno di loro capisce bene che cosa stia succedendo con i Kor Mereti. Il responsabile della squadra dice: "Dobbiamo incontrarci con dei robot [senzienti? risvegliati?]? Sono interessati al [fogliame, alle piante]? Ci sono mondi da [riparare, guarire]?"`
+			`	Fai del tuo meglio per rispondere alle loro domande, ma chiaramente questa non è una situazione che nessuno di loro avesse previsto. Forse nemmeno una situazione che la loro specie abbia mai dovuto affrontare, dato che di solito lavorano in regioni di spazio abbandonate da tempo dai loro antichi abitanti.`
+			`	Il trasporto si prepara a seguirti di nuovo fino a <planet>, dove si spera che altre loro domande troveranno risposta.`
+				accept
+	npc accompany save
+		government "Wanderer"
+		personality escort
+		ship "Riptide" "Green Talon"
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro la nave dei Wanderers. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers: Mentors 3"
+	landing
+	name "Ritorna su <planet>"
+	description "Torna su <planet> per vedere che cosa hanno in programma adesso i capi dei Wanderers."
+	autosave
+	source "Korbatri Eska"
+	destination "Spera Anatrusk"
+	to offer
+		has "Wanderers: Mentors 2: done"
+	on offer
+		log "Hai portato un gruppo di mentori e insegnanti Wanderer su uno dei mondi dei Kor Mereti, dove cercheranno di costruire un rapporto con i droni e di aiutarli a imparare a prendersi cura delle cose viventi e a unirsi al lavoro dei Wanderers di guarigione dei pianeti devastati."
+		conversation
+			`L'ultima volta che hai lasciato <origin>, nella struttura delle serre c'erano meno di una dozzina di edifici. Ora è cresciuta fino alle dimensioni di un grande spazioporto, con anche torri alte decine di piani. Alcune piante crescono ora su terrazze all'aperto; altre sono in cupole abbastanza alte da ospitare alberi adulti. Dentro le cupole più grandi volano anche uccelli, e ci sono anche animali terrestri più grandi. Tutto è costruito in acciaio e vetro scintillanti e pieno di vegetazione lussureggiante; dall'alto la struttura sembra una manciata sparsa di diamanti e smeraldi.`
+			`	Il trasporto che stavi scortando era pieno di professori e ricercatori, che chiaramente non sono abituati ad alcuna disciplina militare né a vivere in una regione pericolosa dello spazio: appena il trasporto atterra, volano via verso le serre senza preoccuparsi di aspettare istruzioni dal loro presunto responsabile. Alcuni stanno già conversando con i droni, mentre altri esplorano le diverse stanze della struttura, esaminando le piante e frugando la terra con gli artigli.`
+			`	Il responsabile della squadra, che sembra già un po' sopraffatto, vola da te per parlare. "Che cosa ci [si aspetta, si chiede] di fare adesso?" chiede.`
+			choice
+				`	"Aiutate i droni a imparare a prendersi cura dei pianeti di questa regione."`
+				`	"Assicuratevi che i droni restino convinti che i Wanderers siano dalla loro parte."`
+					goto side
+				`	"Magari vedete se i droni sono disposti a condividere la loro tecnologia con noi? Hanno armi impressionanti."`
+					goto weapons
+
+			`	Dice: "Proveremo a farlo. Ma questo, rinchiudere [piante, cose viventi] in scatole di metallo, non è il modo dei Wanderers. Noi cerchiamo di riportare i mondi al loro stato [naturale, incontaminato], non di costruirvi sopra i nostri [monumenti, edifici]."`
+				goto end
+
+			label side
+			`	"Molto bene," dice, "lo faremo. Per favore torna su <planet> e vedi che cosa pensano i nostri [capi, anziani] che si debba fare adesso."`
+				goto end
+
+			label weapons
+			`	Non sembra entusiasta della proposta. "Umano," dice, "tu hai [priorità, obiettivi] molto diversi dai nostri. Sono più [entusiasta, incuriosito] dalla possibilità di usare questi droni per [la rigenerazione, la creazione] che dalla loro capacità di distruzione."`
+
+			label end
+			`	Torni alla tua nave. Sarà interessante vedere che cos'altro è cambiato la prossima volta che tornerai su questo mondo.`
+				accept
+	on complete
+		event "wanderers: hurricane mass production"
+		event "wanderers: desi seledrak" 24
+		conversation
+			`L'umore fra i capi dei Wanderers è molto più leggero ora che il pericolo dei droni Mereti sembra eliminato. Anzi, ora sono così incuriositi dalla coscienza Mereti emergente che non sembrano pensare alla minaccia più lontana dei droni nello spazio Kor Sestor. Vogliono invece concentrarsi sulla loro vera vocazione: il terraformaggio dei pianeti.`
+			`	Sobari Tele'ek ti dice: "Dovremmo prenderci il tempo di goderci questa [pace, tregua]. Non dobbiamo [affrontare, occuparci di] subito degli altri droni. Lavoreremo per avviare un secondo [insediamento, avamposto] qui vicino. Vieni a trovarci là quando l'avamposto sarà [formato, stabilito] e decideremo i prossimi [passi, provvedimenti]. Nel frattempo la nostra ultima nave da [guerra, difesa] è ora in produzione sui nostri mondi [principali, centrali], e puoi comprarne una."`
+
+
+
+mission "Wanderers: Tour 1"
+	landing
+	name "Diplomazia Kor Efret"
+	description "Visita Ektasi Rek su <planet> e vedi se i Kor Efret gradirebbero venire su <origin> per una visita diplomatica."
+	autosave
+	source "Desi Seledrak"
+	destination "Setar Fort"
+	to offer
+		has "event: wanderers: desi seledrak"
+	on offer
+		conversation
+			`La maggior parte degli anziani Wanderer si è trasferita su questo mondo per essere più coinvolta nell'ultimo sforzo di terraformaggio, che chiaramente trovano molto più gratificante della battaglia contro i droni. Dopo averli ascoltati parlare per quasi un'ora di ripristino del suolo, particolato atmosferico e cicli del carbonio, chiedi in che cosa puoi aiutarli adesso.`
+			`	Tema'a Iriket dice: "Dovremmo fare altri passi per [diventare amici, collaborare con] i Korath. Forse potresti visitare Rek e [invitare, accogliere] i suoi amici Korath a [vedere, ispezionare] il lavoro che facciamo qui? Speriamo che il nostro prossimo [insediamento, progetto] sia un [sforzo congiunto?] con loro."`
+			choice
+				`	"Certo, lo farò volentieri."`
+					accept
+				`	"E che cosa facciamo con i droni Sestor?"`
+			`	"Ci sarà [tempo, occasione] anche per quello più avanti," dice Iriket. "Al momento non sono una [minaccia, preoccupazione urgente] per noi."`
+			`	Accetti di visitare i Kor Efret e di invitarli a tornare qui in visita.`
+				accept
+
+
+
+mission "Wanderers: Tour 2"
+	landing
+	name "Diplomazia Kor Efret"
+	description "Scorta una nave dei Kor Efret fino a <planet> per una visita diplomatica."
+	source "Setar Fort"
+	destination "Desi Seledrak"
+	to offer
+		has "Wanderers: Tour 1: done"
+	on offer
+		log "Stai guidando alcuni dei Korath amichevoli in un tour attraverso lo spazio dei Wanderers, per mostrare loro quanto sono stati bravi i Wanderers a riparare e curare mondi danneggiati dalla guerra."
+		conversation
+			`Rek sta facendo progressi meravigliosi non solo nell'imparare la lingua Korath, ma anche nel conquistare la loro fiducia. Le hanno costruito qui una casa sull'albero in stile Wanderer, e sembra che riceva un flusso continuo di nuovi visitatori. "In che cosa posso aiutarti?" chiede.`
+			choice
+				`	"I Wanderers su <planet> vogliono invitare alcuni capi Kor Efret a far loro visita."`
+					goto visit
+				`	"Che impressione ti stanno facendo i Korath finora?"`
+			`	Dice: "Noi Wanderers abbiamo visto le rovine lasciate da tante specie fallite. Ci lascia molto perplessi chiederci perché alcune riescano a passare a una civiltà forte, stabile e sostenibile, come abbiamo fatto noi, mentre altre scivolano nel caos. I Kor Efret sperano che ciò che costruiranno dalle ceneri sia finalmente una società di vera pace e prosperità."`
+			label visit
+			`	Le parli dell'invito dei Wanderers, e lei ti porta a visitare alcuni dei capi Korath. Sono impazienti di saperne di più sui Wanderers, ma dopo qualche trattativa chiariscono che preferirebbero viaggiare su una loro nave, con Rek come ospite, piuttosto che come tuoi passeggeri.`
+			choice
+				`	(Accetta di scortare la loro nave fino a <planet>.)`
+					accept
+				`	"Credo che sareste più al sicuro se viaggiaste sulla mia nave."`
+			`	Rek parla con loro per un po', poi ti spiega: "Vogliono avere il controllo del proprio viaggio, invece di essere solo 'carico vivo' su una nave aliena. Sembra che sia una questione d'onore." Dato che sembra l'unica opzione, accetti di lasciare che ti seguano fino a <planet> sulla loro nave.`
+				accept
+	on visit
+		dialog `Hai raggiunto <planet>, ma la nave dei Korath non è ancora qui. Meglio ripartire e aspettare che arrivi.`
+	npc accompany save
+		government "Kor Efret"
+		personality escort
+		ship "Echo-Galleon" "Asikimi Ko Cheska"
+
+
+
+mission "Wanderers: Tour 3"
+	landing
+	name "Tour dei Kor Efret"
+	description "Scorta una nave dei Kor Efret fino a <planet>, per dare loro un assaggio di ciò che il terraformaggio dei Wanderers può ottenere su un mondo."
+	source "Desi Seledrak"
+	destination "Vara K'chrai"
+	to offer
+		has "Wanderers: Tour 2: done"
+	on offer
+		conversation
+			`La nave dei Kor Efret atterra accanto alla tua, e Rek porta i loro capi a incontrare i Wanderers. Passano quasi l'intera giornata a farsi guidare per l'insediamento, facendo domande e ispezionando l'attrezzatura di terraformaggio dei Wanderers. Ma alla fine uno dei capi Korath dice: "Quanto ci vorrà per vedere il cambiamento qui? Quanto ci vorrà perché sia chiaro che i vostri piani funzioneranno?"`
+			`	Quando Tema'a Iriket, traducendo tramite Rek, spiega che ci vorranno secoli, il capo dice: "Potete mostrarci un mondo dove avete completato il vostro lavoro?"`
+			`	I Wanderers ne discutono, e Tele'ek dice: "Dovrebbero [visitare, recarsi su] <planet> e vedere che cosa possiamo ottenere al [culmine, termine] del nostro lavoro. Capitano <last>, vuoi [accompagnarli, condurli] là?"`
+			choice
+				`	"Certo, con piacere."`
+					accept
+				`	"Sei sicuro che sia sicuro lasciarli portare la loro nave sul vostro mondo d'origine?"`
+			`	Tele'ek dice: "Se non [scegliamo, rischiamo] di fidarci di loro, non avranno mai [occasione, motivo] di mostrarsi degni di fiducia. Quindi faremo noi il [primo, decisivo] passo."`
+			`	Accetti di scortare la nave dei Kor Efret in un viaggio attraverso il cunicolo fino a <planet>.`
+				accept
+	on visit
+		dialog `Hai raggiunto <planet>, ma la nave dei Korath non è ancora qui. Meglio ripartire e aspettare che arrivi.`
+	npc accompany save
+		government "Kor Efret"
+		personality escort
+		ship "Echo-Galleon" "Asikimi Ko Cheska"
+
+
+
+mission "Wanderers: Tour 4"
+	landing
+	name "Tour dei Kor Efret"
+	description "Scorta una nave dei Kor Efret fino a <planet>, per mostrare loro come funzionano i mondi agricoli dei Wanderers."
+	source "Vara K'chrai"
+	destination "Vara Rakak"
+	to offer
+		has "Wanderers: Tour 3: done"
+	on offer
+		conversation
+			`I Kor Efret sono pieni di meraviglia davanti ai villaggi sugli alberi, agli edifici altissimi e allo spazioporto affollato di <origin>. Ma ciò che li tocca più profondamente sono le foreste selvagge e le montagne fuori dalla città. Dopo esservi stati condotti da alcuni capi Wanderer del posto, restano mezz'ora fermi a guardare gli alberi che ondeggiano nel vento e gli uccelli che girano in cerchio sopra di loro. Alcuni emettono uno strano suono, fra l'abbaiare e il lamento, e Rek ti dice che stanno piangendo: piangono il fatto che sui loro mondi siano rimasti pochi luoghi così belli e intatti.`
+			`	I Korath sono impazienti di vedere altri luoghi di bellezza naturale come questo, e i capi dei Wanderers suggeriscono di andare poi su <planet>, per vedere come i Wanderers hanno costruito fattorie che producono ricchi raccolti anno dopo anno senza esaurire il suolo.`
+				accept
+	on visit
+		dialog `Hai raggiunto <planet>, ma la nave dei Korath non è ancora qui. Meglio ripartire e aspettare che arrivi.`
+	npc accompany save
+		government "Kor Efret"
+		personality escort
+		ship "Echo-Galleon" "Asikimi Ko Cheska"
+
+
+
+mission "Wanderers: Tour 5"
+	landing
+	name "Tour dei Kor Efret"
+	description "Scorta una nave dei Kor Efret fino a <planet>, dove i Wanderers stanno combattendo contro gli Slegati."
+	source "Vara Rakak"
+	destination "Varu Tev'kei"
+	to offer
+		has "Wanderers: Tour 4: done"
+	on offer
+		conversation
+			`I Korath sono molto interessati a vedere come funzionano le fattorie qui. "Stiamo cercando di imparare a farlo sui nostri mondi," spiega uno di loro, "ma ci sono state malattie delle piante, siccità e raccolti che falliscono per ragioni che non capiamo nemmeno." Gli scienziati Wanderer del posto fanno del loro meglio per spiegare come mantengono sani i raccolti e il suolo, con Rek che si sforza di tradurre il loro gergo tecnico in termini che i Korath possano capire.`
+			`	Quando hanno completato il loro giro, Rek ti dice nella tua lingua: "<first>, credo che ora dovremmo mostrare loro <planet>. Dovremmo mostrare loro la guerra con gli Slegati. Se vedono che siamo pochi, in difficoltà, con solo una manciata di mondi, si sentiranno meno minacciati da noi."`
+			choice
+				`	"Mi sembra una buona idea."`
+					goto end
+				`	"E se vederci come una minaccia minore li spingesse ad attaccarvi?"`
+			`	Rek dice: "Siamo comunque più numerosi e più avanzati. E inoltre le guerre nascono dalla paura tanto spesso quanto dall'aggressività."`
+			label end
+			`	Accetti di scortare la nave dei Korath fino a <planet>. Si spera che non venga fatta a pezzi da una flotta degli Slegati: sarebbe un disastro diplomatico non da poco.`
+				accept
+	on visit
+		dialog `Hai raggiunto <planet>, ma la nave dei Korath non è ancora qui. Meglio ripartire e aspettare che arrivi.`
+	npc accompany save
+		government "Kor Efret"
+		personality escort
+		ship "Echo-Galleon" "Asikimi Ko Cheska"
+	npc
+		system "Ap'arak"
+		government "Hai (Unfettered)"
+		personality staying heroic
+		fleet "Large Unfettered" 2
+
+
+
+mission "Wanderers: Tour 6"
+	landing
+	name "Tour dei Kor Efret"
+	description "Scorta la nave dei Kor Efret di ritorno attraverso l'Occhio fino a <planet>."
+	source "Varu Tev'kei"
+	destination "Setar Fort"
+	to offer
+		has "Wanderers: Tour 5: done"
+	on offer
+		conversation
+			`La nave dei Korath atterra sana e salva su <origin>. Rek spiega ai Korath che l'intero territorio dei Wanderers un tempo era controllato dagli Hai, ma che gli Hai hanno rovinato questi mondi e li hanno abbandonati. Dice loro che ora che i Wanderers hanno completato il loro lavoro di guarigione di questi mondi, li stanno restituendo agli Hai.`
+			`	È una storia un po' parziale, e i Korath sono dubbiosi. "Se avete fatto loro questo grande favore," chiede uno di loro, "perché vi stanno attaccando?"`
+			`	Rek spiega che gli Hai volevano indietro questi mondi prima che i Wanderers fossero pronti a restituirli, e lo stesso Korath dice: "Quindi se vi permettiamo di espandervi sui nostri mondi, ce li restituirete non quando ve lo chiediamo, ma quando deciderete voi che avete finito?"`
+			`	Rek cerca di assicurarli che nel loro territorio lavoreranno e vivranno fianco a fianco con i Wanderers, con il controllo congiunto dei mondi. Non è chiaro se le credano. "Abbiamo visto abbastanza," dice lo stesso Korath. "Ora torneremo sul nostro mondo." Accetti di scortarli di ritorno attraverso l'Occhio e di assicurarti che arrivino sani e salvi a <planet>.`
+				accept
+	on visit
+		dialog `Hai raggiunto <planet>, ma la nave dei Korath non è ancora qui. Meglio ripartire e aspettare che arrivi.`
+	npc accompany save
+		government "Kor Efret"
+		personality escort
+		ship "Echo-Galleon" "Asikimi Ko Cheska"
+
+
+
+mission "Wanderers: Tour 7"
+	landing
+	name "Ritorna su <planet>"
+	description "Torna su <planet> con il rapporto di Rek sul tour diplomatico dei Kor Efret."
+	autosave
+	source "Setar Fort"
+	destination "Desi Seledrak"
+	to offer
+		has "Wanderers: Tour 6: done"
+	on offer
+		conversation
+			`Hai scortato la nave-mondo dei Korath sana e salva a casa. Si spera che ciò che hanno visto nel viaggio li renda più desiderosi di essere amici dei Wanderers, non meno. Rek ti consegna un rapporto scritto che, dice, è un resoconto della missione diplomatica, e aggiunge: "Per favore consegnalo a Sobari Tele'ek su <planet>."`
+			choice
+				`	"Va bene, lo farò."`
+					accept
+				`	"Pensi che la missione sia riuscita?"`
+			`	"Lo spero," dice. "La vera prova sarà come tratteremo i Kor Efret nei giorni a venire. Chiaramente ci vorrà un po' di impegno per guadagnare la loro fiducia."`
+			`	Torni alla tua nave e ti prepari a viaggiare verso <planet>.`
+				accept
+
+
+
+mission "Wanderers: Sestor Scanning"
+	landing
+	name "Scansiona i pianeti Sestor"
+	description "Scansiona tutti i pianeti abitabili nello spazio Sestor per cercare di scoprire dove si trovi il centro di controllo degli automi."
+	autosave
+	source "Desi Seledrak"
+	to offer
+		has "Wanderers: Tour 7: done"
+	blocked "Ti serve <capacity> per accettare la prossima missione."
+	cargo "scanning equipment" 3
+	clearance
+	infiltrating
+	stopover "Sopi Lefarkata"
+	stopover "Keneska Fek"
+	stopover "Sasirka Gatru"
+	stopover "Sestor Ikfar"
+	stopover "Drekag Firask"
+	stopover "Firka Tesk"
+	on offer
+		log "Hai accettato di attraversare lo spazio Kor Sestor, scansionando i pianeti per cercare la struttura che controlla a distanza i droni Kor Sestor."
+		conversation
+			`I Wanderers sono impazienti di sentire i risultati della tua missione diplomatica, e qualunque cosa ci sia nel rapporto di Rek sembra incoraggiarli. Tele'ek dice: "Se riusciamo ad [affrontare, neutralizzare] anche i droni Kor Sestor, tutto lo spazio Korath sarà [aperto, disponibile] per noi e per i Korath superstiti. Allora non ci saranno più [barriere, ostacoli] alla pace."`
+			choice
+				`	"Se uniste la vostra flotta a quella dei Kor Mereti, potreste distruggere del tutto i droni Kor Sestor."`
+				`	"Se i droni Sestor sono controllati a distanza, dovremmo cercare la stazione di controllo e prenderne il comando, o distruggerla."`
+					goto next
+
+			`	"Con grande [distruzione, perdita] di vite," dice Tema'a Iriket. "Questo non è [accettabile, morale]. Dovremmo cercare una soluzione più [sottile, elegante]."`
+
+			label next
+			`	Dopo qualche discussione, i Wanderers concordano che il modo migliore per affrontare i droni Sestor sia cercare di capire dove si trovi il loro centro di controllo. "Le loro comunicazioni sono [non rintracciabili, non rilevabili]," dice Tele'ek, "ma di certo il [centro di controllo, nodo di comunicazione] sarà ben difeso. Quindi [cercando, scandagliando] un [sito, impianto] ben difeso potremmo trovarlo."`
+			`	Iriket dice: "Posso fornire al Capitano <last> gli scanner [da rilevamento?] e [il radar penetrante?] della squadra di terraformaggio. Una [struttura, installazione] del genere potrebbe benissimo essere in profondità sotto terra."`
+			`	I Wanderers cominciano a caricare l'equipaggiamento di scansione sulla tua nave e ti chiedono di atterrare su ciascuno dei pianeti dello spazio Kor Sestor per raccogliere misurazioni. "Portaci i [dati, risultati] da analizzare," dice Iriket.`
+				accept
+	on visit
+		dialog phrase "generic stopover on visit"
+	on stopover
+		dialog `Quello era l'ultimo dei pianeti Kor Sestor che i Wanderers ti hanno chiesto di scansionare. È tempo di tornare su <planet> con i dati.`
+
+
+
+event "wanderers: battle in solifar begins"
+	system Solifar
+		fleet "Wanderer Flycatchers" 400
+
+event "wanderers: battle in solifar ends"
+	system Solifar
+		fleet "Large Quarg (Kor Efret)" 3000
+		fleet "Wanderer Defense" 1800
+		fleet "Wanderer Drones" 700
+		fleet "Wanderer Flycatchers" 800
+
+mission "Wanderers: Sestor Attack"
+	landing
+	name "Difendi <planet>"
+	description "<planet> è sotto attacco di una flotta Kor Sestor. Respingili, poi torna sul pianeta per decidere che cosa fare."
+	source "Desi Seledrak"
+	to offer
+		has "Wanderers: Sestor Scanning: done"
+	on offer
+		conversation
+			`Poche ore dopo che hai presentato i dati delle scansioni agli scienziati, vieni convocato a una riunione con i capi dei Wanderers. "Potremmo aver trovato la [struttura, il centro]," dice Tele'ek, "ma non ne siamo [certi, sicuri]. C'è davvero un [bunker, fortino] sotterraneo su uno dei pianeti, ma deve essere stato [danneggiato, travolto] nel corso della loro guerra." Richiama una proiezione olografica della struttura, che mostra come una sua sezione sia stata violata e da lì un tunnel risalga fino alla superficie.`
+			choice
+				`	"Probabilmente hai ragione: non avrebbero continuato a usare la struttura dopo che era stata violata."`
+				`	"C'è qualche segno che abbiano provato a ricostruirla dopo il danno? O che sia ancora in uso?"`
+
+			`	Iriket si avvicina alla proiezione per guardarla. Regola alcuni comandi, e compare una sovrapposizione di un altro colore. "I Kor Efret hanno detto che la loro [guerra civile, crisi culturale] è finita un secolo fa, giusto?" chiede. Annuisci. Lei gira intorno alla proiezione, la esamina con attenzione, poi dice: "Queste [crepe, fratture] nel [substrato roccioso?] non sono ancora state [penetrate, saturate] dall'acqua di falda. Questo danno non ha un secolo. Risale ad al massimo un [mese?] fa."`
+			choice
+				`	"Può essere che chi viveva laggiù abbia deciso di rinunciare e tornare in superficie?"`
+				`	"Vuol dire che qualcun altro ha preso la struttura prima di noi?"`
+
+			`	Improvvisamente senti il suono delle sirene d'allarme dallo spazioporto, e un messaggero irrompe nella stanza, con gli artigli che stridono sul pavimento mentre frena di colpo. "Droni Sestor!" dice. "Flotta [enorme, soverchiante]. Servono tutti i [difensori, combattenti] subito."`
+			`	Torni alla tua nave e accendi in fretta i motori...`
+				launch
+	on enter
+		dialog `C'è davvero una flotta Kor Sestor qui, ma non è neanche lontanamente grande come il messaggero aveva indicato. O il messaggero esagerava, o una parte della flotta è già fuggita.`
+	on visit
+		dialog `Ci sono ancora navi Kor Sestor là sopra. Dovresti decollare e tornare in battaglia.`
+	on accept
+		event "wanderers: battle in solifar begins"
+	on complete
+		event "wanderers: battle in solifar ends"
+	npc evade
+		government "Kor Sestor"
+		personality staying heroic
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Trapper)"
+				"Tek Far 71 - Lek (Close Quarters)"
+				"Far Lek 14" 7
+				"Met Par Tek 53"
+				"Met Par Tek 53 (Sniper)"
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Defense)"
+				"Tek Far 78 - Osk (Close Quarters)"
+				"Far Osk 27" 7
+				"Met Par Tek 53"
+	npc evade
+		government "Kor Sestor"
+		personality entering heroic
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Tek Far 109"
+				"Tek Far 71 - Lek"
+				"Tek Far 78 - Osk"
+				"Far Lek 14" 17
+				"Far Osk 27" 13
+				"Met Par Tek 53 (Sniper)" 2
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Tek Far 109" 2
+				"Far Lek 14" 18
+				"Far Osk 27" 14
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Trapper)"
+				"Tek Far 71 - Lek (Close Quarters)"
+				"Far Lek 14" 7
+				"Tek Far 78 - Osk (Close Quarters)"
+				"Far Osk 27" 6
+	npc
+		government "Wanderer"
+		personality staying heroic
+		fleet
+			names "wanderer"
+			variant
+				"Hurricane (Turret)"
+				"Tempest"
+				"Derecho (Turret)"
+		fleet
+			names "wanderer"
+			variant
+				"Tempest (Heavy)"
+				"Heavy Gust"
+				"Strong Wind"
+		fleet
+			names "wanderer"
+			variant
+				"Autumn Leaf" 3
+	npc
+		government "Wanderer"
+		personality heroic
+		fleet
+			names "wanderer"
+			variant
+				"Autumn Leaf" 4
+		fleet
+			names "wanderer"
+			variant
+				"Hurricane (Tough)"
+				"Derecho"
+				"Tempest (Missile)" 2
+	npc
+		government "Kor Mereti"
+		personality heroic
+		system "Mekislepti"
+		fleet
+			names "kor mereti"
+			variant
+				"Model 512"
+				"Model 256"
+				"Model 64"
+	npc
+		government "Kor Mereti"
+		personality heroic staying
+		fleet
+			names "kor mereti"
+			variant
+				"Model 16" 2
+				
+
+
+
+event "wanderers: kor sestor are aimless"
+	fleet "Small Kor Sestor"
+		personality
+			timid
+			coward
+	fleet "Large Kor Sestor"
+		personality
+			timid
+			coward
+	system "Mesuket"
+		fleet "Large Kor Mereti" 900
+		fleet "Large Kor Sestor" 5000
+	system Eshkoshtar
+		remove fleet "Large Kor Sestor"
+	system Salipastart
+		remove fleet "Large Kor Sestor"
+	system Mekislepti
+		remove fleet "Large Kor Sestor"
+	system Similisti
+		remove fleet "Large Kor Sestor"
+	system Faronektu
+		remove fleet "Large Kor Sestor"
+	planet "Varu K'prai"
+		landscape land/beach1
+		add description `	Qui c'era uno spazioporto fiorente, ma la flotta Kor Sestor l'ha rasa al suolo.`
+		remove spaceport
+		remove outfitter
+		remove "required reputation"
+		remove tribute
+	planet Zenith
+		bribe 0
+		"required reputation" 1000
+	"reputation: Pirate" <?= -1
+	"unvisit planet" "Varu K'prai"
+
+mission "Wanderers: Sestor Search"
+	landing
+	name "Trova la flotta Sestor"
+	description "Una grande flotta Kor Sestor è passata attraverso il cunicolo verso lo spazio dei Wanderers. Scopri dove sono andati e che cosa stanno facendo lì."
+	autosave
+	source "Desi Seledrak"
+	to offer
+		has "Wanderers: Sestor Attack: done"
+	to complete
+		never
+	destination "Vara K'chrai"
+	on offer
+		log "Qualcun altro sembra aver individuato il comando centrale dei Kor Sestor prima dei Wanderers, e ha preso il controllo della flotta Kor Sestor. La maggior parte dei droni Kor Sestor è volata attraverso l'Occhio nel vecchio territorio dei Wanderers, dove i Wanderers probabilmente non saranno pronti a combatterli."
+		event "wanderers: kor sestor are aimless"
+		conversation
+			`Torni sul pianeta aspettandoti che i Wanderers festeggino la vittoria, ma i capi hanno notizie cupe. "I droni contro cui abbiamo combattuto erano solo la [retroguardia? il resto?] della flotta," dice Tele'ek. "Decine di [navi capitali?] hanno attraversato questo sistema e sono proseguite. Con questa [rotta, destinazione]." Sul proiettore olografico richiama una mappa stellare e indica il sistema dove si trova l'Occhio. Il cunicolo che riporta allo spazio dei Wanderers.`
+			`	Tele'ek dice: "Ogni nave che possiamo risparmiare deve [inseguire, seguire] i droni Sestor attraverso l'Occhio, e sperare di [individuarli, rintracciarli] prima che possano causare [danni, distruzione] alla nostra gente." Probabilmente dovresti unirti a loro.`
+				accept
+	on visit
+		dialog `Sei tornato su <planet>, ma non hai ancora scoperto dove sia andata la flotta Sestor. Continua a cercarla; è pericoloso lasciare una flotta ostile così potente libera di muoversi.`
+	to fail
+		has "wanderers: found the sestor fleet"
+	on enter "Aya'k'k"
+		dialog
+			`Qui si è combattuta una grande battaglia. I relitti bruciati di diverse navi dei Wanderers galleggiano nello spazio, insieme a una manciata di navi Kor Sestor neutralizzate. Nel frattempo le navi dei Wanderers sono impegnate in una specie di operazione di soccorso o evacuazione sulla superficie di Varu K'prai. Ma non c'è traccia del grosso della flotta Kor Sestor.`
+	npc
+		system "Aya'k'k"
+		government "Wanderer"
+		personality derelict uninterested
+		fleet "Wanderer Defense"
+		fleet "Wanderer Freight" 2
+	npc
+		system "Aya'k'k"
+		government "Kor Sestor"
+		personality derelict uninterested
+		fleet "Large Kor Sestor"
+	on enter "Alnilam"
+		set "wanderers: found the sestor fleet"
+		dialog
+			`Diverse navi Kor Sestor sono in orbita intorno al mondo anarchico di Zenith, e ne rilevi molte altre sulla superficie. Stranamente, le navi Kor Sestor non attaccano le flotte locali di pirati e anarchici.`
+			`	Probabilmente non è un buon segno.`
+
+
+
+mission "Wanderers: Sestor: Alnilam Fleet 1"
+	landing
+	invisible
+	non-blocking
+	destination "Farpoint"
+	to offer
+		has "Wanderers: Sestor Attack: done"
+	npc kill
+		government "Kor Sestor"
+		system Alnilam
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Defense)"
+				"Met Par Tek 53" 3
+
+
+
+mission "Wanderers: Sestor Search: Vara K'chrai"
+	landing
+	source "Vara K'chrai"
+	to offer
+		has "Wanderers: Sestor Search: active"
+	on offer
+		conversation
+			`Tutti nello spazioporto di Vara K'chrai sono ancora nel panico per aver visto la flotta Kor Sestor attraversare il loro sistema, ma per fortuna i droni non hanno attaccato il pianeta. Anzi, non hanno sparato nemmeno alle navi dei Wanderers che erano in orbita in quel momento. Anche i difensori Wanderer, non volendo provocare uno scontro con una flotta che probabilmente non avrebbero potuto sconfiggere, non hanno attaccato. Così la flotta Kor Sestor ha attraversato questo sistema in pace ed è proseguita verso... ovunque stia andando. Nessuno qui ha ancora idea di quale fosse la destinazione della flotta.`
+				decline
+
+
+
+mission "Wanderers: Sestor Search: Varu Tev'kei"
+	landing
+	source "Varu Tev'kei"
+	to offer
+		has "Wanderers: Sestor Search: active"
+	on offer
+		conversation
+			`I difensori su <planet> hanno sentito dell'incursione dei Kor Sestor nello spazio dei Wanderers, ma ti dicono che la flotta non è passata per questo sistema. E qui sono chiaramente troppo preoccupati per la minaccia degli Slegati per poter pensare di combattere contemporaneamente una guerra su un secondo fronte.`
+				decline
+
+
+
+mission "Wanderers: Sestor Search: Varu K'prai"
+	landing
+	source "Varu K'prai"
+	to offer
+		has "Wanderers: Sestor Search: active"
+	on offer
+		conversation
+			`L'intero spazioporto su <planet> è stato raso al suolo. Squadre di Wanderers setacciano le macerie per recuperare i corpi di chi è stato ucciso qui. A quanto pare la flotta Kor Sestor ha distrutto lo spazioporto e ogni nave dei Wanderers che ha trovato in questo sistema, poi ha occupato il sistema per diversi giorni, distruggendo o scacciando ogni nave esploratrice che vi entrava.`
+			`	I Wanderers non sanno che cosa sia successo dopo, ma i droni non sono più qui. Forse sono andati oltre lo spazio dei Wanderers.`
+				decline
+
+
+
+mission "Wanderers: Sestor Search: Human Spaceport"
+	landing
+	invisible
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral"
+		attributes "north"
+	to offer
+		has "Wanderers: Sestor Search: active"
+	on offer
+		conversation
+			`Mentre porti la nave ad atterrare su una piazzola vuota, noti il capitano di un Behemoth lì accanto che ispeziona la sua nave, crivellata di fori di proiettile.`
+			choice
+				`	(Avvicinati al capitano e cerca di scoprire che cosa è successo.)`
+					goto approach
+				`	(Ignoralo.)`
+					decline
+			
+			label approach
+			`	Ti avvicini al Behemoth e ne hai una visione migliore: è l'Heart of Gold, come indica la poppa. La parte posteriore della nave è malconcia, e tracce nere di bruciatura si allungano in avanti lungo lo scafo. Non puoi fare a meno di notare che in diversi punti di ingresso dei proiettili il metallo è piegato verso l'interno in modo uniforme, quasi che il penetratore si sia fatto strada attraverso la corazza della nave bruciandola o fondendola. Il capitano del Behemoth alza lo sguardo dall'ispezione. Vedendoti, dice: "Siamo stati fortunati a uscirne vivi!"`
+			choice
+				`	"Come è finita la tua nave in questo stato?"`
+				`	"Questo gioiellino è stato vittima di un attacco di pirati?"`
+				
+			`	"Non ne sono del tutto sicuro," dice il capitano. "Ci ha sparato una flotta di navi ostili che il nostro computer non è riuscito a identificare. Non somigliavano affatto a una normale nave pirata, però, ed erano equipaggiate con una tecnologia che non avevo mai visto."`
+			choice
+				`	"Quante navi erano? Che aspetto avevano?"`
+				`	"Dove è avvenuto lo scontro?"`
+					goto where
+				`	"Dovresti essere contento di essere ancora intero."`
+					goto glad1
+					
+			`	"Beh," dice il pilota, "avevamo ingaggiato un robusto Leviathan come scorta fino a Farpoint. Mentre ci avvicinavamo per atterrare, due di queste navi ostili sono saltate fuori da nord-ovest, la direzione di tutte le colonie anarchiche di questa zona. Le navi non erano grandi, ma erano toste: le nostre quattro torrette laser pesanti non bastavano nemmeno a scalfire i loro scudi. Hanno fatto piazza pulita del Leviathan e quasi neutralizzato anche la nostra nave. È stato un bene che decidessi che saltare sarebbe stato più rapido che atterrare. Siamo usciti dal sistema in curvatura mentre eravamo ancora in atmosfera, salvando la nave, ma ora sono in debito con tutto l'equipaggio perché non ho rispettato una scadenza di consegna urgente. Ho dovuto consegnare comunque la merce, ma ho perso un bonus piuttosto sostanzioso."`
+			choice
+				`	"Sei fortunato da far paura a essere ancora qui oggi."`
+					goto glad
+				`	"Grazie per le informazioni. Credo che queste navi ostili siano quelle che sto cercando."`
+					goto thanks
+					
+			label where
+			`	"Beh," dice il pilota, "avevamo una scadenza per un grosso carico da portare a Farpoint, quando due di queste navi ostili sono saltate fuori da nord-ovest, la direzione di tutte le colonie anarchiche di questa zona. Ho dovuto far saltare la nave in atmosfera per impedire che le loro strane armi che fondono ci facessero a pezzi. Ho subito denunciato l'attacco a un impiegato della base della Marina nel sistema vicino, Saiph, ma i loro server non hanno registrazioni di navi non identificate oltre Farpoint, quindi credo che abbiano fatto dietrofront dopo aver esplorato il sistema Alnitak. Sfortuna mia essere nel sistema proprio nel momento in cui quelle cose sono entrate, perché ho perso la scadenza di consegna. Ho dovuto consegnare comunque la merce, ma ho perso un bonus piuttosto sostanzioso."`
+			choice
+				`	"Sei fortunato da far paura a essere ancora qui oggi."`
+					goto glad
+				`	"Grazie per le informazioni. Credo che queste navi ostili siano quelle che sto dando la caccia."`
+					goto thanks
+			
+			label glad1
+			`	"Lo sono! Le navi attaccanti non erano grandi, ma erano toste: le nostre quattro torrette laser pesanti non riuscivano nemmeno a scalfire i loro scudi," dice il capitano. "Avevamo persino ingaggiato un robusto Leviathan per proteggerci dalle incursioni dei pirati mentre viaggiavamo verso Farpoint, ma quando queste navi ostili sono saltate fuori da nord-ovest hanno fatto piazza pulita della nostra scorta e quasi neutralizzato anche la nostra nave. Ho dovuto saltare fuori dal sistema mentre eravamo in atmosfera per salvare la nave, ma ora sono in debito con tutto l'equipaggio perché non ho rispettato una scadenza di consegna urgente. Ho dovuto consegnare comunque la merce, ma ho perso un bonus piuttosto sostanzioso."`
+			choice
+				`	"Sei davvero fortunato da far paura a essere ancora qui oggi."`
+					goto glad
+				`	"Grazie per le informazioni. Credo che queste navi ostili siano quelle che sto cercando."`
+					goto thanks
+			
+			label thanks
+			`	"Nessun problema, ragazzo," dice il capitano, anche se sembra stupefatto che tu stia persino tentando di combattere navi così potenti. "Ricorda, a nord-ovest di Farpoint. Se sono anarchici di qualsiasi tipo, si nasconderanno in uno di quei sistemi pirata laggiù. Stai attento là fuori; quelle che ci hanno saltato addosso sono navi pericolose." Detto questo, ti saluta.`
+				decline
+				
+			label glad
+			`	"Sì, quelle navi ci avrebbero obliterati se non avessimo saltato subito." Il pilota ti guarda, poi chiede con curiosità: "Di', sai qualcosa di quelle navi?"`
+			choice
+				`	"Sì, quelle che vi hanno attaccato erano navi Korath."`
+				`	"Forse. Ho la sensazione che siano le navi aliene che sto cercando."`
+				`	"Non voglio saltare a conclusioni affrettate."`
+					goto no
+					
+			`	"Alieni?" Il viso del pilota si fa rosso e gli occhi gli si restringono per la rabbia. "Come quei detestabili scoiattoli, vuoi dire? Mi avevano detto che erano pacifici, ma quando sono andato più a nord per poco non mi facevo fare a pezzi la nave!" Cerchi di dirgli che gli Hai sono una specie diversa dai Korath, ma chiaramente non vuole sentirne altro, quindi decidi di chiudere la conversazione.`
+				goto end
+				
+			label no
+			`	Il pilota sembra deluso dalla tua risposta, quindi decidi di chiudere la conversazione.`
+				goto end
+				
+			label end
+			`	"Grazie per il tempo che mi hai dedicato," dici al capitano.`
+			`	Il pilota torna serio e dice: "Nessun problema. Ricorda, a nord-ovest di Farpoint. Se sono anarchici di qualsiasi tipo, si nasconderanno in uno di quei sistemi pirata laggiù. Stai attento là fuori; erano navi pericolose quelle che abbiamo affrontato." Detto questo, ti saluta.`
+				decline
+
+
+
+mission "Wanderers: Sestor Search: Human Hint"
+	landing
+	name "Avverti l'ammiraglio Danforth"
+	description "Incontra l'ammiraglio Danforth su <planet> il prima possibile, per avvertirlo della possibile minaccia della flotta Kor Sestor."
+	source
+		near "Alnitak" 1 100
+	destination "Farpoint"
+	to offer
+		has "wanderers: found the sestor fleet"
+		not "Wanderers: Sestor Search: Wanderer Hint: offered"
+		not "Wanderers: Sestor: Farpoint Attack 1: offered"
+	on offer
+		conversation
+			`Hai localizzato la flotta Kor Sestor nel sistema Alnilam. La Marina della Repubblica è probabilmente poco attrezzata per combattere navi aliene così potenti, ma potrebbe essere l'unica cosa che si frappone a un'invasione vera e propria dello spazio umano. Dovresti avvertire l'ammiraglio Danforth e gli Oathkeepers della minaccia imminente il prima possibile.`
+				accept
+
+
+
+mission "Wanderers: Sestor Search: Wanderer Hint"
+	landing
+	name "Avverti l'ammiraglio Danforth"
+	description "Incontra l'ammiraglio Danforth su <planet> il prima possibile, per avvertirlo della possibile minaccia della flotta Kor Sestor."
+	source
+		government "Wanderer"
+	destination "Farpoint"
+	to offer
+		has "wanderers: found the sestor fleet"
+		not "Wanderers: Sestor Search: Human Hint: offered"
+		not "Wanderers: Sestor: Farpoint Attack 1: offered"
+	on offer
+		conversation
+			`Hai localizzato la flotta Kor Sestor nel sistema Alnilam. La Marina della Repubblica è probabilmente poco attrezzata per combattere navi aliene così potenti, ma potrebbe essere l'unica cosa che si frappone a un'invasione vera e propria dello spazio umano. Dovresti avvertire l'ammiraglio Danforth e gli Oathkeepers della minaccia imminente il prima possibile.`
+				accept
+
+
+
+mission "Wanderers: Sestor: Farpoint Attack 1"
+	landing
+	name "Difendi Farpoint"
+	description "Farpoint è sotto attacco di una flotta Kor Sestor. Respingili, poi torna sul pianeta per parlare con l'ammiraglio Danforth."
+	source "Farpoint"
+	to offer
+		has "wanderers: found the sestor fleet"
+	on offer
+		log "La flotta Kor Sestor è riuscita in qualche modo ad arrivare nello spazio umano settentrionale, forse usando un piccolo numero di motori di salto per traghettare le navi avanti e indietro come hanno fatto gli invasori Slegati. L'ammiraglio Danforth dice che il sistema dove si sono radunate le navi Korath ospita una base segreta degli Alphas, quindi teme che i droni Kor Sestor siano sotto il controllo degli Alphas."
+		conversation
+			`Mentre ti avvicini per atterrare, contatti l'ammiraglio Danforth e chiedi di parlargli il prima possibile. Ti incontra alla piazzola di atterraggio e ti invita nel suo ufficio, dove gli spieghi della grande flotta Kor Sestor che si sta radunando a nord di qui. Ti dice: "Negli ultimi mesi l'Intelligence ha seguito una base nascosta degli Alphas su Zenith e ha preparato piani per intrappolarli e sterminarli. E ora tu mi dici che Zenith è sorvegliata da droni Korath. Sembra improbabile che sia una coincidenza."`
+			choice
+				`	"I Kor Sestor potrebbero aver fatto un qualche accordo con gli Alphas?"`
+				`	"Forse gli Alphas hanno preso il controllo della flotta Kor Sestor in qualche modo?"`
+					goto next
+
+			`	"Ciò presupporrebbe che alcuni dei Korath che controllavano la flotta Sestor siano ancora vivi," dice. "Ci sono prove che sia così?"`
+
+			label next
+			`	Gli racconti del bunker sotterraneo che i Wanderers hanno scoperto, e dei segni che qualcuno se ne è allontanato di recente, oppure vi è entrato di recente dalla superficie. Dice: "Sappiamo già che un gruppo di Alphas era attivo in quella regione di spazio. Tu e io li abbiamo combattuti lì proprio di recente, e non siamo riusciti a catturarli. Scommetto che, dopo essere fuggiti, sono riusciti in qualche modo ad accedere al bunker Kor Sestor e a prendere il controllo delle flotte di droni."`
+			`	Non è particolarmente sorprendente che, pochi secondi dopo che ha detto questo, cominci a suonare una sirena d'allarme...`
+				launch
+	on visit
+		dialog `Ci sono ancora navi da guerra Sestor là sopra. Dovresti decollare di nuovo e dare una mano nello scontro.`
+	npc evade
+		government "Kor Sestor"
+		personality heroic staying
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349"
+				"Tek Far 71 - Lek"
+				"Far Lek 14" 10
+				"Met Par Tek 53" 2
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Offense)"
+				"Tek Far 78 - Osk"
+				"Far Osk 27" 8
+				"Met Par Tek 53 (Sniper)"
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Defense)"
+				"Kar Ik Vot 349 (Trapper)"
+		dialog `La flotta Kor Sestor è stata respinta. È tempo di atterrare e vedere che cosa pensa Danforth che tu debba fare.`
+	npc
+		government "Navy (Oathkeeper)"
+		personality heroic
+			confusion "civilian"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)" 2
+				"Rainmaker (Mark II)" 2
+				"Gunboat (Mark II)" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser"
+				"Combat Drone" 4
+				"Frigate"
+				"Rainmaker"
+	npc
+		government "Navy (Oathkeeper)"
+		personality heroic staying
+			confusion "civilian"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)" 2
+				"Rainmaker (Mark II)" 2
+				"Gunboat (Mark II)" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser"
+				"Combat Drone" 4
+				"Frigate"
+				"Rainmaker"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier"
+				"Lance" 8
+				"Combat Drone" 6
+				"Frigate" 3
+
+
+
+mission "Wanderers: Sestor: Quarg Help 1"
+	landing
+	name "Chiedi aiuto ai Quarg"
+	description "L'ammiraglio Danforth ti ha chiesto di visitare <planet> e di chiedere ai Quarg se possono fornire navi per aiutarti a respingere la flotta Kor Sestor (ora presumibilmente sotto il controllo degli Alphas)."
+	autosave
+	source "Farpoint"
+	destination "Alta Hai"
+	clearance
+	to offer
+		has "Wanderers: Sestor: Farpoint Attack 1: done"
+	on offer
+		conversation
+			`L'ammiraglio Danforth sembra ancora sotto shock per il massacro e le perdite della battaglia che avete appena combattuto. "Dimmi che quella era tutta la flotta di droni," dice.`
+			`	Purtroppo scuoti la testa. "Hanno decine di navi capitali," dici. "Quella era probabilmente solo l'avanguardia della loro flotta."`
+			`	Danforth sospira. "Ho avuto un assaggio di quanto sono potenti queste navi Korath durante il nostro attacco alla precedente base degli Alphas," dice. "Non sono sicuro di poter reggere contro un'intera flotta di navi così. La nostra unica speranza potrebbero essere i Quarg. Hanno un mondo ad anello nello spazio Hai. Anzi, non è lì che abbiamo lasciato il tuo amico Elias?" Annuisci. "Dovresti andarci subito," dice Danforth. "Speriamo che tu riesca a portare aiuto in tempo."`
+				accept
+
+
+
+mission "Wanderers: Sestor: Quarg Help 2"
+	landing
+	name "Ritorna su <planet>"
+	description "Torna su <planet> con questa piccola flotta di navi dei Quarg."
+	source "Alta Hai"
+	destination "Farpoint"
+	cargo "medical supplies" 2
+	blocked "Ti serve <capacity> per portare rifornimenti a Farpoint."
+	to offer
+		has "Wanderers: Sestor: Quarg Help 1: done"
+	on offer
+		conversation
+			`Mentre ti avvicini per atterrare, contatti i Quarg e scopri che Elias Hanover vive davvero ancora qui. Ti viene incontro appena attraccate alla stazione, e tu gli descrivi la situazione. "Dev'essere una rappresaglia," dice. "Vogliono cancellare Danforth e gli Oathkeepers dalla mappa per vendicarsi di averli scacciati dalla loro base su Avalon."`
+			`	Se ne va a cercare aiuto e torna dopo circa quindici minuti. "Ho trovato quattro navi dei Quarg che si sono offerte volontarie," dice. "Può non sembrare molto, ma le loro navi fanno parecchio male. E hanno offerto anche alcuni rifornimenti medici, che caricheranno sulla tua nave. Buona fortuna, capitano."`
+			`	Lo ringrazi per l'aiuto e ti affretti ad avviare la nave e a tornare nello spazio umano. Si spera che la base di Danforth non sia già stata travolta durante la tua assenza.`
+				accept
+	on accept
+		log "Hai reclutato alcune navi da guerra dei Quarg per aiutare a difendere lo spazio umano dai droni Kor Sestor, ora presumibilmente sotto il controllo degli Alphas."
+	npc accompany save
+		government "Quarg (Hai)"
+		personality heroic waiting escort
+		ship "Quarg Wyvern" "Leukos-nikeseh"
+		ship "Quarg Wyvern" "Purros-machaira"
+		ship "Quarg Wyvern" "Melas-zugon"
+		ship "Quarg Wyvern" "Chloros-thanatos"
+	npc
+		government "Kor Sestor"
+		personality heroic staying
+		system "Alnitak"
+		fleet "Large Kor Sestor" 2
+	on visit
+		dialog `Hai raggiunto <planet>, ma o hai lasciato indietro una delle navi da guerra dei Quarg, oppure la tua scorta che porta i rifornimenti medici di Elias non è ancora entrata nel sistema. Meglio ripartire e aspettare.`
+
+
+
+mission "Wanderers: Sestor: Alnilam Fleet 2"
+	landing
+	invisible
+	non-blocking
+	source "Farpoint"
+	to offer
+		has "Wanderers: Sestor: Quarg Help 2: done"
+	npc kill
+		government "Kor Sestor"
+		system "Alnilam"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Defense)"
+				"Tek Far 71 - Lek (Close Quarters)"
+				"Far Lek 14" 10
+
+
+
+mission "Wanderers: Sestor: Bomb Zenith 1"
+	landing
+	name "Consegna il dispositivo a Zenith"
+	description "L'ammiraglio Danforth ti ha chiesto di sganciare questo dispositivo (presumibilmente una bomba) sopra la base degli Alphas su <destination>."
+	source "Farpoint"
+	destination "Zenith"
+	clearance
+	infiltrating
+	to offer
+		has "Wanderers: Sestor: Quarg Help 2: done"
+	cargo "unknown device" 2
+	on offer
+		log "Danforth ritiene di aver localizzato la base degli Alphas da cui vengono controllati i droni; se la base fosse distrutta, i droni dovrebbero diventare privi di guida e facili da sconfiggere."
+		conversation
+			`Danforth è ancora vivo, e ancora resiste ai droni controllati dagli Alphas. Dopo aver incaricato alcune reclute di scaricare i rifornimenti medici, ti dice: "La base degli Alphas che abbiamo tenuto sotto osservazione su <planet> è sepolta in profondità. Spero che gli Alphas non sappiano che conosciamo la posizione della loro base, oppure che abbiano scelto di restare lì comunque perché è così ben difesa. Se i droni sono controllati da lì, eliminare la base potrebbe disattivarli."`
+			choice
+				`	"Pensi che le tue truppe potrebbero conquistare la base?"`
+				`	"Hai un piano per distruggere gli Alphas?"`
+
+			`	Danforth dice: "La base è a diversi chilometri di profondità. Prima che fosse sorvegliata dai droni Sestor avevamo una possibilità. Avremmo potuto far atterrare decine di trasporti di truppe e aprirci la strada combattendo, anche se con gravi perdite. Ma ora dubito che le nostre truppe riuscirebbero ad arrivare in superficie."`
+			`	Mentre sta parlando, due ufficiali della Marina si avvicinano alla tua nave con un carrello a levitazione che trasporta qualcosa che somiglia un po' a un siluro Typhoon modificato. Salutano Danforth, e lui dice loro: "Mettetelo sulla nave del Capitano <last>." Poi si volta verso di te. "Ti darò le coordinate della base degli Alphas," dice. "È sul continente polare, in profondità sotto il ghiaccio. Per fortuna non ci sono altri insediamenti umani lì vicino."`
+			`	Si ferma, come per rassegnarsi a ciò che sta per ordinarti, e poi dice: "Atterra sul pianeta, sgancia questo dispositivo alle coordinate, e poi taglia la corda. Avrai quindici secondi dopo averlo sganciato per essere ad almeno mille chilometri di distanza."`
+			choice
+				`	"Aspetta, è una bomba nucleare? Pensavo che la Marina fosse troppo integerrima per usarle."`
+				`	"Va bene, farò come dici."`
+					goto end
+
+			`	"Sgancia quella dannata cosa e vattene, in fretta," dice. Chiaramente non vuole dirti altro sull'origine dell'arma.`
+
+			label end
+			`	Cominciano a suonare le sirene d'allarme. "Non restare qui a difenderci," dice Danforth. "Va' dritto su <planet> e sgancia il dispositivo. Potrebbe essere l'unico modo per salvarci."`
+				launch
+	on enter
+		dialog
+			`Danforth non scherzava quando ha detto che il dispositivo potrebbe essere la tua unica possibilità. Ci sono quasi una dozzina di navi capitali Sestor nel sistema, e innumerevoli vascelli più piccoli che stanno facendo a pezzi la Marina.`
+			`Anche le navi da guerra dei Quarg hanno problemi con una flotta avversaria di queste dimensioni. Forse una flotta più potente potrebbe sconfiggere gli automi, ma sarebbe una battaglia difficile.`
+	on visit
+		dialog `Ti accingi a spingere il dispositivo fuori dal portello, ma ti rendi conto di averlo lasciato su una delle tue scorte. Meglio ripartire e aspettare che entri nel sistema.`
+	on complete
+		fail "Wanderers: Sestor: Farpoint Attack 2"
+	to fail
+		has "Wanderers: Sestor: Farpoint Attack 2: done"
+
+
+
+mission "Wanderers: Sestor: Farpoint Attack 2"
+	landing
+	invisible
+	non-blocking
+	source "Farpoint"
+	to offer
+		has "Wanderers: Sestor: Quarg Help 2: done"
+	on visit
+		dialog `Danforth nota la tua nave atterrare mentre il cielo si illumina delle esplosioni delle navi della Marina. "Hai usato la bomba?" chiede. Lo stress nella sua voce è palpabile. Scuoti la testa. "E allora che diavolo ci fai qui? Vai là sopra e sgancia quella bomba!"`
+	npc
+		government "Quarg (Hai)"
+		personality heroic staying
+		ship "Quarg Wyvern" "Leukos-nikeseh"
+		ship "Quarg Wyvern" "Purros-machaira"
+		ship "Quarg Wyvern" "Melas-zugon"
+		ship "Quarg Wyvern" "Chloros-thanatos"
+	npc
+		government "Navy (Oathkeeper)"
+		personality heroic staying
+			confusion "civilian"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)" 2
+				"Rainmaker (Mark II)" 2
+				"Gunboat (Mark II)" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser"
+				"Combat Drone" 4
+				"Frigate"
+				"Rainmaker"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier"
+				"Lance" 8
+				"Combat Drone" 6
+				"Cruiser"
+				"Combat Drone" 4
+				"Frigate" 2
+				"Rainmaker" 2
+				"Gunboat" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)"
+				"Rainmaker (Mark II)"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Frigate (Mark II)" 3
+	npc evade
+		government "Kor Sestor"
+		personality heroic staying
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349"
+				"Tek Far 71 - Lek"
+				"Far Lek 14" 10
+				"Met Par Tek 53" 2
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Defense)"
+				"Tek Far 71 - Lek (Close Quarters)"
+				"Far Lek 14" 8
+				"Met Par Tek 53 (Sniper)" 2
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Offense)"
+				"Tek Far 78 - Osk"
+				"Far Osk 27" 8
+				"Met Par Tek 53 (Sniper)"
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Trapper)"
+				"Tek Far 78 - Osk (Close Quarters)"
+				"Far Osk 27" 6
+				"Met Par Tek 53 (Sniper)"
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Defense)"
+				"Tek Far 71 - Lek (Close Quarters)"
+				"Far Lek 14" 8
+				"Tek Far 78 - Osk"
+				"Far Osk 27" 8
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Offense)"
+				"Tek Far 71 - Lek"
+				"Far Lek 14" 9
+				"Tek Far 78 - Osk (Close Quarters)"
+				"Far Osk 27" 7
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Trapper)"
+				"Tek Far 71 - Lek (Close Quarters)"
+				"Far Lek 14" 7
+				"Tek Far 78 - Osk (Close Quarters)"
+				"Far Osk 27" 6
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Defense)"
+				"Met Par Tek 53" 2
+				"Met Par Tek 53 (Sniper)"
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Offense)"
+				"Met Par Tek 53"
+				"Met Par Tek 53 (Sniper)" 2
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Trapper)"
+				"Met Par Tek 53 (Sniper)" 3
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Tek Far 109"
+				"Tek Far 71 - Lek"
+				"Tek Far 78 - Osk"
+				"Far Lek 14" 17
+				"Far Osk 27" 13
+				"Met Par Tek 53 (Sniper)" 2
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Tek Far 109"
+				"Tek Far 71 - Lek (Close Quarters)"
+				"Tek Far 78 - Osk (Close Quarters)"
+				"Far Lek 14" 17
+				"Far Osk 27" 13
+				"Met Par Tek 53" 2
+		dialog `Contro ogni previsione, tutte le navi Kor Sestor che attaccavano gli Oathkeepers sono state distrutte. Forse non dovrai usare la bomba di Danforth dopo tutto.`
+
+
+
+mission "Wanderers: Sestor: Scattered Remnant"
+	landing
+	invisible
+	source "Zenith"
+	destination "Farpoint"
+	to offer
+		has "Wanderers: Sestor: Bomb Zenith 1: done"
+	npc kill
+		system "Alnitak"
+		government "Kor Sestor"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349"
+				"Tek Far 71 - Lek"
+				"Far Lek 14" 10
+				"Met Par Tek 53" 2
+		dialog `Tutte le navi Kor Sestor in questo sistema sono state eliminate.`
+		on kill
+			set "wanderers: scattered remnant: alnitak clear"
+			unmark "Alnitak" "Wanderers: Sestor: Kill Southern Remnant"
+	npc kill
+		system "Canopus"
+		government "Kor Sestor"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Defense)"
+				"Tek Far 71 - Lek (Close Quarters)"
+				"Far Lek 14" 8
+				"Met Par Tek 53 (Sniper)" 2
+		dialog `Tutte le navi Kor Sestor in questo sistema sono state eliminate.`
+		on kill
+			set "wanderers: scattered remnant: canopus clear"
+			unmark "Canopus" "Wanderers: Sestor: Kill Southern Remnant"
+	npc kill
+		system "Betelgeuse"
+		government "Kor Sestor"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Offense)"
+				"Tek Far 78 - Osk"
+				"Far Osk 27" 8
+				"Met Par Tek 53 (Sniper)"
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Trapper)"
+				"Tek Far 78 - Osk (Close Quarters)"
+				"Far Osk 27" 6
+				"Met Par Tek 53 (Sniper)"
+		dialog `Tutte le navi Kor Sestor in questo sistema sono state eliminate.`
+		on kill
+			set "wanderers: scattered remnant: betelgeuse clear"
+			unmark "Betelgeuse" "Wanderers: Sestor: Kill Southern Remnant"
+	npc kill
+		system "Capella"
+		government "Kor Sestor"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Defense)"
+				"Tek Far 71 - Lek (Close Quarters)"
+				"Far Lek 14" 8
+				"Tek Far 78 - Osk"
+				"Far Osk 27" 8
+		dialog `Tutte le navi Kor Sestor in questo sistema sono state eliminate.`
+		on kill
+			set "wanderers: scattered remnant: capella clear"
+			unmark "Capella" "Wanderers: Sestor: Kill Southern Remnant"
+	npc kill
+		system "Mebsuta"
+		government "Kor Sestor"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Offense)"
+				"Tek Far 71 - Lek"
+				"Far Lek 14" 9
+				"Tek Far 78 - Osk (Close Quarters)"
+				"Far Osk 27" 7
+		dialog `Tutte le navi Kor Sestor in questo sistema sono state eliminate.`
+		on kill
+			set "wanderers: scattered remnant: mebsuta clear"
+			unmark "Mebsuta" "Wanderers: Sestor: Kill Southern Remnant"
+	npc kill
+		system "Rigel"
+		government "Kor Sestor"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Trapper)"
+				"Tek Far 71 - Lek (Close Quarters)"
+				"Far Lek 14" 7
+				"Tek Far 78 - Osk (Close Quarters)"
+				"Far Osk 27" 6
+		dialog `Tutte le navi Kor Sestor in questo sistema sono state eliminate.`
+		on kill
+			set "wanderers: scattered remnant: rigel clear"
+			unmark "Rigel" "Wanderers: Sestor: Kill Southern Remnant"
+	npc kill
+		system "Castor"
+		government "Kor Sestor"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Defense)"
+				"Met Par Tek 53" 2
+				"Met Par Tek 53 (Sniper)"
+		dialog `Tutte le navi Kor Sestor in questo sistema sono state eliminate.`
+		on kill
+			set "wanderers: scattered remnant: castor clear"
+			unmark "Castor" "Wanderers: Sestor: Kill Southern Remnant"
+	npc kill
+		system "Wazn"
+		government "Kor Sestor"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Offense)"
+				"Met Par Tek 53"
+				"Met Par Tek 53 (Sniper)" 2
+		dialog `Tutte le navi Kor Sestor in questo sistema sono state eliminate.`
+		on kill
+			set "wanderers: scattered remnant: wazn clear"
+			unmark "Wazn" "Wanderers: Sestor: Kill Southern Remnant"
+	npc kill
+		system "Miaplacidus"
+		government "Kor Sestor"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Trapper)"
+				"Met Par Tek 53 (Sniper)" 3
+		dialog `Tutte le navi Kor Sestor in questo sistema sono state eliminate.`
+		on kill
+			set "wanderers: scattered remnant: miaplacidus clear"
+			unmark "Miaplacidus" "Wanderers: Sestor: Kill Southern Remnant"
+	npc kill
+		system "Kursa"
+		government "Kor Sestor"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Tek Far 109"
+				"Tek Far 71 - Lek"
+				"Tek Far 78 - Osk"
+				"Far Lek 14" 17
+				"Far Osk 27" 13
+				"Met Par Tek 53 (Sniper)" 2
+		dialog `Tutte le navi Kor Sestor in questo sistema sono state eliminate.`
+		on kill
+			set "wanderers: scattered remnant: kursa clear"
+			unmark "Kursa" "Wanderers: Sestor: Kill Southern Remnant"
+	npc kill
+		system "Saiph"
+		government "Kor Sestor"
+		personality heroic staying target
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Tek Far 109"
+				"Tek Far 71 - Lek (Close Quarters)"
+				"Tek Far 78 - Osk (Close Quarters)"
+				"Far Lek 14" 17
+				"Far Osk 27" 13
+				"Met Par Tek 53" 2
+		dialog `Tutte le navi Kor Sestor in questo sistema sono state eliminate.`
+		on kill
+			set "wanderers: scattered remnant: saiph clear"
+			unmark "Saiph" "Wanderers: Sestor: Kill Southern Remnant"
+		
+
+
+event "bombed zenith"
+	government "Kor Sestor"
+		"attitude toward"
+			"Pirate" -.01
+	planet "Zenith"
+		description `Zenith è un mondo freddo e sgradevole, dove la nebbia si alza di rado e il sole si vede raramente, dove gran parte delle terre basse viene allagata ogni giorno dalla marea, e le tempeste sono imprevedibili e violente. Ha però un grande vantaggio come luogo in cui stabilirsi: è abbastanza lontano perché la Repubblica non tenti di controllarlo.`
+		description `	Gli insediamenti qui non sono mai stati più che villaggi precari che sopravvivono sull'orlo della fame, cercando di guadagnarsi da vivere in questa landa ghiacciata. Ora molti sono crollati a causa dei terremoti enormi che sono seguiti al bombardamento del pianeta da parte degli Oathkeepers per distruggere una base degli Alphas.`
+		bribe .04
+		"required reputation" 0
+	system "Alnilam"
+		remove object "Zenith"
+			sprite planet/ocean7
+			distance 1776.59
+		add object "Zenith"
+			sprite "planet/zenith hot"
+			distance 1776.59
+			object
+				sprite planet/ice8
+				distance 136
+
+event "zenith cooling"
+	system "Alnilam"
+		remove object "Zenith"
+			sprite "planet/zenith hot"
+			distance 1776.59
+		add object "Zenith"
+			sprite "planet/zenith cold"
+			distance 1776.59
+			object
+				sprite planet/ice8
+				distance 136
+
+mission "Wanderers: Sestor: Bomb Zenith 2"
+	landing
+	name "Ritorna su <planet>"
+	description "Hai distrutto la base degli Alphas su Zenith. Torna a Farpoint e scopri se il tuo intervento ha permesso a Danforth di prendere il sopravvento sulla flotta Kor Sestor."
+	source "Zenith"
+	destination "Farpoint"
+	to offer
+		has "Wanderers: Sestor: Bomb Zenith 1: done"
+	on offer
+		log "Hai sganciato una specie di bomba incredibilmente distruttiva sulla base degli Alphas sul mondo anarchico di Zenith. L'esplosione ha aperto un buco che attraversa da parte a parte la crosta del pianeta."
+		event "bombed zenith"
+		event "zenith cooling" 40
+		conversation
+			`Spingi il dispositivo di Danforth fuori dal portello alle coordinate che ti ha dato, e immediatamente azioni al massimo i repulsori della nave per risalire in orbita...`
+				launch
+	on enter
+		conversation
+			`Il modo in cui Danforth ha parlato del dispositivo che ti ha dato ti aveva fatto supporre che fosse una bomba nucleare, ma l'esplosione che scuote <origin> pochi secondi dopo la tua partenza è troppo potente per esserlo. La luce dell'esplosione è molte volte più brillante del sole di questo sistema. E, a meno che i tuoi sensori non ti stiano mentendo, ora c'è un cratere vicino al polo sud di <origin> che arriva fino al mantello. La lava sta riempiendo il buco, e l'intera crosta del pianeta si sposta e trema in risposta.`
+			`	Sei contento che non ci fossero insediamenti umani vicino all'esplosione, ma i tuoi sensori rilevano onde di compressione che viaggiano lungo tutta la superficie del pianeta, rimbalzando di nuovo e di nuovo mentre il pianeta risuona come una campana. Chiunque vivesse in qualunque punto di <origin> è appena stato colpito da un terremoto di proporzioni letali.`
+			`	Puoi solo sperare che ne sia valsa la pena e che la stazione di controllo sia davvero stata distrutta.`
+
+
+
+mission "Wanderers: Sestor: Kill Southern Remnant"
+	landing
+	name "Distruggi i droni Kor Sestor"
+	description "Quando hai distrutto la base degli Alphas, i droni Kor Sestor hanno cominciato ad agire in modo indipendente. Ora stanno attaccando lo spazio umano. Aiuta la Marina a distruggere i droni, poi torna su <planet>."
+	autosave
+	source "Farpoint"
+	to offer
+		has "Wanderers: Sestor: Bomb Zenith 2: done"
+	to complete
+		has "Wanderers: Sestor: Scattered Remnant: done"
+	mark "Alnitak"
+	mark "Betelgeuse"
+	mark "Canopus"
+	mark "Capella"
+	mark "Castor"
+	mark "Kursa"
+	mark "Mebsuta"
+	mark "Miaplacidus"
+	mark "Rigel"
+	mark "Saiph"
+	mark "Wazn"
+	on offer
+		conversation
+			branch "skip unmark alnitak"
+				not "wanderers: scattered remnant: alnitak clear"
+			action
+				unmark "Alnitak"
+			label "skip unmark alnitak"
+			branch "skip unmark betelgeuse"
+				not "wanderers: scattered remnant: betelgeuse clear"
+			action
+				unmark "Betelgeuse"
+			label "skip unmark betelgeuse"
+			branch "skip unmark canopus"
+				not "wanderers: scattered remnant: canopus clear"
+			action
+				unmark "Canopus"
+			label "skip unmark canopus"
+			branch "skip unmark capella"
+				not "wanderers: scattered remnant: capella clear"
+			action
+				unmark "Capella"
+			label "skip unmark capella"
+			branch "skip unmark castor"
+				not "wanderers: scattered remnant: castor clear"
+			action
+				unmark "Castor"
+			label "skip unmark castor"
+			branch "skip unmark kursa"
+				not "wanderers: scattered remnant: kursa clear"
+			action
+				unmark "Kursa"
+			label "skip unmark kursa"
+			branch "skip unmark mebsuta"
+				not "wanderers: scattered remnant: mebsuta clear"
+			action
+				unmark "Mebsuta"
+			label "skip unmark mebsuta"
+			branch "skip unmark miaplacidus"
+				not "wanderers: scattered remnant: miaplacidus clear"
+			action
+				unmark "Miaplacidus"
+			label "skip unmark miaplacidus"
+			branch "skip unmark rigel"
+				not "wanderers: scattered remnant: rigel clear"
+			action
+				unmark "Rigel"
+			label "skip unmark rigel"
+			branch "skip unmark saiph"
+				not "wanderers: scattered remnant: saiph clear"
+			action
+				unmark "Saiph"
+			label "skip unmark saiph"
+			branch "skip unmark wazn"
+				not "wanderers: scattered remnant: wazn clear"
+			action
+				unmark "Wazn"
+			label "skip unmark wazn"
+			`La base su <planet> sembra essere sopravvissuta all'attacco, nonostante i droni Kor Sestor che c'erano sopra. Incontri Danforth e gli dici che hai distrutto la base degli Alphas con l'arma che ti ha dato.`
+			`	Dice: "Quando hai distrutto la base, i droni Sestor hanno smesso improvvisamente di agire come una flotta unita. Alcuni sono rimasti qui, ma la maggior parte si è sparsa per questo settore di spazio, e riceviamo rapporti che stanno attaccando navi della Marina e civili indiscriminatamente. La mia flotta è troppo danneggiata per fare qualcosa per fermarli, ma altre basi della Marina stanno inviando rinforzi. Puoi unirti a loro per aiutare a eliminare i droni?"`
+			choice
+				`	"Naturalmente, ne sarò felice."`
+					goto end
+				`	"Certo. Ma prima: che diavolo era quella bomba che mi hai fatto sganciare su Zenith? Ha spaccato in due il pianeta intero."`
+
+			`	Danforth sospira. "Purtroppo," dice, "non mi è permesso dirti che cos'era quell'arma né come l'abbiamo ottenuta. E già le agenzie di stampa di tutta la Repubblica mettono in dubbio il nostro uso di un'arma così terribile. Vorrei che fossimo riusciti a sconfiggere la flotta Kor Sestor senza ricorrere a misure così estreme, ma non avevamo scelta."`
+
+			label end
+			`	Danforth ti dà una mappa dei sistemi in cui ci sono state segnalazioni di droni Kor Sestor che attaccano navi civili. "Questi, più quelli rimasti vivi nel sistema Alnilam, sono tutti gli automi che siamo riusciti a rintracciare," dice. "Riferisci qui quando sarai riuscito a distruggerli del tutto. Non possiamo rischiare che qualche signore della guerra locale se ne impadronisca. La Marina speriamo che invierà qualche nave ad aiutarti."`
+				accept
+
+
+
+mission "Wanderers: Sestor: Remnant Visit"
+	landing
+	source "Farpoint"
+	to offer
+		has "Wanderers: Sestor: Kill Southern Remnant: active"
+		not "Wanderers: Sestor: Scattered Remnant: done"
+	on offer
+		conversation
+			`Ti metti in contatto con Danforth, ma lui ti dice che ci sono ancora rapporti su droni Kor Sestor nello spazio umano. "Dovrai assicurarti di distruggerli completamente," dice. "Non possiamo rischiare che qualche signore della guerra locale se ne impadronisca."`
+				defer
+
+
+
+mission "Wanderers: Sestor: Drones in Alnilam Waypoint"
+	landing
+	source
+	name "Droni ad Alnilam"
+	description "Elimina la flotta Kor Sestor rimasta nel sistema Alnilam."
+	waypoint "Alnilam"
+	to offer
+		has "Wanderers: Sestor: Scattered Remnant: done"
+		or
+			not "Wanderers: Sestor: Alnilam Fleet 1: done"
+			not "Wanderers: Sestor: Alnilam Fleet 2: done"
+	to complete
+		has "Wanderers: Sestor: Alnilam Fleet 1: done"
+		has "Wanderers: Sestor: Alnilam Fleet 2: done"
+
+
+
+mission "Wanderers: Sestor: Drones in Alnilam"
+	landing
+	invisible
+	source "Farpoint"
+	to offer
+		has "Wanderers: Sestor: Scattered Remnant: done"
+		or
+			not "Wanderers: Sestor: Alnilam Fleet 1: done"
+			not "Wanderers: Sestor: Alnilam Fleet 2: done"
+	to complete
+		has "Wanderers: Sestor: Alnilam Fleet 1: done"
+		has "Wanderers: Sestor: Alnilam Fleet 2: done"
+	waypoint "Alnilam"
+	on offer
+		conversation
+			`Quando torni su <planet>, Danforth ti dice: "Sembra che tu abbia sistemato gli ultimi droni Kor Sestor che terrorizzavano lo spazio della Repubblica, ma dobbiamo ancora occuparci della flotta nel sistema Alnilam. Pensi di poter distruggere quella flotta da solo?"`
+			choice
+				`	"Sì, credo di potercela fare."`
+					defer
+				`	"Qualcuna delle tue navi è già riparata? Mi servirebbe un po' di aiuto."`
+			`	Accetta di mandarti alcune navi degli Oathkeepers per distruggere i droni rimasti, ma è chiaro che gli costa rischiare le ultime navi ancora in grado di volare che gli restano.`
+				accept
+	on visit
+		dialog `Sei tornato su <planet>, ma non tutte le navi Sestor ad Alnilam sono ancora state sconfitte. Torna nel sistema e assicurati che siano tutte distrutte.`
+	npc
+		government "Navy (Oathkeeper)"
+		personality heroic escort
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)" 2
+				"Rainmaker (Mark II)" 2
+				"Gunboat (Mark II)" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser"
+				"Combat Drone" 4
+				"Frigate" 2
+				"Rainmaker" 4
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier"
+				"Lance" 8
+				"Combat Drone" 6
+				"Frigate" 3
+				"Gunboat" 3
+
+
+
+mission "Wanderers: Sestor: Return to Wanderers"
+	landing
+	name "Ritorna su <planet>"
+	description "I droni Kor Sestor nello spazio umano sono stati eliminati. Torna su <planet>, nello spazio dei Wanderers, per scoprire che cosa sta succedendo là."
+	autosave
+	source "Farpoint"
+	destination "Desi Seledrak"
+	to offer
+		has "Wanderers: Sestor: Scattered Remnant: done"
+		has "Wanderers: Sestor: Alnilam Fleet 1: done"
+		has "Wanderers: Sestor: Alnilam Fleet 2: done"
+	on offer
+		fail "Wanderers: Sestor: Drones in Alnilam"
+		log "Sei riuscito a distruggere gli ultimi droni Kor Sestor che gli Alphas avevano portato nello spazio umano. Anche Danforth e la sua base della Marina sono sopravvissuti, ma lui è preoccupato per le conseguenze politiche dell'aver dovuto usare un'arma così distruttiva su un pianeta abitato per eliminare gli Alphas."
+		conversation
+			`Danforth tira un sospiro di sollievo quando gli dici che gli ultimi droni Kor Sestor sono stati distrutti. "Ti sono grato per l'aiuto, Capitano <last>," dice. "E ora che abbiamo chiuso con quella battaglia, comincia l'incubo di pubbliche relazioni per quello che abbiamo fatto a Zenith. Non serve che tu ti ci immischi, però; forse dovresti tornare nello spazio dei Wanderers finché le cose qui non si calmano un po'."`
+				accept
+
+
+
+mission "Wanderers: Sestor Alt: Alnilam 1"
+	landing
+	name "Distruggi i droni rimasti"
+	description "Invece di bombardare Zenith, distruggi tutti i droni Kor Sestor rimasti nel sistema Alnilam, poi riferisci all'ammiraglio Danforth su Farpoint."
+	autosave
+	source "Farpoint"
+	waypoint "Alnilam"
+	to offer
+		not "event: bombed zenith"
+		has "Wanderers: Sestor: Farpoint Attack 2: done"
+		or
+			not "Wanderers: Sestor: Alnilam Fleet 1: done"
+			not "Wanderers: Sestor: Alnilam Fleet 2: done"
+	on offer
+		conversation
+			`Danforth è colpito dal fatto che tu sia riuscito a eliminare la flotta Kor Sestor attaccante. "L'arma che ti ho dato era un ultimo ricorso, e uno di cui mi vergognerei di servirmi," dice. "Non ho navi da darti finché non avremo avuto il tempo di ripararle, ma se riesci a distruggere da solo le navi Kor Sestor rimaste nel sistema Alnilam, torna qui e manderò i miei trasporti di truppe con te a distruggere la base degli Alphas alla vecchia maniera."`
+				accept
+	to complete
+		has "Wanderers: Sestor: Alnilam Fleet 1: done"
+		has "Wanderers: Sestor: Alnilam Fleet 2: done"
+
+
+
+mission "Wanderers: Sestor Alt: Alnilam 2"
+	landing
+	name "Attacca la base Alpha"
+	description "Recati nel sistema <system> con questi incrociatori degli Oathkeepers per eliminare la base degli Alphas su <planet>."
+	source "Farpoint"
+	destination "Zenith"
+	clearance
+	to offer
+		not "event: bombed zenith"
+		has "Wanderers: Sestor: Farpoint Attack 2: done"
+		has "Wanderers: Sestor: Alnilam Fleet 1: done"
+		has "Wanderers: Sestor: Alnilam Fleet 2: done"
+	on offer
+		conversation
+			`Dici a Danforth che hai distrutto l'intera flotta Kor Sestor, senza bisogno di bombardare <planet>. È colpito, e grato. "Manderò alcuni trasporti di truppe con te per eliminare la base degli Alphas," dice. "Distruggerla in questo modo è più rischioso, ma almeno i civili su <planet> non saranno colpiti."`
+			choice
+				`	"Capito. Andremo dritti su <planet>."`
+					goto end
+				`	"I coloni anarchici, vuoi dire? Sei disposto a perdere le tue truppe solo per evitare di colpire gli anarchici e i pirati bombardando il loro pianeta?"`
+
+			`	Danforth dice: "Se avessimo usato un'arma così terribile su un pianeta abitato, anche anarchico, avrebbe macchiato il buon nome della Marina. In confronto, la perdita di qualche vita della Marina è accettabile, e le truppe che si sono offerte volontarie per questa missione sono disposte a rischiare la vita per questa causa."`
+
+			label end
+			`	Torni alla tua nave e ti prepari a scortare i trasporti di truppe fino a <planet>.`
+				accept
+	npc accompany save
+		government "Navy (Oathkeeper)"
+		personality escort
+		ship "Cruiser (Mark II)" "R.N.S. Dauntless"
+		ship "Cruiser (Mark II)" "R.N.S. Forthright"
+		ship "Cruiser (Mark II)" "R.N.S. Virtue"
+	on visit
+		dialog `Hai raggiunto <planet>, ma non tutti gli incrociatori della Marina sono ancora entrati nel sistema. Meglio ripartire e aspettare che arrivino, perché non hai alcuna intenzione di assaltare la base degli Alphas senza di loro.`
+
+
+
+mission "Wanderers: Sestor Alt: Alnilam 3"
+	landing
+	name "Ritorna su <planet>"
+	description "Scorta gli incrociatori degli Oathkeepers di ritorno su <destination>."
+	source "Zenith"
+	destination "Farpoint"
+	to offer
+		has "Wanderers: Sestor Alt: Alnilam 2: done"
+	on offer
+		conversation
+			`Le truppe di Danforth creano un cerchio difensivo intorno all'ingresso della base degli Alphas. Sembra che abbiano ottenuto l'effetto sorpresa: gli Alphas non sapevano che la Marina aveva già localizzato la loro base, e probabilmente contavano di avere più tempo per evacuare. I trasporti di truppe portavano betoniere e trivelle minerarie; a quanto pare il piano è sigillare gli Alphas sottoterra e poi perforare il ghiaccio e la roccia per bombardare e far crollare il bunker.`
+			`	Mentre le truppe della Marina cominciano a versare il cemento, il grande cancello del tunnel si spalanca e ne escono più Alphas di quanti tu ne abbia mai visti in un solo posto, diverse decine. Ma anche questi soldati superumani non possono sopravvivere al fuoco concentrato di centinaia di soldati della Marina. L'aria si riempie di esplosioni, fumo e neve polverizzata, ma per quanto puoi vedere nemmeno uno degli Alphas riesce a fuggire vivo.`
+			`	Quando la battaglia è finita, le truppe della Marina esplorano il bunker sperando di trovare prigionieri, ma non trovano nessuno vivo. Sigillano l'ingresso e fanno crollare il bunker, poi si preparano a tornare con te su <planet>.`
+				accept
+	npc accompany save
+		government "Navy (Oathkeeper)"
+		personality escort
+		ship "Cruiser (Mark II)" "R.N.S. Dauntless"
+		ship "Cruiser (Mark II)" "R.N.S. Forthright"
+		ship "Cruiser (Mark II)" "R.N.S. Virtue"
+	on visit
+		dialog `Hai raggiunto <planet>, ma non tutti gli incrociatori della Marina sono ancora entrati nel sistema. Meglio ripartire e aspettare che arrivino.`
+
+event "liberated zenith"
+	planet "Zenith"
+		bribe .04
+		"required reputation" 0
+
+mission "Wanderers: Sestor Alt: Zenith Patch"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "Wanderers: Sestor Alt: Alnilam 2: done"
+	on offer
+		event "liberated zenith"
+		fail
+
+
+
+mission "Wanderers: Sestor Alt: Return to Wanderers"
+	landing
+	name "Ritorna su <planet>"
+	description "I droni Kor Sestor nello spazio umano sono stati eliminati. Torna su <planet>, nello spazio dei Wanderers, per scoprire che cosa sta succedendo là."
+	autosave
+	source "Farpoint"
+	destination "Desi Seledrak"
+	to offer
+		has "Wanderers: Sestor Alt: Alnilam 3: done"
+	on offer
+		log "Sei riuscito a distruggere la flotta Kor Sestor e a eliminare la base degli Alphas sul mondo anarchico di Zenith. Danforth è molto grato che la bomba, o super-arma, qualunque cosa fosse, non sia servita."
+		conversation
+			`Gli ufficiali della Marina riferiscono a Danforth i risultati della battaglia sulla superficie di Zenith. "Quindi è finita," dice. "Capitano <last>, grazie per il tuo aiuto. Questa battaglia sarebbe andata molto diversamente se tu non fossi stato qui."`
+			`	Ora che la flotta Kor Sestor è stata sistemata, probabilmente dovresti tornare a vedere come stanno andando le cose per i Wanderers nello spazio Korath.`
+				accept
+
+
+
+mission "Wanderers: Sestor: Scan Drones"
+	landing
+	name "Scansiona i droni rimasti"
+	description "Scansiona i droni Kor Sestor rimasti in alcuni dei loro sistemi, per raccogliere dati che i Wanderers possano usare per determinare con che rapidità vengono ancora prodotti."
+	autosave
+	source "Desi Seledrak"
+	to offer
+		or
+			has "Wanderers: Sestor: Return to Wanderers: done"
+			has "Wanderers: Sestor Alt: Return to Wanderers: done"
+	waypoint "Silikatakfar"
+	on enter "Silikatakfar"
+		dialog `Accendi i sensori della nave e registri i numeri di identificazione e i contrassegni delle navi Kor Sestor in questo sistema.`
+	waypoint "Asikafarnut"
+	on enter "Asikafarnut"
+		dialog `Accendi i sensori della nave e registri i numeri di identificazione e i contrassegni delle navi Kor Sestor in questo sistema.`
+	on offer
+		conversation
+			`Scopri con piacere che la colonia dei Wanderers qui è cresciuta fino a diventare una piccola città; circa centomila Wanderers sono già passati attraverso l'Occhio per stabilirsi qui. Sobari Tele'ek ti incontra allo spazioporto. Ha perso metà delle piume - tutta la faccia è nuda e squamosa - ma invece di consumarsi come Rek ha preso parecchio peso, e ora ti sovrasta.`
+			`	Ti dice: "I nostri [amici, consanguinei] Mereti ci dicono che i Kor Sestor sono diventati meno [aggressivi, bellicosi] di recente. Le fabbriche sui loro mondi [producono, sfornano] ancora droni, ma non agiscono più con una [volontà unita? uno scopo comune?]."`
+			choice
+				`	"Pensi che siano abbastanza indeboliti perché possiamo distruggerli?"`
+				`	"Pensi che ci sia un modo per riprenderne il controllo?"`
+					goto control
+			`	"Probabilmente," dice, "ma preferiremmo una soluzione più [elegante, pacifica] se possibile. Saresti disposto a [visitare, osservare] di nuovo i loro sistemi stellari e a raccogliere [dati, misurazioni] che ci aiutino a imparare a controllarli o a spegnerli?"`
+				goto end
+			label control
+			`	"Questo è il nostro [desiderio, auspicio]," dice. "Oppure, se non è possibile, almeno potremmo [disabilitare, spegnere] le fabbriche. Saresti disposto a [visitare, osservare] di nuovo i loro sistemi stellari e a raccogliere [dati, misurazioni] sui droni?"`
+			label end
+			choice
+				`	"Ne sarò felice."`
+					goto data
+				`	"E i droni Kor Mereti? Sono rimasti pacifici?"`
+			`	"Certo," dice. "E ci hanno portato molto [divertimento? novità?]. Dovresti [far loro visita, passare da loro] quando hai tempo; ti vogliono molto bene."`
+			label data
+			`	Tele'ek ti presenta la squadra di scienziati che affronterà il problema di spegnere le fabbriche Kor Sestor. Ti spiegano che cercano qualsiasi informazione identificativa sui droni, compresa la composizione della lega degli scafi e la prevalenza di segni di bruciatura o altri indizi di usura. Questo permetterà loro di stimare con che rapidità i droni vengono prodotti.`
+				accept
+	on visit
+		dialog phrase "generic waypoint on visit"
+	npc
+		system "Silikatakfar"
+		government "Kor Sestor"
+		personality heroic staying
+		ship "Kar Ik Vot 349" "07-134.2"
+		ship "Tek Far 78 - Osk" "07-894.0"
+		ship "Tek Far 71 - Lek" "07-554.3"
+		ship "Met Par Tek 53" "07-983.2"
+		ship "Met Par Tek 53" "07-992.1"
+		ship "Met Par Tek 53" "07-284.5"
+	npc
+		system "Asikafarnut"
+		government "Kor Sestor"
+		personality heroic staying
+		fleet "Large Kor Sestor"
+		ship "Kar Ik Vot 349 (Offense)" "07-546.2"
+		ship "Kar Ik Vot 349 (Trapper)" "07-321.8"
+		ship "Kar Ik Vot 349 (Defense)" "07-963.4"
+
+
+
+mission "Wanderers: Sestor: Exiles 1"
+	landing
+	name "Recupera Rek"
+	description "Recupera Rek su <planet>. Ti aiuterà a tentare di avviare negoziati diplomatici con i Korath esiliati."
+	autosave
+	source "Desi Seledrak"
+	destination "Setar Fort"
+	to offer
+		has "Wanderers: Sestor: Scan Drones: done"
+	on offer
+		log "I droni Kor Sestor vengono ancora prodotti da una fabbrica automatizzata, anche se nessuno li controlla e sembrano agire secondo una specie di pilota automatico senza mente. I Wanderers sperano che i Korath esiliati li aiutino a neutralizzare la fabbrica."
+		conversation
+			`Consegni i registri dei tuoi scanner agli scienziati Wanderer. Poche ore dopo vieni convocato a una riunione dei capi. Sobari Tele'ek ti dice: "I nostri scienziati hanno notato che i droni costruiti più di recente hanno tutti una [composizione di lega?] e numeri di identificazione molto simili. Sospettiamo che questo significhi che vengono tutti prodotti su un unico mondo, forse persino in un'unica [fabbrica, struttura]."`
+			`	Richiama una mappa stellare e dice: "In base alle tue precedenti scansioni geologiche, [crediamo, deduciamo] che la fabbrica sia su questo mondo, Sestor Ikfar. Sarebbe abbastanza facile [distruggere, eliminare] la struttura, ma Tema'a Iriket ha una proposta diversa."`
+			`	Iriket si alza e dice: "Propongo di usare questo come [pretesto, giustificazione] per una visita ai Korath [esiliati, reietti]. Offriamo loro la possibilità di [aiutarci, assisterci] a porre fine al [flagello, morbo] che hanno cominciato loro. [Alleandosi con, combattendo al fianco di] noi, finiranno per vederci come [amici, compagni di lavoro]."`
+			choice
+				`	"Perché coinvolgerli se pensi di poter gestire la cosa da solo?"`
+				`	"Aspetta, vuoi chiedere il loro aiuto solo perché si sentano meglio con se stessi?"`
+					goto good
+				`	"Sembra davvero un buon modo per risolvere due problemi in una volta."`
+					goto next
+			`	Tele'ek dice: "Gli esiliati devono [sentire, rendersi conto della] loro perdita di [ruolo? rilevanza?] nella galassia. Se [piantiamo, instilliamo] in loro un senso di scopo e di [valore, importanza], potrebbero diventare [pacifici, saggi] come è successo al collettivo Kor Mereti."`
+				goto next
+			label good
+			`	Tele'ek dice: "Nulla [crea, solidifica] un'amicizia più in fretta del combattere un [nemico comune?]. E [sentiamo, percepiamo, proiettiamo] che il motivo per cui gli esiliati si dedicano a [incursioni, pirateria] è che la loro società non ha uno [scopo, obiettivo] più grande della mera sopravvivenza. Coinvolgendoli nella [restaurazione, guarigione] delle loro terre, daremo loro [un ruolo? un peso?] e saranno liberi di essere [pacifici, saggi]."`
+			label next
+			`	Dopo altre discussioni i capi dei Wanderers raggiungono un consenso: vorrebbero che tu viaggiassi con Rek nel territorio dei Korath esiliati e cercassi di entrare in contatto con loro. Sembra un piano molto ottimistico, ma d'altronde l'approccio dei Wanderers, che cerca l'amicizia, ha funzionato piuttosto bene con i droni Mereti.`
+				accept
+
+
+
+mission "Wanderers: Sestor: Exiles 2"
+	landing
+	name "Contatta gli esiliati"
+	description "Entra nel territorio dei Korath esiliati. Non sparare su di loro. Cerca invece, con l'aiuto di Rek, un modo per parlare con loro o un luogo dove siano disposti a incontrarti."
+	autosave
+	source "Setar Fort"
+	passengers 1
+	to offer
+		has "Wanderers: Sestor: Exiles 1: done"
+	to complete
+		never
+	on offer
+		conversation
+			`Sorprendentemente, Rek è meno entusiasta del piano diplomatico di quanto lo fossero gli altri capi dei Wanderers. "Certo che desidero molto entrare in contatto con gli esiliati," dice, "ma non è prudente dare per scontato che la mente di una specie aliena funzioni come la nostra. Questi Korath sono stati esiliati per la loro guerra senza fine e senza frutti. Non sono sicura che un'offerta di amicizia e una piccola spinta all'autostima siano tutto ciò che serve per renderli pacifici."`
+			choice
+				`	"Pensi che dovremmo annullare la missione e occuparci dei Sestor da soli?"`
+				`	"Forse no, ma non è meglio tentare la pace finché ne abbiamo la possibilità?"`
+					goto better
+			`	"No," dice Rek, "i capi hanno ragione, dobbiamo offrire loro la nostra fiducia finché non dimostrano di esserne del tutto indegni. Ma non dovresti sorprenderti se fossero più interessati a distruggerti che ad ascoltarmi."`
+				goto end
+			label better
+			`	"Non è solo meglio," dice Rek, "è un imperativo morale. Il nostro primo contatto con gli esiliati deve essere un'offerta di fiducia, non un atto di guerra. Ma non dovresti sorprenderti se fossero più interessati a distruggerti che ad ascoltarmi."`
+			label end
+			`	Rek si mette comoda in una delle cabine della tua nave, e tu ti prepari a una visita nel territorio dei Korath esiliati. "Dobbiamo in qualche modo guadagnarci la loro fiducia," dice, "quindi non sparare su nessuna delle loro navi. Dobbiamo invece trovare un modo per comunicare con loro, o un luogo dove siano disposti a incontrarci pacificamente."`
+				accept
+	on visit
+		dialog `Sei tornato su <planet>, ma non sei ancora entrato in contatto con i Korath esiliati. Viaggia verso il nucleo della galassia e cerca un modo per entrare in contatto con loro.`
+	npc save
+		government "Korath"
+		system "Kor Fel'tar"
+		personality heroic staying
+		fleet "Korath Home"
+	npc save
+		government "Korath"
+		system "Kor En'lakfar"
+		personality heroic staying
+		fleet "Korath Raid"
+	npc save
+		government "Korath"
+		system "Kor Men"
+		personality heroic staying
+		fleet "Korath Raid"
+	npc save
+		government "Korath"
+		system "Kor Ak'Mari"
+		personality heroic staying
+		fleet "Korath Raid"
+	npc save
+		government "Korath"
+		system "Kor Zena'i"
+		personality heroic staying
+		fleet "Korath Raid"
+	npc save
+		government "Korath"
+		system "Kor Tar'bei"
+		personality heroic staying
+		fleet "Korath Home"
+	npc save
+		government "Korath"
+		system "Kor Nor'peli"
+		personality heroic staying
+		fleet "Korath Home" 2
+		fleet "Korath Raid"
+
+
+
+event "wanderers: exiles peaceful"
+	"reputation: Korath" >?= 1
+	"reputation: Korath (Civilian)" >?= 1
+
+mission "Wanderers: Sestor: Exiles 3"
+	landing
+	name "Diplomazia con gli esiliati"
+	description "Scorta queste tre navi-mondo dei Korath esiliati fino a <planet> per un incontro diplomatico con i Wanderers."
+	source "Far'en Lai"
+	destination "Desi Seledrak"
+	passengers 1
+	to offer
+		has "Wanderers: Sestor: Exiles 2: active"
+	on offer
+		conversation
+			`Le navi Korath ti seguono fino alla superficie del pianeta, ma non ti sparano. Restano invece sospese sopra la tua nave per un lungo momento di indecisione. Tu trattieni il fuoco, e alla fine atterrano nella sabbia accanto a te. I loro portelli si aprono, e alcuni escono e si avvicinano alla tua nave. Non sembrano armati. Forse hanno un tabù culturale contro l'uso di armi su questo mondo.`
+			choice
+				`	(Esci per incontrarli.)`
+				`	(Lascia il pianeta finché posso.)`
+					defer
+			`	I Korath sembrano sorpresi quando tu e Rek, due membri di specie evidentemente diverse, scendete dalla nave fianco a fianco. Mormorano fra loro a bassa voce mentre vi avvicinate, poi quasi saltano per la sorpresa quando Rek si rivolge a loro nella loro lingua.`
+			`	Conversano con Rek per un po', e poi Rek spiega: "Ho detto loro che speriamo di eliminare l'infezione di macchine da guerra autoriproducenti che hanno lasciato dietro di sé, e di rendere di nuovo abitabile il loro territorio. Dicono che sono contenti che non abbiamo distrutto i droni, perché sono orgogliosi del loro lavoro. Dicono di avere i codici di comando delle fabbriche Sestor, per spegnerle. Ma non ce li daranno; devono andare a inserirli di persona."`
+			choice
+				`	"Mi sembra ragionevole."`
+					goto end
+				`	"Che cosa chiedono in cambio?"`
+			`	Rek dice: "Chiedono un incontro con i nostri capi, per definire accordi commerciali a beneficio reciproco. È qualcosa che accetteremmo senz'altro senza difficoltà."`
+			label end
+			`	Rek parla di nuovo con i Korath, poi ti dice: "Dicono che tre delle loro 'navi-mondo' viaggeranno con noi per incontrare i capi dei Wanderers. Se riusciranno a definire accordi favorevoli e si convinceranno che i Wanderers hanno intenzioni pacifiche, verranno con noi sul mondo della fabbrica Sestor e la spegneranno."`
+				accept
+	on accept
+		log "Sei riuscito a comunicare con i Korath esiliati, atterrando sull'unico pianeta abitabile del loro territorio. (Sembra che gli esiliati abbiano un tabù contro l'uso di armi su quel mondo.) Gli esiliati hanno accettato di inviare alcune navi per aiutare a disabilitare la fabbrica Kor Sestor rimasta."
+		fail "Wanderers: Sestor: Exiles 2"
+		event "wanderers: exiles peaceful"
+	npc accompany save
+		government "Korath"
+		personality escort
+		ship "Lor'kas Ik 577 (Jump)" "Seskerat Pratka"
+		ship "Ra'gru Ik 618" "Eskretakfakta"
+		ship "Kas'lor Ik 582 (Jump)" "Prekaprat Skata"
+	on visit
+		dialog `Hai raggiunto <planet>, ma ti manca qualcosa! O hai lasciato indietro una delle navi Korath, oppure la tua scorta che porta Rek non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers: Sestor: Factory 1"
+	landing
+	name "Spegni la fabbrica"
+	description "Scorta queste navi Korath fino a <planet>, dove spegneranno le fabbriche Kor Sestor rimaste."
+	source "Desi Seledrak"
+	destination "Sestor Ikfar"
+	clearance
+	infiltrating
+	passengers 1
+	to offer
+		has "Wanderers: Sestor: Exiles 3: done"
+	on offer
+		conversation
+			`Rek porta i Korath a incontrare i capi dei Wanderers. Quando l'incontro finisce, lei e Tele'ek ti raggiungono. "È stato un incontro strano," dice Rek. "Non sembrava un vertice di pace, ma una recita infantile su un vertice di pace, come se negoziare la pace fosse un'abilità che stanno appena cominciando a imparare. E le condizioni che hanno chiesto erano minime; avrei preferito offrire loro molto di più. Ma stanno muovendo passi verso una società pacifica, e di questo possiamo essere grati."`
+			choice
+				`	"Allora, che cosa facciamo adesso?"`
+					goto next
+				`	"Sei sicura che vogliano davvero la pace? Non stanno cercando di ingannarti?"`
+			`	Rek dice: "È difficile esserne certi. La loro cultura è molto diversa da quella dei Kor Efret; persino parte della loro lingua e dei loro gesti è nuova per me. Ma finora si sono comportati pacificamente con noi; dobbiamo sperare che la loro pacatezza duri."`
+			label next
+			`	Tele'ek dice: "Devi portare le navi degli [esiliati, reietti] su <planet> e impedire che vengano distrutte dai droni [lungo la strada?]. Là [tenteranno, porteranno a termine] ciò che hanno promesso, e spegneranno le fabbriche. Il tuo unico compito sarà [fare loro da scudo, proteggerli], e ti daremo alcune delle nostre navi da guerra per [assisterti, accompagnarti]." Fa un gesto con un'ala stentata e un po' deforme verso alcune navi dei Wanderers che vengono caricate di rifornimenti e preparate alla battaglia. Noti che su alcune è montato un tipo di arma che non riconosci.`
+			choice
+				`	"Quelle navi portano un nuovo tipo di arma?"`
+				`	"Sembra un buon piano. Andiamo!"`
+					goto end
+			`	Tele'ek sembra compiaciuto che tu l'abbia notato. "Esatto. Sono più [utili, efficaci] contro le corazze degli scafi che contro gli scudi, [perfette, adatte] per l'uso contro le navi Kor Sestor insieme ai nostri [armamenti esistenti, precedenti]." Si ferma prima di continuare. "[Speriamo che, Se tutto va bene], non serviranno molto, ma ti porteranno [al sicuro, a destinazione] attraverso questa [missione, impresa] per porre finalmente fine a questo [flagello, pericolo]. Comunque le avremo [pronte, preparate] se dovesse [servire, ripresentarsi] la necessità."`
+			choice
+				`	"Posso averne alcune per la mia nave?"`
+					goto buy
+				`	"È una buona idea mostrare queste nuove armi ai Korath esiliati mentre si fanno offerte di amicizia?"`
+				`	"Non vedo l'ora di vederle in azione. Dovrei preparare la nave per partire."`
+					goto end
+			`	Tele'ek fa un gesto verso Rek, che dice: "Ho sollevato una preoccupazione simile, ma in questo caso [riconosco, accetto] che il beneficio superi i possibili rischi."`
+			`	Tele'ek spiega: "Se vedono queste armi come segni di [aggressione?] contro di loro, c'è poco che io possa fare per loro. Le loro navi non sono così [robuste, ben corazzate] come gli automi Kor Sestor, quindi le nostre altre tecnologie sarebbero già [efficaci, dannose] abbastanza se usate contro di loro. Se sono [razionali, intelligenti], apprezzeranno la protezione in più in questo [viaggio, tentativo]."`
+				goto end
+			label buy
+			`	"Non ne abbiamo ancora prodotte molte, ma saranno [disponibili, presenti] nei nostri negozi di equipaggiamento presto."`
+			label end
+			`	Tu e Rek salutate Tele'ek prima di tornare alla tua nave e prepararla per il viaggio verso <planet>.`
+				accept
+	npc accompany save
+		government "Korath"
+		personality escort
+		ship "Lor'kas Ik 577 (Jump)" "Seskerat Pratka"
+		ship "Ra'gru Ik 618" "Eskretakfakta"
+		ship "Kas'lor Ik 582 (Jump)" "Prekaprat Skata"
+	on visit
+		dialog `Hai raggiunto <planet>, ma ti manca qualcosa! O hai lasciato indietro una delle navi Korath, oppure la tua scorta che porta Rek non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers: Sestor: Factory Escorts"
+	landing
+	invisible
+	non-blocking
+	source "Desi Seledrak"
+	to offer
+		has "Wanderers: Sestor: Exiles 3: done"
+	npc kill
+		government "Wanderer"
+		personality escort heroic
+		fleet
+			names "wanderer"
+			variant
+				"Hurricane (Tough)"
+				"Hurricane (Moonbeam)"
+				"Derecho"
+				"Derecho (Moonbeam)" 2
+				"Tempest (Heavy)"
+				"Tempest (Moonbeam)" 2
+				"Tempest"
+				"Heavy Gust (Moonbeam)" 2
+
+
+
+event "wanderers: asikafarnut battle"
+	system "Asikafarnut"
+		fleet "Large Kor Mereti" 10000
+
+mission "Wanderers: Sestor: Factory 2"
+	landing
+	name "Difendi <planet>"
+	description "Respingi i droni Kor Sestor e impedisci che interferiscano con i Korath esiliati che stanno spegnendo le loro fabbriche."
+	source "Sestor Ikfar"
+	clearance
+	infiltrating
+	passengers 1
+	to offer
+		has "Wanderers: Sestor: Factory 1: done"
+	on visit
+		dialog `Ci sono ancora droni Kor Sestor là sopra. Dovresti andare a respingerli, così che i Korath esiliati non vengano attaccati mentre cercano di neutralizzare le fabbriche.`
+	on offer
+		event "wanderers: asikafarnut battle"
+		conversation
+			`I droni smettono di sparare alle navi Korath nel momento in cui entrano nell'atmosfera, il che è un buon segno: probabilmente significa che i loro codici di comando hanno funzionato. Mentre cominciano a perlustrare il centro di produzione, gli esiliati ti dicono (tramite Rek) che hanno bisogno che tu torni in orbita e impedisca ai droni rimasti di attaccarli finché non potranno essere certi che la fabbrica sia spenta per sempre; potrebbero volerci un po' di tempo.`
+			`	Accendi i motori e decolli per un'ultima battaglia contro i Kor Sestor...`
+				launch
+	npc evade
+		government "Kor Sestor"
+		personality waiting staying heroic
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349"
+				"Tek Far 71 - Lek"
+				"Far Lek 14" 10
+				"Met Par Tek 53" 2
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Kar Ik Vot 349 (Offense)"
+				"Tek Far 78 - Osk"
+				"Far Osk 27" 8
+				"Met Par Tek 53 (Sniper)" 2
+		fleet
+			names "kor sestor"
+			fighters
+				names "kor sestor fighter"
+			variant
+				"Tek Far 109"
+				"Tek Far 71 - Lek"
+				"Tek Far 78 - Osk"
+				"Far Lek 14" 17
+				"Far Osk 27" 13
+
+
+
+event "wanderers: sestor shutdown"
+	system "Celeborim"
+		fleet "Small Kor Sestor" 2400
+		fleet "Large Kor Sestor" 10000
+	system "Makferuti"
+		fleet "Small Kor Sestor" 2400
+		fleet "Large Kor Sestor" 10000
+	system "Asikafarnut"
+		fleet "Large Kor Mereti" 3600
+		fleet "Small Kor Sestor" 1200
+		fleet "Large Kor Sestor" 6000
+	system "Sobarati"
+		fleet "Small Kor Sestor" 1600
+		fleet "Large Kor Sestor" 8000
+	system "Silikatakfar"
+		fleet "Large Kor Mereti" 1600
+		fleet "Small Kor Sestor" 3200
+		fleet "Large Kor Sestor" 4800
+	system "Ferukistek"
+		fleet "Large Kor Mereti" 2400
+		fleet "Small Kor Sestor" 8000
+		fleet "Large Kor Sestor" 10000
+	system "Eneremprukt"
+		fleet "Large Kor Mereti" 2000
+		fleet "Small Kor Sestor" 3200
+		fleet "Large Kor Sestor" 4800
+	system "Mesuket"
+		remove fleet "Large Kor Sestor"
+		add fleet "Large Kor Sestor" 10000
+
+mission "Wanderers: Sestor: Factory 3"
+	landing
+	name "Ritorna su <planet>"
+	description "Torna su <planet> e riferisci ai Wanderers che gli esiliati hanno spento la fabbrica Kor Sestor (e che probabilmente ne hanno rubato l'equipaggiamento)."
+	source "Sestor Ikfar"
+	destination "Desi Seledrak"
+	passengers 1
+	to offer
+		has "Wanderers: Sestor: Factory 2: done"
+	on offer
+		log "I Korath esiliati hanno mantenuto il patto con i Wanderers e hanno spento l'ultima fabbrica di droni Kor Sestor, anche se potrà volerci del tempo prima che gli ultimi droni esistenti vengano eliminati."
+		fail "Wanderers: Sestor: Factory Escorts"
+		event "wanderers: sestor shutdown"
+		conversation
+			`Mentre ti avvicini per atterrare, i Korath esiliati ti informano che sono riusciti a disabilitare le fabbriche. Ti dicono che torneranno nel loro territorio da soli; ora che il loro lavoro è finito, non hanno più bisogno che tu faccia loro da "accompagnatore", come traduce Rek. Auguri loro buona fortuna, e partono.`
+			`	Il distretto delle fabbriche sembra davvero spento: non più il ronzio dei macchinari, né lampi di saldatrici, né camini che vomitano vapore nell'atmosfera. Anzi, guardando più da vicino ti rendi conto che non si sono limitati a spegnere le fabbriche: ne hanno anche rimosso alcuni componenti critici.`
+			`	Rek chiede: "Sembra che ci siano riusciti?"`
+			choice
+				`	"Sì, le fabbriche sono spente."`
+					goto end
+				`	"Sembra che abbiano smontato le fabbriche e portato via alcune parti."`
+			`	"Oh," dice Rek, "questo è leggermente inquietante. Ma dopotutto sono saccheggiatori; forse semplicemente non volevano lasciare che macchinari utili arrugginissero."`
+			label end
+			`	Non avendo altro da fare qui, ti prepari a tornare su <planet> e a riferire ai capi dei Wanderers.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Rek non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+event "wanderers: exiles hostile"
+	"reputation: Korath" = -1000
+
+event "wanderers: exiles have drones"
+	fleet "Korath Home"
+		add variant 2
+			"Tek Far 71 - Lek"
+			"Far Lek 14" 6
+		add variant 2
+			"Tek Far 71 - Lek (Close Quarters)"
+			"Far Lek 14" 4
+		add variant 2
+			"Tek Far 78 - Osk (Close Quarters)"
+			"Far Osk 27" 5
+		add variant 2
+			"Tek Far 78 - Osk"
+			"Far Osk 27" 2
+		add variant 3
+			"Tek Far 109"
+			"Far Lek 14" 9
+			"Far Osk 27" 7
+		add variant 3
+			"Met Par Tek 53" 3
+		add variant 2
+			"Met Par Tek 53 (Sniper)" 3
+		add variant
+			"Kar Ik Vot 349"
+		add variant
+			"Kar Ik Vot 349 (Defense)"
+		add variant
+			"Kar Ik Vot 349 (Offense)"
+		add variant
+			"Kar Ik Vot 349 (Trapper)"
+		add variant 1
+			"Model 512"
+		add variant 2
+			"Model 512"
+			"Model 256"
+		add variant 2
+			"Model 256"
+		add variant 2
+			"Model 256"
+			"Model 64" 2
+		add variant 2
+			"Model 128" 2
+		add variant 2
+			"Model 64"
+			"Model 32" 3
+		add variant 3
+			"Model 64" 2
+			"Model 32" 3
+		add variant 4
+			"Model 32"
+			"Model 16" 5
+
+event "wanderers: sestor eliminated"
+	system "Celeborim"
+		government "Uninhabited"
+		fleet "Small Kor Mereti" 10000
+	system "Makferuti"
+		government "Uninhabited"
+		fleet "Small Kor Mereti" 10000
+	system "Asikafarnut"
+		government "Uninhabited"
+		fleet "Large Kor Mereti" 3600
+	system "Sobarati"
+		government "Uninhabited"
+		fleet "Small Kor Mereti" 10000
+	system "Silikatakfar"
+		government "Uninhabited"
+		fleet "Large Kor Mereti" 1600
+	system "Ferukistek"
+		government "Uninhabited"
+		fleet "Large Kor Mereti" 2400
+	system "Eneremprukt"
+		government "Uninhabited"
+		fleet "Large Kor Mereti" 2000
+	system "Mesuket"
+		remove fleet "Large Kor Sestor"
+
+event "wanderers: sabira eseskrai colony"
+	system "Skeruto"
+		government "Wanderer"
+		fleet "Large Quarg (Kor Efret)" 1000
+		fleet "Wanderer Defense" 1200
+		fleet "Wanderer Drones" 800
+		fleet "Kor Efret Home" 800
+	system "Furmeliki"
+		add fleet "Kor Efret Home" 800
+	planet "Sabira Eseskrai"
+		add attributes "wanderer"
+		description `Molto tempo fa questo pianeta ospitava diversi insediamenti Korath di estrazione petrolifera, ma ora tutto ciò che resta visibile sono le cime di qualche decina di edifici più alti. Tutto il resto è stato sepolto dalle tempeste di sabbia.`
+		description `	Grazie a un recente cambiamento del clima i deserti hanno ricominciato a ritirarsi, e la vegetazione locale cresce coprendo ogni anno sempre più terra. I Wanderers, lavorando insieme ai Kor Efret, hanno fondato qui un insediamento e hanno cominciato a lavorare per accelerare il processo di rigenerazione delle terre desolate.`
+		spaceport `Questo piccolo insediamento è popolato da un numero all'incirca uguale di coloni Korath e Wanderer. Dato che la maggior parte di loro non parla la lingua degli altri, i due gruppi non si mescolano molto e comunicano soprattutto con gesti e disegni. Non è molto, ma almeno è un inizio perché le due specie comincino a imparare l'una dall'altra.`
+
+mission "Wanderers: Sestor: Final: Patched"
+	landing
+	name "Indaga sugli esiliati"
+	description "Visita il territorio dei Korath esiliati per cercare segni che abbiano intenzione di cominciare a costruire droni da guerra propri."
+	source "Desi Seledrak"
+	to offer
+		has "Wanderers: Sestor: Factory 3: done"
+		not "Wanderers: Sestor: Final: offered"
+	to fail
+		has "Wanderers: Sestor: Final: offered"
+	waypoint "Kor Fel'tar"
+	on enter "Kor Fel'tar"
+		dialog `Ci sono diversi droni Kor Mereti e Kor Sestor in questo sistema, e non sembrano amichevoli. Dovresti riferire ai Wanderers che gli esiliati hanno cominciato a produrre droni propri.`
+	on offer
+		event "wanderers: exiles hostile" 4
+		conversation
+			`Quando incontri i capi dei Wanderers, Sobari Tele'ek ti dice: "Abbiamo ricevuto notizie dai nostri [esploratori, osservatori] che i droni Sestor stanno [diminuendo, riducendosi] di numero e presto non ce ne saranno più. Ti dobbiamo la nostra [gratitudine, riconoscenza]. Ma i Mereti ci raccontano una [storia, vicenda] più preoccupante." Noti che, anche se è cresciuto, sembra avere difficoltà a stare dritto, e quindi la sua testa è all'incirca alla tua altezza.`
+			`	Meto Pa'aret dice: "I Mereti mi hanno [contattato, comunicato] che una delle loro stazioni è stata [saccheggiata, violata] dai Korath esiliati, e che parte del loro [macchinario, equipaggiamento] è stato rubato. I Mereti non hanno [combattuto, attaccato] gli esiliati perché pensavano che fossero [amici, alleati]. Capitano <last>, puoi portare Rek a visitare gli [esiliati, reietti] e scoprire quali sono i loro piani?"`
+			choice
+				`	"Certo, con piacere."`
+					accept
+				`	"L'equipaggiamento rubato potrebbe permettere loro di costruire una flotta di droni propria?"`
+			`	"È quello che temiamo," dice Tele'ek. Accetti di viaggiare nel territorio degli esiliati e di vedere se ci sono prove che stiano costruendo droni da guerra.`
+				accept
+	npc
+		system "Kor Fel'tar"
+		government "Korath"
+		personality heroic staying
+		fleet
+			names "korath"
+			variant
+				"Model 32"
+				"Model 16" 3
+				"Tek Far 78 - Osk"
+				"Met Par Tek 53 (Sniper)" 2
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on complete
+		log "Hai scoperto che, quando i Korath esiliati hanno spento la fabbrica Kor Sestor, hanno anche preso dalla fabbrica tecnologia sufficiente a cominciare a produrre droni da guerra propri. È possibile che gli esiliati siano appena diventati molto più pericolosi di prima."
+		log "Factions" "Wanderers" `Dopo che l'Occhio si è aperto, creando un collegamento tramite cunicolo fra il territorio dei Wanderers e la regione di spazio che ospita i devastati mondi Korath, i Wanderers hanno fondato diverse nuove colonie nel settore Korath e hanno cominciato a migrare in questa zona dello spazio. Hanno stabilito relazioni formali con i Kor Efret e sono riusciti a porre fine alla guerra fra i Kor Mereti e i Kor Sestor.`
+		log "Factions" "Korath" `I Wanderers, che hanno cominciato a fondare colonie su alcuni sistemi Korath deserti, sono riusciti a porre fine alla guerra fra i Kor Mereti e i Kor Sestor. I Kor Efret hanno cominciato a ricostruire i loro mondi e sono guidati in questa impresa dai Wanderers.`
+		set "wanderers sestor done"
+		event "wanderers: exiles have drones" 20
+		event "wanderers: sabira eseskrai colony" 30
+		event "wanderers: sestor eliminated" 40
+		event "wanderers: sestor planets unrestricted" 40
+		event "wanderers taking jobs from kor efreti" 5
+		event "wanderers: moonbeam mass production" 5
+		conversation
+			`Informi i Wanderers che i Korath esiliati stanno ora producendo droni da guerra. "Questo è [spiacevole, deplorevole]," dice Sobari Tele'ek. "Chiaramente [prevedono, si aspettano] altri conflitti in futuro."`
+			`	Tema'a Iriket dice: "Forse hanno [paura di, si sentono minacciati da] noi e cercano solo i mezzi per [difendersi, proteggersi]. L'importante è che i droni in questo [territorio, zona] siano stati [neutralizzati, pacificati] e che ora possiamo concentrarci sul nostro vero lavoro."`
+			`	Da lì la conversazione passa a una discussione animata su quali mondi colonizzeranno dopo e su quali dovranno essere i loro prossimi passi nel costruire rapporti con i Kor Efret e con il collettivo Kor Mereti. Gli esiliati potrebbero diventare una minaccia in futuro, ma per ora i Wanderers sono impazienti di dedicarsi alla loro vocazione di pace in questo nuovo territorio dove l'Occhio li ha condotti.`
+
+# This patch mission is necessary for people who got the older version of the "Sestor: Final" mission without the patches integrated.
+mission "Wanderers: Sestor: Combined Patch 1"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "Wanderers: Sestor: Final: done"
+	to fail
+		has "Wanderers: Sestor: Final: Patched: offered"
+	on offer
+		set "wanderers sestor done"
+		event "wanderers: sestor planets unrestricted" 40
+		event "wanderers taking jobs from kor efreti" 5
+		event "wanderers: moonbeam mass production" 5
+		fail
+
+event "wanderers: sestor planets unrestricted"
+	planet "Drekag Firask"
+		"required reputation" 0
+		remove spaceport
+		remove attributes sestor
+	planet "Sestor Ikfar"
+		"required reputation" 0
+		remove spaceport
+		remove attributes sestor
+		description `Questo mondo secco e caldo non ospita quasi nessuna forma di vita autoctona, ma è ideale per gli automi Korath grazie alla sua abbondante energia solare. Dove un tempo sorgevano le città Korath, i Kor Sestor hanno costruito fabbriche enormi, con edifici che a volte sfiorano il chilometro di altezza. Altrove la terra è rimasta non sviluppata, e ora che le fabbriche sono state spente sembra probabile che resti così per molto tempo.`
+	planet "Devru Kaska"
+		"required reputation" 0
+		remove spaceport
+		remove attributes sestor
+	planet "Sebra Skira"
+		"required reputation" 0
+		remove spaceport
+		remove attributes sestor
+	planet "Keneska Fek"
+		"required reputation" 0
+		remove spaceport
+		remove attributes sestor
+	planet "Sopi Lefarkata"
+		"required reputation" 0
+		remove spaceport
+		remove attributes sestor
+		description `Questo è un mondo freddo e montuoso, e la maggior parte dei suoi oceani è coperta di ghiaccio. Una manciata di crateri giganteschi scavati nei fianchi delle montagne è l'unico segno che qui un tempo c'erano insediamenti Korath. I robot Kor Sestor hanno cominciato a costruire insediamenti propri, in caverne in profondità sotto le montagne, dove sono al sicuro dal bombardamento orbitale, ma ora questi insediamenti stanno cadendo in rovina. Dove l'ultima serie di attacchi dei Kor Mereti ha fatto crollare uno dei tunnel di accesso, si è radunata una manciata di robot, che cerca invano di liberarlo.`
+
+event "wanderers taking jobs from kor efreti"
+	system "Sumprast"
+		add fleet "Wanderer Kor Efret Traders" 1500
+	system "Sevrelect"
+		add fleet "Wanderer Kor Efret Traders" 1500
+	system "Kashikt"
+		add fleet "Wanderer Kor Efret Traders" 1500
+	system "Dokdobaru"
+		add fleet "Wanderer Kor Efret Traders" 1500
+	system "Furmeliki"
+		add fleet "Wanderer Kor Efret Traders" 1500
+	system "Meftarkata"
+		add fleet "Wanderer Kor Efret Traders" 1500
+	system "Skeruto"
+		add fleet "Wanderer Kor Efret Traders" 1500
+	system "Kaliptari"
+		add fleet "Wanderer Kor Efret Traders" 1500
+	system "Solifar"
+		add fleet "Wanderer Kor Efret Traders" 1500

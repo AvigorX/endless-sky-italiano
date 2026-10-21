@@ -1,0 +1,165 @@
+{
+ "block": {
+  "path": "data/gegno/gegno outfits.txt",
+  "line_from": 179,
+  "line_to": 427,
+  "units": 14
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:RG15 Torch Thruster|description|179|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 179,
+   "kind": "DESCRIPTION",
+   "context": "outfit:RG15 Torch Thruster",
+   "english": "The RG15 Ion Torch Thruster is the Gegno Vi's smallest torch thruster, found almost exclusively on the Slate. It is somewhat inefficient, weighing more and producing more heat than most thrusters of a similar size in exchange for using slightly less energy.",
+   "italian": "The RG15 Ion Torch Thruster is the Gegno Vi's smallest torch thruster, found almost exclusively on the Slate. It is somewhat inefficient, weighing more and producing more heat than most thrusters of a similar size in exchange for using slightly less energy.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:RG15 Torch Steering|description|199|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 199,
+   "kind": "DESCRIPTION",
+   "context": "outfit:RG15 Torch Steering",
+   "english": "This steering system is meant for the smallest of Gegno Vi ships. However, some Gegno pilots use it to cheaply supplement their main steering engines.",
+   "italian": "This steering system is meant for the smallest of Gegno Vi ships. However, some Gegno pilots use it to cheaply supplement their main steering engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:RG18 Torch Thruster|description|219|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 219,
+   "kind": "DESCRIPTION",
+   "context": "outfit:RG18 Torch Thruster",
+   "english": "The RG18 is a moderately large thruster used by the Gegno Vi. Ion Torch Thrusters are similar to human ion thrusters, but their explosive exhaust causes them to run hotter. However, they also require slightly less energy.",
+   "italian": "The RG18 is a moderately large thruster used by the Gegno Vi. Ion Torch Thrusters are similar to human ion thrusters, but their explosive exhaust causes them to run hotter. However, they also require slightly less energy.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:RG18 Torch Steering|description|239|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 239,
+   "kind": "DESCRIPTION",
+   "context": "outfit:RG18 Torch Steering",
+   "english": "The RG18 Steering system is quite large for a steering system of its power. Many Gegno Vi ships install these as a minimum to be able to turn their already heavy ships.",
+   "italian": "The RG18 Steering system is quite large for a steering system of its power. Many Gegno Vi ships install these as a minimum to be able to turn their already heavy ships.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:RG3 Torch Thruster|description|262|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 262,
+   "kind": "DESCRIPTION",
+   "context": "outfit:RG3 Torch Thruster",
+   "english": "Derived from the massive thrusters that powered early Gegno generation ships, RG3 Ion Torch Thrusters are the Gegno's largest thrusters and the oldest still used. Smaller ships that attempt to use these engines often end up overheating themselves.",
+   "italian": "Derived from the massive thrusters that powered early Gegno generation ships, RG3 Ion Torch Thrusters are the Gegno's largest thrusters and the oldest still used. Smaller ships that attempt to use these engines often end up overheating themselves.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:RG3 Torch Steering|description|285|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 285,
+   "kind": "DESCRIPTION",
+   "context": "outfit:RG3 Torch Steering",
+   "english": "The oldest steering system used in Gegno space, RG3 Torch Thrusters can only fit on the largest Gegno vessels, and are rarely seen as a result.",
+   "italian": "The oldest steering system used in Gegno space, RG3 Torch Thrusters can only fit on the largest Gegno vessels, and are rarely seen as a result.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:SC-1 Plasma Engines|plural|289|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 289,
+   "kind": "VALUE",
+   "context": "outfit:SC-1 Plasma Engines",
+   "english": "SC-1 Plasma Engines",
+   "italian": "SC-1 Plasma Engines",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:SC-1 Plasma Engines|description|314|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 314,
+   "kind": "DESCRIPTION",
+   "context": "outfit:SC-1 Plasma Engines",
+   "english": "In order to power the tiny Halite frame, the Gegno Scin developed this smaller engine system. Based on their larger plasma thrusters, these engines are much more efficient than the Vi's bigger, more sluggish ion engines, which would never be compact or light enough to run on a fighter.",
+   "italian": "In order to power the tiny Halite frame, the Gegno Scin developed this smaller engine system. Based on their larger plasma thrusters, these engines are much more efficient than the Vi's bigger, more sluggish ion engines, which would never be compact or light enough to run on a fighter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:SC-12 Plasma Thruster|description|335|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 335,
+   "kind": "DESCRIPTION",
+   "context": "outfit:SC-12 Plasma Thruster",
+   "english": "Rather than developing on the Ion Torch design of the Vi, the Scin began work on a plasma-based thruster. They are more compact, weigh less, and produce significantly more thrust. However, since Ion Torches expel some of their heat in their thrust, the more stable and powerful SC thrusters tend to run hotter.",
+   "italian": "Rather than developing on the Ion Torch design of the Vi, the Scin began work on a plasma-based thruster. They are more compact, weigh less, and produce significantly more thrust. However, since Ion Torches expel some of their heat in their thrust, the more stable and powerful SC thrusters tend to run hotter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:SC-12 Plasma Steering|description|356|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 356,
+   "kind": "DESCRIPTION",
+   "context": "outfit:SC-12 Plasma Steering",
+   "english": "The new SC plasma engines allow Gegno Scin ships to outmaneuver their opposing brothers. What might take a Vi ship a long time takes only a moment on a Scin ship.",
+   "italian": "The new SC plasma engines allow Gegno Scin ships to outmaneuver their opposing brothers. What might take a Vi ship a long time takes only a moment on a Scin ship.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:SC-14 Plasma Thruster|description|377|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 377,
+   "kind": "DESCRIPTION",
+   "context": "outfit:SC-14 Plasma Thruster",
+   "english": "SC-14 class thrusters power the Scin's average gunboat or transport, giving their ships reliable speed. They can quickly propel any medium-sized ship forward with reasonable efficiency.",
+   "italian": "SC-14 class thrusters power the Scin's average gunboat or transport, giving their ships reliable speed. They can quickly propel any medium-sized ship forward with reasonable efficiency.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:SC-14 Plasma Steering|description|398|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 398,
+   "kind": "DESCRIPTION",
+   "context": "outfit:SC-14 Plasma Steering",
+   "english": "Larger than SC-12 engines, SC-14 class steering is one of the most powerful steering systems in Gegno space, allowing the Scin to reposition even their largest ships many times faster than their Vi counterparts.",
+   "italian": "Larger than SC-12 engines, SC-14 class steering is one of the most powerful steering systems in Gegno space, allowing the Scin to reposition even their largest ships many times faster than their Vi counterparts.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:SC-15 Plasma Thrusters|plural|402|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 402,
+   "kind": "VALUE",
+   "context": "outfit:SC-15 Plasma Thrusters",
+   "english": "SC-15 Plasma Thrusters",
+   "italian": "SC-15 Plasma Thrusters",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:SC-15 Plasma Thrusters|description|427|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 427,
+   "kind": "DESCRIPTION",
+   "context": "outfit:SC-15 Plasma Thrusters",
+   "english": "The Gegno Scin have taken another step forward from the SC-14 class engine system, incorporating both reverse and forward thrust into a single engine. In order to field the SC-15, the Scin had to design their largest ships around the thrusters, rather than fit it on later. The ability to reverse is especially important in engagements with the Gegno Vi's forward-heavy combat vessels.",
+   "italian": "The Gegno Scin have taken another step forward from the SC-14 class engine system, incorporating both reverse and forward thrust into a single engine. In order to field the SC-15, the Scin had to design their largest ships around the thrusters, rather than fit it on later. The ability to reverse is especially important in engagements with the Gegno Vi's forward-heavy combat vessels.",
+   "ratio": 1.0
+  }
+ ]
+}

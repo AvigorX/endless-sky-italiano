@@ -1,0 +1,128 @@
+{
+ "block": {
+  "path": "data/gegno/gegno ships.txt",
+  "line_from": 725,
+  "line_to": 1192,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Rhyolite|description|725|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 725,
+   "kind": "DESCRIPTION",
+   "context": "ship:Rhyolite",
+   "english": "The Rhyolite is a prototype Vi interceptor design constructed by the same shipyard that manufactures the Eclogite and Diorite. Only a few have been produced, and those that exist are currently piloted by a handful of Vi warriors either testing the vessel or owning one privately.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Rhyolite is a prototype Vi interceptor design constructed by the same shipyard that manufactures the Eclogite and Diorite. Only a few have been produced, and those that exist are currently piloted by a handful of Vi warriors either testing the vessel or owning one privately.`",
+   "english_hash": "cfa8e76e525ba0a1"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Eclogite|description|776|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 776,
+   "kind": "DESCRIPTION",
+   "context": "ship:Eclogite",
+   "english": "While the style of longer battleship-esque vessels is a Gegno Vi staple, another shipyard rose to the competition for Vi warship designs. The Eclogite is one of the newest designs in the Vi fleet - a gunboat armed to the teeth with cannons, and maneuverability that the Vi's larger ships lack. It plays the role of a hit-and-run vessel, unloading volleys of shells against a target's armor in a rapid maneuver before adjusting its position for another run.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `While the style of longer battleship-esque vessels is a Gegno Vi staple, another shipyard rose to the competition for Vi warship designs. The Eclogite is one of the newest designs in the Vi fleet - a gunboat armed to the teeth with cannons, and maneuverability that the Vi's larger ships lack. It plays the role of a hit-and-run vessel, unloading volleys of shells against a target's armor in a rapid maneuver before adjusting its position for another run.`",
+   "english_hash": "08718e234ad22808"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Diorite|description|832|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 832,
+   "kind": "DESCRIPTION",
+   "context": "ship:Diorite",
+   "english": "Continuing on with the design concept of the Vi's Eclogite, the Diorite is made by a separate shipyard from other larger Vi vessels. It is much more maneuverable than other Vi ships in its class, allowing it to easily keep a bead on other ships its size, and sometimes smaller ones as well.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Continuing on with the design concept of the Vi's Eclogite, the Diorite is made by a separate shipyard from other larger Vi vessels. It is much more maneuverable than other Vi ships in its class, allowing it to easily keep a bead on other ships its size, and sometimes smaller ones as well.`",
+   "english_hash": "c872f95d21b1b758"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Hornfel|description|917|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 917,
+   "kind": "DESCRIPTION",
+   "context": "ship:Hornfel",
+   "english": "Hornfels are the workhorse of the Gegno Vi's military - decently sized, decently fast, and more than decently armed warships designed for the frontline of operations. Hornfels are also the most configurable ship in the Vi's fleet, lined with many mounting points to support cargo pods, allowing them to provide a secondary transport role for when the Vi require replacement supplies in war. Other variants of Hornfels are instead occasionally found with adjustments to carry a larger armament. This multi-role function is extremely valued and is the reason why the Hornfel is one of the Vi's most popular ships.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Hornfels are the workhorse of the Gegno Vi's military - decently sized, decently fast, and more than decently armed warships designed for the frontline of operations. Hornfels are also the most configurable ship in the Vi's fleet, lined with many mounting points to support cargo pods, allowing them to provide a secondary transport role for when the Vi require replacement supplies in war. Other variants of Hornfels are instead occasionally found with adjustments to carry a larger armament. This multi-role function is extremely valued and is the reason why the Hornfel is one of the Vi's most popular ships.`",
+   "english_hash": "887971deefdaf42d"
+  },
+  {
+   "idx": 5,
+   "id": "ship:Gneiss|plural|983|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 983,
+   "kind": "VALUE",
+   "context": "ship:Gneiss",
+   "english": "Gneiss",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tplural \"Gneiss\"",
+   "english_hash": "a7ffb47482e019c4"
+  },
+  {
+   "idx": 6,
+   "id": "ship:Gneiss|description|1061|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1061,
+   "kind": "DESCRIPTION",
+   "context": "ship:Gneiss",
+   "english": "Gneiss battleships are the Gegno Vi's true sword and shield in war. They are slightly older than the Hornfels and Schists, but carry the heaviest armament, bearing three huge mounts dedicated to holding enormous Ballistic Cannons. Gneiss also have extremely strong armor plating, and can take a hefty beating while firing threatening broadsides at the opposing force.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Gneiss battleships are the Gegno Vi's true sword and shield in war. They are slightly older than the Hornfels and Schists, but carry the heaviest armament, bearing three huge mounts dedicated to holding enormous Ballistic Cannons. Gneiss also have extremely strong armor plating, and can take a hefty beating while firing threatening broadsides at the opposing force.`",
+   "english_hash": "706c0a321fd5f5b8"
+  },
+  {
+   "idx": 7,
+   "id": "ship:Gneiss|description|1062|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1062,
+   "kind": "DESCRIPTION",
+   "context": "ship:Gneiss",
+   "english": "\tUnfortunately, in exchange for huge firepower and defensive armor, they lack speed and maneuverability, even when fitted with the largest engine systems the Vi have to offer.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\tdescription `\tUnfortunately, in exchange for huge firepower and defensive armor, they lack speed and maneuverability, even when fitted with the largest engine systems the Vi have to offer.`",
+   "english_hash": "057ddbc6c2459b5e"
+  },
+  {
+   "idx": 8,
+   "id": "ship:Granulite|description|1149|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1149,
+   "kind": "DESCRIPTION",
+   "context": "ship:Granulite",
+   "english": "Granulites are descendants of the Gegno's early generation ships used to colonize nearby systems before the invention of the hyperdrive. They now carry hundreds of Vi both in and out of war, and huge cargo loads to supply depots. They are not typically used as warships, but can support enough weaponry to threaten most smaller vessels, or fend off larger ships long enough for reinforcements to arrive.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Granulites are descendants of the Gegno's early generation ships used to colonize nearby systems before the invention of the hyperdrive. They now carry hundreds of Vi both in and out of war, and huge cargo loads to supply depots. They are not typically used as warships, but can support enough weaponry to threaten most smaller vessels, or fend off larger ships long enough for reinforcements to arrive.`",
+   "english_hash": "a426351f6645d24a"
+  },
+  {
+   "idx": 9,
+   "id": "ship:Halite|description|1192|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1192,
+   "kind": "DESCRIPTION",
+   "context": "ship:Halite",
+   "english": "Halites are a successful experimental test platform designed by the Gegno Scin. They are the Gegno's first fighter-based craft, and the first to equip both early-stage pulse weapon and shield technology; almost half the hull is dedicated to these new developments.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Halites are a successful experimental test platform designed by the Gegno Scin. They are the Gegno's first fighter-based craft, and the first to equip both early-stage pulse weapon and shield technology; almost half the hull is dedicated to these new developments.`",
+   "english_hash": "e8d9f675638eb3d7"
+  }
+ ]
+}

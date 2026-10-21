@@ -1,0 +1,346 @@
+# Copyright (c) 2015 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "FW Epilogue: Ijs and Katya"
+	landing
+	source "Winter"
+	to offer
+		has "free worlds plot completed"
+	
+	on offer
+		conversation
+			`Sei su <origin>, sede del Conservatorio delle Free Worlds, dove Ijs insegna come professore. Vuoi andare a trovarlo per vedere come sta?`
+			choice
+				`	(Sì.)`
+				`	(Non adesso.)`
+					defer
+			`	Mentre cerchi Ijs nell'elenco del corpo docente, noti un'altra cosa: anche Katya è nell'elenco, come "professoressa a contratto di educazione civica ed economia". Chiami Ijs e gli chiedi se lui e Katya vorrebbero incontrarti per cena, e accettano volentieri.`
+			`	Quando li raggiungi al ristorante, Katya dice: "È davvero bello rivederti, <first>."`
+			`	"Per non parlare," dice Ijs, "del piacere di avere una scusa per mangiare da qualche parte che non sia il centro studentesco, per una volta. Come ti sta trattando la vita, <first>?"`
+			choice
+				`	"Mi manca l'emozione del lavoro che facevamo insieme, ma a parte questo la vita è splendida."`
+					goto excitement
+				`	"È un po' difficile abituarsi alla vita civile."`
+					goto adjust
+				`	"Voglio esplorare il resto della galassia, ma a quanto pare quella parte del gioco non è ancora stata implementata del tutto."`
+					goto game
+			
+			label excitement
+			`	"Capisco quella sensazione," dice Katya. "Ma ricordati: è per questo che abbiamo combattuto. Per la pace. Per un mondo in cui nessuno debba temere per la propria vita."`
+				goto end
+			
+			label adjust
+			`	"Dimmi tu," ride Katya. "Fatico a credere di essere ormai una professoressa. O almeno, di fare quel mestiere. Ma dopo tanti combattimenti, e tanto tempo da sola e in prigione, per me è bello potermi finalmente rilassare, lasciar andare l'idea che la galassia crollerebbe senza di me."`
+				goto end
+			
+			label game
+			`	"Ops," dice Ijs, "ora l'hai fatto, è caduta la quarta parete."`
+			`	Katya ride. "Beh, oltre lo spazio umano c'è già tanto da vedere, e sono sicura che troverai altre cose da fare anche più vicino a casa. Se hai così tanta voglia di esplorare la galassia, <first>, o di scoprire quali nuove avventure ha da offrire, magari dovresti offrirti di aiutare a creare le storie che la popolano. Dopotutto questo è un gioco open source, e si basa su gente come te per prendere vita."`
+				goto end
+			
+			label end
+			`	Arriva la cena, e passate una serata piacevole mangiando insieme e ricordando i vecchi tempi. Ai tempi della guerra civile né Katya né Ijs erano persone che sorridevano o ridevano facilmente. Ora hanno un'aria del tutto diversa, serena e soddisfatta. È confortante vedere che loro, almeno, hanno trovato un lieto fine insieme dopo tutto il caos che avete vissuto.`
+			`	All'improvviso ti rendi conto che intorno a voi i camerieri stanno spazzando i pavimenti e mettendo le sedie sui tavoli: è ora di chiudere, e siete gli ultimi rimasti. "Beh, <first>," dice Ijs, "è stato bello che tu sia passato, e ti auguro il meglio nei tuoi viaggi fra le stelle. Salutaci gli altri se li vedi." Auguri loro ogni bene e torni alla tua nave.`
+				decline
+
+
+
+mission "FW Epilogue: Alondo"
+	landing
+	source "Bourne"
+	to offer
+		has "free worlds plot completed"
+		or
+			not "Paradise Fortune 3: done"
+			has "Paradise Fortune 4: offered"
+	
+	on offer
+		conversation
+			`Mentre ti avvicini per atterrare su Bourne, ricevi un messaggio da Alondo. "<first>!" dice. "Ho appena saputo che eri nel sistema. Ti va di vederci per un drink e parlare dei vecchi tempi?"`
+			choice
+				`	"Certo, con piacere."`
+				`	"Scusa, sono impegnato adesso."`
+					defer
+			`	Incontri Alondo in un pub del posto. Ti racconta che la sua vita è continuata piuttosto piena da quando la guerra è finita e il Consiglio è stato sciolto: è stato messo a capo del corpo diplomatico delle Free Worlds, il cui compito principale sembra essere assicurarsi che tutti i singoli pianeti sentano che le loro preoccupazioni vengono ascoltate. "Significa viaggiare molto," dice, "e molti pranzi eleganti con persone importanti. E sono sempre interessati a sentire le mie storie del tempo di guerra."`
+			`	Racconti ad Alondo un po' di quello che hai fatto da quando la guerra è finita. "Certo," dice, "tu viaggi per la galassia. L'avevo capito fin dall'inizio che non eri il tipo da mettere radici in fretta su un solo pianeta."`
+			`	Alondo prosegue descrivendo alcuni dei meccanismi interni del Senato delle Free Worlds, e l'accordo di difesa reciproca che costituisce la spina dorsale del governo. "Per un po'," dice, "sembrava che ci fosse così tanta burocrazia che non riuscivamo a combinare niente, ma ora finalmente comincia a funzionare come l'avevamo immaginato tutti. Un bell'onore aver avuto parte nella nascita di un nuovo governo."`
+			choice
+				`	"Parole da vero burocrate."`
+					goto bureaucrat
+				`	"Spero davvero che le Free Worlds riescano a essere all'altezza della nostra idea originale di giustizia e uguaglianza."`
+					goto vision
+			
+			label bureaucrat
+			`	"Giusto," dice, "ma credo davvero che qui abbiamo creato un governo meno incline alle disuguaglianze con cui la Repubblica sta ancora lottando."`
+				goto end
+			
+			label vision
+			`	"Anch'io," dice. "Siamo partiti bene, ma del resto anche la Repubblica, a suo tempo."`
+				goto end
+			
+			label end
+			`	Resta in silenzio un momento, poi dice: "Immagino che sia per questo che sono ancora qui nel mezzo delle cose, invece di sistemarmi da qualche parte e lasciarmi alle spalle la vita pubblica. Non credo che la società o il governo diventino buoni per natura, né che restino buoni senza sforzo. Quindi sono qui per parlare quando cominciamo ad allontanarci dalla nostra idea originale."`
+			`	Restate seduti a parlare ancora parecchio, ricordando i vecchi tempi. Poi gli auguri buon lavoro, e lui ti dice di passare a salutarlo ogni volta che sei da quelle parti. Torni alla tua nave.`
+				decline
+
+
+
+mission "FW Epilogue: Freya"
+	landing
+	source "Pugglemug"
+	to offer
+		has "free worlds plot completed"
+	
+	on offer
+		conversation
+			`Quando atterri su <origin>, ti addentri in città per esplorare un po' e scoprire se la Marina e gli altri arrivati dopo di loro hanno avuto fortuna nello svelare i segreti di questo luogo. Già si vede che alcuni degli appartamenti vuoti sono diventati vere abitazioni per la gente, e ci sono persino un paio di negozi che aprono sulla strada principale.`
+			`	In uno di quei negozi ti imbatti in Freya. "<first>!" dice. "Che bello rivederti. Ho sentito che il Parlamento ti ha nominato eroe di guerra ufficiale o qualcosa del genere. Molto meglio che essere un fuggitivo ricercato, eh?"`
+			choice
+				`	"Sì, è un bell'onore."`
+					goto honor
+				`	"Sì, è difficile sapere che cosa fare di me stesso ora che nessuno vuole uccidermi."`
+					goto kill
+			
+			label honor
+			`	"Giusto. Ricordati solo che niente di tutto questo sarebbe successo senza di me, va bene? Non che abbia desiderio di fare l'eroe; quel tipo di attenzione pubblica sarebbe praticamente il mio peggior incubo."`
+				goto next
+			
+			label kill
+			`	"Beh, sono sicura che troverai qualcosa di interessante da fare," dice. "Vai a combattere qualche pirata. O diventa un magnate degli affari e fatti ricco sfondato. Quello che ti pare."`
+				goto next
+			
+			label next
+			`	"Che cosa avete scoperto sui Pug?" chiedi.`
+			`	"Non molto," dice. "Il wormhole non sembra portare alla loro vera casa; è solo un'altra pista falsa. Il vero passo avanti, naturalmente, sarebbe se riuscissimo a trovare qualche indizio, nelle cose che hanno lasciato, su come costruire da soli altri motori di salto. Ma finora non riusciamo nemmeno a capire come creare nuovi collegamenti iperspaziali dove prima non ce n'erano. Comincio a pensare che quei trasmettitori di gravitoni che abbiamo usato fossero solo un altro gioco: un giocattolo, non la cosa vera. Intendo dire, non ciò che ha creato i collegamenti in primo luogo, a meno che non li abbia creati qualcuno con la pazienza di aspettare un milione di anni perché funzionassero."`
+			choice
+				`	"Avete trovato qualche altra tecnologia interessante?"`
+					goto technology
+				`	"Ci sono altri indizi su chi fossero i Pug e che cosa volessero?"`
+					goto pug
+			
+			label technology
+			`	"Alcuni," dice. "Tutto quello che hanno lasciato è come, beh... un giocattolo didattico. Come un genitore distratto che lascia ai figli un set di chimica superavanzato per giocarci. Ecco come ci sembrano tutti i reperti che troviamo qui: non la cosa vera che i Pug avrebbero usato, ma un modello semplificato che ci hanno dato per aiutarci a capirla. Tutto quello che hanno lasciato, sono convinta che l'abbiano lasciato di proposito, perché poteva insegnarci qualcosa che volevano sapessimo, tenendo segreti tutti i loro veri segreti. Voi altri siete andati avanti, e io sono ancora qui a giocare al loro gioco."`
+				goto end
+			
+			label pug
+			`	"Non molto," dice. "Questo mondo mi fa pensare a quando vai a casa di un amico e lui ha passato la giornata a pulire per te. Non è come la casa di una persona quando arrivi senza avvisare. Non c'è niente fuori posto. Tutto quello che è lasciato in giro è qualcosa che volevano che tu vedessi. C'è qualche tecnologia strana che hanno lasciato, ma è tutta roba come giocattoli, enigmi... non so, come un gioco didattico che hanno progettato perché noi lo giocassimo. Voi altri siete andati avanti, e io sono ancora qui a giocare al loro gioco."`
+				goto end
+			
+			label end
+			choice
+				`	"Sembri frustrata."`
+				`	"Sai, la guerra è finita, puoi rilassarti se vuoi."`
+			`	"Lo so, lo so," dice. "Mi lamento, ma in realtà non c'è nessun altro posto dove preferirei essere. Anche se tutto quello che scopriamo qui non è niente più di quello che volevano che scoprissimo, resta il lavoro più interessante che potrei fare in questo momento. Quindi non dispiacerti per me. Davvero."`
+			branch surname
+				has "last name: Winters"
+			`	Parlate ancora un po', e lei ti dice che si farà sicuramente viva se mai arriveranno alla radice delle motivazioni dei Pug. "Fino ad allora," dice, "buona fortuna nei tuoi viaggi. Spero che alla galassia non manchino mai i modi di sorprenderti."`
+				decline
+
+			label surname
+			`	"A proposito, posso chiederti una cosa, <first>? Su di te? Scusa se è piuttosto brusco. Sono stata troppo impegnata per parlare durante la guerra."`
+			choice
+				`	"Certo. Di che si tratta?"`
+					goto permitted
+				`	"Scusa, preferirei di no."`
+					goto conclusion
+			
+			label permitted
+			`	"Conosci per caso qualcuno di nome Lavinia? Sposata con uno di nome Marcus?"`
+			`	Entrambi i nomi ti suonano stranamente familiari, ma non ricordi dove li hai sentiti.`
+			choice
+				`	"Credo di sì, ma mi serve un minuto per ricordare esattamente chi."`
+					goto heritage
+				`	"No, non li conosco."`
+				
+			label denial
+			`	"Oh, va bene. Allora credo di essermi sbagliata. Non importa."`
+				goto conclusion
+			label heritage
+			`	Cerchi di ricordare esattamente dove hai sentito quei nomi, spremendoti le meningi per qualsiasi informazione su quei nomi vagamente familiari, e all'improvviso ti colpisce. Marcus e Lavinia erano due dei tuoi bisnonni. Ti chiedi perché qualcuno che non hai mai conosciuto fino a quando ti sei unito alle Free Worlds ti stia chiedendo dei tuoi antenati. Magari stava pensando a un altro Marcus e a un'altra Lavinia.`
+			`	"Sì, conosco un Marcus e una Lavinia, ma sono i miei bisnonni. Sei sicura di aver chiesto alla persona giusta?" chiedi.`
+			`	"Oh, mio Dio," dice Freya. "Non ci posso credere."`
+			`	"Che cosa?"`
+			`	"Credo che siamo parenti. Cugini di secondo grado. Marcus e Lavinia Winters sono anche i miei bisnonni."`
+			choice
+				`	"Davvero?"`
+					goto disbelief
+				`	"Beh, allora ciao, cugino. Piacere di conoscerti."`
+					goto joke
+			label disbelief
+			`	"Sì, anch'io faccio fatica a crederci. Però mi fa piacere. Una sorpresa gradita." Sei d'accordo.`
+				goto conclusion
+
+			label joke
+			`	"Eh. Piacere mio. A quanto pare abbiamo portato un po' di prestigio al cognome Winters, eh, cugino?"`
+			`	Ridete entrambi della sua risposta.`
+			`	"Non avrei mai pensato di andare in giro a salvare la galassia con una cugina di secondo grado che non avevo mai conosciuto," continua, "ma in una guerra dove alieni mai visti che manipolano i corridoi iperspaziali intervengono per provare a far unire le due parti, immagino che tutto sia possibile."`
+
+			label conclusion
+			`	Parlate ancora un po', e lei ti dice che si farà sicuramente viva se mai arriveranno alla radice delle motivazioni dei Pug. "Fino ad allora," dice, "buona fortuna nei tuoi viaggi. Spero che alla galassia non manchino mai i modi di sorprenderti."`
+				decline
+
+
+
+mission "FW Epilogue: Danforth"
+	landing
+	source "Farpoint"
+	to offer
+		has "free worlds plot completed"
+		not "Wanderers: Alpha Surveillance E: offered"
+	
+	on offer
+		conversation
+			`Vuoi passare a vedere come sta l'ammiraglio Danforth?`
+			choice
+				`	(Sì.)`
+				`	(Non adesso.)`
+					defer
+			
+			branch checkmate1
+				has "free worlds checkmate"
+			`	Danforth è piuttosto emozionato di vederti. "Capitano <last>!" dice. "Che bello rivederti quassù dalle mie parti. È buffo, verrebbe da pensare che, con la guerra finita, scioglierebbero gli Oathkeepers, visto che l'intera Repubblica è in pace con le Free Worlds e non ci resta più nessun giuramento da mantenere. Ma gli Oathkeepers sono diventati così noti per il nostro ruolo contro i Pug e il Sindacato che ora tutti vogliono entrare nella nostra divisione."`
+				goto choice
+			
+			label checkmate1
+			`	Danforth è piuttosto emozionato di vederti. "Capitano <last>!" dice. "Che bello rivederti quassù dalle mie parti. È buffo, verrebbe da pensare che, con la guerra finita, scioglierebbero gli Oathkeepers, visto che l'intera Repubblica è in pace con le Free Worlds e non ci resta più nessun giuramento da mantenere. Ma gli Oathkeepers sono diventati così noti per il nostro ruolo contro i Pug che ora tutti vogliono entrare nella nostra divisione."`
+			
+			label choice
+			choice
+				`	"Sono contento di vedere che è ancora nel mezzo delle cose, signore!"`
+					goto thick
+				`	"Che tipo di lavoro fa la Marina ora che siamo in pace?"`
+					goto work
+			
+			label thick
+			`	"Oh, puoi scommetterci," dice. "Non andrò mai in pensione dalla Marina, sai. Conto di essere ancora in servizio il giorno in cui morirò."`
+				goto next
+			
+			label work
+			`	"Proprio il tipo di lavoro per cui ci siamo arruolati tutti fin dall'inizio," dice. "Difendere chi non può difendersi, mantenere la pace, aiutare i piloti principianti che finiscono il carburante."`
+				goto next
+			
+			label next
+			`	"I pirati ti danno problemi?" chiedi.`
+			`	"Un po'," dice. "In questo settore ci sono ancora troppi pirati, in parte perché le Free Worlds li hanno per lo più scacciati dal Sud. I pirati sono diventati più forti e più audaci man mano che la guerra si trascinava, quando tutte le nostre flotte erano impegnate altrove, ma ora stiamo ricominciando a tenerli sotto controllo."`
+			
+			branch checkmate2
+				has "free worlds checkmate"
+			`	Poi si sporge in avanti e dice, più sottovoce: "Naturalmente, tu ed io sappiamo che i pirati non sono la minaccia principale. Raven è in missione sotto copertura nei mondi del Sindacato proprio mentre parliamo, e anche diversi altri miei migliori ufficiali dell'intelligence. Il Sindacato vuole farci credere di aver eliminato tutte le mele marce dalle sue file, ma teniamo comunque d'occhio la situazione."`
+				goto end
+			
+			label checkmate2
+			`	Poi si sporge in avanti e dice, più sottovoce: "Solo per avvisarti che la Marina tiene ancora d'occhio le Free Worlds. Il fatto che sia stato firmato un trattato di pace non significa che potete tenervi le testate nucleari per sempre."`
+			
+			label end
+			`	Dopo che avete parlato ancora un po', Danforth ti augura buona fortuna e ti congeda. "Ti contatterò se in futuro avremo bisogno del tuo aiuto," dice.`
+				decline
+
+
+
+mission "FW Epilogue: Edward"
+	landing
+	name `Prova delle armi`
+	description `Una nave di prova con nuove armi è in orbita intorno a <planet>. Combattila e mettila fuori uso (ma non abbordarla né distruggerla!) e poi atterra per dare a Barmy Edward un parere sulle sue prestazioni.`
+	source "Rust"
+	to offer
+		has "free worlds plot completed"
+	on offer
+		conversation "edward epilogue"
+	npc disable save
+		government "Test Dummy"
+		personality disables heroic staying
+		ship "Leviathan (Plasma Repeater)" "Hunk"
+	on decline
+		event "plasma repeater advanced" 95
+	on complete
+		log `Hai assistito Barmy Edward in un'altra prova d'arma: questa volta un notevole miglioramento del cannone al plasma. Cadenza di fuoco aumentata, anche a fronte di un danno per colpo inferiore, con risultati complessivi migliori.`
+		event "plasma repeater advanced" 45
+		conversation "edward epilogue"
+
+
+
+conversation "edward epilogue"
+	branch completed
+		has "FW Epilogue: Edward: done"
+	`Mentre completi la procedura di atterraggio, ricordi di essere venuto qui per assistere alle prove di nuove armi, nel pieno della guerra. Vuoi passare a salutare Barmy Edward, l'ingegnere capo?`
+	choice
+		`	(Sì.)`
+		`	(No.)`
+			defer
+	scene "scene/loc0"
+	`	Dici il tuo nome alla reception, e lei ti indirizza a un hangar dove trovi Barmy Edward, al lavoro su un'arma che sembra un cannone al plasma modificato. Quando ti nota, si alza dal lavoro e ti stringe la mano con calore. "Ah, <last>. È passato troppo tempo! Che fortuna per me! Sto proprio dando gli ultimi ritocchi a un nuovo prototipo. Non sarai mica troppo impegnato per assistermi in qualche prova pratica, vero?"`
+	choice
+		`	"Non ne sono sicuro. Che cosa dovrei fare?"`
+		`	"Fare da bersaglio per armi sperimentali? Dimmi solo di che cosa hai bisogno!"`
+	`	"Niente di molto diverso dalle nostre prove del passato," risponde. "In orbita troverai una nostra nave che si chiama <npc>. È stata equipaggiata con alcune di queste nuove armi. Il tuo compito sarà combatterla e metterla fuori uso, dirci che cosa pensi delle sue capacità di combattimento, e trasferire i registri della tua nave perché possiamo analizzare lo scontro."`
+	choice
+		`	"Va bene, immagino che per i vecchi tempi posso dare una mano."`
+		`	"Scusa, volevo solo passare a vedere come stavi."`
+			goto catchup
+	`	Si volta verso di te con un sorrisetto. "Abbiamo rimesso in servizio la nave dal pensionamento, quindi non è il massimo, ma cerca di tenerla intera per usi futuri. Chiaro?"`
+	choice
+		`	"Certo! Me ne prenderò cura."`
+	`	"Ottimo," dice, strofinandosi le mani con un'espressione compiaciuta. È chiaramente impaziente di sentire che cosa pensi della sua ultima invenzione.`
+		accept
+	label catchup
+	`	"Capisco. Beh, sono sicuro che troveremo qualcun altro all'altezza del compito. In ogni caso, capitano <last>, ti assicuro che questa nuova arma migliora di molto l'obsoleto cannone al plasma. Metterà la Kraz Cybernetics nella serie A!"`
+	`	"Che ne dici di andarcene da qui, <first>? Per oggi ho finito, e conosco un bar modesto che è a due passi."`
+	choice
+		`	"Certo. Non è che ci sia più una guerra di cui preoccuparsi."`
+	`	"Ah! Beh, certo, la guerra ci ha tenuti tutti parecchio impegnati." Ti accompagna fuori dalla struttura raccontando un aneddoto che dev'essere umorismo da ingegnere.`
+		goto combined
+	
+	label completed
+	scene "scene/plasma scene"
+	`Ti dirigi all'hangar per incontrare Barmy Edward, e lo trovi che armeggia con il cannone al plasma modificato che avevi visto appena entrato. "Scalda molto di più, vedi," spiega. "Ma i risultati sono notevoli."`
+	choice
+		`	"Era un cannone al plasma? O qualcos'altro?"`
+			goto what
+		`	"Non batterà certo nessun record di danno, questo è sicuro."`
+			goto damage
+	label what
+	`	"Eh, era un po' che non vedevamo un buon miglioramento del cannone," dice. "Era il Ripetitore al plasma. Naturalmente non è stato facile fare una versione migliore di qualcosa su cui innumerevoli sciocchi hanno fallito."`
+	`	"Quando sarà in vendita?" chiedi.`
+		goto available
+	label damage
+	`	"Beh, sei uno dei capitani venerati che hanno scacciato i Pug," dice. "L'idea è che, riducendo i proiettili di plasma surriscaldato, possiamo scaricare molti più colpi su un bersaglio. Gli effetti sul bersaglio si traducono in un accumulo più rapido di calore e, naturalmente, in danni. Le navi grandi di solito resistono a questi effetti molto più a lungo di una nave piccola, ma è sempre stato un problema notevole del progetto originale. Inoltre il ripetitore è dannatamente più impressionante."`
+	`	"È una direzione originale," rispondi. "Sono già in vendita?"`
+	label available
+	`	"Grazie a te, dovrebbero essere disponibili entro qualche mese," risponde. "Sono sicuro che hai ormai superato il punto in cui le nostre armi sono utili, ma del resto non tutti hanno un motore di salto." Sorride. "Che ne dici di festeggiare con qualche drink? Conosco un baretto grazioso non lontano da qui."`
+	choice
+		`	"Ho tempo; festeggiamo!"`
+		`	"Passo, ma è stato bello vedere come stai."`
+			decline
+	
+	label combined
+	branch start
+		not "start: default"
+	`	Segui Barmy nel bar. Anche con la macchia di grasso ancora sul viso, si trova a suo agio fra la gente. State entrambi al bancone e ordinate da bere. L'ordine di Barmy ti coglie di sorpresa, e lui se ne accorge dall'espressione. "Che c'è? Un uomo che lavora con le mani non può gustarsi un drink un po' invecchiato?" Ridacchi, e raccontate entrambi storie dei vostri primi anni. Racconta di alcune avventure emozionanti della sua giovinezza fra le stelle, ma di aver trovato la sua passione nell'armeggiare e nel trovare modi per migliorare equipaggiamenti obsoleti.`
+	`	Resta sbalordito nello scoprire le tue origini su New Boston. "Vieni davvero da quel pianeta sperduto? Mi sorprende che tu sia riuscito a sfuggire al baccano che hanno lì. Io sono stato fortunato a uscirne!"`
+	choice
+		`	"Aspetta, anche tu vieni da New Boston?"`
+		`	"Non era perfetto, ma almeno non era così rumoroso laggiù in basso."`
+			goto end
+		`	"Niente a che vedere con com'è adesso. Ho tutto l'universo davanti a me!"`
+			goto end
+	`	"Non avresti mai pensato di incontrare qualcuno del tuo stesso pianeta natale, eh?" Ridacchia. "Galassia piccola, immagino."`
+		goto end
+	label start
+	`	Segui Barmy nel bar. Anche con la macchia di grasso ancora sul viso, si trova a suo agio fra la gente. State entrambi al bancone e ordinate da bere. L'ordine di Barmy ti coglie di sorpresa, e lui se ne accorge dall'espressione. "Che c'è? Un uomo che lavora con le mani non può gustarsi un drink un po' invecchiato?" Ridacchi, e raccontate entrambi storie dei vostri primi anni. Ti racconta della sua infanzia sul mondo di New Boston, nella Fascia di Terra, e di alcune avventure emozionanti della sua giovinezza fra le stelle, ma di aver trovato la sua passione nell'armeggiare e nel trovare modi per migliorare equipaggiamenti obsoleti.`
+	label end
+	`	Passate entrambi un bel po' di tempo ad ascoltare le storie dei primi anni dell'altro, ma alla fine concludete la visita dopo una lunga notte di racconti scambiati avanti e indietro. Vi salutate e torni alla tua nave.`
+		decline
+
+event "plasma repeater advanced"
+	outfitter "Kraz Advanced"
+		"Plasma Repeater"

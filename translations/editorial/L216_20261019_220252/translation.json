@@ -1,0 +1,341 @@
+{
+ "block": {
+  "path": "data/human/deep jobs.txt",
+  "line_from": 866,
+  "line_to": 929,
+  "units": 30
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Deep Consultants|\t\"Sure, I'd be glad to help.\"|866|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 866,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\t\"Sure, I'd be glad to help.\"",
+   "italian": "\t\"Certo, sarò felice di aiutare.\"",
+   "ratio": 1.138
+  },
+  {
+   "idx": 2,
+   "id": "mission:Deep Consultants|\t\"Where do you need to go?\"|868|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 868,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\t\"Where do you need to go?\"",
+   "italian": "\t\"Dove devi andare?\"",
+   "ratio": 0.741
+  },
+  {
+   "idx": 3,
+   "id": "mission:Deep Consultants|\t\"Why is it so urgent?\"|869|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 869,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\t\"Why is it so urgent?\"",
+   "italian": "\t\"Perché è così urgente?\"",
+   "ratio": 1.087
+  },
+  {
+   "idx": 4,
+   "id": "mission:Deep Consultants|\t\"Who are you?\"|870|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 870,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\t\"Who are you?\"",
+   "italian": "\t\"Tu chi sei?\"",
+   "ratio": 0.933
+  },
+  {
+   "idx": 5,
+   "id": "mission:Deep Consultants|\tJulie holds out her hand in greeting. \"Apologies, let's do this properly. My name is Julie Gillar. My assistant and I were held back with our duties and missed our booked transport. We're in dire need of passage to Valhalla for several important business meetings, but unfortunately everything is booked up for the next five days straight, and that's just not acceptable to my employer.\"|871|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 871,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\tJulie holds out her hand in greeting. \"Apologies, let's do this properly. My name is Julie Gillar. My assistant and I were held back with our duties and missed our booked transport. We're in dire need of passage to Valhalla for several important business meetings, but unfortunately everything is booked up for the next five days straight, and that's just not acceptable to my employer.\"",
+   "italian": "\tJulie ti porge la mano in segno di saluto. \"Mi scuso, facciamo le cose per bene. Mi chiamo Julie Gillar. Io e la mia assistente siamo state trattenute dai nostri impegni e abbiamo perso il trasporto che avevamo prenotato. Abbiamo un disperato bisogno di un passaggio per Valhalla per diverse riunioni di lavoro importanti, ma purtroppo è tutto prenotato per i prossimi cinque giorni di fila, e al mio datore di lavoro questo non va affatto bene.\"",
+   "ratio": 1.152
+  },
+  {
+   "idx": 6,
+   "id": "mission:Deep Consultants|\t\"Sure, I'd be glad to help.\"|873|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 873,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\t\"Sure, I'd be glad to help.\"",
+   "italian": "\t\"Certo, sarò felice di aiutare.\"",
+   "ratio": 1.138
+  },
+  {
+   "idx": 7,
+   "id": "mission:Deep Consultants|\t\"Who's your employer?\"|875|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 875,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\t\"Who's your employer?\"",
+   "italian": "\t\"Chi è il tuo datore di lavoro?\"",
+   "ratio": 1.435
+  },
+  {
+   "idx": 8,
+   "id": "mission:Deep Consultants|\tJulie furtively glances at the people nearby. \"Well, I have a few employers actually, but at the moment, indirectly, Deep Security.\"|876|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 876,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\tJulie furtively glances at the people nearby. \"Well, I have a few employers actually, but at the moment, indirectly, Deep Security.\"",
+   "italian": "\tJulie lancia un'occhiata furtiva alle persone vicine. \"Be', in realtà ho diversi datori di lavoro, ma al momento, indirettamente, la Deep Security.\"",
+   "ratio": 1.12
+  },
+  {
+   "idx": 9,
+   "id": "mission:Deep Consultants|\tShe leans in slightly closer and lowers her voice. \"We have access to their list of trustworthy pilots for emergencies. You'll be paid quite well.\"|877|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 877,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\tShe leans in slightly closer and lowers her voice. \"We have access to their list of trustworthy pilots for emergencies. You'll be paid quite well.\"",
+   "italian": "\tSi avvicina un po' e abbassa la voce. \"Abbiamo accesso alla loro lista di piloti affidabili per le emergenze. Sarai pagato molto bene.\"",
+   "ratio": 0.919
+  },
+  {
+   "idx": 10,
+   "id": "mission:Deep Consultants|\t\"Sure, I'd be glad to help.\"|879|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 879,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\t\"Sure, I'd be glad to help.\"",
+   "italian": "\t\"Certo, sarò felice di aiutare.\"",
+   "ratio": 1.138
+  },
+  {
+   "idx": 11,
+   "id": "mission:Deep Consultants|\t\"I'm sorry, but I really can't help you right now.\"|881|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 881,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\t\"I'm sorry, but I really can't help you right now.\"",
+   "italian": "\t\"Mi dispiace, ma davvero non posso aiutarvi adesso.\"",
+   "ratio": 1.019
+  },
+  {
+   "idx": 12,
+   "id": "mission:Deep Consultants|\t\"Lead right on then,\" says Julie. You point towards your ship, and the women move to board it.|884|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 884,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\t\"Lead right on then,\" says Julie. You point towards your ship, and the women move to board it.",
+   "italian": "\t\"Allora fai strada\" dice Julie. Indichi la tua nave, e le due donne si avviano a bordo.",
+   "ratio": 0.926
+  },
+  {
+   "idx": 13,
+   "id": "mission:Deep Consultants|log|887|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 887,
+   "kind": "LOGBOOK",
+   "context": "mission:Deep Consultants",
+   "english": "A consultant who worked with Deep Security. She requested emergency transport from you and showed you how to make yourself available to future consultants.",
+   "italian": "Una consulente che lavorava con la Deep Security. Ti ha chiesto un trasporto d'emergenza e ti ha mostrato come renderti disponibile per i futuri consulenti.",
+   "ratio": 1.006
+  },
+  {
+   "idx": 14,
+   "id": "mission:Deep Consultants|Julie and her assistant are model passengers the entire journey. As she prepares to disembark, she thanks you for your assistance. In addition to transferring <payment> into your account, she helps you change your job board preferences with the local spaceport agencies to make yourself available for business passengers consulting with Deep Security.|891|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 891,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "Julie and her assistant are model passengers the entire journey. As she prepares to disembark, she thanks you for your assistance. In addition to transferring <payment> into your account, she helps you change your job board preferences with the local spaceport agencies to make yourself available for business passengers consulting with Deep Security.",
+   "italian": "Julie e la sua assistente sono passeggere modello per tutto il viaggio. Mentre si prepara a sbarcare, ti ringrazia per l'aiuto. Oltre a trasferire <payment> sul tuo conto, ti aiuta a modificare le preferenze della bacheca degli incarichi presso le agenzie dello spazioporto locale, così da renderti disponibile per i passeggeri d'affari che lavorano con la Deep Security.",
+   "ratio": 1.057
+  },
+  {
+   "idx": 15,
+   "id": "mission:Deep Consultants|\t\"Thank you Captain <last>, you've been most helpful. Do keep an eye out in the spaceports around here though. Deep Security is notorious for keeping us longer than we're booked for. There's often someone stuck and in need of rapid transport off-world.\"|892|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 892,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\t\"Thank you Captain <last>, you've been most helpful. Do keep an eye out in the spaceports around here though. Deep Security is notorious for keeping us longer than we're booked for. There's often someone stuck and in need of rapid transport off-world.\"",
+   "italian": "\t\"Grazie, capitano <last>, sei stato di grande aiuto. Però tieni gli occhi aperti negli spazioporti da queste parti. La Deep Security è famosa per trattenerci più a lungo del previsto. Spesso c'è qualcuno bloccato che ha bisogno di un trasporto rapido fuori dal pianeta.\"",
+   "ratio": 1.071
+  },
+  {
+   "idx": 16,
+   "id": "phrase:stranded consultant pickup|In accordance with the lodging request, you|897|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 897,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant pickup",
+   "english": "In accordance with the lodging request, you",
+   "italian": "In base alla richiesta di alloggio, tu",
+   "ratio": 0.884
+  },
+  {
+   "idx": 17,
+   "id": "phrase:stranded consultant pickup|Despite the short notice, you|898|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 898,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant pickup",
+   "english": "Despite the short notice, you",
+   "italian": "Nonostante il preavviso breve, tu",
+   "ratio": 1.138
+  },
+  {
+   "idx": 18,
+   "id": "phrase:stranded consultant pickup|meet the <passengers> at their hotel accommodation|902|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 902,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant pickup",
+   "english": "meet the <passengers> at their hotel accommodation",
+   "italian": "incontri i <passengers> nel loro alloggio in albergo",
+   "ratio": 1.04
+  },
+  {
+   "idx": 19,
+   "id": "phrase:stranded consultant pickup|collect the <passengers> from the security station|903|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 903,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant pickup",
+   "english": "collect the <passengers> from the security station",
+   "italian": "prelevi i <passengers> dalla stazione di sicurezza",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "phrase:stranded consultant pickup|fish the <passengers> out of a seedy bar|904|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 904,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant pickup",
+   "english": "fish the <passengers> out of a seedy bar",
+   "italian": "tiri fuori i <passengers> da un bar squallido",
+   "ratio": 1.125
+  },
+  {
+   "idx": 21,
+   "id": "phrase:stranded consultant pickup|rescue the <passengers> from some overbearing companions|905|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 905,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant pickup",
+   "english": "rescue the <passengers> from some overbearing companions",
+   "italian": "liberi i <passengers> da compagni invadenti",
+   "ratio": 0.768
+  },
+  {
+   "idx": 22,
+   "id": "phrase:stranded consultant pickup|in a quiet part of the spaceport|909|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 909,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant pickup",
+   "english": "in a quiet part of the spaceport",
+   "italian": "in una zona tranquilla dello spazioporto",
+   "ratio": 1.25
+  },
+  {
+   "idx": 23,
+   "id": "phrase:stranded consultant pickup|on the other side of town|910|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 910,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant pickup",
+   "english": "on the other side of town",
+   "italian": "dall'altra parte della città",
+   "ratio": 1.12
+  },
+  {
+   "idx": 24,
+   "id": "phrase:stranded consultant pickup|in a raucous quarter just outside the port|911|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 911,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant pickup",
+   "english": "in a raucous quarter just outside the port",
+   "italian": "in un quartiere chiassoso appena fuori dal porto",
+   "ratio": 1.143
+  },
+  {
+   "idx": 25,
+   "id": "phrase:stranded consultant pickup|and escort them on board.|915|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 915,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant pickup",
+   "english": "and escort them on board.",
+   "italian": "e li accompagni a bordo.",
+   "ratio": 0.96
+  },
+  {
+   "idx": 26,
+   "id": "phrase:stranded consultant dropoff payment|The consultants thank you as you deliver them to their destination.|919|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 919,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant dropoff payment",
+   "english": "The consultants thank you as you deliver them to their destination.",
+   "italian": "I consulenti ti ringraziano quando li consegni a destinazione.",
+   "ratio": 0.925
+  },
+  {
+   "idx": 27,
+   "id": "phrase:stranded consultant dropoff payment|You find out only afterward that they left behind a soiled pair of boots in one of your cabins.|923|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 923,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant dropoff payment",
+   "english": "You find out only afterward that they left behind a soiled pair of boots in one of your cabins.",
+   "italian": "Scopri solo dopo che hanno lasciato un paio di stivali sporchi in una delle tue cabine.",
+   "ratio": 0.916
+  },
+  {
+   "idx": 28,
+   "id": "phrase:stranded consultant dropoff payment|Afterward, you find a tie left hanging on one of your ship's door handles.|924|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 924,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant dropoff payment",
+   "english": "Afterward, you find a tie left hanging on one of your ship's door handles.",
+   "italian": "Dopo, trovi una cravatta lasciata appesa a una delle maniglie della tua nave.",
+   "ratio": 1.041
+  },
+  {
+   "idx": 29,
+   "id": "phrase:stranded consultant dropoff payment|Later, you find some crumpled documents left onboard and wisely tip them into the ship's incinerator without looking at them.|925|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 925,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant dropoff payment",
+   "english": "Later, you find some crumpled documents left onboard and wisely tip them into the ship's incinerator without looking at them.",
+   "italian": "Più tardi trovi dei documenti accartocciati lasciati a bordo e saggiamente li butti nell'inceneritore della nave senza guardarli.",
+   "ratio": 1.032
+  },
+  {
+   "idx": 30,
+   "id": "phrase:stranded consultant dropoff payment|Your bank account soon notifies you that the agreed-upon payment of <payment> has been deposited.|929|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 929,
+   "kind": "TEXT",
+   "context": "phrase:stranded consultant dropoff payment",
+   "english": "Your bank account soon notifies you that the agreed-upon payment of <payment> has been deposited.",
+   "italian": "Il tuo conto in banca ti avvisa presto che il pagamento concordato di <payment> è stato depositato.",
+   "ratio": 1.021
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "block": {
+  "path": "data/human/message buoys.txt",
+  "line_from": 70,
+  "line_to": 385,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "phrase:entering republic space from free worlds (hostile)|. All ships affiliated with the so-called \"Free Worlds\" are to heave to and comply with Navy personnel or be deemed valid targets.|70|0",
+   "path": "data/human/message buoys.txt",
+   "line": 70,
+   "kind": "TEXT",
+   "context": "phrase:entering republic space from free worlds (hostile)",
+   "english": ". All ships affiliated with the so-called \"Free Worlds\" are to heave to and comply with Navy personnel or be deemed valid targets.",
+   "italian": ". Tutte le navi affiliate ai cosiddetti \"Free Worlds\" devono fermarsi e obbedire al personale della Marina, altrimenti saranno considerate bersagli legittimi.",
+   "ratio": 1.215
+  },
+  {
+   "idx": 2,
+   "id": "mission:Message Buoy: Entering Deep space|text|207|0",
+   "path": "data/human/message buoys.txt",
+   "line": 207,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Message Buoy: Entering Deep space",
+   "english": "Message buoy to all ships: Welcome to Deep space. We bid you peace, prosperity, and progress.",
+   "italian": "Boa di segnalazione a tutte le navi: benvenuti nello spazio profondo di Deep. Vi auguriamo pace, prosperità e progresso.",
+   "ratio": 1.29
+  },
+  {
+   "idx": 3,
+   "id": "mission:Message Buoy: Martini Restricted|text|227|0",
+   "path": "data/human/message buoys.txt",
+   "line": 227,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Message Buoy: Martini Restricted",
+   "english": "Message buoy to all ships: Due to the attacks of July 4, 3014, access to the Republic planet of Martini is restricted.",
+   "italian": "Boa di segnalazione a tutte le navi: a causa degli attacchi del 4 luglio 3014, l'accesso al pianeta Martini della Repubblica è limitato.",
+   "ratio": 1.153
+  },
+  {
+   "idx": 4,
+   "id": "mission:Message Buoy: Geminus Restricted|text|244|0",
+   "path": "data/human/message buoys.txt",
+   "line": 244,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Message Buoy: Geminus Restricted",
+   "english": "Message buoy to all ships: Due to the attacks of July 4, 3014, access to the Republic planet of Geminus is restricted.",
+   "italian": "Boa di segnalazione a tutte le navi: a causa degli attacchi del 4 luglio 3014, l'accesso al pianeta Geminus della Repubblica è limitato.",
+   "ratio": 1.153
+  },
+  {
+   "idx": 5,
+   "id": "mission:Message Buoy: Graffias|text|262|0",
+   "path": "data/human/message buoys.txt",
+   "line": 262,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Message Buoy: Graffias",
+   "english": "Message buoy to all ships: You are entering the Republic system of Graffias. Poisonwood is restricted to solely Merchant or Republic ships.",
+   "italian": "Boa di segnalazione a tutte le navi: state entrando nel sistema Graffias della Repubblica. Poisonwood è riservato esclusivamente alle navi mercantili o della Repubblica.",
+   "ratio": 1.216
+  },
+  {
+   "idx": 6,
+   "id": "mission:Message Buoy: Capella|text|277|0",
+   "path": "data/human/message buoys.txt",
+   "line": 277,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Message Buoy: Capella",
+   "english": "Message buoy to all ships: Access to the Republic planet of Hermes is restricted without spaceport authority approval.",
+   "italian": "Boa di segnalazione a tutte le navi: l'accesso al pianeta Hermes della Repubblica è limitato senza l'autorizzazione dell'autorità dello spazioporto.",
+   "ratio": 1.254
+  },
+  {
+   "idx": 7,
+   "id": "mission:Message Buoy: Elnath|text|292|0",
+   "path": "data/human/message buoys.txt",
+   "line": 292,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Message Buoy: Elnath",
+   "english": "Message buoy to all ships: All inhabited installations in the Elnath system are restricted to employees of Lovelace Labs. Please refuel or repair in another system.",
+   "italian": "Boa di segnalazione a tutte le navi: tutte le installazioni abitate del sistema Elnath sono riservate ai dipendenti dei Lovelace Labs. Rifornitevi o riparatevi in un altro sistema.",
+   "ratio": 1.098
+  },
+  {
+   "idx": 8,
+   "id": "mission:Message Buoy: beyond Farpoint|text|332|0",
+   "path": "data/human/message buoys.txt",
+   "line": 332,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Message Buoy: beyond Farpoint",
+   "english": "Message buoy to all ships: You have exited Republic-controlled space. Assistance from Navy vessels is limited beyond the system of Alnitak. It is recommended you return to Farpoint immediately.",
+   "italian": "Boa di segnalazione a tutte le navi: siete usciti dallo spazio controllato dalla Repubblica. Oltre il sistema Alnitak l'assistenza delle navi della Marina è limitata. Si consiglia di tornare subito a Farpoint.",
+   "ratio": 1.083
+  },
+  {
+   "idx": 9,
+   "id": "mission:Message Buoy: Tarazed Corporation|text|370|0",
+   "path": "data/human/message buoys.txt",
+   "line": 370,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Message Buoy: Tarazed Corporation",
+   "english": "Message buoy to all ships: Welcome to the home of the Tarazed Corporation - the galaxy-leading manufacturer of sleek, modern spacecraft.",
+   "italian": "Boa di segnalazione a tutte le navi: benvenuti nella sede della Tarazed Corporation, il produttore leader della galassia di navi spaziali eleganti e moderne.",
+   "ratio": 1.154
+  },
+  {
+   "idx": 10,
+   "id": "mission:Message Buoy: Betelgeuse Shipyards|text|385|0",
+   "path": "data/human/message buoys.txt",
+   "line": 385,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Message Buoy: Betelgeuse Shipyards",
+   "english": "Message buoy to all ships: Betelgeuse Shipyards - centuries of service.",
+   "italian": "Boa di segnalazione a tutte le navi: Betelgeuse Shipyards, secoli di servizio.",
+   "ratio": 1.099
+  }
+ ]
+}

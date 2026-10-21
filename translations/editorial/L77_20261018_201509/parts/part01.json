@@ -1,0 +1,18 @@
+{
+ "1": "Assisti la ricerca sui Predecessori",
+ "2": "Trasporta questi <bunks> studiosi che indagano sui Predecessori fino a <planet stopovers> e poi a casa, su <destination>, entro il <date>.",
+ "3": "Mentre atterri sulla piazzola dello spazioporto, vedi avvicinarsi un volto noto: è Sieasej, lo studioso Successore che ti ha fatto da traduttore durante il tuo primo contatto con i Successori e ti ha assistito nella missione per Casa Sioeora. Si stanno muovendo verso di te con un piccolo gruppo di individui vestiti allo stesso modo, che supponi essere anche loro studiosi.",
+ "4": "\t\"Capitano! Gioisco nel vederti tornare; sono venuto qui in fretta appena ho visto che stavi per arrivare!\"",
+ "5": "\tSaluti Sieasej, e ti spiegano che gli studiosi con loro sono ricercatori dei Predecessori in cerca di un passaggio su una nave che attraversi i wormhole.",
+ "6": "\t\"Le modifiche necessarie alla nave sono deplorevolmente costose,\" continua uno dei ricercatori. \"Se dovessimo chiedere a Sioeora e all'Accademia una nave attrezzata come si deve, potremmo essere costretti ad aspettare anni, un ritmo fin troppo lento per la nostra ricerca. Se invece ci trasportassi tu, anche per poco tempo, faresti progredire molto il nostro studio.\"",
+ "7": "\t\"Certo, ne sarei felice.\"",
+ "8": "\t\"Posso tornare un'altra volta?\"",
+ "9": "\t\"Mi dispiace, ma dovrai trovare qualcun altro che vi porti.\"",
+ "10": "\t\"Hm, probabilmente. Siamo stati pazienti abbastanza a lungo, ma ti esorto a cercarci di nuovo in fretta.\"",
+ "11": "\t\"La nostra più profonda gratitudine!\" Diversi membri del gruppo di ricerca sorridono in modo complice, chiaramente entusiasti di saltare la fila. Anche Sieasej ti ringrazia e ti fa capire che terrà \"gli occhi aperti per altre occasioni interessanti\".",
+ "12": "has deferred",
+ "13": "\tTi rendi conto che il gruppo di ricerca sui Predecessori di Casa Sioeora sta probabilmente ancora aspettando di sapere se puoi trasportarli su <planet stopovers>. Vuoi contattarli?",
+ "14": "\t(Sì.)",
+ "15": "\t(Non ora.)",
+ "16": "\t(Mai.)"
+}

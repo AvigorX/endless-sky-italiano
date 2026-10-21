@@ -1,0 +1,121 @@
+{
+ "block": {
+  "path": "data/coalition/coalition ships.txt",
+  "line_from": 59,
+  "line_to": 969,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Arach Courier|description|59|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 59,
+   "kind": "DESCRIPTION",
+   "context": "ship:Arach Courier",
+   "english": "These hardy little cargo ships are the perfect size for young Arachi just setting out into the sky with dreams of one day building their own merchant fleets. Of course, an Arach lucky enough to be born into one of the great Houses can probably find a patron to buy them a much larger ship instead.",
+   "italian": "Queste piccole e robuste navi cargo sono della misura perfetta per i giovani Arachi che muovono i primi passi nel cielo sognando di costruirsi un giorno una propria flotta mercantile. Naturalmente, un Arach nato in una delle grandi Casate può probabilmente trovare un patrono che gli compri una nave molto più grande.",
+   "ratio": 1.067
+  },
+  {
+   "idx": 2,
+   "id": "ship:Arach Freighter|description|125|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 125,
+   "kind": "DESCRIPTION",
+   "context": "ship:Arach Freighter",
+   "english": "Arach cargo ship hulls are legendary for their durability. It is not uncommon for a large Arach family to convert a freighter that is no longer space-worthy into a planet-side dwelling, and even in the harshest of conditions these converted houses can last for hundreds of years with little or no exterior maintenance.",
+   "italian": "Gli scafi delle navi cargo Arach sono leggendari per la loro durata. Non è raro che una grande famiglia Arach converta un cargo non più idoneo allo spazio in un'abitazione sulla superficie di un pianeta, e anche nelle condizioni più dure queste case riconvertite possono durare centinaia di anni con poca o nessuna manutenzione esterna.",
+   "ratio": 1.057
+  },
+  {
+   "idx": 3,
+   "id": "ship:Arach Hulk|description|200|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 200,
+   "kind": "DESCRIPTION",
+   "context": "ship:Arach Hulk",
+   "english": "The Arachi believe that efficient functionality is the highest form of beauty, and none of their ships demonstrate that principle more clearly than the ugly yet utilitarian Hulk, designed with detachable side pods that can be swapped out on a planet in a matter of minutes if the captain is in a hurry to reach the next destination.",
+   "italian": "Gli Arachi credono che la funzionalità efficiente sia la più alta forma di bellezza, e nessuna delle loro navi dimostra quel principio più chiaramente dell'Hulk, brutto eppure utilitario, progettato con pod laterali staccabili che si possono sostituire su un pianeta in pochi minuti, se il capitano ha fretta di raggiungere la prossima destinazione.",
+   "ratio": 1.051
+  },
+  {
+   "idx": 4,
+   "id": "ship:Arach Spindle|description|275|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 275,
+   "kind": "DESCRIPTION",
+   "context": "ship:Arach Spindle",
+   "english": "The Arach Hulk is an ungainly, lumbering behemoth of a ship, but with its side pods removed it becomes the much more maneuverable Spindle. Because of its much lower cargo space, usually the only reason a fleet would include a Spindle is if they are planning on picking up new cargo pods at their destination.",
+   "italian": "L'Arach Hulk è un colosso goffo e pesante, ma una volta tolti i pod laterali diventa lo Spindle, molto più maneggevole. Dato che lo spazio di carico è molto minore, di solito l'unico motivo per cui una flotta include uno Spindle è l'intenzione di ritirare nuovi pod da carico a destinazione.",
+   "ratio": 0.945
+  },
+  {
+   "idx": 5,
+   "id": "ship:Arach Transport|description|383|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 383,
+   "kind": "DESCRIPTION",
+   "context": "ship:Arach Transport",
+   "english": "The Arach Transport is the oldest of their ship designs, dating back to the time when they first joined the Coalition in overthrowing the Quarg and capturing their ringworlds. Back then, Transports were occasionally used as warships, but now, thousands of years later, they are considered outdated compared to the latest Heliarch military ships.",
+   "italian": "L'Arach Transport è il più antico dei progetti di navi Arachi e risale al tempo in cui si unirono per la prima volta alla Coalizione per rovesciare i Quarg e conquistare i loro mondi ad anello. All'epoca i Transport erano talvolta usati come navi da guerra, ma oggi, migliaia di anni dopo, sono considerati superati rispetto alle più recenti navi militari Heliarch.",
+   "ratio": 1.058
+  },
+  {
+   "idx": 6,
+   "id": "ship:Heliarch Breacher|description|461|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 461,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Breacher",
+   "english": "The Breacher isn't the most durable Heliarch vessel, but its impressive forward speed and high firepower for its size make this ship ideal for strafing runs.",
+   "italian": "Il Breacher non è la nave Heliarch più resistente, ma la sua notevole velocità in avanti e la potenza di fuoco elevata per le sue dimensioni lo rendono ideale per gli attacchi a volo radente.",
+   "ratio": 1.217
+  },
+  {
+   "idx": 7,
+   "id": "ship:Heliarch Hunter|description|588|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 588,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Hunter",
+   "english": "Although they mostly serve as patrol vessels nowadays in peacetime, Hunters were originally designed to quickly track down dissidents and bring them to justice.",
+   "italian": "Sebbene oggi, in tempo di pace, servano per lo più come pattugliatori, gli Hunter furono progettati in origine per rintracciare rapidamente i dissidenti e portarli davanti alla giustizia.",
+   "ratio": 1.169
+  },
+  {
+   "idx": 8,
+   "id": "ship:Heliarch Interdictor|description|779|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 779,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Interdictor",
+   "english": "Anyone who incurs the wrath of the Heliarchs cannot count on making a fast getaway thanks to the Interdictors, which were primarily designed to carry a pair of attractor and repulsor beams that can hold a ship a safe distance away while pushing it around enough to prevent it from getting a hyperspace lock to jump out of the system.",
+   "italian": "Chiunque si attiri l'ira degli Heliarch non può contare su una fuga rapida, grazie agli Interdictor, progettati soprattutto per portare una coppia di raggi attrattori e repulsori capaci di tenere una nave a distanza di sicurezza e al tempo stesso di spingerla abbastanza da impedirle di ottenere un aggancio iperspaziale per saltare fuori dal sistema.",
+   "ratio": 1.054
+  },
+  {
+   "idx": 9,
+   "id": "ship:Heliarch Judicator|description|968|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 968,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Judicator",
+   "english": "During their time battling the Quarg, the Coalition focused on producing the strongest, toughest warships they could, so fightercraft were out of the question. Now, however, the Heliarch's shield matrix and hull integrity technology is much more advanced, and they have recently experimented with such ships. The Judicator was made for transportation of these new fighters.",
+   "italian": "Durante il periodo in cui combatterono i Quarg, la Coalizione si concentrò sul produrre le navi da guerra più forti e resistenti possibile, quindi i caccia erano fuori discussione. Oggi però la tecnologia degli Heliarch per la matrice di scudi e l'integrità dello scafo è molto più avanzata, e di recente hanno sperimentato navi di questo tipo. Il Judicator è stato costruito per trasportare questi nuovi caccia.",
+   "ratio": 1.105
+  },
+  {
+   "idx": 10,
+   "id": "ship:Heliarch Judicator|description|969|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 969,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Judicator",
+   "english": "\tAlongside their six fighter bays, Judicators come with a large bunk count and higher cargo space than other Heliarch warships, thus doubling as a logistics vessel for transporting troops and equipment.",
+   "italian": "\tOltre alle sei baie di caccia, i Judicator hanno un gran numero di cuccette e più spazio di carico rispetto alle altre navi da guerra Heliarch, e fungono quindi anche da nave logistica per trasportare truppe ed equipaggiamento.",
+   "ratio": 1.129
+  }
+ ]
+}

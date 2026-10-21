@@ -1,0 +1,128 @@
+{
+ "block": {
+  "path": "data/human/marauders.txt",
+  "line_from": 548,
+  "line_to": 858,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Marauder Leviathan|description|548|0",
+   "path": "data/human/marauders.txt",
+   "line": 548,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Leviathan",
+   "english": "The Betelgeuse Shipyards Leviathan has been in service for a long time, and captains have had some very interesting ideas about how to modify them for optimum performance. This one has had the hull surface completely stripped and replaced, with the new layout containing more shield projectors per square meter.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Betelgeuse Shipyards Leviathan has been in service for a long time, and captains have had some very interesting ideas about how to modify them for optimum performance. This one has had the hull surface completely stripped and replaced, with the new layout containing more shield projectors per square meter.\"",
+   "english_hash": "a68170853e45253e"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Marauder Leviathan|description|580|0",
+   "path": "data/human/marauders.txt",
+   "line": 580,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Leviathan",
+   "english": "As if the Leviathan wasn't a terrifying enough ship already, this one has been heavily modified with special attention paid to the engine capacity, enabling it to bring its guns to bear even faster.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"As if the Leviathan wasn't a terrifying enough ship already, this one has been heavily modified with special attention paid to the engine capacity, enabling it to bring its guns to bear even faster.\"",
+   "english_hash": "a8785922c442c6a2"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Marauder Leviathan|description|616|0",
+   "path": "data/human/marauders.txt",
+   "line": 616,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Leviathan",
+   "english": "This Leviathan once belonged to an infamous pirate captain whose name has been lost to the ages. It's had so much custom work done to it that can hardly even be considered the same ship; the weapons capacity, in particular, has been massively increased.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This Leviathan once belonged to an infamous pirate captain whose name has been lost to the ages. It's had so much custom work done to it that can hardly even be considered the same ship; the weapons capacity, in particular, has been massively increased.\"",
+   "english_hash": "7c2111db9ce95978"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Marauder Manta|description|676|0",
+   "path": "data/human/marauders.txt",
+   "line": 676,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Manta",
+   "english": "After the Syndicate released their Vanguard Heavy Warship, the Manta fell somewhat out of favor due to its lack of ability to mount any anti-missile turrets. The owner of this Manta rectified that, added some extra armor plating and shield emitters, and rearranged some of the internals to yield a little more outfit space. Dry tonnage alone keeps it from being classified as a heavy warship.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `After the Syndicate released their Vanguard Heavy Warship, the Manta fell somewhat out of favor due to its lack of ability to mount any anti-missile turrets. The owner of this Manta rectified that, added some extra armor plating and shield emitters, and rearranged some of the internals to yield a little more outfit space. Dry tonnage alone keeps it from being classified as a heavy warship.`",
+   "english_hash": "4334d5906564a99d"
+  },
+  {
+   "idx": 5,
+   "id": "ship:Marauder Manta|description|710|0",
+   "path": "data/human/marauders.txt",
+   "line": 710,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Manta",
+   "english": "A previous owner of this Manta has gone to great lengths to make sure they could bring all six gun ports to bear in a hurry, and chase down smaller warships. Style was not lost on that captain, and a forked tail yielded a little more space for shield projectors in an area that would have been destabilized by engine exhaust. If its dry tonnage were any higher, it would be classified as a heavy warship.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `A previous owner of this Manta has gone to great lengths to make sure they could bring all six gun ports to bear in a hurry, and chase down smaller warships. Style was not lost on that captain, and a forked tail yielded a little more space for shield projectors in an area that would have been destabilized by engine exhaust. If its dry tonnage were any higher, it would be classified as a heavy warship.`",
+   "english_hash": "a73dadd447b665f5"
+  },
+  {
+   "idx": 6,
+   "id": "ship:Marauder Manta|description|747|0",
+   "path": "data/human/marauders.txt",
+   "line": 747,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Manta",
+   "english": "This Manta has undergone extensive modification, featuring extra hull plating, shield emitters, weapon space, and even a turret mount. Whoever modified it seems to have forgotten to include dedicated space for the power systems, as they're crammed in and around everything else like an afterthought. If its dry tonnage were any higher, it would be classified as a heavy warship.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `This Manta has undergone extensive modification, featuring extra hull plating, shield emitters, weapon space, and even a turret mount. Whoever modified it seems to have forgotten to include dedicated space for the power systems, as they're crammed in and around everything else like an afterthought. If its dry tonnage were any higher, it would be classified as a heavy warship.`",
+   "english_hash": "fe11a036c914c4eb"
+  },
+  {
+   "idx": 7,
+   "id": "ship:Marauder Quicksilver|description|799|0",
+   "path": "data/human/marauders.txt",
+   "line": 799,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Quicksilver",
+   "english": "This Megaparsec Quicksilver is a bit of a hotrod, being a little faster, with extra shield projectors, hull plating, and an extra bunk. This aftermarket model also features a turret mount, perhaps in an answer to Lionheart's Headhunter. The shop that built this ship is sure to see more customers.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This Megaparsec Quicksilver is a bit of a hotrod, being a little faster, with extra shield projectors, hull plating, and an extra bunk. This aftermarket model also features a turret mount, perhaps in an answer to Lionheart's Headhunter. The shop that built this ship is sure to see more customers.\"",
+   "english_hash": "43331bc092a11445"
+  },
+  {
+   "idx": 8,
+   "id": "ship:Marauder Quicksilver|description|831|0",
+   "path": "data/human/marauders.txt",
+   "line": 831,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Quicksilver",
+   "english": "This Quicksilver has even more space available for engine use - and even another thruster port! It's also got a few extra shield projectors, more hull plating, and another bunk. This aftermarket model also features a turret mount, perhaps in response to Lionheart's Headhunter. Whoever modified this ship wanted to chase their prey down with vicious speed.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This Quicksilver has even more space available for engine use - and even another thruster port! It's also got a few extra shield projectors, more hull plating, and another bunk. This aftermarket model also features a turret mount, perhaps in response to Lionheart's Headhunter. Whoever modified this ship wanted to chase their prey down with vicious speed.\"",
+   "english_hash": "177ea284673db574"
+  },
+  {
+   "idx": 9,
+   "id": "ship:Marauder Quicksilver|description|858|0",
+   "path": "data/human/marauders.txt",
+   "line": 858,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Quicksilver",
+   "english": "This Quicksilver has even more space available for engine use - and even another thruster port! It's also got a few extra shield projectors, more hull plating, and another bunk. This aftermarket model also features a turret mount, perhaps in response to Lionheart's Headhunter. Whoever modified this ship wanted to chase their prey down with vicious speed.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This Quicksilver has even more space available for engine use - and even another thruster port! It's also got a few extra shield projectors, more hull plating, and another bunk. This aftermarket model also features a turret mount, perhaps in response to Lionheart's Headhunter. Whoever modified this ship wanted to chase their prey down with vicious speed.\"",
+   "english_hash": "177ea284673db574"
+  }
+ ]
+}

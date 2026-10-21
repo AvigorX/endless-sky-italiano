@@ -1,0 +1,231 @@
+{
+ "block": {
+  "path": "data/avgi/avgi news.txt",
+  "line_from": 115,
+  "line_to": 180,
+  "units": 20
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:avgi merchant|\"Dejection. Reactor fuel grows in price each and every day.\"|115|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 115,
+   "kind": "NEWS",
+   "context": "news:avgi merchant",
+   "english": "\"Dejection. Reactor fuel grows in price each and every day.\"",
+   "italian": "\"Scoramento. Il carburante per reattore rincara ogni giorno che passa.\"",
+   "ratio": 1.183
+  },
+  {
+   "idx": 2,
+   "id": "news:avgi merchant|\"Relief. My ship barely made it to this port, ahead of a swarm of Aberrations!\"|116|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 116,
+   "kind": "NEWS",
+   "context": "news:avgi merchant",
+   "english": "\"Relief. My ship barely made it to this port, ahead of a swarm of Aberrations!\"",
+   "italian": "\"Sollievo. La mia nave è arrivata a questo porto per un soffio, inseguita da uno sciame di Aberrant!\"",
+   "ratio": 1.278
+  },
+  {
+   "idx": 3,
+   "id": "news:avgi merchant|\"Secrecy. The taxes levied by the Consonance can be evaded at certain ports, if one knows where to look.\"|117|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 117,
+   "kind": "NEWS",
+   "context": "news:avgi merchant",
+   "english": "\"Secrecy. The taxes levied by the Consonance can be evaded at certain ports, if one knows where to look.\"",
+   "italian": "\"Segretezza. Le tasse imposte dalla Consonance si possono evadere in certi porti, se si sa dove guardare.\"",
+   "ratio": 1.01
+  },
+  {
+   "idx": 4,
+   "id": "news:avgi merchant|\"Defiance. I may not have a credit to my name, but no one will take my ship from me while I still live.\"|118|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 118,
+   "kind": "NEWS",
+   "context": "news:avgi merchant",
+   "english": "\"Defiance. I may not have a credit to my name, but no one will take my ship from me while I still live.\"",
+   "italian": "\"Sfida. Sarà anche vero che non ho un credito a mio nome, ma nessuno mi porterà via la nave finché sono vivo.\"",
+   "ratio": 1.058
+  },
+  {
+   "idx": 5,
+   "id": "news:avgi merchant|\"Doubt. If the Aberrant could reach us inside the Tangled Shroud, they would have by now. I don't see why the new taxes are necessary.\"|119|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 119,
+   "kind": "NEWS",
+   "context": "news:avgi merchant",
+   "english": "\"Doubt. If the Aberrant could reach us inside the Tangled Shroud, they would have by now. I don't see why the new taxes are necessary.\"",
+   "italian": "\"Dubbio. Se gli Aberrant potessero raggiungerci dentro il Tangled Shroud, l'avrebbero già fatto. Non vedo perché le nuove tasse siano necessarie.\"",
+   "ratio": 1.081
+  },
+  {
+   "idx": 6,
+   "id": "news:avgi merchant|\"Irony. The only reason every freighter isn't automated these days is piracy. Thank you, pirates!\"|120|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 120,
+   "kind": "NEWS",
+   "context": "news:avgi merchant",
+   "english": "\"Irony. The only reason every freighter isn't automated these days is piracy. Thank you, pirates!\"",
+   "italian": "\"Ironia. L'unica ragione per cui oggigiorno non tutti i mercantili sono automatizzati sono i pirati. Grazie, pirati!\"",
+   "ratio": 1.194
+  },
+  {
+   "idx": 7,
+   "id": "news:avgi merchant|\"Intrigue. Did you hear about the new trade route through the Tangled Shroud? I smell profit!\"|121|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 121,
+   "kind": "NEWS",
+   "context": "news:avgi merchant",
+   "english": "\"Intrigue. Did you hear about the new trade route through the Tangled Shroud? I smell profit!\"",
+   "italian": "\"Interesse. Hai sentito della nuova rotta commerciale attraverso il Tangled Shroud? Sento odore di profitto!\"",
+   "ratio": 1.16
+  },
+  {
+   "idx": 8,
+   "id": "news:avgi merchant|\"Pride. My shipping company helped over a thousand Avgi escape Stilacrest before its skyhook was broken. I still get letters of gratitude to this day!\"|122|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 122,
+   "kind": "NEWS",
+   "context": "news:avgi merchant",
+   "english": "\"Pride. My shipping company helped over a thousand Avgi escape Stilacrest before its skyhook was broken. I still get letters of gratitude to this day!\"",
+   "italian": "\"Orgoglio. La mia compagnia di navigazione ha aiutato più di mille Avgi a fuggire da Stilacrest prima che il suo skyhook venisse spezzato. Ricevo ancora lettere di ringraziamento.\"",
+   "ratio": 1.192
+  },
+  {
+   "idx": 9,
+   "id": "news:avgi merchant|\"Satisfaction. My transport business escaped the Incursion with nearly all of its ships intact. Now I'm one of the richest Avgi in the galaxy!\"|123|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 123,
+   "kind": "NEWS",
+   "context": "news:avgi merchant",
+   "english": "\"Satisfaction. My transport business escaped the Incursion with nearly all of its ships intact. Now I'm one of the richest Avgi in the galaxy!\"",
+   "italian": "\"Soddisfazione. La mia impresa di trasporti è uscita dall'Incursione con quasi tutte le navi intatte. Ora sono uno degli Avgi più ricchi della galassia!\"",
+   "ratio": 1.07
+  },
+  {
+   "idx": 10,
+   "id": "news:avgi merchant|\"Sadness. It's a shame we lose a convoy to the Aberrant nearly every week.\"|124|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 124,
+   "kind": "NEWS",
+   "context": "news:avgi merchant",
+   "english": "\"Sadness. It's a shame we lose a convoy to the Aberrant nearly every week.\"",
+   "italian": "\"Tristezza. È un peccato perdere un convoglio per mano degli Aberrant quasi ogni settimana.\"",
+   "ratio": 1.227
+  },
+  {
+   "idx": 11,
+   "id": "news:avgi politician|\"Exasperation. Everyone in the Assembly knows the taxes and quotas are unpopular, but there's no other way to fight the war against the Aberrant.\"|150|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 150,
+   "kind": "NEWS",
+   "context": "news:avgi politician",
+   "english": "\"Exasperation. Everyone in the Assembly knows the taxes and quotas are unpopular, but there's no other way to fight the war against the Aberrant.\"",
+   "italian": "\"Esasperazione. Nell'Assemblea tutti sanno che tasse e quote sono impopolari, ma non c'è altro modo di combattere la guerra contro gli Aberrant.\"",
+   "ratio": 0.993
+  },
+  {
+   "idx": 12,
+   "id": "news:avgi politician|\"Pride. Before the Incursion, there were over a thousand recognized independent polities among the Avgi. Now, the Consonance is ready to unite our species.\"|151|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 151,
+   "kind": "NEWS",
+   "context": "news:avgi politician",
+   "english": "\"Pride. Before the Incursion, there were over a thousand recognized independent polities among the Avgi. Now, the Consonance is ready to unite our species.\"",
+   "italian": "\"Orgoglio. Prima dell'Incursione, tra gli Avgi c'erano più di mille entità politiche indipendenti riconosciute. Ora la Consonance è pronta a unire la nostra specie.\"",
+   "ratio": 1.058
+  },
+  {
+   "idx": 13,
+   "id": "news:avgi politician|\"Mocking. Why of course, I never considered before that we should simply build more ships to defeat the Aberrant. Have you considered petitioning the Assembly with your idea?\"|152|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 152,
+   "kind": "NEWS",
+   "context": "news:avgi politician",
+   "english": "\"Mocking. Why of course, I never considered before that we should simply build more ships to defeat the Aberrant. Have you considered petitioning the Assembly with your idea?\"",
+   "italian": "\"Derisione. Ma certo, non ci avevo mai pensato: dovremmo semplicemente costruire più navi per sconfiggere gli Aberrant. Hai mai pensato di presentare la tua idea all'Assemblea con una petizione?\"",
+   "ratio": 1.114
+  },
+  {
+   "idx": 14,
+   "id": "news:avgi politician|\"Humor. Reaching a consensus among hundreds of independent polities is more difficult than fighting an existential war for the survival of your species. And less exciting.\"|153|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 153,
+   "kind": "NEWS",
+   "context": "news:avgi politician",
+   "english": "\"Humor. Reaching a consensus among hundreds of independent polities is more difficult than fighting an existential war for the survival of your species. And less exciting.\"",
+   "italian": "\"Umorismo. Trovare un consenso tra centinaia di entità politiche indipendenti è più difficile che combattere una guerra esistenziale per la sopravvivenza della propria specie. E meno emozionante.\"",
+   "ratio": 1.14
+  },
+  {
+   "idx": 15,
+   "id": "news:avgi politician|\"Reservation. While those of us who understand matters of policy accept that the war economy is necessary, the people are beginning to chafe under the long economic austerity it has imposed. More needs to be done to inform the common people lest we lose the war behind the front lines.\"|154|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 154,
+   "kind": "NEWS",
+   "context": "news:avgi politician",
+   "english": "\"Reservation. While those of us who understand matters of policy accept that the war economy is necessary, the people are beginning to chafe under the long economic austerity it has imposed. More needs to be done to inform the common people lest we lose the war behind the front lines.\"",
+   "italian": "\"Riserva. Noi che capiamo di politica accettiamo che l'economia di guerra sia necessaria, ma la gente comincia a spazientirsi per la lunga austerità economica che ha imposto. Bisogna fare di più per informare la gente comune, altrimenti rischiamo di perdere la guerra dietro le linee del fronte.\"",
+   "ratio": 1.035
+  },
+  {
+   "idx": 16,
+   "id": "news:avgi politician|\"Assurance. The current debts will surely not be enforced once the war ends. And if they are, we'll be the ones collecting them.\"|155|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 155,
+   "kind": "NEWS",
+   "context": "news:avgi politician",
+   "english": "\"Assurance. The current debts will surely not be enforced once the war ends. And if they are, we'll be the ones collecting them.\"",
+   "italian": "\"Rassicurazione. I debiti attuali non verranno certo fatti valere quando la guerra sarà finita. E se lo saranno, saremo noi a riscuoterli.\"",
+   "ratio": 1.078
+  },
+  {
+   "idx": 17,
+   "id": "news:avgi military|\"Have you any reports of Aberrations in the Shroud, question?\"|177|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 177,
+   "kind": "NEWS",
+   "context": "news:avgi military",
+   "english": "\"Have you any reports of Aberrations in the Shroud, question?\"",
+   "italian": "\"Hai qualche notizia di Aberrant nello Shroud, domanda?\"",
+   "ratio": 0.903
+  },
+  {
+   "idx": 18,
+   "id": "news:avgi military|\"Pensive. Sometimes I wonder at the future of our species, and whether we are up to the task of defending it.\"|178|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 178,
+   "kind": "NEWS",
+   "context": "news:avgi military",
+   "english": "\"Pensive. Sometimes I wonder at the future of our species, and whether we are up to the task of defending it.\"",
+   "italian": "\"Riflessione. A volte mi chiedo quale sarà il futuro della nostra specie, e se saremo all'altezza del compito di difenderla.\"",
+   "ratio": 1.136
+  },
+  {
+   "idx": 19,
+   "id": "news:avgi military|\"Resolve. The Guard is the only thing standing between our people and the Aberrant, and I intend to do my duty or die trying.\"|179|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 179,
+   "kind": "NEWS",
+   "context": "news:avgi military",
+   "english": "\"Resolve. The Guard is the only thing standing between our people and the Aberrant, and I intend to do my duty or die trying.\"",
+   "italian": "\"Determinazione. La Guardia è l'unica cosa che separa la nostra gente dagli Aberrant, e intendo fare il mio dovere o morire provandoci.\"",
+   "ratio": 1.079
+  },
+  {
+   "idx": 20,
+   "id": "news:avgi military|\"Pride. Once I was a mere page on a courier ship, moving stacks of memory sheets between star systems. Look at me now!\"|180|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 180,
+   "kind": "NEWS",
+   "context": "news:avgi military",
+   "english": "\"Pride. Once I was a mere page on a courier ship, moving stacks of memory sheets between star systems. Look at me now!\"",
+   "italian": "\"Orgoglio. Un tempo ero solo un paggetto su una nave corriere, che spostava pile di fogli di memoria tra un sistema stellare e l'altro. Guardami ora!\"",
+   "ratio": 1.261
+  }
+ ]
+}

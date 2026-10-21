@@ -1,0 +1,198 @@
+{
+ "block": {
+  "path": "data/human/engines.txt",
+  "line_from": 488,
+  "line_to": 717,
+  "units": 17
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Orca Plasma Steering|description|488|0",
+   "path": "data/human/engines.txt",
+   "line": 488,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Orca Plasma Steering",
+   "english": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "italian": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Tyrant Plasma Steering|description|505|0",
+   "path": "data/human/engines.txt",
+   "line": 505,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tyrant Plasma Steering",
+   "english": "As with the corresponding thruster, the Tyrant class steering system is so large and powerful that very few ships can make use of it.",
+   "italian": "As with the corresponding thruster, the Tyrant class steering system is so large and powerful that very few ships can make use of it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Tyrant Plasma Steering|description|506|0",
+   "path": "data/human/engines.txt",
+   "line": 506,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tyrant Plasma Steering",
+   "english": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "italian": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Capybara Reverse Thruster|description|524|0",
+   "path": "data/human/engines.txt",
+   "line": 524,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Capybara Reverse Thruster",
+   "english": "Large ships often lack the maneuverability to perform the 180 degree turns needed to come to a stop on short notice. For such massive vessels, a reverse thruster allows them to accelerate smoothly backwards, without needing to turn around.",
+   "italian": "Large ships often lack the maneuverability to perform the 180 degree turns needed to come to a stop on short notice. For such massive vessels, a reverse thruster allows them to accelerate smoothly backwards, without needing to turn around.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Capybara Reverse Thruster|description|525|0",
+   "path": "data/human/engines.txt",
+   "line": 525,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Capybara Reverse Thruster",
+   "english": "\tBecause a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section.",
+   "italian": "\tBecause a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:A120 Atomic Thruster|description|544|0",
+   "path": "data/human/engines.txt",
+   "line": 544,
+   "kind": "DESCRIPTION",
+   "context": "outfit:A120 Atomic Thruster",
+   "english": "If you're looking for the most powerful engine that will fit into your ship, and have plenty of money to burn, Deep Sky's atomic thrusters are your answer. Of course, the extra energy and cooling they require can easily offset the benefit of their small size.",
+   "italian": "If you're looking for the most powerful engine that will fit into your ship, and have plenty of money to burn, Deep Sky's atomic thrusters are your answer. Of course, the extra energy and cooling they require can easily offset the benefit of their small size.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:A250 Atomic Thruster|description|561|0",
+   "path": "data/human/engines.txt",
+   "line": 561,
+   "kind": "DESCRIPTION",
+   "context": "outfit:A250 Atomic Thruster",
+   "english": "Deep Sky's atomic thrusters have been in production for centuries, but remain a niche product due to their high prices and high energy requirements.",
+   "italian": "Deep Sky's atomic thrusters have been in production for centuries, but remain a niche product due to their high prices and high energy requirements.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:A370 Atomic Thruster|description|578|0",
+   "path": "data/human/engines.txt",
+   "line": 578,
+   "kind": "DESCRIPTION",
+   "context": "outfit:A370 Atomic Thruster",
+   "english": "This thruster is small enough to fit in a light warship or freighter, but powerful enough to move any but the largest of ships. Naturally, such performance comes at an exorbitant price.",
+   "italian": "This thruster is small enough to fit in a light warship or freighter, but powerful enough to move any but the largest of ships. Naturally, such performance comes at an exorbitant price.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:A520 Atomic Thruster|description|595|0",
+   "path": "data/human/engines.txt",
+   "line": 595,
+   "kind": "DESCRIPTION",
+   "context": "outfit:A520 Atomic Thruster",
+   "english": "If your ship is sporting a set of Deep Sky's atomic engines, you will be the envy of every pilot in the galaxy. No other form of propulsion that humanity has discovered produces so much thrust from such a small engine.",
+   "italian": "If your ship is sporting a set of Deep Sky's atomic engines, you will be the envy of every pilot in the galaxy. No other form of propulsion that humanity has discovered produces so much thrust from such a small engine.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:A860 Atomic Thruster|description|612|0",
+   "path": "data/human/engines.txt",
+   "line": 612,
+   "kind": "DESCRIPTION",
+   "context": "outfit:A860 Atomic Thruster",
+   "english": "The A860 Atomic Thruster is the most powerful engine sold in human space, and is much more compact than any of the alternatives. But, you may need to upgrade your ship's power and cooling systems to handle it.",
+   "italian": "The A860 Atomic Thruster is the most powerful engine sold in human space, and is much more compact than any of the alternatives. But, you may need to upgrade your ship's power and cooling systems to handle it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:A125 Atomic Steering|description|630|0",
+   "path": "data/human/engines.txt",
+   "line": 630,
+   "kind": "DESCRIPTION",
+   "context": "outfit:A125 Atomic Steering",
+   "english": "Deep Sky's atomic thrusters are a popular choice for high-end starships. It is not uncommon for a set of atomic engines to cost more than the ship they are installed in.",
+   "italian": "Deep Sky's atomic thrusters are a popular choice for high-end starships. It is not uncommon for a set of atomic engines to cost more than the ship they are installed in.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:A255 Atomic Steering|description|647|0",
+   "path": "data/human/engines.txt",
+   "line": 647,
+   "kind": "DESCRIPTION",
+   "context": "outfit:A255 Atomic Steering",
+   "english": "If you have exhausted all your other options for making your ship more maneuverable, it may be time to invest in a set of atomic engines.",
+   "italian": "If you have exhausted all your other options for making your ship more maneuverable, it may be time to invest in a set of atomic engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:A375 Atomic Steering|description|664|0",
+   "path": "data/human/engines.txt",
+   "line": 664,
+   "kind": "DESCRIPTION",
+   "context": "outfit:A375 Atomic Steering",
+   "english": "Bounty hunters and other captains who need to gain a speed advantage over the ships they are pursuing often dream of being able to save up enough money for a set of atomic engines.",
+   "italian": "Bounty hunters and other captains who need to gain a speed advantage over the ships they are pursuing often dream of being able to save up enough money for a set of atomic engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:A525 Atomic Steering|description|681|0",
+   "path": "data/human/engines.txt",
+   "line": 681,
+   "kind": "DESCRIPTION",
+   "context": "outfit:A525 Atomic Steering",
+   "english": "This set of maneuvering thrusters from Deep Sky will allow small warships to turn as fast as a fighter. For larger ships, swapping the existing engines with a set of atomics can free up a considerable amount of space for other outfits or weapons.",
+   "italian": "This set of maneuvering thrusters from Deep Sky will allow small warships to turn as fast as a fighter. For larger ships, swapping the existing engines with a set of atomics can free up a considerable amount of space for other outfits or weapons.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:A865 Atomic Steering|description|698|0",
+   "path": "data/human/engines.txt",
+   "line": 698,
+   "kind": "DESCRIPTION",
+   "context": "outfit:A865 Atomic Steering",
+   "english": "Atomic engines are considered by many to be Deep Sky's crowning achievement. Although they are so expensive that relatively few of them are in use, there are few captains who do not dream of one day installing a set of them.",
+   "italian": "Atomic engines are considered by many to be Deep Sky's crowning achievement. Although they are so expensive that relatively few of them are in use, there are few captains who do not dream of one day installing a set of them.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:AR120 Reverse Thruster|description|716|0",
+   "path": "data/human/engines.txt",
+   "line": 716,
+   "kind": "DESCRIPTION",
+   "context": "outfit:AR120 Reverse Thruster",
+   "english": "For pilots who want to pull fancy tricks that most are not capable of duplicating, a reverse thruster allows a ship to accelerate backwards, without needing to turn around.",
+   "italian": "For pilots who want to pull fancy tricks that most are not capable of duplicating, a reverse thruster allows a ship to accelerate backwards, without needing to turn around.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:AR120 Reverse Thruster|description|717|0",
+   "path": "data/human/engines.txt",
+   "line": 717,
+   "kind": "DESCRIPTION",
+   "context": "outfit:AR120 Reverse Thruster",
+   "english": "\tBecause a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section.",
+   "italian": "\tBecause a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section.",
+   "ratio": 1.0
+  }
+ ]
+}

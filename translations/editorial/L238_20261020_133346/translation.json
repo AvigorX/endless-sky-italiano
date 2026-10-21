@@ -1,0 +1,242 @@
+{
+ "block": {
+  "path": "data/avgi/avgi news.txt",
+  "line_from": 418,
+  "line_to": 507,
+  "units": 21
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:avgi engineer|\"Fascination. You would be surprised at how many problems shields, even weak ones, solve. They aren't only good for protecting against weapons fire!\"|418|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 418,
+   "kind": "NEWS",
+   "context": "news:avgi engineer",
+   "english": "\"Fascination. You would be surprised at how many problems shields, even weak ones, solve. They aren't only good for protecting against weapons fire!\"",
+   "italian": "\"Fascinazione. Rimarresti sorpreso da quanti problemi risolvano gli scudi, anche quelli deboli. Non servono solo a proteggere dal fuoco delle armi!\"",
+   "ratio": 0.993
+  },
+  {
+   "idx": 2,
+   "id": "news:avgi engineer|\"Curiosity. I am told our current materials science is within an order of magnitude of the limits of the atomic bond strength, yet the Aberrant hulls are so much stronger than our own. How is that possible?\"|419|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 419,
+   "kind": "NEWS",
+   "context": "news:avgi engineer",
+   "english": "\"Curiosity. I am told our current materials science is within an order of magnitude of the limits of the atomic bond strength, yet the Aberrant hulls are so much stronger than our own. How is that possible?\"",
+   "italian": "\"Curiosità. Mi dicono che la nostra scienza dei materiali è entro un ordine di grandezza dai limiti della forza del legame atomico, eppure gli scafi degli Aberrant sono molto più resistenti dei nostri. Com'è possibile?\"",
+   "ratio": 1.058
+  },
+  {
+   "idx": 3,
+   "id": "news:avgi engineer|\"Amusement. We once thought our materials science was at the limit of what is possible with atomic matter. Then we met the Aberrant. What else do we have yet to learn?\"|420|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 420,
+   "kind": "NEWS",
+   "context": "news:avgi engineer",
+   "english": "\"Amusement. We once thought our materials science was at the limit of what is possible with atomic matter. Then we met the Aberrant. What else do we have yet to learn?\"",
+   "italian": "\"Divertimento. Pensavamo che la nostra scienza dei materiali fosse al limite di ciò che è possibile con la materia atomica. Poi abbiamo incontrato gli Aberrant. Quanto ci resta ancora da imparare?\"",
+   "ratio": 1.173
+  },
+  {
+   "idx": 4,
+   "id": "news:avgi engineer|\"Appreciation. Most people don't realize just how hard interstellar travel was before the hyperdrive.\"|421|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 421,
+   "kind": "NEWS",
+   "context": "news:avgi engineer",
+   "english": "\"Appreciation. Most people don't realize just how hard interstellar travel was before the hyperdrive.\"",
+   "italian": "\"Apprezzamento. Molti non si rendono conto di quanto fosse duro il viaggio interstellare prima dell'iperpropulsore.\"",
+   "ratio": 1.137
+  },
+  {
+   "idx": 5,
+   "id": "news:avgi engineer|\"Advisement. You'd be surprised at how fast a fusion torch can wear out if you don't maintain it properly. Radiation is nasty business!\"|422|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 422,
+   "kind": "NEWS",
+   "context": "news:avgi engineer",
+   "english": "\"Advisement. You'd be surprised at how fast a fusion torch can wear out if you don't maintain it properly. Radiation is nasty business!\"",
+   "italian": "\"Avviso. Rimarresti sorpreso di quanto in fretta una torcia a fusione si consumi se non la mantieni bene. Le radiazioni sono un brutto affare!\"",
+   "ratio": 1.051
+  },
+  {
+   "idx": 6,
+   "id": "news:avgi engineer|\"Appreciation. Before humans brought us energy shields, torchships had to be a lot more careful about where they pointed their engines!\"|423|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 423,
+   "kind": "NEWS",
+   "context": "news:avgi engineer",
+   "english": "\"Appreciation. Before humans brought us energy shields, torchships had to be a lot more careful about where they pointed their engines!\"",
+   "italian": "\"Apprezzamento. Prima che gli umani ci portassero gli scudi energetici, le navi a torcia dovevano stare molto più attente a dove puntavano i motori!\"",
+   "ratio": 1.096
+  },
+  {
+   "idx": 7,
+   "id": "news:avgi engineer|\"Annoyance. Everyone should work in a machine shop at least once in their lives, before claiming a nanometer tolerance on a bolt is 'reasonable!'\"|424|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 424,
+   "kind": "NEWS",
+   "context": "news:avgi engineer",
+   "english": "\"Annoyance. Everyone should work in a machine shop at least once in their lives, before claiming a nanometer tolerance on a bolt is 'reasonable!'\"",
+   "italian": "\"Fastidio. Tutti dovrebbero lavorare in un'officina meccanica almeno una volta nella vita, prima di dire che una tolleranza al nanometro su un bullone è 'ragionevole'!\"",
+   "ratio": 1.151
+  },
+  {
+   "idx": 8,
+   "id": "news:avgi artist|\"Pride. I completed a new piece just the other day.\"|452|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 452,
+   "kind": "NEWS",
+   "context": "news:avgi artist",
+   "english": "\"Pride. I completed a new piece just the other day.\"",
+   "italian": "\"Orgoglio. Ho finito un'opera nuova proprio l'altro giorno.\"",
+   "ratio": 1.154
+  },
+  {
+   "idx": 9,
+   "id": "news:avgi artist|\"Frustration. No one's in the market for art these days.\"|453|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 453,
+   "kind": "NEWS",
+   "context": "news:avgi artist",
+   "english": "\"Frustration. No one's in the market for art these days.\"",
+   "italian": "\"Frustrazione. Nessuno è più sul mercato per l'arte, di questi tempi.\"",
+   "ratio": 1.228
+  },
+  {
+   "idx": 10,
+   "id": "news:avgi artist|\"Don't believe people who say art is a waste, emphasis. It's not like we're taking resources away from the War effort.\"|454|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 454,
+   "kind": "NEWS",
+   "context": "news:avgi artist",
+   "english": "\"Don't believe people who say art is a waste, emphasis. It's not like we're taking resources away from the War effort.\"",
+   "italian": "\"Non credere a chi dice che l'arte sia uno spreco, enfasi. Non è che stiamo togliendo risorse allo sforzo bellico.\"",
+   "ratio": 0.966
+  },
+  {
+   "idx": 11,
+   "id": "news:avgi performer|\"Pride. I performed a piece just the other day in front of the entire Assembly. I'm sure they loved it!\"|478|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 478,
+   "kind": "NEWS",
+   "context": "news:avgi performer",
+   "english": "\"Pride. I performed a piece just the other day in front of the entire Assembly. I'm sure they loved it!\"",
+   "italian": "\"Orgoglio. Ho eseguito un'opera proprio l'altro giorno davanti all'intera Assemblea. Sono certo che l'abbiano adorata!\"",
+   "ratio": 1.144
+  },
+  {
+   "idx": 12,
+   "id": "news:avgi performer|\"Pride. The Twilight Guard loves to book me to entertain the Guards coming back from the front lines. It's good to know I'm doing my part.\"|479|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 479,
+   "kind": "NEWS",
+   "context": "news:avgi performer",
+   "english": "\"Pride. The Twilight Guard loves to book me to entertain the Guards coming back from the front lines. It's good to know I'm doing my part.\"",
+   "italian": "\"Orgoglio. La Twilight Guard ama scritturarmi per intrattenere le Guardie che tornano dal fronte. Fa bene sapere di fare la mia parte.\"",
+   "ratio": 0.971
+  },
+  {
+   "idx": 13,
+   "id": "news:avgi performer|\"Satisfaction. You never know when one of the people who managed to buy their way out of the siege wants entertainment, but the paycheck makes it all worth it.\"|480|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 480,
+   "kind": "NEWS",
+   "context": "news:avgi performer",
+   "english": "\"Satisfaction. You never know when one of the people who managed to buy their way out of the siege wants entertainment, but the paycheck makes it all worth it.\"",
+   "italian": "\"Soddisfazione. Non sai mai quando uno di quelli che sono riusciti a comprarsi l'uscita dall'assedio vuole un po' di svago, ma la paga ripaga di tutto.\"",
+   "ratio": 0.95
+  },
+  {
+   "idx": 14,
+   "id": "news:avgi doctor|\"Appreciation. The natural lifespan of an Avgi averaged about sixty years, before genetic engineering and nanomedicine more than doubled it.\"|500|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 500,
+   "kind": "NEWS",
+   "context": "news:avgi doctor",
+   "english": "\"Appreciation. The natural lifespan of an Avgi averaged about sixty years, before genetic engineering and nanomedicine more than doubled it.\"",
+   "italian": "\"Apprezzamento. La durata naturale della vita di un Avgi era di circa sessant'anni, prima che l'ingegneria genetica e la nanomedicina la più che raddoppiassero.\"",
+   "ratio": 1.142
+  },
+  {
+   "idx": 15,
+   "id": "news:avgi doctor|\"Amusement. The number of people who think medicytes can cure any disease or heal any condition grows every time a new version is released. If only they really worked that easily...\"|501|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 501,
+   "kind": "NEWS",
+   "context": "news:avgi doctor",
+   "english": "\"Amusement. The number of people who think medicytes can cure any disease or heal any condition grows every time a new version is released. If only they really worked that easily...\"",
+   "italian": "\"Divertimento. Il numero di chi crede che i mediciti possano curare qualsiasi malattia o guarire qualsiasi condizione cresce a ogni nuova versione rilasciata. Se solo funzionassero davvero con tanta facilità...\"",
+   "ratio": 1.159
+  },
+  {
+   "idx": 16,
+   "id": "news:avgi doctor|\"Fascination. Avgi have teardrop-shaped brains made of opaque quartz. The foggy color actually comes from organic tissue embedded in the crystal!\"|502|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 502,
+   "kind": "NEWS",
+   "context": "news:avgi doctor",
+   "english": "\"Fascination. Avgi have teardrop-shaped brains made of opaque quartz. The foggy color actually comes from organic tissue embedded in the crystal!\"",
+   "italian": "\"Fascinazione. Gli Avgi hanno cervelli a forma di goccia fatti di quarzo opaco. Il colore velato viene in realtà dal tessuto organico incastonato nel cristallo!\"",
+   "ratio": 1.103
+  },
+  {
+   "idx": 17,
+   "id": "news:avgi doctor|\"Interest. Some people used to believe that our brains could be revived after death, since the crystal they are made of remains intact. Sadly, the organic tissue that manipulates the crystal matrix to form memories decays shortly after death.\"|503|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 503,
+   "kind": "NEWS",
+   "context": "news:avgi doctor",
+   "english": "\"Interest. Some people used to believe that our brains could be revived after death, since the crystal they are made of remains intact. Sadly, the organic tissue that manipulates the crystal matrix to form memories decays shortly after death.\"",
+   "italian": "\"Interesse. Alcuni credevano che i nostri cervelli potessero essere rianimati dopo la morte, dato che il cristallo di cui sono fatti resta intatto. Purtroppo il tessuto organico che plasma la matrice cristallina per formare i ricordi si decompone poco dopo la morte.\"",
+   "ratio": 1.099
+  },
+  {
+   "idx": 18,
+   "id": "news:avgi doctor|\"Consideration. Despite our optical nervous system, organic nervous tissue is still used to modulate the conversion of optical signals to electrochemical ones at nerve interfaces.\"|504|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 504,
+   "kind": "NEWS",
+   "context": "news:avgi doctor",
+   "english": "\"Consideration. Despite our optical nervous system, organic nervous tissue is still used to modulate the conversion of optical signals to electrochemical ones at nerve interfaces.\"",
+   "italian": "\"Considerazione. Nonostante il nostro sistema nervoso ottico, il tessuto nervoso organico serve ancora a modulare la conversione dei segnali ottici in segnali elettrochimici alle interfacce nervose.\"",
+   "ratio": 1.106
+  },
+  {
+   "idx": 19,
+   "id": "news:avgi doctor|\"Consideration. Due to the high amount of ultraviolet light produced by Anax, our homeworld's star, life on Aviskir evolved to be more resilient against radiation damage.\"|505|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 505,
+   "kind": "NEWS",
+   "context": "news:avgi doctor",
+   "english": "\"Consideration. Due to the high amount of ultraviolet light produced by Anax, our homeworld's star, life on Aviskir evolved to be more resilient against radiation damage.\"",
+   "italian": "\"Considerazione. A causa dell'intensa luce ultravioletta prodotta da Anax, la stella del nostro mondo natale, la vita su Aviskir si è evoluta per essere più resistente ai danni da radiazioni.\"",
+   "ratio": 1.123
+  },
+  {
+   "idx": 20,
+   "id": "news:avgi doctor|\"Recollection. I once worked on a freighter torchship, moving luxury goods around and making rush deliveries. I got very good at dealing with radiation sickness!\"|506|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 506,
+   "kind": "NEWS",
+   "context": "news:avgi doctor",
+   "english": "\"Recollection. I once worked on a freighter torchship, moving luxury goods around and making rush deliveries. I got very good at dealing with radiation sickness!\"",
+   "italian": "\"Rievocazione. Ho lavorato su una nave mercantile a torcia, spostando beni di lusso e facendo consegne urgenti. Sono diventato molto bravo a gestire la malattia da radiazioni!\"",
+   "ratio": 1.086
+  },
+  {
+   "idx": 21,
+   "id": "news:avgi doctor|\"Recollection. I once worked at an asteroid manufactory, spinning asteroid nickelsteel out into cylinder habitats. We didn't have a serious industrial accident once in four years!\"|507|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 507,
+   "kind": "NEWS",
+   "context": "news:avgi doctor",
+   "english": "\"Recollection. I once worked at an asteroid manufactory, spinning asteroid nickelsteel out into cylinder habitats. We didn't have a serious industrial accident once in four years!\"",
+   "italian": "\"Rievocazione. Ho lavorato in una manifattura su asteroide, dove filavano l'acciaio-nichel degli asteroidi in habitat cilindrici. Non abbiamo avuto un solo incidente industriale grave in quattro anni!\"",
+   "ratio": 1.117
+  }
+ ]
+}

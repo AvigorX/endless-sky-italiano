@@ -1,0 +1,99 @@
+{
+ "block": {
+  "path": "data/avgi/avgi culture conversations.txt",
+  "line_from": 24,
+  "line_to": 106,
+  "units": 8
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Avgi Culture: Verticality|While looking for a place to grab a snack, you discover most of the restaurants are on the terrace rings above your level of the spaceport. After some asking around, you come to the realization that Avgi structures simply weren't designed with flightless humans in mind, and you're forced to ask a very confused worker to use the spaceport's freight elevator to go up a single level.|24|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 24,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Verticality",
+   "english": "While looking for a place to grab a snack, you discover most of the restaurants are on the terrace rings above your level of the spaceport. After some asking around, you come to the realization that Avgi structures simply weren't designed with flightless humans in mind, and you're forced to ask a very confused worker to use the spaceport's freight elevator to go up a single level.",
+   "italian": "Mentre cerchi un posto dove prendere uno spuntino, scopri che quasi tutti i ristoranti sono sugli anelli-terrazza sopra il tuo livello dello spazioporto. Dopo qualche domanda in giro, arrivi alla conclusione che le strutture degli Avgi semplicemente non sono state progettate pensando a umani che non volano, e sei costretto a chiedere a un addetto molto confuso di usare il montacarichi dello spazioporto per salire di un solo livello.",
+   "ratio": 1.138
+  },
+  {
+   "idx": 2,
+   "id": "mission:Avgi Culture: Free Fuel|As a dockyard worker helps you top off the <ship>'s fuel, you hear her mutter. \"Incredulation. We're directed to give the alien free fuel while the rest of us are bleeding out of the eyes for every drop of dee.\"|39|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 39,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Free Fuel",
+   "english": "As a dockyard worker helps you top off the <ship>'s fuel, you hear her mutter. \"Incredulation. We're directed to give the alien free fuel while the rest of us are bleeding out of the eyes for every drop of dee.\"",
+   "italian": "Mentre un'addetta del cantiere ti aiuta a fare il pieno di carburante alla <ship>, la senti borbottare. \"Incredulation. Ci ordinano di dare carburante gratis all'alieno, mentre noi sanguiniamo dagli occhi per ogni goccia di dee.\"",
+   "ratio": 1.085
+  },
+  {
+   "idx": 3,
+   "id": "mission:Avgi Culture: Playfight|As you walk through the spaceport, a pair of small Avgi flit above your head - children, perhaps - waving sticks at each other as part of some kind of game. One of them manages to knock the other's stick out of their hands, who then executes some sort of dizzying barrel roll before the two fly on out of sight.|52|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 52,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Playfight",
+   "english": "As you walk through the spaceport, a pair of small Avgi flit above your head - children, perhaps - waving sticks at each other as part of some kind of game. One of them manages to knock the other's stick out of their hands, who then executes some sort of dizzying barrel roll before the two fly on out of sight.",
+   "italian": "Mentre attraversi lo spazioporto, un paio di piccoli Avgi ti sfrecciano sopra la testa - bambini, forse - agitando dei bastoncini l'uno contro l'altro come in una specie di gioco. Uno dei due riesce a far volare via il bastoncino dell'altro, che allora esegue una specie di tonneau da capogiro prima che i due volino via fuori dalla vista.",
+   "ratio": 1.09
+  },
+  {
+   "idx": 4,
+   "id": "mission:Avgi Culture: Cocoon|An Avgi flies by, a pair of Avgi children sitting on her back. Nestled between them is some kind of cocoon, spun from silk that winds its way into a rope wrapped carefully around the mother's body.|66|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 66,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Cocoon",
+   "english": "An Avgi flies by, a pair of Avgi children sitting on her back. Nestled between them is some kind of cocoon, spun from silk that winds its way into a rope wrapped carefully around the mother's body.",
+   "italian": "Un Avgi passa in volo, con un paio di piccoli Avgi seduti sulla schiena. Fra loro è incastonato una specie di bozzolo, filato di seta che si avvolge in una corda stretta con cura attorno al corpo della madre.",
+   "ratio": 1.056
+  },
+  {
+   "idx": 5,
+   "id": "mission:Avgi Culture: Zapchannel Ad|A cheap electronic sign, haphazardly stuck to a wall, flashes a series of colorful symbols, sharp and angular. You aren't able to understand it, but guess it's probably an advertisement or notice of some kind.|82|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 82,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Zapchannel Ad",
+   "english": "A cheap electronic sign, haphazardly stuck to a wall, flashes a series of colorful symbols, sharp and angular. You aren't able to understand it, but guess it's probably an advertisement or notice of some kind.",
+   "italian": "Un'insegna elettronica economica, appiccicata alla parete alla meno peggio, lampeggia una serie di simboli colorati, netti e angolosi. Non riesci a capirla, ma supponi che sia probabilmente una pubblicità o un avviso di qualche tipo.",
+   "ratio": 1.115
+  },
+  {
+   "idx": 6,
+   "id": "mission:Avgi Culture: Zapchannel Ad|A cheap electronic sign, haphazardly stuck to a wall, flashes a message in the colorful written language of the Avgi. \"Zapchannel Ray Energy! With over three quadrillion gamma decays per serving, one dose provides enough energy for life! Buy today!\"|86|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 86,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Zapchannel Ad",
+   "english": "A cheap electronic sign, haphazardly stuck to a wall, flashes a message in the colorful written language of the Avgi. \"Zapchannel Ray Energy! With over three quadrillion gamma decays per serving, one dose provides enough energy for life! Buy today!\"",
+   "italian": "Un'insegna elettronica economica, appiccicata alla parete alla meno peggio, lampeggia un messaggio nella colorata lingua scritta degli Avgi. \"Zapchannel Ray Energy! Con oltre tre quadrilioni di decadimenti gamma per porzione, una dose basta a dare energia per tutta la vita! Compralo oggi!\"",
+   "ratio": 1.165
+  },
+  {
+   "idx": 7,
+   "id": "mission:Avgi Culture: Dissonance Protest 1|A line of angry-looking Avgi march in a wide circle around the spaceport, while others dart overhead in a similar pattern. Most of them seem to be waving colorful flags, while a few of the Avgi in the air are trailing banners with large, angular letters in bright colors written on them. All of the Avgi, which seem to be participating in some kind of protest, are wearing bright magenta ribbons around their arms, a color that seems to be likewise prominent on their flags and banners.|102|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 102,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Dissonance Protest 1",
+   "english": "A line of angry-looking Avgi march in a wide circle around the spaceport, while others dart overhead in a similar pattern. Most of them seem to be waving colorful flags, while a few of the Avgi in the air are trailing banners with large, angular letters in bright colors written on them. All of the Avgi, which seem to be participating in some kind of protest, are wearing bright magenta ribbons around their arms, a color that seems to be likewise prominent on their flags and banners.",
+   "italian": "Una fila di Avgi dall'aria arrabbiata marcia in un ampio cerchio attorno allo spazioporto, mentre altri sfrecciano sopra la testa con lo stesso schema. Molti sembrano agitare bandiere colorate, mentre alcuni degli Avgi in volo trascinano striscioni con grandi lettere angolose scritte in colori vivaci. Tutti gli Avgi, che sembrano partecipare a una qualche forma di protesta, portano nastri magenta brillante attorno alle braccia, un colore che sembra altrettanto presente sulle loro bandiere e sui loro striscioni.",
+   "ratio": 1.062
+  },
+  {
+   "idx": 8,
+   "id": "mission:Avgi Culture: Dissonance Protest 1|A line of angry-looking Avgi march in a wide circle around the spaceport, while others dart overhead in a similar pattern. Most of them seem to be waving colorful flags, while a few of the Avgi in the air are trailing banners with colorful slogans on them. \"STOP CONSONANCE TAXES,\" \"ABOLISH MINERAL FEUDALISM,\" and \"STOP SENDING US TO DIE\" are just a few of the messages you can make out, all in the angular Avgi script. All of the Avgi are wearing bright magenta ribbons around their arms, a color that seems to be likewise prominent on their flags and banners.|106|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 106,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Dissonance Protest 1",
+   "english": "A line of angry-looking Avgi march in a wide circle around the spaceport, while others dart overhead in a similar pattern. Most of them seem to be waving colorful flags, while a few of the Avgi in the air are trailing banners with colorful slogans on them. \"STOP CONSONANCE TAXES,\" \"ABOLISH MINERAL FEUDALISM,\" and \"STOP SENDING US TO DIE\" are just a few of the messages you can make out, all in the angular Avgi script. All of the Avgi are wearing bright magenta ribbons around their arms, a color that seems to be likewise prominent on their flags and banners.",
+   "italian": "Una fila di Avgi dall'aria arrabbiata marcia in un ampio cerchio attorno allo spazioporto, mentre altri sfrecciano sopra la testa con lo stesso schema. Molti sembrano agitare bandiere colorate, mentre alcuni degli Avgi in volo trascinano striscioni con slogan colorati. \"BASTA CON LE TASSE DELLA CONSONANCE\", \"ABOLIAMO IL FEUDALESIMO MINERALE\" e \"SMETTETE DI MANDARCI A MORIRE\" sono solo alcuni dei messaggi che riesci a leggere, tutti nella scrittura angolosa degli Avgi. Tutti gli Avgi portano nastri magenta brillante attorno alle braccia, un colore che sembra altrettanto presente sulle loro bandiere e sui loro striscioni.",
+   "ratio": 1.116
+  }
+ ]
+}

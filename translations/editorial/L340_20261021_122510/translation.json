@@ -1,0 +1,187 @@
+{
+ "block": {
+  "path": "data/coalition/coalition weapons.txt",
+  "line_from": 15,
+  "line_to": 900,
+  "units": 16
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Bombardment Cannon|description|41|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 41,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Bombardment Cannon",
+   "english": "The Bombardment Cannon was designed during the original war with the Quarg, in order to give Coalition civilian ships a way to strike Quarg warships from a safe distance. But now, as with all their weapons, its use is limited to Heliarch warships.",
+   "italian": "The Bombardment Cannon was designed during the original war with the Quarg, in order to give Coalition civilian ships a way to strike Quarg warships from a safe distance. But now, as with all their weapons, its use is limited to Heliarch warships.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Bombardment Turret|description|74|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 74,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Bombardment Turret",
+   "english": "A Bombardment Turret is not one of the most dangerous Heliarch weapons, but it has the advantage that it can hit targets a considerable distance away.",
+   "italian": "A Bombardment Turret is not one of the most dangerous Heliarch weapons, but it has the advantage that it can hit targets a considerable distance away.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Finisher Pod|description|124|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 124,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Finisher Pod",
+   "english": "Finisher Torpedoes are one of the Heliarchs' most dreaded weapons. In fact, in one way or another most of their other weapons merely exist to hold a ship in place for long enough for a barrage of Finishers to destroy it.",
+   "italian": "Finisher Torpedoes are one of the Heliarchs' most dreaded weapons. In fact, in one way or another most of their other weapons merely exist to hold a ship in place for long enough for a barrage of Finishers to destroy it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Finisher Pod|description|125|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 125,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Finisher Pod",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Finisher Maegrolain|description|168|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 168,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Finisher Maegrolain",
+   "english": "Baptized with the Saryd word for \"furious thunderstorm,\" this enormous launcher is not meant for prolonged fights nor for use by lighter craft, but for delivering a few quick, devastating bursts of Finisher Torpedoes. It has much greater damage potential than its smaller counterpart.",
+   "italian": "Baptized with the Saryd word for \"furious thunderstorm,\" this enormous launcher is not meant for prolonged fights nor for use by lighter craft, but for delivering a few quick, devastating bursts of Finisher Torpedoes. It has much greater damage potential than its smaller counterpart.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Finisher Maegrolain|description|169|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 169,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Finisher Maegrolain",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Finisher Storage Tube|description|206|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 206,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Finisher Storage Tube",
+   "english": "In order to allow Heliarch ships to install more Finisher Storage Tubes, Heliarch engineers have incorporated a tiny battery pack into each module. This allows for Heliarch ships to have a respectable energy capacity while also carrying a fearsome number of Finishers.",
+   "italian": "In order to allow Heliarch ships to install more Finisher Storage Tubes, Heliarch engineers have incorporated a tiny battery pack into each module. This allows for Heliarch ships to have a respectable energy capacity while also carrying a fearsome number of Finishers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Finisher Torpedo|plural|209|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 209,
+   "kind": "VALUE",
+   "context": "outfit:Finisher Torpedo",
+   "english": "Finisher Torpedoes",
+   "italian": "Finisher Torpedoes",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Finisher Torpedo|description|217|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 217,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Finisher Torpedo",
+   "english": "A substantial fraction of the Heliarch military complex is devoted to supervising the refining, enrichment, and breeding of nuclear fuels. Having ensured a steady supply of feedstock, they are able to produce a selective set of highly exotic fissile materials. With minuscule critical masses and favorable neutronics properties, these carefully controlled isotopes are the key to giving the miniaturized nuclear warhead in the Finisher Torpedo enough power to deter any would-be threats to the Coalition.",
+   "italian": "A substantial fraction of the Heliarch military complex is devoted to supervising the refining, enrichment, and breeding of nuclear fuels. Having ensured a steady supply of feedstock, they are able to produce a selective set of highly exotic fissile materials. With minuscule critical masses and favorable neutronics properties, these carefully controlled isotopes are the key to giving the miniaturized nuclear warhead in the Finisher Torpedo enough power to deter any would-be threats to the Coalition.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Finisher Torpedo|description|218|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 218,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Finisher Torpedo",
+   "english": "\tThis extremely powerful but also expensive missile is ammunition for the Heliarch Finisher Pod.",
+   "italian": "\tThis extremely powerful but also expensive missile is ammunition for the Heliarch Finisher Pod.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Heliarch Attractor|description|304|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 304,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Heliarch Attractor",
+   "english": "When battling the Quarg, the Heliarchs learned that the Quarg would not engage in a battle that their ships might be unable to escape. In response, they focused on building weapons that would keep a ship from being able to come to a stop and activate its jump drive.",
+   "italian": "When battling the Quarg, the Heliarchs learned that the Quarg would not engage in a battle that their ships might be unable to escape. In response, they focused on building weapons that would keep a ship from being able to come to a stop and activate its jump drive.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Heliarch Repulsor|description|350|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 350,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Heliarch Repulsor",
+   "english": "This beam turret allows a Heliarch ship to hold its enemies far enough away that they cannot make use of their short-range weapons.",
+   "italian": "This beam turret allows a Heliarch ship to hold its enemies far enough away that they cannot make use of their short-range weapons.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Ion Hail Turret|description|389|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 389,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ion Hail Turret",
+   "english": "Instead of just placing an Ion Rain Gun on a turret mount, the Heliarch tweaked the cycles of shots, having each shot be significantly more effective and seeing an overall increase to the weapon's range, but at the cost of a reload period.",
+   "italian": "Instead of just placing an Ion Rain Gun on a turret mount, the Heliarch tweaked the cycles of shots, having each shot be significantly more effective and seeing an overall increase to the weapon's range, but at the cost of a reload period.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Ion Rain Gun|description|438|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 438,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ion Rain Gun",
+   "english": "Heliarch ships primarily serve as a police force. This weapon is designed to neutralize a target's offensive capabilities until more Heliarch ships can join the fray.",
+   "italian": "Heliarch ships primarily serve as a police force. This weapon is designed to neutralize a target's offensive capabilities until more Heliarch ships can join the fray.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:MCS Extractor|description|477|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 477,
+   "kind": "DESCRIPTION",
+   "context": "outfit:MCS Extractor",
+   "english": "Not legally a weapon under Heliarch definitions, the \"Mineral Collection and Sorting\" extraction unit consists of a set of sharp, durable blades designed to quickly break down minable asteroids. It also comes with an integrated scanning system that looks for asteroids rich in minerals to facilitate the mining efforts.",
+   "italian": "Not legally a weapon under Heliarch definitions, the \"Mineral Collection and Sorting\" extraction unit consists of a set of sharp, durable blades designed to quickly break down minable asteroids. It also comes with an integrated scanning system that looks for asteroids rich in minerals to facilitate the mining efforts.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:MCS Extractor|description|478|0",
+   "path": "data/coalition/coalition weapons.txt",
+   "line": 478,
+   "kind": "DESCRIPTION",
+   "context": "outfit:MCS Extractor",
+   "english": "\tEspecially popular with novice pilots looking to pay off their ships, the extractor has been a reliable tool of mining businesses in the Coalition for millennia.",
+   "italian": "\tEspecially popular with novice pilots looking to pay off their ships, the extractor has been a reliable tool of mining businesses in the Coalition for millennia.",
+   "ratio": 1.0
+  }
+ ]
+}

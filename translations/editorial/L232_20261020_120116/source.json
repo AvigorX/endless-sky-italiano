@@ -1,0 +1,141 @@
+{
+ "block": {
+  "path": "data/korath/korath outfits.txt",
+  "line_from": 809,
+  "line_to": 908,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Nelmeb GP Hybrid Thruster|description|809|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 809,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Nelmeb GP Hybrid Thruster",
+   "english": "\tThese are the largest gravitoplasma thrusters that the Efreti have to offer, and as such are usually only found on their gargantuan civilian ships. Despite their size and thrusting power, the Quarg are still rather unimpressed with the inefficient nature of the design.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tThese are the largest gravitoplasma thrusters that the Efreti have to offer, and as such are usually only found on their gargantuan civilian ships. Despite their size and thrusting power, the Quarg are still rather unimpressed with the inefficient nature of the design.\"",
+   "english_hash": "b2084fc9cb53c286"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Arkrof GP Hybrid Steering|description|826|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 826,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Arkrof GP Hybrid Steering",
+   "english": "Unlike most Korath engines, Efreti engines do not rely solely on plasma. Gravitoplasma engines combine traditional Korath plasma thrust with Quarg-inspired forays into gravitation-based propulsion. The smallest steering manages to develop a great deal of torque at the expense of higher energy costs.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Unlike most Korath engines, Efreti engines do not rely solely on plasma. Gravitoplasma engines combine traditional Korath plasma thrust with Quarg-inspired forays into gravitation-based propulsion. The smallest steering manages to develop a great deal of torque at the expense of higher energy costs.\"",
+   "english_hash": "ca707b9da40890a7"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Farves GP Hybrid Steering|description|843|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 843,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Farves GP Hybrid Steering",
+   "english": "An important product of Efreti engineers' ongoing effort to evolve their understanding of fundamental physics and how it can be put into practice is this compact steering system. A classic example of Korath technology, it is small, powerful, and woefully inefficient. It appears that the Quarg influence on the Efreti has not changed the underlying design philosophy of the Korath living here.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"An important product of Efreti engineers' ongoing effort to evolve their understanding of fundamental physics and how it can be put into practice is this compact steering system. A classic example of Korath technology, it is small, powerful, and woefully inefficient. It appears that the Quarg influence on the Efreti has not changed the underlying design philosophy of the Korath living here.\"",
+   "english_hash": "9fa28b471459f73d"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Gaktem GP Hybrid Steering|description|861|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 861,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Gaktem GP Hybrid Steering",
+   "english": "In these hybrid gravitoplasma thrusters, Efreti scientists and engineers have begun to instantiate the newest, unified understandings of quantum gravity with the nuclear forces.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"In these hybrid gravitoplasma thrusters, Efreti scientists and engineers have begun to instantiate the newest, unified understandings of quantum gravity with the nuclear forces.\"",
+   "english_hash": "a0a844780fb75d5e"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Gaktem GP Hybrid Steering|description|862|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 862,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Gaktem GP Hybrid Steering",
+   "english": "\tUnless accompanied by some Korath power systems, this Efreti steering system's energy consumption will often be more than a ship can handle. Their main advantage when compared to other Korath engines of the same size is reduced heat production.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tUnless accompanied by some Korath power systems, this Efreti steering system's energy consumption will often be more than a ship can handle. Their main advantage when compared to other Korath engines of the same size is reduced heat production.\"",
+   "english_hash": "538eae37dfdf6aa8"
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Nelmeb GP Hybrid Steering|description|879|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 879,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Nelmeb GP Hybrid Steering",
+   "english": "Prompted by the grim will to trudge onwards and innovate despite being forced to abandon jump drive technology, Efreti engineers have recently begun to utilize their theoretical knowledge to incorporate gravitational propulsion into their more traditional fusion-based plasma engines.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Prompted by the grim will to trudge onwards and innovate despite being forced to abandon jump drive technology, Efreti engineers have recently begun to utilize their theoretical knowledge to incorporate gravitational propulsion into their more traditional fusion-based plasma engines.\"",
+   "english_hash": "4703215a379d69f8"
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Nelmeb GP Hybrid Steering|description|880|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 880,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Nelmeb GP Hybrid Steering",
+   "english": "\tMore stable than one would expect from Korath engines this large, these steering thrusters were developed by the Efreti as a means of guiding their most massive ships. Their high energy usage is tempered by the fact that they are usually powered by the most massive Korath fusion reactors.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tMore stable than one would expect from Korath engines this large, these steering thrusters were developed by the Efreti as a means of guiding their most massive ships. Their high energy usage is tempered by the fact that they are usually powered by the most massive Korath fusion reactors.\"",
+   "english_hash": "508f2761e48713b1"
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Thermal Repeater Rifle|description|892|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 892,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thermal Repeater Rifle",
+   "english": "This rifle is commonplace among the Korath, predating the creation of the ship-scale Thermal Repeater by at least two centuries. As it uses superheated plasma instead of lasers, the rifle is slow to fire and can sometimes burn its user's hands if they aren't careful. It makes up for these setbacks by guaranteeing that those hit won't live long enough to fire back.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This rifle is commonplace among the Korath, predating the creation of the ship-scale Thermal Repeater by at least two centuries. As it uses superheated plasma instead of lasers, the rifle is slow to fire and can sometimes burn its user's hands if they aren't careful. It makes up for these setbacks by guaranteeing that those hit won't live long enough to fire back.\"",
+   "english_hash": "ac7212164154d6b7"
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Microbot Defense Station|description|907|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 907,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Microbot Defense Station",
+   "english": "This insidious trap awaits anyone foolish enough to attempt to capture Korath World-Ships. Intruders are trapped before this airlock, ahead of which a cloud of microbots programmed to break down organic matter into nutrigel is released. The resulting gel then drains into the vat below while the robots are recalled.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `This insidious trap awaits anyone foolish enough to attempt to capture Korath World-Ships. Intruders are trapped before this airlock, ahead of which a cloud of microbots programmed to break down organic matter into nutrigel is released. The resulting gel then drains into the vat below while the robots are recalled.`",
+   "english_hash": "fc80f6b05710f5d6"
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Microbot Defense Station|description|908|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 908,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Microbot Defense Station",
+   "english": "\tMany races find this means of defense abhorrent. Citing the excruciating, confusing death experienced by its victims, the violation of taboos relating to cannibalism, and erroneous fears that the microbots could somehow \"escape,\" possession of these airlocks may result in heavy fines.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\tdescription `\tMany races find this means of defense abhorrent. Citing the excruciating, confusing death experienced by its victims, the violation of taboos relating to cannibalism, and erroneous fears that the microbots could somehow \"escape,\" possession of these airlocks may result in heavy fines.`",
+   "english_hash": "f5414bfd9de67443"
+  }
+ ]
+}

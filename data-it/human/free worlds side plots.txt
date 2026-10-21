@@ -1,0 +1,889 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+
+
+mission "FW Zug Expansion: Assisted"
+	minor
+	name "Convoglio per Zug"
+	description "Scorta un convoglio di mercantili fino a <destination> per un progetto importante. Aspettati incursioni di pirati."
+	source
+		government "Free Worlds"
+		near Zubeneschamali 2 4
+	destination "Zug"
+	to offer
+		has "event: tarazed assistance"
+		not "FW Diplomacy 1: done"
+	on offer
+		conversation
+			`Mentre torni da una passeggiata per lo spazioporto di <origin>, vedi il quartiermastro dello spazioporto che ispeziona la tua nave. Si accorge del tuo arrivo e ti viene incontro a salutarti.`
+			`	"Tu sei il capitano <first> <last>, giusto? Cerchiamo una buona nave che possa scortare questi mercantili fino a <planet>." Indica cinque mercantili del Sindacato con i colori delle Free Worlds sulle piazzole di fronte alla tua nave, alcuni dei quali hanno danni allo scafo considerevoli e sono in fase di riparazione.`
+			`	"La loro ultima scorta è stata appena eliminata dai pirati, e ci serve qualcuno abbastanza esperto da respingerli o seminarli. Devi avere una certa reputazione, visto che alcuni dei nostri capitani della milizia ti hanno riconosciuto. È per un progetto piuttosto importante su <planet>, quindi ti pagheremo <payment>."`
+			choice
+				`	"Di che progetto si tratta? Sembra un'impresa grossa."`
+				`	"Sono parecchi mercantili. Devo aspettarmi altri pirati?"`
+					goto pirates
+				`	"Scusa, non ho in programma di andare da quelle parti."`
+					decline
+			`	"I mercantili trasportano materiali da costruzione e attrezzature specializzate per la cantieristica, per un ampliamento previsto del New Port di Zug, che si aspetta da tempo. Aiuterebbe molto gli sforzi delle Free Worlds. Immagino sia per questo che i pirati hanno cercato di saltare addosso a queste navi; l'equipaggiamento sarebbe un ricco bottino per loro."`
+				goto meet
+			label pirates
+			`	"Sì, mi aspetterei altri contatti con i pirati, perché il movimento di tanti mercantili sarebbe un bersaglio tentante, e inoltre trasportano equipaggiamento prezioso per la costruzione di navi da guerra. Consiglierei certamente di evitare il combattimento quando possibile. In questi tempi difficili, la perdita di queste navi sarebbe... non ideale."`
+			label meet
+			`	"Beh, ci aiuterai a scortare questi mercantili?"`
+			choice
+				`	"Certo, porterò questi mercantili su <planet> sani e salvi."`
+				`	"No, non potrò, mi dispiace."`
+					decline
+			`	"Meraviglioso! Sono certo che queste navi gioveranno immensamente alle Free Worlds." Detto questo, ti lascia per andare a incontrare i capitani dei mercantili.`
+				accept
+	npc accompany save
+		government "Free Worlds"
+		personality escort timid
+		ship "Freighter" "F.S. Pohutukawa"
+		ship "Freighter" "F.S. Totara"
+		ship "Freighter" "F.S. Kauri"
+		ship "Freighter" "F.S. Rimu"
+		ship "Freighter" "F.S. Kanuka"
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Zubenelgenubi"
+		fleet "Large Southern Pirates" 3
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Sabik"
+		fleet "Large Southern Pirates" 2
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Hadar"
+		fleet "Large Southern Pirates" 3
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Zeta Centauri"
+		fleet "Large Southern Pirates" 2
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Izar"
+		fleet "Large Southern Pirates" 2
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivino in questo sistema.`
+	on complete
+		payment 600000
+		event "fw zug expansion underway"
+		event "fw zug expansion complete" 120
+		conversation
+			`I cinque mercantili sono arrivati tutti intatti, e ti dicono di farli atterrare accanto a una vasta area di terreno riservata all'ampliamento tanto atteso del New Port di Zug. Non molto dopo, ricevi <payment> dall'autorità portuale di Zug.`
+			`	Sembra che portare tutti quei mercantili fosse giustificato, perché l'ampliamento comprende anche una notevole estensione dei cantieri Southbound, per renderli capaci di costruire navi da guerra pesanti come i Falcon di Tarazed. A quanto pare, però, tutto questo equipaggiamento sarebbe più che sufficiente per costruire un incrociatore della Marina.`
+
+
+
+mission "FW Zug Expansion: Unassisted"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "FW Diplomacy 1: done"
+		not "FW Zug Expansion: Assisted: done"
+	on offer
+		event "fw zug expansion underway"
+		event "fw zug expansion complete" 120
+		fail
+
+
+
+mission "FW Pirates: Harmony"
+	landing
+	source "Harmony"
+	to offer
+		has "FW Pirates 1: active"
+	
+	on offer
+		conversation
+			`Mentre atterri su <planet>, ricordi che i monaci che vivono qui si occupano di una specie di opera di assistenza verso i bambini che fanno parte degli equipaggi pirata. Potrebbero avere qualcosa da dire sul modo migliore di affrontare la minaccia pirata. Vuoi andare a trovarli?`
+			choice
+				`	(Sì.)`
+				`	(No.)`
+					decline
+			`	Dal monastero allo spazioporto è una breve passeggiata. Quando arrivi, ti imbatti in un monaco che lavora nell'orto. Alza lo sguardo e ti riconosce. "Bentornato," dice. "Sei l'amico di Katya, vero? Io sono David. Ho dimenticato il tuo nome."`
+			`	"<first>," dici.`
+			`	Si toglie un po' di terra dalle mani e poi ti stringe la mano. "Come stai?" chiede. "E come sta Katya? E Ijs?" Gli spieghi che ora sei un membro ufficiale delle Free Worlds, e che Katya è stata catturata dalla Repubblica. È chiaramente scosso e addolorato dalla notizia. Dopo averti incalzato per tutti i dettagli, chiede: "E tu? Che cosa ti porta su Harmony?"`
+			choice
+				`	"Le Free Worlds sperano di eliminare la pirateria in questo settore, e speravo in un consiglio su quali bersagli attaccare."`
+				`	"Le Free Worlds stanno pensando di lanciare un attacco ai pirati, ma stavo riflettendo su quello che ha detto fratello Greg, sul fatto che gli equipaggi pirata sono solo ragazzini."`
+					goto kids
+			`	"Se vuoi un consiglio militare," dice, "ecco quello che posso dirti. Non si crea la pace con la violenza. La maggior parte della gente sui mondi pirata non è fatta di pirati, ma di persone comuni che hanno avuto la sfortuna di nascere lì. O di persone che si sentono indesiderate ovunque altrove."`
+				goto advice
+			label kids
+			`	"È vero," dice. "Se combatti i pirati, si perderanno vite innocenti."`
+			label advice
+			`	"Allora che cosa suggerisci di fare?" chiedi.`
+			`	"Beh," dice, "vale la pena ripetere che la maggior parte della gente sui mondi 'pirata' non è fatta di pirati. Sono solo anarchici. Come monaco, sento una specie di affinità con loro."`
+			choice
+				`	"In che senso?"`
+				`	"Naturalmente."`
+					goto continue
+			`	"Tanto per cominciare, portiamo entrambi sempre il nero," dice, sorridendo. "E soprattutto, cerchiamo entrambi di costruire una comunità alternativa secondo i nostri ideali. Storicamente, il monachesimo si può persino vedere come una forma di anarchismo utopico: 'Non temere che Dio' e cose del genere."`
+			choice
+				`	"Certamente."`
+				`	"Non ha assolutamente senso. Mi stai prendendo in giro?"`
+			label continue
+			`	Sorride. "Beh, questa è comunque una digressione. Il mio vero consiglio è questo: scopri che cosa vogliono gli abitanti di quei mondi pirata, e come offrirlo loro. La libertà dall'interferenza del governo sarebbe un buon inizio. Ma questo significa non annettere il loro territorio alle Free Worlds. Invece potreste offrire loro una specie di patto: loro smettono di sostenere le flotte pirata, e voi accettate di lasciare in pace i loro pianeti."`
+			choice
+				`	"Grazie del consiglio. Vedrò se riusciamo a combinare qualcosa del genere."`
+				`	"Niente affatto. Dobbiamo parlare la lingua che capiscono. La forza schiacciante."`
+					goto force
+			`	Ti augura buona fortuna, e torni al porto.`
+				decline
+			label force
+			`	"Non finirà," dice, "non finché non sterminerete ogni singola persona su quei pianeti. Ma non posso controllare le scelte che fate. Buona fortuna." Torna a occuparsi dell'orto, e tu torni a piedi allo spazioporto.`
+				decline
+
+
+
+mission "FW Conservatory 1"
+	name "Porta Ijs su <planet>"
+	description "Trasporta Mr. Eyes e gli Anderson su <destination>, dove aiuterà a fondare un'università pubblica."
+	source "Bourne"
+	destination "Winter"
+	passengers 3
+	blocked "Incontri Ijs allo spazioporto, ma ti dice che ti serviranno tre cuccette per lui e alcuni amici. Torna qui quando avrai lo spazio disponibile."
+	to offer
+		has "FW Senate 1B: done"
+		not "fw conservatory founded"
+		not "fw bloodsea done"
+	
+	on offer
+		conversation
+			branch introduce
+				not "FW Katya 1: done"
+			
+			`Quando incontri Ijs allo spazioporto, ha con sé Lynn e Henry Anderson, gli amici di Katya che avevi trasportato da Glory prima di unirti alle Free Worlds. Ijs è raggiante: il suo incontro dev'essere andato davvero bene. "Indovina, Capitano?" dice. "Abbiamo una sede per il Conservatorio! Il governo di Winter ci ha offerto un centro civico."`
+				goto continue
+			
+			label introduce
+			`Quando incontri Ijs allo spazioporto, ha con sé un uomo e una donna che ti presenta come Lynn e Henry Anderson, una scienziata planetaria di primo livello e un ex ufficiale dell'intelligence della Marina che disertò dalla Repubblica poco dopo la nascita delle Free Worlds. Ijs è raggiante: il suo incontro dev'essere andato davvero bene. "Indovina, Capitano?" dice. "Abbiamo una sede per il Conservatorio! Il governo di Winter ci ha offerto un centro civico."`
+			
+			label continue
+			`	"Un centro civico un po' malandato," aggiunge Henry.`
+			`	Ijs ride. "Vero. Comunque, speravamo che potessi darci un passaggio fin lì, e magari aiutarci a recuperare un po' di attrezzatura."`
+			choice
+				`	"Certo, mi piacerebbe molto aiutare a rendere tutto questo realtà!"`
+					accept
+				`	"Scusa, ho faccende più importanti a cui badare."`
+			`	Ijs sembra davvero abbattuto. "Ne sei sicuro?" chiede. "Questo potrebbe fare una grande differenza per le Free Worlds, quanto qualsiasi vittoria militare. Potremmo semplicemente seguirvi in qualunque 'faccenda più importante' abbiate, finché non sarà comodo per te lasciarci lì."`
+			choice
+				`	"Va bene, vi aiuto."`
+					accept
+				`	"Scusa, non mi interessa."`
+					decline
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Mr. Eyes e gli Anderson sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		payment 50000
+		dialog `Ijs ti ringrazia per il passaggio e ti dà una scheda di credito da <payment>. Dice: "Ora dobbiamo recuperare un po' di attrezzatura dalla Tarazed Corporation. Ci vediamo allo spazioporto se sei disposto ad aiutarci come scorta."`
+
+
+
+mission "FW Conservatory 2"
+	name "Scorta per <planet>"
+	description "Scorta questo convoglio delle Free Worlds fino a <destination>, per scambiare merci con l'equipaggiamento per la terraformazione fornito da Tarazed e dal Sindacato."
+	source "Winter"
+	destination "Wayfarer"
+	to offer
+		has "FW Conservatory 1: done"
+		not "fw bloodsea done"
+	
+	on offer
+		conversation
+			branch deferred
+				has "FW Conservatory 2: deferred"
+			`Nello spazioporto non ci vuole molto a trovare Ijs; sta sovrintendendo a un equipaggio che carica merci su diverse navi delle Free Worlds. "Sono contento di vederti, <first>," dice. "Queste tre navi devono arrivare su Tarazed e tornare senza essere distrutte dai pirati... o dalla Repubblica. Torneranno con una selezione di equipaggiamento per la terraformazione fornito da Tarazed e, se ci credi, anche dal Sindacato! Sono abbastanza sicuro che sappiano che ci sono coinvolto, quindi mi chiedo se non sia solo una manovra per tenermi fuori dai piedi dopo la fine della guerra, ma non mi lamenterò dell'aiuto.`
+			`	"Pensi di poter venire con noi e proteggere i mercantili?"`
+			choice
+				`	"Certamente!"`
+					accept
+				`	"Ho un'altra missione urgente. Posso tornare a farlo più tardi?"`
+			`	"Certo," dice. "Ma più aspettiamo, più tempo passerà prima che il Conservatorio sia operativo, quindi torna presto."`
+				defer
+			
+			label deferred
+			`Sembra che Ijs abbia ancora bisogno di una scorta per i mercantili che devono portare l'attrezzatura per il Conservatorio da <planet> a <origin>. Ti offri di aiutare?`
+			choice
+				`	(Sì.)`
+				`	(No, sono ancora impegnato.)`
+					defer
+			
+			`	Contatti Ijs e gli dici che sei pronto a scortare le navi. Ti mostra i mercantili, una collezione di tre Argosy, e ti augura buona fortuna per il viaggio.`
+				accept
+	
+	on defer
+		set "FW Conservatory 2: deferred"
+	
+	npc accompany save
+		government "Merchant"
+		personality escort timid
+		ship "Argosy" "F.S. Daybreak"
+		ship "Argosy" "F.S. Monsoon"
+		ship "Argosy" "F.S. Summer"
+	npc
+		government "Pirate"
+		personality plunders
+		system Tarazed
+		fleet "Small Southern Pirates"
+		fleet "Large Southern Pirates"
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma hai lasciato indietro una parte del tuo convoglio! Meglio ripartire e aspettare che arrivino in questo sistema."
+	on complete
+		dialog `Le tue tre scorte atterrano su Tarazed senza problemi. Il loro carico viene rapidamente scaricato e scambiato con l'equipaggiamento per la terraformazione che serve al Conservatorio.`
+
+
+
+mission "FW Conservatory 2B"
+	landing
+	name "Scorta per <planet>"
+	description "Scorta questo convoglio di equipaggiamento per la terraformazione delle Free Worlds fino a <destination>."
+	source "Wayfarer"
+	destination "Winter"
+	to offer
+		has "FW Conservatory 2: done"
+		not "fw bloodsea done"
+	
+	npc accompany save
+		government "Merchant"
+		personality escort timid
+		ship "Argosy" "F.S. Daybreak"
+		ship "Argosy" "F.S. Monsoon"
+		ship "Argosy" "F.S. Summer"
+	npc
+		government "Pirate"
+		personality plunders
+		system "Yed Prior"
+		fleet "Small Southern Pirates" 2
+		fleet "Large Southern Pirates" 2
+	npc
+		government "Pirate"
+		personality plunders
+		system "Pherkad"
+		fleet "Small Southern Pirates" 2
+		fleet "Large Southern Pirates" 2
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma hai lasciato indietro una parte del tuo convoglio! Meglio ripartire e aspettare che arrivino in questo sistema."
+	on complete
+		payment 300000
+		event "fw conservatory founded" 30
+		log "Hai aiutato a trasportare materiale per costruire un'università pubblica e un centro di ricerca sulla terraformazione su Winter. Ijs Springborn sarà uno dei professori. Sorprendentemente, il Sindacato ha contribuito a fornire parte dell'equipaggiamento per il Conservatorio."
+		conversation
+			`Ijs incontra il tuo convoglio mentre atterra, e spunta ogni voce su una clipboard mentre viene scaricata. Lynn è con lui, e controlla le varie macchine per assicurarsi che siano tutte funzionanti. "Spero che non abbiate avuto problemi," dice Ijs, porgendoti il pagamento di <payment>.`
+			choice
+				`	"No, nessuno."`
+				`	"Qualche pirata, niente che non potessi gestire."`
+				`	"A dire il vero, siamo stati fortunati a tornare vivi."`
+					goto lucky
+			`	"Sono contento di sentirlo," dice.`
+				goto next
+			label lucky
+			`	"Peccato," dice. "Questa guerra deve rendere la Fascia di Terra ancora più instabile del solito. Speriamo di poter fare qualcosa al riguardo presto."`
+			label next
+			`	"C'è qualcos'altro che devo fare per te?" chiedi.`
+			`	"Non al momento," dice. "Ti manderò un messaggio quando ci sarà. Grazie per l'aiuto, e se senti altre notizie su Katya, per favore fammelo sapere."`
+
+
+
+mission "FW Deep Memorial"
+	landing
+	source "Deep"
+	to offer
+		has "event: memorial on Deep"
+		not "event: navy occupying the south"
+	on offer
+		conversation
+			`Mentre sbarchi, senti il suono di sirene di avvertimento e macchinari pesanti provenire dal margine dello spazioporto di <planet>. Non ci vuole molto a trovare la fonte del rumore: diversi grossi mezzi da costruzione stanno pavimentando un'ampia radura sul bordo di una scogliera. Al centro ci sono nove grandi pareti coperte di lettere, con spazio riservato per altre quattordici. Sulla parete più grande campeggia la scritta "Memoriale di Guerra delle Free Worlds". Già ci sono amici e familiari che rendono omaggio al numero sempre crescente di caduti.`
+			branch "brower death" end
+				has "FW Pirates: Attack 2: done"
+				has "Care Package to South 1: done"
+			label "brower death"
+			`	Mentre ispezioni le pareti, riconosci uno dei nomi:`
+			``
+			`		SGT MAGGIORE IRENE BROWER`
+			`			UCCISA NELL'ATTACCO A GREENROCK`
+			``
+			label end
+			`	Il rumore dei lavori continua mentre torni allo spazioporto principale.`
+				decline
+
+
+
+
+mission "FW Flamethrower 1"
+	landing
+	name "Prova delle armi"
+	description "Quando avrai tempo, presentati su <destination>, dove Barmy Edward ha un'altra arma che vorrebbe farti provare."
+	source
+		near "Kraz" 1 100
+	destination "Rust"
+	to offer
+		has "plasma turret available: offered"
+		random < 15
+	
+	on offer
+		conversation
+			`Poco dopo l'atterraggio ti arriva un messaggio. È di Barmy Edward, l'ingegnere delle armi della Kraz Cybernetics. Scrive: "Salve di nuovo, Capitano! Sto lavorando a una nuova arma, e per qualche ragione nessun altro vuole aiutare con le prove. Se ti interessa mettere le mani su una tecnologia nuova di zecca, passa da Rust e vieni a visitare la nostra fabbrica."`
+				accept
+
+
+
+mission "FW Flamethrower 2"
+	landing
+	name "Prova delle armi"
+	description "Una nave di prova con nuove armi è in orbita intorno a <planet>. Combattila e mettila fuori uso (ma non abbordarla né distruggerla!) e poi atterra per dare a Barmy Edward un parere sulle sue prestazioni."
+	source "Rust"
+	to offer
+		has "FW Flamethrower 1: done"
+	
+	on offer
+		conversation
+			`Hai ricevuto di recente un messaggio da Barmy Edward, che ti chiedeva di passare dalla struttura della Kraz Cybernetics per aiutare a provare una nuova arma. Vuoi andare a trovarli adesso?`
+			choice
+				`	(Sì.)`
+				`	(No.)`
+					defer
+			scene "scene/loc5"
+			`	Dici il tuo nome alla reception, e lei ti indirizza all'hangar dove il gruppo delle armi fa progettazione e prototipi. Barmy Edward ti stringe la mano con calore e dice: "Ecco come stanno le cose. Abbiamo una nuova arma, qualcosa di un po' fuori dal comune. Speriamo che sia utile contro i pirati, in particolare. Ti interessa aiutarci?"`
+			`	"Certamente," dici.`
+			`	"Ottimo," dice. "Non ti dirò i dettagli, perché voglio che tu abbia l'effetto sorpresa completo. Ma c'è una nave in orbita, la Doombat, che è stata equipaggiata con alcune di queste nuove armi. Il tuo compito sarà combatterla e metterla fuori uso, poi dirci che cosa pensi delle sue armi."`
+			`	Ti agita un dito davanti al viso e dice: "Occhio, vogliamo solo che tu metta fuori uso la Doombat, non che la distrugga. L'abbiamo comprata da un deposito di rottami, quindi a malapena tiene lo spazio, ma voglio comunque poterla usare per prove future. Chiaro?"`
+			choice
+				`	"Va bene, prometto di non distruggerla né di rubarla."`
+				`	"Scusa, mi sembra un po' troppo rischioso. Preferirei non essere coinvolto in questo tipo di prove."`
+					decline
+			`	"Ottimo," dice, strofinandosi le mani con un'espressione compiaciuta. È chiaramente impaziente di sentire che cosa pensi della sua ultima invenzione.`
+				accept
+	
+	npc disable save
+		personality disables heroic staying
+		government "Test Dummy"
+		ship "Doombat" "Doombat"
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma non hai ancora messo fuori uso la <npc>. Mettila fuori uso prima di tornare.`
+	on complete
+		event "flamethrower available" 30
+		log "Hai assistito Barmy Edward in un'altra prova d'arma: questa volta un lanciafiamme che funziona surriscaldando e mettendo fuori uso il bersaglio invece di infliggergli molti danni. Potrebbe o non potrebbe essere utile in combattimento reale."
+		conversation
+			scene "outfit/flamethrower"
+			`Ti dirigi all'hangar per incontrare Barmy Edward, e lo trovi che armeggia con un grosso cannone che non riconosci. Presumibilmente è il lanciafiamme con cui sei appena stato attaccato in orbita. "Funziona a carburante iperspaziale, vedi," dice. "Allora, che cosa ne pensi?"`
+			choice
+				`	"È un'arma terrificante."`
+					goto terrifying
+				`	"Sembra impressionante, ma non ha fatto molti danni."`
+					goto damage
+				`	"Il tuo lanciafiamme non sembra funzionare molto bene."`
+					goto bad
+			label terrifying
+			`	"Non è vero?" dice. "Utile soprattutto contro navi piccole, naturalmente, o navi che viaggiano fin troppo vicino alle loro soglie termiche. Bisogna anche essere quasi addosso al bersaglio per ottenere l'effetto completo. Ma la capacità di mettere temporaneamente fuori uso una nave senza nemmeno abbatterne gli scudi potrebbe essere piuttosto utile in certe situazioni tattiche."`
+			`	"Quando sarà in vendita?" chiedi.`
+				goto available
+			label damage
+			`	"No, fare danni non è il punto," dice. "L'idea è riscaldare il bersaglio fino a farlo andare in spegnimento termico d'emergenza. In pratica un modo per mettere temporaneamente fuori uso anche una nave con gli scudi pieni. Naturalmente le navi grandi possono assorbire moltissimo calore senza cambiare granché di temperatura, quindi sospetto che sarà più utile contro bersagli piccoli. Devi arrivare proprio a ridosso per ottenere l'effetto di riscaldamento completo, il che non sarà facile se hai a che fare con navi da guerra più grandi come quelle della Marina."`
+			`	"È un'idea interessante," dici. "Sono già in vendita?"`
+				goto available
+			label bad
+			`	"Oh." Sembra un po' abbattuto. "Beh, se pilotassi una nave più piccola, forse la penseresti diversamente. O se la tua nave non avesse un raffreddamento adeguato. O magari la Doombat non è riuscita ad avvicinarsi abbastanza per darti tutta la sua potenza. La mia idea era di prendere di mira le navi pirata con quei Blaster Modificati illegali che scaldano più del normale."`
+			`	"Immagino che abbia senso," dici, "anche se non vorrei restare senza carburante di salto per sbaglio. Le metterai in vendita?"`
+				goto available
+			label available
+			`	"Beh, dovrei avere un modello iniziale in vendita fra un mese circa," dice. "Sarò curioso di vedere che usi ci troverai tu, o chiunque altro. Comunque, grazie per l'aiuto." Vi salutate e torni alla tua nave.`
+
+ship "Fury" "Doombat"
+	add attributes
+		"self destruct" 1
+	outfits
+		"Flamethrower" 4
+		"nGVF-BB Fuel Cell"
+		"Supercapacitor"
+		"D14-RN Shield Generator"
+		"Ramscoop"
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+
+
+
+mission "FW Wolf Pack 1"
+	minor
+	name "Tecnologia dei ramscoop"
+	description "Recati su <planet>, nel Deep, dove dei simpatizzanti delle Free Worlds condivideranno i dettagli di una nuova tecnologia per i ramscoop. (Potrebbe essere necessario corrompere dei pianeti lungo la strada per ottenere il permesso di fare rifornimento.)"
+	source
+		government "Free Worlds"
+	destination "Memory"
+	clearance
+	to offer
+		has "event: catalytic ramscoop available"
+		random < 30
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	
+	on offer
+		conversation
+			`Quando entri nel bar dello spazioporto, un ufficiale della milizia che non riconosci ti fa cenno di unirti a lui. "Capitano <last>!" dice. "Sarebbe un onore se mi lasciassi offrirti da bere."`
+			choice
+				`	"Grazie!"`
+					goto drink
+				`	"Scusa, non bevo."`
+			`	"Allora che cosa ci fai in un bar?" chiede. "Lascia stare, non rispondere. Immagino che tu sia qui in cerca di lavoro utile da fare, e se è così, mi servirebbe davvero il tuo aiuto."`
+				goto mission
+			label drink
+			`	Ti offre da bere, e ti siedi al suo tavolo. Dopo qualche minuto di conversazione, dice: "A proposito, mi servirebbe davvero il tuo aiuto per una missione per le Free Worlds."`
+			label mission
+			`	"Va bene," dici, "dimmi di più."`
+			`	Dice: "Probabilmente saprai che abbiamo una rete di simpatizzanti delle Free Worlds in buona parte dello spazio della Repubblica. Uno dei nostri contatti ci ha recentemente informato di una nuova tecnologia in vendita nel Deep, che potrebbe esserci molto utile. Ma non hanno modo di spedircela, quindi mi serve qualcuno che possa salire fino al Deep e recuperarla."`
+			choice
+				`	"I tuoi contatti mi forniranno anche dei pianeti dove fare rifornimento lungo la strada?"`
+				`	"Il Deep è più lontano di quanto possano portarmi i miei serbatoi."`
+			`	"Dovrai corrompere qualche mondo della Fascia di Terra perché ti lasci atterrare, per arrivarci," dice. "Oppure potresti aspettare la prossima volta che c'è un cessate il fuoco. Ma ecco la parte bella: se funziona, non dovrai pagare nessuna tangente al ritorno, perché la nuova tecnologia che cerchiamo è un ramscoop superefficiente. Che ne dici?"`
+			choice
+				`	"Va bene, ci provo."`
+					accept
+				`	"Scusa, mi sembra troppo rischioso."`
+					decline
+
+
+
+mission "FW Wolf Pack 1B"
+	landing
+	name "Tecnologia dei ramscoop"
+	description "Torna nello spazio delle Free Worlds con i progetti di un nuovo ramscoop più efficiente, e consegnali alla Delta V Corporation su <destination>."
+	destination "Solace"
+	cargo "Ramscoop Data Card" 0
+	to offer
+		has "FW Wolf Pack 1: done"
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	
+	on offer
+		conversation
+			`Fai atterrare la nave di notte in un hangar privato che supponi appartenga a una delle famiglie dell'élite di <origin>. Il tuo contatto indossa una maschera nera sul viso. Ti sembra inutile, ma forse si sta solo divertendo molto al brivido di essere coinvolto in qualcosa di illegale. Ti porge una scheda dati e dice: "Questa contiene tutte le informazioni che ti servono per costruire un tuo Ramscoop Catalitico. E prima di andartene, puoi anche visitare il nostro banco degli equipaggiamenti privato e comprarne uno, se vuoi."`
+			choice
+				`	"Grazie."`
+					goto leave
+				`	"Posso chiedere chi sei e perché simpatizzi per noi?"`
+			`	"Puoi chiamarmi... Agente Falco. Quanto alla mia vera identità, naturalmente capirai che non posso rivelarla."`
+			`	"Certamente," dici.`
+			label leave
+			`	"Ti auguro il meglio nella tua lotta contro gli spregevoli plutocrati," dice. "Che possiamo ancora vivere abbastanza da vedere il giorno in cui tutti i popoli vivranno nella prosperità e nella libertà. Addio, coraggioso insorto." È un discorso esageratamente drammatico, e sembra che lo stia provando da un po'. Rispondi con quello che speri sia un saluto adeguatamente elegante, e lui se ne va.`
+				accept
+	
+	on complete
+		payment 250000
+		event "fw gets catalytic ramscoop" 24
+		log "Hai aiutato le Free Worlds a ottenere accesso a una nuova tecnologia per i ramscoop sviluppata nel Deep. Dovrebbe rendere molto più facile viaggiare a lungo attraverso sistemi ostili."
+		dialog `Consegni la scheda dati con i dettagli del Ramscoop Catalitico al contatto che ti è stato indicato nella Delta V. "Eccellente," dice. "Stavamo cercando di replicare il loro lavoro da mesi, ma questo renderà tutto molto più facile." Ti porge una scheda di credito del valore di <payment> e dice: "Ti contatteremo quando avremo iniziato la produzione in serie dei nuovi ramscoop. Spero che saranno utili nel conflitto che ci aspetta."`
+
+
+
+mission "FW Wolf Pack 2"
+	landing
+	name `Reclutamento del "Branco di Lupi"`
+	description `Un gruppo che si fa chiamare "Branco di Lupi delle Free Worlds" ti ha chiesto di andare a trovarli su <planet> se vuoi aiutare il loro lavoro contro la Repubblica.`
+	source
+		government "Free Worlds"
+	destination "Solace"
+	to offer
+		has "FW Wolf Pack 1B: done"
+		has "event: fw gets catalytic ramscoop"
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	
+	on offer
+		conversation
+			`Poco dopo l'atterraggio su <origin>, ricevi un messaggio anonimo. Dice:`
+			``
+			`Caro capitano <last>,`
+			`	Grazie al tuo aiuto, gli ingegneri della Delta V sono riusciti a replicare la nuova tecnologia dei ramscoop della Deep Sky. Il ramscoop è un pezzo di un piano più ampio che abbiamo per spostare le sorti di questa guerra a favore delle Free Worlds, e per porre fine al conflitto più rapidamente. Se ti interessa saperne di più, vai su <planet>, e i nostri rappresentanti ti contatteranno subito.`
+			`	Cordiali saluti,`
+			`		Il Branco di Lupi delle Free Worlds`
+			``
+			`Non hai mai sentito parlare di questa organizzazione, ma sai che "branco di lupi" è gergo pirata per un'alleanza temporanea formata per affrontare un bersaglio più grande di quanto qualsiasi banda di pirati potrebbe gestire da sola.`
+				accept
+
+
+
+mission "FW Wolf Pack 2A"
+	landing
+	name "Attacca il convoglio di cibo"
+	description "Distruggi tre mercantili della Repubblica nel sistema <waypoints> che trasportano cibo, poi riferisci su <planet> per il pagamento."
+	source "Solace"
+	waypoint "Sarin"
+	to offer
+		has "FW Wolf Pack 2: done"
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	
+	on offer
+		conversation
+			`Poco dopo l'atterraggio, due uomini in uniforme della milizia si avvicinano alla tua nave e ti dicono di rappresentare il "Branco di Lupi". Si presentano come Rex e Fido; sei abbastanza sicuro che non siano i loro veri nomi.`
+			`	Una volta in una stanza privata dentro la tua nave, Rex, il più giovane, dice: "Con la tecnologia dei ramscoop, le nostre navi potranno avventurarsi in profondità nella Fascia di Terra. Ora, Capitano, perché pensi che la Repubblica sia così determinata a tenersi la Fascia di Terra, anche a costo di combattere battaglie sanguinose? È chiaro che le entrate fiscali non valgono la pena."`
+			choice
+				`	"Magari è solo il principio di non cedere territorio senza combattere."`
+				`	"Magari vogliono le risorse che produce la Fascia di Terra?"`
+					goto resources
+				`	"Magari per tenere un cuscinetto fra il nostro territorio e i mondi che per loro contano davvero, come la Terra e i Mondi Paradisiaci?"`
+			`	"Potrebbe essere parte della ragione," dice Rex, "ma c'è un motivo più grande."`
+				goto map
+			label resources
+			`	"Esattamente," dice Rex, "e una risorsa in particolare è per loro più importante di tutte le altre messe insieme."`
+			label map
+			`	L'uomo di nome Fido, che è più anziano e ha una barba folta, stende una mappa sul tavolo. Riconosci che è un grafico dei prezzi del cibo in tutto lo spazio umano. "Il cibo," dice Rex. "La Fascia di Terra è il granaio della galassia. E la Repubblica è piena di mondi brulicanti e sovrappopolati che non potrebbero mai sperare di sfamarsi da soli. Se tagliamo l'approvvigionamento di cibo, la Repubblica sarà costretta a fare la pace con noi."`
+			`	Fido dice: "Proponiamo uno sforzo concentrato per distruggere i convogli mercantili che portano cibo ai mondi della Repubblica più ricchi e densamente popolati. Quando i loro cittadini si troveranno senza beni di prima necessità, chiederanno la fine della guerra."`
+			choice
+				`	"Sarei felice di unirmi a voi. Sembra davvero una soluzione molto più rapida delle nostre politiche attuali, che il Senato e il Consiglio sostengono."`
+					goto join
+				`	"State cercando di far morire di fame la Repubblica per costringerla a cedere? Non aggiungerà solo più brutalità a una guerra già fin troppo sanguinosa?"`
+			`	"Nel breve periodo, forse," dice Rex. "Ma pensa a quante vite si salveranno, a quante battaglie sanguinose si eviteranno, costringendoli a porre fine rapidamente a questa guerra invece di trascinarla per anni."`
+			choice
+				`	"Non mi convince il tuo ragionamento. Se usiamo tattiche così riprovevoli per costruire la nostra nuova società, la società che costruiremo sarà corrotta quanto quella vecchia."`
+				`	"Va bene, mi hai convinto. Che cosa vuoi che faccia?"`
+					goto join
+			`	"Molto bene," dice Rex. "Scusa per averci fatto perdere tempo." Se ne vanno.`
+				decline
+			label join
+			`	"Prima dovresti comprare un ramscoop qui, se non ne hai già uno," dice Rex. "Poi, il tuo primo bersaglio è un convoglio di tre mercantili che partirà a breve da Big Sky, nel sistema Sarin. Potrebbero esserci delle scorte, ma solo i mercantili stessi devono essere distrutti."`
+				accept
+	
+	npc kill
+		government "Republic"
+		system "Sarin"
+		personality timid staying target
+		"cargo settings"
+			commodities "Food"
+		ship "Freighter" "Horn of Plenty"
+		ship "Freighter" "Autumn Twilight"
+		ship "Freighter" "Bounty Harvest"
+		dialog "Hai distrutto tutti i mercantili bersaglio. È ora di riferire al Branco di Lupi su Solace."
+	npc
+		government "Republic"
+		system "Sarin"
+		personality heroic staying
+		ship "Gunboat (Mark II)" "R.N.S. Atherstone"
+		ship "Gunboat (Mark II)" "R.N.S. Tyndale"
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma i mercantili non sono ancora stati eliminati. Dalli la caccia nel sistema Sarin e distruggili prima di tornare.`
+	on complete
+		karma --
+		event "wolf pack 3 ready" 10
+		payment 200000
+		log "Hai distrutto un convoglio di mercantili della Repubblica che trasportava cibo dalla Fascia di Terra. I Mondi Paradisiaci non possono coltivare tutto il cibo che serve a sfamare le loro popolazioni, quindi tagliare il flusso di rifornimenti dalla Fascia di Terra farà pressione su di loro perché facciano la pace con le Free Worlds."
+		dialog `Rex, uno degli uomini del "Branco di Lupi" con cui avevi parlato, ti incontra allo spazioporto e ti porge una scheda di credito da <payment>. "Bel lavoro," dice. "Ti contatteremo quando avremo scelto un altro bersaglio."`
+
+
+
+event "wolf pack 3 ready"
+
+event "wolf pack gacrux start"
+	system "Gacrux"
+		fleet "Small Southern Merchants" 2000
+		fleet "Large Southern Merchants" 5000
+		fleet "Small Southern Pirates" 2000
+		fleet "Large Southern Pirates" 4000
+		fleet "Small Republic" 8000
+
+event "wolf pack gacrux end"
+	system "Gacrux"
+		fleet "Small Southern Merchants" 2000
+		fleet "Large Southern Merchants" 5000
+		fleet "Small Southern Pirates" 2000
+		fleet "Large Southern Pirates" 4000
+		fleet "Small Republic" 2000
+		fleet "Large Republic" 3000
+		fleet "Navy Surveillance" 1600
+
+
+
+mission "FW Wolf Pack 3"
+	landing
+	name "Attacca il convoglio di cibo"
+	description "Distruggi due mercantili pesanti della Repubblica nel sistema Gacrux che trasportano cibo, poi riferisci su <planet> per il pagamento."
+	source
+		government "Free Worlds"
+	destination "Solace"
+	waypoint "Gacrux"
+	to offer
+		has "FW Wolf Pack 2A: done"
+		has "event: wolf pack 3 ready"
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	
+	on offer
+		dialog
+			`Ricevi un altro messaggio dal Branco di Lupi: "Bel lavoro con quei mercantili, Capitano! Abbiamo un altro bersaglio per te, se ti interessa: una coppia di mercantili pesanti, che dovresti riuscire a intercettare nel sistema Gacrux. È un sistema disabitato, quindi non dovresti avere molte interferenze dalla Marina. Come prima, devi distruggere solo i mercantili, non le altre navi che incontri."`
+			`	Ognuna di queste missioni che completi creerà più ostilità fra la Repubblica e le Free Worlds. D'altra parte, potrebbe essere vero che è il modo più rapido per chiudere questa guerra.`
+	
+	on accept
+		event "wolf pack gacrux start"
+	on fail
+		event "wolf pack gacrux end"
+
+	npc kill
+		government "Republic"
+		system "Gacrux"
+		personality timid staying target
+		"cargo settings"
+			commodities "Food"
+		ship "Bulk Freighter" "Dew of the Morning"
+		ship "Bulk Freighter" "Heaven's Blessing"
+		dialog "Il convoglio di cibo è stato distrutto. Ora puoi tornare su Solace."
+	npc
+		government "Republic"
+		system "Gacrux"
+		personality heroic staying
+		ship "Protector (Laser)" "R.N.S. Bulwark"
+		ship "Protector" "R.N.S. Citadel"
+		ship "Protector" "R.N.S. Rampart"
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma i mercantili non sono ancora stati eliminati. Dalli la caccia nel sistema Gacrux e distruggili prima di tornare.`
+	on complete
+		karma --
+		event "wolf pack gacrux end"
+		event "wolf pack 4 ready" 20
+		payment 300000
+		log "Hai distrutto un convoglio di cibo della Repubblica ancora più grande. Probabilmente ora cominciano a sentire la pressione, perché hanno chiaramente iniziato a sottrarre navi da guerra dal fronte per difendere questi convogli."
+		dialog `Ancora una volta Rex del Branco di Lupi ti incontra poco dopo l'atterraggio. Questa volta ti paga <payment>. "Spero che non ti abbiano dato problemi," dice. "Ci faremo sentire quando ci sarà un altro bersaglio da colpire."`
+
+
+
+event "wolf pack 4 ready"
+
+event "wolf pack mizar start"
+	system "Mizar"
+		fleet "Small Southern Merchants" 1400
+		fleet "Large Southern Merchants" 4500
+		fleet "Small Republic" 5000
+		fleet "Small Southern Pirates" 9000
+
+event "wolf pack mizar end"
+	system "Mizar"
+		fleet "Small Southern Merchants" 1400
+		fleet "Large Southern Merchants" 4500
+		fleet "Small Republic" 1000
+		fleet "Large Republic" 1400
+		fleet "Small Southern Pirates" 9000
+		fleet "Navy Surveillance" 2000
+
+
+
+mission "FW Wolf Pack 4"
+	landing
+	name "Attacca il convoglio di cibo"
+	description "Distruggi un mercantile ausiliario della Repubblica nel sistema <waypoints> che trasporta cibo, poi riferisci su <planet> per il pagamento."
+	source
+		government "Free Worlds"
+	destination "Solace"
+	waypoint "Mizar"
+	to offer
+		has "FW Wolf Pack 3: done"
+		has "event: wolf pack 4 ready"
+		not "event: fw armistice"
+	to fail
+		has "event: fw armistice"
+	
+	on offer
+		dialog `Ricevi un altro messaggio dal Branco di Lupi: "Salve, Capitano. Se non altro, siamo certamente riusciti a far deviare alcune navi della Marina dal fronte, per usarle come scorta! Il tuo prossimo bersaglio, se sei disposto ad aiutarci ancora, sarà un po' più duro: un mercantile ausiliario, probabilmente con scorte della Marina. Il mercantile sta passando per il sistema <waypoints>. Ti interessa?"`
+	
+	on accept
+		event "wolf pack mizar start"
+	on fail
+		event "wolf pack mizar end"
+
+	npc kill
+		government "Republic"
+		system "Mizar"
+		personality timid staying target
+		"cargo settings"
+			commodities "Food"
+		ship "Auxiliary (Cargo Mark II)" "R.N.S. Golden Fleece"
+		dialog "Hai eliminato l'ausiliario che portava cibo alla Repubblica. È ora di riferire al Branco di Lupi e ricevere la ricompensa."
+	npc
+		government "Republic"
+		system "Mizar"
+		personality heroic staying
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			cargo 0
+			variant
+				"Carrier"
+				"Lance" 8
+				"Combat Drone" 6
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma il mercantile non è ancora stato eliminato. Dallo la caccia nel sistema Mizar e distruggilo prima di tornare.`
+	on complete
+		karma --
+		event "wolf pack mizar end"
+		log "Hai distrutto un terzo convoglio di cibo. Questi attacchi sembrano essere riusciti a costringere la Marina ad assegnare navi capitali alla difesa dei suoi convogli di rifornimento."
+		payment 400000
+		dialog
+			`Rex ti incontra e ti ringrazia per il continuo servizio alle Free Worlds. "Se avessimo una dozzina di capitani coraggiosi come te," dice, "la guerra finirebbe domani." Ti porge <payment> e se ne va. Ancora non sai il suo vero nome né chi siano i capi del Branco di Lupi, ma sei contento di aver potuto fare qualcosa in più per lo sforzo bellico.`
+
+
+
+mission "FW Stack Core 1"
+	landing
+	name "Scorta il convoglio da Rand"
+	description "Freya ti ha chiesto di passare da Rand se puoi, per aiutare a scortare un convoglio di mercantili che trasporta rifornimenti vitali per costruire un'entusiasmante nuova attrezzatura."
+	destination "Rand"
+	to offer
+		has "FW Reconciliation Break: offered"
+	to fail
+		has "event: pug invasion"
+	
+	on offer
+		conversation
+			`Ricevi un breve messaggio in codice da Freya: "Ciao, Capitano! Se ti capita di passare da <planet> in questi giorni, ti dispiacerebbe fermarti lì per aiutare a scortare un convoglio di mercantili? Stiamo lavorando allo sviluppo di un'entusiasmante nuova attrezzatura, e il convoglio trasporta i rifornimenti che ci servono per completare il progetto."`
+				accept
+
+
+
+mission "FWC Stack Core 1"
+	landing
+	name "Scorta il convoglio da Rand"
+	description "Freya ti ha chiesto di passare da Rand se puoi, per aiutare a scortare un convoglio di mercantili che trasporta rifornimenti vitali per costruire un'entusiasmante nuova attrezzatura."
+	destination "Rand"
+	to offer
+		has "FW Liberate Delta Sagittarii: done"
+	to fail
+		has "event: fwc pug invasion"
+	
+	on complete
+		set "FW Stack Core 1: done"
+
+
+
+mission "FW Stack Core 1B"
+	landing
+	name "Scorta il convoglio da Rand"
+	description "Freya ti ha chiesto di scortare questo convoglio che trasporta rifornimenti vitali per costruire un'entusiasmante nuova attrezzatura, fino a <destination>."
+	source "Rand"
+	destination "Solace"
+	to offer
+		has "FW Stack Core 1: done"
+	
+	on offer
+		conversation
+			`Seguendo le istruzioni di Freya, atterri su <origin> e dici al quartiermastro dello spazioporto che sei stato assegnato a scortare un convoglio fino a <planet>. "Ah, certo," dice, "l'ultimo del loro carico è stato preparato proprio ieri." Ti guida a un gruppo di piazzole dove sono parcheggiati tre mercantili pesanti. "Ultimamente i pirati non hanno dato molti problemi," dice, "ma il carico è abbastanza importante che hanno voluto una scorta comunque." Se ne va prima che tu possa fargli domande su che cosa trasportino i mercantili.`
+				accept
+	
+	npc accompany save
+		government "Free Worlds"
+		personality escort disables
+		fleet
+			names "civilian"
+			cargo 3
+			variant
+				"Bulk Freighter" 3
+	npc
+		government "Republic"
+		system "Menkent"
+		personality surveillance
+		fleet
+			names "republic capital"
+			cargo 0
+			variant
+				"Gunboat" 2
+	
+	on visit
+		dialog "Sei arrivato su <planet>, ma hai lasciato indietro una parte del tuo convoglio! Meglio ripartire e aspettare che arrivino in questo sistema"
+	on complete
+		event "stack core for sale" 25
+		payment 200000
+		dialog `Hai scortato il convoglio sano e salvo a destinazione. Gli operai cominciano a scaricare casse molto pesanti, e uno dei capitani dei mercantili ti porge <payment> e ti ringrazia per la protezione.`
+
+
+
+mission "FW Stack Core 1C"
+	minor
+	landing
+	source
+		near "Pherkad" 100
+	to offer
+		not "main plot completed"
+		has "event: stack core for sale"
+	
+	on offer
+		log "Le Free Worlds hanno ora un nuovo nucleo del reattore di loro progettazione in vendita, specificamente per aumentare le prestazioni energetiche del Dreadnought."
+		conversation
+			`Ricevi un messaggio da Freya: "Salve di nuovo, Capitano! Grazie per l'aiuto nello scortare i materiali su Solace. Da quando abbiamo sviluppato i Dreadnought tutti parlano di quanto ci serva un generatore all'altezza dei loro bisogni energetici, ed è su questo che la Delta V Corporation ha lavorato. Quindi dai un'occhiata la prossima volta che sei su Solace o in uno dei nostri altri centri di produzione principali. Scusa per il mistero intorno al carico, ma non volevamo certo pubblicizzare che una spedizione enorme di materiale fissile era diretta nello spazio delle Free Worlds."`
+				decline
+
+mission "FW Greenrock Lost Announcement"
+	invisible
+	landing
+	source
+		government "Free Worlds"
+	to offer
+		has "event: fw abandoned Greenrock"
+	on offer
+		conversation
+			`Mentre aspetti nello spazioporto di <planet> che la tua nave faccia rifornimento, senti un annuncio provenire da un altoparlante che non vedi. "Attenzione! Le Free Worlds hanno ritirato la nostra presenza da Greenrock. Si avvisa che ogni ulteriore viaggio nel sistema Shaula può comportare il rischio di attacchi pirata." Il messaggio si interrompe bruscamente, per ripetersi pochi minuti dopo.`
+			`	Un capitano della milizia che si era fermato lì vicino ad ascoltare l'annuncio scuote la testa prima di riconoscerti. "Beh, è un vero peccato, no?"`
+			choice
+				`	"Sì, ho rischiato la vita e la posizione per prendere Greenrock."`
+					goto risked
+					to display
+						has "FW Pirates: Attack 3: done"
+				`	"Prima o poi sarebbe successo, probabilmente."`
+				`	"Non avremmo dovuto sprecare le risorse per prenderla."`
+			`	"Immagino, ma le cose sarebbero dovute andare diversamente. Le Free Worlds, e prima ancora il Patto, sono nate per eliminare la pirateria dal Sud, quindi pensavo fosse la cosa giusta da fare."`
+			choice
+				`	"Beh, la minaccia più ovvia alla sovranità delle Free Worlds è la Marina. Attaccare Greenrock non è servito in questo senso."`
+					goto challenge
+				`	"Il piano di Tomek però non ha funzionato. Gli altri pianeti pirata non si sono arresi quando Greenrock è caduta, come lui sperava."`
+			`	"È vero. Ma non dobbiamo perdere di vista i nostri obiettivi originali. La pirateria è una macchia sanguinosa sul Bordo Meridionale, e ogni nave che perdiamo combattendo una guerra meschina fra Bourne e la Terra è una nave che non può proteggere le nostre famiglie su Solace o Longjump dagli orrori della pirateria.`
+			`	"Ma ora sembra che avremo le mani piene nel futuro prevedibile, e i pirati ne approfitteranno di sicuro. Meglio chiudere questa guerra."`
+				goto end
+
+			label risked
+			`	"Ero anch'io a Shaula quel giorno, anche se non ero io al comando della nave. Pensavo che il mio vecchio capitano avesse fatto la cosa giusta allora, ma si è preso la colpa quando il Senato ha cominciato a ficcare il naso nei nostri affari. Anche dopo che Bourne ha deciso che scavalcare gli ordini del suo comandante più capace era un grave errore, passano sopra a tutti i nostri sacrifici a Shaula e ributtano Greenrock agli sciacalli."`
+			choice
+				`	"Forse questa volta il Senato ha preso una decisione saggia. Dopotutto il piano di Tomek si basava sull'idea che gli altri mondi pirata si arrendessero dopo Greenrock, e non è successo."`
+				`	"Ora possiamo fare poco. La sfida adesso è la Marina, non i pirati."`
+					goto challenge
+				`	(Resta in silenzio.)`
+					goto silent
+			`	"Puoi aver ragione. Nelle circostanze, sembrava che attaccare Greenrock potesse toglierci un bel peso dalle spalle... ma comunque, dopo la pausa nelle azioni che è seguita a Wei, credo che il Senato avrebbe potuto gestire Greenrock molto meglio."`
+				goto end
+
+			label challenge
+			`	"Può essere vero, ma continuo a credere che sia stata un'occasione persa. Abbiamo avuto tutto questo tempo da allora per stabilizzare la situazione a Shaula, eppure il Senato non ha fatto niente, così può dimostrare che l'occupazione di Greenrock è stato uno spreco di risorse."`
+
+			label silent
+			`	Il capitano della milizia continua: "È davvero un peccato, avevamo davvero messo i pirati alle corde andando dritti al loro punto debole. Ma ora sembra che avremo le mani piene nel futuro prevedibile, e i pirati ne approfitteranno di sicuro."`
+			label end
+			`	Su questa nota, tornate entrambi ai vostri doveri.`
+				decline

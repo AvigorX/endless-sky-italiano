@@ -1,0 +1,24 @@
+# cartelle generate dai launcher
+/data/
+/build-cmake/
+/userdata/
+/saves/
+/pilots/
+
+# artefatti di build e log
+*.log
+*.o
+*.obj
+*.exe.old
+/CMakeCache.txt
+/CMakeFiles/
+/cmake-build-*/
+
+# cache Python
+__pycache__/
+*.pyc
+
+# sistema
+Thumbs.db
+desktop.ini
+.DS_Store

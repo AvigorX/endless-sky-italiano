@@ -1,0 +1,278 @@
+# Copyright (c) 2017 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Southbound Shipment [0]"
+	name "Spedizione a <planet>"
+	job
+	repeat
+	description "Consegna <cargo> a <destination>, sede dei Southbound Shipyards, la più grande fonderia di navi del Bordo. Il pagamento è <payment>."
+	cargo "weapons" 5 2 .1
+	to offer
+		random < 10
+		has "landing access: Zug"
+	source
+		not government "Pirate"
+		near "Zubeneschamali" 2 10
+		attributes "rim" "south"
+	destination "Zug"
+	npc
+		government "Pirate"
+		personality heroic harvests plunders
+		fleet "Small Southern Pirates"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 160
+		dialog phrase "generic cargo delivery payment"
+
+mission "Southbound Shipment [1]"
+	name "Spedizione a <planet>"
+	job
+	repeat
+	description "Consegna <cargo> a <destination>, sede dei Southbound Shipyards, la più grande fonderia di navi del Bordo. Il pagamento è <payment>."
+	cargo "Ship Alloys" 5 2 .1
+	to offer
+		random < 10
+		has "landing access: Zug"
+	source
+		not government "Pirate"
+		near "Zubeneschamali" 2 10
+		attributes "rim" "south"
+	destination "Zug"
+	npc
+		government "Pirate"
+		personality heroic harvests plunders
+		fleet "Small Southern Pirates"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 160
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Kraz Shipment [0]"
+	name "Spedizione a <planet>"
+	job
+	repeat
+	description "Consegna <cargo> a <destination>, sede della Kraz Cybernetics, una delle principali aziende produttrici di armi e sistemi del Bordo. Il pagamento è <payment>."
+	cargo "weapons parts" 5 2 .1
+	to offer
+		random < 10
+		has "landing access: Rust"
+	source
+		not government "Pirate"
+		near "Kraz" 2 10
+		attributes "rim" "south"
+	destination "Rust"
+	npc
+		government "Pirate"
+		personality heroic harvests plunders
+		fleet "Small Southern Pirates"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 160
+		dialog phrase "generic cargo delivery payment"
+
+mission "Kraz Shipment [1]"
+	name "Spedizione a <planet>"
+	job
+	repeat
+	description "Consegna <cargo> a <destination>, sede della Kraz Cybernetics, una delle principali aziende produttrici di armi e sistemi del Bordo. Il pagamento è <payment>."
+	cargo Electronics 5 2 .1
+	to offer
+		random < 10
+		has "landing access: Rust"
+	source
+		not government "Pirate"
+		near "Kraz" 2 10
+		attributes "rim" "south"
+	destination "Rust"
+	npc
+		government "Pirate"
+		personality heroic harvests plunders
+		fleet "Small Southern Pirates"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 160
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Han Sizer Month [0]"
+	name `Festa di Han Sizer`
+	job
+	repeat
+	description `Per celebrare il mese di Han Sizer, porta <fare> in tutti i sistemi contrassegnati e torna a <destination> per <payment>.`
+	passengers 2 10 .9
+	substitutions
+		"<on Longjump>" "somewhere nearby"
+			has "flagship planet: Longjump"
+		"<on Longjump>" "on Longjump"
+			not "flagship planet: Longjump"
+	to offer
+		random < 30
+		month == 8
+	source
+		attributes "rim"
+	stopover
+		distance 2 4
+		attributes "rim"
+		not attributes "station"
+	stopover
+		distance 5 10
+		attributes "rim"
+		not attributes "station"
+	on complete
+		payment 10000 170
+		dialog `I tuoi passeggeri ti ringraziano per averli portati in viaggio attorno al Bordo, e ritiri il pagamento di <payment>. Mentre se ne vanno, li senti parlare di festeggiare il viaggio con una festa <on Longjump>.`
+
+
+mission "Han Sizer Month [1]"
+	name `Festa di Han Sizer`
+	job
+	repeat
+	description `Per celebrare il mese di Han Sizer, porta <fare> in tutti i sistemi contrassegnati e torna a <destination> per <payment>.`
+	passengers 2 10 .8
+	substitutions
+		"<on Longjump>" "near here"
+			has "flagship planet: Longjump"
+		"<on Longjump>" "on Longjump"
+			not "flagship planet: Longjump"
+	to offer
+		random < 20
+		month == 8
+	source
+		attributes "rim"
+	stopover
+		distance 2 3
+		attributes "rim"
+		not attributes "station"
+	stopover
+		distance 3 4
+		attributes "rim"
+		not attributes "station"
+	stopover
+		distance 5 10
+		attributes "rim"
+		not attributes "station"
+	on complete
+		payment 15000 170
+		dialog `I tuoi passeggeri sono entusiasti di aver completato il viaggio attorno al Bordo e ti pagano la cifra concordata di <payment>. Uno sta già caricando un resoconto di viaggio per qualcuno <on Longjump> mentre si allontana.`
+
+
+mission "Han Sizer Month [2]"
+	name `Festa di Han Sizer`
+	job
+	repeat
+	description `Per celebrare il mese di Han Sizer, porta <fare> in tutti i sistemi contrassegnati e torna a <destination> per <payment>.`
+	passengers 2 10 .7
+	to offer
+		random < 10
+		month == 8
+	source
+		attributes "rim"
+	stopover
+		distance 2 3
+		attributes "rim"
+		not attributes "station"
+	stopover
+		distance 3 4
+		attributes "rim"
+		not attributes "station"
+	stopover
+		distance 4 5
+		attributes "rim"
+		not attributes "station"
+	stopover
+		distance 5 10
+		attributes "rim"
+		not attributes "station"
+	on complete
+		payment 20000 170
+		dialog `I tuoi ospiti ti ringraziano per averli portati in viaggio lungo la rotta di volo di Han Sizer e ti pagano allegramente <payment>. Noti che uno ha aperto una carta stellare alla voce di Sabik mentre si allontana.`
+
+
+mission "Han Sizer Month [3]"
+	name `Festa di Han Sizer`
+	job
+	repeat
+	description `Per celebrare il mese di Han Sizer, porta <fare> in tutti i sistemi contrassegnati e torna a <destination> per <payment>.`
+	passengers 25 4 .1
+	substitutions
+		"<on Longjump>" "near here"
+			has "flagship planet: Longjump"
+		"<on Longjump>" "on Longjump"
+			not "flagship planet: Longjump"
+	to offer
+		random < "passenger space" - 30
+		month == 8
+	source
+		attributes "rim"
+	stopover
+		distance 2 3
+		attributes "rim"
+		not attributes "station"
+	stopover
+		distance 3 4
+		attributes "rim"
+		not attributes "station"
+	stopover
+		distance 5 10
+		attributes "rim"
+		not attributes "station"
+	on complete
+		payment 150000 110
+		dialog `I tuoi passeggeri sono entusiasti di aver completato il viaggio attorno al Bordo e ti pagano la cifra concordata di <payment>. Uno sta già caricando un resoconto di viaggio per qualcuno <on Longjump> mentre si allontana.`
+
+mission "Delta V Hovercraft Racer Transport"
+	name "Trasporto del pilota a <planet>"
+	description "Porta un pilota e il suo hovercraft a <destination> per partecipare a una gara entro <date>."
+	passengers 1
+	cargo "Delta V hovercraft" 1
+	job
+	repeat
+	deadline
+	deadline 8
+	to offer
+		random < 40
+		has "landing access: Sunracer"
+	source Solace
+	destination Sunracer
+	on visit
+		dialog phrase "generic cargo and passenger on visit"
+	on complete
+		payment
+		payment 11000
+		dialog `Scarichi il pilota con il suo hovercraft e ritiri il pagamento di <payment>.`
+
+mission "Delta V Hovercraft Large Racer Transport"
+	name "Trasporto della squadra a <planet>"
+	description "Porta questa squadra di <passengers> e il suo set di <cargo> a <destination> per partecipare a una gara entro <date>."
+	passengers 50 100 .9
+	cargo "Delta V hovercraft" 50
+	job
+	repeat
+	deadline
+	deadline 8
+	to offer
+		random < 7
+		has "landing access: Sunracer"
+	source Solace
+	destination Sunracer
+	on visit
+		dialog phrase "generic cargo and passenger on visit"
+	on complete
+		payment
+		payment 23000
+		dialog `Scarichi la squadra con i suoi hovercraft e ritiri il pagamento di <payment>.`

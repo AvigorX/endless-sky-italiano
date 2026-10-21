@@ -1,0 +1,366 @@
+# Copyright (c) 2014 by Michael Zahniser
+# Copyright (c) 2022 by Hurleveur
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+phrase "unfettered tribute payment dialog"
+	word
+		`Scarichi il tributo per gli Unfettered, e loro ti pagano <payment>.`
+
+phrase "unfettered tribute pickup dialog"
+	word
+		`Quando informi gli Hai che sei lì per riscuotere un pagamento di tributo per gli Unfettered, caricano il carico sulla tua nave con una rapidità e un'allegria piuttosto sorprendenti.`
+		`Gli scaricatori Hai caricano sulla tua nave il tributo per gli Unfettered. Uno di loro ti dice: "Grazie. È molto meglio che guardare i nostri consanguinei morire di fame."`
+		`Mentre gli Hai caricano il tributo sulla tua nave, uno di loro dice: "Dite ai nostri fratelli e alle nostre sorelle che, se solo si pentiranno, saranno i benvenuti a casa."`
+
+mission "Unfettered Tribute 1"
+	name "Tributo Hai da <planet stopovers>"
+	job
+	repeat
+	clearance "After speaking with the Unfettered and explaining your presence, they give you permission to land with the tribute from the other Hai."
+	description "Raccogli un tributo di <tons> di cibo da <stopovers> e portalo agli Unfettered su <destination>. La tua parte del tributo sarà <payment>."
+	to offer
+		has "Unfettered Jump Drive 2: offered"
+		random < 80
+	cargo "food (tribute)" 25 2 .05
+	on complete
+		payment 5000 1600
+		dialog phrase "unfettered tribute payment dialog"
+	source
+		attributes "unfettered"
+	stopover
+		distance 3 4
+		attributes "hai"
+		attributes "spaceport"
+	on visit
+		dialog phrase "generic missing stopover or cargo"
+	on stopover
+		dialog phrase "unfettered tribute pickup dialog"
+
+mission "Unfettered Tribute 2"
+	name "Tributo Hai da <planet stopovers>"
+	job
+	repeat
+	clearance "After speaking with the Unfettered and explaining your presence, they give you permission to land with the tribute from the other Hai."
+	description "Raccogli un tributo di <tons> di cibo da <stopovers> e portalo agli Unfettered su <destination>. La tua parte del tributo sarà <payment>."
+	to offer
+		has "Unfettered Jump Drive 2: offered"
+		random < 60
+	cargo "food (tribute)" 35 2 .05
+	on complete
+		payment 7000 2000
+		dialog phrase "unfettered tribute payment dialog"
+	source
+		attributes "unfettered"
+	stopover
+		distance 4 5
+		attributes "hai"
+		attributes "spaceport"
+	on visit
+		dialog phrase "generic missing stopover or cargo"
+	on stopover
+		dialog phrase "unfettered tribute pickup dialog"
+
+mission "Unfettered Tribute 3"
+	name "Tributo Hai da <planet stopovers>"
+	job
+	repeat
+	clearance "After speaking with the Unfettered and explaining your presence, they give you permission to land with the tribute from the other Hai."
+	description "Raccogli un tributo di <tons> di cibo da <stopovers> e portalo agli Unfettered su <destination>. La tua parte del tributo sarà <payment>."
+	to offer
+		has "Unfettered Jump Drive 2: offered"
+		random < 40
+	cargo "food (tribute)" 45 2 .05
+	on complete
+		payment 9000 2400
+		dialog phrase "unfettered tribute payment dialog"
+	source
+		attributes "unfettered"
+	stopover
+		distance 5 6
+		attributes "hai"
+		attributes "spaceport"
+	on visit
+		dialog phrase "generic missing stopover or cargo"
+	on stopover
+		dialog phrase "unfettered tribute pickup dialog"
+
+
+mission "Unfettered Jump Drive 4"
+	job
+	repeat
+	name "Vendi motore di salto"
+	description "Scambia un motore di salto della tua ammiraglia o del carico con denaro, oppure con armi, se c'è un fornitore disponibile."
+	source
+		attributes "unfettered"
+	to offer
+		has "Unfettered Jump Drive 3: offered"
+		not "event: wanderers: unfettered invasion starts"
+	to fail
+		has "Unfettered Jump Drive 4: active"
+	to accept
+		or
+			has "outfit (flagship installed): Jump Drive"
+			has "outfit (cargo): Jump Drive"
+	on accept
+		conversation
+			branch "want outfits"
+				not "unfettered: money for drives"
+				has "Unfettered Jump Drive Trading: offered"
+				has "flagship planet: Darkcloak"
+			label money
+			action
+				payment 1000000
+			`Come al solito, gli Unfettered sono più che disposti a pagarti un milione di crediti per il tuo motore di salto, ma parlando con loro non ottieni nessuna informazione in più.`
+				goto trade
+
+			label "want outfits"
+			`L'accordo abituale degli Unfettered, scambiare un motore di salto con delle armi, è ancora valido.`
+			choice
+				`	(Prendi due Tripulse Shredders.)`
+				`	(Prendi invece il denaro.)`
+					goto money
+			action
+				outfit "Tripulse Shredder" 2
+			`	I due Shredders vengono caricati sulla tua nave, in cambio del tuo motore di salto.`
+
+			label trade
+			branch spareJD
+				"outfit (cargo): Jump Drive" + "outfit (flagship installed): Hyperdrive" + "outfit (flagship installed): Scram Drive" + "outfit (flagship installed): Jump Drive" > 1
+			action
+				outfit "Hyperdrive" 1
+			label spareJD
+			action
+				outfit "Jump Drive" -1
+				"reputation: Hai (Unfettered)" >?= 40
+
+
+phrase "unfettered mining payment dialog"
+	word
+		"The group of"
+		"The"
+	word
+		" Unfettered unloading the materials"
+	word
+		" you mined"
+		" you gathered"
+		" you brought"
+	word
+		" seem "
+		" appear "
+	word
+		"satisfied."
+		"enthused."
+		"content."
+		"happy."
+	word
+		` "Continua così e costruiremo nuove navi in men che non si dica!`
+		` "Questo ci permetterà di riparare le nostre navi!`
+	word
+		` Alcuni capitani usano gli asteroidi come bersagli per le esercitazioni, ma trovano noioso e troppo facile combattere un nemico che non reagisce,"`
+		` Troppo pochi capitani hanno la pazienza di raccogliere asteroidi come fai tu. La maggior parte cerca di prendere le risorse dalle navi nemiche, ma questo è un modo più sicuro,"`
+	word
+		" one tells you "
+	word
+		"while handing over"
+		"before doling out"
+	word
+		" your payment of <payment>."
+
+phrase "unfettered mining payment dialog"
+	word
+		`Gli Unfettered del posto scaricano il tuo carico di minerali, e uno viene a darti il pagamento di <payment>. "Alcuni Unfettered usano questi asteroidi come bersagli per le esercitazioni, ma troppo pochi riportano indietro i materiali preziosi", dice.`
+		`Un gruppo di Unfettered scarica i materiali che hai estratto, senza dirti nulla. Quando hanno finito, uno ti dà <payment>.`
+		`Gli Unfettered del posto raccolgono i minerali e ti consegnano felici <payment>.`
+
+phrase "unfettered mining payment dialog"
+	word
+		"The leader of the Unfettered unloading the materials comes to you."
+		"Once the minerals are unloaded, an Unfettered comes to you, looking humble and sincere."
+	word
+		` "`
+	word
+		`Questo ci permetterà di riparare le nostre case, i nostri ospedali, perfino le nostre scuole. Per questo hai la mia più profonda gratitudine.`
+		`Grazie, capitano. Abbiamo bisogno di questi materiali - e di qualsiasi altro tipo di aiuto - più di quanto vorremmo ammettere.`
+	word
+		`" `
+	word
+		"They then give you <payment>."
+
+mission "Unfettered Silicon Asteroid Mining"
+	job
+	repeat
+	clearance "After speaking with the Unfettered and explaining your presence, they give you permission to land and deliver the minerals."
+	name "Raccogli silicio dagli asteroidi"
+	description "Estrai e raccogli 50 tonnellate di silicio, poi porta i minerali su <destination> per <payment>. Il silicio si trova nella fascia di asteroidi di Wah Yoot."
+	source "Darkcloak"
+	to offer
+		random < 40
+		"cargo space" > 35
+	on complete
+		payment 60000
+		dialog phrase "unfettered mining payment dialog"
+		outfit "Silicon" -50
+
+mission "Unfettered Silicon Asteroid Mining 2"
+	job
+	repeat
+	clearance "After speaking with the Unfettered and explaining your presence, they give you permission to land and deliver the minerals."
+	name "Raccogli silicio dagli asteroidi"
+	description "Estrai e raccogli 100 tonnellate di silicio, poi porta i minerali su <destination> per <payment>. Il silicio si trova nella fascia di asteroidi a Wah Yoot."
+	source "Darkcloak"
+	to offer
+		random < 10
+		"cargo space" > 80
+	on complete
+		payment 150000
+		dialog phrase "unfettered mining payment dialog"
+		outfit "Silicon" -100
+
+
+mission "Unfettered Silver Asteroid Mining"
+	job
+	repeat
+	clearance "After speaking with the Unfettered and explaining your presence, they give you permission to land and deliver the minerals."
+	name "Raccogli argento dagli asteroidi"
+	description "Estrai e raccogli 15 tonnellate di argento, poi riporta i minerali su <destination> per <payment>. L'argento si trova nella fascia di asteroidi di Ehma Ti."
+	source
+		attributes "unfettered"
+		not planet "Warfeed"
+	destination "Darkcloak"
+	to offer
+		random < 40
+	on complete
+		payment 225000
+		dialog phrase "unfettered mining payment dialog"
+		outfit "Silver" -15
+
+mission "Unfettered Silver Asteroid Mining 2"
+	job
+	repeat
+	clearance "After speaking with the Unfettered and explaining your presence, they give you permission to land and deliver the minerals."
+	name "Raccogli argento dagli asteroidi"
+	description "Estrai e raccogli 30 tonnellate di argento, poi porta i minerali su <destination> per <payment>. L'argento si trova nella fascia di asteroidi di Ehma Ti."
+	source
+		attributes "unfettered"
+		not planet "Warfeed"
+	destination "Darkcloak"
+	to offer
+		random < 10
+		"cargo space" > 25
+	on complete
+		payment 500000
+		dialog phrase "unfettered mining payment dialog"
+		outfit "Silver" -30
+
+
+mission "Unfettered Lead Asteroid Mining"
+	job
+	repeat
+	clearance "After speaking with the Unfettered and explaining your presence, they give you permission to land and deliver the minerals."
+	name "Raccogli piombo dagli asteroidi"
+	description "Estrai e raccogli 35 tonnellate di piombo, poi porta i minerali su <destination> per <payment>. Il piombo si trova nella fascia di asteroidi di Wah Yoot."
+	source
+		attributes "unfettered"
+		not planet "Warfeed"
+	destination "Darkcloak"
+	to offer
+		random < 40
+		"cargo space" > 30
+	on complete
+		payment 95000
+		dialog phrase "unfettered mining payment dialog"
+		outfit "Lead" -35
+
+mission "Unfettered Lead Asteroid Mining 2"
+	job
+	repeat
+	clearance "After speaking with the Unfettered and explaining your presence, they give you permission to land and deliver the minerals."
+	name "Raccogli piombo dagli asteroidi"
+	description "Estrai e raccogli 70 tonnellate di piombo, poi porta i minerali su <destination> per <payment>. Il piombo si trova nella fascia di asteroidi di Wah Yoot."
+	source
+		attributes "unfettered"
+		not planet "Warfeed"
+	destination "Darkcloak"
+	to offer
+		random < 10
+		"cargo space" > 55
+	on complete
+		payment 210000
+		dialog phrase "unfettered mining payment dialog"
+		outfit "Lead" -70
+
+
+phrase "unfettered medicals pickup dialog"
+	word
+		`Come al solito, gli Hai sono più che felici di darti le forniture mediche necessarie. "Dite ai nostri fratelli e alle nostre sorelle di resistere", dice uno mentre carica le forniture sulla tua nave.`
+		`Gli Hai capiscono l'urgenza della situazione e non perdono tempo in chiacchiere. Caricano le forniture sulla tua nave e ti augurano buon viaggio.`
+		`Non c'è nessuna reticenza nel darti le forniture mediche. "Preferiamo assicurarci che i nostri fratelli e le nostre sorelle non manchino di nulla; i nostri bisogni vengono dopo", dice uno quando ha finito di caricare le forniture sulla tua nave.`
+
+phrase "unfettered medicals payment dialog"
+	word
+		"The local health specialists are relieved that you have managed to bring the needed medical supplies back in time, and give you <payment> for it."
+		"All the Unfettered here seem busy, and you have to wait before being able to unload the medical supplies to the local hospital. After some time, a local worker gives you <payment> and tells you to drop the cargo at a specific location."
+		`Appena arrivi con le forniture mediche, ti accoglie uno specialista sanitario locale che sembra disperato di averle. "Non un momento troppo presto. Se fosse arrivato più tardi le conseguenze avrebbero potuto essere gravi", dice porgendoti <payment>.`
+
+mission "Unfettered Small Medicals Rush"
+	job
+	repeat
+	clearance "After speaking with the Unfettered and explaining your presence, they give you permission to land with the much-needed medical supplies."
+	name "Scorte mediche urgenti da <planet stopovers>"
+	description "Gli ospedali degli Unfettered su <destination> hanno urgente bisogno di rifornimenti. Raccogli <tons> di forniture mediche da <stopovers> e portale in fretta agli Unfettered entro <date> per <payment>."
+	deadline 4 1
+	cargo "medical supplies" 10 2 .05
+	source
+		attributes "unfettered"
+	stopover
+		distance 5 7
+		government "Hai"
+		attributes "spaceport"
+	destination "Darkcloak"
+	to offer
+		random < 20 + "Unfettered Jump Drive 2: offered" * 10
+		"reputation: Hai (Unfettered)" >= 0
+	on visit
+		dialog phrase "generic missing stopover or cargo"
+	on stopover
+		dialog phrase "unfettered medicals pickup dialog"
+	on complete
+		payment 8000 2000
+		dialog phrase "unfettered medicals payment dialog"
+
+
+mission "Unfettered Big Medicals Rush"
+	job
+	repeat
+	clearance "After speaking with the Unfettered and explaining your presence, they give you permission to land with the much-needed medical supplies."
+	name "Forniture mediche da <planet stopovers>"
+	description "Gli ospedali degli Unfettered su <destination> hanno bisogno di rifornimenti consistenti. Raccogli <tons> di forniture mediche da <stopovers> e portale agli Unfettered entro <date> per <payment>."
+	deadline 10 1
+	cargo "medicals" 35 2 .05
+	source
+		attributes "unfettered"
+	stopover
+		distance 5 7
+		government "Hai"
+		attributes "spaceport"
+	to offer
+		"reputation: Hai (Unfettered)" >= 0
+		has "Unfettered Jump Drive 3: offered"
+		random < 20
+	on visit
+		dialog phrase "generic missing stopover or cargo"
+	on stopover
+		dialog phrase "unfettered medicals pickup dialog"
+	on complete
+		payment 8000 2800
+		dialog phrase "unfettered medicals payment dialog"

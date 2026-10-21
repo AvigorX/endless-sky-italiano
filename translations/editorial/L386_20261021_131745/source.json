@@ -1,0 +1,24 @@
+{
+ "block": {
+  "path": "data/gamerules.txt",
+  "line_from": 15,
+  "line_to": 15,
+  "units": 1
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "(root)|description|15|0",
+   "path": "data/gamerules.txt",
+   "line": 15,
+   "kind": "DESCRIPTION",
+   "context": "(root)",
+   "english": "The default set of gamerules around which the game is developed.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The default set of gamerules around which the game is developed.\"",
+   "english_hash": "0e93001a12fff7bd"
+  }
+ ]
+}

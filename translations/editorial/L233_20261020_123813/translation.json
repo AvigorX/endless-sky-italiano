@@ -1,0 +1,253 @@
+{
+ "block": {
+  "path": "data/avgi/avgi news.txt",
+  "line_from": 32,
+  "line_to": 91,
+  "units": 22
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:avgi siege civilian|\"Dejection. Once this star system was our own, but now we only hold the soil beneath our wings.\"|32|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 32,
+   "kind": "NEWS",
+   "context": "news:avgi siege civilian",
+   "english": "\"Dejection. Once this star system was our own, but now we only hold the soil beneath our wings.\"",
+   "italian": "\"Scoramento. Un tempo questo sistema stellare era nostro, ma ora possediamo solo il suolo sotto le nostre ali.\"",
+   "ratio": 1.156
+  },
+  {
+   "idx": 2,
+   "id": "news:avgi siege civilian|\"Rejection. The Consonance claims to speak for the Avgi, yet none of us in the occupied systems voted for their rule.\"|33|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 33,
+   "kind": "NEWS",
+   "context": "news:avgi siege civilian",
+   "english": "\"Rejection. The Consonance claims to speak for the Avgi, yet none of us in the occupied systems voted for their rule.\"",
+   "italian": "\"Rifiuto. La Consonance sostiene di parlare a nome degli Avgi, eppure nessuno di noi nei sistemi occupati ha votato per il loro dominio.\"",
+   "ratio": 1.161
+  },
+  {
+   "idx": 3,
+   "id": "news:avgi siege civilian|\"Remembrance. The Aberrations tried to bombard our cities early in the war, but our defense systems were able to shoot most of their projectiles down.\"|34|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 34,
+   "kind": "NEWS",
+   "context": "news:avgi siege civilian",
+   "english": "\"Remembrance. The Aberrations tried to bombard our cities early in the war, but our defense systems were able to shoot most of their projectiles down.\"",
+   "italian": "\"Ricordo. All'inizio della guerra gli Aberrant hanno provato a bombardare le nostre città, ma i sistemi di difesa sono riusciti ad abbattere la maggior parte dei loro proiettili.\"",
+   "ratio": 1.185
+  },
+  {
+   "idx": 4,
+   "id": "news:avgi siege civilian|\"Remembrance. Much of my family was lost when the Aberrant destroyed our cylinder habitats. In the Anax system, only the Nisos Cylinder survived.\"|35|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 35,
+   "kind": "NEWS",
+   "context": "news:avgi siege civilian",
+   "english": "\"Remembrance. Much of my family was lost when the Aberrant destroyed our cylinder habitats. In the Anax system, only the Nisos Cylinder survived.\"",
+   "italian": "\"Ricordo. Gran parte della mia famiglia è andata perduta quando gli Aberrant hanno distrutto i nostri habitat cilindrici. Nel sistema Anax è sopravvissuto solo il Cilindro Nisos.\"",
+   "ratio": 1.226
+  },
+  {
+   "idx": 5,
+   "id": "news:avgi siege civilian|\"Guilt. Twelve million Avgi lived on each of the cylinder habitats. Less than one in six made it out alive.\"|36|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 36,
+   "kind": "NEWS",
+   "context": "news:avgi siege civilian",
+   "english": "\"Guilt. Twelve million Avgi lived on each of the cylinder habitats. Less than one in six made it out alive.\"",
+   "italian": "\"Colpa. Dodici milioni di Avgi vivevano in ciascuno degli habitat cilindrici. Meno di uno su sei ne è uscito vivo.\"",
+   "ratio": 1.065
+  },
+  {
+   "idx": 6,
+   "id": "news:avgi siege civilian|\"Worry. If not for our ground-to-orbit laser batteries, the Aberrant would surely have invaded the surface by now.\"|37|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 37,
+   "kind": "NEWS",
+   "context": "news:avgi siege civilian",
+   "english": "\"Worry. If not for our ground-to-orbit laser batteries, the Aberrant would surely have invaded the surface by now.\"",
+   "italian": "\"Preoccupazione. Se non fosse per le nostre batterie laser terra-orbita, gli Aberrant avrebbero già invaso la superficie.\"",
+   "ratio": 1.061
+  },
+  {
+   "idx": 7,
+   "id": "news:avgi siege civilian|\"Sorrow. You can see the debris from our shattered skyhooks in orbit with the naked eye.\"|38|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 38,
+   "kind": "NEWS",
+   "context": "news:avgi siege civilian",
+   "english": "\"Sorrow. You can see the debris from our shattered skyhooks in orbit with the naked eye.\"",
+   "italian": "\"Dolore. I detriti dei nostri skyhook in frantumi si vedono in orbita a occhio nudo.\"",
+   "ratio": 0.955
+  },
+  {
+   "idx": 8,
+   "id": "news:avgi siege civilian|\"Anger. Why did the Consonance have to abandon our space? The surface of our core planets could have sheltered our ships, but instead they ran to save themselves.\"|39|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 39,
+   "kind": "NEWS",
+   "context": "news:avgi siege civilian",
+   "english": "\"Anger. Why did the Consonance have to abandon our space? The surface of our core planets could have sheltered our ships, but instead they ran to save themselves.\"",
+   "italian": "\"Rabbia. Perché la Consonance ha dovuto abbandonare il nostro spazio? La superficie dei nostri pianeti del Nucleo avrebbe potuto dare rifugio alle nostre navi, invece sono scappati per salvare se stessi.\"",
+   "ratio": 1.252
+  },
+  {
+   "idx": 9,
+   "id": "news:avgi siege civilian|\"Curiosity. I've never been to the Tangled Shroud, but I heard it is a safe place away from the Aberrant.\"|40|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 40,
+   "kind": "NEWS",
+   "context": "news:avgi siege civilian",
+   "english": "\"Curiosity. I've never been to the Tangled Shroud, but I heard it is a safe place away from the Aberrant.\"",
+   "italian": "\"Curiosità. Non sono mai stato nel Tangled Shroud, ma ho sentito che è un posto sicuro, lontano dagli Aberrant.\"",
+   "ratio": 1.057
+  },
+  {
+   "idx": 10,
+   "id": "news:avgi siege civilian|\"Satisfaction. Every time an Aberration comes too close, we hit it with half a dozen surface-to-orbit nuclear missiles.\"|41|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 41,
+   "kind": "NEWS",
+   "context": "news:avgi siege civilian",
+   "english": "\"Satisfaction. Every time an Aberration comes too close, we hit it with half a dozen surface-to-orbit nuclear missiles.\"",
+   "italian": "\"Soddisfazione. Ogni volta che un Aberrant si avvicina troppo, lo colpiamo con una mezza dozzina di missili nucleari superficie-orbita.\"",
+   "ratio": 1.133
+  },
+  {
+   "idx": 11,
+   "id": "news:avgi siege civilian|\"Optimism. Despite the siege of our star systems, the surface of our inhabited planets remain quite safe from attack.\"|42|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 42,
+   "kind": "NEWS",
+   "context": "news:avgi siege civilian",
+   "english": "\"Optimism. Despite the siege of our star systems, the surface of our inhabited planets remain quite safe from attack.\"",
+   "italian": "\"Ottimismo. Nonostante l'assedio dei nostri sistemi stellari, la superficie dei nostri pianeti abitati resta al riparo dagli attacchi.\"",
+   "ratio": 1.144
+  },
+  {
+   "idx": 12,
+   "id": "news:avgi siege merchant|\"Relief. You wouldn't believe how hard it is to run a blockade against those Aberrant!\"|62|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 62,
+   "kind": "NEWS",
+   "context": "news:avgi siege merchant",
+   "english": "\"Relief. You wouldn't believe how hard it is to run a blockade against those Aberrant!\"",
+   "italian": "\"Sollievo. Non crederesti a quanto sia difficile forzare un blocco contro quegli Aberrant!\"",
+   "ratio": 1.046
+  },
+  {
+   "idx": 13,
+   "id": "news:avgi siege merchant|\"Frustration. We'd be able to smuggle more people out to the Tangled Shroud in the south if there was room to house them all.\"|63|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 63,
+   "kind": "NEWS",
+   "context": "news:avgi siege merchant",
+   "english": "\"Frustration. We'd be able to smuggle more people out to the Tangled Shroud in the south if there was room to house them all.\"",
+   "italian": "\"Frustrazione. Potremmo portare più persone di contrabbando fuori verso il Tangled Shroud, a sud, se ci fosse posto per ospitarle tutte.\"",
+   "ratio": 1.087
+  },
+  {
+   "idx": 14,
+   "id": "news:avgi siege merchant|\"Appeasing. We can't take all of you with us, only these names on the list the Assembly gave us.\"|64|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 64,
+   "kind": "NEWS",
+   "context": "news:avgi siege merchant",
+   "english": "\"Appeasing. We can't take all of you with us, only these names on the list the Assembly gave us.\"",
+   "italian": "\"Placazione. Non possiamo portare tutti con noi, solo i nomi su questa lista che l'Assemblea ci ha dato.\"",
+   "ratio": 1.082
+  },
+  {
+   "idx": 15,
+   "id": "news:avgi siege merchant|\"Exasperation. No one understands that we can't just take everyone with us; there simply aren't enough habitats past the Shroud. The Consonance had to set an evacuation quota for a reason!\"|65|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 65,
+   "kind": "NEWS",
+   "context": "news:avgi siege merchant",
+   "english": "\"Exasperation. No one understands that we can't just take everyone with us; there simply aren't enough habitats past the Shroud. The Consonance had to set an evacuation quota for a reason!\"",
+   "italian": "\"Esasperazione. Nessuno capisce che non possiamo semplicemente portare via tutti; oltre lo Shroud non ci sono abbastanza habitat. La Consonance ha dovuto fissare una quota di evacuazione, un motivo ci sarà!\"",
+   "ratio": 1.095
+  },
+  {
+   "idx": 16,
+   "id": "news:avgi siege merchant|\"Frustration. We're always being asked to try and retrieve advanced equipment from the homeworlds, but it's simply too difficult to get it back to the Shroud.\"|66|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 66,
+   "kind": "NEWS",
+   "context": "news:avgi siege merchant",
+   "english": "\"Frustration. We're always being asked to try and retrieve advanced equipment from the homeworlds, but it's simply too difficult to get it back to the Shroud.\"",
+   "italian": "\"Frustrazione. Ci chiedono di continuo di recuperare equipaggiamento avanzato dai mondi d'origine, ma riportarlo fino allo Shroud è semplicemente troppo difficile.\"",
+   "ratio": 1.031
+  },
+  {
+   "idx": 17,
+   "id": "news:avgi siege hatchling|\"Wonder. I heard we could once travel the stars. Do you think we'll ever return?\"|86|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 86,
+   "kind": "NEWS",
+   "context": "news:avgi siege hatchling",
+   "english": "\"Wonder. I heard we could once travel the stars. Do you think we'll ever return?\"",
+   "italian": "\"Meraviglia. Ho sentito che un tempo potevamo viaggiare tra le stelle. Pensi che ci torneremo mai?\"",
+   "ratio": 1.222
+  },
+  {
+   "idx": 18,
+   "id": "news:avgi siege hatchling|\"Confusion. How is it that there are Avgi in other star systems, but we can't launch anything from this planet without it being destroyed?\"|87|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 87,
+   "kind": "NEWS",
+   "context": "news:avgi siege hatchling",
+   "english": "\"Confusion. How is it that there are Avgi in other star systems, but we can't launch anything from this planet without it being destroyed?\"",
+   "italian": "\"Confusione. Com'è possibile che ci siano Avgi in altri sistemi stellari, mentre da questo pianeta non possiamo lanciare niente senza che venga distrutto?\"",
+   "ratio": 1.115
+  },
+  {
+   "idx": 19,
+   "id": "news:avgi siege hatchling|\"Sadness. I don't know if I'll ever be able to visit another planet.\"|88|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 88,
+   "kind": "NEWS",
+   "context": "news:avgi siege hatchling",
+   "english": "\"Sadness. I don't know if I'll ever be able to visit another planet.\"",
+   "italian": "\"Tristezza. Non so se riuscirò mai a visitare un altro pianeta.\"",
+   "ratio": 0.928
+  },
+  {
+   "idx": 20,
+   "id": "news:avgi siege hatchling|\"Hurt. Why do the aliens attack us? We never did anything to them.\"|89|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 89,
+   "kind": "NEWS",
+   "context": "news:avgi siege hatchling",
+   "english": "\"Hurt. Why do the aliens attack us? We never did anything to them.\"",
+   "italian": "\"Offesa. Perché gli alieni ci attaccano? Non abbiamo mai fatto niente a loro.\"",
+   "ratio": 1.164
+  },
+  {
+   "idx": 21,
+   "id": "news:avgi siege hatchling|\"Loss. I was born on a space station, but now I am trapped on a planet, weighed down by the ground itself.\"|90|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 90,
+   "kind": "NEWS",
+   "context": "news:avgi siege hatchling",
+   "english": "\"Loss. I was born on a space station, but now I am trapped on a planet, weighed down by the ground itself.\"",
+   "italian": "\"Perdita. Sono nato su una stazione spaziale, ma ora sono bloccato su un pianeta, oppresso dal suolo stesso.\"",
+   "ratio": 1.019
+  },
+  {
+   "idx": 22,
+   "id": "news:avgi siege hatchling|\"Despair. My family was lost in an Aberrant attack a year ago. It will never be the same again.\"|91|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 91,
+   "kind": "NEWS",
+   "context": "news:avgi siege hatchling",
+   "english": "\"Despair. My family was lost in an Aberrant attack a year ago. It will never be the same again.\"",
+   "italian": "\"Disperazione. La mia famiglia è andata perduta in un attacco degli Aberrant un anno fa. Non sarà mai più come prima.\"",
+   "ratio": 1.229
+  }
+ ]
+}

@@ -1,0 +1,231 @@
+{
+ "block": {
+  "path": "data/human/paradise world jobs.txt",
+  "line_from": 526,
+  "line_to": 691,
+  "units": 20
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Paradise Job: Pirate Retirees (Illegal)|name|526|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 526,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Pirate Retirees (Illegal)",
+   "english": "Wealthy retirees to <planet>",
+   "italian": "Pensionati facoltosi per <planet>",
+   "ratio": 1.179
+  },
+  {
+   "idx": 2,
+   "id": "mission:Paradise Job: Pirate Retirees (Illegal)|description|529|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 529,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Pirate Retirees (Illegal)",
+   "english": "This coterie of <bunks> wealthy \"retirees\" is willing to pay <payment> for stylish, no-questions-asked transport to <destination>, along with <tons> of their most treasured possessions.",
+   "italian": "Questa cerchia di <bunks> \"pensionati\" benestanti è disposta a pagare <payment> per un trasporto elegante e senza domande su <destination>, insieme a <tons> dei loro averi più cari.",
+   "ratio": 0.978
+  },
+  {
+   "idx": 3,
+   "id": "mission:Paradise Job: Pirate Retirees (Illegal)|illegal|532|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 532,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Paradise Job: Pirate Retirees (Illegal)",
+   "english": "After scanning your ship, law enforcement notifies you. Apparently the \"retirees\" you've been carting around are secretly wanted individuals. After boarding your ship, they arrest the so-called retirees and search through their \"treasured possessions,\" which are innocent enough, besides being obtained illegally. In the end, they confiscate the possessions and take away the criminals, leaving you with a small fine.",
+   "italian": "Dopo aver scansionato la tua nave, le forze dell'ordine ti avvisano. A quanto pare i \"pensionati\" che hai trasportato in giro sono in realtà individui ricercati. Dopo essere saliti a bordo, arrestano i cosiddetti pensionati e frugano fra i loro \"averi più cari\", che sono abbastanza innocui, a parte essere stati ottenuti illegalmente. Alla fine confiscano gli averi e portano via i criminali, lasciandoti con una multa modesta.",
+   "ratio": 1.026
+  },
+  {
+   "idx": 4,
+   "id": "mission:Paradise Job: Pirate Retirees (Illegal)|dialog|549|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 549,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Pirate Retirees (Illegal)",
+   "english": "You bid goodbye to the self-proclaimed retirees, who were somewhat prone to spilling drinks or irritating you whilst attempting to do work. They were otherwise extremely polite, if raucous, and full of highly amusing, though often morally questionable, anecdotes. Once the last of their belongings have been safely unloaded your accounts receive the payment of <payment> from an anonymous source.",
+   "italian": "Dai l'addio ai pensionati autoproclamati, che erano un po' inclini a rovesciare drink o a infastidirti mentre tentavano di darti una mano. Per il resto sono stati estremamente gentili, anche se chiassosi, e pieni di aneddoti divertentissimi ma spesso moralmente discutibili. Una volta scaricati al sicuro tutti i loro averi, i tuoi conti ricevono il pagamento di <payment> da una fonte anonima.",
+   "ratio": 0.995
+  },
+  {
+   "idx": 5,
+   "id": "mission:Paradise Job: Pirate Retirees (Legal)|name|553|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 553,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Pirate Retirees (Legal)",
+   "english": "Wealthy retirees to <planet>",
+   "italian": "Pensionati facoltosi per <planet>",
+   "ratio": 1.179
+  },
+  {
+   "idx": 6,
+   "id": "mission:Paradise Job: Pirate Retirees (Legal)|description|556|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 556,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Pirate Retirees (Legal)",
+   "english": "This coterie of <bunks> wealthy \"retirees\" is willing to pay <payment> for stylish, no-questions-asked transport to <destination>, along with <tons> of their most treasured possessions.",
+   "italian": "Questa cerchia di <bunks> \"pensionati\" benestanti è disposta a pagare <payment> per un trasporto elegante e senza domande su <destination>, insieme a <tons> dei loro averi più cari.",
+   "ratio": 0.978
+  },
+  {
+   "idx": 7,
+   "id": "mission:Paradise Job: Pirate Retirees (Legal)|dialog|574|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 574,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Pirate Retirees (Legal)",
+   "english": "You bid goodbye to the self-proclaimed retirees, who were somewhat prone to spilling drinks or irritating you whilst attempting to do work. They were otherwise extremely polite, if raucous, and full of highly amusing, though often morally questionable, anecdotes. Once the last of their belongings have been safely unloaded your accounts receive the payment of <payment> from an anyonymous source.",
+   "italian": "Dai l'addio ai pensionati autoproclamati, che erano un po' inclini a rovesciare drink o a infastidirti mentre tentavano di darti una mano. Per il resto sono stati estremamente gentili, anche se chiassosi, e pieni di aneddoti divertentissimi ma spesso moralmente discutibili. Una volta scaricati al sicuro tutti i loro averi, i tuoi conti ricevono il pagamento di <payment> da una fonte anonima.",
+   "ratio": 0.992
+  },
+  {
+   "idx": 8,
+   "id": "mission:Paradise Job: Wilderness Retreat|name|578|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 578,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Wilderness Retreat",
+   "english": "Wilderness Retreat to <planet>",
+   "italian": "Ritiro nel selvaggio per <planet>",
+   "ratio": 1.1
+  },
+  {
+   "idx": 9,
+   "id": "mission:Paradise Job: Wilderness Retreat|description|581|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 581,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Wilderness Retreat",
+   "english": "Bring <bunks> pseudo-celebrities and wealthy tourists to the wild and untamed world of <destination> for a \"Wilderness Retreat.\" They'll only consider your ship if you can ensure that they can have a comfortable journey. Payment is <payment>.",
+   "italian": "Porta <bunks> pseudo-celebrità e turisti ricchi sul mondo selvaggio e indomito di <destination> per un \"Ritiro nella Natura\". Considereranno la tua nave solo se puoi garantire loro un viaggio confortevole. Il compenso è di <payment>.",
+   "ratio": 0.963
+  },
+  {
+   "idx": 10,
+   "id": "mission:Paradise Job: Wilderness Retreat|dialog|599|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 599,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Wilderness Retreat",
+   "english": "Your passengers are met by an overly enthusiastic greeting service of comically overdressed \"wilderness guides.\" You can't help but think these people are either about to end up on a popular reality show, or be safely fleeced of their money, but they're not the sort of characters who engender much sympathy for such fates. One of the greeters quietly transfers to you your payment of <payment>.",
+   "italian": "I tuoi passeggeri vengono accolti da un servizio di accoglienza fin troppo entusiasta, fatto di \"guide naturalistiche\" comicamente agghindate. Non puoi fare a meno di pensare che queste persone stiano per finire in un reality show di successo, o per essere alleggerite dei loro soldi senza correre rischi, ma non sono il tipo di personaggi che suscitano molta simpatia per simili destini. Uno degli addetti ti passa in disparte il tuo compenso di <payment>.",
+   "ratio": 1.157
+  },
+  {
+   "idx": 11,
+   "id": "mission:Gemini Shipyards Shipment [0]|name|603|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 603,
+   "kind": "VALUE",
+   "context": "mission:Gemini Shipyards Shipment [0]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione per <planet>",
+   "ratio": 1.15
+  },
+  {
+   "idx": 12,
+   "id": "mission:Gemini Shipyards Shipment [0]|description|604|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 604,
+   "kind": "DESCRIPTION",
+   "context": "mission:Gemini Shipyards Shipment [0]",
+   "english": "Deliver <cargo> to <destination>, the home of Gemini Shipyards, a constituent of the Republic Navy Yard and one of the most advanced shipyards in human space. Payment is <payment>.",
+   "italian": "Consegna <cargo> su <destination>, sede di Gemini Shipyards, costola del Republic Navy Yard e uno dei cantieri più avanzati dello spazio umano. Il compenso è di <payment>.",
+   "ratio": 0.95
+  },
+  {
+   "idx": 13,
+   "id": "mission:Gemini Shipyards Shipment [1]|name|625|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 625,
+   "kind": "VALUE",
+   "context": "mission:Gemini Shipyards Shipment [1]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione per <planet>",
+   "ratio": 1.15
+  },
+  {
+   "idx": 14,
+   "id": "mission:Gemini Shipyards Shipment [1]|description|626|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 626,
+   "kind": "DESCRIPTION",
+   "context": "mission:Gemini Shipyards Shipment [1]",
+   "english": "Deliver <cargo> to <destination>, the home of Gemini Shipyards, a constituent of the Republic Navy Yard and one of the most advanced shipyards in human space. Payment is <payment>.",
+   "italian": "Consegna <cargo> su <destination>, sede di Gemini Shipyards, costola del Republic Navy Yard e uno dei cantieri più avanzati dello spazio umano. Il compenso è di <payment>.",
+   "ratio": 0.95
+  },
+  {
+   "idx": 15,
+   "id": "mission:Lovelace Labs Shipment [0]|name|647|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 647,
+   "kind": "VALUE",
+   "context": "mission:Lovelace Labs Shipment [0]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione per <planet>",
+   "ratio": 1.15
+  },
+  {
+   "idx": 16,
+   "id": "mission:Lovelace Labs Shipment [0]|description|648|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 648,
+   "kind": "DESCRIPTION",
+   "context": "mission:Lovelace Labs Shipment [0]",
+   "english": "Deliver <cargo> to <destination>, the home of Lovelace Labs, a well-respected weapons manufacturer in the region. Payment is <payment>.",
+   "italian": "Consegna <cargo> su <destination>, sede di Lovelace Labs, un produttore di armi ben considerato nella regione. Il compenso è di <payment>.",
+   "ratio": 1.022
+  },
+  {
+   "idx": 17,
+   "id": "mission:Polymath Nanoinstruments Shipment [0]|name|667|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 667,
+   "kind": "VALUE",
+   "context": "mission:Polymath Nanoinstruments Shipment [0]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione per <planet>",
+   "ratio": 1.15
+  },
+  {
+   "idx": 18,
+   "id": "mission:Polymath Nanoinstruments Shipment [0]|description|668|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 668,
+   "kind": "DESCRIPTION",
+   "context": "mission:Polymath Nanoinstruments Shipment [0]",
+   "english": "Deliver <cargo> to <destination>, the home of Polymath Nanoinstruments, one of the largest electronics firms in human space. Payment is <payment>.",
+   "italian": "Consegna <cargo> su <destination>, sede di Polymath Nanoinstruments, una delle maggiori aziende elettroniche dello spazio umano. Il compenso è di <payment>.",
+   "ratio": 1.068
+  },
+  {
+   "idx": 19,
+   "id": "mission:Martini Evacuation (Resident Family)|name|690|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 690,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Resident Family)",
+   "english": "Evacuate Martini family to <planet>",
+   "italian": "Evacua una famiglia di Martini su <planet>",
+   "ratio": 1.2
+  },
+  {
+   "idx": 20,
+   "id": "mission:Martini Evacuation (Resident Family)|description|691|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 691,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Resident Family)",
+   "english": "This family of <bunks> from Martini had their <martini house> destroyed in the nuclear bombing and wish to leave immediately. Transport them and their <cargo> to <planet>, where they have accommodation. They will pay you <payment>.",
+   "italian": "Questa famiglia di <bunks> di Martini ha visto la propria <martini house> distrutta nel bombardamento nucleare e vuole andarsene subito. Trasportali insieme al loro <cargo> su <planet>, dove hanno un alloggio. Ti pagheranno <payment>.",
+   "ratio": 1.013
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+# -*- coding: utf-8 -*-
+# part02: unita' 24-70 (Acquiescence, prima parte).
+import json
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+P = {
+24: "Trasporta il guerriero Vi su <destination>.",
+25: "Dirigiti su <destination>, con il guerriero Vi come tuo 'passeggero'.",
+26: "Ti serve almeno una cuccetta libera per accettare questa missione.",
+27: "I Gegno mostrano di nuovo cautela: flotte di navi Vi e Scin orbitano intorno al loro mondo natale mentre cominci la discesa. La tua \"scorta\" Quarg, che era già nel sistema prima di te, resta indietro. Alcune navi Gegno più piccole di entrambe le flotte ti seguono fino alla superficie del pianeta e si mettono davanti a te per guidarti alla destinazione.",
+28: "I Gegno mostrano di nuovo cautela: flotte di navi Vi e Scin orbitano intorno al loro mondo natale mentre cominci la discesa. Alcune navi Gegno più piccole di entrambe le flotte ti seguono fino alla superficie del pianeta e si mettono davanti a te per guidarti alla destinazione.",
+29: "Dopo aver attraversato diversi strati di smog, stai di nuovo volando intorno alle città torreggianti simili a castelli del mondo natale dei Gegno. Alla fine sei portato lontano dal viavai delle città, in una zona più remota con una struttura imponente avvolta dallo smog, forse quella che hai visitato la prima volta. L'attività intorno, però, sembra molto minore rispetto a tutto il resto.",
+30: "Invece che a uno dei portelli di attracco lungo la torre, le navi Gegno ti indirizzano alla base della struttura, oscurata da un'altra nube scura di smog. Quando raggiungi la superficie, le navi Gegno restano in posizione sopra di te mentre parcheggi la nave a terra. La zona sembra priva di altri Gegno, quasi inquietantemente.",
+31: "(Resta nella mia nave.)",
+32: "(Esci dalla mia nave.)",
+33: "Decidi di restare al sicuro nella nave. I Gegno che ti librano sopra non ti aiutano più: ti stanno semplicemente osservando. A parte loro, non ci sono altri veicoli nella zona, men che meno navi. Prima che passi molto tempo, noti nel fumo più avanti una figura in ombra che porta una sorta di lungo bastone. Un Gegno solitario esce dalla nube di fumo, fa qualche altro passo pesante e si ferma a diversi metri dalla tua nave.",
+34: "Qualsiasi azione tu compia ora è esclusivamente a tua discrezione. Tuttavia ti resta una sola scelta da fare.",
+35: "(Incontra il Gegno.)",
+36: "(Lascia il Gegno e il suo mondo.)",
+37: "Decidi di portare avanti il tuo intento. Sei arrivato fin qui, sei di nuovo sul loro mondo natale e non hanno ancora mostrato segni di volerti cacciare. L'ambiente esterno sembra \"sicuro\" per gli umani: condizioni simili a quelle della Terra, se la Terra fosse ancora più inquinata di quanto già non sia. Prendi l'arma da fianco in caso di emergenza, esci dalla nave e ti avvicini con cautela al Gegno. Anche se è un po' difficile dirlo, sei quasi certo che sia il Gegno che hai incontrato per la prima volta su quel pianeta desertico. L'unica differenza nel suo aspetto è una specie di fascia rossa sul braccio sinistro. Le navi sopra decollano all'improvviso, e il Gegno si volta e comincia a dirigersi verso l'imponente torre davanti a te.",
+38: "exit",
+39: "L'ambiente esterno sembra \"sicuro\" per gli umani: condizioni simili a quelle della Terra, se fosse ancora più inquinata di quanto già non sia. Prendi l'arma da fianco in caso di emergenza ed esci dalla nave. I Gegno nelle navi sopra osservano attentamente ogni tuo movimento e, a parte il sibilo lontano dei loro motori, c'è un silenzio inquietante. Prima che passi molto tempo, noti nel fumo davanti alla nave una figura in ombra che porta una sorta di lungo bastone. Un Gegno solitario esce dalla nube di fumo e si avvicina lentamente. Si ferma a un paio di metri da te e, anche se è un po' difficile dirlo, sei quasi certo che sia il Gegno Vi che hai incontrato per la prima volta su quel pianeta desertico. L'unica differenza nel suo aspetto è una specie di fascia rossa sul braccio sinistro.",
+40: "A questo punto, qualsiasi azione tu compia è esclusivamente a tua discrezione. Tuttavia ti resta una sola scelta da fare.",
+41: "(Incontra il Gegno.)",
+42: "(Lascia il Gegno e il suo mondo.)",
+43: "Decidi di portare avanti il tuo intento. Sei di nuovo sul loro mondo natale e non hanno ancora mostrato segni di volerti cacciare: non ha senso buttare via tutti i tuoi progressi. Avvicinandoti, il Gegno sembra davvero quello incontrato in passato. Le navi sopra decollano all'improvviso, e il Gegno si volta e comincia a dirigersi verso l'imponente torre davanti a te.",
+44: "tower",
+45: "La torre davanti a te è davvero uno spettacolo. Sembra più grande e più alta di qualsiasi cosa nell'architettura umana, ma appare molto antica, in modo notevole, rispetto alle parti che hai visto più in alto, nelle nubi di smog scuro. La base, che si allarga man mano che la torre sale, è fiancheggiata da file di strutture simili a torce con fiamme che si alzano oltre. L'interno è altrettanto curioso: la prima zona in cui entri sembra uscita direttamente da qualche antica fantasia medievale. Tutto appare roccioso e scolpito, anche se alcuni ingressi sembrano fatti di materiali metallici più recenti.",
+46: "Ti chiedi se tutta l'architettura Gegno sia costruita così, ma la tua curiosità viene interrotta quando il Gegno, che è molti passi avanti a te, grugnisce e ti fa cenno di entrare in una piattaforma simile a una gabbia dall'altra parte di una sala enorme.",
+47: "(Entra nella gabbia.)",
+48: "Per fortuna la gabbia non è affatto una cella: con un tintinnio di catene e altri suoni indistinti, cominci a salire verso quella che sarà la prossima destinazione. Però lo scuotersi e il clangore dell'ascensore non ti tranquillizzano. All'improvviso cominci a sentire un rombo profondo e metodico venire da sopra. Nello stesso istante ti arriva addosso una raffica d'aria. La gabbia è all'esterno dell'edificio e sale a razzo, sostenuta solo da qualche rotaia e da alcune pulegge. Intorno al nucleo della torre, davanti a te, ci sono altre grandi pulegge metalliche, con il Gegno in una di esse alla tua sinistra, in lontananza. Mentre sali, vedi che molti Gegno sono schierati su diversi balconi a vari livelli della torre, e suonano grandi tamburi simili a timpani con un ritmo regolare. Ogni tanto urlano o suonano uno strumento simile a un corno.",
+49: "Altri minuti di tamburi, diversi strati di smog e quella che sembra sindrome da altitudine ti assalgono finché l'ascensore arriva in cima alla torre: un'enorme piattaforma circolare all'aperto, con un gruppo di Gegno in armature di fogge diverse schierati intorno a un grande tavolo, o una sorta di griglia espositiva, con sopra diversi modelli di pianeti e navi. Un anello di torce elettroniche che fiancheggia ogni lato della piattaforma si alza verso il cielo scuro.",
+50: "Il Gegno che ti ha guidato fin qui ti fa cenno di raggiungerlo tra gli altri.",
+51: "(Vai dal Gegno.)",
+52: "(Resta dove sono.)",
+53: "Non passa molto prima che un paio di soldati Gegno si avvicinino e ti \"spingano\" di fatto a unirti agli altri. Tanto vale giocare con le loro regole, data la situazione.",
+54: "Quando raggiungi gli altri Gegno, i tamburi si fermano di colpo. Al centro del tavolo appare del testo, di cui non capisci nulla. Tre Gegno in piedi uno accanto all'altro, separati dal resto, cominciano a parlare con voci basse e tonanti; la loro lingua è incomprensibile. Uno è molto massiccio e somiglia al tipo di Gegno che appartiene alla fazione Vi, mentre gli altri due sono più piccoli. Tutti e tre indossano lo stesso insieme di armatura elaborata, con strane sporgenze, drappi e altri dettagli. Tutti gli altri Gegno presenti hanno corporature diverse, ma nessuno indossa colori che indichino una fazione. Alcuni ogni tanto guardano verso di te, altri non ti dedicano alcuna attenzione.",
+55: "L'imbarazzo della situazione cresce con il passare dei minuti, durante i quali alcuni Gegno dalla folla si avvicinano al lato opposto del tavolo rispetto al trio e discutono. Guardi la tua guida Gegno al tuo fianco, con lo sguardo fisso sulle conversazioni davanti. Uno del trio lo chiama infine e posa sul tavolo il modello di un pianeta desertico: quello dove è cominciato tutto. Segue una discussione accesa e, osservando la tua guida, ti accorgi che è l'unico Gegno con quella fascia rossa sul braccio. Gli altri Gegno nella folla non sembrano molto contenti mentre la discussione continua.",
+56: "Anche se sembrava non dovesse accadere, arriva il momento in cui il più massiccio del trio ti fa un gesto diretto. La tensione schizza alle stelle mentre dicono qualcosa nella loro lingua, poi ti fanno cenno di metterti di fronte a loro. Tutti gli altri Gegno ora ti fissano, in attesa, mentre la tua guida si sposta di lato.",
+57: "(Avvicinati al trio.)",
+58: "(Resta dove sono.)",
+59: "Scegli di non fare altro e resti dove sei. Qualsiasi cosa facessi sarebbe probabilmente usata contro di te. Passano altri momenti e il trio Gegno torna al tavolo, cominciando a discutere tra sé usando gli oggetti sulla griglia. Immagini e parole scorrono sul monitor, ma sei troppo lontano per vederle. Passano altri minuti e ti sembra che ti abbiano quasi dimenticato, mentre cominci a estraniarti dalla loro discussione. Alla fine vieni riportato alla realtà: tutto è di nuovo silenzioso e un membro del trio Gegno ti chiama per attirare la tua attenzione sullo schermo.",
+60: "trio",
+61: "Qualsiasi Gegno sulla tua strada si scosta mentre ti avvicini al centro della piattaforma. Ora sei sotto i riflettori, e il silenzio è assordante. Appena ti fermi davanti al trio, sul monitor del tavolo compaiono alcune immagini della <ship> in contesti diversi, e uno del trio sposta diverse miniature di pianeti che corrispondono a quelli che hai visitato nello spazio Gegno. Dopo un altro breve silenzio, che tutti sembrano sopportare con apprensione, uno dei tre ti si rivolge nella loro lingua, a un volume più basso di prima.",
+62: "\"Eyuu udyom Gegno tyysis. Udiyh tei arrtes ofor tei piyepuo?\"",
+63: "\"Mi stai chiedendo qualcosa sui Gegno?\"",
+64: "\"Vorrei trovare un accordo con i Gegno.\"",
+65: "\"Mi dispiace, non capisco cosa stai dicendo.\"",
+66: "Il Gegno ti fissa, poi guarda lo schermo, che scorre lentamente tra le situazioni in cui ti sei trovato:",
+67: "Sullo schermo compare un'immagine più dettagliata di un pianeta desertico, diverso dal primo. Accanto ci sono molti grafici: uno rappresenta un plotone di guerrieri Vi, poi la singolare nave Gegno che hai visto lì, e alcune parole che scorrono, forse i nomi di ciascun guerriero presente quel giorno. Accanto al nome del pianeta c'è un grafico più piccolo di uno di quei vermi giganti della sabbia che hai combattuto, il che suggerisce che si trovino anche su altri mondi desertici oltre al primo.",
+68: "A lato del tavolo noti un modello del pianeta simile a Mercurio su cui sei atterrato qui, nel loro sistema natale, anche se stranamente non compare mai sullo schermo.",
+69: "Compare l'immagine di due navi distinte, che corrispondono a una coppia di modelli sul tavolo. Una è lo stesso tipo di nave Vi che hai incontrato per la prima volta nella sabbia di un mondo desertico, e l'altra è una nave Scin che sembra una derivazione di altre navi Gegno. Senti qualcuno nella folla urlare forte, forse per la delusione, ma il trio Gegno lo zittisce.",
+70: "Una delle situazioni più rilevanti è quella che ha coinvolto una grande battaglia tra Vi e Scin per una luna in orbita a un mondo boscoso. Scorre un lungo elenco di frasi con accanto i grafici di diverse navi Gegno, probabilmente quelle che hanno preso parte alla battaglia. I Gegno intorno a te mormorano tra loro, ogni tanto grugnendo.",
+}
+
+json.dump({str(k): v for k, v in sorted(P.items())},
+          open(os.path.join(HERE, 'parts', 'part02.json'), 'w', encoding='utf-8'),
+          ensure_ascii=False, indent=1)
+print('part02:', len(P), 'unita', min(P), '-', max(P))

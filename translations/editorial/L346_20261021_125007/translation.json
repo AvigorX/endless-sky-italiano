@@ -1,0 +1,121 @@
+{
+ "block": {
+  "path": "data/bunrodea/bunrodea ships.txt",
+  "line_from": 56,
+  "line_to": 515,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Kaiken|description|56|0",
+   "path": "data/bunrodea/bunrodea ships.txt",
+   "line": 56,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kaiken",
+   "english": "While not particularly fast by fighter standards, where the Kaiken lacks in speed it makes up for in durability and firepower; it boasts a significant amount of weapon space and ports for up to three guns, allowing for the use of a trio of Locust Blasters or the option of using a larger Mandible Cannon.",
+   "italian": "Benché non sia particolarmente veloce per gli standard dei caccia, la Kaiken compensa la mancanza di velocità con robustezza e potenza di fuoco: vanta una notevole quantità di spazio per le armi e supporti per un massimo di tre cannoni, il che permette di usare tre Locust Blaster o di optare per un Mandible Cannon più grande.",
+   "ratio": 1.076
+  },
+  {
+   "idx": 2,
+   "id": "ship:Kaiken|description|57|0",
+   "path": "data/bunrodea/bunrodea ships.txt",
+   "line": 57,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kaiken",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI caccia non vengono forniti con un motore iperspaziale. Non puoi trasportare un caccia se non hai nella flotta una nave con una baia di caccia.",
+   "ratio": 1.09
+  },
+  {
+   "idx": 3,
+   "id": "ship:Sasumata|description|125|0",
+   "path": "data/bunrodea/bunrodea ships.txt",
+   "line": 125,
+   "kind": "DESCRIPTION",
+   "context": "ship:Sasumata",
+   "english": "The Sasumata is the chief scout ship of the Bunrodea. While not designed for combat, this stealth transport vessel is still capable of holding its own against some smaller warships; its four fighter bays turn the Sasumata into a force to be reckoned with when its fighters are deployed.",
+   "italian": "La Sasumata è la nave da ricognizione principale dei Bunrodea. Benché non progettata per il combattimento, questo trasporto furtivo è comunque capace di tenere testa ad alcune navi da guerra più piccole; le sue quattro baie di caccia trasformano la Sasumata in una forza con cui fare i conti quando i caccia vengono schierati.",
+   "ratio": 1.14
+  },
+  {
+   "idx": 4,
+   "id": "ship:Sasumata|description|126|0",
+   "path": "data/bunrodea/bunrodea ships.txt",
+   "line": 126,
+   "kind": "DESCRIPTION",
+   "context": "ship:Sasumata",
+   "english": "\tThe cloaking technology is built into the Sasumata's hull; it cannot be removed or transferred to another ship.",
+   "italian": "\tLa tecnologia di occultamento è integrata nello scafo della Sasumata; non si può rimuovere né trasferire su un'altra nave.",
+   "ratio": 1.098
+  },
+  {
+   "idx": 5,
+   "id": "ship:Tanto|description|180|0",
+   "path": "data/bunrodea/bunrodea ships.txt",
+   "line": 180,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tanto",
+   "english": "The Tanto freighter was designed as a fast blockade runner. While being lightly armed and armored, the Tanto is incredibly swift for a ship of its size, allowing it to jump into and out of systems before any hostile force can bear its full might down on the small ship.",
+   "italian": "Il mercantile Tanto fu progettato come veloce nave per forzare i blocchi. Pur essendo armato e corazzato alla leggera, il Tanto è incredibilmente rapido per una nave delle sue dimensioni, il che gli permette di entrare e uscire dai sistemi prima che una forza ostile possa scaricare tutta la sua potenza sulla piccola nave.",
+   "ratio": 1.201
+  },
+  {
+   "idx": 6,
+   "id": "ship:Ararebo|description|249|0",
+   "path": "data/bunrodea/bunrodea ships.txt",
+   "line": 249,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ararebo",
+   "english": "The Ararebo is one of the Bunrodea's main methods for shipping large volumes of cargo across space, but anyone who would dare to think that this freighter is an easy target would be sorely mistaken. The Ararebo doubles as the Bunrodea's primary support carrier, carrying a squadron of eight fighters that can tear almost any ship to shreds.",
+   "italian": "L'Ararebo è uno dei principali mezzi dei Bunrodea per trasportare grandi volumi di carico nello spazio, ma chiunque osasse pensare che questo mercantile sia un bersaglio facile si sbaglierebbe di grosso. L'Ararebo funge anche da portaerei di supporto principale dei Bunrodea, con uno squadrone di otto caccia capace di fare a pezzi quasi qualsiasi nave.",
+   "ratio": 1.038
+  },
+  {
+   "idx": 7,
+   "id": "ship:Tekkan|description|307|0",
+   "path": "data/bunrodea/bunrodea ships.txt",
+   "line": 307,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tekkan",
+   "english": "The Tekkan is the one ship in the Bunrodean arsenal that favors turrets over forward facing guns. This allows the small and fast vessel to act as the primary means of anti-missile defense for larger Bunrodean ships that are lacking in turret mounts compared to their guns. Tekkans are also able to take advantage of the rarely used but powerful Locust Turrets, packing a considerable amount of damage into a small ship.",
+   "italian": "La Tekkan è l'unica nave dell'arsenale Bunrodea che preferisce le torrette ai cannoni fissi. Questo permette alla piccola e veloce unità di fare da principale mezzo di difesa antimissile per le navi Bunrodea più grandi, che rispetto ai cannoni hanno pochi supporti per torretta. Le Tekkan sanno anche sfruttare le potenti Locust Turret, usate di rado, concentrando una quantità considerevole di danni in una nave piccola.",
+   "ratio": 1.005
+  },
+  {
+   "idx": 8,
+   "id": "ship:Kunai|description|367|0",
+   "path": "data/bunrodea/bunrodea ships.txt",
+   "line": 367,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kunai",
+   "english": "The Kunai is the smallest of the Bunrodea's gunships, warships which focus heavily on the power of their forward-facing guns. Lacking any turret mounts and focusing more on turning quickly than traveling fast, the Kunai is highly susceptible to missile weaponry and must rely on other ships in the fleet to carry anti-missile turrets.",
+   "italian": "La Kunai è la più piccola delle cannoniere Bunrodea, navi da guerra che puntano molto sulla potenza dei cannoni frontali. Priva di supporti per torrette e più attenta a girare in fretta che a viaggiare veloce, la Kunai è molto vulnerabile alle armi a missili e deve contare sulle altre navi della flotta per le torrette antimissile.",
+   "ratio": 0.994
+  },
+  {
+   "idx": 9,
+   "id": "ship:Kama|description|436|0",
+   "path": "data/bunrodea/bunrodea ships.txt",
+   "line": 436,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kama",
+   "english": "The Kama gunship is a formidable warship, capable of carrying up to ten guns as well as having a single turret mount typically equipped with an anti-missile turret. This makes the Kama less susceptible to missile weaponry than its smaller sibling, the Kunai.",
+   "italian": "La cannoniera Kama è una nave da guerra formidabile, capace di portare fino a dieci cannoni e di avere un unico supporto per torretta, di solito equipaggiato con una torretta antimissile. Questo rende la Kama meno vulnerabile alle armi a missili della sua sorella minore, la Kunai.",
+   "ratio": 1.089
+  },
+  {
+   "idx": 10,
+   "id": "ship:Chigiriki|description|515|0",
+   "path": "data/bunrodea/bunrodea ships.txt",
+   "line": 515,
+   "kind": "DESCRIPTION",
+   "context": "ship:Chigiriki",
+   "english": "The Chigiriki is the largest of the Bunrodea's gunships, boasting an astonishing seventeen gun ports. One of these ports is equipped with the devastating Thorax Cannon, a massive cannon capable of dealing significant damage to any ship that dares get in the Chigiriki's way. Some Chigiriki also double as missile platforms, raining down walls of missiles so thick that they can blot out the nearest star.",
+   "italian": "La Chigiriki è la più grande delle cannoniere Bunrodea, con l'incredibile numero di diciassette porti per cannoni. Uno di questi è equipaggiato con il devastante Thorax Cannon, un cannone enorme capace di fare danni significativi a qualsiasi nave osi trovarsi sulla strada della Chigiriki. Alcune Chigiriki fungono anche da piattaforme missilistiche, rovesciando pareti di missili così fitte da oscurare la stella più vicina.",
+   "ratio": 1.052
+  }
+ ]
+}

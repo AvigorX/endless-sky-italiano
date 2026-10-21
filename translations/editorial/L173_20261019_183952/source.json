@@ -1,0 +1,89 @@
+{
+ "block": {
+  "path": "data/human/paradise world jobs.txt",
+  "line_from": 1356,
+  "line_to": 1413,
+  "units": 6
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Martini Relief (People) [0]|name|1356|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1356,
+   "kind": "VALUE",
+   "context": "mission:Martini Relief (People) [0]",
+   "english": "Relief workers to Martini",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tname \"Relief workers to Martini\"",
+   "english_hash": "c4b153e8540af836"
+  },
+  {
+   "idx": 2,
+   "id": "mission:Martini Relief (People) [0]|description|1357|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1357,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Relief (People) [0]",
+   "english": "Due to the recent nuclear bombings on Martini, bring <bunks> <martini relief occupations> to <planet> to release demand from overloaded hospitals. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Due to the recent nuclear bombings on Martini, bring <bunks> <martini relief occupations> to <planet> to release demand from overloaded hospitals. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.\"",
+   "english_hash": "16c04de3a3b46944"
+  },
+  {
+   "idx": 3,
+   "id": "mission:Martini Relief (People) [1]|name|1384|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1384,
+   "kind": "VALUE",
+   "context": "mission:Martini Relief (People) [1]",
+   "english": "Relief workers to Martini",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tname \"Relief workers to Martini\"",
+   "english_hash": "c4b153e8540af836"
+  },
+  {
+   "idx": 4,
+   "id": "mission:Martini Relief (People) [1]|description|1385|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1385,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Relief (People) [1]",
+   "english": "Due to the recent nuclear bombings on Martini, bring <bunks> <martini relief occupations> to <planet> to assist in Martini's relief efforts. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Due to the recent nuclear bombings on Martini, bring <bunks> <martini relief occupations> to <planet> to assist in Martini's relief efforts. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.\"",
+   "english_hash": "b8ec59a24d573166"
+  },
+  {
+   "idx": 5,
+   "id": "mission:Martini Relief (People) [2]|name|1412|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1412,
+   "kind": "VALUE",
+   "context": "mission:Martini Relief (People) [2]",
+   "english": "Relief workers to Martini",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tname \"Relief workers to Martini\"",
+   "english_hash": "c4b153e8540af836"
+  },
+  {
+   "idx": 6,
+   "id": "mission:Martini Relief (People) [2]|description|1413|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1413,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Relief (People) [2]",
+   "english": "Due to the recent nuclear bombings on Martini, bring <bunks> <martini relief occupations> to <planet> to assist in the accommodation and reconstruction efforts. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Due to the recent nuclear bombings on Martini, bring <bunks> <martini relief occupations> to <planet> to assist in the accommodation and reconstruction efforts. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.\"",
+   "english_hash": "cff2834b8bf2372d"
+  }
+ ]
+}

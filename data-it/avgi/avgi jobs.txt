@@ -1,0 +1,1169 @@
+# Copyright (c) 2023 by Azure
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+
+# Cargo Jobs
+
+mission "Avgi: Small Cargo 1 (Generic)"
+	job
+	repeat
+	name "Carico per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo random 3 6 .3
+	to offer
+		random < 15
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Small Cargo 2 (Generic)"
+	job
+	repeat
+	name "Carico per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo random 6 6 .6
+	to offer
+		random < 15
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Small Cargo 3 (Generic)"
+	job
+	repeat
+	name "Carico per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo random 3 9 .6
+	to offer
+		random < 15
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Avgi: Bulk Cargo 1 (Generic)"
+	job
+	repeat
+	name "Carico sfuso per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo random 30 6 .12
+	to offer
+		random < 15
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Bulk Cargo 2 (Generic)"
+	job
+	repeat
+	name "Carico sfuso per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo random 30 6 .09
+	to offer
+		random < 15
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Bulk Cargo 3 (Generic)"
+	job
+	repeat
+	name "Carico sfuso per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo random 30 6 .06
+	to offer
+		random < 15
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Avgi: Rush Cargo 1 (Generic)"
+	job
+	repeat
+	deadline
+	name "Consegna urgente per <planet>"
+	description "<destination> ha urgente bisogno di una partita di <cargo> entro il <date>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo random 3 9 .6
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Rush Cargo 2 (Generic)"
+	job
+	repeat
+	deadline
+	name "Consegna urgente per <planet>"
+	description "<destination> ha urgente bisogno di una partita di <cargo> entro il <date>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo random 3 9 .45
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Rush Cargo 3 (Generic)"
+	job
+	repeat
+	deadline
+	name "Consegna urgente per <planet>"
+	description "<destination> ha urgente bisogno di una partita di <cargo> entro il <date>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo random 3 9 .3
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Avgi: Small Cargo 1 (Avgi Cargo)"
+	job
+	repeat
+	name "Carico per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Cargo" 3 6 .3
+	to offer
+		random < 60
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Small Cargo 2 (Avgi Cargo)"
+	job
+	repeat
+	name "Carico per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Cargo" 6 6 .6
+	to offer
+		random < 60
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Small Cargo 3 (Avgi Cargo)"
+	job
+	repeat
+	name "Carico per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Cargo" 3 9 .6
+	to offer
+		random < 60
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Avgi: Bulk Cargo 1 (Avgi Cargo)"
+	job
+	repeat
+	name "Carico sfuso per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Cargo" 30 6 .12
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Bulk Cargo 2 (Avgi Cargo)"
+	job
+	repeat
+	name "Carico sfuso per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Cargo" 30 6 .09
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Bulk Cargo 3 (Avgi Cargo)"
+	job
+	repeat
+	name "Carico sfuso per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Cargo" 30 6 .06
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Avgi: Rush Cargo 1 (Avgi Cargo)"
+	job
+	repeat
+	deadline
+	name "Consegna urgente per <planet>"
+	description "<destination> ha urgente bisogno di una partita di <cargo> entro il <date>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Cargo" 3 9 .6
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Rush Cargo 2 (Avgi Cargo)"
+	job
+	repeat
+	deadline
+	name "Consegna urgente per <planet>"
+	description "<destination> ha urgente bisogno di una partita di <cargo> entro il <date>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Cargo" 3 9 .45
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Rush Cargo 3 (Avgi Cargo)"
+	job
+	repeat
+	deadline
+	name "Consegna urgente per <planet>"
+	description "<destination> ha urgente bisogno di una partita di <cargo> entro il <date>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Cargo" 3 9 .3
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Avgi: Small Cargo 1 (Avgi Nuclear)"
+	job
+	repeat
+	name "Carico per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Nuclear" 3 6 .3
+	to offer
+		random < 9
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Small Cargo 2 (Avgi Nuclear)"
+	job
+	repeat
+	name "Carico per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Nuclear" 6 6 .6
+	to offer
+		random < 9
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Small Cargo 3 (Avgi Nuclear)"
+	job
+	repeat
+	name "Carico per <planet>"
+	description "Consegna <cargo> su <destination>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Nuclear" 3 9 .6
+	to offer
+		random < 9
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Avgi: Rush Cargo 1 (Avgi Nuclear)"
+	job
+	repeat
+	deadline
+	name "Consegna urgente per <planet>"
+	description "<destination> ha urgente bisogno di una partita di <cargo> entro il <date>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Nuclear" 3 9 .6
+	to offer
+		random < 9
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Rush Cargo 2 (Avgi Nuclear)"
+	job
+	repeat
+	deadline
+	name "Consegna urgente per <planet>"
+	description "<destination> ha urgente bisogno di una partita di <cargo> entro il <date>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Nuclear" 3 9 .45
+	to offer
+		random < 9
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+mission "Avgi: Rush Cargo 3 (Avgi Nuclear)"
+	job
+	repeat
+	deadline
+	name "Consegna urgente per <planet>"
+	description "<destination> ha urgente bisogno di una partita di <cargo> entro il <date>. Il pagamento è <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		attributes "avgi diaspora"
+		distance 1 30
+	cargo "Avgi Nuclear" 3 9 .3
+	to offer
+		random < 9
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment
+		payment 18000
+		dialog phrase "generic cargo delivery payment"
+
+
+# Transport Jobs
+
+phrase "avgi specialists complete"
+	word
+		"You drop off the "
+	word
+		"engineers"
+		"doctors"
+		"scientists"
+		"researchers"
+		"mechanics"
+		"technicians"
+		"specialists"
+		"experts"
+		"academics"
+	word
+		" on <planet> as they chatter excitedly about their subjects of expertise. You collect <payment> in payment."
+
+mission "Avgi: Specialized Workers 1"
+	job
+	repeat
+	name "Specialisti per <planet>"
+	description "Porta questi <bunks> specialisti su <destination> per offrire competenze specifiche in cambio di <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		distance 1 30
+		attributes "avgi diaspora"
+	passengers 6 3 .45
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi specialists complete"
+		payment 6000 240
+
+mission "Avgi: Specialized Workers 2"
+	job
+	repeat
+	name "Specialisti per <planet>"
+	description "Porta questi <bunks> specialisti su <destination> per offrire competenze specifiche in cambio di <payment>."
+	source
+		attributes "avgi diaspora"
+	destination
+		distance 1 30
+		attributes "avgi diaspora"
+	passengers 3 3 .3
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi specialists complete"
+		payment 6000 270
+
+
+mission "Avgi: Ergastirio Researchers 1"
+	job
+	repeat
+	name "Ricercatori per <planet>"
+	description "Porta questi <bunks> ricercatori su <destination> per lavorare per un periodo alla stazione di ricerca in cambio di <payment>."
+	source
+		attributes "avgi diaspora"
+		near "Symphony" 1 30
+	destination "Ergastirio Station"
+	clearance
+	passengers 3 3 .45
+	to offer
+		random < 15
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi specialists complete"
+		payment 9000 240
+
+mission "Avgi: Ergastirio Researchers 2"
+	job
+	repeat
+	name "Ricercatori per <planet>"
+	description "Porta questi <bunks> ricercatori su <destination> per lavorare per un periodo alla stazione di ricerca in cambio di <payment>."
+	source
+		attributes "avgi diaspora"
+		near "Symphony" 1 30
+	destination "Ergastirio Station"
+	clearance
+	passengers 3 6 .36
+	to offer
+		random < 15
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi specialists complete"
+		payment 9000 240
+
+
+phrase "avgi diplomats complete"
+	word
+		"You drop off the "
+	word
+		"diplomats"
+		"negotiators"
+	word
+		" on <planet> as they "
+	word
+		"review papers"
+		"shuffle papers"
+		"prepare arguments"
+		"practice arguments"
+	word
+		" for the negotiations. You collect <payment> in payment."
+
+mission "Avgi: Outpost Diplomats 1"
+	job
+	repeat
+	name "Diplomatici per <planet>"
+	description "Porta questi <bunks> diplomatici su <destination> per negoziare con operai scontenti in cambio di <payment>."
+	source "Peripheria"
+	destination
+		attributes "dissonance sympathies"
+	clearance "The diplomats have a short conversation with the spaceport operator and manage to get you permission to dock."
+	passengers 1 3 .6
+	to offer
+		random < 15
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi diplomats complete"
+		payment 9000 210
+
+mission "Avgi: Outpost Diplomats 2"
+	job
+	repeat
+	name "Diplomatici per <planet>"
+	description "Porta questi <bunks> diplomatici su <destination> per placare gli Avgi scontenti in cambio di <payment>."
+	source "Peripheria"
+	destination
+		attributes "dissonance sympathies"
+	clearance "The diplomats have a short conversation with the spaceport operator and manage to get you permission to dock."
+	passengers 1 9 .9
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi diplomats complete"
+		payment 9000 210
+
+mission "Avgi: Outpost Diplomats 3"
+	job
+	repeat
+	name "Diplomatici per <planet>"
+	description "Porta questi <bunks> diplomatici su <destination> per placare gli Avgi scontenti in cambio di <payment>."
+	source "Peripheria"
+	destination
+		attributes "dissonance sympathies"
+	clearance "The diplomats have a short conversation with the spaceport operator and manage to get you permission to dock."
+	passengers 3 6 .6
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi diplomats complete"
+		payment 9000 210
+
+
+phrase "avgi doctors complete"
+	word
+		"You drop off the "
+	word
+		" doctors"
+	word
+		" on <planet>, who immediately rush off to provide care."
+	word
+		" You collect <payment> in payment."
+
+mission "Avgi: Doctors 1"
+	job
+	repeat
+	name "Medici per <planet>"
+	description "Porta questi <bunks> medici su <destination> per fornire cure e servizi medici in cambio di <payment>."
+	source "Peripheria"
+	destination
+		distance 1 30
+		attributes "avgi diaspora"
+	passengers 3 6 .72
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi doctors complete"
+		payment 9000 210
+
+mission "Avgi: Doctors 2"
+	job
+	repeat
+	name "Medici per <planet>"
+	description "Porta questi <bunks> medici su <destination> per fornire cure e servizi medici in cambio di <payment>."
+	source "Peripheria"
+	destination
+		distance 1 30
+		attributes "avgi diaspora"
+	passengers 3 6 .6
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi doctors complete"
+		payment 9000 210
+
+mission "Avgi: Doctors 3"
+	job
+	repeat
+	name "Medici per <planet>"
+	description "Porta questi <bunks> medici su <destination> per fornire cure e servizi medici in cambio di <payment>."
+	source "Peripheria"
+	destination
+		distance 1 30
+		attributes "avgi diaspora"
+	passengers 3 6 .45
+	to offer
+		random < 30
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi doctors complete"
+		payment 9000 210
+
+
+# Special Jobs
+
+phrase "avgi cylinder materials"
+	word
+		"You drop off the cylinder construction materials and collect <payment> in payment."
+
+mission "Avgi: Cylinder Materials 1"
+	job
+	repeat
+	name "Materiali da costruzione per <planet>"
+	description "Porta <cargo> da <origin> a <destination> per sostenere la costruzione di <destination> in cambio di <payment>."
+	source
+		distance 1 30
+		attributes "avgi diaspora"
+	destination "Aktina Cylinder"
+	cargo "Avgi Industrial" 30 6 .3
+	to offer
+		random < 30
+		has "avgi: aktina cylinder supply jobs"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		"cylinder deliveries" ++
+		payment 12000
+		dialog phrase "avgi cylinder materials"
+
+mission "Avgi: Cylinder Materials 2"
+	job
+	repeat
+	name "Materiali da costruzione per <planet>"
+	description "Porta <cargo> da <origin> a <destination> per sostenere la costruzione di <destination> in cambio di <payment>."
+	source
+		distance 1 30
+		attributes "avgi diaspora"
+	destination "Aktina Cylinder"
+	cargo "Avgi Industrial" 60 12 .3
+	to offer
+		random < 30
+		has "avgi: aktina cylinder supply jobs"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		"cylinder deliveries" ++
+		payment 12000
+		dialog phrase "avgi cylinder materials"
+
+mission "Avgi: Cylinder Materials 3"
+	job
+	repeat
+	name "Materiali da costruzione per <planet>"
+	description "Porta <cargo> da <origin> a <destination> per sostenere la costruzione di <destination> in cambio di <payment>."
+	source
+		distance 1 30
+		attributes "avgi diaspora"
+	destination "Aktina Cylinder"
+	cargo "Avgi Industrial" 60 18 .3
+	to offer
+		random < 30
+		has "avgi: aktina cylinder supply jobs"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		"cylinder deliveries" ++
+		payment 12000
+		dialog phrase "avgi cylinder materials"
+
+mission "Avgi: Bulk Cylinder Materials 1"
+	job
+	repeat
+	name "Materiali sfusi per <planet>"
+	description "Porta <cargo> da <origin> a <destination> per sostenere la costruzione di <destination> in cambio di <payment>."
+	source
+		distance 1 30
+		attributes "avgi diaspora"
+	destination "Aktina Cylinder"
+	cargo "Avgi Megaconstruction" 60 6 .09
+	to offer
+		random < 15
+		has "avgi: aktina cylinder supply jobs"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		"cylinder deliveries" ++
+		payment 9000
+		dialog phrase "avgi cylinder materials"
+
+mission "Avgi: Bulk Cylinder Materials 2"
+	job
+	repeat
+	name "Materiali sfusi per <planet>"
+	description "Porta <cargo> da <origin> a <destination> per sostenere la costruzione di <destination> in cambio di <payment>."
+	source
+		distance 1 30
+		attributes "avgi diaspora"
+	destination "Aktina Cylinder"
+	cargo "Avgi Megaconstruction" 60 6 .06
+	to offer
+		random < 15
+		has "avgi: aktina cylinder supply jobs"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		"cylinder deliveries" ++
+		payment 9000
+		dialog phrase "avgi cylinder materials"
+
+mission "Avgi: Bulk Cylinder Materials 3"
+	job
+	repeat
+	name "Materiali sfusi per <planet>"
+	description "Porta <cargo> da <origin> a <destination> per sostenere la costruzione di <destination> in cambio di <payment>."
+	source
+		distance 1 30
+		attributes "avgi diaspora"
+	destination "Aktina Cylinder"
+	cargo "Avgi Megaconstruction" 60 6 .03
+	to offer
+		random < 9
+		has "avgi: aktina cylinder supply jobs"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		"cylinder deliveries" ++
+		payment 9000
+		dialog phrase "avgi cylinder materials"
+
+
+phrase "avgi nuclear materials"
+	word
+		"You deliver the <cargo> to a heavily armed security detail and collect <payment> in payment."
+
+mission "Avgi: Special Nuclear Material Shipment 1"
+	job
+	repeat
+	name "Materiali nucleari speciali per <planet>"
+	description "Consegna <cargo> su <destination> entro il <date> in cambio di <payment>. Tieni gli occhi aperti: ci sono pirati che cercano di rubare il materiale nucleare per scopi loschi."
+	source
+		government "Avgi (Twilight Guard)"
+	destination
+		distance 1 30
+		government "Avgi (Twilight Guard)"
+	deadline
+	cargo "Avgi Special Nuclear" 3 6 .3
+	to offer
+		random < 15
+		not "avgi: fissiles shortage"
+		has "avgi: nuclear material transport jobs"
+	npc
+		government "Avgi"
+		personality coward harvests timid secretive surveillance
+		system
+			distance 1 2
+		fleet "Small Avgi Merchants"
+	npc
+		government "Avgi"
+		personality coward harvests timid secretive surveillance
+		system
+			distance 1 2
+		fleet "Small Avgi Merchants"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 30000
+		dialog phrase "avgi nuclear materials"
+
+mission "Avgi: Special Nuclear Material Shipment 2"
+	job
+	repeat
+	name "Materiali nucleari speciali per <planet>"
+	description "Consegna <cargo> su <destination> entro il <date> in cambio di <payment>. Tieni gli occhi aperti: ci sono pirati che cercano di rubare il materiale nucleare per scopi loschi."
+	source
+		government "Avgi (Twilight Guard)"
+	destination
+		distance 1 30
+		government "Avgi (Twilight Guard)"
+	deadline
+	cargo "Avgi Nuclear Weapons" 3 6 .3
+	to offer
+		random < 15
+		not "avgi: fissiles shortage"
+		has "avgi: nuclear material transport jobs"
+	npc
+		government "Avgi"
+		personality coward harvests timid secretive surveillance
+		system
+			distance 1 2
+		fleet "Small Avgi Merchants"
+	npc
+		government "Avgi"
+		personality coward harvests timid secretive surveillance
+		system
+			distance 1 2
+		fleet "Small Avgi Merchants"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 30000
+		dialog phrase "avgi nuclear materials"
+
+mission "Avgi: Special Nuclear Material Shipment 3"
+	job
+	repeat
+	name "Materiali nucleari speciali per <planet>"
+	description "Consegna <cargo> su <destination> entro il <date> in cambio di <payment>. Tieni gli occhi aperti: ci sono pirati che cercano di rubare il materiale nucleare per scopi loschi."
+	source
+		government "Avgi (Twilight Guard)"
+	destination
+		distance 1 30
+		government "Avgi (Twilight Guard)"
+	deadline
+	cargo "Avgi Special Nuclear" 3 6 .3
+	to offer
+		random < 9
+		not "avgi: fissiles shortage"
+		has "avgi: nuclear material transport jobs"
+	npc
+		government "Avgi (Dissonance)"
+		personality coward harvests timid secretive surveillance
+		system
+			distance 1 2
+		fleet "Small Dissonance Merchants"
+	npc
+		government "Avgi (Dissonance)"
+		personality coward harvests timid secretive surveillance
+		system
+			distance 1 2
+		fleet "Small Dissonance Merchants"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 30000
+		dialog phrase "avgi nuclear materials"
+
+
+phrase "avgi infocourier delivery"
+	word
+		"You drop off the "
+	word
+		"bricks"
+		"sheets"
+		"slabs"
+		"rods"
+		"tiles"
+	word
+		" of "
+	word
+		"<commodity> at a designated terminal and receive <payment> in payment."
+
+mission "Avgi: Information Courier"
+	job
+	repeat
+	name "Corriere di informazioni per <planet>"
+	description "Porta <cargo> supporti di memoria su <destination> per aggiornare la rete locale di <planet> entro il <date> in cambio di <payment>."
+	source
+		government "Avgi (Consonance)" "Avgi (Twilight Guard)"
+	destination
+		distance 1 30
+		government "Avgi (Consonance)" "Avgi (Dissonance)" "Avgi (Twilight Guard)"
+	deadline
+	cargo "Avgi Storage Media" 3 6 .3
+	to offer
+		random < 60
+		has "avgi: infocourier jobs"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 12000 300
+		dialog phrase "avgi infocourier delivery"
+
+mission "Avgi: Information Courier Rush"
+	job
+	repeat
+	name "Corriere di informazioni per <planet>"
+	description "Porta <cargo> supporti di memoria su <destination> per aggiornare la rete locale di <planet> entro il <date> in cambio di <payment>."
+	source
+		government "Avgi (Consonance)" "Avgi (Twilight Guard)"
+	destination
+		distance 1 30
+		government "Avgi (Consonance)" "Avgi (Dissonance)" "Avgi (Twilight Guard)"
+	deadline 1 1
+	cargo "Avgi Storage Media" 3 6 .3
+	to offer
+		random < 45
+		has "avgi: infocourier jobs"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 12000 300
+		dialog phrase "avgi infocourier delivery"
+
+
+phrase "avgi twilight guards dropoff"
+	word
+		"You say your goodbyes to the Twilight Guardsmen and receive <payment> in payment."
+
+mission "Avgi: Twilight Guardsmen Transport"
+	name "Guardie del Crepuscolo per <planet>"
+	job
+	repeat
+	description "Questi <bunks> membri della Twilight Guard hanno bisogno di un trasporto su <destination>. Sono disposti a pagarti <payment> in cambio."
+	source
+		attributes "twilight guard"
+		government "Avgi (Twilight Guard)" "Avgi (Consonance)"
+	destination
+		distance 1 30
+		government "Avgi (Twilight Guard)" "Avgi (Consonance)"
+	passengers 3 3 .3
+	to offer
+		random < 60
+		has "avgi: twilight guard transport jobs"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 6000 150
+		dialog phrase "avgi twilight guards dropoff"
+
+mission "Avgi: Twilight Guard Officers Transport"
+	name "Ufficiali della Guardia del Crepuscolo per <planet>"
+	job
+	repeat
+	description "Questi <bunks> ufficiali della Twilight Guard hanno bisogno di un trasporto confortevole su <destination>. Sono disposti a pagarti <payment> in cambio."
+	source
+		attributes "twilight guard"
+		government "Avgi (Twilight Guard)" "Avgi (Consonance)"
+	destination
+		distance 1 30
+		government "Avgi (Twilight Guard)" "Avgi (Consonance)"
+	passengers 3 3 .3
+	to offer
+		random < 30
+		has "avgi: twilight guard transport jobs"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 9000 300
+		dialog phrase "avgi twilight guards dropoff"
+
+mission "Avgi: Twilight Guard Flag Officers Transport"
+	name "Ufficiali superiori della Guardia del Crepuscolo per <planet>"
+	job
+	repeat
+	description "Questi <bunks> ufficiali superiori della Twilight Guard hanno bisogno di un trasporto confortevole su <destination>. Sono disposti a pagarti <payment> in cambio."
+	source
+		attributes "twilight guard"
+		government "Avgi (Twilight Guard)" "Avgi (Consonance)"
+	destination
+		distance 1 30
+		government "Avgi (Twilight Guard)" "Avgi (Consonance)"
+	passengers 1 3 .6
+	to offer
+		random < 15
+		has "avgi: twilight guard transport jobs"
+		has "outfit (installed): Luxury Accommodations"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 12000 600
+		dialog phrase "avgi twilight guards dropoff"
+
+
+phrase "avgi twilight guards relief complete"
+	word
+		"You drop off the "
+	word
+		"tired"
+		"exhausted"
+		"grateful"
+		"talkative"
+		"withdrawn"
+		"injured"
+		"wounded"
+	word
+		" Twilight Guardsmen"
+	word
+		" on <planet> to rest and recover."
+	word
+		" You collect <payment> in payment."
+
+mission "Avgi: Twilight Guard Relief 1"
+	job
+	repeat
+	name "Licenza a terra su <planet>"
+	description "Porta queste <bunks> Guardie su <destination> per riprendersi dal turno di servizio al fronte in cambio di <payment>."
+	source "Feo Platform"
+	destination
+		distance 1 30
+		government "Avgi (Consonance)"
+	passengers 3 6 .6
+	to offer
+		random < 60
+		has "avgi: twilight guard transport jobs"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi twilight guards relief complete"
+		payment 9000 240
+
+mission "Avgi: Twilight Guard Relief 2"
+	job
+	repeat
+	name "Licenza a terra su <planet>"
+	description "Porta queste <bunks> Guardie su <destination> per riprendersi dal turno di servizio al fronte in cambio di <payment>."
+	source "Feo Platform"
+	destination
+		distance 1 30
+		government "Avgi (Consonance)"
+	passengers 3 6 .45
+	to offer
+		random < 30
+		has "avgi: twilight guard transport jobs"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi twilight guards relief complete"
+		payment 9000 240
+
+mission "Avgi: Twilight Guard Relief 3"
+	job
+	repeat
+	name "Licenza a terra su <planet>"
+	description "Porta queste <bunks> Guardie su <destination> per riprendersi dal turno di servizio al fronte in cambio di <payment>."
+	source "Feo Platform"
+	destination
+		distance 1 30
+		government "Avgi (Consonance)"
+	passengers 3 6 .3
+	to offer
+		random < 60
+		has "avgi: twilight guard transport jobs"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		dialog phrase "avgi twilight guards relief complete"
+		payment 9000 270

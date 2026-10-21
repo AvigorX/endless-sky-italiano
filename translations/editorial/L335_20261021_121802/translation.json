@@ -1,0 +1,165 @@
+{
+ "block": {
+  "path": "data/successors/successor weapons.txt",
+  "line_from": 23,
+  "line_to": 900,
+  "units": 14
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:\"Ojet\" Bimodal Coilgun|description|56|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 56,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Ojet\" Bimodal Coilgun",
+   "english": "Precise and deadly, the Ojet Bimodal Coilgun has been the High Houses' armament of choice since long before humans ever took to the stars. It was designed quite simply as a perfect weapon; it is said that by the time the empire of the Predecessors fell, they had seen no need to install any other weapon on their ships for over a thousand years.",
+   "italian": "Precise and deadly, the Ojet Bimodal Coilgun has been the High Houses' armament of choice since long before humans ever took to the stars. It was designed quite simply as a perfect weapon; it is said that by the time the empire of the Predecessors fell, they had seen no need to install any other weapon on their ships for over a thousand years.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:\"Ojet\" Bimodal Coilgun|description|57|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 57,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Ojet\" Bimodal Coilgun",
+   "english": "\tThe Ojet fires hyperdense packets of charged particles that disperse as they travel: up close the concentrated bolt pierces armor, while at a distance the ionic spray destabilizes shielding. Together, a ship equipped with these weapons can adjust its damage profile just by changing its engagement range, allowing it to be highly effective against any foe.",
+   "italian": "\tThe Ojet fires hyperdense packets of charged particles that disperse as they travel: up close the concentrated bolt pierces armor, while at a distance the ionic spray destabilizes shielding. Together, a ship equipped with these weapons can adjust its damage profile just by changing its engagement range, allowing it to be highly effective against any foe.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Bimodal Coilgun Turret|description|98|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 98,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Bimodal Coilgun Turret",
+   "english": "Successor warships have traditionally relied on fixed weaponry to deal with their foes, but the High Houses do produce a turreted platform for the Ojet Coilgun so that their larger and slower vessels can maintain their combat effectiveness against more maneuverable targets. It mounts two of the weapons side by side, rigged to fire double the amount of shots per burst to keep them in sync with the fixed hardpoints.",
+   "italian": "Successor warships have traditionally relied on fixed weaponry to deal with their foes, but the High Houses do produce a turreted platform for the Ojet Coilgun so that their larger and slower vessels can maintain their combat effectiveness against more maneuverable targets. It mounts two of the weapons side by side, rigged to fire double the amount of shots per burst to keep them in sync with the fixed hardpoints.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Drag Cannon|description|154|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 154,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drag Cannon",
+   "english": "The Successors have a historical affinity for projectile weaponry which persists to the modern day. The Drag Cannon fires a short-ranged, highly inaccurate blast of projectiles that not only deal substantial damage but also temporarily disrupt the target's engines.",
+   "italian": "The Successors have a historical affinity for projectile weaponry which persists to the modern day. The Drag Cannon fires a short-ranged, highly inaccurate blast of projectiles that not only deal substantial damage but also temporarily disrupt the target's engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Drag Cannon|description|155|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 155,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drag Cannon",
+   "english": "\tWhile it is an inelegant design in comparison to the time-tested Ojet Coilgun, and consequently less appreciated, the Drag Cannon has found a place on the Successors' fast attack craft primarily as a tool for slowing down enemy vessels so that they can be engaged by a larger fleet.",
+   "italian": "\tWhile it is an inelegant design in comparison to the time-tested Ojet Coilgun, and consequently less appreciated, the Drag Cannon has found a place on the Successors' fast attack craft primarily as a tool for slowing down enemy vessels so that they can be engaged by a larger fleet.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Successor Pulse Laser|description|208|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 208,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Successor Pulse Laser",
+   "english": "This shield-penetrating laser is one of the few weapons manufactured independently in Successor space, rather than under the auspices and restrictions of the High Houses. As a consequence of this, it is neither especially powerful nor efficient, but its low cost and space requirements make it a nonetheless relatively appealing defensive choice for those without access to the High Houses' more potent weaponry.",
+   "italian": "This shield-penetrating laser is one of the few weapons manufactured independently in Successor space, rather than under the auspices and restrictions of the High Houses. As a consequence of this, it is neither especially powerful nor efficient, but its low cost and space requirements make it a nonetheless relatively appealing defensive choice for those without access to the High Houses' more potent weaponry.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Pulse Laser Turret|description|243|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 243,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pulse Laser Turret",
+   "english": "The introduction of the Pulse Laser was a wake-up call for the more astute in the High Houses, as it was the first time in hundreds of years that weapons were being manufactured by groups other than themselves. Most Successors see the turreted version as a continuation of this democratization of violence, while the more paranoid claim that the High Houses have infiltrated production and intentionally sabotaged the design.",
+   "italian": "The introduction of the Pulse Laser was a wake-up call for the more astute in the High Houses, as it was the first time in hundreds of years that weapons were being manufactured by groups other than themselves. Most Successors see the turreted version as a continuation of this democratization of violence, while the more paranoid claim that the High Houses have infiltrated production and intentionally sabotaged the design.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Overcharged Pulse Laser|description|283|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 283,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Overcharged Pulse Laser",
+   "english": "Unable to access large quantities of the high-quality weaponry produced by the High Houses, the People's Houses have had to work with what is available to them: mostly the relatively low-powered pulse lasers produced independently in Successor space. This pulse laser has had its safeties bypassed and its optics upgraded, allowing it to do more damage to shields at a lower power cost in exchange for producing substantially more heat.",
+   "italian": "Unable to access large quantities of the high-quality weaponry produced by the High Houses, the People's Houses have had to work with what is available to them: mostly the relatively low-powered pulse lasers produced independently in Successor space. This pulse laser has had its safeties bypassed and its optics upgraded, allowing it to do more damage to shields at a lower power cost in exchange for producing substantially more heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Overcharged Laser Turret|description|320|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 320,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Overcharged Laser Turret",
+   "english": "Hand-crafted by the more colorful members of the People's Houses, this bespoke overcharged Pulse Laser turret has had even more power pumped into its laser generator compared to the fixed version, producing a truly prodigious amount of heat for a weapon of its size. Despite its inelegant design, it is nonetheless a fearsome weapon, especially considering that it retains the ability to partially punch through shielding.",
+   "italian": "Hand-crafted by the more colorful members of the People's Houses, this bespoke overcharged Pulse Laser turret has had even more power pumped into its laser generator compared to the fixed version, producing a truly prodigious amount of heat for a weapon of its size. Despite its inelegant design, it is nonetheless a fearsome weapon, especially considering that it retains the ability to partially punch through shielding.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:\"Sjeja\" Kinetic Lance|description|366|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 366,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Sjeja\" Kinetic Lance",
+   "english": "The largest and most powerful of the Successors' modern weapons, this massive superconducting coilgun is elegant in its simplicity, cleanly perforating targets at extreme range. Although the weapon requires a substantial burst of power in order to fire, it is capable of storing some of this within the coils themselves, allowing it to be fired without additional battery banks at the cost of inflicting a lingering power draw on the ship's systems.",
+   "italian": "The largest and most powerful of the Successors' modern weapons, this massive superconducting coilgun is elegant in its simplicity, cleanly perforating targets at extreme range. Although the weapon requires a substantial burst of power in order to fire, it is capable of storing some of this within the coils themselves, allowing it to be fired without additional battery banks at the cost of inflicting a lingering power draw on the ship's systems.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:\"Sjeja\" Kinetic Lance|description|367|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 367,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Sjeja\" Kinetic Lance",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:High-Velocity Spike|description|379|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 379,
+   "kind": "DESCRIPTION",
+   "context": "outfit:High-Velocity Spike",
+   "english": "The projectiles fired by the Sjeja Kinetic Lance are too large to be synthesized on-the-fly from the ship's reserves, and must be carried separately.",
+   "italian": "The projectiles fired by the Sjeja Kinetic Lance are too large to be synthesized on-the-fly from the ship's reserves, and must be carried separately.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:High-Velocity Spike Rack|description|394|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 394,
+   "kind": "DESCRIPTION",
+   "context": "outfit:High-Velocity Spike Rack",
+   "english": "Though the built-in ammunition reserves of the Sjeja Kinetic Lance are sufficient for all but the most protracted engagements, the High Houses do manufacture this additional storage unit for use on their largest warships. The rack includes a small set of batteries to help support the high power costs of the Sjeja.",
+   "italian": "Though the built-in ammunition reserves of the Sjeja Kinetic Lance are sufficient for all but the most protracted engagements, the High Houses do manufacture this additional storage unit for use on their largest warships. The rack includes a small set of batteries to help support the high power costs of the Sjeja.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "(root)|has|400|0",
+   "path": "data/successors/successor weapons.txt",
+   "line": 400,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "outfit: \"Sjeja\" Kinetic Lance",
+   "italian": "outfit: \"Sjeja\" Kinetic Lance",
+   "ratio": 1.0
+  }
+ ]
+}

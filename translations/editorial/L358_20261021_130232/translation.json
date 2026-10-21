@@ -1,0 +1,99 @@
+{
+ "block": {
+  "path": "data/drak/indigenous.txt",
+  "line_from": 50,
+  "line_to": 302,
+  "units": 8
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Subsidurial|description|50|0",
+   "path": "data/drak/indigenous.txt",
+   "line": 50,
+   "kind": "DESCRIPTION",
+   "context": "ship:Subsidurial",
+   "english": "It is unclear what these creatures are, where they come from, or how they evolved. Scientists have dissected several, but so far the results have simply been that these creatures contain no materials or resources of value; are not even slightly edible, and are too big to be kept as pets.",
+   "italian": "Non è chiaro che cosa siano queste creature, da dove vengano o come si siano evolute. Gli scienziati ne hanno sezionate diverse, ma finora i risultati sono stati semplicemente che queste creature non contengono materiali o risorse di valore, non sono nemmeno vagamente commestibili e sono troppo grandi per essere tenute come animali domestici.",
+   "ratio": 1.194
+  },
+  {
+   "idx": 2,
+   "id": "ship:Subsidurial|description|51|0",
+   "path": "data/drak/indigenous.txt",
+   "line": 51,
+   "kind": "DESCRIPTION",
+   "context": "ship:Subsidurial",
+   "english": "\tTo date, none have demonstrated any sign of sapience, and the few captains who have seen them basically consider them to be the bison of space.",
+   "italian": "\tA oggi nessuna ha mostrato alcun segno di intelligenza, e i pochi capitani che le hanno viste le considerano in sostanza i bisonti dello spazio.",
+   "ratio": 1.007
+  },
+  {
+   "idx": 3,
+   "id": "ship:Void Sprite|description|99|0",
+   "path": "data/drak/indigenous.txt",
+   "line": 99,
+   "kind": "DESCRIPTION",
+   "context": "ship:Void Sprite",
+   "english": "The void sprites are an enigmatic species under the watchful gaze of the Archon originally discovered in the Nenia system. The species' connection is unknown, but the Archon seem particularly protective of them.",
+   "italian": "Gli spiriti del vuoto sono una specie enigmatica sotto lo sguardo vigile dell'Archon, scoperta originariamente nel sistema Nenia. Il legame della specie è ignoto, ma gli Archon sembrano particolarmente protettivi nei suoi confronti.",
+   "ratio": 1.1
+  },
+  {
+   "idx": 4,
+   "id": "ship:Void Sprite|description|155|0",
+   "path": "data/drak/indigenous.txt",
+   "line": 155,
+   "kind": "DESCRIPTION",
+   "context": "ship:Void Sprite",
+   "english": "This is the immature form of the void sprite. While they typically rely on their tendrils and natural buoyancy to fly within atmospheres, they have demonstrated the unusual ability to manipulate gravitational fields to propel themselves off-world.",
+   "italian": "Questa è la forma immatura dello spirito del vuoto. Benché di norma si affidino ai loro viticci e alla spinta naturale per volare nelle atmosfere, hanno dimostrato l'insolita capacità di manipolare i campi gravitazionali per spingersi fuori dal mondo.",
+   "ratio": 1.016
+  },
+  {
+   "idx": 5,
+   "id": "ship:Ember Waste Node|description|218|0",
+   "path": "data/drak/indigenous.txt",
+   "line": 218,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ember Waste Node",
+   "english": "This unusual creature, first spotted in Postverta, seems to have an affinity for void sprites and is usually found close to them. This 'Ember Waste Node,' as it is being called, bears a superficial resemblance to void sprites but is clearly a different species. The Node demonstrates an ability to manipulate energy fields to create shield-like structures around itself. Most remarkably, it has been seen appearing and disappearing with an energy signature reminiscent of jump drives.",
+   "italian": "Questa insolita creatura, avvistata per la prima volta a Postverta, sembra avere affinità con gli spiriti del vuoto e si trova di solito vicino a loro. Questo 'Ember Waste Node', come viene chiamato, ha una somiglianza superficiale con gli spiriti del vuoto ma è chiaramente una specie diversa. Il Node dimostra la capacità di manipolare i campi di energia per creare strutture simili a scudi attorno a sé. Cosa più notevole, è stato visto apparire e sparire con una firma energetica che ricorda i motori iperspaziali.",
+   "ratio": 1.07
+  },
+  {
+   "idx": 6,
+   "id": "ship:Ember Waste Node|description|219|0",
+   "path": "data/drak/indigenous.txt",
+   "line": 219,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ember Waste Node",
+   "english": "Although the Node's cloaking power is believed to be connected to its other energy manipulation abilities, the exact method is unknown.",
+   "italian": "Benché si ritenga che il potere di occultamento del Node sia legato alle sue altre capacità di manipolazione dell'energia, il metodo esatto è ignoto.",
+   "ratio": 1.104
+  },
+  {
+   "idx": 7,
+   "id": "ship:Embershade|description|260|0",
+   "path": "data/drak/indigenous.txt",
+   "line": 260,
+   "kind": "DESCRIPTION",
+   "context": "ship:Embershade",
+   "english": "Long regarded as mere ghost stories, the ray-like Embershades have finally been proven to exist thanks to recent generations of ion storm resistant sensor suites. Shy by nature, these creatures generate a natural cloaking field and prefer to move unseen.",
+   "italian": "A lungo considerati semplici storie di fantasmi, gli Embershade simili a razze sono stati finalmente dimostrati esistenti grazie alle recenti generazioni di sensori resistenti alle tempeste ioniche. Timidi per natura, queste creature generano un campo di occultamento naturale e preferiscono muoversi senza essere visti.",
+   "ratio": 1.26
+  },
+  {
+   "idx": 8,
+   "id": "ship:Embersylph|description|302|0",
+   "path": "data/drak/indigenous.txt",
+   "line": 302,
+   "kind": "DESCRIPTION",
+   "context": "ship:Embersylph",
+   "english": "Embersylphs are notably strange creatures, even compared to other known space fauna. Glowing in various hues while gracefully swinging several long appendages in a strangely methodical motion, the only consistent behavior these creatures are known to display is curiosity for other life.",
+   "italian": "Gli Embersylph sono creature notevolmente strane, anche rispetto all'altra fauna spaziale conosciuta. Rilucendo in varie tonalità mentre agitano con grazia diverse lunghe appendici in un movimento stranamente metodico, il solo comportamento coerente che si conosca di queste creature è la curiosità per le altre forme di vita.",
+   "ratio": 1.136
+  }
+ ]
+}

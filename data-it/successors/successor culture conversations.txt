@@ -1,0 +1,352 @@
+# Copyright (c) 2024 by Daeridanii
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Successors: First Contact Exploration: Kua-Oa-Aava"
+	landing
+	minor
+	source "Kua-Oa-Aava"
+	to offer
+		has "Successors: First Contact 1: done"
+		not "Successors: First Contact 2: done"
+	on offer
+		conversation
+			`Osservate per un paio di minuti mentre il personale dello spazioporto qui cerca un adattatore per il carburante adatto alla vostra nave. Dopo un po' vengono chiamati alcuni ufficiali militari; esaminano a fondo il fianco della <ship> e inseriscono i risultati in un datapad. Alla fine il capo tira fuori un'altra delle sfere di metallo morfico dei Successori; la collega brevemente al datapad e quella si schiaccia rapidamente in una forma che le permette di interfacciarsi sia con la vostra nave sia con la manichetta del carburante.`
+				decline
+
+mission "Successors: First Contact Exploration: Raaqa-Kvelq-Ryuit"
+	minor
+	source "Raaqa-Kvelq-Ryuit"
+	to offer
+		has "Successors: First Contact 1: done"
+		not "Successors: First Contact 2: done"
+	on offer
+		conversation
+			`Uno dei Successori nello spazioporto qui sembra offrire piccoli bocconi di cibo agli altri: brevi strisce cotte di una pianta verde scuro che ricorda vagamente una succulenta, infilzate su uno stecco di legno. Benché quasi tutti qui vi tengano a distanza, questo individuo se ne accorge e vi offre uno stecco.`
+			choice
+				`	(Prendilo.)`
+				`	(Rifiuta.)`
+					goto refused
+			`	Prendete lo stecco e un'onda di colore gli risale lungo il corpo, poi scivola via verso un'altra parte dello spazioporto.`
+			choice
+				`	(Assaggiane un pezzo.)`
+				`	(Nascondilo.)`
+					goto hidden
+			`	Anche se ne prendete solo un pezzetto, il cibo ha un sapore così disgustoso da farvi venire i conati: è duro, sa di pesce ed è troppo salato per il vostro palato. Sputate con discrezione quel poco che avete inghiottito e vi considerate fortunati a non aver dovuto pagare nulla.`
+				decline
+			label refused
+			`	Dopo un paio di secondi il Successore ritrae il braccio e scivola via verso un'altra parte dello spazioporto.`
+				decline
+			label hidden
+			`	Tenete lo stecco dietro la schiena finché non rientrate nella <ship> e lo mettete in un cestino dei rifiuti.`
+				decline
+
+mission "Successors: First Contact Exploration: Iyra-Ijasa-Iret"
+	minor
+	source "Iyra-Ijasa-Iret"
+	to offer
+		has "Successors: First Contact 1: done"
+		not "Successors: First Contact 2: done"
+	on offer
+		conversation
+			`Non avevate mai visto uno spazioporto completamente sott'acqua. Accanto alla piazzola di atterraggio c'è una grande vetrata su quello che potreste chiamare acquario ma che sembra una specie di salotto per i Successori, che nuotano e si dispongono intorno a diversi tavoli a più livelli.`
+				decline
+
+mission "Successors: First Contact Exploration: Mavra-Sol-Kvel"
+	minor
+	source "Mavra-Sol-Kvel"
+	to offer
+		has "Successors: First Contact 1: done"
+		not "Successors: First Contact 2: done"
+	on offer
+		conversation
+			`La vostra nave richiama una piccola folla quando atterrate qui, anche se ai più tengono testa delle barriere predisposte intorno alla piazzola e qualche guardia di pattuglia. Passando accanto alla barriera, un Successore vi offre una delle sue sfere di dati.`
+			choice
+				`	(Prendila.)`
+					goto taken
+				`	(Non accettare.)`
+					goto refused
+			label taken
+			action
+				outfit "Local Map" 1
+			`	Il Successore trilla con calore quando prendete la sfera, ma viene subito respinto da una delle guardie. Come prima, la sfera si espande in una piccola mappa stellare appena la toccate, anche se questa sembra contenere dati culturali oltre alle coordinate stellari.`
+				decline
+			label refused
+			`	Alzate le mani e vi allontanate dall'individuo che vi offre la sfera di dati; viene subito respinto da una delle guardie.`
+				decline
+
+mission "Successors: First Contact Exploration: Mosaa-Oa-Vyret"
+	minor
+	source "Mosaa-Oa-Vyret"
+	to offer
+		or
+			and
+				has "Successors: First Contact 1: done"
+				not "Successors: First Contact 2: done"
+			and
+				has "Successors: First Contact 2: done"
+				random < 5
+	on offer
+		conversation
+			`Vicino alla piazzola di atterraggio dello spazioporto vedete una grande vasca circolare con diversi Successori che si aggirano dentro. Alcuni si rilassano contro i bordi, altri sembrano immersi in una conversazione; un terzetto è seguito da un piccolo animale simile a una salamandra che nuota dietro di loro e gioca fra e intorno alle loro braccia, con leggeri tonfi d'acqua mentre salta dentro e fuori dalla vasca.`
+				decline
+
+mission "Successors: Buskers"
+	minor
+	source
+		attributes "successor"
+		not attributes "crime" "quiet" "uninhabited"
+	to offer
+		has "known to the successors"
+		random < 5
+	on offer
+		conversation
+			`Mentre aspettate allo spazioporto che la <ship> faccia rifornimento, notate che una piccola folla di Successori si raduna intorno a una delle vasche d'acqua che circondano gli hangar delle navi. Molti si muovono eccitati verso il trambusto o, già arrivati, ondulano stranamente nell'acqua.`
+			choice
+				`	(Vai a vedere l'adunata.)`
+				`	(Ignora.)`
+					decline
+			`	Attraversate il pavimento coperto d'acqua verso il gruppo e, avvicinandovi, cominciate a sentire musica venire dalla vasca: una melodia strana e cadenzata, piena di note che sembrano impossibilmente alte o basse, o entrambe insieme. Vi fate largo fra la folla e vedete che nella vasca ci sono tre Successori sommersi, ciascuno con le braccia avvolte intorno a uno o più strumenti metallici molto diversi fra loro che sporgono dalla superficie dell'acqua. È da questi strumenti che viene la musica.`
+			`	Uno dei Successori nella vasca comincia a cantare, o almeno cantare è il modo migliore per descriverlo; preme uno degli strumenti più lunghi e cilindrici contro la testa e questo comincia a produrre un accompagnamento alla melodia degli altri strumenti che il vostro dispositivo di traduzione ogni tanto riconosce come parole:`
+			`	"... dolcissimo figlio... mai volere... non così... corrente cupa... resistere..."`
+			`	Non è chiaro se questo rappresenti l'intero contenuto lirico dell'esecuzione o se semplicemente il dispositivo di traduzione non riesca a comprendere le frasi più tonali. Il cantante sommerso mostra una varietà di colori e texture sulla pelle, che cambiano a ogni frase successiva: verde e ruvida su una nota acutissima, rosa e dall'aspetto liscio su una sezione bassa stranamente simile a un ringhio. Diversi nella folla lo imitano con i propri disegni cutanei; il gruppo pulsa di colore e di disegno a tempo con la melodia della musica.`
+			choice
+				`	(Continua ad ascoltare.)`
+				`	(Torna alla mia nave.)`
+					goto unappreciative
+			`	Alla fine la musica cresce in un lungo lamento prolungato degli strumenti, accompagnato da un'esecuzione vocale rapida e acuta, e l'acqua della vasca ondeggia da un lato all'altro mentre il trio dentro si muove estatico, cerchiandosi sempre più velocemente prima di fermarsi di colpo. L'esecuzione si chiude con una sezione più dolce e giocosa, in cui gli esecutori soffiano bolle verso la superficie della vasca e producono note brevi e semi-casuali sui loro strani strumenti.`
+			`	I Successori intorno a voi producono un cupo ronzio basso dopo la conclusione del pezzo.`
+			choice
+				`	(Applaudi.)`
+					goto applaud
+				`	(Prova a ronzare anche io.)`
+					goto hum
+				`	(Torna alla mia nave.)`
+					decline
+			label applaud
+			`	I Successori intorno a voi sembrano un po' sorpresi, o forse confusi, dalla vostra esibizione, ma non ne mostrano offesa, per quanto possiate capire. Il trio degli esecutori alla fine emerge dalla vasca, infila con delicatezza gli strumenti in altrettante custodie di forma bizzarra, scambia qualche parola con i pochi rimasti fra il pubblico e poi va via.`
+				decline
+			label hum
+			`	Ai Successori intorno a voi il vostro tentativo di imitare il ronzio sembra divertente; alcuni mostrano brevemente un'onda di colore blu-verde sulla pelle prima di tornare rapidamente alla loro tonalità di base. Nessuno qui sembra comunque offendersi seriamente per il gesto. Gli esecutori alla fine emergono dalla vasca, infilano con delicatezza gli strumenti in custodie altrettanto bizzarre, scambiano qualche parola con i pochi rimasti fra il pubblico e poi vanno via.`
+				decline
+			label unappreciative
+			`	Tornate alla vostra nave, liberandovi con delicatezza dalla folla di Successori incantati, che continuano a brillare e ondeggiare in lontananza finché l'esecuzione non finisce e si disperdono, ognuno per la propria strada.`
+				decline
+
+mission "Successors: Graffiti"
+	minor
+	source
+		attributes "successor"
+		not attributes "uninhabited"
+	to offer
+		has "known to the successors"
+		random < 5
+	on offer
+		conversation
+			`Poco dopo che siete scesi dalla <ship> per lo spazioporto di <origin>, sentite un tintinnio sommesso ma ben distinguibile alle vostre spalle, vicino al punto in cui la vostra nave sta facendo rifornimento.`
+			choice
+				`	(Vai a vedere da dove viene.)`
+				`	(Ignora il rumore.)`
+					goto ignored
+			`	Avvicinandovi alla fonte del tintinnio, sorprendete tre Successori mentre spalmano lo scafo della <ship> con grumi di una soluzione colorata e maleodorante. La puzza è così acre che riuscite a stento ad avvicinarvi senza conati, ma i Successori sembrano non accorgersene, o non interessarsene.`
+			choice
+				`	"Che cosa state facendo alla mia nave?"`
+					goto what
+				`	"Scusate, fate tutti parte della squadra di riparazione?"`
+			`	I tre Successori trasaliscono al suono della vostra voce, le braccia che scattano mentre si voltano verso di voi. Uno accenna a fuggire, ma uno degli altri gli si aggrappa al braccio e lo riporta indietro al loro fianco. Tutti e tre assumono lentamente una tonalità di viola spento e la loro pelle sembra contrarsi sopra la muscolatura sottostante. Alla fine uno di loro risponde. "Sì, hai ragione tu! Abbiamo l'ordine di applicare questa ... soluzione per lo scafo, per riparare un punto danneggiato qui."`
+			`	Ondate di colore risalgono lungo i corpi degli altri, e le punte delle loro braccia ondeggiano piano.`
+			choice
+				`	"Non avevo mai visto una soluzione del genere. Come funziona?"`
+					goto how
+				`	"In tal caso mi scuso per l'interruzione. Continuate."`
+					goto fooled
+			label what
+			`	I tre Successori trasaliscono al suono della vostra voce, le braccia che scattano mentre si voltano verso di voi. Uno accenna a fuggire, ma uno degli altri gli si aggrappa al braccio e lo riporta indietro al loro fianco. Tutti e tre assumono lentamente una tonalità di viola spento e la loro pelle sembra contrarsi sopra la muscolatura sottostante. Alla fine uno di loro risponde. "Noi... ah... facciamo parte della squadra di riparazione! Abbiamo l'ordine di applicare questa... soluzione per lo scafo, per riparare un punto danneggiato qui."`
+			`	Ondate di colore risalgono lungo i corpi degli altri, e le punte delle loro braccia ondeggiano piano.`
+			choice
+				`	"Non avevo mai visto una soluzione del genere. Come funziona?"`
+					goto how
+				`	"In tal caso mi scuso per l'interruzione. Continuate."`
+					goto fooled
+			label how
+			`	Il gruppo si scambia sguardi prima che lo stesso Successore risponda di nuovo. "La... ah... soluzione penetra nelle crepe e nelle fessure dello scafo e, quando si asciuga, le sigilla. Oltre a questo non sappiamo nulla; la applichiamo solo come ci dice l'autorità portuale."`
+			`	Uno degli altri interviene, aggiungendo allegramente: "Noi non sappiamo niente!" e gli altri lo fulminano con lo sguardo.`
+			choice
+				`	"Ed è anche così colorata! Siete sicuri che non sia una specie di vernice?"`
+				`	"Affascinante. Continuate."`
+					goto fooled
+			`	"Oh, è per... ah... la sicurezza. Sì, è molto pericoloso toccarla se non sei addestrato, per questo è di un colore così acceso, come avvertimento." Nessuno dei tre indossa alcun tipo di equipaggiamento protettivo, per quanto possiate vedere, e ormai gran parte del gruppo ha cambiato colore assumendo quella che potreste definire una tonalità di rosa divertita. È qualcosa che uno o due stanno chiaramente cercando di reprimere, la pelle che sfuma in gradienti nel tentativo di mantenere la precedente tinta viola spenta. Uno degli altri cerca di nascondere dietro le braccia una borsa piena di altre lattine di "soluzione per lo scafo".`
+			choice
+				`	"Beh, se lavorate per conto dello spazioporto, allora posso certo chiedervi di toglierla."`
+				`	"Bel tentativo, ma io e te sappiamo entrambi che cosa sta succedendo qui."`
+				`	"Credo che lo scafo della mia nave sia stato riparato abbastanza. Forse è meglio che vi occupiate delle altre navi che avete in lista."`
+					goto complicit
+				`	"Grazie per aver risposto alle mie domande. Continuate pure."`
+					goto fooled
+			`	Il terzetto sembra piuttosto abbattuto all'udire queste parole, ma dopo un bel po' di conciliaboli fra loro alla fine cedono e accettano di togliere la soluzione, purché non informiate l'autorità portuale di ciò che hanno fatto. Si danno da fare per rimuoverla, o almeno recitano la parte, ma non riescono a strofinare via le parti più secche, e alla fine li lasciate andare quando diventa evidente che una parte della vernice si è legata allo scafo in modo permanente.`
+				decline
+			label complicit
+			`	Il terzetto si rallegra all'udire queste parole e, dopo qualche conciliabolo, scivola via nello spazioporto trascinandosi le lattine di soluzione, non prima però di lasciarne una a voi per le "riparazioni d'emergenza"; considerando però quanto puzza, non è certo che riuscireste mai a sopportare di applicarla.`
+				decline
+			label ignored
+			`	Al vostro ritorno dallo spazioporto, qualche tempo dopo, trovate una zona sul fianco della <ship> ricoperta di una spessa soluzione colorata dal puzzo incredibilmente acre, così forte che riuscite a malapena ad avvicinarvi. Il disegno forma alcune parole nella scrittura dei Successori e, sebbene il dispositivo di traduzione fatichi a interpretare quei glifi non standard, alla fine propone una traduzione più o meno così: "Ryiaa è stata qui! Con gli amici." I tecnici dello spazioporto impiegano diverse ore per raschiarla via del tutto, ma una lieve alterazione del colore resta legata in modo permanente alle lastre dello scafo, per molto tempo a venire.`
+				decline
+			label fooled
+			`	Al vostro ritorno dallo spazioporto, qualche tempo dopo, trovate che la "squadra di riparazione" ha ricoperto una zona sul fianco della <ship> con la sua soluzione colorata e puzzolente. Il disegno forma alcune parole nella scrittura dei Successori, accanto a una raffigurazione alquanto grossolana del vostro volto. Il dispositivo di traduzione fatica a interpretare quei glifi non standard, ma alla fine decifra il testo come "'Erjn'... Stupido! Niente aculei, niente cervello!" I tecnici dello spazioporto impiegano diverse ore per raschiarla via del tutto, ma una lieve alterazione del colore resta legata in modo permanente alle lastre dello scafo, per molto tempo a venire.`
+				decline
+
+mission "Successors: Stage Play"
+	minor
+	source
+		attributes "successor"
+		not attributes "crime" "quiet" "uninhabited" "station"
+	to offer
+		has "trusted by the successors"
+		random < 5
+	on offer
+		conversation
+			branch "myiara system"
+				has "flagship system: Myiara-Nnesa"
+			`Attraversando lo spazioporto, notate diversi manifesti affissi per pubblicizzare una specie di spettacolo, ognuno dei quali mostra un Successore con le braccia aperte in piedi su una sfera di un blu brillante in cui si agitano forme di polpo. "Myiara l'Immortale", recita il titolo.`
+				goto decide
+			label "myiara system"
+			`Attraversando lo spazioporto, notate diversi manifesti affissi per pubblicizzare una specie di spettacolo, ognuno dei quali mostra un Successore con le braccia aperte in piedi su una sfera di un blu brillante in cui si agitano forme di polpo. "Myiara l'Immortale", recita il titolo, e l'ultima parola riecheggia il nome di questo sistema stellare.`
+			label decide
+			`	Mentre guardate il manifesto, un Successore di passaggio vi nota e vi saluta, aprendo le braccia nel modo tradizionale. "L'alieno onorato!" dice. "Lo spettacolo stasera desta il tuo interesse? È una buona compagnia quella che lo mette in scena."`
+			choice
+				`	"Perché no? Puoi mostrarmi dove si tiene?"`
+				`	"Il teatro non mi interessa più di tanto."`
+					decline
+			`	"Saresti di certo un ospite ben trattato", dice il Successore. "Seguimi, e non faremo tardi."`
+			`	Vi conducono a una delle porte di trasporto più piccole dello spazioporto, dove un treno compatto serpeggia fuori dalla città e dentro una campagna straordinariamente intatta. Alla fine la guida vi fa scendere; la stazione domina una grande depressione costiera dove migliaia di altri Successori si sono radunati su panche semicircolari attorno a una vasca centrale posta sul bordo del mare. Alcune panche sono state rialzate a formare piccoli palchi riccamente adornati, dove presumibilmente i membri più facoltosi del pubblico possono godersi lo spettacolo in privato.`
+			`	Vi sedete e, dopo alcuni minuti, un Successore pronuncia una breve introduzione. Comincia ringraziando la Casata locale per aver finanziato l'evento, prosegue nominando e presentando ciascuno degli attori principali e si chiude con uno strano rituale in cui l'organizzatore dello spettacolo consegna a ogni attore un piccolo contrassegno decorativo. Gli attori li infilano su lunghi fili che portano con sé: diversi di loro hanno già fili molto adorni, che si avvolgono più volte attorno al corpo.`
+			`	"Myiara! Da quanto tempo non vediamo il tuo volto gentile fra noi! Torna, e concedici questa grazia", grida un attore dentro la vasca, la voce amplificata per il pubblico. Diversi altri gli roteano attorno, ognuno con una maschera dettagliata e colorata, e ognuno riecheggia "Myiara!" mentre il primo parla. Altri attori ancora entrano da aperture sul fondo della vasca, risalgono a nuoto fino alla superficie e schizzano in aria con eleganza acrobatica prima di atterrare sul coperchio trasparente della vasca.`
+			`	"I Miarani non rivedranno mai più la loro gente", dice uno, mentre abito e pelle cambiano insieme colore diventando di un blu intenso. "Perché nobili non siamo, né mai lo saremo..."`
+			choice
+				`	(Fa' attenzione.)`
+					goto attentive
+				`	(Lascia che la mente vaghi.)`
+					goto bored
+				`	(Vattene prima.)`
+			`	Restate fino al primo intervallo: un'attesa comunque scomodamente lunga, e per quanto possiate giudicare la storia è ancora lontanissima dalla conclusione. Lo spettacolo è decisamente alieno, con maschere, acrobazie e un momento sbalorditivo a metà del primo atto, quando uno dei personaggi evoca una tempesta per colpirne un altro. Enormi masse d'acqua, sospese in sfere trasparenti, venivano sollevate dietro il palco da una specie di meccanismo a repulsione.`
+			`	Il treno arriva in silenzio dopo solo qualche minuto di attesa e vi riporta allo spazioporto senza problemi.`
+				decline
+			label attentive
+			`	"Irja, va' e apri le tue braccia! Ascolta il richiamo anelante del nostro cuore, la sua voce, se le tue orecchie riescono a percepire i piccoli palpiti che una vita mortale produce..."`
+			`	Lo spettacolo si rivela straordinariamente lungo e immensamente complesso. La trama segue sia i Successori mortali, sul palco asciutto, sia gli dèi nell'acqua sotto di loro. Myiara Raaja era la creatura adottiva di uno degli dèi, eternamente giovane nel regno immortale, ma fuggì nel mondo dei mortali mentre gli dèi dormivano. Lì visse una vita lunga e piena, finché alla fine morì lasciando dietro di sé Myiara Sera, la propria unica creatura. Gli dèi, destatisi, lamentano la perdita e mandano il messaggero Irja a riprendere Myiara Raaja dal mondo di sopra; ma Irja, accecato dalla gioia, scambia la giovane Myiara Sera per Myiara Raaja. In un disperato sfoggio di astuzia, Myiara Sera riesce ad avvelenare Irja con una bevanda di sonno eterno, spalmandola su un mantello pregiato a cui il dio non sa resistere, convinto che sia un dono di ricongiungimento dalla creatura perduta da tanto tempo.`
+			`	Per conservare la propria libertà, Myiara Sera scende nel regno immortale e, in lacrime, avvelena uno per uno gli dèi allo stesso modo, lasciandoli infine come erano all'inizio: dormienti, avvolti nella lenta rotazione delle correnti sottomarine. Nell'epilogo Myiara Sera ha a sua volta due figli: uno resta per sempre con gli dèi, convincendoli a un sonno sempre più profondo e popolato di sogni; l'altro vive nel mondo dei mortali e dà origine a una famiglia di eroi, ognuno dei quali ha i propri spettacoli e altri prodotti culturali.`
+			`	"Questo resterà, incontaminato, insensato, nel sepolcro degli abissi. E tutte le moltitudini in lacrime, sopra e sotto, ne serberanno memoria e offriranno doni...`
+			`	La messa in scena è sorprendentemente aliena: ogni attore indossa una maschera complessa del proprio personaggio, che si muove insieme al volto sotto di essa. Le maschere dei personaggi mortali sono semplici, anche se espressive; quelle degli dèi sono enormi e drammatiche. Molte hanno lunghe appendici a nastro che non si posano mai nelle correnti della vasca e ruotano continuamente attorno alla testa degli attori.`
+			`	I personaggi passano dal regno mortale a quello immortale con salti acrobatici fra la vasca piena d'acqua e la sua superficie superiore quasi asciutta. Nei momenti che devono essere sottolineati, enormi schizzi d'acqua erompono da dietro il palco; in altri, lunghi filamenti del metallo guizzante dei Successori si sollevano tutt'intorno, formando foreste, onde marine e tempeste spaventose con le loro lunghezze lucenti.`
+			`	"Myiara giovane, anziana, ancora giovane, ognuna ci scuote dal riposo per farci sentire di nuovo l'amaro negli oceani del nostro sangue..."`
+			`	Quando finisce, siete completamente esausti per l'esperienza. Il treno arriva dopo solo pochi minuti di attesa e voi, stipati insieme a molti altri Successori, tornate verso lo spazioporto, arrivando infine a notte fonda.`
+				decline
+			label bored
+			`	Lo spettacolo si rivela straordinariamente lungo e incomprensibilmente complesso. La trama sembra seguire sia i Successori mortali, sul palco asciutto, sia gli dèi nell'acqua sotto di loro. Un personaggio di nome Myiara era la beniamina degli dèi, e un altro, apparentemente scambiato per lei, intraprende il lungo lavoro di avvelenare uno per uno tutti gli dèi perché il suo segreto non venga scoperto. Alla fine ha dei figli: uno resta nel regno degli dèi, l'altro torna nel mondo dei vivi.`
+			`	La messa in scena è di per sé notevole: gli attori indossano maschere imponenti che si muovono insieme ai loro volti, esaltando le emozioni che intendono rappresentare. In certi momenti della storia enormi schizzi d'acqua erompono da dietro il palco, in altri lunghi filamenti di metallo vengono fatti salire in forme sospese, creando scene di tempesta e di foresta sopra la testa degli attori.`
+			`	Quando finisce, siete completamente esausti per l'esperienza. Il treno arriva dopo solo pochi minuti di attesa e voi, stipati insieme a molti altri Successori, tornate verso lo spazioporto, arrivando infine a notte fonda.`
+				decline
+
+mission "Successors: Sosrue"
+	minor
+	source
+		attributes "successor"
+		not attributes "crime" "quiet" "uninhabited"
+	to offer
+		has "trusted by the successors"
+		random < 5
+	on offer
+		conversation
+			`Poco dopo che siete scesi dalla nave, notate due Successori che vi osservano dall'altra parte dello spazioporto; il più giovane tira più volte le braccia del più grande finché i due non si avvicinano a voi. Il più grande apre le braccia in segno di saluto. "Mio figlio voleva che te lo chiedessi, alieno: nei tuoi viaggi hai mai incontrato un Sosrue?`
+			choice
+				`	"Un che?"`
+					goto what
+				`	"Forse, ma se l'avessi incontrato non lo saprei con quel nome."`
+					goto name
+				`	"Non ho tempo per questo."`
+			`	L'adulto assume quella che potrebbe essere una tonalità di rosso delusa, ma prende comunque con sé il figlio e vi lascia ai vostri affari.`
+				decline
+			label what
+			`	Il piccolo prorompe in un discorso concitato. "Attento al Sosrue, vestito di nero, con i suoi denti e i suoi artigli!" prima che il genitore lo interrompa.`
+			label name
+			`	"Mi scuso", dice l'adulto. "È un mostro, da una poesia per bambini. Il preferito di questo piccolo. Allora racconta anche a me e a mio figlio: fra le distese più ampie delle stelle, hai mai incontrato una creatura dalle lunghe braccia, dall'orecchio fine e dai molti denti, che abita ogni genere di abisso stellare?" Mentre parla, la pelle gli si riga di sottili linee dorate che tremano a ogni sillaba.`
+			choice
+				`	"No, ma ho incontrato alieni interessanti."`
+					goto truth
+				`	"Una volta ho lottato con una, in fondo a una nebulosa."`
+					goto play
+				`	"È una storia terribilmente cupa per un bambino."`
+			`	Il piccolo ondeggia piano, gorgogliando una risata strana. "Non è vero", dice il genitore. "Perché mio figlio dovrebbe averne paura?"`
+			`	Detto questo, i due Successori scivolano di nuovo nello spazioporto, chiacchierando fra loro mentre si allontanano.`
+				decline
+			label truth
+			`	Il piccolo si dimena piano come se ridesse, assumendo una tonalità di rosa pastello. "Quanto sei serio", dice il genitore. "Forse i tuoi compagni alieni hanno già visto tutti i Sosrue prima che arrivassi tu. Devono essere spiritosi, per essere scampati con la vita!"`
+			`	Detto questo, i due si allontanano di nuovo nello spazioporto, avendo chiaramente soddisfatto quel bisogno di divertimento che li aveva portati da voi.`
+				decline
+			label play
+			`	"Le tue ferite!" esclama il piccolo, "e così metà delle tue braccia sono state separate da te!" Si dimena felice, e il genitore prosegue, mentre le linee dorate di prima esplodono in chiazze di colore su tutto il suo corpo. "Devi essere stato spiritoso per scamparla. Senza dubbio il tuo nemico è ancora in agguato, ora che conosce la tua forza. Dovrai essere due volte più astuto, se mai vi incontrerete di nuovo!"`
+			`	Dopo quest'ultimo commento, il genitore apre di nuovo le braccia verso di voi e i due Successori scivolano via nello spazioporto, con il piccolo che mormora ancora versi della poesia.`
+				decline
+
+mission "Successors: Derelict Station Toy"
+	minor
+	landing
+	source
+		attributes "successor"
+		attributes "station"
+		government "Uninhabited"
+	to offer
+		has "known to the successors"
+		random < 5
+	on offer
+		conversation
+			`Anche se lo spazioporto qui è silenzioso e senza vita come sempre, quando scendete per un momento scorgete un oggetto strano e colorato che giace a poca distanza nel buio. A prima vista è difficile dire che cosa sia, ma guardando meglio sembra un piccolo modello in metallo di una navetta Kvelqde, dipinto con colori vivaci dall'aspetto oleoso. Dal retro spunta una minuscola elica, molto consumata.`
+			choice
+				`	(Lascialo dov'è.)`
+					goto leave
+				`	(Prendilo.)`
+					goto take
+				`	(Calpestalo.)`
+			`	Il giocattolo si rivela straordinariamente resistente: il vostro assalto non fa altro che graffiarne la vernice, mentre voi siete costretti a tornare zoppicando alla <ship> con un piede contuso.`
+				decline
+			label leave
+			`	Tornate alla vostra nave, con un ultimo sguardo a quel puntino di colore improbabile contro le pareti scure e minacciose della stazione.`
+				decline
+			label take
+			`	Lasciate cadere il giocattolo poco dopo averlo raccolto, quando un bordo affilato dell'elica vi taglia la mano. Vi affrettate verso la vostra nave stringendovi la ferita che brucia.`
+				decline
+
+mission "Successors: Pet Commemoration"
+	minor
+	source
+		attributes "successor"
+		not attributes "uninhabited" "quiet"
+	to offer
+		has "known to the successors"
+		random < 5
+	on offer
+		conversation
+			`Uno schermo su una delle pareti mostra un messaggio commemorativo: l'immagine di una piccola creatura simile a una salamandra cullata fra le braccia di un Successore, con un testo sotto:`
+			`	"Mirja-Mirja, il più leale degli amici e il più gentile degli animali. Di questa materia sono fatti i sogni."`
+				decline
+
+mission "Successors: Armor Reconfiguration"
+	minor
+	source
+		government "House Aqrabe" "House Chydiyi"
+	to offer
+		has "known to the successors"
+		random < 5
+	on offer
+		conversation
+			`Mentre vi guardate intorno nello spazioporto, una nave da guerra delle Alte Casate si avvicina per atterrare e prosegue verso un piccolo hangar di allestimento laterale, solo in parte visibile agli sguardi dei civili. Enormi bracci meccanici si abbassano dalla sommità dell'hangar, si calibrano prima sulla forma e sulla posizione del vascello, poi cominciano a scorrere sull'armatura della nave tanto da vicino che sembra quasi la tocchino. Il metallo guizza al passaggio dei bracci: protuberanze viscide dall'aspetto liquido si formano e si richiudono sulla loro scia, schizzando in sé stesse come gocce di pioggia nell'acqua, rugiadose e morbide. Quando l'increspatura si ferma, la trama dello scafo appare in qualche modo cambiata: un po' più ruvida, forse, o di una tonalità di grigio leggermente diversa. La nave decolla poco dopo.`
+				decline

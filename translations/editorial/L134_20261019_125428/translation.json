@@ -1,0 +1,99 @@
+{
+ "block": {
+  "path": "data/hai/unfettered side missions.txt",
+  "line_from": 494,
+  "line_to": 510,
+  "units": 8
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Undeserved Anomalocaris|As you land, countless Hai hastily head to your ship, each armed with several weapons. One of them points at you and makes a declaration in front of the crowd that is quickly forming, shouting loud enough for all to hear. \"You do not deserve to fly this relic of old!\"|494|0",
+   "path": "data/hai/unfettered side missions.txt",
+   "line": 494,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Undeserved Anomalocaris",
+   "english": "As you land, countless Hai hastily head to your ship, each armed with several weapons. One of them points at you and makes a declaration in front of the crowd that is quickly forming, shouting loud enough for all to hear. \"You do not deserve to fly this relic of old!\"",
+   "italian": "Mentre atterri, innumerevoli Hai si dirigono in fretta verso la tua nave, ognuno armato di diverse armi. Uno di loro ti punta contro e fa una dichiarazione davanti alla folla che si sta rapidamente formando, gridando abbastanza forte perché tutti sentano. \"Non meriti di pilotare questo relitto del passato!\"",
+   "ratio": 1.149
+  },
+  {
+   "idx": 2,
+   "id": "mission:Undeserved Anomalocaris|\tOne standing behind them then chimes in. \"You wasted your opportunity for a glorious battle to earn that right! We know of what you've failed!\"|495|0",
+   "path": "data/hai/unfettered side missions.txt",
+   "line": 495,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Undeserved Anomalocaris",
+   "english": "\tOne standing behind them then chimes in. \"You wasted your opportunity for a glorious battle to earn that right! We know of what you've failed!\"",
+   "italian": "\tUno che sta dietro di loro interviene. \"Hai sprecato la tua occasione per una battaglia gloriosa che ti guadagnasse quel diritto! Sappiamo in cosa hai fallito!\"",
+   "ratio": 1.118
+  },
+  {
+   "idx": 3,
+   "id": "mission:Undeserved Anomalocaris|\tA more important-looking Unfettered then steps up close to you, speaking in a menacing tone. \"You must surrender the ship to us immediately, along with the weapons of the savages, if you did not already rob us of those.\" For a moment, they look down in thought, then speak to you once more. \"We will give you another ship so you can leave, but you must give us the Anomalocaris!\"|498|0",
+   "path": "data/hai/unfettered side missions.txt",
+   "line": 498,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Undeserved Anomalocaris",
+   "english": "\tA more important-looking Unfettered then steps up close to you, speaking in a menacing tone. \"You must surrender the ship to us immediately, along with the weapons of the savages, if you did not already rob us of those.\" For a moment, they look down in thought, then speak to you once more. \"We will give you another ship so you can leave, but you must give us the Anomalocaris!\"",
+   "italian": "\tUn Unfettered dall'aria più importante ti si avvicina, parlando con tono minaccioso. \"Devi consegnarci immediatamente la nave, insieme alle armi dei selvaggi, se non ce le hai già rubate.\" Per un momento abbassano lo sguardo pensierosi, poi ti parlano di nuovo. \"Ti daremo un'altra nave così potrai andartene, ma devi darci l'Anomalocaris!\"",
+   "ratio": 0.897
+  },
+  {
+   "idx": 4,
+   "id": "mission:Undeserved Anomalocaris|\t(Hand over the Anomalocaris.)|500|0",
+   "path": "data/hai/unfettered side missions.txt",
+   "line": 500,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Undeserved Anomalocaris",
+   "english": "\t(Hand over the Anomalocaris.)",
+   "italian": "\t(Consegna l'Anomalocaris.)",
+   "ratio": 0.9
+  },
+  {
+   "idx": 5,
+   "id": "mission:Undeserved Anomalocaris|\t(Decline their request and leave.)|501|0",
+   "path": "data/hai/unfettered side missions.txt",
+   "line": 501,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Undeserved Anomalocaris",
+   "english": "\t(Decline their request and leave.)",
+   "italian": "\t(Rifiuta la richiesta e vattene.)",
+   "ratio": 0.971
+  },
+  {
+   "idx": 6,
+   "id": "mission:Undeserved Anomalocaris|\tYou and your crew exit what was briefly your ship, and the local Unfettered militia are informed that it is now theirs. The Unfettered that were assembling around your ship happily disperse, except for one - probably the leader, judging by the amount of weaponry on their person. They come to talk to you, weapons in hand but lowered. \"We are happy you could see reason and decided to hand over the ship. In exchange, we will provide you with a suitable replacement.|503|0",
+   "path": "data/hai/unfettered side missions.txt",
+   "line": 503,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Undeserved Anomalocaris",
+   "english": "\tYou and your crew exit what was briefly your ship, and the local Unfettered militia are informed that it is now theirs. The Unfettered that were assembling around your ship happily disperse, except for one - probably the leader, judging by the amount of weaponry on their person. They come to talk to you, weapons in hand but lowered. \"We are happy you could see reason and decided to hand over the ship. In exchange, we will provide you with a suitable replacement.",
+   "italian": "\tTu e il tuo equipaggio uscite da quella che per poco è stata la tua nave, e alla milizia locale degli Unfettered viene comunicato che ora è loro. Gli Unfettered che si stavano radunando attorno alla nave si disperdono contenti, tranne uno, probabilmente il capo a giudicare dalla quantità di armi che porta addosso. Viene a parlarti, armi in mano ma abbassate. \"Siamo felici che tu abbia saputo ragionare e abbia deciso di consegnare la nave. In cambio ti forniremo un sostituto adeguato.",
+   "ratio": 1.047
+  },
+  {
+   "idx": 7,
+   "id": "mission:Undeserved Anomalocaris|\t\"That relic was not meant for you, but there are other ways for you to prove yourself to us.\" The leader of these Unfettered continues with blatantly forced casualness. \"Say, for example, bringing us a Jump Drive... or two... that for sure will earn you favor, and prove you can fight.\"|504|0",
+   "path": "data/hai/unfettered side missions.txt",
+   "line": 504,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Undeserved Anomalocaris",
+   "english": "\t\"That relic was not meant for you, but there are other ways for you to prove yourself to us.\" The leader of these Unfettered continues with blatantly forced casualness. \"Say, for example, bringing us a Jump Drive... or two... that for sure will earn you favor, and prove you can fight.\"",
+   "italian": "\t\"Quel relitto non era destinato a te, ma ci sono altri modi per dimostrarci il tuo valore.\" Il capo di questi Unfettered continua con una disinvoltura palesemente forzata. \"Diciamo, per esempio, portarci un Jump Drive... o due... quello di sicuro ti guadagnerà il favore, e dimostrerà che sai combattere.\"",
+   "ratio": 1.066
+  },
+  {
+   "idx": 8,
+   "id": "mission:Undeserved Anomalocaris|\tThe leader of the Unfettered group then has a few of them escort you to the edge of the spaceport. On your way there, some of them seemed to be holding back some frustration, and you could have sworn one wanted to attack you at any moment. Eventually you are lead to a landed Lightning Bug, and after some messy paperwork, the Unfettered leave it with you.|510|0",
+   "path": "data/hai/unfettered side missions.txt",
+   "line": 510,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Undeserved Anomalocaris",
+   "english": "\tThe leader of the Unfettered group then has a few of them escort you to the edge of the spaceport. On your way there, some of them seemed to be holding back some frustration, and you could have sworn one wanted to attack you at any moment. Eventually you are lead to a landed Lightning Bug, and after some messy paperwork, the Unfettered leave it with you.",
+   "italian": "\tIl capo del gruppo Unfettered fa poi accompagnare te da alcuni di loro fino al bordo dello spazioporto. Mentre ci vai, alcuni sembrano trattenere una certa frustrazione, e avresti giurato che uno volesse attaccarti da un momento all'altro. Alla fine ti portano a una Lightning Bug atterrata, e dopo qualche pratica pasticciata gli Unfettered te la lasciano.",
+   "ratio": 1.003
+  }
+ ]
+}

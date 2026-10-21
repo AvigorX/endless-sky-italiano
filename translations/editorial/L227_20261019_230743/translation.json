@@ -1,0 +1,121 @@
+{
+ "block": {
+  "path": "data/remnant/remnant outfits.txt",
+  "line_from": 884,
+  "line_to": 979,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Forge-Class Steering|description|884|0",
+   "path": "data/remnant/remnant outfits.txt",
+   "line": 884,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Forge-Class Steering",
+   "english": "This unusually power-hungry steering system packs a lot of power into a relatively small space. It seems that engine technology has progressed more rapidly for the Remnant than it has for the rest of humanity.",
+   "italian": "This unusually power-hungry steering system packs a lot of power into a relatively small space. It seems that engine technology has progressed more rapidly for the Remnant than it has for the rest of humanity.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Smelter-Class Steering|description|904|0",
+   "path": "data/remnant/remnant outfits.txt",
+   "line": 904,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Smelter-Class Steering",
+   "english": "It's unclear whether the Remnant's powerful engine systems are purely their own invention, or whether they are partly inspired by alien technology.",
+   "italian": "It's unclear whether the Remnant's powerful engine systems are purely their own invention, or whether they are partly inspired by alien technology.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Tuning Rifle|description|922|0",
+   "path": "data/remnant/remnant outfits.txt",
+   "line": 922,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tuning Rifle",
+   "english": "The Tuning Rifle uses sound waves to destabilize the weaker internal tissue of many races and liquefies them.",
+   "italian": "The Tuning Rifle uses sound waves to destabilize the weaker internal tissue of many races and liquefies them.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Void Rifle|description|942|0",
+   "path": "data/remnant/remnant outfits.txt",
+   "line": 942,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Void Rifle",
+   "english": "The Remnant made a significant number of these weapons during the early years of their research on the void sprites, but have not been able to make any new ones since the Archon stopped their harvests. Without a supply of new tentacles to use, the Remnant have been unable to manufacture more. While durable, they rarely last more than a decade, so even the best cared for of the old Void Rifles degraded into uselessness centuries ago. These highly effective weapons are credited with helping the Remnant safeguard their refuges from ground-based threats during their early years.",
+   "italian": "The Remnant made a significant number of these weapons during the early years of their research on the void sprites, but have not been able to make any new ones since the Archon stopped their harvests. Without a supply of new tentacles to use, the Remnant have been unable to manufacture more. While durable, they rarely last more than a decade, so even the best cared for of the old Void Rifles degraded into uselessness centuries ago. These highly effective weapons are credited with helping the Remnant safeguard their refuges from ground-based threats during their early years.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Void Rifle|description|943|0",
+   "path": "data/remnant/remnant outfits.txt",
+   "line": 943,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Void Rifle",
+   "english": "\tWhen fired, the Void Rifle emits a beam that has a strong paralyzing effect on the nervous system. With an area of effect that penetrates walls and other solid objects, it is an incredibly effective weapon.",
+   "italian": "\tWhen fired, the Void Rifle emits a beam that has a strong paralyzing effect on the nervous system. With an area of effect that penetrates walls and other solid objects, it is an incredibly effective weapon.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Void Sprite Parts|plural|948|0",
+   "path": "data/remnant/remnant outfits.txt",
+   "line": 948,
+   "kind": "VALUE",
+   "context": "outfit:Void Sprite Parts",
+   "english": "Void Sprite Parts",
+   "italian": "Void Sprite Parts",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Void Sprite Parts|description|960|0",
+   "path": "data/remnant/remnant outfits.txt",
+   "line": 960,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Void Sprite Parts",
+   "english": "This is nothing more and nothing less than a cubic meter of void sprite parts. To the Remnant, this represents both a terrible occurrence and a dreadful opportunity.",
+   "italian": "This is nothing more and nothing less than a cubic meter of void sprite parts. To the Remnant, this represents both a terrible occurrence and a dreadful opportunity.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Void Sprite Parts|description|961|0",
+   "path": "data/remnant/remnant outfits.txt",
+   "line": 961,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Void Sprite Parts",
+   "english": "\tThis could have been very valuable to someone who knew what they were doing, if it had been handled properly. Instead, it is worth little more than the value of the compounds contained within.",
+   "italian": "\tThis could have been very valuable to someone who knew what they were doing, if it had been handled properly. Instead, it is worth little more than the value of the compounds contained within.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Remnant License|description|972|0",
+   "path": "data/remnant/remnant outfits.txt",
+   "line": 972,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Remnant License",
+   "english": "In addition to serving as a handy IFF verifier, personal identification tool, and license to purchase Remnant technology, this device features movable parts that mechanically click with every adjustment. When the pieces are switched in a specific order and rhythm, the series of clicks produces a surprisingly beautiful blend of classical music tracks.",
+   "italian": "In addition to serving as a handy IFF verifier, personal identification tool, and license to purchase Remnant technology, this device features movable parts that mechanically click with every adjustment. When the pieces are switched in a specific order and rhythm, the series of clicks produces a surprisingly beautiful blend of classical music tracks.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Remnant Capital License|description|979|0",
+   "path": "data/remnant/remnant outfits.txt",
+   "line": 979,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Remnant Capital License",
+   "english": "While seemingly innocuous at first, this device shows the brilliant simplicity of Remnant engineering. Tapping either edge produces a brief, faint hum which can carry over vast distances on a planet. This humming allows captains who have been entrusted with the Remnant's most valuable technology to call nearby patrols for aid should they ever become stranded.",
+   "italian": "While seemingly innocuous at first, this device shows the brilliant simplicity of Remnant engineering. Tapping either edge produces a brief, faint hum which can carry over vast distances on a planet. This humming allows captains who have been entrusted with the Remnant's most valuable technology to call nearby patrols for aid should they ever become stranded.",
+   "ratio": 1.0
+  }
+ ]
+}

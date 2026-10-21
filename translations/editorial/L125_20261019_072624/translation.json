@@ -1,0 +1,231 @@
+{
+ "block": {
+  "path": "data/human/ships.txt",
+  "line_from": 3491,
+  "line_to": 4266,
+  "units": 20
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Roost|description|3491|0",
+   "path": "data/human/ships.txt",
+   "line": 3491,
+   "kind": "DESCRIPTION",
+   "context": "ship:Roost",
+   "english": "Southbound Shipyards' new fighter-carrying containers have created a new use for what many considered an outdated design. Four external fighter bays make this the biggest civilian carrier on the market, if a little awkward as a warship. After Southbound assembly workers successfully named the \"Nest,\" \"Hauler II: Type F\" was quickly dubbed the \"Roost\" to continue the theme.",
+   "italian": "I nuovi container portacaccia dei Southbound Shipyards hanno dato un nuovo impiego a quello che molti consideravano un progetto superato. Quattro baie di caccia esterne ne fanno la più grande portatrice civile sul mercato, sebbene un po' sgraziata come nave da guerra. Dopo che gli operai della linea di montaggio Southbound ebbero battezzato con successo la \"Nest\", la \"Hauler II: Type F\" fu subito ribattezzata \"Roost\" per continuare il tema.",
+   "ratio": 1.184
+  },
+  {
+   "idx": 2,
+   "id": "ship:Saber|description|3549|0",
+   "path": "data/human/ships.txt",
+   "line": 3549,
+   "kind": "DESCRIPTION",
+   "context": "ship:Saber",
+   "english": "During the caravan era, a boom of economic development spread along the paths of more heavily armed and technologically advanced merchant fleets originating from the Deep, which resulted in ships such as the Saber being developed. This medium warship was one of the powerhouses of military might in its time, armed to the teeth with five gun ports in the nose and a dorsal turret mount to fire at anything not in front of it. As pirates began to join together in larger war bands in response to the more heavily defended merchants, the Saber became popular amongst them as well. Unlike other ships such as the Firebird, it slowly faded out as competition rose, but it is nevertheless cherished by those who still own one.",
+   "italian": "Durante l'era delle carovane, un boom di sviluppo economico si diffuse lungo le rotte delle flotte mercantili più armate e tecnologicamente avanzate provenienti dal Deep, il che portò allo sviluppo di navi come la Saber. Questa nave da guerra media fu una delle potenze militari della sua epoca, armata fino ai denti con cinque portelli per cannoni a prua e un alloggiamento per torretta dorsale per sparare a tutto ciò che non fosse davanti. Quando i pirati iniziarono a unirsi in bande più grandi in risposta ai mercanti meglio difesi, la Saber divenne popolare anche tra loro. A differenza di altre navi come la Firebird, sbiadì lentamente con l'aumentare della concorrenza, ma resta comunque cara a chi ne possiede ancora una.",
+   "ratio": 1.012
+  },
+  {
+   "idx": 3,
+   "id": "ship:Scout|description|3602|0",
+   "path": "data/human/ships.txt",
+   "line": 3602,
+   "kind": "DESCRIPTION",
+   "context": "ship:Scout",
+   "english": "The Lionheart Scoutship was designed back in the days when the galaxy was more sparsely populated, and ships prospecting for habitable worlds or worlds rich in resources would often travel far away from any habitable ports where they would be able to refuel. Although the galaxy has now been much more thoroughly explored, the Scout remains a popular ship for long-distance travel.",
+   "italian": "La Lionheart Scoutship fu progettata ai tempi in cui la galassia era più scarsamente popolata, e le navi che cercavano mondi abitabili o ricchi di risorse viaggiavano spesso lontano da qualsiasi porto abitato dove potersi rifornire. Sebbene la galassia sia ormai esplorata molto più a fondo, la Scout resta una nave popolare per i viaggi a lungo raggio.",
+   "ratio": 0.927
+  },
+  {
+   "idx": 4,
+   "id": "ship:Scrapper|description|3646|0",
+   "path": "data/human/ships.txt",
+   "line": 3646,
+   "kind": "DESCRIPTION",
+   "context": "ship:Scrapper",
+   "english": "Rather than being a specific model of ship, the Scrappers are instead a family of vessels cobbled together from the remains of broken shuttles. On the rare occasion that Republic authorities bother to recognize their existence, Scrappers are treated as almost-illegal, patent-infringing death traps. Despite this, these ships are where many captains (and pirates) from poorer backgrounds get their start.",
+   "italian": "Più che un modello specifico di nave, gli Scrapper sono una famiglia di vascelli messi insieme con i resti di shuttle rotti. Nelle rare occasioni in cui le autorità della Repubblica si curano di riconoscerne l'esistenza, gli Scrapper sono trattati come trappole mortali quasi illegali e in violazione di brevetto. Nonostante ciò, è su queste navi che molti capitani (e pirati) di origini povere iniziano.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Shuttle|description|3692|0",
+   "path": "data/human/ships.txt",
+   "line": 3692,
+   "kind": "DESCRIPTION",
+   "context": "ship:Shuttle",
+   "english": "Although Betelgeuse Shipyards produces other ship models as well, the majority of their profits come from sales of the Shuttle. This versatile ship serves equally well as a passenger transport or a cargo courier. It also happens to be the cheapest ship you can buy which is capable of hyperspace travel.",
+   "italian": "Sebbene i Betelgeuse Shipyards producano anche altri modelli, la maggior parte dei loro profitti viene dalla vendita della Shuttle. Questa nave versatile serve ugualmente bene come trasporto passeggeri o come corriere di carico. È anche la nave più economica che si possa comprare capace di viaggiare nell'iperspazio.",
+   "ratio": 1.046
+  },
+  {
+   "idx": 6,
+   "id": "ship:Shuttle|description|3693|0",
+   "path": "data/human/ships.txt",
+   "line": 3693,
+   "kind": "DESCRIPTION",
+   "context": "ship:Shuttle",
+   "english": "\tShuttles are not designed to withstand combat of any sort, but they are fast and maneuverable enough to get out of harm's way if attacked by a larger, slower ship. Although they are typically unarmed, they have enough space for one weapon, which is the origin of the popular phrase, \"as useless as a blaster cannon on a shuttlecraft.\"",
+   "italian": "\tGli Shuttle non sono progettati per resistere a combattimenti di alcun tipo, ma sono abbastanza veloci e manovrabili da togliersi dai guai se attaccati da una nave più grande e lenta. Sebbene di solito siano disarmati, hanno spazio per un'arma, ed è da qui che viene il detto popolare \"inutile come un cannone blaster su uno shuttle\".",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Skein|description|3770|0",
+   "path": "data/human/ships.txt",
+   "line": 3770,
+   "kind": "DESCRIPTION",
+   "context": "ship:Skein",
+   "english": "This particular cockpit and engine set has found itself attached to three of Southbound Shipyards' new \"Type F\" Fighter-carrier pods. When the Free Worlds asked for a carrier, they did not expect one that would be able to carry almost as many fighters as the heaviest Navy warships. Given this fact, the Free Worlds have asked Southbound and Tarazed to restrict sale of the \"Hauler III: Type F,\" \"Skein\" to its Militia only.",
+   "italian": "Questo particolare insieme di abitacolo e motore si è ritrovato attaccato a tre dei nuovi pod portacaccia \"Type F\" dei Southbound Shipyards. Quando i Mondi Liberi chiesero una portatrice, non si aspettavano una nave in grado di trasportare quasi tanti caccia quante le navi da guerra più pesanti della Marina. Visto questo, i Mondi Liberi hanno chiesto ai Southbound e ai Tarazed di limitare la vendita della \"Hauler III: Type F\", la \"Skein\", alla sola milizia.",
+   "ratio": 1.087
+  },
+  {
+   "idx": 8,
+   "id": "ship:Sparrow|description|3818|0",
+   "path": "data/human/ships.txt",
+   "line": 3818,
+   "kind": "DESCRIPTION",
+   "context": "ship:Sparrow",
+   "english": "Classified as an interceptor rather than a fighter because it has its own hyperdrive instead of needing to be carried inside a larger ship, the Tarazed Sparrow is the smallest and cheapest combat ship available. Because of its limited cargo and passenger space, the primary way for a Sparrow pilot to pay the bills is to upgrade the weapons and hunt pirates... or become one. In either case, it is a perilous way to earn a living.",
+   "italian": "Classificata come intercettore anziché come caccia perché ha una propria iperguida invece di dover essere trasportata dentro una nave più grande, la Tarazed Sparrow è la nave da combattimento più piccola ed economica disponibile. A causa del poco spazio per carico e passeggeri, il modo principale con cui un pilota di Sparrow paga i conti è potenziare le armi e dare la caccia ai pirati... o diventarlo. In entrambi i casi, è un modo pericoloso di guadagnarsi da vivere.",
+   "ratio": 1.095
+  },
+  {
+   "idx": 9,
+   "id": "ship:Sparrow|description|3819|0",
+   "path": "data/human/ships.txt",
+   "line": 3819,
+   "kind": "DESCRIPTION",
+   "context": "ship:Sparrow",
+   "english": "\tGovernment reports indicate that as many as two out of every three first-time ship buyers who choose to pilot a Sparrow lose their ship (and often, their life as well) within the first month of owning it. Pilots who have survived longer than that tend to swear by replacing the stock weapons with missile launchers.",
+   "italian": "\tI rapporti governativi indicano che ben due su tre degli acquirenti di prima nave che scelgono di pilotare una Sparrow perdono la nave (e spesso anche la vita) entro il primo mese dal possesso. I piloti sopravvissuti più a lungo tendono a giurare di sostituire le armi di serie con lanciatori di missili.",
+   "ratio": 0.965
+  },
+  {
+   "idx": 10,
+   "id": "ship:Splinter|description|3878|0",
+   "path": "data/human/ships.txt",
+   "line": 3878,
+   "kind": "DESCRIPTION",
+   "context": "ship:Splinter",
+   "english": "The Splinter is the largest warship produced by the Megaparsec shipyard. It is designed to be faster and more maneuverable than other ships of a similar size, in order to serve as a heavy escort ship or as part of a planetary defense and patrol fleet. Because of its intended use in merchant convoys, it also has a fair amount of cargo space.",
+   "italian": "La Splinter è la più grande nave da guerra prodotta dal cantiere Megaparsec. È progettata per essere più veloce e manovrabile di altre navi di dimensioni simili, per servire come nave scorta pesante o come parte di una flotta di difesa e pattuglia planetaria. Data la destinazione d'uso nei convogli mercantili, ha anche un discreto spazio per il carico.",
+   "ratio": 1.035
+  },
+  {
+   "idx": 11,
+   "id": "ship:Star Barge|description|3923|0",
+   "path": "data/human/ships.txt",
+   "line": 3923,
+   "kind": "DESCRIPTION",
+   "context": "ship:Star Barge",
+   "english": "The Syndicate CT-50 Star Barge is little more than a cluster of cargo containers with an engine at one end and a cockpit on the other. It is a slow and ugly ship, but it can carry enough cargo to earn its captain a steady income even in parts of the galaxy where it is hard to find passengers to carry or courier missions.",
+   "italian": "Il Syndicate CT-50 Star Barge è poco più di un grappolo di container da carico con un motore a un'estremità e un abitacolo all'altra. È una nave lenta e brutta, ma può portare abbastanza carico da garantire al capitano un reddito stabile anche nelle parti della galassia dove è difficile trovare passeggeri o missioni da corriere.",
+   "ratio": 1.025
+  },
+  {
+   "idx": 12,
+   "id": "ship:Star Barge|description|3924|0",
+   "path": "data/human/ships.txt",
+   "line": 3924,
+   "kind": "DESCRIPTION",
+   "context": "ship:Star Barge",
+   "english": "\tBecause they often carry valuable cargo, and because they are too slow to evade any attackers, Star Barges are a common target of pirates.",
+   "italian": "\tPoiché trasportano spesso carichi di valore, e poiché sono troppo lente per evitare qualsiasi attaccante, le Star Barge sono un bersaglio comune dei pirati.",
+   "ratio": 1.129
+  },
+  {
+   "idx": 13,
+   "id": "ship:Star Queen|description|3986|0",
+   "path": "data/human/ships.txt",
+   "line": 3986,
+   "kind": "DESCRIPTION",
+   "context": "ship:Star Queen",
+   "english": "The Star Queen is a relic of a more peaceful period of galactic history: a luxury liner for high-end tourists. Every cabin has its own mini-bar, and the bathrooms have marble tile and showers that use actual hot water instead of chemicals or sonic vibrations.",
+   "italian": "La Star Queen è un reperto di un periodo più pacifico della storia galattica: un transatlantico di lusso per turisti facoltosi. Ogni cabina ha il suo minibar, e i bagni hanno piastrelle di marmo e docce che usano vera acqua calda invece di prodotti chimici o vibrazioni soniche.",
+   "ratio": 1.073
+  },
+  {
+   "idx": 14,
+   "id": "ship:Star Queen|description|3987|0",
+   "path": "data/human/ships.txt",
+   "line": 3987,
+   "kind": "DESCRIPTION",
+   "context": "ship:Star Queen",
+   "english": "\tIn support of environmental movements across the galaxy, all Star Queens come standard with an array of solar panels as their only source of energy as opposed to more popular power generators such as fuel cells or nuclear reactors that produce some amount of waste. Although some argue that this is a pointless move given the prevalence of clean fusion reactors, others have applauded it and cited the prohibitive costs of fusion reactors as a reason for using solar panels.",
+   "italian": "\tA sostegno dei movimenti ambientalisti di tutta la galassia, tutte le Star Queen escono di serie con una serie di pannelli solari come unica fonte di energia, al posto dei più diffusi generatori come celle a combustibile o reattori nucleari che producono una certa quantità di scorie. Sebbene alcuni sostengano che sia una scelta inutile data la diffusione dei reattori a fusione puliti, altri l'hanno applaudita e hanno citato i costi proibitivi dei reattori a fusione come ragione per usare i pannelli solari.",
+   "ratio": 1.078
+  },
+  {
+   "idx": 15,
+   "id": "ship:Sunder|description|4046|0",
+   "path": "data/human/ships.txt",
+   "line": 4046,
+   "kind": "DESCRIPTION",
+   "context": "ship:Sunder",
+   "english": "The Sunder is a versatile mining platform equipped with dedicated prospecting equipment, most notably an undercarriage that supports two Mining Drones. The lineage of this ship can be traced back to the old asteroid mining ships used in the Sol Main Belt centuries ago; however, because of recent Syndicate efforts to further exploit the Core's mineral wealth, the newest model of the Sunder is now manufactured by Syndicated Shipyards.",
+   "italian": "La Sunder è una piattaforma mineraria versatile equipaggiata con attrezzature di prospezione dedicate, in particolare un sottoscocca che sostiene due Mining Drone. La discendenza di questa nave risale alle vecchie navi minerarie per asteroidi usate secoli fa nella Cintura Principale del Sol; tuttavia, a causa dei recenti sforzi del Sindacato per sfruttare ulteriormente la ricchezza mineraria del Nucleo, l'ultimo modello della Sunder è ora prodotto dai Syndicated Shipyards.",
+   "ratio": 1.094
+  },
+  {
+   "idx": 16,
+   "id": "ship:Surveillance Drone|description|4083|0",
+   "path": "data/human/ships.txt",
+   "line": 4083,
+   "kind": "DESCRIPTION",
+   "context": "ship:Surveillance Drone",
+   "english": "Surveillance drones are unarmed drones used by the Republic navy to scan ships and planets in a star system.",
+   "italian": "I droni da sorveglianza sono droni disarmati usati dalla Marina della Repubblica per scansionare navi e pianeti in un sistema stellare.",
+   "ratio": 1.25
+  },
+  {
+   "idx": 17,
+   "id": "ship:Surveillance Drone|description|4084|0",
+   "path": "data/human/ships.txt",
+   "line": 4084,
+   "kind": "DESCRIPTION",
+   "context": "ship:Surveillance Drone",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "italian": "\tI droni non sono dotati di iperguida. Non puoi trasportare un drone a meno che tu non abbia nella tua flotta una nave con una baia per droni.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 18,
+   "id": "ship:Valkyrie|description|4148|0",
+   "path": "data/human/ships.txt",
+   "line": 4148,
+   "kind": "DESCRIPTION",
+   "context": "ship:Valkyrie",
+   "english": "Valkyries are modified Aeries that convert two of their bays and bunk space into more cargo space for smuggling goods, as well as more room to boast two extra gun mounts and increased armor protection. This allows Valkyries to both take and put out noticeable amounts of damage, however, due to the extra weight, they are somewhat slower and lose a bit of shield efficiency.",
+   "italian": "Le Valkyrie sono Aerie modificate che convertono due delle loro baie e lo spazio per le cuccette in più spazio per il carico destinato al contrabbando, oltre a più spazio per montare due alloggiamenti per cannoni aggiuntivi e una maggiore protezione corazzata. Questo permette alle Valkyrie di incassare e infliggere quantità notevoli di danni, ma a causa del peso extra sono un po' più lente e perdono un po' di efficienza degli scudi.",
+   "ratio": 1.166
+  },
+  {
+   "idx": 19,
+   "id": "ship:Vanguard|description|4214|0",
+   "path": "data/human/ships.txt",
+   "line": 4214,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vanguard",
+   "english": "The Vanguard is Syndicated Systems' newest warship intended for the heavy anti-pirate defense market. Vanguards offer an unusual feature set, focusing on powerful fixed guns and featuring Syndicated Systems' latest automation technologies, resulting in an atypically low crew complement for a ship its size. Few capital ships will endure for long under the withering fusillade of gunfire that it can unleash against those in front of it.",
+   "italian": "La Vanguard è la più recente nave da guerra della Syndicated Systems destinata al mercato della difesa pesante antipirateria. Le Vanguard offrono una dotazione inusuale, incentrata su potenti cannoni fissi e sulle più recenti tecnologie di automazione della Syndicated Systems, con il risultato di un equipaggio insolitamente ridotto per una nave di quelle dimensioni. Poche navi capitali resistono a lungo sotto la fucileria sferzante che può scatenare contro chi le sta davanti.",
+   "ratio": 1.098
+  },
+  {
+   "idx": 20,
+   "id": "ship:Wasp|description|4266|0",
+   "path": "data/human/ships.txt",
+   "line": 4266,
+   "kind": "DESCRIPTION",
+   "context": "ship:Wasp",
+   "english": "The Wasp is a medium-strength interceptor, designed by Syndicated Shipyards to serve as an escort for cargo vessels. Like most Syndicate ships, it is not particularly pretty, but it at least serves the purpose it was made for.",
+   "italian": "La Wasp è un intercettore di forza media, progettato dai Syndicated Shipyards per servire come scorta alle navi da carico. Come la maggior parte delle navi del Sindacato non è particolarmente bella, ma almeno serve allo scopo per cui è stata costruita.",
+   "ratio": 1.115
+  }
+ ]
+}

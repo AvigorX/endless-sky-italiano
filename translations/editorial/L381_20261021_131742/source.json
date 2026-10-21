@@ -1,0 +1,37 @@
+{
+ "block": {
+  "path": "data/avgi/avgi events.txt",
+  "line_from": 39,
+  "line_to": 42,
+  "units": 2
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Avgi: Aberrant Blockade|As you attempt to land, your sensors warn you of an approaching pod of Aberrant over the horizon, intent on destroying anything that approaches or tries to launch from <origin>. It seems you'll have to fight if you want to land here.|39|0",
+   "path": "data/avgi/avgi events.txt",
+   "line": 39,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi: Aberrant Blockade",
+   "english": "As you attempt to land, your sensors warn you of an approaching pod of Aberrant over the horizon, intent on destroying anything that approaches or tries to launch from <origin>. It seems you'll have to fight if you want to land here.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t\t`As you attempt to land, your sensors warn you of an approaching pod of Aberrant over the horizon, intent on destroying anything that approaches or tries to launch from <origin>. It seems you'll have to fight if you want to land here.`",
+   "english_hash": "86d1cb21b1fceae8"
+  },
+  {
+   "idx": 2,
+   "id": "mission:Avgi: Aberrant Blockade|dialog|42|0",
+   "path": "data/avgi/avgi events.txt",
+   "line": 42,
+   "kind": "DIALOG",
+   "context": "mission:Avgi: Aberrant Blockade",
+   "english": "With the area cleared of Aberrant, you manage to slip through the blockade and land on <origin>.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\t\tdialog \"With the area cleared of Aberrant, you manage to slip through the blockade and land on <origin>.\"",
+   "english_hash": "29a3b7a1746dacfb"
+  }
+ ]
+}

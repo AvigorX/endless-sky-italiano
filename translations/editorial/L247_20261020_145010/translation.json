@@ -1,0 +1,187 @@
+{
+ "block": {
+  "path": "data/human/syndicate jobs.txt",
+  "line_from": 19,
+  "line_to": 153,
+  "units": 16
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Transport executive to <planet>|description|19|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 19,
+   "kind": "DESCRIPTION",
+   "context": "mission:Transport executive to <planet>",
+   "english": "A Syndicate executive needs immediate yet comfortable transportation to attend an urgent meeting on <destination> by <date>. Payment is <payment>.",
+   "italian": "Un dirigente del Sindacato ha bisogno di un trasporto immediato ma confortevole per partecipare a una riunione urgente su <destination> entro il <date>. Il pagamento è <payment>.",
+   "ratio": 1.219
+  },
+  {
+   "idx": 2,
+   "id": "mission:Transport executive to <planet>|dialog|35|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 35,
+   "kind": "DIALOG",
+   "context": "mission:Transport executive to <planet>",
+   "english": "The Syndicate executive rushes off your ship without even a goodbye, fancy briefcase in hand. You collect your payment of <payment>.",
+   "italian": "Il dirigente del Sindacato si precipita giù dalla tua nave senza nemmeno salutare, con una valigetta elegante in mano. Incassi il pagamento di <payment>.",
+   "ratio": 1.159
+  },
+  {
+   "idx": 3,
+   "id": "mission:Corporate retreat to <planet stopovers>|description|42|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 42,
+   "kind": "DESCRIPTION",
+   "context": "mission:Corporate retreat to <planet stopovers>",
+   "english": "A team of <bunks> engineers needs transport to a corporate retreat on <stopovers>, after which they must return back to <origin> by <date>. They want a comfortable journey, so your ship must be outfitted suitably. Payment is <payment>.",
+   "italian": "Una squadra di <bunks> ingegneri ha bisogno di un trasporto per un ritiro aziendale su <stopovers>, dopo il quale deve tornare a <origin> entro il <date>. Vogliono un viaggio confortevole, quindi la tua nave deve essere allestita in modo adeguato. Il pagamento è <payment>.",
+   "ratio": 1.162
+  },
+  {
+   "idx": 4,
+   "id": "mission:Corporate retreat to <planet stopovers>|dialog|56|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 56,
+   "kind": "DIALOG",
+   "context": "mission:Corporate retreat to <planet stopovers>",
+   "english": "For days your ship has played host to endless discussions about load calculations, tensile strengths, and thermodynamic limits. You're grateful for some peace and quiet as the team of engineers tromps out of the hatch and heads for their exotic corporate retreat. You prepare for the return journey to <origin>.",
+   "italian": "Per giorni la tua nave ha ospitato interminabili discussioni su calcoli dei carichi, resistenza a trazione e limiti termodinamici. Sei grato di un po' di pace e quiete quando la squadra di ingegneri esce dal portello e si dirige verso il loro esotico ritiro aziendale. Ti prepari al viaggio di ritorno verso <origin>.",
+   "ratio": 1.019
+  },
+  {
+   "idx": 5,
+   "id": "mission:Corporate retreat to <planet stopovers>|dialog|59|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 59,
+   "kind": "DIALOG",
+   "context": "mission:Corporate retreat to <planet stopovers>",
+   "english": "The team's boss thanks you for a smooth trip and authorizes a payment of <payment>.",
+   "italian": "Il capo della squadra ti ringrazia per il viaggio senza intoppi e autorizza un pagamento di <payment>.",
+   "ratio": 1.229
+  },
+  {
+   "idx": 6,
+   "id": "mission:Large Corporate retreat|name|63|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 63,
+   "kind": "VALUE",
+   "context": "mission:Large Corporate retreat",
+   "english": "Corporate retreat to <planet stopovers>",
+   "italian": "Ritiro aziendale da <planet stopovers>",
+   "ratio": 0.974
+  },
+  {
+   "idx": 7,
+   "id": "mission:Large Corporate retreat|description|67|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 67,
+   "kind": "DESCRIPTION",
+   "context": "mission:Large Corporate retreat",
+   "english": "A team of <bunks> engineers needs transport to a corporate retreat on <stopovers>, after which they must return back to <origin> by <date>. They want a comfortable journey, so your ship must be outfitted suitably. Payment is <payment>.",
+   "italian": "Una squadra di <bunks> ingegneri ha bisogno di un trasporto per un ritiro aziendale su <stopovers>, dopo il quale deve tornare a <origin> entro il <date>. Vogliono un viaggio confortevole, quindi la tua nave deve essere allestita in modo adeguato. Il pagamento è <payment>.",
+   "ratio": 1.162
+  },
+  {
+   "idx": 8,
+   "id": "mission:Large Corporate retreat|dialog|82|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 82,
+   "kind": "DIALOG",
+   "context": "mission:Large Corporate retreat",
+   "english": "For days your ship has played host to endless discussions about load calculations, tensile strengths, and thermodynamic limits. You're grateful for some peace and quiet as the team of engineers tromps out of the hatch and heads for their exotic corporate retreat. You prepare for the return journey to <origin>.",
+   "italian": "Per giorni la tua nave ha ospitato interminabili discussioni su calcoli dei carichi, resistenza a trazione e limiti termodinamici. Sei grato di un po' di pace e quiete quando la squadra di ingegneri esce dal portello e si dirige verso il loro esotico ritiro aziendale. Ti prepari al viaggio di ritorno verso <origin>.",
+   "ratio": 1.019
+  },
+  {
+   "idx": 9,
+   "id": "mission:Large Corporate retreat|dialog|85|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 85,
+   "kind": "DIALOG",
+   "context": "mission:Large Corporate retreat",
+   "english": "The team's boss thanks you for a smooth trip and authorizes a payment of <payment>.",
+   "italian": "Il capo della squadra ti ringrazia per il viaggio senza intoppi e autorizza un pagamento di <payment>.",
+   "ratio": 1.229
+  },
+  {
+   "idx": 10,
+   "id": "mission:Corporate espionage|description|89|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 89,
+   "kind": "DESCRIPTION",
+   "context": "mission:Corporate espionage",
+   "english": "The <npc> is about to enter this system. Intercept it and make detailed scans of its cargo for Syndicate researchers on <destination>; proceed there before <date> for <payment> after retrieving the data.",
+   "italian": "Il <npc> sta per entrare in questo sistema. Intercettalo e fai scansioni dettagliate del suo carico per i ricercatori del Sindacato su <destination>; una volta recuperati i dati, raggiungila entro il <date> per <payment>.",
+   "ratio": 1.089
+  },
+  {
+   "idx": 11,
+   "id": "mission:Corporate espionage|dialog|110|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 110,
+   "kind": "DIALOG",
+   "context": "mission:Corporate espionage",
+   "english": "You manage to make the requested scans of the <npc>'s cargo. Time to head to <planet>.",
+   "italian": "Riesci a fare le scansioni richieste del carico del <npc>. È ora di dirigersi su <planet>.",
+   "ratio": 1.047
+  },
+  {
+   "idx": 12,
+   "id": "mission:Corporate espionage|dialog|112|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 112,
+   "kind": "DIALOG",
+   "context": "mission:Corporate espionage",
+   "english": "You transmit your scans and receive a hearty congratulations, as well as <payment>. \"This will save us months!\" you hear someone say in the background as you close the audio link.",
+   "italian": "Trasmetti le scansioni e ricevi vive congratulazioni, oltre a <payment>. \"Ci farà risparmiare mesi!\" senti dire da qualcuno in sottofondo mentre chiudi il collegamento audio.",
+   "ratio": 0.972
+  },
+  {
+   "idx": 13,
+   "id": "mission:Document delivery to <planet>|description|119|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 119,
+   "kind": "DESCRIPTION",
+   "context": "mission:Document delivery to <planet>",
+   "english": "Deliver <tons> of ordinary documents to <destination>. Payment is <payment>.",
+   "italian": "Consegna <tons> di documenti ordinari su <destination>. Il pagamento è <payment>.",
+   "ratio": 1.066
+  },
+  {
+   "idx": 14,
+   "id": "mission:Document delivery to <planet>|dialog|133|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 133,
+   "kind": "DIALOG",
+   "context": "mission:Document delivery to <planet>",
+   "english": "Almost as soon as you open the cargo hatch, several silent and surprisingly well-dressed men feed the crates of documents onto a conveyor belt right next to your landing site that you hadn't noticed, where to your surprise they soon disappear into the flames of an industrial incinerator. You collect your payment of <payment>.",
+   "italian": "Quasi appena apri il portello del carico, diversi uomini silenziosi e sorprendentemente ben vestiti infilano le casse di documenti su un nastro trasportatore proprio accanto al punto di atterraggio, che non avevi notato, dove con tua sorpresa spariscono presto tra le fiamme di un inceneritore industriale. Incassi il pagamento di <payment>.",
+   "ratio": 1.043
+  },
+  {
+   "idx": 15,
+   "id": "mission:Waste recycling on <planet>|description|139|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 139,
+   "kind": "DESCRIPTION",
+   "context": "mission:Waste recycling on <planet>",
+   "english": "Syndicated Systems is looking for intrepid captains willing to make a difference as part of our new Green Initiative! Deliver <tons> of recyclable <commodity> to our special facility on <destination>. Payment is <payment>.",
+   "italian": "Syndicated Systems cerca capitani intrepidi disposti a fare la differenza nell'ambito della nostra nuova Iniziativa Verde! Consegna <tons> di <commodity> riciclabili alla nostra struttura speciale su <destination>. Il pagamento è <payment>.",
+   "ratio": 1.081
+  },
+  {
+   "idx": 16,
+   "id": "mission:Waste recycling on <planet>|dialog|153|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 153,
+   "kind": "DIALOG",
+   "context": "mission:Waste recycling on <planet>",
+   "english": "You land on <planet> and drop off the exceptionally smelly shipment of <commodity> at a nondescript building, as instructed. Just as you take off, your rear camera catches sight of a burly Syndicate employee running out of the building shaking his fist. You notice that your payment of <payment> came from your contact on <origin>, not from anywhere on <planet>.",
+   "italian": "Atterri su <planet> e scarichi il carico di <commodity> dall'odore eccezionale in un edificio anonimo, come da istruzioni. Proprio mentre decolli, la telecamera posteriore coglie un robusto dipendente del Sindacato che esce di corsa dall'edificio scuotendo il pugno. Noti che il tuo pagamento di <payment> è arrivato dal tuo contatto su <origin>, non da qualche parte su <planet>.",
+   "ratio": 1.05
+  }
+ ]
+}

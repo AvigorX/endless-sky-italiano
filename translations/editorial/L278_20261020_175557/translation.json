@@ -1,0 +1,187 @@
+{
+ "block": {
+  "path": "data/human/kestrel.txt",
+  "line_from": 15,
+  "line_to": 54,
+  "units": 16
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Kestrel Testing|name|15|0",
+   "path": "data/human/kestrel.txt",
+   "line": 15,
+   "kind": "VALUE",
+   "context": "mission:Kestrel Testing",
+   "english": "Warship Testing",
+   "italian": "Warship Testing",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "mission:Kestrel Testing|description|16|0",
+   "path": "data/human/kestrel.txt",
+   "line": 16,
+   "kind": "DESCRIPTION",
+   "context": "mission:Kestrel Testing",
+   "english": "Travel to the <waypoints> system to fight and disable a prototype warship that Tarazed Corporation is testing. Do not destroy the ship, or you will lose your payment and your opportunity to buy one.",
+   "italian": "Recati nel sistema <waypoints> per combattere e neutralizzare una nave da guerra prototipo che la Tarazed Corporation sta collaudando. Non distruggere la nave, o perderai il pagamento e l'occasione di comprarne una.",
+   "ratio": 1.086
+  },
+  {
+   "idx": 3,
+   "id": "mission:Kestrel Testing|As you are visiting one of the spaceport bars, a man recognizes you. \"<first> <last>!\" he says. \"It's an honor to meet you. Your exploits in battle are well known.\" He picks up his drink and walks over to sit next to you. \"My name is Charles Atinoda,\" he says, \"the chief starship designer for Tarazed Corporation. Say, would you be willing to help us test out a new warship?\"|31|0",
+   "path": "data/human/kestrel.txt",
+   "line": 31,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "As you are visiting one of the spaceport bars, a man recognizes you. \"<first> <last>!\" he says. \"It's an honor to meet you. Your exploits in battle are well known.\" He picks up his drink and walks over to sit next to you. \"My name is Charles Atinoda,\" he says, \"the chief starship designer for Tarazed Corporation. Say, would you be willing to help us test out a new warship?\"",
+   "italian": "Mentre visiti uno dei bar dello spazioporto, un uomo ti riconosce. \"<first> <last>!\" dice. \"È un onore conoscerti. Le tue imprese in battaglia sono famose.\" Prende il suo drink e viene a sedersi accanto a te. \"Mi chiamo Charles Atinoda,\" dice, \"sono il progettista capo delle astronavi della Tarazed Corporation. Senti, saresti disposto ad aiutarci a collaudare una nuova nave da guerra?\"",
+   "ratio": 1.032
+  },
+  {
+   "idx": 4,
+   "id": "mission:Kestrel Testing|\t\"Tell me more.\"|33|0",
+   "path": "data/human/kestrel.txt",
+   "line": 33,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\t\"Tell me more.\"",
+   "italian": "\t\"Dimmene di più.\"",
+   "ratio": 1.125
+  },
+  {
+   "idx": 5,
+   "id": "mission:Kestrel Testing|\t\"Sorry, I don't have time right now.\"|34|0",
+   "path": "data/human/kestrel.txt",
+   "line": 34,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\t\"Sorry, I don't have time right now.\"",
+   "italian": "\t\"Mi dispiace, non ho tempo adesso.\"",
+   "ratio": 0.947
+  },
+  {
+   "idx": 6,
+   "id": "mission:Kestrel Testing|\t\"Well,\" he says, \"here's the story. Seven years ago, in a time of deep personal crisis, I left my job at Tarazed to wander the galaxy with nothing in my backpack but a change of clothes, a canteen of water, and a few boxes of emergency rations. An anarchist commune on one of the fringe worlds took me in. After I had been there for a month, the village elder, sensing my inner turmoil, invited me to a vision quest in their sweat lodge. I fell into a trance and my consciousness journeyed through many universes, where I saw strange things. I saw a sword made of light. I saw a blue sun. I saw...\" He pauses for a moment. \"... a Welsh Corgi hacking into a computer? Some of it was hard to understand.\"|36|0",
+   "path": "data/human/kestrel.txt",
+   "line": 36,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\t\"Well,\" he says, \"here's the story. Seven years ago, in a time of deep personal crisis, I left my job at Tarazed to wander the galaxy with nothing in my backpack but a change of clothes, a canteen of water, and a few boxes of emergency rations. An anarchist commune on one of the fringe worlds took me in. After I had been there for a month, the village elder, sensing my inner turmoil, invited me to a vision quest in their sweat lodge. I fell into a trance and my consciousness journeyed through many universes, where I saw strange things. I saw a sword made of light. I saw a blue sun. I saw...\" He pauses for a moment. \"... a Welsh Corgi hacking into a computer? Some of it was hard to understand.\"",
+   "italian": "\t\"Beh,\" dice, \"ecco la storia. Sette anni fa, in un momento di profonda crisi personale, lasciai il mio lavoro alla Tarazed per vagare per la galassia con niente nello zaino se non un cambio di vestiti, una borraccia d'acqua e qualche scatola di razioni d'emergenza. Una comune anarchica su uno dei mondi di frontiera mi accolse. Dopo un mese che ero lì, l'anziano del villaggio, intuendo il mio tumulto interiore, mi invitò a una ricerca di visione nella loro capanna del sudore. Caddi in trance e la mia coscienza viaggiò attraverso molti universi, dove vidi cose strane. Vidi una spada fatta di luce. Vidi un sole blu. Vidi...\" Si ferma un momento. \"... un Welsh Corgi che entrava in un computer? Alcune cose erano difficili da capire.\"",
+   "ratio": 1.051
+  },
+  {
+   "idx": 7,
+   "id": "mission:Kestrel Testing|\t\"Fascinating.\"|38|0",
+   "path": "data/human/kestrel.txt",
+   "line": 38,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\t\"Fascinating.\"",
+   "italian": "\t\"Affascinante.\"",
+   "ratio": 1.067
+  },
+  {
+   "idx": 8,
+   "id": "mission:Kestrel Testing|\t\"Were there illicit substances involved in this vision quest?\"|40|0",
+   "path": "data/human/kestrel.txt",
+   "line": 40,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\t\"Were there illicit substances involved in this vision quest?\"",
+   "italian": "\t\"C'erano sostanze illecite in questa ricerca di visione?\"",
+   "ratio": 0.921
+  },
+  {
+   "idx": 9,
+   "id": "mission:Kestrel Testing|\tHe ignores your question. \"But then I saw one more thing,\" he says.|41|0",
+   "path": "data/human/kestrel.txt",
+   "line": 41,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\tHe ignores your question. \"But then I saw one more thing,\" he says.",
+   "italian": "\tIgnora la tua domanda. \"Ma poi ho visto un'altra cosa,\" dice.",
+   "ratio": 0.912
+  },
+  {
+   "idx": 10,
+   "id": "mission:Kestrel Testing|\t\"But then I saw one more thing,\" he says.|44|0",
+   "path": "data/human/kestrel.txt",
+   "line": 44,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\t\"But then I saw one more thing,\" he says.",
+   "italian": "\t\"Ma poi ho visto un'altra cosa,\" dice.",
+   "ratio": 0.929
+  },
+  {
+   "idx": 11,
+   "id": "mission:Kestrel Testing|\tHe is silent for a long moment, then says, \"I saw a dark ship, more graceful and elegant than any I had ever designed, battling an alien vessel with a mottled red hull. And when I saw that ship, I knew that I must build one like it. I hitched a ride back to Wayfarer, begged for my old job back, and got to work. Seven years later, the ship is nearly done. It has passed all our non-destructive testing with flying colors, which leaves only the combat test remaining. And who better to battle it than the renowned warrior, <first> <last>?\"|46|0",
+   "path": "data/human/kestrel.txt",
+   "line": 46,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\tHe is silent for a long moment, then says, \"I saw a dark ship, more graceful and elegant than any I had ever designed, battling an alien vessel with a mottled red hull. And when I saw that ship, I knew that I must build one like it. I hitched a ride back to Wayfarer, begged for my old job back, and got to work. Seven years later, the ship is nearly done. It has passed all our non-destructive testing with flying colors, which leaves only the combat test remaining. And who better to battle it than the renowned warrior, <first> <last>?\"",
+   "italian": "\tResta in silenzio a lungo, poi dice: \"Vidi una nave scura, più aggraziata ed elegante di qualsiasi cosa avessi mai progettato, che combatteva contro un vascello alieno dallo scafo rosso maculato. E quando vidi quella nave, seppi che dovevo costruirne una simile. Tornai a Wayfarer con un passaggio, implorai di riavere il mio vecchio lavoro e mi misi all'opera. Sette anni dopo, la nave è quasi finita. Ha superato tutti i nostri test non distruttivi a pieni voti, quindi resta solo il collaudo in combattimento. E chi meglio del leggendario guerriero <first> <last> per combatterla?\"",
+   "ratio": 1.083
+  },
+  {
+   "idx": 12,
+   "id": "mission:Kestrel Testing|\t\"I would be glad to.\"|48|0",
+   "path": "data/human/kestrel.txt",
+   "line": 48,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\t\"I would be glad to.\"",
+   "italian": "\t\"Ne sarei felice.\"",
+   "ratio": 0.864
+  },
+  {
+   "idx": 13,
+   "id": "mission:Kestrel Testing|\t\"What will I receive in return?\"|50|0",
+   "path": "data/human/kestrel.txt",
+   "line": 50,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\t\"What will I receive in return?\"",
+   "italian": "\t\"E cosa riceverò in cambio?\"",
+   "ratio": 0.879
+  },
+  {
+   "idx": 14,
+   "id": "mission:Kestrel Testing|\t\"A generous payment,\" he says, \"and the right to purchase one of the very first units off the production line, if you wish.\"|51|0",
+   "path": "data/human/kestrel.txt",
+   "line": 51,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\t\"A generous payment,\" he says, \"and the right to purchase one of the very first units off the production line, if you wish.\"",
+   "italian": "\t\"Un pagamento generoso,\" dice, \"e il diritto di acquistare uno dei primissimi esemplari usciti dalla linea di produzione, se vuoi.\"",
+   "ratio": 1.056
+  },
+  {
+   "idx": 15,
+   "id": "mission:Kestrel Testing|\t\"Sounds fair,\" you say.|52|0",
+   "path": "data/human/kestrel.txt",
+   "line": 52,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\t\"Sounds fair,\" you say.",
+   "italian": "\t\"Mi sembra giusto,\" dici.",
+   "ratio": 1.083
+  },
+  {
+   "idx": 16,
+   "id": "mission:Kestrel Testing|\t\"Excellent,\" he says. \"I'll need your signature on a few forms. Waivers of liability in case you die, permission to use your name and likeness in certain promotional materials. You know, the usual legal stuff.\"|54|0",
+   "path": "data/human/kestrel.txt",
+   "line": 54,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Testing",
+   "english": "\t\"Excellent,\" he says. \"I'll need your signature on a few forms. Waivers of liability in case you die, permission to use your name and likeness in certain promotional materials. You know, the usual legal stuff.\"",
+   "italian": "\t\"Eccellente,\" dice. \"Mi servirà la tua firma su qualche modulo. Liberatorie nel caso tu muoia, il permesso di usare il tuo nome e la tua immagine in certo materiale promozionale. Sai com'è, le solite cose legali.\"",
+   "ratio": 1.014
+  }
+ ]
+}

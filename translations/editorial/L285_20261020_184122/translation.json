@@ -1,0 +1,110 @@
+{
+ "block": {
+  "path": "data/wanderer/wanderer missions.txt",
+  "line_from": 169,
+  "line_to": 182,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|As you approach <planet>, you recall that this is the planet on which you and the Wanderers planted the flower that the Mereti gave you. As you descend through the clouds, you spot a tiny blue dot in the depths of a valley, exactly where you left the Wanderers years ago.|169|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 169,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "As you approach <planet>, you recall that this is the planet on which you and the Wanderers planted the flower that the Mereti gave you. As you descend through the clouds, you spot a tiny blue dot in the depths of a valley, exactly where you left the Wanderers years ago.",
+   "italian": "Mentre ti avvicini a <planet>, ricordi che questo è il pianeta su cui tu e i Wanderer avete piantato il fiore che i Mereti ti avevano dato. Mentre scendi fra le nuvole, scorgi un minuscolo puntino blu in fondo a una valle, esattamente dove hai lasciato i Wanderer anni fa.",
+   "ratio": 1.004
+  },
+  {
+   "idx": 2,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\t(Take a closer look.)|171|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 171,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\t(Take a closer look.)",
+   "italian": "\t(Guarda più da vicino.)",
+   "ratio": 1.091
+  },
+  {
+   "idx": 3,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\t(Not right now.)|172|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 172,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\t(Not right now.)",
+   "italian": "\t(Non ora.)",
+   "ratio": 0.647
+  },
+  {
+   "idx": 4,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\tThe spot grows larger as you get closer, until you see the Strong Wind parked in the middle of a field of flowers, their petals gleaming a beautiful deep blue.|174|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 174,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\tThe spot grows larger as you get closer, until you see the Strong Wind parked in the middle of a field of flowers, their petals gleaming a beautiful deep blue.",
+   "italian": "\tIl puntino si ingrandisce man mano che ti avvicini, finché vedi la Strong Wind parcheggiata in mezzo a un campo di fiori, i cui petali brillano di un bellissimo blu intenso.",
+   "ratio": 1.087
+  },
+  {
+   "idx": 5,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\tYou carefully set your ship down outside the field, and a small Mereti drone flies up to you, speaking in a voice that is far more subdued than you expect. \"Thank you, <first> <last>. You have [saved, restored] the sitrasanir.\" Your translator makes no attempt at the last word, and it doesn't sound like any word you have heard in either the Hai or Wanderer language.|175|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 175,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\tYou carefully set your ship down outside the field, and a small Mereti drone flies up to you, speaking in a voice that is far more subdued than you expect. \"Thank you, <first> <last>. You have [saved, restored] the sitrasanir.\" Your translator makes no attempt at the last word, and it doesn't sound like any word you have heard in either the Hai or Wanderer language.",
+   "italian": "\tPosi con cura la nave fuori dal campo, e un piccolo drone Mereti ti vola incontro, parlando con una voce molto più sommessa di quanto ti aspetti. \"Grazie, <first> <last>. Hai [salvato, riportato in vita] il sitrasanir.\" Il tuo traduttore non prova nemmeno a rendere l'ultima parola, e non somiglia a nessuna parola che tu abbia sentito nella lingua Hai o in quella dei Wanderer.",
+   "ratio": 1.027
+  },
+  {
+   "idx": 6,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\t\"Sitrasanir?\"|177|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 177,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\t\"Sitrasanir?\"",
+   "italian": "\t\"Sitrasanir?\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\t\"You're welcome.\"|178|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 178,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\t\"You're welcome.\"",
+   "italian": "\t\"Di niente.\"",
+   "ratio": 0.722
+  },
+  {
+   "idx": 8,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\t\"This flower is called the sitrasanir. Its [symbol, appearance] was of [importance, significance] to our creators when they were [present? alive?]. We [abandoned, ignored] it for years, but our [parents, ancestors] helped us to remember it.\"|180|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 180,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\t\"This flower is called the sitrasanir. Its [symbol, appearance] was of [importance, significance] to our creators when they were [present? alive?]. We [abandoned, ignored] it for years, but our [parents, ancestors] helped us to remember it.\"",
+   "italian": "\t\"Questo fiore si chiama sitrasanir. Il suo [simbolo, aspetto] era di [importanza, rilevanza] per i nostri creatori quando erano [presenti? vivi?]. Lo abbiamo [abbandonato, ignorato] per anni, ma i nostri [genitori, antenati] ci hanno aiutato a ricordarlo.\"",
+   "ratio": 1.062
+  },
+  {
+   "idx": 9,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\tThe drone sits in a contemplative silence, looking out into the field. The sun rises higher into the sky, and the field shines in blue hues that almost exactly match the blue paints on the Mereti ships in the sky above.|182|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 182,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\tThe drone sits in a contemplative silence, looking out into the field. The sun rises higher into the sky, and the field shines in blue hues that almost exactly match the blue paints on the Mereti ships in the sky above.",
+   "italian": "\tIl drone resta in un silenzio contemplativo, guardando il campo. Il sole sale più in alto nel cielo, e il campo risplende di tonalità blu che quasi coincidono con le vernici blu delle navi Mereti lassù nel cielo.",
+   "ratio": 0.968
+  }
+ ]
+}

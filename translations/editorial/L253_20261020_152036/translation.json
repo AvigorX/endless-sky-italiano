@@ -1,0 +1,275 @@
+{
+ "block": {
+  "path": "data/wanderer/wanderer jobs.txt",
+  "line_from": 264,
+  "line_to": 442,
+  "units": 24
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Wanderer Biologists [0]|name|264|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 264,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Biologists [0]",
+   "english": "New animal found on <planet>",
+   "italian": "Nuovo animale scoperto su <planet>",
+   "ratio": 1.214
+  },
+  {
+   "idx": 2,
+   "id": "mission:Wanderer Biologists [0]|description|267|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 267,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Biologists [0]",
+   "english": "These <bunks> Wanderer biologists wish to get to <destination> with their <cargo> to study a recently discovered animal species. Payment will be <payment>.",
+   "italian": "Questi <bunks> biologi Wanderer vogliono arrivare a <destination> con il loro <cargo> per studiare una specie animale scoperta di recente. Il pagamento sarà <payment>.",
+   "ratio": 1.077
+  },
+  {
+   "idx": 3,
+   "id": "mission:Wanderer Biologists [0]|dialog|286|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 286,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Biologists [0]",
+   "english": "You wish the biologists the best of luck on <planet> as they carry their scientific equipment off of your ship and hand you your payment of <payment>.",
+   "italian": "Fai gli auguri ai biologi su <planet> mentre portano fuori la loro attrezzatura scientifica e ti consegnano il pagamento di <payment>.",
+   "ratio": 0.893
+  },
+  {
+   "idx": 4,
+   "id": "mission:Wanderer Biologists [1]|name|289|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 289,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Biologists [1]",
+   "english": "New animal found on <planet>",
+   "italian": "Nuovo animale scoperto su <planet>",
+   "ratio": 1.214
+  },
+  {
+   "idx": 5,
+   "id": "mission:Wanderer Biologists [1]|description|292|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 292,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Biologists [1]",
+   "english": "These <bunks> Wanderer biologists wish to get to <destination> with their <cargo> to study a recently discovered animal species. Payment will be <payment>.",
+   "italian": "Questi <bunks> biologi Wanderer vogliono arrivare a <destination> con il loro <cargo> per studiare una specie animale scoperta di recente. Il pagamento sarà <payment>.",
+   "ratio": 1.077
+  },
+  {
+   "idx": 6,
+   "id": "mission:Wanderer Biologists [1]|dialog|310|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 310,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Biologists [1]",
+   "english": "You wish the biologists the best of luck on <planet> as they carry their scientific equipment off of your ship and hand you your payment of <payment>.",
+   "italian": "Fai gli auguri ai biologi su <planet> mentre portano fuori la loro attrezzatura scientifica e ti consegnano il pagamento di <payment>.",
+   "ratio": 0.893
+  },
+  {
+   "idx": 7,
+   "id": "mission:Wanderer Botanists [0]|name|313|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 313,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Botanists [0]",
+   "english": "New plant found on <planet>",
+   "italian": "Nuova pianta scoperta su <planet>",
+   "ratio": 1.222
+  },
+  {
+   "idx": 8,
+   "id": "mission:Wanderer Botanists [0]|description|316|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 316,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Botanists [0]",
+   "english": "These <bunks> Wanderer botanists wish to get to <destination> with their <cargo> to study a recently discovered plant species. Payment will be <payment>.",
+   "italian": "Questi <bunks> botanici Wanderer vogliono arrivare a <destination> con il loro <cargo> per studiare una specie vegetale scoperta di recente. Il pagamento sarà <payment>.",
+   "ratio": 1.105
+  },
+  {
+   "idx": 9,
+   "id": "mission:Wanderer Botanists [0]|dialog|335|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 335,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Botanists [0]",
+   "english": "You wish the botanists the best of luck on <planet> as they carry their scientific equipment off of your ship and hand you your payment of <payment>.",
+   "italian": "Fai gli auguri ai botanici su <planet> mentre portano fuori la loro attrezzatura scientifica e ti consegnano il pagamento di <payment>.",
+   "ratio": 0.906
+  },
+  {
+   "idx": 10,
+   "id": "mission:Wanderer Botanists [1]|name|338|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 338,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Botanists [1]",
+   "english": "New plant found on <planet>",
+   "italian": "Nuova pianta scoperta su <planet>",
+   "ratio": 1.222
+  },
+  {
+   "idx": 11,
+   "id": "mission:Wanderer Botanists [1]|description|341|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 341,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Botanists [1]",
+   "english": "These <bunks> Wanderer botanists wish to get to <destination> with their <cargo> to study a recently discovered plant species. Payment will be <payment>.",
+   "italian": "Questi <bunks> botanici Wanderer vogliono arrivare a <destination> con il loro <cargo> per studiare una specie vegetale scoperta di recente. Il pagamento sarà <payment>.",
+   "ratio": 1.105
+  },
+  {
+   "idx": 12,
+   "id": "mission:Wanderer Botanists [1]|dialog|359|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 359,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Botanists [1]",
+   "english": "You wish the botanists the best of luck on <planet> as they carry their scientific equipment off of your ship and hand you your payment of <payment>.",
+   "italian": "Fai gli auguri ai botanici su <planet> mentre portano fuori la loro attrezzatura scientifica e ti consegnano il pagamento di <payment>.",
+   "ratio": 0.906
+  },
+  {
+   "idx": 13,
+   "id": "mission:Wanderer Harvest [0]|name|362|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 362,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Harvest [0]",
+   "english": "Food harvest on <planet>",
+   "italian": "Raccolto su <planet>",
+   "ratio": 0.833
+  },
+  {
+   "idx": 14,
+   "id": "mission:Wanderer Harvest [0]|description|365|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 365,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Harvest [0]",
+   "english": "Bring these <bunks> Wanderers to <destination> to assist in the food harvest. Payment is <payment>.",
+   "italian": "Porta questi <bunks> Wanderer a <destination> per aiutare nella raccolta del cibo. Il pagamento è <payment>.",
+   "ratio": 1.091
+  },
+  {
+   "idx": 15,
+   "id": "mission:Wanderer Harvest [0]|dialog|384|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 384,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Harvest [0]",
+   "english": "You wish the Wanderers the best of luck on <planet> and collect your payment of <payment>.",
+   "italian": "Fai gli auguri ai Wanderer su <planet> e riscuoti il pagamento di <payment>.",
+   "ratio": 0.844
+  },
+  {
+   "idx": 16,
+   "id": "mission:Wanderer Harvest [1]|name|387|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 387,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Harvest [1]",
+   "english": "Food harvest on <planet>",
+   "italian": "Raccolto su <planet>",
+   "ratio": 0.833
+  },
+  {
+   "idx": 17,
+   "id": "mission:Wanderer Harvest [1]|description|390|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 390,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Harvest [1]",
+   "english": "Bring these <bunks> Wanderers to <destination> to assist in the food harvest. Payment is <payment>.",
+   "italian": "Porta questi <bunks> Wanderer a <destination> per aiutare nella raccolta del cibo. Il pagamento è <payment>.",
+   "ratio": 1.091
+  },
+  {
+   "idx": 18,
+   "id": "mission:Wanderer Harvest [1]|dialog|409|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 409,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Harvest [1]",
+   "english": "You wish the Wanderers the best of luck on <planet> and collect your payment of <payment>.",
+   "italian": "Fai gli auguri ai Wanderer su <planet> e riscuoti il pagamento di <payment>.",
+   "ratio": 0.844
+  },
+  {
+   "idx": 19,
+   "id": "mission:Wanderer Invasive Species [0]|name|412|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 412,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Invasive Species [0]",
+   "english": "Quarantine an invasive species",
+   "italian": "Quarantine an invasive species",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "mission:Wanderer Invasive Species [0]|description|415|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 415,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Invasive Species [0]",
+   "english": "These <bunks> Wanderers need to get to <stopovers> with their <cargo> to contain an invasive animal species. Return the Wanderers to <origin> with the animals by <date> for a payment of <payment>.",
+   "italian": "Questi <bunks> Wanderer devono arrivare a <stopovers> con il loro <cargo> per contenere una specie animale invasiva. Riporta i Wanderer a <origin> con gli animali entro il <date> in cambio di un pagamento di <payment>.",
+   "ratio": 1.112
+  },
+  {
+   "idx": 21,
+   "id": "mission:Wanderer Invasive Species [0]|dialog|431|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 431,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Invasive Species [0]",
+   "english": "The Wanderers quickly make their way out of your ship with their equipment to contain the invasive animals. After roughly an hour, they return to your ship with cages that they place into your cargo hold. Now return to <origin> for payment.",
+   "italian": "I Wanderer escono in fretta dalla tua nave con la loro attrezzatura per contenere gli animali invasivi. Dopo circa un'ora tornano sulla tua nave con delle gabbie che sistemano nella stiva. Ora torna a <origin> per il pagamento.",
+   "ratio": 0.946
+  },
+  {
+   "idx": 22,
+   "id": "mission:Wanderer Invasive Species [0]|dialog|436|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 436,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Invasive Species [0]",
+   "english": "After releasing the animals, the <bunks> Wanderers each thank you for assisting them in returning the animals to <planet> and hand you <payment>.",
+   "italian": "Dopo aver liberato gli animali, ciascuno dei <bunks> Wanderer ti ringrazia per averlo aiutato a riportare gli animali su <planet> e ti consegna <payment>.",
+   "ratio": 1.062
+  },
+  {
+   "idx": 23,
+   "id": "mission:Wanderer Invasive Species [1]|name|439|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 439,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Invasive Species [1]",
+   "english": "Quarantine an invasive species",
+   "italian": "Quarantine an invasive species",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "mission:Wanderer Invasive Species [1]|description|442|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 442,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Invasive Species [1]",
+   "english": "These <bunks> Wanderers need to get to <stopovers> with their <cargo> to contain an invasive plant species. Return the Wanderers to <origin> with the plants by <date> for a payment of <payment>.",
+   "italian": "Questi <bunks> Wanderer devono arrivare a <stopovers> con il loro <cargo> per contenere una specie vegetale invasiva. Riporta i Wanderer a <origin> con le piante entro il <date> in cambio di un pagamento di <payment>.",
+   "ratio": 1.119
+  }
+ ]
+}

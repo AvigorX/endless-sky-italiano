@@ -1,0 +1,63 @@
+{
+ "block": {
+  "path": "data/successors/successor events.txt",
+  "line_from": 109,
+  "line_to": 127,
+  "units": 4
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "event:successors: ghosts incident|description|109|0",
+   "path": "data/successors/successor events.txt",
+   "line": 109,
+   "kind": "DESCRIPTION",
+   "context": "event:successors: ghosts incident",
+   "english": "Until recently, this moon was an utterly unremarkable uninhabited world within House Kaatrij's sphere of influence. However, near the south pole, the exposed guts of a strange facility now twinkle and shimmer half-enveloped in the moon's sands. A large military presence by House Kaatrij repels any closer inspection, but regardless, it seems that Qasa-Sija-Iri is not quite as uninhabited as it immediately appeared.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tdescription `Until recently, this moon was an utterly unremarkable uninhabited world within House Kaatrij's sphere of influence. However, near the south pole, the exposed guts of a strange facility now twinkle and shimmer half-enveloped in the moon's sands. A large military presence by House Kaatrij repels any closer inspection, but regardless, it seems that Qasa-Sija-Iri is not quite as uninhabited as it immediately appeared.`",
+   "english_hash": "b09ecebe38333618"
+  },
+  {
+   "idx": 2,
+   "id": "event:successors: ghosts unrestrict|description|125|0",
+   "path": "data/successors/successor events.txt",
+   "line": 125,
+   "kind": "DESCRIPTION",
+   "context": "event:successors: ghosts unrestrict",
+   "english": "Beneath the colorless sandy surface of Qasa-Sija-Iri, House Kaatrij and their Quarg patrons have built a variety of advanced bases. The one near the south pole, now recovered from its earlier attack, is the moon's primary spaceport.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tdescription `Beneath the colorless sandy surface of Qasa-Sija-Iri, House Kaatrij and their Quarg patrons have built a variety of advanced bases. The one near the south pole, now recovered from its earlier attack, is the moon's primary spaceport.`",
+   "english_hash": "d78608c3a20a2119"
+  },
+  {
+   "idx": 3,
+   "id": "event:successors: ghosts unrestrict|spaceport|126|0",
+   "path": "data/successors/successor events.txt",
+   "line": 126,
+   "kind": "DESCRIPTION",
+   "context": "event:successors: ghosts unrestrict",
+   "english": "The subterranean spaceport here is small but clearly well-maintained. The landing pads travel on elevators to deep below the surface - the House Kaatrij ones, at least, because Successor vessels are the only craft visible here. If the Quarg have their own craft in residence, they must be landing in a different section of the facility, or at a different base altogether.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tspaceport `The subterranean spaceport here is small but clearly well-maintained. The landing pads travel on elevators to deep below the surface - the House Kaatrij ones, at least, because Successor vessels are the only craft visible here. If the Quarg have their own craft in residence, they must be landing in a different section of the facility, or at a different base altogether.`",
+   "english_hash": "f4a6ccc3fb085f90"
+  },
+  {
+   "idx": 4,
+   "id": "event:successors: ghosts unrestrict|add|127|0",
+   "path": "data/successors/successor events.txt",
+   "line": 127,
+   "kind": "MISSION_TEXT",
+   "context": "event:successors: ghosts unrestrict",
+   "english": "Successor Basics",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tadd outfitter `Successor Basics`",
+   "english_hash": "5ab934398d97faba"
+  }
+ ]
+}

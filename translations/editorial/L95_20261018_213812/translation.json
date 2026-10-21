@@ -1,0 +1,308 @@
+{
+ "block": {
+  "path": "data/coalition/coalition culture conversations.txt",
+  "line_from": 134,
+  "line_to": 190,
+  "units": 27
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Coalition Folklore: Kimek|A Kimek flags you down when you enter the spaceport. \"Busy are you, Captain?\" he asks. \"Taking place today, a cultural festival is, and participate in it, anyone can. A reenactment of the old 'Spring Siege' folk tale, it is. Play the part of one of the characters, anyone can.\"|148|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 148,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "A Kimek flags you down when you enter the spaceport. \"Busy are you, Captain?\" he asks. \"Taking place today, a cultural festival is, and participate in it, anyone can. A reenactment of the old 'Spring Siege' folk tale, it is. Play the part of one of the characters, anyone can.\"",
+   "italian": "Un Kimek vi ferma appena entrate nello spazioporto. \"Occupato, Capitano?\", chiede. \"Oggi in corso, un festival culturale è, e parteciparvi, chiunque può. Una rievocazione della vecchia fiaba dell''Assedio di Primavera', è. Interpretare uno dei personaggi, chiunque può.\"",
+   "ratio": 0.975
+  },
+  {
+   "idx": 2,
+   "id": "mission:Coalition Folklore: Kimek|\t\"That sounds like fun. Where is it being held?\"|150|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 150,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t\"That sounds like fun. Where is it being held?\"",
+   "italian": "\t\"Sembra divertente. Dove si tiene?\"",
+   "ratio": 0.75
+  },
+  {
+   "idx": 3,
+   "id": "mission:Coalition Folklore: Kimek|\t\"Sorry, I'm too busy right now for that.\"|151|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 151,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t\"Sorry, I'm too busy right now for that.\"",
+   "italian": "\t\"Mi dispiace, in questo momento ho troppo da fare.\"",
+   "ratio": 1.238
+  },
+  {
+   "idx": 4,
+   "id": "mission:Coalition Folklore: Kimek|\tHe asks you to follow him, and the two of you board a train leading to another section of the city, where you exit the train at the edge of a large park. There, you see that many sets of camps dot the savanna plains, and an equal number of wooden forts stare down from the top of a long hill. Each \"set\" of fort and camp is separated from the others by many patches of vegetation that go up the hill.|153|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 153,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tHe asks you to follow him, and the two of you board a train leading to another section of the city, where you exit the train at the edge of a large park. There, you see that many sets of camps dot the savanna plains, and an equal number of wooden forts stare down from the top of a long hill. Each \"set\" of fort and camp is separated from the others by many patches of vegetation that go up the hill.",
+   "italian": "\tVi chiede di seguirlo e insieme prendete un treno che porta in un'altra zona della città; scendete al limitare di un grande parco. Lì vedete molti gruppi di accampamenti sparsi nella savana e altrettanti forti di legno che dominano dalla cima di un lungo pendio. Ogni \"gruppo\" di forte e accampamento è separato dagli altri da molte chiazze di vegetazione che salgono lungo il pendio.",
+   "ratio": 0.96
+  },
+  {
+   "idx": 5,
+   "id": "mission:Coalition Folklore: Kimek|\tYou follow the Kimek for a while longer until he finds you a pairing of camp and fort that have a vacant spot in either side. \"Well Captain, choose a side to play as, you must. The hang of it, you will get, once started, the event has, but as a quick summary, take the 'crops' inside the fort before time runs out, the attacking team must. Prevent them from doing that, the defenders must. At the end, rewarded, the victors are.\"|154|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 154,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tYou follow the Kimek for a while longer until he finds you a pairing of camp and fort that have a vacant spot in either side. \"Well Captain, choose a side to play as, you must. The hang of it, you will get, once started, the event has, but as a quick summary, take the 'crops' inside the fort before time runs out, the attacking team must. Prevent them from doing that, the defenders must. At the end, rewarded, the victors are.\"",
+   "italian": "\tSeguite il Kimek ancora per un po', finché non trova una coppia di accampamento e forte con un posto libero da entrambe le parti. \"Beh Capitano, scegliere una parte da interpretare, dovete. Prenderci la mano, ci riuscirete, una volta iniziato, l'evento è, ma come rapido riassunto: prendere i 'raccolti' dentro il forte prima che il tempo scada, la squadra attaccante deve. Impedirglielo, i difensori devono. Alla fine, premiati, i vincitori sono.\"",
+   "ratio": 1.044
+  },
+  {
+   "idx": 6,
+   "id": "mission:Coalition Folklore: Kimek|\t\"I'll join the attackers.\"|156|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 156,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t\"I'll join the attackers.\"",
+   "italian": "\t\"Mi unisco agli attaccanti.\"",
+   "ratio": 1.074
+  },
+  {
+   "idx": 7,
+   "id": "mission:Coalition Folklore: Kimek|\t\"I'll join the defenders.\"|158|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 158,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t\"I'll join the defenders.\"",
+   "italian": "\t\"Mi unisco ai difensori.\"",
+   "ratio": 0.963
+  },
+  {
+   "idx": 8,
+   "id": "mission:Coalition Folklore: Kimek|\t\"Hang on, if this is a folk tale, how come you're reenacting it as if any side could win?\"|160|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 160,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t\"Hang on, if this is a folk tale, how come you're reenacting it as if any side could win?\"",
+   "italian": "\t\"Un momento: se questa è una fiaba, come mai la rievocate come se potesse vincere una parte qualsiasi?\"",
+   "ratio": 1.143
+  },
+  {
+   "idx": 9,
+   "id": "mission:Coalition Folklore: Kimek|\tHe chitters, as if expecting the question. \"Witnessed by a minstrel, the battle was. Traveling on fields like these, he was, before the fort and the raider camp, he spotted in the distance. Hid himself in foliage close to the scene, he had, and writing and painting it as it happened, he was. When reached its climax, the battle had, swept up by the wind, many flowers were, and block his vision they did. Once settled down the wind had, over, the battle was. Spring it was, so 'Spring Siege' became the story's title.\"|161|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 161,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tHe chitters, as if expecting the question. \"Witnessed by a minstrel, the battle was. Traveling on fields like these, he was, before the fort and the raider camp, he spotted in the distance. Hid himself in foliage close to the scene, he had, and writing and painting it as it happened, he was. When reached its climax, the battle had, swept up by the wind, many flowers were, and block his vision they did. Once settled down the wind had, over, the battle was. Spring it was, so 'Spring Siege' became the story's title.\"",
+   "italian": "\tCinguetta, come se si aspettasse la domanda. \"Vista da un menestrello, la battaglia fu. Viaggiando su campi come questi, lui era, quando il forte e l'accampamento dei predoni scorse in lontananza. Nascosto nel fogliame vicino alla scena, si era, e scrivendola e dipingendola mentre accadeva, stava. Quando la battaglia raggiunse il suo culmine, sollevati dal vento, molti fiori furono, e la vista gli bloccarono. Quando il vento si placò, finita, la battaglia era. Primavera era, così 'Assedio di Primavera' divenne il titolo della storia.\"",
+   "ratio": 1.04
+  },
+  {
+   "idx": 10,
+   "id": "mission:Coalition Folklore: Kimek|\tSeeing you have more questions now, he continues. \"Silly and nonsensical at times, the story is. Know that, we do, and that simply looking to entertain a crowd, the minstrel was, but with all forms of classic tales, is that not the case?\" He chitters some more, and looks at the group up on the hill and the other in the camp, before continuing. \"Foreign as it might seem, participate in it, will you not? Perhaps like it, you might.\"|162|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 162,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tSeeing you have more questions now, he continues. \"Silly and nonsensical at times, the story is. Know that, we do, and that simply looking to entertain a crowd, the minstrel was, but with all forms of classic tales, is that not the case?\" He chitters some more, and looks at the group up on the hill and the other in the camp, before continuing. \"Foreign as it might seem, participate in it, will you not? Perhaps like it, you might.\"",
+   "italian": "\tVedendo che avete ancora domande, continua. \"Sciocca e priva di senso, a volte, la storia è. Lo sappiamo, noi, e che il menestrello cercasse solo di intrattenere il pubblico, ma con ogni forma di racconto classico, non è forse così?\" Cinguetta ancora, guarda il gruppo in cima al pendio e l'altro nell'accampamento, poi riprende. \"Per quanto estraneo possa sembrare, partecipare, non lo farete? Forse divertirvi, potreste.\"",
+   "ratio": 0.975
+  },
+  {
+   "idx": 11,
+   "id": "mission:Coalition Folklore: Kimek|\t\"Alright, I'll join the attackers.\"|164|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 164,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t\"Alright, I'll join the attackers.\"",
+   "italian": "\t\"Va bene, mi unisco agli attaccanti.\"",
+   "ratio": 1.056
+  },
+  {
+   "idx": 12,
+   "id": "mission:Coalition Folklore: Kimek|\t\"Alright, I'll join the defenders.\"|166|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 166,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t\"Alright, I'll join the defenders.\"",
+   "italian": "\t\"Va bene, mi unisco ai difensori.\"",
+   "ratio": 0.972
+  },
+  {
+   "idx": 13,
+   "id": "mission:Coalition Folklore: Kimek|\tHe brings you to the small fort up the hill. Its gates open as those inside (mostly Kimek as expected, but also a couple Arachi and a lone Saryd) are still getting ready. A small \"farm\" sits in the middle, with plastic replicas serving as the crops. The walls of the fort are made of various tall logs, densely covered by tufts of vicious, reddish thorns nearly as long as your arm. Inside, you can see that a higher level with battlements is accessible via staircases on either side of the courtyard; you also notice that the defenders are all wearing a green strip of cloth over their clothing. Another Kimek organizer, wearing a rugged leather vest that you assume is the Kimek equivalent of medieval armor, comes to meet you both at the gate. He greets his colleague, who introduces you and says that you have chosen to join the defenders, before heading back down the hill.|168|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 168,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tHe brings you to the small fort up the hill. Its gates open as those inside (mostly Kimek as expected, but also a couple Arachi and a lone Saryd) are still getting ready. A small \"farm\" sits in the middle, with plastic replicas serving as the crops. The walls of the fort are made of various tall logs, densely covered by tufts of vicious, reddish thorns nearly as long as your arm. Inside, you can see that a higher level with battlements is accessible via staircases on either side of the courtyard; you also notice that the defenders are all wearing a green strip of cloth over their clothing. Another Kimek organizer, wearing a rugged leather vest that you assume is the Kimek equivalent of medieval armor, comes to meet you both at the gate. He greets his colleague, who introduces you and says that you have chosen to join the defenders, before heading back down the hill.",
+   "italian": "\tVi conduce al piccolo forte in cima al pendio. I cancelli si aprono mentre quelli dentro (per lo più Kimek, come previsto, ma anche un paio di Arach e un Saryd solitario) si stanno ancora preparando. Al centro c'è una piccola \"fattoria\", con riproduzioni di plastica al posto dei raccolti. Le mura del forte sono fatte di grossi tronchi, fittamente coperti da ciuffi di spine rossastre e insidiose, lunghe quasi quanto un braccio. All'interno vedete che un livello superiore con merli è raggiungibile da scale ai due lati del cortile; notate anche che i difensori indossano tutti una striscia di stoffa verde sopra i vestiti. Un altro organizzatore Kimek, con un gilet di cuoio grezzo che immaginate essere l'equivalente Kimek dell'armatura medievale, vi viene incontro al cancello. Saluta il collega, che vi presenta e dice che avete scelto di unirvi ai difensori, poi torna giù per il pendio.",
+   "ratio": 1.018
+  },
+  {
+   "idx": 14,
+   "id": "mission:Coalition Folklore: Kimek|\t\"Glad to have you as part of the garrison, our fort is,\" the armored Kimek begins. \"Told about the enemy's objective, I assume you have been. Protect our farm, we must, so allow the produce to be stolen, we cannot.\" He tells you to follow him to the \"keep,\" a shack too small for any non-Kimek, and gives you a long piece of green cloth. He then informs you that it is meant to be worn, so that others can tell what team you are on. As you wrap it around you like a scarf, you notice that, behind the shack, there is a smaller gate that grants entry to the fort. Once you're done, he gives you a brief tour of the rest of the fort, taking you up the battlements and above the main gate, where you see buckets of what at first appears to be water. Your guide informs you that the liquid inside is actually quite slick, and during the re-enactment, it is poured downhill to slow the attackers.|169|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 169,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t\"Glad to have you as part of the garrison, our fort is,\" the armored Kimek begins. \"Told about the enemy's objective, I assume you have been. Protect our farm, we must, so allow the produce to be stolen, we cannot.\" He tells you to follow him to the \"keep,\" a shack too small for any non-Kimek, and gives you a long piece of green cloth. He then informs you that it is meant to be worn, so that others can tell what team you are on. As you wrap it around you like a scarf, you notice that, behind the shack, there is a smaller gate that grants entry to the fort. Once you're done, he gives you a brief tour of the rest of the fort, taking you up the battlements and above the main gate, where you see buckets of what at first appears to be water. Your guide informs you that the liquid inside is actually quite slick, and during the re-enactment, it is poured downhill to slow the attackers.",
+   "italian": "\t\"Lieti di avervi nella guarnigione, il nostro forte è\", esordisce il Kimek corazzato. \"Informati sull'obiettivo del nemico, immagino che siate. Proteggere la nostra fattoria, dobbiamo, quindi lasciare che i raccolti vengano rubati, non possiamo.\" Vi dice di seguirlo fino al \"maschio\", una baracca troppo piccola per chiunque non sia Kimek, e vi consegna un lungo pezzo di stoffa verde. Vi spiega poi che va indossato, così che gli altri capiscano a quale squadra appartenete. Mentre ve lo avvolgete come una sciarpa, notate che dietro la baracca c'è un cancello più piccolo, che dà accesso al forte. Quando avete finito, vi fa fare un breve giro del resto del forte, portandovi sui merli e sopra il cancello principale, dove vedete secchi con quello che a prima vista sembra acqua. La guida vi spiega che il liquido dentro è in realtà piuttosto scivoloso e che durante la rievocazione viene versato lungo il pendio per rallentare gli attaccanti.",
+   "ratio": 1.062
+  },
+  {
+   "idx": 15,
+   "id": "mission:Coalition Folklore: Kimek|\tOnce he's done, he tells you to wait in the courtyard, as the \"battle\" will begin soon. A few minutes pass before a loud whistle blows, and the Kimek in charge of the fort tells everyone that the other side has begun their attack. The front gate is closed, and some of the defenders begin placing heavy objects behind to barricade it; others are already up by the battlements, waiting for the right time to use the buckets of slippery liquid.|170|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 170,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tOnce he's done, he tells you to wait in the courtyard, as the \"battle\" will begin soon. A few minutes pass before a loud whistle blows, and the Kimek in charge of the fort tells everyone that the other side has begun their attack. The front gate is closed, and some of the defenders begin placing heavy objects behind to barricade it; others are already up by the battlements, waiting for the right time to use the buckets of slippery liquid.",
+   "italian": "\tQuando ha finito, vi dice di aspettare nel cortile, perché la \"battaglia\" comincerà presto. Passano alcuni minuti prima che risuoni un fischietto acuto, e il Kimek a capo del forte annuncia a tutti che l'altra parte ha iniziato l'attacco. Il cancello principale è chiuso e alcuni difensori cominciano a sistemare oggetti pesanti dietro per sbarrare l'ingresso; altri sono già sui merli, in attesa del momento giusto per usare i secchi di liquido scivoloso.",
+   "ratio": 1.032
+  },
+  {
+   "idx": 16,
+   "id": "mission:Coalition Folklore: Kimek|\t(Help reinforce the main gate.)|172|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 172,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Help reinforce the main gate.)",
+   "italian": "\t(Aiuta a rinforzare il cancello principale.)",
+   "ratio": 1.406
+  },
+  {
+   "idx": 17,
+   "id": "mission:Coalition Folklore: Kimek|\t(Go help slow down the attackers.)|174|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 174,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Go help slow down the attackers.)",
+   "italian": "\t(Vai ad aiutare a rallentare gli attaccanti.)",
+   "ratio": 1.314
+  },
+  {
+   "idx": 18,
+   "id": "mission:Coalition Folklore: Kimek|label|176|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 176,
+   "kind": "UI_LABEL",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "defend r",
+   "italian": "defend r",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "mission:Coalition Folklore: Kimek|\tYou join the others in gathering and moving heavy objects, and quickly find some crates behind the small shack, which a couple of Arachi help bring to the gate. Some Kimek take logs they find stashed under a staircase and bring them as well, burying one end in the ground with the other end against the door. The liquid poured on the attackers does slow them down for some minutes, but once you're done, they're already banging at the gate. Most of those inside the fort, particularly the Saryd that has joined in, head to the main gate to try and keep it closed, but a few Kimek head around the back to check on the smaller gate.|177|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 177,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tYou join the others in gathering and moving heavy objects, and quickly find some crates behind the small shack, which a couple of Arachi help bring to the gate. Some Kimek take logs they find stashed under a staircase and bring them as well, burying one end in the ground with the other end against the door. The liquid poured on the attackers does slow them down for some minutes, but once you're done, they're already banging at the gate. Most of those inside the fort, particularly the Saryd that has joined in, head to the main gate to try and keep it closed, but a few Kimek head around the back to check on the smaller gate.",
+   "italian": "\tVi unite agli altri nel radunare e spostare oggetti pesanti e trovate presto alcune casse dietro la baracca, che un paio di Arach aiutano a portare al cancello. Alcuni Kimek prendono tronchi che trovano accatastati sotto una scala e li portano a loro volta, conficcandone un'estremità nel terreno e appoggiando l'altra contro la porta. Il liquido versato sugli attaccanti li rallenta per qualche minuto, ma quando avete finito stanno già martellando il cancello. Quasi tutti quelli dentro il forte, in particolare il Saryd che si è unito, corrono al cancello principale per cercare di tenerlo chiuso, ma alcuni Kimek girano dietro a controllare il cancello più piccolo.",
+   "ratio": 1.062
+  },
+  {
+   "idx": 20,
+   "id": "mission:Coalition Folklore: Kimek|\t(Help keep the main gate closed.)|179|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 179,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Help keep the main gate closed.)",
+   "italian": "\t(Aiuta a tenere chiuso il cancello principale.)",
+   "ratio": 1.412
+  },
+  {
+   "idx": 21,
+   "id": "mission:Coalition Folklore: Kimek|\t(Go with the others and check the back gate.)|181|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 181,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Go with the others and check the back gate.)",
+   "italian": "\t(Vai con gli altri a controllare il cancello posteriore.)",
+   "ratio": 1.261
+  },
+  {
+   "idx": 22,
+   "id": "mission:Coalition Folklore: Kimek|\tOnce you get to the back gate, you and the Kimek there stay quiet and try to listen for anyone approaching this side of the fort. Sure enough, you hear scuttling Kimek legs swishing through the grass as the attackers come circling around. Fortunately, not many came to this gate, so, with your help, your Kimek teammates don't have much trouble keeping the gate closed. Thanks to the main gate having been reinforced, the group there holds well enough that some more come to the back to help, and after some minutes of struggling with the attackers on the gate, another whistle is sounded. It marks that time has run out and that the defenders have won.|182|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 182,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tOnce you get to the back gate, you and the Kimek there stay quiet and try to listen for anyone approaching this side of the fort. Sure enough, you hear scuttling Kimek legs swishing through the grass as the attackers come circling around. Fortunately, not many came to this gate, so, with your help, your Kimek teammates don't have much trouble keeping the gate closed. Thanks to the main gate having been reinforced, the group there holds well enough that some more come to the back to help, and after some minutes of struggling with the attackers on the gate, another whistle is sounded. It marks that time has run out and that the defenders have won.",
+   "italian": "\tArrivati al cancello posteriore, voi e i Kimek restate in silenzio e tendete l'orecchio a chiunque si avvicini da quel lato del forte. In effetti, sentite le zampe Kimek frusciare nell'erba mentre gli attaccanti aggirano il forte. Per fortuna non molti sono venuti a questo cancello, così, con il vostro aiuto, i compagni Kimek non fanno molta fatica a tenerlo chiuso. Grazie al fatto che il cancello principale è stato rinforzato, il gruppo là tiene abbastanza bene che altri vengono sul retro a dare una mano, e dopo qualche minuto di lotta con gli attaccanti sul cancello risuona un altro fischietto. Segna che il tempo è scaduto e che i difensori hanno vinto.",
+   "ratio": 1.015
+  },
+  {
+   "idx": 23,
+   "id": "mission:Coalition Folklore: Kimek|label|184|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 184,
+   "kind": "UI_LABEL",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "defend rw",
+   "italian": "defend rw",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "mission:Coalition Folklore: Kimek|\tWith the fortifications from earlier helping keep it shut, holding the main gate proves easy enough. After a few minutes pass, however, you hear a commotion from behind the shack. As you and others go there to check, you arrive to see the small gate open, the attackers, wearing blue sashes in place of your team's green, having already made their way inside. The whistle sounds again, marking the end of the battle and the victory of the attackers.|185|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 185,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tWith the fortifications from earlier helping keep it shut, holding the main gate proves easy enough. After a few minutes pass, however, you hear a commotion from behind the shack. As you and others go there to check, you arrive to see the small gate open, the attackers, wearing blue sashes in place of your team's green, having already made their way inside. The whistle sounds again, marking the end of the battle and the victory of the attackers.",
+   "italian": "\tCon le fortificazioni di prima che aiutano a tenerlo chiuso, difendere il cancello principale si rivela abbastanza facile. Dopo qualche minuto, però, sentite un trambusto da dietro la baracca. Andate a controllare con gli altri e arrivate a vedere il cancello piccolo aperto: gli attaccanti, che portano fasce blu al posto del verde della vostra squadra, sono già entrati. Il fischietto risuona di nuovo, segnando la fine della battaglia e la vittoria degli attaccanti.",
+   "ratio": 1.044
+  },
+  {
+   "idx": 25,
+   "id": "mission:Coalition Folklore: Kimek|label|187|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 187,
+   "kind": "UI_LABEL",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "defend w",
+   "italian": "defend w",
+   "ratio": 1.0
+  },
+  {
+   "idx": 26,
+   "id": "mission:Coalition Folklore: Kimek|\tYou go up the stairs and are given one of the buckets with the slippery substance. You notice that the others up here are all Kimek and Arachi, however, and they are only pouring the liquid down directly in front of the gate. When you see some of the blue sash wearing attackers advancing from the sides, where the liquid hasn't been poured, you chuck a bucket their way. This leaves a line of the liquid on that side, and those attacking from there lose their footing, tripping and falling again and again. Once your teammates realize what you've done, they begin to egg you on, encouraging you to throw more buckets to cover the sides while they continue to drench the middle. Despite your efforts, however, the attackers do eventually make it up the hill and start banging at the gate. Most of those inside the fort, including the Saryd, head to the main gate to try and keep it closed, but some Kimek instead head around the back to check on the smaller gate.|188|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 188,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tYou go up the stairs and are given one of the buckets with the slippery substance. You notice that the others up here are all Kimek and Arachi, however, and they are only pouring the liquid down directly in front of the gate. When you see some of the blue sash wearing attackers advancing from the sides, where the liquid hasn't been poured, you chuck a bucket their way. This leaves a line of the liquid on that side, and those attacking from there lose their footing, tripping and falling again and again. Once your teammates realize what you've done, they begin to egg you on, encouraging you to throw more buckets to cover the sides while they continue to drench the middle. Despite your efforts, however, the attackers do eventually make it up the hill and start banging at the gate. Most of those inside the fort, including the Saryd, head to the main gate to try and keep it closed, but some Kimek instead head around the back to check on the smaller gate.",
+   "italian": "\tSalite le scale e ricevete uno dei secchi con la sostanza scivolosa. Notate però che quassù sono tutti Kimek e Arach, e che versano il liquido solo direttamente davanti al cancello. Quando vedete alcuni attaccanti con le fasce blu avanzare dai lati, dove il liquido non è stato versato, lanciate un secchio nella loro direzione. Questo lascia una striscia di liquido su quel lato, e quelli che attaccano da lì perdono l'appoggio, inciampando e cadendo più e più volte. Quando i compagni capiscono cosa avete fatto, cominciano a incitarvi, spingendovi a lanciare altri secchi per coprire i lati mentre loro continuano a inondare il centro. Nonostante i vostri sforzi, però, gli attaccanti riescono alla fine a salire il pendio e cominciano a martellare il cancello. Quasi tutti quelli dentro il forte, compreso il Saryd, corrono al cancello principale per cercare di tenerlo chiuso, ma alcuni Kimek girano invece dietro a controllare il cancello più piccolo.",
+   "ratio": 0.994
+  },
+  {
+   "idx": 27,
+   "id": "mission:Coalition Folklore: Kimek|\t(Help keep the main gate closed.)|190|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 190,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Help keep the main gate closed.)",
+   "italian": "\t(Aiuta a tenere chiuso il cancello principale.)",
+   "ratio": 1.412
+  }
+ ]
+}

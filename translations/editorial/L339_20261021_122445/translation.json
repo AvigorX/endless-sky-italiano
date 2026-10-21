@@ -1,0 +1,121 @@
+{
+ "block": {
+  "path": "data/_ui/flight checks.txt",
+  "line_from": 15,
+  "line_to": 300,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "conversation:flight check: no energy!|You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.|17|0",
+   "path": "data/_ui/flight checks.txt",
+   "line": 17,
+   "kind": "CONVERSATION",
+   "context": "conversation:flight check: no energy!",
+   "english": "You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.",
+   "italian": "You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "conversation:flight check: no energy!|\tIt is all going smoothly until it comes time to fire up your systems for a test run... and you discover that your generator does not produce enough power to power them. You'll have to either install some batteries, or switch to a more powerful generator.|18|0",
+   "path": "data/_ui/flight checks.txt",
+   "line": 18,
+   "kind": "CONVERSATION",
+   "context": "conversation:flight check: no energy!",
+   "english": "\tIt is all going smoothly until it comes time to fire up your systems for a test run... and you discover that your generator does not produce enough power to power them. You'll have to either install some batteries, or switch to a more powerful generator.",
+   "italian": "\tIt is all going smoothly until it comes time to fire up your systems for a test run... and you discover that your generator does not produce enough power to power them. You'll have to either install some batteries, or switch to a more powerful generator.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "conversation:flight check: no thruster!|You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.|22|0",
+   "path": "data/_ui/flight checks.txt",
+   "line": 22,
+   "kind": "CONVERSATION",
+   "context": "conversation:flight check: no thruster!",
+   "english": "You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.",
+   "italian": "You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "conversation:flight check: no thruster!|\tIt is all going smoothly until it comes time to fire up the thrusters for a test run... and you realize, much to your embarrassment, that you do not have any thrusters installed. Time to head back to the outfitter and fix that!|23|0",
+   "path": "data/_ui/flight checks.txt",
+   "line": 23,
+   "kind": "CONVERSATION",
+   "context": "conversation:flight check: no thruster!",
+   "english": "\tIt is all going smoothly until it comes time to fire up the thrusters for a test run... and you realize, much to your embarrassment, that you do not have any thrusters installed. Time to head back to the outfitter and fix that!",
+   "italian": "\tIt is all going smoothly until it comes time to fire up the thrusters for a test run... and you realize, much to your embarrassment, that you do not have any thrusters installed. Time to head back to the outfitter and fix that!",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "conversation:flight check: no steering!|You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.|27|0",
+   "path": "data/_ui/flight checks.txt",
+   "line": 27,
+   "kind": "CONVERSATION",
+   "context": "conversation:flight check: no steering!",
+   "english": "You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.",
+   "italian": "You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "conversation:flight check: no steering!|\tIt is all going smoothly until it comes time to fire up the steering engines for a test run... and you realize, much to your embarrassment, that you do not have any steering installed. Time to head back to the outfitter and fix that!|28|0",
+   "path": "data/_ui/flight checks.txt",
+   "line": 28,
+   "kind": "CONVERSATION",
+   "context": "conversation:flight check: no steering!",
+   "english": "\tIt is all going smoothly until it comes time to fire up the steering engines for a test run... and you realize, much to your embarrassment, that you do not have any steering installed. Time to head back to the outfitter and fix that!",
+   "italian": "\tIt is all going smoothly until it comes time to fire up the steering engines for a test run... and you realize, much to your embarrassment, that you do not have any steering installed. Time to head back to the outfitter and fix that!",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "conversation:flight check: overheating!|You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.|32|0",
+   "path": "data/_ui/flight checks.txt",
+   "line": 32,
+   "kind": "CONVERSATION",
+   "context": "conversation:flight check: overheating!",
+   "english": "You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.",
+   "italian": "You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "conversation:flight check: overheating!|\tBy the time you reach the end of the checklist, it has grown uncomfortably warm. The air smells like ozone and hot metal, and your cameras are showing a plume of steam or smoke escaping from the hull near the engines. If your systems are running this hot while still in the atmosphere, they're likely to overheat the moment you hit hard vacuum. You are going to have to either install cooling systems, or trade out some components for lower-heat alternatives.|33|0",
+   "path": "data/_ui/flight checks.txt",
+   "line": 33,
+   "kind": "CONVERSATION",
+   "context": "conversation:flight check: overheating!",
+   "english": "\tBy the time you reach the end of the checklist, it has grown uncomfortably warm. The air smells like ozone and hot metal, and your cameras are showing a plume of steam or smoke escaping from the hull near the engines. If your systems are running this hot while still in the atmosphere, they're likely to overheat the moment you hit hard vacuum. You are going to have to either install cooling systems, or trade out some components for lower-heat alternatives.",
+   "italian": "\tBy the time you reach the end of the checklist, it has grown uncomfortably warm. The air smells like ozone and hot metal, and your cameras are showing a plume of steam or smoke escaping from the hull near the engines. If your systems are running this hot while still in the atmosphere, they're likely to overheat the moment you hit hard vacuum. You are going to have to either install cooling systems, or trade out some components for lower-heat alternatives.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "conversation:flight check: no bunks!|You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.|37|0",
+   "path": "data/_ui/flight checks.txt",
+   "line": 37,
+   "kind": "CONVERSATION",
+   "context": "conversation:flight check: no bunks!",
+   "english": "You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.",
+   "italian": "You've heard enough horror stories about the sort of accidents that happen when starship systems malfunction to be completely convinced of the necessity of a pre-flight safety check. As you listen to the complex symphony of hums, rattles, and clicks of the <ship> warming up, you run through a mental checklist. Computers: check. Life support: check.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "conversation:flight check: no bunks!|\tIt is all going smoothly, but suddenly a manual confirmation prompt appears on the diagnostics screen. You hail the crew of the <ship>... and you realize, much to your embarrassment, that you do not have any bunks installed. Time to head back to the outfitter and fix that!|38|0",
+   "path": "data/_ui/flight checks.txt",
+   "line": 38,
+   "kind": "CONVERSATION",
+   "context": "conversation:flight check: no bunks!",
+   "english": "\tIt is all going smoothly, but suddenly a manual confirmation prompt appears on the diagnostics screen. You hail the crew of the <ship>... and you realize, much to your embarrassment, that you do not have any bunks installed. Time to head back to the outfitter and fix that!",
+   "italian": "\tIt is all going smoothly, but suddenly a manual confirmation prompt appears on the diagnostics screen. You hail the crew of the <ship>... and you realize, much to your embarrassment, that you do not have any bunks installed. Time to head back to the outfitter and fix that!",
+   "ratio": 1.0
+  }
+ ]
+}

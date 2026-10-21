@@ -1,0 +1,253 @@
+{
+ "block": {
+  "path": "data/successors/predecessors.txt",
+  "line_from": 1,
+  "line_to": 200,
+  "units": 22
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Resja, of the Nine Eyes|plural|17|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 17,
+   "kind": "VALUE",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "Resjan, of the Nine Eyes",
+   "italian": "Resjan, of the Nine Eyes",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Resja, of the Nine Eyes|\"Iasa,\" Lethal Word|81|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 81,
+   "kind": "TEXT",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "\"Iasa,\" Lethal Word",
+   "italian": "\"Iasa,\" Lethal Word",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "ship:Resja, of the Nine Eyes|Hyperdrive|83|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 83,
+   "kind": "TEXT",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "Hyperdrive",
+   "italian": "Hyperdrive",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Resja, of the Nine Eyes|\"Jiita\" Heirloom Shielding|84|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 84,
+   "kind": "TEXT",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "\"Jiita\" Heirloom Shielding",
+   "italian": "\"Jiita\" Heirloom Shielding",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Resja, of the Nine Eyes|Heirloom Cooling|85|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 85,
+   "kind": "TEXT",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "Heirloom Cooling",
+   "italian": "Heirloom Cooling",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Resja, of the Nine Eyes|\"Ija\" Heirloom Reactor|87|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 87,
+   "kind": "TEXT",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "\"Ija\" Heirloom Reactor",
+   "italian": "\"Ija\" Heirloom Reactor",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Resja, of the Nine Eyes|Heirloom Power Reserve|88|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 88,
+   "kind": "TEXT",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "Heirloom Power Reserve",
+   "italian": "Heirloom Power Reserve",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "ship:Resja, of the Nine Eyes|Auxiliary Power Reserve|89|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 89,
+   "kind": "TEXT",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "Auxiliary Power Reserve",
+   "italian": "Auxiliary Power Reserve",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "ship:Resja, of the Nine Eyes|Multimodal Armor: Regen|91|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 91,
+   "kind": "TEXT",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "Multimodal Armor: Regen",
+   "italian": "Multimodal Armor: Regen",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "ship:Resja, of the Nine Eyes|description|108|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 108,
+   "kind": "DESCRIPTION",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "Resja engraved the hull of each of the ships that bore their name personally, carving into the squirming metal a poem that they came to know by heart:",
+   "italian": "Resja incideva personalmente lo scafo di ogni nave che portava il loro nome, intagliando nel metallo guizzante una poesia che avevano imparato a memoria:",
+   "ratio": 1.02
+  },
+  {
+   "idx": 11,
+   "id": "ship:Resja, of the Nine Eyes|description|109|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 109,
+   "kind": "DESCRIPTION",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "Four eyes for Houses who're no longer there,",
+   "italian": "Quattro occhi per le Casate che non hanno più dimora,",
+   "ratio": 1.205
+  },
+  {
+   "idx": 12,
+   "id": "ship:Resja, of the Nine Eyes|description|110|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 110,
+   "kind": "DESCRIPTION",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "Three for the cursed stars' shimmering flare,",
+   "italian": "Tre per la fiamma tremula delle stelle che divora,",
+   "ratio": 1.111
+  },
+  {
+   "idx": 13,
+   "id": "ship:Resja, of the Nine Eyes|description|111|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 111,
+   "kind": "DESCRIPTION",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "Two for the bitter rings, blinking with light,",
+   "italian": "Due per gli anelli amari, che brillano ancora,",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "ship:Resja, of the Nine Eyes|description|112|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 112,
+   "kind": "DESCRIPTION",
+   "context": "ship:Resja, of the Nine Eyes",
+   "english": "And a final one missing, lost to the night.",
+   "italian": "E uno mancante, perduto nella notte che lo ignora.",
+   "ratio": 1.163
+  },
+  {
+   "idx": 15,
+   "id": "ship:Hasur, Vowsworn|plural|123|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 123,
+   "kind": "VALUE",
+   "context": "ship:Hasur, Vowsworn",
+   "english": "Hasuran, Vowsworn",
+   "italian": "Hasuran, Vowsworn",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "ship:Hasur, Vowsworn|\"Kis,\" Lethal Wish|187|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 187,
+   "kind": "TEXT",
+   "context": "ship:Hasur, Vowsworn",
+   "english": "\"Kis,\" Lethal Wish",
+   "italian": "\"Kis,\" Lethal Wish",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "ship:Hasur, Vowsworn|Hyperdrive|189|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 189,
+   "kind": "TEXT",
+   "context": "ship:Hasur, Vowsworn",
+   "english": "Hyperdrive",
+   "italian": "Hyperdrive",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "ship:Hasur, Vowsworn|\"Jiita\" Heirloom Shielding|190|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 190,
+   "kind": "TEXT",
+   "context": "ship:Hasur, Vowsworn",
+   "english": "\"Jiita\" Heirloom Shielding",
+   "italian": "\"Jiita\" Heirloom Shielding",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "ship:Hasur, Vowsworn|Successor Cooling|191|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 191,
+   "kind": "TEXT",
+   "context": "ship:Hasur, Vowsworn",
+   "english": "Successor Cooling",
+   "italian": "Successor Cooling",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "ship:Hasur, Vowsworn|\"Ija\" Heirloom Reactor|193|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 193,
+   "kind": "TEXT",
+   "context": "ship:Hasur, Vowsworn",
+   "english": "\"Ija\" Heirloom Reactor",
+   "italian": "\"Ija\" Heirloom Reactor",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "ship:Hasur, Vowsworn|Heirloom Power Reserve|194|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 194,
+   "kind": "TEXT",
+   "context": "ship:Hasur, Vowsworn",
+   "english": "Heirloom Power Reserve",
+   "italian": "Heirloom Power Reserve",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "ship:Hasur, Vowsworn|Multimodal Armor: Regen|196|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 196,
+   "kind": "TEXT",
+   "context": "ship:Hasur, Vowsworn",
+   "english": "Multimodal Armor: Regen",
+   "italian": "Multimodal Armor: Regen",
+   "ratio": 1.0
+  }
+ ]
+}

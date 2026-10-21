@@ -1,0 +1,22 @@
+{
+ "block": {
+  "path": "data/rulei/rulei ships.txt",
+  "line_from": 87,
+  "line_to": 87,
+  "units": 1
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:vyu-Ir|description|87|0",
+   "path": "data/rulei/rulei ships.txt",
+   "line": 87,
+   "kind": "DESCRIPTION",
+   "context": "ship:vyu-Ir",
+   "english": "The vyu-Ir is an ancient ship of the Vyu, one of several chambers of the Rulei. It is not known whether or not this was their final ship-class, or one of many, but the technology found on it may represent the height of the Rulei's advancements, as well as the cause of their downfall.",
+   "italian": "Il vyu-Ir è un'antica nave dei Vyu, una delle diverse camere dei Rulei. Non si sa se questa fu la loro classe finale o una fra molte, ma la tecnologia che vi si trova potrebbe rappresentare il culmine dei progressi dei Rulei, nonché la causa della loro rovina.",
+   "ratio": 0.915
+  }
+ ]
+}

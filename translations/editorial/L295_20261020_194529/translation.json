@@ -1,0 +1,110 @@
+{
+ "block": {
+  "path": "data/human/marauders.txt",
+  "line_from": 548,
+  "line_to": 858,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Marauder Leviathan|description|548|0",
+   "path": "data/human/marauders.txt",
+   "line": 548,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Leviathan",
+   "english": "The Betelgeuse Shipyards Leviathan has been in service for a long time, and captains have had some very interesting ideas about how to modify them for optimum performance. This one has had the hull surface completely stripped and replaced, with the new layout containing more shield projectors per square meter.",
+   "italian": "La Leviathan dei Betelgeuse Shipyards è in servizio da molto tempo, e i capitani hanno avuto idee molto interessanti su come modificarle per ottenere il massimo delle prestazioni. A questa è stata completamente rimossa e sostituita la superficie dello scafo, e il nuovo allestimento contiene più proiettori di scudi per metro quadrato.",
+   "ratio": 1.077
+  },
+  {
+   "idx": 2,
+   "id": "ship:Marauder Leviathan|description|580|0",
+   "path": "data/human/marauders.txt",
+   "line": 580,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Leviathan",
+   "english": "As if the Leviathan wasn't a terrifying enough ship already, this one has been heavily modified with special attention paid to the engine capacity, enabling it to bring its guns to bear even faster.",
+   "italian": "Come se la Leviathan non fosse già una nave abbastanza terrificante, questa è stata pesantemente modificata con un'attenzione particolare alla capacità motore, il che le permette di portare i cannoni in mira ancora più in fretta.",
+   "ratio": 1.157
+  },
+  {
+   "idx": 3,
+   "id": "ship:Marauder Leviathan|description|616|0",
+   "path": "data/human/marauders.txt",
+   "line": 616,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Leviathan",
+   "english": "This Leviathan once belonged to an infamous pirate captain whose name has been lost to the ages. It's had so much custom work done to it that can hardly even be considered the same ship; the weapons capacity, in particular, has been massively increased.",
+   "italian": "Questa Leviathan apparteneva un tempo a un capitano pirata famigerato il cui nome è andato perduto nel tempo. Ha ricevuto così tante modifiche personalizzate che a malapena si può considerare la stessa nave; la capacità d'arma, in particolare, è stata aumentata in modo massiccio.",
+   "ratio": 1.107
+  },
+  {
+   "idx": 4,
+   "id": "ship:Marauder Manta|description|676|0",
+   "path": "data/human/marauders.txt",
+   "line": 676,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Manta",
+   "english": "After the Syndicate released their Vanguard Heavy Warship, the Manta fell somewhat out of favor due to its lack of ability to mount any anti-missile turrets. The owner of this Manta rectified that, added some extra armor plating and shield emitters, and rearranged some of the internals to yield a little more outfit space. Dry tonnage alone keeps it from being classified as a heavy warship.",
+   "italian": "Dopo che il Sindacato ha varato la sua Vanguard Heavy Warship, la Manta è caduta un po' in disgrazia per l'incapacità di montare torrette antimissile. Il proprietario di questa Manta ha rimediato, ha aggiunto un po' di corazzatura e di emettitori di scudi, e ha riorganizzato parte degli interni per ricavare un po' più di spazio per gli equipaggiamenti. È solo il tonnellaggio a vuoto a impedirle di essere classificata come nave da guerra pesante.",
+   "ratio": 1.145
+  },
+  {
+   "idx": 5,
+   "id": "ship:Marauder Manta|description|710|0",
+   "path": "data/human/marauders.txt",
+   "line": 710,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Manta",
+   "english": "A previous owner of this Manta has gone to great lengths to make sure they could bring all six gun ports to bear in a hurry, and chase down smaller warships. Style was not lost on that captain, and a forked tail yielded a little more space for shield projectors in an area that would have been destabilized by engine exhaust. If its dry tonnage were any higher, it would be classified as a heavy warship.",
+   "italian": "Un precedente proprietario di questa Manta si è dato molto da fare per assicurarsi di poter portare in mira tutti e sei i porti per cannoni in fretta, e di poter inseguire navi da guerra più piccole. Lo stile non mancava a quel capitano, e una coda forcuta ha ricavato un po' più di spazio per i proiettori di scudi in una zona che sarebbe stata resa instabile dallo scarico dei motori. Se il suo tonnellaggio a vuoto fosse appena più alto, sarebbe classificata come nave da guerra pesante.",
+   "ratio": 1.213
+  },
+  {
+   "idx": 6,
+   "id": "ship:Marauder Manta|description|747|0",
+   "path": "data/human/marauders.txt",
+   "line": 747,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Manta",
+   "english": "This Manta has undergone extensive modification, featuring extra hull plating, shield emitters, weapon space, and even a turret mount. Whoever modified it seems to have forgotten to include dedicated space for the power systems, as they're crammed in and around everything else like an afterthought. If its dry tonnage were any higher, it would be classified as a heavy warship.",
+   "italian": "Questa Manta è stata modificata a fondo, con corazzatura aggiuntiva, emettitori di scudi, spazio per le armi e persino un supporto per torrette. Chi l'ha modificata sembra essersi dimenticato di ricavare uno spazio dedicato ai sistemi di alimentazione, che sono stipati dentro e attorno a tutto il resto come un ripensamento. Se il suo tonnellaggio a vuoto fosse appena più alto, sarebbe classificata come nave da guerra pesante.",
+   "ratio": 1.135
+  },
+  {
+   "idx": 7,
+   "id": "ship:Marauder Quicksilver|description|799|0",
+   "path": "data/human/marauders.txt",
+   "line": 799,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Quicksilver",
+   "english": "This Megaparsec Quicksilver is a bit of a hotrod, being a little faster, with extra shield projectors, hull plating, and an extra bunk. This aftermarket model also features a turret mount, perhaps in an answer to Lionheart's Headhunter. The shop that built this ship is sure to see more customers.",
+   "italian": "Questa Megaparsec Quicksilver è un po' una fuoriserie: un po' più veloce, con proiettori di scudi in più, corazzatura e una cuccetta in più. Questo modello post-vendita monta anche un supporto per torrette, forse in risposta alla Headhunter della Lionheart. L'officina che ha costruito questa nave vedrà senz'altro nuovi clienti.",
+   "ratio": 1.108
+  },
+  {
+   "idx": 8,
+   "id": "ship:Marauder Quicksilver|description|831|0",
+   "path": "data/human/marauders.txt",
+   "line": 831,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Quicksilver",
+   "english": "This Quicksilver has even more space available for engine use - and even another thruster port! It's also got a few extra shield projectors, more hull plating, and another bunk. This aftermarket model also features a turret mount, perhaps in response to Lionheart's Headhunter. Whoever modified this ship wanted to chase their prey down with vicious speed.",
+   "italian": "Questa Quicksilver ha ancora più spazio disponibile per i motori - e persino un altro porto per propulsori! Ha anche qualche proiettore di scudi in più, più corazzatura e un'altra cuccetta. Questo modello post-vendita monta anche un supporto per torrette, forse in risposta alla Headhunter della Lionheart. Chi ha modificato questa nave voleva inseguire la preda con una velocità spietata.",
+   "ratio": 1.093
+  },
+  {
+   "idx": 9,
+   "id": "ship:Marauder Quicksilver|description|858|0",
+   "path": "data/human/marauders.txt",
+   "line": 858,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Quicksilver",
+   "english": "This Quicksilver has even more space available for engine use - and even another thruster port! It's also got a few extra shield projectors, more hull plating, and another bunk. This aftermarket model also features a turret mount, perhaps in response to Lionheart's Headhunter. Whoever modified this ship wanted to chase their prey down with vicious speed.",
+   "italian": "Questa Quicksilver ha ancora più spazio disponibile per i motori - e persino un altro porto per propulsori! Ha anche qualche proiettore di scudi in più, più corazzatura e un'altra cuccetta. Questo modello post-vendita monta anche un supporto per torrette, forse in risposta alla Headhunter della Lionheart. Chi ha modificato questa nave voleva inseguire la preda con una velocità spietata.",
+   "ratio": 1.093
+  }
+ ]
+}

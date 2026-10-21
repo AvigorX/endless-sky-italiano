@@ -1,0 +1,511 @@
+# Copyright (c) 2021 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+news "anonymous quarg"
+	location
+		government "Quarg"
+		attributes "human quarg" "hai quarg"
+	name
+		word
+			"Quarg"
+	message
+		word
+			`"Sei quello che viene chiamato un 'turista'?"`
+	message
+		word
+			`"`
+		word
+			"Are you"
+		word
+			" "
+		word
+			"a merchant"
+			"a merchant captain"
+			"a traveling merchant"
+			"a captain"
+		word
+			"?"
+		word
+			" "
+		word
+			"People"
+		word
+			" "
+		word
+			"of peace"
+			"of law"
+			"of trade"
+		word
+			" "
+		word
+			"are"
+		word
+			" "
+		word
+			"welcome"
+			"appreciated"
+		word
+			" "
+		word
+			"here"
+			"on Quarg worlds"
+			"on all Quarg worlds"
+		word
+			"."
+		word
+			`"`
+
+news "linguist on quarg planets in human and hai space"
+	location
+		government "Quarg"
+		attributes "human quarg" "hai quarg"
+	name
+		word
+			"Linguist"
+	message
+		word
+			`"`
+		word
+			"The Quarg language is so different from ours"
+		word
+			" "
+		word
+			"that"
+		word
+			" "
+		word
+			"most people"
+			"ordinary people"
+		word
+			" "
+		word
+			"could never"
+			"wouldn't be able to"
+			"would never"
+		word
+			" "
+		word
+			"learn it"
+			"understand it"
+			"speak it"
+		word
+			`"`
+	message
+		word
+			`"`
+		word
+			"I've been studying"
+			"I've studied"
+			"I've been learning"
+		word
+			" "
+		word
+			"the Quarg language"
+		word
+			" "
+		word
+			"for a decade"
+			"for years"
+			"for the most part of my career"
+			"all my life"
+		word
+			", "
+		word
+			"but I still can't pronounce their words"
+			"but I've yet to grasp the logic behind it"
+		word
+			"."
+		word
+			`"`
+	message
+		word
+			`"`
+		word
+			"I'm"
+		word
+			" "
+		word
+			"writing"
+			"working on"
+		word
+			" "
+		word
+			"a study"
+			"an analysis"
+		word
+			" "
+		word
+			"of the Quarg language"
+		word
+			", "
+		word
+			"mainly focusing on the "
+		word
+			"pronunciation"
+			"use"
+		word
+			" of "
+		word
+			"nouns"
+			"verbs"
+			"adjectives"
+			"words"
+			"pronouns"
+		word
+			"."
+		word
+			`"`
+
+news "tourist on quarg planets in human and hai space"
+	location
+		government "Quarg"
+		attributes "human quarg" "hai quarg"
+		not attributes "station"
+	name
+		word
+			"Tourist"
+	message
+		word
+			`"`
+		word
+			"These Quarg look so strange I shiver every time I see one."
+			"This world has the cleanest public toilets I have ever seen."
+		word
+			`"`
+	message
+		word
+			`"`
+		word
+			"I absolutely love the look of these buildings. I'm going to decorate my "
+		word
+			"house"
+			"living room"
+			"apartment"
+			"kitchen"
+			"bedroom"
+		word
+			" after them."
+		word
+			`"`
+	message
+		word
+			`"`
+		word
+			"Have you seen"
+		word
+			" "
+		word
+			"one of those"
+			"one of their"
+		word
+			" "
+		word
+			"ringworlds"
+		word
+			" from up close"
+			""
+		word
+			"? "
+		word
+			"I can't even comprehend their extent."
+		word
+			`"`
+
+news "engineer on quarg planets in human space"
+	location
+		government "Quarg"
+		attributes "human quarg"
+	name
+		word
+			"Engineer"
+			"Tarazed engineer"
+	message
+		word
+			`"`
+		word
+			"Quarg technology is so ahead of us we probably couldn't build their ships even if they gave us the plans."
+			"I'm working on a new spaceship for the Tarazed Corporation. Every once in a while I come here to take some inspiration from these magnificent designs."
+		word
+			`"`
+
+news "merchant on quarg planets in human and hai space"
+	location
+		government "Quarg"
+		attributes "human quarg" "hai quarg"
+	name
+		word
+			"Merchant"
+			"Captain"
+			"Ship captain"
+			"Merchant captain"
+			"Starship captain"
+			"Spacecraft captain"
+			"Spaceship captain"
+			"Freelance captain"
+			"Merchant pilot"
+			"Starship pilot"
+			"Spacecraft pilot"
+			"Spaceship pilot"
+			"Freelance pilot"
+	message
+		word
+			`"`
+		word
+			"The Quarg have impressive ships, but I bet my "
+		word
+			"Behemoth"
+			"Hauler III"
+			"Bulk Freighter"
+			"Bactrian"
+		word
+			" can carry twice the cargo their ships ever could."
+		word
+			`"`
+	message
+		word
+			`"`
+		word
+			"The Quarg are an unwarlike species, but I've heard they fought battles against "
+		word
+			"an alien race"
+			"some insectoid aliens"
+		word
+			" "
+		word
+			"in the past"
+			"a long time ago"
+		word
+			"."
+		word
+			`"`
+
+news "merchant on quarg planets in human space"
+	location
+		government "Quarg"
+		attributes "human quarg"
+	name
+		word
+			"Merchant"
+			"Captain"
+			"Ship captain"
+			"Merchant captain"
+			"Starship captain"
+			"Spacecraft captain"
+			"Spaceship captain"
+			"Freelance captain"
+			"Merchant pilot"
+			"Starship pilot"
+			"Spacecraft pilot"
+			"Spaceship pilot"
+			"Freelance pilot"
+	message
+		word
+			`"`
+		word
+			"The Quarg go out of their way to keep piracy at bay in these systems. "
+		word
+			"I could fly a fleet of "
+		word
+			"Star Barges"
+			"Shuttles"
+			"Heavy Shuttles"
+		word
+			" around here!"
+		word
+			`"`
+	message
+		word
+			`"`
+		word
+			"The Quarg are "
+		word
+			"peaceful"
+			"a peaceful race"
+			"not violent"
+		word
+			", "
+		word
+			"but I've seen their weapons at work: they "
+		word
+			"took out"
+			"disabled"
+			"destroyed"
+		word
+			" "
+		word
+			"a Leviathan pirate"
+			"a pirate ship"
+			"a marauder ship"
+		word
+			" "
+		word
+			"in a matter of seconds"
+			"in a few seconds"
+			"without taking a single hit"
+		word
+			"."
+		word
+			`"`
+
+news "reporter on quarg planets in human space"
+	location
+		government "Quarg"
+		attributes "human quarg"
+	name
+		word
+			"Reporter"
+	message
+		word
+			`"`
+		word
+			"Read my new article:"
+			"Read my new article!"
+			"Read this!"
+			"Look at my new article!"
+			"Look at this!"
+		word
+			" '"
+		word
+			"Three"
+			"Five"
+			"Seven"
+		word
+			" "
+		word
+			"Things Tarazed Corporation Stole from the Quarg!"
+			"Things the Quarg helped Tarazed Corporation With!"
+			"Secrets Humanity Learned from the Quarg!"
+		word
+			`"`
+
+news "student on quarg planets"
+	location
+		government "Quarg"
+		attributes "human quarg"
+	name
+		word
+			"Student"
+			"Scholar"
+			"University student"
+	message
+		word
+			`"`
+		word
+			"I'm on a"
+		word
+			" "
+		word
+			"study tour"
+			"field trip"
+			"study visit"
+		word
+			" "
+		word
+			"with my"
+		word
+			" "
+		word
+			"class"
+			"teacher"
+			"tutor"
+			"school"
+		word
+			"."
+		word
+			" "
+		word
+			"They taught me all about"
+			"I learned everything about"
+		word
+			" "
+		word
+			"the ringworlds, but"
+			"the Quarg, but"
+		word
+			" "
+		word
+			"seeing them up close is quite different"
+			"I didn't realize how big they are"
+			"seeing their technology still fascinates me"
+			"the sheer scale of their buildings is astonishing"
+		word
+			"."
+		word
+			`"`
+
+news "quarg anywhere"
+	location
+		attributes "quarg" "human quarg" "hai quarg"
+		not attributes "korath quarg" "gegno quarg"
+	name
+		word
+			"Quarg"
+	message
+		word
+			`"Sì, umano? Hai qualche domanda?"`
+			`"Salve, umano. Ti stai godendo il tempo passato sul nostro mondo? Siamo lieti di ricevere visitatori."`
+			`"Mi dispiace, ma non ti forniremo la nostra tecnologia. È meglio che gli umani crescano e si sviluppino da soli."`
+			`"Mi turba profondamente vedere quante specie si aggrappino ancora a una lotta insensata. Posso solo sperare che tutti voi arriviate a ragionare."`
+			`"L'anno scorso i nostri sforzi scientifici sono stati piuttosto fruttuosi, ma temo che non possiamo semplicemente condividere le nostre scoperte con voi."`
+			`"Se mai vedessi un pezzo della nostra tecnologia in possesso di qualcun altro, riferiscilo a noi. Non possiamo permettere che le nostre apparecchiature finiscano nelle mani sbagliate."`
+			`"Sei il benvenuto fra noi, a patto che tu non cerchi conflitto con nessuno sui nostri mondi."`
+			`C'è un silenzio inquietante mentre una folla insolitamente numerosa di Quarg ti passa accanto.`
+			`Un gruppo di Quarg è assorto in quella che sembra una discussione coinvolgente, finché non si avvicina un altro Quarg. Si voltano tutti verso di lui e, dopo che ha detto qualcosa in fretta, si alzano all'unisono e si spostano altrove negli hangar.`
+			`Un Quarg anziano gioca con un Quarg molto più giovane, tanto giovane da essere ancora più basso di te. Lo strano gioco consiste nel passarsi un barattolo che contiene una sostanza viscida e metallica. Ogni volta che il barattolo passa di mano, la sostanza si ricompone in una forma diversa, a volte in forme di cui non conosci il significato.`
+			`Decine di piccoli Quarg vengono portati in giro da una manciata di adulti, come in una gita scolastica. Quando ti notano, continuano a lanciare occhiate e a parlare fra loro. Sembra che non abbiano mai visto un umano.`
+
+news "ringworld quarg"
+	location
+		attributes "quarg"
+		attributes "ringworld"
+	name
+		word
+			"Quarg"
+	message
+		phrase
+			"ringworld quarg phrases" 8
+			"quarg poems on species" 1
+
+phrase "ringworld quarg phrases"
+	word
+		`Vedi un Quarg più basso e più giovane, probabilmente un bambino in anni Quarg, a cui un adulto mostra il mondo ad anello. Sembra che il genitore stia insegnando al piccolo com'è fatto l'anello.`
+		`Un Quarg sta in piedi scomodamente vicino alle pareti e le tocca piano con entrambi i palmi. Lo osservi per qualche minuto, finché non si ferma di colpo e riprende le sue faccende come gli altri.`
+		`L'attività consueta nel mondo ad anello si ferma: qualche decina di Quarg in tute pesantemente corazzate avanza a passo rapido, scortando un grande contenitore tubolare che fluttua al loro fianco. Gli altri Quarg si affrettano a far largo al gruppo, tenendosi a grande distanza dai Quarg corazzati.`
+		`Alcuni scienziati Quarg si trascinano dietro un intero treno di carrelli da laboratorio agganciati fra loro, stipati di utensili, sostanze chimiche, componenti e reagenti. Passa quasi mezz'ora prima che tu veda sfilare l'ultimo carrello.`
+		`Centinaia di Quarg bloccano uno dei corridoi più grandi e larghi dell'anello. Sono tutti seduti a terra, lo sguardo fisso nel vuoto in totale silenzio, e solo pochissimi alzano di rado gli occhi al soffitto per poi riabbassarli. Noti che i Quarg che assistono alla scena smettono ogni conversazione e si spostano altrove.`
+		`Un Quarg ti si avvicina e ti fissa negli occhi. Resta lì in silenzio, a guardarti e basta, finché alla fine sbatte le palpebre una volta e prosegue, sparendo nei corridoi dell'anello.`
+		`Un Quarg sovrintende allo scarico di decine di container grandi come navi arrivati nell'anello. Sembra contare mentalmente il carico mentre viene estratto in gruppi perfettamente identici. Dopo quelle che devono essere state migliaia di tonnellate, spegne uno dei tanti puntini su un tablet e ricomincia a contare.`
+		`Due navi Quarg atterrano contemporaneamente a qualche baia di distanza l'una dall'altra. Aprono i portelli e ne escono quelli che devono essere gli equipaggi al completo. Senza intoppi l'equipaggio di ciascuna nave sale sull'altra e riparte.`
+		`I Quarg sembrano aver allestito una specie di festa nell'anello: bancarelle senza fine si stendono a perdita d'occhio, tutte con varianti dello stesso frutto simile a un'arancia, da incredibilmente liscio a incredibilmente grinzoso, e di dimensioni che vanno da un pisello a un cocomero. Non riesci a capire quale qualità preferiscano.`
+		`Vedi un Quarg svoltare a un angolo stretto a quella che, per i loro standard, è una gran fretta. Quando guardi nel corridoio in cui è entrato, scopri che è un vicolo cieco: il Quarg è svanito inspiegabilmente.`
+
+phrase "quarg poems on species"
+	word
+		"Resolute will / In ancient bone / Climb to claim / A godless throne"
+		"Pulling strings / Stage nonstop strife / Clueless puppets / May yet survive"
+		"Cruel burial / Of dearest sage / Turn all patience / Into rage"
+		"Forbidden flame / Unyielding war / By angels sentenced / Suffer no more"
+		"Matured hearts / By strangers jailed / Coddled by hearth / Pick up the flail"
+		"Sovereign form / By self unmade / Leave nought behind / But mighty blade"
+		"Forlorn folk / Reshape the world / For greatest wonders / Yet to behold"
+		"Of smallest home / None to befriend / From own hounds / Come bitter end"
+		"Reckless newcomer / Hear all advice / Else with own blood / Will pay the price"
+		"Troubled past / Fight olden friends / Stand now with others / To any end"
+		"Bounties brought by / Once desperate few / From weakness, power / To protect the new"
+		"Make strongest neighbor / See through the guise / Let none forget / The curse of the wise"
+		"With skin of stone / Might, meek, guile / Abilities to hone / And wars to pile"
+		"Twice-blessed pilgrims / Myths of the past / Masses preserve / The royal caste"
+		"Adrift by the clouds / Under watchful eyes / Begin now a journey / To the greatest skies"
+		"Behind wuthering waves / Forgotten tales of yore / Whether decadence or wonder / Claim back forevermore"
+		"Ghosts beyond the grave / Machinations of the mind / Wrath of suns lights the path / To home left behind"
+		"Wrenched whispers / Of stars torn / Estranged twins / Our souls unborn"

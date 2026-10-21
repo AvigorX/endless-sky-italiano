@@ -1,0 +1,209 @@
+{
+ "block": {
+  "path": "data/gegno/gegno jobs.txt",
+  "line_from": 18,
+  "line_to": 127,
+  "units": 18
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Gegno Asteroid Mining - Aluminum|name|18|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 18,
+   "kind": "VALUE",
+   "context": "mission:Gegno Asteroid Mining - Aluminum",
+   "english": "Gather 10 tons of aluminum",
+   "italian": "Raccogli 10 tonnellate di alluminio",
+   "ratio": 1.346
+  },
+  {
+   "idx": 2,
+   "id": "mission:Gegno Asteroid Mining - Aluminum|description|19|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 19,
+   "kind": "DESCRIPTION",
+   "context": "mission:Gegno Asteroid Mining - Aluminum",
+   "english": "Mine and collect 10 tons of aluminum, then bring the minerals back to the Gegno at <origin>.",
+   "italian": "Estrai e raccogli 10 tonnellate di alluminio, poi riporta i minerali ai Gegno su <origin>.",
+   "ratio": 0.978
+  },
+  {
+   "idx": 3,
+   "id": "mission:Gegno Asteroid Mining - Aluminum|dialog|27|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 27,
+   "kind": "DIALOG",
+   "context": "mission:Gegno Asteroid Mining - Aluminum",
+   "english": "You've returned to <origin>, but do not have 10 tons of aluminum in your cargo hold. Make sure to mine 10 tons of aluminum and collect it into your cargo before you land.",
+   "italian": "Sei tornato su <origin>, ma non hai 10 tonnellate di alluminio nella stiva. Assicurati di estrarre 10 tonnellate di alluminio e di raccoglierle nel carico prima di atterrare.",
+   "ratio": 1.024
+  },
+  {
+   "idx": 4,
+   "id": "mission:Gegno Asteroid Mining - Copper|name|38|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 38,
+   "kind": "VALUE",
+   "context": "mission:Gegno Asteroid Mining - Copper",
+   "english": "Gather 10 tons of copper",
+   "italian": "Raccogli 10 tonnellate di rame",
+   "ratio": 1.25
+  },
+  {
+   "idx": 5,
+   "id": "mission:Gegno Asteroid Mining - Copper|description|39|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 39,
+   "kind": "DESCRIPTION",
+   "context": "mission:Gegno Asteroid Mining - Copper",
+   "english": "Mine and collect 10 tons of copper, then bring the minerals back to the Gegno at <origin>.",
+   "italian": "Estrai e raccogli 10 tonnellate di rame, poi riporta i minerali ai Gegno su <origin>.",
+   "ratio": 0.944
+  },
+  {
+   "idx": 6,
+   "id": "mission:Gegno Asteroid Mining - Copper|dialog|47|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 47,
+   "kind": "DIALOG",
+   "context": "mission:Gegno Asteroid Mining - Copper",
+   "english": "You've returned to <origin>, but do not have 10 tons of copper in your cargo hold. Make sure to mine 10 tons of copper and collect it into your cargo before you land.",
+   "italian": "Sei tornato su <origin>, ma non hai 10 tonnellate di rame nella stiva. Assicurati di estrarre 10 tonnellate di rame e di raccoglierle nel carico prima di atterrare.",
+   "ratio": 0.988
+  },
+  {
+   "idx": 7,
+   "id": "mission:Gegno Asteroid Mining - Iron|name|58|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 58,
+   "kind": "VALUE",
+   "context": "mission:Gegno Asteroid Mining - Iron",
+   "english": "Gather 10 tons of iron",
+   "italian": "Raccogli 10 tonnellate di ferro",
+   "ratio": 1.409
+  },
+  {
+   "idx": 8,
+   "id": "mission:Gegno Asteroid Mining - Iron|description|59|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 59,
+   "kind": "DESCRIPTION",
+   "context": "mission:Gegno Asteroid Mining - Iron",
+   "english": "Mine and collect 10 tons of iron, then bring the minerals back to the Gegno at <origin>.",
+   "italian": "Estrai e raccogli 10 tonnellate di ferro, poi riporta i minerali ai Gegno su <origin>.",
+   "ratio": 0.977
+  },
+  {
+   "idx": 9,
+   "id": "mission:Gegno Asteroid Mining - Iron|dialog|67|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 67,
+   "kind": "DIALOG",
+   "context": "mission:Gegno Asteroid Mining - Iron",
+   "english": "You've returned to <origin>, but do not have 10 tons of iron in your cargo hold. Make sure to mine 10 tons of iron and collect it into your cargo before you land.",
+   "italian": "Sei tornato su <origin>, ma non hai 10 tonnellate di ferro nella stiva. Assicurati di estrarre 10 tonnellate di ferro e di raccoglierle nel carico prima di atterrare.",
+   "ratio": 1.025
+  },
+  {
+   "idx": 10,
+   "id": "mission:Gegno Asteroid Mining - Lead|name|78|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 78,
+   "kind": "VALUE",
+   "context": "mission:Gegno Asteroid Mining - Lead",
+   "english": "Gather 10 tons of lead",
+   "italian": "Raccogli 10 tonnellate di piombo",
+   "ratio": 1.455
+  },
+  {
+   "idx": 11,
+   "id": "mission:Gegno Asteroid Mining - Lead|description|79|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 79,
+   "kind": "DESCRIPTION",
+   "context": "mission:Gegno Asteroid Mining - Lead",
+   "english": "Mine and collect 10 tons of lead, then bring the minerals back to the Gegno at <origin>.",
+   "italian": "Estrai e raccogli 10 tonnellate di piombo, poi riporta i minerali ai Gegno su <origin>.",
+   "ratio": 0.989
+  },
+  {
+   "idx": 12,
+   "id": "mission:Gegno Asteroid Mining - Lead|dialog|87|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 87,
+   "kind": "DIALOG",
+   "context": "mission:Gegno Asteroid Mining - Lead",
+   "english": "You've returned to <origin>, but do not have 10 tons of lead in your cargo hold. Make sure to mine 10 tons of lead and collect it into your cargo before you land.",
+   "italian": "Sei tornato su <origin>, ma non hai 10 tonnellate di piombo nella stiva. Assicurati di estrarre 10 tonnellate di piombo e di raccoglierle nel carico prima di atterrare.",
+   "ratio": 1.037
+  },
+  {
+   "idx": 13,
+   "id": "mission:Gegno Asteroid Mining - Silicon|name|98|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 98,
+   "kind": "VALUE",
+   "context": "mission:Gegno Asteroid Mining - Silicon",
+   "english": "Gather 10 tons of silicon",
+   "italian": "Raccogli 10 tonnellate di silicio",
+   "ratio": 1.32
+  },
+  {
+   "idx": 14,
+   "id": "mission:Gegno Asteroid Mining - Silicon|description|99|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 99,
+   "kind": "DESCRIPTION",
+   "context": "mission:Gegno Asteroid Mining - Silicon",
+   "english": "Mine and collect 10 tons of silicon, then bring the minerals back to the Gegno at <origin>.",
+   "italian": "Estrai e raccogli 10 tonnellate di silicio, poi riporta i minerali ai Gegno su <origin>.",
+   "ratio": 0.967
+  },
+  {
+   "idx": 15,
+   "id": "mission:Gegno Asteroid Mining - Silicon|dialog|107|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 107,
+   "kind": "DIALOG",
+   "context": "mission:Gegno Asteroid Mining - Silicon",
+   "english": "You've returned to <origin>, but do not have 10 tons of silicon in your cargo hold. Make sure to mine 10 tons of silicon and collect it into your cargo before you land.",
+   "italian": "Sei tornato su <origin>, ma non hai 10 tonnellate di silicio nella stiva. Assicurati di estrarre 10 tonnellate di silicio e di raccoglierle nel carico prima di atterrare.",
+   "ratio": 1.012
+  },
+  {
+   "idx": 16,
+   "id": "mission:Gegno Asteroid Mining - Titanium|name|118|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 118,
+   "kind": "VALUE",
+   "context": "mission:Gegno Asteroid Mining - Titanium",
+   "english": "Gather 10 tons of titanium",
+   "italian": "Raccogli 10 tonnellate di titanio",
+   "ratio": 1.269
+  },
+  {
+   "idx": 17,
+   "id": "mission:Gegno Asteroid Mining - Titanium|description|119|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 119,
+   "kind": "DESCRIPTION",
+   "context": "mission:Gegno Asteroid Mining - Titanium",
+   "english": "Mine and collect 10 tons of titanium, then bring the minerals back to the Gegno at <origin>.",
+   "italian": "Estrai e raccogli 10 tonnellate di titanio, poi riporta i minerali ai Gegno su <origin>.",
+   "ratio": 0.957
+  },
+  {
+   "idx": 18,
+   "id": "mission:Gegno Asteroid Mining - Titanium|dialog|127|0",
+   "path": "data/gegno/gegno jobs.txt",
+   "line": 127,
+   "kind": "DIALOG",
+   "context": "mission:Gegno Asteroid Mining - Titanium",
+   "english": "You've returned to <origin>, but do not have 10 tons of titanium in your cargo hold. Make sure to mine 10 tons of titanium and collect it into your cargo before you land.",
+   "italian": "Sei tornato su <origin>, ma non hai 10 tonnellate di titanio nella stiva. Assicurati di estrarre 10 tonnellate di titanio e di raccoglierle nel carico prima di atterrare.",
+   "ratio": 1.0
+  }
+ ]
+}

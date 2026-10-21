@@ -1,0 +1,63 @@
+{
+ "block": {
+  "path": "data/successors/predecessors.txt",
+  "line_from": 521,
+  "line_to": 620,
+  "units": 4
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Valkkyiara-Khorasaqra|gun|534|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 534,
+   "kind": "TEXT",
+   "context": "ship:Valkkyiara-Khorasaqra",
+   "english": "\"Tijra\" Heirloom Lance",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tgun 0 -110 `\"Tijra\" Heirloom Lance`",
+   "english_hash": "dcfb2b2c38a6f4a4"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Valkkyiara-Khorasaqra|description|568|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 568,
+   "kind": "DESCRIPTION",
+   "context": "ship:Valkkyiara-Khorasaqra",
+   "english": "During the collapse of their Predecessors' empire, the High Houses of the Myiara stored away as much of their wealth and property as they could manage. Included in this were their private fleets of warships, by now passed down for over a thousand years as priceless family heirlooms. Despite being far more powerful than anything else in Successor space, these vessels almost never leave the ground, since the High Houses have no desire to risk these irreplaceable ships that are so deeply intertwined with their family history.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"During the collapse of their Predecessors' empire, the High Houses of the Myiara stored away as much of their wealth and property as they could manage. Included in this were their private fleets of warships, by now passed down for over a thousand years as priceless family heirlooms. Despite being far more powerful than anything else in Successor space, these vessels almost never leave the ground, since the High Houses have no desire to risk these irreplaceable ships that are so deeply intertwined with their family history.\"",
+   "english_hash": "0b14c93fe4656274"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Valkkyiara-Khorasaqra|description|569|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 569,
+   "kind": "DESCRIPTION",
+   "context": "ship:Valkkyiara-Khorasaqra",
+   "english": "\tBy the time of the collapse, the Valkkyiara-Khorasaqra was already a time-proven design; a clean and elegant expression of Myiaran martial artistry. Clad in dense mirrored armor, these mostly saw action in conflicts between the Houses, using their high speed and long-ranged weapons to menace colonies and outmaneuver more lumbering warships.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\tdescription `\tBy the time of the collapse, the Valkkyiara-Khorasaqra was already a time-proven design; a clean and elegant expression of Myiaran martial artistry. Clad in dense mirrored armor, these mostly saw action in conflicts between the Houses, using their high speed and long-ranged weapons to menace colonies and outmaneuver more lumbering warships.`",
+   "english_hash": "f80f2e27442434aa"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:\"Sarija\" Heirloom Coilgun|description|608|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 608,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Sarija\" Heirloom Coilgun",
+   "english": "Secretly stashed away by the High Houses since the collapse of the old empire, this lovingly-maintained coilgun is far more powerful than any of the Successors' modern technology.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Secretly stashed away by the High Houses since the collapse of the old empire, this lovingly-maintained coilgun is far more powerful than any of the Successors' modern technology.\"",
+   "english_hash": "3f30067168747796"
+  }
+ ]
+}

@@ -1,0 +1,155 @@
+# Copyright (c) 2016 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Drak guarding Korath space"
+	invisible
+	non-blocking
+	transition
+	repeat
+	source
+		system "Fasitopfar" "Kasikfar" "Peresedersi"
+	destination "Earth"
+	to offer
+		not "Drak guarding Korath space: active"
+	to complete
+		never
+	npc save
+		government Drak
+		personality heroic vindictive staying frugal forbearing
+		system Fasitopfar
+		ship "Archon" "Kasiliri's Folly"
+	npc save
+		government Drak
+		personality heroic vindictive staying frugal forbearing
+		system Kasikfar
+		ship "Archon B" "Sword of Eden"
+	npc save
+		government Drak
+		personality heroic vindictive staying frugal forbearing
+		system Peresedersi
+		ship "Archon C" "Snows of Far Door Nai"
+
+mission "Drak guarding Sayaiban"
+	invisible
+	non-blocking
+	transition
+	repeat
+	source
+		system "Sayaiban"
+	destination "Earth"
+	to offer
+		not "Drak guarding Sayaiban: active"
+	to complete
+		never
+	npc save
+		government Drak
+		personality heroic vindictive staying frugal forbearing
+		system Sayaiban
+		ship "Archon" "Watchful Gravetender"
+	
+mission "Conversation on Sayaiban"
+	invisible
+	entering
+	source
+		system "Sayaiban"
+	destination "Earth"
+	on offer
+		log "Factions" "Archons" `Gli Archon considerano loro compito imporre la pace e impedire l'estinzione. Se non riescono a impedire a una specie di estinguersi da sola, cercano comunque di conservare qualcosa di ciò che quella specie ha creato, come memoriale.`
+			`Sono capaci di comunicare telepaticamente.`
+		conversation
+			`Una voce dice: "Questo sistema è off limits. Dovresti andartene."`
+			`	Dopo un secondo capisci che la voce non veniva dalle tue apparecchiature di comunicazione. Anzi, ora che ci pensi, non sei sicuro che fosse una voce udibile o solo qualcosa nella tua testa.`
+			choice
+				`	(Ignoralo.)`
+				`	"Perché dovrei andarmene?"`
+					goto why
+				`	"Non puoi dirmi che cosa fare."`
+					goto why
+			`	"Dovresti andartene." Il pensiero si ripete, insistente. O stai impazzendo, o una creatura sta comunicando con te telepaticamente.`
+			choice
+				`	"Perché dovrei andarmene?"`
+				`	"Non puoi dirmi che cosa fare."`
+			label why
+			`	Ti sembra che una creatura immensa e paziente abbia appena emesso un sospiro enorme. "Umano, faresti bene a non ignorare l'avvertimento di un Archon. Sono qui per avvertire chi rischia di essere danneggiato dall'intelligenza di sciame che infesta questo sistema. Se resti qui a lungo, la tua nave verrà digerita dallo sciame."`
+			`	Ricordi che "Archon" è il nome delle navi Drak.`
+			choice
+				`	"Che cosa vuoi dire con 'digerita'?"`
+				`	"Che cosa si intende per 'intelligenza di sciame'?"`
+					goto swarm
+			`	"Voglio dire che la tua nave sarà smontata pezzo per pezzo." Mentre la voce lo dice, noti che i tuoi scudi registrano piccoli picchi di energia, come se fossero colpiti da armi invisibili.`
+			`	"Che cos'è questo sciame?", chiedi.`
+			label swarm
+			`	"Robot in miniatura che si autoriproducono", risponde la voce. "Un'arma creata dai Korath, l'ultima delle loro grandi abominazioni. Se vuoi dare la tua nave in pasto allo sciame, non ti fermerò, ma di materia prima ne hanno già abbastanza senza il tuo aiuto." Il tono della voce, per quanto si possa dire che una voce immaginaria e disincarnata abbia un tono, è sarcastico.`
+			choice
+				`	"Va bene, va bene, me ne vado."`
+					goto end
+				`	"Aspetta, ho altre domande."`
+			`	"Sì?"`
+			`	Chiedi: "Perché non distruggi lo sciame, se è così pericoloso?"`
+			`	La voce dice: "Perché se i Korath riusciranno a estinguersi, questa intelligenza sarà la loro ultima e più grande creazione sopravvissuta, e la conserveremo come memoriale vivente. Ti prego di non interferire qui." Quando la voce pronuncia l'espressione "estinguersi", alle parole si accompagna un'emozione che non sai come chiamare.`
+			`	Inoltre lo spazio vuoto attorno alla tua nave comincia a illuminarsi di piccole scintille, come uno sciame di lucciole arrabbiate.`
+			choice
+				`	"Beh, è un onore averti incontrato. Ora me ne vado."`
+					goto end
+				`	"Perché ti importa se si estinguono?"`
+			`	"La nostra direttiva è imporre la pace e impedire l'estinzione", dice la voce. Come prima, le parole "impedire l'estinzione" riecheggiano forti nella tua mente come sottolineate da un'emozione senza nome. "Ora basta domande", dice la voce.`
+			label end
+			`	La presenza nella tua testa sembra ritirarsi, e resti a parlare con l'aria.`
+				decline
+
+mission "Drak guarding Void Sprites"
+	invisible
+	non-blocking
+	entering
+	repeat
+	source
+		system "Nenia"
+	destination "Earth"
+	to offer
+		not "Drak guarding Void Sprites: active"
+	to complete
+		never
+	npc save
+		government Drak
+		personality heroic vindictive staying frugal
+		system Nenia
+		ship "Archon (Cloaked)" "Sleeping Dragon"
+
+mission "Drak guarding Incipias space"
+	invisible
+	non-blocking
+	transition
+	repeat
+	source
+		near "Il'le" 10
+	destination "Earth"
+	to offer
+		not "Drak guarding Incipias space: active"
+	to complete
+		never
+	npc save
+		government "Drak (Incipias)"
+		personality forbearing frugal heroic vindictive
+		system "Il'le"
+		ship "Archon (Hyperdrive Cloaked)" "Guardian of Spring"
+
+# Mission for those who had a savefile prior to 0.9.15 with the old Archon missions
+mission "Archon Personality Compatibility Patch"
+	invisible
+	non-blocking
+	landing
+	on offer
+		fail "Drak guarding Korath space"
+		fail "Drak guarding Sayaiban"
+		fail "Drak guarding Void Sprites"
+		fail

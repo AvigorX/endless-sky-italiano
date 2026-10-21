@@ -1,0 +1,176 @@
+{
+ "block": {
+  "path": "data/successors/predecessors.txt",
+  "line_from": 201,
+  "line_to": 400,
+  "units": 15
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Hasur, Vowsworn|description|208|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 208,
+   "kind": "DESCRIPTION",
+   "context": "ship:Hasur, Vowsworn",
+   "english": "One would think that, immured deep within those hostile, rotting abscesses of the stars, the constructs of the foolish Myiara would prove themselves inadequate; that their artificial minds would splinter and falter and crumble like their so-false flesh, festering on the bone. And yet they remain, eternally dying but never dead, consumed by programmed rage and unknowable perception. The constructs will keep their promises, interloper:",
+   "italian": "Si penserebbe che, murati in fondo a quegli ascessi ostili e putrescenti delle stelle, i costrutti della sciocca Myiara si rivelerebbero inadeguati; che le loro menti artificiali si scheggerebbero, vacillerebbero e crollerebbero come la loro carne così falsa, marcendo sull'osso. E invece restano, eternamente morenti ma mai morti, consumati da una rabbia programmata e da una percezione inconoscibile. I costrutti manterranno le loro promesse, intruso:",
+   "ratio": 1.037
+  },
+  {
+   "idx": 2,
+   "id": "ship:Hasur, Vowsworn|description|209|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 209,
+   "kind": "DESCRIPTION",
+   "context": "ship:Hasur, Vowsworn",
+   "english": "\tThey'll kill you. They'll do it quick.",
+   "italian": "\tTi uccideranno. Lo faranno in fretta.",
+   "ratio": 0.974
+  },
+  {
+   "idx": 3,
+   "id": "ship:Queru, Luminous Gaze|plural|220|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 220,
+   "kind": "VALUE",
+   "context": "ship:Queru, Luminous Gaze",
+   "english": "Querun, Luminous Gazes",
+   "italian": "Querun, Luminous Gazes",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Queru, Luminous Gaze|\"Torji,\" Lethal Sight|285|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 285,
+   "kind": "TEXT",
+   "context": "ship:Queru, Luminous Gaze",
+   "english": "\"Torji,\" Lethal Sight",
+   "italian": "\"Torji,\" Lethal Sight",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Queru, Luminous Gaze|Hyperdrive|287|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 287,
+   "kind": "TEXT",
+   "context": "ship:Queru, Luminous Gaze",
+   "english": "Hyperdrive",
+   "italian": "Hyperdrive",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Queru, Luminous Gaze|\"Jiita\" Heirloom Shielding|288|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 288,
+   "kind": "TEXT",
+   "context": "ship:Queru, Luminous Gaze",
+   "english": "\"Jiita\" Heirloom Shielding",
+   "italian": "\"Jiita\" Heirloom Shielding",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Queru, Luminous Gaze|Visions of Rime|289|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 289,
+   "kind": "TEXT",
+   "context": "ship:Queru, Luminous Gaze",
+   "english": "Visions of Rime",
+   "italian": "Visions of Rime",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "ship:Queru, Luminous Gaze|Successor Cooling|290|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 290,
+   "kind": "TEXT",
+   "context": "ship:Queru, Luminous Gaze",
+   "english": "Successor Cooling",
+   "italian": "Successor Cooling",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "ship:Queru, Luminous Gaze|\"Ija\" Heirloom Reactor|292|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 292,
+   "kind": "TEXT",
+   "context": "ship:Queru, Luminous Gaze",
+   "english": "\"Ija\" Heirloom Reactor",
+   "italian": "\"Ija\" Heirloom Reactor",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "ship:Queru, Luminous Gaze|Heirloom Power Reserve|293|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 293,
+   "kind": "TEXT",
+   "context": "ship:Queru, Luminous Gaze",
+   "english": "Heirloom Power Reserve",
+   "italian": "Heirloom Power Reserve",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "ship:Queru, Luminous Gaze|Multimodal Armor: Regen|295|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 295,
+   "kind": "TEXT",
+   "context": "ship:Queru, Luminous Gaze",
+   "english": "Multimodal Armor: Regen",
+   "italian": "Multimodal Armor: Regen",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "ship:Queru, Luminous Gaze|description|307|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 307,
+   "kind": "DESCRIPTION",
+   "context": "ship:Queru, Luminous Gaze",
+   "english": "Queru came last, and was the most inspired of the three, eviscerating at a distance before it could even be seen. For their part, Resja hated it - but by then, Resja's fate had long been sealed.",
+   "italian": "Queru venne per ultimo, ed era il più ispirato dei tre: sventrava a distanza prima ancora di poter essere visto. Resja, dal canto loro, lo odiavano, ma ormai il destino di Resja era segnato da tempo.",
+   "ratio": 1.026
+  },
+  {
+   "idx": 13,
+   "id": "outfit:\"Iasa,\" Lethal Word|description|348|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 348,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Iasa,\" Lethal Word",
+   "english": "Resja's chosen implement of death, Iasa was a drone ship's perfect coilgun, a fearsome, hungry weapon with respect for the shields of neither friend nor foe. It remains remarkably efficient, even after fifteen hundred years of waiting.",
+   "italian": "Resja's chosen implement of death, Iasa was a drone ship's perfect coilgun, a fearsome, hungry weapon with respect for the shields of neither friend nor foe. It remains remarkably efficient, even after fifteen hundred years of waiting.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:\"Kis,\" Lethal Wish|plural|359|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 359,
+   "kind": "VALUE",
+   "context": "outfit:\"Kis,\" Lethal Wish",
+   "english": "\"Kis,\" Lethal Wishes",
+   "italian": "\"Kis,\" Lethal Wishes",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:\"Kis,\" Lethal Wish|description|381|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 381,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Kis,\" Lethal Wish",
+   "english": "Like a cold and ravenous beast, the frightful Kis tears through the defenses of anything that dares stride close enough to its jaws. At long range this weapon loses its high shield penetration but continues to output respectable damage, encouraging enemies to retreat while they still can.",
+   "italian": "Like a cold and ravenous beast, the frightful Kis tears through the defenses of anything that dares stride close enough to its jaws. At long range this weapon loses its high shield penetration but continues to output respectable damage, encouraging enemies to retreat while they still can.",
+   "ratio": 1.0
+  }
+ ]
+}

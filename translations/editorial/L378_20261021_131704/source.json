@@ -1,0 +1,63 @@
+{
+ "block": {
+  "path": "data/iije/iije.txt",
+  "line_from": 17,
+  "line_to": 154,
+  "units": 4
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Jje|plural|17|0",
+   "path": "data/iije/iije.txt",
+   "line": 17,
+   "kind": "VALUE",
+   "context": "ship:Jje",
+   "english": "Jje",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tplural \"Jje\"",
+   "english_hash": "46939bb52c519956"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Jje|description|66|0",
+   "path": "data/iije/iije.txt",
+   "line": 66,
+   "kind": "DESCRIPTION",
+   "context": "ship:Jje",
+   "english": "This is an adolescent form of the Iije, having recently consumed quantities of stellar dust, matter, and energy. They are attracted to light in the dim space of the Umbral Reach, and are occasionally seen flying in groups.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This is an adolescent form of the Iije, having recently consumed quantities of stellar dust, matter, and energy. They are attracted to light in the dim space of the Umbral Reach, and are occasionally seen flying in groups.\"",
+   "english_hash": "3a6ee53377ac822b"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Ayym|plural|69|0",
+   "path": "data/iije/iije.txt",
+   "line": 69,
+   "kind": "VALUE",
+   "context": "ship:Ayym",
+   "english": "Ayym",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tplural \"Ayym\"",
+   "english_hash": "cf95d6dc18aa30a2"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Ayym|description|154|0",
+   "path": "data/iije/iije.txt",
+   "line": 154,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ayym",
+   "english": "This is an adult form of the Iije, having grown enormous from consuming stellar matter over hundreds of thousands of years. They can be seen carrying the smaller Jje around the Umbral Reach, but the exact purpose of this activity is unknown.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This is an adult form of the Iije, having grown enormous from consuming stellar matter over hundreds of thousands of years. They can be seen carrying the smaller Jje around the Umbral Reach, but the exact purpose of this activity is unknown.\"",
+   "english_hash": "5ce67247410e749f"
+  }
+ ]
+}

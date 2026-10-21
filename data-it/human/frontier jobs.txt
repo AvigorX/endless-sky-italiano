@@ -1,0 +1,335 @@
+# Copyright (c) 2017 by Michael Zahniser
+# Copyright (c) 2018 by Nate Graham
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Frontier delivery [0]"
+	name "Consegna di frontiera per <planet>"
+	job
+	repeat
+	description `Consegna <cargo> al mondo di frontiera <destination>. I sistemi di frontiera hanno un alto tasso di pirateria, quindi preparati a difenderti. Il pagamento è di <payment>.`
+	cargo random 5 2 .1
+	to offer
+		random < 30
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		not attributes "frontier"
+	destination
+		not government "Pirate"
+		distance 2 10
+		attributes "frontier"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+		system destination
+		fleet "Small Northern Pirates"
+	npc
+		government "Pirate"
+		personality nemesis staying harvests plunders
+		system destination
+		fleet "Small Northern Pirates" 2
+	on complete
+		payment 4000 180
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Frontier delivery [1]"
+	name "Consegna di frontiera per <planet>"
+	job
+	repeat
+	description `Consegna <cargo> al mondo di frontiera <destination>. I sistemi di frontiera hanno un alto tasso di pirateria, quindi preparati a difenderti. Il pagamento è di <payment>.`
+	cargo random 25 2 .05
+	to offer
+		random < 25
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		not attributes "frontier"
+	destination
+		not government "Pirate"
+		distance 2 10
+		attributes "frontier"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+		system destination
+		fleet "Small Northern Pirates" 2
+	npc
+		government "Pirate"
+		personality nemesis staying harvests plunders
+		system destination
+		fleet "Small Northern Pirates" 3
+	on complete
+		payment 4000 180
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Frontier delivery [2]"
+	name "Consegna di frontiera per <planet>"
+	job
+	repeat
+	description `Consegna <cargo> al mondo di frontiera <destination>. I sistemi di frontiera hanno un alto tasso di pirateria, quindi preparati a difenderti. Il pagamento è di <payment>.`
+	cargo random 40 2 .02
+	to offer
+		random < 20
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		not attributes "frontier"
+	destination
+		not government "Pirate"
+		distance 2 10
+		attributes "frontier"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+		system destination
+		fleet "Large Northern Pirates"
+	npc
+		government "Pirate"
+		personality nemesis staying harvests plunders
+		system destination
+		fleet "Small Northern Pirates"
+		fleet "Large Northern Pirates"
+	on complete
+		payment 4000 180
+		dialog phrase "generic cargo delivery payment"
+
+
+mission "Frontier Emigration [0]"
+	name "Emigranti per <planet>"
+	job
+	repeat
+	description "Questi <bunks> passeggeri hanno finalmente messo da parte abbastanza denaro per iniziare una nuova vita su <destination>, e sono disposti a pagarti <payment> per trasportarli."
+	passengers 2 10 .9
+	to offer
+		random < 30
+	source
+		not government "Pirate"
+		attributes "frontier"
+		not planet "Shangri-La"
+	destination
+		distance 2 10
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		not attributes "frontier"
+	on complete
+		payment 3000 140
+		dialog phrase "generic passenger dropoff payment"
+
+
+mission "Frontier Emigration [1]"
+	name "Emigranti per <planet>"
+	job
+	repeat
+	description "Questi <bunks> passeggeri hanno finalmente messo da parte abbastanza denaro per iniziare una nuova vita su <destination>, e sono disposti a pagarti <payment> per trasportarli."
+	passengers 4 10 .8
+	to offer
+		random < 25
+	source
+		not government "Pirate"
+		attributes "frontier"
+		not planet "Shangri-La"
+	destination
+		distance 2 10
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		not attributes "frontier"
+	on complete
+		payment 3000 140
+		dialog phrase "generic passenger dropoff payment"
+
+
+mission "Frontier Emigration [2]"
+	name "Emigranti per <planet>"
+	job
+	repeat
+	description "Questi <bunks> passeggeri hanno finalmente messo da parte abbastanza denaro per iniziare una nuova vita su <destination>, e sono disposti a pagarti <payment> per trasportarli."
+	passengers 6 10 .7
+	to offer
+		random < 20
+	source
+		not government "Pirate"
+		attributes "frontier"
+		not planet "Shangri-La"
+	destination
+		distance 2 10
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		not attributes "frontier"
+	on complete
+		payment 3000 140
+		dialog phrase "generic passenger dropoff payment"
+
+
+mission "Disaster Relief"
+	name "Soccorso per calamità per <planet>"
+	job
+	repeat
+	description "Una catastrofe ha colpito una colonia sul mondo di frontiera <destination>. Consegna <cargo> sul pianeta entro <date> per <payment>."
+	cargo "disaster relief supplies" 25 2 .05
+	deadline
+	to offer
+		random < 10
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		not attributes "frontier"
+	destination
+		not government "Pirate"
+		distance 2 10
+		attributes "frontier"
+		not planet "Shangri-La"
+	on complete
+		payment 10000 160
+		dialog "Scarichi il tuo carico di <commodity> e ritiri il pagamento di <payment>. Un gruppo di cittadini di <planet> ti ringrazia e ti saluta."
+
+
+mission "Instruct Novice Pilot"
+	job
+	repeat
+	description "Un pilota alle prime armi cerca istruzione da un capitano esperto e chiede di essere scortato fino a <stopovers>. Dopo di che torna su <origin> e riceverai un pagamento di <payment>."
+	to offer
+		random < 5
+		"combat rating" > 100
+	source
+		government "Republic" "Free Worlds" "Neutral" "Independent"
+		attributes "frontier" "dirt belt" "rim" "north" "south" "mining" "farming"
+	stopover
+		not government "Pirate"
+		attributes "frontier"
+		attributes "outfitter"
+		attributes "spaceport"
+		distance 3 7
+	on stopover
+		dialog "Dopo un atterraggio morbido, guidi il tuo allievo attraverso una parte particolarmente malfamata dello spazioporto, piena di rifiuti, vagabondi senza casa e vicoli poco illuminati. Gli spieghi i trucchi per evitare i borseggiatori, per tenersi fuori dalle risse nei bar e per riconoscere un affare losco nell'emporio di un fornitore. Dopo qualche ora in una delle zone più squallide della galassia, siete entrambi impazienti di tornare su <origin>."
+	on visit
+		dialog "Sei tornato su <planet>, ma hai dimenticato di scortare la <npc> fino a <stopovers>! Meglio andarci prima."
+	on complete
+		payment 75000
+		dialog "Il tuo allievo ti ringrazia per l'istruzione e per la visita guidata ad alcune delle zone più dure della galassia. Ricevi il pagamento di <payment>."
+	npc
+		government "Pirate"
+		personality nemesis waiting
+		fleet "Small Northern Pirates"
+		system
+			distance 3 7
+	npc accompany save
+		government "Merchant"
+		personality escort heroic vindictive
+		fleet
+			names "civilian"
+			variant
+				"Sparrow"
+			variant
+				"Star Barge"
+			variant
+				"Shuttle"
+			variant
+				"Heavy Shuttle"
+
+
+mission "Small Pirate gambling"
+	invisible
+	minor
+	to offer
+		random < 3
+		"reputation: Pirate" < 0
+		"combat rating" < 200
+		credits > 14357
+	source
+		attributes "dirt belt" "south" "rim" "pirate" "frontier"
+	deadline 1
+	on offer
+		conversation
+			`Stai bevendo qualcosa in un bar dello spazioporto in penombra quando noti un gruppo di giovani in tute di pelle cremisi che giocano d'azzardo in un angolo buio. Il barista li tiene d'occhio con diffidenza. Uno di loro alza il bicchiere e ti fa cenno di avvicinarti, invitandoti a unirti alla partita.`
+			choice
+				`	(Unisciti alla loro partita.)`
+					goto gamble
+				`	(Ignorali e vattene in fretta.)`
+					defer
+
+			label gamble
+			`	Ti avvicini al tavolo. A guardarli bene, è molto probabile che siano pirati: nessuno di loro sembra avere più di 19 anni, e tutti sfoggiano tatuaggi impressionanti e armi corte dall'aria pericolosa. Dopo qualche giro di carte diventa evidentissimo che stanno barando, e che si sforzano poco di nascondertelo.`
+			branch "good luck" "bad luck"
+				random < 30
+
+			label "good luck"
+			action
+				payment 23974
+			`	Per fortuna riesci comunque a essere più furbo di loro e a vincere la partita, ritrovandoti con una pila considerevole di chip di credito. Non sembrano contenti, ma non ti disturbano mentre te ne vai in fretta. Ringrazi la tua buona stella: sei più ricco di quasi 25.000 crediti e ancora intero dopo un incontro faccia a faccia con dei pirati.`
+				accept
+
+			label "bad luck"
+			`	Cominci a perdere soldi a vista, con più di 10.000 crediti di perdite.`
+			choice
+				`	(Accusali di barare.)`
+					goto call
+				`	(Non dire nulla e continua a giocare.)`
+					goto lose
+
+			label lose
+			action
+				payment -14357
+			`	Stringi i denti e perdi mano dopo mano finché la partita non finisce. I pirati si godono le loro "vincite" di quasi 15.000 crediti mentre te ne vai.`
+				decline
+
+			label call
+			`	Li affronti sul loro palese imbroglio, e il più cattivo del gruppo ti ringhia: "Qui stiamo solo giocando, capito? Meglio che chiudi quella boccaccia, se sai cosa ti conviene! Possiamo renderla brutta molto in fretta."`
+			`	I teppisti ti fissano minacciosi e cominciano ad allungare le mani verso le armi.`
+			choice
+				`	(Spara per primo!)`
+					goto shoot
+				`	(Prendi la posta e scappa!)`
+					goto run
+				`	(Lascia che mi spennino.)`
+					goto lose
+
+			label shoot
+			branch "shoot and die" "shoot and run"
+				random < 30
+
+			label "shoot and die"
+			`	Purtroppo sono più veloci di te. Il tuo corpo straziato cade a terra con un tonfo sordo.`
+				die
+
+			label "shoot and run"
+			action
+				payment 23974
+			`	Grato di non lasciare mai la tua nave disarmata, la mano ti scatta verso la pistola alla coscia. Estrai l'arma e spari al pirata che ti ha appena minacciato. Il proiettile gli apre un buco in mezzo al petto e lui crolla a terra. I compagni, scioccati, brancolano in cerca delle armi, ma li hai colti di sorpresa e ne abbatti rapidamente un altro prima di decidere che è ora di fuggire. Sulla via d'uscita arraffi un po' dei crediti sul tavolo!`
+			`	Corri verso la baia degli hangar e decolli in fretta. Conti rapidamente il bottino e vedi che sei più ricco di quasi 25.000 crediti! A metà strada fuori dall'atmosfera, i due pirati rimasti ti urlano insulti via radio dalle loro navi, che ti inseguono da vicino.`
+				launch
+
+			label run
+			branch "grab and die" "grab and run"
+				random < 30
+
+			label "grab and die"
+			`	Arraffi la posta e ti lanci verso l'uscita! I teppisti ululano e tirano fuori le armi. Schivando i colpi corri verso la porta e arrivi a metà strada prima che uno dei proiettili trovi il segno. Cadi a terra dal dolore e guardi una pozza del tuo stesso sangue allargarsi attorno a te. Provi a rialzarti, ma il pirata dall'aria più dura ti stende con un calcio e ti finisce con un altro colpo.`
+				die
+
+			label "grab and run"
+			action
+				payment 23974
+			`	Arraffi la posta e ti lanci verso l'uscita! I teppisti ululano e tirano fuori le armi. Corri verso la porta a zigzag mentre i proiettili ti passano accanto e staccano schegge dai muri. Ti volti appena in tempo per vedere il barista ridurre uno dei teppisti a carne trita con un fucile a canne mozze enorme. Gli altri tre ti inseguono.`
+			`	Corri verso la baia degli hangar e decolli in fretta. Conti rapidamente il bottino e vedi che sei più ricco di quasi 25.000 crediti! A metà strada fuori dall'atmosfera ricevi un messaggio delle autorità del porto che ti avverte: due dei pirati sono stati fermati, ma gli altri due hanno raggiunto le loro navi e ti inseguono da vicino.`
+				launch
+
+	to complete
+		never
+
+	npc
+		personality launching heroic plunders vindictive nemesis
+		government "Pirate"
+		fleet
+			names "pirate"
+			variant
+				"Sparrow" 2
+			variant
+				"Wasp" 2
+			variant
+				"Wasp"
+				"Sparrow"

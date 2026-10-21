@@ -1,0 +1,176 @@
+{
+ "block": {
+  "path": "data/korath/korath outfits.txt",
+  "line_from": 208,
+  "line_to": 318,
+  "units": 15
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Fuel Processor|description|208|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 208,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Fuel Processor",
+   "english": "The Fuel Processor was developed during the latter half of the Korath Civil War, when Korath factions attempted to provide for their war effort by raiding the Hai for supplies. Their ships would often end up stranded after they had run out of fuel and were unable to escape from the Hai military fleets, prompting the creation of this hybrid fuel storage and ramscoop device. These outfits are now the main source of fuel for the remaining Korath in the galaxy.",
+   "italian": "The Fuel Processor was developed during the latter half of the Korath Civil War, when Korath factions attempted to provide for their war effort by raiding the Hai for supplies. Their ships would often end up stranded after they had run out of fuel and were unable to escape from the Hai military fleets, prompting the creation of this hybrid fuel storage and ramscoop device. These outfits are now the main source of fuel for the remaining Korath in the galaxy.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Command Center|description|223|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 223,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Command Center",
+   "english": "In response to occasional raids by the robotic war machines left behind after their recent conflict, the Kor Efret have developed this minimal, spartan Command Center that can be installed in a captured robotic ship to allow a pilot to override the AI and interface with the ship's controls. The Command Center only provides a single bunk for the captain, so more bunks may be necessary if the ship has turrets or other systems that require crew.",
+   "italian": "In response to occasional raids by the robotic war machines left behind after their recent conflict, the Kor Efret have developed this minimal, spartan Command Center that can be installed in a captured robotic ship to allow a pilot to override the AI and interface with the ship's controls. The Command Center only provides a single bunk for the captain, so more bunks may be necessary if the ship has turrets or other systems that require crew.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Reasoning Node|description|233|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 233,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reasoning Node",
+   "english": "This is some sort of advanced, miniature computer combined with various sensor inputs and a hyperspace communication relay. Presumably, in some way it controls the Mereti automata or allows them to more easily coordinate their actions with each other.",
+   "italian": "This is some sort of advanced, miniature computer combined with various sensor inputs and a hyperspace communication relay. Presumably, in some way it controls the Mereti automata or allows them to more easily coordinate their actions with each other.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Control Transceiver|description|243|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 243,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Control Transceiver",
+   "english": "This is a miniaturized communication device, which can be connected to all the major systems of a Kor Sestor automaton, apparently as a way of controlling them remotely. The communications are encrypted and authenticated in a way that would make it nearly impossible to spoof the control signals.",
+   "italian": "This is a miniaturized communication device, which can be connected to all the major systems of a Kor Sestor automaton, apparently as a way of controlling them remotely. The communications are encrypted and authenticated in a way that would make it nearly impossible to spoof the control signals.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Afterburner (Asteroid Class)|plural|247|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 247,
+   "kind": "VALUE",
+   "context": "outfit:Afterburner (Asteroid Class)",
+   "english": "Afterburners (Asteroid Class)",
+   "italian": "Afterburners (Asteroid Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Afterburner (Asteroid Class)|description|263|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 263,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Afterburner (Asteroid Class)",
+   "english": "The smallest of afterburners is as much Fuel Processor as it is afterburner. It allows Korath small craft operators to squeeze a hyperdrive into otherwise intrasystem ships and dispense with conventional thrusters entirely.",
+   "italian": "The smallest of afterburners is as much Fuel Processor as it is afterburner. It allows Korath small craft operators to squeeze a hyperdrive into otherwise intrasystem ships and dispense with conventional thrusters entirely.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Afterburner (Asteroid Class)|description|264|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 264,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Afterburner (Asteroid Class)",
+   "english": "\tKorath afterburners pump super-heated hyperspace fuel directly into a thruster's plasma stream, resulting in a phenomenal explosion that may nearly melt the thruster.",
+   "italian": "\tKorath afterburners pump super-heated hyperspace fuel directly into a thruster's plasma stream, resulting in a phenomenal explosion that may nearly melt the thruster.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Afterburner (Comet Class)|plural|267|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 267,
+   "kind": "VALUE",
+   "context": "outfit:Afterburner (Comet Class)",
+   "english": "Afterburners (Comet Class)",
+   "italian": "Afterburners (Comet Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Afterburner (Comet Class)|description|281|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 281,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Afterburner (Comet Class)",
+   "english": "Adding these afterburners to an interceptor allows it to reach absurd speeds; however, the heat produced ensures that running them for any substantial period of time will require some serious cooling.",
+   "italian": "Adding these afterburners to an interceptor allows it to reach absurd speeds; however, the heat produced ensures that running them for any substantial period of time will require some serious cooling.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Afterburner (Comet Class)|description|282|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 282,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Afterburner (Comet Class)",
+   "english": "\tKorath afterburners pump super-heated hyperspace fuel directly into a thruster's plasma stream, resulting in a phenomenal explosion that nearly melts the thruster.",
+   "italian": "\tKorath afterburners pump super-heated hyperspace fuel directly into a thruster's plasma stream, resulting in a phenomenal explosion that nearly melts the thruster.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Afterburner (Lunar Class)|plural|285|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 285,
+   "kind": "VALUE",
+   "context": "outfit:Afterburner (Lunar Class)",
+   "english": "Afterburners (Lunar Class)",
+   "italian": "Afterburners (Lunar Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Afterburner (Lunar Class)|description|299|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 299,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Afterburner (Lunar Class)",
+   "english": "Although these afterburners produce an incredible amount of thrust for their fuel usage, the prospect of installing one brings to mind many safety concerns.",
+   "italian": "Although these afterburners produce an incredible amount of thrust for their fuel usage, the prospect of installing one brings to mind many safety concerns.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Afterburner (Lunar Class)|description|300|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 300,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Afterburner (Lunar Class)",
+   "english": "\tKorath afterburners pump super-heated hyperspace fuel directly into a thruster's plasma stream, resulting in a phenomenal explosion that nearly melts the thruster.",
+   "italian": "\tKorath afterburners pump super-heated hyperspace fuel directly into a thruster's plasma stream, resulting in a phenomenal explosion that nearly melts the thruster.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Afterburner (Planetary Class)|plural|303|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 303,
+   "kind": "VALUE",
+   "context": "outfit:Afterburner (Planetary Class)",
+   "english": "Afterburners (Planetary Class)",
+   "italian": "Afterburners (Planetary Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Afterburner (Planetary Class)|description|318|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 318,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Afterburner (Planetary Class)",
+   "english": "These enormous afterburners have dedicated reaction chambers with cooling vents to keep the fuel-plasma explosion from destroying the thruster.",
+   "italian": "These enormous afterburners have dedicated reaction chambers with cooling vents to keep the fuel-plasma explosion from destroying the thruster.",
+   "ratio": 1.0
+  }
+ ]
+}

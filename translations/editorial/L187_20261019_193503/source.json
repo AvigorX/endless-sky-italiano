@@ -1,0 +1,102 @@
+{
+ "block": {
+  "path": "data/gegno/gegno outfits.txt",
+  "line_from": 459,
+  "line_to": 728,
+  "units": 7
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Irate Cannon|description|459|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 459,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Irate Cannon",
+   "english": "Irate Cannons are a rudimentary cannon technology that fire explosive projectiles made out of condensed scrap metal, making them effective against armor. They fire decently fast, but one cannon alone is barely enough to output any sort of meaningful damage, which is why they are often found clustered together in numbers.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Irate Cannons are a rudimentary cannon technology that fire explosive projectiles made out of condensed scrap metal, making them effective against armor. They fire decently fast, but one cannon alone is barely enough to output any sort of meaningful damage, which is why they are often found clustered together in numbers.`",
+   "english_hash": "68f9d3517c5c903d"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Irate Cannon Turret|description|494|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 494,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Irate Cannon Turret",
+   "english": "While the Irate Cannon Turret originally saw little use due to Vi ships having enough space to field larger caliber weapons in their turret mounts, this turret has become more popular as the Vi produce smaller ships with more limited weapon space. To offset the lack of raw firepower from a single cannon, the turret boasts two mounted on a rotating platform, doubling its rate of fire in a single mount.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `While the Irate Cannon Turret originally saw little use due to Vi ships having enough space to field larger caliber weapons in their turret mounts, this turret has become more popular as the Vi produce smaller ships with more limited weapon space. To offset the lack of raw firepower from a single cannon, the turret boasts two mounted on a rotating platform, doubling its rate of fire in a single mount.`",
+   "english_hash": "97cce335f4a4858f"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Choleric Cannon|description|543|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 543,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Choleric Cannon",
+   "english": "A higher caliber than the Irate Cannon, Choleric Cannons fire larger, slower rounds that do a noticeable chunk of damage to a ship's hull. However, due to the nature of the cannon, it is, along with other Gegno weaponry, very ineffective against any sort of shielding.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `A higher caliber than the Irate Cannon, Choleric Cannons fire larger, slower rounds that do a noticeable chunk of damage to a ship's hull. However, due to the nature of the cannon, it is, along with other Gegno weaponry, very ineffective against any sort of shielding.`",
+   "english_hash": "10763acab20de135"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Choleric Cannon Turret|description|579|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 579,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Choleric Cannon Turret",
+   "english": "Mounted on a turret, a Choleric Cannon is much more devastating without the need to keep a target in front of the ship to land shots. It can consistently put out damage to a target's hull, and with multiple turrets, any shieldless vessel is forced to retreat after a decent enough bombardment lest they be destroyed.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Mounted on a turret, a Choleric Cannon is much more devastating without the need to keep a target in front of the ship to land shots. It can consistently put out damage to a target's hull, and with multiple turrets, any shieldless vessel is forced to retreat after a decent enough bombardment lest they be destroyed.`",
+   "english_hash": "861d8e3738af4ee7"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Ballistic Cannon|description|631|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 631,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ballistic Cannon",
+   "english": "The Gegno Vi Ballistic Cannon tops its sister cannons as the highest caliber weapon that the Gegno field. Each cannon round can inflict tremendous damage to a target's exposed hull. Due to the size and power of these cannons, their shells have a slow reload time and travel speed. As such, they can often be dodged by faster or smaller craft, but if able to be equipped in numbers, they can create a deadly wall of fire.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Gegno Vi Ballistic Cannon tops its sister cannons as the highest caliber weapon that the Gegno field. Each cannon round can inflict tremendous damage to a target's exposed hull. Due to the size and power of these cannons, their shells have a slow reload time and travel speed. As such, they can often be dodged by faster or smaller craft, but if able to be equipped in numbers, they can create a deadly wall of fire.`",
+   "english_hash": "44287ca44c056633"
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Ballistic Cannon Turret|description|669|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 669,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ballistic Cannon Turret",
+   "english": "As the largest caliber cannon in the Gegno Vi's arsenal, Ballistic Cannons require a lot of work to be fitted on even the largest of ships. A huge, self-sustaining base with its own vent ports is necessary for one of these cannons to even be fitted on a turret mount, provided there are crew to operate it. Combining destructive force with adjustable aim, Ballistic Cannon Turrets are the deadliest weapons of Vi warships.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `As the largest caliber cannon in the Gegno Vi's arsenal, Ballistic Cannons require a lot of work to be fitted on even the largest of ships. A huge, self-sustaining base with its own vent ports is necessary for one of these cannons to even be fitted on a turret mount, provided there are crew to operate it. Combining destructive force with adjustable aim, Ballistic Cannon Turrets are the deadliest weapons of Vi warships.`",
+   "english_hash": "f04b162262498eea"
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Astuit Battery|description|728|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 728,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Astuit Battery",
+   "english": "The Gegno Scin are the first Gegno to advance plasma technology to the point where it can be used in combat, although the energy requirement of such technology is still significant. Astuit Batteries work very similar to human Energy Blasters, firing small condensed plasma projectiles at high rates of fire. With four Astuit Blasters on a turreted mount, it produces a constant stream of damage which adds up over time, despite the minor damage that each individual projectile creates.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Gegno Scin are the first Gegno to advance plasma technology to the point where it can be used in combat, although the energy requirement of such technology is still significant. Astuit Batteries work very similar to human Energy Blasters, firing small condensed plasma projectiles at high rates of fire. With four Astuit Blasters on a turreted mount, it produces a constant stream of damage which adds up over time, despite the minor damage that each individual projectile creates.\"",
+   "english_hash": "e1e0d6f53564e9aa"
+  }
+ ]
+}

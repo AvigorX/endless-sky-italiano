@@ -1,0 +1,308 @@
+{
+ "block": {
+  "path": "data/human/syndicate jobs.txt",
+  "line_from": 435,
+  "line_to": 678,
+  "units": 27
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Syndicate Prisoner Transport [3]|name|435|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 435,
+   "kind": "VALUE",
+   "context": "mission:Syndicate Prisoner Transport [3]",
+   "english": "Transport detained protesters",
+   "italian": "Transport detained protesters",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "mission:Syndicate Prisoner Transport [3]|description|438|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 438,
+   "kind": "DESCRIPTION",
+   "context": "mission:Syndicate Prisoner Transport [3]",
+   "english": "Transport a group of <bunks> detained protesters to <planet> where they will await trial for inciting a riot. They must be held in suitable facilities made for the transfer of criminals. Payment is <payment>.",
+   "italian": "Trasporta un gruppo di <bunks> manifestanti detenuti su <planet>, dove attenderanno il processo per istigazione alla rivolta. Devono essere tenuti in strutture adatte al trasferimento dei criminali. Il pagamento è <payment>.",
+   "ratio": 1.077
+  },
+  {
+   "idx": 3,
+   "id": "mission:Syndicate Prisoner Transport [3]|dialog|456|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 456,
+   "kind": "DIALOG",
+   "context": "mission:Syndicate Prisoner Transport [3]",
+   "english": "The prisoners are still wearing their civilian clothes, and you can see bruises from when they were arrested as the guards lead them inside. You receive your payment of <payment>.",
+   "italian": "I prigionieri indossano ancora i loro abiti civili, e mentre le guardie li portano dentro puoi vedere i lividi riportati al momento dell'arresto. Ricevi il pagamento di <payment>.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "mission:Syndicate Prisoner Transport [4]|name|460|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 460,
+   "kind": "VALUE",
+   "context": "mission:Syndicate Prisoner Transport [4]",
+   "english": "Transport detained labor organizers",
+   "italian": "Transport detained labor organizers",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "mission:Syndicate Prisoner Transport [4]|description|463|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 463,
+   "kind": "DESCRIPTION",
+   "context": "mission:Syndicate Prisoner Transport [4]",
+   "english": "Transport a group of <bunks> detained labor organizers to <planet> for \"processing\" as suspected terrorists. They must be held in suitable facilities made for the transfer of criminals. Payment is <payment>.",
+   "italian": "Trasporta un gruppo di <bunks> sindacalisti detenuti su <planet> per il \"trattamento\" previsto per i sospetti terroristi. Devono essere tenuti in strutture adatte al trasferimento dei criminali. Il pagamento è <payment>.",
+   "ratio": 1.063
+  },
+  {
+   "idx": 6,
+   "id": "mission:Syndicate Prisoner Transport [4]|dialog|481|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 481,
+   "kind": "DIALOG",
+   "context": "mission:Syndicate Prisoner Transport [4]",
+   "english": "The union organizers are defiant as the guards drag them inside, and one of the organizers yells about \"class traitors.\" You receive your payment of <payment>.",
+   "italian": "I sindacalisti sono sprezzanti mentre le guardie li trascinano dentro, e uno di loro urla contro i \"traditori di classe\". Ricevi il pagamento di <payment>.",
+   "ratio": 0.975
+  },
+  {
+   "idx": 7,
+   "id": "mission:Return Syndicate Prisoners [0]|name|485|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 485,
+   "kind": "VALUE",
+   "context": "mission:Return Syndicate Prisoners [0]",
+   "english": "Return executive back from house arrest",
+   "italian": "Riporta il dirigente dagli arresti domiciliari",
+   "ratio": 1.179
+  },
+  {
+   "idx": 8,
+   "id": "mission:Return Syndicate Prisoners [0]|description|488|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 488,
+   "kind": "DESCRIPTION",
+   "context": "mission:Return Syndicate Prisoners [0]",
+   "english": "Transport an acquitted white-collar criminal with his assistants, lawyers, and collection of <cargo> home to <planet>. He requires a suitably comfortable ship for the journey. Payment is <payment>.",
+   "italian": "Trasporta un criminale dai colletti bianchi prosciolto, con i suoi assistenti, i suoi avvocati e la sua collezione di <cargo>, fino a casa su <planet>. Richiede una nave adeguatamente confortevole per il viaggio. Il pagamento è <payment>.",
+   "ratio": 1.208
+  },
+  {
+   "idx": 9,
+   "id": "mission:Return Syndicate Prisoners [0]|dialog|507|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 507,
+   "kind": "DIALOG",
+   "context": "mission:Return Syndicate Prisoners [0]",
+   "english": "The executive strides toward the express customs entrance with a smug grin. A paperwork-laden lawyer gives you your payment of <payment>.",
+   "italian": "Il dirigente si avvia a grandi passi verso l'ingresso della dogana rapida con un sorriso compiaciuto. Un avvocato carico di scartoffie ti consegna il pagamento di <payment>.",
+   "ratio": 1.263
+  },
+  {
+   "idx": 10,
+   "id": "mission:Return Syndicate Prisoners [1]|name|511|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 511,
+   "kind": "VALUE",
+   "context": "mission:Return Syndicate Prisoners [1]",
+   "english": "Return detained protesters home",
+   "italian": "Return detained protesters home",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "mission:Return Syndicate Prisoners [1]|description|514|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 514,
+   "kind": "DESCRIPTION",
+   "context": "mission:Return Syndicate Prisoners [1]",
+   "english": "Transport a group of <bunks> protesters home to <planet> from their detention on <origin>. Payment is <payment>.",
+   "italian": "Trasporta un gruppo di <bunks> manifestanti a casa su <planet>, dalla loro detenzione su <origin>. Il pagamento è <payment>.",
+   "ratio": 1.107
+  },
+  {
+   "idx": 12,
+   "id": "mission:Return Syndicate Prisoners [1]|dialog|530|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 530,
+   "kind": "DIALOG",
+   "context": "mission:Return Syndicate Prisoners [1]",
+   "english": "The protesters look around the spaceport nervously before disembarking. You receive your payment of <payment>.",
+   "italian": "I manifestanti si guardano intorno nervosi nello spazioporto prima di scendere. Ricevi il pagamento di <payment>.",
+   "ratio": 1.027
+  },
+  {
+   "idx": 13,
+   "id": "mission:Return Syndicate Prisoners [2]|name|534|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 534,
+   "kind": "VALUE",
+   "context": "mission:Return Syndicate Prisoners [2]",
+   "english": "Return detained labor organizers home",
+   "italian": "Return detained labor organizers home",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "mission:Return Syndicate Prisoners [2]|description|537|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 537,
+   "kind": "DESCRIPTION",
+   "context": "mission:Return Syndicate Prisoners [2]",
+   "english": "Transport a group of <bunks> labor organizers home to <planet> from their imprisonment on <origin>. Payment is <payment>.",
+   "italian": "Trasporta un gruppo di <bunks> sindacalisti a casa su <planet>, dalla loro prigionia su <origin>. Il pagamento è <payment>.",
+   "ratio": 1.017
+  },
+  {
+   "idx": 15,
+   "id": "mission:Return Syndicate Prisoners [2]|dialog|553|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 553,
+   "kind": "DIALOG",
+   "context": "mission:Return Syndicate Prisoners [2]",
+   "english": "The labor organizers are almost skeletally thin from their imprisonment. One of them raises his face to the sky as though showering in sunlight. You receive your payment of <payment>.",
+   "italian": "I sindacalisti sono quasi scheletrici per la prigionia. Uno di loro alza il viso al cielo come per farsi una doccia di luce solare. Ricevi il pagamento di <payment>.",
+   "ratio": 0.902
+  },
+  {
+   "idx": 16,
+   "id": "mission:Syndicated Shipyards Shipment [0]|name|557|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 557,
+   "kind": "VALUE",
+   "context": "mission:Syndicated Shipyards Shipment [0]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione per <planet>",
+   "ratio": 1.15
+  },
+  {
+   "idx": 17,
+   "id": "mission:Syndicated Shipyards Shipment [0]|description|558|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 558,
+   "kind": "DESCRIPTION",
+   "context": "mission:Syndicated Shipyards Shipment [0]",
+   "english": "Syndicated Shipyards, one of the largest shipyards in human space, requests an independent captain to deliver <cargo> to <destination> to ensure sufficient stocks. Payment is <payment>.",
+   "italian": "Syndicated Shipyards, uno dei più grandi cantieri dello spazio umano, cerca un capitano indipendente che consegni <cargo> su <destination> per garantire scorte sufficienti. Il pagamento è <payment>.",
+   "ratio": 1.07
+  },
+  {
+   "idx": 18,
+   "id": "mission:Syndicated Shipyards Shipment [1]|name|581|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 581,
+   "kind": "VALUE",
+   "context": "mission:Syndicated Shipyards Shipment [1]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione per <planet>",
+   "ratio": 1.15
+  },
+  {
+   "idx": 19,
+   "id": "mission:Syndicated Shipyards Shipment [1]|description|582|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 582,
+   "kind": "DESCRIPTION",
+   "context": "mission:Syndicated Shipyards Shipment [1]",
+   "english": "Syndicated Shipyards, one of the largest shipyards in human space, requests an independent captain to deliver <cargo> to <destination> to ensure sufficient stocks. Payment is <payment>.",
+   "italian": "Syndicated Shipyards, uno dei più grandi cantieri dello spazio umano, cerca un capitano indipendente che consegni <cargo> su <destination> per garantire scorte sufficienti. Il pagamento è <payment>.",
+   "ratio": 1.07
+  },
+  {
+   "idx": 20,
+   "id": "mission:Syndicated Shipyards Shipment [2]|name|605|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 605,
+   "kind": "VALUE",
+   "context": "mission:Syndicated Shipyards Shipment [2]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione per <planet>",
+   "ratio": 1.15
+  },
+  {
+   "idx": 21,
+   "id": "mission:Syndicated Shipyards Shipment [2]|description|606|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 606,
+   "kind": "DESCRIPTION",
+   "context": "mission:Syndicated Shipyards Shipment [2]",
+   "english": "Syndicated Shipyards, one of the largest shipyards in human space, requests an independent captain to deliver <cargo> to <destination> to ensure sufficient stocks. Payment is <payment>.",
+   "italian": "Syndicated Shipyards, uno dei più grandi cantieri dello spazio umano, cerca un capitano indipendente che consegni <cargo> su <destination> per garantire scorte sufficienti. Il pagamento è <payment>.",
+   "ratio": 1.07
+  },
+  {
+   "idx": 22,
+   "id": "mission:Syndicated Shipyards Shipment [3]|name|629|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 629,
+   "kind": "VALUE",
+   "context": "mission:Syndicated Shipyards Shipment [3]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione per <planet>",
+   "ratio": 1.15
+  },
+  {
+   "idx": 23,
+   "id": "mission:Syndicated Shipyards Shipment [3]|description|630|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 630,
+   "kind": "DESCRIPTION",
+   "context": "mission:Syndicated Shipyards Shipment [3]",
+   "english": "Deliver <cargo> to <destination>, where Syndicated Shipyards, one of the largest shipyards in human space, is located. Payment is <payment>.",
+   "italian": "Consegna <cargo> su <destination>, dove si trova Syndicated Shipyards, uno dei più grandi cantieri dello spazio umano. Il pagamento è <payment>.",
+   "ratio": 1.029
+  },
+  {
+   "idx": 24,
+   "id": "mission:Syndicated Systems Shipment [0]|name|653|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 653,
+   "kind": "VALUE",
+   "context": "mission:Syndicated Systems Shipment [0]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione per <planet>",
+   "ratio": 1.15
+  },
+  {
+   "idx": 25,
+   "id": "mission:Syndicated Systems Shipment [0]|description|654|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 654,
+   "kind": "DESCRIPTION",
+   "context": "mission:Syndicated Systems Shipment [0]",
+   "english": "Deliver <cargo> to <destination>, the home of Syndicated Systems, the largest ship systems and outfits manufacturer in human space. Payment is <payment>.",
+   "italian": "Consegna <cargo> su <destination>, sede di Syndicated Systems, il più grande produttore di sistemi e equipaggiamenti per navi dello spazio umano. Il pagamento è <payment>.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 26,
+   "id": "mission:Syndicated Systems Shipment [1]|name|677|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 677,
+   "kind": "VALUE",
+   "context": "mission:Syndicated Systems Shipment [1]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione per <planet>",
+   "ratio": 1.15
+  },
+  {
+   "idx": 27,
+   "id": "mission:Syndicated Systems Shipment [1]|description|678|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 678,
+   "kind": "DESCRIPTION",
+   "context": "mission:Syndicated Systems Shipment [1]",
+   "english": "Deliver <cargo> to <destination>, the home of Syndicated Systems, the largest ship systems and outfits manufacturer in human space. Payment is <payment>.",
+   "italian": "Consegna <cargo> su <destination>, sede di Syndicated Systems, il più grande produttore di sistemi e equipaggiamenti per navi dello spazio umano. Il pagamento è <payment>.",
+   "ratio": 1.118
+  }
+ ]
+}

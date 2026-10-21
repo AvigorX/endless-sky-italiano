@@ -1,0 +1,165 @@
+{
+ "block": {
+  "path": "data/human/outfits.txt",
+  "line_from": 236,
+  "line_to": 387,
+  "units": 14
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Jump Drive (Broken)|plural|236|0",
+   "path": "data/human/outfits.txt",
+   "line": 236,
+   "kind": "VALUE",
+   "context": "outfit:Jump Drive (Broken)",
+   "english": "Jump Drives (Broken)",
+   "italian": "Jump Drives (Broken)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Jump Drive (Broken)|description|244|0",
+   "path": "data/human/outfits.txt",
+   "line": 244,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Jump Drive (Broken)",
+   "english": "The workings of the jump drive are a total mystery, especially now that this drive seems completely mangled. It is no longer functional in any way. It may, however, still hold some research potential.",
+   "italian": "The workings of the jump drive are a total mystery, especially now that this drive seems completely mangled. It is no longer functional in any way. It may, however, still hold some research potential.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Cargo Scanner|description|257|0",
+   "path": "data/human/outfits.txt",
+   "line": 257,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Cargo Scanner",
+   "english": "This scanner allows you to scan the cargo holds of the ship you are currently targeting, as long as you are flying close enough to it. Patrol craft use cargo scanners to detect illegal contraband. Installing more than one increases the scan range and speed.",
+   "italian": "This scanner allows you to scan the cargo holds of the ship you are currently targeting, as long as you are flying close enough to it. Patrol craft use cargo scanners to detect illegal contraband. Installing more than one increases the scan range and speed.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Outfit Scanner|description|269|0",
+   "path": "data/human/outfits.txt",
+   "line": 269,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Outfit Scanner",
+   "english": "This scanner allows you to determine what outfits are installed in the ship you are currently targeting, if you are willing to risk flying close enough to it to get a reading! The Republic Navy uses these scanners to detect when ships are equipped with illegal weaponry. Installing more than one increases the scan range and speed.",
+   "italian": "This scanner allows you to determine what outfits are installed in the ship you are currently targeting, if you are willing to risk flying close enough to it to get a reading! The Republic Navy uses these scanners to detect when ships are equipped with illegal weaponry. Installing more than one increases the scan range and speed.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Asteroid Scanner|description|280|0",
+   "path": "data/human/outfits.txt",
+   "line": 280,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Asteroid Scanner",
+   "english": "This highly specialized scanning system can analyze the mineral composition of nearby asteroids and identify the ones that contain valuable materials.",
+   "italian": "This highly specialized scanning system can analyze the mineral composition of nearby asteroids and identify the ones that contain valuable materials.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Tactical Scanner|description|291|0",
+   "path": "data/human/outfits.txt",
+   "line": 291,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tactical Scanner",
+   "english": "A tactical scanner allows your ship to determine the fuel, energy, heat, and crew complement of nearby targets. For centuries tactical scanners were only employed by the Navy, but recently Kraz Cybernetics has begun manufacturing them for use by militia ships.",
+   "italian": "A tactical scanner allows your ship to determine the fuel, energy, heat, and crew complement of nearby targets. For centuries tactical scanners were only employed by the Navy, but recently Kraz Cybernetics has begun manufacturing them for use by militia ships.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Surveillance Pod|description|307|0",
+   "path": "data/human/outfits.txt",
+   "line": 307,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Surveillance Pod",
+   "english": "This is Navy technology, a collection of scanners designed to fit perfectly inside one of their surveillance drones. Since the outputs are fairly standard, you could connect it to your own ship's systems if you want. Installing more than one increases the scan range and speed.",
+   "italian": "This is Navy technology, a collection of scanners designed to fit perfectly inside one of their surveillance drones. Since the outputs are fairly standard, you could connect it to your own ship's systems if you want. Installing more than one increases the scan range and speed.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Cloaking Device|description|324|0",
+   "path": "data/human/outfits.txt",
+   "line": 324,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Cloaking Device",
+   "english": "You're sure the cloaking device is here somewhere, but you can't see it.",
+   "italian": "You're sure the cloaking device is here somewhere, but you can't see it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Outfits Expansion|description|339|0",
+   "path": "data/human/outfits.txt",
+   "line": 339,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Outfits Expansion",
+   "english": "This expansion allows you to sacrifice some cargo space in order to make room for more outfits, in situations where you need just a bit more space to install a particular system. It does not increase your weapon or engine space.",
+   "italian": "This expansion allows you to sacrifice some cargo space in order to make room for more outfits, in situations where you need just a bit more space to install a particular system. It does not increase your weapon or engine space.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Outfits Expansion|description|340|0",
+   "path": "data/human/outfits.txt",
+   "line": 340,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Outfits Expansion",
+   "english": "\tUnfortunately, rearranging the interior of your ship in such a fundamental way tends to interfere with its cooling systems.",
+   "italian": "\tUnfortunately, rearranging the interior of your ship in such a fundamental way tends to interfere with its cooling systems.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Cargo Expansion|description|352|0",
+   "path": "data/human/outfits.txt",
+   "line": 352,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Cargo Expansion",
+   "english": "If being able to carry more cargo is more important to you than having advanced weapons or other systems, a cargo expansion will significantly increase the size of your cargo hold.",
+   "italian": "If being able to carry more cargo is more important to you than having advanced weapons or other systems, a cargo expansion will significantly increase the size of your cargo hold.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Bunk Room|description|364|0",
+   "path": "data/human/outfits.txt",
+   "line": 364,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Bunk Room",
+   "english": "If you really want to make space for a few more passengers (or crew members, if you're trying to capture other ships), you can expand the living space of your ship into the area usually reserved for outfits.",
+   "italian": "If you really want to make space for a few more passengers (or crew members, if you're trying to capture other ships), you can expand the living space of your ship into the area usually reserved for outfits.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Small Bunk Room|description|376|0",
+   "path": "data/human/outfits.txt",
+   "line": 376,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Bunk Room",
+   "english": "Captains who do not care particularly much about the comfort of their passengers or crew can usually find a way to shove a bunk bed in behind the power generator or to hang a few hammocks from the engines as a makeshift way to make space for more people.",
+   "italian": "Captains who do not care particularly much about the comfort of their passengers or crew can usually find a way to shove a bunk bed in behind the power generator or to hang a few hammocks from the engines as a makeshift way to make space for more people.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Brig|description|387|0",
+   "path": "data/human/outfits.txt",
+   "line": 387,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Brig",
+   "english": "With the addition of some reinforced doors, locks, and security systems, any ship's passenger compartment can be turned into a brig. This makes it suitable for transporting criminals and prisoners, or participating in the highly illegal galactic slave trade. These cells are often found on ships owned by bounty hunters, pirates, and of course, the Republic's interstellar law enforcement.",
+   "italian": "With the addition of some reinforced doors, locks, and security systems, any ship's passenger compartment can be turned into a brig. This makes it suitable for transporting criminals and prisoners, or participating in the highly illegal galactic slave trade. These cells are often found on ships owned by bounty hunters, pirates, and of course, the Republic's interstellar law enforcement.",
+   "ratio": 1.0
+  }
+ ]
+}

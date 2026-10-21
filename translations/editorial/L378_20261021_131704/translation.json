@@ -1,0 +1,55 @@
+{
+ "block": {
+  "path": "data/iije/iije.txt",
+  "line_from": 17,
+  "line_to": 154,
+  "units": 4
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Jje|plural|17|0",
+   "path": "data/iije/iije.txt",
+   "line": 17,
+   "kind": "VALUE",
+   "context": "ship:Jje",
+   "english": "Jje",
+   "italian": "Jje",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Jje|description|66|0",
+   "path": "data/iije/iije.txt",
+   "line": 66,
+   "kind": "DESCRIPTION",
+   "context": "ship:Jje",
+   "english": "This is an adolescent form of the Iije, having recently consumed quantities of stellar dust, matter, and energy. They are attracted to light in the dim space of the Umbral Reach, and are occasionally seen flying in groups.",
+   "italian": "Questa è la forma adolescente dello Iije, che ha appena consumato quantità di polvere stellare, materia ed energia. Sono attratti dalla luce nel debole spazio dell'Umbral Reach, e a volte li si vede volare in gruppo.",
+   "ratio": 0.973
+  },
+  {
+   "idx": 3,
+   "id": "ship:Ayym|plural|69|0",
+   "path": "data/iije/iije.txt",
+   "line": 69,
+   "kind": "VALUE",
+   "context": "ship:Ayym",
+   "english": "Ayym",
+   "italian": "Ayym",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Ayym|description|154|0",
+   "path": "data/iije/iije.txt",
+   "line": 154,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ayym",
+   "english": "This is an adult form of the Iije, having grown enormous from consuming stellar matter over hundreds of thousands of years. They can be seen carrying the smaller Jje around the Umbral Reach, but the exact purpose of this activity is unknown.",
+   "italian": "Questa è la forma adulta dello Iije, diventata enorme consumando materia stellare per centinaia di migliaia di anni. Li si vede portare in giro i più piccoli Jje nell'Umbral Reach, ma lo scopo esatto di questa attività è ignoto.",
+   "ratio": 0.946
+  }
+ ]
+}

@@ -1,0 +1,341 @@
+{
+ "block": {
+  "path": "data/human/hails.txt",
+  "line_from": 499,
+  "line_to": 7640,
+  "units": 30
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "phrase:friendly civilian|\"|499|0",
+   "path": "data/human/hails.txt",
+   "line": 499,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "phrase:friendly civilian|.\" It's |503|0",
+   "path": "data/human/hails.txt",
+   "line": 503,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": ".\" It's ",
+   "italian": ".\" È ",
+   "ratio": 0.625
+  },
+  {
+   "idx": 3,
+   "id": "phrase:friendly civilian|,\" |504|0",
+   "path": "data/human/hails.txt",
+   "line": 504,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": ",\" ",
+   "italian": ",\" ",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "phrase:friendly civilian| \"|553|0",
+   "path": "data/human/hails.txt",
+   "line": 553,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": " \"",
+   "italian": " \"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "phrase:friendly civilian|,\" definitely|557|0",
+   "path": "data/human/hails.txt",
+   "line": 557,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": ",\" definitely",
+   "italian": ",\" decisamente",
+   "ratio": 1.077
+  },
+  {
+   "idx": 6,
+   "id": "phrase:friendly civilian|,\" easily|558|0",
+   "path": "data/human/hails.txt",
+   "line": 558,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": ",\" easily",
+   "italian": ",\" facilmente",
+   "ratio": 1.444
+  },
+  {
+   "idx": 7,
+   "id": "phrase:friendly civilian|,\" without a doubt|559|0",
+   "path": "data/human/hails.txt",
+   "line": 559,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": ",\" without a doubt",
+   "italian": ",\" senza dubbio",
+   "ratio": 0.833
+  },
+  {
+   "idx": 8,
+   "id": "phrase:friendly civilian|.\" It's|560|0",
+   "path": "data/human/hails.txt",
+   "line": 560,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": ".\" It's",
+   "italian": ".\" È",
+   "ratio": 0.571
+  },
+  {
+   "idx": 9,
+   "id": "phrase:friendly civilian|.\" It has to be|561|0",
+   "path": "data/human/hails.txt",
+   "line": 561,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": ".\" It has to be",
+   "italian": ".\" Deve essere",
+   "ratio": 0.933
+  },
+  {
+   "idx": 10,
+   "id": "phrase:friendly civilian|,\" which everyone knows is|562|0",
+   "path": "data/human/hails.txt",
+   "line": 562,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": ",\" which everyone knows is",
+   "italian": ",\" che tutti sanno essere",
+   "ratio": 0.962
+  },
+  {
+   "idx": 11,
+   "id": "phrase:friendly civilian|,\" which is obviously|563|0",
+   "path": "data/human/hails.txt",
+   "line": 563,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": ",\" which is obviously",
+   "italian": ",\" che è ovviamente",
+   "ratio": 0.905
+  },
+  {
+   "idx": 12,
+   "id": "phrase:friendly civilian| \"|685|0",
+   "path": "data/human/hails.txt",
+   "line": 685,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": " \"",
+   "italian": " \"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "phrase:friendly civilian|\" |689|0",
+   "path": "data/human/hails.txt",
+   "line": 689,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "\" ",
+   "italian": "\" ",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "phrase:friendly civilian|Someone met a djinn and said \"leave me alone.\" That person is now stranded on an uninhabited planet.|1068|0",
+   "path": "data/human/hails.txt",
+   "line": 1068,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "Someone met a djinn and said \"leave me alone.\" That person is now stranded on an uninhabited planet.",
+   "italian": "Qualcuno ha incontrato un djinn e ha detto \"lasciami in pace\". Ora è bloccato su un pianeta disabitato.",
+   "ratio": 1.03
+  },
+  {
+   "idx": 15,
+   "id": "phrase:friendly civilian|Somebody met a genie and said \"I don't want to see you,\" and then went blind.|1069|0",
+   "path": "data/human/hails.txt",
+   "line": 1069,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "Somebody met a genie and said \"I don't want to see you,\" and then went blind.",
+   "italian": "Qualcuno ha incontrato un genio e ha detto \"non voglio vederti\", e poi è diventato cieco.",
+   "ratio": 1.156
+  },
+  {
+   "idx": 16,
+   "id": "phrase:friendly civilian|. And they're always up in arms about whether \"underarm bowling\" is legal!|2329|0",
+   "path": "data/human/hails.txt",
+   "line": 2329,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": ". And they're always up in arms about whether \"underarm bowling\" is legal!",
+   "italian": ". E sono sempre sul piede di guerra per sapere se il \"lancio sottomano\" è legale!",
+   "ratio": 1.095
+  },
+  {
+   "idx": 17,
+   "id": "phrase:friendly civilian|I just found out that a \"duck\" is a type of bird from Earth! Now I wonder why \"duck tape\" is named after it?|2587|0",
+   "path": "data/human/hails.txt",
+   "line": 2587,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "I just found out that a \"duck\" is a type of bird from Earth! Now I wonder why \"duck tape\" is named after it?",
+   "italian": "Ho appena scoperto che un \"duck\" è un tipo di uccello della Terra! Ora mi chiedo perché il \"duck tape\" prenda il nome da lui?",
+   "ratio": 1.157
+  },
+  {
+   "idx": 18,
+   "id": "phrase:friendly civilian|Apparently they want me to pay 5% of my paycheck for union dues! I'm gonna keep it. My boss is a good guy; he'll look out for me.|2588|0",
+   "path": "data/human/hails.txt",
+   "line": 2588,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "Apparently they want me to pay 5% of my paycheck for union dues! I'm gonna keep it. My boss is a good guy; he'll look out for me.",
+   "italian": "A quanto pare vogliono che paghi il 5% del mio stipendio per la quota sindacale! Me lo tengo. Il mio capo è una brava persona; penserà lui a me.",
+   "ratio": 1.116
+  },
+  {
+   "idx": 19,
+   "id": "phrase:friendly civilian|I saved up and bought extra bunk space so my wife could come on trips with me, and now she says \"we need to talk.\" That can't be a good sign, can it?|2589|0",
+   "path": "data/human/hails.txt",
+   "line": 2589,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "I saved up and bought extra bunk space so my wife could come on trips with me, and now she says \"we need to talk.\" That can't be a good sign, can it?",
+   "italian": "Ho risparmiato e comprato cuccette in più perché mia moglie potesse venire in viaggio con me, e ora dice \"dobbiamo parlare\". Non è un buon segno, vero?",
+   "ratio": 1.013
+  },
+  {
+   "idx": 20,
+   "id": "phrase:friendly civilian|I bumped into some nasty pirates last week. I had to dump my cargo to get away, and my insurance is not paying me back.|2590|0",
+   "path": "data/human/hails.txt",
+   "line": 2590,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "I bumped into some nasty pirates last week. I had to dump my cargo to get away, and my insurance is not paying me back.",
+   "italian": "La settimana scorsa ho incrociato dei pirati poco simpatici. Ho dovuto gettare il carico per fuggire, e l'assicurazione non mi rimborsa.",
+   "ratio": 1.143
+  },
+  {
+   "idx": 21,
+   "id": "phrase:friendly civilian|If you are in a tight spot with some pirates, just throw everything out the airlock. They will be busy scavenging it, and you will be out of reach when they inevitably come back.|2591|0",
+   "path": "data/human/hails.txt",
+   "line": 2591,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "If you are in a tight spot with some pirates, just throw everything out the airlock. They will be busy scavenging it, and you will be out of reach when they inevitably come back.",
+   "italian": "Se sei nei guai con dei pirati, butta tutto fuori dal portello. Saranno occupati a recuperarlo, e tu sarai fuori portata quando torneranno, come inevitabilmente faranno.",
+   "ratio": 0.949
+  },
+  {
+   "idx": 22,
+   "id": "phrase:friendly civilian|When I was hauling food in the South I ran into pirates every damn week. Half the time I had to bribe them with my salary or with a part of my freight.|2592|0",
+   "path": "data/human/hails.txt",
+   "line": 2592,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "When I was hauling food in the South I ran into pirates every damn week. Half the time I had to bribe them with my salary or with a part of my freight.",
+   "italian": "Quando trasportavo cibo nel Sud incrociavo pirati ogni benedetta settimana. Metà delle volte dovevo corromperli con lo stipendio o con una parte del carico.",
+   "ratio": 1.033
+  },
+  {
+   "idx": 23,
+   "id": "phrase:friendly civilian|My friend was boarded by pirates and they took his engines. It would have been cheaper to just let them have the cargo.|2593|0",
+   "path": "data/human/hails.txt",
+   "line": 2593,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "My friend was boarded by pirates and they took his engines. It would have been cheaper to just let them have the cargo.",
+   "italian": "Il mio amico è stato abbordato dai pirati e gli hanno preso i motori. Gli sarebbe costato meno lasciargli il carico.",
+   "ratio": 0.975
+  },
+  {
+   "idx": 24,
+   "id": "phrase:friendly civilian|You can often distract pirates with some cargo until the Navy rescues you. My old captain taught me this trick when we were ferrying in the Far North.|2594|0",
+   "path": "data/human/hails.txt",
+   "line": 2594,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "You can often distract pirates with some cargo until the Navy rescues you. My old captain taught me this trick when we were ferrying in the Far North.",
+   "italian": "Spesso puoi distrarre i pirati con un po' di carico finché la Marina non ti salva. Il mio vecchio capitano me l'ha insegnato quando facevamo la spola nell'estremo Nord.",
+   "ratio": 1.12
+  },
+  {
+   "idx": 25,
+   "id": "phrase:friendly civilian|Pirates will always try to take your cargo, but if you drop some scrap their way, they let you keep the real valuables.|2595|0",
+   "path": "data/human/hails.txt",
+   "line": 2595,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "Pirates will always try to take your cargo, but if you drop some scrap their way, they let you keep the real valuables.",
+   "italian": "I pirati proveranno sempre a prenderti il carico, ma se gli lasci un po' di rottami ti lasciano tenere gli oggetti di valore veri.",
+   "ratio": 1.092
+  },
+  {
+   "idx": 26,
+   "id": "phrase:friendly civilian|Whenever I see pirates, I immediately dump my freight. They would get it either way, but at least this lets me get away.|2596|0",
+   "path": "data/human/hails.txt",
+   "line": 2596,
+   "kind": "TEXT",
+   "context": "phrase:friendly civilian",
+   "english": "Whenever I see pirates, I immediately dump my freight. They would get it either way, but at least this lets me get away.",
+   "italian": "Ogni volta che vedo dei pirati getto subito il carico. Tanto se lo prenderebbero comunque, ma almeno così riesco a fuggire.",
+   "ratio": 1.025
+  },
+  {
+   "idx": 27,
+   "id": "phrase:friendly militia 4|there would be \"peace among the stars\"|4144|0",
+   "path": "data/human/hails.txt",
+   "line": 4144,
+   "kind": "TEXT",
+   "context": "phrase:friendly militia 4",
+   "english": "there would be \"peace among the stars\"",
+   "italian": "ci sarebbe la \"pace fra le stelle\"",
+   "ratio": 0.895
+  },
+  {
+   "idx": 28,
+   "id": "phrase:friendly free worlds 10|\"peace among the stars\"|4775|0",
+   "path": "data/human/hails.txt",
+   "line": 4775,
+   "kind": "TEXT",
+   "context": "phrase:friendly free worlds 10",
+   "english": "\"peace among the stars\"",
+   "italian": "\"pace fra le stelle\"",
+   "ratio": 0.87
+  },
+  {
+   "idx": 29,
+   "id": "phrase:test dummy|\"Is there a God,\" they asked me... Yes, here is a God.|7635|0",
+   "path": "data/human/hails.txt",
+   "line": 7635,
+   "kind": "TEXT",
+   "context": "phrase:test dummy",
+   "english": "\"Is there a God,\" they asked me... Yes, here is a God.",
+   "italian": "\"Esiste un Dio?\", mi hanno chiesto... Sì, eccolo qui.",
+   "ratio": 0.981
+  },
+  {
+   "idx": 30,
+   "id": "phrase:disabled test dummy|All those times I said \"kill all humans\"... I'd always whisper \"except one.\" You were that one.|7640|0",
+   "path": "data/human/hails.txt",
+   "line": 7640,
+   "kind": "TEXT",
+   "context": "phrase:disabled test dummy",
+   "english": "All those times I said \"kill all humans\"... I'd always whisper \"except one.\" You were that one.",
+   "italian": "Tutte le volte che dicevo \"uccidete tutti gli umani\"... sussurravo sempre \"tranne uno\". Quello eri tu.",
+   "ratio": 1.074
+  }
+ ]
+}

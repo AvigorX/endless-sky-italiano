@@ -1,0 +1,187 @@
+{
+ "block": {
+  "path": "data/human/weapons.txt",
+  "line_from": 625,
+  "line_to": 983,
+  "units": 16
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Particle Cannon|description|625|0",
+   "path": "data/human/weapons.txt",
+   "line": 625,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Particle Cannon",
+   "english": "The Particle Cannon works by accelerating a short burst of particles to near-relativistic speeds. When mounted on a ship that can turn fast enough to keep it trained on approaching ships, it becomes a nearly unbeatable weapon, capable of destroying smaller ships before they can even approach close enough for their comparatively short-ranged weapons to be effective.",
+   "italian": "The Particle Cannon works by accelerating a short burst of particles to near-relativistic speeds. When mounted on a ship that can turn fast enough to keep it trained on approaching ships, it becomes a nearly unbeatable weapon, capable of destroying smaller ships before they can even approach close enough for their comparatively short-ranged weapons to be effective.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Proton Gun|description|660|0",
+   "path": "data/human/weapons.txt",
+   "line": 660,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Proton Gun",
+   "english": "The Proton Gun started out as the Syndicate's attempt to reverse engineer and mass-produce a cheap competitor for the Particle Cannon. Unfortunately, they were unable to find a reliable way to keep the beam coherent, but the resulting weapon is still popular with some captains, particularly as an anti-fighter gun.",
+   "italian": "The Proton Gun started out as the Syndicate's attempt to reverse engineer and mass-produce a cheap competitor for the Particle Cannon. Unfortunately, they were unable to find a reliable way to keep the beam coherent, but the resulting weapon is still popular with some captains, particularly as an anti-fighter gun.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Proton Turret|description|709|0",
+   "path": "data/human/weapons.txt",
+   "line": 709,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Proton Turret",
+   "english": "The Syndicate Proton Turret is a relatively new product designed to compete with Deep Sky's perennially popular Laser Turrets in the anti-fighter defense market. Though cruder than its competition, the Proton Turret maintains a loyal following among captains dissatisfied with laser weapons' short range.",
+   "italian": "The Syndicate Proton Turret is a relatively new product designed to compete with Deep Sky's perennially popular Laser Turrets in the anti-fighter defense market. Though cruder than its competition, the Proton Turret maintains a loyal following among captains dissatisfied with laser weapons' short range.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Plasma Cannon|description|737|0",
+   "path": "data/human/weapons.txt",
+   "line": 737,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Plasma Cannon",
+   "english": "The Plasma Cannon fires bursts of superheated plasma. In addition to damaging your target, these plasma bursts impart a significant amount of heat, especially to a target whose shields are down.",
+   "italian": "The Plasma Cannon fires bursts of superheated plasma. In addition to damaging your target, these plasma bursts impart a significant amount of heat, especially to a target whose shields are down.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Plasma Turret|description|768|0",
+   "path": "data/human/weapons.txt",
+   "line": 768,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Plasma Turret",
+   "english": "The Plasma Turret is a pair of Plasma Cannons mounted on a turret so that they can fire in any direction. It is a fearsome weapon, but only the largest of ships have the space and the energy that it requires.",
+   "italian": "The Plasma Turret is a pair of Plasma Cannons mounted on a turret so that they can fire in any direction. It is a fearsome weapon, but only the largest of ships have the space and the energy that it requires.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Plasma Repeater|description|795|0",
+   "path": "data/human/weapons.txt",
+   "line": 795,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Plasma Repeater",
+   "english": "Decades after buying the rights for the Plasma Cannon, Kraz Cybernetics put this weapon on the shelves of every high-end outfitter of the Southern Rim. The repeater has so far proved immensely popular amongst any who braved testing it, and is shaping up to become an essential deterrent for anyone who flaunts their haul for pirate plunder.",
+   "italian": "Decades after buying the rights for the Plasma Cannon, Kraz Cybernetics put this weapon on the shelves of every high-end outfitter of the Southern Rim. The repeater has so far proved immensely popular amongst any who braved testing it, and is shaping up to become an essential deterrent for anyone who flaunts their haul for pirate plunder.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Plasma Repeater|description|796|0",
+   "path": "data/human/weapons.txt",
+   "line": 796,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Plasma Repeater",
+   "english": "\tDerived from the original Plasma Cannon, this heavier version trades off its larger bursts for a much faster rate of fire. Although the smaller bursts of superheated plasma deal far less damage than its predecessor, the volume of fire results in more damage to the target overall.",
+   "italian": "\tDerived from the original Plasma Cannon, this heavier version trades off its larger bursts for a much faster rate of fire. Although the smaller bursts of superheated plasma deal far less damage than its predecessor, the volume of fire results in more damage to the target overall.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Flamethrower|description|834|0",
+   "path": "data/human/weapons.txt",
+   "line": 834,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Flamethrower",
+   "english": "A crude but impressive-looking weapon, the Flamethrower ignites your hyperspace fuel and directs a stream of it towards your adversaries. The damage it does is relatively minor, but it can be useful for causing a target that is already operating near its thermal capacity to overheat, temporarily taking it out of the fight.",
+   "italian": "A crude but impressive-looking weapon, the Flamethrower ignites your hyperspace fuel and directs a stream of it towards your adversaries. The damage it does is relatively minor, but it can be useful for causing a target that is already operating near its thermal capacity to overheat, temporarily taking it out of the fight.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Meteor Missile|description|885|0",
+   "path": "data/human/weapons.txt",
+   "line": 885,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Meteor Missile",
+   "english": "A Meteor Missile serves as ammunition for the Meteor Missile Launcher. Each missile launcher has its own capacity; you cannot install missiles if you have not first purchased a pod, launcher, or storage to store them in.",
+   "italian": "A Meteor Missile serves as ammunition for the Meteor Missile Launcher. Each missile launcher has its own capacity; you cannot install missiles if you have not first purchased a pod, launcher, or storage to store them in.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Meteor Missile Box|plural|888|0",
+   "path": "data/human/weapons.txt",
+   "line": 888,
+   "kind": "VALUE",
+   "context": "outfit:Meteor Missile Box",
+   "english": "Meteor Missile Boxes",
+   "italian": "Meteor Missile Boxes",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Meteor Missile Box|description|898|0",
+   "path": "data/human/weapons.txt",
+   "line": 898,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Meteor Missile Box",
+   "english": "The Meteor Missile Box is used to store extra ammunition for Meteor Missile Launchers.",
+   "italian": "The Meteor Missile Box is used to store extra ammunition for Meteor Missile Launchers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Meteor Missile Launcher|description|937|0",
+   "path": "data/human/weapons.txt",
+   "line": 937,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Meteor Missile Launcher",
+   "english": "The Meteor Missile is the cheapest and simplest homing weapon available in human space. Meteors are quickly destroyed by anti-missile systems, and their infrared tracking systems have trouble homing in on targets with low heat levels. Nevertheless, their large warheads can spell doom for poorly-defended targets when the missiles are fired in great numbers.",
+   "italian": "The Meteor Missile is the cheapest and simplest homing weapon available in human space. Meteors are quickly destroyed by anti-missile systems, and their infrared tracking systems have trouble homing in on targets with low heat levels. Nevertheless, their large warheads can spell doom for poorly-defended targets when the missiles are fired in great numbers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Meteor Missile Launcher|description|938|0",
+   "path": "data/human/weapons.txt",
+   "line": 938,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Meteor Missile Launcher",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Meteor Missile Pod|description|981|0",
+   "path": "data/human/weapons.txt",
+   "line": 981,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Meteor Missile Pod",
+   "english": "The Meteor Missile is the cheapest and simplest homing weapon available in human space. Meteors are quickly destroyed by anti-missile systems, and their infrared tracking systems have trouble homing in on targets with low heat levels. Nevertheless, their large warheads can spell doom for poorly-defended targets when the missiles are fired in great numbers.",
+   "italian": "The Meteor Missile is the cheapest and simplest homing weapon available in human space. Meteors are quickly destroyed by anti-missile systems, and their infrared tracking systems have trouble homing in on targets with low heat levels. Nevertheless, their large warheads can spell doom for poorly-defended targets when the missiles are fired in great numbers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Meteor Missile Pod|description|982|0",
+   "path": "data/human/weapons.txt",
+   "line": 982,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Meteor Missile Pod",
+   "english": "\tPods enable fighters and other light craft to carry small quantities of missiles into battle while retaining enough space for other weapons. Large ships are better off with full-size launchers.",
+   "italian": "\tPods enable fighters and other light craft to carry small quantities of missiles into battle while retaining enough space for other weapons. Large ships are better off with full-size launchers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Meteor Missile Pod|description|983|0",
+   "path": "data/human/weapons.txt",
+   "line": 983,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Meteor Missile Pod",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  }
+ ]
+}

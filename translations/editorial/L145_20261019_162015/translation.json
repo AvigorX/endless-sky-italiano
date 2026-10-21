@@ -1,0 +1,154 @@
+{
+ "block": {
+  "path": "data/hai/unfettered 0 prologue.txt",
+  "line_from": 423,
+  "line_to": 459,
+  "units": 13
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Unfettered Jump Drive Trading|\tYou manage to grab the weapon, just in time to deflect an incoming attack from the same Unfettered. They duel with you for what feels like an eternity. At first you are astonished by the fact you have managed to survive this long, but you soon realize that, as you have not managed to land a single successful blow, this must be some kind of deliberate test.|423|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 423,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tYou manage to grab the weapon, just in time to deflect an incoming attack from the same Unfettered. They duel with you for what feels like an eternity. At first you are astonished by the fact you have managed to survive this long, but you soon realize that, as you have not managed to land a single successful blow, this must be some kind of deliberate test.",
+   "italian": "\tRiesci ad afferrare l'arma, appena in tempo per deviare un attacco della stessa Slegata. Duella con te per quello che sembra un'eternità. All'inizio sei stupito di essere riuscito a sopravvivere così a lungo, ma presto capisci che, non essendo riuscito a mettere a segno un solo colpo, deve trattarsi di una sorta di prova deliberata.",
+   "ratio": 0.933
+  },
+  {
+   "idx": 2,
+   "id": "mission:Unfettered Jump Drive Trading|\tThen, suddenly, you can feel the pace of your opponent change; the game is over. They strike a masterful blow that disarms you with ease before smiling and lowering their weapon. \"It looks like you know what to do with a blade! <learned>I am Desneeparu, and it is a pleasure to meet you, Captain <last>!\" she exclaims, before laughing at your surprised face. You realize she must have been toying with you from the beginning, but, nevertheless, she seems satisfied by your performance.|424|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 424,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tThen, suddenly, you can feel the pace of your opponent change; the game is over. They strike a masterful blow that disarms you with ease before smiling and lowering their weapon. \"It looks like you know what to do with a blade! <learned>I am Desneeparu, and it is a pleasure to meet you, Captain <last>!\" she exclaims, before laughing at your surprised face. You realize she must have been toying with you from the beginning, but, nevertheless, she seems satisfied by your performance.",
+   "italian": "\tPoi, all'improvviso, senti cambiare il ritmo dell'avversaria: il gioco è finito. Sferra un colpo magistrale che ti disarma con facilità, poi sorride e abbassa la propria arma. \"Sembra che tu sappia come si usa una lama! <learned>Sono Desneeparu, ed è un piacere conoscerti, capitano <last>!\" esclama, prima di ridere della tua faccia sorpresa. Capisci che ti stava prendendo in giro fin dall'inizio, ma, ciononostante, sembra soddisfatta della tua prova.",
+   "ratio": 0.936
+  },
+  {
+   "idx": 3,
+   "id": "mission:Unfettered Jump Drive Trading|log|427|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 427,
+   "kind": "LOGBOOK",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "An Unfettered warrior that knows how to handle a blade. Was tested by her before being given access to new Unfettered weapons. Would have been a goner had she not been holding back.",
+   "italian": "Un guerriero Slegato che sa come si maneggia una lama. Messo alla prova da lei prima di ricevere l'accesso alle nuove armi Slegate. Sarebbe stata la fine, se lei non si fosse trattenuta.",
+   "ratio": 1.028
+  },
+  {
+   "idx": 4,
+   "id": "mission:Unfettered Jump Drive Trading|\tShe does some kind of salute with her fist before leaving. \"I must go now. I hope you will find the weapon you need.\"|428|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 428,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tShe does some kind of salute with her fist before leaving. \"I must go now. I hope you will find the weapon you need.\"",
+   "italian": "\tFa una specie di saluto col pugno prima di andarsene. \"Ora devo andare. Spero che troverai l'arma che ti serve.\"",
+   "ratio": 0.958
+  },
+  {
+   "idx": 5,
+   "id": "mission:Unfettered Jump Drive Trading|\t<The engineer> proceeds to take you underground to rows and rows of prototype weapons, some of which are being worked on by engineers. They explain, \"We prefer to do most of our testing on the field of battle. We only make the most basic safety tests here before Unfettered captains can get their hands on them. They often start by going to Firelode to put the weapon to its limit, to ensure it will not explode in the middle of action. The more interest in a prototype, the more we develop it.\" You keep walking until you enter the outfitter section of the facility, where you notice the items on display are much more advanced than anything you have seen available on the surface: so much so it could almost pass for a 'normal' Hai outfitter, were it not for the overcharged, oppressive feel of the testing grounds.|429|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 429,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t<The engineer> proceeds to take you underground to rows and rows of prototype weapons, some of which are being worked on by engineers. They explain, \"We prefer to do most of our testing on the field of battle. We only make the most basic safety tests here before Unfettered captains can get their hands on them. They often start by going to Firelode to put the weapon to its limit, to ensure it will not explode in the middle of action. The more interest in a prototype, the more we develop it.\" You keep walking until you enter the outfitter section of the facility, where you notice the items on display are much more advanced than anything you have seen available on the surface: so much so it could almost pass for a 'normal' Hai outfitter, were it not for the overcharged, oppressive feel of the testing grounds.",
+   "italian": "\t<The engineer> ti conduce sottoterra, tra file e file di armi prototipo, alcune delle quali sono in lavorazione da parte degli ingegneri. Spiegano: \"Preferiamo fare la maggior parte dei nostri collaudi sul campo di battaglia. Qui eseguiamo solo i controlli di sicurezza più elementari prima che i capitani Slegati possano metterci le mani. Spesso cominciano andando a Firelode per portare l'arma al limite, per assicurarsi che non esploda in mezzo all'azione. Più interesse suscita un prototipo, più lo sviluppiamo.\" Continuate a camminare finché non entrate nella sezione del fornitore della struttura, dove noti che gli articoli in esposizione sono molto più avanzati di qualunque cosa tu abbia visto in superficie: tanto che potrebbe quasi passare per un fornitore Hai 'normale', se non fosse per la sensazione sovraccarica e opprimente delle aree di prova.",
+   "ratio": 1.053
+  },
+  {
+   "idx": 6,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"Welcome to the advanced section of the outfitter, Captain! It is only for our most distinguished guests. Now that you have sold us multiple jump drives, I can tell you that we offer something much more valuable than money. For now, I can only offer you the mighty Tripulse Shredder, but eventually we will give you access to all kinds of weapons. Two Tripulse Shredders and our sympathy for one jump drive is the deal I propose,\" they say, presenting the weapons to you. Now that you can take a closer look, you notice these weapons seem fairly similar to other Hai weaponry, but they are enhanced in one way or another. Alongside the Tripulses you can spot what look like a very small Ion Cannon and an Ion Cannon mounted turret.|430|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 430,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"Welcome to the advanced section of the outfitter, Captain! It is only for our most distinguished guests. Now that you have sold us multiple jump drives, I can tell you that we offer something much more valuable than money. For now, I can only offer you the mighty Tripulse Shredder, but eventually we will give you access to all kinds of weapons. Two Tripulse Shredders and our sympathy for one jump drive is the deal I propose,\" they say, presenting the weapons to you. Now that you can take a closer look, you notice these weapons seem fairly similar to other Hai weaponry, but they are enhanced in one way or another. Alongside the Tripulses you can spot what look like a very small Ion Cannon and an Ion Cannon mounted turret.",
+   "italian": "\t\"Benvenuto nella sezione avanzata del fornitore, capitano! È riservata ai nostri ospiti più illustri. Ora che ci hai venduto diversi motori di salto, posso dirti che offriamo qualcosa di molto più prezioso del denaro. Per ora posso offrirti solo il possente Tripulse Shredder, ma col tempo ti daremo accesso a ogni tipo di arma. Due Tripulse Shredder e la nostra riconoscenza in cambio di un motore di salto: è l'accordo che propongo,\" dicono, porgendoti le armi. Ora che puoi guardarle più da vicino, noti che sembrano piuttosto simili alle altre armi Hai, ma sono potenziate in un modo o nell'altro. Accanto ai Tripulse puoi scorgere quello che sembra un Ion Cannon molto piccolo e un Ion Cannon montato su torretta.",
+   "ratio": 0.982
+  },
+  {
+   "idx": 7,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"Tell me more about those Tripulse Shredders I can buy.\"|433|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 433,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"Tell me more about those Tripulse Shredders I can buy.\"",
+   "italian": "\t\"Dimmi di più di quei Tripulse Shredder che posso comprare.\"",
+   "ratio": 1.07
+  },
+  {
+   "idx": 8,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"I'll settle for the tripulse, then.\"|437|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 437,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"I'll settle for the tripulse, then.\"",
+   "italian": "\t\"Allora mi accontento del tripulse.\"",
+   "ratio": 0.974
+  },
+  {
+   "idx": 9,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"Can you tell me more about that small ionic weapon?\"|441|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 441,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"Can you tell me more about that small ionic weapon?\"",
+   "italian": "\t\"Puoi dirmi di più di quell'arma ionica piccola?\"",
+   "ratio": 0.926
+  },
+  {
+   "idx": 10,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"I'd like to learn about this... ion cannon mounted on a turret?\"|444|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 444,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"I'd like to learn about this... ion cannon mounted on a turret?\"",
+   "italian": "\t\"Mi piacerebbe sapere di più di questo... ion cannon montato su una torretta?\"",
+   "ratio": 1.197
+  },
+  {
+   "idx": 11,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"I would just prefer the money, actually.\"|448|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 448,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"I would just prefer the money, actually.\"",
+   "italian": "\t\"In verità, preferirei semplicemente il denaro.\"",
+   "ratio": 1.14
+  },
+  {
+   "idx": 12,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"Ah, the Blaster. It is favored by many Shield Beetle captains, because it can easily help them turn the tide of battle without needing to dedicate too much weapon space to it. Especially considering its other effects, its damage potential is serviceable. While it is true that it does not do enough ion damage to properly disable a ship on its own, it is able to jam their weapons and will give you the upper hand in a long fight. This is a more recent innovation, however, and some say it lacks the... finesse of others.|453|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 453,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"Ah, the Blaster. It is favored by many Shield Beetle captains, because it can easily help them turn the tide of battle without needing to dedicate too much weapon space to it. Especially considering its other effects, its damage potential is serviceable. While it is true that it does not do enough ion damage to properly disable a ship on its own, it is able to jam their weapons and will give you the upper hand in a long fight. This is a more recent innovation, however, and some say it lacks the... finesse of others.",
+   "italian": "\t\"Ah, il Blaster. È prediletto da molti capitani di Shield Beetle, perché li aiuta facilmente a ribaltare le sorti di una battaglia senza dover dedicare troppo spazio a bordo alle armi. Soprattutto considerando i suoi altri effetti, il suo potenziale di danno è accettabile. È vero che non infligge abbastanza danni ionici da neutralizzare da sola una nave, ma riesce a inceppare le armi e ti darà il vantaggio in uno scontro prolungato. Questa però è un'innovazione recente, e alcuni dicono che le manchi la... finezza delle altre.",
+   "ratio": 1.017
+  },
+  {
+   "idx": 13,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"That is my preferred weapon out of all of them, by far. Unlike the Ion Cannon that is a hybrid weapon meant to damage the enemy from long range whilst applying a good deal of ionization, this one's role is mostly to disable enemy ships. Even a ship with many batteries will cower before this weapon! And due to its high range and fast turn-rate, small ships and even fighters will never bother you again!|459|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 459,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"That is my preferred weapon out of all of them, by far. Unlike the Ion Cannon that is a hybrid weapon meant to damage the enemy from long range whilst applying a good deal of ionization, this one's role is mostly to disable enemy ships. Even a ship with many batteries will cower before this weapon! And due to its high range and fast turn-rate, small ships and even fighters will never bother you again!",
+   "italian": "\t\"È di gran lunga la mia arma preferita fra tutte. A differenza dell'Ion Cannon, che è un'arma ibrida pensata per danneggiare il nemico a lunga distanza applicando al contempo una buona ionizzazione, il suo ruolo è soprattutto neutralizzare le navi nemiche. Perfino una nave con molte batterie si inchinerà davanti a quest'arma! E grazie alla sua lunga gittata e alla rapidità di rotazione, le navi piccole e perfino i caccia non ti daranno più fastidio!",
+   "ratio": 1.118
+  }
+ ]
+}

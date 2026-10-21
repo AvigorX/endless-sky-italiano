@@ -1,0 +1,231 @@
+{
+ "block": {
+  "path": "data/human/post-war reactions.txt",
+  "line_from": 152,
+  "line_to": 215,
+  "units": 20
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Not a match for a Dreadnought and an Auxiliary, though,\" brags Rain.|152|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 152,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Not a match for a Dreadnought and an Auxiliary, though,\" brags Rain.",
+   "italian": "\t\"Però non è alla pari di una corazzata e di un'ausiliaria\", si vanta Rain.",
+   "ratio": 1.071
+  },
+  {
+   "idx": 2,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"We have to fly all over Republic and Free Worlds space, so we have a joint patrol with one ship from each state.\"|153|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 153,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"We have to fly all over Republic and Free Worlds space, so we have a joint patrol with one ship from each state.\"",
+   "italian": "\t\"Dobbiamo volare per tutto lo spazio della Repubblica e dei Free Worlds, così pattugliamo insieme con una nave per stato.\"",
+   "ratio": 1.07
+  },
+  {
+   "idx": 3,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Of course, we have another mission,\" says Fiona. \"Everywhere we go, we look out for new alien activity.\"|154|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 154,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Of course, we have another mission,\" says Fiona. \"Everywhere we go, we look out for new alien activity.\"",
+   "italian": "\t\"Certo, abbiamo un'altra missione\", dice Fiona. \"Ovunque andiamo, teniamo d'occhio nuove attività aliene.\"",
+   "ratio": 1.009
+  },
+  {
+   "idx": 4,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Only the usual assortment of hoaxes,\" says Rain. They both laugh at this.|160|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 160,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Only the usual assortment of hoaxes,\" says Rain. They both laugh at this.",
+   "italian": "\t\"Solo il solito campionario di bufale\", dice Rain. Ridono entrambe.",
+   "ratio": 0.907
+  },
+  {
+   "idx": 5,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Seriously, though, both the Free Worlds Senate and Republic Parliament are up in arms over fear of aliens,\" says Fiona. Rain adds, \"Only metaphorically up in arms, this time.|161|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 161,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Seriously, though, both the Free Worlds Senate and Republic Parliament are up in arms over fear of aliens,\" says Fiona. Rain adds, \"Only metaphorically up in arms, this time.",
+   "italian": "\t\"Scherzi a parte, sia il Senato dei Free Worlds sia il Parlamento della Repubblica sono sul piede di guerra per paura degli alieni\", dice Fiona. Rain aggiunge: \"Sul piede di guerra solo in senso metaforico, questa volta.",
+   "ratio": 1.256
+  },
+  {
+   "idx": 6,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"If we find new aliens, we'll let the necessary authorities know as soon as possible. You should do the same. Be discreet, avoid conflicts, and seek help if you need it.\"|162|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 162,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"If we find new aliens, we'll let the necessary authorities know as soon as possible. You should do the same. Be discreet, avoid conflicts, and seek help if you need it.\"",
+   "italian": "\t\"Se troviamo nuovi alieni, avviseremo le autorità competenti il prima possibile. Fai lo stesso anche tu. Sii discreto, evita i conflitti e chiedi aiuto se ti serve.\"",
+   "ratio": 0.971
+  },
+  {
+   "idx": 7,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Yup,\" Fiona says, \"being my sister didn't stop me blowing up her Cruiser! We rescued her ship's escape pods, though; they were veering concerningly towards a star.\"|168|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 168,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Yup,\" Fiona says, \"being my sister didn't stop me blowing up her Cruiser! We rescued her ship's escape pods, though; they were veering concerningly towards a star.\"",
+   "italian": "\t\"Già\", dice Fiona, \"essere mia sorella non mi ha impedita di far saltare il suo incrociatore! Però abbiamo recuperato le capsule della sua nave: puntavano verso una stella in modo preoccupante.\"",
+   "ratio": 1.175
+  },
+  {
+   "idx": 8,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\tRain continues, \"Can you imagine my surprise when I woke up on my sister's new Dreadnought?\"|169|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 169,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\tRain continues, \"Can you imagine my surprise when I woke up on my sister's new Dreadnought?\"",
+   "italian": "\tRain continua: \"Immagina la mia sorpresa quando mi sono svegliata sulla nuova corazzata di mia sorella.\"",
+   "ratio": 1.129
+  },
+  {
+   "idx": 9,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Hey, you got a new Auxiliary commission afterwards,\" replies Fiona, poking Rain as she says it, \"and your whole crew survived. Now we escort each other's ships during investigations!\"|170|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 170,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Hey, you got a new Auxiliary commission afterwards,\" replies Fiona, poking Rain as she says it, \"and your whole crew survived. Now we escort each other's ships during investigations!\"",
+   "italian": "\t\"Ehi, dopo ti hanno dato il comando di una nuova ausiliaria\", risponde Fiona, dando un colpetto a Rain mentre lo dice, \"e tutto il tuo equipaggio è sopravvissuto. Ora ci scortiamo a vicenda le navi durante le indagini!\"",
+   "ratio": 1.189
+  },
+  {
+   "idx": 10,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Well, Rain went off to Earth to join the Navy Academy years ago,\" says Captain Fiona.|176|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 176,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Well, Rain went off to Earth to join the Navy Academy years ago,\" says Captain Fiona.",
+   "italian": "\t\"Beh, anni fa Rain è partita per la Terra per entrare all'Accademia della Marina\", dice il capitano Fiona.",
+   "ratio": 1.23
+  },
+  {
+   "idx": 11,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"And Fiona stayed on Longjump and joined the local militia before the Free Worlds were formed,\" says Captain Rain. \"It's not that we wanted to fight each other, but we both believed in our own sides.\"|177|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 177,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"And Fiona stayed on Longjump and joined the local militia before the Free Worlds were formed,\" says Captain Rain. \"It's not that we wanted to fight each other, but we both believed in our own sides.\"",
+   "italian": "\t\"E Fiona è rimasta su Longjump e si è unita alla milizia locale prima che si formassero i Free Worlds\", dice il capitano Rain. \"Non è che volessimo combatterci, ma credevamo entrambe nelle nostre parti.\"",
+   "ratio": 1.015
+  },
+  {
+   "idx": 12,
+   "id": "mission:War Reactions: Syndicate Orphan|When you exit the landing area, you hear sounds of fists falling on skin and a kid yelling for help. Around the corner are three scruffy-looking boys hitting a fourth, who just fell on the ground. It's not clear if they're going to stop attacking him.|196|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 196,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "When you exit the landing area, you hear sounds of fists falling on skin and a kid yelling for help. Around the corner are three scruffy-looking boys hitting a fourth, who just fell on the ground. It's not clear if they're going to stop attacking him.",
+   "italian": "Quando esci dall'area di atterraggio, senti il rumore di pugni sulla pelle e un ragazzo che grida aiuto. Dietro l'angolo ci sono tre ragazzi dall'aria trasandata che picchiano un quarto, appena caduto a terra. Non è chiaro se smetteranno di attaccarlo.",
+   "ratio": 1.004
+  },
+  {
+   "idx": 13,
+   "id": "mission:War Reactions: Syndicate Orphan|\t\"Break it up, kids.\"|198|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 198,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\t\"Break it up, kids.\"",
+   "italian": "\t\"Basta così, ragazzi.\"",
+   "ratio": 1.095
+  },
+  {
+   "idx": 14,
+   "id": "mission:War Reactions: Syndicate Orphan|\t(Ignore them and keep walking.)|199|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 199,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\t(Ignore them and keep walking.)",
+   "italian": "\t(Ignorali e continua a camminare.)",
+   "ratio": 1.094
+  },
+  {
+   "idx": 15,
+   "id": "mission:War Reactions: Syndicate Orphan|\tThe three attackers turn around, looking furious. They eye the gun in your holster and run away.|201|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 201,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\tThe three attackers turn around, looking furious. They eye the gun in your holster and run away.",
+   "italian": "\tI tre aggressori si voltano, furiosi. Danno un'occhiata alla pistola nella tua fondina e scappano.",
+   "ratio": 1.021
+  },
+  {
+   "idx": 16,
+   "id": "mission:War Reactions: Syndicate Orphan|\tThe boy on the ground slowly rises to his feet. He looks about twelve years old. It takes him a few seconds to recover. \"Thanks. Not a lot of people around here would help like that. I'm Gus.\" He looks worried and asks, \"Can you walk me to the repair shop? I'm already late for work, and I'm afraid they'll attack me again.\"|202|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 202,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\tThe boy on the ground slowly rises to his feet. He looks about twelve years old. It takes him a few seconds to recover. \"Thanks. Not a lot of people around here would help like that. I'm Gus.\" He looks worried and asks, \"Can you walk me to the repair shop? I'm already late for work, and I'm afraid they'll attack me again.\"",
+   "italian": "\tIl ragazzo a terra si rialza lentamente. Dimostra una dozzina d'anni. Gli servono alcuni secondi per riprendersi. \"Grazie. Non sono molti, qui in giro, quelli che aiuterebbero così. Sono Gus.\" Sembra preoccupato e chiede: \"Mi accompagni all'officina? Sono già in ritardo per il lavoro, e temo che mi attacchino di nuovo.\"",
+   "ratio": 0.991
+  },
+  {
+   "idx": 17,
+   "id": "mission:War Reactions: Syndicate Orphan|\t\"Why were those boys attacking you?\"|205|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 205,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\t\"Why were those boys attacking you?\"",
+   "italian": "\t\"Perché quei ragazzi ti stavano attaccando?\"",
+   "ratio": 1.216
+  },
+  {
+   "idx": 18,
+   "id": "mission:War Reactions: Syndicate Orphan|\t\"Aren't you a little young to work in a repair shop?\"|209|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 209,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\t\"Aren't you a little young to work in a repair shop?\"",
+   "italian": "\t\"Non sei un po' giovane per lavorare in un'officina?\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "mission:War Reactions: Syndicate Orphan|\t\"I'm in a hurry. You're on your own.\"|211|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 211,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\t\"I'm in a hurry. You're on your own.\"",
+   "italian": "\t\"Ho fretta. Arrangiati da solo.\"",
+   "ratio": 0.868
+  },
+  {
+   "idx": 20,
+   "id": "mission:War Reactions: Syndicate Orphan|\t\"That's rough, buddy, but I'm in a hurry. You're on your own.\"|215|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 215,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\t\"That's rough, buddy, but I'm in a hurry. You're on your own.\"",
+   "italian": "\t\"È dura, amico, ma ho fretta. Arrangiati da solo.\"",
+   "ratio": 0.81
+  }
+ ]
+}

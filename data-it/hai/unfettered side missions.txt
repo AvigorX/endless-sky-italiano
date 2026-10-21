@@ -1,0 +1,511 @@
+# Copyright (c) 2015 by Michael Zahniser
+# Copyright (c) 2024 by Hurleveur
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Unfettered returning home"
+	minor
+	description "Questo Hai ti ha chiesto di farlo uscire di nascosto dallo spazio degli Unfettered e di portarlo su <destination>."
+	source
+		attributes "unfettered"
+	destination "Hai-home"
+	clearance
+	passengers 1
+	to offer
+		has "Unfettered Tribute 3: done"
+		random < 40
+	on offer
+		conversation
+			`Durante la notte senti un leggero rumore di graffi sul portello principale della tua nave. Vai a controllare?`
+			choice
+				`	(Sì.)`
+				`	(No.)`
+					defer
+			`	Prendi una torcia e apri il portello, e trovi un giovane Hai con una grande sacca a tracolla. "Sei tu il <first> <last>, vero?", dice. Fai cenno di sì. Dice: "È vero quello che c'è scritto qui?"`
+			`	Nelle mani tiene un pezzo di carta stagnola. Riconosci l'involucro di una delle razioni alimentari che hai trasportato agli Unfettered, il "tributo" che pretendono dagli Hai pacifici. Ma non avendo mai aperto una di quelle razioni, non avevi notato che all'interno c'è una scritta, poche parole nell'alfabeto spigoloso degli Hai. Il giovane Unfettered vede il tuo sguardo confuso e traduce il messaggio. "Dice: 'Hai-home è casa tua. Torna al tuo popolo.'"`
+			choice
+				`	"Credo che sia vero. Gli Hai che hanno dato questo tributo hanno detto che speravano che gli Unfettered rinunciassero alla violenza e si riconciliassero con loro."`
+					goto true
+				`	"Mi dispiace, ma non credo che ti lasceranno mai vivere tra loro, se è nella tua natura essere incline alla violenza."`
+			`	Hai poca esperienza nel leggere le emozioni degli Hai, ma il giovane sembra abbattuto. "Ne sei certo?", chiede.`
+			choice
+				`	"Ne sono certo. Non posso fare nulla per te."`
+					goto refuse
+				`	"Forse puoi venire con me e scoprirlo, ma non farti troppe illusioni."`
+					goto end
+			label true
+			`	"Mi porterai su Hai-home?", chiede. "Tu puoi stare fuori dai luoghi degli Unfettered. Posso venire con te?"`
+			choice
+				`	"Sì, ti ci porto."`
+					goto end
+				`	"Mi dispiace, non posso rischiare di far arrabbiare gli Unfettered trasportando un disertore."`
+			label refuse
+			`	Deluso, il giovane se ne va. Speri di aver fatto la scelta giusta.`
+				decline
+			label end
+			`	Accompagni il giovane in una delle tue cabine e gli dici di restare nascosto finché non raggiungi Hai-home.`
+				accept
+
+	on visit
+		dialog `Cerchi il giovane Hai, ma ti accorgi che è salito su una delle tue scorte! Meglio partire e aspettare che le tue scorte arrivino in questo sistema stellare.`
+	on complete
+		payment 100000
+		dialog
+			`Non dovevi preoccuparti dell'accoglienza che il giovane Unfettered avrebbe ricevuto qui su Hai-home. Pochi minuti dopo che hai contattato con esitazione il governo degli Hai, una folla felice si è radunata attorno alla tua nave. Quando esce dal portello, sembra sbalordito di essere accolto con tanto calore. Uno dei governatori degli Hai ti ringrazia per averlo trasportato e ti paga <payment>.`
+		"reputation: Hai" += 10
+		"reputation: Hai (Wormhole Access)" += 10
+		"reputation: Hai Merchant" += 10
+		"reputation: Hai Merchant (Human)" += 10
+		"reputation: Hai Merchant (Sympathizers)" += 10
+
+
+
+# This mission will offer but defer itself the first time if you lack money but have sufficient net worth.
+mission "Hai Legacy 1"
+	invisible
+	shipyard
+	source "Hai-home"
+	destination "Darkcloak"
+	clearance
+	to offer
+		has "First Contact: Unfettered: offered"
+		"reputation: Hai (Unfettered)" < 0
+		not "Unfettered Jump Drive 1: offered"
+		"credits" + "net worth" * ( 1 - "Hai Legacy 1: deferred" ) >= 10000000
+	on offer
+		conversation
+			branch first
+				not "Hai Legacy 1: deferred"
+			`Ricordi una figura incappucciata che ti ha offerto un'opportunità d'affari in questo cantiere. Vuoi seguire le sue indicazioni e dirigerti verso le coordinate indicate?`
+			choice
+				`	(Certo.)`
+					goto go
+				`	(Forse un'altra volta.)`
+					defer
+				`	(Mai.)`
+					decline
+			label first
+			`Mentre giri per il cantiere, vieni avvicinato con discrezione da una figura incappucciata. Quando ti fermi per sentire cosa ha da dire, ti afferra il braccio e tira per farti seguire. "Continua a camminare", sibila lo sconosciuto. Dopo aver indicato e commentato navi a caso, come per imitare i gesti di un normale passante, ti si rivolge di nuovo.`
+			`	"I miei associati e io abbiamo una lucrosa proposta d'affari per te. Richiederà tutta la tua attenzione, quindi faresti bene a chiudere prima gli affari in corso. Se sei interessato, vieni a trovarci a queste coordinate."`
+			`	Proprio prima di andarsene aggiungono: "Notiamo che gestisci più navi. Tuttavia, questa è una faccenda solitaria; assicurati di poter parcheggiare quasi tutte le tue navi."`
+				to display
+					"total ships" > 1
+			`	Senza aspettare una risposta, ti piegano un pezzo di carta in mano e svaniscono in fretta tra la folla. C'è scritto solo un luogo, e se lo confronti con le mappe locali sembra indicare una spiaggia dall'altra parte del pianeta.`
+			branch continue
+				"credits" >= 10000000
+			`	Però la carta dice anche che devi avere almeno dieci milioni di crediti in contanti! Dovrai metterli da parte o chiedere un prestito e tornare un altro giorno, prima di dirigerti verso il luogo indicato.`
+				defer
+			label continue
+			`	Ci andrai?`
+			choice
+				`	(Certo.)`
+				`	(Forse un'altra volta.)`
+					defer
+			label go
+			`	Mentre ti chiedi se ci sarà abbastanza spazio per far atterrare la nave sulla spiaggia, noti un biglietto del treno attaccato sul retro della carta. Altri appunti scritti danno indicazioni precise su come arrivarci, con in fondo la chiara richiesta di non portare la nave stellare.`
+			`	Con tua sorpresa, la stazione ferroviaria locale è sotterranea. Non riesci a capacitarti della sua enormità: sembra quasi che da qui si possa raggiungere l'intero pianeta. Chiedi indicazioni a un Hai, imbarazzato quando scopri che bastava scansionare il biglietto a un terminale vicino e tutte le informazioni utili sarebbero comparse.`
+			`	Dopo essere uscito dalla stazione, cammini per qualche ora finché non raggiungi la destinazione. All'arrivo ti guardi attorno in cerca dello sconosciuto. A parte una grotta, una vegetazione rada e, naturalmente, la spiaggia stessa, non vedi nulla di significativo nei dintorni. Ricontrolli che le coordinate siano giuste e ti guardi ancora attorno.`
+			`	Aspetti un po' finché non scorgi due figure incappucciate più avanti lungo la spiaggia, e cominci a dubitare che sia stata una buona idea mentre si avvicinano. Anche quando sono abbastanza vicini per parlare, i loro volti restano in qualche modo impossibili da scorgere sotto i cappucci. "Salve, <last>", dice uno. "Ci dispiace per la segretezza, ma la verità è che non possiamo permetterci rischi. È meglio per tutti se non sai chi siamo, e avevamo bisogno di un luogo isolato per parlarti."`
+			choice
+				`	"Dimmi di più."`
+					goto "tell me"
+				`	"Come mi conosci?"`
+					goto know
+				`	(Scappa.)`
+			`	Sembrano sorpresi dal tuo improvviso cambio di idea, ma non fanno nulla per fermarti.`
+			label "train back"
+			`	Senza incidenti, torni alla stazione e compri un biglietto per lo spazioporto.`
+				decline
+			label know
+			`	Il secondo sorride. "Qualsiasi esterno che atterri sul nostro mondo natale deve essere ben noto. Sappiamo che hai aiutato la nostra gente."`
+			`	"Però non pensare che non siamo al corrente dei tuoi scontri con gli Unfettered", aggiunge il primo con tono serio.`
+				to display
+					"reputation: Hai (Unfettered)" < -1250
+			label "tell me"
+			`	All'improvviso senti un forte ruggito venire dal mare alle tue spalle, e il terreno comincia a tremare.`
+			choice
+				`	(Voltati.)`
+			`	Le onde si agitano e il vento ti passa accanto mentre una forma circondata da vapori emerge dall'acqua, come se un antico mostro marino risalisse dagli abissi.`
+			`	Ma non è un mostro. È una nave, e le sue armi sono puntate dritte su di te!`
+			label "try again"
+			scene "scene/emerging ladybug"
+			choice
+				`	(Corri!)`
+				`	(Aspetta.)`
+					goto wait
+				`	(Prova a contattare la mia flotta per chiedere aiuto.)`
+					to display
+						"total ships" > 1
+				`	(Sparagli!)`
+					goto foolish
+			`	Mentre cerchi di reagire, l'Hai più vicino ti afferra saldamente il braccio e grida sopra il rumore. "Se questa nave avesse voluto ucciderti, <last>, saresti già morto."`
+			label wait
+			`	Riesci a malapena a sentire qualcosa sopra il rumore dei motori, mentre la nave si posa sulla spiaggia. All'improvviso tutto è calmo. Si voltano verso di te, uno più a suo agio dell'altro. "Questa nave non ti vuole alcun male."`
+			choice
+				`	(Non dire nulla.)`
+					goto explain
+				`	"Perché non hai detto nulla prima che succedesse?"`
+			`	Il secondo risponde: "Avremmo potuto, ma dov'è il divertimento? Volevamo vedere come avresti reagito.`
+			label explain
+			`	"Questa nave è la nostra garanzia che nulla vada storto, se tentassi qualcosa contro di noi. Dopo tutto, non siamo ancora sicuri di poterti dare fiducia."`
+			`	I due Hai ti portano poi in una grotta vicina. Cristalli incastonati nelle pareti diffondono un debole bagliore blu mentre li segui, finché non arrivi a una grande camera dove la luce del sole entra da fessure, rivelando un'altra nave. Il primo Hai parla di nuovo. "Quella nave fuori non è in vendita. Questa, però, è un possente relitto del passato, pensata per la guerra dai tempi in cui il nostro impero controllava le stelle: un Anomalocaris!"`
+			scene "scene/cave scene"
+			choice
+				`	"Di cosa si tratta?"`
+			`	Il secondo ora fa un passo verso di te per parlare, quasi interrompendo il primo. "Abbiamo una proposta per te. Se accetti di portare rifornimenti di cui abbiamo molto bisogno ai nostri fratelli, gli Hai Unfettered, ti venderemo questa nave al modico prezzo di dieci milioni di crediti, comprese due armi appartenenti ai selvaggi Korath!" Il primo sembra sorpreso e cerca di intervenire, ma il secondo riprende prima che possano parlare.`
+			`	"Queste armi, per le loro dimensioni, colpiscono più forte di qualsiasi cosa nello spazio umano o persino degli Hai! Non preoccuparti, riuscirai a recuperare il costo di questa nave con facilità aiutandoci. Serve un carico di forniture mediche su <destination>, e ci mancano il tempo e il personale per portarle noi stessi con così poco preavviso.`
+			`	"Certo, la nave è vecchia, e non dovresti aspettarti il miglior prezzo in un cantiere. Tuttavia è un vascello pregevole, capace di combattere, trasportare merci ed estrarre minerali. Allora, cosa dici, <last>? È l'occasione della vita; navi come questa non le fanno più."`
+			label choice
+			choice
+				`	"Vi aiuterò."`
+					goto take
+				`	"Se siete a corto di equipaggio, chi pilotava l'altra nave?"`
+					to display
+						not "unfettered: pilot dialog"
+					goto pilot
+				`	"Perché l'altra nave era nascosta sott'acqua?"`
+					to display
+						not "unfettered: ocean dialog"
+					goto ocean
+				`	"No, grazie. Non ho intenzione di aggiungere un'altra nave alla mia flotta."`
+			`	I due Hai sembrano delusi. "Peccato. Probabilmente non ci incontreremo più", dice uno. "È meglio che tu dimentichi di averci incontrato qui", dice l'altro. Fanno cenno alla nave di prima di tornare sott'acqua e si allontanano lungo la spiaggia.`
+				goto "train back"
+			label pilot
+			action
+				set "unfettered: pilot dialog"
+			`	"Meno sai, meglio è per tutti noi, capitano."`
+				goto choice
+			label ocean
+			action
+				set "unfettered: ocean dialog"
+			`	"L'abbiamo trovata lì", risponde il primo.`
+			`	"È difficile trovare una goccia di pioggia in una tempesta, ma la goccia può vedere tutto mentre cade", aggiunge l'altro.`
+				goto choice
+			label take
+			action
+				give ship "Anomalocaris (Venerable)" "Good Omen"
+					id "hai legacy"
+				debt 10000000
+			`	Ti danno accesso alla nave e passano a spiegare i dettagli. "Non ha una vera importanza, ma certo capisci che non possiamo fare questa vendita per i canali normali. La presenteremo invece come un prestito."`
+			`	Capisci in fretta che non ti stanno affatto chiedendo un parere. Anzi, ricevi la notifica del debito prima ancora che abbiano finito di parlare. "Dovremo fare alcune modifiche alla nave prima che tu possa usarla.`
+			choice
+				`	(Torna al cantiere.)`
+					goto leave
+				`	"Perché dovrebbe importare loro una nave diversa?"`
+			`	"Dato che questa nave è antica, gli Unfettered cercheranno di preservarla. Lo stesso potrebbe non valere per altre navi."`
+			label leave
+			`	Si allontanano finché non riesci più a sentirli, lasciandoti i codici di accesso della nave perché tu possa portarla al cantiere. Con l'aiuto del pilota automatico riesci a pilotarla senza complicazioni.`
+				accept
+			label foolish
+			`	Estrai l'arma e cominci a sparare alla nave.`
+			branch miss
+				random < 50
+			branch lucky?
+				random < 2
+			`	Il tuo colpo raggiunge la nave, ma la piccola arma non ha alcuna possibilità contro un'armatura pesante, anche se un po' consumata. Allora la nave risponde al fuoco, mancandoti di poco e facendo eruttare un geyser di sabbia che ti costringe a lasciar cadere l'arma. Uno dei due Hai ti si avvicina, apparentemente deluso.`
+			`	"Sei fortunato a essere ancora vivo, ma anche così non ci servi a nulla se pensi sia saggio usare un'arma da fuoco contro un'astronave. Addio." Si voltano e se ne vanno senza un'altra parola, e la nave decolla.`
+				goto "train back"
+			label lucky?
+			`	Riesci a mettere a segno un colpo, anche se sembra non fare nulla alla grande navicella davanti a te. Poi senti una piccola esplosione. Non sei sicuro se i sistemi della nave danneggiata siano ceduti da soli, o se per un colpo di fortuna il tuo sparo abbia fatto qualcosa.`
+			`	Purtroppo non hai il tempo di riflettere sulle tue azioni, perché la nave esplode di colpo, portandoti con sé e con tutti gli altri sulla spiaggia.`
+				die
+			label miss
+			`	Mancchi il colpo. Né la nave né i due Hai reagiscono. Ti sembra di aver sentito una risatina, ma non sei sicuro da dove venga.`
+				goto "try again"
+	on defer
+		set "Hai Legacy 1: deferred"
+	on accept
+		clear "unfettered: ocean dialog"
+		clear "unfettered: pilot dialog"
+		log "Accettato un accordo alquanto losco per una vecchia nave Hai chiamata Anomalocaris; la transazione non poteva passare per i canali normali, così è stato emesso un prestito al posto di un acquisto convenzionale. Sembra essere ancora in uno stato sufficientemente buono per volare."
+		fail
+
+
+
+mission "Hai Legacy 2"
+	autosave
+	landing
+	name "Heritage Reclaimed"
+	description "Usa l'Anomalocaris appena acquisito per portare aiuto agli Hai Unfettered su <planet> entro il <date>."
+	clearance
+	deadline 7
+	cargo "food (aid)" 121
+	source "Hai-home"
+	destination "Darkcloak"
+	to offer
+		not "Hai Legacy 1: declined"
+		has "First Contact: Unfettered: offered"
+		"reputation: Hai (Unfettered)" < 0
+		not "Unfettered Jump Drive 1: offered"
+		"credits" + "net worth" * ( 1 - "Hai Legacy 1: deferred" ) >= 10000000
+	to accept
+		has "ship model: Anomalocaris"
+	on offer
+		conversation
+			`Lasci il cantiere e vai allo spazioporto dopo il tuo incontro. Un lavoratore ti accoglie subito mentre altri cominciano a riempire la tua nave di casse, e un rapido controllo dei dati della spedizione mostra che il carico è già stato assegnato a tuo nome. Non resta che consegnarlo su <destination> entro il <date>.`
+			`	Mentre torni alla tua nave e ti prepari a decollare dal pianeta, noti un messaggio sul pannello di comando:`
+			`	"Faresti bene a portare con te l'Anomalocaris che ti abbiamo affidato, per la tua consegna."`
+				accept
+	on enter
+		system
+			attributes "unfettered"
+		conversation
+			action
+				"old reputation: Hai (Unfettered)" = "reputation: Hai (Unfettered)"
+				"reputation: Hai (Unfettered)" >?= 0
+			`Entrando nel sistema ti prepari a combattere per far passare il carico. Però gli Unfettered, di solito aggressivi, hanno smesso all'improvviso di spararti.`
+	on fail
+		"reputation: Hai (Unfettered)" <?= -1000
+		dialog `Gli Unfettered e i loro associati non sono certo contenti quando in qualche modo scoprono che non hai consegnato il carico in tempo, e ti lasciano un breve messaggio sul pannello di comando: "Non ti dimostrerai degno di noi fallendo le nostre richieste."`
+	on visit
+		dialog `Hai raggiunto <planet>, ma o non hai portato l'Anomalocaris, o parte del carico era su un'altra nave.`
+	to complete
+		has "ship model: Anomalocaris"
+	on complete
+		dialog `Dopo l'atterraggio, un gruppo di Unfettered si raduna attorno alla tua nave e comincia a scaricare le forniture mediche, anche se stranamente non sembrano avere fretta. Poco dopo aver finito, ricevi un messaggio piuttosto breve dall'Hai a cui hai comprato la nave, insieme a una somma di crediti insolitamente grande. "Grazie per aver aiutato i nostri fratelli, <last>. Accetta questi <payment>."`
+		payment 1500000
+		log "Consegnato un carico urgente di cibo agli Hai Unfettered usando l'Anomalocaris, cosa che sembra averli soddisfatti."
+
+
+
+mission "Hai Legacy 3"
+	landing
+	deadline 2
+	name "Ancient Claim"
+	description "Sconfiggi in combattimento lo sfidante Unfettered nel sistema <system>. Hai solo 2 giorni, e restare fuori uso significa perdere lo scontro."
+	source "Darkcloak"
+	destination "Firelode"
+	to offer
+		has "Hai Legacy 2: done"
+		has "ship model: Anomalocaris"
+	on offer
+		conversation
+			`Dopo aver consegnato le forniture, ti accorgi che la tua nave è al centro dell'attenzione. Un Unfettered che sembra un ingegnere viene a parlarti, inizialmente più cordiale del solito rispetto alle tue esperienze precedenti con altri Unfettered.`
+			`	"Benvenuto. Anche se non so come tu abbia ottenuto questa nave, immagino che alcuni di noi lo vedranno come un segno. Vedi, è un relitto del nostro passato, un passato di cui siamo piuttosto orgogliosi. Per questo la maggior parte dei guerrieri Unfettered dirà che devi dimostrare il tuo diritto a usarla."`
+			`	Dopo un sospiro, il suo tono cambia. "Ma io non credo a nulla di tutto questo. Quello che per me conta è che quella nave è sia resistente sia piena di preziosa tecnologia antica."`
+			`	I suoi occhi si illuminano mentre si concentra di più sulla tua nave. "Vedo persino armi che abbiamo combattuto con valore per ottenere dai selvaggi Korath!"`
+				to display
+					has "outfit (flagship installed): Thermal Repeater Turret"
+			`	All'improvviso alza la voce perché tutti la sentano. "Io, Mera, ti sfido! Sarà un duello uno contro uno: tu sull'Anomalocaris contro il mio campione. Il vincitore si guadagnerà il diritto di possedere questo onorevole relitto e le sue possenti armi!"`
+			choice
+				`	"Che cosa ottengo se vinco?"`
+					goto win
+				`	"Non posso semplicemente vendertela?"`
+				`	"Ho comprato questa nave. È mia, e ne faccio ciò che voglio."`
+					goto fleeing
+			`	"No, perché agli occhi dei miei fratelli questo significherebbe che nemmeno io meritavo questa nave. E allora la sfiderebbero a me."`
+			label win
+			`	Mera si volta, parla un po' con altri Unfettered e poi si rivolge di nuovo a te. "Ti guadagnerai il diritto di accedere ai nostri mondi. Ma, per mantenere il nostro rispetto, devi tenere questo Anomalocaris in buone condizioni finché non ti dimostrerai in un altro modo. È un artefatto inestimabile. Se rifiuti di dimostrare il tuo valore, non ti sarà più permesso atterrare qui."`
+			`	Poi ti lancia un'occhiataccia. "Attento: anche se non ci sono regole ufficiali, devi usare solo l'Anomalocaris. Allora, ti alzerai in volo, o hai troppa paura?"`
+			choice
+				`	"Accetto."`
+				`	"Non ho nulla da dimostrarti. Questa nave ora è mia."`
+					goto fleeing
+			`	Mera sogghigna. "Bene! Non ti combatterò di persona, è troppo rischioso. Dopo tutto sono solo un'ingegnere. E non vorrei nemmeno negare a mio fratello e al suo equipaggio l'occasione di dimostrarsi contro un potente guerriero umano!"`
+			`	Non sei sicuro che Mera faccia sul serio, ma i suoi amici sembrano decisi. Uno che pare il loro capo ti si avvicina. "Dunque pensi di meritare di pilotare questa possente nave dell'impero Hai?"`
+			`	"Sì, e cosa te lo fa pensare, umano?", aggiunge un altro.`
+			choice
+				`	(Non dire nulla.)`
+				`	"Stai cercando di spaventarmi per farmi rinunciare allo scontro?"`
+					goto scare
+			`	"Lo scopriremo", dice un terzo.`
+			label scare
+			`	Il capo del gruppo si avvicina e ti parla con tono più serio. "Sappi che questa non è tanto una competizione amichevole quanto uno scontro per guadagnarti davvero il diritto di pilotare questa nave. Devi sapere che questo scontro ha alcune... regole implicite, anche se non ce ne sono di ufficiali. Diamo per scontato che tutti le conoscano, ma dato che sei un esterno te le spiegherò", dice mentre ti allontana dal gruppo.`
+			`	"Naturalmente, dato che è un duello, nessuno oltre a noi può interferire, ma devi anche sapere che restare fuori uso conta come sconfitta. Non pensare nemmeno di ingannarci passando a qualcosa che non sia questo Anomalocaris, o non ci prenderemo la briga di presentarci! Devi dimostrare di meritartela, dopo tutto. Al vincitore vanno le spoglie, quindi il saccheggio è permesso, ma non tentare di rubare le nostre navi. Se lo fai, tutti gli Unfettered saranno contro di te!"`
+			# This is a "warning" for the incoming extra ship that happens because you killed/captured 10 Shield Beetles or so.
+			`	Poi ti guarda intensamente, dritto negli occhi. "A volte pieghiamo le regole per i nostri amici, ma con te non è questo il caso."`
+				to display
+					"reputation: Hai (Unfettered)" < -1500
+			`	Mera comincia a sembrare un po' impaziente. "Vuoi parlare tutto il giorno, o combattere? Vai a Ehma Ti, insomma!" Gli Unfettered si dirigono subito alle loro navi, ma Mera ti tira da parte quando sono abbastanza lontani. "Voglio che sia fatto entro la fine della giornata, quindi non mettere alla prova la mia pazienza. Sei fortunato che abbia offerto io questo accordo, perché avevano intenzione di prendersi il relitto con la forza. Ora, svelto, vai alla tua nave! Fai le ultime modifiche che ti servono, poi vieni a combattere contro di noi."`
+			`	Vedi che gli Unfettered hanno già cominciato le procedure di lancio, quindi dovresti prepararti a decollare con il tuo Anomalocaris, e con nessun'altra nave, il prima possibile.`
+				accept
+			label fleeing
+			action
+				"reputation: Hai (Unfettered)" = "old reputation: Hai (Unfettered)"
+				set "unfettered: fled with the relic"
+			`	Visto che è improbabile che collaborino, ti precipiti alla tua nave e decolli, con gli Unfettered che ti corrono dietro.`
+				launch
+	on enter
+		conversation
+			branch fleeing
+				has "unfettered: fled with the relic"
+			branch anomaly
+				not "flagship model: Anomalocaris"
+			branch "too many ships"
+				"total ships" > 1
+			`Mentre lasci l'atmosfera del pianeta, ricevi un breve messaggio. "Ti aspettiamo a Ehma Ti oggi. Non deluderci."`
+				accept
+			label fleeing
+			action
+				fail
+			`Gli Unfettered non sembrano troppo contenti di vederti andare via con il loro premio. Lo sfidante ti aspetta già in orbita e ti chiama. "Dove credi di andare, scimmia?"`
+				decline
+			label "too many ships"
+			`Mentre decolli per unirti alla tua flotta in orbita, ricevi una chiamata dagli Unfettered. "Devi lasciare la tua flotta in attesa qui. Se ti aiutano, il duello sarà annullato!"`
+				decline
+			label anomaly
+			`Sei chiamato dagli Unfettered appena raggiungi l'orbita. "Ci credi ciechi, scimmia? Non stai pilotando il relitto come nave ammiraglia! Non vali nemmeno una sequenza di lancio; il duello è annullato", dicono arrabbiati.`
+			action
+				"reputation: Hai (Unfettered)" = "old reputation: Hai (Unfettered)"
+				fail
+	on enter "Ehma Ti"
+		conversation
+			branch anomaly
+				not "flagship model: Anomalocaris"
+			branch "too many ships"
+				"total ships" > 1
+			`Entrando nel sistema vedi che lo sfidante ti aspetta davvero, e ti manda subito un segnale. "Mostraci di che cosa sei capace, scimmia! Mostraci che sai controllare bene le tue armi, come ogni guerriero dovrebbe! Dimostraci di avere la forza di mettere fuori uso le nostre navi, ma anche la moderazione di non distruggerle!"`
+				accept
+			label "too many ships"
+			`Arrivando con la tua flotta in questo sistema, ricevi una chiamata dagli Unfettered. "Se non sai nemmeno contare quante navi hai, non sei degno del nostro tempo, scimmia! Il disonore non ti porterà da nessuna parte con noi, i Veri Hai! Vattene."`
+				goto failed
+			label anomaly
+			`Sei chiamato dagli Unfettered mentre entri nel sistema. "Scimmia! Perché rifiuti di usare il relitto? Solo vincendo con il relitto puoi dimostrare di esserne degno. Vattene: non sprecheremo altro tempo con gente come te."`
+			label failed
+			action
+				"reputation: Hai (Unfettered)" = "old reputation: Hai (Unfettered)"
+				fail
+	on enter "Hi Yahr" "Wah Ki" "Zuba Zub" "Bore Fah"
+		"reputation: Hai (Unfettered)" = "old reputation: Hai (Unfettered)"
+		fail
+		dialog `Ricevi una chiamata dagli Unfettered. "Sei fuggito e non hai completato il duello. Perciò non godrai più di un rispetto immeritato! Ti converrebbe restituirci la nave, se mai ti trovassimo di nuovo sui nostri mondi!`
+	on disabled
+		fail
+		dialog
+			`Dopo che la tua nave è fuori uso, una delle navi Unfettered ti chiama. "Hai perso la sfida, ma non ci aspettavamo molto da un umano come te. Ripareremo la tua nave per una congrua tangente, ma faresti meglio ad atterrare su uno dei nostri mondi e restituircela con un risarcimento molto generoso. Se proverai a tenerla, faremo le cose in modo duro.`
+			`	"Sappi però che la tua tregua con noi finisce appena atterri. Oggi ci hai deluso. Forse un giorno ti dimostrerai diverso."`
+	on visit
+		fail
+	on fail
+		"reputation: Hai (Unfettered)" = "old reputation: Hai (Unfettered)"
+		clear "old reputation: Hai (Unfettered)"
+		dialog `Sei contattato dagli Unfettered mentre entri nell'atmosfera del pianeta. "Non hai completato il duello. Il cessate il fuoco è finito. Non godrai più di un rispetto immeritato!"`
+	npc disable
+		government "Hai (Unfettered Challenger)"
+		to spawn
+			has "flagship model: Anomalocaris"
+			not "unfettered: fled with the relic"
+			"old reputation: Hai (Unfettered)" >= -1500
+		personality disables heroic plunders staying target unconstrained
+		ship "Sea Scorpion (Ionic Blasters)" "Thunder Struck"
+		system "Ehma Ti"
+		on kill
+			dialog `Ricevi una chiamata da Mera, che sembra piuttosto arrabbiata. "Distruggere la nave può essere solo frutto di incompetenza o di intenti malvagi, e non tollereremo né l'una né gli altri!"`
+			"reputation: Hai (Unfettered)" = "old reputation: Hai (Unfettered)"
+			fail
+		conversation
+			branch cheat
+				"total ships" > 1
+			`Ricevi un messaggio dalla nave Unfettered. "Ci arrendiamo. Atterra su Firelode per ricevere la tua ricompensa."`
+				accept
+			label cheat
+			`"Vieni qui con una flotta e hai la sfacciataggine di mettere fuori uso la mia nave? Il tuo disonore non conosce limiti, scimmia!"`
+			action
+				fail
+	npc disable
+		government "Hai (Unfettered Challenger)"
+		to spawn
+			has "flagship model: Anomalocaris"
+			not "unfettered: fled with the relic"
+			"old reputation: Hai (Unfettered)" < -1500
+		personality heroic mute plunders target unconstrained
+		ship "Shield Beetle (Tripulse Ionic Turret)" "Requiem"
+		system "Ehma Ti"
+		on kill
+			dialog `Ricevi una chiamata da Mera, che sembra piuttosto arrabbiata. "Distruggere la nave può essere solo frutto di incompetenza o di intenti malvagi, e non tollereremo né l'una né gli altri!"`
+			"reputation: Hai (Unfettered)" = "old reputation: Hai (Unfettered)"
+			fail
+		conversation
+			branch cheat
+				"total ships" > 1
+			`Sei riuscito a sconfiggere lo sfidante Unfettered. Ora è il momento di atterrare su Firelode e reclamare la tua ricompensa.`
+				accept
+			label cheat
+			`"Vieni qui con una flotta e hai la sfacciataggine di mettere fuori uso la mia nave? Il tuo disonore non conosce limiti, scimmia!"`
+			action
+				fail
+	npc
+		government "Hai (Unfettered)"
+		to spawn
+			not "unfettered: fled with the relic"
+		ship "Lightning Bug (Unfettered Shipyards)" "Dungeon Master"
+		system "Ehma Ti"
+		personality launching pacifist staying uninterested
+		on disable
+			dialog `Mera ti chiama. "Fermati! Sono qui solo come osservatrice. Se distruggi la mia nave, l'accordo salta!"`
+		on kill
+			"reputation: Hai (Unfettered)" = "old reputation: Hai (Unfettered)"
+			set "unfettered: outcast"
+			dialog `Mentre distruggi la Lightning Bug, con Mera e il suo equipaggio a bordo, ricevi una chiamata arrabbiata dagli Unfettered. "Hai completamente mancato di rispetto alle regole di un duello e hai ucciso una delle nostre ingegnere più illustri! Non sarai più il benvenuto qui!"`
+			fail
+	npc
+		government "Hai (Unfettered)"
+		to spawn
+			has "unfettered: fled with the relic"
+		personality heroic launching unconstrained
+		ship "Sea Scorpion (Shredder)" "Hunter"
+	to complete
+		not "unfettered: fled with the relic"
+		# Needed to make sure the mission doesn't auto complete if no ships spawn.
+		has "flagship model: Anomalocaris"
+	on complete
+		clear "old reputation: Hai (Unfettered)"
+		log "Riuscito a usare un'antica nave da guerra Hai per battere uno sfidante Unfettered, guadagnando il rispetto degli Hai Unfettered finché la nave resterà in mio possesso."
+		conversation
+			`Quando atterri tutto intero, Mera si avvicina, sembrando molto sorpresa. "Hai vinto davvero! Ho visto tutto, e i dati che ho raccolto sugli effetti di queste armi esotiche saranno molto utili per la mia ricerca. È stato difficile per te?"`
+			choice
+				`	"È stato divertente."`
+					goto next
+				`	"È stato facile!"`
+				`	"È stata una sfida."`
+					goto challenge
+			`	"Non diventare troppo sicuro di te, capitano", riflette. "Sono sicura che sai cosa succede a certi piloti.`
+				goto next
+			label challenge
+			`	"Oh, quindi il loro piano ha quasi funzionato dopotutto? Forse avrei dovuto partecipare anch'io allo scontro.`
+			label next
+			`	"Beh, congratulazioni, non pensavo che ne avessi la stoffa. Ti darò l'autorizzazione ad atterrare, a condizione che tu tenga intero questo relitto del nostro passato. Ricorda: al momento la tua reputazione con noi dipende unicamente da quella nave. Se in qualche modo la perdi per un'incompetenza tua, farai una pessima figura con i Veri Hai."`
+			`	Mera poi se ne va mentre comincia a rivedere i dati del tuo scontro su un piccolo dispositivo. Per ora sembra che gli Hai Unfettered abbiano un certo rispetto per te, finché hai l'Anomalocaris.`
+
+
+
+mission "Undeserved Anomalocaris"
+	minor
+	invisible
+	landing
+	source
+		attributes "unfettered"
+	to offer
+		has "ship model: Anomalocaris"
+		"reputation: Hai (Unfettered)" < 0
+		not "Hai Legacy 2: active"
+		not "Hai Legacy 3: done"
+	on offer
+		conversation
+			`Mentre atterri, innumerevoli Hai si dirigono in fretta verso la tua nave, ognuno armato di diverse armi. Uno di loro ti punta contro e fa una dichiarazione davanti alla folla che si sta rapidamente formando, gridando abbastanza forte perché tutti sentano. "Non meriti di pilotare questo relitto del passato!"`
+			`	Uno che sta dietro di loro interviene. "Hai sprecato la tua occasione per una battaglia gloriosa che ti guadagnasse quel diritto! Sappiamo in cosa hai fallito!"`
+				to display
+					has "Hai Legacy 3: offered"
+			`	Un Unfettered dall'aria più importante ti si avvicina, parlando con tono minaccioso. "Devi consegnarci immediatamente la nave, insieme alle armi dei selvaggi, se non ce le hai già rubate." Per un momento abbassano lo sguardo pensierosi, poi ti parlano di nuovo. "Ti daremo un'altra nave così potrai andartene, ma devi darci l'Anomalocaris!"`
+			choice
+				`	(Consegna l'Anomalocaris.)`
+				`	(Rifiuta la richiesta e vattene.)`
+					depart
+			`	Tu e il tuo equipaggio uscite da quella che per poco è stata la tua nave, e alla milizia locale degli Unfettered viene comunicato che ora è loro. Gli Unfettered che si stavano radunando attorno alla nave si disperdono contenti, tranne uno, probabilmente il capo a giudicare dalla quantità di armi che porta addosso. Viene a parlarti, armi in mano ma abbassate. "Siamo felici che tu abbia saputo ragionare e abbia deciso di consegnare la nave. In cambio ti forniremo un sostituto adeguato.`
+			`	"Quel relitto non era destinato a te, ma ci sono altri modi per dimostrarci il tuo valore." Il capo di questi Unfettered continua con una disinvoltura palesemente forzata. "Diciamo, per esempio, portarci un Jump Drive... o due... quello di sicuro ti guadagnerà il favore, e dimostrerà che sai combattere."`
+				to display
+					not "Unfettered Jump Drive 1: offered"
+			action
+				give ship "Lightning Bug (Unfettered Shipyards)" "Good Will"
+				take ship "Anomalocaris"
+			`	Il capo del gruppo Unfettered fa poi accompagnare te da alcuni di loro fino al bordo dello spazioporto. Mentre ci vai, alcuni sembrano trattenere una certa frustrazione, e avresti giurato che uno volesse attaccarti da un momento all'altro. Alla fine ti portano a una Lightning Bug atterrata, e dopo qualche pratica pasticciata gli Unfettered te la lasciano.`
+				decline

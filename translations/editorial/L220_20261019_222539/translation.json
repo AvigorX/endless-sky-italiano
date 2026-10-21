@@ -1,0 +1,297 @@
+{
+ "block": {
+  "path": "data/successors/successor ships.txt",
+  "line_from": 634,
+  "line_to": 873,
+  "units": 26
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Nnaatej|plural|634|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 634,
+   "kind": "VALUE",
+   "context": "ship:Nnaatej",
+   "english": "Nnaatejen",
+   "italian": "Nnaatejen",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Nnaatej|6-\"Ruuv\" Betavoltaic Cell|667|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 667,
+   "kind": "TEXT",
+   "context": "ship:Nnaatej",
+   "english": "6-\"Ruuv\" Betavoltaic Cell",
+   "italian": "6-\"Ruuv\" Betavoltaic Cell",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "ship:Nnaatej|\"Ej\" Shield Cortex|668|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 668,
+   "kind": "TEXT",
+   "context": "ship:Nnaatej",
+   "english": "\"Ej\" Shield Cortex",
+   "italian": "\"Ej\" Shield Cortex",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Nnaatej|\"Chyyra\" Inductive Thruster|672|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 672,
+   "kind": "TEXT",
+   "context": "ship:Nnaatej",
+   "english": "\"Chyyra\" Inductive Thruster",
+   "italian": "\"Chyyra\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Nnaatej|\"Chyyra\" Inductive Steering|673|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 673,
+   "kind": "TEXT",
+   "context": "ship:Nnaatej",
+   "english": "\"Chyyra\" Inductive Steering",
+   "italian": "\"Chyyra\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Nnaatej|\"Aqra\" Inductive Reverser|674|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 674,
+   "kind": "TEXT",
+   "context": "ship:Nnaatej",
+   "english": "\"Aqra\" Inductive Reverser",
+   "italian": "\"Aqra\" Inductive Reverser",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Nnaatej|description|712|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 712,
+   "kind": "DESCRIPTION",
+   "context": "ship:Nnaatej",
+   "english": "Owing to their amphibious nature, a substantial portion of the Successor population lives underwater. Most of their ships are built with this in mind and are capable of some degree of underwater operation. However, the Nnaatej is a specialist vessel built specifically for this purpose, shuttling passengers from deep ocean to deep space and back again. It is designed with a denser, pressure-stable hull, built-in maintenance systems, and increased resistance to corrosion and slowing effects. These features come at the cost of making it a heavy and expensive ship for its size, but are considered well worth it to ensure the safety and comfort of its passengers and cargo.",
+   "italian": "Data la loro natura anfibia, una parte consistente della popolazione dei Successori vive sott'acqua. La maggior parte delle loro navi è costruita tenendo conto di questo e sono in grado di operare sott'acqua almeno in una certa misura. La Nnaatej, invece, è un vascello specialistico costruito apposta per questo scopo, che trasporta i passeggeri dall'oceano profondo allo spazio profondo e ritorno. È progettata con uno scafo più denso e stabile alla pressione, sistemi di manutenzione integrati e una maggiore resistenza alla corrosione e agli effetti di rallentamento. Queste caratteristiche la rendono una nave pesante e costosa per le sue dimensioni, ma si ritiene che ne valgano ampiamente la pena per garantire la sicurezza e il comfort dei suoi passeggeri e del suo carico.",
+   "ratio": 1.157
+  },
+  {
+   "idx": 8,
+   "id": "ship:Nnesaarau|plural|717|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 717,
+   "kind": "VALUE",
+   "context": "ship:Nnesaarau",
+   "english": "Nnesaaraun",
+   "italian": "Nnesaaraun",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "ship:Nnesaarau|3-\"Kaska\" Betavoltaic Cell|744|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 744,
+   "kind": "TEXT",
+   "context": "ship:Nnesaarau",
+   "english": "3-\"Kaska\" Betavoltaic Cell",
+   "italian": "3-\"Kaska\" Betavoltaic Cell",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "ship:Nnesaarau|1-\"Uurau\" Betavoltaic Cell|745|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 745,
+   "kind": "TEXT",
+   "context": "ship:Nnesaarau",
+   "english": "1-\"Uurau\" Betavoltaic Cell",
+   "italian": "1-\"Uurau\" Betavoltaic Cell",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "ship:Nnesaarau|\"Ej\" Shield Cortex|747|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 747,
+   "kind": "TEXT",
+   "context": "ship:Nnesaarau",
+   "english": "\"Ej\" Shield Cortex",
+   "italian": "\"Ej\" Shield Cortex",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "ship:Nnesaarau|\"Chyyra\" Inductive Thruster|749|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 749,
+   "kind": "TEXT",
+   "context": "ship:Nnesaarau",
+   "english": "\"Chyyra\" Inductive Thruster",
+   "italian": "\"Chyyra\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "ship:Nnesaarau|\"Aqra\" Inductive Steering|750|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 750,
+   "kind": "TEXT",
+   "context": "ship:Nnesaarau",
+   "english": "\"Aqra\" Inductive Steering",
+   "italian": "\"Aqra\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "ship:Nnesaarau|\"Aqra\" Inductive Reverser|751|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 751,
+   "kind": "TEXT",
+   "context": "ship:Nnesaarau",
+   "english": "\"Aqra\" Inductive Reverser",
+   "italian": "\"Aqra\" Inductive Reverser",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "ship:Nnesaarau|description|781|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 781,
+   "kind": "DESCRIPTION",
+   "context": "ship:Nnesaarau",
+   "english": "Quick and comfortable, the Nnesaarau is among the newest designs utilized in Successor space, having first emerged from House Chydiyi's shipyards no more than twenty years ago. For various reasons, it is also among the least popular; it was designed solely as a luxury passenger transport and sees very little use outside that role because of its high price and restrictive internals. Nonetheless, some hotshot pilots swear by these ships as racing or fast courier vessels.",
+   "italian": "Veloce e confortevole, la Nnesaarau è tra i progetti più recenti in uso nello spazio dei Successori, uscita per la prima volta dai cantieri della Casa Chydiyi non più di vent'anni fa. Per varie ragioni è anche tra i meno popolari; fu progettata esclusivamente come trasporto passeggeri di lusso e viene usata ben poco al di fuori di quel ruolo, a causa del prezzo elevato e degli interni poco flessibili. Ciononostante, alcuni piloti spericolati giurano su queste navi come vascelli da corsa o corrieri veloci.",
+   "ratio": 1.078
+  },
+  {
+   "idx": 16,
+   "id": "ship:Nnesaarau|description|785|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 785,
+   "kind": "DESCRIPTION",
+   "context": "ship:Nnesaarau",
+   "english": "These very light vessels don't have much room for passengers or cargo, but move swiftly and elegantly through Successor space. These qualities, combined with their high price and uncommon presence, suggest that these may be luxury craft of some sort, too impractical for use by the majority of Successors.",
+   "italian": "Questi vascelli molto leggeri non hanno molto spazio per passeggeri o carichi, ma si muovono rapidi ed eleganti nello spazio dei Successori. Queste qualità, unite al prezzo elevato e alla presenza poco comune, suggeriscono che si tratti di imbarcazioni di lusso di qualche tipo, troppo poco pratiche per l'uso da parte della maggior parte dei Successori.",
+   "ratio": 1.161
+  },
+  {
+   "idx": 17,
+   "id": "ship:Ojde|plural|790|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 790,
+   "kind": "VALUE",
+   "context": "ship:Ojde",
+   "english": "Ojden",
+   "italian": "Ojden",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "ship:Ojde|6-\"Ruuv\" Betavoltaic Cell|819|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 819,
+   "kind": "TEXT",
+   "context": "ship:Ojde",
+   "english": "6-\"Ruuv\" Betavoltaic Cell",
+   "italian": "6-\"Ruuv\" Betavoltaic Cell",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "ship:Ojde|\"Ej\" Shield Cortex|821|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 821,
+   "kind": "TEXT",
+   "context": "ship:Ojde",
+   "english": "\"Ej\" Shield Cortex",
+   "italian": "\"Ej\" Shield Cortex",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "ship:Ojde|\"Veusa\" Inductive Thruster|824|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 824,
+   "kind": "TEXT",
+   "context": "ship:Ojde",
+   "english": "\"Veusa\" Inductive Thruster",
+   "italian": "\"Veusa\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "ship:Ojde|\"Veusa\" Inductive Steering|825|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 825,
+   "kind": "TEXT",
+   "context": "ship:Ojde",
+   "english": "\"Veusa\" Inductive Steering",
+   "italian": "\"Veusa\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "ship:Ojde|\"Chyyra\" Inductive Reverser|826|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 826,
+   "kind": "TEXT",
+   "context": "ship:Ojde",
+   "english": "\"Chyyra\" Inductive Reverser",
+   "italian": "\"Chyyra\" Inductive Reverser",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "ship:Ojde|description|863|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 863,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ojde",
+   "english": "Although it is the largest freighter employed by the Successors, the \"Ojde\" is still substantially smaller than large human freighters like the Bulk Freighter and Behemoth. While this limits the cargo capacity of any single ship, it also allows these vessels to be surprisingly fast and maneuverable and increases the number of facilities which can effectively tend to them.",
+   "italian": "Sebbene sia il cargo più grande impiegato dai Successori, l'\"Ojde\" è comunque molto più piccolo delle grandi navi da trasporto umane come il Bulk Freighter e il Behemoth. Se da un lato questo limita la capacità di carico di ogni singola nave, dall'altro permette a questi vascelli di essere sorprendentemente veloci e manovrabili e aumenta il numero di strutture in grado di prendersene cura efficacemente.",
+   "ratio": 1.086
+  },
+  {
+   "idx": 24,
+   "id": "ship:Ojde|description|864|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 864,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ojde",
+   "english": "\tThough somewhat less popular among more traditional merchants than the time-tested Myaede, the increased cargo capacity of the Ojde makes it a more or less mandatory choice for those hoping to assemble a large-scale transport operation.",
+   "italian": "\tSebbene sia un po' meno popolare tra i mercanti più tradizionali della collaudata Myaede, la maggiore capacità di carico dell'Ojde la rende una scelta più o meno obbligata per chi spera di mettere in piedi un'operazione di trasporto su larga scala.",
+   "ratio": 1.051
+  },
+  {
+   "idx": 25,
+   "id": "ship:Ojde|description|868|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 868,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ojde",
+   "english": "Although it is the largest freighter employed by the Successors, the Ojde is still substantially smaller than large human freighters like the Bulk Freighter and Behemoth. While this limits the cargo capacity of any single ship, it also allows these vessels to be surprisingly fast and maneuverable and increases the number of facilities which can effectively tend to them.",
+   "italian": "Sebbene sia il cargo più grande impiegato dai Successori, l'Ojde è comunque molto più piccolo delle grandi navi da trasporto umane come il Bulk Freighter e il Behemoth. Se da un lato questo limita la capacità di carico di ogni singola nave, dall'altro permette a questi vascelli di essere sorprendentemente veloci e manovrabili e aumenta il numero di strutture in grado di prendersene cura efficacemente.",
+   "ratio": 1.086
+  },
+  {
+   "idx": 26,
+   "id": "ship:Seiitej|plural|873|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 873,
+   "kind": "VALUE",
+   "context": "ship:Seiitej",
+   "english": "Seiitejen",
+   "italian": "Seiitejen",
+   "ratio": 1.0
+  }
+ ]
+}

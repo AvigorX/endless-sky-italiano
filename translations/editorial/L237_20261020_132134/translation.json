@@ -1,0 +1,165 @@
+{
+ "block": {
+  "path": "data/avgi/avgi news.txt",
+  "line_from": 369,
+  "line_to": 399,
+  "units": 14
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:avgi physicist|\"Gratitude. It is fortunate that the sum of our knowledge has been preserved, even in the most remote depths of space.\"|369|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 369,
+   "kind": "NEWS",
+   "context": "news:avgi physicist",
+   "english": "\"Gratitude. It is fortunate that the sum of our knowledge has been preserved, even in the most remote depths of space.\"",
+   "italian": "\"Gratitudine. È una fortuna che la somma del nostro sapere sia stata conservata, persino nei recessi più remoti dello spazio.\"",
+   "ratio": 1.059
+  },
+  {
+   "idx": 2,
+   "id": "news:avgi physicist|\"Frustation. Energy shields should not work in the way they do. They make no sense!\"|370|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 370,
+   "kind": "NEWS",
+   "context": "news:avgi physicist",
+   "english": "\"Frustation. Energy shields should not work in the way they do. They make no sense!\"",
+   "italian": "\"Frustrazione. Gli scudi energetici non dovrebbero funzionare come funzionano. Non hanno alcun senso!\"",
+   "ratio": 1.214
+  },
+  {
+   "idx": 3,
+   "id": "news:avgi physicist|\"Frustation. Even now, decades after we invented the hyperdrive, only a small group of experts can truly claim to understand the way it works.\"|371|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 371,
+   "kind": "NEWS",
+   "context": "news:avgi physicist",
+   "english": "\"Frustation. Even now, decades after we invented the hyperdrive, only a small group of experts can truly claim to understand the way it works.\"",
+   "italian": "\"Frustrazione. Ancora oggi, decenni dopo che abbiamo inventato l'iperpropulsore, solo un piccolo gruppo di esperti può davvero dire di capire come funziona.\"",
+   "ratio": 1.098
+  },
+  {
+   "idx": 4,
+   "id": "news:avgi physicist|\"Pride. I did my thesis on a new type of solar cell junction. Now I see them on half the ships in the sky!\"|372|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 372,
+   "kind": "NEWS",
+   "context": "news:avgi physicist",
+   "english": "\"Pride. I did my thesis on a new type of solar cell junction. Now I see them on half the ships in the sky!\"",
+   "italian": "\"Orgoglio. Ho fatto la tesi su un nuovo tipo di giunzione per celle solari. Ora le vedo su metà delle navi in volo!\"",
+   "ratio": 1.084
+  },
+  {
+   "idx": 5,
+   "id": "news:avgi physicist|\"Amusement. You always see bright up-and-coming students claim to have invented a new kind of faster than light drive. Eighty years ago, one of them was actually right!\"|373|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 373,
+   "kind": "NEWS",
+   "context": "news:avgi physicist",
+   "english": "\"Amusement. You always see bright up-and-coming students claim to have invented a new kind of faster than light drive. Eighty years ago, one of them was actually right!\"",
+   "italian": "\"Divertimento. Si vedono sempre studenti brillanti e promettenti sostenere di aver inventato un nuovo tipo di motore più veloce della luce. Ottant'anni fa uno di loro aveva davvero ragione!\"",
+   "ratio": 1.124
+  },
+  {
+   "idx": 6,
+   "id": "news:avgi physicist|\"Curiosity. It's a wonder that once wormholes were considered the most likely option for traveling faster than light. I wonder how the hyperdrive was invented first?\"|374|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 374,
+   "kind": "NEWS",
+   "context": "news:avgi physicist",
+   "english": "\"Curiosity. It's a wonder that once wormholes were considered the most likely option for traveling faster than light. I wonder how the hyperdrive was invented first?\"",
+   "italian": "\"Curiosità. È sorprendente che un tempo i wormhole fossero considerati l'opzione più probabile per viaggiare più veloce della luce. Chissà come mai l'iperpropulsore è stato inventato prima?\"",
+   "ratio": 1.145
+  },
+  {
+   "idx": 7,
+   "id": "news:avgi physicist|\"Information. Our engineers created a type of coating that can greatly reduce a ship's atmospheric drag by causing shed vortices to destructively interfere with each other.\"|375|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 375,
+   "kind": "NEWS",
+   "context": "news:avgi physicist",
+   "english": "\"Information. Our engineers created a type of coating that can greatly reduce a ship's atmospheric drag by causing shed vortices to destructively interfere with each other.\"",
+   "italian": "\"Informazione. I nostri ingegneri hanno creato un tipo di rivestimento che riduce molto la resistenza aerodinamica di una nave, facendo interferire in modo distruttivo i vortici di scia tra loro.\"",
+   "ratio": 1.133
+  },
+  {
+   "idx": 8,
+   "id": "news:avgi physicist|\"Amazement. The simulations say that a memory diamond can retain its information for millions of years, if stored in stable conditions. That might outlast our entire civilization!\"|376|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 376,
+   "kind": "NEWS",
+   "context": "news:avgi physicist",
+   "english": "\"Amazement. The simulations say that a memory diamond can retain its information for millions of years, if stored in stable conditions. That might outlast our entire civilization!\"",
+   "italian": "\"Stupore. Le simulazioni dicono che un diamante di memoria può conservare le sue informazioni per milioni di anni, se tenuto in condizioni stabili. Potrebbe sopravvivere a tutta la nostra civiltà!\"",
+   "ratio": 1.094
+  },
+  {
+   "idx": 9,
+   "id": "news:avgi astronomer|\"Instructive. The Twilight Nebula is a reflection nebula nearly a thousand light years wide. Illuminated by relatively young neutron stars, it is the remnants of multiple supernovae that occurred millions of years ago.\"|394|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 394,
+   "kind": "NEWS",
+   "context": "news:avgi astronomer",
+   "english": "\"Instructive. The Twilight Nebula is a reflection nebula nearly a thousand light years wide. Illuminated by relatively young neutron stars, it is the remnants of multiple supernovae that occurred millions of years ago.\"",
+   "italian": "\"Istruttivo. La Twilight Nebula è una nebulosa a riflessione larga quasi mille anni luce. Illuminata da stelle di neutroni relativamente giovani, è ciò che resta di più supernove esplose milioni di anni fa.\"",
+   "ratio": 0.945
+  },
+  {
+   "idx": 10,
+   "id": "news:avgi astronomer|\"Inquisitive. It is notable that the star cluster southeast of Stream is mostly made up of young, hot stars. That part of the Twilight nebula was likely once a dense molecular cloud, compact enough to collapse into giant stars millions of years ago.\"|395|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 395,
+   "kind": "NEWS",
+   "context": "news:avgi astronomer",
+   "english": "\"Inquisitive. It is notable that the star cluster southeast of Stream is mostly made up of young, hot stars. That part of the Twilight nebula was likely once a dense molecular cloud, compact enough to collapse into giant stars millions of years ago.\"",
+   "italian": "\"Curioso. È notevole che l'ammasso stellare a sud-est di Stream sia fatto per lo più di stelle giovani e calde. Quella parte della Twilight Nebula era probabilmente una densa nube molecolare, abbastanza compatta da collassare in stelle giganti milioni di anni fa.\"",
+   "ratio": 1.056
+  },
+  {
+   "idx": 11,
+   "id": "news:avgi astronomer|\"Tutelage. The Twilight Nebula is not in hydrostatic equilibrium. It is slowly contracting as it cools, a stellar nursery on a massive scale.\"|396|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 396,
+   "kind": "NEWS",
+   "context": "news:avgi astronomer",
+   "english": "\"Tutelage. The Twilight Nebula is not in hydrostatic equilibrium. It is slowly contracting as it cools, a stellar nursery on a massive scale.\"",
+   "italian": "\"Insegnamento. La Twilight Nebula non è in equilibrio idrostatico. Si contrae lentamente mentre si raffredda: un vivaio stellare su scala enorme.\"",
+   "ratio": 1.028
+  },
+  {
+   "idx": 12,
+   "id": "news:avgi astronomer|\"Frustration. The galaxy is three-dimensional, but you wouldn't know it from the way everyone draws their maps!\"|397|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 397,
+   "kind": "NEWS",
+   "context": "news:avgi astronomer",
+   "english": "\"Frustration. The galaxy is three-dimensional, but you wouldn't know it from the way everyone draws their maps!\"",
+   "italian": "\"Frustrazione. La galassia è tridimensionale, ma non si direbbe guardando come tutti disegnano le loro mappe!\"",
+   "ratio": 0.982
+  },
+  {
+   "idx": 13,
+   "id": "news:avgi astronomer|\"Annoyance. Using cardinal directions like 'North' and 'West' to describe locations in the galaxy should be a crime! Polar coordinates for 'spinward' and 'rimward' would be far better.\"|398|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 398,
+   "kind": "NEWS",
+   "context": "news:avgi astronomer",
+   "english": "\"Annoyance. Using cardinal directions like 'North' and 'West' to describe locations in the galaxy should be a crime! Polar coordinates for 'spinward' and 'rimward' would be far better.\"",
+   "italian": "\"Fastidio. Usare punti cardinali come 'Nord' e 'Ovest' per descrivere posizioni nella galassia dovrebbe essere un reato! Coordinate polari per 'senso di rotazione' e 'verso il bordo' sarebbero molto meglio.\"",
+   "ratio": 1.119
+  },
+  {
+   "idx": 14,
+   "id": "news:avgi astronomer|\"Curiosity. To this day, there is no explanation as to why some systems are linked by starways and others are not.\"|399|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 399,
+   "kind": "NEWS",
+   "context": "news:avgi astronomer",
+   "english": "\"Curiosity. To this day, there is no explanation as to why some systems are linked by starways and others are not.\"",
+   "italian": "\"Curiosità. Ancora oggi non c'è spiegazione del perché alcuni sistemi siano collegati da vie stellari e altri no.\"",
+   "ratio": 0.991
+  }
+ ]
+}

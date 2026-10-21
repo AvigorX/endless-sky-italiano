@@ -1,0 +1,128 @@
+{
+ "block": {
+  "path": "data/avgi/avgi culture conversations.txt",
+  "line_from": 260,
+  "line_to": 270,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Avgi Culture: Fencing|\tAt the announcer's word, the duelists leap into the air with incredible speed, circling around each other and clashing blades. The two spiral upwards into the far upper areas of the arena, and quickly drop back down, darting in and out of each others' reach multiple times per second. Less than a minute later, you hear a loud ding, and one of the duelists falls to the floor with their wing collapsed. The crowd, who hadn't stopped buzzing the entire duel, erupts with even louder wing fluttering.|260|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 260,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tAt the announcer's word, the duelists leap into the air with incredible speed, circling around each other and clashing blades. The two spiral upwards into the far upper areas of the arena, and quickly drop back down, darting in and out of each others' reach multiple times per second. Less than a minute later, you hear a loud ding, and one of the duelists falls to the floor with their wing collapsed. The crowd, who hadn't stopped buzzing the entire duel, erupts with even louder wing fluttering.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\tAt the announcer's word, the duelists leap into the air with incredible speed, circling around each other and clashing blades. The two spiral upwards into the far upper areas of the arena, and quickly drop back down, darting in and out of each others' reach multiple times per second. Less than a minute later, you hear a loud ding, and one of the duelists falls to the floor with their wing collapsed. The crowd, who hadn't stopped buzzing the entire duel, erupts with even louder wing fluttering.`",
+   "english_hash": "1470c86039fd20f4"
+  },
+  {
+   "idx": 2,
+   "id": "mission:Avgi Culture: Fencing|\t\"Astonishment. Zomp wins round one,\" the announcer states. \"Repose. Shall we begin round two?\"|261|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 261,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t\"Astonishment. Zomp wins round one,\" the announcer states. \"Repose. Shall we begin round two?\"",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\t\"Astonishment. Zomp wins round one,\" the announcer states. \"Repose. Shall we begin round two?\"`",
+   "english_hash": "35f9d819fe5fdb80"
+  },
+  {
+   "idx": 3,
+   "id": "mission:Avgi Culture: Fencing|\tOnce more the contestants line up and spring into the air in a duel of eye-watering speed and agility. And once more, Zomp wins to the thunderous applause of the crowd.|262|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 262,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tOnce more the contestants line up and spring into the air in a duel of eye-watering speed and agility. And once more, Zomp wins to the thunderous applause of the crowd.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\tOnce more the contestants line up and spring into the air in a duel of eye-watering speed and agility. And once more, Zomp wins to the thunderous applause of the crowd.`",
+   "english_hash": "7e3161576d6a7024"
+  },
+  {
+   "idx": 4,
+   "id": "mission:Avgi Culture: Fencing|\t\"Bewilderment. It seems as though Zomp has defeated our reigning champion!\" the announcer proclaims.|263|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 263,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t\"Bewilderment. It seems as though Zomp has defeated our reigning champion!\" the announcer proclaims.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\t\"Bewilderment. It seems as though Zomp has defeated our reigning champion!\" the announcer proclaims.`",
+   "english_hash": "d9d7403bcaac964e"
+  },
+  {
+   "idx": 5,
+   "id": "mission:Avgi Culture: Fencing|\t\"Hysteria. I knew he would win! I'm up 10 to 1 on this bet!\" a nearby Avgi says with exuberance as they buzz around you wildly, holding various pink papers in their many arms.|264|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 264,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t\"Hysteria. I knew he would win! I'm up 10 to 1 on this bet!\" a nearby Avgi says with exuberance as they buzz around you wildly, holding various pink papers in their many arms.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\t\"Hysteria. I knew he would win! I'm up 10 to 1 on this bet!\" a nearby Avgi says with exuberance as they buzz around you wildly, holding various pink papers in their many arms.`",
+   "english_hash": "0a15ac45806b8624"
+  },
+  {
+   "idx": 6,
+   "id": "mission:Avgi Culture: Fencing|\tAcross the arena you hear a shout from a pink Avgi, \"Adoration! I love you, Zomp!\"|265|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 265,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tAcross the arena you hear a shout from a pink Avgi, \"Adoration! I love you, Zomp!\"",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\tAcross the arena you hear a shout from a pink Avgi, \"Adoration! I love you, Zomp!\"`",
+   "english_hash": "0e99112c2878e9ce"
+  },
+  {
+   "idx": 7,
+   "id": "mission:Avgi Culture: Fencing|\tThe entire arena appears to be in a chaos of cheers, boos and rumbling wing flapping for minutes after the match has ended. You can't remember a single instance of fencing back in human space having this much passion and energy within the crowd.|266|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 266,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tThe entire arena appears to be in a chaos of cheers, boos and rumbling wing flapping for minutes after the match has ended. You can't remember a single instance of fencing back in human space having this much passion and energy within the crowd.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\tThe entire arena appears to be in a chaos of cheers, boos and rumbling wing flapping for minutes after the match has ended. You can't remember a single instance of fencing back in human space having this much passion and energy within the crowd.`",
+   "english_hash": "7be48f8602c31d0c"
+  },
+  {
+   "idx": 8,
+   "id": "mission:Avgi Culture: Fencing|\tAfter the hubbub and celebration die down, you find no issue leaving the crowded arena - most Avgi simply fly over your head.|267|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 267,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tAfter the hubbub and celebration die down, you find no issue leaving the crowded arena - most Avgi simply fly over your head.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\tAfter the hubbub and celebration die down, you find no issue leaving the crowded arena - most Avgi simply fly over your head.`",
+   "english_hash": "2c4e2469c8288f17"
+  },
+  {
+   "idx": 9,
+   "id": "mission:Avgi Culture: Fencing|\tYou let the two fly away, continuing on your own business.|270|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 270,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tYou let the two fly away, continuing on your own business.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\tYou let the two fly away, continuing on your own business.`",
+   "english_hash": "07bfd162634f5cec"
+  }
+ ]
+}

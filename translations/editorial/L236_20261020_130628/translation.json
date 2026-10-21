@@ -1,0 +1,264 @@
+{
+ "block": {
+  "path": "data/avgi/avgi news.txt",
+  "line_from": 301,
+  "line_to": 344,
+  "units": 23
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:avgi student happy|\"Happiness. I'm about to graduate with my mastery in physics!\"|301|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 301,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Happiness. I'm about to graduate with my mastery in physics!\"",
+   "italian": "\"Felicità. Sto per prendere la laurea magistrale in fisica!\"",
+   "ratio": 0.968
+  },
+  {
+   "idx": 2,
+   "id": "news:avgi student happy|\"Happiness. I'm about to graduate with my mastery in economics!\"|302|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 302,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Happiness. I'm about to graduate with my mastery in economics!\"",
+   "italian": "\"Felicità. Sto per prendere la laurea magistrale in economia!\"",
+   "ratio": 0.969
+  },
+  {
+   "idx": 3,
+   "id": "news:avgi student happy|\"Happiness. I'm about to graduate with my mastery in engineering!\"|303|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 303,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Happiness. I'm about to graduate with my mastery in engineering!\"",
+   "italian": "\"Felicità. Sto per prendere la laurea magistrale in ingegneria!\"",
+   "ratio": 0.97
+  },
+  {
+   "idx": 4,
+   "id": "news:avgi student happy|\"Happiness. I'm about to graduate with my mastery in nanotechnology!\"|304|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 304,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Happiness. I'm about to graduate with my mastery in nanotechnology!\"",
+   "italian": "\"Felicità. Sto per prendere la laurea magistrale in nanotecnologia!\"",
+   "ratio": 0.986
+  },
+  {
+   "idx": 5,
+   "id": "news:avgi student happy|\"Happiness. I'm about to graduate with my mastery in genetics!\"|305|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 305,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Happiness. I'm about to graduate with my mastery in genetics!\"",
+   "italian": "\"Felicità. Sto per prendere la laurea magistrale in genetica!\"",
+   "ratio": 0.984
+  },
+  {
+   "idx": 6,
+   "id": "news:avgi student happy|\"Happiness. I'm about to graduate with my mastery in aerodynamics!\"|306|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 306,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Happiness. I'm about to graduate with my mastery in aerodynamics!\"",
+   "italian": "\"Felicità. Sto per prendere la laurea magistrale in aerodinamica!\"",
+   "ratio": 0.985
+  },
+  {
+   "idx": 7,
+   "id": "news:avgi student happy|\"Enthusiasm. I can't wait to go into academia after I graduate! I have a position lined up and everything!\"|307|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 307,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Enthusiasm. I can't wait to go into academia after I graduate! I have a position lined up and everything!\"",
+   "italian": "\"Entusiasmo. Non vedo l'ora di entrare nell'accademia dopo la laurea! Ho già un posto che mi aspetta!\"",
+   "ratio": 0.953
+  },
+  {
+   "idx": 8,
+   "id": "news:avgi student happy|\"Gratitude. The appearance of those humans got me the funding I needed to complete my xenology mastery. Thank you, humanity!\"|308|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 308,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Gratitude. The appearance of those humans got me the funding I needed to complete my xenology mastery. Thank you, humanity!\"",
+   "italian": "\"Gratitudine. L'arrivo di quegli umani mi ha procurato i fondi che mi servivano per completare la laurea magistrale in xenologia. Grazie, umanità!\"",
+   "ratio": 1.176
+  },
+  {
+   "idx": 9,
+   "id": "news:avgi student happy|\"Joy. Midterms are finally over!\"|309|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 309,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Joy. Midterms are finally over!\"",
+   "italian": "\"Gioia. Gli esami intermedi sono finalmente finiti!\"",
+   "ratio": 1.576
+  },
+  {
+   "idx": 10,
+   "id": "news:avgi student happy|\"Have you seen my homework, question?\"|310|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 310,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Have you seen my homework, question?\"",
+   "italian": "\"Hai visto i miei compiti, domanda?\"",
+   "ratio": 0.947
+  },
+  {
+   "idx": 11,
+   "id": "news:avgi student happy|\"My professor refused to believe me when I said an Aberrant ate my homework, amusement.\"|311|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 311,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"My professor refused to believe me when I said an Aberrant ate my homework, amusement.\"",
+   "italian": "\"Il mio professore si è rifiutato di credermi quando ho detto che un Aberrant si è mangiato i miei compiti, divertimento.\"",
+   "ratio": 1.386
+  },
+  {
+   "idx": 12,
+   "id": "news:avgi student happy|\"Annoyance. The quality of education out here just isn't the same as back on Aviskir.\"|312|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 312,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Annoyance. The quality of education out here just isn't the same as back on Aviskir.\"",
+   "italian": "\"Fastidio. La qualità dell'istruzione qui non è proprio la stessa che ad Aviskir.\"",
+   "ratio": 0.953
+  },
+  {
+   "idx": 13,
+   "id": "news:avgi student happy|\"Annoyance. The quality of education out here just isn't the same as back on Livloua.\"|313|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 313,
+   "kind": "NEWS",
+   "context": "news:avgi student happy",
+   "english": "\"Annoyance. The quality of education out here just isn't the same as back on Livloua.\"",
+   "italian": "\"Fastidio. La qualità dell'istruzione qui non è proprio la stessa che a Livloua.\"",
+   "ratio": 0.942
+  },
+  {
+   "idx": 14,
+   "id": "news:avgi student frustrated|\"Frustration. I wanted to study political science, but all they teach out here is 'practical' subjects. And people wonder why the Assembly is filled with incompetents...\"|335|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 335,
+   "kind": "NEWS",
+   "context": "news:avgi student frustrated",
+   "english": "\"Frustration. I wanted to study political science, but all they teach out here is 'practical' subjects. And people wonder why the Assembly is filled with incompetents...\"",
+   "italian": "\"Frustrazione. Volevo studiare scienze politiche, ma qui insegnano solo materie 'pratiche'. E poi ci si chiede perché l'Assemblea sia piena di incompetenti...\"",
+   "ratio": 0.935
+  },
+  {
+   "idx": 15,
+   "id": "news:avgi student frustrated|\"Depression. I was going to study linguistics, but the university made me go into engineering instead. We already have enough engineers, what we need out here is culture!\"|336|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 336,
+   "kind": "NEWS",
+   "context": "news:avgi student frustrated",
+   "english": "\"Depression. I was going to study linguistics, but the university made me go into engineering instead. We already have enough engineers, what we need out here is culture!\"",
+   "italian": "\"Abbattimento. Volevo studiare linguistica, ma l'università mi ha fatto passare a ingegneria. Abbiamo già abbastanza ingegneri, qui ci serve cultura!\"",
+   "ratio": 0.877
+  },
+  {
+   "idx": 16,
+   "id": "news:avgi student frustrated|\"Anger. I wanted to study the arts, but I was ridiculed and accused of being a dead weight on society. Well, a society without art is no society at all!\"|337|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 337,
+   "kind": "NEWS",
+   "context": "news:avgi student frustrated",
+   "english": "\"Anger. I wanted to study the arts, but I was ridiculed and accused of being a dead weight on society. Well, a society without art is no society at all!\"",
+   "italian": "\"Rabbia. Volevo studiare arte, ma mi hanno deriso e accusato di essere un peso morto per la società. Beh, una società senza arte non è una società!\"",
+   "ratio": 0.967
+  },
+  {
+   "idx": 17,
+   "id": "news:avgi student frustrated|\"Anger. I wanted to study sociology, but that apparently isn't 'useful' to the War. Fools, the lot of them!\"|338|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 338,
+   "kind": "NEWS",
+   "context": "news:avgi student frustrated",
+   "english": "\"Anger. I wanted to study sociology, but that apparently isn't 'useful' to the War. Fools, the lot of them!\"",
+   "italian": "\"Rabbia. Volevo studiare sociologia, ma a quanto pare non è 'utile' alla Guerra. Sciocchi, tutti quanti!\"",
+   "ratio": 0.972
+  },
+  {
+   "idx": 18,
+   "id": "news:avgi student frustrated|\"Worry. I hope I can find a good job once I'm out of school, but I might have to just work in the shipyards for a few years.\"|339|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 339,
+   "kind": "NEWS",
+   "context": "news:avgi student frustrated",
+   "english": "\"Worry. I hope I can find a good job once I'm out of school, but I might have to just work in the shipyards for a few years.\"",
+   "italian": "\"Preoccupazione. Spero di trovare un buon lavoro appena finita la scuola, ma potrei dover lavorare nei cantieri per qualche anno.\"",
+   "ratio": 1.04
+  },
+  {
+   "idx": 19,
+   "id": "news:avgi student frustrated|\"Worry. I don't think I did well on that last exam.\"|340|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 340,
+   "kind": "NEWS",
+   "context": "news:avgi student frustrated",
+   "english": "\"Worry. I don't think I did well on that last exam.\"",
+   "italian": "\"Preoccupazione. Non credo di aver fatto bene all'ultimo esame.\"",
+   "ratio": 1.231
+  },
+  {
+   "idx": 20,
+   "id": "news:avgi student frustrated|\"Have you seen my homework, question?\"|341|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 341,
+   "kind": "NEWS",
+   "context": "news:avgi student frustrated",
+   "english": "\"Have you seen my homework, question?\"",
+   "italian": "\"Hai visto i miei compiti, domanda?\"",
+   "ratio": 0.947
+  },
+  {
+   "idx": 21,
+   "id": "news:avgi student frustrated|\"My professor refused to believe me when I said an Aberrant ate my homework, dejection.\"|342|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 342,
+   "kind": "NEWS",
+   "context": "news:avgi student frustrated",
+   "english": "\"My professor refused to believe me when I said an Aberrant ate my homework, dejection.\"",
+   "italian": "\"Il mio professore si è rifiutato di credermi quando ho detto che un Aberrant si è mangiato i miei compiti, scoramento.\"",
+   "ratio": 1.364
+  },
+  {
+   "idx": 22,
+   "id": "news:avgi student frustrated|\"Annoyance. The quality of education out here just isn't the same as back on Aviskir.\"|343|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 343,
+   "kind": "NEWS",
+   "context": "news:avgi student frustrated",
+   "english": "\"Annoyance. The quality of education out here just isn't the same as back on Aviskir.\"",
+   "italian": "\"Fastidio. La qualità dell'istruzione qui non è proprio la stessa che ad Aviskir.\"",
+   "ratio": 0.953
+  },
+  {
+   "idx": 23,
+   "id": "news:avgi student frustrated|\"Annoyance. The quality of education out here just isn't the same as back on Livloua.\"|344|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 344,
+   "kind": "NEWS",
+   "context": "news:avgi student frustrated",
+   "english": "\"Annoyance. The quality of education out here just isn't the same as back on Livloua.\"",
+   "italian": "\"Fastidio. La qualità dell'istruzione qui non è proprio la stessa che a Livloua.\"",
+   "ratio": 0.942
+  }
+ ]
+}

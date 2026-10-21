@@ -1,0 +1,2696 @@
+# Copyright (c) 2015 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "First Contact: Hai"
+	landing
+	source
+		government "Hai"
+		not attributes "uninhabited"
+	on offer
+		conversation
+			branch unfettered
+				has "First Contact: Unfettered: offered"
+			`Questo pianeta è popolato da una specie aliena che assomiglia a giganteschi scoiattoli intelligenti. Tuttavia l'aspetto più sorprendente dello spazioporto non sono gli alieni, ma il fatto che mercanti umani e altri civili camminino tra loro e si sentano chiaramente a casa. Vuoi cercare qualcuno che ti spieghi cosa succede qui?`
+			choice
+				`	(Certo.)`
+					goto sure1
+				`	(Non adesso.)`
+					defer
+
+			label sure1
+			`	Ti avvicini a un mercante umano impegnato a contrattare con uno degli alieni. Interrompono la conversazione quando ti vedono arrivare, e l'umano ti fa cenno di unirti a loro. "Sembri completamente perso," dice. "Prima volta giù nella tana del coniglio?"`
+			`	Annuisci. L'alieno allunga una zampa per stringerti la mano. "Benvenuto nello spazio degli Hai," dice. "Siamo un popolo di pace, e sei libero di visitarci o persino di vivere tra noi. I nostri mondi producono abbondanza per tutti."`
+				goto next
+			
+			label unfettered
+			`Gli Hai qui sembrano più amichevoli e accessibili di quelli che hai incontrato prima. Ancora più sorprendente, però, è il fatto che mercanti umani e altri civili camminino tra loro e si sentano chiaramente a casa. Vuoi cercare qualcuno che ti spieghi cosa succede qui?`
+			choice
+				`	(Certo.)`
+					goto sure2
+				`	(Non adesso.)`
+					defer
+
+			label sure2
+			`	Ti avvicini a un mercante umano impegnato a contrattare con uno degli Hai. Interrompono la conversazione quando ti vedono arrivare, e l'umano ti fa cenno di unirti a loro. "Sembri perso," dice. "Prima volta giù nella tana del coniglio?"`
+			`	"No, in realtà ho incontrato gli Hai a nord," rispondi. Il mercante sembra leggermente preoccupato, ma l'Hai si limita a sospirare.`
+			`	"Ah, hai incontrato le nostre sorelle e i nostri fratelli traviati. Spero che non ti abbiano causato troppi problemi, perché sono fuorviati nelle loro vie," dice. "Benvenuto nello spazio degli Hai. A differenza di quelli che hai incontrato prima, noi altri siamo un popolo di pace, e sei libero di visitarci o persino di vivere tra noi. I nostri mondi producono abbondanza per tutti."`
+			
+			label next
+			`	Dai una rapida occhiata al mercante umano per vedere la sua espressione, chiedendoti se questi alieni possano davvero essere così benigni, ma la sua espressione è calma e serena. "È vero," dice, "guardati intorno. Questi edifici sono in piedi da migliaia di anni. La società degli Hai è così avanzata che non ha quasi bisogno di risorse per mantenersi."`
+			branch wormhole
+				has "wormhole alpha found"
+			choice
+				`	"Come ha fatto l'umanità a raggiungere questo posto? Ha usato motori di salto?"`
+			`	Il mercante umano alza un sopracciglio. "Non posso dire di sapere cosa sia un motore di salto. Nel caso tu non lo sappia, però, nello spazio degli Hai c'è un cunicolo che riporta a una parte isolata dello spazio umano. Non perdere tempo a capire perché e come sia lì, perché non lo sanno nemmeno gli Hai."`
+			label wormhole
+			choice
+				`	"Perché permettete agli umani di stabilirsi qui?"`
+				`	"Cosa chiedete in cambio per lasciare che gli umani si stabiliscano qui?"`
+			
+			`	"Gli umani sono una specie giovane," dice l'Hai, "piena di energia, piena di idee nuove. E gli Hai sono vecchi, e tutto ciò che facciamo è ciò che abbiamo già fatto. Quando gli umani vanno in vacanza, viaggiano verso un mondo con il clima perfetto, soleggiato ogni giorno. Quando gli Hai vanno in vacanza, visitiamo il mondo più tempestoso, per trovare imprevedibilità e cambiamento. Gli umani sono così strani che parlare con un umano è come una piccola vacanza." Sorride, e intravedi i suoi enormi incisivi. In base alle tue conoscenze di xenobiologia diresti che gli Hai sono erbivori, ma non puoi esserne certo.`
+			branch hostile
+				has "First Contact: Unfettered: offered"
+			choice
+				`	"Quindi posso viaggiare in tutto il vostro territorio se voglio?"`
+					goto travel
+				`	"Come mai la gente nello spazio umano non sa che siete qui?"`
+					goto human
+			
+			label hostile
+			choice
+				`	"Se il vostro popolo è pacifico, perché gli Hai del nord sono così ostili?"`
+					goto why
+				`	"Come mai la gente nello spazio umano non sa che siete qui?"`
+			
+			label human
+			`	Il mercante umano ride. "Probabilmente perché la maggior parte di noi è venuta qui per sfuggire al caos e ai combattimenti dello spazio umano. L'ultima cosa che vogliamo è che ci segua fin qui. Non sto dicendo che non puoi parlarne con nessuno, ma se fossi in te non andrei a spargere troppo la notizia. E dai un'occhiata allo spazio degli Hai prima di andartene; scoprirai che potremmo imparare molto da loro."`
+			branch question
+				has "First Contact: Unfettered: offered"
+			`	"Quindi posso viaggiare ovunque voglio nel vostro territorio?" chiedi all'Hai.`
+			
+			label travel
+			`	"Sì," dice, "ma stai attento. Il nord è il territorio di alcuni Hai rinnegati, fuorviati nelle loro vie: banditi e pirati, che vivono di ciò che ci rubano. Se viaggi tra loro, non sarai al sicuro."`
+			`	"Inoltre," aggiunge l'umano, "ho sentito voci che gli Hai 'Slegati' stanno cercando di far svolgere qualche compito ai capitani umani che atterrano sui loro mondi. Non sono particolarmente interessato a scoprire quali siano questi compiti, ma se vedi qualcosa di sospetto, potrebbe essere quello."`
+				goto end
+			
+			label question
+			`	"Se il vostro popolo è pacifico, perché gli Hai del nord sono così ostili?" chiedi all'Hai.`
+			
+			label why
+			`	"Sono giovane, e le origini dei nostri fratelli 'Slegati' precedono il mio tempo," risponde. "Se vuoi saperne di più, forse dovresti trovare qualcuno molto più vecchio di me."`
+			
+			label end
+			`	Parlate ancora per un po', ma non ottieni molte altre informazioni, se non che diversi dei loro mondi sono disposti a vendere tecnologia Hai persino agli esseri umani. Ringrazi entrambi per essersi fermati a parlare, e l'Hai risponde: "Siamo sempre lieti di accogliere nuovi amici. Che la pace dimori nel tuo cuore finché non ci rivedremo."`
+				decline
+	on decline
+		log "Factions" "Hai" `Gli Hai sono una specie di giganteschi roditori intelligenti, che vivono a nord dello spazio umano. Permettono a qualsiasi umano che scopra il loro territorio di vivere al loro fianco, commerciare con loro e acquistare la loro tecnologia.`
+
+mission "Discovered Hai Space"
+	landing
+	invisible
+	non-blocking
+	source
+		government "Hai" "Hai (Unfettered)"
+	on offer
+		event "label hai space"
+		fail
+
+event "label hai space"
+	galaxy "label hai"
+		sprite "label/hai"
+
+mission "Discovered Wormhole Alpha"
+	invisible
+	non-blocking
+	entering
+	source
+		system "Ultima Thule"
+	destination "Earth"
+	on offer
+		set "wormhole alpha found"
+		fail
+
+
+
+mission "Assisting Hai"
+	assisting
+	repeat
+	to offer
+		random < 19
+	source
+		government "Hai" "Hai Merchant" "Hai Merchant (Human)"
+		not attributes "automaton"
+	on offer
+		payment 30000
+		conversation "assisting merchant hazardous"
+	destination "Hai-home"
+
+
+
+mission "Ask the Hai about the Unfettered"
+	landing
+	source
+		government "Hai"
+		not attributes "uninhabited"
+	to offer
+		has "First Contact: Hai: offered"
+		has "First Contact: Unfettered: offered"
+	on offer
+		conversation
+			`Gli Hai Slegati dicono di essere i "veri Hai", e sembrano pensare che gli altri Hai li opprimano, ma un altro Hai con cui hai parlato ha detto che gli Slegati sono semplicemente fuorviati. Vuoi cercare qualcuno qui che ti racconti meglio la storia?`
+			choice
+				`	(Sì.)`
+				`	(No.)`
+					decline
+			`	Trovi un Hai dall'aria anziana seduto su una panchina, che guarda le navi spaziali atterrare e decollare. Avvicinandoti, dice: "Salve, umano."`
+			choice
+				`	"Salve. Ho incontrato alcuni Hai Slegati. Cosa può raccontarmi di loro?"`
+				`	"Salve. Può dirmi perché siete in guerra con gli altri Hai che vivono a nord?"`
+					goto war
+			`	Dice: "Ah, le nostre sorelle e fratelli traviati a nord. Avrai certo visto com'è la nostra società: sicura, stabile, prevedibile, ponderata. Si adatta bene alla maggior parte di noi. Ma ci sono quelli..."`
+				goto raids
+			label war
+			`	Dice: "Non la chiamerei guerra. Non lanciamo incursioni contro di loro. Ci difendiamo solo quando attaccano. E forniamo loro cibo e altre cose necessarie alla vita. Non sono nostri nemici, sono solo quelli che non si adattano. Avrai certo visto com'è la nostra società: sicura, stabile, prevedibile, ponderata. Si adatta bene alla maggior parte di noi. Ma ci sono quelli..."`
+			label raids
+			`	Si ferma. "No, la sto raccontando in modo ingiusto. Ricomincio. Centinaia di anni fa, quando ero giovane, il nostro territorio fu saccheggiato da alieni provenienti da est, che arrivarono su enormi navi da guerra e depredarono i nostri mondi. In quei giorni c'erano alcuni Hai abbastanza coraggiosi da rischiare la vita per difenderci. Le incursioni durarono decenni, poi cessarono bruscamente.`
+			`	"La maggior parte di quelli che avevano combattuto gli invasori fu felice di tornare alla vita normale, ma alcuni trovarono che la vita ora sembrasse insipida e senza senso senza l'eccitazione e il caos della guerra. Fecero colonie nei sistemi a nord, combatterono tra loro, gestirono male la terra e crebbero di numero. E ora i loro mondi non riescono a sfamarli tutti, e ci invadono raccontando storie per attribuire a noi la colpa dei loro fallimenti."`
+			choice
+				`	"Non dovrebbero essere trattati con gratitudine per avervi difeso dagli incursori?"`
+				`	"Hanno detto che i Drak hanno modificato gli Hai per renderli meno aggressivi. È vero?"`
+					goto drak
+				`	"Era tutto quello che volevo sapere. Grazie."`
+					decline
+			`	"Lo erano, e dovrebbero ancora esserlo. Ci saranno sempre momenti in cui la nostra società ha bisogno di loro. Solo che in questo momento il bisogno non è così grande. Non c'è una nuova frontiera da esplorare, nessuna sfida degna da affrontare. E temiamo cosa succederebbe se si spingessero a sud e ottenessero accesso al cunicolo, quindi dobbiamo costringerli a restare dove sono."`
+			choice
+				`	"Hanno detto che i Drak hanno modificato gli Hai per renderli meno aggressivi. È vero?"`
+				`	"Era tutto quello che volevo sapere. Grazie."`
+					decline
+			label drak
+			`	"No," dice, "è una storia che hanno inventato, che gli Hai erano destinati a essere padroni della galassia ma i Drak e i Quarg ce lo hanno impedito. La storia non è vera. La nostra civiltà oltre il cunicolo è stata abbattuta da lotte intestine e da un governo dissennato. Tra le rovine abbiamo studiato, pensato e discusso, e siamo giunti a credere che potessimo governare un piccolo territorio con stabilità e pace, o tenere più mondi ma con continue turbolenze. Abbiamo scelto la stabilità, e rinunciato a quei mondi."`
+			choice
+				`	"Quindi non pensa che i Drak ci stiano tenendo tutti in gabbia?"`
+				`	"Era tutto quello che volevo sapere. Grazie."`
+					decline
+			`	Riflette sulla domanda per un po', poi dice: "A volte accendiamo un fuoco per cuocere il cibo. Il fuoco consuma molta legna, e le fiamme sono alte, troppo selvatiche e calde per cuocere bene il cibo. Poi la legna diventa braci che bruciano lentamente senza fiamme né fumo, e quando le raccogli sono buone per arrostire la carne o persino per cuocere il pane. Forse ogni specie deve consumare molti mondi e molte risorse prima di imparare a bruciare lentamente, e la saggezza dei Drak è permetterglielo. Ma quando trovano l'equilibrio, come abbiamo fatto noi, non hanno più bisogno di tanto spazio."`
+			`	Lo ringrazi per il tempo che ti ha dedicato, e ti congedi.`
+				decline
+
+
+
+mission "Hai Waypoint Warning"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "hai space start"
+	to complete
+		never
+	on enter "Waypoint"
+		fail
+		conversation
+			`Mentre la <ship> esce dall'iperspazio, la tua plancia si riempie di una serie di spie di avvertimento. Non è difficile trovarne la causa: anche da questa distanza, la luce del cunicolo è limpida come un cristallo, e tinge di viola pallido tutto ciò che la circonda. I bracci del vortice ruotano apparentemente con lentezza, ma sai che, da vicino, le bande di energia che lo compongono devono muoversi a velocità superiori di diversi ordini di grandezza rispetto alla velocità massima della tua nave.`
+			`	La tua osservazione viene interrotta da una chiamata su una frequenza criptata. La apri e ti trovi davanti quello che riconosci vagamente come un breve saluto in lingua Hai.`
+			choice
+				`	"Può ripetere?"`
+				`	"Mi scusi, non parlo l'Hai."`
+			`	Ricevi una risposta sotto forma di una risata di cuore. "Colpa mia, amico," dice l'Hai che ti chiama. "Un tempo chiunque fosse cresciuto nello spazio degli Hai conosceva l'Hai, ma immagino che ormai non sia più così, con Greenwater e tutto il resto.`
+			`	"Comunque, torniamo al punto. Probabilmente l'avrai sentito cento volte, ma vale la pena ripeterlo: a meno che tu non sia certo che l'altra persona lo sappia già, non parlare degli Hai, dello spazio degli Hai o di qualsiasi tecnologia Hai. Chiaro?"`
+			choice
+				`	"Chiaro."`
+					goto easy
+				`	"Perché dovrei mentire?"`
+			`	L'Hai ride di nuovo, questa volta più nervosamente. "Sa, là fuori c'è gente capace di dire quello che hai appena detto con un'espressione impassibile."`
+			choice
+				`	"Va bene, me ne vado."`
+					goto easy
+				`	"Faccio sul serio."`
+			`	Anche se non vedi il tuo interlocutore attraverso il communicatore, hai la sensazione che in questo momento si stia pizzicando il naso. "Qualche decennio fa, era difficile trovare un capitano che solo considerasse di rivelare l'esistenza degli Hai. Oggi sembra che persino gli Hai stiano facendo pressioni per uscire allo scoperto, senza badare al caos che porterebbe.`
+			`	"Ma non si tratta solo di proteggere lo spazio degli Hai. Ci sono gruppi con più che sufficienti motivi e capacità per insabbiare qualsiasi tentativo di seminare il caos nello spazio umano, compreso chiunque voglia rivelare l'esistenza di una specie senziente ancora sconosciuta.`
+			`	"Comunque, stai al sicuro là fuori." La chiamata si interrompe.`
+				decline
+			label easy
+			`	"Sono contento di sentirlo. Ci vediamo in giro, capitano." La chiamata si interrompe.`
+	npc
+		government Hai
+		personality staying uninterested
+		system "Waypoint"
+		fleet
+			names "hai"
+			variant
+				"Lightning Bug"
+
+
+
+mission "Hai Sympathizer Warning"
+	invisible
+	source
+		government "Hai"
+		not attributes "uninhabited" "retirement"
+	to offer
+		"reputation: Hai Merchant (Sympathizers)" < 0
+		not "warned about hai merchant politics"
+		not "hai space start"
+	on offer
+		log `Sono stato avvicinato da un mercante Hai in un bar dello spazioporto dopo uno scontro a fuoco. Mi ha avvertito delle fazioni tra i mercanti Hai e del pericolo di finire nei guai se i simpatizzanti degli Slegati restano coinvolti nel fuoco incrociato quando si combattono gli Slegati stessi. Ho imparato che, da straniero, la "legittima difesa" non è un argomento adeguato quando sono coinvolte morti di cittadini Hai.`
+		set "warned about hai merchant politics"
+		conversation
+			`Mentre sei seduto in un bar dello spazioporto in attesa del cibo che hai ordinato, un Hai avvicina una sedia senza tanti complimenti e si siede di fronte a te. Sembra un mercante, e uno che ha visto più di qualche cosa. Ti squadra prima di parlare: "Lei è il capitano <last>, giusto?"`
+			choice
+				`	"Sì, sono io."`
+					goto acknowledge
+				`	"Credo che abbiate sbagliato capitano."`
+			`	Sbatte un dispositivo sul tavolo, e una piccola proiezione olografica del tuo volto scatta su e comincia a ruotare. "No, non credo proprio."`
+			label acknowledge
+			`	Emette un sospiro. "Vede, lei ha combattuto gli Slegati, e ci sono alcuni Hai a cui questo non va giù. La vedono come un estraneo che ficca il naso nella politica interna degli Hai. Alcuni di loro sono quelli che noi mercanti chiamiamo Simpatizzanti, e possono lasciarsi prendere un po' la mano e sparare qualche colpo se vedono uno come lei diventare un po' troppo generoso con il grilletto quando si tratta degli Slegati."`
+			`	Con un gesto della mano indica lo spazioporto intorno a voi. "Forse avrà notato qualche difficoltà ad atterrare. Vede, siccome ci sono molte persone a cui non piace che gli estranei ficchino il naso dove non sono voluti, se le capita di rispondere al fuoco e distruggere per sbaglio la nave di un Simpatizzante, le autorità non si preoccupano molto di chi ha sparato per primo. Ci sono abbastanza opinioni del genere da garantire che, se abbatte un Simpatizzante, venga trattato non diversamente da come se avesse abbattuto qualsiasi altro mercante Hai. Le forze di sicurezza lo tratteranno allo stesso modo.`
+			`	"Quanto ai mercanti, è un'altra questione. È un tema di grande e continuo dibattito tra noi, e alcuni si offendono meno quando abbatte qualcuno con cui stavano discutendo. Però tutti hanno amici da tutte le parti, quindi dovrebbe comunque stare attento. I Simpatizzanti possono arrabbiarsi abbastanza da spararle ovunque la vedano, ma il fatto semplice è che, se reagisce contro un Hai, qualsiasi Hai, questo farà arrabbiare qualcuno e le sarà messo sul conto. Anche se quell'Hai era un Simpatizzante, e anche se ha sparato per primo."`
+			`	Ti guarda molto seriamente per assicurarsi che quello che ha detto sia stato assimilato.`
+			branch "low reputation"
+				"reputation: Hai" < 1
+			choice
+				`	"Ho capito, la ringrazio per l'avvertimento."`
+					goto end
+				`	"Perché dovrei finire nei guai per essermi difeso dai Simpatizzanti?"`
+					goto defending
+			label "low reputation"
+			choice
+				`	"Capisco di aver pestato qualche piede."`
+					goto trouble
+				`	"Come potrei finire nei guai per essermi difeso dai Simpatizzanti?"`
+			label defending
+			action
+				set "hai symp warn: explained trouble"
+			`	Scrolla le spalle. "Dovrebbe cercare di non applicare gli standard etici umani agli Hai. Il fatto semplice è che loro sono cittadini, e lei no.`
+			`	"Quando viene presentato un rapporto secondo cui hai distrutto la nave di un cittadino Hai, spetta al personale di sicurezza locale verificare la catena degli eventi. Se riferiscono che è stata colpa tua, allora è stata colpa tua, a meno che tu non riesca a contestarlo in tribunale. Tuttavia non sei un cittadino, quindi l'apparato di sicurezza può semplicemente bollarti come pirata e impedirti del tutto di accedere a un tribunale per contestarlo. E anche se ci riuscissi, sei un capitano; i tuoi affari sono nello spazio. Resti a terra per mesi per portare avanti il procedimento giudiziario.`
+			`	"Che tu lo ritenga giusto o no, è semplicemente la realtà della situazione. Devi gestire con cura le tue armi e la tua reputazione quando si tratta di interazioni con gli Slegati."`
+			
+			label trouble
+			branch "less trouble"
+				"reputation: Hai" >= 1
+				"reputation: Hai (Wormhole Access)" >= 1
+				"reputation: Hai Merchant" >= 1
+				"reputation: Hai Merchant (Human)" >= 1
+			# At least one other group besides the Sympathizers are upset.
+			branch "explained trouble"
+				has "hai symp warn: explained trouble"
+			`	"Ti sei messo nei guai, capitano."`
+			label "explained trouble"
+			action
+				"reputation: Hai" >?= 1
+				"reputation: Hai (Wormhole Access)" = "reputation: Hai"
+				"reputation: Hai Merchant" >?= 1
+				"reputation: Hai Merchant (Human)" >?= 1
+			`	Ti fa scivolare sul tavolo una chiavetta dati. "Per tua fortuna, in questo caso ho assistito all'evento, e ho sostenuto che non sapevi in cosa ti stavi cacciando. Questa chiavetta contiene il file del rapporto di sicurezza che indica che ti è stato dato un avvertimento... conservalo per i tuoi archivi; la Sicurezza Hai lo farà di certo. Non ci saranno avvertimenti futuri."`
+				goto end
+			label "less trouble"
+			# Only the Sympathizers are upset.
+			`	"Finora sei stato fortunato. La Sicurezza Hai ha tenuto conto della tua storia e ha deciso che le tue attività recenti rientrano nella gamma tollerabile di risposte alle situazioni ostili in cui ti sei cacciato..." Ti fa scivolare sul tavolo una chiavetta dati. "Tuttavia questa è una copia del fascicolo che ti riguarda, in cui si afferma che ora ti è stata illustrata la situazione. Se adesso contrarierai la Sicurezza Hai, non ti daranno un avvertimento."`
+			
+			label end
+			`	La cameriera arriva con il tuo cibo, e il mercante si alza. "Buona fortuna, capitano. Se finisci nei guai, ti consiglio di prendere qualche incarico per portare rifornimenti di aiuto agli Slegati, se riesci a farlo senza sparare a nessuno..."`
+			`	Con un cenno del capo, ti lascia al tuo pasto.`
+				decline
+	on decline
+		clear "hai symp warn: explained trouble"
+
+
+
+mission "Returning Home"
+	description "Riporta Elliot a casa dalla sua famiglia su <destination>. Elliot è scappato dalla famiglia da adolescente e non li vede da quasi sei anni."
+	minor
+	source
+		government "Hai"
+		not planet "Allhome"
+		not attributes "station"
+	destination
+		attributes "dirt belt"
+		attributes "farming"
+	passengers 1
+	to offer
+		random < 40
+	on offer
+		conversation
+			branch insider
+				has "start: hai"
+			`Vieni fermato da un umano nel mercato di <origin>. Si toglie il cappello e chiede: "Lei viene da fuori, vero?"`
+			choice
+				`	"Sì, è così."`
+					goto outsider
+				`	"Che cosa intende con 'fuori'?"`
+			
+			`	"Fuori dallo spazio degli Hai. Non sembra proprio come la maggior parte degli umani che vivono qui, a meno che non ci sia qualche nuova moda che io non conosco."`
+			choice
+				`	"Oh, sì. Vengo da fuori."`
+					goto outsider
+			
+			label insider
+			`Vieni fermato da un umano nel mercato di <origin>. Si toglie il cappello e chiede: "Non è per caso un capitano che viene da fuori?"`
+			choice
+				`	"No, sono cresciuto qui."`
+				`	"Perché? Deve andare da qualche parte?"`
+					goto somewhere
+			
+			`	Sospira. "Immaginavo. Di solito si capisce che le persone non sono di qui dai vestiti."`
+			`	L'uomo riflette un momento. "Sarebbe un problema per lei fare un viaggio nello spazio umano?"`
+			choice
+				`	"Ti ci porterei volentieri."`
+				`	"Mi dispiace, ma no. Dovrai trovare un altro capitano."`
+					goto decline
+			
+			label outsider
+			`	"Bene. Mi chiamo Elliot." Ti presenti a Elliot e vi stringete la mano.`
+				goto offer
+			
+			label somewhere
+			`	"Sì. Mi chiamo Elliot." Ti presenti a Elliot e vi stringete la mano.`
+			
+			label offer
+			`	"Puoi portarmi su <destination>?" chiede Elliot.`
+			`	"È dall'altra parte, nella Fascia Polverosa," dici. "Perché vuoi andare così lontano?"`
+			`	Elliot guarda a terra per un secondo e fa un respiro profondo stringendo il cappello tra le mani. "Vede, non ho vissuto qui tutta la vita. Sono nato su <planet>, in una famiglia di poveri agricoltori. Passavo la maggior parte delle giornate a lavorare nella fattoria, cosa che odiavo con tutto me stesso. Un giorno mi sono stufato e sono scappato.`
+			`	"Sono scappato da casa verso la città dello spazioporto e mi sono intrufolato nella stiva di un mercantile. Il capitano non ha aperto la stiva per tre settimane, mentre io restavo dentro. Per fortuna il mercantile trasportava cibo, quindi avevo da mangiare in abbondanza.`
+			`	"Quando le porte della stiva si sono finalmente aperte, sono corso fuori il più in fretta possibile, per poi rientrare di corsa alla vista di un gruppo di Hai. Non avevo idea di dove fossi, ma da allora vivo qui. Avevo tredici anni, quasi cinque anni fa ormai."`
+			`	Elliot guarda di nuovo a terra e si asciuga una lacrima dall'angolo dell'occhio.`
+			choice
+				`	"Va bene, ti porto su <planet>."`
+					goto accept
+				`	"E finalmente vuoi tornare a casa?"`
+				`	"Mi dispiace, ma non posso portarti così lontano."`
+					goto decline
+			
+			`	"Sì. Ci ho pensato molto, ultimamente. Voglio rivedere la mia famiglia."`
+			choice
+				`	"Va bene, ti porto su <planet>."`
+					goto accept
+				`	"Mi dispiace, ma non posso portarti così lontano."`
+			
+			label decline
+			`	"Capisco," dice Elliot. "Cercherò qualcun altro che mi aiuti. Addio, <first>."`
+				decline
+			
+			label accept
+			`	Porti Elliot alla tua nave e gli mostri una cabina con le cuccette. Dopo averlo lasciato lì, ti chiedi se la sua famiglia sia ancora su <planet>.`
+				accept
+			
+	on visit
+		dialog `Cerchi Elliot, ma ti rendi conto che è salito su una delle tue scorte! Meglio partire e aspettare che le tue scorte arrivino in questo sistema stellare.`
+	on complete
+		payment 45000
+		conversation
+			`Elliot ti ringrazia per averlo portato su <planet> e ti consegna <payment>. Ferma un taxi appena fuori dallo spazioporto, ma prima di entrare si volta verso di te.`
+			`	"Vuoi venire con me? Mi piacerebbe che conoscessi la mia famiglia. Vorranno conoscerti quando racconterò come sono tornato."`
+			choice
+				`	"Mi dispiace, ho altri posti dove devo andare. Buona fortuna."`
+				`	"Certo. Sono venuto fin qui con te."`
+					goto sure
+			
+			`	"Capisco. Grazie ancora, <first>. Ti dovrò sempre qualcosa."`
+			`	Elliot sale sul taxi, che parte verso le campagne apparentemente sconfinate fuori dalla città dello spazioporto.`
+				decline
+			
+			label sure
+			`	Per quasi tutto il viaggio di tre ore la vista è di colline e terre coltivate, con qualche edificio o animale selvatico ogni tanto. Elliot trema quando il taxi si avvicina alla casa dal vialetto. "Mi chiedo se vivano ancora qui," dice nervoso.`
+			`	Nessuno esce dalla casa quando il taxi si ferma. Cammini fino alla porta d'ingresso con Elliot e una donna di mezza età apre con una tazza di caffè e un'espressione smarrita.`
+			`	"Posso aiutarvi?" chiede la donna.`
+			`	Elliot ti guarda con un gran sorriso. "Sì che puoi, mamma," le dice. Il volto della donna si illumina di gioia e comincia a saltellare, rovesciando caffè dalla tazza.`
+			`	"Oh Elliot, non ci credo!" La madre di Elliot posa la tazza e salta fuori dalla porta per abbracciarlo. "Jackson! Sarah! Abby! Sean! Victor! Elliot è qui!" Tutta la famiglia di Elliot esce di casa e lo saluta, facendogli dozzine di domande su dove sia stato, come e perché se ne sia andato.`
+			`	Elliot ti presenta alla sua famiglia, che ti ringrazia per averlo riportato a casa. Victor, che aveva solo sette anni quando Elliot se n'è andato e ora ne ha dodici, ti fa domanda dopo domanda sul mestiere del pilota, a volte ponendone una nuova prima che tu possa rispondere alla precedente.`
+			`	"Torna allo spazioporto, <first>?" grida il tassista dal vialetto. "Devo tornare in città il prima possibile."`
+			`	Saluti Elliot e la sua famiglia. "Grazie ancora, <first>," dice Elliot. "Ti dovrò sempre qualcosa."`
+
+
+
+mission "Unwanted Cargo Trigger"
+	invisible
+	non-blocking
+	landing
+	source
+		government "Hai"
+		not attributes "uninhabited"
+	to offer
+		random < 1
+		"cargo space" > 0
+	on offer
+		event "hai in cargo" 14
+		fail
+
+event "hai in cargo"
+
+mission "Unwanted Cargo"
+	minor
+	landing
+	description "Riporta su <destination> un bambino Hai che si è nascosto nella tua stiva."
+	source
+		not government "Hai" "Hai (Unfettered)"
+		not near "Heia Due" 0 100
+	destination "Allhome"
+	to offer
+		has "event: hai in cargo"
+	on offer
+		conversation
+			`La spia "Controlla carico" della nave comincia a lampeggiare quando atterri, il che significa che una cassa di carico potrebbe essersi staccata in volo. Spegni i motori e vai alla stiva.`
+			`	Controlli ogni cassa nella stiva, ma non trovi nulla di strano. Proprio quando decidi di andartene, una delle casse più piccole comincia a dondolare avanti e indietro.`
+			branch translator
+				has "language: Hai"
+				
+			`	Senti una voce provenire dalla cassa, ma non è una lingua che capisci. La voce continua a parlare, e riconosci che è la lingua Hai.`
+			choice
+				`	(Apri la cassa.)`
+			`	Apri la cassa e ti trovi faccia a faccia con un bambino Hai. Non sei sicuro di quanti anni abbia, ma sembra grande più o meno come un bambino umano di un anno. Cerca di comunicare con te, ma comincia a piangere quando vede la tua espressione confusa.`
+			choice
+				`	"Non piangere, piccolo."`
+					goto cry
+				`	(Prendi in braccio l'Hai.)`
+				
+			`	Il bambino agita le mani quando cerchi di prenderlo, rendendo impossibile afferrarlo. Dopo qualche minuto di attesa, il bambino si calma, e alla fine si addormenta nella cassa.`
+				goto end
+			
+			label cry
+			`	Il bambino comincia a piangere ancora più forte di prima. Dopo qualche minuto di attesa, si calma, e alla fine si addormenta nella cassa.`
+				goto end
+			
+			label translator
+			`	Senti una voce provenire dalla cassa, e con tua sorpresa il tuo traduttore Hai comincia a parlare. "Fammi uscire! Voglio andare a casa!"`
+			choice
+				`	(Apri la cassa.)`
+			`	Apri la cassa e ti trovi occhio a occhio con un bambino Hai. Non sei sicuro di quanti anni abbia, ma sembra grande più o meno come un bambino umano di un anno. "Voglio la mia mamma!" dice, mentre i suoi occhi cominciano a riempirsi di lacrime.`
+			choice
+				`	"Dov'è la tua mamma?"`
+				`	"Non piangere, piccolo."`
+			`	Il bambino sembra sorpreso quando il tuo dispositivo di traduzione gli parla in Hai. "Portami a casa!" ti grida. Cerchi di scoprire dove sia la casa del bambino, ma lui continua a piangere per la madre senza dare informazioni utili.`
+			
+			label end
+			`	Questo bambino deve essersi infilato in qualche modo nella tua stiva mentre eri nello spazio degli Hai. Lasciare un bambino Hai su questo mondo sarebbe un'idea estremamente cattiva. Forse qualcuno su <destination> riuscirà a riportarlo alla sua famiglia.`
+				accept
+			
+	on complete
+		payment 50000
+		dialog `Contatti le autorità dello spazioporto di <planet> e chiedi se stanno cercando un bambino Hai smarrito. Scopri che la famiglia era così preoccupata da offrire una ricompensa di <payment> per chi lo avesse trovato. Un operaio dello spazioporto Hai prende il bambino dalla tua nave e ti ringrazia per averlo trovato per la famiglia.`
+
+
+
+mission "Expanding Business [1]"
+	name "Una proposta interessante"
+	description "Viaggia con l'uomo d'affari David Turner fino a <destination>, dove un convoglio di mercantili attende di essere scortato."
+	minor
+	source "Greenwater"
+	destination "Allhome"
+	to offer
+		has "First Contact: Hai: offered"
+		has "main plot completed"
+	on offer
+		conversation
+			`Camminando per lo spazioporto di <origin>, noti che quasi metà delle persone che vedi sono umane, a differenza degli altri mondi Hai dove gli Hai superano gli umani di parecchio. Un umano in abito da affari grida il tuo nome dall'altra parte della strada e ti si avvicina.`
+
+			`	"Capitano <last>, uno dei tanti eroi dell'umanità! L'ho notato subito quando l'ho visto. Vorrei ringraziarla personalmente per quello che ha fatto."`
+			choice
+				`	"Sono contento di ricevere un po' di riconoscimento per tutto il duro lavoro che ho fatto."`
+					goto boast
+				`	"Non c'è di che. Ho solo fatto quello che potevo per aiutare."`
+					goto downplay
+				`	"Posso aiutarla, signore?"`
+
+			`	"Sono io quello che dovrebbe usare i titoli formali con lei, quindi per favore, capitano, non mi chiami signore.`
+				goto proposition
+
+			label boast
+			`	"Una personalità grande come la sua dovrebbe ricevere lodi e riconoscimenti ovunque vada! Oggi la gente non ha davvero più rispetto.`
+				goto proposition
+
+			label downplay
+			`	"Non c'è bisogno di sminuirsi, capitano! Ha fatto un lavoro da Dio salvando l'umanità da quel flagello alieno.`
+
+			label proposition
+			`	"Mi chiamo David Joseph Turner, capitalista di ventura, imprenditore e famoso uomo d'affari dei Paradise Worlds." Turner prende un biglietto da visita dalla tasca e te lo porge. Il biglietto contiene i suoi recapiti, un indirizzo su Martini, e si assicura di vantare in lettere dorate un patrimonio netto di oltre tre miliardi di crediti.`
+			`	"Forse non avrà sentito parlare di me, ma io ho di certo sentito parlare di lei, e vorrei farle una proposta." Turner si volta e agita il braccio verso la folla di persone nello spazioporto. "Vede tutti questi umani? Circa uno su quattro di queste persone è arrivato qui solo dopo lo scoppio della guerra attraverso il cunicolo. I capitani che conoscevano gli Hai sono accorsi qui in massa dopo che la Marina è entrata a Kornephoros, sperando di evitare i problemi che la guerra avrebbe portato. Alcuni capitani sono tornati dopo la fine della guerra, ma la maggior parte è rimasta, e io ci vedo un'opportunità di mercato enorme."`
+			branch rich
+				"net worth" >= 4000000000
+			
+			choice
+				`	"Che tipo di opportunità di mercato?"`
+					goto opportunity
+				`	"Mi dispiace, ma non ho tempo di parlarne."`
+					goto walk
+			
+			label rich
+			choice
+				`	"Che tipo di opportunità di mercato?"`
+					goto opportunity
+				`	"Vali solo tre miliardi di crediti? Perché non dovrei perseguire la tua opportunità da solo?"`
+				`	"Mi dispiace, ma non ho tempo di parlarne."`
+					goto walk
+			
+			`	"Certo che vale più di me, capitano <last>, ma lei non è un imprenditore. Io ho le conoscenze e le competenze, ma un nome come il suo aiuterà sempre.`
+				goto opportunity
+			
+			label walk
+			`	Cerchi di andartene, ma Turner ti ferma afferrandoti il braccio e continua a parlare.`
+			
+			label opportunity
+			`	"Mi permetta di spiegare. Il viaggio verso gli Hai può essere pericoloso, e lei lo sa. Durante la guerra ho sentito molte storie di mercanti che cercavano di raggiungere gli Hai, ma grazie alla Marina distratta quei mercanti sono caduti vittima dei pirati che pattugliano i sistemi del Nord Lontano. Ora che molti mercanti sono qui, sono intrappolati. Hanno speso la maggior parte, se non tutte, le loro munizioni per arrivare, e ora non ne hanno per difendersi sulla via del ritorno. Le munizioni umane sono diventate una merce scarsa tra i capitani umani in questa regione di spazio, lasciando aperto un mercato che aspetta solo di essere accaparrato.`
+			`	"Vorrei che lei, capitano <last>, eroe dell'umanità, mi aiutasse ad aprire un fornitore di equipaggiamento qui su <origin>, un fornitore che darebbe sollievo a questi mercanti disperati fornendo loro le munizioni di cui hanno bisogno, insieme agli equipaggiamenti che potrebbero voler comprare per le loro vecchie navi. Ho già ricevuto l'approvazione del governo Hai per la costruzione di un fornitore, e con un nome come il suo a sostenere l'attività i profitti saranno di sicuro fenomenali, profitti a cui lei parteciperebbe come socio fondatore di questo fornitore."`
+			choice
+				`	"Mi sembra una buona idea. Di cosa hai bisogno che faccia?"`
+					goto interested
+				`	"Mi dispiace, ma la tua proposta non mi interessa."`
+			
+			`	"Sciocchezze, capitano! Tutto quello che dovrebbe fare è aiutare a scortare qualche mercantile da <planet> a Follower e ritorno qui, e per un lavoro così semplice potrebbe ricevere abbastanza denaro da non lavorare mai più, o persino da mantenere una flotta enorme."`
+			choice
+				`	"Ripeto, non mi interessa. Addio."`
+				`	"Va bene, hai la mia attenzione."`
+					goto interested
+			
+			`	"Beh, ci ho provato, capitano," dice Turner con un sorrisetto. "Allora dovrò solo tornare ai Paradise Worlds e fare soldi in altri settori di attività." Ti porge un altro biglietto da visita e fa l'occhiolino. "Addio, capitano <last>. Dovrebbe sapere dove trovarmi se ha bisogno di me. Forse potremo portare avanti questa impresa insieme in futuro."`
+				decline
+			
+			label interested
+			`	"Eccellente, capitano! Mi metterò comodo sulla mia nave. Un convoglio di mercantili ci aspetta su <destination>. Da lì partiamo per Follower a prendere i rifornimenti."`
+				accept
+				
+	npc accompany save
+		personality escort
+		government "Merchant"
+		ship "Star Queen (Hai)" "Chryso Vasilia"
+	
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro Turner. Aspetta che arrivi la sua nave prima di atterrare.`
+	
+	on complete
+		dialog `I mercantili sono pronti a partire quando arrivi su <planet>. "Ora dobbiamo solo scortare questi mercantili fino a Follower, nel sistema Alphard, e ritorno tutti interi," esclama Turner, saltando di nuovo sulla sua Star Queen.`
+
+
+
+mission "Expanding Business [2]"
+	landing
+	name "Una proposta interessante"
+	description "Scorta i mercantili fino a <destination>, dove prenderanno i rifornimenti per il fornitore di Greenwater."
+	destination "Follower"
+	to offer
+		has "Expanding Business [1]: done"
+	
+	npc accompany save
+		personality escort
+		government "Merchant"
+		ship "Star Queen (Hai)" "Chryso Vasilia"
+	npc accompany save
+		personality escort
+		government "Merchant"
+		fleet
+			names "civilian"
+			variant
+				"Bulk Freighter (Hai)" 3
+	
+	npc
+		personality staying
+		government "Pirate"
+		system "Ultima Thule"
+		fleet "Small Northern Pirates"
+	npc
+		personality staying
+		government "Pirate"
+		system "Rajak"
+		fleet "Large Northern Pirates"
+	npc
+		personality staying
+		government "Pirate"
+		system destination
+		fleet "Large Northern Pirates"
+	
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una delle navi che devi scortare. Aspetta che arrivino la nave di Turner e tutti i Bulk Freighter prima di atterrare.`
+
+
+
+mission "Expanding Business [3]"
+	landing
+	name "Una proposta interessante"
+	description "Scorta la nave di Turner fino a <destination> così che possa parlare con un vecchio amico."
+	destination "Rust"
+	to offer
+		has "Expanding Business [2]: done"
+	on offer
+		conversation
+			`Turner salta giù dalla sua Star Queen prima che la rampa di imbarco raggiunga del tutto il suolo, chiaramente impaziente di andare avanti con questo progetto.`
+			`	Turner impreca sottovoce quando ti si avvicina. "Pirati da quattro soldi che ci danno fastidio sulla via di qui. È proprio il tipo di problema per cui un fornitore di equipaggiamento nello spazio degli Hai sarebbe utile. Chissà cosa sarebbe successo se i miei Bulk Freighter non avessero avuto i loro missili. O se lei non fosse stato lì a proteggerli, naturalmente."`
+			`	Turner parla con le autorità dello spazioporto, e in breve tempo il carico necessario viene caricato sui mercantili. Quando i mercantili sono carichi, decollano senza nemmeno darti il tempo di raggiungere la nave.`
+			`	"Con le munizioni rifornite possono tornare a Greenwater da soli," dice Turner alle tue spalle mentre guardi i mercantili volare via. "Ho detto loro di partire il prima possibile. Quanto a te e me, mi serve una scorta fino a <destination>. Ho ricevuto un messaggio da un vecchio amico laggiù che vorrebbe scambiare due parole con me."`
+				accept
+				
+	npc accompany save
+		personality escort
+		government "Merchant"
+		ship "Star Queen (Hai)" "Chryso Vasilia"
+		
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro Turner. Aspetta che arrivi la sua nave prima di atterrare.`
+
+
+
+mission "Expanding Business [4]"
+	landing
+	name "Una proposta interessante"
+	description "Scorta Turner fino a <destination> per sovrintendere alla costruzione del fornitore di equipaggiamento."
+	destination "Greenwater"
+	to offer
+		has "Expanding Business [3]: done"
+	on offer
+		conversation
+			`Turner atterra con la sua nave fuori dall'edificio della Kraz Cybernetics. "Aspetta qui mentre parlo con il mio amico Edward. Dovrebbero volerci solo pochi minuti."`
+			`	Qualche ora dopo, Turner torna portando una valigetta nera. "Scusa, ci è voluto più del previsto. Ora torniamo su <destination>."`
+				accept
+	
+	npc accompany save
+		personality escort
+		government "Merchant"
+		ship "Star Queen (Hai)" "Chryso Vasilia"
+	
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro Turner. Aspetta che arrivi la sua nave prima di atterrare.`
+	
+	on complete
+		event "outfitter on greenwater" 95
+		log "People" "David Turner" `Imprenditore dalla mente acuta, è stato determinante nella creazione di un fornitore di equipaggiamento umano nello spazio degli Hai, permettendo ai mercanti di armarsi per il pericoloso viaggio di ritorno nello spazio umano.`
+		conversation
+			`Quando finalmente raggiungi <planet>, la costruzione del fornitore è già in corso. Gli operai hanno gettato le fondamenta del negozio vicino allo spazioporto, occupando buona parte di un parco.`
+			`	"Ho dovuto pagare un occhio della testa per avere il fornitore così vicino allo spazioporto," ti dice Turner, "ma alla fine ne varrà la pena. Il fornitore dovrebbe essere pronto in circa tre mesi. Saprai che è finito quando troverai duemila crediti in più in tasca ogni giorno."`
+			`	Turner ti dà una pacca sulla spalla. "Divertiti fino ad allora, capitano <last>. Tieniti occupato a salvare la galassia."`
+
+event "outfitter on greenwater"
+	planet "Greenwater"
+		outfitter "Basic Outfits"
+		outfitter "Ammo North"
+		outfitter "Ammo South"
+
+mission "Expanding Business: outfitter complete"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "event: outfitter on greenwater"
+	on offer
+		"salary: Turner Incorporated" = 2000
+		event "request for a shipyard" 270
+		fail
+
+event "request for a shipyard"
+
+
+
+mission "Expanding Business [5]"
+	landing
+	name "Una nuova proposta"
+	description "Incontra David Turner su <destination> per parlare di una nuova proposta."
+	source
+		government "Hai"
+	destination "Greenwater"
+	to offer
+		has "event: request for a shipyard"
+	on offer
+		dialog `Quando atterri ricevi un messaggio da David Turner. "Salve, capitano. Spero che stia apprezzando la sua quota nel fornitore. Ho una nuova proposta per lei, dato che ho rilevato il resto del parco attorno al negozio. Mi incontri su <destination> se vuole saperne di più."`
+
+
+
+mission "Expanding Business [6]"
+	landing
+	name "Una nuova proposta"
+	description "Scorta i mercantili fino a <destination> per prendere i rifornimenti per il cantiere navale."
+	destination "Sunracer"
+	to offer
+		has "Expanding Business [5]: done"
+	on offer
+		conversation
+			`Turner ti incontra in un ristorante di lusso di proprietà umana nella parte più ricca della città, molto simile a qualcosa che troveresti su un Pianeta Paradisiaco. "È passato parecchio tempo dall'ultima volta che ci siamo parlati, capitano <last>. Più di un anno ormai," dice. "Ha apprezzato il denaro extra in tasca ogni giorno, capitano <last>?"`
+			choice
+				`	"Sì. È stato di grande aiuto per pagare gli stipendi dell'equipaggio."`
+					goto salaries
+				`	"Duemila crediti al giorno non sono molti per me."`
+			
+			`	"Immagino che duemila crediti al giorno non siano molti per un eroe come lei. Le navi spaziali costano, dopotutto. Che ne dice di quattromila crediti al giorno?"`
+				goto choice
+			
+			label salaries
+			`	"Sono contento di sentirlo, capitano <last>. Anch'io ho passato i primi anni come capitano, e non apprezzavo molto dovermi preoccupare ogni giorno degli stipendi dell'equipaggio. Forse raddoppiare quella cifra aiuterà ancora di più."`
+			
+			label choice
+			choice
+				`	"Mi sta dando un aumento?"`
+				`	"Fa parte della tua nuova proposta?"`
+					goto proposition
+			
+			`	"Si potrebbe dire così," risponde Turner dopo aver sorseggiato il vino.`
+			
+			label proposition
+			`	"Costruire un fornitore che vende merci umane qui su <origin> è stata la migliore idea che abbia mai avuto, capitano <last>, ma di recente ne ho pensata una ancora migliore. Vede, la maggior parte degli umani che volano nello spazio degli Hai usa navi vecchie di decenni. Le navi Hai sono proibitivamente costose per gli umani. Gli Hai vendono l'Aphid per quasi un milione e mezzo di crediti! Questo significa che la domanda di navi è estremamente alta tra gli umani, capitano <last>. Vede dove voglio arrivare? Guarda qualcosa che vendiamo noi umani come uno Star Barge, che non è molto peggio di un Aphid e costa un quarto, e si comincia a vedere il problema."`
+			choice
+				`	"Hai di nuovo bisogno che ti aiuti a scortare mercantili?"`
+				`	"Vuoi costruire un cantiere navale che venda navi umane?"`
+			
+			`	"Sì, capitano. Al momento l'unico modo realistico perché un umano nato qui possa avere una nave è conoscere un capitano disposto a ritirarsi. E anche così, i prezzi di una nave umana possono essere più del doppio di quelli dall'altra parte del cunicolo. Verrebbe da pensare che possano semplicemente prendere un passaggio e comprare una nave umana laggiù, ma quelle banche non riconoscono le storie creditizie da questo lato. È assurdo, capitano <last>!`
+			`	"Ho già preso accordi con il governo locale degli Hai. Il resto del parco accanto al fornitore è ora di mia proprietà, e intendo usarlo per costruire il cantiere. Ho anche contattato la Megaparsec e comprato una licenza per costruire le loro navi e alcuni degli equipaggiamenti che vendono su <planet>. I miei mercantili sono pronti nello spazioporto adesso. Tutto quello che deve fare è scortarli fino a <destination> e ritorno, e tra sei o sette mesi, quando il cantiere sarà finito, raccoglierà i frutti. Che ne dice, capitano <last>? Vuole essere di nuovo un eroe per milioni di persone?"`
+			choice
+				`	"Certo, mi sembra un'ottima idea."`
+					goto accept
+				`	"Non mi interessa più lavorare con te, Turner."`
+			
+			`	Turner sorride alla tua risposta. "Capito, capitano <last>. Da oggi risparmierò duemila crediti al giorno revocando il suo stipendio. Ora me ne vado."`
+			choice
+				`	"Addio."`
+					decline
+				`	"Aspetta! Ho cambiato idea. Ti aiuterò."`
+			
+			label accept
+			`	"Ottima decisione, capitano <last>. La aspetto fuori per far partire le navi."`
+				accept
+			
+	on decline
+		clear "salary: Turner Incorporated"
+	
+	npc accompany save
+		personality escort
+		government "Merchant"
+		ship "Star Queen (Hai)" "Chryso Vasilia"
+	npc accompany save
+		personality escort
+		government "Merchant"
+		fleet
+			names "civilian"
+			variant
+				"Bulk Freighter (Hai)" 3
+	
+	npc
+		personality staying
+		government "Pirate"
+		system "Ultima Thule"
+		fleet "Small Northern Pirates"
+	npc
+		personality staying
+		government "Pirate"
+		system "Rajak"
+		fleet "Large Northern Pirates"
+	npc
+		personality staying
+		government "Pirate"
+		system destination
+		fleet "Large Northern Pirates"
+		
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una delle navi che devi scortare. Aspetta che arrivino la nave di Turner e tutti i Bulk Freighter prima di atterrare.`
+
+	on complete
+		dialog `I Bulk Freighter vengono caricati con i rifornimenti senza problemi. Quando un operaio dello spazioporto chiede a Turner dove sono diretti i rifornimenti, lui risponde: "Servono solo ad ampliare un affare mio su, ehm, Glory."`
+
+
+
+mission "Expanding Business [7]"
+	landing
+	name "Una nuova proposta"
+	description "Scorta i mercantili indietro fino a <destination> per iniziare la costruzione del cantiere navale."
+	destination "Greenwater"
+	to offer
+		has "Expanding Business [6]: done"
+	
+	npc accompany save
+		personality escort
+		government "Merchant"
+		ship "Star Queen (Hai)" "Chryso Vasilia"
+	npc accompany save
+		personality escort
+		government "Merchant"
+		fleet
+			names "civilian"
+			variant
+				"Bulk Freighter (Hai)" 3
+	
+	npc
+		personality staying
+		government "Pirate"
+		system "Cardax"
+		fleet "Small Northern Pirates"
+	npc
+		personality staying
+		government "Pirate"
+		system "Rajak"
+		fleet "Large Northern Pirates"
+		
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una delle navi che devi scortare. Aspetta che arrivino la nave di Turner e tutti i Bulk Freighter prima di atterrare.`
+
+	on complete
+		event "shipyard on greenwater" 180
+		conversation
+			`	La costruzione del cantiere inizia quasi subito dopo che i rifornimenti sono stati scaricati dai mercantili, a cominciare dalla demolizione del resto del parco. Una folla dall'aria abbattuta si raduna a guardare la demolizione, ma Turner ti assicura che in città ci sono molti altri parchi dove possono andare.`
+			`	"Ne verrà fuori qualcosa di grande, capitano <last>," dice Turner. "Sappia solo che lei ne è stato parte. Saprà che il cantiere è finito quando troverà quattromila crediti in più in tasca ogni giorno. Arrivederci ad allora, capitano <last>."`
+
+event "shipyard on greenwater"
+	planet "Greenwater"
+		shipyard "Basic Ships"
+		shipyard "Syndicate Basics"
+		shipyard "Megaparsec Basics"
+		shipyard "Megaparsec Advanced"
+		outfitter "Common Outfits"
+		outfitter "Syndicate Advanced"
+		outfitter "Lovelace Basics"
+	fleet "Small Human Merchants (Hai)"
+		add variant 20
+			"Sparrow"
+		add variant 20
+			"Star Barge"
+		add variant 20
+			"Shuttle"
+		add variant 5
+			"Freighter"
+			"Wasp" 2
+		add variant 10
+			"Freighter"
+			"Shuttle" 2
+			"Quicksilver"
+		add variant 15
+			"Bounder"
+			"Wasp" 2
+		add variant 5
+			"Manta"
+		add variant 5
+			"Freighter" 2
+			"Manta"
+	fleet "Large Human Merchants (Hai)"
+		add variant 6
+			"Freighter (Proton)" 2
+			"Quicksilver" 2
+		add variant 6
+			"Freighter" 4
+			"Quicksilver" 2
+			"Splinter" 1
+		add variant 3
+			"Freighter" 4
+			"Quicksilver" 2
+			"Splinter (Laser)" 1
+		add variant 3
+			"Freighter" 4
+			"Quicksilver" 2
+			"Splinter (Proton)" 1
+
+mission "Expanding Business: shipyard complete"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "event: shipyard on greenwater"
+	on offer
+		"salary: Turner Incorporated" = 4000
+		fail
+
+
+
+mission "Hiding in Plain Sight"
+	description "Porta Arthur e il suo amico Hai Kiru su <destination> per una convention di videogiochi entro il <date>."
+	minor
+	source
+		government "Hai"
+		not attributes "station"
+	destination "Vinci"
+	passengers 2
+	deadline 30
+	to offer
+		random < 30
+		has "First Contact: Hai: offered"
+	on offer
+		conversation
+			`Mentre mangi in una caffetteria dello spazioporto che serve sia cucina Hai sia umana, vieni avvicinato da un umano adolescente e da un Hai. "Salve. Sa come arrivare a <destination>?" chiede l'Hai.`
+			choice
+				`	"Sì. Perché ci vuoi andare?"`
+				`	"No. Dovrai chiedere a qualcun altro."`
+					decline
+			`	L'umano risponde: "C'è una convention enorme su <planet> il <date> per un gioco chiamato 'Frontiere Infinite'. La convention ha una scena cosplay enorme, e penso che Kiru si inserirebbe benissimo."`
+				goto return
+			label return
+			`	"Io e Arthur abbiamo <payment> da darti se ci porti sul <planet>," dice Kiru. "Possiamo anche trovare da soli la via del ritorno nello spazio degli Hai."`
+			choice
+				`	"Va bene, posso portarvi."`
+					accept
+				`	"Mi dispiace, dovrete trovare qualcun altro che vi porti."`
+					decline
+					
+	on visit
+		dialog `Cerchi Arthur e Kiru, ma ti rendi conto che sono saliti su una delle tue scorte! Meglio partire e aspettare che le tue scorte arrivino in questo sistema stellare.`
+	on complete
+		payment 75000
+		dialog `Arthur e Kiru ti pagano <payment> prima di correre verso il centro congressi. Mentre si allontanano, noti che Kiru attira parecchi sguardi tra la folla, ma nessuno sembra sospettare che sia un alieno vero.`
+		log "Minor People" "Arthur and Kiru" `Umano e Hai rispettivamente, entrambi hanno partecipato alla convention cosplay di Vinci senza costume, attirando molta attenzione.`
+
+
+
+mission "Hai Honeymoon"
+	description "Porta Anaya e Touhar su <destination> per la loro luna di miele."
+	minor
+	source "Skyfarm"
+	destination "Featherweight"
+	passengers 2
+	to offer
+		random < 60
+		has "First Contact: Hai: offered"
+	on offer
+		conversation
+			`Saltelli per lo spazioporto di <origin>, cercando di adattarti alla bassa gravità di questa luna, quando vieni avvicinato da una donna umana altissima e da un maschio Hai altrettanto alto, che chiaramente non hanno alcun problema con la gravità di <origin>.`
+			`	"Sembra che abbia bisogno di aiuto, capitano," dice la donna con una risatina.`
+			choice
+				`	"Non preoccuparti. Ho quasi preso la mano."`
+				`	"Forse un pochino."`
+			`	"È sempre divertente guardare i capitani quando scendono dal comfort della loro nave," dice l'Hai.`
+			`	"Almeno ci stanno provando, Touhar," dice la donna.`
+			choice
+				`	"Posso aiutarvi in qualcosa?"`
+				`	"C'è qualcosa in cui posso aiutarvi, o avete intenzione di guardarmi e basta?"`
+			`	"In realtà sì," dice la donna. "Mi chiamo Anaya, e questo è mio marito, Touhar. E tu sei?"`
+			choice
+				`	"Mi chiamo <first> <last>."`
+				`	"Aspetta, tuo marito?"`
+					goto husband
+			
+			`	"Piacere di conoscerla, capitano <last>," ti dice Touhar.`
+				goto next
+			
+			label husband
+			`	"Come, non hai mai visto una coppia interspecie?" chiede Touhar con una punta di sarcasmo nella voce.`
+			
+			label next
+			`	"Ci siamo sposati la settimana scorsa, e speravamo di viaggiare fino a <destination> per la luna di miele. So che è rischioso portare Touhar nello spazio umano, ma <planet> è un mondo scarsamente abitato, e ho un'amica che possiede una casa in montagna, lontano da chiunque possa vederlo."`
+			`	"La stessa amica potrà organizzare anche il nostro ritorno a <origin>," aggiunge Touhar. "Ci porti?"`
+			choice
+				`	"Certo."`
+					accept
+				`	"Mi dispiace, non posso spingermi così lontano da qui."`
+					decline
+					
+	on visit
+		dialog `Cerchi Anaya e Touhar, ma ti rendi conto che sono saliti su una delle tue scorte! Meglio partire e aspettare che le tue scorte arrivino in questo sistema stellare.`
+	on complete
+		payment 100000
+		dialog `Invece di atterrare nello spazioporto dove potrebbero essere visti, lasci Anaya e Touhar il più vicino possibile al posto dove alloggeranno. La casa è a qualche chilometro, ma ti assicurano che possono arrivarci da soli. Ti pagano <payment> e ti ringraziano per averli portati fin qui.`
+		log "Minor People" "Anaya and Touhar" `Una coppia interspecie Hai-umana che hai trasportato per la loro luna di miele appartata su Featherweight, nello spazio umano.`
+
+
+
+mission "Pirate Troubles [0]"
+	name "Difendi <system>"
+	description "Un gruppo consistente di pirati si è fatto strada nello spazio degli Hai e sta terrorizzando il sistema. Aiuta gli Hai a respingerli."
+	source
+		near "Waypoint" 2
+		government "Hai"
+	to offer
+		has "First Contact: Unfettered: offered"
+		"combat rating" > 1100
+		random < 10
+	on offer
+		conversation
+			`Lo spazioporto pacifico viene improvvisamente riempito dal suono aspro delle sirene. Vedi alcuni Hai e un piccolo numero di umani correre verso le loro navi e schizzare rapidamente in orbita. Sembra che il sistema sia sotto attacco, ma gli Hai Slegati non arrivano mai così a sud. Un altoparlante comincia a gridare in tutto lo spazioporto: "Umani slegati sono entrati nel sistema con una grande flotta e hanno iniziato ad attaccare! Si richiede a tutti i piloti idonei al combattimento di assistere nella difesa del nostro spazio. Questi nemici dell'armonia non sono graditi qui."`
+			branch unfettered
+				has "Unfettered: Jump Drive Source: offered"
+			`	Trovi strana l'espressione "umani slegati", ma supponi che si riferiscano ai pirati. Gli Hai saranno probabilmente molto riconoscenti se aiuti, ma questo potrebbe anche essere un modo facile per farti uccidere, soprattutto se un gruppo di pirati è abbastanza audace da attaccare gli Hai.`
+				goto choice
+
+			label unfettered
+			`	Il cuore ti si ferma alla frase "umani slegati", perché l'ultima volta che l'hai sentita era quando gli Hai Slegati la usavano per riferirsi agli Alpha. Se sono davvero gli Alpha ad attaccare gli Hai, probabilmente è una buona idea aiutare.`
+			label choice
+			choice
+				`	(Unisciti alla flotta di difesa.)`
+					launch
+				`	(Resta qui finché la battaglia non è finita.)`
+					decline
+	npc
+		government "Hai"
+		personality staying
+		fleet "Large Hai"
+	npc
+		government "Merchant"
+		personality staying
+		fleet "Large Human Merchants (Hai)"
+	npc evade
+		government "Pirate"
+		personality staying
+		fleet
+			names "pirate"
+			variant
+				"Leviathan" 2
+				"Mule" 2
+				"Firebird"
+				"Headhunter" 3
+				"Raven" 3
+
+
+
+mission "Pirate Troubles [1]"
+	landing
+	name "Umani slegati"
+	description `Trova i capi della banda di pirati "Legione di Scar" e "convincili" a smettere di attaccare lo spazio degli Hai, poi torna su <destination> per informare gli Hai.`
+	source
+		government "Hai"
+	destination "Hai-home"
+	clearance
+	to offer
+		has "Pirate Troubles [0]: done"
+	on offer
+		"reputation: Hai" += 20
+		"reputation: Hai (Wormhole Access)" += 20
+		"reputation: Hai Merchant" += 20
+		"reputation: Hai Merchant (Human)" += 20
+		"reputation: Hai Merchant (Sympathizers)" += 20
+		conversation
+			`La battaglia è finita, ma lo spazioporto sembra ancora più caotico del solito. Navi saltano dentro dai sistemi circostanti per aiutare i feriti e riparare eventuali danni. Dopo alcune ore, quando il trambusto si è calmato, un anziano Hai ti si avvicina. "Abbiamo saputo dagli umani qui che lei è considerato un combattente esperto tra la sua gente. Potrebbe prestarci la sua abilità in combattimento per risolvere questa faccenda?"`
+			choice
+				`	"Sarò felice di aiutare. Cosa posso fare?"`
+					goto explain
+				`	"Quale faccenda?"`
+			`	"Capisco che abbia appena difeso questo sistema dai pirati umani. È quella la faccenda da risolvere.`
+			label explain
+			`	"Gli attacchi umani ai nostri sistemi sono molto rari, ma di recente abbiamo subito un numero crescente di incursioni. Non tutte sono andate male come questa. Abbiamo catturato un membro dell'equipaggio di quest'ultimo attacco che cercava di fuggire su una capsula di salvataggio, e ci ha dato informazioni: una banda che si fa chiamare 'Legione di Scar' ha scoperto il nostro territorio ed è responsabile delle incursioni recenti.`
+			`	"Purtroppo non ci ha voluto dire dove si trovi questa banda, né chi sia il capo, quindi non possiamo farci nulla. Molti umani che vivono pacificamente tra noi ci hanno detto che lei potrebbe essere in grado di aiutarci."`
+			choice
+				`	"Vedrò cosa posso fare."`
+					goto yes
+				`	"Vuoi che dia la caccia alla Legione di Scar per fermare i loro attacchi?"`
+				`	"Mi dispiace, non mi interessa."`
+					decline
+			`	"Capiamo che questi umani siano probabilmente fuorviati. Chiediamo che risolva la cosa pacificamente se possibile, ma la perdita di vite da questi attacchi continui è inaccettabile."`
+			choice
+				`	"Vedrò cosa posso fare."`
+					goto yes
+				`	"Mi dispiace, ma non mi interessa."`
+					decline
+			label yes
+			`	"Grazie. La preghiamo di tornare su <destination> dopo aver cercato di risolvere la situazione."`
+				accept
+	on visit
+		dialog "Sei tornato su <planet>, ma non hai ancora rintracciato la Legione di Scar. Forse dovresti chiedere in giro nello spazioporto dei pianeti pirata vicino al cunicolo verso lo spazio degli Hai."
+	to complete
+		or
+			has "accepted scar's legion tribute"
+			has "defeated scar's legion"
+
+
+
+mission "Pirate Troubles [1]: Farpoint"
+	landing
+	invisible
+	source "Farpoint"
+	to offer
+		has "Pirate Troubles [1]: active"
+	on offer
+		conversation
+			`Visiti l'avamposto della Marina su <origin> e chiedi agli ufficiali se hanno informazioni sulla Legione di Scar. Dopo aver controllato il tuo background per assicurarsi che tu non abbia cattive intenzioni, un ufficiale ti consegna una copia di una cartella con tutte le informazioni che la Marina ha sulla banda. "Qui dentro niente è classificato, quindi puoi tenerla," dice l'ufficiale.`
+			`	Torni alla nave e sfogli i file. Il capo della banda si chiama Scar (con sorpresa di nessuno), ed era un membro importante di un'altra banda di pirati prima di formare la propria. La Marina stima che siano qualche migliaio, responsabili soprattutto di piccoli crimini nel Nord Lontano e non causa di troppi problemi, ma i file risalgono a diversi anni fa. Chiaramente qualcosa è cambiato da quando questi file sono stati aggiornati l'ultima volta, se la Legione di Scar è ora abbastanza potente da tentare persino di attaccare gli Hai.`
+				decline
+
+
+
+mission "Pirate Troubles [1]: Freedom or Zenith"
+	landing
+	invisible
+	source
+		planet "Freedom" "Zenith"
+	to offer
+		has "Pirate Troubles [1]: active"
+	on offer
+		payment -5000
+		conversation
+			`Giri per lo spazioporto di <origin> in cerca di qualcuno che possa avere informazioni su dove si trovi la Legione di Scar. Una sedicente faccendiera ti promette informazioni in cambio di denaro, ma dopo averle dato i pochi crediti che chiede, scappa via con la pistola in mano per dissuaderti dal seguirla. Forse qualcuno su un altro pianeta pirata vicino avrà informazioni vere.`
+				decline
+
+
+
+mission "Pirate Troubles [1]: Haven"
+	landing
+	invisible
+	source "Haven"
+	to offer
+		has "Pirate Troubles [1]: active"
+	on offer
+		payment -100
+		"scar's legion information" ++
+		conversation
+			`Ordini un drink in un piccolo bar malmesso nello spazioporto di <origin> e cerchi di fare conversazione con il barista per aprirlo a dare informazioni sulla Legione di Scar. All'inizio sembra riluttante, ma alla fine si scioglie. Altri avventori del bar si uniscono alla conversazione. Per fortuna nessuno sembra arrabbiato che tu chieda della Legione di Scar. Uno degli avventori chiarisce che la Legione di Scar non ha amici su questo mondo, "almeno non più".`
+			`	Lasci il bar dopo un'ora o due. Una volta tornato alla nave, annoti tutte le informazioni che riesci a ricordare. La banda operava esclusivamente dal Nord Lontano finché non ha incrociato una delle bande più grandi, cosa che li ha costretti a fuggire dalla regione qualche anno fa. Uno dei pirati ha ipotizzato che siano fuggiti verso il Nucleo.`
+			`	Un'altra persona ha detto che il capo della banda parlava sempre di costruire una base propria in un sistema disabitato dove nessuno l'avrebbe trovata. "Parlava sempre di svuotare un asteroide per usarlo come covo. Secondo me era solo sempre fatto delle limature di mondo ad anello che spacciava la sua banda."`
+				decline
+
+
+
+mission "Pirate Troubles [1]: Stormhold"
+	landing
+	invisible
+	source "Stormhold"
+	to offer
+		has "Pirate Troubles [1]: active"
+	on offer
+		"scar's legion information" ++
+		conversation
+			`Non ci vuole molto perché tu trovi qualcuno che sa qualcosa sulla Legione di Scar. Incontri un tale che dice di darti informazioni "gratis".`
+			`	"La Legione di Scar è una spina nel fianco da mesi ormai. Mi ha distrutto la nave tempo fa, e da allora mi crea problemi. Se hai intenzione di eliminarli, ti dirò tutto quello che devi sapere."`
+			`	Il pirata ti dice che non sa dove sia la base della Legione di Scar, ma accenna che passano molto tempo nei sistemi disabitati del Nord Lontano. "Là fuori non c'è altro che rocce fredde e giganti gassosi, ma se passano così tanto tempo là fuori devono aver messo su una base di qualche tipo su uno di quei pianeti ghiacciati."`
+				decline
+
+
+
+event "scar's hideout"
+	system "Danoa"
+		object
+			sprite star/m3
+		object
+			sprite planet/desert7-b
+			distance 168.64
+		object
+			sprite planet/fog0-b
+			distance 693.93
+			object
+				sprite planet/mercury
+				distance 174
+		object
+			sprite planet/gas6
+			distance 2069.42
+			object
+				sprite planet/lava1-b
+				distance 293
+			object
+				sprite planet/rock0-b
+				distance 440
+			object
+				sprite planet/lava2-b
+				distance 607
+			object "Scar's Hideout"
+				sprite "planet/asteroid base"
+				distance 809
+
+planet "Scar's Hideout"
+	attributes uninhabited
+	landscape land/loc1
+	description "Il Covo di Scar è un asteroide svuotato usato dalla Legione di Scar come base principale. Da qui molestano chiunque attraversi i sistemi disabitati del Nord Lontano. Di recente la banda ha scoperto il cunicolo verso lo spazio degli Hai, il che li ha portati a creare problemi a più che ai soli mercanti sfortunati."
+	spaceport "Lo spazioporto del Covo di Scar è un enorme hangar scavato nel nucleo dell'asteroide, accessibile solo da un singolo portello a tenuta sul soffitto. A giudicare dalle dimensioni dell'hangar, diresti che circa un terzo dell'intero asteroide è stato svuotato solo per lo spazioporto."
+	security 0
+	government "Scar's Legion"
+
+mission "Pirate Troubles [2]"
+	landing
+	name "La Legione di Scar"
+	description "Hai messo insieme abbastanza informazioni per scoprire che il covo della Legione di Scar si trova in uno di quattro sistemi del Nord Lontano. Cerca il covo della banda in quei sistemi e affrontali."
+	waypoint "Danoa"
+	waypoint "Rajak"
+	waypoint "Sumar"
+	waypoint "Hassaleh"
+	to offer
+		"scar's legion information" >= 2
+	on offer
+		event "scar's hideout"
+		conversation
+			`Dopo aver visitato vari mondi pirata chiedendo della Legione di Scar, credi di sapere dove sia il loro covo.`
+			`	Sai che il capo della Legione di Scar parlava di volere un asteroide svuotato come base. Sai anche che la Legione di Scar è stata molto attiva di recente nei sistemi disabitati del Nord Lontano. Concludi che il covo della banda sia probabilmente un asteroide in uno di alcuni sistemi vicini al cunicolo che porta agli Hai. Segni <waypoints> sulla mappa e ti prepari ad affrontarli.`
+				accept
+	to complete
+		never
+	to fail
+		has "Pirate Troubles [3]: offered"
+
+
+
+event "battle against scar's legion"
+	system "Danoa"
+		fleet "Human Miners" 1600
+
+event "battle against scar's legion over"
+	system "Danoa"
+		fleet "Small Northern Merchants" 15000
+		fleet "Small Northern Pirates" 5000
+		fleet "Large Northern Pirates" 16000
+		fleet "Large Republic" 30000
+		fleet "Human Miners" 1600
+
+mission "Pirate Troubles [3]"
+	landing
+	name "La Legione di Scar"
+	description "Avendo rifiutato il tributo, il capo della Legione di Scar ti ha sfidato a un duello all'ultimo sangue. Sconfiggi il Keloid, poi torna su <destination>."
+	source "Scar's Hideout"
+	destination "Hai-home"
+	clearance
+	to offer
+		has "event: scar's hideout"
+	on offer
+		conversation
+			`Hai localizzato il Covo di Scar, un enorme asteroide in orbita attorno a un gigante gassoso. Mentre sorvoli la superficie dell'asteroide, scorgi un portello a tenuta aperto. Devono invitarti a entrare. Ti sorprende che una banda di pirati sia capace di creare una base del genere, perché i materiali e il tempo necessari per fare una cosa simile sono enormi.`
+			`	Entrando dal portello, questo si chiude dietro di te, lasciandoti nel buio completo. All'improvviso si accendono dei riflettori tutto intorno alla nave. La luminosità ti impedisce di vedere chi ci sia oltre, ma sospetti che ci siano numerose armi puntate contro la tua nave in questo momento.`
+			`	"Chi sei e cosa vuoi?" tuona una voce da un altoparlante. Premi un pulsante per attivare gli altoparlanti esterni della nave.`
+			choice
+				`	"Sono <first> <last>, qui per negoziare a nome degli Hai."`
+					goto negotiate
+				`	"Sono <first> <last>, qui per abbattere questa banda."`
+			`	La voce ride. "Peggio per te, perché sei proprio in mezzo a un vespaio. Fuoco, ragazzi!"`
+				goto die
+
+			label negotiate
+			`	La voce ride. "Ah, sì. Quegli scoiattoli. Immagino che ne abbiano abbastanza delle nostre razzie nei loro sistemi. Ragazzi!"`
+			`	I riflettori si spengono, rivelando una grande sala con quella che dev'essere centinaia di pirati con armi di varie dimensioni puntate sulla tua nave. Un passo falso e sei finito. "Per favore, capitano. Scenda dalla nave."`
+			choice
+				`	(Obbedisci agli ordini.)`
+					goto comply
+				`	(Prova a fuggire.)`
+			`	Attivi i motori della nave per fuggire. I riflettori si riaccendono all'improvviso.`
+
+			label die
+			`	Prima ancora che tu possa reagire, dozzine di laser e raffiche di proiettili arrivano da dietro i riflettori. Cerchi di alzare la nave e volare dritto attraverso il soffitto prima che sia troppo danneggiata per muoversi, ma poi vedi numerosi razzi volare dritti verso la cabina. Muori all'istante quando i razzi colpiscono il vetro davanti a te.`
+				die
+
+			label comply
+			`	Scendi dalla nave, e un uomo alto con una cicatrice sulla guancia si fa avanti dalla folla di pirati, presumibilmente il capo della banda.`
+			choice
+				`	"Gli Hai chiedono che smettiate di attaccare i loro sistemi."`
+					goto negotiations
+				`	"Tu devi essere Scar."`
+			`	"No. Scar è morto da tempo," dice il capo.`
+			choice
+				`	"Oh, quindi questo ti rende Crosta?"`
+				`	"Gli Hai chiedono che smettiate di attaccare i loro sistemi."`
+					goto negotiations
+			`	Il capo fa una smorfia. "Ti taglio la lingua se non badi a come parli."`
+			`	Fai un passo indietro. "Gli Hai chiedono che smettiate di attaccare i loro sistemi," dici, cercando di non farti pugnalare.`
+
+			label negotiations
+			`	"Forse smetteremo," dice il capo con un sorriso. "A una condizione. Vogliamo una spedizione una tantum di varie armi e tecnologie Hai. La spedizione dovrà essere il più grande possibile. Ho visto i mercantili che hanno quegli alieni. Sono enormi. Caricane due o tre con la merce e considereremo l'idea di concentrarci altrove."`
+			choice
+				`	"Va bene. Mi incontrerò con gli Hai e vedrò cosa possono fornire."`
+					goto tribute
+				`	"Temo che non possa permetterlo."`
+			`	La folla di pirati risponde con una cacofonia di fischi e sberleffi. Il capo alza il pugno, e la folla ammutolisce. "Beh, temo che così non vada bene."`
+			`	Il capo va avanti e indietro in silenzio per un momento. "Beh, se non otteniamo quello che vogliamo, dovremo semplicemente continuare ad attaccare. Il che significa che la tua presenza qui è piuttosto inutile."`
+			`	Il capo si volta verso la folla. "Che ne dite di un combattimento? All'ultimo sangue!" La folla esplode in acclamazioni. Il capo si volta di nuovo verso di te. "Combattiamo solo in questo sistema. Solo tu e io. Se cerchi di scappare, i miei uomini ti danno la caccia. Che ne dici?" Cerchi di rispondere, ma prima che tu possa, il capo estrae la pistola e la punta su di te. "Corri."`
+				launch
+
+			label tribute
+			`	"Eccellente!" dice il pirata, accolto dalle acclamazioni del resto dei pirati nella sala. "Ma fai in fretta. Non vorremmo farci aspettare." I portelli a tenuta si riaprono, e torni alla nave per partire subito.`
+				flee
+
+	on decline
+		set "accepted scar's legion tribute"
+	on accept
+		event "battle against scar's legion"
+
+	npc kill
+		government "Scar's Legion (Killable)"
+		personality nemesis
+		ship "Leviathan (Hai Weapons)" "Keloid"
+		dialog "Hai sconfitto il capo della Legione di Scar. I vari spettatori del combattimento non ti stanno attaccando, ma potrebbe essere solo questione di tempo prima che decidano di puntarti le armi per aver ucciso il loro capo. Meglio dirigersi su <destination> prima che accada."
+
+	npc
+		government "Scar's Legion"
+		personality nemesis
+		fleet "Small Northern Pirates"
+		fleet "Large Northern Pirates" 4
+
+	on enter
+	on enter
+		"reputation: Scar's Legion" = -1000
+
+	on visit
+		dialog phrase "generic bounty hunting on visit"
+
+	on complete
+		set "defeated scar's legion"
+		event "battle against scar's legion over"
+
+
+
+mission "Pirate Troubles [4]"
+	landing
+	name "Tributo ai pirati"
+	description "Scorta i tre mercantili Hai che trasportano armi e tecnologia Hai fino a <stopovers>, poi scorta i mercantili di ritorno su <destination>."
+	source "Hai-home"
+	stopover "Scar's Hideout"
+	clearance
+	to offer
+		or
+			has "defeated scar's legion"
+			has "accepted scar's legion tribute"
+	on offer
+		"reputation: Hai" += 20
+		"reputation: Hai (Wormhole Access)" += 20
+		"reputation: Hai Merchant" += 20
+		"reputation: Hai Merchant (Human)" += 20
+		"reputation: Hai Merchant (Sympathizers)" += 20
+		payment 2500000
+		conversation
+			`Atterrando su <origin>, le autorità Hai ti danno <payment> per il tuo aiuto nel difendere i loro sistemi e nel rintracciare i colpevoli. Vieni inviato al consiglio degli anziani, l'organo di governo eletto degli Hai, per raccontare della Legione di Scar. "Per favore, ci dica cosa è accaduto," dice uno degli anziani.`
+			branch defeated
+				has "defeated scar's legion"
+
+			`	"Hanno chiesto che carichiate tre grandi mercantili con varie armi e tecnologie da dare a loro. Solo allora smetteranno di attaccarvi."`
+			`	"Una richiesta semplice," dice l'anziano. "Poco più di quanto ci chiedono gli Slegati. Caricheremo subito tre Geocoris."`
+			`	"Chi ci dice che non useranno le nostre stesse armi contro di noi?" interviene un altro anziano. "Questo accordo può solo farci male."`
+			choice
+				`	"Non c'è garanzia che non attacchino di nuovo, ma hanno promesso che si concentreranno altrove."`
+					goto guarantee
+				`	"Posso tornare da loro e sconfiggerli, se volete."`
+			`	"No," dice l'anziano. "Non ci interessa condannare a morte questi umani se tutto ciò che chiedono è tecnologia."`
+
+			label guarantee
+			`	"Credo che una questione più grande sia come questo influirà sui nostri amici umani oltre il cunicolo," dice un anziano. "Se questi pirati non attaccano noi, chi attaccheranno? Non diventeremo semplicemente fornitori di armi per una guerra lontana?"`
+			`	"Informeremo la Marina della Repubblica che forniamo la nostra tecnologia a questi pirati per il nostro bene. Sono stati capaci di combattere la nostra tecnologia in passato. Sono certo che sapranno gestirla anche ora. Per favore, <first>, scorta i mercantili fino a questi pirati così che ci lascino in pace."`
+				accept
+
+			label defeated
+			`	"Ho sconfitto il capo della Legione di Scar. Non dovrebbero più crearvi problemi."`
+			`	Uno degli anziani si acciglia. "Ha ucciso il loro capo a sangue freddo, o è stata legittima difesa?"`
+			choice
+				`	"Chiedevano un tributo delle vostre armi e tecnologie, ma ho rifiutato l'offerta, così mi hanno attaccato."`
+					goto refused
+				`	"Non erano disposti a negoziare, e sono stato costretto a difendermi."`
+			`	"È molto spiacevole," dice un altro anziano. "Ma sono felice di sapere che non causeranno altre perdite di vite tra la nostra gente."`
+				goto end
+
+			label refused
+			`	"È molto spiacevole," dice un altro anziano. "Saremmo stati disposti a dare loro la tecnologia che cercavano, se solo l'avessero chiesta con le buone fin dall'inizio."`
+			`	"Meglio eliminare una minaccia invece di renderla più forte diventando i loro fornitori di armi," dice il primo anziano. "Questi pirati avrebbero potuto attaccarci con la nostra stessa tecnologia o, peggio, attaccare altri umani con essa, rendendoci complici di quel massacro."`
+
+			label end
+			`	Gli anziani ti ringraziano per l'aiuto in questa situazione e ti congedano.`
+				decline
+
+	on decline
+		"reputation: Hai" += 40
+		"reputation: Hai (Wormhole Access)" += 40
+		"reputation: Hai Merchant" += 40
+		"reputation: Hai Merchant (Human)" += 40
+		"reputation: Hai Merchant (Sympathizers)" += 40
+
+	npc accompany save
+		government "Hai (Wormhole Access)"
+		personality escort
+		fleet
+			names "hai"
+			cargo 10
+			variant
+				"Geocoris" 3
+
+	on stopover
+		dialog `Guidi i mercantili Hai dentro i portelli a tenuta. Nonostante le dimensioni enormi dei mercantili, riescono tutti a entrare nello spazioporto dell'asteroide con un po' di spazio avanzato, prova di quanto lavoro sia stato messo in questa base. I pirati della Legione di Scar scaricano tutta la tecnologia Hai dai mercantili. Dopo che l'ultima cassa è sparita, i mercantili decollano in fretta dall'asteroide.`
+
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"
+
+	on complete
+		"reputation: Hai" += 40
+		"reputation: Hai (Wormhole Access)" += 40
+		"reputation: Hai Merchant" += 40
+		"reputation: Hai Merchant (Human)" += 40
+		"reputation: Hai Merchant (Sympathizers)" += 40
+		payment 500000
+		dialog `Con i mercantili tornati sani e salvi, gli Hai ti ringraziano per aver risolto la faccenda con la Legione di Scar e ti consegnano <payment> per il tuo aiuto.`
+
+
+
+mission "Nanachi 1"
+	name "Scorta Nanachi su <planet>"
+	description "Aiuta Nanachi, una Hai che ha appena comprato la sua prima nave, a fare una semplice consegna su <destination> entro il <date>."
+	minor
+	source "Giverstone"
+	destination "Cloudfire"
+	deadline 2 1
+	to offer
+		random < 15
+		"net worth" > 20000000
+		"combat rating" > 1200
+		has "First Contact: Hai: offered"
+	on offer
+		conversation
+			`Mentre attraversi lo spazioporto noti una Hai dall'aria preoccupata che guarda la bacheca delle offerte di lavoro e poi un documento che tiene in mano.`
+			choice
+				`	(Avvicina la Hai.)`
+				`	(Lasciala stare.)`
+					decline
+			`	La Hai trasalisce un po', ma si calma in fretta. "Scusa, mi hai colta di sorpresa. Ho appena comprato la mia prima nave e devo trovare qualche lavoro, ma nessuno con cui ho parlato vuole fidarsi di una capitana principiante. Non so più cosa fare, ho lavorato così tanto per qualificarmi per questo prestito, ma il tempo sta per scadere e così non riuscirò mai a pagarlo."`
+			`	Scopri che i documenti che tiene in mano sono le carte bancarie del prestito, in parte simili a quelle che firmasti tu quando comprasti la tua prima nave. Hai fatto molta strada dai tuoi giorni da principiante, e sai quanto sia difficile iniziare come capitano di astronave; probabilmente potresti convincere qualcuno qui a offrire un semplice lavoro di trasporto a questa giovane Hai.`
+			choice
+				`	"Se ti interessa, potrei provare ad aiutarti a trovare un lavoro."`
+					goto "positive1"
+				`	"Ci sono passato anch'io; credimi, migliora. Ti auguro buona fortuna nella ricerca di un lavoro."`
+			`	Annuisce con triste comprensione, e continua a passare lo sguardo dalla bacheca alle carte che tiene in mano.`
+			choice
+				`	(Aiutala comunque.)`
+					goto "positive1"
+				`	(Lasciala stare e continua.)`
+					decline
+			label "positive1"
+			`	Le sue orecchie si muovono un po', e i suoi occhi prima abbattuti si illuminano mentre quasi salta di gioia alla tua offerta. "Grazie mille, capitano! Mi chiamo Nanachi, prometto che non causerò nessun problema, solo qualche lavoro veloce e sono sicura che me la caverò da sola!"`
+			`	Ti presenti a Nanachi e le stringi la zampa. "Puoi mostrarmi la tua nave così cerco i lavori più adatti?" chiedi.`
+			`	Esita un po', ma ti porta alla sua nave. Ti aspettavi una piccola nave Hai, ma con tua sorpresa ti mostra un Heavy Shuttle piuttosto malconcio attraccato vicino alla tua nave.`
+			`	"Hai preso un prestito per comprare una nave umana?" chiedi.`
+			`	Guarda a terra, come se se ne vergognasse. "Ci vorrebbe troppo tempo per qualificarmi per un prestito anche solo per un Aphid, ma di recente ho conosciuto un mercante umano che voleva vendere la sua vecchia nave; è stato difficile, ma sono riuscita a convincerlo a venderla a me invece di andare all'ufficio del cantiere. L'ho pagata a prezzo pieno, ma anche per questa ho dovuto prendere il prestito più grande che potevo. La stiva non è granché, ma ha più cuccette delle nostre navi più piccole, se può servire."`
+			choice
+				`	"Vediamo se qualcuno nello spazioporto ha bisogno di un passaggio fuori dal pianeta."`
+				`	"Diamo un'altra occhiata alla bacheca, magari salta fuori un lavoro più piccolo."`
+			`	Scopri che non è facile come pensavi. Lo spazioporto è quasi vuoto, a parte qualche operaio o membro d'equipaggio ubriaco, e la bacheca è piena di enormi carichi di minerali, oltre a qualche lavoro piccolo ma pericoloso verso lo spazio umano. Alla fine, mentre cominciate a perlustrare il bordo dell'area di attracco, notate un mercante umano in difficoltà vicino a diverse casse. Ti avvicini e ti spiega che la sua nave ha avuto dei malfunzionamenti e non può consegnare il suo carico di attrezzature chirurgiche avanzate su <destination>. "È il colmo! A un salto dal pianeta e il sistema di navigazione decide di scioperare! Non c'è modo che ce la faccia prima della scadenza!"`
+			`	"La mia amica Nanachi qui potrebbe consegnarlo per te. Stavamo andando lì comunque; qualche cassa in più non fa differenza," dici, cercando di sembrare il più convincente possibile.`
+			`	All'inizio sembra felice che vogliate aiutarlo, ma quando Nanachi accenna che sta pilotando un Heavy Shuttle, si acciglia e guarda di nuovo il carico. "Gli attacchi degli Slegati fanno sì che su <planet> servano tonnellate di forniture mediche, e francamente non mi sento a mio agio a mandare una nave così fragile in territorio pericoloso con queste attrezzature, quando potrebbe essere fatta a pezzi in un istante," dice. Il capitano si guarda intorno nello spazioporto deserto per un po', come cercando un altro capitano, prima di voltarsi finalmente verso Nanachi e dire: "ma immagino che chi non può scegliere si accontenti. Va bene, ti lascio portare il carico, ma per favore sii molto prudente."`
+				accept
+	npc accompany save
+		personality escort timid
+			confusion "civilian"
+		government "Hai"
+		ship "Heavy Shuttle" "Acorn Chaser"
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro la nave di Nanachi! Meglio partire e aspettare che arrivi in questo sistema stellare.`
+	on complete
+		conversation
+			`Poco dopo l'atterraggio della sua nave, ti incontri con Nanachi, che fa del suo meglio per nascondere l'entusiasmo di essere per la prima volta su un altro pianeta e fissa a bocca aperta soprattutto alcune navi militari Hai. "Allora, com'è stato il tuo primo salto nell'iperspazio?" chiedi, per cercare di riportarla alla realtà.`
+			`	"Oh, ehm, non credo che mi abituerò presto a quella sensazione. Ho vomitato parecchio, quindi sono contenta che non fosse un lavoro con passeggeri. Ho sempre sognato di stare su altri mondi, esplorare e imparare tutto di loro. Sono contenta di poterlo fare finalmente."`
+			`	La aiuti a tirare fuori le casse dalla stiva e contatti il cliente. La parte di Nanachi del pagamento è piccola, dato che il cliente trasferisce la maggior parte del denaro al mercante da cui ha preso il lavoro, ma questo non la rende meno entusiasta del suo primo stipendio.`
+			`	"Allora, vuoi andare allo spazioporto e provare a trovare un lavoro da sola? Ti aiuterò di nuovo se non ci riesci ancora," dici.`
+			`	"Dammi solo un'ora o due per esplorare. A casa nostra il cantiere è piuttosto piccolo. Non ho mai avuto davvero la possibilità di vedere uno Shield Beetle da vicino, e qui ce ne sono molti in riparazione. Vado solo a darci un'occhiata migliore, giuro che farò in fretta."`
+			`	Concordate di incontrarvi allo spazioporto tra qualche ora; forse questa volta se la caverà da sola.`
+
+
+
+mission "Nanachi 2"
+	name "Scorta Nanachi su <planet>"
+	description "Porta Nanachi e i suoi passeggeri su <destination>."
+	source "Cloudfire"
+	destination "Hai-home"
+	clearance
+	to offer
+		has "Nanachi 1: done"
+	on offer
+		conversation
+			`Ti incontri con Nanachi allo spazioporto, le dai qualche consiglio per cercare di convincere qualcuno ad assumerla e le dici che sarai nei paraggi se ha ancora problemi a trovare un lavoro. La guardi girare per lo spazioporto e avvicinare alcuni gruppi di umani e persino altri Hai, senza successo. Forse, dato che questo è un mondo che vede spesso combattimenti, sono troppo occupati con attività militari per aiutare una pilota novizia. Riesce ad attirare l'attenzione di una famiglia Hai che esce da un ristorante con bagagli fin troppo numerosi, probabilmente turisti in cerca di un passaggio a casa. Tutto sembra andare bene finché i genitori non cominciano a sembrare preoccupati. Sembra che se ne andrebbero se tu non intervenissi.`
+			`	Ti avvicini al gruppo per aiutarla e osservi meglio la famiglia: una coppia Hai con un neonato e tre figli più grandi che non fanno molto per aiutare il padre a portare il loro numero ridicolo di borse.`
+			choice
+				`	"Ehi, cosa succede?"`
+				`	"Posso essere d'aiuto?"`
+			`	Ti presenti e i genitori ti dicono che sono stati in vacanza qui e hanno bisogno di un trasporto di ritorno su <destination>. "Non prendertela, ma la capitana Nanachi ci ha detto che la sua nave è una delle vostre navi umane, un Heavy Shuttle, era? Ha abbastanza cuccette per noi, ma i nostri figli hanno già combinato un pandemonio all'andata su una nave Hai, e temiamo che, non essendo abituati all'allestimento, possano finire per darle troppo disturbo."`
+			`	Li rassicuri che il viaggio sarà molto rapido e che l'interno della nave è in parte simile a quello delle navi Hai, finché alla fine accettano di viaggiare con lei. Concordano la paga e voi due aiutate gli Hai a portare i bagagli sulla nave di Nanachi. Mentre la famiglia è concentrata su una conversazione, chiedi piano a Nanachi quale fosse il problema con le altre persone che ha incontrato.`
+			`	"Sembravano tutti disposti a darmi un lavoro, ma ho finito per rovinare tutto quando ho chiesto più soldi. Ho davvero bisogno di uscire dai debiti, quindi credo di essermi spinta un po' troppo." Cerca di fare la disinvolta, ma è chiaro che è imbarazzata per aver perso tanti lavori potenziali. Quando raggiungete la sua nave, dai un'occhiata ai prezzi delle merci su <system>. Decidi di dire a Nanachi di fare scorta di metalli pesanti da vendere lì, per aiutarla a ricavare un po' più di profitto.`
+				accept
+	npc accompany save
+		personality escort timid
+			confusion "civilian"
+		government "Hai"
+		ship "Heavy Shuttle" "Acorn Chaser"
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro la nave di Nanachi! Meglio partire e aspettare che arrivi in questo sistema stellare.`
+	on complete
+		conversation
+			`Aiuti la famiglia a radunare tutti i bagagli e la saluti, ma proprio mentre spariscono in un corridoio Nanachi emette un sospiro pesante. "Ho preso più di quanto potessi masticare. Quei bambini continuavano a voler giocare con i comandi della nave, e uno di loro ha provato a infilarsi nel condotto di ventilazione in un gioco a nascondino. Non ho potuto riposare perché dovevo continuare a controllare che non stessero per gettare le loro stesse borse nel vuoto per sbaglio."`
+			`	"Vuoi dormire un po' prima di cercare un'altra missione?" chiedi, sperando che non si metta a lavorare troppo.`
+			`	"Sì, mi servirebbe davvero. Scusa se ti faccio aspettare di nuovo, capitano <last>. Mi riposerò un po', vedrò se trovo un posto qui vicino per rilassarmi, e ci incontriamo allo spazioporto tra un po'."`
+
+
+
+mission "Nanachi 3"
+	name "Consegna spezie con Nanachi"
+	description "Accompagna Nanachi fino a <stopovers> a prendere delle spezie Quarg per una festa su <destination> entro il <date>."
+	source "Hai-home"
+	stopover "Alta Hai"
+	destination "Allhome"
+	deadline 14
+	to offer
+		has "Nanachi 2: done"
+	on offer
+		conversation
+			`Mandi un messaggio a Nanachi e vi incontrate allo spazioporto. State ancora camminando verso la bacheca quando lei chiede: "A casa ho sentito storie su come gli umani abbiano una popolazione molto più grande degli Hai, e che il loro pianeta natale abbia persino più gente di Hai-home. È vero che ci sono molti altri mondi umani con spazioporti così grandi?" Le nomini alcuni pianeti umani estremamente popolosi, e le racconti che persino alcuni pianeti con meno gente di questo mondo hanno spazioporti incredibilmente grandi.`
+			`	Mentre le racconti storie dei molti pianeti che hai visitato, sembra particolarmente interessata alla Terra. "Ho visto un po' di architettura umana nei video di pianeti come Allhome, ma non riesco nemmeno a immaginare come debba essere la vostra capitale. Decine di migliaia di anni di storia di un'altra specie, suona ancora più emozionante di quello che ho sentito sui nostri monumenti su Hai-home. Capitano, pensa che un giorno, quando non dovremo più restare nascosti all'umanità, potrò visitare la Terra e vedere la bellezza della vostra capitale?" Vedendo quanto poco sappia dell'umanità, non sorprende che non sia consapevole dello stato in cui versa la Terra.`
+			choice
+				`	"Non sono mai stato davvero sulla Terra, quindi non saprei dirti com'è."`
+					goto avoid
+				`	"La Terra è un posto bellissimo, quindi sarebbe bello se potessi vederla."`
+					goto fake
+				`	"La Terra non è in realtà un gran posto da visitare. La maggior parte dei suoi abitanti coglierebbe qualsiasi occasione per andarsene."`
+					goto truth
+			label avoid
+			`	"Oh, scusa, non avrei dovuto dare per scontato che sapessi tutto, dopotutto sei un capitano di astronave, non uno storico, chiederò a qualcun altro quando ne avrò l'occasione," dice Nanachi.`
+				goto board
+			label fake
+			`	Cominci a inventare storie su quanto siano belli i cieli della Terra. Descrivi foreste brulicanti di vita e fai del tuo meglio per ricordare antiche civiltà e i loro monumenti. A quanto pare ti crede, e la tua bugia sembra aver placato per ora la sua curiosità. Se mai arriverà il giorno in cui agli Hai sarà permesso muoversi nello spazio umano, però, ne resterà senza dubbio estremamente delusa.`
+				goto board
+			label truth
+			`	Ti guarda confusa, come se cercasse di capire cosa intendi, così glielo spieghi. "Nonostante quanto l'umanità sia progredita negli ultimi secoli, la Terra è stata in gran parte trascurata. La maggior parte del territorio è diventata città, che negli anni sono degenerate in baraccopoli. Se mai riuscissi a visitarla, faresti meglio ad andare nei musei o ai monumenti, ma anche così ci sono molti ladri per le strade ed è molto pericoloso uscire di notte. Molti di quelli nati lì pensano solo a come andarsene."`
+			`	Continui a raccontarle i problemi che affliggono il luogo di nascita dell'umanità, e il suo precedente entusiasmo di saperne di più sul pianeta svanisce. "Come hanno potuto i vostri antenati lasciare che la loro stessa casa diventasse così?"`
+			branch unfettered
+				has "Ask the Hai about the Unfettered: offered"
+			choice
+				`	"La pianificazione a lungo termine non è mai stata un punto forte dell'umanità nel suo insieme."`
+					goto end
+			
+			label unfettered
+			choice
+				`	"Immagino che non sia troppo diverso da come gli Slegati hanno trattato i loro mondi."`
+			`	Nanachi sembra confusa, così continui a elaborare quell'idea. "Si aspettano di poter avere presto nuovi mondi, quindi considerano il degrado di quelli attuali una perdita accettabile. Anche gli umani hanno avuto problemi con la pianificazione a lungo termine e la preparazione agli eventi avversi."`
+				goto end
+			label end
+			`	"Capisco..." dice. "Pensavo solo che sarebbe stato divertente sentire parlare di un altro pianeta grande come Hai-home. Scusa per avermelo chiesto, capitano, sono sicura che parlare di questo non è stato piacevole."`
+			`	Anche se sei certo che persino nello spazio degli Hai esista la disuguaglianza sociale, probabilmente lei non riesce a concepire che il pianeta natale di una specie possa versare in condizioni così cattive, considerando che gli Hai arrivano persino a mandare regolarmente aiuti agli Slegati.`
+				goto board
+			label board
+			`	Raggiungete la bacheca e decidete di cominciare a cercare lavori adatti alla nave di Nanachi.`
+			choice
+				`	"Allora, ti dispiace se do una mano? So che la bacheca può confondere le prime volte che la consulti."`
+				`	"Pensi di aver bisogno che ti aiuti questa volta?"`
+			`	"Grazie, ma devo farlo da sola. Prometto che non rovinerò tutto facendo di nuovo l'avida." Si avvicina alla bacheca da sola, e diventa chiaro che qui è molto più facile trovare un lavoro; ha appena iniziato a parlare con uno degli impiegati che riceve già una lunga lista di lavori per navi più piccole. È certamente ancora molto stanca, ma questo sembra averla un po' rincuorata; dopotutto è la prima volta che riesce a trovare un lavoro senza il tuo aiuto.`
+			`	Mentre pensavi che avrebbe scelto uno o due lavori in fretta e sarebbe tornata alla sua nave, continua a esaminarli e a ricontrollare le informazioni di ciascuno, come se qualcosa la disturbasse.`
+			`	"Che c'è? Fai fatica a scegliere tra due lavori diversi?" chiedi.`
+			`	"Sembrano tutti molto facili e potrei persino accettarne molti insieme, ma il problema è che la paga non è granché." Prende dalla tasca alcune carte consumate e te le mostra: sono i documenti del suo prestito. "La banca a casa mi avrebbe dato abbastanza per la nave solo se avessi accettato un prestito a breve termine. Ho perso due giorni prima che arrivassi tu ad aiutarmi, e se non trovo presto un lavoro che paghi meglio, non riuscirò nemmeno a pagare gli interessi."`
+			`	Mentre cerchi di capire come ricavare il massimo dalle missioni disponibili, senti un colpetto sulla spalla e ti volti verso un Hai in piedi accanto a una coppia umana. La coppia si presenta come Xavier e Vanessa, qui con la loro amica Hai Narancia. "Abbiamo sentito la vostra conversazione e siamo disposti a pagare un po' di più per un lavoro. Facciamo parte di un gruppo che organizza una grande festa su Allhome per celebrare l'amicizia tra umani e Hai, e ci è appena venuta un'idea dell'ultimo minuto: vorremmo procurarci delle spezie Quarg."`
+			`	Nanachi si rianima durante la loro conversazione. "Sono sicura di poter portare le spezie su <planet> entro due settimane. Non vi deluderò!"`
+			`	"Che meraviglia," dice Narancia. Ti dicono che non verranno con voi; hanno già un trasporto per Allhome e resteranno qui ancora un po' per cercare di pubblicizzare l'evento. "Venite ad Allhome dopo aver preso le spezie. Buon viaggio!"`
+				accept
+	on stopover
+		dialog
+			`Un operaio dello spazioporto ha contattato Nanachi poco prima che atterraste e si è assicurato che le spezie fossero pronte per essere caricate sulla sua nave. Aiuti gli operai e Nanachi a controllare che tutto sia in ordine, e vi preparate per il viaggio verso Allhome.`
+	npc accompany save
+		personality escort timid
+			confusion "civilian"
+		government "Hai"
+		ship "Heavy Shuttle" "Acorn Chaser"
+	on visit
+		dialog `Hai raggiunto <planet>, ma non hai ancora completato la missione! O hai lasciato indietro la nave di Nanachi o non hai visitato <stopovers>.`
+	on complete
+		conversation
+			`L'area di attracco di Allhome mostra molto più traffico del solito. Molti capitani qui aiutano gli operai ad aprire container pieni di cibo, vestiti, libri, film e persino alcuni animali da sella provenienti dallo spazio umano. Alla fine incontri gli organizzatori della festa, che sembrano molto entusiasti di aver ottenuto i condimenti esotici, e vi hanno invitato in un bar dello spazioporto per un drink.`
+
+
+
+mission "Nanachi 4"
+	name "Proteggi Nanachi"
+	description "Porta la nave di Nanachi fino a <stopovers>, tenendola al sicuro da una flotta pirata che ha attaccato un convoglio diretto nello spazio degli Hai, poi torna su <destination> entro il <date>."
+	source "Allhome"
+	stopover "Prime"
+	deadline 17
+	to offer
+		has "Nanachi 3: done"
+	on offer
+		conversation
+			`Il bar è affollato quanto i moli. Molti capitani qui devono aver trasportato qualcosa per la festa. "Capitano <last>, capitana Nanachi!" grida Narancia, facendovi cenno di unirvi a lei e agli altri al loro tavolo. Scopri che si sono ispirati alla festa di marzo degli Hai e volevano portare piccole parti della cultura umana nello spazio degli Hai.`
+			`	"Non possono ancora andare sui nostri pianeti e viverla di persona, quindi abbiamo pensato di portarla a loro!" dice Vanessa.`
+			`	"È stato molto difficile trovare abbastanza sponsor per questo, ma dopo anni di duro lavoro siamo riusciti persino a far portare qui opere d'arte famose, alcune delle quali risalgono al Rinascimento europeo!" aggiunge Xavier.`
+			`	Poi l'argomento si sposta su di te come capitano, mentre descrivi il tuo viaggio dopo aver comprato la tua prima nave e come hai conosciuto Nanachi. Stai per ordinare un altro drink per il gruppo quando un vecchio burbero irrompe nel bar e comincia a gridare: "Il convoglio d'arte è stato attaccato! Il mercantile è riuscito a fuggire ma ora sono bloccati su Prime, e i pirati sono ancora là fuori, a pattugliare la rotta verso il cunicolo!"`
+			`	Xavier si alza con un'espressione scioccata. "Come? Avevamo un Leviathan di scorta!"`
+			`	Dopo aver ripreso fiato, l'uomo alla porta risponde. "I pirati devono aver rubato tecnologia Hai dalle navi che tornavano a casa. Il capitano del mercantile ha detto che hanno fatto a pezzi la scorta!" Il caos si diffonde tra gli altri capitani, e il gruppo seduto con te è in angoscia.`
+			choice
+				`	"Quelle opere d'arte valgono davvero così tanto?"`
+				`	"Non potete semplicemente rimandare la festa finché i pirati non saranno eliminati?"`
+			`	Xavier crolla di nuovo sul tavolo, tenendosi la testa tra le mani. "Quei dipinti e quelle sculture erano la nostra attrazione principale! Valgono decine di miliardi! Ci vorranno mesi prima che la Marina si accorga dei pirati laggiù e renda sicuro il passaggio del convoglio. La mostra d'arte è prevista tra tre settimane!"`
+			`	Mentre cercano di capire cosa fare, Nanachi prende la parola. "Ci andrò io. Piloto una nave umana e se dobbiamo solo trasferire il carico da una nave all'altra, potrei uscirne in fretta. Nessuno si accorgerebbe che una Hai è andata laggiù."`
+			`	"Sei pazza?" dice Vanessa. "Se sono riusciti ad abbattere quel Leviathan, non resisteresti un secondo! Inoltre il nostro convoglio era estremamente veloce. Se hanno preso anche loro, le tue possibilità di seminare i pirati sono quasi nulle!"`
+			`	"Capitano <last>," Nanachi si volta verso di te. "So che mi hai già aiutato molto più di quanto chiunque sarebbe disposto a fare, e te ne sono davvero grata, ma saresti disposto ad aiutarmi un'ultima volta, ad arrivare su quel pianeta e tornare qui?"`
+			`	È certo che, per abbattere un Leviathan così facilmente, una flotta pirata debba essere incredibilmente potente, e questo potrebbe essere estremamente pericoloso. Sei sicuro che, se Nanachi cercasse di arrivare su Prime da sola, si farebbe semplicemente uccidere.`
+			choice
+				`	"Va bene, mi assicurerò che arriviamo su Prime e torniamo qui sani e salvi."`
+				`	"No, avevo accettato di aiutarti a trovare e gestire qualche semplice lavoro, ma non posso rischiare di combattere una flotta del genere da solo."`
+					decline
+			`	Ti ringrazia profusamente, e promette che ti pagherà per tutto il prima possibile. Gli organizzatori sono un po' esitanti, ma visto che nessun altro capitano qui si è offerto di aiutarli, accettano di lasciarvi andare su Prime a recuperare il carico.`
+			`	Vanessa afferra il braccio di Nanachi prima che possa correre allo spazioporto. "Ricordati solo che, se non riesci a tornare qui entro il <day>, non preoccuparti; capiremo. Sono sicura che possiamo trovare qualche alternativa per fare la festa senza le nostre attrazioni principali."`
+			`	Mentre uscite dal bar, Xavier ti tira da parte e parla molto piano: "<last>, so che stai solo cercando di aiutare questa ragazza, ma non farti uccidere per questo. Se incroci quei pirati non provare a combatterli, corri e basta verso Prime."`
+				accept
+	npc
+		personality nemesis waiting
+		government "Pirate"
+		system "Betelgeuse"
+		ship "Marauder Firebird (Hai)" "Nut King Call"
+		ship "Marauder Splinter (Hai)" "The Nutcracker"
+		ship "Marauder Quicksilver (Hai)" "Hazelnut's Bane"
+		ship "Marauder Bounder (Hai)" "Rodent Hunter"
+	npc accompany save
+		personality escort timid
+			confusion "civilian"
+		government "Hai (Wormhole Access)"
+		ship "Heavy Shuttle" "Acorn Chaser"
+	on visit
+		dialog `Hai raggiunto <planet>, ma non hai ancora completato la missione! O hai lasciato indietro la nave di Nanachi o non hai visitato <stopovers>.`
+	on stopover
+		conversation
+			`Il capitano del convoglio ti ha mandato un messaggio appena sei entrato nel sistema e ti ha detto di atterrare in una zona remota e nascosta di Prime, dove hanno già preparato tutto per trasferire il carico. Riforniscono le vostre navi e vi esortano a tornare. "La capitana Nanachi può restare nascosta qui con noi se avete bisogno di rifornimenti o di qualcosa dal fornitore, ma per favore non metteteci troppo."`
+	on complete
+		event "Nanachi: payment" 180
+		log "Minor People" "Nanachi" `Una giovane capitana mercantile Hai che ha faticato all'inizio della carriera. La sua fortuna è cambiata quando, contro circostanze difficili, è riuscita a consegnare in tempo agli organizzatori di una festa Hai una preziosa collezione d'arte umana.`
+		conversation
+			`Atterrando di nuovo su Allhome, il gruppo della festa abbraccia te e Nanachi con calore. "Abbiamo venduto decine di migliaia di biglietti per la festa promettendo di ospitare una grande mostra d'arte con pezzi da tutto lo spazio umano. Senza di essi sarebbe un fallimento totale, e saremmo in seri guai con i nostri sponsor," spiega Narancia.`
+			`	Mentre il carico viene portato di corsa al sito della mostra, Nanachi ti mostra il chip che ha ricevuto come pagamento e il saldo del suo conto bancario: quest'ultimo pagamento le ha permesso di estinguere completamente il prestito. "Capitano," dice con una certa difficoltà, e cerca di nascondere il viso, come per asciugarsi qualche lacrima. "Non riuscirò mai a ringraziarti come si deve, se non fosse stato per te sarei ancora persa in quello spazioporto e alla fine avrei dovuto tornare al mio lavoro in miniera. D'ora in poi lavorerò sodo; risparmierò e ti pagherò per tutto!" Ti abbraccia e si inchina a te in un modo che vedresti nei film, come se cercasse di imitare il gesto. Alla fine vi salutate e tornate alle vostre navi.`
+
+event "Nanachi: payment"
+
+
+
+mission "Nanachi: Payment"
+	landing
+	source
+		government "Hai"
+		not planet "Darkwaste"
+	to offer
+		has "event: Nanachi: payment"
+	on offer
+		payment 700000
+		event "Nanachi: Update" 720
+		conversation
+			`Poco dopo che atterri, ricevi un messaggio da Nanachi, la giovane pilota Hai che hai aiutato a iniziare. "Caro capitano <last>, spero che stia bene! Come avevo promesso, da quando ci siamo separati ho lavorato per mettere da parte abbastanza denaro da pagarla per essere stato così gentile da aiutarmi. Le ho inviato <payment>. Le sono profondamente grata per aver aiutato il mio sogno a realizzarsi."`
+				decline
+
+event "Nanachi: Update"
+
+
+
+mission "Nanachi Meeting"
+	landing
+	source
+		government "Hai"
+		not planet "Darkwaste"
+	to offer
+		has "event: Nanachi: Update"
+		random > 30
+	on offer
+		outfit "Shield Beetle Pendant"
+		conversation
+			`Dopo essere uscito dalla nave e aver iniziato ad attraversare l'area di attracco, noti una Hai che corre verso di te e ti saluta con la zampa. Quando si avvicina, capisci che è Nanachi, la pilota Hai che avevi aiutato anni fa.`
+			`	"Stavo proprio per tornare dal mio equipaggio quando ti ho visto uscire dalla nave. Conosco un bel snack bar qui, andiamo!" Prima che tu possa persino salutarla, ti ha trascinato al bar e ha ordinato dei drink per voi due. Ti racconta i suoi ultimi anni come capitana. Ha venduto da tempo la sua vecchia nave e ora pilota un Geocoris, trasportando grandi quantità di carico per tutto lo spazio degli Hai. Anche tu le racconti com'è stata la tua vita da quando vi siete visti l'ultima volta, le tue avventure e quanta strada hai fatto. Continuate a scambiarvi storie per ore, finché il bar non è pronto a chiudere.`
+			`	La ringrazi per i drink e ti prepari a salutarla.`
+			`	"Oh aspetta, prima che vada capitano, lascia che ti dia una cosa," dice, proprio mentre stai per tornare alla nave. Prende un piccolo pendente dalla tasca.`
+			scene `outfit/crystal pendant`
+			`	"A casa, a Giverstone, quando avevo un po' di tempo libero dal lavoro in miniera, mi divertivo a scolpire piccole pietre per farne miniature di navi. Ho pensato che sarebbe stato bello farne una per te, nel caso ti avessi rivisto. L'ho fatta con le stesse pietre che usiamo come portafortuna sulle nostre navi." Ti dà il pendente, scolpito a forma di Shield Beetle Hai. È fatto estremamente bene, con diverse texture superficiali che rappresentano le diverse parti dello Shield Beetle. "Volevo che fosse qualcosa per rendere più facili i tuoi viaggi, come tu hai aiutato a iniziare i miei. Grazie ancora, capitano!" Vi separate e tornate alle vostre navi.`
+				decline
+
+
+
+mission "Strider Alt Start"
+	landing
+	name "Nuove navi degli Slegati"
+	description "L'ambasciatrice Sayari ha informato il consiglio degli anziani dello sviluppo del Solifuge. Il consiglio è interessato a incontrarti su <destination> per saperne di più."
+	source
+		government "Hai"
+		not planet "Hai-home"
+		not attributes "uninhabited" "station"
+	destination "Hai-home"
+	clearance
+	to offer
+		has "Wanderers Evacuation 1: offered"
+		not "Wanderers Solifuge Recon 3: offered"
+		or
+			has "Wanderers Solifuge Recon 2: done"
+			has "Wanderers Pond Strider Recon 2: done"
+	on offer
+		dialog `Dopo che hai finito di atterrare, vieni avvicinato da un Hai in uniforme formale. "Salve, capitano <last>. L'ambasciatrice Sayari ha fatto sapere al consiglio degli anziani che i nostri fratelli Slegati hanno creato una nuova nave di grande potenza. Il consiglio ha richiesto la sua presenza su <planet>; Sayari ha detto che lei è stato in combattimento con queste navi, e gli anziani sono interessati alla sua competenza."`
+	on complete
+		conversation "solifuge conversation"
+
+
+
+mission "Strider 0"
+	landing
+	name "Tecnologia di riparazione dello scafo"
+	description "Gli Hai stanno lavorando a una porta-droni per contrastare il Solifuge degli Slegati, ma il creatore della nave sta ancora sviluppando la tecnologia di riparazione dello scafo per renderla più efficace in combattimento. Visita <planet> per aiutare gli Hai con questa tecnologia quando puoi."
+	destination "Hai-home"
+	clearance
+	to offer
+		or
+			has "Wanderers Solifuge Recon 3: done"
+			has "Strider Alt Start: done"
+	to fail
+		has "Strider 1: offered"
+	to complete
+		never
+
+
+
+mission "Strider 1"
+	landing
+	name "Tecnologia di riparazione dello scafo"
+	description "Gli Hai stanno lavorando a una porta-droni per contrastare il Solifuge degli Slegati, ma il creatore della nave sta ancora sviluppando la tecnologia di riparazione dello scafo per renderla più efficace in combattimento. Viaggia fino a <planet> per incontrare la delegazione incaricata di negoziare per questa tecnologia."
+	source "Hai-home"
+	destination "Allhome"
+	to offer
+		has "Strider 0: active"
+	on offer
+		conversation
+			branch "know both"
+				has "license: Remnant"
+				has "license: Coalition"
+			
+			branch "know coalition"
+				has "license: Coalition"
+			
+			branch "know remnant"
+				has "license: Remnant"
+			
+			`Sei tornato su <origin>, ma non hai accesso ad alcuna tecnologia di riparazione dello scafo. Esplora la galassia e guadagnati la fiducia di una fazione aliena che possiede la tecnologia di riparazione dello scafo prima di tornare.`
+				defer
+			
+			label "know both"
+			`Sei tornato su <origin> per aiutare gli Hai a sviluppare la tecnologia di riparazione dello scafo. Il padre di Osen ha chiesto se conoscevi alieni con una tale tecnologia, e tu hai incontrato la Coalizione, che ha equipaggiamenti capaci di riparare gli scafi, e il Remnant, che ha navi che si riparano da sole. Vuoi parlare agli anziani di uno di questi gruppi?`
+			choice
+				`	(Sì.)`
+					goto start
+				`	(Non ora.)`
+					defer
+			
+			label "know coalition"
+			`Sei tornato su <origin> per aiutare gli Hai a sviluppare la tecnologia di riparazione dello scafo. Il padre di Osen ha chiesto se conoscevi alieni con una tale tecnologia, e tu hai incontrato la Coalizione, che ha equipaggiamenti capaci di riparare gli scafi. Vuoi parlare agli anziani della Coalizione?`
+			choice
+				`	(Sì.)`
+					goto start
+				`	(Non ora.)`
+					defer
+			
+			label "know remnant"
+			`Sei tornato su <origin> per aiutare gli Hai a sviluppare la tecnologia di riparazione dello scafo. Il padre di Osen ha chiesto se conoscevi alieni con una tale tecnologia, e tu hai incontrato il Remnant, che ha navi che si riparano da sole. Vuoi parlare agli anziani del Remnant?`
+			choice
+				`	(Sì.)`
+				`	(Non ora.)`
+					defer
+			
+			label start
+			`	Informi gli anziani di aver scoperto un gruppo che potrebbe aiutarli a creare la tecnologia di riparazione dello scafo, e ti invitano nella camera del consiglio. "Salve, capitano <last>," ti dice uno degli anziani entrando nella camera. "Che notizie ci porta sulla sua ricerca della tecnologia di riparazione dello scafo?"`
+			branch "tell both"
+				has "license: Remnant"
+				has "license: Coalition"
+			
+			branch "tell remnant"
+				has "license: Remnant"
+			
+			branch "tell coalition"
+				has "license: Coalition"
+			
+			label "tell both"
+			choice
+				`	"C'è un gruppo di tre specie aliene lontano da qui, noto come la Coalizione, che ha equipaggiamenti capaci di riparare una nave in volo."`
+					goto coalition
+				`	"C'è un gruppo di umani lontano da qui, noto come il Remnant, che ha navi capaci di ripararsi da sole."`
+					goto remnant
+			
+			label "tell remnant"
+			choice
+				`	"Lontano da qui c'è un gruppo di umani chiamato il Remnant: le loro navi si riparano da sole."`
+					goto remnant
+			
+			label "tell coalition"
+			choice
+				`	"Lontano da qui c'è un gruppo di tre specie aliene, la Coalizione: hanno equipaggiamenti capaci di riparare una nave in volo."`
+					goto coalition
+			
+			label remnant
+			action
+				set "strider: remnant"
+			`	"Un gruppo di umani con la tecnologia di riparazione dello scafo?" chiede uno degli anziani con un'espressione perplessa. "Mi sorprende che non abbiamo mai sentito parlare di questi umani. Sono ben conosciuti nella Repubblica?"`
+			`	"No," spieghi. "Sono un gruppo appartato, sconosciuto alla maggior parte dell'umanità. Probabilmente non apprezzerebbero una visita da parte di alieni."`
+				goto end
+			
+			label coalition
+			action
+				set "strider: coalition"
+			`	"Un gruppo di tre alieni?" chiede uno degli anziani con un'espressione perplessa. "Non capita spesso nella galassia che compaiano gruppi simili."`
+			
+			label end
+			`	"Metteremo insieme una delegazione perché lei la trasporti da queste persone di cui parla. La aspetteranno su <destination>," dice un altro anziano. "Può guidarli a fare contatto con questo gruppo come ritiene opportuno. Confidiamo che sarà all'altezza."`
+				accept
+
+
+
+mission "Strider: Remnant 1"
+	landing
+	name "Contatta il Remnant"
+	description "Porta un messaggio degli Hai fino a <stopovers> per organizzare un incontro tra il Remnant e gli Hai, poi torna su <destination>."
+	source "Allhome"
+	stopover "Viminal"
+	to offer
+		has "strider: remnant"
+	on offer
+		conversation
+			`Trovi la delegazione Hai incaricata di recarsi dal Remnant per negoziare la tecnologia di riparazione dello scafo, che ti aspetta nello spazioporto. La capo della delegazione si presenta come ambasciatrice Yashili. "Ho saputo che viaggeremo per una grande distanza attraverso la galassia. Che il viaggio sia sicuro."`
+			`	La delegazione comincia a dirigersi verso la tua nave, ma tu la fermi.`
+			choice
+				`	"Aspettate un momento! Questo gruppo non reagisce bene agli estranei. Che ne dite se organizzo prima un incontro?"`
+				`	"Non così in fretta. Il Remnant tiene alla propria riservatezza, e non ho parlato con loro di questa situazione. Lasciate che organizzi prima un incontro."`
+			`	Gli Hai si guardano e chiacchierano piano tra loro, poi l'ambasciatrice Yashili prende la parola. "Lei conosce questo gruppo, e sa come fare la migliore impressione su di loro." Si ferma a sussurrare qualcosa a un altro Hai, che corre via. L'ambasciatrice si volta di nuovo verso di te. "Le fornirò una lettera che conterrà una breve presentazione degli Hai, una spiegazione del motivo per cui vorremmo incontrarli e un invito a stabilire relazioni diplomatiche."`
+			`	Pochi istanti dopo, l'Hai che era corso via torna portando una busta sigillata e la consegna all'ambasciatrice. Lei si volta verso di te. "Ecco. Per favore, la porti a questi umani appartati per noi. Noi aspetteremo qui il suo ritorno."`
+			`	"Va bene," rispondi dopo aver preso la busta. La delegazione si congeda, augurandoti buon viaggio, prima di andarsene.`
+				accept
+	on stopover
+		conversation
+			`Guardandoti intorno nello spazioporto, non sei sicuro con chi parlare di una richiesta diplomatica del genere. Alla fine vai al banco informazioni dello spazioporto a chiedere. Consegni la lettera alla persona al banco e, dopo averla letta, ti invita ad aspettare nella caffetteria mentre cerca qualcuno che possa soddisfare la richiesta degli Hai.`
+			`	Dopo un'ora passata a guardare Remnant che mangiano e si fanno gesti, un Remnant androgino si avvicina al tuo tavolo. Cerchi di indovinare quanti anni abbia, ma anche se non sembra giovane, non sembra nemmeno particolarmente vecchio.`
+			`	"Salve, capitano <first>," ti comunica a gesti lo sconosciuto. "Mi chiamo Rayn, e il mio collega ha detto che aveva una richiesta da parte di un'altra fazione. Mi risulta che desiderino i mezzi per riparare lo scafo di una nave in volo. È corretto?"`
+			choice
+				`	"Sì. Gli Hai sperano di riuscire a migliorare una nuova porta-droni che stanno sviluppando, per riparare i suoi droni."`
+				`	"Sì. Gli Hai vogliono poter riparare gli scafi delle loro navi per ottenere un vantaggio sui loro nemici."`
+			`	"Quindi gli Hai vogliono migliorare la loro tecnologia militare? Presumo che sia in risposta alla loro lunga guerra contro gli Slegati?"`
+			choice
+				`	"Sì, anche se loro non la vedono così."`
+				`	"Non è una guerra; è un'azione difensiva."`
+			`	Rayn sembra divertito. "Non importa come lo chiamino. Una guerra, con qualsiasi nome, è ugualmente sanguinosa. Ma a parte questo, come fanno a sapere di noi per fare una richiesta del genere?"`
+			choice
+				`	"Cercavano qualcuno che avesse la tecnologia di riparazione, e ho detto che potevo trovarlo."`
+				`	"Hanno chiesto se conoscevo qualcuno con la tecnologia di riparazione in volo, e ho detto che conoscevo un gruppo di ricercatori umani."`
+			`	"Quindi in realtà non sanno di noi. È un bene." Rayn sembra pensieroso e chiude gli occhi per un momento, poi continua. "Prendi i diplomatici Hai, ma non dire loro dove stai andando. Portali a queste coordinate su Covert, nel sistema Gienah. È un luogo in una zona disabitata dove potremo parlare. Vi aspetteremo con qualcosa che potrebbe aiutarli, se possono pagare il nostro prezzo."`
+
+
+
+mission "Strider: Remnant 2"
+	landing
+	name "Incontra il Remnant"
+	description "Trasporta l'ambasciatrice Yashili e la sua delegazione su <destination> per tentare di ottenere la tecnologia di riparazione dello scafo dal Remnant."
+	source "Allhome"
+	destination "Covert"
+	infiltrating
+	passengers 3
+	blocked "La delegazione Hai che deve incontrare il Remnant richiede 3 cuccette per il viaggio, ma non hai abbastanza spazio disponibile! Torna quando avrai posto per la delegazione."
+	to offer
+		has "Strider: Remnant 1: done"
+	on offer
+		conversation
+			`Mandi un messaggio all'ambasciatrice Yashili e le dici che hai organizzato un incontro con il Remnant. "È una buona notizia. Ci incontreremo con lei allo spazioporto a breve."`
+			`	Qualche tempo dopo la delegazione arriva alla tua nave. "Prima di partire, c'è qualcosa che dobbiamo sapere di questo gruppo prima di incontrarlo?" chiede Yashili.`
+			choice
+				`	"Il Remnant è un gruppo di umani, quindi non c'è nulla di particolare che dobbiate sapere."`
+					goto end
+				`	"Il Remnant ha accettato di incontrarvi su <planet>, un pericoloso mondo pirata, quindi non allontanatevi troppo dalla nave."`
+			`	"Oh," esclama Yashili con un'espressione sorpresa. "Anche questo Remnant è gente pericolosa?"`
+			`	"No, sono persone amichevoli," la rassicuri. "Solo che non vogliono incontrarvi nel loro territorio."`
+			label end
+			`	La delegazione ti ringrazia per l'informazione e sale sulla tua nave. Tracci una rotta per <destination>. Speriamo che il Remnant sia disposto a condividere qualcosa con una specie aliena appena conosciuta.`
+				accept
+	on visit
+		dialog `Sembra che la delegazione sia sistemata su scorte che non sono ancora arrivate in questo sistema. Decolla e aspettale.`
+
+
+
+mission "Strider: Remnant 3"
+	landing
+	name "Tecnologia ottenuta"
+	description "La delegazione ha ottenuto con successo la tecnologia di riparazione dello scafo dal Remnant. Torna su <destination> così che gli Hai possano iniziare a sviluppare questa tecnologia per la loro nuova nave."
+	source "Covert"
+	destination "Hai-home"
+	clearance
+	passengers 3
+	cargo "repair technology" 12
+	blocked "Ti serve <capacity> per riportare la delegazione Hai e la tecnologia di riparazione su <planet>."
+	to offer
+		has "Strider: Remnant 2: done"
+	on offer
+		log `Hai aiutato gli Hai a mettersi in contatto con il Remnant per imparare a creare la tecnologia di riparazione dello scafo in volo. Gli Hai hanno ottenuto una copia delle ricerche del Remnant sui nuclei dei sistemi Korath, insieme a diversi campioni.`
+		conversation
+			`Alle coordinate indicate c'è un piccolo accampamento che ricorda vagamente un avamposto di commercianti del deserto. A parte qualche cammello legato vicino a un abbeveratoio, il posto sembra abbandonato. Quando atterri accanto, la delegazione esce con cautela. "È il posto giusto?" chiede uno degli Hai un po' preoccupato.`
+			`	Prima che tu possa rispondere, diversi Remnant emergono dalle tende, e noti che Rayn è tra loro. "Benvenuti nel nostro accampamento, rappresentanti," canta Rayn. "Il capitano <first> ci ha portato il vostro messaggio, e gli abbiamo chiesto di condurvi qui. Vi va di entrare?" Fa un gesto verso la più grande delle tende. Pur essendo chiaramente sorpresa, l'ambasciatrice Yashili acconsente, e gli Hai entrano. Rayn ti fa cenno di seguirli. Gli altri Remnant cominciano a pattugliare intorno al campo.`
+			`	Rayn offre cibo e acqua agli Hai e poi si siede su un cuscino a terra. Gli Hai rifiutano educatamente il cibo prima di unirsi a Rayn sui cuscini. L'ambasciatrice Yashili comincia. "Veniamo in rappresentanza del popolo Hai, che vive lontano da qui. Alcune delle nostre sorelle e fratelli sono diventati violenti nei nostri confronti, e di recente hanno creato una nuova nave che potrebbe crearci molti problemi. In rappresaglia abbiamo creato una nostra nave, ma abbiamo ancora bisogno di tecnologia capace di riparare lo scafo di una nave in volo, per avere un vantaggio. Il capitano <last> ci ha detto che voi avete questa tecnologia, con scafi che si riparano da soli."`
+			`	"È vero che le nostre navi si autoriparano," risponde Rayn. "Ma non è una tecnologia che possiamo condividere. La proprietà è intrinseca ai metalli con cui costruiamo le nostre navi, metalli di cui c'è scarsa disponibilità." Yashili sembra preoccuparsi di questo sviluppo; forse questo viaggio è stato inutile.`
+			choice
+				`	"Quindi non c'è modo che possiate aiutarli?"`
+				`	"Deve esserci qualcosa che possiamo fare."`
+			`	"Non temete, perché abbiamo qualcos'altro. Per molti decenni abbiamo combattuto e saccheggiato i predoni Korath del Nucleo. Le loro navi contengono equipaggiamenti capaci di riparare gli scafi grazie a piccoli robot. Non siamo riusciti a riprodurre questi robot con facilità, ma potremmo fornirvi le nostre ricerche e diversi campioni che potrete usare."`
+			`	"Anche noi abbiamo incontrato questi Korath," risponde Yashili. "Anche se non abbiamo preso la loro tecnologia. Potrebbe esserci di grande utilità."`
+			`	"Vorremmo però chiedere qualcosa in cambio: una copia dei vostri registri astronomici. La storia della galassia stessa è un mistero per noi, e vorremmo saperne di più."`
+			`	L'ambasciatrice Yashili sembra pensierosa, poi annuisce. "I dati astronomici storici hanno valore scientifico, come imparare a riparare le nostre navi in volo. Mi sembra uno scambio equo. Dovremmo poter avere i dati a breve. Ci serve solo la nave del capitano <first> per accedere ai relais di comunicazione dell'iperspazio." Yashili fa un cenno a un altro membro della delegazione, che sfreccia verso la tua nave.`
+			`	"Immagino ci sarà una grande quantità di dati da trasferire," dice Rayn. "Passiamo il tempo."`
+			`	L'ambasciatrice Yashili e Rayn si lasciano andare a chiacchiere diplomatiche. La danza conversazionale tra un gruppo di diplomatici di professione e un gruppo riservato che al momento recita il ruolo di commercianti nomadi del deserto è davvero strana.`
+			`	"Mentre aspettiamo, sono curiosa di sapere come ha conosciuto questo Remnant, capitano," dice Yashili.`
+			choice
+				`	"Passo molto del mio tempo esplorando la galassia. A volte ci si imbatte in cose interessanti."`
+				`	"Beh, allo stesso modo in cui immagino la maggior parte della gente vi abbia trovati: vagando senza meta."`
+			`	Yashili annuisce. "È una situazione comprensibile."`
+			``
+			`	Un'ora di conversazione dopo, l'assistente dell'ambasciatrice torna con un grande disco di dati e glielo consegna. Il Remnant tira fuori un chip di dati proprio, e i due gruppi si scambiano formalmente i dati. In risposta a un segnale invisibile, un altro Remnant scosta un lato della tenda, e una squadra porta dentro un segmento di un nucleo di sistema con diversi dei piccoli robot. "Ce ne sono altri fuori ad aspettare, ma ecco un campione da ispezionare. Usando le istruzioni che vi abbiamo fornito, non dovreste avere problemi a usare questa tecnologia." Armeggiano con la console, e i robot si animano subito e assemblano un mucchio di pezzi in una nave modello.`
+			`	"Grazie per aver fatto affari con noi," dice l'ambasciatrice Yashili. "Avete un'amica tra gli Hai." Si inchina e il Remnant ricambia l'inchino con grazia fluida prima di caricarsi in fretta l'equipaggiamento Korath sulle spalle. Caricano tutto sulla <ship> mentre la delegazione sale, e ti metti in viaggio per tornare su <planet>.`
+			`	Mentre decolli, un ultimo sguardo alle telecamere esterne mostra che i Remnant hanno già quasi finito di caricare il loro accampamento sui cammelli. Quando una tenda viene smontata, rivela un cannone antiaereo installato su una slitta. Nonostante l'apparenza rustica che ostentavano, il Remnant prendeva certo sul serio la propria sicurezza. Non si vede ancora nessuna nave, ma sospetti che uno Starling o un Gull si nasconda senza dubbio nei paraggi.`
+				accept
+
+
+
+mission "Strider: Coalition 1"
+	landing
+	name "Contatta la Coalizione"
+	description "Trasporta l'ambasciatrice Yashili e la sua delegazione su <destination> per tentare di ottenere la tecnologia di riparazione dello scafo dalla Coalizione."
+	source "Allhome"
+	destination "Ring of Friendship"
+	passengers 3
+	blocked "La delegazione Hai che deve incontrare la Coalizione richiede 3 cuccette per il viaggio, ma non hai abbastanza spazio disponibile! Torna quando avrai posto per la delegazione."
+	to offer
+		has "strider: coalition"
+	on offer
+		conversation
+			`Trovi la delegazione Hai incaricata di recarsi dalla Coalizione per negoziare la tecnologia di riparazione dello scafo, che ti aspetta nello spazioporto. La capo della delegazione si presenta come ambasciatrice Yashili. "Ho saputo che viaggeremo per una grande distanza attraverso la galassia. Che il viaggio sia sicuro."`
+			`	"C'è qualcosa che dovremmo sapere di questa Coalizione prima di incontrarla?" chiede un altro membro della delegazione.`
+			choice
+				`	"La Coalizione è un gruppo di tre specie che vivono in armonia, proprio come gli umani e gli Hai qui. Dovrebbero essere felici di incontrare nuovi alieni."`
+					goto normal
+				`	"La Coalizione odia i Quarg ed è andata in guerra con loro molte migliaia di anni fa per scacciarli dal loro spazio."`
+			`	"È molto preoccupante," dice Yashili, con cenni di assenso degli altri due membri della delegazione. "Speriamo che la presenza dei Quarg nello spazio degli Hai non sia un problema per loro." Yashili riflette un momento. "O forse potremmo usare questa informazione a nostro vantaggio."`
+			label normal
+			`	La delegazione raccoglie le sue cose e sale sulla tua nave, e tracci una rotta per <destination>. Speriamo che la Coalizione sia disposta a condividere con una specie aliena appena conosciuta.`
+				accept
+	on visit
+		dialog `Sembra che la delegazione sia sistemata su scorte che non sono ancora arrivate in questo sistema. Decolla e aspettale.`
+
+
+
+mission "Strider: Coalition 2"
+	landing
+	name "Tecnologia ottenuta"
+	description "La delegazione ha ottenuto con successo la tecnologia di riparazione dello scafo dalla Coalizione. Torna su <destination> così che gli Hai possano iniziare a sviluppare questa tecnologia per la loro nuova nave."
+	source "Ring of Friendship"
+	destination "Hai-home"
+	clearance
+	passengers 3
+	cargo "repair technology" 12
+	blocked "Ti serve <capacity> per riportare la delegazione Hai e la tecnologia di riparazione su <planet>."
+	to offer
+		has "Strider: Coalition 1: done"
+	on offer
+		log `Hai aiutato gli Hai a mettersi in contatto con la Coalizione per imparare a creare la tecnologia di riparazione dello scafo in volo. Gli Hai hanno ottenuto uno schema dei moduli di riparazione della Coalizione, insieme a diversi campioni.`
+		conversation
+			`Prima di atterrare, avverti gli Heliarch che stai portando ambasciatori alieni a incontrarli, e in effetti una delegazione Heliarch ti aspetta quando atterri. Ti salutano brevemente, ma sembrano molto più interessati agli strani nuovi esseri che hai portato al loro centro di governo.`
+			`	La delegazione Hai è momentaneamente confusa dal modo di parlare insolito delle specie della Coalizione, ma si riprende in fretta. Gli Heliarch cominciano poi a raccontare la loro storia agli Hai, la stessa che raccontarono a te quando li incontrasti la prima volta, compreso il loro avvertimento sui Quarg. Mentre le due delegazioni sono impegnate a conversare, un agente Heliarch ti si avvicina e chiede: "A questo prezioso incontro, con quale scopo hai portato questa gente, capitano?"`
+			choice
+				`	"Hanno bisogno del vostro aiuto."`
+				`	"Vengono in cerca di tecnologia."`
+			`	Cominci a parlare con loro degli Hai e del loro conflitto con gli Slegati, ma mentre spieghi senti un forte sussurro collettivo arrivare dagli Heliarch che conversano con gli Hai. Un membro della delegazione Heliarch ti si avvicina. "Capitano <last>, raccontando gentilmente del loro territorio e della loro società, la vostra amica Yashili ci ha parlato. È vero, che vicino ai pianeti degli Hai c'è un mondo ad anello che i Quarg hanno costruito?"`
+			`	Gli altri sembrano impegnati in una loro conversazione eccitata, dopo aver modificato i loro dispositivi di traduzione per non parlare più umano. Anche Yashili e gli altri Hai si voltano verso di te, un po' confusi, aspettando che risponda per loro.`
+			choice
+				`	"I Quarg sono davvero lì, ma restano fuori dagli affari degli Hai, e gli Hai restano fuori dai loro."`
+					goto business
+				`	"Sì, i Quarg hanno un solo sistema lì con un mondo ad anello completo, dove vivono anche molti Hai e persino alcuni umani."`
+			`	Gli Heliarch parlano tra loro a ritmo serrato, e prima che tu te ne accorga ci sono attorno diverse dozzine di altri agenti. Uno di loro, un Saryd anziano con un cerchietto dorato, dice: "Raccontarci di più su questo mondo ad anello, dovete, amici Hai. Accompagnarci, volete?"`
+			`	Senza aspettare la risposta della delegazione Hai, praticamente la trascinano in una sezione riservata del mondo ad anello senza di te. Circa un'ora dopo, gli Hai vengono riportati indietro, la maggior parte con espressioni stanche.`
+			`	"Se avessi saputo che ci avrebbero interrogato sugli aspetti ingegneristici e sul funzionamento interno di un mondo ad anello, avrei portato un ingegnere con noi," ti sussurra Yashili.`
+			
+			label business
+			`	Gli Heliarch avvertono ancora una volta gli Hai di stare attenti ai Quarg, prima di lasciarli finalmente spiegare il motivo del loro viaggio.`
+			`	La delegazione sembra ancora un po' sopraffatta, come se stesse ancora elaborando tutta la storia che gli Heliarch hanno appena raccontato, ma Yashili ha mantenuto la compostezza e comincia a parlare. "Veniamo in rappresentanza del popolo Hai, che vive lontano da qui. Alcune delle nostre sorelle e fratelli sono diventati violenti nei nostri confronti, e di recente hanno creato una nuova nave che potrebbe crearci molti problemi. In rappresaglia abbiamo creato una nostra nave, ma abbiamo ancora bisogno di tecnologia capace di riparare lo scafo di una nave in volo, per avere un vantaggio. Il capitano <last> ci ha detto che voi possedete questa tecnologia."`
+			`	"Sviluppato una tale tecnologia, in effetti l'abbiamo," risponde un agente Arach. "Composti da diverse dozzine di piccoli robot di riparazione, e dal loro centro di comando, tali equipaggiamenti sono."`
+			choice
+				`	"Sareste disposti a dare o vendere uno di quegli equipaggiamenti agli Hai?"`
+				`	"Sareste disposti a condividere con gli Hai come quegli equipaggiamenti vengono prodotti in serie?"`
+			`	"Molto coinvolta nella produzione dei nostri moduli di riparazione, la Casa Chamgar è," dice lo stesso Arach. "Contattare i loro rappresentanti in questo anello, li faremo."`
+			`	"Desiderate qualcosa in cambio?" chiede Yashili all'agente.`
+			`	"In cambio, non chiediamo nulla. Aiutarvi a estendervi oltre i limiti che i Quarg vi hanno imposto, una ricompensa sufficiente è," risponde l'Arach. Yashili sembra un po' perplessa, ma non insiste oltre.`
+			`	Poco dopo arriva un gruppo di Arachi che rappresentano la Casa Chamgar. Fanno descrivere agli Hai le loro navi, usando queste informazioni per ottimizzare il modulo di riparazione per le navi Hai. Preparano poi una copia dei progetti e consegnano agli Hai un chip di dati contenente gli schemi dei moduli di riparazione dello scafo e dei loro robot camminatori. Alcuni operai caricano poi sulla tua nave una cassa con due piccoli moduli perché gli Hai li usino come esempi. Yashili ringrazia la Coalizione per la generosità e sale sulla tua nave, pronta a tornare su <destination>.`
+				accept
+
+
+# For compatibility
+event "pond strider mass production"
+
+# The mission to ensure the Pond Strider is properly added to the new Hai shipyards.
+mission "Pond Strider Patch for v2"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "event: pond strider mass production"
+	on offer
+		event "pond strider mass production v2"
+		fail
+
+
+event "pond strider mass production v2"
+	shipyard "Mon Ki i'Hiya Basics"
+		add "Flea"
+	shipyard "Mon Ki i'Hiya Advanced"
+		add "Pond Strider"
+	outfitter "Hai Basics"
+		"Railgun Slug"
+	outfitter "Hai Intermediate"
+		"Railgun"
+		"Railgun Slug"
+		"Railgun Slug Rack"
+		`Motori atomici "Baellie"`
+	outfitter "Hai Advanced"
+		"Railgun"
+		"Railgun Slug"
+		"Railgun Slug Rack"
+		`Motori atomici "Baellie"`
+	fleet "Large Hai"
+		add variant 1
+			"Geocoris"
+			"Pond Strider (Tracker)"
+			"Pond Strider (Railgun)"
+			"Flea" 16
+		add variant 1
+			"Shield Beetle (Tracker)"
+			"Pond Strider (Tracker)"
+			"Flea" 8
+			"Lightning Bug" 2
+		add variant 1
+			"Pond Strider"
+			"Flea (Pulse)" 8
+			"Lightning Bug" 2
+			"Water Bug" 2
+		add variant 2
+			"Pond Strider (Ion)" 2
+			"Flea" 16
+		add variant 2
+			"Pond Strider"
+			"Flea" 8
+			"Centipede" 2
+		add variant 3
+			"Shield Beetle (Pulse)"
+			"Pond Strider (Pulse)"
+			"Flea (Pulse)" 8
+
+mission "Strider 3"
+	landing
+	source "Hai-home"
+	to offer
+		or
+			has "Strider: Coalition 2: done"
+			has "Strider: Remnant 3: done"
+	on offer
+		event "pond strider mass production v2" 30 90
+		conversation
+			`Yashili contatta gli anziani mentre atterri, informandoli che hai ottenuto la tecnologia di riparazione dello scafo. Accettano di incontrarti allo spazioporto insieme a Osen. Un gruppo di operai dello spazioporto comincia a scaricare i campioni dalla tua stiva dopo l'atterraggio.`
+			`	Mentre lasci la nave, scorgi gli anziani Hai e Osen che si avvicinano. L'ambasciatrice Yashili e la delegazione Hai si fanno avanti per incontrarli.`
+			branch coalition
+				has "Strider: Coalition 2: done"
+			
+			`	"Spero che il Remnant vi abbia trattati bene," dice uno degli anziani.`
+			`	"Erano un gruppo interessante. Molto appartati, e non disposti a condividere molto del loro popolo, ma più che disposti ad aiutarci dopo che abbiamo fornito loro una copia dei nostri dati astronomici storici."`
+				goto next
+			
+			label coalition
+			`	"Spero che la Coalizione vi abbia trattati bene," dice uno degli anziani.`
+			`	"Erano un gruppo interessante. Molto entusiasti di incontrare gente nuova, anche se molto suscettibili sul tema dei Quarg."`
+			
+			label next
+			`	Yashili consegna poi la copia dei dati a Osen. "Ti servirà," dice.`
+			`	"E di sicuro lo adorerò," risponde Osen. "Gli operai dello spazioporto hanno già mandato il carico verso il mio cantiere. Comincerò subito a integrarlo nel Pond Strider."`
+			choice
+				`	"Pond Strider?"`
+				`	"Spero che ti divertirai."`
+					goto fun
+			
+			`	"Sì. È il nome su cui ci siamo accordati per la nave, e i suoi droni si chiameranno Flea."`
+			`	"Mi prudono le mani solo a pensarci," scherza uno degli anziani.`
+				goto end
+			
+			label fun
+			`	"È difficile non divertirsi quando ami il tuo lavoro."`
+			
+			label end
+			`	Osen sta per correre via, ma uno degli anziani lo ferma. "Può darci una stima di quanto tempo servirà per usare queste informazioni?"`
+			`	"Oh, sì," dice Osen. "Potrebbero servirci alcuni mesi per far funzionare tutto. Almeno un mese, se siamo fortunati."`
+			`	"È bene saperlo. Prima avremo queste navi funzionanti, meglio è."`
+			`	Osen si prepara di nuovo a correre via, ma questa volta si ferma e si volta verso di te. "Grazie, capitano. Senza queste informazioni, avrei potuto impiegare anni per finire questo progetto." Annuisci in risposta, e Osen corre finalmente al suo cantiere.`
+			`	"Vorrei ringraziarla anch'io," dice Yashili. "È passato un po' di tempo dall'ultima volta che ho avuto la possibilità di lasciare il nostro spazio. È sempre emozionante andare in posti nuovi e incontrare gente nuova." Yashili si inchina a te, e tu ricambi l'inchino.`
+			`	"E anche noi dobbiamo esprimere la nostra gratitudine," dice uno degli anziani. "È bello avere lei come amico degli Hai. Ma non la tratterremo oltre. Che sia al sicuro nelle sue avventure."`
+				decline
+
+
+
+mission "Strider notification"
+	invisible
+	landing
+	source
+		government "Hai"
+	to offer
+		has "event: pond strider mass production"
+	on offer
+		conversation
+			scene `thumbnail/hai pond strider`
+			`Atterrando su <planet>, ricevi un messaggio da Osen. "Salve capitano <last>! Spero che questo messaggio la trovi bene. Vorrei ringraziarla ancora una volta per il suo aiuto con il Pond Strider, e informarla che abbiamo finito di integrare nel Pond Strider la tecnologia di riparazione dello scafo che ci ha fornito. Abbiamo ora avviato la produzione in serie della nave. Potrebbe anche interessarle sapere che abbiamo sviluppato nuove armi per il drone del Pond Strider, il Flea. Però non le rovinerò la sorpresa. Passi dal cantiere su Hai-home la prossima volta che capita e dia un'occhiata al Flea di persona."`
+				decline
+
+
+
+mission "Hai Film Crew 1"
+	minor
+	name "Troupe cinematografica Hai per <planet>"
+	description "Porta una troupe cinematografica da <origin> a <destination>, così che possano girarci un film dell'orrore. La paga è <payment>."
+	cargo "film equipment" 50
+	passengers 80
+	source
+		attributes hai
+		attributes urban
+		not attributes "uninhabited" "station"
+	destination "Darkrest"
+	to offer
+		random < 30
+		has "First Contact: Hai: offered"
+	on offer
+		conversation
+			`Un rapido tamburellare sulla spalla dissolve qualsiasi intenzione tu avessi di visitare questo spazioporto in pace. Ti volti e trovi una Hai, bassa persino per i loro standard, che ti guarda dal basso in alto.`
+			`	"Lei è un capitano di nave, vero? Le piacerebbe far parte della storia del cinema?" chiede.`
+			choice
+				`	"Non sono un appassionato di film. Passo."`
+					decline
+				`	"Certo, di cosa hai bisogno che faccia?"`
+				`	"Che cosa vuoi dire?"`
+			`	"Mi chiamo Likeet, e sono la regista di una produzione cinematografica indipendente. Abbiamo bisogno che porti <bunks> membri della troupe e <tons> di attrezzature cinematografiche su <planet>, poi che ci riporti indietro dopo circa un mese. Possiamo pagarla <payment>, ma le ricompense immateriali di partecipare a un progetto ambizioso come questo non avranno prezzo."`
+			choice
+				`	"Perché vorreste girare su <planet>? Non è una stazione abbandonata?"`
+					to display
+						has "visited planet: Darkrest"
+				`	"Che cosa ha di speciale <planet> per le riprese?"`
+					to display
+						not "visited planet: Darkrest"
+				`	"Certo, posso portarvi lì."`
+					goto accept
+				`	"Non vado in quella direzione. Dovrete trovare un altro capitano."`
+					decline
+			`	"Ah, lei non deve sapere niente di <planet>. Ci sono molte storie che girano attorno alla stazione, e la principale è l'esistenza di fantasmi e mostri che infestano i suoi corridoi. Vorremmo sfruttare l'immagine popolare di <planet> per la creazione del nostro film dell'orrore usandola come sfondo. È più o meno l'equivalente umano di ambientare il film in una foresta 'infestata'. Non si preoccupi, porteremo cibo a sufficienza per un mese."`
+			choice
+				`	"Perché la gente pensa che sia infestata?"`
+				`	"Va bene, allora posso portarvi lì."`
+					goto accept
+				`	"Non vado in quella direzione. Dovrete trovare un altro capitano."`
+					decline
+			`	"Ai tempi in cui la stazione era ancora in uso, ci fu un misterioso guasto in uno dei portelli che liberò ossigeno fuori dalla camera di equilibrio. Centinaia di persone a bordo morirono soffocate. A tutt'oggi nessuno sa cosa lo abbia causato, e le leggende sono nate da quell'evento."`
+			choice
+				`	"Che cosa ti fa pensare che parcheggerò la nave in una stazione infestata?"`
+				`	"Va bene, allora posso portarvi lì."`
+					goto accept
+				`	"Non vado in quella direzione. Dovrete trovare un altro capitano."`
+					decline
+			`	Likeet ride. "Non è davvero infestata, naturalmente. Sono solo storie. Crede che manderei un'intera troupe con tutte le loro costose attrezzature in un posto davvero pericoloso?"`
+			choice
+				`	"Va bene, allora posso portarvi lì."`
+				`	"Non vado in quella direzione. Dovrete trovare un altro capitano."`
+					decline
+			label accept
+			`	"Eccellente! Dirò alla troupe dove trovarla."`
+				accept
+	on visit
+		dialog phrase "generic cargo and passenger on visit"
+	on complete
+		event "hai film crew" 30
+		payment 100000 50
+		conversation
+			`Aiuti i tuoi passeggeri a scaricare tutte le loro attrezzature cinematografiche una volta arrivato su <planet>. Gli oggetti di scena sembrano diventare sempre più elaborati mentre vengono estratti dalla nave; noti la presenza di innumerevoli arti di gomma, mostri meccanici e lattine di sangue finto portate sul set. Quando hai finito, Likeet ti si avvicina.`
+			choice
+				`	"Di che cosa parla il tuo film, comunque?"`
+				`	"Meglio che vada, allora."`
+					goto going
+			`	"Non voglio rovinarti niente, ma è un film horror psicologico che esplora la natura dell'isolamento e l'ombra che la nostra stessa mortalità getta sulle nostre vite." Continua a dilungarsi su temi sempre più filosofici che sembrano avere sempre meno a che fare con il film vero e proprio, finché non nota che i tuoi occhi sono ormai vitrei da un pezzo.`
+			`	"Beh, comunque, grazie per l'aiuto, capitano. La contatterò tra un mese, quando avremo finito le riprese," dice Likeet.`
+				accept
+			label going
+			`	"Grazie per l'aiuto, capitano. La contatterò tra un mese, quando avremo finito," dice Likeet.`
+
+
+
+event "hai film crew"
+
+
+
+mission "Hai Film Crew 2"
+	landing
+	name "Preleva la troupe Hai su <planet>"
+	description "Vai su <destination> a prendere la troupe cinematografica che hai trasportato lì."
+	source
+		near "Ya Hai" 0 100
+	destination "Darkrest"
+	to offer
+		has "event: hai film crew"
+	on offer
+		dialog
+			`Atterrando con la nave ricevi una chiamata vocale. Anche se il mittente non si è preso la briga di identificarsi, ben presto riconosci la voce di Likeet, la regista che hai portato su Darkrest un mese fa.`
+			`	"Capitano <last>! Che bello rivederla! Abbiamo finito le riprese qui e ci serve un passaggio per andarcene da questo posto. Ci vediamo presto." Prima che tu possa dire qualcosa, riattacca.`
+
+
+
+mission "Hai Film Crew 3"
+	landing
+	name "Troupe cinematografica Hai per <planet>"
+	description "Riporta la troupe di Likeet al loro studio su <destination>, così che possano sviluppare il film girato su <origin>. La paga è <payment>."
+	cargo "film equipment" 30
+	passengers 80
+	blocked "Hai raggiunto <origin>, ma ti serve <capacity> per accettare la missione successiva. Torna qui quando avrai libero lo spazio necessario."
+	source "Darkrest"
+	destination
+		attributes hai
+		attributes urban
+	to offer
+		has "Hai Film Crew 2: done"
+	on offer
+		conversation
+			`La prima cosa che noti atterrando su Darkrest è il disordine. Sembra che un tornado si sia abbattuto sul set, e non ricordi che Likeet parlasse di disastri naturali quando descriveva il film.`
+			`	"Caos controllato, lo chiamo io," dice Likeet, che in qualche modo si è materializzata accanto a te. "Stiamo solo svuotando tutto adesso, assicurandoci di non aver dimenticato niente, le solite cose."`
+			`	Ci vogliono alcune ore per caricare tutto sulla tua nave. Quando hai finito, l'unico segno che qualcuno sia stato qui è che le superfici della stazione sono libere dalla polvere.`
+			`	"Bene, capitano. Dovremo andare su <planet> per montare il girato nel nostro studio. Sarà bello tornare finalmente su un pianeta invece di questa lattina." Si ferma, come se cercasse di ricordare una battuta. "Oh già, la pagherò <payment> una volta arrivati. Andiamocene da qui."`
+				accept
+	on visit
+		dialog phrase "generic cargo and passenger on visit"
+	on complete
+		payment 100000 50
+		conversation
+			`Quando atterri su <planet>, ti si avvicina Likeet, che porta una grande lattina di sangue finto. "Grazie per il passaggio, capitano. Tenga d'occhio il mio film nei cinema. Lo riconoscerà quando lo vedrà." Una volta scaricato il carico, quasi scatta via per l'emozione, senza dubbio cercando di arrivare al suo studio il prima possibile. Noti che <payment> sono stati depositati sul tuo conto.`
+
+
+
+mission "Station Exploration 1"
+	minor
+	name "Porta gli studenti su <planet>"
+	description "Porta un gruppo di studenti Hai e umani su <destination> per esplorare la stazione abbandonata. Promettono di pagarti <payment>."
+	passengers 5
+	"apparent payment" 8000
+	source "Greenwater"
+	destination "Darkrest"
+	to offer
+		random < 30
+		has "First Contact: Hai: offered"
+	on offer
+		conversation
+			`È un pomeriggio soleggiato mentre cammini oziosamente per lo spazioporto da solo, finché in qualche modo ti ritrovi circondato da un gruppo di giovani umani e Hai.`
+			`	"Lei è un capitano di navi spaziali, vero? Potrebbe portarci su <planet>?" dice uno degli Hai, come se avesse provato questa battuta per un po'.`
+			`	L'umano accanto gli dà una gomitata. "Non dimenticare di chiedere anche il viaggio di ritorno, Tagreep, a meno che tu non voglia restare bloccato là."`
+			choice
+				`	"Che cosa vorreste fare su <planet>? Non è una stazione abbandonata?"`
+					goto question
+					to display
+						has "visited planet: Darkrest"
+				`	"Perché volete andare su <planet>?"`
+					goto "question 1"
+					to display
+						not "visited planet: Darkrest"
+				`	"Certo, posso portarvi lì e riportarvi indietro."`
+					goto accept
+				`	"Quanto potete pagarmi?"`
+				`	"Mi dispiace, sono occupato adesso. Chiedete a un altro capitano."`
+					decline
+			`	Il gruppo comincia a muoversi con un'aria nervosa. "Beh, andiamo ancora a scuola, quindi i soldi scarseggiano... ma possiamo pagarla!" Tagreep si ferma a guardare gli amici e, quasi sussurrando, dice: "Vanno bene <payment>?"`
+			choice
+				`	"Perché mai vorreste pagare per andare su <planet>? Non è una stazione abbandonata?"`
+					to display
+						has "visited planet: Darkrest"
+				`	"Perché volete andare su <planet>?"`
+					goto "question 1"
+					to display
+						not "visited planet: Darkrest"
+				`	"Certo, non sono a corto di soldi adesso."`
+					goto accept
+				`	"Assolutamente no, è troppo poco. Trovate qualcun altro."`
+					decline
+			label question
+			`	"Beh, è proprio per questo che vogliamo andarci," dice un altro degli Hai. "Un tipo del nostro dormitorio ci ha detto che ci sono fantasmi che infestano <planet>, e volevamo smentirlo."`
+				goto continue
+			label "question 1"
+			`	"Un tipo del nostro dormitorio ci ha detto che ci sono fantasmi che infestano <planet>," dice un altro degli Hai, "e volevamo smentirlo."`
+			label continue
+			`	"Abbiamo in programma di guardarci intorno per un pomeriggio, vedere cosa troviamo," dice uno degli studenti umani, sorridendo. "Quando avremo finito te lo faremo sapere, e poi potremo andare."`
+			`	Uno degli Hai più bassi in fondo si fa sentire. "Ho portato le telecamere per il viaggio!" Il resto del gruppo lo ignora.`
+			choice
+				`	"È legale?"`
+				`	"Non sono affari miei dove passate le vacanze. Salite a bordo."`
+					goto accept
+			`	Gli studenti si guardano, considerando la domanda per quella che è evidentemente la prima volta. "Abbiamo sentito di altra gente che è andata lì senza problemi, purché fossero... discreti," dice uno degli studenti, cercando di rassicurare sia te sia i compagni. Un altro accenna di aver sentito qualcosa sulla necessità di un permesso per entrare, ma viene subito zittito dal resto del gruppo.`
+			choice
+				`	"Non ho intenzione di rischiare guai per questo. Trovate qualcun altro."`
+					decline
+				`	"Se qualcuno chiede, dirò che non sapevo servisse un permesso. Salite a bordo."`
+			label accept
+			`	Gli studenti corrono a bordo della tua nave. Mentre si sistemano nelle cuccette, li senti fare supposizioni su cosa troveranno su <planet>.`
+				accept
+	on visit
+		dialog `Cerchi il gruppo di studenti che stavi trasportando, ma ti rendi conto che sono saliti su una delle tue scorte! Meglio partire e aspettare che le tue scorte arrivino in questo sistema stellare.`
+
+
+
+mission "Station Exploration 2"
+	landing
+	name "Riporta gli studenti a casa su <planet>"
+	description "Riporta a casa un gruppo di compagni Hai e umani su <destination>."
+	passengers 5
+	source "Darkrest"
+	destination "Greenwater"
+	to offer
+		has "Station Exploration 1: done"
+	on offer
+		payment 8000
+		conversation
+			`Il viaggio dei tuoi passeggeri è consistito soprattutto nel cercare di spaventarsi a vicenda raccontando storie di fantasmi e saltando fuori dagli angoli bui della tua nave. Nonostante questi fastidi, atterri alla stazione senza problemi. I passeggeri quasi saltano giù dalla nave dopo averti pagato in fretta <payment>.`
+			`	Dopo aver passato qualche ora sulla nave, vieni fatto sobbalzare da un altoparlante che pronuncia severamente qualcosa in Hai. Noti poi i tuoi passeggeri correre verso la nave con uno sguardo di panico negli occhi. Immagini che vogliano approfittare il prima possibile del viaggio di ritorno che hai promesso; tuttavia, dissociarti da loro potrebbe risparmiarti qualche problema con le forze dell'ordine.`
+			choice
+				`	(Aspetta i miei passeggeri.)`
+					goto wait
+				`	(Fuggi.)`
+			`	Decolli appena prima che i tuoi passeggeri riescano a raggiungere la nave. I loro lamenti vengono presto coperti dal rumore dei motori mentre ti allontani dalla stazione.`
+				flee
+			label wait
+			`	La stazione è immersa in una luce arancione sgargiante e la voce tonante continua a risuonare. I tuoi passeggeri con il viso rosso si precipitano di nuovo sulla nave gridandosi addosso in un misto di lingue, e una volta passati dalla camera di equilibrio decolli prima che succeda qualcosa di peggio.`
+				launch
+	on visit
+		dialog `Cerchi il gruppo di studenti che stavi trasportando, ma ti rendi conto che sono saliti su una delle tue scorte! Meglio partire e aspettare che le tue scorte arrivino in questo sistema stellare.`
+	on complete
+		conversation
+			`All'atterraggio vieni fermato dalla polizia locale su <planet>.`
+			`	"Capitano <last>?" dice un ufficiale Hai. "Potrebbe venire con me un momento?"`
+			choice
+				`	"Sono nei guai?"`
+					goto normal
+				`	"Sono innocente!"`
+					goto normal
+				`	(Scappa.)`
+			`	Quasi appena ti volti per correre senti un dolore acuto al fianco mentre la coscienza svanisce.`
+			`	Alzi lo sguardo, sdraiato nel punto in cui stavi in piedi. Sopra di te c'è lo stesso ufficiale che ti ha chiesto di seguirlo, che allontana un altro ufficiale con un Pulse Rifle. A quanto pare non sei stato privo di sensi a lungo.`
+			label normal
+			`	"Vogliamo solo informarla di cosa è successo," dice l'ufficiale. Ti allontana dai tuoi passeggeri, che in questo momento vengono visitati da un medico per eventuali ferite, e ti fa sedere a un tavolo vicino.`
+			`	"Credo che ormai lo abbia capito: i suoi passeggeri non erano esattamente 'visitatori autorizzati' di Darkrest. Però non hanno rotto niente, l'annuncio che ha sentito era solo un avvertimento a non toccare un sistema informatico senza la dovuta preparazione, ma a quanto pare ha spaventato i suoi passeggeri abbastanza da farli scappare. Non sono nei guai, perché non c'è nessuna legge contro il girare per una stazione purché non si faccia danni, ma di solito chi lo fa chiede prima il permesso." Sorride con ironia. "Ci risparmia falsi allarmi come questo."`
+			choice
+				`	"Quindi sono nei guai o no?"`
+					goto trouble
+				`	"I miei passeggeri staranno bene?"`
+			`	"Sì, stanno bene. Siamo qui praticamente solo per assicurarci che non si siano fatti male. Non immagini però che i loro genitori ne saranno entusiasti.`
+			label trouble
+			`	"Portare un passeggero pagante dove ha chiesto di andare non è illegale. I suoi passeggeri erano maggiorenni e sapevano a cosa andavano incontro, e lei non li stava deliberatamente aiutando a infrangere la legge. È a posto."`
+			`	L'ufficiale si alza. "La prossima volta, però, dovrebbe pensarci due volte prima di portare dei ragazzi del college da qualche parte a 'dare la caccia ai fantasmi'." Ridacchia andandosene.`
+
+
+
+mission "Station Exploration Abandon Ship"
+	invisible
+	landing
+	source
+		attributes "hai"
+		not attributes "uninhabited"
+	to offer
+		has "Station Exploration 2: declined"
+	on offer
+		fine 70000
+		conversation
+			`All'atterraggio vieni fermato dalla polizia locale su <origin>. Dietro la tua nave, vedi i tuoi passeggeri scendere da un'altra nave Hai. Alcuni hanno il viso rosso e piangono, ma sembrano illesi.`
+			`	"Capitano <last>?" dice un ufficiale Hai. "Potrebbe venire con me un momento?"`
+			choice
+				`	"Sono nei guai?"`
+					goto questions
+				`	"Sono innocente!"`
+					goto normal
+				`	(Scappa.)`
+			`	Quasi appena ti volti per correre senti un dolore acuto al fianco mentre la coscienza svanisce.`
+			`	Alzi lo sguardo, sdraiato nel punto in cui stavi in piedi. Sopra di te c'è lo stesso ufficiale che ti ha chiesto di seguirlo, che allontana un altro ufficiale con un Pulse Rifle. A quanto pare non sei stato privo di sensi a lungo.`
+				goto normal
+			label questions
+			`	Si capisce chiaramente che l'ufficiale ha poca pazienza per le tue domande. Ti allontana dai tuoi passeggeri, che in questo momento vengono visitati da un medico per eventuali ferite.`
+				goto fine
+			label normal
+			`	Si capisce chiaramente che l'ufficiale ha poca pazienza per le tue scene. Ti allontana dai tuoi passeggeri, che in questo momento vengono visitati da un medico per eventuali ferite.`
+			label fine
+			`	"Le viene inflitta una multa di <fine> per aver abbandonato i suoi passeggeri senza preavviso. È fortunato a non aver ricevuto una punizione più severa." Dopo averti rimproverato ancora per aver messo in pericolo la sicurezza dei passeggeri, si allontana indispettito.`
+
+mission "Hai Pilgrimage"
+	name "Guida spirituale Hai per <planet>"
+	description "Porta una guida spirituale Hai su <destination>. Ti pagherà <payment>."
+	minor
+	clearance "You inform the authorities of the passenger you are transporting, and they quickly allow you to land."
+	source
+		government "Hai"
+		not attributes "uninhabited" "station"
+		not planet "Darkmetal" "Dustmaker" "Stonebreak" "Skyfarm"
+	destination
+		attributes "unfettered"
+	passengers 1
+	to offer
+		random < 10
+		has "ship attribute: quantum keystone"
+		has "First Contact: Hai: offered"
+	on offer
+		conversation
+			`È una giornata insolitamente nebbiosa su <origin>; l'aria è così densa di umidità che non vedi oltre qualche passo davanti a te. Forse è per questo che trasalisci quando ti volti e vedi un Hai in piedi proprio accanto a te. È così vicino che riesci a vedere gocce di rugiada sui suoi baffi, e noti subito i vistosi gioielli che indossa. Sembra piuttosto vecchio, a giudicare dalla postura curva e dal pelo bianco attorno al muso.`
+			branch pendant
+				has "outfit: Shield Beetle Pendant"
+			branch normal
+				has "outfit: Quantum Keystone"
+			branch remnant
+				has "outfit: Quantum Key Stone"
+			branch huh
+				has "outfit: Tree Skeleton Key Stone"
+			label normal
+			`	"Vedo che è più saggio della maggior parte degli umani qui," dice, indicando la tua nave. Il portello è aperto e mostra bene la tua pietra chiave a qualsiasi viaggiatore potenziale. "Porta uno scudo contro la tempesta dello spazio. Nessun altro le dica il contrario." Si ferma a prendere fiato. "Ora, passiamo a cose più mondane. Mi chiamo Hareek. È disposto e in grado di portarmi su <destination> per <payment>?"`
+				goto choice
+			label remnant
+			`	"La pietra chiave che porta è strana, umano," dice, indicando la tua nave. Il portello è aperto e mostra bene la tua Pietra Chiave a qualsiasi viaggiatore potenziale. Si avvicina per guardarla meglio. "Molto insolita. E senza un supporto adeguato: dev'essere un progetto umano." Sospira. "Beh, almeno la pietra chiave in sé sembra autentica. Dovrà bastare." Si volta verso di te. "Porta uno scudo contro la tempesta dello spazio. Nessun altro le dica il contrario. Se anche la sua gente ha accesso alle pietre chiave, spero che diventi consapevole del loro potere e impari a trattarle con più reverenza. Ora, passiamo a cose più mondane. Mi chiamo Hareek. È disposto e in grado di portarmi su <destination> per <payment>?"`
+				goto choice
+			label pendant
+			`	"Un design davvero unico, capitano," dice, indicando la tua nave. Il portello è aperto e mostra bene il pendente di Nanachi a qualsiasi viaggiatore potenziale. "Un regalo, presumo? È fortunato ad avere qualcuno che veglia su di lei. Porta uno scudo contro la tempesta dello spazio. Nessun altro le dica il contrario." Si ferma a prendere fiato. "Ora, passiamo a cose più mondane. Mi chiamo Hareek. È disposto e in grado di portarmi su <destination> per <payment>?"`
+				goto choice
+			label huh
+			`	"Non ho mai visto niente come questa... cosa che ha," dice, indicando la tua nave. Il portello è aperto e mostra bene la Pietra Chiave Scheletro d'Albero a qualsiasi viaggiatore potenziale. L'Hai sembra più che un po' disgustato. "Spero che non abbia fatto qualcosa di cui si pentirà."`
+			`	La guarda più da vicino. "Sembra fatta dello stesso materiale di una pietra chiave, eppure mi è del tutto estranea. Dove l'abbia presa, non ne ho idea. Beh, almeno il materiale in sé sembra autentico. Dovrà bastare." Sospira e si volta verso di te. "Sospetto che chiunque gliel'abbia data non sia felice che sia fuori dalle sue mani. Se fossi in lei, mostrerei più rispetto per le pietre chiave." Si ferma a prendere fiato. "Ora, passiamo a cose più mondane. Mi chiamo Hareek. È disposto e in grado di portarmi su <destination> per <payment>?"`
+			label choice
+			choice
+				`	"Posso portarla lì."`
+					goto agree
+				`	"Perché vorresti andare su <destination>? Non è un pianeta degli Slegati?"`
+					goto ask
+					to display
+						or
+							has "visited system: Wah Ki"
+							has "Wanderers: Translation Machine: offered"
+							has "First Contact: Unfettered: offered"
+				`	"Non ci vado. Dovrai chiedere a qualcun altro."`
+					decline
+			label ask
+			`	L'Hai si ferma un momento, come se non sapesse cosa dire. "I miei insegnamenti e le mie profezie sono... più apprezzati tra i nostri fratelli del nord."`
+			choice
+				`	"Insegnamenti?"`
+				`	"Va bene, la porto lì."`
+					goto agree
+				`	"Lo spazio degli Slegati è troppo pericoloso per me. Dovrai trovare qualcun altro."`
+					goto dangerous
+			label teachings
+			`	Sul volto di Hareek compare un'espressione indecifrabile. "Ah, chiedo scusa per la mia scortesia, probabilmente non sa chi sono. Come spiegarlo... Tra gli umani avete i vostri predicatori e i vostri saggi, giusto? Io sono qualcosa di simile. Ora, mi porterà su <destination>?"`
+			choice
+				`	"Quindi andrà a predicare agli Slegati?"`
+				`	"Posso portarla."`
+					goto agree
+				`	"Lo spazio degli Slegati è troppo pericoloso per me. Dovrai trovare qualcun altro."`
+					goto dangerous
+			`	"È una semplificazione eccessiva, ma non è qualcosa che posso spiegare adeguatamente a un umano." Si volta, guardando nella nebbia. "Stanno accadendo eventi forieri nella galassia, e devo avvertire gli altri del turbamento che ho previsto. Gli Slegati bramano il turbamento, quindi naturalmente sono più inclini a credermi." Sorride con ironia.`
+			choice
+				`	"Va bene, posso portarla lì."`
+					goto agree
+				`	"Mi dispiace, ma tutta questa storia mi sembra un po' troppo strana."`
+					goto strange
+				`	"Lo spazio degli Slegati è troppo pericoloso per me. Dovrai trovare qualcun altro."`
+			label dangerous
+			`	Sbuffa. "Pericoloso? Sto per compiere 300 anni, eppure non temo un viaggio nello spazio degli Slegati." Si allontana, chiaramente deluso.`
+				decline
+			label strange
+			`	Sospira. "Non importa. Non mi aspetterei che lei capisse." Si allontana, sparendo nella nebbia.`
+				decline
+			label agree
+			`	"Eccellente. Arrivare su una nave umana sarebbe un inizio propizio per il mio viaggio, ma non ci sono molti capitani umani che prendono le dovute precauzioni viaggiando nello spazio. Sono lieto di vedere che lei, almeno, ha un po' di buon senso." Abbassa la voce.`
+			`	"Dato che sembra un capitano affidabile, le racconterò alcune cose che ho visto. Molti anni fa difesi il nostro spazio dalle incursioni dei Korath. Un giorno fummo colti impreparati e investiti da una flotta enorme. Ogni singola nave del mio gruppo di pattuglia fu distrutta, tranne la nostra, l'unica con una pietra chiave. In quel periodo contro i Korath ho imparato due cose: che le vecchie leggende sono vere, e che la stabilità di cui abbiamo goduto come specie sta finendo. I cambiamenti nella galassia sono inevitabili, e quei cambiamenti arriveranno presto." Comincia a dirigersi verso la tua nave. "Ma non parliamo di questo ora. Ho faccende da sbrigare."`
+				accept
+
+	on visit
+		dialog `Cerchi Hareek, ma ti rendi conto che è salito su una delle tue scorte! Meglio partire e aspettare che le tue scorte arrivino in questo sistema stellare.`
+	on complete
+		payment 20000
+		"reputation: Hai (Unfettered)" += 100
+		conversation
+			`Hareek è stato piuttosto reticente su cosa avesse intenzione di fare una volta su <planet>. Il massimo che sei riuscito a ottenere sono altre storie sul suo passato di pilota militare. Una volta atterrato, Hareek salta giù dalla nave, muovendosi sorprendentemente in fretta per la sua età.`
+			`"Grazie, capitano, per aver fatto questo viaggio. Mi scuso per non averle detto di più su di me; il lavoro che faccio non è qualcosa che posso rivelare a qualsiasi umano che lo chieda." Ti consegna <payment> e si allontana. Gli Slegati intorno sembrano quasi intimiditi dalla sua presenza e di conseguenza ti lasciano un ampio spazio.`
+		log "Minor People" "Hareek" `Un vecchio Hai che sostiene di prevedere il futuro. L'hai lasciato nello spazio degli Slegati così che potesse diffondere il suo messaggio. Sembra essere molto rispettato tra gli Slegati.`
+
+
+
+mission "Acorn Delights: Part 1"
+	minor
+	name "Ghiande per Anoo"
+	description "Porta Eeeya su <destination> per consegnare <cargo> alla nipote scomparsa."
+	source "Allhome"
+	destination "Stonebreak"
+	passengers 1
+	cargo "acorn cookies" 3
+	to offer
+		random < 35
+		has "First Contact: Unfettered: offered"
+	on offer
+		conversation
+			`Mentre passi davanti a un negozio di forniture da cucina nello spazioporto, una Hai anziana e sciatta ti guarda con un'espressione profondamente preoccupata. Ti fa cenno di fermarti.`
+			choice
+				`	(Vedi cosa vuole.)`
+				`	(Ignorala.)`
+					decline
+			`	"Mi chiamo Eeeya, e sto cercando mia nipote scomparsa, Anoo. Ha appena superato l'esame di medicina, e stavo per regalarle tre tonnellate di biscotti, ma è sparita! Per favore, aiutami a trovarla." La sua voce morbida ha una nota cinguettante molto più forte di quella degli altri Hai con cui hai parlato. Esita anche prima di certe parole, come se non sapesse quale articolo aggiungere, il che dà al suo parlato un ritmo insolito.`
+				goto "actual questions"
+			label questions
+			`	"Quindi per favore, portami a cercare mia nipote."`
+			label "actual questions"
+			choice
+				`	"Tre tonnellate di biscotti!?"`
+					goto tons
+					to display
+						not "acorn delights: three tons"
+				`	"È sparita?"`
+					goto gone
+					to display
+						not "acorn delights: gone"
+				`	"Perché non chiedi aiuto alle autorità?"`
+					goto authorities
+					to display
+						not "acorn delights: authorities"
+				`	"Non possono aiutarti i tuoi amici a trovarla?"`
+					goto friends
+					to display
+						not "acorn delights: friends"
+				`	"Andiamo a cercarla!"`
+					goto accept
+				`	"Ho altri posti dove devo andare."`
+					decline
+			label tons
+			action
+				set "acorn delights: three tons"
+			`	"Beh, io... non lo so... cucino quando sono preoccupata, e Anoo è scomparsa da tre mesi! Ho sigillato tutte e tre le tonnellate di biscotti. Dovrebbero durare un anno o due. Magari li dividerà con i suoi amici? Ha molti amici! Tonnellate di amici! Le mancano tutti, ma nessuno è disposto ad aiutare...`
+				goto questions
+			label gone
+			action
+				set "acorn delights: gone"
+			`	"Anoo si è laureata in medicina a Frostmark quattro mesi fa, tra i primi della classe! Un ospedale famoso su Hai-home cercava un nuovo chirurgo traumatologo e ha detto che sarebbe stata perfetta per il posto. Ha accettato la posizione e ha detto che sarebbe andata in vacanza per qualche settimana.`
+			`	"Un mese dopo, ha detto loro che non sarebbe venuta, e da allora nessuno ha più avuto sue notizie.`
+				goto questions
+			label authorities
+			action
+				set "acorn delights: authorities"
+			`	"Ho parlato con l'Ufficio Medico Centrale, e mi hanno detto che ha ottenuto l'approvazione per esercitare la medicina ovunque nello spazio degli Hai o oltre. Non hanno più saputo nulla da lei da quando ha ottenuto l'approvazione. Deve registrare i nuovi medicinali presso l'Ufficio, quindi dovrebbero aver avuto sue notizie.`
+			`	"La polizia mi ha detto che diverse altre persone hanno denunciato la scomparsa di Anoo, ma si sono rifiutati di dirmi altro. Hanno detto che dovevo parlare con i militari, ma loro non mi dicono niente.`
+			`	"Forse è coinvolta in qualcosa di segreto? O di illegale? No, non lo farebbe mai. Dove sarà?`
+				goto questions
+			label friends
+			action
+				set "acorn delights: friends"
+			`	"Ho pochi amici, e nessuno di loro è interessato a cercare una Hai scomparsa che potrebbe essere ovunque. Nemmeno i miei clienti vogliono aiutare, e la sua famiglia è tutta morta.`
+				goto questions
+			label accept
+			`	"Parlava sempre di fare lavoro gratuito per chi non poteva permettersi cure mediche. Da piccola, sua madre la portava a Stonebreak ad aiutare nei rifugi locali. Cominciamo da lì."`
+				accept
+	on visit
+		dialog "Hai dimenticato Eeeya o qualcuna delle sue montagne di biscotti. Forse sono su una delle tue scorte?"
+
+mission "Acorn Delights: Part 2"
+	landing
+	name "Ghiande per Anoo"
+	description "Porta Eeeya su <destination> per consegnare <cargo> alla nipote scomparsa."
+	source "Stonebreak"
+	destination "Cloudfire"
+	passengers 1
+	cargo "acorn cookies" 3
+	to offer
+		has "Acorn Delights: Part 1: done"
+	on offer
+		log "Hai portato una signora Hai di nome Eeeya a Stonebreak per aiutarla a trovare la nipote, che si chiama Anoo."
+		conversation
+			`Passi diverse ore a portare Eeeya in volo tra le enormi comunità di Stonebreak. Controlla ogni rifugio per senzatetto, reparto volontario, rifugio per donne e ospedale per famiglie a basso reddito. La storia è sempre la stessa: Anoo non viene vista da anni, anche se alcuni ricordano la bambina energica della sua giovinezza, prima che la madre se ne andasse.`
+			`	Dopo qualche momento di disperazione schiacciante, le orecchie di Eeeya si drizzano, e dice: "Dato che è chiaro che non è qui, controlliamo <destination>, potrebbe essere nell'esercito."`
+				accept
+	on visit
+		dialog "Hai dimenticato Eeeya o qualcuna delle sue montagne di biscotti. Forse sono su una delle tue scorte?"
+
+mission "Acorn Delights: Part 3"
+	landing
+	name "Ghiande per Anoo"
+	description "Porta Eeeya su <destination> per consegnare <cargo> alla nipote scomparsa."
+	clearance `Dopo aver sentito il nome Eeeya, il controllore di volo dei Darkcloak risponde con entusiasmo: "Acorn Delights!" e ti viene concesso il permesso di atterraggio.`
+	source "Cloudfire"
+	destination "Darkcloak"
+	passengers 1
+	cargo "acorn cookies" 3
+	to offer
+		has "Acorn Delights: Part 2: done"
+	on offer
+		conversation
+			`Eeeya ti porta all'ufficio visitatori e chiede di vedere il comandante militare di Cloudfire. Al rifiuto, Eeeya fa una scenata; dopo un'ora del suo panico accettano di lasciarla parlare con il comandante.`
+			`	Dopo qualche minuto, torna con un'aria abbattuta, e tu la riaccompagni alla <ship>.`
+			`	"Hanno detto che non lavora per loro. Credo che sappiano dove sia, ma non mi dicono niente.`
+			`	"C'è ancora un posto che possiamo provare, ma non credo che ti piacerà. Potrebbe essersi unita agli Hai Slegati."`
+			label questions
+			choice
+				`	"Perché non l'hai detto prima?"`
+					goto mention
+				`	"Perché mai una dottoressa dovrebbe unirsi a una banda di guerrafondai?"`
+					goto warmonger
+				`	"In quanto onorevole capitano <first> <last>, dico che andiamo a cercarla!"`
+					goto accept
+				`	"Sarò felice di aiutare."`
+					goto accept
+				`	"Lo spazio degli Slegati è troppo pericoloso per me. Dovrai trovare un altro capitano."`
+					decline
+			label mention
+			`	"Temevo che ti avrebbe fatto scappare. Gli umani hanno paura delle nostre navi, e gli Slegati sono guerrieri letali. Inoltre gli altri posti erano più probabili. Molti della famiglia di sua madre si sono uniti agli Slegati in passato, ma non pensavo che sarebbe successo a lei."`
+				goto questions
+			label warmonger
+			`	"Anoo è sempre stata solidale con la causa degli Hai Slegati. Non con la loro guerra insensata, quella la odiava, ma rispettava la loro spinta al progresso e il loro dono per il cambiamento. La famiglia di suo padre ha cercato di fermare le sue idee, e pensavamo di esserci riusciti, ma... forse...`
+			`	"Una chirurga traumatologa per gli Hai Slegati? Chissà se l'ha pianificato con anni di anticipo?"`
+				goto questions
+			label accept
+			`	"Se Anoo è andata da qualche parte, sarà dai Darkcloak. Il più grande ospedale degli Slegati è lì. Molti soldati tornano dalle incursioni feriti su Darkcloak. Una chirurga traumatologa avrebbe molto lavoro da fare."`
+				accept
+	on visit
+		dialog "Hai dimenticato Eeeya o qualcuna delle sue montagne di biscotti. Forse sono su una delle tue scorte?"
+
+mission "Acorn Delights: Part 4"
+	landing
+	name "Delizie di Ghiande"
+	description "Porta Eeeya su <destination> per definire alcune pratiche riguardanti il negozio Acorn Delights."
+	source "Darkcloak"
+	destination "Allhome"
+	passengers 1
+	to offer
+		has "Acorn Delights: Part 3: done"
+	on offer
+		payment 3000
+		log "Anoo è stata finalmente trovata. Si scopre che si è unita agli Slegati. Ora dovrei portare Eeeya su <destination>."
+		conversation
+			`Vieni accompagnato dalla piattaforma di atterraggio a un ospedale vicino, dove Eeeya riesce finalmente a comunicare le tue intenzioni. Alcuni Hai Slegati lì vicino borbottano nella loro lingua, e continui a sentire la parola Hai per "biscotti" mentre guardano Eeeya. Lungo la strada noti uno strano contrasto di squallore e macchinari avanzati. A differenza dei loro fratelli del sud, sembra che gli Slegati diano valore alla funzionalità e al progresso più che all'estetica e al comfort.`
+			`	Mentre sali lungo la torre principale dell'ospedale, sei sorpreso da quanto sia avanzato. Nonostante la loro disponibilità a morire in battaglia, gli Slegati sembrano tenere alla vita dei sopravvissuti. Forse questo ospedale serve a curarli in fretta perché possano combattere di nuovo il prima possibile.`
+			`	Raggiungi un piano alto pieno di uffici personali. Eeeya bussa a ogni porta, scusandosi quando gli Slegati all'interno non sono quelli che cerca, finché finalmente arrivate all'ultima stanza.`
+			`	Eeeya apre quella porta e corre verso la Hai che c'è dentro, Anoo. Cominciano a parlare in Hai, poi si ricordano che sei nella stanza.`
+			`	"Per favore, Anoo, parliamo in lingua umana. <first> ha fatto tutta questa strada per me, ed è solo giusto che il capitano possa capire cosa succede."`
+			`	La conversazione passa poi al nuovo lavoro di Anoo.`
+			`	"Perché sei venuta qui, Anoo? Gli Slegati ci odiano."`
+			`	"Non odiano noi in particolare, nonna. Odiano quello che siamo diventati: frivoli, privi di inventiva e pieni di sé. La nostra specie sta svanendo nella storia attraverso una lenta morte di mediocrità. La maggior parte degli Slegati vede la guerra come la nostra unica salvezza.`
+			`	"Li consideriamo bruti senza cervello, ma non lo sono! Hanno scienziati, medici, musicisti e scrittori. Le nostre risorse fanno sembrare misere le loro, ma prosperano con quel poco che hanno. Presto gli Slegati avranno molti più pianeti e risorse quasi illimitate. L'era della scarsità sarà finita, e avranno il potere di scegliere il loro futuro.`
+			`	"Se abbastanza persone buone si uniranno agli Slegati, potremo cambiare le loro menti e metterli su un percorso più produttivo. Avranno bisogno di buoni medici."`
+			`	"Ma..." obietta Eeeya.`
+			choice
+				`	"Anoo ha ragione; gli Slegati sono un popolo nobile. Consiglierei di unirsi a loro."`
+				`	"Non c'è nessun buon motivo per unirsi agli Slegati. Cosa hanno mai fatto oltre a uccidere Hai innocenti?"`
+					goto "don't join"
+			label "join unfettered"
+			`	"Beh... davvero non lo so..."`
+			choice
+				`	"Lascia perdere, hai ragione. Unirsi agli Slegati è una cattiva idea, dopotutto."`
+				`	"Sono dalla parte delle loro armi. Gli Slegati sono onorevoli."`
+					goto "really join"
+			label "don't join"
+			`	"Mi dispiace, Anoo, ma credo davvero che il capitano <first> abbia ragione. Non sono il tipo di persona che fa amicizia con un gruppo che patisce la fame eppure dipinge un quadro così romantico di sé. E inoltre dubito che qui ci sarebbe modo di mantenere una famiglia di due persone; le noci da sole costano già abbastanza, figuriamoci i biscotti. Il lavoro in ospedale qui può pagare solo fino a un certo punto.`
+			`	"Capitano, potrebbe riportarmi sul <planet> per favore? Vorrei firmare i moduli e darle alcune quote della mia fabbrica Acorn Delights. Nel frattempo, ecco <payment> per quello che ha fatto finora."`
+			choice
+				`	"Sarò felice di riportarla indietro."`
+				`	"La porterò, ma noterò che non ha accennato a quello per cui siamo venute fin qui."`
+			`	Eeeya sorride alla nipote. "Prima di andarmene, mi è appena tornato in mente un regalo che ho per te." Vi conduce, te e Anoo, alla <ship>. "Capitano, potrebbe aprire la stiva e farci entrare?" Anoo resta stupita dalle tonnellate di biscotti alle ghiande che la aspettano dentro. "Grazie mille, nonna!"`
+			choice
+				`	"Dovremmo andare."`
+			`	Eeeya si volta verso di te e dice: "Hai ragione, dovremmo. Grazie mille per averci riunite." Dà ad Anoo un ultimo abbraccio e sale sulla tua nave.`
+				accept
+
+			label "really join"
+			action
+				set "acorn delights: eeeya joined"
+			`	"Senza voler fare giochi di parole, naturalmente," ride Anoo. Eeeya ridacchia e dice: "Capitano, devo ancora vendere la mia fabbrica nel normale spazio degli Hai prima di unirmi ufficialmente agli Slegati."`
+			choice
+				`	"Certamente. Sarò felice di riportarla indietro."`
+					accept
+				`	"Perché hai cambiato idea così in fretta?"`
+			`	"Beh, anche senza il tuo parere, probabilmente mi sarei unita agli Slegati: come dicevo poco fa, la famiglia di mio figlio è tutta morta; la famiglia di Anoo è qui. Anoo, ho una sorpresa per te, ancora sulla nave del capitano: 3 tonnellate di biscotti alle ghiande! E <first>, mi riporterebbe sul <planet> così posso vendere la fabbrica?"`
+				accept
+	on visit
+		dialog "Hai dimenticato Eeeya o qualcuna delle sue montagne di biscotti. Forse sono su una delle tue scorte?"
+
+mission "Acorn Delights: Part 5"
+	landing
+	name "Eeeya da Anoo"
+	description "Porta Eeeya su <destination> per unirsi agli Slegati e stare vicino alla nipote."
+	clearance `Il controllore di volo dei Darkcloak ti lascia atterrare quando sente che Eeeya si unisce agli Slegati.`
+	source "Allhome"
+	destination "Darkcloak"
+	passengers 1
+	to offer
+		has "Acorn Delights: Part 4: done"
+	on offer
+		conversation
+			branch uhai
+				has "acorn delights: eeeya joined"
+			action
+				"salary: Acorn Delights" = 100
+				log "Minor People" "Eeeya and Anoo" `Hai aiutato Eeeya, che gestisce un negozio di biscotti chiamato Acorn Delights, a trovare la nipote scomparsa Anoo. Dopo un lungo viaggio l'abbiamo trovata: era andata ad aiutare gli Slegati come chirurga traumatologa. Eeeya non era interessata a unirsi agli Slegati, quindi l'ho riportata a casa e ho ricevuto quote per uno stipendio di cento crediti per i miei sforzi.`
+			`Eeeya scende subito dalla nave e va a controllare il negozio di biscotti alle ghiande. Pochi minuti dopo torna con i documenti da firmare.`
+			`	"Questi le daranno circa un ventesimo delle quote della mia azienda; riceverà cento crediti al giorno." Mentre firmi i documenti, continua. "Vorrei solo ringraziarla ancora per avermi aiutato a trovare Anoo. Significa molto per me." Controlli che le quote siano state trasferite sul tuo conto, e Eeeya se ne va.`
+				decline
+			label uhai
+			`Eeeya va a vendere il negozio Acorn Delights mentre tu ti presenti alla sicurezza dello spazioporto. Presto torna. "Beh, c'era un Hai che ha pagato trenta milioni di crediti per quel piccolo locale. Mi chiedo perché pensasse che valesse tanto; io di certo no. Ma non discuterò con quel tipo strambo." Sembra molto più allegra ora che Anoo è stata trovata. "Sarò pronta a partire quando lo sarà lei."`
+				accept
+	on complete
+		payment 500000
+		log "Minor People" "Eeeya and Anoo" `Hai aiutato Eeeya, che gestisce un negozio di biscotti chiamato Acorn Delights, a trovare la nipote scomparsa Anoo. Dopo un lungo viaggio l'abbiamo trovata: era andata ad aiutare gli Slegati come chirurga traumatologa. Ho riportato Eeeya su <origin> così potesse vendere il negozio, ma ora le due Hai sono insieme su <destination>. Ho ricevuto in totale cinquecentomila crediti per i miei sforzi.`
+		conversation
+			`Eeeya se ne va in ospedale, dopo averti pagato cinquecentomila crediti e ringraziato per la terza volta.`
+	on visit
+		dialog "Eeeya non è nel sistema. Forse è su una delle tue scorte?"

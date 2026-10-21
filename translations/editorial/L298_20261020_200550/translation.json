@@ -1,0 +1,176 @@
+{
+ "block": {
+  "path": "data/coalition/coalition outfits.txt",
+  "line_from": 202,
+  "line_to": 337,
+  "units": 15
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Large Repair Module|description|202|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 202,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Repair Module",
+   "english": "This hub houses a small fleet of repair robots that can climb around on a ship's hull and repair damage to it, even in the middle of combat.",
+   "italian": "This hub houses a small fleet of repair robots that can climb around on a ship's hull and repair damage to it, even in the middle of combat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Overclocked Repair Module|description|218|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 218,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Overclocked Repair Module",
+   "english": "These advanced repair modules are issued to Heliarch ships, providing hull repair unparalleled in all of Coalition space. The legions of small repair drones come with the extensive pathways they use to quickly get around a ship, and as such the outfit can interfere with a ship's cooling and heat dissipation systems.",
+   "italian": "These advanced repair modules are issued to Heliarch ships, providing hull repair unparalleled in all of Coalition space. The legions of small repair drones come with the extensive pathways they use to quickly get around a ship, and as such the outfit can interfere with a ship's cooling and heat dissipation systems.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Cooling Module|description|232|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 232,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Cooling Module",
+   "english": "This Cooling Module consumes energy. To conserve power, it does not ramp up to full strength unless a ship is very close to overheating.",
+   "italian": "This Cooling Module consumes energy. To conserve power, it does not ramp up to full strength unless a ship is very close to overheating.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Fuel Module|description|246|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 246,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Fuel Module",
+   "english": "In their early days of space exploration, the Saryds developed the Fuel Module to travel far from Saros without worrying about becoming stranded without fuel, or sudden fuel leaks.",
+   "italian": "In their early days of space exploration, the Saryds developed the Fuel Module to travel far from Saros without worrying about becoming stranded without fuel, or sudden fuel leaks.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Fuel Module|description|247|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 247,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Fuel Module",
+   "english": "\tNowadays, nearly every system in the Coalition has refueling facilities, but some captains still find use in the extra jumps these modules offer.",
+   "italian": "\tNowadays, nearly every system in the Coalition has refueling facilities, but some captains still find use in the extra jumps these modules offer.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Decoy Plating|description|259|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 259,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Decoy Plating",
+   "english": "This plating takes advantage of a ship's scan logs and reproduces the data of other ships nearby, effectively deflecting attempts to scan a ship's true cargo and equipment.",
+   "italian": "This plating takes advantage of a ship's scan logs and reproduces the data of other ships nearby, effectively deflecting attempts to scan a ship's true cargo and equipment.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Decoy Plating|description|260|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 260,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Decoy Plating",
+   "english": "\tOut of a need to protect themselves against destructive Heliarch torpedoes, the Lunarium incorporated small, independent radar jamming systems in each section of the plating, if only to act as a last line of defense.",
+   "italian": "\tOut of a need to protect themselves against destructive Heliarch torpedoes, the Lunarium incorporated small, independent radar jamming systems in each section of the plating, if only to act as a last line of defense.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Refueling Module|description|273|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 273,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Refueling Module",
+   "english": "To avoid the risk of being inspected by the Heliarchs as they refuel on planets, Lunarium captains employ this outfit when carrying supplies or stolen outfits.",
+   "italian": "To avoid the risk of being inspected by the Heliarchs as they refuel on planets, Lunarium captains employ this outfit when carrying supplies or stolen outfits.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Refueling Module|description|274|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 274,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Refueling Module",
+   "english": "\tThe outfit's mechanisms need a partitioned amount of fuel set aside to allow it to work properly, so a ship can only install so many of these before becoming incapable of jumping to another system.",
+   "italian": "\tThe outfit's mechanisms need a partitioned amount of fuel set aside to allow it to work properly, so a ship can only install so many of these before becoming incapable of jumping to another system.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Shield Refactor Module|description|289|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 289,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Shield Refactor Module",
+   "english": "In theory, all shield generators can operate at a much faster rate than normal, if pushed to their true limit. However, the constant need to reform shields during a heated battle quickly overloads shield generators and damages them in the process. By relocating dedicated hull repair systems to focus exclusively on repairing such damage, this compact device allows shield generators to reach their true potential.",
+   "italian": "In theory, all shield generators can operate at a much faster rate than normal, if pushed to their true limit. However, the constant need to reform shields during a heated battle quickly overloads shield generators and damages them in the process. By relocating dedicated hull repair systems to focus exclusively on repairing such damage, this compact device allows shield generators to reach their true potential.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Shield Refactor Module|description|290|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 290,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Shield Refactor Module",
+   "english": "\tA much needed boon against the Heliarch torpedoes' devastating effects on hull plating, the Lunarium highly favors production of this expensive piece due to its advantages over other shield generators.",
+   "italian": "\tA much needed boon against the Heliarch torpedoes' devastating effects on hull plating, the Lunarium highly favors production of this expensive piece due to its advantages over other shield generators.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Small Recovery Module|description|306|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 306,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Recovery Module",
+   "english": "By combining the Coalition's shield generation and hull repair technologies into one piece of equipment, the Lunarium has increased the effectiveness of both, allowing for better defenses against Heliarch weaponry.",
+   "italian": "By combining the Coalition's shield generation and hull repair technologies into one piece of equipment, the Lunarium has increased the effectiveness of both, allowing for better defenses against Heliarch weaponry.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Scanning Module|description|323|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 323,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Scanning Module",
+   "english": "This system allows the Heliarchs to scan nearby ships, enabling them to detect weapons or illegal goods.",
+   "italian": "This system allows the Heliarchs to scan nearby ships, enabling them to detect weapons or illegal goods.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Outskirts Gauger|description|336|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 336,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Outskirts Gauger",
+   "english": "Completed with the data from one of their long-lost satellites, the newest scanner of House Idriss excels at reading various energy signatures across vast distances.",
+   "italian": "Completed with the data from one of their long-lost satellites, the newest scanner of House Idriss excels at reading various energy signatures across vast distances.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Outskirts Gauger|description|337|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 337,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Outskirts Gauger",
+   "english": "\tConstantly running its calculations about every little thing it detects within its impressive range, the gauger needs a steady supply of energy to function.",
+   "italian": "\tConstantly running its calculations about every little thing it detects within its impressive range, the gauger needs a steady supply of energy to function.",
+   "ratio": 1.0
+  }
+ ]
+}

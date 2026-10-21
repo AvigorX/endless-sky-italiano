@@ -1,0 +1,55 @@
+{
+ "block": {
+  "path": "data/successors/successor events.txt",
+  "line_from": 109,
+  "line_to": 127,
+  "units": 4
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "event:successors: ghosts incident|description|109|0",
+   "path": "data/successors/successor events.txt",
+   "line": 109,
+   "kind": "DESCRIPTION",
+   "context": "event:successors: ghosts incident",
+   "english": "Until recently, this moon was an utterly unremarkable uninhabited world within House Kaatrij's sphere of influence. However, near the south pole, the exposed guts of a strange facility now twinkle and shimmer half-enveloped in the moon's sands. A large military presence by House Kaatrij repels any closer inspection, but regardless, it seems that Qasa-Sija-Iri is not quite as uninhabited as it immediately appeared.",
+   "italian": "Fino a poco tempo fa questa luna era un mondo disabitato del tutto insignificante nella sfera d'influenza della Casa Kaatrij. Ora, però, vicino al polo sud, le viscere esposte di una strana struttura brillano e scintillano, semisepolte nelle sabbie della luna. Una massiccia presenza militare della Casa Kaatrij impedisce qualsiasi ispezione ravvicinata, ma in ogni caso Qasa-Sija-Iri non sembra più tanto disabitata come appariva a prima vista.",
+   "ratio": 1.067
+  },
+  {
+   "idx": 2,
+   "id": "event:successors: ghosts unrestrict|description|125|0",
+   "path": "data/successors/successor events.txt",
+   "line": 125,
+   "kind": "DESCRIPTION",
+   "context": "event:successors: ghosts unrestrict",
+   "english": "Beneath the colorless sandy surface of Qasa-Sija-Iri, House Kaatrij and their Quarg patrons have built a variety of advanced bases. The one near the south pole, now recovered from its earlier attack, is the moon's primary spaceport.",
+   "italian": "Sotto la superficie sabbiosa e incolore di Qasa-Sija-Iri, la Casa Kaatrij e i loro patroni Quarg hanno costruito diverse basi avanzate. Quella vicino al polo sud, ora rimessasi dall'attacco subito in precedenza, è lo spazioporto principale della luna.",
+   "ratio": 1.082
+  },
+  {
+   "idx": 3,
+   "id": "event:successors: ghosts unrestrict|spaceport|126|0",
+   "path": "data/successors/successor events.txt",
+   "line": 126,
+   "kind": "DESCRIPTION",
+   "context": "event:successors: ghosts unrestrict",
+   "english": "The subterranean spaceport here is small but clearly well-maintained. The landing pads travel on elevators to deep below the surface - the House Kaatrij ones, at least, because Successor vessels are the only craft visible here. If the Quarg have their own craft in residence, they must be landing in a different section of the facility, or at a different base altogether.",
+   "italian": "Lo spazioporto sotterraneo qui è piccolo ma chiaramente ben tenuto. Le piattaforme di atterraggio viaggiano su ascensori fino a grande profondità - quelle della Casa Kaatrij, almeno, perché qui si vedono solo navi dei Successori. Se i Quarg hanno mezzi propri in residenza, devono atterrare in un'altra sezione della struttura, o in una base del tutto diversa.",
+   "ratio": 0.97
+  },
+  {
+   "idx": 4,
+   "id": "event:successors: ghosts unrestrict|add|127|0",
+   "path": "data/successors/successor events.txt",
+   "line": 127,
+   "kind": "MISSION_TEXT",
+   "context": "event:successors: ghosts unrestrict",
+   "english": "Successor Basics",
+   "italian": "Nozioni di base sui Successori",
+   "ratio": 1.875
+  }
+ ]
+}

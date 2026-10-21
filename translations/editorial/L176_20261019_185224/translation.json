@@ -1,0 +1,231 @@
+{
+ "block": {
+  "path": "data/avgi/avgi ships.txt",
+  "line_from": 930,
+  "line_to": 1399,
+  "units": 20
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Undsyni|Z-333 \"Spark\" Fusion Torch|930|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 930,
+   "kind": "TEXT",
+   "context": "ship:Undsyni",
+   "english": "Z-333 \"Spark\" Fusion Torch",
+   "italian": "Z-333 \"Spark\" Fusion Torch",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Undsyni|description|990|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 990,
+   "kind": "DESCRIPTION",
+   "context": "ship:Undsyni",
+   "english": "The Undsyni-class Auxiliary Freighter is not a flimsy bulk freighter, but rather one built to be large and strong enough to hold its own against attacks from smaller, more militarized vessels. While not quite as payload efficient as more spindly ships such as the Avlaki and Harmonikos, the Undsyni's resilience makes it much more survivable against attacks, with its fusion torch giving it the acceleration to both evade enemies and minimize travel times.",
+   "italian": "Il mercantile ausiliario classe Undsyni non è un fragile mercantile alla rinfusa, ma è costruito abbastanza grande e robusto da tenere testa agli attacchi di navi più piccole e più militarizzate. Pur non essendo efficiente quanto navi più esili come l'Avlaki e l'Harmonikos in termini di carico utile, la resistenza dell'Undsyni lo rende molto più capace di sopravvivere agli attacchi, con la torcia a fusione che gli conferisce l'accelerazione per eludere i nemici e ridurre al minimo i tempi di viaggio.",
+   "ratio": 1.107
+  },
+  {
+   "idx": 3,
+   "id": "ship:Undsyni|description|991|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 991,
+   "kind": "DESCRIPTION",
+   "context": "ship:Undsyni",
+   "english": "\tEven before the Incursion, the Undsyni's strong hull and internal outfit capacity made it a popular option as a capital ship for renegade groups who could not gain access to specialized warships.",
+   "italian": "\tAnche prima dell'Incursione, lo scafo robusto e la capacità di equipaggiamento interna dell'Undsyni lo avevano reso una scelta popolare come nave capitale per gruppi rinnegati che non potevano accedere a navi da guerra specializzate.",
+   "ratio": 1.194
+  },
+  {
+   "idx": 4,
+   "id": "ship:Undsyni|description|992|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 992,
+   "kind": "DESCRIPTION",
+   "context": "ship:Undsyni",
+   "english": "\tA reinforced spine running the length of the ship allows it to fit a huge Plasmadyne Scoop, capable of bearing the extreme stresses the plasma magnet's field inflicts on its superconducting magnets. In this configuration, a tanker Undsyni can supply the fuel needs of an entire fleetgroup across dozens of systems.",
+   "italian": "\tUna spina dorsale rinforzata che corre per tutta la lunghezza della nave le permette di montare un enorme Plasmadyne Scoop, capace di sopportare le sollecitazioni estreme che il campo del magnete al plasma impone ai suoi magneti superconduttori. In questa configurazione, un'Undsyni cisterna può coprire il fabbisogno di carburante di un intero gruppo di flotta attraverso decine di sistemi.",
+   "ratio": 1.244
+  },
+  {
+   "idx": 5,
+   "id": "ship:Undsyni|Z-333 \"Spark\" Fusion Torch|1014|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1014,
+   "kind": "TEXT",
+   "context": "ship:Undsyni",
+   "english": "Z-333 \"Spark\" Fusion Torch",
+   "italian": "Z-333 \"Spark\" Fusion Torch",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Undsyni|Z-333 \"Spark\" Fusion Torch|1043|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1043,
+   "kind": "TEXT",
+   "context": "ship:Undsyni",
+   "english": "Z-333 \"Spark\" Fusion Torch",
+   "italian": "Z-333 \"Spark\" Fusion Torch",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Modified Tachytia|A-3600 \"Beam\" Amat Drive|1105|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1105,
+   "kind": "TEXT",
+   "context": "ship:Modified Tachytia",
+   "english": "A-3600 \"Beam\" Amat Drive",
+   "italian": "A-3600 \"Beam\" Amat Drive",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "ship:Modified Tachytia|description|1187|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1187,
+   "kind": "DESCRIPTION",
+   "context": "ship:Modified Tachytia",
+   "english": "This was once an Avgi sublight starship, one of the last models built before the discovery of the hyperdrive. Most starships around this period used ram-augmented fusion drives to reach cruising speeds of up to 0.25c, but the Tachytia class was designed to reach a velocity of 0.4c with an antimatter fuel source to ignite propellant gathered with its huge ramscoop.",
+   "italian": "Questa era un tempo un'astronave subluminale Avgi, uno degli ultimi modelli costruiti prima della scoperta dell'iperguida. La maggior parte delle astronavi di quel periodo usava motori a fusione assistiti da collettore di flusso per raggiungere velocità di crociera fino a 0,25c, ma la classe Tachytia fu progettata per raggiungere 0,4c con una fonte di carburante di antimateria in grado di accendere il propellente raccolto dal suo enorme ramscoop.",
+   "ratio": 1.23
+  },
+  {
+   "idx": 9,
+   "id": "ship:Modified Tachytia|description|1188|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1188,
+   "kind": "DESCRIPTION",
+   "context": "ship:Modified Tachytia",
+   "english": "\tThis particular ship was never launched on its mission, commissioned just before the hyperdrive made it obsolete. Now, it has been extensively modified by removing many of its propellant tanks, replacing them with a hyperdrive, additional equipment spaces, and several docking bays. The cryosleep bay has also been substituted for spacious habitatation cylinders, making this a true city ship.",
+   "italian": "\tQuesta particolare nave non fu mai lanciata nella sua missione, entrata in servizio appena prima che l'iperguida la rendesse obsoleta. Ora è stata ampiamente modificata: molti dei suoi serbatoi di propellente sono stati rimossi e sostituiti da un'iperguida, da spazi per equipaggiamento aggiuntivo e da diverse baie di attracco. Anche la baia di criosonno è stata sostituita da spaziosi cilindri abitativi, rendendo questa una vera nave-città.",
+   "ratio": 1.127
+  },
+  {
+   "idx": 10,
+   "id": "ship:Tremoros|plural|1194|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1194,
+   "kind": "VALUE",
+   "context": "ship:Tremoros",
+   "english": "Tremoros",
+   "italian": "Tremoros",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "ship:Tremoros|\"Nettle\" KKV|1224|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1224,
+   "kind": "TEXT",
+   "context": "ship:Tremoros",
+   "english": "\"Nettle\" KKV",
+   "italian": "\"Nettle\" KKV",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "ship:Tremoros|description|1263|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1263,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tremoros",
+   "english": "The Tremoros-class Interceptor is a small autonomous ship designed to support patrol and interdiction missions. Derived from a transatmospheric hypersonic fighter, it is capable of dual operations in both space and planetary atmospheres. With an emphasis on raw acceleration, it can rocket past any adversary even as it brings its guns to bear, making it exceedingly difficult to hit.",
+   "italian": "L'intercettore classe Tremoros è una piccola nave autonoma progettata per supportare missioni di pattugliamento e interdizione. Derivato da un caccia ipersonico transatmosferico, è capace di operare sia nello spazio sia nelle atmosfere planetarie. Con un'enfasi sull'accelerazione pura, può sfrecciare oltre qualsiasi avversario mentre gli punta contro i cannoni, rendendolo estremamente difficile da colpire.",
+   "ratio": 1.065
+  },
+  {
+   "idx": 13,
+   "id": "ship:Tremoros|description|1264|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1264,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tremoros",
+   "english": "\tThe Tremoros has also seen use as an escort for smaller merchant convoys, with the ability to intercept any enemies that might pose a threat before they can come within range of vulnerable civilian ships.",
+   "italian": "\tIl Tremoros è stato impiegato anche come scorta per convogli mercantili più piccoli, con la capacità di intercettare qualsiasi nemico che possa rappresentare una minaccia prima che arrivi a portata delle vulnerabili navi civili.",
+   "ratio": 1.117
+  },
+  {
+   "idx": 14,
+   "id": "ship:Prismaios|plural|1270|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1270,
+   "kind": "VALUE",
+   "context": "ship:Prismaios",
+   "english": "Prismaios",
+   "italian": "Prismaios",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "ship:Prismaios|\"Nettle\" KKV|1303|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1303,
+   "kind": "TEXT",
+   "context": "ship:Prismaios",
+   "english": "\"Nettle\" KKV",
+   "italian": "\"Nettle\" KKV",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "ship:Prismaios|Z-333 \"Spark\" Fusion Torch|1313|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1313,
+   "kind": "TEXT",
+   "context": "ship:Prismaios",
+   "english": "Z-333 \"Spark\" Fusion Torch",
+   "italian": "Z-333 \"Spark\" Fusion Torch",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "ship:Prismaios|description|1356|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1356,
+   "kind": "DESCRIPTION",
+   "context": "ship:Prismaios",
+   "english": "The Prismaios-class Frigate is a recent, streamlined design, praised by many Twilight Guard captains as a highly successful addition to Avgi strike fleets. New construction techniques allow for unprecedented gains in structural integrity for such a lightweight frame, allowing the frigate to serve on the front lines against the Aberrant as a fast, versatile, multi-role warship.",
+   "italian": "La fregata classe Prismaios è un progetto recente e snello, lodato da molti capitani della Twilight Guard come un'aggiunta di grande successo alle flotte d'attacco Avgi. Nuove tecniche di costruzione consentono guadagni senza precedenti in integrità strutturale per uno scafo così leggero, permettendo alla fregata di servire in prima linea contro gli Aberrant come nave da guerra veloce, versatile e multiruolo.",
+   "ratio": 1.087
+  },
+  {
+   "idx": 18,
+   "id": "ship:Prismaios|Z-333 \"Spark\" Fusion Torch|1372|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1372,
+   "kind": "TEXT",
+   "context": "ship:Prismaios",
+   "english": "Z-333 \"Spark\" Fusion Torch",
+   "italian": "Z-333 \"Spark\" Fusion Torch",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "ship:Prismaios|\"Orchid\" Nuclear Missile|1390|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1390,
+   "kind": "TEXT",
+   "context": "ship:Prismaios",
+   "english": "\"Orchid\" Nuclear Missile",
+   "italian": "\"Orchid\" Nuclear Missile",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "ship:Prismaios|Z-333 \"Spark\" Fusion Torch|1399|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 1399,
+   "kind": "TEXT",
+   "context": "ship:Prismaios",
+   "english": "Z-333 \"Spark\" Fusion Torch",
+   "italian": "Z-333 \"Spark\" Fusion Torch",
+   "ratio": 1.0
+  }
+ ]
+}

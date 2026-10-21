@@ -1,0 +1,128 @@
+{
+ "block": {
+  "path": "data/hai/hai outfits.txt",
+  "line_from": 508,
+  "line_to": 600,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Chameleon Anti-Missile|description|508|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 508,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Chameleon Anti-Missile",
+   "english": "The Chameleon Anti-Missile Turret has a longer range, higher power, and shorter reload time than the Bullfrog.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Chameleon Anti-Missile Turret has a longer range, higher power, and shorter reload time than the Bullfrog.\"",
+   "english_hash": "2c63f4174da4f7b7"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Hai Cuttlefish Jammer|description|522|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 522,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Hai Cuttlefish Jammer",
+   "english": "When the Hai first started fighting each other, the need for a counter to Trackers quickly became apparent. The Cuttlefish Jammer can noticeably disturb a Tracker's lock to the ship by presenting it with a seemingly better, albeit illusory, target. This jammer is most effective on larger ships that cannot field enough anti-missiles to effectively counter missiles from all directions.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"When the Hai first started fighting each other, the need for a counter to Trackers quickly became apparent. The Cuttlefish Jammer can noticeably disturb a Tracker's lock to the ship by presenting it with a seemingly better, albeit illusory, target. This jammer is most effective on larger ships that cannot field enough anti-missiles to effectively counter missiles from all directions.\"",
+   "english_hash": "ca87628b4b7e0ccd"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Hai Octopus Jammer|description|534|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 534,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Hai Octopus Jammer",
+   "english": "The Octopus Jammer is a more aggressive adaptation of the Cuttlefish Jammer, intended for short raids by the Unfettered. With several safety circuits bypassed, it is able to more effectively deceive incoming Trackers, but the much higher associated energy cost makes any ship carrying this even more vulnerable to ion weaponry.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Octopus Jammer is a more aggressive adaptation of the Cuttlefish Jammer, intended for short raids by the Unfettered. With several safety circuits bypassed, it is able to more effectively deceive incoming Trackers, but the much higher associated energy cost makes any ship carrying this even more vulnerable to ion weaponry.\"",
+   "english_hash": "2561a98728d1e2ed"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Hai Corundum Regenerator|description|549|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 549,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Hai Corundum Regenerator",
+   "english": "Hai shield regenerators work by subtly modifying the geometry and harmonics of your shield matrix in order to make your shields more malleable and therefore much easier to recharge. Unfortunately, this system requires a constant power source, and generates a fair bit of heat while regenerating.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Hai shield regenerators work by subtly modifying the geometry and harmonics of your shield matrix in order to make your shields more malleable and therefore much easier to recharge. Unfortunately, this system requires a constant power source, and generates a fair bit of heat while regenerating.\"",
+   "english_hash": "944bd55e05030331"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Hai Diamond Regenerator|description|563|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 563,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Hai Diamond Regenerator",
+   "english": "The Hai Diamond Shield Regenerator is an advanced type of shield recharging technology. Unfortunately, its power needs are quite high, and the shifts it makes to your shield matrix causes intense heat at the regenerator when your shields are charging. The Hai usually employ Williwaw Cooling when they use this regenerator.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Hai Diamond Shield Regenerator is an advanced type of shield recharging technology. Unfortunately, its power needs are quite high, and the shifts it makes to your shield matrix causes intense heat at the regenerator when your shields are charging. The Hai usually employ Williwaw Cooling when they use this regenerator.\"",
+   "english_hash": "503cd8f6671281ce"
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Hai Williwaw Cooling|description|574|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 574,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Hai Williwaw Cooling",
+   "english": "While Hai technology is fairly heat efficient, occasionally they outfit their ships such that they sporadically overheat and shut down. When that happens, they install these.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"While Hai technology is fairly heat efficient, occasionally they outfit their ships such that they sporadically overheat and shut down. When that happens, they install these.\"",
+   "english_hash": "c75ea48becfb394c"
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Quantum Keystone|description|585|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 585,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Quantum Keystone",
+   "english": "This chunk of rock from the mountains on the Hai homeworld is apparently nothing more than a good luck charm, but the Hai have decorated their ships with them since the height of their empire. More superstitious Hai claim that the stones somehow reduce the nausea induced by hyperspace jumps by making travel between star systems easier, and many wealthy Hai refuse to book passage on a ship without one.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This chunk of rock from the mountains on the Hai homeworld is apparently nothing more than a good luck charm, but the Hai have decorated their ships with them since the height of their empire. More superstitious Hai claim that the stones somehow reduce the nausea induced by hyperspace jumps by making travel between star systems easier, and many wealthy Hai refuse to book passage on a ship without one.\"",
+   "english_hash": "5d8c361bfaf15dfa"
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Quantum Keystone|description|586|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 586,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Quantum Keystone",
+   "english": "\tThis keystone comes with a package including a holo-film certificate of authenticity certifying its origins on Hai-home, a decorative but robust frame, and a tiny plaque with the keystone logo and sale number stamped on it. The packaging suggests mounting the framed certificate in a prominent location near the main airlock or public common area.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tThis keystone comes with a package including a holo-film certificate of authenticity certifying its origins on Hai-home, a decorative but robust frame, and a tiny plaque with the keystone logo and sale number stamped on it. The packaging suggests mounting the framed certificate in a prominent location near the main airlock or public common area.\"",
+   "english_hash": "c066a41c4995eeb9"
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Value Detector|description|600|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 600,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Value Detector",
+   "english": "The Unfettered developed this scanner in order to determine which ships are worth plundering, or which lack the capacity to stand up to their ion weapons. Some Hai consider it rather rudimentary, but it is sufficient to identify the cargo on a ship from afar and provide more detailed information about the tactical condition of enemy vessels. This dual function is useful when fielding experimental weaponry.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Unfettered developed this scanner in order to determine which ships are worth plundering, or which lack the capacity to stand up to their ion weapons. Some Hai consider it rather rudimentary, but it is sufficient to identify the cargo on a ship from afar and provide more detailed information about the tactical condition of enemy vessels. This dual function is useful when fielding experimental weaponry.\"",
+   "english_hash": "616233cfefc39ef7"
+  }
+ ]
+}

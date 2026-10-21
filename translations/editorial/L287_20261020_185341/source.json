@@ -1,0 +1,128 @@
+{
+ "block": {
+  "path": "data/gegno/gegno ships.txt",
+  "line_from": 303,
+  "line_to": 658,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Corundum|description|303|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 303,
+   "kind": "DESCRIPTION",
+   "context": "ship:Corundum",
+   "english": "\tAlthough not able to mount the powerful Excavator Drill, the Corundum's engine capacity is twice that of the Gypsum, and the modularity of the two new mounting systems grants it the ability to adapt to future technologies that the Gegno may develop.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\tdescription `\tAlthough not able to mount the powerful Excavator Drill, the Corundum's engine capacity is twice that of the Gypsum, and the modularity of the two new mounting systems grants it the ability to adapt to future technologies that the Gegno may develop.`",
+   "english_hash": "6d93682901a79477"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Protolith|description|371|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 371,
+   "kind": "DESCRIPTION",
+   "context": "ship:Protolith",
+   "english": "A relic from another age, Protoliths are the last of the Generation ships constructed by the Gegno to colonize the stars. Now that other more easily constructed and hyperdrive-capable transport ships are commonplace, Protoliths are no longer found in service, and the very few that are still functioning are either preserved as artifacts or seldom used as hauling vessels between planets of the Gegno home system of Heutesl.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `A relic from another age, Protoliths are the last of the Generation ships constructed by the Gegno to colonize the stars. Now that other more easily constructed and hyperdrive-capable transport ships are commonplace, Protoliths are no longer found in service, and the very few that are still functioning are either preserved as artifacts or seldom used as hauling vessels between planets of the Gegno home system of Heutesl.`",
+   "english_hash": "fd3f4e4e755ec850"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Dunite|description|417|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 417,
+   "kind": "DESCRIPTION",
+   "context": "ship:Dunite",
+   "english": "Dunites are unique vessels designed by the Gegno Vi entirely for the purpose of dueling. It is a hodgepodge of parts, simply being an engine, power system, cockpit, and Irate Cannon mashed together without any regard to structural integrity. The most notable feature is a long mace-like protrusion next to the Irate Cannon which is used for jousting and ramming other duelists.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Dunites are unique vessels designed by the Gegno Vi entirely for the purpose of dueling. It is a hodgepodge of parts, simply being an engine, power system, cockpit, and Irate Cannon mashed together without any regard to structural integrity. The most notable feature is a long mace-like protrusion next to the Irate Cannon which is used for jousting and ramming other duelists.`",
+   "english_hash": "fd76fff07ca21669"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Dunite|description|418|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 418,
+   "kind": "DESCRIPTION",
+   "context": "ship:Dunite",
+   "english": "\tBeing a mangled mess of machinery designed for only a single purpose, Dunites do not come equipped with nor have room for hyperdrives, and are purely intrastellar craft.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\tdescription `\tBeing a mangled mess of machinery designed for only a single purpose, Dunites do not come equipped with nor have room for hyperdrives, and are purely intrastellar craft.`",
+   "english_hash": "c01e60072d574022"
+  },
+  {
+   "idx": 5,
+   "id": "ship:Augen|description|553|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 553,
+   "kind": "DESCRIPTION",
+   "context": "ship:Augen",
+   "english": "The Augen-Class is an ancient battleship proposed by the Vi as a large weapons platform for their Ballistic Cannons. It was built in secret over many years in Enbi's canyon shipyard, and for many periods of time its construction was put on hold. The recent civil war with the Scin gave reason to complete the warship, although it is still somewhat of a relic compared to current vessels in the service of the Vi fleet.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Augen-Class is an ancient battleship proposed by the Vi as a large weapons platform for their Ballistic Cannons. It was built in secret over many years in Enbi's canyon shipyard, and for many periods of time its construction was put on hold. The recent civil war with the Scin gave reason to complete the warship, although it is still somewhat of a relic compared to current vessels in the service of the Vi fleet.`",
+   "english_hash": "d2c0422910c1f794"
+  },
+  {
+   "idx": 6,
+   "id": "ship:Augen|description|554|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 554,
+   "kind": "DESCRIPTION",
+   "context": "ship:Augen",
+   "english": "\tThis project was meant to result in two sister-ship behemoths, but the blueprints for the other design went missing early in the process, and are currently nowhere to be found.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\tdescription `\tThis project was meant to result in two sister-ship behemoths, but the blueprints for the other design went missing early in the process, and are currently nowhere to be found.`",
+   "english_hash": "2c5d29adffc16744"
+  },
+  {
+   "idx": 7,
+   "id": "ship:Slate|description|594|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 594,
+   "kind": "DESCRIPTION",
+   "context": "ship:Slate",
+   "english": "Designed by the Gegno Vi, the Slate is a modified Shale with a stronger hull and more space, a prime characteristic of Vi vessels. Slightly larger than other shuttle ships to suit the Vi's stature, it is able to carry a few Gegno cadets, along with a decently increased cargo capacity.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Designed by the Gegno Vi, the Slate is a modified Shale with a stronger hull and more space, a prime characteristic of Vi vessels. Slightly larger than other shuttle ships to suit the Vi's stature, it is able to carry a few Gegno cadets, along with a decently increased cargo capacity.`",
+   "english_hash": "41cc1dcf76584fcc"
+  },
+  {
+   "idx": 8,
+   "id": "ship:Schist|description|657|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 657,
+   "kind": "DESCRIPTION",
+   "context": "ship:Schist",
+   "english": "Based on the Gegno's old Dolomite, the Schist is a mid-range ship used by the Vi. It can carry a decent amount of cargo, and has enough bunks to carry a whole platoon of warriors. It is the primary vessel used to transport recruits to the front lines, and veterans back to home territories.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Based on the Gegno's old Dolomite, the Schist is a mid-range ship used by the Vi. It can carry a decent amount of cargo, and has enough bunks to carry a whole platoon of warriors. It is the primary vessel used to transport recruits to the front lines, and veterans back to home territories.`",
+   "english_hash": "4662803924814e5a"
+  },
+  {
+   "idx": 9,
+   "id": "ship:Schist|description|658|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 658,
+   "kind": "DESCRIPTION",
+   "context": "ship:Schist",
+   "english": "\tAlthough is it lightly armed compared to other Vi ships, Schists still are mounted with a pair of forward facing cannons and a turret so they can bring some type of weaponry to any possible engagement, as well as a set of angled guns for deterring any smaller, faster ships from attempting to flank the vessel.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\tdescription `\tAlthough is it lightly armed compared to other Vi ships, Schists still are mounted with a pair of forward facing cannons and a turret so they can bring some type of weaponry to any possible engagement, as well as a set of angled guns for deterring any smaller, faster ships from attempting to flank the vessel.`",
+   "english_hash": "8b48c29a8fff2aab"
+  }
+ ]
+}

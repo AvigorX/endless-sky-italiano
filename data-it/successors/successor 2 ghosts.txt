@@ -1,0 +1,2183 @@
+# Copyright (c) 2026 by Daeridanii
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+phrase "successor ghosts story failed"
+	word
+		"You have failed a crucial mission of the Successors' story line. If you wish to continue it, revert to an earlier save."
+
+mission "Successors: Ghosts Prelude Timer"
+	landing
+	invisible
+	to offer
+		has "trusted by the successors"
+	on offer
+		event "successors: ghosts initial timer" 10
+		fail
+
+mission "Successors: Ghosts Prelude Wedding"
+	landing
+	invisible
+	source
+		attributes "successor"
+		not attributes "quiet" "uninhabited"
+	to offer
+		has "event: successors: ghosts initial timer"
+		random < 50
+	on offer
+		log "Hai saputo di un imminente matrimonio tra alcuni eredi delle Casate Chydiyi e Myurej."
+		conversation
+			`	La folla di Successori in questo spazioporto è insolitamente vivace oggi: molti chiacchierano animatamente tra loro, altri se ne stanno sparsi attorno ai display, a guardare un notiziario. Non passa molto da quando scendi dalla nave che un Successore dall'aria particolarmente eccitata ti si avvicina, la pelle che esplode di chiazze rosa e verdi. "Hai tu udito le notizie recenti, capitano?"`
+			choice
+				`	"No."`
+				`	"Cerco di evitare le notizie, quando posso."`
+			branch incident
+				has "successors: ghosts incident"
+			`	Il Successore si contorce. "Un erede di Chydiyi intende sposare uno di Myurej! L'hanno annunciato oggi, di buon mattino! Chydiyi e Myurej sono vicine da tanto tempo, e questo non farà che stringerle..." Mentre la voce si perde, vede qualcuno tra la folla e si congeda in fretta da te prima di strisciare via. Mentre badi ai tuoi affari, vieni interrotto ancora qualche volta per sapere se hai "udito le notizie". Se molti Successori sembrano eccitati, alcuni assumono un tono più sospettoso. Un simile spostamento di potere non sarebbe certo un bene per tutti.`
+				decline
+
+			label incident
+			`	Il Successore si contorce, un po' a disagio. "Un erede di Chydiyi ha annunciato l'intenzione di sposare uno di Myurej. L'annuncio è di oggi, insieme a un messaggio di solidarietà per Kaatrij. Un po' comodo, a parer mio. Chydiyi e Myurej erano già le predilette l'una dell'altra, e ora saranno ancora più vicine..." Mentre la voce si perde, nota qualcuno tra la folla e si scusa prima di strisciare via. Mentre badi ai tuoi affari, vieni interrotto ancora qualche volta per sapere se hai "udito le notizie". Se parecchi Successori qui sono relativamente eccitati per le imminenti nozze nobiliari, molti assumono un tono più sospettoso. Un simile spostamento di potere metterebbe le Casate Nuove, già ferite, in ulteriore svantaggio contro rivali destinate a diventare più strettamente legate.`
+				decline
+
+mission "Successors: Ghosts Prelude Incident"
+	landing
+	invisible
+	source
+		attributes "successor"
+		not attributes "quiet" "uninhabited"
+	to offer
+		has "event: successors: ghosts initial timer"
+		random < 50
+	on offer
+		event "successors: ghosts incident"
+		event "successors: ghosts stage 1" 5
+		log "Hai saputo di un incidente su una luna controllata da Casa Kaatrij, che ha rivelato parti di una base nascosta."
+		conversation
+			`La solita struttura ordinata dell'attività dello spazioporto giace in pezzi. Frotte di mercanti, viaggiatori e ufficiali militari affollano i display del porto, con le loro botteghe e le loro navi abbandonate. Il silenzio è scomodo: l'unica voce che senti sopra un sussurro è quella di un annunciatore, che ti si torce nelle orecchie mentre il dispositivo di traduzione riordina il suono, parola per parola.`
+			`	"... l'incidente ha messo a nudo ciò che la nobile Casa Kaatrij s'era affaticata a tener celato. La luna, a lungo creduta senza vita, arida, grezza, mostra ora le viscere sparse di qualche base a lungo nascosta. Guardate, compagni! Guardatela ribollire sotto la luce!"`
+			`	Il display cambia per mostrare una veduta dall'alto di una luna sabbiosa. Incuneato in una valle tra dune color ruggine c'è uno sbocciare di metallo distorto e luce intermittente, la forma di un lungo arco che si estende per forse un chilometro sulla superficie. Vicino alle estremità l'immagine ondeggia e si deforma, prima che il tutto sia oscurato da una nave da guerra Kaatrij che entra nell'inquadratura: non è chiaro se la distorsione ci sia davvero o sia solo un difetto della trasmissione.`
+			branch "seen this before"
+				has "event: war begins"
+			label continue
+			`	Qualunque sia la causa, è chiaro che Casa Kaatrij è stata colta in fallo.`
+				decline
+			label "seen this before"
+			`	Le somiglianze con le conseguenze immediate del bombardamento di Geminus e Martini sono impressionanti. Anche se non è chiaro cosa - o chi - abbia causato l'incidente, questo potrebbe facilmente incendiare un conflitto ancora più grande tra le Casate.`
+				decline
+
+mission "Successors: Ghosts QSI 1"
+	landing
+	invisible
+	source "Qasa-Sija-Iri"
+	repeat
+	to offer
+		has "Successors: Ghosts Prelude Incident: offered"
+		not "Successors: Ghosts 7a: done"
+		not "Successors: Ghosts 7b: done"
+	on offer
+		event "successors: ghosts restrict"
+		conversation
+			`Non appena entri nell'atmosfera della luna, il tuo sistema di comunicazione si accende.`
+			`	"Nave non autorizzata! Cessa il tuo avvicinamento e torna in orbita! Questo mondo è sotto la giurisdizione di crisi di Casa Kaatrij e nessun mezzo civile è ammesso.`
+			choice
+				`	(Fai come dicono.)`
+					flee
+				`	"Sono un alleato di Casa Kaatrij!"`
+					to display
+						has "successors kaatrij patron"
+					goto ally
+				`	"Non m'interessa la vostra base, voglio solo atterrare altrove."`
+					goto elsewhere
+				`	(Prosegui comunque.)`
+
+			label proceed
+			`	Chiudi il canale di comunicazione e prosegui comunque. Per un momento sembra tutto a posto, ma presto i sensori rilevano fuoco d'arma dalle postazioni a terra e la pancia della nave viene trapassata da una scarica di punte iperveloci.`
+			branch fragile
+				"flagship shields" + "flagship hull" < 25000
+			branch medium
+				"flagship shields" + "flagship hull" < 85000
+			`	I colpi si abbattono sugli scudi della nave con ferocia punitiva, ma la <ship> tiene duro sotto l'assalto. Il fuoco pesante sconvolge però la traiettoria, e diventa sempre più chiaro che non riuscirai ad atterrare, qualunque sia la robustezza del tuo vascello.`
+				flee
+			label medium
+			`	I colpi si abbattono sugli scudi della nave, consumandoli in fretta e sconvolgendo abbastanza la traiettoria da non lasciarti altra scelta che tornare in orbita. Per fortuna le batterie smettono di sparare appena esci dall'atmosfera.`
+				flee
+			label fragile
+			`	Gli scudi della nave cedono dopo i primi colpi e non serve nemmeno la scarica completa per distruggere del tutto il tuo vascello.`
+				die
+
+			label ally
+			`	"Sei respinto, perché sei senza un atto di autorizzazione. Parlane con il tuo superiore se vi è errore, e torna solo quando potrai esibirlo. Ora torna in orbita, a pena di morte, alleato o no."`
+			action
+				set "successors: ghosts ally referred"
+				log "Hai tentato di atterrare su Qasa-Sija-Iri, ma ti è stato negato per mancanza di autorizzazione. Ti è stato detto di parlare con un superiore per ottenere il permesso di atterrare."
+			choice
+				`	(Torna in orbita.)`
+					flee
+				`	(Prosegui comunque.)`
+					goto proceed
+
+			label elsewhere
+			`	"Irrilevante. Nessun mezzo civile è ammesso qui. Torna in orbita, a pena di morte."`
+			choice
+				`	(Torna in orbita.)`
+					flee
+				`	(Prosegui comunque.)`
+					goto proceed
+
+mission "Successors: Ghosts QSI 2"
+	priority
+	source
+		government "House Kaatrij"
+	to offer
+		has "event: successors: ghosts restrict"
+		not "Successors: Ghosts 10: offered"
+	on offer
+		conversation
+			`Lo spazioporto di Kaatrij è di solito silenzioso, con i suoi frequentatori che parlano a voce bassa; oggi è del tutto muto. I pochissimi Successori che vi si aggirano lo fanno senza una parola e si tengono solo sui percorsi meno idratati, così da lasciare soltanto le più piccole schizze al loro passaggio.`
+			`	Vicino al centro dell'ala d'atterraggio c'è una specie di portiere: un Successore alto, di un arancio bruciato, disteso su un sedile di rocce scolpite davanti a una serie di pannelli.`
+			choice
+				`	(Va' da loro.)`
+				`	(Bada ai tuoi affari come al solito.)`
+					decline
+			`	Mentre ti avvicini, si spinge via dalle rocce e scivola nella pozza circostante. "Salve, nobile viaggiatore," dice, "ma nulla mi domandare degli affari recenti di questa Casa, ché nulla ho da dire in merito."`
+			choice
+				`	"Puoi aiutarmi a ottenere l'autorizzazione ad avvicinarmi alla luna?"`
+				`	"Va bene. Puoi aiutarmi a trovare Saajret?"`
+					goto saajret
+			`	Il portiere strofina piano un punto su uno dei pannelli, come se cercasse di togliere una macchia. "'Ma nulla mi domandare!', dico, e già le mie parole sono come cenere e cadono non udite. Per dirla chiara, dunque: no, e mai. Tieni ancora a freno la tua brama di sapere."`
+			choice
+				`	"Potresti aiutarmi a trovare Saajret, allora?"`
+					goto saajret
+				`	"Ho provato ad atterrare lì e mi hanno detto di cercare un'autorizzazione."`
+					to display
+						has "successors: ghosts ally referred"
+					goto referred
+				`	(Vattene e bada ai tuoi affari.)`
+					decline
+
+			label referred
+			`	"Questo non posso darti," dice, "né lo farei se ne avessi il potere."`
+			choice
+				`	"Potresti aiutarmi a trovare Saajret, allora?"`
+					goto saajret
+				`	(Vattene e bada ai tuoi affari.)`
+					decline
+
+			label saajret
+			`	Il portiere emette un suono come un canticchiare, ma più basso e più musicale. "Forse. Un amico, o un compagno tuo? Ma mi serve più del loro terzo nome, viaggiatore."`
+			choice
+				`	"Saajret, di Somber Sejra."`
+					goto "saajret of somber sejra"
+				`	"Non li conosco con altri nomi."`
+			`	"Una rosa! Una rosa," dice, "con qualsiasi altro nome avrebbe lo stesso profumo. Non un'amica così stretta, suppongo. Ma suppongo troppo, a parer mio."`
+			choice
+				`	"Aspetta! E 'Saajret, di Somber Sejra'?"`
+					goto "saajret of somber sejra"
+				`	(Vattene e bada ai tuoi affari.)`
+					decline
+
+			label "saajret of somber sejra"
+			`	"Ah." La pelle vira a un rosa cupo, ma solo per un momento. Estrae una lunga colonna di metallo dal pannello davanti a sé, la esamina a lungo prima di riportare l'attenzione su di te. "Se tu li conosci abbastanza da parlare di loro, allora certo comprendi quanto siano gravati i loro impegni. Ma," dice, scintillando, "io li avviserò del tuo desiderio d'incontrarli, e darò loro il tuo nome e questo," dice producendo una sfera di dati del tipo che hai già visto usare ai Successori. "E se vorranno intrattenerti, potranno farlo."`
+			choice
+				`	"Il mio nome è <first> <last>."`
+					goto end
+				`	"Grazie."`
+				`	"Non basta. Devo parlare con loro adesso."`
+					goto impatient
+			label "who are you"
+			`	"Infatti. E qual è il tuo nome?"`
+			choice
+				`	"<first> <last>."`
+			label end
+			action
+				log "Hai tentato di metterti in contatto con Saajret, di Somber Sejra. Hai ricevuto una sfera di dati da un portiere dello spazioporto di Casa Kaatrij e ti è stato detto che Saajret si farà vivo quando vorrà, se mai lo farà."
+				event "successors: ghosts saajret contact" 9
+			`	Il portiere fa rotolare la sfera sulla punta di due delle sue braccia per un po', poi te la offre. Mentre la prendi, senti delle increspature delicate sulla superficie del metallo, quasi come impronte digitali. Poi il portiere torna lentamente alla posizione di prima sul sedile di pietra, il corpo che striscia sulle rocce bagnate lungo la strada.`
+				decline
+
+			label impatient
+			`	"Forse, forse. Ma il tuo bisogno è fatto eco dal loro desiderio, o è solo una freccia puntata verso il vuoto?"`
+			choice
+				`	"Va bene, mi scuso, ti prego, dà loro solo il mio nome."`
+					goto "who are you"
+				`	"Parli mai in qualcosa che non siano enigmi?"`
+			`	Il portiere esamina un altro cilindro metallico che sporge dalla sua postazione. "Oggi? No." Spinge indietro il cilindro e torna alla posizione di prima sul sedile di pietra.`
+				decline
+
+mission "Successors: Ghosts QSI 3"
+	landing
+	invisible
+	source
+		attributes "successor"
+	to offer
+		has "event: successors: ghosts saajret contact"
+	on offer
+		conversation
+			`Poco dopo che sei atterrato su <origin>, la sfera di dati Successore che hai ricevuto dal portiere di Casa Kaatrij si accende. Mostra un breve messaggio, solo testo:`
+			`	'È cosa buona da parte tua, capitano, che tu m'abbia cercato dopo aver saputo di questo recente incidente. I tuoi istinti ti fanno onore. Nondimeno, nulla ho da darti. La faccenda in corso riguarda Kaatrij e non tocca te né le altre Casate. Se bene hai in stima questa Casa, tieniti lontano da ciò. Goditi il nostro fertile mondo, assisti i nostri grati cittadini, lasciati rallegrare dai doni che ancora possiamo darti. Non frugare. Questo ti supplico, per il nostro bene e per il tuo: non farti tentare dalle fauci dei nostri segreti.'`
+			`	Questo io stesso attesto come K- I- Saajret, di Somber Sejra.`
+				decline
+
+# Seineq investigation
+
+mission "Successors: Ghosts 1"
+	landing
+	name "Assisti Casa Seineq"
+	source
+		attributes "successor"
+		not attributes "uninhabited"
+		not planet "Shassa-Wyra-Orrou"
+	destination "Shassa-Wyra-Orrou"
+	description "Casa Seineq vorrebbe incontrarti su <destination>."
+	to offer
+		has "Successors: Ghosts Prelude Incident: offered"
+		random < 50
+	on offer
+		conversation
+			branch raaqa-puan-uuoru
+				has "flagship planet: Raaqa-Puan-Uuoru"
+
+			`Poco dopo essere sceso dalla nave su questo pianeta, vieni discretamente tirato da parte da tre ufficiali militari Successori. Il loro capo apre le braccia con delicatezza in segno di saluto. "Onorato capitano," dice, "siamo venuti a informarti che la nobile Casa Seineq richiede la tua presenza per portare aiuto alla loro alleata, la ferita Casa Kaatrij."`
+				goto questions
+
+			label raaqa-puan-uuoru
+			`Poco dopo essere sceso dalla nave, vieni tirato da parte da tre ufficiali militari Successori; a differenza dei più, non indossano i colori di Casa Kaatrij. Il loro capo apre le braccia con delicatezza in segno di saluto. "Onorato capitano," dice, "e amico di Kaatrij. La nobile Casa Seineq richiederebbe la tua presenza in un vicino avamposto fuori mondo, per dare aiuto ai nostri sforzi a sostegno della nostra alleata comune."`
+
+			label questions
+			choice
+				`	"Non sarebbe più facile se coordinaste gli sforzi da qui?"`
+					to display
+						has "flagship planet: Raaqa-Puan-Uuoru"
+					goto here
+				`	"Dove devo andare?"`
+					goto where
+				`	"Che tipo di aiuto?"`
+					goto aid
+				`	"Che ci guadagno?"`
+			`	"Naturalmente," dice l'ufficiale capo, con la pelle che si irrigidisce un poco, "puoi aspettarti un pagamento per i tuoi servizi. I dettagli ti saranno discussi all'arrivo." Consegna una sfera di dati che evidenzia il sistema <system> e ti lascia ai tuoi affari con un congedo secco.`
+				accept
+			label here
+			`	"Infatti," dice l'ufficiale capo, "ma Kaatrij è comprensibilmente restia a permettere alle altre Casate anche solo costruzioni temporanee sul loro mondo natale. I dettagli ti saranno forniti all'arrivo." Consegna una sfera di dati che evidenzia il sistema <system> e ti lascia ai tuoi affari con un congedo secco ma pieno di aspettative.`
+				accept
+			label aid
+			`	"Non sta a noi dirlo," dice l'ufficiale capo. "I dettagli del tuo compito ti saranno rivelati alla tua visita." Ti consegna una sfera di dati da una tasca dell'uniforme; si apre a schizzo per evidenziare il sistema <system> e gli ufficiali ti dicono un congedo secco.`
+				accept
+			label where
+			`	L'ufficiale capo ti consegna una sfera di dati Successore da una tasca dell'uniforme; si apre a schizzo appena la tocchi per evidenziare il sistema <system>. "Altri dettagli ti saranno forniti all'arrivo," dice l'ufficiale, prima di aprire le braccia in un saluto cortese.`
+				accept
+
+mission "Successors: Ghosts 2"
+	landing
+	name "Schiera i droni sensore"
+	source "Shassa-Wyra-Orrou"
+	destination "Shassa-Wyra-Orrou"
+	waypoint "Kasii-Sola"
+	waypoint "Khasola-Ryuit"
+	waypoint "Eta Carinae"
+	waypoint "Avasaa-Novaa"
+	description "Casa Seineq teme che l'incidente di Qasa-Sija-Iri sia opera di forze dall'altra parte del cunicolo, e ti ha chiesto di schierare una rete di sensori in <waypoints> prima di tornare su <destination>."
+	cargo "Successor sensor drones" 6
+	to offer
+		has "Successors: Ghosts 1: done"
+	on offer
+		conversation
+			`L'abitualmente quieto spazioporto industriale qui è stato sommerso da un'altra struttura ai suoi margini: un mare di edifici temporanei di tessuto metallico bianco che ondeggia nella brezza umida. Trasporti a repulsione stanno montando macchinari familiari e non familiari in tutta la nuova aggiunta, e vedi uno scaricare un carico di quelli che sembrano generatori di scudi planetari.`
+			`	Poco dopo, allo spazioporto, ti incontra un Successore dall'aria decisamente tesa, che ti dice di seguirlo a una delle tende della nuova area. Dentro si rivela sorprendentemente comoda e ben attrezzata, e mentre aspetti devi fare del tuo meglio per evitare i generatori di nebbia sul soffitto. Alla fine, un'altra coppia di Successori entra dalla stessa porta da cui sei entrato tu e si presenta.`
+			`	"Capitano, capitano, ci duole la tua attesa. Io sono Sijra e questo," dice, indicando l'altro, "è Rijatet." Rijatet offre una breve apertura delle braccia sentendo il proprio nome. "Rappresentiamo Casa Seineq, qui."`
+			choice
+				`	"Che cosa volete da me?"`
+					goto task
+				`	"È stata Seineq a mettere in piedi tutto questo?"`
+				`	"Che posto è questo?"`
+			`	Sijra annuisce mentre i colori nuotano sul loro corpo. "Un avamposto temporaneo, approvato dalla marina congiunta delle Nuove. In tempi come questi è un bene vegliare su questi sistemi spesso dimenticati."`
+			`	Rijatet interviene. "Non è per questo che sei qui, però." Sijra canticchia piano a queste parole, e scivolano sotto uno dei generatori di nebbia, contorcendosi un po' come per mettersi comodi.`
+			label task
+			`	"La nostra alleata, Kaatrij," dice Sijra, "ha interrotto i suoi messaggi interni a noi e al resto delle Nuove. Ma anche se non vogliono condividere, possiamo ricavare le nostre risposte abbastanza bene."`
+			`	"Questo è stato un attacco," dice Rijatet. La loro voce è bassa e cupa, come sassi che rotolano giù per una collina. "Kaatrij non si chiuderebbe altrimenti. Non si fidano delle altre Casate. Mai si sono fidati. Pensano che un'altra Casa li abbia feriti."`
+			`	"E tu, capitano, sei un... elemento libero. Il tuo posto in questo non si può facilmente divinare. Possiamo gestire un alieno, e il suo ospite, ma non possiamo essere certi che tu sia tutto ciò con cui dobbiamo fare i conti." Onde di colore corrono sul corpo di Sijra, e una delle loro zampe si scuote piano contro il pavimento.`
+			choice
+				`	"Stai dicendo che pensi sia un preludio a un'invasione aliena?"`
+				`	"Stai dicendo che pensi che un'altra Casata abbia attaccato Kaatrij?"`
+			`	Sijra si contorce. "No. Non necessariamente. Solo che abbiamo bisogno di informazioni e vogliamo assicurarci che si possa contare su di te per fornirle. Così," dice Sijra, "abbiamo un compito per te. Caricheremo sulla tua nave dei sensori che potranno essere schierati dall'altra parte del cunicolo, intorno alle stelle isolate dove le nostre navi non possono viaggiare. Se questa è opera di qualche forza aliena impicciona che crede che mantelli e un motore di salto la rendano divina, allora lo sapremo, e mostreremo loro la loro follia.`
+			choice
+				`	"E se non lo fosse?"`
+					goto "isn't"
+				`	"Quindi sapete penetrare i mantelli?"`
+					goto cloaks
+				`	"E se rifiutassi?"`
+					goto refuse
+
+			label "isn't"
+			`	"Allora," dice Sijra, "dovremo determinare quale delle nostre Casate minaccia la guerra." Rijatet canticchia a quelle parole, stringendo due delle loro braccia e guardandoti con occhi penetranti.`
+			choice
+				`	"Va bene, schiererò i vostri sensori."`
+					goto yes
+				`	"Non m'interessa far parte di questo."`
+					goto refuse
+
+			label cloaks
+			action
+				"successors: ghosts suspicion" ++
+			`	Macchie rosa esplodono sul corpo di Rijatet. "In un caso o nell'altro non te lo diremmo. Ma in trentamila anni né noi né i nostri Predecessori abbiamo mai incontrato una razza con motori come i tuoi, capaci di mimetizzare la loro impronta nella trama dello spazio. Ascolta bene, e quando salteranno, ci sarà sempre."`
+			choice
+				`	"E se la minaccia fosse più vicina a casa?"`
+					goto "isn't"
+				`	"Va bene, allora, schiererò i vostri sensori."`
+					goto yes
+				`	"Non m'interessa far parte di questo."`
+					goto refuse
+
+			label refuse
+			`	"Non ti metteremo in gabbia, capitano," dice Sijra. "Non sei nostro vassallo, né nostra responsabilità. Ma ogni giorno di questa crisi cresce il tuo peso verso il tuo patrono - verso tutte le Casate. Un alieno nuota nella nostra pozza e poco dopo una Casa viene bombardata? Sei un oggetto di sospetto e preoccupazione. Un'opportunità come questa non ti capiterà di nuovo, a parer mio."`
+			choice
+				`	"Va bene, allora, schiererò i vostri sensori."`
+					goto yes
+				`	"Allora perché mi avete contattato, se siete così sospettosi?"`
+					goto suspicious
+				`	"Continuo a non avere interesse a far parte di questo."`
+			`	Sijra e Rijatet virano ciascuno a una tonalità di blu leggermente diversa. "Va bene," dice Sijra. "Addio."`
+				decline
+
+			label suspicious
+			`	Rijatet emette un suono che assomiglia a una risata soffocata. "Pericolo e opportunità spesso viaggiano a braccetto," dice. "Puoi biasimarci se teniamo vicini i nostri oggetti di sospetto, perché un giorno diventino nostri alleati?"`
+			choice
+				`	"Va bene, lo faccio."`
+					goto yes
+				`	"Dovrete trovare un altro alleato per questo."`
+			`	Sijra e Rijatet virano ciascuno a una tonalità di blu leggermente diversa. "Va bene," dice Sijra. "Addio."`
+				decline
+
+			label yes
+			`	Sembrano entrambi rilassarsi un poco quando dici questo, le braccia un po' più distese. Sijra annota qualcosa su una tavoletta metallica che tira fuori dal suo abito, prima di informarti che ha ordinato il trasferimento dei droni sensore sulla <ship>. "Quando il tuo compito sarà compiuto, capitano, torna qui e avremo per te la prossima occasione di essere utile."`
+			`	"E naturalmente Seineq intende renderlo degno del tuo tempo," dice Rijatet. "Sarai compensato con una somma di <payment> al completamento. Non siamo in facoltà di negoziarla."`
+				accept
+
+	on enter "Kasii-Sola"
+		dialog `Rilasci uno degli scanner di Casa Seineq, che si orienta con piccoli propulsori prima di annidarsi in orbita planetaria bassa.`
+	on enter "Khasola-Ryuit"
+		dialog `Espelli uno degli scanner nello spazio qui, all'estremità settentrionale della regione dei Predecessori.`
+	on enter "Eta Carinae"
+		dialog `Rilasci uno degli scanner dalla stiva, lasciandolo sparire nel bagliore della stella enorme di questo sistema.`
+	on enter "Avasaa-Novaa"
+		dialog `Espelli uno degli scanner, che procede verso un'orbita solare ravvicinata. Forse il pozzo gravitazionale aiuta a schermarlo dai fenomeni spaziali distruttivi di qui.`
+
+	on visit
+		dialog phrase "generic waypoint on visit"
+
+	on complete
+		conversation
+			`Il controllo di attracco dello spazioporto di <planet> indirizza la <ship> a un hangar protetto e avvolto di tessuto sul lato occidentale della nuova struttura. Una coppia di squadre di terra Successori sovrintende al rifornimento e alla manutenzione automatici, e uno di loro ti fa cenno dalla cabina di pilotaggio, porgendoti una sfera di dati. Pochi secondi dopo che tocca la tua pelle, trasmette un messaggio di Rijatet:`
+			`	"La nostra gratitudine per aver schierato i sensori, capitano. Abbiamo visto i loro primi rapporti poco dopo che la tua nave è saltata via, e nulla da allora. Resteremo vigili come dobbiamo. Per i tuoi sforzi, Seineq ti ha accreditato il pagamento concordato di <payment>. Se ne desideri altri, unisciti a noi al porto qui stasera per un altro incarico."`
+			`	Questo io attesto, A- T- Rijatet.`
+		payment 223000
+		log "Hai schierato droni sensore Successori in tutto lo spazio dei Predecessori per scansionare navi che usano motori di salto, con o senza mantello."
+
+
+mission "Successors: Ghosts 3a Sioeora"
+	landing
+	invisible
+	name "Informa Casa Sioeora"
+	description "Contatta Casa Sioeora riguardo alla richiesta di Seineq di indagare."
+	source
+		attributes successor
+		not attributes uninhabited
+	to offer
+		has "successors sioeora patron"
+		has "Successors: Ghosts 2: accepted"
+	to complete
+		has "event: successors: ghosts message delay"
+	on offer
+		conversation "successor house contact"
+	on complete
+		conversation
+			`Una volta atterrato, il sistema di comunicazioni della nave cinguetta con un nuovo messaggio consegnato da Casa Sioeora:`
+			`	Onorato capitano <first> <last>, Sioeora ti chiama ancora 'alleato' con orgoglio e fiducia nella tua discrezione e nel tuo giusto giudizio. Puoi procedere come preferisci con il piano di Seineq: ci importa poco di cosa intendano fare nello spazio sigillato, purché riconoscano che Sioeora e le altre terranno gli occhi sulle loro azioni. Se Seineq, per stoltezza, decidesse qualche atto di aggressione, troverà noi e i nostri alleati pronti a correggere il loro corso errante.`
+			`	A conferma di questo messaggio, io stesso attesto: I- C- N-, per conto dell'onorato erede Riijaaora E- Sioeora della loro nobile Casa.`
+
+
+mission "Successors: Ghosts 3b Kaatrij"
+	landing
+	invisible
+	name "Informa Casa Kaatrij"
+	description "Contatta Casa Kaatrij riguardo alla richiesta di Seineq di indagare."
+	source
+		attributes successor
+		not attributes uninhabited
+	to offer
+		has "successors kaatrij patron"
+		has "Successors: Ghosts 2: accepted"
+	to complete
+		has "event: successors: ghosts message delay"
+	on offer
+		conversation "successor house contact"
+	on complete
+		conversation
+			`Una volta atterrato, il sistema di comunicazioni della nave cinguetta con un nuovo messaggio consegnato da Casa Kaatrij:`
+			`	<first> <last>, la nostra gratitudine per il tuo contatto. È stato ricevuto in amicizia. A causa di un recente incidente su un possesso territoriale di Casa Kaatrij, molte missive che riceviamo restano al momento senza risposta. Se non dovessi ricevere altri contatti in merito, ti preghiamo di trattenere la delusione.`
+
+
+conversation "successor house contact"
+	`Dopo che Casa Seineq ti ha chiesto di schierare i droni sensore, potrebbe essere prudente contattare la tua Casa patrona per aggiornarla su questo sviluppo.`
+	choice
+		`	(Sì.)`
+		`	(No.)`
+			decline
+	action
+		event "successors: ghosts message delay" 4
+	`	Trovi la strada fino all'hub delle comunicazioni dello spazioporto locale, dove prelevi una delle sfere di dati dei Successori per cifrare il tuo messaggio da consegnare alla tua Casa patrona. Quando hai finito, immergi la sfera in un bagno di metallo liquido che la spinge in giro per qualche momento prima di risputartela, cinguettando piano "missiva inviata".`
+		accept
+
+
+mission "Successors: Ghosts 4"
+	invisible
+	source "Shassa-Wyra-Orrou"
+	description "Investigatori di Casa Seineq vogliono che tu riferisca dei tuoi rapporti con le altre Casate Alte."
+	to offer
+		has "Successors: Ghosts 2: done"
+	on offer
+		event "successors: ghosts seineq attacked" 40
+		conversation
+			`Poco dopo che rientri nello spazioporto, un Successore ti indirizza alla stessa stanza in cui hai incontrato Sijra e Rijatet, e come prima i due entrano qualche minuto dopo.`
+			`	"Un piacere rivederti dopo il tuo fruttuoso viaggio, capitano," dice Sijra. Si dimena sotto uno dei generatori di nebbia. "Abbiamo un secondo compito per te. Sei, come ti abbiamo spiegato, un essere più neutrale qui. Se un'altra Casata ti contattasse e chiedesse aiuto come abbiamo fatto noi-"`
+			`	"Forse l'hanno già fatto," osserva Rijatet.`
+			`	"Allora, fornendolo, potresti vedere cose a cui le nostre forze non hanno accesso."`
+			choice
+				`	"Mi stai chiedendo di spiare per voi?"`
+					goto spy
+				`	"Vieni al punto, per favore."`
+			`	Sijra avvicina un po' la testa a te. "Se e quando un'altra Casata ti ingaggia per qualcosa che in qualche modo ti insospettisce, prendine nota. Dillo a noi e ti pagheremo una somma equa per il tuo tempo e il tuo impegno."`
+				goto decision
+
+			label spy
+			`	Un rosa tenue si forma sulle punte delle braccia di Sijra, anche se non sai dire cosa significhi esattamente. "No, capitano. Quella non è la tua arte, a parer mio. Ti chiediamo solo di essere attento nei tuoi doveri, e di dirci qualsiasi cosa fuori posto."`
+			label decision
+			choice
+				`	"Va bene."`
+					goto yes
+				`	"Ne ho abbastanza di questa storia. No."`
+			`	I due Successori ti guardano, e una tonalità di blu striscia lentamente sulla loro pelle. "Deludente, capitano. Ma è una tua decisione."`
+				decline
+
+			label yes
+			action
+				log "Hai accettato l'offerta di Casa Seineq di riferire dei tuoi rapporti con le altre Casate, e di qualsiasi cosa incriminante che osservi."
+			`	"Eccellente!" dice Rijtatet. "In tal caso, Sijra e io non abbiamo altro per te. Ti richiameremo quando saremo pronti per il tuo rapporto."`
+				decline
+
+
+
+mission "Successors: Ghosts Mark Houses"
+	transition
+	destination "Shassa-Wyra-Orrou"
+	name "Indaga sulle altre Casate Alte"
+	description "Casa Seineq è interessata a quali incarichi le altre Casate potrebbero offrire a un agente libero. I loro mondi natali sarebbero un buon posto per indagare sulle loro attività."
+	to offer
+		has "Successors: Ghosts 4: declined"
+	to fail
+		has "Successors: Ghosts Aqrabe 1: offered"
+		has "Successors: Ghosts Myurej 1: offered"
+	to complete
+		never
+	stopover "Kasii-Cavasaa-Oa"
+	stopover "Raaqa-Kvelq-Ryuit"
+	stopover "Khora-Vasa-Reyyaa"
+	stopover "Staja-Kella-Oa"
+
+
+
+mission "Successors: Ghosts Seineq Attacked"
+	invisible
+	landing
+	source
+		attributes successor
+		not attributes uninhabited quiet
+		not planet "Shassa-Wyra-Orrou"
+	to offer
+		has "event: successors: ghosts seineq attacked"
+	on offer
+		event "successors: ghosts seineq memorial" 50
+		conversation
+			`Mentre sbarchi nello spazioporto di questo pianeta, senti nell'aria una tensione nuova e più acuta. In uno specchio inquietante delle conseguenze immediate dell'attacco alla base di Kaatrij, i Successori qui sono tutti ammassati intorno agli schermi dello spazioporto, a guardare le notizie di un secondo attacco. Questa volta, però, l'immagine sui display è una che riconosci: è la base su Shassa-Wyra-Orrou, quella da cui hai lavorato con Casa Seineq.`
+			`	"... rapporti, non ancora confermati, secondo cui diverse navi sono state viste, poco dopo ritirarsi sotto un velo di mantello," dice il cronista sui display. "Molti sospetti ora ricadono sulla nobile Casa Kaatrij, per aver usato in passato simili tecnologie, che un tempo avevano giurato di aver lasciato dietro di sé."`
+			`	I Successori intorno allo schermo mormorano e strisciano gli uni sugli altri. Mentre la trasmissione continua e la folla cresce e cominciano ad arrivare i primi numeri delle vittime, il parlato tradotto che ti si sovrappone nelle orecchie comincia a impastarsi; ti ritrovi a inciampare contro un muro dello spazioporto, capace di rialzarti solo dopo aver momentaneamente strappato il dispositivo di traduzione dalla giacca.`
+				decline
+
+
+
+mission "Successors: Ghosts Seineq Memorial"
+	invisible
+	source "Yoqqa-Vasa-Vasa"
+	to offer
+		has "event: successors: ghosts seineq memorial"
+	on offer
+		conversation
+			`Mentre esplori lo spazioporto di Casa Seineq qui su <origin>, noti una serie di obelischi eretti in mezzo a uno dei corridoi; non c'erano l'ultima volta che sei passato. Avvicinandoti, riesci a leggere un'iscrizione su una targa che sta davanti a loro:`
+			`	"In ricordo e nel dolore ci ergiamo,`
+			`	monito della morte dei`
+			`	diciotto caduti al servizio della`
+			`	nostra nobile Casa, che aiuto`
+			`	portò alla sua alleata Casa Kaatrij."`
+			choice
+				`	(Porgi i tuoi rispetti.)`
+				`	(Prosegui.)`
+					decline
+			`	Offri al memoriale qualche momento di quieta contemplazione. Su ciascun pilastro è inciso un nome; la maggior parte non li riconosci, ma uno porta la scritta "Asirij T- Rijatet."`
+				decline
+
+
+
+# Suspicion
+
+mission "Successors: Ghosts 5"
+	landing
+	clearance
+	name "Trasporta attrezzatura per Kaatrij"
+	description "Un'attrezzatura scientifica di Casa Kaatrij deve tornare su <destination> entro <date>, mentre la Casa si consolida dopo le sue recenti crisi."
+	deadline
+	source
+		government "Successor" "New Houses" # So, not the homeworlds of any of the other houses.
+	destination "Raaqa-Puan-Uuoru"
+	to offer
+		or
+			"successors: ghosts suspicion" >= 4
+			"successors: ghosts houses dealt with" >= 2
+		has "event: successors: ghosts seineq attacked"
+	cargo "Scientific equipment" 10
+	passengers 3
+	on offer
+		conversation
+			branch kaatrij
+				has "successors kaatrij patron"
+
+			`Ad aspettarti allo spazioporto, al tuo arrivo, ci sono tre Successori: due guardie e un altro individuo che indossa un abito nero, simile a un bozzolo, pieno di tasche. Entrambe le guardie portano l'insegna di Casa Kaatrij.`
+			`	L'individuo in nero ti fa un inchino leggero mentre scintille verdi punteggiano la sua pelle. "Capitano <first> <last>?" dice. Quando annuisci, continua. "Sono Saajret, di Somber Sejra, inviato dei nobili eredi di Casa Kaatrij. Kaatrij spera che tu possa farci un favore."`
+				goto questions
+
+			label kaatrij
+			`Ad aspettarti allo spazioporto, al tuo arrivo, ci sono tre Successori: due guardie e un altro individuo che riconosci come Saajret, di Somber Sejra. L'archivista di Kaatrij ha un aspetto diverso dall'ultima volta che l'hai visto; l'abito è avvolto più stretto e i colori del viso sembrano spenti e sommessi.`
+			`	Saajret ti fa un inchino leggero, toni verdi e rossastri che turbinano sulla pelle. "Capitano <first> <last>," dice, "la cui pazienza a quanto pare ho messo a dura prova. Kaatrij mi manda a chiederti un favore."`
+
+			label questions
+			choice
+				`	"Perché non ho più saputo nulla da te dopo l'incidente?"`
+					to display
+						has "successors kaatrij patron"
+					goto silence
+				`	"Che tipo di 'favore'?"`
+					goto boon
+				`	"Perché io?"`
+
+			label me
+			`	"Ti stai guadagnando una reputazione di efficienza e discrezione," dice Saajret. "E Kaatrij ha bisogno di entrambe. Un'attrezzatura scientifica qui deve tornare sul mondo natale, possibilmente in fretta. La tua nave può servire?"`
+				goto offer
+
+			label boon
+			`	"La tua reputazione di professionalità sembra ben meritata, capitano," dice. "Un'attrezzatura scientifica immagazzinata qui deve tornare sul mondo natale in fretta. La tua nave può servire?"`
+				goto offer
+
+			label silence
+			`	Saajret canticchia, i colori che continuano a nuotare sul loro corpo. Alla fine parla. "Sulla scia della ferita di Kaatrij, il nostro sospetto verso gli altri fu grande e largo. E tu fosti incluso, perché questi incidenti sono arrivati poco dopo il tuo arrivo. Alcuni credono che tu abbia avuto una parte, altri no." Si fermano un momento, passandoti gli occhi addosso. "È la seconda fazione a offrirti questa opportunità: un'attrezzatura qui deve tornare sul mondo natale. Un'occasione per dimostrare la tua benevolenza, forse?"`
+
+			label offer
+			choice
+				`	"Va bene. Suppongo che la Casa paghi?"`
+					goto accepted
+				`	"Non voglio essere coinvolto in questo."`
+
+			`	"Molto bene," dice Saajret. "Dopotutto è una tua scelta."`
+				decline
+
+			label accepted
+			`	"Certamente," dice Saajret. "Farò caricare gli oggetti immediatamente."`
+				accept
+
+	on decline
+		dialog "Percorso dei Successori: fantasmi - missione fallita"
+
+	on fail
+		dialog "Percorso dei Successori: fantasmi - missione fallita"
+
+	on complete
+		payment 40000
+		conversation
+			branch "visited before"
+				or
+					has "successors kaatrij patron"
+					has "visited planet: Raaqa-Puan-Uuoru"
+
+			`Hai sentito <planet> descritto dagli stranieri come un mondo insulare e ben sorvegliato, ma nessuna delle due cose ti aveva preparato alla sua quiete così impressionante. Lo spazioporto piovoso sembra quasi deserto, il suono più forte è quasi sempre il tamburellare delle gocce pesanti sulle sporgenze simili a vele sopra di te, interrotto solo ogni tanto da un annuncio a voce bassa su una nave in arrivo o in partenza. Nessuno dei Successori che hai trasportato lascia capire se sia normale o solo il risultato dei recenti incidenti di Kaatrij.`
+				goto paid
+
+			label "visited before"
+			`Lo spazioporto di <planet> è avvolto da un temporale leggero. Il suono più forte che senti durante la tua permanenza è il tamburellare delle gocce pesanti sopra di te e il ronzio occasionale dei macchinari che i lavoratori del porto usano per scaricare il tuo carico.`
+
+			label paid
+			`	Saajret ti incontra sulla piazzola, informandoti che la Casa ti ha accreditato <payment> per i tuoi servizi. Prima di andarsene, ti chiede di tornare allo spazioporto stasera per incontrarli.`
+
+
+
+mission "Successors: Ghosts 6"
+	name "Visita di nuovo <planet>"
+	description "A Saajret, di Somber Sejra, Casa Kaatrij ha ordinato di scansionare la fauna di <destination>, che deve interessare a più di una delle Casate Alte."
+	source "Raaqa-Puan-Uuoru"
+	destination "Raaqa-Uur-Kaav"
+	passengers 1
+	to offer
+		has "Successors: Ghosts 5: done"
+	on offer
+		conversation
+			`Il Saajret avvolto di nero ti incontra allo spazioporto mentre il sole tramonta, unendosi a te in un atrio che guarda su una piazzola per le navi militari di Kaatrij. Mentre cominciano a parlare, una coppia di Veusaden si libra fino a terra in lontananza, i propulsori a repulsione che scalciano nell'aria le gocce della pioggia perenne.`
+			`	"Sono riuscito a convincere Kaatrij che potresti esserci utile in un altro compito," dice. "Man mano che la situazione si sviluppa, ora convengono che sei troppo sostanzioso per negarti ogni dialogo. Ricordi la tua precedente visita a <planet>, quando affrontasti il Kijran?"`
+			choice
+				`	"Sì."`
+				`	"Difficile da dimenticare."`
+			branch kaatrij
+				has "successors kaatrij patron"
+
+			action
+				log "People" "Saajret, of Somber Sejra" "Saajret, of Somber Sejra is an archivist, among other things, for the Successor High House Kaatrij."
+			`	"Il mio ruolo qui è... qualcosa come quello di un archivista," dice Saajret, "raccogliere e ordinare informazioni, oggetti, registri, dei nostri Predecessori prima che lasciassimo quel periodo alle spalle. Kaatrij crede che certi dati sulle creature del vecchio mondo natale sarebbero utili, e poiché ora offri loro l'occasione," dice, aprendo le braccia in un gesto ampio, "Kaatrij è disposta a compensarti per portarmici a scansionarle."`
+				goto choices
+
+			label kaatrij
+			`	"Sono un archivista, come ti ho detto prima," continua Saajret. "Kaatrij crede che certi dati sulle creature di là sarebbero utili e, poiché ora offri loro l'occasione, ti compenserà per portarmici a scansionarle."`
+
+			label choices
+			choice
+				`	"Sulla scia di un attacco, l'interesse di Kaatrij è scansionare piante e animali? Non ci credo."`
+					to display
+						"successors: ghosts suspicion" >= 6
+					goto suspicious
+
+				`	"L'ultima volta la fauna non era molto amichevole."`
+					to display
+						not "Successors FC3: friend to animals"
+					goto scared
+
+				`	"D'accordo."`
+					to display
+						has "Successors FC3: friend to animals"
+					goto yes
+
+				`	"Non ho alcun interesse a tornarci."`
+
+			`	Saajret canticchia. "Dopo la tua precedente esperienza, mi chiedevo se sarebbe andata così. Molto bene," dice. "Allora ti saluto."`
+				decline
+
+			label yes
+			`	"Accetti così di buon grado?" dice Saajret, più che un po' sorpreso. "Forse la tua precedente esperienza non è stata tanto spaventosa quanto pensavo. In tal caso, mi preparerò a partire e ti incontrerò alla tua nave."`
+				accept
+
+			label scared
+			`	"Infatti no," dice Saajret, canticchiando. "Non ti si chiederà di affrontarli di nuovo, se è questo che ti preoccupa. Le scansioni che intendo fare non sono invasive e non desterebbero la furia del Kijran-Khora, ma tu servi solo per il trasporto, andata e ritorno."`
+				goto "final choice"
+
+			label suspicious
+			branch "kaatrij kijran"
+				has "successors kaatrij patron"
+
+			`	Saajret ride, un sommesso ruk-ruk che non sembra molto allegro. "Forse no," dice. "Queste creature sono comunque importanti per la Casa. Furono abbastanza importanti per Casa Sioeora da pagarti per rubarle, no?" Si fermano, continuando più piano. "A modo loro sono preziose per Kaatrij," aggiungono alla fine. "Che dici all'offerta della Casa?"`
+				goto "final choice"
+
+			label "kaatrij kijran"
+			`	Saajret ride, un sommesso ruk-ruk che non sembra molto allegro. "Fu la Kaatrij di un tempo a progettarli, no? Non è forse sensato che siano importanti per la Casa, degni di uno sguardo gettato anche in un momento teso?" Si fermano un momento, un gorgo di colori indeterminati sul viso. "Che dici all'offerta della Casa?" dicono infine.`
+				goto "final choice"
+
+			label "final choice"
+			choice
+				`	"Va bene, lo faccio."`
+				`	"Continuo a non volerci tornare."`
+					decline
+
+			`	"Kaatrij sarà contenta," dice Saajret. "Mi preparerò a partire e ti incontrerò alla tua nave."`
+				accept
+
+	on complete
+		conversation
+			`	Posi la nave ai margini della stessa struttura che visitasti in passato con Sieasej; sembra molto simile, anche se ora molte delle piante verdi sono diventate varie tonalità di giallo e arancione col cambio di stagione. Saajret ti incontra nella cabina di pilotaggio, ora vestito con un abito nero leggermente diverso, pieno di tasche. Porta in una delle braccia un dispositivo con un tamburo rotante, probabilmente una specie di scanner.`
+			`	"Resterò in contatto con la tua nave," dice, "anche se non prevedo problemi nella mia spedizione. Aspettami qui tra circa tre ore."`
+			`	Mentre se ne vanno, non ti resta che aspettare.`
+			choice
+				`	(Controlla i sistemi della nave.)`
+					goto inside
+				`	(Guardati intorno fuori.)`
+
+			branch "friend to animals"
+				has "Successors FC3: friend to animals"
+
+			`	Il panorama straordinariamente pacifico nasconde una sensazione di inquietudine; in lontananza vedi tagli su un paio di alberi, la corteccia che perde linfa da una ferita lasciata di sicuro da un'antenna seghettata. Scorgi quello che riconosci come un Kijra-riita che svolazza tra gli alberi; succhia il nettare da un fiore su un arbusto e colpisce con una zampa un rametto pieno di foglie secche, facendone cadere qualcuna a terra. Forse è lo stesso che hai incontrato l'ultima volta che sei stato qui.`
+				goto saajret
+
+			label "friend to animals"
+			`	È un panorama straordinariamente pacifico, e lo diventa ancora di più quando il giorno volge al tardo pomeriggio e il colore autunnale è amplificato dalla luce dorata del sole. In lontananza vedi quello che riconosci come un Kijra-riita che svolazza tra gli alberi; lambisce il nettare da un fiore su un arbusto e colpisce giocoso un rametto pieno di foglie secche, facendone cadere qualcuna a terra. Forse è lo stesso che hai liberato l'ultima volta che sei stato qui.`
+				goto saajret
+
+			label inside
+			branch "killed riiria"
+				or
+					has "Successors: Ghosts Myurej 4: done"
+					has "Successors: Ghosts Myurej 4: active"
+
+			`	Controlli i vari sistemi interni della <ship>, assicurandoti che gli accoppiamenti di potenza funzionino entro i parametri normali e prendendoti un lungo momento per ammirare il motore di salto, che ronza dentro il suo alloggiamento, imperscrutabile come sempre.`
+				goto saajret
+
+			label "killed riiria"
+			action
+				"successors: ghosts suspicion" ++
+			`	Controlli i vari sistemi interni della <ship> e scopri un'anomalia misteriosa in uno dei registri di consumo energetico, anche se è difficile risalire a cosa l'abbia causata o dove si trovasse. In ogni caso, l'anomalia si è risolta da sola tempo fa.`
+
+			label saajret
+			`	Saajret torna presto come promesso, apparentemente illeso. Scarica la sua attrezzatura negli alloggi che gli hai riservato prima di tornare da te in cabina. "È andato senza incidenti," dice, un'ombra di soddisfazione sulla pelle. Mentre si volta per andarsene, si trattiene, tornando indietro con un po' di trepidazione. "Forse non avrò mai più questa occasione, quindi parlo ora: ho una richiesta personale da farti. C'è un altro mondo dentro lo Shroud dove in passato risiedevano i miei antenati. Prima di tornare a Kaatrij, desidero vederlo con i miei occhi. Ti pagherei per la deviazione, naturalmente."`
+			choice
+				`	"Certo, ti ci porto."`
+					goto helped
+				`	"Mi dispiace, dovrai trovare un'altra soluzione."`
+			`	Saajret fatica a non mostrare la delusione. "Molto bene," riesce a dire prima di andarsene.`
+				goto end
+
+			label helped
+			action
+				set "Successors: Ghosts Helped Saajret"
+			`	Saajret mantiene la compostezza per un secondo, poi un rosa tenue risale sul viso e sulle braccia. "La mia gratitudine, capitano," dice. "Il mondo è Osolaa-Val-Mavra; te ne darò la posizione."`
+
+			label end
+			`	Non resta altro da fare qui, quindi ti prepari a partire.`
+
+
+
+mission "Successors: Ghosts 7a"
+	transition
+	clearance
+	name "Deviazione su Osolaa-Val-Mavra"
+	description "Saajret ha chiesto di visitare <stopovers> come favore personale, prima di tornare a casa su <planet>."
+	stopover "Osolaa-Val-Mavra"
+	destination "Raaqa-Puan-Uuoru"
+	passengers 1
+	to offer
+		has "Successors: Ghosts 6: done"
+		has "Successors: Ghosts Helped Saajret"
+	on stopover
+		log "Hai portato Saajret sul pianeta dei Predecessori Osolaa-Val-Mavra. Ha visitato una città abbandonata sulla superficie dove un tempo viveva un suo antenato, recuperando una sfera di dati e una piccola scatola di legno."
+		conversation
+			`Posi la <ship> su una delle terrazze d'atterraggio della fossa equatoriale del pianeta, vicino a un punto che Saajret ti indica. Il posto offre una vista vertiginosa: fiocchi di neve da una nuvola sopra la testa vanno alla deriva sopra cornici e balconi deserti prima di cadere per chilometri nell'abisso sottostante. Saajret ti raggiunge vicino alla camera di equilibrio, ora avvolto in un abito argentato lucido con un colletto di piccoli nastri che ondeggiano nella brezza.`
+			`	"Che posto è questo?" chiedi.`
+			`	Una tonalità blu si fa strada sul viso di Saajret. "Era un arco di case e botteghe prima che fossero abbandonate," dice. Un paio di fiocchi si posano sulla sua pelle e le sue braccia si dimenano contro il terreno bianco. "Puoi unirti a me, se lo desideri. Kaatrij non ci impone segretezza qui."`
+			choice
+				`	(Va' con loro.)`
+				`	(Resta.)`
+					goto stay
+			`	Vi fate strada tra le strade abbandonate. Ti colpisce quanto tutto sia ben conservato; più che in qualsiasi altro mondo dei Predecessori, gli edifici qui sembrano vuoti solo temporaneamente, come se aveste appena sorpreso la città in un giorno in cui tutti mancano. Un trio di piccoli robot pulitori corre intorno al bordo di una fontana, lucidando via la neve prima ancora che abbia il tempo di sciogliersi al sole.`
+			`	Saajret segue la propria strada, controllando ogni tanto quella che dev'essere una mappa su un datapad che porta con sé. Di quando in quando la sua pelle esplode di colore quando vede qualcosa che lo interessa, ma non resta mai distratto a lungo. Alla fine arrivate in una piazza elegante di edifici organici; Saajret controlla la mappa un paio di volte prima di dichiarare: "Siamo arrivati."`
+			choice
+				`	"E dove sarebbe 'qui'?"`
+				`	"È un posto grazioso."`
+				`	(Resta in silenzio.)`
+					goto building
+
+			`	"Un mio antenato visse qui per breve tempo," dice. "Uno importante negli ultimi giorni di Casa Sejra. Ma quando visse qui, tutto ciò doveva ancora venire."`
+
+			label building
+			`	Saajret entra nell'edificio più grande, digitando un codice su un terminale sferico accanto alla porta. Ti muovi per seguirlo, ma allunga un braccio a fermarti. "Quest'ultima parte preferirei farla da solo," dice. Indica una panca alta fuori.`
+			`	Resta dentro una mezz'ora circa; tu guardi la neve cadere sulla piazza e sulle terrazze. Quando Saajret torna, porta una sfera di dati e una piccola scatola di legno che tiene in una delle braccia. Sul viso ha un colore che non sai bene collocare.`
+			choice
+				`	"Sei pronto a tornare?"`
+				`	"Che cos'hai preso?"`
+					goto nosy
+			`	Canticchia. "Sì, ho quello per cui sono venuto," dice, "grazie alla tua indulgenza. Non lo dimenticherò."`
+				goto end
+
+			label nosy
+			`	Canticchia. "Una cosa che speravo e un'altra che temevo. Così spesso quelle due vanno a braccetto, non è vero?" Il colore sul viso svanisce. "Ho quello per cui sono venuto," dice. "La mia gratitudine per avermi assecondato in questo."`
+				goto end
+
+			label stay
+			`	Saajret apre le braccia in congedo e ti dice di aspettarlo prima di notte. Controlli i sistemi della nave, ti godi la vista, e guardi la neve che si accumula nei giunti dello scafo della <ship>.`
+			`	Un paio d'ore dopo, Saajret torna. Porta in braccio una sfera di dati e una piccola scatola di legno, intagliata in modo intricato. "Ho tutto quello per cui sono venuto, credo," ti dice, e sul viso ha un colore che non sai bene collocare. "La mia gratitudine," dice, "per avermi assecondato."`
+
+			label end
+			`	Fate i bagagli e vi preparate alla partenza.`
+	on complete
+		log "Saajret ha raccontato una storia sulle pratiche di caccia dell'elusivo Kijran-Khora, capace di automimetizzarsi. Questi si infiltrarono nelle basi di Casa Kaatrij molto tempo fa. Ha suggerito che qualcuno potrebbe fare qualcosa di simile."
+		payment 220000
+		conversation "saajret returns"
+		event "successors: ghosts cloak prompt delay" 30
+		"Successors: Ghosts Saajret Forgiveness" -- # Decreases as Saajret learns more about their personal past.
+
+
+
+mission "Successors: Ghosts 7b"
+	transition
+	clearance
+	name "Torna su <planet>"
+	description "Avendo declinato la richiesta di Saajret di una deviazione, riportalo a casa su <planet>."
+	destination "Raaqa-Puan-Uuoru"
+	passengers 1
+	to offer
+		has "Successors: Ghosts 6: done"
+		not "Successors: Ghosts Helped Saajret"
+	on complete
+		log "Saajret ha raccontato una storia sulle pratiche di caccia dell'elusivo Kijran-Khora, capace di automimetizzarsi. Questi si infiltrarono nelle basi di Casa Kaatrij molto tempo fa. Ha suggerito che qualcuno potrebbe fare qualcosa di simile."
+		payment 140000
+		conversation "saajret returns"
+		event "successors: ghosts cloak prompt delay" 30
+		"Successors: Ghosts Saajret Forgiveness" ++
+		"Successors: Ghosts Saajret Openness" --
+
+
+
+conversation "saajret returns"
+	`	La tua nave scivola di nuovo nello spazioporto di <planet>, insinuandosi sotto uno spesso strato di nebbia mattutina. Saajret ti incontra appena fuori, informandoti che i dati che era stato mandato a raccogliere sono già stati trasmessi, e ringraziandoti per il tuo aiuto.`
+	branch helped
+		has "Successors: Ghosts Helped Saajret"
+	`	Ti dicono di aspettarti un deposito di <payment> da Casa Kaatrij.`
+		goto secret
+
+	label helped
+	`	Ti dicono di aspettarti un deposito di 140000 crediti da Casa Kaatrij e ti consegnano un piccolo gettone contenente altri 80000 crediti.`
+
+	label secret
+	`	Mentre Saajret guarda un lavoratore del porto che collega un tubo del carburante al fianco della <ship>, qualcosa cambia nel suo contegno e un bagliore di scintille quasi furiose, arancioni, gli accende la pelle. "Capitano," dice. "Mi dicono che hai provato tu stesso le pratiche di caccia del temibile Kijran-Khora."`
+	choice
+		`	"Come dici?"`
+		`	"Un po' troppo da vicino, in realtà."`
+	`	Continuano, con il colore che continua a scintillare sulla pelle. "Bestie bellissime, non è vero? Davvero da ammirare: abili nel mimetizzarsi, si nascondono oltre ogni sguardo che non sia il più indagatore, prima di chiudersi sulla preda. Nei primi giorni di Kaatrij, quando i Kijran erano ancora una novità, alcuni esemplari particolarmente ben occultati si insinuarono in una torre di controllo meteorologico. Forse," dicono, "si potrebbe imparare dal loro esempio, se ci fosse un posto notevole dove si desidera andare." Alzano lo sguardo, dove i puntini scintillanti dei pianeti sopra di voi trapelano tra le nuvole.`
+	choice
+		`	"Perché mi stai raccontando questo?"`
+		`	"Stai cercando di dirmi qualcosa?"`
+			goto foolish
+	`	Lo scintillio di colore sulla pelle si spegne e ti guardano con ilarità negli occhi. "Sono un archivista," dicono. "Adoro una bella storia."`
+		goto end
+
+	label foolish
+	`	Lo scintillio di colore sul viso si intensifica per un momento prima di spegnersi. "Nulla se non i giochi sciocchi di un archivista," dicono.`
+
+	label end
+	`	Guardano di nuovo verso lo spazioporto. "Finché non ci rivedremo, <first> <last>."`
+
+
+
+mission "Successors: Ghosts Cloak Prompt"
+	landing
+	name "Indaga su <planet>"
+	description "Il messaggio criptico di Saajret forse suggeriva un modo per indagare più da vicino la base nascosta di Casa Kaatrij su <planet>. Prova a superare il blocco usando una nave capace di occultarsi."
+	destination "Qasa-Sija-Iri"
+	source
+		attributes successor
+		not attributes uninhabited crime
+	to offer
+		has "event: successors: ghosts cloak prompt delay"
+		not "Successors: Ghosts 8: offered"
+	on offer
+		conversation
+			`Passi un po' di tempo a sgranchirti le gambe qui allo spazioporto di <origin>, guardando le varie navi entrare e uscire e osservando la grande varietà di Successori che si aggirano intorno. Per molti versi non è diverso dallo spazio umano, anche se l'eleganza e l'efficienza con cui i Successori costruiscono e gestiscono i loro spazioporti lasciano intuire la loro esperienza molto maggiore come specie interstellare.`
+			`	Alcune cose sono però identiche, come il display delle notizie che ti accorgi di avere proprio sopra la testa quando emette un trillo particolarmente evidente. Ti cattura per un momento; il programma sta presentando una visualizzazione di come sarebbe potuto apparire plausibilmente l'attacco alla base di Casa Seineq: un pozzo di metallo morfico che si srotola dal display per formare piccoli Vujleten simulati che volano in formazione, sparano le loro armi e persino si occultano dopo aver consegnato il loro carico, le forme che si fanno indistinte e ondulate mentre il metallo liquido torna al suo origine.`
+			`	Mentre il narratore intona qualcosa sugli usi storici della tecnologia di occultamento, una scintilla di comprensione ti si accende all'improvviso: ricordi la tua ultima conversazione con Saajret e la sua storia dei Kijran-Khora mimetizzanti, e alla luce del blocco di Casa Kaatrij su <planet>, come potessero offrirti un modo per indagare tu stesso sulla base di Kaatrij. L'atmosfera della luna è abbastanza sottile perché una nave occultata possa probabilmente avvicinarsi alla superficie del tutto inosservata, anche considerando gli scanner senza dubbio avanzati che Casa Kaatrij usa per individuare gli intrusi.`
+				accept
+
+
+
+mission "Successors: Ghosts 8"
+	priority
+	landing
+	source "Qasa-Sija-Iri"
+	to offer
+		or
+			has "Successors: Ghosts 7a: done"
+			has "Successors: Ghosts 7b: done"
+	on offer
+		conversation
+			`Mentre entri in orbita su <origin>, vedi che Casa Kaatrij continua a occupare la superficie del pianeta, scansionando e intercettando qualsiasi nave che tenti di atterrare.`
+			choice
+				`	(Occultati.)`
+					to activate
+						has "flagship attribute: cloak"
+					goto cloaked
+				`	(Continua a scendere.)`
+				`	(Vattene.)`
+					depart
+			`	La <ship> viene presto individuata dagli scanner di Kaatrij, e sei costretto a tornare in orbita per non affrontare la distruzione.`
+				depart
+			label cloaked
+			action
+				set "successors: ghosts seen quarg"
+			`	Lo scafo della <ship> ondeggia mentre l'apparecchiatura di occultamento si attiva, e col passare dei secondi diventa chiaro che le navi di Kaatrij non possono individuarti sopra la luna quasi priva d'aria. Devi scendere lentamente per non disturbare l'atmosfera, ma alla fine trovi la strada sopra la superficie sabbiosa fino a portarti proprio sopra la base ormai rivelata che Casa Kaatrij si era tanto sforzata di nascondere.`
+			`	Come avevi già visto nel notiziario, il suo profilo è un cerchio enorme, di diversi chilometri di raggio. Sebbene l'effetto di luccichio sia ora sparito e parte dei danni sia stata riparata, molto resta ancora visibile e sembra che i lavori sulle sezioni danneggiate siano in corso: mercantili registrati a Casa Kaatrij atterrano su piazzole temporanee e scaricano quantità enormi di materiali, alcuni familiari, altri no.`
+			`	La cosa più impressionante, però, è la comparsa di un metallo scuro dall'aria familiare e di un'illuminazione violacea nella sezione danneggiata della base; è difficile esserne certi, ma somiglia in modo distinto alla tecnologia Quarg. Forse i Quarg potrebbero dare qualche risposta su cosa stia succedendo.`
+			`	Non molto dopo aver visto questo, comincia a rotolare dentro una sottile tempesta di sabbia, e riporti la <ship> in orbita prima che la misteriosa assenza di granelli nell'aria tradisca la tua nave.`
+				flee
+
+	on decline
+		log "Ti sei avvicinato alla base su Qasa-Sija-Iri sotto occultamento. Il suo disegno somiglia vagamente a una costruzione Quarg - forse hanno qualche risposta su cosa sta succedendo ai Successori."
+
+
+
+mission "Successors: Ghosts 9"
+	landing
+	source
+		attributes "human quarg" "hai quarg"
+	to offer
+		has "successors: ghosts seen quarg"
+	on offer
+		conversation
+			`Vuoi chiedere ai Quarg qui della loro base sulla luna dei Successori Qasa-Sija-Iri?`
+			choice
+				`	(Sì.)`
+				`	(Non ora.)`
+					defer
+			`	Anche se finora i singoli Quarg sono sembrati equivalenti nella capacità di rispondere alle tue domande, passano diversi minuti prima che tu ne individui uno che, per qualche motivo, sembra in grado di rispondere. Quando gli ripeti la domanda, sbatte le palpebre lentamente, e risponde ancora più lentamente.`
+			`	"Capisco," dice. "Hai scoperto uno dei nostri grandi segreti della galassia. Avevi ragione a pensare che il mondo di cui parli sia nostro. Dopo quello che quella specie sciocca ha fatto a sé stessa, noi Quarg non potevamo sopportare di lasciarli senza sorveglianza. Ma non osavamo farlo senza velo, per non suscitarli di nuovo alle vette dell'invidia: così non abbiamo costruito ringworld, né stazioni, né mondi aperti. Solo un piccolo... posto di osservazione, per tenere lo sguardo sui Myiara."`
+			`	Lo interrompi. "I Myiara? Intendi i Successori?"`
+			`	Il Quarg considera il termine. "Prima di chiamarsi così, erano i Myiara. Sono davvero diventati così radicati nei ricordi del loro passato valoroso?" Emette un rumore come il rombo di un tuono lontano. "Dovrai avere delle domande."`
+			choice
+				`	"Che cosa hanno fatto a sé stessi? Hanno costruito qualche tipo di arma terribile?"`
+					goto what
+				`	"Non pensavo che nascondersi facesse parte della vostra natura."`
+					goto hiding
+
+			label what
+			`	"No," dice il Quarg, "non armi. Il fatto che tu li abbia incontrati dimostra che hai trovato, o rubato, il segreto per navigare tra le stelle senza impedimenti. Molto, molto tempo fa, i Drak scoprirono quel segreto per la prima volta, e dopo molti anni lo condivisero con noi, i Quarg, perché pace e amicizia potessero regnare nella galassia. Poi, solo qualche migliaio di anni umani fa, lo trovarono anche i Myiara." Il Quarg sbatte le palpebre lentamente, e tutto il suo corpo si affloscia come oppresso da un grande dolore.`
+			`	"Quello che scoprirono non era ciò che avevano i Drak, né la bellezza che i Korath, con tutte le loro guerre, avevano forgiato. Era una cosa nuova e pericolosa, e se da un lato permise loro di esplorare con una libertà nuova, negli anni che seguirono il suo segno divenne chiaro. Squarciò ferite tra le stelle, lacerò i sentieri tra esse, portò le loro navi verso il nulla e trasformò in cenere i loro mondi verdeggianti."`
+			choice
+				`	"Perché avete permesso che sviluppassero qualcosa di così distruttivo?"`
+					goto allow
+				`	"Come avete fatto a restare nascosti così a lungo?"`
+					goto hiding
+
+			label allow
+			`	"Allora erano sull'orlo di un grande cambiamento. Le loro divisioni lungamente forgiate si stavano fondendo; si erano allontanati dalle orribili imprevedibilità della guerra ed erano spinti a esplorare e preservare le arti degli altri. Speravamo," e il Quarg dà a questa parola un tono più alto, "che col tempo potessero diventare come noi siamo: guardiani e amici di tutti. Il nostro giudizio fu offuscato dal desiderio di questo."`
+			choice
+				`	"È difficile credere che siano mai stati così uniti."`
+				`	"Li consideravate vostri pari?"`
+			`	Un contegno di grande riflessione passa sul Quarg, e poi sparisce altrettanto in fretta. "I Myiara erano come... bambini, che appena cominciavano a concepire e ad assumere le responsabilità che stanno oltre la giovinezza. Pieni ancora di scaltrezza e arroganza, ma sostenuti da una capacità appena sbocciata di vedere oltre sé stessi e le proprie preoccupazioni meschine."`
+			choice
+				`	"Come avete fatto a restare nascosti a loro così a lungo?"`
+
+			label hiding
+			`	"Nascondersi, in effetti, non ci viene naturale," dice il Quarg. "Con nessun altro abbiamo avuto bisogno di occultarci. Una delle loro Casate, quando seppe quello che avevano fatto, accettò di lavorare con noi per preservare la loro specie. Era abilissima nelle arti dell'illusione, e condivise i suoi mantelli con noi per oscurare la nostra presenza."`
+				goto end
+
+			label end
+			`	"Ciò che più turba questo uno," dice il Quarg, "è che questo nostro posto di osservazione sia stato messo a nudo, visibile. Ci siamo resi ripugnanti ai Myiara per il loro bene, abbiamo sottratto le loro preziose creazioni, abbiamo lavorato con quelli di loro che ci avrebbero aiutato a demolire tanto di ciò che avevano costruito, li abbiamo sigillati via: tutto perché non avessero i mezzi per ricreare la loro follia in un'epoca successiva. Che questo nostro inganno sia venuto alla luce potrebbe allontanarli ancora di più da ciò che erano, annullare anche i miseri guadagni che hanno ottenuto nel loro esilio. Con tutte le loro colpe, sarebbe comunque motivo di lamento."`
+			`	Detto questo, il Quarg ti offre un inchino leggero. "Addio, capitano," dice, e si allontana in silenzio.`
+				decline
+
+	on decline
+		set "successors: myiara name"
+		log "Hai parlato con i Quarg, che hanno rivelato di tenere una base su Qasa-Sija-Iri per sorvegliare i Successori. È rimasta occultata da Casa Kaatrij, che collabora con i Quarg dal crollo dei Predecessori."
+		log "Factions" "Successors" "The Successor species is properly referred to as the Myiara, though this term has fallen out of favor since the collapse of their old empire."
+
+
+
+mission "Successors: Ghosts 10"
+	landing
+	name "Incontra Casa Kaatrij"
+	description "Dopo esserti alleato con Casa Kaatrij, vai con una delle loro navi militari alla loro base su <destination>."
+	source
+		government "Successor" "New Houses"
+	destination "Qasa-Sija-Iri"
+	to offer
+		has "Successors: Ghosts 9: declined"
+		has "successors: ghosts dealt with aqrabe"
+	on offer
+		conversation
+			`Mentre sbarchi dalla nave, noti un gruppo di soldati Successori che escono da un altro mezzo nello spazioporto, un Seiitej che porta i colori di Casa Kaatrij. Ti incontrano fuori dal tuo vascello, le armi tenute in posizione di attenti.`
+			`	"Capitano <first> <last>," dice il loro capo, "abbiamo ordine di portarti con noi."`
+			choice
+				`	"Per quale scopo, esattamente?"`
+					goto purpose
+				`	"E se rifiuto?"`
+			`	"Non sarebbe saggio," dice l'ufficiale. "Lo capirai, confidiamo?"`
+				goto interrogation
+
+			label purpose
+			`	"Kaatrij desidera parlare con te," dice l'ufficiale capo. "E sentire cosa hai da dire."`
+
+			label interrogation
+			`	Senza apparente alternativa, accompagni gli ufficiali alla loro nave; ti tolgono l'arma da fianco e ti portano in una stanza all'interno. Due montano la guardia su di te mentre gli altri si occupano di altro fuori, e solo dopo quasi un'ora qualcun altro entra finalmente: un Successore alto che ti scruta con uno sguardo incisivo.`
+			`	"Capitano <first> <last>," dice. "Come hai ottenuto la tecnologia di occultamento?"`
+			choice
+				`	"Viene da un'altra società, molto lontano da qui."`
+				`	"Me l'ha data un governo umano; l'hanno trovata in una stiva aliena."`
+					to display
+						has "outfit (all): Cloaking Device"
+			`	"Quindi non ti è stata data da una fazione di qui, tra i Successori?"`
+			`	"No," dici. Il Successore si rilassa, anche se solo un poco. "Perquisiremo la tua nave per confermarlo," dice. "Ma non credo che tu mentisca."`
+			branch "cloaks"
+				has "flagship attribute: cloak"
+
+			choice
+				`	"Non troverete nulla, la mia nave attuale non è capace di occultarsi."`
+			`	Il Successore ti guarda con uno sguardo curioso. "Interessante," dice. "Non importa; consulteremo i nostri registri sul tuo vascello."`
+
+			label cloaks
+			`	Dopo un momento, il tuo interrogatore si china su di te e le guardie in fondo si alzano, attente. "Ora dobbiamo decidere cosa fare di te," dice, "ora che hai appreso del nostro accordo con i Quarg. Dovresti capire che non desideriamo che quell'informazione sia disponibile a tutti. Non tutte le Casate né i loro membri guardano ai Quarg con amicizia."`
+			choice
+				`	"Non ho alcuna intenzione di rivelare il vostro segreto."`
+					goto discreet
+				`	"Terrò la bocca chiusa, a un prezzo."`
+					goto blackmail
+				`	"La gente merita di sapere questo."`
+
+			`	"Forse un giorno lo saprà, ma né tu né io dobbiamo deciderlo ora. È un momento troppo teso per portare una cosa simile alla luce. No," dice, con uno dei suoi bracci che si muove verso di te, "ma Kaatrij sarebbe disposta a offrirti un'alternativa: una relazione formale con la Casa, così che tu possa essere ammesso nel nostro cerchio di conoscenza e ricevere i nostri doni. E, naturalmente, essere soggetto alle nostre direttive, comprese quelle del silenzio."`
+			choice
+				`	"E cosa penserebbe Casa Sioeora di questo?"`
+					to display
+						has "successors sioeora patron"
+					goto sioeora
+				`	"Che cosa comporterebbe, in pratica?"`
+					goto details
+				`	"Sì, se alla fine mi darà qualche risposta."`
+					goto yes
+				`	"No, non sono disposto a mentire per voi."`
+					goto no
+
+			label blackmail
+			`	"Dovresti stare attento con simili proposte, capitano," dice. La pelle resta di un blu torbido, cinereo. "Kaatrij sarebbe però disposta a offrirti un'alternativa: una relazione formale con la Casa, così che tu possa essere ammesso nel nostro cerchio di conoscenza e ricevere i nostri doni. Naturalmente saresti anche soggetto alle nostre direttive, comprese quelle del silenzio. Sarebbe per te una ricompensa sufficiente per i tuoi sforzi?"`
+			choice
+				`	"E cosa penserebbe Casa Sioeora di questo?"`
+					to display
+						has "successors sioeora patron"
+					goto sioeora
+				`	"E cosa comporterebbe, esattamente?"`
+					goto details
+				`	"Sì, se alla fine mi darà qualche risposta."`
+					goto yes
+				`	"No, credo che mi terrò i crediti."`
+					goto no
+
+			label discreet
+			action
+				set "Successors: Ghosts: discreet"
+			`	"Molto discreto, capitano," dice. "Ma perdonami se non mi fido della tua sola parola. A questo, Kaatrij è disposta a farti un'offerta: una relazione formale con la nostra Casa, così che tu possa essere ammesso nel nostro cerchio di conoscenza e ricevere i nostri doni. E a tua volta saresti soggetto alle nostre direttive, comprese quelle del silenzio. Un accordo, crede Kaatrij, di beneficio reciproco."`
+			choice
+				`	"E cosa penserebbe Casa Sioeora di questo?"`
+					to display
+						has "successors sioeora patron"
+					goto sioeora
+				`	"E cosa comporterebbe, esattamente?"`
+					goto details
+				`	"Sì, se alla fine mi darà qualche risposta."`
+					goto yes
+				`	"No, preferisco restare un agente libero."`
+					goto no
+
+			label sioeora
+			`	Macchioline gialle incendiarie punteggiano il viso del Successore, che prosegue con un piccolo accenno di soddisfazione. "Senza dubbio sarebbero scontenti di aver perso uno che desideravano tanto possedere. Ma non hanno agito con prontezza. Che dici alla nostra offerta?"`
+			choice
+				`	"Va bene, lo faccio."`
+					goto yes
+				`	"No, non voglio impelagarmi più di quanto già non sia."`
+					goto no
+
+			label details
+			`	"Saresti considerato un vassallo alieno di Casa Kaatrij, e avresti accesso alle nostre strutture, soggetto alle nostre regole e direttive, e autorizzato a combattere i nostri nemici per nostro conto sotto una commissione di guerra. Conserveresti la libertà di movimento, la capacità di andare altrove nella galassia. Ma quando viaggerai tra le stelle dei Successori, sarà Casa Kaatrij che dovrai chiamare casa."`
+			choice
+				`	"Va bene, accetto."`
+					goto yes
+				`	"No, non voglio impelagarmi più di quanto già non sia."`
+					goto no
+
+			label yes
+			action
+				set "successors kaatrij vassal"
+				event "successors: ghosts unrestrict"
+				"reputation: House Kaatrij" >?= 2
+			`	"Eccellente," dice il Successore. "Vorrei allora che venissi con noi, sulla luna dove tutto è cominciato, la nostra base su <planet>. Là alcune delle tue domande, senza dubbio urgenti, avranno risposta."`
+				accept
+
+			label no
+			branch "was discreet"
+				has "Successors: Ghosts: discreet"
+
+			`	"Peccato," dice il tuo interrogatore, facendo un gesto con uno dei bracci; dietro di lui una guardia alza il fucile. Istintivamente vai a prendere la tua arma da fianco, per ricordarti solo che ti è stata tolta pochi minuti fa, proprio mentre il proiettile a rotaia della guardia ti trapassa il corpo.`
+				die
+
+			label "was discreet"
+			`	Il tuo interrogatore ti considera per un momento, pensieroso. "Valuta bene la tua scelta, capitano," dice. "Tra noi, c'è poca via avanti per un 'agente libero', come lo chiami. Un'offerta come questa non verrà di nuovo."`
+			choice
+				`	"Va bene, allora, se è l'unica via avanti per me."`
+					goto yes
+				`	"No, ho deciso. Non mi unisco a voi."`
+
+			action
+				set "successors free agent" # This doesn't do anything now, but if Ghosts is ever expanded to let the player character ally with other Houses, this tag would be useful to have.
+			`	"Peccato," dice il Successore. "Ma finché non rivelerai quello che hai appreso e non ti renderai in altro modo nemico di questa Casa, Kaatrij non ti ostacolerà." Si fermano e la loro pelle sboccia di colori intensi. "Non farci pentire di questa clemenza."`
+			`	Fanno un gesto verso la porta e le guardie si spostano di lato, permettendoti di uscire. Mentre torni alla tua nave, il Seiitej decolla, lasciandoti solo ma libero.`
+				decline
+
+	npc save
+		government `House Kaatrij`
+		personality launching heroic escort
+		ship "Seiitej" "Diri, Defiant Nnesa"
+
+	on complete
+		log "Sei stato formalmente introdotto come vassallo di Casa Kaatrij, con tutte le responsabilità e le ricompense che ne derivano."
+		log "People" "Kampa" "One of House Kaatrij's fleet captains and a leader in their effort to unmask and retaliate against the attacker that damaged their base on Qasa-Sija-Iri."
+		conversation
+			`Scendi di nuovo sulla luna polverosa, anche se questa volta con l'autorizzazione a passare il blocco. La base ad anello ora non si vede più, ma mentre procedi verso le tue coordinate d'atterraggio, un'apertura scintillante si apre nella sabbia per rivelare una baia d'atterraggio avanzata. Mentre posi la <ship> dentro, la cima si richiude, sigillandoti dall'esterno. Senti il rombo profondo dei motori e una debole sensazione di assenza di peso mentre l'intera baia d'atterraggio si inabissa nella crosta della luna, e solo quando si ferma la squadra di terra ti permette di uscire con una scorta di soldati di Casa Kaatrij.`
+			`	L'interno della struttura non somiglia a nessun altro spazioporto dei Successori; anche se la maggior parte della struttura presenta tecnologia Successore - o, per i Quarg, Myiara - lo stile visivo degli interni mostra una distinta influenza Quarg. Sebbene quasi tutti quelli che percorrono gli ampi corridoi siano Successori, ogni tanto intravedi un Quarg che procede a balzi lungo un corridoio o attraverso uno spazio aperto.`
+			`	La tua scorta si ferma infine davanti a una porta bianca lucente, indicandoti di aprirla.`
+			choice
+				`	(Entra.)`
+					goto inside
+				`	"Che cosa devo aspettarmi?"`
+			`	Il capo dei soldati che ti scortano non dice nulla, limitandosi a indicare la porta con un po' più di forza. Capito il suggerimento, entri.`
+
+			label inside
+			`	Dall'altra parte ci sono tre figure: una è il Successore che ti ha interrogato, una la riconosci come Saajret, e la terza è un Quarg che sta in disparte a osservare gli altri due. Tutti e tre puntano gli occhi su di te quando la porta si apre, i Successori aprendo le braccia in un saluto cortese, il Quarg che si limita a esaminarti.`
+			`	"Capitano <last>, è cosa buona che ti unisca a noi," dice il primo Successore. "Non abbiamo avuto una presentazione formale, mi pare. Mi chiamo Kampa; comando una delle flotte di Kaatrij. Hai già conosciuto Saajret, di Somber Sejra, naturalmente." Saajret fa un inchino leggero, la pelle che gorgheggia di colori tenui. "Già la tua introduzione nei nostri circoli ci presenta dei compiti per te, ma c'è una cosa che dobbiamo completare prima: formalizzare il processo."`
+			`	Producono una sfera di dati che ti consegnano. Sembra leggermente fredda al tatto. "La tua accettazione ti lega a questa Casa come vassallo; d'ora in poi essa si aspetterà da te sostegno e segretezza, e tu potrai aspettarti da essa i poteri e i privilegi di cui potresti aver bisogno. Accetti?"`
+			choice
+				`	"Accetto."`
+					goto yes
+				`	"Forse è stata una cattiva idea."`
+					goto uncertain
+				`	"Vuol dire che mi venderete armi e navi da guerra?"`
+
+			`	Un colore guizza sul viso di Kampa, ma non sai dire se sia divertimento o sospetto. "A rigore, sì, ma simili scambi sono regolati da trattato. Per il momento, finché il tuo allineamento con noi non sarà chiaro al resto, Kaatrij declina questa responsabilità."`
+			choice
+				`	"Va bene, accetto formalmente."`
+					goto yes
+				`	"Forse è stata una cattiva idea."`
+
+			label uncertain
+			`	"Hai già visto questo posto, capitano, hai già accettato a parole se non col vincolo. Sei... troppo dentro ormai."`
+			choice
+				`	"Suppongo di sì."`
+
+			label yes
+			`	La sfera di dati si accende di colore, registrando il tuo assenso. "Allora è fatto," dice Kampa. "Benvenuto in Casa Kaatrij." Sia Kampa sia Saajret si inchinano di nuovo, e il Quarg è l'unico nella stanza a restare immobile. "Avrai accesso a gran parte delle nostre opere, che ora potrai esplorare a tuo agio. Quando sarai pronto, dovresti incontrare Saajret allo spazioporto qui per il tuo primo incarico ufficiale per noi."`
+			choice
+				`	"Avevi detto che avresti risposto alle mie domande."`
+				`	(Resta in silenzio.)`
+					goto end
+
+			`	"Molto bene," dice Kampa. "Puoi domandare come preferisci."`
+			label questions
+			choice
+				`	"È tutto."`
+					to display
+						has "Successors: attack"
+						has "Successors: drone"
+						has "Successors: seineq"
+						has "Successors: cloak"
+						has "Successors: quarg"
+					goto end
+				`	"Sapete chi ha attaccato la vostra base?"`
+					to display
+						not "Successors: attack"
+					goto attack
+				`	"Siete voi dietro le navi drone nello spazio dei Predecessori?"`
+					to display
+						not "Successors: drone"
+					goto drone
+				`	"Che cos'è esattamente questo accordo con i Quarg?"`
+					to display
+						not "Successors: quarg"
+					goto quarg
+				`	"Quanta tecnologia di occultamento avete davvero?"`
+					to display
+						not "Successors: cloak"
+						has "Successors: attack"
+					goto cloak
+				`	"Avete attaccato Casa Seineq?"`
+					to display
+						has "Successors: attack"
+						has "Successors: drone"
+						has "Successors: cloak"
+						not "Successors: seineq"
+					goto seineq
+
+			label attack
+			action
+				set "Successors: attack"
+			`	"È stata una delle Casate Alte, ma quale esattamente non lo sappiamo ancora con certezza." Kampa riflette un momento. "Ognuna delle Casate conserva alcune navi da guerra di famiglia dell'epoca del vecchio impero, e quasi tutte non osano portarle fuori dalle volte dorate dove giacciono, perché sono troppo preziose per rischiarle in conflitti meschini. Eppure un'altra ha schierato una delle sue, ha fatto razzia sulla luna, ha ucciso centinaia di persone, tutto per rubare un singolo dispositivo di occultamento. Ora svolazzano invisibili."`
+				goto questions
+
+			label seineq
+			action
+				set "Successors: seineq"
+			`	C'è una pausa mentre Kampa ti guarda con occhi incisivi. "È giusto che tu lo chieda," dice. "No," dice, "non è stata Kaatrij a colpirli. Una volta rubato il nostro mantello, il nostro elusivo nemico aveva tutto ciò che serviva per incolparci di quel colpo proditorio: lasciarsi vedere con segni che noi soli un tempo possedevamo."`
+				goto questions
+
+			label drone
+			action
+				set "Successors: drone"
+			`	La pelle di Kampa si increspa di un'ilarità vuota. "Non esattamente," dice. "Erano creazioni di un alleato della vecchia Casa Kaatrij durante l'ultima grande guerra tra le Casate, un ingegnere audace di Aqrabe. Autonome com'erano, potevano - una volta spogliate di quei motori che guastavano il sapore della nostra vittoria - restare a guardia dai predoni delle nostre città e delle nostre volte nascoste."`
+				goto questions
+
+			label cloak
+			action
+				set "Successors: cloak"
+			`	"Non te lo dirò esattamente," dice Kampa. "Il tuo recupero del metallo stellare per Aqrabe è stato però un aiuto in questo."`
+				goto questions
+			
+			label quarg
+			action
+				set "Successors: quarg"
+			`	"Non pretendiamo di essere pari ai Quarg in saggezza o in grazia," dice Kampa, "ma condividiamo un affetto per la nostra specie, e non vorremmo vederci distrutti. I Quarg traggono beneficio dai nostri mantelli e da queste nostre terre polverose; in cambio abbiamo il loro consiglio e la loro considerazione e, quando è necessario, un piccolo sostegno materiale."`
+				goto questions
+
+			label next
+			action
+				clear "Successors: attack"
+				clear "Successors: drone"
+				clear "Successors: seineq"
+				clear "Successors: cloak"
+				clear "Successors: quarg"
+
+			label end
+			`	Detto questo, Kampa lascia la stanza, e poco dopo anche Saajret, dall'aria distratta. Mentre ti volti anche tu per andare a esplorare la struttura, il Quarg, che sta ancora osservando, ti ferma mentre comincia a parlare. "Credi che i fili dell'universo debbano tendere a stringersi?" dice nella tua lingua. "Forse c'è qualcosa di inerente nella separazione che l'esistenza aborrisce." Canticchia, un rombo profondo e organico. "Puoi andare. Saajret ti aspetta allo spazioporto."`
+
+	on fail
+		dialog phrase "successor ghosts story failed"
+
+
+
+mission "Successors: Ghosts 11"
+	name "Visita l'archivio Kaatrij"
+	description "Porta Saajret a <planet stopovers> perché possa consultare uno degli archivi fuori mondo di Casa Kaatrij, prima di riportarlo su <planet>."
+	source "Qasa-Sija-Iri"
+	stopover "Kasi-Osolaa-Sossa"
+	passengers 1
+	to offer
+		has "Successors: Ghosts 10: done"
+	on offer
+		conversation
+			`Saajret ti incontra in una stanza che guarda sulla tua nave, di nuovo vestito con il suo abito nero pieno di tasche. Si inchina mentre ti avvicini.`
+			choice
+				`	"Qual è il nostro compito?"`
+					goto task
+				`	"Come stai?"`
+			branch helped
+				has "Successors: Ghosts 7a: done"
+
+			`	Saajret canticchia, colori di preoccupazione che danzano sulla pelle. "Abbastanza bene da concentrarmi su ciò che abbiamo davanti," dice. Raddrizza il corpo in una postura più rigida.`
+				goto task
+
+			label helped
+			`	Saajret canticchia, colori di preoccupazione che danzano sulla pelle. "Abbastanza bene da concentrarmi su ciò che abbiamo davanti," dice. "Ti ringrazio di nuovo per aver assecondato il mio piccolo viaggio nel passato. Il senso di ciò resta con me." Scuote la testa e ti offre un altro inchino leggero.`
+
+			label task
+			`	"Kaatrij mantiene diversi archivi fuori mondo per i nostri documenti dai tempi dei nostri Predecessori. Ho un certo punto che vorrei approfondire nel nostro archivio su <planet stopovers>. Mi ci porteresti?"`
+			choice
+				`	"Che tipo di punto?"`
+				`	"Non posso, adesso."`
+					defer
+
+			`	Saajret annuisce. "Kampa crede che contro di noi sia stata usata una nave da guerra di famiglia delle Casate. Confrontando i nostri dati di scansione dell'attacco con le informazioni storiche sulle navi usate prima dell'esilio dei nostri Predecessori, credo di poter determinare esattamente quale nave ci abbia colpito. E con essa, la Casa che vi sta dietro."`
+			choice
+				`	"Va bene, andiamo."`
+					accept
+				`	"Non posso, adesso."`
+					defer
+
+	on stopover
+		"Successors: Ghosts Saajret Forgiveness" ++
+		conversation
+			`Saajret ti indica di atterrare presso una piccola struttura incassata nel terreno, in mezzo a una delle foreste di questo pianeta. Un paio di guardie vi accolgono all'ingresso, dove Saajret presenta la sua autorizzazione, inserendo un piccolo chip di dati in un lettore accanto alla porta della struttura mentre un raggio scanner gli passa sopra. Vi fanno cenno di entrare quando la procedura è completa.`
+			`	L'archivio si rivela relativamente modesto per gli standard dei Successori; la maggior parte dello sforzo ingegneristico sembra essere andata nell'armatura più che negli ornamenti lussureggianti. Vi incamminate tra lunghe file di unità di stoccaggio, ognuna delle quali sospende migliaia di singole sfere di dati in un bagno di metallo liquido. Saajret si ferma a un terminale d'angolo in una sezione etichettata per i registri tra gli anni 1620 e 1636 e, dopo qualche minuto di lavoro, diverse sfere di dati risalgono a bolle da uno dei bagni di stoccaggio circostanti.`
+			`	Saajret collega le sfere al terminale e tu guardi sopra la sua spalla mentre consulta i dati all'interno; sembra una miscela di fascicoli su navi da guerra dell'epoca e dati biografici sui loro ingegneri. La pelle di Saajret si macchia di confusione.`
+			choice
+				`	"Che cos'è?"`
+				`	"Hai trovato quello che cercavi?"`
+			`	Saajret canticchia. "A nostra conoscenza," dice, "ventitré navi da guerra di famiglia furono fatte passare di contrabbando dal cunicolo nell'epoca dei nostri Predecessori. Di queste, sei erano incrociatori da battaglia veloci, chiamati Valkkyiaran - e di quelle, solo tre potevano essere il vascello che ha colpito Qasa-Sija-Iri. I loro nomi erano Alasii-i-Lua, Ijahti-Khora e Akhos-Itran."`
+			choice
+				`	"Sai a quale Casa appartenevano?"`
+				`	"Non c'è modo di dire quale esattamente sia stata dietro l'attacco?"`
+			`	"È qui che la sfortuna ci viene incontro," dice Saajret. "Tutte e tre furono costruite per un'alleanza congiunta che combatté nell'ultima grande guerra tra le Casate; quando furono smontate e portate via di contrabbando, non sappiamo quale Casa dell'alleanza abbia portato via ciascuna. Molto resta poco chiaro."`
+			choice
+				`	"Hai dei dati sulle navi drone?"`
+				`	"Meglio tornare, allora."`
+					goto end
+
+			`	"Buona idea, capitano," dice Saajret. Un'emozione difficile da identificare guizza sulla pelle mentre torna al terminale. Scarica alcuni dei dati biografici che stava consultando in una sfera di dati portatile e, una volta rintracciati i dati riguardanti le navi stesse, scarica anche quelli.`
+			`	Le navi drone stesse furono progettate da una Myiara di nome Resja, nota costruttrice navale della vecchia Casa Aqrabe. Inizialmente il vascello era progettato per equipaggi ridotti, ma dopo la morte di Resja - apparentemente per avvelenamento - fu riadattato con nuclei drone e sistemi di manutenzione robotici, dopo di che servì prima come retroguardia sacrificabile e infine come i sistemi di difesa persistenti che hai incontrato.`
+			`	I dati biografici vengono aggiunti al tuo diario.`
+
+			action
+				"Successors: Ghosts Saajret Forgiveness" -= 2
+				set "successors: ghosts resja biography"
+				log "People" "Resja" "Resja was a noted Myiaran engineer and shipwright who worked soon before the collapse of the empire of the Myiaran Predecessors, circa 1600. They are responsible for designing the originally-crewed drone ships that linger in Predecessor space, later retrofitted as self-guided craft after Resja's death by poisoning."
+
+			label end
+			`	Con Saajret soddisfatto che abbiate raccolto le informazioni che potevate, tornate entrambi alla <ship> fuori.`
+
+	on complete
+		dialog "Saajret ti ringrazia per il trasporto e ti chiede di incontrarlo in una delle sale di pianificazione dello spazioporto, dopo che avrà mostrato i suoi dati agli ufficiali militari di Kaatrij."
+
+	on fail
+		dialog phrase "successor ghosts story failed"
+
+
+
+mission "Successors: Ghosts 12"
+	name "Ritira il carico di chiavi di volta"
+	description "Viaggia verso <destination> per ritirare 16 tonnellate di chiavi di volta quantistiche modificate da Casa Aqrabe."
+	source "Qasa-Sija-Iri"
+	destination "Kasii-Cavasaa-Oa"
+	to offer
+		has "Successors: Ghosts 11: done"
+	on offer
+		conversation
+			`Sebbene Saajret non si presenti allo spazioporto, poco dopo ti viene consegnata una sfera di dati con un suo messaggio:`
+			`	'Le mie scuse per non incontrarti come convenuto. Kaatrij chiede che tu trasporti una quantità delle nuove chiavi di volta di Aqrabe da <destination> fino a qui per l'allestimento. Dovrebbero ammontare a sedici tonnellate in totale.`
+			`	Questo io stesso attesto come K- I- Saajret, di Somber Sejra.`
+				accept
+
+	on fail
+		dialog phrase "successor ghosts story failed"
+
+
+
+mission "Successors: Ghosts 13"
+	landing
+	name "Consegna il carico di chiavi di volta"
+	description "Riporta le <tons> di <cargo> su <destination>."
+	source "Kasii-Cavasaa-Oa"
+	destination "Qasa-Sija-Iri"
+	cargo "Harmonic Keystones" 16
+	to offer
+		has "Successors: Ghosts 12: done"
+	on offer
+		conversation
+			branch "prototypes only"
+				not "event: successors: ghosts keystones finished"
+
+			`Poco dopo lo sbarco ti incontra Tiliia, l'ingegnera di Aqrabe con cui hai già lavorato. Apre le braccia con cortesia verso di te mentre, dietro di lei, casse di chiavi di volta vengono portate e caricate poco dopo sulla <ship>.`
+			`	"Mi è parso giusto salutare di persona questa spedizione," dice Tiliia come presentazione. "Anche se mi fa piacere rivederti, capitano."`
+			choice
+				`	"Altrettanto."`
+					goto short
+				`	"Mi sorprende che lasciate andare le chiavi di volta tanto facilmente."`
+
+			`	Una certa ilarità sembra impadronirsi di Tiliia. "Ora ne abbiamo abbastanza per farlo. E immagino che Casa Kaatrij abbia offerto ad Aqrabe un compenso generoso. È già buono che commerci con noi, ora. Se solo potessi lavorare abbastanza in fretta da soddisfare quell'appetito di novità!"`
+
+			label short
+
+			`	Chiacchierate ancora qualche minuto mentre le chiavi di volta vengono caricate. Alla fine Tiliia ti dà un "arrivederci" prima di tornare al suo lavoro e lasciarti preparare la nave alla partenza.`
+				accept
+
+			label "prototypes only"
+			`Poco dopo lo sbarco ti incontra Tiliia, l'ingegnera di Aqrabe con cui hai lavorato di recente. Ti offre un'apertura delle braccia frettolosa e di pura formalità. "Sei qui per il carico di chiavi di volta, immagino?" dice in tono brusco. Annuisci in risposta. "Beh, Kaatrij avrà le sue sedici tonnellate, ma fagli sapere che sono solo prototipi. La politica si muove più in fretta del mio lavoro." Si volta per andarsene, chiaramente impaziente di tornarci, prima di fermarsi e offrirti un rapido "piacere di vederti, capitano", e poi ti lascia a sovrintendere al carico delle chiavi di volta.`
+				accept
+
+	on complete
+		dialog `Il fornitore della base prende possesso delle chiavi di volta e ti informa che Saajret vorrebbe vederti allo spazioporto stasera.`
+
+	on fail
+		dialog phrase "successor ghosts story failed"
+
+
+
+mission "Successors: Ghosts 14"
+	name "Distruggi le sonde sensore"
+	description "Casa Kaatrij teme che le sonde sensore nello spazio dei Predecessori siano usate contro di loro, e ti ha chiesto di distruggerle in Avasaa-Novaa, Eta Carinae, Khasola-Ryuit e Kasii-Sola."
+	passengers 1
+	source "Qasa-Sija-Iri"
+	waypoint "Khasola-Ryuit"
+	waypoint "Eta Carinae"
+	waypoint "Avasaa-Novaa"
+	to offer
+		has "Successors: Ghosts 13: done"
+	on offer
+		conversation
+			`Saajret ti incontra in un'altra delle sale panoramiche dello spazioporto, con una mappa stellare di metallo liquido stesa su un tavolo davanti a sé. Sembra mostrare aree dello spazio dei Predecessori. Ti saluta con un'apertura delle braccia mentre entri.`
+			`	"È la mia prossima missione?" chiedi, indicando la mappa stellare.`
+			`	Saajret canticchia pensieroso. "Sì," dice. "Una delle cose che facesti prima fu il collocamento di occhi scanner in tutto lo Shroud, su gradita richiesta di Seineq."`
+			choice
+				`	"Ricordo."`
+					goto direct
+				`	"Seineq potrebbe essere la Casa dietro l'attacco?"`
+
+			`	Gorghi di ilarità rosa erompono sulla pelle di Saajret. "Forse sì, forse no," dice. "Per ora l'obiettivo di Kaatrij è più diretto. Gli occhi prendono nota dei salti del tipo giusto, come quelli della tua nave e dei Quarg; ma il guizzare del nostro nemico si basa su qualcosa di più arcano che crediamo sfugga al loro sguardo. Perciò, come usa dire Kampa, sono per noi uno svantaggio tattico. Kaatrij chiede che tu e io, osservando, li distruggiamo."`
+				goto questions
+
+			label direct
+			`	"Kaatrij ora chiede che tu disfaccia questo, con la mia presenza come osservatore. Senza il controllo di Seineq su di essi, il nostro nemico potrebbe venire a sorvegliarli: un rischio che Kaatrij ripugna correre. Perché essi prendono nota dei salti del tipo giusto, come quelli della tua nave e di quelle dei Quarg. Ma il guizzare del nostro nemico si basa su qualcosa di più arcano che pensiamo sfugga al loro sguardo. Così non rivelano gli andirivieni dei colpevoli, ma te e forse le nostre stesse navi."`
+
+			label questions
+			choice
+				`	"Perché vieni con me?"`
+					to display
+						not "Successors: you"
+					goto you
+				`	"Che vuoi dire con 'qualcosa di più arcano'?"`
+					to display
+						not "Successors: uncannier"
+					goto uncannier
+				`	"Va bene, sono pronto a partire."`
+					accept
+
+			label uncannier
+			action
+				set "Successors: uncannier"
+			`	La pelle di Saajret ribolle di macchie blu scuro. "I Quarg dicono che hai già saputo degli sforzi dei nostri Predecessori per navigare oltre i confini fissati dai Drak. I motori costruiti per farlo sono quella cosa arcana di cui parlo."`
+				goto questions
+
+			label you
+			action
+				set "Successors: you"
+			`	Saajret canticchia. "La tua presenza qui è ancora nuova, capitano, e Kaatrij non ti manderebbe lontano senza qualcuno che ti tenga d'occhio. E quanto a me in particolare," dice, guardando la tua nave sotto di loro, "ho parlato con te più che con chiunque altro, e il mio ruolo di archivista mi rende esperto delle cose che possiamo trovare nei mondi colpiti dalla rovina dello Shroud."`
+				goto questions
+
+	on enter "Khasola-Ryuit"
+		dialog `Anche se ci vogliono diversi secondi perché gli scanner di puntamento della nave individuino la sonda scanner che hai schierato prima, alla fine la trovano. Basta un solo colpo per distruggerla.`
+
+	on enter "Eta Carinae"
+		dialog `Trovi lo scanner nascosto tra del gas nebulare particolarmente vivace. È facilmente eliminabile.`
+
+	on enter "Avasaa-Novaa"
+		dialog `Disfacendo il tuo duro lavoro precedente, individui e distruggi lo scanner in questo sistema.`
+
+	on waypoint
+		dialog `Con questo sistema ripulito, hai distrutto tutte le sonde sensore tranne quella in Kasii-Sola.`
+		mark "Kasii-Sola"
+		event "successors: ghosts ijra-ea decloak"
+		clear "Successors: you"
+		clear "Successors: uncannier"
+
+	to complete
+		has "successors: ghosts entered kasii-sola"
+
+	on fail
+		dialog phrase "successor ghosts story failed"
+
+
+
+mission "Successors: Ghosts 15"
+	transition
+	invisible
+	waypoint "Kasii-Sola"
+	destination "Qasa-Sija-Iri"
+	to offer
+		has "event: successors: ghosts ijra-ea decloak"
+	on enter "Kasii-Sola"
+		unmark "Kasii-Sola" "Successors: Ghosts 14"
+		set "successors: ghosts entered kasii-sola"
+		conversation
+			`Mentre entri nel sistema, i sensori della nave segnalano un oggetto che non c'era l'ultima volta: una stazione spaziale è comparsa in orbita solare ravvicinata. Ogni pochi secondi l'aggancio alla stazione si perde prima di essere rapidamente riacquisito.`
+			`	Lo sguardo di Saajret mentre esamina la stazione è di disperazione. "Miserabili!" dice. "Dovremo occuparcene al ritorno. Il nostro tempo si accorcia, capitano. Distruggiamo la quarta sonda in fretta."`
+			choice
+				`	"Riconosci quella stazione?"`
+				`	"Che cosa succede qui?"`
+			`	Saajret canticchia per un momento. "Va bene, va bene. È una delle nostre, una cittadella della vecchia Kaatrij di anni passati. Era occultata, naturalmente. Fino a ora, a quanto pare; e così siamo di nuovo superati in astuzia. Ecco perché dobbiamo fare presto, capitano; non devi indugiare."`
+				accept
+
+	on complete
+		conversation
+			`Mentre presenti la tua autorizzazione all'atterraggio, Saajret chiama diversi membri di Kaatrij a incontrarvi nella baia di attracco; quando atterri sono già lì ad aspettare, e strisciano verso Saajret per parlargli quasi subito. Il capo di questo gruppo ti congeda e Saajret, con un inchino di scuse, ti chiede di incontrarli allo spazioporto di <planet> tra un'ora.`
+
+
+
+mission "Successors: Saajret Remarks"
+	entering
+	invisible
+	source
+		not attributes "tangled shroud" "predecessor" "successor"
+	destination "Earth"
+	to offer
+		or
+			has "Successors: Ghosts 14: active"
+			has "Successors: Ghosts 15: active"
+	on offer
+		"Successors: Ghosts Saajret Openness" ++ # Increases as Saajret experiences new, interesting, and joyful things.
+		conversation
+			`Mentre la nebbia stigia del Tangled Shroud svanisce per rivelare lo spazio normale, Saajret emette un piccolo rumore di eccitazione, la pelle che danza di tinte brillanti. "È tanto che non accadeva," dice, "che uno dei nostri vedesse oltre l'orizzonte della nostra follia. Confesso che mi chiedo cosa sia diventato il resto della galassia dopo millecinquecento anni di solitudine." Scuote la testa, le regioni di colore che si spargono come acqua. "Eppure il nostro compito resta. Forse in qualche tempo futuro..."`
+			choice
+				`	"Ci sono più cose in cielo e in terra, Saajret, di quante ne sogni la tua filosofia."`
+				`	"La galassia non è tutto quello che pensi, almeno per la mia esperienza."`
+			`	Canticchiano, a lungo e lentamente. "Forse," dicono.`
+				decline
+
+
+
+mission "Successors: Ghosts 16"
+	name "Indaga sulla stazione misteriosa"
+	description "Torna alla stazione misteriosa in <system> con Saajret per indagare su cosa le è successo."
+	source "Qasa-Sija-Iri"
+	destination "Ijra-Ea, Shimmering Veil"
+	to offer
+		has "Successors: Ghosts 15: done"
+	npc save
+		government `House Kaatrij`
+		personality launching heroic escort
+		ship "Vujlet-Usaqri (Jump)" "o-Sapi, Brilliant Voice"
+	on offer
+		conversation
+			`Saajret ti incontra in una piccola stanza a circa quindici gradi lungo l'anello della struttura occultata. È circolare, con una pozza poco profonda al centro; qualcosa di simile a muschio si arrampica sui muri e un paio di piccole piante fiorite spuntano i loro capi colorati sotto i piedi.`
+			`	"La mia gratitudine per il tuo aiuto finora," dice Saajret. "Spero che tu abbia trovato abbastanza confortevole il nostro piccolo spazio condiviso qui."`
+			choice
+				`	"L'ho fatto."`
+				`	"Qual è la situazione con quella stazione?"`
+			`	Saajret annuisce. "Mi sono consultato con Kaatrij e con i nostri patroni Quarg e, per una volta, siamo tutti d'accordo. Ci restano due compiti, con te incluso se accetti: primo, dobbiamo valutare come la nostra cittadella sia stata saccheggiata. È ben difesa, e visto che il suo mantello non è stato del tutto disattivato, la sua sicurezza deve restare almeno in parte operativa. In questo potresti avere un ruolo vitale, sempre con la tua nave senza impedimenti."`
+			label "questions 1"
+			choice
+				`	"'Sicurezza?' Non so se mi piace come suona."`
+					to display
+						not "Successors: security"
+					goto security
+				`	"Come ha potuto essere rivelata, in primo luogo?"`
+					to display
+						not "Successors: revealed"
+					goto revealed
+				`	"Qual è il secondo compito?"`
+					goto second
+
+			label security
+			action
+				set "Successors: security"
+			`	Saajret stuzzica un fiore sul pavimento con la punta di uno dei suoi bracci. "Sono stato fornito di chiavi per eludere le difese della stazione stessa. Quelle che ci minacciano di più sono quelle indipendenti; hai già incontrato le navi drone guardiane? Con la cittadella rivelata, senza dubbio una vi ha già preso dimora."`
+				goto "questions 1"
+
+			label revealed
+			action
+				set "Successors: revealed"
+			`	"Potrebbe essere la domanda più pertinente che ci sta davanti ora, capitano." Onde multicolori si propagano sulla pelle di Saajret. "La posizione della nostra cittadella, mi dicono ora, era nota a pochissimi dentro Kaatrij e a nessuno fuori. Il che suggerisce ciò che sospetto da sempre: uno dentro Kaatrij ha tradito la Casa, ha venduto i nostri segreti a un'altra."`
+				goto "questions 1"
+
+			label second
+			action
+				clear "Successors: security"
+				clear "Successors: revealed"
+			`	"In secondo luogo," dice Saajret, "è chiaro che dobbiamo porre fine a questo svolazzare nell'ombra del nostro nemico. Mentre tu e io violiamo la cittadella, Kaatrij e i Quarg qui preparano una trappola per catturare una nave da guerra di famiglia. Distruggere un vascello simile sarebbe una grande ferita per il nostro aggressore e, se saremo fortunati, ci darebbe qualche misura della sua identità.`
+			choice
+				`	"Come pensate di catturarla, se è occultata?"`
+				`	"Va bene, e adesso?"`
+					goto next
+			`	Il guazzabuglio di colori sul viso di Saajret si ricompone in un'unica tonalità di soddisfazione. "I Quarg, pare, hanno certi modi per scoprire simili vascelli nascosti. Un loro vecchio nemico usò una tattica simile, mi dicono. Convincerli a condividere qualcosa è un'impresa lunga quanto una vita per il più persuasivo dei diplomatici, ma in questo caso potrebbero aiutarci per quietare il motore che squarcia lo spazio di quella nave. Per questo," dice, "sono quanto mai desiderosi."`
+
+			label next
+			`	Una nebbiolina fine viene emessa da bocche sul soffitto, che annaffia le piante e si raccoglie in piccole sfere sui tuoi vestiti. "Dovremmo prepararci al viaggio alla cittadella. Attrezza la nave come desideri, poi partiamo."`
+				accept
+
+	on complete
+		conversation
+			`Mentre ti avvicini a un porto di attracco centrale della cittadella, allarmi risuonano per un momento su tutto il ponte della <ship> mentre vengono rilevati numerosi agganci d'arma. Un attimo dopo cessano e Saajret ti chiama via radio dalla sua nave che è sicuro atterrare, la forma del Vujlet che sparisce nella bocca larga della stazione.`
+			`	L'interno è davvero cavernoso; la volta circolare del nucleo della stazione forma un cielo artificiale, e la piazzola d'atterraggio della tua nave è un rettangolo grande come un francobollo sul suo perimetro. Saajret esce dalla sua nave atterrata e ti incontra con un paio di soldati Kaatrij; ne riconosci uno, che aveva accompagnato Kampa quando ti hanno interrogato.`
+			`	"Ci ho aggiunti come alleati nei registri di sicurezza della stazione," dice Saajret. "Dovrebbe permetterci l'accesso ai livelli inferiori." Controlla un data-pad che tira fuori da una delle tasche, passando dallo schermo metallico cangiante alla disposizione della baia di attracco. Alla fine indica una delle diverse aperture circolari sul pavimento. Mentre ti avvicini, una grande capsula ascensore emerge da essa e le sue porte si aprono in attesa.`
+			choice
+				`	"Che c'è con i Myiara e queste costruzioni enormi?"`
+				`	"Quanto in basso andiamo?"`
+					goto down
+			`	Saajret è punteggiato di ilarità e canticchia. "Myiara?" dice. "Sono stati i Quarg a dirtelo, senza dubbio. Ah, ma per rispondere alla tua domanda: dopo la scoperta dei mantelli, gli avamposti di Kaatrij diventarono più piccoli e più indipendenti. Questo era semplicemente più antico, e a quei tempi non era una sfida rivestire di metallo stellare anche una cittadella come questa. Così anche piccoli generatori potevano occultarla tutta." Strofina le punte di due dei suoi bracci su una sfera di dati incassata nella capsula dell'ascensore.`
+			choice
+				`	"Quanto in basso andiamo?"`
+
+			label down
+			`	"Dovremo controllare il nucleo dei sistemi e la volta, almeno," dice Saajret. "Molto in basso, di sicuro."`
+			`	L'ascensore vi porta giù tutti e quattro per diversi minuti; ogni tanto una finestra verso l'esterno mostra lampi individuali del sole che tramonta mentre la stazione continua la sua orbita. Si ferma infine su una piattaforma che si affaccia su uno spazio vasto e di altezza vertiginosa, dove pilastri si innalzano per quella che sembra chilometri sotto di voi e terminano chilometri sopra. Miriadi di container cargo sono attaccati ai loro fianchi, e tra essi riposano otto astronavi scintillanti. Alcuni dei disegni sono familiari, come versioni lucidate di quelli che hai visto nello spazio dei Successori; altri ti sono del tutto nuovi.`
+			`	Saajret ordina ai suoi due soldati di montare un trio di piccoli pali sulla superficie della piattaforma. Poi chiama via radio la loro nave e i pali si accendono, proiettando fasci di scansione laser appena visibili in tutto lo spazio vasto. Dopo un paio di secondi mormorano qualcosa tra sé e sé e ordinano ai soldati di imballare gli scanner.`
+			choice
+				`	"Che cos'è?"`
+				`	"Tutto qui è dove dovrebbe essere?"`
+					goto everything
+			`	"La fortuna di Kaatrij splende oggi," dicono. "Nulla è fuori posto qui; tutto è come era quando Kaatrij lo lasciò molto tempo fa."`
+				goto core
+
+			label everything
+			`	"Per fortuna," dicono, "lo è. Nulla è fuori posto; tutto è come era quando Kaatrij lo lasciò molto tempo fa."`
+			label core
+			`	Tornate tutti all'ascensore, che ricomincia a calarvi più a fondo nella cittadella. Cominci a sentire qualcosa che ti pizzica nell'orecchio, ma sparisce appena cominciato. Le vedute dell'esterno cessano e il pozzo dell'ascensore sembra farsi più scuro e più rosso mentre viaggiate più in profondità. Alla fine raggiunge un'altra piattaforma, ma la porta dell'ascensore rifiuta di aprirsi. Saajret inserisce alcuni comandi sui controlli dell'ascensore, e il motivo si rivela: mentre la porta dell'ascensore diventa trasparente, vedi che il corridoio dietro di essa è stato perforato e squarciato dall'esterno. In lontananza vedi una porta a tenuta stagna che conduce a una costruzione corazzata e sferica, ma anche quella è stata aperta con un'esplosione.`
+			`	Saajret mormora cupo e ordina di nuovo ai soldati di montare gli scanner, e di nuovo questi proiettano i loro fasci, ora attraverso la porta trasparente e nel segmento violato. Un'onda di nero si increspa sulla pelle di Saajret. "Tutti i nodi di occultamento della stazione tranne uno sono stati rimossi. Così strano..." dicono, "aver rubato questi e aver lasciato la volta intatta." L'onda passa, lasciando solo incolore dietro di sé. "Dobbiamo portare questa notizia in fretta. Torniamo."`
+			`	Improvvisamente, il sistema di comunicazione della stazione prende vita con uno scoppio. Ne emerge una serie rapida di clic intrecciati, che presto si spostano e si deformano nelle tue orecchie mentre il dispositivo di traduzione comincia a interpretarli. "Intruso!" urla qualcosa, e ti senti girare la testa. "Saccheggiatore! Verme invasore!"`
+			choice
+				`	(Stacca il dispositivo di traduzione.)`
+				`	(Prova a bloccare i suoni.)`
+			`	Appena ti muovi, qualcosa ti colpisce l'orecchio interno e crolli a terra. La voce che urla si ferma, e un'altra prende il suo posto, meno acuta ma non meno dolorosa. "Riconosciamo la tua specie," dice. "E anche l'altro con te. Saajret?" Al pronunciare il loro nome, Saajret si china su di te, le sue parole incomprensibili. La voce cambia di nuovo. "Ingannatore!" urla. "Tu che hai saccheggiato bestie e ossa da dove dovrebbero giacere per sempre!"`
+			choice
+				`	"Sto cercando di fermare i ladri!"`
+				`	"Come fai a essere nella mia testa?!"`
+				`	"E Saajret?"`
+			`	La rabbia della voce artificiale si raffredda. "Irrilevante," grida, e mentre qualcos'altro comincia a intrecciarsi al suono, qualcosa di acuto e doloroso, arriva una frase finale e quieta: "Mi sei mancato," dice la voce. "Mi sei mancato."`
+			`	E all'improvviso si ferma: il dolore, la voce. La pressione svanisce dalla tua testa e Saajret ti guarda dal basso, il dispositivo di traduzione strappato dal tuo corpo e tenuto in un braccio. Ti aiutano a rialzarti e te lo restituiscono; tu lo riponi in tasca, disattivato.`
+			`	Saajret si consulta per un momento con le guardie, le loro parole un guazzabuglio di suoni incomprensibili. Una di loro interagisce con i comandi dell'ascensore e la cabina ricomincia a salire, il sistema di comunicazione della stazione che strilla invano. Saajret viene a parlarti, pungendoti piano il petto con la punta di un braccio; dicono qualcosa che suona un po' come il tuo nome. Improvvisamente l'ascensore è scosso da un impatto dall'esterno, e poco dopo ne seguono decine. Venite depositati di nuovo nella baia d'atterraggio proprio mentre intravedi una nave in lontananza che spara sulla stazione. Corri verso la tua nave e ti prepari a fuggire o a combattere.`
+				launch
+
+	on fail
+		dialog phrase "successor ghosts story failed"
+
+
+
+mission "Successors: Ghosts 17"
+	landing
+	name "Fuggi nello spazio dei Successori"
+	description "Sfuggi alla nave drone e torna su <destination>."
+	source "Ijra-Ea, Shimmering Veil"
+	destination "Qasa-Sija-Iri"
+	to offer
+		has "Successors: Ghosts 16: done"
+	npc evade
+		ship "Resja, of the Nine Eyes" "Resja, Fury 16-11"
+		government "Solitude Enforcer"
+		personality heroic nemesis unconstrained vindictive launching
+		on kill
+			set "Successors: Ghosts Resja transmission"
+			dialog "Mentre la nave drone esplode, trasmette alcuni dati al tuo vascello. Non è possibile decifrarli in questo momento."
+	npc save
+		government `House Kaatrij`
+		personality launching coward
+		ship "Vujlet-Usaqri (Jump)" "o-Sapi, Brilliant Voice"
+	on fail
+		dialog phrase "successor ghosts story failed"
+
+
+
+mission "Successors: Ghosts Scout Escorts"
+	invisible
+	entering
+	source
+		system "Oublaa-Khora"
+	destination "Qasa-Sija-Iri"
+	to offer
+		has "Successors: Ghosts 17: active"
+	npc save
+		government "House Kaatrij"
+		personality waiting heroic
+		ship "Vujlet-Usaqri (Keystone)" "Tili, Open Arms"
+		ship "Vujlet-Usaqri (Keystone)" "Luatet, Gentle Song"
+
+
+
+mission "Successors: Ghosts 18"
+	landing
+	name "Installa i rilevatori di mantelli"
+	description "Installa i rilevatori di mantelli Quarg dall'altra parte del cunicolo dei Successori prima di atterrare su <destination> per tendere un'imboscata alla nave da guerra di famiglia."
+	source "Qasa-Sija-Iri"
+	destination "Myiara-Aret-Iir"
+	cargo "Cloak detection node" 10
+	to offer
+		has "Successors: Ghosts 17: done"
+	npc save
+		government "House Kaatrij"
+		personality launching heroic escort
+		ship "Vujlet-Usaqri (Keystone)" "Tili, Open Arms"
+		ship "Vujlet-Usaqri (Keystone)" "Jas, the Trees"
+		ship "Vujlet-Usaqri (Keystone)" "Siij, of Able Ej"
+		ship "Vujlet-Usaqri (Keystone)" "Luatet, Gentle Song"
+		ship "Vujlet-Usaqri (Keystone)" "Ruu, of Votive Naaq"
+	blocked "Ti serve una nave con almeno 10 unità di spazio cargo libero per iniziare questa missione."
+	on offer
+		conversation
+			branch deferred
+				has "Successors: Ghosts 18: deferred"
+
+			`Saajret ti incontra poco dopo lo sbarco, la loro voce di nuovo tradotta dal tuo dispositivo di traduzione ora riattivato. "Non ho tempo di consultarmi con te subito," dicono, "ma unisciti a me appena avrò aggiornato Kaatrij."`
+			choice
+				`	"Prima che tu vada! Grazie."`
+				`	(Aspetta.)`
+					goto briefing
+
+			action
+				"Successors: Ghosts Saajret Openness" ++
+			`	Il blu freddo della soddisfazione si diffonde sulla pelle di Saajret. "Sei il benvenuto, capitano," dicono, e ti lasciano ad aspettare.`
+
+			label briefing
+			`	Mentre aspetti, noti che le due navi esploratrici che ti hanno raggiunto nel sistema Oublaa-Khora sono atterrate lì vicino. Altri tre Vujleten-Usaqri si uniscono presto a loro, formando una piccola flotta dentro una delle baie di hangar più grandi dello spazioporto.`
+			`	Dopo un po', uno dei membri di Casa Kaatrij viene a incontrarti e ti guida alla stessa sala conferenze che ti era stata mostrata alla prima visita alla base. Dentro c'è Kampa, ora vestito con un'uniforme opulenta, insieme a Saajret e a diversi ufficiali militari di Kaatrij.`
+			`	"Capitano <last>," dice Kampa. "Con il rapporto di Saajret sul saccheggio della cittadella di Kasii-Sola, non abbiamo tempo da sprecare." Una pozza metallica al centro della stanza schizza e prende la forma di una nave da guerra, più affilata ed elegante di qualsiasi altra tu abbia visto usare ai Successori.`
+			`	"Un'altra Casa," dicono, "ha trascinato una nave stellare di famiglia fuori dal suo reliquiario e l'ha schierata contro di noi, e ora l'ha usata per rubare non meno di cinque mantelli separabili. Finché un vascello simile vola libero, Kaatrij non conoscerà pace. Per catturarlo, i Quarg ci danno in prestito alcuni loro strumenti: rilevatori da avvolgere intorno alla bocca del cunicolo e prendere la nostra preda la prossima volta che cercherà di passare.`
+			`	Il nostro piano è un'imboscata: una flotta di nostri vascelli occultati la aspetterà e la intercetterà mentre è colpita. Il capitano alieno si unirà a loro, se gli farà piacere."`
+			label questions
+			choice
+				`	"La mia nave attuale non è in grado di occultarsi."`
+					to display
+						not "flagship attribute: cloak"
+					goto "no cloak"
+				`	"E se la flotta viene messa fuori uso?"`
+					to display
+						not "Successors: lose"
+					goto lose
+				`	"Che tipo di combattimento devo aspettarmi?"`
+					to display
+						not "Successors: expect"
+					goto expect
+				`	"Va bene, sono pronto."`
+					to display
+						has "flagship attribute: cloak"
+					goto end
+			label lose
+			action
+				set "Successors: lose"
+			`	Kampa annuisce. "Abbiamo un secondo piano, con equipaggi già pronti. Ma non è tua responsabilità conoscerlo."`
+				goto questions
+
+			label expect
+			action
+				set "Successors: expect"
+			`	Ora parla Saajret. "È un vero incrociatore da battaglia dell'epoca dei nostri Predecessori," dice. "Le nostre navi da guerra, ai loro tempi, erano seconde solo a quelle dei Quarg; non si può dubitare che resisterebbe con facilità a una flotta di vascelli minori."`
+				goto questions
+
+			label end
+			`	Parla Saajret. "Mi unirò a te, <last>, prima della partenza. Ti servirà una guida per il mondo dove intendiamo pianificare l'imboscata."`
+				accept
+
+			label "no cloak"
+			action
+				set "Successors: Ghosts 18: deferred"
+			`	Kampa ci riflette un momento. "Il beneficio della tua compagnia supera la perdita di un piccolo ritardo," dice. "Possiamo permetterci di aspettare che tu procuri un vascello simile, se questo rende possibile l'imboscata. Agisci in fretta, se vuoi aiutarci."`
+				defer
+
+			label deferred
+			branch "still no cloak"
+				not "flagship attribute: cloak"
+
+			`	Dopo esserti procurato un vascello ammiraglia capace di occultarsi, vieni subito indirizzato a una sala briefing nella base dove Kampa ripete il piano: ti unirai a una flotta di navi di Casa Kaatrij per installare i rilevatori di mantelli Quarg intorno al cunicolo, prima di appostarti su <destination> per tendere l'imboscata alla nave da guerra di famiglia che ha attaccato Kaatrij.`
+				accept
+
+			label "still no cloak"
+			`	Senza un vascello ammiraglia capace di occultarsi, non puoi unirti a Casa Kaatrij nella loro imboscata.`
+				defer
+
+
+	on enter "Oublaa-Khora"
+		dialog `Mentre esci dal cunicolo, fai scattare il rilascio del rilevatore di mantelli dalla stiva della nave. L'orbe metallico si posiziona al bordo del cunicolo prima di sparire del tutto alla vista mentre la sua armatura occultante si attiva. Apparentemente soddisfatto, Saajret ti indica di atterrare sul pianeta vicino.`
+
+	on complete
+		conversation
+			`Una volta che il resto della flotta di Casa Kaatrij ha installato i propri rilevatori di mantelli, la flotta di Vujleten ti segue nell'atmosfera di <planet>, accovacciandosi all'ombra di un'antica torre di controllo meteorologico per ripararsi dalla polvere. Diversi Successori all'interno escono per ispezionare il funzionamento della torre, e tornano dopo qualche minuto. Tirano fuori dalle navi lunghi tubi del carburante e li collegano alle prese sul fianco della torre; uno dopo l'altro, lo stormo di Vujleten ondeggia e poi sparisce mentre i loro mantelli si attivano.`
+			`	Mentre uno dell'equipaggio delle navi Kaatrij collega il serbatoio della <ship> alle riserve della torre, Saajret scivola sul ponte e ti saluta. "Ora, a quanto pare, aspettiamo," dicono. Motivi di puntini neri e bianchi danzano sul loro viso, turbinando gli uni intorno agli altri e ogni tanto spruzzando via.`
+			choice
+				`	"Che cosa ti fa pensare che torneranno da questa parte?"`
+					goto retreat
+				`	"Quanto potremo restare qui?"`
+			`	Saajret inclina la testa di lato mentre i colori turbinanti rallentano. "Qualche giorno, al massimo. Il carburante della torre è in gran parte finito da tempo, e ora ne beviamo solo le ultime fecce. Credo però che non ce ne sarà bisogno," dicono. "Poco dopo la partenza, Kaatrij ha ritirato le sue flotte da Aaura-Kaska, facendole girare intorno al nostro nucleo. È un invito al cunicolo, crediamo: meno scansioni, meno correzioni alla propria rotta."`
+				goto trap
+
+			label retreat
+			`	La pelle di Saajret scintilla di soddisfazione. "Poco dopo la partenza, Kaatrij ha ritirato le sue flotte da Aaura-Kaska, facendole girare intorno al nostro nucleo. È un invito al cunicolo, crediamo: meno scansioni, meno correzioni alla propria rotta. Apriamo noi il cancello, e ora qualcosa di malvagio viene da questa parte."`
+
+			label trap
+			`	"Non penseranno che possa essere una trappola?"`
+			`	"Forse." Fuori, una raffica di vento solleva abbastanza polvere da lasciare piccoli lampi blu contro gli scudi di uno dei Vuljeten occultati. "Siamo diventati le nostre stesse prede, però: isolati dai nostri alleati, non più temibili per numero. La sorpresa," dicono, "vale solo fino a un certo punto."`
+			`	Saajret si congeda a quel punto, offrendoti un breve inchino e un'apertura delle braccia. Non resta altro da fare che aspettare, e tu e il tuo equipaggio lavorate per preparare la <ship> alla battaglia imminente.`
+			choice
+				`	(Aspetta.)`
+			`	Al mattino presto del giorno seguente, un allarme risuona sul ponte della <ship>. I sensori rilevano l'annichilimento di innumerevoli antiprotoni contro gli scudi di una nave occultata che emerge dal cunicolo e, poco dopo, un nuovo contatto lampeggia in esistenza mentre il suo mantello cede. Le radio tra la tua nave e quelle di Kaatrij si animano mentre tutti staccate i cavi del carburante e decollate.`
+				launch
+
+	on fail
+		dialog phrase "successor ghosts story failed"
+
+
+
+mission "Successors: Ghosts 19"
+	landing
+	name "Sconfiggi la nave da guerra di famiglia"
+	description "Distruggi la nave da guerra di famiglia dei Myiara con l'aiuto di Casa Kaatrij, prima di tornare alla loro base su <destination> per il debriefing."
+	source "Myiara-Aret-Iir"
+	destination "Qasa-Sija-Iri"
+	to offer
+		has "Successors: Ghosts 18: done"
+	npc kill
+		government `High Houses (Unknown)`
+		personality waiting heroic target unconstrained
+		ship "Valkkyiara-Khorasaqra" "Ijahti-Khora"
+		on kill
+			set "Successors: Ghosts killed heirloom"
+			dialog "Con la nave da guerra distrutta, dovresti tornare a Qasa-Sija-Iri per il debriefing."
+	npc
+		government "House Kaatrij"
+		personality launching heroic escort
+		ship "Vujlet-Usaqri (Keystone)" "Tili, Open Arms"
+		ship "Vujlet-Usaqri (Keystone)" "Jas, the Trees"
+		ship "Vujlet-Usaqri (Keystone)" "Siij, of Able Ej"
+		ship "Vujlet-Usaqri (Keystone)" "Luatet, Gentle Song"
+		ship "Vujlet-Usaqri (Keystone)" "Ruu, of Votive Naaq"
+		on kill
+			set "Successors: Ghosts support fleet died"
+	on offer
+		event "successors: ghosts abandoned kaatrij" 3
+	on complete
+		payment 10000000
+		log "Hai combattuto e distrutto una nave da guerra di famiglia delle Casate Alte con il sostegno di Casa Kaatrij, probabilmente la stessa nave che ha attaccato la loro base su Qasa-Sija-Iri."
+		conversation
+			`Mentre la <ship> torna alla base di Kaatrij, viene scansionata con più scrupolo del solito, le coilgun planetarie che la seguono con attenzione finché gli scanner non si dichiarano soddisfatti. Il portale nella sabbia si apre su una scena curiosamente silenziosa; l'intera struttura sembra in attesa di ciò che verrà dopo. Appena il carrello tocca terra, tutto scatta in movimento.`
+			`	Saajret scivola via quasi subito, offrendo solo una frettolosa promessa di tornare e una tinta di soddisfazione mal celata. Non devi aspettare molto, però; quando i bracci di riparazione automatici dello spazioporto si sono abbassati per valutare i danni di battaglia della <ship>, vedi Saajret tornare, con Kampa e una manciata di ufficiali Kaatrij al fianco. Nessuno dei Quarg della base si unisce a loro, ma ne noti uno che osserva la scena da una delle stanze che si affacciano sullo spazioporto.`
+			`	Kampa parla per primo mentre ti portano via dalla nave verso una zona più appartata del porto. "È cosa buona che tu abbia vinto," dice, condividendo la soddisfazione di Saajret. "Una battaglia tesa, immagino?"`
+			choice
+				`	"Infatti. Siamo stati fortunati che fosse una nave sola."`
+					goto next
+				`	"Lo è stata. Mi dispiace che nessuno dei tuoi equipaggi sia sopravvissuto."`
+					to display
+						has "Successors: Ghosts support fleet died"
+					goto mournful
+				`	"Ho combattuto contro di peggio."`
+
+			`	"Davvero?" dice Kampa. "Più tardi dovrai raccontarci di più su questo."`
+
+			label mournful
+			`	"Lo siamo anche noi," dice Kampa. "Ma i loro nomi saranno onorati per il loro coraggio e la loro dedizione."`
+			label next
+			`	Estraggono una sfera di dati dall'abito e te la offrono. Mentre la prendi, continuano: "Mi godrò il debriefing con te dopo la nostra conversazione qui, ma per ora Kaatrij ha ritenuto opportuno offrirti una ricompensa per il tuo abile servizio. Dato che non hai ancora ricevuto la possibilità di acquistare le nostre tecnologie, oggi è puramente monetaria. La sfera autorizza il trasferimento di <payment> a te."`
+			choice
+				`	"Ci ha avvicinati a sapere quale Casa ha commesso gli attacchi?"`
+				`	"E a proposito di acquistare la vostra tecnologia, visto che l'hai menzionato?"`
+					goto technology
+				`	"Grazie. È molto generoso."`
+					goto generous
+
+			`	Kampa annuisce. "Lo farà, se la fortuna ci assiste. Abbiamo inviato flotte a esaminare i rottami lasciati dopo lo scontro. Poche possibilità che resti qualcosa che identifichi chiaramente, ma i rottami potrebbero dare un contesto prezioso alle nostre informazioni."`
+			`	Saajret interviene. "Anche quel matrimonio tra Myurej e Chydiyi ci offre l'occasione di osservare le altre Casate sulla scia di questo. Una di loro è ora ferita, e vedremo se si vedrà."`
+			`	"Un simile raduno soddisfa anche le condizioni del trattato in base alle quali possiamo offrirti la nostra licenza," dice Kampa. "In breve, lo aspettiamo con impazienza."`
+				goto "what now"
+
+			label technology
+			`	Qui Saajret annuisce. "Quel matrimonio tra Myurej e Chydiyi avverrà probabilmente presto," dice. "Il tuo periodo di servizio occultato a Kaatrij è giunto al termine; con tutte le Casate presenti, è una buona occasione per presentarti la nostra licenza."`
+			`	"Hai fatto servizio anche per altre Casate," dice Kampa, "quindi dovrebbe essere senza molta resistenza."`
+				goto "what now"
+
+			label generous
+			`	Kampa si inchina e Saajret interviene. "Quel matrimonio tra Myurej e Chydiyi avverrà probabilmente presto," dicono. "E con esso la fine del tuo servizio occultato a Kaatrij. È un buon momento per presentarti la nostra licenza, per quanto ti possa interessare."`
+			`	"Hai fatto servizio anche per altre Casate," dice Kampa, "quindi dovrebbe essere senza molta resistenza."`
+
+			label "what now"
+			choice
+				`	"E adesso?"`
+				`	"Hai qualcos'altro per me?"`
+
+			branch "wedding preparations"
+				not "successors: ghosts dealt with myurej"
+
+			`	"Solo aspettare," dice Kampa. "Kaatrij deve ora determinare la sua prossima mossa."`
+				goto end
+
+			label "wedding preparations"
+
+			`	"A proposito delle nozze imminenti," dice Kampa. "Myurej continua a piagnucolare per certi suoi doni mancanti. Se ti servisse guadagnarti un invito, sarebbe una questione da seguire."`
+
+			label end
+
+			`	Detto questo, Kampa si inchina e se ne va. "Immagino che tu voglia sovrintendere alle riparazioni della tua nave," dice Saajret, "o magari semplicemente goderti un po' di riposo." La loro pelle si punteggia di ilarità. "Addio, capitano. Spero di rivederti presto."`
+
+	on fail
+		dialog phrase "successor ghosts story failed"
+
+
+
+mission "Successors: Ghosts Salvage Fleet"
+	invisible
+	transition
+	deadline 20
+	to complete
+		never
+	to offer
+		has "Successors: Ghosts 19: done"
+	destination "Earth"
+	npc
+		ship "Seiitej (Expeditionary)" "Diri, Defiant Nnesa"
+		ship "Seiitej (Expeditionary)" "Ojet, of Quiet Maaj"
+		ship "Vujlet-Usaqri (Keystone)" "o-Sapi, Brilliant Voice"
+		ship "Vujlet-Usaqri (Keystone)" "Ataa, Elegant Rail"
+		system "Oublaa-Khora"
+		personality staying waiting surveillance uninterested
+		government "House Kaatrij"
+
+# Intermission
+
+mission "Successors: Ghosts 20"
+	landing
+	name "Vai alle nozze degli eredi"
+	description "Il matrimonio tanto atteso tra gli eredi di Casa Myurej e Chydiyi avrà luogo su <destination> entro <date>."
+	source
+		attributes "successor"
+		not attributes "uninhabited"
+	to offer
+		random < 33
+		has "Successors: Ghosts 19: done"
+		has "successors: ghosts dealt with myurej"
+	destination "Iyra-Ijasa-Iret"
+	deadline 10
+	on offer
+		conversation
+			`Poco dopo l'atterraggio, ti viene consegnata una sfera di dati. Si accende appena la tocchi, mostrando il messaggio:`
+			`	Onorato alieno che si è guadagnato un'udienza alle nozze dorate tra Myurej e Chydiyi, desideriamo informarti che la data è fissata. La tua presenza sarà cordialmente richiesta su <planet> entro <date>.`
+			`	Questo è attestato per conto di Myurej M- Khiajsore, onorato erede di Casa Myurej.`
+				accept
+	on complete
+		log "Hai partecipato al matrimonio tra gli eredi delle Casate Chydiyi e Myurej. Ti è stata presentata una licenza per acquistare tecnologia avanzata dei Successori."
+		set "license: High Houses"
+		event "successors: ghosts intermission timer" 40
+		event "successors: ghosts kaatrij expansion"
+		conversation
+			branch waterlining
+				has "flagship attribute: waterlining"
+			`Ti vengono date indicazioni per una delle piazzole d'atterraggio in acque basse di uno spazioporto secondario di <planet>, da cui prendi di nuovo un lungo ascensore giù nel profondo dell'oceano. Fuori dalla finestra danzano i "Nastri di Iret", enormi pennacchi di colore che salgono dall'abisso, e diventano solo più intensi più scendi.`
+				goto complex
+
+			label waterlining
+			`Il controllo del traffico ti dà le coordinate del complesso in acque profonde dove si terrà il matrimonio, e tuffi la <ship> nell'oceano del pianeta, lo scafo avvolto da uno dei "Nastri di Iret", enormi e colorati. Più scendi, più intenso diventa il pennacchio bioluminescente, finché non sembra quasi che tu stia viaggiando attraverso una nebulosa nello spazio invece che in una fioritura subacquea.`
+			`	Raggiungi il complesso e vi ti agganci, sbarcando da una camera di equilibrio e prendendo un ascensore per l'ultimo breve tratto.`
+
+			label complex
+			`	Entri presto in una stanza simile a quella che avevi visitato l'ultima volta che sei stato qui, anche se questa è ancora più grande e più riccamente decorata, le pareti un tripudio di colore e forma tanto ostentato quanto impressionante. Una nebbia leggera esce da aperture sul soffitto a volta e lunghi fili dorati scendono verso il basso, attorcigliandosi intorno a certi Successori e infine anche a te.`
+			`	Il filo esamina il tuo viso e i tuoi vestiti per un breve tratto prima di parlare con una voce morbida e sintetizzata. "Salve, capitano <first> <last>! Sei autorizzato ad assistere alla cerimonia di questo pomeriggio e, a seguire, a un incontro speciale delle Casate qui riunite." La voce continua per un po', fornendoti informazioni su quali stanze visitare e su come trovarti la strada.`
+			`	Poco dopo scorci Khiajsore, l'erede di Myurej con cui hai parlato prima. Anche loro ti notano e strisciano verso di te, allontanando uno dei fili con un braccio ingioiellato. "Capitano, capitano, delizioso capitano," dicono. "Che piacere che tu abbia accettato il nostro invito."`
+			choice
+				`	"Ho apprezzato che me l'abbiate esteso."`
+					goto appreciate
+				`	"È una struttura davvero impressionante, la vostra."`
+			`	Canticchiano. "Una bellezza simile guadagna l'invidia di molti; il naturale e l'artificiale intrecciati."`
+				goto khiajsore
+
+			label appreciate
+			`	"Per una figura così unica e industriosa, sarebbe stato uno sgarbo insopportabile non farlo!"`
+
+			label khiajsore
+			`	Fanno tintinnare un po' uno dei loro bracci, oro rosso e pietre scintillanti che oscillano nell'aria. "Stavo appunto parlando di te, in verità, con un delegato di Casa Seineq qui presente, che ha confermato ciò che avevo sentito, cioè che sei stato utile anche a loro! Penso," dicono, "che tu abbia dato un buon esempio per gli alieni futuri: benevolo, equo, umile. Anche se sento che ora Kaatrij ha ottenuto il tuo vassallaggio? Un dono per loro, senza dubbio." Il loro viso scintilla di colore, gli occhi accesi di un interesse furtivo. "Anche se spero nei nostri sforzi, Myurej si è guadagnata una qualche misura del tuo favore."`
+			choice
+				`	"Sono felice di aiutare, purché non confligga con le mie altre responsabilità."`
+				`	"Non sono sicuro che mi piaccia dove sta andando questo discorso."`
+			`	Khiajsore ride. "Certo, certo," dicono. "Ci hai già aiutato molto. Ora scusami."`
+			`	Se ne vanno e due membri della folla si staccano per seguirli, e noti che portano piccole armi legate ai loro abiti. Uno dei fili dorati torna da te, informandoti che la cerimonia nuziale comincerà presto.`
+			choice
+				`	(Partecipa al matrimonio.)`
+				`	(Aspetta fino all'incontro successivo.)`
+					goto skipped
+			`	Mentre la maggior parte dei Successori attende fuori dall'ingresso di quella che deve essere una stanza enorme, tu vieni invece guidato a una porta defilata e appartata, sorvegliata da due soldati Successori. Nessuno dei due reagisce al tuo tentativo di passare, e mentre varchi la porta diventa chiaro perché non sei in fila con il pubblico generale: quella stanza enorme è interamente piena d'acqua, una sfera gigantesca con luci, piattaforme e innumerevoli posti a sedere costruiti al suo interno. Alcune piccole stanze come quella in cui ti trovi ora sono incassate nelle pareti come minuscole bolle d'aria trasparenti sulla riva di un grande mare.`
+			`	Ti si uniscono altri tre Successori dopo qualche minuto, ognuno dei quali prende posto nella piccola stanza. La cerimonia comincia poco dopo. Da aperture sul fondo della sfera emergono legioni di soldati, metà con i colori di Casa Chydiyi e l'altra metà di Casa Myurej. I due piccoli eserciti nuotano gli uni intorno agli altri, intrecciando le loro linee di corpi come i Nastri stessi che hai visto fuori.`
+			`	Solo dopo mezz'ora di queste acrobazie la coppia appare finalmente, salendo dalle stesse aperture e affiancata da un gruppo di quelli che devono essere gli eredi delle rispettive casate. Tra loro scorgi Khiajsore. Segue un ulteriore intreccio, una mostra di raffinatezza e un'onda di molti colori sulla pelle dei presenti, e poi un brusio collettivo sale dalla folla.`
+			choice
+				`	(Brusisci anche tu.)`
+				`	(Non dire nulla.)`
+			`	Passato apparentemente il momento, seguono i discorsi, ognuno degli eredi che offre qualche breve dialogo sulla storia della propria casata e sulle speranze per il suo futuro. Il dispositivo di traduzione fatica a dare un senso a molte delle parole, come se fossero dette in un dialetto che non conosce. Alla fine la cerimonia sembra volgere al termine, l'enorme pubblico che defluisce dai posti e torna a girare per la struttura.`
+
+			label skipped
+			`	Aspetti un po' finché uno dei fili non viene a cercarti, dandoti indicazioni per una stanza appartata. Dentro ci sono rappresentanti di tutte e sei le Casate Alte; tra loro Khiajsore di Casa Myurej, Riijaaora di Casa Sioeora e Kampa di Casa Kaatrij.`
+			`	Kampa scende nella pozza al centro della stanza e si rivolge al gruppo: "Onorevoli rappresentanti delle Casate riunite. Casa Kaatrij convoca questa unione per rendere pubblica la nostra dichiarazione di sovranità sul capitano alieno <first> <last>. In conformità con il Trattato inter-Casate sugli Agenti Alieni, forniremo pertanto al nostro vassallo i violenti frutti della nostra Casa, affinché possa svolgere i propri doveri in modo adeguato e sicuro.`
+			`	In conformità con il Trattato, questa offerta potrà essere estesa dalle altre Casate in cortesia e deferenza alla sovrana Kaatrij."`
+			`	Tornano al bordo della pozza e altri tre prendono il centro: Myurej, Aqrabe e Seineq. Ognuno parla a turno, variazioni di una frase: "In apprezzamento del servizio del capitano alla nostra Casa, diamo il nostro assenso e riconoscimento a questa offerta."`
+			`	Il rappresentante di Chydiyi resta sul bordo della pozza, astenendosi dalla discussione, ma quella di Sioeora prende il centro, fissandoti con durezza.`
+			branch "kaatrij patron"
+				has "successors kaatrij patron"
+
+			`	"Nonostante la generosità e il patrocinio di Sioeora verso il capitano," dice Riijaaora, "questo alieno ritiene opportuno diventare vassallo di un'altra Casa. Non riconosceremo questa relazione, né apriremo i nostri fornitori a loro."`
+				goto license
+
+			label "kaatrij patron"
+			`	"Nonostante la generosità di Sioeora verso il capitano," dice Riijaaora, "questo alieno ritiene opportuno diventare vassallo di un'altra Casa. Non riconosceremo questa relazione, né apriremo i nostri fornitori a loro."`
+
+			label license
+			`	Quando tornano al bordo, non si dice altro. Kampa torna nella pozza e produce dal proprio abito una piccola scatola di legno, che ti consegna.`
+			choice
+				`	(Prendila.)`
+			`	Apri la scatola e trovi una spilla d'oro elaborata, adagiata tra soffici pieghe di velluto.`
+			scene "outfit/high houses license"
+			`	"Che questo dono renda chiari a tutti i tuoi doveri e privilegi, e che tu possa avere libero accesso a tutto ciò che la nostra Casa e i suoi alleati offrono..." dice Kampa, "<first> <last>, Onorato Cavaliere-Vassallo della Casa Alta Kaatrij." Una vivace esibizione di colori scorre sulla pelle di Kampa, che raccoglie la spilla con un braccio e la appunta sulla tua giacca, proprio accanto al dispositivo di traduzione e alla licenza civile. Il metallo deve essere molto denso; è notevolmente più pesante degli altri.`
+			`	Con questo, l'incontro si conclude e i vari membri escono a turno, quelli che hai già incontrato che offrono qualche breve parola di congratulazioni. Alla fine esci anche tu, ritrovando la strada attraverso la struttura. Presso un allestimento floreale scorci Saajret, apparentemente immerso in una conversazione con Tiliia, l'ingegnera di Casa Seineq.`
+			choice
+				`	(Vai a parlare con loro.)`
+				`	(Vattene.)`
+					goto end
+
+			`	Tiliia ti nota per prima, la pelle che si accende di colori di eccitazione. "Saajret mi racconta della tua ascesa nei ranghi di Kaatrij," dicono. "Eccellente che tu possa essere un alleato concertato anche per la mia Casa."`
+			`	Saajret canticchia e annuisce. "Il capitano è del tipo astuto," dice. "Capace di sopravvivere alle nostre astuzie, credo." Tiliia ride a questo, e Saajret continua. "E Tiliia mi dice che sei stato d'aiuto anche a loro, la ragione per cui le nostre navi ora guadagnano un vantaggio attraverso il cunicolo."`
+			label "saajret and tiliia"
+			choice
+				`	"È bello vedervi andare d'accordo."`
+					to display
+						not "Successors: getting along"
+					goto "getting along"
+				`	"Pensi che Aqrabe e Kaatrij collaboreranno molto?"`
+					to display
+						not "Successors: collaboration"
+					goto collaboration
+				`	"Sono ancora incerto che unirmi a Kaatrij sia stata la scelta giusta."`
+					to display
+						not "Successors: uncertain"
+					goto uncertain
+				`	"Dovrei andare."`
+					goto end
+
+			label "getting along"
+			action
+				"Successors: Ghosts Saajret Openness" ++
+				set "Successors: getting along"
+			`	Saajret annuisce. "Il lavoro di Tiliia sulle chiavi di volta che hai fornito mi incuriosisce molto. Ha una qualche somiglianza con tecnologie che ho studiato nei nostri archivi, anche se i gusci di metallo stellare sono una soluzione del tutto inventiva, credo."`
+			`	Tiliia interviene, un accenno di imbarazzo sulla pelle. "È stato questione di arrangiarsi con quel che si poteva fare," dicono.`
+			`	"Ciò nonostante," dice Saajret, ora rivolto a Tiliia, "un risultato degno. Sono felice di questa piccola pausa, se non altro per la collaborazione."`
+				goto "saajret and tiliia"
+
+			label "collaboration"
+			action
+				set "Successors: collaboration"
+
+			`	"Sarebbe fruttuoso, senza dubbio," dice Tiliia. "E ora che Kaatrij si apre un poco per la prima volta dalla sua ferita, forse non è al di là del regno del possibile."`
+			branch "low openness"
+				"Successors: Ghosts Saajret Openness" < 0
+
+			`	"Anche io lo accoglierei," aggiunge Saajret. La loro pelle tradisce una soddisfazione sincera.`
+				goto "saajret and tiliia"
+
+			label "low openness"
+			`	"Lo accoglierò finché durerà," aggiunge Saajret. "Anche se temo che l'apertura di Kaatrij possa essere solo una cosa fugace."`
+				goto "saajret and tiliia"
+
+			label "uncertain"
+			action
+				set "Successors: uncertain"
+			branch "high forgiveness"
+				"Successors: Ghosts Saajret Forgiveness" > 0
+
+			`	Saajret canticchia profondamente. "Per noi," dice, "le nostre Casate sono le nostre famiglie, e la famiglia è sempre una cosa complicata. Forse capisco te, capitano, meglio di quanto tu possa immaginare."`
+				goto "saajret and tiliia"
+
+			label "high forgiveness"
+			`	Saajret canticchia, un'ombra di curiosità che lo coglie. "Forse per te è più incerto," dice. "Per noi, le nostre Casate sono le nostre famiglie: dobbiamo sforzarci di conviverci, eccentricità comprese."`
+				goto "saajret and tiliia"
+
+			label end
+			action
+				clear "Successors: getting along"
+				clear "Successors: collaboration"
+				clear "Successors: uncertain"
+			`	Prendi l'ascensore per tornare alla nave, cogliendo un ultimo breve scorcio dei Nastri di Iret. Mentre parti, ricevi un messaggio da Kampa:`
+			`	Ancora le mie congratulazioni. Il tuo servizio finora è stato esemplare. Gli sforzi della nostra Casa si concentrano ora sul trovare l'identità del nostro aggressore, un compito che, temo, hai poco modo di accelerare. Per ora, potresti esplorare e prepararti a ciò che potrà venire in futuro.`
+			`	Questo io stesso attesto come J- S- Kampa, Capitano di Flotta della Casa Alta Kaatrij.`
+
+
+
+mission "Successors: Ghosts Black Box"
+	landing
+	invisible
+	source
+		attributes "successor"
+	to offer
+		has "Successors: Ghosts 20: done"
+		or
+			has "Successors: Ghosts Resja transmission"
+			has "Successors: Ghosts Queru transmission"
+			has "Successors: Ghosts Hasur transmission"
+	on offer
+		conversation
+			`La licenza che hai ricevuto da Casa Kaatrij include alcune informazioni crittografiche che potresti usare per decifrare la trasmissione ricevuta dalle navi drone. Vuoi farlo?`
+			choice
+				`	(Sì.)`
+				`	(No.)`
+					decline
+
+			branch "no resja"
+				not "Successors: Ghosts Resja transmission"
+			action
+				log "People" "Resja" `(FILE "Persa"): [...] in fretta, attraverso il chimo rosso della gola della morte [...] aviario e [...] invitto se non nella battaglia su Avasaa-Novaa, che [...] e ne hanno composto un altro in onore [...] chiamato per il [...] di cui ve ne sono nove, "quattro per il [...] e un ultimo mancante, perduto [...] perduto [...]`
+				log "People" "Resja" `(FILE "Cuore"): [...] il distruttore sussurra all'eroe, "Non sempre sono stato ciò che sono ora [...] e prese una lancia e la spinse in profondo nel [...] cuore [...] morte [...] Mi ritrovo a pensare molto a questa storia [...] responsabilità di sapere quale tu sia [...]`
+				log "People" "Resja" `(FILE [...]): [...] Sto cominciando a capire [...] ed è per questo che devo dirlo a Saajret mentre [...]`
+
+			label "no resja"
+
+			branch "no queru"
+				not "Successors: Ghosts Queru transmission"
+			action
+				log "People" "Resja" `(FILE "Processo"): [...] otto sono andati a processo nell'ultimo [...] Sono stato chiamato a testimoniare sul [...] non so perché pensino che io sia un'autorità [...] assenza [...] a volte mi chiedo se [...] che sapore abbia [...]`
+
+			label "no queru"
+
+			branch "no hasur"
+				not "Successors: Ghosts Hasur transmission"
+			action
+				log "People" "Resja" `(FILE "Vuoto"): [...] C'era un terribile vuoto dentro [...] cresceva a ogni battito di ciglia [...] capito [...] avvolgermi. E molto dopo che sarò morto, molto dopo che il nome dei Myiara svanirà in un futuro [...] quel pieno di fitte [...] rimarrà."`
+
+			label "no hasur"
+
+			`	Oltre alla telemetria di volo della nave e ai registri dei sistemi interni, il registratore di dati sembra contenere un piccolo numero di blocchi di testo, gravemente degradati:`
+			label files
+			choice
+				`	(FILE "Persa")`
+					to display
+						has "Successors: Ghosts Resja transmission"
+					goto lost
+				`	(FILE "Cuore")`
+					to display
+						has "Successors: Ghosts Resja transmission"
+					goto heart
+				`	(FILE "Processo")`
+					to display
+						has "Successors: Ghosts Queru transmission"
+					goto trial
+				`	(FILE "Vuoto")`
+					to display
+						has "Successors: Ghosts Hasur transmission"
+					goto emptiness
+				`	(FILE [...])`
+					to display
+						has "Successors: Ghosts Resja transmission"
+					goto lacuna
+				`	(Esci.)`
+					decline
+
+			label lost
+			`	[...] in fretta, attraverso il chimo rosso della gola della morte [...] aviario e [...] invitto se non nella battaglia su Avasaa-Novaa, che [...] e ne hanno composto un altro in onore [...] chiamato per il [...] di cui ve ne sono nove, "quattro per il [...] e un ultimo mancante, perduto [...] perduto [...]`
+				goto files
+
+			label heart
+			`	[...] il distruttore sussurra all'eroe, "Non sempre sono stato ciò che sono ora [...] e prese una lancia e la spinse in profondo nel [...] cuore [...] morte [...] Mi ritrovo a pensare molto a questa storia [...] responsabilità di sapere quale tu sia [...]`
+				goto files
+
+			label trial
+			`	[...] otto sono andati a processo nell'ultimo [...] Sono stato chiamato a testimoniare sul [...] non so perché pensino che io sia un'autorità [...] assenza [...] a volte mi chiedo se [...] che sapore abbia [...]`
+				goto files
+
+			label emptiness
+			`	[...] C'era un terribile vuoto dentro [...] cresceva a ogni battito di ciglia [...] capito [...] avvolgermi. E molto dopo che sarò morto, molto dopo che il nome dei Myiara svanirà in un futuro [...] quel pieno di fitte [...] rimarrà."`
+				goto files
+
+			label lacuna
+			action
+				set "Successors: Ghosts Messages from the Past"
+			`	[...] Sto cominciando a capire quanto io [...] quindi devo dirlo a Saajret mentre [...]`
+				goto files
+
+
+
+mission "Successors: Ghosts Reincarnation"
+	landing
+	invisible
+	source "Raaqa-Puan-Uuoru"
+	to offer
+		has "Successors: Ghosts Messages from the Past"
+	on offer
+		conversation
+			`Vuoi parlare con Saajret del fatto che il loro nome compare nel file trasmesso da Resja, dei Nove Occhi?`
+			choice
+				`	(Sì.)`
+				`	(No.)`
+					decline
+
+			action
+				"Successors: Ghosts Saajret Forgiveness" --
+				"Successors: Ghosts Saajret Openness" ++
+				set "Successors: Ghosts Saajret friend"
+			`	Anche se passano alcuni minuti prima che la tua missiva-sfera di dati riceva risposta, Saajret ti invita presto a raggiungerli in una città vicina, che si rivela distante solo mezz'ora di navetta dallo spazioporto. È costruita in un incavo a forma di anfiteatro in una scogliera sul mare, case e botteghe a terrazze che emergono dalla roccia con la loro curiosa architettura fluente di Kaatrij. Molte condividono le sporgenze simili a vele dello spazioporto principale, alcune decorate con motivi iridescenti che ondeggiano quando il vento le scuote.`
+			`	Saajret ti incontra allo spazioporto regionale, spiegando che li hai colti in un giorno libero. Ti guidano attraverso la città fino a una delle case più eleganti. Ha la forma di una serie di semicerchi concentrici, e ti invitano nel più esterno, quello che potresti chiamare un'area di ricevimento con panche e giardini interni. Piccoli robot strisciano sui pavimenti, occupandosi della polvere e dell'acqua.`
+			`	Dopo un po', passano alle questioni in sospeso. "Hai detto di aver scoperto qualcosa su di me in una trasmissione dal vascello drone?" chiedono. Anche se il tono è curioso, qualcosa come un'ombra di paura si aggira sulla loro pelle.`
+			choice
+				`	"Probabilmente è solo qualcuno che condivideva il tuo nome, ma ho pensato di dirtelo comunque. Le trasmissioni includevano quelli che sembrano diari, e uno di essi menziona un 'Saajret'."`
+				`	"Le trasmissioni includevano dei diari, e uno di essi menziona un 'Saajret'. Pensi che potesse essere un tuo antenato?"`
+			`	Qualcosa nel sentire il proprio nome in questo contesto sembra toccare una corda stonata dentro Saajret. Confusione, rabbia e dolore si alternano su di loro in un istante, prima che si tendano e la loro pelle diventi di un grigio d'acciaio. Non dicono altro sull'argomento e invece avviano una conversazione sulle tue esperienze recenti, senza mai rallentare. Dopo circa un'ora di aggiornamenti, alla fine ne hanno abbastanza e lasciano morire la conversazione.`
+			`	Mentre te ne vai, Saajret si volta verso di te un'ultima volta. Un'espressione strana si posa sul loro viso, e la loro pelle sembra incapace di risolversi in un unico afflato di colore. "Hai la mia più profonda gratitudine, amico mio," dicono, con un suono un po' inquieto, e chiudono la porta.`
+				decline
+
+
+
+mission "Successors: Ghosts Abandoned Kaatrij"
+	entering
+	invisible
+	destination "Earth"
+	to complete
+		never
+	to offer
+		has "event: successors: ghosts abandoned kaatrij"
+		not "Successors: Ghosts killed heirloom"
+	on offer
+		event "successors: military escalation"
+			decline

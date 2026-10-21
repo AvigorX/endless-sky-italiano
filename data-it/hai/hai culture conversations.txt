@@ -1,0 +1,387 @@
+# Copyright (c) 2021 by MasterOfGrey
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Theater Chat"
+	minor
+	source
+		government "Hai"
+		not attributes "station"
+	destination
+		distance 1 3
+		government "Hai"
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Mentre attraversate lo spazioporto, vi imbattete nell'insolita coppia di un Hai e un umano, la cui conversazione spicca perché parlano la lingua comune dell'umanità.`
+			`	"Oh, oh, Gemanari, questo sembra interessante!" La donna umana dimostra una sessantina d'anni avanzata e, quando vi voltate a guardare, sembra intenerirsi davanti a un annuncio olografico di uno spettacolo teatrale. "È adorabile, non trovi? Oh, e dice che usano effetti di volo olografici a rifrazione con raggi ondulati!"`
+			`	L'annuncio in effetti è molto impressionante, e vi fermate a osservarlo per un momento.`
+			`	L'Hai, presumibilmente Gemanari, sembra anche lei una signora di una certa età: socchiude gli occhi e arriccia il naso. "Ugh, però è l'interpretazione germontiana."`
+			`	La cosa suscita uno sguardo perplesso, e Gemanari riflette un secondo prima di chiarire. "Vorreste dire l'interpretazione darwinista sociale."`
+			`	La signora fa una smorfia e simula di vomitare. "Non posso credere che abbiate ancora queste correnti di pensiero, in una società così antica."`
+			`	"Oh, in realtà no, almeno non nei circoli scientifici, ma una storia avvincente sopravvive a queste cose. Personalmente non la sopporto, ma è un classico." Siccome la signora non sembra impressionata, Gemanari ridacchia e la prende delicatamente per un braccio per portarla via. "Non preoccuparti, Alinta; credo che la compagnia Misheep Wah'uden stia mettendo in scena la mia interpretazione preferita su <destination>, in questo momento. Possiamo vedere se hanno biglietti a buon mercato. Certo, mia zia insisterebbe che la centottantatreesima versione è l'unica vera, ma lei..."`
+			`	Perdete la conversazione mentre si allontanano, e restate a chiedervi cosa avesse di così speciale la centottantatreesima versione di un'opera su un Hai preistorico alato trovato congelato nel ghiaccio.`
+				decline
+
+
+
+mission "Musical Entertainment Expo"
+	minor
+	source
+		government "Hai"
+		not attributes "station"
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Mentre siete fermi nello spazioporto in attesa del rifornimento, vi sorprende quanto sia difficile trovare un posto dove sedervi a mangiare e bere. Gli Hai si sono stipati in ogni bar o locale simile dotato di uno schermo pubblico, sfoggiando fasce, mantelli e ogni sorta di altro accessorio che, per quanto riuscite a capire, somiglia a... merchandising di squadre sportive?`
+			`	Non siete esperti di come si presentino queste cose nella società Hai, e così, quando alla fine trovate un posto dove sedervi, in un bar per mancanza di alternative, chiedete al cameriere dall'aria stanca che cosa stia esattamente succedendo.`
+			`	"Ah, questo? Sono tutti qui per le dirette della Musical Entertainment Expo. Purtroppo nessuno di loro inizia a bere prima che almeno una delle loro squadre abbia annunciato qualcosa che valga la pena," dice, roteando gli occhi con esasperazione.`
+			choice
+				`	"Ok. Posso solo avere qualcosa da mangiare?"`
+					goto wrapup
+				`	"Che cos'è la Musical Entertainment Expo?"`
+				`	"Perché non hanno ancora iniziato a bere?"`
+			`	"Beh, vede, le grandi etichette discografiche fanno molta ricerca di talenti tutto l'anno. Hanno reparti dedicati esclusivamente a trovare e mettere insieme nuovi gruppi destinati a diventare il prossimo fenomeno. È tradizione festeggiare solo dopo essersi impegnati nel viaggio con una nuova band. Ogni tre anni l'industria organizza ME2, quello che sta vedendo lassù, per presentare il nuovo giro di band e per stuzzicare eventuali uscite di metà stagione che hanno in cantiere."`
+			choice
+				`	"La vostra musica esce da una catena di montaggio?"`
+					goto production
+				`	"Non avete musicisti che cercano di sfondare da soli?"`
+			`	"Oh, certo, ma soprattutto per farsi prendere da una di queste aziende."`
+			label production
+			`	Il cameriere ridacchia. "Facciamo pop music da più tempo di quanto la vostra gente abbia conosciuto il fuoco. Si tratta dell'esperienza di essere fan di un gruppo mentre sale alla fama e al successo. Un Hai appassionato può andare a cercare una canzone per quasi ogni possibile esperienza di vita, in quasi ogni possibile genere. È il viaggio, e le personalità, quel che conta."`
+			choice
+				`	"Che strano."`
+				`	"Che interessante."`
+			`	"Comunque, mi pareva voleste qualcosa da mangiare?"`
+			label wrapup
+			`	Il cameriere accenna un cenno verso di voi e prende l'ordine. "Nessun problema, arriva subito."`
+			`	È un pasto rumoroso.`
+				decline
+
+
+
+mission "The Meme Wars 1"
+	minor
+	source
+		government "Hai"
+		not attributes "station"
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Entrando nello spazioporto, venite investiti da un tripudio di colori. Ogni superficie vuota che di solito non è spazio pubblicitario a pagamento sembra addobbata con proiettori olografici pendenti, striscioni e nastri. Ci sono persino volantini e manifesti veri, di carta, apparentemente attaccati con nastro adesivo a qualunque superficie li regga. All'inizio vi chiedete se ci sia una specie di festa, ma poi vedete un giovane Hai incappucciato che appiccica un altro proiettore olografico, creando un ortaggio a radice in stile cartone animato con una spada, che comincia a fare a pezzi l'ologramma accanto, una specie di concetto impressionista di un anziano Hai fatto di triangoli iridescenti. Il giovane Hai poi strappa giù uno striscione e spalma una specie di poltiglia su un manifesto enorme, che inizia a sciogliersi mentre due guardie di sicurezza, con aggiunte molto evidentemente non regolamentari alle uniformi, lo inseguono fuori dallo spazioporto.`
+			branch translator
+				has "language: Hai"
+			`	Mentre guardate, l'anziano triangolare proiettato in ologramma sembra tremolare e poi si spegne mentre la batteria si esaurisce, apparentemente sotto l'assalto dell'ortaggio a radice, che accenna una danza di vittoria e poi mette in scena qualcosa che per voi non ha assolutamente senso.`
+			`	Poco più avanti incontrate due diversi gruppi di manifestanti, ammesso che siano questo, che si intrecciano dentro e fuori dagli ingressi dello spazioporto come in una specie di conga. L'anziano triangolare e l'ortaggio a radice avversario ricompaiono più volte sui loro cartelli, alcuni animati in ologramma.`
+			`	Un'altra guardia di sicurezza, questa in uniforme regolare, vi compare al gomito. "Sembra un po' perso. Non si preoccupi, è solo una guerra di meme. Faccia i suoi affari e non tocchi gli oggetti dei meme e nessuno dovrebbe darle fastidio per questo."`
+			`	Ringraziate la guardia per il consiglio e proseguite con quello che stavate facendo mentre l'incomprensibile conflitto continua intorno a voi.`
+				decline
+			label translator
+			`	Mentre guardate, l'anziano triangolare proiettato in ologramma sembra tremolare e poi si spegne mentre la batteria si esaurisce, apparentemente sotto l'assalto dell'ortaggio a radice, che accenna una danza di vittoria. Con vostra sorpresa, il vostro traduttore si fa sentire: "[Vittoria, Successo] per la radice vera e quadrata, che è più [significativa, importante] del [sistema, tradizione] tripartito degli anziani!"`
+			`	Poco più avanti incontrate due diversi gruppi di manifestanti, ammesso che siano questo, che si intrecciano dentro e fuori dagli ingressi dello spazioporto come in una specie di conga. L'anziano triangolare e l'ortaggio a radice avversario ricompaiono più volte sui loro cartelli, alcuni animati in ologramma.`
+			`	Un'altra guardia di sicurezza, questa in uniforme regolare, vi compare al gomito. "Sembra un po' perso. Non si preoccupi, è solo una guerra di meme. Faccia i suoi affari e non tocchi gli oggetti dei meme, e nessuno dovrebbe darle fastidio per questo."`
+			choice
+				`	"Certo, lo farò."`
+					goto done
+				`	"I vostri anziani hanno un sistema tripartito?"`
+			`	La guardia ridacchia e dice: "Oh, lei capisce? In realtà no, ma è una vecchia battuta di una campagna politica ormai passata, secondo cui gli anziani tengono solo a tre principi, e sono tutti quelli che ci toccano meno."`
+			`	Quando chiedete cosa abbia scatenato tutto questo, dice: "Oh, le ultime priorità educative sono uscite con un'impostazione su quattro principi, lo stesso giorno in cui un anziano ha citato per sbaglio la vecchia campagna. È stato molto divertente."`
+			choice
+				`	"Che strano."`
+				`	"Sembra divertente."`
+			label done
+			`	Ringraziate la guardia per il consiglio e proseguite con quello che stavate facendo mentre l'incomprensibile conflitto continua intorno a voi.`
+				decline
+
+
+
+mission "Wrestling Star"
+	minor
+	source
+		government "Hai"
+		not attributes "station"
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Mentre attraversate lo spazioporto, notate una folla di Hai che trillano raccolti in una zona.`
+			choice
+				`	(Ignorateli e passate oltre.)`
+					goto skip
+				`	(Date un'occhiata.)`
+			`	La folla sembra composta per lo più da Hai giovani, anche se ci sono alcuni Hai più maturi, che mostrano visibilmente più ritegno nel loro entusiasmo. Raggiunto il bordo della folla e guardando al di sopra degli Hai più bassi, vedete un tavolo allestito con due stendardi ai lati e una pila di quelle che, a prima vista, sono foto stampate su carta patinata.`
+			`	Gli stendardi raffigurano un Hai dall'aria piuttosto muscolosa, reso con grande dettaglio, con un'animazione potenziata in ologramma che lo fa sembrare intento senza posa a sollevare e lasciar cadere un avversario volutamente sfocato. L'effetto, però, è ottenuto solo con un trucco di prospettiva spostata artificialmente. Con vostra sorpresa, capite che si tratta di una sessione di autografi di una stella del wrestling, nientedimeno.`
+			`	Dopo solo un momento la persona in questione esce da una cabina dietro l'allestimento e saluta i suoi fan, che si dimostrano molto entusiasti, prima di sedersi con una specie di penna per la fila degli Hai radunati. Sembra che certe usanze umane si siano diffuse fra gli Hai.`
+			label skip
+			`	Potete sentire la folla di Hai trillare per un bel tratto mentre proseguite per i vostri affari.`
+				decline
+
+
+
+mission "Fencing Star"
+	minor
+	source
+		government "Hai"
+		not attributes "station"
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Mentre attraversate lo spazioporto, notate una folla di Hai che trillano raccolti in una zona.`
+			choice
+				`	(Ignorateli e passate oltre.)`
+					goto skip
+				`	(Date un'occhiata.)`
+			`	La folla sembra composta per lo più da Hai giovani, anche se ci sono alcuni Hai più maturi, che mostrano visibilmente più ritegno nel loro entusiasmo. Raggiunto il bordo della folla e guardando al di sopra degli Hai più bassi, vedete un tavolo allestito con due stendardi ai lati e una pila di quelle che, a prima vista, sono foto stampate su carta patinata.`
+			`	Gli stendardi raffigurano un Hai snello nella divisa di schermidore, di una familiarità sorprendente, con un'animazione potenziata in ologramma che lo fa sembrare intento senza posa a eseguire un'elegante parata e risposta contro un avversario fuori campo. L'effetto, però, è ottenuto solo con un trucco di prospettiva spostata artificialmente. Con vostra sorpresa, capite che si tratta di una sessione di autografi di una stella della scherma, nientedimeno.`
+			`	Dopo solo un momento la persona in questione esce da una cabina dietro l'allestimento e saluta i suoi fan, che si dimostrano molto entusiasti, prima di sedersi con una specie di penna per la fila degli Hai radunati. Sembra che certe usanze umane si siano diffuse fra gli Hai.`
+			label skip
+			`	Potete sentire la folla di Hai trillare per un bel tratto mentre proseguite per i vostri affari.`
+				decline
+
+
+
+mission "Mystery Sport Star"
+	minor
+	source
+		government "Hai"
+		not attributes "station"
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Mentre attraversate lo spazioporto, notate una folla di Hai che trillano raccolti in una zona.`
+			choice
+				`	(Ignorateli e passate oltre.)`
+					goto skip
+				`	(Date un'occhiata.)`
+			`	La folla sembra composta per lo più da Hai giovani, anche se ci sono alcuni Hai più maturi, che mostrano visibilmente più ritegno nel loro entusiasmo. Raggiunto il bordo della folla e guardando al di sopra degli Hai più bassi, vedete un tavolo allestito con due stendardi ai lati e una pila di quelle che, a prima vista, sono foto stampate su carta patinata.`
+			`	Gli stendardi raffigurano una coppia di Hai, uno con una rete e uno con quella che sembra una sorta di frisbee con lame. Non è affatto chiaro che cosa facciano esattamente, e quando le persone in questione escono da una cabina dietro l'allestimento e salutano i fan diventa evidente che, anche riuscendo a farvi sentire sopra il trillare, nessuno ha particolare voglia di spiegarvelo.`
+			`	I due si tolgono i caschi e rivolgono ai fan sorrisi smaglianti alla maniera Hai, prima di sedersi con una specie di penna per la fila degli Hai radunati. Sembra che le sessioni di autografi delle celebrità siano popolari fra gli Hai.`
+			label skip
+			`	Potete sentire la folla di Hai trillare per un bel tratto mentre proseguite per i vostri affari.`
+				decline
+
+
+
+mission "Gambling Judgment"
+	minor
+	source
+		government "Hai"
+		not attributes "station"
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Vi fermate in una tavola calda per mangiare a terra nello spazioporto, ma non siete seduti da molto quando notate un gruppo di altri capitani di navi umani appartati in un angolo che giocano, per quanto riuscite a capire, a poker. Notate che il gruppo riceve una varietà di sguardi torvi da vari Hai che stanno cenando nel locale.`
+			`	Dopo un po' arriva a prendere l'ordine il barista, un Hai di mezza età e leggermente in sovrappeso.`
+			choice
+				`	(Ordinate qualcosa.)`
+					goto end
+				`	"Ehi, ho notato che ci sono degli sguardi torvi qui intorno. I capitani umani non sono benvenuti?"`
+			`	Il barista sembra confuso per un istante, poi guarda verso il tavolo e scuote la testa, avendo capito. "Oh no, siete perfettamente benvenuti. Quel gruppo sta semplicemente infrangendo i principi della maturità, e alcuni Hai si sentono a disagio quando degli adulti si comportano sfacciatamente come bambini in pubblico."`
+			choice
+				`	(Ordinate qualcosa.)`
+					goto end
+				`	"I principi della maturità?"`
+			`	"Ah già, suppongo che lei non lo sappia. Ci sono diversi principi che agli Hai vengono insegnati crescendo, lezioni da interiorizzare per essere un membro responsabile e funzionante della società. Il secondo è 'Essere onesti negli affari', e il terzo è 'Scommettere solo sull'abilità, non sul caso', quindi il loro gioco ne infrange due."`
+			choice
+				`	"Alcuni direbbero che il poker è più questione di abilità che di caso."`
+				`	"Certo, però se è solo un gioco, non c'è niente di male, no?"`
+			`	"Oh no, temo che il primo principio garantisca che non sia davvero favorevole in nessuno dei due casi. Il primo è 'Avere una chiara separazione fra fantasia e realtà', così un gioco non può avere conseguenze reali, altrimenti è realtà, non fantasia. Quindi scommettere denaro sul gioco significa portare conseguenze reali in un esercizio di fantasia. Questo è tabù per un adulto.`
+			`	"Se si interpreta il gioco come giocato per l'abilità, senza le puntate, allora si soddisfano il primo e il terzo principio, ma resta il problema che le abilità principali sono il bluff e la manipolazione, il che viola il secondo principio. Il bluff non è un'abilità considerata virtuosa, e nemmeno la manipolazione."`
+			choice
+				`	"Aspetta, gli Hai non mentono e non bluffano?"`
+			`	Il barista ridacchia con uno strano trillo e dice: "Oh no, gli Hai mentono e bluffano. Siamo anzi molto bravi a bluffare, vantaggioso per l'evoluzione allo stato brado e cose così. È solo considerato molto immaturo e basso. Un adulto dovrebbe poter condurre la propria vita senza ricorrere a istinti così primitivi. L'abbiamo imparato a nostre spese molto tempo fa, prima di rinchiuderci nei nostri confini attuali."`
+			`	Vi guarda intensamente prima di continuare: "Non sentirete parlare spesso dei principi, ma se guardate bene vedrete che i primi tre soprattutto sono radicati molto in profondità nella nostra società."`
+			`	Con un'alzata di spalle apre il blocchetto degli ordini e si dà un colpetto sulla pancia. "Certo, mia nonna diceva sempre che quelli dopo il decimo erano più indicazioni che regole vere, e di certo ho le mie divergenze con il tredicesimo. Ora, prima di parlarle fino a stordirla, che cosa le porto?"`
+			label end
+			`	Prende l'ordine con diligenza e con un sorriso.`
+				decline
+
+
+
+mission "Academy Motto"
+	minor
+	source
+		government "Hai"
+		attributes "urban"
+		not attributes "station"
+	to offer
+		random < 1
+		has "language: Hai"
+	on offer
+		conversation
+			`In questo giorno particolare, lo spazioporto è affollato oltre ogni credere da qualche arcana confluenza di caso e logistica. Dopo aver sbrigato la maggior parte dei vostri affari, le autorità portuali vi hanno informato che non c'è una finestra di partenza sicura libera per almeno sette ore (e nemmeno questa è una promessa). Restate quindi solo, a riempire quel pezzo di tempo inatteso nelle prime ore del mattino.`
+			choice
+				`	(Gioco sulla mia nave.)`
+				`	(Do un'occhiata più in là.)`
+					goto "field trip"
+			`	Senza voglia di perdervi in un'enorme città Hai, caricate semplicemente una console di intrattenimento per tenervi occupati nelle ore successive.`
+				decline
+			label "field trip"
+			`	La tendenza degli Hai a stipare le persone in spazi vivaci ma densamente popolati è in bella mostra mentre vi fate strada fra frotte di Hai che per lo più si sforzano educatamente di non urtarvi. Striscioni colorati, bandiere, murales e persino finestre offrono squarci brillanti agli stili architettonici spesso utilitaristici che ne stanno alla base. Insegne di benvenuto proiettate in ologramma ornano persino gli ingressi di diversi palazzi che oltrepassate, con avvertenze per i venditori porta a porta.`
+			`	Il recinto esterno di un complesso di appartamenti porta un cartello molto grande che, secondo il vostro traduttore, dice: "Niente contenuti meme qui, per favore."`
+			`	Dopo un po' trovate quello che sembra un caffè, o l'equivalente, e vi sedete dove potete avere una buona vista su uno dei complessi di edifici più imponenti nei paraggi. Dopo un momento un ologramma integrato nel tavolo vi chiede, in standard umano, se volete ordinare dal tavolo o parlare con un membro del personale.`
+			choice
+				`	(Ordino dal tavolo.)`
+					goto "pleasant lunch"
+				`	(Ordino da una persona.)`
+			`	Una Hai cordiale emerge a prendere l'ordine e vi informa con cortesia che c'è un supplemento del 10% per mangiare sulla terrazza. Visto che per un capitano di nave non è una cifra significativa, fate cenno di sì e cercate di capire che cosa state mangiando. Alla fine optate per un panino con burro di ghiande e fette di verdure che sembrano speziate, o sottaceto, non ne siete sicuri. Era l'articolo più consigliato dal personale e non è arrivato con domande di follow-up sulle preferenze alimentari degli Hai a cui non sapreste rispondere.`
+				goto "finishing chat"
+			label "pleasant lunch"
+			`	L'interfaccia è piuttosto fastidiosa da usare con mani di misura umana, ma alla fine optate per un panino con burro di ghiande e fette di verdure che sembrano speziate, o sottaceto, non ne siete sicuri. Era l'articolo più consigliato e non è arrivato con domande di follow-up sulle preferenze alimentari degli Hai a cui non sapreste rispondere.`
+			label "finishing chat"
+			`	Mentre mangiate il vostro pranzo strano ma in realtà sorprendentemente gustoso, notate il grande testo scritto sopra il cancello d'ingresso del complesso di edifici di fronte. Dopo un momento il vostro traduttore nota dove state guardando e ve lo legge ad alta voce.`
+			`	"Conoscere è guidare, studiare è conoscere, servire è studiare, guidare è servire."`
+			`	Naturalmente il vostro traduttore non può rispondere alle domande, così finite il pranzo e lasciate perdere finché non arriva un membro del personale a ritirare il piatto.`
+			choice
+				`	(Chiedo loro di cosa si tratta.)`
+					goto question
+				`	(Tengo per me i miei pensieri.)`
+			`	Il membro del personale prende il piatto e vi augura una bella giornata.`
+				decline
+			label question
+			`	Mentre ritirano il piatto dal tavolo chiedete loro del testo sul cancello.`
+			`	"Oh, quella è l'Academy cittadina. È una... ehm..." si ferma un momento e riferisce qualcosa in Hai che il vostro traduttore converte subito in "università non tecnica".`
+			`	Con uno sguardo sorpreso al dispositivo, sorride e continua in Hai: "Se vuoi diventare un dirigente, un politico, un assistente sociale, o anche solo un oratore pubblico, vai all'Academy e segui corsi di leadership e comunicazione. A rigor di termini non è necessario andarci, ma molti posti semplicemente non ti accettano in quel tipo di ruoli senza una qualche qualifica dell'Academy, e offrono davvero ottime competenze. Io ci andrò l'anno prossimo per fare un vero corso di lingua umana.`
+			`	"Tecnicamente le Academy sono tutte indipendenti, ma condividono tutte lo stesso motto. Ed è anche una cosa obbligatoria, ed è di questo che parla il motto. Mi dicono che la maggior parte degli umani lo trova al contrario, ma non lo è. Le Academy tengono d'occhio i loro diplomati: se guidi per interesse personale, servi senza studiare, studi senza imparare o sprechi le tue conoscenze senza applicarle, è noto che revocano le qualifiche. La frequenza è gratuita, quindi ci si aspetta che non si sprechi ciò che ti spendono tempo a insegnare.`
+			`	"Questa è piuttosto prestigiosa, ma quelle vicino agli spazioporti lo sono sempre." Ammicca. "L'esperienza che viene dall'esposizione naturale vale più di quanto il denaro possa comprare, dopotutto."`
+			`	Un momento dopo il vostro commpad vi avvisa che vi è stata assegnata una finestra di partenza dallo spazioporto in tempi relativamente brevi.`
+			`	"Bene, devo occuparmi di altri clienti. Le auguro una buona giornata!" dice, lasciandovi ai vostri affari.`
+				decline
+
+
+
+mission "Robotic Musical 1"
+	minor
+	source
+		government "Hai"
+		attributes "hai tourism"
+		not attributes "station"
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Percorrendo il viale principale di questo spazioporto quasi non badate a una pila di casse ammucchiate alla rinfusa nello spartitraffico. Non è raro che le casse appena scaricate restino temporaneamente davanti a diverse attività di un porto, sistemate ben in vista fuori dal flusso dei pedoni, ma è l'ammucchiamento disordinato che sembra fuori posto.`
+			`	Non fate in tempo a rallentare il passo per prestarvi attenzione che la pila di casse prende vita all'istante.`
+			branch translator
+				has "language: Hai"
+			`	Parte la musica e una mezza dozzina di caricature robotiche di Hai in abiti esagerati saltano fuori da varie casse e si mettono a sgambettare in una serie di interazioni presumibilmente pensate per far ridere, a giudicare almeno da come continuano a voltarsi l'una dall'altra per "guardare" il pubblico e ammiccare. Striscioni e glifi olografici, presumibilmente informazioni pubblicitarie, scorrono attraverso una serie di schermate mentre il ciclo procede, finché l'intero gruppo sembra concludere; ogni spettatore riceve una qualche supplica da almeno un robot, prima che tutti si arrampichino di nuovo dentro le casse.`
+			`	Per tutto il tempo una manciata di Hai si è fermata a guardare, e un paio ridacchiano alla conclusione prima di proseguire. I più si limitano a roteare gli occhi e tirare dritto. Un bambino si avvicina troppo mentre i genitori gli girano intorno e un piccolo cartello olografico rosso lampeggia verso di loro. Nessuno sembra avere voglia di spiegarvi cosa avete appena visto, e per il momento le casse restano ostinatamente chiuse.`
+			action
+				set roboticconfusion
+			# This controls branching if there's a future follow-up where you get to see the performance.
+			`	Ora che ci pensate, non siete sicuri che siano tutti rientrati nelle stesse casse da cui erano usciti.`
+				decline
+			label translator
+			`	Parte la musica e una mezza dozzina di caricature robotiche di Hai in abiti esagerati saltano fuori da varie casse e si mettono a sgambettare in una serie di interazioni. Il vostro traduttore fatica a stare dietro a una raffica di battute che presumibilmente sono giochi di parole spiritosi e che si traducono male. L'umorismo sembra improvvisato all'inizio, ma l'illusione è così buona che vi rendete conto dell'impossibilità che dei robot improvvisino solo dopo. Il tutto è accompagnato da una partitura musicale, con pause di battuta in vari punti in cui gli Hai animatronici continuano a voltarsi l'uno dall'altro per 'guardare' il pubblico e ammiccare. Striscioni e glifi olografici scorrono in una serie di schermate che vi informano che questa è la pubblicità di un musical comico completamente robotico intitolato "Le regole della nonna". Sostiene di essere completo di risposte interattive alle provocazioni del pubblico e fornisce un elenco di date e locali, tutti in un futuro lontano, in cui sarà in scena.`
+			`	Alla fine ognuno dei robot fa una posa e invita una diversa fascia di pubblico a venire a "vivere il decennio della propria vita", con biglietti a partire da 73 crediti, prima che l'intero gruppo concluda e si arrampichi subito di nuovo nelle casse. Non siete sicuri che siano tutti rientrati nelle stesse casse da cui erano usciti.`
+			`	Per tutto il tempo una manciata di Hai si è fermata a guardare, e un paio ridacchiano alla conclusione prima di proseguire. I più si limitano a roteare gli occhi e tirare dritto.`
+			`	Un Hai di mezza età nella folla, con un grigio da procione intorno agli occhi, indossa il tipo di abbigliamento tipico dei loro capitani mercantili. Vi scruta con curiosità e vi si avvicina. "Bene, bene, Capitano, che scatola notevole che ha lì. Non sapevo che avessero iniziato a fare dispositivi di traduzione dal vivo! È riuscita a starci dietro?"`
+			choice
+				`	"Oh, è il primo del suo genere."`
+					goto first
+				`	"Credo di aver capito il senso, anche se legge solo se guardo direttamente le cose."`
+			`	"Ah sì, suppongo che sia una funzione logica," dice. "Immagino che sarebbe piuttosto scomodo se provasse a leggere ogni testo nei paraggi.`
+				goto resolve
+			label first
+			`	"Il primo?" Vi studia per un secondo. "Oh, lei è il Capitano <last>! Che piacere conoscerla."`
+			`	Vi guarda da capo a piedi con un sorriso sornione. "In qualche modo è più basso di quanto immaginassi.`
+			label resolve
+			`	"Beh, se ne ha l'occasione, le consiglio lo spettacolo. L'ho visto qualche mese fa ed è davvero molto bello. Particolarmente popolare sui nostri mondi con molti umani."`
+			`	Vi saluta con un cenno amichevole. "Devo andare. Non si avvicini troppo ai display, non amano essere toccati!"`
+			`	L'Hai sembra molto soddisfatto mentre si allontana, ridacchiando tra sé e sé mentre se ne va.`
+				decline
+
+
+
+mission "Hai Film Release"
+	minor
+	source
+		government "Hai"
+		not attributes "station"
+	to offer
+		has "Hai Film Crew 3: done"
+		random < 1
+	on offer
+		conversation
+			`Entrando nello spazioporto, notate la locandina di un film in Hai. Riconoscete che è ambientato su Darkrest e capite subito che dev'essere il film che Likeet aveva fatto. Il titolo in lingua Hai è stato tradotto con "L'ultimo riposo", ma il film completo non sembra ancora sottotitolato nella vostra lingua.`
+			choice
+				`	(Vado a vederlo.)`
+				`	(Passo.)`
+					decline
+			branch translator
+				has "language: Hai"
+			`	Trovate un cinema che proietta il film di Likeet. Non siete del tutto sicuri di cosa stia succedendo: qualcosa che ha a che fare con un mostro invisibile che abita la stazione e fa lentamente impazzire chi incontra. Sembra però un successo presso il pubblico Hai, e uscite dalla sala decisamente scossi.`
+				decline
+			label translator
+			`	Trovate un cinema che proietta il film di Likeet, ma il vostro traduttore qui serve a poco. Il film è scarso di dialoghi, e le poche battute pronunciate sembrano riferimenti criptici alla letteratura e alla filosofia Hai. Il massimo che riuscite a capire è che il film parla di un mostro invisibile che abita la stazione e fa lentamente impazzire chi incontra. Sembra però un successo presso il pubblico Hai, e uscite dalla sala decisamente scossi.`
+
+
+
+mission "Sick of Acorn Bread"
+	minor
+	source
+		government "Hai"
+		not attributes "station"
+		attributes "hai: human presence" "human tourism"
+	to offer
+		credits > 50
+		random < 2
+	on offer
+		conversation
+			`Con un po' di tempo da ammazzare mentre gli addetti Hai vi fanno la manutenzione alla nave, entrate nello spazioporto in cerca di qualcosa da mangiare. I ristoranti pubblicizzano i loro menù sulle vetrine con colori vivaci e accattivanti; fra la scelta ne notate uno che promette "autentica cucina Hai", insieme a un grande testo scritto in lingua Hai. Accanto c'è un venditore ambulante umano che offre snack e pasti già pronti.`
+			choice
+				`	(Entro nel ristorante.)`
+					goto restaurant
+				`	(Compro qualcosa dal venditore umano.)`
+				`	(Ripensandoci, non ho poi così fame.)`
+					decline
+			action
+				payment -25
+			`	Il cibo fatto dagli umani è di certo l'opzione più sicura. Il venditore vi vende un piatto di verdure al vapore, insieme a un filetto di un pesce dalla tinta giallastra che vi assicura essere perfettamente commestibile. Il pasto è alquanto insipido, ma il pesce è burroso e tenero. Smaltite gli avanzi in un contenitore della spazzatura lì vicino, e lo guardate emettere un bip melodioso mentre incenerisce i rifiuti.`
+				decline
+			label restaurant
+			`	Un ristorante Hai offrirà di sicuro un'esperienza più originale. La porta fa un breve motivetto quando entrate, e una Hai di mezza età con le spalle voltate verso di voi grida qualcosa in lingua Hai.`
+			branch translator
+				has "language: Hai"
+			`	Restate immobili per un secondo, perché non è chiaro cosa voglia da voi.`
+				goto order
+			label translator
+			`	Il vostro traduttore cinguetta ubbidiente: "Si accomodi [a sedere, a riposare] dove preferisce! Arrivo subito."`
+			label order
+			`	Solo un attimo dopo, la stessa cameriera vi guarda e cinguetta in quello che immaginate sia imbarazzo. "Mi dispiace tanto. Non sapevo che oggi avrei avuto il piacere di servire un umano. Prego, si sieda pure al bancone. Vengo subito a prendere l'ordine."`
+			`	Date un'occhiata in giro e notate che il ristorante è in realtà piuttosto affollato. Ci sono Hai in smoking eleganti, in abiti alla moda, in tenuta casual, e persino alcuni con certe tute da lavoro con un buco dietro per la coda; non sembra esserci nessun altro umano. Con pochi posti liberi, ne scegliete uno all'estremità, accanto a un Hai piuttosto grande con una tuta verde e un cappello di paglia arancione. Grugnisce in modo evasivo mentre vi sedete su uno sgabello chiaramente progettato per un organismo con la coda. Poco dopo la cameriera si avvicina e vi chiede l'ordine.`
+			choice
+				`	"Prendo il piatto del giorno."`
+				`	"Vorrei della zuppa, per favore."`
+			`	"Lei è fortunato," dice. "Solo per oggi, ogni pasto è servito con un contorno gratuito di pane di ghiande." Sgambetta via per registrare e ritirare il vostro ordine.`
+			`	L'Hai accanto a voi grugnisce di nuovo, questa volta con evidente frustrazione, e si volta a parlare. "Pane di ghiande! Qui non servono altro, ormai. Da quando voi umani siete arrivati nel nostro spazio, è tutto quello che ci tocca mangiare. La panificazione tradizionale Hai è diventata un'arte perduta."`
+			choice
+				`	"Mi può parlare della panificazione tradizionale Hai?"`
+				`	"Mi dispiace. Non volevo offendere la vostra cultura."`
+					goto offend
+			`	Sembra in qualche modo calmato dal vostro interesse.`
+				goto breads
+			label offend
+			`	L'espressione del suo viso si addolcisce. "Dovrei essere io a scusarmi. Non è colpa vostra se i menù dei nostri spazioporti sono cambiati sotto questo aspetto. Gli umani hanno anche portato nuova vita in molte parti della società Hai. È solo un peccato che si debba viaggiare lontano per trovare i tipi di pane che avevamo anni fa."`
+			`	"Mi può parlare di altri tipi di pane?" chiedete.`
+			label breads
+			`	"Oh sì." Si sposta sul suo sgabello. "Sono abbastanza vecchio da ricordare il pane hayipp, il pane yur ki e altri ancora. Hayipp è un cereale, simile al vostro 'granturco' umano, che macinato dà una farina integra di un bruno rossastro. Il pane era sostanzioso ma squisito." Notate il suo sguardo malinconico. "Yur ki è un latte, che ricaviamo dal bestiame che alleviamo. Forse ne avete visto un po' su Newhome; mi dicono che la vostra specie ha un animale simile chiamato 'pecora'. Il pane fatto con lo yur ki è ricco e sontuoso. È fra i miei cibi preferiti per colazione." Si ferma un momento e sembra un po' abbattuto. "Il pane di ghiande un tempo era raro nella cucina Hai. Troppo dolce. Ma da quando gli umani si sono uniti a noi sui nostri pianeti, vogliono solo pane di ghiande. La grande richiesta ha spostato tutti i pani tradizionali con cui sono cresciuto dalle zone ad alto passaggio come questo ristorante dello spazioporto. Mi manca averli facilmente a disposizione."`
+			action
+				payment -50
+			`	Come se fosse una battuta, la cameriera arriva con i pasti di entrambi. L'Hai accanto a voi, di cui ancora non sapete il nome, sospira vedendo il suo pane di ghiande gratuito, ma lo mangia comunque. Finite i vostri pasti in silenzio e ve ne andate.`
+				decline

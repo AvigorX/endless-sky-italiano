@@ -1,0 +1,363 @@
+{
+ "block": {
+  "path": "data/human/near earth jobs.txt",
+  "line_from": 17,
+  "line_to": 325,
+  "units": 32
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Historical field trip to <planet>|description|17|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 17,
+   "kind": "DESCRIPTION",
+   "context": "mission:Historical field trip to <planet>",
+   "english": "These <bunks> school students need to reach <destination> by <date> for a historical field trip. The school will pay you <payment>.",
+   "italian": "Questi <bunks> studenti devono arrivare a <destination> entro <date> per una gita scolastica storica. La scuola ti pagherà <payment>.",
+   "ratio": 1.015
+  },
+  {
+   "idx": 2,
+   "id": "mission:Historical field trip to <planet>|dialog|32|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 32,
+   "kind": "DIALOG",
+   "context": "mission:Historical field trip to <planet>",
+   "english": "The students excitedly rush off your ship, taking pictures of everything they see. The school deposits <payment> into your account.",
+   "italian": "Gli studenti si precipitano giù dalla nave entusiasti, fotografando tutto ciò che vedono. La scuola deposita <payment> sul tuo conto.",
+   "ratio": 1.015
+  },
+  {
+   "idx": 3,
+   "id": "mission:To Earth Day celebration [0]|name|36|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 36,
+   "kind": "VALUE",
+   "context": "mission:To Earth Day celebration [0]",
+   "english": "Earth Day celebration",
+   "italian": "Festa della Terra",
+   "ratio": 0.81
+  },
+  {
+   "idx": 4,
+   "id": "mission:To Earth Day celebration [0]|description|39|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 39,
+   "kind": "DESCRIPTION",
+   "context": "mission:To Earth Day celebration [0]",
+   "english": "Bring <fare> to <destination> by <date> for the Earth Day celebration on April 22nd. Payment is <payment>.",
+   "italian": "Porta <fare> a <destination> entro <date> per la Festa della Terra del 22 aprile. Il pagamento è <payment>.",
+   "ratio": 1.009
+  },
+  {
+   "idx": 5,
+   "id": "mission:To Earth Day celebration [0]|dialog|67|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 67,
+   "kind": "DIALOG",
+   "context": "mission:To Earth Day celebration [0]",
+   "english": "You wish your <passengers> the best of luck on <planet>. After collecting your payment of <payment>, your <passengers> put on their Earth Day hats and leave with their belongings.",
+   "italian": "Auguri ai tuoi <passengers> per il loro soggiorno su <planet>. Dopo aver ritirato il pagamento di <payment>, i tuoi <passengers> si mettono i cappelli della Festa della Terra e se ne vanno con le loro cose.",
+   "ratio": 1.151
+  },
+  {
+   "idx": 6,
+   "id": "mission:To Earth Day celebration [1]|name|71|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 71,
+   "kind": "VALUE",
+   "context": "mission:To Earth Day celebration [1]",
+   "english": "Earth Day celebration",
+   "italian": "Festa della Terra",
+   "ratio": 0.81
+  },
+  {
+   "idx": 7,
+   "id": "mission:To Earth Day celebration [1]|description|74|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 74,
+   "kind": "DESCRIPTION",
+   "context": "mission:To Earth Day celebration [1]",
+   "english": "Deliver <cargo> to <destination> by <date> in preparation for the Earth Day celebration on April 22nd. Payment is <payment>.",
+   "italian": "Consegna <cargo> a <destination> entro <date>, in preparazione della Festa della Terra del 22 aprile. Il pagamento è <payment>.",
+   "ratio": 1.024
+  },
+  {
+   "idx": 8,
+   "id": "mission:To Earth Day celebration [1]|dialog|102|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 102,
+   "kind": "DIALOG",
+   "context": "mission:To Earth Day celebration [1]",
+   "english": "Spaceport workers already festively dressed for Earth Day remove the cargo of <commodity> from your ship and hand you your payment of <payment>.",
+   "italian": "Gli operai dello spazioporto, già vestiti a festa per la Festa della Terra, scaricano dalla tua nave il carico di <commodity> e ti consegnano il pagamento di <payment>.",
+   "ratio": 1.167
+  },
+  {
+   "idx": 9,
+   "id": "mission:To Earth Day celebration [2]|name|106|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 106,
+   "kind": "VALUE",
+   "context": "mission:To Earth Day celebration [2]",
+   "english": "Earth Day celebration",
+   "italian": "Festa della Terra",
+   "ratio": 0.81
+  },
+  {
+   "idx": 10,
+   "id": "mission:To Earth Day celebration [2]|description|109|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 109,
+   "kind": "DESCRIPTION",
+   "context": "mission:To Earth Day celebration [2]",
+   "english": "Bring <fare> to <destination> by <date> for the Earth Day celebration on April 22nd. Payment is <payment>.",
+   "italian": "Porta <fare> a <destination> entro <date> per la Festa della Terra del 22 aprile. Il pagamento è <payment>.",
+   "ratio": 1.009
+  },
+  {
+   "idx": 11,
+   "id": "mission:To Earth Day celebration [2]|dialog|138|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 138,
+   "kind": "DIALOG",
+   "context": "mission:To Earth Day celebration [2]",
+   "english": "You wish your <passengers> the best of luck on <planet>. After collecting your payment of <payment>, your <passengers> put on their Earth Day hats and leave with their belongings.",
+   "italian": "Auguri ai tuoi <passengers> per il loro soggiorno su <planet>. Dopo aver ritirato il pagamento di <payment>, i tuoi <passengers> si mettono i cappelli della Festa della Terra e se ne vanno con le loro cose.",
+   "ratio": 1.151
+  },
+  {
+   "idx": 12,
+   "id": "mission:From Earth Day celebration [0]|name|142|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 142,
+   "kind": "VALUE",
+   "context": "mission:From Earth Day celebration [0]",
+   "english": "Return from Earth Day",
+   "italian": "Ritorno dalla Festa della Terra",
+   "ratio": 1.476
+  },
+  {
+   "idx": 13,
+   "id": "mission:From Earth Day celebration [0]|description|145|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 145,
+   "kind": "DESCRIPTION",
+   "context": "mission:From Earth Day celebration [0]",
+   "english": "Bring <fare> home to <destination> after the Earth Day celebration. Payment is <payment>.",
+   "italian": "Riporta <fare> a casa, su <destination>, dopo la Festa della Terra. Il pagamento è <payment>.",
+   "ratio": 1.045
+  },
+  {
+   "idx": 14,
+   "id": "mission:From Earth Day celebration [0]|dialog|169|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 169,
+   "kind": "DIALOG",
+   "context": "mission:From Earth Day celebration [0]",
+   "english": "Your passengers thank you for returning them to <planet>, and you collect your payment of <payment>.",
+   "italian": "I tuoi passeggeri ti ringraziano per averli riportati su <planet>, e ritiri il pagamento di <payment>.",
+   "ratio": 1.02
+  },
+  {
+   "idx": 15,
+   "id": "mission:From Earth Day celebration [1]|name|173|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 173,
+   "kind": "VALUE",
+   "context": "mission:From Earth Day celebration [1]",
+   "english": "Return from Earth Day",
+   "italian": "Ritorno dalla Festa della Terra",
+   "ratio": 1.476
+  },
+  {
+   "idx": 16,
+   "id": "mission:From Earth Day celebration [1]|description|176|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 176,
+   "kind": "DESCRIPTION",
+   "context": "mission:From Earth Day celebration [1]",
+   "english": "Bring <fare> home to <destination> after the Earth Day celebration. Payment is <payment>.",
+   "italian": "Riporta <fare> a casa, su <destination>, dopo la Festa della Terra. Il pagamento è <payment>.",
+   "ratio": 1.045
+  },
+  {
+   "idx": 17,
+   "id": "mission:From Earth Day celebration [1]|dialog|200|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 200,
+   "kind": "DIALOG",
+   "context": "mission:From Earth Day celebration [1]",
+   "english": "Your passengers thank you for returning them to <planet>, and you collect your payment of <payment>.",
+   "italian": "I tuoi passeggeri ti ringraziano per averli riportati su <planet>, e ritiri il pagamento di <payment>.",
+   "ratio": 1.02
+  },
+  {
+   "idx": 18,
+   "id": "mission:From Earth Day celebration [2]|name|204|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 204,
+   "kind": "VALUE",
+   "context": "mission:From Earth Day celebration [2]",
+   "english": "Return from Earth Day",
+   "italian": "Ritorno dalla Festa della Terra",
+   "ratio": 1.476
+  },
+  {
+   "idx": 19,
+   "id": "mission:From Earth Day celebration [2]|description|207|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 207,
+   "kind": "DESCRIPTION",
+   "context": "mission:From Earth Day celebration [2]",
+   "english": "Bring <fare> home to <destination> after the Earth Day celebration. Payment is <payment>.",
+   "italian": "Riporta <fare> a casa, su <destination>, dopo la Festa della Terra. Il pagamento è <payment>.",
+   "ratio": 1.045
+  },
+  {
+   "idx": 20,
+   "id": "mission:From Earth Day celebration [2]|dialog|231|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 231,
+   "kind": "DIALOG",
+   "context": "mission:From Earth Day celebration [2]",
+   "english": "Your passengers thank you for returning them to <planet>, and you collect your payment of <payment>.",
+   "italian": "I tuoi passeggeri ti ringraziano per averli riportati su <planet>, e ritiri il pagamento di <payment>.",
+   "ratio": 1.02
+  },
+  {
+   "idx": 21,
+   "id": "mission:Transport farmers to Mars|description|237|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 237,
+   "kind": "DESCRIPTION",
+   "context": "mission:Transport farmers to Mars",
+   "english": "This group of <bunks> factory workers are hoping to start anew on <planet> as farmers. They will pay you <payment> to take them there.",
+   "italian": "Questo gruppo di <bunks> operai di fabbrica spera di ricominciare da zero su <planet> come agricoltori. Ti pagheranno <payment> per portarli lì.",
+   "ratio": 1.075
+  },
+  {
+   "idx": 22,
+   "id": "mission:Transport farmers to Mars|dialog|249|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 249,
+   "kind": "DIALOG",
+   "context": "mission:Transport farmers to Mars",
+   "english": "You wish the farmers the best of luck on <planet>, and collect your payment of <payment>.",
+   "italian": "Auguri agli agricoltori per il loro soggiorno su <planet>, e ritiri il pagamento di <payment>.",
+   "ratio": 1.056
+  },
+  {
+   "idx": 23,
+   "id": "mission:Transport tourists to Luna|description|255|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 255,
+   "kind": "DESCRIPTION",
+   "context": "mission:Transport tourists to Luna",
+   "english": "This family of <bunks> would like to see the historic sights on Luna. They will pay you <payment> to take them there.",
+   "italian": "Questa famiglia di <bunks> vorrebbe vedere i luoghi storici di Luna. Ti pagheranno <payment> per portarli lì.",
+   "ratio": 0.932
+  },
+  {
+   "idx": 24,
+   "id": "mission:Transport tourists to Luna|dialog|267|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 267,
+   "kind": "DIALOG",
+   "context": "mission:Transport tourists to Luna",
+   "english": "You wish the tourists the best of luck on <planet>, and collect your payment of <payment>.",
+   "italian": "Auguri ai turisti per il loro soggiorno su <planet>, e ritiri il pagamento di <payment>.",
+   "ratio": 0.978
+  },
+  {
+   "idx": 25,
+   "id": "mission:Transport seasonal workers to Earth|description|272|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 272,
+   "kind": "DESCRIPTION",
+   "context": "mission:Transport seasonal workers to Earth",
+   "english": "This group of <bunks> temporary farm workers are looking for transportation back home to Earth. They will pay you <payment> to take them there.",
+   "italian": "Questo gruppo di <bunks> braccianti stagionali cerca un passaggio per tornare a casa, sulla Terra. Ti pagheranno <payment> per portarli lì.",
+   "ratio": 0.972
+  },
+  {
+   "idx": 26,
+   "id": "mission:Transport seasonal workers to Earth|dialog|284|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 284,
+   "kind": "DIALOG",
+   "context": "mission:Transport seasonal workers to Earth",
+   "english": "You wish the workers the best of luck on <planet>, and collect your payment of <payment>.",
+   "italian": "Auguri ai lavoratori per il loro soggiorno su <planet>, e ritiri il pagamento di <payment>.",
+   "ratio": 1.022
+  },
+  {
+   "idx": 27,
+   "id": "mission:Tycho Crater Shipyards Shipment [0]|name|288|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 288,
+   "kind": "VALUE",
+   "context": "mission:Tycho Crater Shipyards Shipment [0]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione a <planet>",
+   "ratio": 1.05
+  },
+  {
+   "idx": 28,
+   "id": "mission:Tycho Crater Shipyards Shipment [0]|description|289|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 289,
+   "kind": "DESCRIPTION",
+   "context": "mission:Tycho Crater Shipyards Shipment [0]",
+   "english": "Deliver <cargo> to <destination>, the home of Tycho Crater Shipyards, a constituent of the Republic Navy Yard. Payment is <payment>.",
+   "italian": "Consegna <cargo> a <destination>, sede dei Tycho Crater Shipyards, parte dell'Arsenale della Marina della Repubblica. Il pagamento è <payment>.",
+   "ratio": 1.083
+  },
+  {
+   "idx": 29,
+   "id": "mission:Tycho Crater Shipyards Shipment [1]|name|306|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 306,
+   "kind": "VALUE",
+   "context": "mission:Tycho Crater Shipyards Shipment [1]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione a <planet>",
+   "ratio": 1.05
+  },
+  {
+   "idx": 30,
+   "id": "mission:Tycho Crater Shipyards Shipment [1]|description|307|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 307,
+   "kind": "DESCRIPTION",
+   "context": "mission:Tycho Crater Shipyards Shipment [1]",
+   "english": "Deliver <cargo> to <destination>, the home of Tycho Crater Shipyards, a constituent of the Republic Navy Yard. Payment is <payment>.",
+   "italian": "Consegna <cargo> a <destination>, sede dei Tycho Crater Shipyards, parte dell'Arsenale della Marina della Repubblica. Il pagamento è <payment>.",
+   "ratio": 1.083
+  },
+  {
+   "idx": 31,
+   "id": "mission:Tycho Crater Shipyards Shipment [2]|name|324|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 324,
+   "kind": "VALUE",
+   "context": "mission:Tycho Crater Shipyards Shipment [2]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione a <planet>",
+   "ratio": 1.05
+  },
+  {
+   "idx": 32,
+   "id": "mission:Tycho Crater Shipyards Shipment [2]|description|325|0",
+   "path": "data/human/near earth jobs.txt",
+   "line": 325,
+   "kind": "DESCRIPTION",
+   "context": "mission:Tycho Crater Shipyards Shipment [2]",
+   "english": "Deliver <cargo> to <destination>, the home of Tycho Crater Shipyards, a constituent of the Republic Navy Yard. Payment is <payment>.",
+   "italian": "Consegna <cargo> a <destination>, sede dei Tycho Crater Shipyards, parte dell'Arsenale della Marina della Repubblica. Il pagamento è <payment>.",
+   "ratio": 1.083
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "batch": "B005",
+ "at": "2026-10-17T11:48:57Z",
+ "results": 3,
+ "errors": 0,
+ "warnings": 4,
+ "status": "APPROVED",
+ "issues": [
+  {
+   "unit_id": "help:try out fighters transfer cargo|You have a carrier which can use fighters to collect dropped materials if the fighter has cargo space.|145|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "help:try out fighters transfer cargo|\tIn Preferences and Settings under the Gameplay section, turn on \"Fighters transfer cargo\" to learn more.|147|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "help:try out fighters transfer cargo|\tIn Preferences and Settings under the Gameplay section, turn on \"Fighters transfer cargo\" to learn more.|147|0",
+   "code": "GLOSSARY",
+   "severity": "info",
+   "detail": "'cargo' -> 'carico' not found"
+  },
+  {
+   "unit_id": "help:navigation|Welcome to the sky! To travel to another star system, press <View star map> to view your map, and click on the system you want to travel to. Your hyperdrive can only travel along the \"links\" shown on your map. After selecting a destination, close your map and press <Initiate hyperspace jump> to jump to that system.|150|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "block": {
+  "path": "data/drak/drak culture conversations.txt",
+  "line_from": 93,
+  "line_to": 138,
+  "units": 16
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Drak Revelations: Korath|Just as your ship reaches <origin>, you blink, and are no longer in your cockpit.|93|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 93,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Korath",
+   "english": "Just as your ship reaches <origin>, you blink, and are no longer in your cockpit.",
+   "italian": "Proprio mentre la tua nave raggiunge <origin>, batti le palpebre e non sei più nell'abitacolo.",
+   "ratio": 1.16
+  },
+  {
+   "idx": 2,
+   "id": "mission:Drak Revelations: Korath|\tOn a rocky plateau, gravel and sand make up the base for structures being built by bulky, vaguely humanoid figures made of dirt and rust. A strong light shines down from above, illuminating the area.|94|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 94,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Korath",
+   "english": "\tOn a rocky plateau, gravel and sand make up the base for structures being built by bulky, vaguely humanoid figures made of dirt and rust. A strong light shines down from above, illuminating the area.",
+   "italian": "\tSu un altopiano roccioso, ghiaia e sabbia fanno da base a strutture che stanno costruendo figure massicce e vagamente umanoidi, fatte di terra e ruggine. Una luce forte scende dall'alto e illumina la zona.",
+   "ratio": 1.03
+  },
+  {
+   "idx": 3,
+   "id": "mission:Drak Revelations: Korath|\tYou feel as though time is rapidly progressing. As the months and years go by, the creatures build taller and grander towers, both elevating themselves and gradually blocking away the light. Eventually the entire plateau serves as the footing for a great domed tower.|95|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 95,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Korath",
+   "english": "\tYou feel as though time is rapidly progressing. As the months and years go by, the creatures build taller and grander towers, both elevating themselves and gradually blocking away the light. Eventually the entire plateau serves as the footing for a great domed tower.",
+   "italian": "\tHai la sensazione che il tempo scorra in fretta. Col passare dei mesi e degli anni le creature costruiscono torri sempre più alte e imponenti, sollevandosi e al tempo stesso chiudendo fuori la luce a poco a poco. Alla fine l'intero altopiano fa da basamento a una grande torre a cupola.",
+   "ratio": 1.071
+  },
+  {
+   "idx": 4,
+   "id": "mission:Drak Revelations: Korath|\tThe light creeps in faintly by cracks and gaps, but those are being swiftly patched by the creatures, who seem to hiss at the light in disapproval. They begin heating up and glowing, hotter and hotter, until they cast off their dirty shells, taking forms of shiny, blazing bronze.|96|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 96,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Korath",
+   "english": "\tThe light creeps in faintly by cracks and gaps, but those are being swiftly patched by the creatures, who seem to hiss at the light in disapproval. They begin heating up and glowing, hotter and hotter, until they cast off their dirty shells, taking forms of shiny, blazing bronze.",
+   "italian": "\tLa luce filtra debolmente da crepe e fessure, ma le creature le richiudono in fretta, e sembrano sibilare alla luce in segno di disapprovazione. Cominciano a riscaldarsi e a brillare, sempre più calde, finché si liberano dei loro gusci sporchi e assumono forme di bronzo lucente e incandescente.",
+   "ratio": 1.053
+  },
+  {
+   "idx": 5,
+   "id": "mission:Drak Revelations: Korath|\tThe creatures stand proud and strong in their new forms, but their bodies continue to heat up, and so the bronze melts, and their towers begin to crumble and distort due to the intense heat, until the entire dome collapses.|97|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 97,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Korath",
+   "english": "\tThe creatures stand proud and strong in their new forms, but their bodies continue to heat up, and so the bronze melts, and their towers begin to crumble and distort due to the intense heat, until the entire dome collapses.",
+   "italian": "\tLe creature se ne stanno fiere e salde nelle loro nuove forme, ma i loro corpi continuano a riscaldarsi: il bronzo si fonde e le loro torri cominciano a sgretolarsi e a deformarsi per il calore intenso, finché l'intera cupola crolla.",
+   "ratio": 1.045
+  },
+  {
+   "idx": 6,
+   "id": "mission:Drak Revelations: Korath|\tYou open your eyes again, and are back in the cockpit of the <ship>.|98|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 98,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Korath",
+   "english": "\tYou open your eyes again, and are back in the cockpit of the <ship>.",
+   "italian": "\tRiapri gli occhi e sei di nuovo nell'abitacolo della <ship>.",
+   "ratio": 0.884
+  },
+  {
+   "idx": 7,
+   "id": "mission:Drak Revelations: Quarg|The instant your ship finishes its jump, lights begin to flicker off in the cockpit, until everything goes dark.|116|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 116,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Quarg",
+   "english": "The instant your ship finishes its jump, lights begin to flicker off in the cockpit, until everything goes dark.",
+   "italian": "Nell'istante in cui la nave conclude il suo salto, le luci dell'abitacolo cominciano a spegnersi una dopo l'altra, finché tutto diventa buio.",
+   "ratio": 1.259
+  },
+  {
+   "idx": 8,
+   "id": "mission:Drak Revelations: Quarg|\tAt first all you can see is barren, damp soil, barely illuminated by a dim, remote light from above. A dense fog seeps upward from cracks in the ground, and in the distance you can barely make out the repeated crashing of waves.|117|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 117,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Quarg",
+   "english": "\tAt first all you can see is barren, damp soil, barely illuminated by a dim, remote light from above. A dense fog seeps upward from cracks in the ground, and in the distance you can barely make out the repeated crashing of waves.",
+   "italian": "\tAll'inizio vedi solo terreno brullo e umido, appena illuminato da una luce fioca e lontana che viene dall'alto. Una nebbia fitta risale dalle crepe del suolo e in lontananza riesci a malapena a distinguere il fragore ripetuto delle onde.",
+   "ratio": 1.039
+  },
+  {
+   "idx": 9,
+   "id": "mission:Drak Revelations: Quarg|\tA gaunt giant of pale-gold cuts through the fog in a fit, smashing at the ground as it wails and attempts to slap and kick away the water from the ground, to no avail. The light flickers and quiets in tandem with its smashing and weeping.|118|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 118,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Quarg",
+   "english": "\tA gaunt giant of pale-gold cuts through the fog in a fit, smashing at the ground as it wails and attempts to slap and kick away the water from the ground, to no avail. The light flickers and quiets in tandem with its smashing and weeping.",
+   "italian": "\tUn gigante scarno color oro pallido fende la nebbia in preda a un accesso furioso, percuotendo il suolo mentre ulula e cerca di scacciare a schiaffi e calci l'acqua da terra, invano. La luce tremola e si attenua insieme ai suoi colpi e al suo pianto.",
+   "ratio": 1.05
+  },
+  {
+   "idx": 10,
+   "id": "mission:Drak Revelations: Quarg|\tWhen it flashes just bright enough, you can make out the graves. All around you, they seem to extend endlessly toward the horizon in all directions. The giant never touches or dirties the graves, and during its brief periods of respite, seems scarcely able to look at them before becoming enraged once more.|119|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 119,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Quarg",
+   "english": "\tWhen it flashes just bright enough, you can make out the graves. All around you, they seem to extend endlessly toward the horizon in all directions. The giant never touches or dirties the graves, and during its brief periods of respite, seems scarcely able to look at them before becoming enraged once more.",
+   "italian": "\tQuando lampeggia appena abbastanza, riesci a distinguere le tombe. Tutt'intorno a te sembrano estendersi senza fine verso l'orizzonte, in ogni direzione. Il gigante non tocca né sporca mai le tombe e, nei suoi brevi momenti di tregua, sembra a malapena riuscire a guardarle prima di infuriarsi di nuovo.",
+   "ratio": 0.987
+  },
+  {
+   "idx": 11,
+   "id": "mission:Drak Revelations: Quarg|\tThe light blinks off, and you see no more. Your ship's lights come alive again, and you find yourself in your cockpit.|120|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 120,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Quarg",
+   "english": "\tThe light blinks off, and you see no more. Your ship's lights come alive again, and you find yourself in your cockpit.",
+   "italian": "\tLa luce si spegne e non vedi più nulla. Le luci della nave si riaccendono e ti ritrovi nell'abitacolo.",
+   "ratio": 0.866
+  },
+  {
+   "idx": 12,
+   "id": "mission:Drak Revelations: Saryds|Landing on <origin>, you get up to exit the cockpit and begin the post-landing checks. When you open the door, you find not the <ship>'s main hallway, but a sunlit glade. Looking back, your cockpit too seems to have been replaced by a forest.|134|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 134,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Saryds",
+   "english": "Landing on <origin>, you get up to exit the cockpit and begin the post-landing checks. When you open the door, you find not the <ship>'s main hallway, but a sunlit glade. Looking back, your cockpit too seems to have been replaced by a forest.",
+   "italian": "Atterrando su <origin>, ti alzi per uscire dall'abitacolo e cominciare i controlli successivi all'atterraggio. Quando apri la porta, non trovi il corridoio principale della <ship>, ma una radura illuminata dal sole. Guardandoti indietro, anche il tuo abitacolo sembra essere stato sostituito da una foresta.",
+   "ratio": 1.269
+  },
+  {
+   "idx": 13,
+   "id": "mission:Drak Revelations: Saryds|\tGreat stags made of steel rest in the center of the glade, rising in curiosity and alarm, as a small group of great, pale-gold giants approach them. The giants extend their arms gently, and one by one the stags shift from dull steel to a shining silver. Night falls.|135|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 135,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Saryds",
+   "english": "\tGreat stags made of steel rest in the center of the glade, rising in curiosity and alarm, as a small group of great, pale-gold giants approach them. The giants extend their arms gently, and one by one the stags shift from dull steel to a shining silver. Night falls.",
+   "italian": "\tGrandi cervi d'acciaio riposano al centro della radura e si alzano, curiosi e allarmati, mentre un piccolo gruppo di grandi giganti color oro pallido si avvicina. I giganti allungano le braccia con delicatezza e uno dopo l'altro i cervi passano dall'acciaio opaco a un argento splendente. Scende la notte.",
+   "ratio": 1.146
+  },
+  {
+   "idx": 14,
+   "id": "mission:Drak Revelations: Saryds|\tSunlight returns faintly the next day. Over the edge of the forest, you can see the giants chasing small critters, entrapping them in small cages. The stags are communing in the glade again, seemingly disputing on what to do about the war outside. The sun sets again.|136|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 136,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Saryds",
+   "english": "\tSunlight returns faintly the next day. Over the edge of the forest, you can see the giants chasing small critters, entrapping them in small cages. The stags are communing in the glade again, seemingly disputing on what to do about the war outside. The sun sets again.",
+   "italian": "\tIl giorno dopo la luce del sole torna debolmente. Oltre il margine della foresta vedi i giganti inseguire piccoli animali e rinchiuderli in piccole gabbie. I cervi si radunano di nuovo nella radura, e sembrano discutere di che cosa fare della guerra là fuori. Il sole tramonta di nuovo.",
+   "ratio": 1.071
+  },
+  {
+   "idx": 15,
+   "id": "mission:Drak Revelations: Saryds|\tThen the scene shifts to the fields just outside the forest, now lit only by the plentiful lightning bolts, brought by a raging thunderstorm that has encompassed the entire scene. Stags and giants alike lie dead on the ground, brutal wounds inflicted upon both sides. A few stags remain, mournfully making their way over the earth strewn with corpses. Downcast, they look to the shattered cages.|137|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 137,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Saryds",
+   "english": "\tThen the scene shifts to the fields just outside the forest, now lit only by the plentiful lightning bolts, brought by a raging thunderstorm that has encompassed the entire scene. Stags and giants alike lie dead on the ground, brutal wounds inflicted upon both sides. A few stags remain, mournfully making their way over the earth strewn with corpses. Downcast, they look to the shattered cages.",
+   "italian": "\tPoi la scena si sposta nei campi appena fuori dalla foresta, ora illuminati solo dai fulmini abbondanti di un temporale furioso che ha avvolto tutto. Cervi e giganti giacciono morti al suolo, con ferite brutali inferte a entrambe le parti. Restano pochi cervi, che avanzano in lutto sulla terra cosparsa di cadaveri. Con lo sguardo basso, guardano le gabbie in frantumi.",
+   "ratio": 0.937
+  },
+  {
+   "idx": 16,
+   "id": "mission:Drak Revelations: Saryds|\tThe scene unravels just as it first manifested, and you're standing right outside of your cockpit door.|138|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 138,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Saryds",
+   "english": "\tThe scene unravels just as it first manifested, and you're standing right outside of your cockpit door.",
+   "italian": "\tLa scena si dissolve così come si era manifestata, e ti ritrovi in piedi davanti alla porta del tuo abitacolo.",
+   "ratio": 1.067
+  }
+ ]
+}

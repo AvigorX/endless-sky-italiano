@@ -1,0 +1,271 @@
+# Copyright (c) 2023 by Azure
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+
+mission "Avgi Culture: Verticality"
+	minor
+	invisible
+	source Peripheria
+	to offer
+		not "avgi: lost in twilight"
+		random < 15
+	on offer
+		conversation
+			`Mentre cerchi un posto dove prendere uno spuntino, scopri che quasi tutti i ristoranti sono sugli anelli-terrazza sopra il tuo livello dello spazioporto. Dopo qualche domanda in giro, arrivi alla conclusione che le strutture degli Avgi semplicemente non sono state progettate pensando a umani che non volano, e sei costretto a chiedere a un addetto molto confuso di usare il montacarichi dello spazioporto per salire di un solo livello.`
+				decline
+
+
+mission "Avgi Culture: Free Fuel"
+	minor
+	landing
+	invisible
+	source
+		government "Avgi (Consonance)"
+	to offer
+		not "avgi: lost in twilight"
+		random < 15
+	on offer
+		conversation
+			`Mentre un'addetta del cantiere ti aiuta a fare il pieno di carburante alla <ship>, la senti borbottare. "Incredulation. Ci ordinano di dare carburante gratis all'alieno, mentre noi sanguiniamo dagli occhi per ogni goccia di dee."`
+				decline
+
+
+mission "Avgi Culture: Playfight"
+	minor
+	invisible
+	source "Peripheria"
+	to offer
+		not "avgi: lost in twilight"
+		random < 12
+	on offer
+		conversation
+			`Mentre attraversi lo spazioporto, un paio di piccoli Avgi ti sfrecciano sopra la testa - bambini, forse - agitando dei bastoncini l'uno contro l'altro come in una specie di gioco. Uno dei due riesce a far volare via il bastoncino dell'altro, che allora esegue una specie di tonneau da capogiro prima che i due volino via fuori dalla vista.`
+				decline
+
+
+mission "Avgi Culture: Cocoon"
+	minor
+	invisible
+	source
+		government "Avgi (Consonance)"
+	to offer
+		not "avgi: lost in twilight"
+		random < 12
+	on offer
+		conversation
+			`Un Avgi passa in volo, con un paio di piccoli Avgi seduti sulla schiena. Fra loro è incastonato una specie di bozzolo, filato di seta che si avvolge in una corda stretta con cura attorno al corpo della madre.`
+				decline
+
+
+mission "Avgi Culture: Zapchannel Ad"
+	minor
+	invisible
+	source
+		government "Avgi (Consonance)"
+	to offer
+		not "avgi: lost in twilight"
+		random < 3
+	on offer
+		conversation
+			branch language
+				has "language: Avgi (Written)"
+			`Un'insegna elettronica economica, appiccicata alla parete alla meno peggio, lampeggia una serie di simboli colorati, netti e angolosi. Non riesci a capirla, ma supponi che sia probabilmente una pubblicità o un avviso di qualche tipo.`
+				decline
+
+			label language
+			`Un'insegna elettronica economica, appiccicata alla parete alla meno peggio, lampeggia un messaggio nella colorata lingua scritta degli Avgi. "Zapchannel Ray Energy! Con oltre tre quadrilioni di decadimenti gamma per porzione, una dose basta a dare energia per tutta la vita! Compralo oggi!"`
+				decline
+
+
+mission "Avgi Culture: Dissonance Protest 1"
+	minor
+	invisible
+	source
+		government "Avgi (Consonance)"
+	to offer
+		not "avgi: lost in twilight"
+		random < 3
+	on offer
+		conversation
+			branch language
+				has "language: Avgi (Written)"
+			`Una fila di Avgi dall'aria arrabbiata marcia in un ampio cerchio attorno allo spazioporto, mentre altri sfrecciano sopra la testa con lo stesso schema. Molti sembrano agitare bandiere colorate, mentre alcuni degli Avgi in volo trascinano striscioni con grandi lettere angolose scritte in colori vivaci. Tutti gli Avgi, che sembrano partecipare a una qualche forma di protesta, portano nastri magenta brillante attorno alle braccia, un colore che sembra altrettanto presente sulle loro bandiere e sui loro striscioni.`
+				decline
+
+			label language
+			`Una fila di Avgi dall'aria arrabbiata marcia in un ampio cerchio attorno allo spazioporto, mentre altri sfrecciano sopra la testa con lo stesso schema. Molti sembrano agitare bandiere colorate, mentre alcuni degli Avgi in volo trascinano striscioni con slogan colorati. "BASTA CON LE TASSE DELLA CONSONANCE", "ABOLIAMO IL FEUDALESIMO MINERALE" e "SMETTETE DI MANDARCI A MORIRE" sono solo alcuni dei messaggi che riesci a leggere, tutti nella scrittura angolosa degli Avgi. Tutti gli Avgi portano nastri magenta brillante attorno alle braccia, un colore che sembra altrettanto presente sulle loro bandiere e sui loro striscioni.`
+				decline
+
+
+mission "Avgi Culture: Dissonance Graffiti 1"
+	minor
+	invisible
+	source
+		government "Avgi (Consonance)"
+	to offer
+		not "avgi: lost in twilight"
+		random < 3
+	on offer
+		conversation
+			branch language
+				has "language: Avgi (Written)"
+			`Trovi simboli colorati e ricurvi tracciati su pareti, pavimento e soffitto del terminal dello spazioporto di <planet>, e vedi un pugno di Avgi con spazzole e mocci che cercano di rimuoverli. Non sei sicuro di che cosa dicano, ma altri Avgi sembrano ridere e indicare mentre passano. Gli addetti che strofinano via i graffiti, però, sembrano divertirsi molto meno.`
+				decline
+
+			label language
+			`Simboli colorati e ricurvi sono tracciati su pareti, pavimento e soffitto del terminal dello spazioporto di <planet>, e vedi un pugno di Avgi con spazzole e mocci che cercano di rimuoverli. Buona parte della vernice è colata lungo le pareti o si sovrappone ad altri simboli, e quello che riesci a vedere è fatto male, ma riesci a distinguere parole come 'tasse' e 'defenestrare' e la frase 'Twilight Guard? Più che altro Twilight Gourd.'`
+				decline
+
+
+mission "Avgi Culture: We Live In A Society"
+	minor
+	invisible
+	source
+		government "Avgi (Consonance)"
+	to offer
+		not "avgi: lost in twilight"
+		random < 3
+	on offer
+		conversation
+			`Un Avgi ti passa accanto, con la testa immersa in qualcosa che somiglia notevolmente a un giornale. Lo senti borbottare mentre passa: "Incredibile. Viviamo davvero in una società, considerazione."`
+				decline
+
+
+mission "Avgi Culture: Realism"
+	minor
+	invisible
+	source
+		government "Avgi (Consonance)"
+	to offer
+		not "avgi: lost in twilight"
+		random < 3
+	on offer
+		conversation
+			`Una coppia di Avgi ti passa accanto, immersa in una conversazione. "Apprezzamento. Sono solo contento che qui siamo realistici," dice uno. L'altro non risponde, ma percepisci un senso di grande disperazione.`
+				decline
+
+
+mission "Avgi Culture: Doomed Korath"
+	minor
+	invisible
+	source
+		attributes "aberrant siege"
+	to offer
+		not "avgi: lost in twilight"
+		random < 3
+	on offer
+		conversation
+			`Un Avgi sta su un uscio e parla in un megafono. "Proclama. Prendete avvertimento, abitanti! Senza un giusto equilibrio nella vostra vita, sarete condannati! Condannati, dico! Proprio come quei Korath di cui ho sentito parlare. La fine dei tempi è vicina!"`
+				decline
+
+
+mission "Avgi Culture: General Ripper"
+	minor
+	invisible
+	source
+		attributes "aberrant siege"
+	to offer
+		not "avgi: lost in twilight"
+		random < 3
+	on offer
+		conversation
+			`Un Avgi sta a un incrocio, agitando un cartello e un fucile laser. "Dichiarazione. Gli Aberrant stanno inquinando i nostri preziosi fluidi corporei, cittadini! Agite ora! Non possiamo permettere un divario di fluidi!"`
+			`	Presto arrivano gli addetti alla sicurezza e cominciano a cercare di calmare l'Avgi, guardando il fucile laser con nervosismo.`
+				decline
+
+
+mission "Avgi Culture: Criminal Mischief"
+	minor
+	invisible
+	source
+		government "Avgi (Consonance)"
+	to offer
+		not "avgi: lost in twilight"
+		random < 3
+	on offer
+		conversation
+			`Un Avgi verde brillante con una sciarpa nera ti sfreccia sopra la testa verso uno dei cancelli del terminal dello spazioporto, con un sacco di tela comicamente enorme che le penzola dietro. Un terzetto di Avgi vestiti di giallo brillante si fa largo a forza fra una folla confusa a mezz'aria, agitando manganelli. "Attenzione! Fermo, ladra!"`
+			`	"Scherno! Non mi prenderete mai viva!" grida la ladra, prima di schiantarsi subito contro una parete. Scuoti la testa mentre la portano via in manette.`
+				decline
+
+
+mission "Avgi Culture: False Alarm"
+	minor
+	invisible
+	source
+		government "Avgi (Twilight Guard)"
+	to offer
+		not "avgi: lost in twilight"
+		random < 3
+	on offer
+		conversation
+			`Lo spazioporto si illumina di luci gialle lampeggianti mentre una voce robotica proclama il suo messaggio. "Comando. Pericolo di radiazioni, cercate subito riparo. Comando. Pericolo di radiazioni, cercate subito riparo."`
+			`	La folla ha appena avuto il tempo di farsi prendere dal panico che la voce si spegne con uno stridio di statica. "Imbarazzo. Scuse, falso allarme. Mindaro ha rovesciato la sua bevanda sulla console, non c'è pericolo di radiazioni."`
+				decline
+
+
+mission "Avgi Culture: Fencing"
+	minor
+	invisible
+	source
+		government "Avgi (Dissonance)"
+	to offer
+		not "avgi: lost in twilight"
+		random < 15
+	on offer
+		conversation
+			`Mentre attraversi lo spazioporto su <planet>, noti una coppia di Avgi che si dirige verso un grande edificio. Hanno in mano quelli che sembrano lunghi e sottili stocchi.`
+			choice
+				`	(Avvicinati.)`
+				`	(Ignorali.)`
+					goto ignore
+			`	Mentre ti avvicini ai due Avgi dai colori vivaci, lanciano uno sguardo nella tua direzione. Uno dei due, di un verde acqua spento, prende la parola. "Invito. Umano, sei forse interessato ad assistere all'antico sport Avgi della scherma, domanda?"`
+			choice
+				`	"Scherma? Come lo sport umano?"`
+				`	"Certo, sono disposto a guardare."`
+					goto accept
+				`	"Sto bene così, grazie."`
+					goto ignore
+			`	L'altro, di un blu brillante con riflessi viola, interviene. "Rassicurazione. Benché come specie sia improbabile che vi abbiamo preceduti in uno sport come questo, ti esorto comunque a venire."`
+			`	Il primo Avgi continua: "Aggiunta. Considerate le nostre... differenze di agilità, sarà senz'altro uno spettacolo per te. Rispetto allo sport umano, s'intende."`
+			choice
+				`	"Certo, sembra divertente!"`
+				`	"Passo, grazie."`
+					goto ignore
+			label accept
+			branch language
+				has "language: Avgi (Written)"
+			`	Dopo una breve camminata ti ritrovi in una grande sala all'aperto, simile a una palestra ma molto più alta. File di ringhiere che sembrano venire da uno skate park formano gradinate lungo tutto il perimetro dell'area cilindrica, stipate fino all'orlo di Avgi appollaiati. Molti tengono cartelli con scritte colorate che sembrano tifare per uno o per l'altro dei partecipanti.`
+				goto start
+			label language
+			`	Dopo una breve camminata ti ritrovi in una grande sala all'aperto, simile a una palestra ma molto più alta. File di ringhiere che sembrano venire da uno skate park formano gradinate lungo tutto il perimetro dell'area cilindrica, stipate fino all'orlo di Avgi appollaiati. Molti tengono cartelli con scritte colorate che sembrano tifare per uno o per l'altro dei partecipanti. Un cartello in particolare dice "ZOMP PER SCHIACCIARLI COME L'ASSEMBLEA!"`
+			label start
+			action
+				set "avgi: watched zomp win at fencing"
+				log "Minor People" "Zomp" `Zomp è un Avgi di verde acqua spento che ha sconfitto il campione in carica, Razmatazz, in un incontro di scherma.`
+				log `Ho assistito a un incontro di scherma fra due Avgi a bordo di una stazione della Dissonanza, con una folla estremamente chiassosa ed eccitabile. Ho visto una sorpresa: un Avgi di nome Zomp ha sconfitto il campione in carica.`
+			`	Poco dopo, i due Avgi ormai familiari, quello verde acqua spento e quello viola scintillante, escono da una porticina al livello inferiore. Il pubblico dell'arena esplode in un turbinio di battiti d'ala che sembra un boato di incitamento; il tuo traduttore capta "Eccitazione" e "Attesa", fra le altre emozioni, decine di volte. Le ali dei duellanti sembrano munite di sottili fili di rame, e portano gli stessi stocchi che avevi visto prima. Saltano su piccoli piedistalli collocati su ciascun bordo dell'arena.`
+			`	Una voce rimbomba dai molti altoparlanti presenti nella sala. "Proclama. Ecco a voi il nostro campione in carica, Razmatazz, e lo sfidante arrivato dal nulla, Zomp! Siete pronti ad assistere a questa avvincente battaglia fra due paradigmi della lama, domanda?"`
+			`	L'arena torna a vibrare di vita al frullare delle ali. "Attesa. Allora che il duello... cominci."`
+			`	Al segnale dell'annunciatore, i duellanti balzano in aria a una velocità incredibile, girandosi intorno e incrociando le lame. I due salgono a spirale fino alle zone più alte dell'arena e ridiscendono in fretta, entrando e uscendo dalla portata dell'altro più volte al secondo. Meno di un minuto dopo senti un ding sonoro, e uno dei duellanti cade a terra con l'ala ripiegata. La folla, che non aveva smesso di ronzare per tutto il duello, esplode in un frullare d'ali ancora più forte.`
+			`	"Stupore. Zomp vince il primo round," dichiara l'annunciatore. "Riposo. Cominciamo il secondo round?"`
+			`	Ancora una volta i contendenti si mettono in fila e balzano in aria in un duello di velocità e agilità da lacrime agli occhi. E ancora una volta Zomp vince, fra gli applausi tonanti della folla.`
+			`	"Sconcerto. Pare che Zomp abbia sconfitto il nostro campione in carica!" proclama l'annunciatore.`
+			`	"Isteria. Sapevo che avrebbe vinto! Sono in vantaggio dieci a uno su questa scommessa!" dice con esuberanza un Avgi lì vicino, ronzandoti intorno con foga e tenendo varie carte rosa nelle sue molte braccia.`
+			`	Dall'altra parte dell'arena senti l'urlo di un Avgi rosa: "Adorazione! Ti amo, Zomp!"`
+			`	L'intera arena sembra in un caos di acclamazioni, fischi e frullii sordi d'ali per minuti dopo la fine dell'incontro. Non ricordi un solo caso, nello spazio umano, in cui la scherma abbia avuto tanta passione ed energia nel pubblico.`
+			`	Dopo che il chiasso e i festeggiamenti si calmano, non hai problemi a lasciare l'arena affollata - la maggior parte degli Avgi ti vola semplicemente sopra la testa.`
+				decline
+			label ignore
+			`	Lasci che i due volino via, e prosegui per i fatti tuoi.`
+				decline

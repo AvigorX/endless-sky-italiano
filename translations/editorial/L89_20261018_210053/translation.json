@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/successors/successor outfits.txt",
+  "line_from": 561,
+  "line_to": 700,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Multimodal Armor: Light|description|574|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 574,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Multimodal Armor: Light",
+   "english": "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes.",
+   "italian": "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Multimodal Armor: Light|description|575|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 575,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Multimodal Armor: Light",
+   "english": "\tThis configuration introduces well-ordered nanoscale voids into the armor's structure, reducing a warship's mass without compromising structural integrity.",
+   "italian": "\tThis configuration introduces well-ordered nanoscale voids into the armor's structure, reducing a warship's mass without compromising structural integrity.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Multimodal Armor: Heavy|description|587|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 587,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Multimodal Armor: Heavy",
+   "english": "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes.",
+   "italian": "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Multimodal Armor: Heavy|description|588|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 588,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Multimodal Armor: Heavy",
+   "english": "\tThis configuration strengthens the bonds between the atoms making up the armor, increasing its resistance to direct damage.",
+   "italian": "\tThis configuration strengthens the bonds between the atoms making up the armor, increasing its resistance to direct damage.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Multimodal Armor: Regen|description|600|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 600,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Multimodal Armor: Regen",
+   "english": "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes.",
+   "italian": "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Multimodal Armor: Regen|description|601|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 601,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Multimodal Armor: Regen",
+   "english": "\tThis configuration increases the plasticity of the armor, greatly increasing the effectiveness of in-combat repair efforts.",
+   "italian": "\tThis configuration increases the plasticity of the armor, greatly increasing the effectiveness of in-combat repair efforts.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Multimodal Armor: Keystone|description|615|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 615,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Multimodal Armor: Keystone",
+   "english": "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes.",
+   "italian": "The metamaterial armor of Successor warships can be altered in an appropriately equipped spaceport to change its attributes.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Multimodal Armor: Keystone|description|616|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 616,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Multimodal Armor: Keystone",
+   "english": "\tThis configuration allows a vessel equipped with it to safely pass through unstable wormholes. As a side effect, it also substantially interferes with external scans of a vessel's cargo or outfits.",
+   "italian": "\tThis configuration allows a vessel equipped with it to safely pass through unstable wormholes. As a side effect, it also substantially interferes with external scans of a vessel's cargo or outfits.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Kinetic Rail Rifle|description|630|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 630,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Kinetic Rail Rifle",
+   "english": "While projectile weapons of this scale are considered obsolete in human space, having been superseded by laser weaponry, the Successors' generations of experience with high-power kinetic weapons have allowed them to produce this particularly terrifying railgun rifle, firing projectiles capable of piercing body armor and even intervening bulkheads. Particularly effective at repelling boarders, it is capable of interfacing with a Successor ship's computer and surveillance systems, routing target information to a built-in display.",
+   "italian": "While projectile weapons of this scale are considered obsolete in human space, having been superseded by laser weaponry, the Successors' generations of experience with high-power kinetic weapons have allowed them to produce this particularly terrifying railgun rifle, firing projectiles capable of piercing body armor and even intervening bulkheads. Particularly effective at repelling boarders, it is capable of interfacing with a Successor ship's computer and surveillance systems, routing target information to a built-in display.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Radiant Shield Shunt|description|645|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 645,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Radiant Shield Shunt",
+   "english": "On loan from House Kaatrij, this piece of technology is unlike anything you've seen from the Successors. In fact, it's unlike anything you've seen, period.",
+   "italian": "On loan from House Kaatrij, this piece of technology is unlike anything you've seen from the Successors. In fact, it's unlike anything you've seen, period.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Radiant Shield Shunt|description|646|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 646,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Radiant Shield Shunt",
+   "english": "\tFrom the way it integrates with shield and fuel systems, one might be forgiven for guessing it is a cloaking device of some sort, and given the way it diverts incoming infrared radiation while active, perhaps that estimate wouldn't be too far off the mark. Whatever mechanism it employs, its effect is clear: a ship equipped with one of these absorbs next to no heat from any source outside the skin of its shields.",
+   "italian": "\tFrom the way it integrates with shield and fuel systems, one might be forgiven for guessing it is a cloaking device of some sort, and given the way it diverts incoming infrared radiation while active, perhaps that estimate wouldn't be too far off the mark. Whatever mechanism it employs, its effect is clear: a ship equipped with one of these absorbs next to no heat from any source outside the skin of its shields.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Radiant Shield Shunt|description|647|0",
+   "path": "data/successors/successor outfits.txt",
+   "line": 647,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Radiant Shield Shunt",
+   "english": "\tWith wires and connectors that snake through the entire interior of a ship, this outfit cannot be installed by non-specialists.",
+   "italian": "\tWith wires and connectors that snake through the entire interior of a ship, this outfit cannot be installed by non-specialists.",
+   "ratio": 1.0
+  }
+ ]
+}

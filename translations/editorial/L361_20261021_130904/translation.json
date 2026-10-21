@@ -1,0 +1,77 @@
+{
+ "block": {
+  "path": "data/quarg/quarg ships.txt",
+  "line_from": 63,
+  "line_to": 331,
+  "units": 6
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Quarg Lindwyrm|description|63|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 63,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Lindwyrm",
+   "english": "The Quarg use the Lindwyrm as a heavy freighter, transporting in its ample cargo bays items both mundane and fantastical. In the days before the advent of modern cargo scanners revealed some measure of their contents, \"the inside of a Quarg cargo hold\" was slang used to describe any thing or place thought to be unknowable.",
+   "italian": "I Quarg usano il Lindwyrm come mercantile pesante, trasportando nelle sue ampie stive merci sia banali sia favolose. Nei giorni precedenti all'avvento dei moderni scanner di carico, che ne rivelarono in parte il contenuto, \"l'interno di una stiva Quarg\" era un modo di dire usato per descrivere qualunque cosa o luogo ritenuto inconoscibile.",
+   "ratio": 1.052
+  },
+  {
+   "idx": 2,
+   "id": "ship:Quarg Guivre|description|114|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 114,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Guivre",
+   "english": "The Quarg employ these unusual craft as one of their primary tools for building and maintaining their ringworlds, each one operating continuously for hundreds or thousands of years on its planet-scale tasks. Each Guivre is equipped with a graviton slipstream projector, similar in usage to human-built tractor beams, but capable of shifting much, much larger objects with uncanny elegance and precision.",
+   "italian": "I Quarg impiegano queste navi insolite come uno dei loro strumenti principali per costruire e mantenere i loro mondi ad anello: ognuna lavora senza sosta per centinaia o migliaia di anni ai suoi compiti su scala planetaria. Ogni Guivre è equipaggiata con un proiettore di scia gravitonica, di uso simile ai raggi traenti costruiti dagli umani, ma capace di spostare oggetti molto, molto più grandi con una precisione e un'eleganza inquietanti.",
+   "ratio": 1.099
+  },
+  {
+   "idx": 3,
+   "id": "ship:Quarg Drake|description|167|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 167,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Drake",
+   "english": "The Drake is an older ship used by the Quarg for reconnaissance and initial contact with emerging spacefaring species. A popular legend states that a Drake surveyed Sol while humans began to discover spaceflight.",
+   "italian": "Il Drake è una nave più vecchia, usata dai Quarg per la ricognizione e per il primo contatto con le specie spaziali emergenti. Una leggenda diffusa racconta che un Drake esplorò Sol mentre gli umani cominciavano a scoprire il volo spaziale.",
+   "ratio": 1.132
+  },
+  {
+   "idx": 4,
+   "id": "ship:Quarg Wardragon|description|219|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 219,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Wardragon",
+   "english": "The Wardragon is used by the Quarg as a light warship. It is an older design within the Quarg's fleets, supposedly less intimidating compared to their larger warships and thus more suitable for dealings with particularly nascent species.",
+   "italian": "Il Wardragon è usato dai Quarg come nave da guerra leggera. È un progetto più vecchio nelle flotte quarg, presumibilmente meno intimidatorio delle loro navi da guerra maggiori e quindi più adatto ai rapporti con specie particolarmente nascenti.",
+   "ratio": 1.03
+  },
+  {
+   "idx": 5,
+   "id": "ship:Quarg Wyvern|description|272|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 272,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Wyvern",
+   "english": "When humans first encountered Quarg vessels, with their bizarre, scaly-looking hulls and alien forms, the comparisons to dragons of different sorts rapidly proliferated. The Wyvern is a midsize warship of the Quarg, though the distinction between the Quarg warship classes is insignificant to all but the most powerful forces in the galaxy.",
+   "italian": "Quando gli umani incontrarono per la prima volta le navi Quarg, con i loro scafi bizzarri dall'aspetto squamoso e le forme aliene, i paragoni con i draghi di ogni sorta si moltiplicarono rapidamente. Il Wyvern è una nave da guerra di taglia media dei Quarg, benché la distinzione fra le classi di navi da guerra quarg sia irrilevante per tutti tranne le forze più potenti della galassia.",
+   "ratio": 1.138
+  },
+  {
+   "idx": 6,
+   "id": "ship:Quarg Hydra|description|331|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 331,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Hydra",
+   "english": "The many-headed mythological Hydra was supposedly venomous enough to kill mortals with nothing but the scent of its breath or a single drop of its blood. Any captain foolish enough to arouse the fury of the Quarg's heavy warships will no doubt quickly come to understand the exact significance of this part of the Hydra's legend.",
+   "italian": "L'Idra mitologica dalle molte teste era presumibilmente tanto velenosa da uccidere i mortali solo con l'odore del suo fiato o con una singola goccia del suo sangue. Qualsiasi capitano tanto sciocco da suscitare la furia delle navi da guerra pesanti dei Quarg capirà senza dubbio in fretta l'esatto significato di questa parte della leggenda dell'Idra.",
+   "ratio": 1.067
+  }
+ ]
+}

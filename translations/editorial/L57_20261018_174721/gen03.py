@@ -1,0 +1,48 @@
+# -*- coding: utf-8 -*-
+# part03: unita' 71-104 (Acquiescence, seconda parte).
+import json
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+P = {
+71: "All'estremità opposta del tavolo vedi il piccolo modello di una luna di ghiaccio. Non compare nient'altro al riguardo.",
+72: "Alzi lo sguardo e vedi il trio di Gegno che ti fissa ancora intensamente. Tutti gli altri Gegno intorno a te hanno un'espressione simile. Sullo schermo compaiono due icone affiancate, e sotto ciascuna c'è un lungo elenco di frasi. Mentre scorrono, i Gegno cominciano a discutere tra loro, alcuni a voce alta e altri no. Quasi sobbalzi quando il trio si rivolge alla folla e comincia una specie di discorso, indicando a volte la folla e a volte te. Anche se la maggior parte dei Gegno sembra frustrata, il trio riesce a calmare l'assemblea.",
+73: "Il Gegno più massiccio del trio posa allora al centro del tavolo il modello di un'enorme nave da guerra Vi, che riconosci senz'altro. Arrivano altre esplosioni di rabbia dai Gegno intorno, e mentre chi ha posato il modello ti fulmina, gli altri due alla fine placano il tumulto.",
+74: "Dopo aver passato in rassegna tutti i casi che ti riguardano, il trio si rivolge di nuovo all'assemblea con un lungo discorso. Le loro voci echeggiano nell'aria aperta, e tutti i Gegno rispondono con muggiti o canti simultanei, seguiti da altro silenzio. Stranamente ti senti come se fossi tra loro come parte dell'assemblea, e non come uno straniero. Non sei affatto limitato, nemmeno con un'arma addosso.",
+75: "Uno dei Gegno più piccoli del trio ti fa un cenno e parla di nuovo. Continui a non capire una parola di quello che dicono, ma doveva essere importante, perché tutti gli altri Gegno, tranne la tua guida, fanno qualche passo indietro. Il membro del trio ti invita con entrambe le braccia a usare gli oggetti e il tavolo, mentre tutti e tre si ritirano, lasciandoti solo allo scoperto.",
+76: "(Avvicinati al tavolo e prova a spiegare gli incidenti in cui sei stato coinvolto.)",
+77: "(Resta dove sono e non fare nulla.)",
+78: "Non ti avvicini al tavolo e resti impacciato allo scoperto. Forse è meglio non dire nulla, se sei tu quello che loro percepiscono come il problema. Passa un minuto intero di silenzio, e tutti i Gegno, trio compreso, non hanno detto una parola. Giudicano invece in silenzio la scelta che hai deciso di fare. Poi il trio torna al tavolo e sposta tutti i modelli di lato, come se stessero preparando qualcosa.",
+79: "explain",
+80: "Avvicinandoti al tavolo, provi con tutte le tue forze a spiegare ogni situazione una per una. Dato che non sai leggere né fare nulla con lo schermo vero e proprio, provi a raccogliere i modelli, cosa che sembra non dare fastidio a nessuno. Allo stesso tempo gesticoli con le mani, rappresentando soprattutto la tua nave che vola \"via\". Ti chiedi se qualcosa abbia senso per i Gegno, ma non sembrano prestare attenzione alle tue parole o ai tuoi gesti in sé: sembrano reagire al tono e all'emozione. Dopo aver fatto del tuo meglio per descrivere tutto, ti allontani dal tavolo. Il trio torna al tavolo e discute tra sé la tua risposta. Poi comincia a spostare tutti i modelli di lato, come se stessero preparando qualcosa.",
+81: "what does home mean",
+82: "Con sorpresa tua e degli altri Gegno, sul monitor compare un'immagine del pianeta Terra. Non c'è modo che i Gegno abbiano mai lasciato i confini del proprio territorio, figurarsi visitato lo spazio umano. Come abbiano ottenuto questa immagine è un mistero, ma il fatto è che davanti a te c'è un'immagine del mondo natale ancestrale dell'umanità. Il membro del trio Gegno che ha parlato meno fa allora un passo avanti, ma invece di dirigersi al tavolo viene direttamente verso di te.",
+83: "(Non fare nulla.)",
+84: "(Metti la mano sulla fondina.)",
+85: "Se i Gegno hanno un'immagine della Terra, chissà cosa sanno di te, o dell'umanità in generale. Spostando lentamente la mano verso l'arma nella fondina, ti prepari a qualsiasi aggressione. Anche se lo fai, il Gegno non esita né smette di dirigersi verso di te, anche se qualcuno nella folla sembra leggermente preoccupato.",
+86: "home",
+87: "Ora in piedi a nemmeno due metri da te, il Gegno ti guarda intensamente. Un'immagine del mondo su cui ti trovi ora scorre sopra quella della Terra, e il Gegno la indica. \"Gegno Dueyu Eitch echre, echre isend Gegno.\" L'immagine torna alla Terra, con il Gegno che indica ancora lo schermo. \"Eyuu dueyu nnepta, viehetch eyuu.\" Ora il Gegno fa un gesto verso il terreno ai tuoi piedi. \"Viehetch eyuu ayyr Dueyu Eitch. Udiyh tei tsider?\"",
+88: "(Non dire nulla.)",
+89: "\"...Dueyu Earth?\"",
+90: "Senza dire una parola, continui a guardare il Gegno, che continua a fissarti riflettendo sul tuo silenzio. Emette un suono col naso, poi ti lascia per raggiungere gli altri due dietro di lui.",
+91: "dueyu",
+92: "Il Gegno si avvicina alla tua altezza e mostra un'espressione singolare, forse di disapprovazione. Ti prende un po' il panico, e alcuni degli altri sembrano sorpresi che ti si sia avvicinato così tanto. Poi parla con un brontolio basso, un po' come un sussurro detto ad alta voce. \"Eyuu idu keiou ghynem uf, 'Dueyu.'\" Rialzandosi, il Gegno torna agli altri due dietro di lui.",
+93: "decision",
+94: "Con un senso di finalità, il trio chiama la folla e comincia un altro lungo discorso. Sullo schermo compare l'immagine di una stazione spaziale, e tra gli altri Gegno, che si sono riavvicinati tra loro, comincia una grande discussione. Scoppiano alcuni litigi tra vari Gegno del pubblico. Intanto la tua guida Gegno ti urta e comincia a portarti via dalla discussione, verso l'ascensore a gabbia, senza che nessuno faccia caso a nulla.",
+95: "Diversi minuti dopo sei riaccompagnato alla base della torre, ora circondata da un grande gruppo di civili Gegno che vi fissano a bocca aperta. Sei riportato alla nave con la testa che gira un po', incerto su cosa pensare di tutto quell'incontro. Come la prima volta che sei stato con loro sul pianeta desertico, il Gegno si dirige alla tua nave e ti consegna un piccolo dispositivo a bussola, questa volta segnando una località diversa sulla mappa.",
+96: "Quantomeno puoi prenderlo come segno che non hanno ancora finito con te, quindi ti prepari a partire per la prossima destinazione.",
+97: "done with the gegno",
+98: "Con un senso di finalità, il trio chiama la folla e comincia un altro lungo discorso. Quando hanno finito, la folla tace. La tua guida Gegno ti urta e comincia a riportarti all'ascensore a gabbia senza che nessuno faccia caso a nulla. Diversi minuti dopo sei riaccompagnato alla base della torre, ancora deserta come prima. Sei riportato alla nave con la testa che gira un po', incerto su cosa pensare di tutto quell'incontro. Il Gegno resta a distanza dalla tua nave mentre ti prepari a partire.",
+99: "Prima che tu parta, vedi che solleva l'arma-asta e la capovolge. Segue una nube esplosiva di fumo, e proprio accanto alla <ship> compare un cratere di dimensioni rispettabili. A quanto pare non sei più gradito qui, anche se il fatto che abbiano mancato di proposito un bersaglio così grande potrebbe avere altre implicazioni. In ogni caso, in qualsiasi momento di questo viaggio saresti potuto essere tu dall'altra parte di quell'esplosione.",
+100: "Nonostante l'azione aggressiva, non sei seguito mentre lasci il pianeta.",
+101: "no more gegno",
+102: "Alla fine decidi che portare avanti questa messinscena con i Gegno non vale più lo sforzo. Anche se finissi in una qualche forma di dialogo con loro, ci vorrebbe probabilmente uno sforzo eccessivo per ottenere un qualsiasi progresso, ammesso che sia possibile. Forse persino atterrare qui è stato un errore. Non potresti mai indovinare cosa potrebbe succedere se continuassi, visto che sei del tutto solo sul mondo natale di una specie che si è dimostrata piuttosto xenofoba, persino con i Quarg.",
+103: "Mentre ti prepari a partire, il Gegno, che ti ha osservato per tutto il tempo con uno sguardo vuoto, solleva l'arma-asta e la capovolge. Segue una nube esplosiva di fumo, e proprio accanto alla <ship> compare un cratere di dimensioni rispettabili. A quanto pare sono, quantomeno, scontenti della tua decisione di andartene, il che è un po' strano considerando che prima non volevano avere niente a che fare con te. Il fatto che abbiano mancato di proposito un bersaglio così grande, però, potrebbe avere altre implicazioni. In ogni caso, saresti potuto essere tu dall'altra parte di quell'esplosione.",
+104: "Nonostante l'azione aggressiva, non sei seguito mentre lasci il pianeta.",
+}
+
+json.dump({str(k): v for k, v in sorted(P.items())},
+          open(os.path.join(HERE, 'parts', 'part03.json'), 'w', encoding='utf-8'),
+          ensure_ascii=False, indent=1)
+print('part03:', len(P), 'unita', min(P), '-', max(P))

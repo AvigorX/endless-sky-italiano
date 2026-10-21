@@ -1,0 +1,209 @@
+{
+ "block": {
+  "path": "data/coalition/coalition jobs.txt",
+  "line_from": 455,
+  "line_to": 634,
+  "units": 18
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Coalition: Saryd Interspecies 2|name|455|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 455,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Saryd Interspecies 2",
+   "english": "Saryds to <planet>",
+   "italian": "Saryd per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "mission:Coalition: Saryd Interspecies 2|description|456|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 456,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Saryd Interspecies 2",
+   "english": "As part of the Interspecies Exchange Program, these <bunks> volunteer settlers need transportation to <destination>. The government will pay their transport fee of <payment>.",
+   "italian": "Nell'ambito del Programma di Scambio tra Specie, questi <bunks> coloni volontari hanno bisogno di essere trasportati a <destination>. Il governo pagherà la loro tariffa di trasporto di <payment>.",
+   "ratio": 1.121
+  },
+  {
+   "idx": 3,
+   "id": "mission:Coalition: Kimek Interspecies 1|name|476|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 476,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Kimek Interspecies 1",
+   "english": "Kimek to <planet>",
+   "italian": "Kimek per <planet>",
+   "ratio": 1.059
+  },
+  {
+   "idx": 4,
+   "id": "mission:Coalition: Kimek Interspecies 1|description|477|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 477,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Kimek Interspecies 1",
+   "english": "As part of the Interspecies Exchange Program, these <bunks> volunteer settlers need transportation to <destination>. The government will pay their transport fee of <payment>.",
+   "italian": "Nell'ambito del Programma di Scambio tra Specie, questi <bunks> coloni volontari hanno bisogno di essere trasportati a <destination>. Il governo pagherà la loro tariffa di trasporto di <payment>.",
+   "ratio": 1.121
+  },
+  {
+   "idx": 5,
+   "id": "mission:Coalition: Kimek Interspecies 2|name|497|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 497,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Kimek Interspecies 2",
+   "english": "Kimek to <planet>",
+   "italian": "Kimek per <planet>",
+   "ratio": 1.059
+  },
+  {
+   "idx": 6,
+   "id": "mission:Coalition: Kimek Interspecies 2|description|498|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 498,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Kimek Interspecies 2",
+   "english": "As part of the Interspecies Exchange Program, these <bunks> volunteer settlers need transportation to <destination>. The government will pay their transport fee of <payment>.",
+   "italian": "Nell'ambito del Programma di Scambio tra Specie, questi <bunks> coloni volontari hanno bisogno di essere trasportati a <destination>. Il governo pagherà la loro tariffa di trasporto di <payment>.",
+   "ratio": 1.121
+  },
+  {
+   "idx": 7,
+   "id": "mission:Coalition: Arach Interspecies 1|name|518|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 518,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Arach Interspecies 1",
+   "english": "Arachi to <planet>",
+   "italian": "Arachi per <planet>",
+   "ratio": 1.056
+  },
+  {
+   "idx": 8,
+   "id": "mission:Coalition: Arach Interspecies 1|description|519|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 519,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Arach Interspecies 1",
+   "english": "As part of the Interspecies Exchange Program, these <bunks> volunteer settlers need transportation to <destination>. The government will pay their transport fee of <payment>.",
+   "italian": "Nell'ambito del Programma di Scambio tra Specie, questi <bunks> coloni volontari hanno bisogno di essere trasportati a <destination>. Il governo pagherà la loro tariffa di trasporto di <payment>.",
+   "ratio": 1.121
+  },
+  {
+   "idx": 9,
+   "id": "mission:Coalition: Arach Interspecies 2|name|539|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 539,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Arach Interspecies 2",
+   "english": "Arachi to <planet>",
+   "italian": "Arachi per <planet>",
+   "ratio": 1.056
+  },
+  {
+   "idx": 10,
+   "id": "mission:Coalition: Arach Interspecies 2|description|540|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 540,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Arach Interspecies 2",
+   "english": "As part of the Interspecies Exchange Program, these <bunks> volunteer settlers need transportation to <destination>. The government will pay their transport fee of <payment>.",
+   "italian": "Nell'ambito del Programma di Scambio tra Specie, questi <bunks> coloni volontari hanno bisogno di essere trasportati a <destination>. Il governo pagherà la loro tariffa di trasporto di <payment>.",
+   "ratio": 1.121
+  },
+  {
+   "idx": 11,
+   "id": "phrase:coalition transfer dialog|You drop off the workers on <planet>. A few minutes later you receive a transfer of <payment>.|560|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 560,
+   "kind": "TEXT",
+   "context": "phrase:coalition transfer dialog",
+   "english": "You drop off the workers on <planet>. A few minutes later you receive a transfer of <payment>.",
+   "italian": "Scarichi gli operai su <planet>. Pochi minuti dopo ricevi un bonifico di <payment>.",
+   "ratio": 0.883
+  },
+  {
+   "idx": 12,
+   "id": "mission:Coalition: Transfer 1|name|565|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 565,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Transfer 1",
+   "english": "Transfer to <planet>",
+   "italian": "Trasferimento per <planet>",
+   "ratio": 1.3
+  },
+  {
+   "idx": 13,
+   "id": "mission:Coalition: Transfer 1|description|566|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 566,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Transfer 1",
+   "english": "As a part of the Full Employment Program, these <bunks> workers need transportation to <destination>. The government will pay their transport fee of <payment>.",
+   "italian": "Nell'ambito del Programma di Piena Occupazione, questi <bunks> lavoratori hanno bisogno di essere trasportati a <destination>. Il governo pagherà la loro tariffa di trasporto di <payment>.",
+   "ratio": 1.182
+  },
+  {
+   "idx": 14,
+   "id": "mission:Coalition: Transfer 2|name|588|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 588,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Transfer 2",
+   "english": "Transfer to <planet>",
+   "italian": "Trasferimento per <planet>",
+   "ratio": 1.3
+  },
+  {
+   "idx": 15,
+   "id": "mission:Coalition: Transfer 2|description|589|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 589,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Transfer 2",
+   "english": "As a part of the Full Employment Program, these <bunks> workers need transportation to <destination>. The government will pay their transport fee of <payment>.",
+   "italian": "Nell'ambito del Programma di Piena Occupazione, questi <bunks> lavoratori hanno bisogno di essere trasportati a <destination>. Il governo pagherà la loro tariffa di trasporto di <payment>.",
+   "ratio": 1.182
+  },
+  {
+   "idx": 16,
+   "id": "mission:Coalition: Transfer 3|name|611|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 611,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Transfer 3",
+   "english": "Transfer to <planet>",
+   "italian": "Trasferimento per <planet>",
+   "ratio": 1.3
+  },
+  {
+   "idx": 17,
+   "id": "mission:Coalition: Transfer 3|description|612|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 612,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Transfer 3",
+   "english": "As a part of the Full Employment Program, these <bunks> workers need transportation to <destination>. The government will pay their transport fee of <payment>.",
+   "italian": "Nell'ambito del Programma di Piena Occupazione, questi <bunks> lavoratori hanno bisogno di essere trasportati a <destination>. Il governo pagherà la loro tariffa di trasporto di <payment>.",
+   "ratio": 1.182
+  },
+  {
+   "idx": 18,
+   "id": "phrase:coalition tourists outbound|The tourists thank you for bringing them to <planet> and pay you <payment>.|634|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 634,
+   "kind": "TEXT",
+   "context": "phrase:coalition tourists outbound",
+   "english": "The tourists thank you for bringing them to <planet> and pay you <payment>.",
+   "italian": "I turisti ti ringraziano per averli portati su <planet> e ti pagano <payment>.",
+   "ratio": 1.04
+  }
+ ]
+}

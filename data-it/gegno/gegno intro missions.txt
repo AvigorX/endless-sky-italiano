@@ -1,0 +1,954 @@
+# Copyright (c) 2022 by Saugia
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+
+mission "First Contact: Gegno Vi"
+	landing
+	name `Trasporto di <Alien>`
+	description `Trasporta <alien>, che hai aiutato su <origin>, fino alla località indicata sulla mappa.`
+	substitutions
+		"<alien>" "alien"
+		"<alien>" "Gegno"
+			has "Giaru Gegno: Quarg Contact: offered"
+		"<Alien>" "Alien"
+		"<Alien>" "Gegno"
+			has "Giaru Gegno: Quarg Contact: offered"
+	source "Var Oti"
+	destination "Dueyu Eitch"
+	clearance
+	passengers 1
+	to offer
+		not "Gegno Genocide Defense: offered"
+		has "First Contact: Quarg: offered"
+	on offer
+		conversation
+			branch "second encounter"
+				has "Giaru Gegno: Quarg Contact: offered"
+			branch "return encounter"
+				has "First Contact: Gegno Vi: deferred"
+			
+			`Mentre scendi verso la superficie di questo mondo apparentemente disabitato, attivi il radar della nave per scansionare il terreno in cerca di qualcosa di interessante. Mentre aspetti che compaia qualcosa, alzi lo sguardo e intravedi una nuvola di polvere che esplode dal suolo lontano alla tua destra. Torni a guardare il radar e controlli le scansioni di quella direzione, ma non appare nulla. Mentre continui il volo, qualche minuto dopo compare un'altra nuvola di polvere, ma sul radar ancora niente. Decidi di tenere la nave qualche migliaio di metri sopra la superficie e di prenderti il tempo di guardarti bene intorno, ma oltre alle formazioni rocciose crepate e alle valli di sabbia non sembra esserci niente degno di nota.`
+			`	Improvvisamente il radar rileva un segnale più grande all'orizzonte, e vedi una struttura massiccia, simile a una roccia. Quando ti avvicini abbastanza, la struttura comincia a somigliare a una delle navi che hai visto volare nei sistemi vicini, anche se è per metà sprofondata nella sabbia.`
+			choice
+				`	(Atterra vicino alla nave e indaga.)`
+				`	(Continua a cercare sulla superficie.)`
+					goto search
+			`	Atterri con cautela nelle vicinanze e scendi dalla nave in tuta ambientale, con l'arma da fianco pronta, e ti avvicini al vascello alieno. La nave sembra un po' più grande di quanto pensassi, all'incirca delle dimensioni di un Firebird. Lo scafo bruno scuro sembra fatto di un materiale sconosciuto e presenta diverse parti dall'aspetto metallico, incassate nelle fessure e sporgenti verso l'esterno. Stranamente la nave da guerra pare perfettamente intatta, ma il modo in cui è inclinata nella sabbia lascia pensare che sia lì da tempo. Intorno non sembra esserci attività. Decidi di tornare alla nave e dare un'altra occhiata alla zona.`
+			`	Mentre voli, un segnale irregolare sulla superficie compare al margine del radar. In lontananza si intravede una grande struttura ad arco, che poco dopo scompare. Posi la nave vicino al punto e scendi a indagare.`
+				goto skip
+			label search
+			`	Mentre voli, un segnale irregolare sulla superficie compare al margine del radar. In lontananza si intravede una grande struttura ad arco, che poco dopo scompare. Posi la nave vicino al punto e scendi a indagare, assicurandoti di indossare una tuta ambientale e di riporre l'arma da fianco nella fondina.`
+			label skip
+			`	Con tua grande sorpresa, dove è partito il segnale c'è una grande figura umanoide. Il radar mostrava qualcosa di molto meno definito di un umanoide, ma davanti a te c'è una creatura grande e massiccia, rivestita di quella che sembra una forma di armatura metallica, con un'arma a forma di lancia. La figura si muove con attenzione, come concentrata su ciò che la circonda, ma non sembra interessata alla tua presenza. L'incontro è molto strano, perché non c'è alcuna interazione né alcun riconoscimento della tua esistenza.`
+			choice
+				`	(Avvicinati all'alieno.)`
+				`	(Torna alla mia nave.)`
+			`	Improvvisamente il terreno comincia a vibrare con intensità. In preda al panico estrai l'arma da fianco, ma quando rialzi lo sguardo verso la figura aliena noti che anche lei ha preso una posizione difensiva. Non verso di te. Alla tua sinistra si apre una grande fauce nella sabbia, e ne esce una creatura enorme, centinaia di volte più grande di te, coperta di spuntoni e squame. Hai appena il tempo di reagire: piomba sulla sabbia alla tua destra, ma fai in tempo a intravedere la creatura aliena che cavalca la bestia e la trafigge con la sua arma.`
+			choice
+				`	(Lascia il pianeta immediatamente.)`
+					goto leave
+				`	(Allontanati dal sito ma continua a guardare.)`
+					goto watch
+				`	(Prova ad aiutare l'alieno a sconfiggere la bestia.)`
+			label help
+			`	Punti l'arma da fianco verso la bestia, pronto a sparare. Invece di rituffarsi sotto la superficie, la bestia continua a dibattersi dov'è mentre l'alieno la colpisce con l'arma a lancia. Per non rischiare di colpirlo, trattieni il respiro e aspetti il momento giusto, mirando alla testa della creatura. La creatura che si dimena comincia ad avvicinarsi e il tuo polso accelera. Una raffica di sabbia ti investe in pieno, e appena si dirada spari. Un colpo vola dritto in faccia alla bestia.`
+			`	Con tuo sgomento, il colpo rimbalza quasi subito. Guardi il mostro enorme rotolarti addosso e lo schivi appena saltando in aria. Il mostro piomba nel terreno dietro di te, e tu cadi sulla schiena con il fiato mozzato. Alzi di nuovo l'arma. La creatura esplode dal suolo con la bocca spalancata rivolta al cielo. Con le mani che tremano prendi di nuovo la mira e premi il grilletto.`
+			`	Segue un boato forte, come di cannone, ma di certo non viene dalla tua arma. La bestia davanti a te crolla in una nuvola di fumo nero, spargendo sabbia e detriti ovunque con un tonfo. Quando ti riprendi, vedi l'alieno che esce dalla bocca della creatura.`
+			choice
+				`	(Avvicinati all'alieno.)`
+				`	(Alzati e corri alla mia nave.)`
+			`	Prima che tu riesca a raccimolare le idee, ti accorgi che l'alieno è molto più vicino. Nel giro di un attimo ti sta davanti, e lo vedi molto meglio. È molto più alto di te, estremamente massiccio e leggermente incurvato. Un metallo pesante gli copre il corpo, e nelle zone scoperte si vedono chiazze di pelle e pelo ruvidi. Una folta barba gli copre il viso e sopra i suoi occhi, simili a quelli umani, ha un paio di corna curve verso l'interno, verso di te.`
+			`	Segue un silenzio imbarazzante, e l'alieno ti squadra dalla testa ai piedi con aria poco entusiasta. Emette un brontolio molto profondo e con uno sbuffo rumoroso infila la mano in una fessura dell'armatura per prendere qualcosa. Estrae quella che sembra una sorta di carta stellare, indica un punto sulla mappa, fa un gesto verso di sé e poi abbassa lentamente il dispositivo verso di te. Sembra che voglia essere portato su uno dei pianeti della sua specie.`
+			choice
+				`	(Accetta la loro richiesta.)`
+				`	(Chiedi informazioni sulla loro richiesta.)`
+					goto about
+				`	(Rifiuta la loro richiesta.)`
+					goto deny
+			`	Prendi il dispositivo con esitazione e ti volti per andare verso la nave. Prima di partire dai un'ultima occhiata all'enorme creatura sullo sfondo. La testa sembra quella di un drago, ma con numerosi occhi e una criniera di spuntoni. Dal collo le spuntano alcuni piccoli appendici, che le danno un aspetto squamoso, da salamandra. I vari segnali che il radar aveva rilevato prima dovevano essere altri della sua specie. L'alieno fissa te, poi la creatura, poi di nuovo te, e riprende a camminare verso la nave.`
+				accept
+			label about
+			`	Provi a chiedere all'alieno del viaggio, ma lui ti fissa nel vuoto per qualche secondo e poi ti caccia la carta stellare sul petto, lasciandola andare. La afferri d'istinto, quasi cadendo, e poi dai un'ultima occhiata all'enorme creatura sullo sfondo. La testa è molto rettiliana, quasi draconiana, con numerosi occhi e una criniera di spuntoni. Alle due estremità ha piccoli appendici, quasi da salamandra squamosa. Ti volti e vedi che l'alieno è già molto avanti: gli corri dietro per non farlo arrivare primo alla nave.`
+				accept
+			label deny
+			`	Scuoti la testa e, dopo tutto quello che è successo, rifiuti la richiesta dell'alieno. Ti volti verso la nave per andartene e ti ritrovi all'improvviso con la faccia a terra, a sputare sabbia e polvere, e senti il dispositivo cadere accanto a te. Con stizza ti rialzi in fretta e cerchi l'alieno, che è già lontano e marcia verso la tua nave. Forse non è stata una grande idea rifiutare la richiesta e voltare le spalle a un essere diverse volte più grande di te, che ha appena abbattuto una bestia centinaia di volte più grande di lui. Ti volti a guardare l'enorme creatura un'ultima volta. La testa è molto rettiliana, quasi draconiana, con numerosi occhi e una criniera di spuntoni. Decisamente qualcosa di più pericoloso di quanto potrai mai essere a piedi.`
+				accept
+			
+			label watch
+			`	Ti ritiri con cautela verso la nave, con occhi e orecchie bene aperti sulla creatura, chiedendoti se e dove ricomparirà. Come per rispondere alla tua domanda, il terreno comincia a tremare e alla tua sinistra sabbia e detriti schizzano in aria mentre la bestia si torce e si dimena sulla superficie. Dopo un ruggito profondo, la creatura stridisce a scatti brevi, quasi dei cinguettii, ma molto più gravi di quelli di un uccello. Mentre parte della polvere si dirada, vedi la figura aliena che respira affannosamente mentre continua a combattere la bestia.`
+			choice
+				`	(Aiuta l'alieno.)`
+					goto help
+				`	(Vattene.)`
+					goto leave
+			label leave
+			`	Con la situazione che comincia a sfuggirti di mano, ti volti in fretta e corri alla nave, decollando appena possibile. Ti chiedi che ne sarà della figura aliena: è senz'altro un membro della specie che abita i sistemi vicini, ma non sembra che gli arriveranno aiuti a breve.`
+				depart
+			
+			label "second encounter"
+			`Mentre scendi verso la superficie di questo mondo apparentemente disabitato, attivi il radar della nave per scansionare il terreno in cerca di qualcosa di interessante. Mentre aspetti che compaia qualcosa, alzi lo sguardo e intravedi una nuvola di polvere che esplode dal suolo lontano alla tua destra. Torni a guardare il radar e controlli le scansioni di quella direzione, ma non appare nulla. Mentre continui il volo, qualche minuto dopo compare un'altra nuvola di polvere, ma sul radar ancora niente. Decidi di tenere la nave qualche migliaio di metri sopra la superficie e di prenderti il tempo di guardarti bene intorno, ma oltre alle formazioni rocciose crepate e alle valli di sabbia non sembra esserci niente degno di nota.`
+			`	Improvvisamente il radar rileva un segnale più grande all'orizzonte, e vedi una struttura massiccia, simile a una roccia. Quando ti avvicini abbastanza, riconosci una delle navi da guerra dei Gegno, anche se è per metà sprofondata nella sabbia.`
+			choice
+				`	(Indaga sulla nave dei Gegno.)`
+					goto investigate
+				`	(Riprendi la ricerca sulla superficie.)`
+					goto resume
+			label investigate
+			`	Atterri con cautela nelle vicinanze. La maggior parte dei deboli segnali radar di prima è scomparsa fuori portata. Scendi dalla nave in tuta ambientale con l'arma da fianco pronta e ti avvicini alla nave dei Gegno.`
+			`	La nave sembra un po' più grande di quanto pensassi, all'incirca delle dimensioni di un Firebird. Lo scafo bruno scuro sembra fatto di un materiale sconosciuto e presenta diverse parti dall'aspetto metallico, incassate nelle fessure e sporgenti verso l'esterno, segno dell'estetica brutale dei Gegno Vi. Stranamente la nave da guerra pare perfettamente intatta, ma il modo in cui è inclinata nella sabbia lascia pensare che sia lì da tempo. Intorno non sembra esserci attività e non rilevi segni di vita nelle vicinanze. Decidi di tornare alla nave e dare un'altra occhiata alla zona.`
+			label resume
+			`	Mentre voli, un segnale irregolare compare al margine del radar. In lontananza si intravede una grande struttura ad arco, che poco dopo scompare. Posi la nave vicino al punto di origine e scendi a indagare, indossando la tuta ambientale con l'arma da fianco a portata di mano.`
+			`	Con tua grande sorpresa, davanti a te c'è una grande figura umanoide. Non somiglia per niente ai Gegno che hai visto sul mondo ad anello dei Quarg: è grande, massiccia e rivestita di armatura metallica. In una mano tiene un'arma a forma di lancia; dall'aspetto diresti che è un Gegno Vi. Il Vi si muove con attenzione, concentrato su ciò che lo circonda, ma non sembra interessato alla tua presenza.`
+			choice
+				`	(Avvicinati al guerriero Vi.)`
+				`	(Torna alla mia nave.)`
+			`	Improvvisamente il terreno comincia a vibrare con intensità. In preda al panico estrai l'arma da fianco, ma quando rialzi lo sguardo verso il Vi noti che anche lui ha preso una posizione difensiva. Non verso di te. Alla tua sinistra si apre una grande fauce nella sabbia, e ne esce una creatura enorme, centinaia di volte più grande di te, coperta di spuntoni e squame. Hai appena il tempo di reagire: piomba sulla sabbia alla tua destra, ma fai in tempo a intravedere il Vi che cavalca la bestia e la trafigge con la sua arma.`
+			choice
+				`	(Osserva la situazione a distanza.)`
+					goto observe
+				`	(Aiuta il Vi a sconfiggere la bestia.)`
+			label assist
+			`	Porti l'arma da fianco in posizione di tiro e aspetti la bestia. Ancora una volta salta fuori dalla sabbia con uno spettacolo incredibile, ma invece di rituffarsi sotto la superficie continua a dibattersi dov'è mentre il Vi la colpisce con l'arma a lancia. Per non rischiare di colpirlo, trattieni il respiro e aspetti il momento giusto, mirando alla testa della creatura. La creatura che si dimena comincia ad avvicinarsi e il tuo polso accelera. Una raffica di sabbia ti investe in pieno, e appena si dirada spari. Un colpo vola dritto in faccia alla bestia.`
+			`	Con tuo sgomento, il colpo rimbalza quasi subito. Guardi il mostro enorme rotolarti addosso e lo schivi appena saltando in aria. Il mostro piomba nel terreno dietro di te, e tu cadi sulla schiena con il fiato mozzato. Alzi di nuovo l'arma. La creatura esplode dal suolo con la bocca spalancata rivolta al cielo. Con le mani che tremano prendi di nuovo la mira e premi il grilletto.`
+			`	Segue un boato forte, come di cannone, ma di certo non viene dalla tua arma. La bestia davanti a te crolla in una nuvola di fumo nero, spargendo sabbia e detriti ovunque con un tonfo. Quando ti riprendi, vedi il Vi che esce dalla bocca della creatura.`
+			choice
+				`	(Avvicinati al Vi.)`
+				`	(Alzati e corri alla mia nave.)`
+			`	Prima che tu riesca a raccimolare le idee, ti accorgi che il guerriero Vi è molto più vicino. Nel giro di un attimo l'alieno ti sta davanti e lo vedi molto meglio. È molto più alto di te e degli altri Gegno che hai visto, estremamente massiccio e leggermente incurvato. Un metallo pesante gli copre il corpo, e nelle zone scoperte si vedono chiazze di pelle e pelo ruvidi. Una folta barba gli copre il viso e sopra i suoi occhi, simili a quelli umani, ha un paio di corna curve verso l'interno, verso di te.`
+			`	Per quanto i Gegno siano noti per non amare gli estranei, questo in particolare sembra almeno riconoscere la tua presenza. Dopo un silenzio imbarazzante e, a quanto pare, giudicante, il Vi ti squadra dalla testa ai piedi con aria poco entusiasta. Emette un brontolio molto profondo e con uno sbuffo rumoroso infila la mano in una fessura dell'armatura per prendere qualcosa. Estrae quella che sembra una sorta di carta stellare, indica un punto sulla mappa, fa un gesto verso di sé e poi abbassa lentamente il dispositivo verso di te. Sembra che voglia essere portato su uno dei pianeti dei Gegno.`
+			choice
+				`	(Accetta la loro richiesta.)`
+				`	(Chiedi informazioni sulla loro richiesta.)`
+					goto ask
+				`	(Rifiuta la loro richiesta.)`
+					goto reject
+			`	Prendi il dispositivo con esitazione e ti volti per andare verso la nave. Prima di partire dai un'ultima occhiata all'enorme creatura sullo sfondo. La testa sembra quella di un drago, ma con numerosi occhi e una criniera di spuntoni. Dal collo le spuntano alcuni piccoli appendici, che le danno un aspetto squamoso, da salamandra. I vari segnali che il radar aveva rilevato prima dovevano essere altri della sua specie. Il guerriero Vi fissa te, poi la creatura, poi di nuovo te, e riprende a camminare verso la nave.`
+				accept
+			label ask
+			`	Provi a chiedere al Gegno del viaggio, ma lui ti fissa nel vuoto per qualche secondo e poi ti caccia la carta stellare sul petto, lasciandola andare. La afferri d'istinto, quasi cadendo, e poi dai un'ultima occhiata all'enorme creatura sullo sfondo. La testa è molto rettiliana, quasi draconiana, con numerosi occhi e una criniera di spuntoni. Alle due estremità ha piccoli appendici, quasi da salamandra squamosa. Ti volti e vedi che il Gegno è già molto avanti: gli corri dietro per non farlo arrivare primo alla nave.`
+				accept
+			label reject
+			`	Scuoti la testa e, dopo tutto quello che è successo, rifiuti la richiesta del Gegno. Ti volti verso la nave per andartene e ti ritrovi all'improvviso con la faccia a terra, a sputare sabbia e polvere, e senti il dispositivo cadere accanto a te. Con stizza ti rialzi in fretta e cerchi il Gegno, che è già lontano e marcia verso la tua nave. Forse non è stata una grande idea rifiutare la richiesta e voltare le spalle a un essere diverse volte più grande di te, che ha appena abbattuto una bestia centinaia di volte più grande di lui. Ti volti a guardare l'enorme creatura un'ultima volta. La testa è molto rettiliana, quasi draconiana, con numerosi occhi e una criniera di spuntoni. Decisamente qualcosa di più pericoloso di quanto potrai mai essere a piedi.`
+				accept
+			
+			label observe
+			`	Ti ritiri con cautela a una distanza più sicura, con occhi e orecchie bene aperti sulla creatura, chiedendoti se e dove ricomparirà. Come per rispondere alla tua domanda, il terreno comincia a tremare e alla tua sinistra sabbia e detriti schizzano in aria mentre la bestia si torce e si dimena sulla superficie. Dopo un ruggito profondo, la creatura stridisce a scatti brevi, quasi dei cinguettii, ma molto più gravi di quelli di un uccello. Mentre parte della polvere si dirada, vedi il Vi che respira affannosamente mentre continua a combattere la bestia.`
+			choice
+				`	(Aiuta il Vi.)`
+					goto assist
+			
+			label "return encounter"
+			`Ti ritrovi ad avvicinarti di nuovo a questo mondo desertico, chiedendoti che ne sia stato della figura aliena incontrata prima. Sapendo che il mondo ospita una specie indigena pericolosa, esiti ad atterrare e ti assicuri di tenerti lontano da qualsiasi segno di creature come quella di prima.`
+			choice
+				`	(Vai a cercare l'alieno.)`
+					goto "search again"
+				`	(Prosegui.)`
+					defer
+			
+			label "search again"
+			`	Con le coordinate del vascello alieno ancora nella memoria del computer di bordo, ti metti di nuovo in cerca. Durante il volo il radar rileva all'improvviso un'altra nave in avvicinamento, e alzando lo sguardo vedi lo stesso tipo di nave di prima che ti passa sopra a quota più alta, in direzione opposta. Dev'essere un altro pilota della specie aliena.`
+			choice
+				`	(Prova a contattare la nave.)`
+				`	(Eludi la nave.)`
+			`	La nave continua ad allontanarsi dietro di te finché non scompare. Sembra che chi la pilota non abbia interesse ad aiutare l'alieno sulla superficie. Alla fine il familiare vascello sprofondato compare all'orizzonte e cominci a volare intorno alla zona in cerca di segni di vita, sperando che l'alieno sia ancora vivo. Non emerge nulla a parte i deboli impulsi delle creature di sabbia ai margini del radar, e decidi di seguirli.`
+			`	I segnali continuano a sparire e ricomparire altrove a caso, e sembrano portare solo nello spazio vuoto. Dopo averne controllati alcuni, un movimento irregolare compare al margine del radar, simile a quello della prima visita. Avvicinandoti al punto riconosci la bestia che si dimena sulla superficie e intravedi l'alieno di prima che continua a combatterla.`
+			choice
+				`	(Aiuta l'alieno a sconfiggere la creatura.)`
+					goto help
+	
+	on defer
+		set "First Contact: Gegno Vi: deferred"
+
+	on abort
+
+	to fail
+		"reputation: Gegno" < -100
+
+	on fail
+		conversation
+			`Pur sapendo che stai trasportando uno di loro, hai deciso consapevolmente di aprire il fuoco sulle navi <alien>, e il resto del viaggio verso questo mondo è stato estremamente imbarazzante. Invece di sistemarsi in una cuccetta, il passeggero <alien> è rimasto in piedi dietro di te nella cabina di pilotaggio per tutto il tempo. Ogni tanto ti voltavi a osservarne il comportamento e tentavi anche di comunicare, ma non guardava nemmeno nella tua direzione.`
+			`	Stranamente non sembrava affatto arrabbiato, almeno non in modo riconoscibile. In ogni caso la tensione è diventata molto scomoda, ma ora che hai atterrato potresti affrontarla.`
+			choice
+				`	(Prova a comunicare con <alien>.)`
+			`	Prima che tu possa voltarti a parlargli, senti una forza immensa attraversarti il torso e il corpo comincia lentamente a sollevarsi. Provi a parlare, ma non esce nulla; voltando la testa vedi che <alien> ti ha trapassato il petto con l'arma a lancia. Mentre la vista si offusca, l'ultima cosa che riesci a scorgere non è un'espressione d'odio, ma di delusione.`
+				die
+
+mission "Visit Quarg in Gegno Space"
+	landing
+	name `Viaggio verso <designated system>`
+	description `Raggiungi <designated system> come indicato.`
+	substitutions
+		"<alien>" "alien"
+		"<alien>" "Gegno"
+			has "Giaru Gegno: Quarg Contact: offered"
+		"<Alien>" "Alien"
+		"<Alien>" "Gegno"
+			has "Giaru Gegno: Quarg Contact: offered"
+		"<aliens>" "aliens"
+		"<aliens>" "Gegno"
+			has "Giaru Gegno: Quarg Contact: offered"
+		"<designated system>" "designated system"
+		"<designated system>" "Giaru Gegno"
+			has "Giaru Gegno: Quarg Contact: offered"
+	source "Dueyu Eitch"
+	destination "Giaru Gegno"
+	to offer
+		has "First Contact: Gegno Vi: done"
+		not "First Contact: Gegno Vi: failed"
+	on offer
+		conversation
+			`Il viaggio fin qui è stato pieno di tensione e tutto fuorché piacevole. Invece di sedersi normalmente, <alien> è rimasto in piedi dietro di te nella cabina di pilotaggio, a braccia conserte, per gran parte del tragitto, quasi fosse un macigno inamovibile. Ogni tanto hai tentato di nuovo di comunicare per allentare la pressione, ma il massimo che ottenevi era un'occhiata fugace o un grugnito.`
+			`	Mentre scendi nell'atmosfera, vedi strati di smog scuro che svelano in fretta città enormi punteggiate di luci che si alzano verso il cielo. Le navi qui hanno tonalità diverse da quelle viste prima, più marrone chiaro che bruno scuro, e sono molto più numerose. L'intensità del traffico, insieme alla mole opprimente delle infrastrutture, suggerisce che questo è il mondo natale di <alien>. Prima che ti perda in quello spettacolo fantastico, <alien> ti si affianca e alza un braccio, indicando in lontananza un'enorme struttura simile a una fabbrica che spicca fra le altre torri. Guidi con cautela la nave verso l'edificio e, con l'aiuto di <alien>, trovi un portello di attracco adatto.`
+			`	Dopo l'atterraggio, diversi <aliens> simili a quello che ti sta accanto cominciano a mettersi in formazione verso la tua nave, tutti armati di vari tipi di armi simili a bastoni. Non mostrano però alcun segno di aggressività: restano semplicemente in posizione, in una dimostrazione coordinata di forza. L'<alien> accanto a te fa un gesto per avere il dispositivo a bussola che ti aveva dato prima.`
+			choice
+				`	(Consegna il dispositivo.)`
+				
+			branch "has met quarg"
+				has "Giaru Gegno: Quarg Contact: offered"
+			branch "hostile quarg"
+				"reputation: Quarg (Gegno)" < 0
+				has "visited system: Aleit"
+			`	Dopo averlo armeggiato, <alien> segna una nuova località e te la mostra. "Oukeug", dice, e ti fa cenno di partire con una certa urgenza. Poi lascia la nave, si avvicina agli altri e ha una breve discussione. Qualche momento dopo arriva un altro gruppo più piccolo di <aliens> con quello che sembra un dispositivo di rifornimento e, dopo un minuto di tentativi, riescono a collegarlo alla nave. Questi <aliens> sembrano più bassi e sottili degli altri e indossano più indumenti simili a cuoio che pesanti armature metalliche, ma il contegno è altrettanto rigido. Una volta riempito il serbatoio, l'<alien> che ti ha guidato fa un gesto verso il cielo. La tua visita al misterioso mondo natale degli <alien> dovrà essere abbreviata.`
+				launch
+			
+			label "has met quarg"
+			`	Dopo averlo armeggiato, il Vi segna una nuova località e te la mostra. "Oukeug", dice, e ti fa cenno di partire con una certa urgenza. Guardi la località e noti che è il mondo ad anello dei Quarg dove sei già stato. Poi lasciano la nave, si avvicinano agli altri e hanno una breve discussione. Qualche momento dopo arriva un altro gruppo più piccolo di Gegno con quello che sembra un dispositivo di rifornimento e, dopo un minuto di tentativi, riescono a collegarlo alla nave. Questi Gegno sembrano più bassi e sottili degli altri e indossano più indumenti simili a cuoio che pesanti armature metalliche, ma il contegno è altrettanto rigido. Una volta riempito il serbatoio, il Gegno Vi che ti ha guidato fa un gesto verso il cielo. La tua visita al misterioso mondo natale dei Gegno dovrà essere abbreviata.`
+				launch
+			
+			label "hostile quarg"
+			`	Dopo averlo armeggiato, <alien> segna una nuova località e te la mostra. "Oukeug", dice, e ti fa cenno di partire con una certa urgenza. Guardi la località e ti accorgi che è il vicino mondo ad anello dei Quarg. Considerata la tua storia con i Quarg, a dir poco non ti accoglieranno a braccia aperte. L'<alien> ti dà improvvisamente una gomitata, facendoti cenno ancora una volta di decollare.`
+			`	Cominci a preparare la nave per la partenza e l'<alien> scende. Si avvicina agli altri, hanno una breve discussione, e un altro gruppo più piccolo di <aliens> arriva con quello che sembra un dispositivo di rifornimento. Dopo un minuto di tentativi riescono a collegarlo alla nave. Questi <aliens> sembrano più bassi e sottili degli altri e indossano più indumenti simili a cuoio che pesanti armature metalliche, ma il contegno è altrettanto rigido. Una volta riempito il serbatoio, l'<alien> che ti ha guidato indica il cielo. Visitare i Quarg non è un'opzione, quindi sembra che avere a che fare con questi <aliens> sarà improbabile nel prossimo futuro.`
+				flee
+
+	npc
+		government "Gegno Vi (Neutral)"
+		personality entering staying
+		system "Heutesl"
+		fleet
+			names "gegno vi"
+			variant
+				"Eclogite" 3
+				"Hornfel" 2
+				"Gneiss" 2
+	npc
+		government "Gegno Scin (Neutral)"
+			confusion "militia"
+		personality entering staying
+		system "Heutesl"
+		fleet
+			names "gegno scin"
+			variant
+				"Coesite" 3
+				"Felsic"
+				"Feldspar"
+				"Halite" 6
+	npc
+		government "Gegno Vi (Neutral)"
+		personality staying
+		system "Heutesl"
+		fleet "Vi Warfleet"
+	npc
+		government "Gegno Scin (Neutral)"
+			confusion "militia"
+		personality staying
+		system "Heutesl"
+		fleet "Scin Warfleet"
+
+
+mission "Discover Hostile Quarg"
+	invisible
+	non-blocking
+	landing
+	source "Dueyu Eitch"
+	to offer
+		"reputation: Quarg (Gegno)" < 0
+		has "First Contact: Gegno Vi: done"
+		not "First Contact: Gegno Vi: failed"
+	on enter "Aleit"
+		fail
+		fail "Visit Quarg in Gegno Space"
+		log "Factions" "Gegno" `I Gegno sono una specie umanoide a est del nucleo galattico. Secondo i Quarg si dividono tra Vi e Scin e non sono interessati a interagire con specie estranee.`
+		conversation
+			`Appena entri nel sistema i tuoi occhi incontrano una vista familiare: un anello dei Quarg. Poco dopo i Quarg aprono un canale di comunicazione. "La tua presenza non è gradita qui, aggressore. Quale scopo persegui, se non la violenza?"`
+			choice
+				`	"Gli alieni di un mondo vicino mi hanno mandato da voi."`
+					goto sent
+				`	"Vorrei aiuto per conversare con gli alieni qui vicino."`
+			`	I Quarg rispondono in fretta. "Non troverai un aiuto simile in noi. Sarebbe nel tuo interesse non affiliarti a questi alieni, che si fanno chiamare Gegno. Non siamo noi, quanto piuttosto i Gegno, a non desiderare il contatto. Poco capiresti di quanto le tue azioni possano pesare sui Vi o sugli Scin, figurarsi quelle violente." Segue una breve pausa. "Ora vattene dal nostro sistema. Ti osserveremo."`
+			`	Senza l'aiuto dei Quarg, interagire con questi sedicenti "Gegno" sembra improbabile nel prossimo futuro.`
+				decline
+			
+			label "sent"
+			`	Dopo un lungo silenzio i Quarg rispondono. "Non abbiamo alcun interesse ad aiutare un sobillatore. Gli alieni di cui parli, chiamati Gegno, sono una specie fragile. Sono loro a non desiderare il contatto, perché la loro attenzione è presa dal grande conflitto interno tra Scin e Vi. In tal caso i Gegno non guadagnerebbero nulla da rapporti con dei guerrafondai interstellari, e ti si raccomanda caldamente di evitare di affiliarti a loro. Ora vattene dal nostro sistema. Ti osserveremo."`
+			`	Senza l'aiuto dei Quarg, interagire con questi sedicenti "Gegno" sembra improbabile nel prossimo futuro.`
+
+mission "Giaru Gegno: Quarg Contact"
+	landing
+	source "Giaru Gegno"
+	to offer
+		not "Gegno Genocide Defense: offered"
+	on offer
+		log "Factions" "Gegno" `I Gegno sono una specie umanoide a est del nucleo galattico, divisa al proprio interno in rami. Un ramo è quello dei Gegno Vi, descritti come bruti forti e prepotenti. L'altro è quello dei Gegno Scin, detti cultori della ricerca e della tecnologia. A parte loro, la maggior parte della popolazione Gegno è fatta di civili indifferenti.`
+		log `Ho saputo dai Quarg che i Gegno non sono interessati a interagire con specie estranee.`
+		event "gegno space label"
+		conversation
+			branch "has met gegno"
+				has "Visit Quarg in Gegno Space: offered"
+
+			"After jumping through several systems of many alien ships, a Quarg ringworld is a surprisingly familiar sight. From the looks of it, this is a fully complete ringworld, a true sight to behold. Trillions of Quarg probably inhabit this ring, but what's more interesting is that other aliens are also present. They too are humanoid, and the most common figures you come across are either slightly above or below an average human's height. Their skin is a smooth, light gray, and adorned with different sorts of leather that remind you of medieval human clothing."
+			`	I Quarg qui si muovono in modo insolitamente silenzioso e inquietante. Ignorano le altre specie che camminano intorno, che a loro volta ignorano te. L'atmosfera strana si rompe quando alcuni Quarg cominciano ad avanzare verso di te, molto più in fretta degli altri. Dopo una discussione e alcuni gesti incomprensibili tra loro, uno ti fa cenno di seguirlo.`
+				goto walking
+			
+			label "has met gegno"
+			action
+				set "gegno: met gegno before quarg"
+
+			`L'aspetto di un anello dei Quarg completo è molto diverso dal mondo natale alieno su cui sei stato prima. Una struttura così integra e avanzata è l'esatto contrario di una civiltà industriale disordinata. La popolazione di Quarg qui deve contare migliaia di miliardi, molte volte quella del mondo natale alieno. Ancora più interessante è che sull'anello ci sono anche alieni del tipo che hai già incontrato. I Quarg devono avere qualche rapporto con loro, forse di commercio, manutenzione o altri servizi. Nonostante la presenza, sia loro sia i Quarg sembrano ignorarsi. Qualcuno degli alieni, però, ogni tanto ti lancia un'occhiata incuriosita.`
+
+			action
+				"gegno: left quarg" = "days since start"
+			`	In breve alcuni Quarg si precipitano verso di te molto più in fretta degli altri e cominciano a parlare tra loro. Non sai che lingua usino, ma dai toni e dalla pronuncia sembra simile a quella che hai sentito parlare dagli alieni. Dopo un momento uno di loro ti fa cenno di seguirlo.`
+			
+			label "walking"
+			`	Cammini con il Quarg, a volte in difficoltà a tenere il passo dei suoi passi silenziosi e svelti, dirigendoti verso una zona che sembra priva degli altri alieni. Alla fine sei portato in una stanza più piccola, dove altri due Quarg aspettano seduti in silenzio in fondo. Parlano, ma stavolta senti qualche termine che ti suona familiare, uno dei quali è "Huema". Nonostante parlino tra loro per diversi minuti, i Quarg continuano a guardarsi con quella che supponi essere perplessità.`
+			`	Uno dei Quarg in attesa si volta finalmente verso di te e ti fa cenno di sederti. La sua espressione confusa scompare quando posa di nuovo lo sguardo su di te. Intanto l'altro Quarg seduto ha lasciato la stanza, insieme a quelli che ti hanno portato qui.`
+			choice
+				`	"C'è un problema?"`
+			`	Il Quarg continua a guardarti e china appena il capo in modo scusante: sembra che né lui né nessun altro Quarg dell'anello sappia parlare la tua lingua. Continui ad aspettare con pazienza nel silenzio teso, trattenendo la curiosità, mentre passa quasi mezz'ora.`
+			`	Alla fine il silenzio si rompe: il secondo Quarg di prima rientra nella stanza. Stavolta ti fissa con molta più energia, e cominci a chiederti se la tua presenza sia davvero un problema.`
+			
+			branch "intrigued quarg"
+				has "Visit Quarg in Gegno Space: offered"
+			
+			`	Ti alzi in anticipo, ma ti blocchi quando vedi il secondo Quarg allargare le braccia in un gesto che non avresti mai immaginato di vedere da un Quarg. "Questa deve essere per te una giornata esaltante, giovane viaggiatore. Immagino fortemente che sia una prima volta per entrambi." Ora è ovvio che questo Quarg non è quello di prima, e cominci a notare qualche differenza nell'abbigliamento e nella figura. Il ritmo vivace del parlato non è quello che ti aspetteresti da un Quarg.`
+			choice
+				`	"Dove sono?"`
+			`	Il Quarg si siede di fronte a te, continuando ad agitare le braccia in modo strano, anche se più lentamente. "Ti trovi nella dimora dei possenti Gegno, che hanno radicato il loro impero tenace qui, nel grande est galattico."`
+				goto "the gegno"
+			
+			label "intrigued quarg"
+			`	"Hai compiuto in modo sorprendente un'impresa meravigliosa, coraggioso viaggiatore", dice il Quarg, unendo le mani. Sembra che i Quarg siano già al corrente del tuo incontro sul mondo natale alieno. Ripensandoci, le occhiate interessate degli altri alieni di prima suggeriscono che la notizia si sia sparsa in fretta. Poi si siede di fronte a te e allarga le braccia in un gesto che non avresti mai immaginato di vedere da un Quarg. "Non è con frequenza significativa che i possenti Gegno interagiscono con audaci estranei."`
+			
+			label "the gegno"
+			choice
+				`	"I Gegno?"`
+					goto gegno
+				`	"Le navi che ho visto in giro appartengono a questi Gegno?"`
+					goto ships
+			label gegno
+			`	"Sì, gli imperiosi Gegno. Una razza giovane, sono, molte decadi più giovane di voi umani. Non si trovano nella lotta per la guida come gli altri. Piuttosto, glorificano la loro ricerca di una guida reciproca per condividere un futuro nobile." Ti chiedi se l'uso di aggettivi vanagloriosi da parte del Quarg dipenda da lacune nella traduzione o se parli così di proposito. La sua voce viene comunque dai toni bassi del parlato Quarg, in contrasto con il ritmo eccitato.`
+			choice
+				`	"Qual è questa guida che perseguono?"`
+					goto guidance
+			label ships
+			`	"Certo, i vascelli di tale statura rappresentano i robusti Gegno. Non nel dolore, ma nella grandezza perseguono il loro futuro, portando il frutto del sacrificio come trofeo al proprio nome."`
+			choice
+				`	"Sacrificio?"`
+					goto sacrifice
+			label guidance
+			`	"I Gegno ritengono necessario perseguire ciò che scelgono che debba essere, per immaginare un futuro grandioso. Così si sono separati in due rami diversi. Uno si fregia del nome di onorevoli Vi: i più potenti dei guerrieri, i più duri dei consanguinei. Sono bruti che vedono la prova della forza come l'unica variabile nel determinare il proprio cammino. Quello degli Scin, più capaci in tecnologia, crede che solo con il progresso delle scienze e della scoperta i Gegno prospereranno."`
+				goto next
+			label sacrifice
+			`	"I Gegno ritengono necessario sacrificare in modo soverchiante tutto ciò che deve essere, per immaginare un futuro per sé. Così si sono separati in due rami diversi. Uno si fregia del nome di onorevoli Vi: i più potenti dei guerrieri, i più duri dei consanguinei. Sono bruti che vedono la prova della forza come l'unica variabile nel determinare il proprio cammino. Quello degli Scin, più capaci in tecnologia, crede che solo con il progresso delle scienze e della scoperta i Gegno prospereranno."`
+			label next
+			choice
+				`	"I Vi hanno ragione, la forza di sopravvivere conta più di ogni altra cosa."`
+					goto vi
+				`	"Gli Scin hanno ragione, il progresso tecnologico apre così tante possibilità."`
+					goto scin
+				`	"Perché non uniscono i loro sforzi per migliorare insieme il loro futuro?"`
+					goto together
+			label vi
+			`	"Per quanto sia caratteristico, una proposta così imponente è piuttosto noiosa per una specie che cresce in modo meraviglioso. Ciò nonostante, voi umani seguite questa dura dottrina, anche se in misura molto minore dei Vi."`
+				goto "wrap up"
+			label scin
+			`	"La ricerca della tecnologia lascia indietro molti valori importanti per la crescita di una specie gloriosa, e ne abbiamo visti parecchi."`
+				goto "wrap up"
+			label together
+			`	"Purtroppo ai più dei Gegno manca la spinta a perseguire il loro futuro principale, e si diluiscono nel loro presente stagnante. La separazione delle correnti è stata uno dei pochi modi per cercare motivazione oltre questo fatto."`
+			label "wrap up"
+			choice
+				`	"Grazie per le informazioni."`
+					goto end
+				`	"Sembra che non vi piacciano i cammini che hanno scelto."`
+			`	Il Quarg si alza e, mentre lo fa, vedi alcune macchie sulla sua pelle altrimenti grigia virare verso tonalità blu con deboli tracce di viola, che però svaniscono poco dopo. "Non è nella nostra prospera capacità persuadere i Gegno, perché un tempo ci abbiamo provato. Minacciano conflitto se interferiamo, e non desideriamo assistere di nuovo a una simile sommossa in pericolo." Resta in silenzio a lungo, poi ti fa cenno di alzarti anche tu.`
+			
+			branch "interacted with outsider"
+				has "Visit Quarg in Gegno Space: offered"
+			
+			`	"Allo stesso modo, i Gegno non desiderano interagire con audaci estranei. Purtroppo solo una breve storia possiamo raccontare di loro. Non possiamo caldeggiare cortesi convenevoli tra te e loro, ma sei il benvenuto su questo anello se ti ritroverai qui. Per favore, mantieni al minimo gli incontri con i Gegno."`
+				goto end
+			
+			label "interacted with outsider"
+			`	"Tuttavia è ancora sconcertante che i Gegno abbiano interagito con un audace estraneo come te." Il Quarg si ferma di nuovo un momento e prende un respiro più lungo del solito. "Ti prego di essere decisamente prudente negli incontri con i Gegno. Purtroppo non possiamo caldeggiare cortesi convenevoli tra te e loro. Solo una breve storia possiamo raccontare di loro. Però sei senz'altro il benvenuto su questo anello se ti ritroverai qui."`
+			
+			label end
+			`	Il Quarg accenna un inchino e il primo di prima ti accompagna fuori dalla stanza. Sembra che avere a che fare con questi sedicenti "Gegno" sarà difficile, e dovrai convivere con la loro xenofobia nel prossimo futuro.`
+				decline
+
+
+mission "Gegno Quarg Direction to Ringworld"
+	name `Visita l'anello dei Quarg`
+	landing
+	source
+		near "Aleit" 1 2
+	destination "Giaru Gegno"
+	to offer
+		has "First Contact: Quarg: offered"
+		not "Giaru Gegno: Quarg Contact: offered"
+	on offer
+		conversation
+			`Appena atterri su questo mondo Quarg, alcuni Quarg si dirigono in fretta verso la tua nave. Uno si mette davanti agli altri e ti fa cenno di avvicinarti, mentre gli altri parlano piano tra loro in una lingua che non hai mai sentito. Il Quarg si china appena per parlarti e, a giudicare dallo sguardo, sembra piuttosto perplesso. "Sdii veebyi keies Gegnion?" chiede, e sembra la lingua che parlavano gli altri. Poi aspetta con pazienza la tua risposta.`
+			choice
+				`	(Prova a parlare con il Quarg.)`
+			`	Ti presenti al Quarg e spieghi che non capisci la sua lingua. Si raddrizza lentamente, sembra soppesare la situazione e poi si rivolge agli altri. Dopo qualche altra parola scambiata, uno degli altri Quarg si allontana e va a prendere una sorta di dispositivo, portandotelo. Sembra una specie di mappa olografica. Il Quarg indica un sistema vicino, che rivela un ologramma di un anello dei Quarg. "Ehsveet Duebyuarr Giaru, Aechman", dice, e poi si inchina davanti a te.`
+			`	Probabilmente dovresti andare a visitare quell'anello.`
+				accept
+
+
+mission "Giaru Gegno: Revisit"
+	invisible
+	landing
+	source "Giaru Gegno"
+	to offer
+		has "Giaru Gegno: Quarg Contact: offered"
+		has "Visit Quarg in Gegno Space: offered"
+		not "gegno: met gegno before quarg"
+	on offer
+		conversation
+			`Arrivi di nuovo a Giaru Gegno, sperando di trovare un altro Quarg che parli la tua lingua. Stavolta però noti che alcuni Gegno dell'anello, passando, ti lanciano ogni tanto un'occhiata interessata. Dopo circa un minuto una coppia di Quarg ti si avvicina e ti fa cenno di seguirli. Riportato nella stanza di prima, trovi il Quarg con cui avevi parlato già seduto con calma all'altro capo del tavolo.`
+			`	"Hai compiuto in modo sorprendente un'impresa meravigliosa, coraggioso viaggiatore", dice il Quarg, unendo le mani. Sembra che i Quarg siano già al corrente del tuo incontro sul mondo natale alieno. Ripensandoci, le occhiate interessate che hai ricevuto prima suggeriscono che la notizia si sia sparsa in fretta. "Non è con frequenza significativa che i possenti Gegno interagiscono con audaci estranei."`
+			choice
+				`	"È stata una coincidenza."`
+				`	"Sembravano in difficoltà quando li ho trovati, quindi li ho aiutati."`
+					goto trouble
+			`	"Certo, le coincidenze strane accadono in modo curioso. Molte coincidenze sono solo fugaci momenti di sottile stranezza." Il Quarg accenna a un'espressione cupa. "A volte una può essere grande e potente, oltre ad avere conseguenze notevoli. I Gegno l'hanno imparato un gran numero di volte.`
+			label "trouble"
+			`	"Sei davvero uno coraggioso. Ai più non verrebbe in mente di saltare in faccia all'incertezza come hai fatto tu." Il Quarg medita per un momento sul pensiero successivo. "Però, come i Gegno hanno fatto nel corso della loro storia, alcuni compiono salti memorabili senza lasciarsi fermare da alcuna esitazione."`
+			
+			action
+				"gegno: left quarg" = "days since start"
+			`	Il Quarg si alza e tu fai lo stesso. "Ti prego di essere decisamente prudente nei tuoi incontri con i Gegno. Sentiti sempre gradito di tornare qui, se sceglierai di farlo con attenzione." Mentre ti accompagna fuori dalla stanza ti volti e vedi il Quarg che si inchina. Non puoi fare a meno di chiederti cosa avesse in mente durante la conversazione, ma forse è meglio se d'ora in poi sei più prudente.`
+				decline
+
+mission "Nosy Scin"
+	invisible
+	landing
+	non-blocking
+	source "Giaru Gegno"
+	to offer
+		has "Visit Quarg in Gegno Space: offered"
+		not "First Contact: Gegno Scin: offered"
+		not "Gegno Genocide Defense: offered"
+	to complete
+		never
+	on enter "Aleit"
+		fail
+
+	npc
+		government "Gegno Scin (Neutral)"
+		personality launching mute uninterested
+		system "Aleit"
+		ship "Mica" "Eichpys"
+
+mission "Suspicious Scin"
+	entering
+	name `Dispositivo strano`
+	description `Un strano dispositivo Gegno è apparso all'improvviso sulla tua nave, mostrando le coordinate di un pianeta nello spazio Gegno. Visitarlo potrebbe dare qualche risposta, o forse qualcos'altro.`
+	destination "Yiia Iyr"
+	to offer
+		"days since start" - "gegno: left quarg" > 4
+		or
+			and
+				has "gegno: met gegno before quarg"
+				has "Giaru Gegno: Quarg Contact: offered"
+			has "Giaru Gegno: Revisit: offered"
+		not "First Contact: Gegno Scin: offered"
+		not "Gegno Genocide Defense: offered"
+	on offer
+		conversation
+			`Mentre te ne stai andando per i fatti tuoi, un debole segnale comincia a emanare da qualche parte della nave. Non sai cosa sia, perché non sembra provenire dalla nave stessa, così decidi di dare un'occhiata. Dopo qualche minuto di ricerca trovi un piccolo dispositivo non troppo diverso da quello che ti avevano dato i Gegno incontrati su Var Oti, ficcato lì per lì in un angolo delle strutture della nave. Non sai come o quando ci sia finito, ma non sembra pericoloso.`
+			`	A parte lo strano segnale che emette, il dispositivo sembra solo indicare la posizione di un pianeta nello spazio Gegno. L'unica opzione, a parte ignorarlo, è visitare quel pianeta e vedere se ci sono risposte a questa strana situazione.`
+				accept
+
+	npc
+		government "Gegno Scin (Neutral)"
+		personality staying mute uninterested
+		system "Ilirco"
+		fleet
+			names "gegno scin"
+			variant
+				"Tridymite"
+	on complete
+		clear "gegno: left quarg"
+
+
+mission "First Contact: Gegno Scin"
+	invisible
+	landing
+	deadline 1
+	source "Yiia Iyr"
+	to offer
+		has "Suspicious Scin: offered"
+		not "Gegno Genocide Defense: offered"
+	on offer
+		conversation
+			`Guidato dal misterioso dispositivo della nave, scendi verso la superficie di questo mondo attraversando diversi strati spessi di nuvole. Appena li sfondi e ti prepari ad atterrare, noti alcune navi dei Gegno Scin posate lì vicino, facilmente riconoscibili dai loro motivi verdi. Due sembrano vascelli militari che hai visto nei sistemi vicini, mentre un terzo, in mezzo, è un piccolo shuttle. Gli Scin devono essere responsabili del dispositivo, e sembrano aspettarti: una delle loro navi da guerra comincia a sollevarsi da terra e a dirigersi verso di te.`
+			choice
+				`	(Lascia il pianeta.)`
+					goto leave
+				`	(Aspetta e vedi cosa fanno.)`
+					goto wait
+				`	(Preparati al combattimento.)`
+			`	Attivi i sistemi d'arma e ti prepari a un incontro ostile mentre si avvicinano. La nave Scin avanza verso la tua e si ferma lentamente davanti a te. Non ha sparato e non mostra comportamenti aggressivi, quindi forse non cerca uno scontro. Appena appena, la nave da guerra indietreggia e si ferma. Decidi di fermare anche la tua e ti chiedi cosa significhi. La nave Scin indietreggia di nuovo, allontanandosi piano. Sembra che vogliano che tu li segua.`
+				goto interaction
+			
+			label wait
+			`	Fermata la nave, decidi di aspettare e vedere cosa fa la nave Scin mentre avanza. Si avvicina lentamente, rallenta e alla fine si ferma per un breve momento. Poi, appena appena, la nave da guerra comincia a indietreggiare e continua ad allontanarsi restando rivolta verso di te. Non sembrano diffidenti: è quasi come se ti stessero suggerendo di seguirli.`
+				goto interaction
+
+			label interaction
+			choice
+				`	(Seguili.)`
+					goto follow
+				`	(Vattene.)`
+					goto leave
+			label "leave"
+			action
+				set "gegno: left scin"
+			`	Diffidente verso la nave da guerra Scin, ti giri e cominci a risalire nello spazio. La nave Scin avanza verso la tua ma, avvicinandosi, assume una formazione di scorta e ti segue mentre lasci l'atmosfera del pianeta. Non sai cosa stiano facendo sul pianeta né perché ti abbiano portato da loro, ma forse è meglio essere prudente e non immischiarsi.`
+				accept
+
+			label "follow"
+			action
+				set "scin: approached epidote"
+			`	Sposti la nave in avanti di poco, in segno di assenso. All'improvviso la seconda nave da guerra a terra decolla e si mette in formazione dietro di te, mentre quella davanti si gira e comincia ad allontanarsi in volo. Li segui, curioso di dove ti stiano portando. Dietro di te lo shuttle rimasto decolla, ma invece di seguirti si dirige verso l'alto, nell'atmosfera.`
+			`	Per quanto il pianeta sembrasse all'inizio monotono a causa dei vari strati di nuvole spesse, la superficie mostra ogni tanto segni di vita, come pianure erbose o letti di fiumi in secca, mentre banchi di nebbia bassa coprono altre zone. Mentre il volo continua, le due navi Scin cominciano lentamente a spostarsi così che una sia su ciascun lato. Più avanti, in lontananza, una grande struttura emerge da dietro un altro muro di nebbia. Avvicinandoti un po', distingui i familiari colori verdi delle navi che ora volano con te. Le due navi da guerra cominciano a scendere verso quello che supponi essere un grosso mercantile Scin posato in una vasta area di sabbia.`
+			`	Il tuo precedente incontro con un guerriero Vi è stato caotico e imprevedibile, quindi in questa situazione è meglio essere molto prudenti. Mentre posi la nave vicino al mercantile, le due navi da guerra che ti hanno guidato atterrano anche loro lì vicino e si spengono. A parte le navi Gegno davanti a te, al momento il radar non mostra attività strane. Le letture ambientali esterne indicano sorprendentemente condizioni sicure per un umano, ma è meglio non rischiare. Indossi la tuta ambientale e prendi la pistola, per sicurezza.`
+			choice
+				`	(Avvicinati agli Scin.)`
+					goto approach
+				`	(Resta vicino alla mia nave.)`
+			`	Fai uno o due passi in avanti ma resti vicino alla nave, in allerta. Il mercantile è davvero grande: forse quattro volte un Hauler, o quasi due volte un Behemoth. Dal sottoscocca scende un ascensore e un gruppo di Scin esce dalla nave e si dirige verso di te. Il loro abbigliamento è molto diverso da quello dei Vi: i più indossano quella che sembra un'armatura segmentata a molti strati di piastre, che dà l'aspetto di squame. Uno di loro però ha un'armatura molto più leggera, concentrata soprattutto sulle spalle, con indumenti arancioni simili a vesti sotto. È un po' più esile degli altri Scin. Per quanto non siano neanche lontanamente massicci come i Vi, sembrano comunque tutti più alti di qualsiasi umano. Soprattutto, sembrano molto più desiderosi di interagire: hanno lasciato la comodità della loro nave per venirti incontro.`
+			`	Fermandosi a circa quattro metri da te, gli Scin con l'armatura più pesante si inginocchiano a terra. Quello con la veste fa qualche passo in più e poi si siede a terra davanti a te, a gambe incrociate.`
+			choice
+				`	(Siediti.)`
+					goto sit
+				`	(Allunga la mano verso la pistola.)`
+					goto reach
+			label "sit"
+			`	Ti siedi e li osservi bene. La pelle sembra quasi ossea, con debolissimi motivi verde chiaro. A differenza dei Vi hanno tre piccole corna e quasi nessun pelo. Sembrano altrettanto interessati al tuo aspetto e ti squadrano. Un altro Scin del mercantile si avvicina con una sorta di dispositivo e si inginocchia accanto a quello con la veste, che prende l'oggetto e lo posa tra voi due. Sembra una specie di tavoletta o di strumento per disegnare.`
+			`	Lo Scin tende allora il palmo e traccia un segno su metà dello schermo, poi lo gira verso di te.`
+			choice
+				`	(Appoggia la mano sul dispositivo.)`
+				`	(Non fare nulla.)`
+					goto imagery
+			`	Appoggi il palmo sul dispositivo e lo senti vibrare un poco. Sull'altra metà appare una struttura dettagliata della tua mano. Lo Scin sposta il dispositivo e allunga un braccio mostrando il dorso della mano.`
+			choice
+				`	(Allunga il braccio anche tu.)`
+				`	(Non fare nulla.)`
+					goto imagery
+			action
+				set "scin: gestures"
+			`	Allunghi la mano destra: lo Scin si sporge, la esamina con cura e prende un'altra nota sul dispositivo. Dopo aver scritto qualche altra cosa, si alza da terra e fa verso di te uno strano gesto, incrociando le braccia a formare un segno più rivolto alla propria sinistra. Gli altri Scin con l'armatura pesante si alzano e cominciano a tornare alle loro navi, e quello davanti a te li segue.`
+			`	Torni alla tua nave dopo lo sconcertante incontro, chiedendoti cosa pensarne, e gli Scin non ti seguono oltre.`
+				accept
+
+			label "imagery"
+			`	Girando di nuovo il dispositivo, lo Scin digita una sorta di nota e poi pulisce lo schermo. Poi comincia a disegnare con un dito. L'immagine finita sembra un ritratto di sé. "Dueyu Scin", dice a voce bassa. Cancellata l'immagine, ne disegna una che somiglia a te, anche se un po' sproporzionata, e aspetta una qualche risposta.`
+			choice
+				`	"Dueyu human..?"`
+				`	"Sono umano."`
+				`	(Non dire nulla.)`
+					goto quiet
+			`	Lo Scin ti guarda con quella che supponi essere fascinazione. Prende il dispositivo e disegna un'altra immagine. Dopo averlo posato, riconosci la figura familiare di un guerriero Gegno Vi.`
+			choice
+				`	"Gegno Vi?"`
+				`	"Dueyu Vi?"`
+			action
+				set "scin: imagery"
+			`	Guardandoti con un'espressione confusa, disegnano un altro ritratto che somiglia al Gegno più basso e vestito di cuoio del loro mondo natale, e accostano quell'immagine a quelle del Vi e dello Scin. "Gegno", dicono, e cominciano a riflettere. Passa un breve momento e riprendono a disegnare sul dispositivo. Dopo averlo girato verso di te, vedi una macchia verde e una macchia marrone. "Vi", dice lo Scin indicando il marrone. "Scin", dice, indicando ora il verde. Poi indica il gruppo dei tre ritratti Gegno. "Gegno."`
+			`	Dopo aver preso qualche altra nota, si alzano da terra e cominciano a tornare alle loro navi. Anche gli Scin con l'armatura pesante si alzano e li seguono.`
+			`	All'improvviso una raffica di sabbia ti passa alle spalle e, voltandoti, vedi altri tre Scin corazzati che si alzano dalla sabbia, uno dei quali piuttosto vicino a te. La loro armatura è molto diversa da quella degli altri: tonalità più scure, bordi più affilati e diversi aggeggi, ma la cosa più notevole è che portano armi a lama a forma di falce. A quanto pare gli Scin avevano più controllo della situazione di quanto pensassi, e se avessi fatto la scelta sbagliata nell'incontro, forse ora saresti dalla parte sbagliata di una di quelle lame.`
+			`	Torni alla nave e decolli dal pianeta, ma gli Scin non ti seguono oltre.`
+				accept
+			
+			label "quiet"
+			`	Ti fissano per qualche secondo, poi ritirano il dispositivo. Lo Scin si raddrizza, ti lancia uno sguardo profondo e inclina la testa a destra, seguito da un silenzio imbarazzante.`
+			choice
+				`	(Inclina la testa a destra anche tu.)`
+				`	(Inclina la testa a sinistra.)`
+				`	(Non fare nulla.)`
+					goto "no thoughts"
+			`	Quando inclini la testa, annotano il tuo comportamento sul dispositivo. Poi si alzano da terra e cominciano a tornare alle loro navi. Anche gli Scin con l'armatura pesante si alzano e li seguono.`
+			`	All'improvviso una raffica di sabbia ti passa alle spalle e, voltandoti, vedi altri tre Scin corazzati che si alzano dalla sabbia, uno dei quali piuttosto vicino a te. La loro armatura è molto diversa da quella degli altri: tonalità più scure, bordi più affilati e diversi aggeggi, ma la cosa più notevole è che portano armi a lama a forma di falce. A quanto pare gli Scin avevano più controllo della situazione di quanto pensassi, e se avessi fatto la scelta sbagliata nell'incontro, forse ora saresti dalla parte sbagliata di una di quelle lame.`
+			`	Torni alla nave e decolli dal pianeta, ma gli Scin non ti seguono oltre.`
+				accept
+				
+			label "no thoughts"
+			`	Lo Scin ti fissa per un tempo imbarazzante, poi sospira. Fruga nell'armatura e tira fuori una piccola arma da fuoco, puntandotela contro.`
+			choice
+				`	(Allunga la mano verso l'arma.)`
+				`	(Alza le braccia.)`
+			action
+				set "scin: provocative"
+			`Appena provi a muoverti, la prima cosa che senti è una lama curva al collo e un'onda di sabbia che ti passa accanto. Lo Scin annota con calma un'altra nota sul dispositivo, poi si alza e si avvia verso la nave. Voltando lentamente la testa, incroci il volto freddo e senza espressione di un altro Scin, che ti fa cenno di tornare alla nave. Ti segue mentre lo fai, continuando a tenerti la lama alla gola. Lungo la strada compaiono all'improvviso altri due Scin dalla sabbia, mentre quelli incontrati all'inizio restano dove sono. L'armatura dello Scin che ti scorta è molto diversa dalle altre: tonalità più scure, bordi più affilati e diversi aggeggi.`
+			`	Quando sei alla nave, allontanano la lama dal collo. Guardandola meglio ti accorgi che è a forma di falce e non di spada, il che significa che avresti avuto poche possibilità di evitare la decapitazione se avessero scelto di usarla. Sali in fretta sulla nave e ti prepari a partire. È chiaro che hai indugiato troppo.`
+				launch
+			
+			label "reach"
+			action
+				set "scin: provocative"
+			`	È piuttosto allarmante che gli Scin si avvicinino con tanta disinvoltura e, considerato com'è andato l'incontro con il Vi, potrebbe succedere qualsiasi cosa. Decidi di allungare la mano verso la pistola, ma appena lo fai la prima cosa che senti è una lama curva al collo e un'onda di sabbia che ti passa accanto. Voltando lentamente la testa, incroci il volto freddo e senza espressione di un altro Scin, che ti fa cenno di tornare alla nave. Ti segue mentre lo fai, continuando a tenerti la lama alla gola. Lungo la strada compaiono all'improvviso altri due Scin dalla sabbia, mentre quelli incontrati all'inizio restano dove sono. L'armatura dello Scin che ti scorta è molto diversa dalle altre: tonalità più scure, bordi più affilati e diversi aggeggi.`
+			`	Quando sei alla nave, allontanano la lama dal collo. Guardandola meglio ti accorgi che è a forma di falce e non di spada, il che significa che avresti avuto poche possibilità di evitare la decapitazione se avessero scelto di usarla. Sali in fretta sulla nave e ti prepari a partire, e noti che anche l'altra nave da guerra Scin sta accendendo i motori. È chiaro che hai indugiato troppo.`
+				launch
+
+
+			label "approach"
+			action
+				set "scin: entered epidote"
+			`	Camminando verso gli Scin noti che il mercantile è davvero grande: forse quattro volte un Hauler, o quasi due volte un Behemoth. Avvicinandoti, dal sottoscocca scende un ascensore e un gruppo di Scin aspetta il tuo arrivo. Il loro abbigliamento è molto diverso da quello dei Vi: i più indossano quella che sembra un'armatura segmentata a molti strati di piastre, che dà l'aspetto di squame. Uno di loro però ha un'armatura molto più leggera, concentrata soprattutto sulle spalle, con indumenti arancioni simili a vesti sotto. È un po' più esile degli altri Scin. Per quanto nessuno sia neanche lontanamente massiccio come i Vi, sembrano comunque tutti un po' più alti di qualsiasi umano. Soprattutto, sembrano molto più desiderosi di interagire, visto che ti lasciano avvicinare alla loro nave senza problemi.`
+			`	Quando sei all'ascensore, gli Scin con l'armatura pesante ti scortano a bordo. L'ascensore risale nella nave e porta in una specie di ampia baia interna. Lo Scin con la veste si allontana, prende una sorta di dispositivo, lo porta dove sei tu e ti fa cenno di raggiungerlo.`
+			choice
+				`	(Raggiungili.)`
+				`	(Allunga la mano verso la pistola.)`
+					goto pistol
+			`	Ti avvicini al dispositivo e osservi bene lo Scin con la veste. La pelle sembra quasi ossea, con debolissimi motivi verde chiaro. A differenza dei Vi hanno tre piccole corna e quasi nessun pelo. Sembrano altrettanto interessati al tuo aspetto e ti squadrano. Dopo aver armeggiato ancora un po' con il dispositivo, lo Scin ne rivela una sorta di tavoletta o strumento per disegnare.`
+			`	Lo Scin tende allora il palmo e traccia un segno su metà dello schermo, poi lo gira verso di te.`
+			choice
+				`	(Appoggia la mano sul dispositivo.)`
+				`	(Non fare nulla.)`
+					goto images
+			`	Appoggi il palmo sul dispositivo e lo senti vibrare un poco. Sull'altra metà appare una struttura dettagliata della tua mano. Lo Scin sposta il dispositivo e allunga un braccio mostrando il dorso della mano.`
+			choice
+				`	(Allunga il braccio anche tu.)`
+				`	(Non fare nulla.)`
+					goto images
+			action
+				set "scin: gestures"
+			`	Allunghi la mano destra: lo Scin si sporge, la esamina con cura e prende un'altra nota sul dispositivo. Dopo aver scritto qualche altra cosa, si volta verso di te e fa uno strano gesto, incrociando le braccia a formare un segno più rivolto alla propria sinistra. Gli altri Scin con l'armatura pesante si avvicinano e ti scortano all'ascensore e alla nave. Lungo la strada noti alcuni Scin che non avevi visto prima. La loro armatura è molto diversa da quella degli altri: tonalità più scure, bordi più affilati e diversi aggeggi, ma la cosa più notevole è che portano armi a lama a forma di falce.`
+			`	Quando torni alla nave, gli Scin tornano alla loro ma restano sul pianeta. Per quanto altrettanto strano, questo incontro è andato molto meglio di quello con il Vi.`
+				accept
+
+			label "images"
+			`	Girando di nuovo il dispositivo, lo Scin digita una sorta di nota e poi pulisce lo schermo. Poi comincia a disegnare con un dito. L'immagine finita sembra un ritratto di sé. "Dueyu Scin", dice a voce bassa. Cancellata l'immagine, ne disegna una che somiglia a te, anche se un po' sproporzionata, e aspetta una qualche risposta.`
+			choice
+				`	"Dueyu human..?"`
+				`	"Sono umano."`
+				`	(Non dire nulla.)`
+					goto silence
+			`	Lo Scin ti guarda con quella che supponi essere fascinazione. Prende il dispositivo e disegna un'altra immagine. Dopo averlo posato, riconosci la figura familiare di un guerriero Gegno Vi.`
+			choice
+				`	"Gegno Vi?"`
+				`	"Dueyu Vi?"`
+			action
+				set "scin: imagery"
+			`	Guardandoti con un'espressione confusa, disegnano un altro ritratto che somiglia al Gegno più basso e vestito di cuoio del loro mondo natale, e accostano quell'immagine a quelle del Vi e dello Scin. "Gegno", dicono, e cominciano a riflettere. Passa un breve momento e riprendono a disegnare sul dispositivo. Dopo averlo girato verso di te, vedi una macchia verde e una macchia marrone. "Vie", scandisce lo Scin indicando il marrone. "Sinn", dice, indicando ora il verde. Poi indica il gruppo dei tre ritratti Gegno. "Gegno."`
+			`	Dopo aver preso qualche altra nota, chinano il capo, e gli altri Scin ti riaccompagnano all'ascensore, attivandolo per riportarti in superficie. Ti scortano alla nave e lungo la strada ci sono alcuni Scin che non avevi visto prima. La loro armatura è molto diversa da quella degli altri: tonalità più scure, bordi più affilati e diversi aggeggi, ma la cosa più notevole è che portano armi a lama a forma di falce.`
+			`	Quando torni alla nave, gli Scin tornano alla loro ma restano sul pianeta. Per quanto altrettanto strano, questo incontro è andato molto meglio di quello con il Vi.`
+				accept
+
+			label "pistol"
+			action
+				set "scin: provocative"
+			`	La situazione in cui ti trovi è piuttosto precaria: dentro il vascello di una specie aliena, circondato da dispositivi sconosciuti... potrebbe succedere qualsiasi cosa. Decidi di allungare la mano verso la pistola, ma appena lo fai la prima cosa che senti è una lama curva al collo. Voltando lentamente la testa, incroci il volto freddo e senza espressione di un altro Scin, che non avevi visto prima. Continuano a tenerti la lama alla gola mentre riattivano l'ascensore, riportandoti in superficie. La loro armatura è molto diversa dalle altre: tonalità più scure, bordi più affilati e diversi aggeggi.`
+			`	Ti scortano alla nave e lungo la strada altri Scin montano la guardia con la stessa armatura. Quando sei alla nave, la lama viene allontanata dal collo. Guardandola meglio ti accorgi che è a forma di falce e non di spada, il che significa che avresti avuto poche possibilità di sottrarti alla decapitazione se avessero scelto di usarla. Sali in fretta sulla nave e ti prepari a partire, e noti che anche l'altra nave da guerra Scin sta accendendo i motori. È chiaro che hai indugiato troppo.`
+				launch
+			
+			label "silence"
+			`	Lo Scin ti fissa per un tempo imbarazzante, poi sospira. Fruga nell'armatura e tira fuori una piccola arma da fuoco, puntandotela contro.`
+			choice
+				`	(Allunga la mano verso l'arma.)`
+				`	(Alza le braccia.)`
+			action
+				set "scin: provocative"
+			`Appena provi a muoverti, la prima cosa che senti è una lama curva al collo. Lo Scin annota con calma un'altra nota sul dispositivo, poi lascia la scena e si addentra nel vascello. Voltando lentamente la testa, incroci il volto freddo e senza espressione di un altro Scin, che non avevi ancora visto. Continuano a tenerti la lama alla gola mentre riattivano l'ascensore, riportandoti in superficie. La loro armatura è molto diversa dalle altre: tonalità più scure, bordi più affilati e diversi aggeggi.`
+			`	Ti scortano alla nave e lungo la strada altri Scin montano la guardia con la stessa armatura. Quando sei alla nave, la lama viene allontanata dal collo. Guardandola meglio ti accorgi che è a forma di falce e non di spada, il che significa che avresti avuto poche possibilità di sottrarti alla decapitazione se avessero scelto di usarla. Sali in fretta sulla nave e ti prepari a partire. È chiaro che hai indugiato troppo.`
+				launch
+
+	npc
+		to spawn
+			not "scin: gestures"
+			not "scin: provocative"
+		government "Gegno Scin"
+		personality launching uninterested
+			confusion "militia"
+		system "Ilirco"
+		fleet
+			names "gegno scin"
+			variant
+				"Coesite"
+	npc
+		to spawn
+			not "scin: gestures"
+			has "scin: provocative"
+		government "Gegno Scin (Combative)"
+		personality launching
+		system "Ilirco"
+		fleet
+			names "gegno scin"
+			variant
+				"Coesite" 2
+
+
+mission "Gegno Exploration Nudge"
+	landing
+	name `Trova modi per interagire con i Gegno`
+	description `Per quanto i Gegno sembrino disinteressati a te nel complesso, potrebbero esserci altre occasioni di incontrarli nel loro spazio per saperne di più.`
+	source "Yiia Iyr"
+	to offer
+		has "Suspicious Scin: offered"
+		not "Gegno Genocide Defense: offered"
+	to complete
+		never
+	to fail
+		has "Gegno Exploration Nudge Remover: done"
+	on enter
+		conversation
+			branch provocative
+				has "scin: provocative"
+			`Mentre lasci l'atmosfera del pianeta, la nave Scin esce dalla formazione e va per la sua strada. Per quanto i Gegno possano non essere interessati in generale ad avere a che fare con te, i pochi Scin che hai incontrato sembravano interessati in qualche misura. Potrebbero esserci altre occasioni di incontrare i Gegno altrove nel loro spazio e di saperne di più.`
+			`	Tuttavia forse è meglio ascoltare quello che hanno detto i Quarg e procedere con prudenza.`
+				accept
+			
+			label provocative
+			`Le navi Scin che ti seguono fuori dal pianeta esitano poco prima di aprire il fuoco su di te, probabilmente provocate dalle tue scelte durante l'incontro. Eppure, se ti hanno condotto da loro un qualche interesse devono averlo, il che significa che potrebbero esserci altre possibilità di avere a che fare con i Gegno in altre zone del loro spazio.`
+			`	Tuttavia i Gegno hanno già riserve verso gli estranei. Forse è una buona idea ascoltare quello che i Quarg hanno detto sulla prudenza, soprattutto se porta a incontri ostili.`
+				accept
+
+# Fails above mission once the proper conditions are met so that it doesn't float in the mission panel.
+mission "Gegno Exploration Nudge Remover"
+	invisible
+	landing
+	non-blocking
+	source "Yiia Iyr"
+	destination "Giaru Gegno"
+	to offer
+		has "Suspicious Scin: offered"
+		not "Gegno Genocide Defense: offered"
+	to complete
+		has "gegno: encounters"
+
+
+# Gegno Superheavy Missions
+
+mission "Vi Augen"
+	invisible
+	non-blocking
+	transition
+	source
+		system "Kiluit"
+	destination "Earth"
+	on offer
+		# Fail the old version of this mission from prior to v0.10.1.
+		fail "Stationed Augen"
+	npc save
+		on kill
+			set "dead augen"
+		government "Gegno Vi"
+		personality heroic vindictive staying
+		system "Kiluit"
+		ship "Augen" "Vytii Yrrlausei"
+	to complete
+		never
+
+
+# Gegno Genocide Trigger
+
+mission "Gegno Genocide Defense"
+	invisible
+	landing
+	to offer
+		"reputation: Gegno" < -10
+	to complete
+		never
+	on offer
+		fail "First Contact: Gegno Vi"
+		fail "Visit Quarg in Gegno Space"
+		fail "Vi Augen"
+		fail "Gegno Anticipation"
+		fail "Gegno Intervention"
+		fail "Acquiescence"
+		"reputation: Gegno" = -1000
+		"reputation: Gegno Vi" = -1000
+		"reputation: Gegno Scin" = -1000
+		event "gegno: unified defense"
+		conversation
+			branch "corroboration provocation"
+				or
+					has "Gegno Anticipation: failed"
+					has "Gegno Intervention: failed"
+
+			`Appena posi la nave ricevi all'improvviso una chiamata in arrivo. "È stato incredibilmente imprudente darsi alla distruzione superflua di non combattenti appartenenti a una specie che non è la tua." Riconosci la voce di un Quarg, anche se suona piuttosto scontenta. "Una specie che sta ancora imparando da sé è vulnerabile alle influenze esterne, e le tue azioni aggressive contro i civili dei Gegno hanno causato eventi inutili."`
+			choice
+				`	"È stato un incidente!"`
+				`	"Di che cosa stai parlando?"`
+					goto what
+				`	"Non mi importa."`
+					goto care
+			`	"È molto improbabile che la violenza su vittime inermi sia accidentale. Qualunque sia la causa, l'effetto si è già prodotto. I Gegno si sono uniti sotto un'unica bandiera nel tentativo di scoraggiare altre interferenze esterne. Non sei più gradito nel loro spazio, e ti si consiglia di non tornare, affinché i Gegno non ti mostrino lo stesso comportamento belligerante che hai riservato ai loro cittadini."`
+				accept
+			label "what"
+			`	"Il tuo comportamento ha spinto i Gegno a unire le loro flotte e a scoraggiare ogni altra presenza di estranei. È una grande vergogna. Il tempo che avrebbero usato per risolvere i loro conflitti interni è ora sprecato in ostilità verso gli stranieri per la tua negligenza. Non sei più gradito nello spazio Gegno, e se oserai tornare, i Gegno ti riserveranno lo stesso trattamento che hai riservato ai loro cittadini."`
+				accept
+			label "care"
+			`	Il Quarg emette un suono sgradevole, uno che non hai mai sentito da nessun Quarg. "Se ti si vedrà ancora una volta nello spazio Gegno, aspettati lo stesso sentimento."`
+				accept
+
+			label "corroboration provocation"
+			branch "corroboration provocation homeworld"
+				has "flagship planet: Dueyu Eitch"
+			`Appena posi la nave ricevi all'improvviso una chiamata in arrivo. "È stato incredibilmente imprudente aprire il fuoco sui guardiani del mondo natale dei Gegno." La voce è quella di un Quarg, anche se suona piuttosto scontenta. "Erano lì semplicemente per sedare il malcontento per il tuo coinvolgimento straniero, eppure hai scelto l'ostilità sopra il loro pianeta più sacro. Ti ritroverai non più gradito nello spazio Gegno, e al limite della nostra pazienza."`
+			choice
+				`	"Temevo che mi attaccassero con le loro flotte!"`
+				`	"Non mi importa."`
+					goto care
+			`	"Le tue preoccupazioni non contano se pesate contro quelle di un'intera specie. In conseguenza di tale comportamento i Gegno si sono uniti, mettendo insieme le loro flotte e scoraggiando ogni altra presenza di estranei. È una grande vergogna. Il tempo che avrebbero usato per risolvere i loro conflitti interni è ora sprecato in ostilità verso gli stranieri per la tua negligenza. Lascia lo spazio Gegno, perché non hai più motivo di restare."`
+				accept
+
+			label "corroboration provocation homeworld"
+			`Dopo il tuo assalto alla flotta dei Gegno provi comunque ad atterrare sul loro mondo natale, ma un gran numero di navi ostili sta già sorvegliando la superficie del pianeta. All'improvviso ricevi una chiamata in arrivo, ma non dai Gegno.`
+			`	"È stato incredibilmente imprudente aprire il fuoco sui guardiani del mondo natale dei Gegno." La voce gelida è quella di un Quarg, anche se suona piuttosto scontenta. "Erano lì semplicemente per sedare il malcontento per il tuo coinvolgimento straniero, eppure hai scelto l'ostilità con loro davanti al pianeta più sacro." Una nave Quarg compare allora dall'orizzonte e vola rapidamente verso la tua mentre ricevi un'altra chiamata. "Ti ritroverai non più gradito nello spazio Gegno, e al limite della nostra pazienza."`
+			`	Senza concedere pause, la nave Quarg ti scorta di nuovo nell'atmosfera e le navi Gegno si ritirano esitanti per il momento. Mentre lasci il pianeta ti chiamano un'ultima volta. "Le tue azioni avranno certamente causato instabilità tra i Gegno. La cosa migliore che puoi fare è lasciare subito questo spazio. Ti osserveremo." Dopo di che la nave scompare.`
+				launch
+
+	npc
+		government "Gegno Vi"
+		to spawn
+			has "event: gegno: unified defense"
+		to despawn
+			has "dead augen"
+		personality heroic vindictive staying
+		system "Heutesl"
+		ship "Augen" "Vytii Yrrlausei"
+
+
+# Mission for if the player has clearance on a Gegno world despite having provoked civilians.
+
+mission "Gegno Unwelcoming"
+	landing
+	invisible
+	source
+		government "Gegno" "Gegno Vi" "Gegno Scin"
+	to offer
+		"reputation: Gegno" < 0
+	on offer
+		conversation
+			`Sulla superficie del pianeta ti accoglie una grande forza di alieni, anche se non sembrano affatto felici di averti sul loro mondo: anzi, diverse squadre in numero che non riesci a valutare in fretta ti corrono incontro, equipaggiate con attrezzature da combattimento e armi dall'aspetto avanzato. Mentre lo fanno, innumerevoli navi cominciano a scendere in formazione dal cielo.`
+				to display
+					not "Giaru Gegno: Quarg Contact: offered"
+			`Sulla superficie del pianeta ti accoglie un grande gruppo di Gegno, anche se non sembrano affatto felici di averti sul loro mondo: anzi, diverse squadre in numero che non riesci a valutare in fretta ti corrono incontro, equipaggiate con attrezzature da combattimento e armi dall'aspetto avanzato. Mentre lo fanno, innumerevoli navi appartenenti sia alla fazione Vi sia a quella Scin cominciano a scendere in formazione dal cielo.`
+				to display
+					has "Giaru Gegno: Quarg Contact: offered"
+			`	Probabilmente non era il piano più intelligente atterrare qui di proposito dopo aver assalito dei civili. Non c'è spazio per parlare: cominciano subito ad attaccare e tu fai del tuo meglio per respingerne il più possibile. Riesci a tenerne a bada diversi con la pistola, ma alla fine sei sopraffatto, e l'ultima cosa che provi è un dolore freddo e acuto attraverso la parte superiore del corpo.`
+				die
+
+
+# Gegno Hunter Fleets
+
+mission "Gegno Hunter Fleets"
+	landing
+	invisible
+	non-blocking
+	repeat
+	to offer
+		has "Gegno Genocide Defense: offered"
+		not "Gegno Hunter Fleets: active"
+	to complete
+		never
+	npc save
+		government "Gegno"
+		personality nemesis heroic vindictive
+		system
+			government "Gegno"
+		fleet
+			names "gegno united"
+			variant
+				"Gneiss" 3
+				"Hornfel" 2
+				"Hornfel (Heavy Weapons)" 2
+				"Eclogite" 5
+				"Feldspar" 3
+				"Halite" 18
+				"Felsic" 3
+				"Coesite" 5
+	npc save
+		government "Gegno"
+		personality nemesis heroic vindictive
+		system
+			government "Gegno"
+		fleet
+			names "gegno united"
+			variant
+				"Feldspar" 2
+				"Halite" 12
+				"Gneiss" 4
+				"Felsic" 4
+				"Coesite" 4
+				"Eclogite" 3
+	npc save
+		government "Gegno"
+		personality nemesis heroic vindictive
+		system
+			government "Gegno"
+		fleet
+			names "gegno united"
+			variant
+				"Feldspar" 3
+				"Halite" 18
+				"Gneiss" 2
+				"Hornfel" 3
+				"Hornfel (Heavy Weapons)"
+				"Eclogite" 3
+				"Coesite" 6
+
+
+# Gegno Vi Duels
+
+mission "Gegno Vi Duels"
+	minor
+	landing
+	invisible
+	repeat
+	deadline 9
+	source
+		near "Ookmya" 100
+	to offer
+		random < 60
+	to complete
+		never
+	npc provoke
+		system "Ookmya"
+		government "Gegno Vi (Duelist A)"
+		personality heroic unconstrained uninterested staying ramming
+		fleet
+			names "gegno vi"
+			variant
+				"Dunite"
+		conversation "interfered with duel"
+	npc provoke
+		system "Ookmya"
+		government "Gegno Vi (Duelist B)"
+		personality heroic unconstrained uninterested staying ramming
+		fleet
+			names "gegno vi"
+			variant
+				"Dunite"
+		conversation "interfered with duel"
+
+conversation "interfered with duel"
+	action
+		"reputation: Gegno Vi" -= 1
+		"reputation: Gegno Vi (Duelist A)" -= 0.1
+		"reputation: Gegno Vi (Duelist B)" -= 0.1
+	`Cominci a ricevere numerose chiamate da navi dei Gegno Vi dal tono molto esasperato. A quanto pare hai interrotto una tradizione piuttosto importante per loro, visto che ora le loro navi compaiono ostili sul tuo radar.`

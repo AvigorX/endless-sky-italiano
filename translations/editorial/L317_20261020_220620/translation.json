@@ -1,0 +1,198 @@
+{
+ "block": {
+  "path": "data/coalition/coalition ships.txt",
+  "line_from": 1141,
+  "line_to": 2195,
+  "units": 17
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Heliarch Neutralizer|description|1141|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1141,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Neutralizer",
+   "english": "The most common Heliarch patrol ship, Neutralizers are designed to be just strong enough to keep an enemy vessel occupied until reinforcements can arrive.",
+   "italian": "La più diffusa nave di pattuglia Heliarch, i Neutralizer sono progettati per essere appena abbastanza forti da tenere occupata una nave nemica finché non arrivano i rinforzi.",
+   "ratio": 1.13
+  },
+  {
+   "idx": 2,
+   "id": "ship:Heliarch Punisher|description|1276|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1276,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Punisher",
+   "english": "Although not quite as strong or powerful as the Quarg ships that they are designed to oppose, Heliarch Punishers are versatile and durable ships. Rumors say that the Heliarchs have a small stash of stolen Quarg Skylances that they can outfit the Punishers with in times of war.",
+   "italian": "Sebbene non siano forti o potenti quanto le navi Quarg che sono progettati per contrastare, i Punisher Heliarch sono navi versatili e resistenti. Si dice che gli Heliarch abbiano un piccolo deposito di Skylance Quarg rubati con cui equipaggiare i Punisher in tempo di guerra.",
+   "ratio": 0.993
+  },
+  {
+   "idx": 3,
+   "id": "ship:Heliarch Pursuer|description|1503|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1503,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Pursuer",
+   "english": "Occasionally, when a Heliarch cadet shows promising results in dogfighting simulations, they are allowed to fly a ship of their own: the Pursuer.",
+   "italian": "Ogni tanto, quando un cadetto Heliarch mostra risultati promettenti nelle simulazioni di combattimento aereo, gli è permesso pilotare una nave propria: il Pursuer.",
+   "ratio": 1.124
+  },
+  {
+   "idx": 4,
+   "id": "ship:Heliarch Pursuer|description|1504|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1504,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Pursuer",
+   "english": "\tThough certainly not as durable as the other fighters in Coalition space, this Kimek design is cheaper to produce and capable of outrunning any other Coalition ship.",
+   "italian": "\tSebbene non sia certo resistente come gli altri caccia dello spazio della Coalizione, questo progetto Kimek costa meno da produrre ed è capace di seminare qualsiasi altra nave della Coalizione.",
+   "ratio": 1.169
+  },
+  {
+   "idx": 5,
+   "id": "ship:Heliarch Pursuer|description|1505|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1505,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Pursuer",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI caccia non sono dotati di motore iperspaziale. Non puoi trasportare un caccia se non hai nella tua flotta una nave con una baia di caccia.",
+   "ratio": 1.06
+  },
+  {
+   "idx": 6,
+   "id": "ship:Heliarch Rover|description|1563|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1563,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Rover",
+   "english": "The very first fighter they designed, Rovers are well-rounded ships that the Heliarchs employ regularly due to their reliability in any situation.",
+   "italian": "Il primo caccia che abbiano progettato, i Rover sono navi equilibrate che gli Heliarch impiegano regolarmente per la loro affidabilità in ogni situazione.",
+   "ratio": 1.055
+  },
+  {
+   "idx": 7,
+   "id": "ship:Heliarch Rover|description|1564|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1564,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Rover",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI caccia non sono dotati di motore iperspaziale. Non puoi trasportare un caccia se non hai nella tua flotta una nave con una baia di caccia.",
+   "ratio": 1.06
+  },
+  {
+   "idx": 8,
+   "id": "ship:Heliarch Stalker|description|1620|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1620,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Stalker",
+   "english": "Boasting incredible durability for a ship this size, the Stalker is a compact fortress that can take serious punishment and recover faster than some warships. Its speed and maneuverability, however, leave much to be desired.",
+   "italian": "Con una resistenza incredibile per una nave di queste dimensioni, lo Stalker è una fortezza compatta capace di incassare colpi seri e di riprendersi più in fretta di alcune navi da guerra. Velocità e manovrabilità, però, lasciano molto a desiderare.",
+   "ratio": 1.112
+  },
+  {
+   "idx": 9,
+   "id": "ship:Heliarch Stalker|description|1621|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1621,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Stalker",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI caccia non sono dotati di motore iperspaziale. Non puoi trasportare un caccia se non hai nella tua flotta una nave con una baia di caccia.",
+   "ratio": 1.06
+  },
+  {
+   "idx": 10,
+   "id": "ship:Kimek Briar|description|1683|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1683,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kimek Briar",
+   "english": "With more than twice the population of the Saryds and Arachi combined, the Kimek are constantly in need of transport ships to carry individuals from one world to another.",
+   "italian": "Con una popolazione più che doppia rispetto a quella dei Saryd e degli Arachi messi insieme, i Kimek hanno costantemente bisogno di navi di trasporto per portare le persone da un mondo all'altro.",
+   "ratio": 1.147
+  },
+  {
+   "idx": 11,
+   "id": "ship:Kimek Spire|description|1753|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1753,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kimek Spire",
+   "english": "The Spire is the largest passenger transport in Coalition space, able to carry nearly three hundred individuals... as long as they're comfortable staying in the tiny bunk rooms that are primarily designed to meet the needs of a Kimek. Most of the ceilings are too short for a Saryd to stand up straight, and the beds are too small for an Arach to stretch their legs out comfortably.",
+   "italian": "Lo Spire è il più grande trasporto passeggeri dello spazio della Coalizione: può portare quasi trecento persone... a patto che si accontentino di stare nelle minuscole cabine a cuccette, progettate soprattutto per le esigenze di un Kimek. La maggior parte dei soffitti è troppo bassa perché un Saryd possa stare in piedi dritto, e i letti sono troppo piccoli perché un Arach possa distendere comodamente le gambe.",
+   "ratio": 1.081
+  },
+  {
+   "idx": 12,
+   "id": "ship:Kimek Thistle|description|1822|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1822,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kimek Thistle",
+   "english": "The Kimek love traveling so much that some of them will happily spend months at a time in a transport this size, and the passengers often grow into a tight-knit community by the end of their journeys together.",
+   "italian": "I Kimek amano talmente tanto viaggiare che alcuni passano volentieri mesi interi su un trasporto di queste dimensioni, e i passeggeri finiscono spesso per diventare una comunità stretta alla fine del viaggio fatto insieme.",
+   "ratio": 1.062
+  },
+  {
+   "idx": 13,
+   "id": "ship:Kimek Thorn|description|1902|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1902,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kimek Thorn",
+   "english": "The Thorn is the Kimek equivalent of a shuttle, and thanks to their speed and maneuverability they are used throughout Coalition space for transferring passengers from one ship to another or from a planet into orbit.",
+   "italian": "Il Thorn è l'equivalente Kimek di una navetta e, grazie alla loro velocità e manovrabilità, sono usati in tutto lo spazio della Coalizione per trasferire passeggeri da una nave all'altra o da un pianeta all'orbita.",
+   "ratio": 0.991
+  },
+  {
+   "idx": 14,
+   "id": "ship:Saryd Runabout|description|1961|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 1961,
+   "kind": "DESCRIPTION",
+   "context": "ship:Saryd Runabout",
+   "english": "Saryds place high value both on solitude, but also on community and collaboration. So, it is not surprising that their smallest spacefaring vessel requires a team of at least two individuals to operate it. It is quite common for a lone Saryd to take on a Kimek or Arach copilot as a way of building cross-species friendships.",
+   "italian": "I Saryd danno grande valore alla solitudine, ma anche alla comunità e alla collaborazione. Non sorprende quindi che la loro più piccola nave spaziale richieda un equipaggio di almeno due persone per essere pilotata. È piuttosto comune che un Saryd solitario prenda con sé un copilota Kimek o Arach come modo per costruire amicizie fra specie diverse.",
+   "ratio": 1.077
+  },
+  {
+   "idx": 15,
+   "id": "ship:Saryd Sojourner|description|2032|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 2032,
+   "kind": "DESCRIPTION",
+   "context": "ship:Saryd Sojourner",
+   "english": "When the first wars were fought against the Quarg, the Saryds had been spacefaring for more than ten thousand Earth years, and their starship technology was considerably more advanced than the Kimek or the Arachi. At that time, ships similar to the modern Sojourner were the most powerful capital ships in the Coalition fleet.",
+   "italian": "Quando si combatterono le prime guerre contro i Quarg, i Saryd viaggiavano nello spazio da più di diecimila anni terrestri, e la loro tecnologia delle navi stellari era molto più avanzata di quella dei Kimek o degli Arachi. All'epoca navi simili al moderno Sojourner erano le più potenti navi capitali della flotta della Coalizione.",
+   "ratio": 1.018
+  },
+  {
+   "idx": 16,
+   "id": "ship:Saryd Traveler|description|2127|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 2127,
+   "kind": "DESCRIPTION",
+   "context": "ship:Saryd Traveler",
+   "english": "Travelers were originally designed as science vessels, thousands of years ago before the Saryds had catalogued all the life forms and physical phenomena of every world in Coalition space. Today, many Saryd communities still choose to live in a Traveler and journey together from system to system rather than putting down roots on a planet.",
+   "italian": "I Traveler erano in origine navi scientifiche, migliaia di anni fa, prima che i Saryd avessero catalogato tutte le forme di vita e i fenomeni fisici di ogni mondo dello spazio della Coalizione. Oggi molte comunità Saryd scelgono ancora di vivere su un Traveler e di viaggiare insieme da un sistema all'altro invece di mettere radici su un pianeta.",
+   "ratio": 1.024
+  },
+  {
+   "idx": 17,
+   "id": "ship:Saryd Visitor|description|2195|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 2195,
+   "kind": "DESCRIPTION",
+   "context": "ship:Saryd Visitor",
+   "english": "Rather than specializing in carrying passengers or carrying cargo, Saryds seek to make their ships as well-balanced and versatile as possible. As a result, the crew of a typical Visitor can count on performing a different sort of job every week.",
+   "italian": "Invece di specializzarsi nel trasporto di passeggeri o di merci, i Saryd cercano di rendere le proprie navi il più equilibrate e versatili possibile. Di conseguenza l'equipaggio di un tipico Visitor può contare sul fare un lavoro diverso ogni settimana.",
+   "ratio": 1.033
+  }
+ ]
+}

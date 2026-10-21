@@ -1,0 +1,286 @@
+{
+ "block": {
+  "path": "data/kahet/kahet outfits.txt",
+  "line_from": 54,
+  "line_to": 573,
+  "units": 25
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Ka'het Nullifier|description|54|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 54,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Nullifier",
+   "english": "The Nullifier was one of the largest weapons the Builders ever developed, created specifically to be carried in battle by the Vareti. Although it does almost no damage to shields and hull, one shot is capable of disabling most kinds of reactors in a matter of seconds.",
+   "italian": "The Nullifier was one of the largest weapons the Builders ever developed, created specifically to be carried in battle by the Vareti. Although it does almost no damage to shields and hull, one shot is capable of disabling most kinds of reactors in a matter of seconds.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Ka'het Ravager Beam|description|138|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 138,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Ravager Beam",
+   "english": "This laser beam was created by the Builders for use in asteroid mining. Unfortunately, they understood its effectiveness in combat only after it turned against them.",
+   "italian": "This laser beam was created by the Builders for use in asteroid mining. Unfortunately, they understood its effectiveness in combat only after it turned against them.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Ka'het Ravager Turret|description|166|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 166,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Ravager Turret",
+   "english": "This turret-mounted version of the Ravager Beam is one of the strongest weapons the Ka'het possess.",
+   "italian": "This turret-mounted version of the Ravager Beam is one of the strongest weapons the Ka'het possess.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Ka'het Annihilator|description|198|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 198,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Annihilator",
+   "english": "The Builders initially created the Annihilator long ago, as a countermeasure to their newly discovered shield matrix. They kept developing it for centuries, with this being its final version.",
+   "italian": "The Builders initially created the Annihilator long ago, as a countermeasure to their newly discovered shield matrix. They kept developing it for centuries, with this being its final version.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Ka'het Annihilator Turret|description|225|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 225,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Annihilator Turret",
+   "english": "The Builders mounted two Annihilators on this turret, making it highly efficient against enemy shields.",
+   "italian": "The Builders mounted two Annihilators on this turret, making it highly efficient against enemy shields.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Ka'het EMP Deployer|description|284|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 284,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het EMP Deployer",
+   "english": "Eons ago, the Builders were attacked by alien ships which used weapons that ignored their hull and damaged their reactors. Although they never did recover any of these weapons, after years of research they managed to replicate their effects.",
+   "italian": "Eons ago, the Builders were attacked by alien ships which used weapons that ignored their hull and damaged their reactors. Although they never did recover any of these weapons, after years of research they managed to replicate their effects.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Ka'het EMP Deployer|description|285|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 285,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het EMP Deployer",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Ka'het Emergency Deployer|description|323|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 323,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Emergency Deployer",
+   "english": "Most drones the Builders possessed were completely unarmed, making them very vulnerable to enemy attacks. Since installing weapons would have greatly reduced its cargo capacity, they instead decided to dissuade possible hijackers by developing these Emergency Deployers: they work by activating a series of reactions inside the ship's MHD generator and then ejecting it towards the enemy, resulting in a large scale detonation as soon as it hits something.",
+   "italian": "Most drones the Builders possessed were completely unarmed, making them very vulnerable to enemy attacks. Since installing weapons would have greatly reduced its cargo capacity, they instead decided to dissuade possible hijackers by developing these Emergency Deployers: they work by activating a series of reactions inside the ship's MHD generator and then ejecting it towards the enemy, resulting in a large scale detonation as soon as it hits something.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Ka'het Support Cooling|description|359|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 359,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Support Cooling",
+   "english": "While the cooling on a typical ship only needs to worry about keeping the crew comfortable in certain areas, the entirety of a Ka'het ship needs to maintain a suitable temperature for the Het inside to survive.",
+   "italian": "While the cooling on a typical ship only needs to worry about keeping the crew comfortable in certain areas, the entirety of a Ka'het ship needs to maintain a suitable temperature for the Het inside to survive.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Ka'het Primary Cooling|description|372|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 372,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Primary Cooling",
+   "english": "This is the main cooler used by the Ka'het. Although energy intensive, it is very effective, capable of single-handedly cooling some Het.",
+   "italian": "This is the main cooler used by the Ka'het. Although energy intensive, it is very effective, capable of single-handedly cooling some Het.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Ka'het Shield Restorer|description|386|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 386,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Shield Restorer",
+   "english": "The Builders never relied much on shield matrices, preferring instead to strengthen their hull. The reality of war, however, required that the Builders develop strong shield technology, leading to some Het vessels making extensive use of this module.",
+   "italian": "The Builders never relied much on shield matrices, preferring instead to strengthen their hull. The reality of war, however, required that the Builders develop strong shield technology, leading to some Het vessels making extensive use of this module.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Ka'het Grand Restorer|description|399|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 399,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Grand Restorer",
+   "english": "This shield generator is the apex of Ka'het shielding technology, a field that developed rapidly and out of necessity rather than gradually and perfected over long periods. Nevertheless, the Grand Restorer grants good protection for the largest Het ships, replacing the basic restorers used elsewhere.",
+   "italian": "This shield generator is the apex of Ka'het shielding technology, a field that developed rapidly and out of necessity rather than gradually and perfected over long periods. Nevertheless, the Grand Restorer grants good protection for the largest Het ships, replacing the basic restorers used elsewhere.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Ka'het Grand Restorer|description|400|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 400,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Grand Restorer",
+   "english": "\tUnlike most generators, this restorer needs a few seconds to start working again once the ship's shields have been depleted.",
+   "italian": "\tUnlike most generators, this restorer needs a few seconds to start working again once the ship's shields have been depleted.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Ka'het MHD Generator|description|414|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 414,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het MHD Generator",
+   "english": "The Builders originally created this magnetohydrodynamic generator as the Ka'mar main power source. Similarly to what happened with many Mar devices, it was later reused in the Het ships as a secondary energy generator, supplementing their integrated power systems when they proved to be unsatisfactory.",
+   "italian": "The Builders originally created this magnetohydrodynamic generator as the Ka'mar main power source. Similarly to what happened with many Mar devices, it was later reused in the Het ships as a secondary energy generator, supplementing their integrated power systems when they proved to be unsatisfactory.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Ka'het Reserve Accumulator|description|425|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 425,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Reserve Accumulator",
+   "english": "This tiny battery was developed for use by the Ka'mar drones as an emergency energy storage, in case their generators can't quite suffice for the high power demand of most Builder systems.",
+   "italian": "This tiny battery was developed for use by the Ka'mar drones as an emergency energy storage, in case their generators can't quite suffice for the high power demand of most Builder systems.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Ka'het Ion Trap|description|439|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 439,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Ion Trap",
+   "english": "The unique function of this generator is that of deflecting and slowing incoming ions, creating a significant amount of energy in the process. A powerful, correctly shaped magnetic field appears to be the key, as long as a powerful enough ion storm (or an equivalent phenomenon) is nearby. The practical result is that it converts hazardous storms into useful power.",
+   "italian": "The unique function of this generator is that of deflecting and slowing incoming ions, creating a significant amount of energy in the process. A powerful, correctly shaped magnetic field appears to be the key, as long as a powerful enough ion storm (or an equivalent phenomenon) is nearby. The practical result is that it converts hazardous storms into useful power.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:Maeri Engine Nacelles|plural|444|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 444,
+   "kind": "VALUE",
+   "context": "outfit:Maeri Engine Nacelles",
+   "english": "Maeri Engine Nacelles",
+   "italian": "Maeri Engine Nacelles",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "outfit:Maeri Engine Nacelles|description|465|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 465,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Maeri Engine Nacelles",
+   "english": "The Ka'het engines are peculiar in that they continuously draw large amounts of energy, but require no additional energy to activate: while this means that less power remains available for other subsystems, it is also somewhat more efficient than most types of propulsion, and generates only a tiny amount of heat.",
+   "italian": "The Ka'het engines are peculiar in that they continuously draw large amounts of energy, but require no additional energy to activate: while this means that less power remains available for other subsystems, it is also somewhat more efficient than most types of propulsion, and generates only a tiny amount of heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "outfit:Ka'het Sustainer Nacelles|plural|468|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 468,
+   "kind": "VALUE",
+   "context": "outfit:Ka'het Sustainer Nacelles",
+   "english": "Ka'het Sustainer Nacelles",
+   "italian": "Ka'het Sustainer Nacelles",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "outfit:Ka'het Sustainer Nacelles|description|489|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 489,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Sustainer Nacelles",
+   "english": "While Ka'het vessels are already equipped with proper engines, most of them use a sustainer engine in addition to give the ship enough maneuverability to be useful in combat. Following the same design as its bigger cousins, the sustainer requires no power to function at the cost of constant energy consumption.",
+   "italian": "While Ka'het vessels are already equipped with proper engines, most of them use a sustainer engine in addition to give the ship enough maneuverability to be useful in combat. Following the same design as its bigger cousins, the sustainer requires no power to function at the cost of constant energy consumption.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "outfit:Telis Engine Nacelles|plural|492|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 492,
+   "kind": "VALUE",
+   "context": "outfit:Telis Engine Nacelles",
+   "english": "Telis Engine Nacelles",
+   "italian": "Telis Engine Nacelles",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "outfit:Telis Engine Nacelles|description|513|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 513,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Telis Engine Nacelles",
+   "english": "These nacelles used to comprise the entire engine block of a Telis'het. While their size is not impressive compared to other engines, if used in conjunction with a sustainer or two, they can be a powerful form of propulsion, combining both turning and thrusting engines in one.",
+   "italian": "These nacelles used to comprise the entire engine block of a Telis'het. While their size is not impressive compared to other engines, if used in conjunction with a sustainer or two, they can be a powerful form of propulsion, combining both turning and thrusting engines in one.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "outfit:Vareti Engine Block|description|536|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 536,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Vareti Engine Block",
+   "english": "This is the largest single engine the Builders ever built, made for the most massive ships they were in control of. Due to its sheer size, it isn't as modular as its smaller equivalents, but it is more efficient and powerful as a result.",
+   "italian": "This is the largest single engine the Builders ever built, made for the most massive ships they were in control of. Due to its sheer size, it isn't as modular as its smaller equivalents, but it is more efficient and powerful as a result.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "outfit:Ka'het Compact Engine|description|561|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 561,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Compact Engine",
+   "english": "This tiny engine was developed as the main propulsion of the Ka'mar drones, long before the Ka'het were created and their nacelle design standardized. Improvements over time allowed it to maintain a comparable efficiency to the larger models, although unlike those, it requires some energy to activate the engines in addition to the constant energy drain that all Builder-designed engines have.",
+   "italian": "This tiny engine was developed as the main propulsion of the Ka'mar drones, long before the Ka'het were created and their nacelle design standardized. Improvements over time allowed it to maintain a comparable efficiency to the larger models, although unlike those, it requires some energy to activate the engines in addition to the constant energy drain that all Builder-designed engines have.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 25,
+   "id": "outfit:Ka'het Electric Stunner|description|573|0",
+   "path": "data/kahet/kahet outfits.txt",
+   "line": 573,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ka'het Electric Stunner",
+   "english": "A weapon of curious design, clearly not built with human hands in mind. Its short range makes it effective only for defending against enemy boarders, using the knowledge of your ship's architecture to your advantage.",
+   "italian": "A weapon of curious design, clearly not built with human hands in mind. Its short range makes it effective only for defending against enemy boarders, using the knowledge of your ship's architecture to your advantage.",
+   "ratio": 1.0
+  }
+ ]
+}

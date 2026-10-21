@@ -1,0 +1,76 @@
+{
+ "block": {
+  "path": "data/sheragi/sheragi ships.txt",
+  "line_from": 139,
+  "line_to": 232,
+  "units": 5
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Emerald Sword|description|139|0",
+   "path": "data/sheragi/sheragi ships.txt",
+   "line": 139,
+   "kind": "DESCRIPTION",
+   "context": "ship:Emerald Sword",
+   "english": "An ancient Sheragi warship that was crewed by mutineers that fled from their civil war and escaped into interstellar space. Found orbiting a disconnected star, this is an impressively large ship, fit for the equally large Sheragi. The ship's main weapon is a fusion-pumped gamma-ray laser called the 'Dragonflame Cannon.' Despite the relatively primitive outfits, it's still a very capable war machine due to its size.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"An ancient Sheragi warship that was crewed by mutineers that fled from their civil war and escaped into interstellar space. Found orbiting a disconnected star, this is an impressively large ship, fit for the equally large Sheragi. The ship's main weapon is a fusion-pumped gamma-ray laser called the 'Dragonflame Cannon.' Despite the relatively primitive outfits, it's still a very capable war machine due to its size.\"",
+   "english_hash": "52f8b23cfe0d0878"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Emerald Sword|description|140|0",
+   "path": "data/sheragi/sheragi ships.txt",
+   "line": 140,
+   "kind": "DESCRIPTION",
+   "context": "ship:Emerald Sword",
+   "english": "For its original Sheragi masters, this warship was home to around 100 individuals. For others, however, that number more than doubles, bringing it on par with the largest city ships.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"For its original Sheragi masters, this warship was home to around 100 individuals. For others, however, that number more than doubles, bringing it on par with the largest city ships.\"",
+   "english_hash": "141453ad6b477ab9"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Black Diamond|description|230|0",
+   "path": "data/sheragi/sheragi ships.txt",
+   "line": 230,
+   "kind": "DESCRIPTION",
+   "context": "ship:Black Diamond",
+   "english": "The Sheragi, being too large to effectively pilot ships this small, invested heavily in the development of autonomous fighters. The hardware that controls this isn't much more complex than the combat drones in human space, but it is bigger, and the lack of life support systems and amenities for a pilot allows it to carry extra outfitting space.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Sheragi, being too large to effectively pilot ships this small, invested heavily in the development of autonomous fighters. The hardware that controls this isn't much more complex than the combat drones in human space, but it is bigger, and the lack of life support systems and amenities for a pilot allows it to carry extra outfitting space.\"",
+   "english_hash": "f5e154d663c035c3"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Black Diamond|description|231|0",
+   "path": "data/sheragi/sheragi ships.txt",
+   "line": 231,
+   "kind": "DESCRIPTION",
+   "context": "ship:Black Diamond",
+   "english": "\tThe fighter also comes equipped with a powerful hull repair system to aid in its survival. This system doesn't work while the fighter is under fire, though, requiring the fighter to have not taken damage for a short while before activating.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tThe fighter also comes equipped with a powerful hull repair system to aid in its survival. This system doesn't work while the fighter is under fire, though, requiring the fighter to have not taken damage for a short while before activating.\"",
+   "english_hash": "995cc1fc13006f2b"
+  },
+  {
+   "idx": 5,
+   "id": "ship:Black Diamond|description|232|0",
+   "path": "data/sheragi/sheragi ships.txt",
+   "line": 232,
+   "kind": "DESCRIPTION",
+   "context": "ship:Black Diamond",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.\"",
+   "english_hash": "58c9699be6829723"
+  }
+ ]
+}

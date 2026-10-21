@@ -1,0 +1,66 @@
+{
+ "block": {
+  "path": "data/sheragi/sheragi ships.txt",
+  "line_from": 139,
+  "line_to": 232,
+  "units": 5
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Emerald Sword|description|139|0",
+   "path": "data/sheragi/sheragi ships.txt",
+   "line": 139,
+   "kind": "DESCRIPTION",
+   "context": "ship:Emerald Sword",
+   "english": "An ancient Sheragi warship that was crewed by mutineers that fled from their civil war and escaped into interstellar space. Found orbiting a disconnected star, this is an impressively large ship, fit for the equally large Sheragi. The ship's main weapon is a fusion-pumped gamma-ray laser called the 'Dragonflame Cannon.' Despite the relatively primitive outfits, it's still a very capable war machine due to its size.",
+   "italian": "Un'antica nave da guerra Sheragi, con a bordo ammutinati fuggiti dalla loro guerra civile e riparatisi nello spazio interstellare. Ritrovata in orbita attorno a una stella isolata, è una nave di dimensioni imponenti, adatta agli Sheragi altrettanto grandi. L'arma principale della nave è un laser a raggi gamma a pompaggio di fusione chiamato 'Dragonflame Cannon'. Nonostante gli equipaggiamenti relativamente primitivi, resta una macchina da guerra molto capace grazie alle sue dimensioni.",
+   "ratio": 1.172
+  },
+  {
+   "idx": 2,
+   "id": "ship:Emerald Sword|description|140|0",
+   "path": "data/sheragi/sheragi ships.txt",
+   "line": 140,
+   "kind": "DESCRIPTION",
+   "context": "ship:Emerald Sword",
+   "english": "For its original Sheragi masters, this warship was home to around 100 individuals. For others, however, that number more than doubles, bringing it on par with the largest city ships.",
+   "italian": "Per i suoi primi padroni Sheragi questa nave da guerra era la casa di un centinaio di individui. Per altri, però, quel numero più che raddoppia, portandola al livello delle più grandi navi-città.",
+   "ratio": 1.071
+  },
+  {
+   "idx": 3,
+   "id": "ship:Black Diamond|description|230|0",
+   "path": "data/sheragi/sheragi ships.txt",
+   "line": 230,
+   "kind": "DESCRIPTION",
+   "context": "ship:Black Diamond",
+   "english": "The Sheragi, being too large to effectively pilot ships this small, invested heavily in the development of autonomous fighters. The hardware that controls this isn't much more complex than the combat drones in human space, but it is bigger, and the lack of life support systems and amenities for a pilot allows it to carry extra outfitting space.",
+   "italian": "Gli Sheragi, troppo grandi per pilotare con efficacia navi così piccole, investirono molto nello sviluppo di caccia autonomi. L'hardware che li controlla non è molto più complesso dei droni da combattimento dello spazio umano, ma è più grande, e la mancanza di sistemi di supporto vitale e di comodità per un pilota permette di ricavare spazio extra per gli equipaggiamenti.",
+   "ratio": 1.081
+  },
+  {
+   "idx": 4,
+   "id": "ship:Black Diamond|description|231|0",
+   "path": "data/sheragi/sheragi ships.txt",
+   "line": 231,
+   "kind": "DESCRIPTION",
+   "context": "ship:Black Diamond",
+   "english": "\tThe fighter also comes equipped with a powerful hull repair system to aid in its survival. This system doesn't work while the fighter is under fire, though, requiring the fighter to have not taken damage for a short while before activating.",
+   "italian": "\tIl caccia è anche dotato di un potente sistema di riparazione dello scafo che ne aiuta la sopravvivenza. Il sistema non funziona però mentre il caccia è sotto il fuoco: per attivarsi richiede che il caccia non abbia subito danni per un breve periodo.",
+   "ratio": 1.041
+  },
+  {
+   "idx": 5,
+   "id": "ship:Black Diamond|description|232|0",
+   "path": "data/sheragi/sheragi ships.txt",
+   "line": 232,
+   "kind": "DESCRIPTION",
+   "context": "ship:Black Diamond",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI caccia non vengono forniti con un motore iperspaziale. Non puoi trasportare un caccia se non hai nella flotta una nave con una baia di caccia.",
+   "ratio": 1.09
+  }
+ ]
+}

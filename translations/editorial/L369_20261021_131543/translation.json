@@ -1,0 +1,88 @@
+{
+ "block": {
+  "path": "data/_deprecated/deprecated ships.txt",
+  "line_from": 91,
+  "line_to": 889,
+  "units": 7
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Korath Dredger|description|91|0",
+   "path": "data/_deprecated/deprecated ships.txt",
+   "line": 91,
+   "kind": "DESCRIPTION",
+   "context": "ship:Korath Dredger",
+   "english": "After the Korath were exiled from their homelands, efficient resource collection became a priority. World-ships were too precious to risk on dangerous forays, and Raiders lacked the cargo capacity. The Dredger was born as an answer to this problem, featuring an abundance of cargo and passenger space, with formidable defensive armament. With such a complement, these bulky ships can also offer potent support for frontline Raiders.",
+   "italian": "Dopo che i Korath furono esiliati dalle loro terre d'origine, la raccolta efficiente di risorse divenne una priorità. Le navi-mondo erano troppo preziose per rischiarle in incursioni pericolose, e i Raider mancavano di capacità di carico. Il Dredger nacque come risposta a questo problema, con abbondanza di spazio per carico e passeggeri e un formidabile armamento difensivo. Con una tale dotazione, queste navi massicce possono anche offrire un valido supporto ai Raider in prima linea.",
+   "ratio": 1.13
+  },
+  {
+   "idx": 2,
+   "id": "ship:Korath Raider|description|162|0",
+   "path": "data/_deprecated/deprecated ships.txt",
+   "line": 162,
+   "kind": "DESCRIPTION",
+   "context": "ship:Korath Raider",
+   "english": "Successive Raider designs have been the Korath warship of choice for plundering neighboring species for generations.",
+   "italian": "I progetti successivi del Raider sono stati la nave da guerra korath prediletta per saccheggiare le specie vicine per generazioni.",
+   "ratio": 1.121
+  },
+  {
+   "idx": 3,
+   "id": "ship:Korath Raider|description|163|0",
+   "path": "data/_deprecated/deprecated ships.txt",
+   "line": 163,
+   "kind": "DESCRIPTION",
+   "context": "ship:Korath Raider",
+   "english": "This model, like all Exile ships, has been adapted to house as many Korath as possible, as comfortably as possible, inflating its size beyond similarly classed warships. The spaceborne construction techniques employed allow for the ship's easy replacement, facilitating continued raids of nearby systems.",
+   "italian": "Questo modello, come tutte le navi Exile, è stato adattato per ospitare il maggior numero possibile di Korath nel massimo comfort, gonfiando le sue dimensioni oltre quelle di navi da guerra di classe simile. Le tecniche di costruzione spaziale impiegate permettono di sostituire facilmente la nave, agevolando le incursioni continue nei sistemi vicini.",
+   "ratio": 1.158
+  },
+  {
+   "idx": 4,
+   "id": "ship:Korath Chaser|description|201|0",
+   "path": "data/_deprecated/deprecated ships.txt",
+   "line": 201,
+   "kind": "DESCRIPTION",
+   "context": "ship:Korath Chaser",
+   "english": "The Korath Chaser is a fighter carried by most of their capital ships.",
+   "italian": "Il Korath Chaser è un caccia trasportato dalla maggior parte delle loro navi capitali.",
+   "ratio": 1.229
+  },
+  {
+   "idx": 5,
+   "id": "ship:Korath Chaser|description|202|0",
+   "path": "data/_deprecated/deprecated ships.txt",
+   "line": 202,
+   "kind": "DESCRIPTION",
+   "context": "ship:Korath Chaser",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI caccia non vengono forniti con un motore iperspaziale. Non puoi trasportare un caccia se non hai nella flotta una nave con una baia di caccia.",
+   "ratio": 1.09
+  },
+  {
+   "idx": 6,
+   "id": "ship:Korath World-Ship|description|261|0",
+   "path": "data/_deprecated/deprecated ships.txt",
+   "line": 261,
+   "kind": "DESCRIPTION",
+   "context": "ship:Korath World-Ship",
+   "english": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people.",
+   "italian": "Le Korath World-Ship sono enormi habitat nomadi che custodiscono tutto ciò che resta del loro popolo.",
+   "ratio": 1.11
+  },
+  {
+   "idx": 7,
+   "id": "ship:Quarg Skylark|description|889|0",
+   "path": "data/_deprecated/deprecated ships.txt",
+   "line": 889,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Skylark",
+   "english": "The Skylark is used by the Quarg as a freighter and warship.",
+   "italian": "Lo Skylark è usato dai Quarg come mercantile e nave da guerra.",
+   "ratio": 1.033
+  }
+ ]
+}

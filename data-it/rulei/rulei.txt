@@ -1,0 +1,170 @@
+# Copyright (c) 2022 by Saugia
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+
+# Previous iterations of first two missions are failed on offer to ensure save compatibility.
+mission "Relic of Pasts"
+	invisible
+	non-blocking
+	transition
+	source
+		system "Kanguwa"
+	destination "Earth"
+	to complete
+		never
+	npc save
+		government "Rulei"
+		personality heroic vindictive staying mute unconstrained frugal
+		system "Kanguwa"
+		ship "vyu-Ir" "Solemnity"
+
+mission "First Contact: Rulei"
+	invisible
+	entering
+	source
+		system "Kanguwa"
+	destination "Earth"
+	on offer
+		log "Factions" "Rulei" `I Rulei erano probabilmente una civiltà antica e tecnologicamente avanzata di molto tempo fa, ma di loro restano solo una strana nave e due pianeti segnati.`
+			`Comunicano tramite una sorta di capacità psionica invasiva, parlando con mille voci tutte insieme. Un contatto prolungato sembra malsano.`
+		conversation
+			`Pochi istanti dopo essere entrato nel sistema, sei sopraffatto da un intenso senso di vuoto. Mentre cerchi di capire questa sensazione, cominci a sentire dei sussurri alle spalle.`
+			choice
+				`	(Girati lentamente.)`
+				`	(Estrai l'arma corta e girati in fretta.)`
+			`	Ti giri, ma non c'è nulla oltre agli interni familiari della tua nave. I sussurri restano dietro la tua testa, come un prurito che non riesci a raggiungere. I sussurri sono in una lingua del tutto straniera che non riesci nemmeno a iniziare a capire. Continuando a guardarti intorno, cominci a sentire sempre più mormorii. Sembrano esserci centinaia di voci distinte che ti tirano la mente in ogni direzione insieme, sovraccaricando i sensi. Proprio quando pensi di non poterne più, tutto cade in un silenzio completo.`
+			choice
+				`	"Pronto?"`
+				`	"C'è qualcuno lì?"`
+				`	"Mostrati!"`
+			scene "scene/rulei"
+			`	"Umano."`
+			`	Un'immagine ti lampeggia all'improvviso nella testa, mentre senti milioni di occhi fissarti da oltre i confini dello spazio. Guardandoti di nuovo intorno, vedi un veicolo spaziale dall'aspetto strano poco più avanti, che ti fronteggia. Le voci continuano a circondare la tua mente con un'intensità appena ridotta.`
+			choice
+				`	"Chi sei?"`
+				`	"Dove sono?"`
+					goto where
+			`	Numerose voci si destano, ma invece di farsi più forti vanno avanti e indietro nella tua testa, come se stessero discutendo. Dopo qualche secondo tacciono, poi pronunciano una sola parola in un unisono cacofonico.`
+			`	"Precursori."`
+			choice
+				`	"Che posto è questo?"`
+				`	"Precursori di che cosa?"`
+			label where
+			`	I sussurri riprendono con forza rinnovata. Il turbine di voci senza fine ti assalta la testa, e ogni istante è più atroce del precedente. Alla fine cessano, e resti nel silenzio.`
+			`	"Una Fine."`
+			choice
+				`	"Una fine di che cosa?"`
+				`	"Che cosa intendi con questo?"`
+			`	Le voci riprendono, ma percepisci nel loro tono una tetraggine nuova. Provi ancora una volta a comunicare con la nave, ma nonostante il sussurro costante sullo sfondo non risponde più.`
+			`	Guardando di nuovo il veicolo, sembra avere un'origine in qualche modo avanzata. Sulla sua superficie scorrono inquietanti motivi simili a stelle, e non ha visibilmente alcun mezzo di propulsione standard. A poppa c'è una sorta di anello sospeso di oggetti che ruotano in modo bizzarro.`
+			`	I pianeti di questo sistema hanno un aspetto anormale, simile a quello dell'astronave, ma per qualche motivo anche solo guardarli ti fa venire mal di testa. Qualcosa di insolito deve essere accaduto qui molto tempo fa.`
+				decline
+
+# Fail the old versions of the above two missions.
+mission "Rulei Patch"
+	invisible
+	landing
+	to offer
+		or
+			has "Ira Contact: active"
+			has "Relic of the Past: active"
+	on offer
+		fail "Relic of the Past"
+		fail "Ira Contact"
+		fail
+
+mission "Rulei Planet"
+	invisible
+	landing
+	source
+		attributes "rulei"
+	on offer
+		conversation
+			`Mentre visiti questo mondo, hai la sensazione di un peso tremendo sulla mente. Le stesse tonalità violacee, simili a stelle, della nave aliena vista dall'alto si ritrovano anche in varie formazioni strane sparse per la terra. A differenza dei sussurri di prima, qui le voci sono dolorosamente insopportabili, soprattutto man mano che ti avvicini alla superficie.`
+			`	Riesci a malapena a sentire i tuoi pensieri.`
+			`											Basta a far impazzire qualsiasi essere vivente.`
+			`	La sensazione più inquietante è quella persistente di una coscienza che viene tirata da sotto di te.`
+			`	Come se qualcosa stesse cercando di trascinare`
+			`																					la tua`
+			`																							mente nel pianeta qui sotto.`
+			``
+			``
+			``
+			`	Meglio non restare qui troppo a lungo.`
+				decline
+
+mission "Rulei: You Are (Not) Alone: L-118"
+	invisible
+	entering
+	source
+		system "L-118"
+	destination "Earth"
+	# Don't offer if the old version of this mission from prior to v0.11.0 was already offered.
+	to offer
+		not "Rulei: You Are (Not) Alone: offered"
+	on offer
+		log `Scoperta una regione di vuoto a est del nucleo, dove i sistemi sono avvolti da un'oscurità vasta e inquietante. A parte stelle fioche e qualche pianeta, non esiste nulla.`
+		conversation
+			`Entrando in questo sistema, noti una strana torbidezza che vela le stelle oltre, e i tuoi scanner faticano a darne una lettura coerente. I pochi oggetti stellari presenti sono cancellati in modo inquietante da un'ombra vasta e nebulosa. A parte loro, è come se qui non ci fosse nulla. Perfino l'ombra stessa non è altro che il vuoto dello spazio, e in tutto quel vuoto, nessuno. Niente.`
+				decline
+
+mission "Rulei: You Are (Not) Alone: L-6181"
+	invisible
+	transition
+	source
+		system "L-6181"
+	destination "Earth"
+	# Don't offer if the old version of this mission from prior to v0.11.0 was already offered.
+	to offer
+		not "Rulei: You Are (Not) Alone: offered"
+	on enter
+		conversation
+			`Continuando attraverso questo spazio vuoto, non trovi altro che stelle sminuite e pianeti di silenzio. Entrando in questo sistema, però, ti imbatti in quella che sembra una creatura. Stranamente i tuoi scanner non la leggono come una qualche forma di vita, e la classificano solo come una mera "collezione" di materia. Si confonde con lo spazio stesso, come se fosse soltanto un riflesso del buio oltre.`
+				decline
+	npc
+		government "Indigenous Lifeform (Acheron)"
+		personality mute timid unconstrained uninterested
+		system "L-6181"
+		ship "Jje" ""
+
+mission "Rulei: Umbral Reach"
+	invisible
+	entering
+	source
+		system "Kanguwa"
+	destination "Earth"
+	to offer
+		has "First Contact: Rulei: offered"
+		has "visited system: L-118"
+	on offer
+		event "umbral reach label"
+		log "Factions" "Rulei" `I Rulei sembrano riconoscere il vuoto dei sistemi a est del nucleo come l'"Umbral Reach", e paiono avere un qualche legame emotivo con quella regione. Oltre a dire di "stare in guardia" dalla zona, non vogliono commentare oltre.`
+		conversation
+			`Dal nulla, i misteriosi sussurri dei Rulei ti si insinuano di nuovo nella mente. Dapprima mormorano lenti, ma dalla direzione dell'antico vascello crescono in velocità e volume, finché si fondono in un'unica frase pronunciata.`
+			`	"State in guardia..."`
+			`	"...Umbral Reach..."`
+			`	Senti un peso tremendo dietro quell'espressione, come se ti avesse scosso la mente stessa. È come se ogni emozione ti fosse inondata la testa in una volta - tristezza, rabbia, gioia, disgusto, e perfino alcune che non riesci a capire. Prima che tu possa rispondere, le voci si dissolvono in fretta e resti solo in un silenzio scomodo.`
+			`	L'unica cosa a cui riesci a pensare è il vicino vuoto di sistemi desolati. Considerata la tua precedente esperienza con i Rulei, potrebbero essersi in qualche modo collegati psionicamente ai ricordi della tua visita. Ma, proprio come quei sistemi, continuano nel loro silenzio ininterrotto.`
+				decline
+
+event "umbral reach label"
+	galaxy "label umbral"
+		sprite "label/umbral"
+
+
+phrase "rulei hostile"
+	word
+		"Concede."
+		"End."
+		"Join."
+		"Fall."

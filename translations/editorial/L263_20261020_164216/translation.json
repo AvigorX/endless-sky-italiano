@@ -1,0 +1,275 @@
+{
+ "block": {
+  "path": "data/remnant/remnant jobs.txt",
+  "line_from": 491,
+  "line_to": 682,
+  "units": 24
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Remnant: Rescue 2|description|491|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 491,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Rescue 2",
+   "english": "The <npc> has gone missing during a tech retrieval mission in the Ember Waste. Find them and help them return to <destination>.",
+   "italian": "La <npc> è scomparsa durante una missione di recupero tecnologico nell'Ember Waste. Trovala e aiutala a tornare su <destination>.",
+   "ratio": 1.016
+  },
+  {
+   "idx": 2,
+   "id": "mission:Remnant: Rescue 2|Your communicator notifies you of a resource allocation of <payment>, along with a brief note of thanks.|520|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 520,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 2",
+   "english": "Your communicator notifies you of a resource allocation of <payment>, along with a brief note of thanks.",
+   "italian": "Il tuo comunicatore ti notifica un'assegnazione di risorse di <payment>, insieme a un breve biglietto di ringraziamento.",
+   "ratio": 1.154
+  },
+  {
+   "idx": 3,
+   "id": "mission:Remnant: Rescue 2|You have returned, yet the <npc> is still missing.|523|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 523,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 2",
+   "english": "You have returned, yet the <npc> is still missing.",
+   "italian": "Sei tornato, ma la <npc> risulta ancora dispersa.",
+   "ratio": 0.98
+  },
+  {
+   "idx": 4,
+   "id": "mission:Remnant: Rescue 2B|name|530|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 530,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Rescue 2B",
+   "english": "Search and Rescue: Retrieval",
+   "italian": "Search and Rescue: Retrieval",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "mission:Remnant: Rescue 2B|description|531|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 531,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Rescue 2B",
+   "english": "The <npc> has gone missing during a tech retrieval mission in the Ember Waste. Find them and help them return to <destination>.",
+   "italian": "La <npc> è scomparsa durante una missione di recupero tecnologico nell'Ember Waste. Trovala e aiutala a tornare su <destination>.",
+   "ratio": 1.016
+  },
+  {
+   "idx": 6,
+   "id": "mission:Remnant: Rescue 2B|As you enter the system, your sensors pick up a lot of debris. Further analysis confirms your worst fears. The <npc> has been destroyed. You frantically spend the next few hours searching for survivors, your hope sinking with every passing minute.|553|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 553,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 2B",
+   "english": "As you enter the system, your sensors pick up a lot of debris. Further analysis confirms your worst fears. The <npc> has been destroyed. You frantically spend the next few hours searching for survivors, your hope sinking with every passing minute.",
+   "italian": "Appena entri nel sistema, i sensori rilevano molti detriti. Un'analisi più attenta conferma i tuoi peggiori timori. La <npc> è stata distrutta. Passi le ore successive a cercare affannosamente superstiti, con la speranza che affonda minuto dopo minuto.",
+   "ratio": 1.02
+  },
+  {
+   "idx": 7,
+   "id": "mission:Remnant: Rescue 2B|You land, and with a heavy heart, report that the <npc> was lost with all hands. The Remnant are saddened at the news, but thank you regardless and hand off your resource allocation of <payment>.|558|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 558,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 2B",
+   "english": "You land, and with a heavy heart, report that the <npc> was lost with all hands. The Remnant are saddened at the news, but thank you regardless and hand off your resource allocation of <payment>.",
+   "italian": "Atterri e, con il cuore pesante, riferisci che la <npc> è andata perduta con tutto l'equipaggio. I Remnant si rattristano alla notizia, ma ti ringraziano comunque e ti consegnano l'assegnazione di risorse di <payment>.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 8,
+   "id": "mission:Remnant: Rescue 2B|You have returned, yet the <npc> is still missing.|561|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 561,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 2B",
+   "english": "You have returned, yet the <npc> is still missing.",
+   "italian": "Sei tornato, ma la <npc> risulta ancora dispersa.",
+   "ratio": 0.98
+  },
+  {
+   "idx": 9,
+   "id": "mission:Remnant: Rescue 3|name|568|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 568,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Rescue 3",
+   "english": "Search and Rescue: Supply Ship",
+   "italian": "Ricerca e soccorso: nave da rifornimento",
+   "ratio": 1.333
+  },
+  {
+   "idx": 10,
+   "id": "mission:Remnant: Rescue 3|description|569|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 569,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Rescue 3",
+   "english": "The <npc> has gone missing during a supply run in the Ember Waste. Find them and help them return to <destination>.",
+   "italian": "La <npc> è scomparsa durante una missione di rifornimento nell'Ember Waste. Trovala e aiutala a tornare su <destination>.",
+   "ratio": 1.052
+  },
+  {
+   "idx": 11,
+   "id": "mission:Remnant: Rescue 3|Your communicator notifies you of a resource allocation of <payment>, and also a thank you from the captain of the <npc>.|596|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 596,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 3",
+   "english": "Your communicator notifies you of a resource allocation of <payment>, and also a thank you from the captain of the <npc>.",
+   "italian": "Il tuo comunicatore ti notifica un'assegnazione di risorse di <payment>, e anche un ringraziamento dal capitano della <npc>.",
+   "ratio": 1.025
+  },
+  {
+   "idx": 12,
+   "id": "mission:Remnant: Rescue 3|You have returned, yet the <npc> is still missing.|599|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 599,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 3",
+   "english": "You have returned, yet the <npc> is still missing.",
+   "italian": "Sei tornato, ma la <npc> risulta ancora dispersa.",
+   "ratio": 0.98
+  },
+  {
+   "idx": 13,
+   "id": "mission:Remnant: Rescue 3B|name|606|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 606,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Rescue 3B",
+   "english": "Search and Rescue: Supply Ship",
+   "italian": "Ricerca e soccorso: nave da rifornimento",
+   "ratio": 1.333
+  },
+  {
+   "idx": 14,
+   "id": "mission:Remnant: Rescue 3B|description|607|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 607,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Rescue 3B",
+   "english": "The <npc> has gone missing during a supply run in the Ember Waste. Find them and help them return to <destination>.",
+   "italian": "La <npc> è scomparsa durante una missione di rifornimento nell'Ember Waste. Trovala e aiutala a tornare su <destination>.",
+   "ratio": 1.052
+  },
+  {
+   "idx": 15,
+   "id": "mission:Remnant: Rescue 3B|As you enter the system, your sensors pick up a lot of debris. Further analysis confirms your worst fears. The <npc> has been destroyed. You frantically spend the next few hours searching for survivors, your hope sinking with every passing minute.|629|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 629,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 3B",
+   "english": "As you enter the system, your sensors pick up a lot of debris. Further analysis confirms your worst fears. The <npc> has been destroyed. You frantically spend the next few hours searching for survivors, your hope sinking with every passing minute.",
+   "italian": "Appena entri nel sistema, i sensori rilevano molti detriti. Un'analisi più attenta conferma i tuoi peggiori timori. La <npc> è stata distrutta. Passi le ore successive a cercare affannosamente superstiti, con la speranza che affonda minuto dopo minuto.",
+   "ratio": 1.02
+  },
+  {
+   "idx": 16,
+   "id": "mission:Remnant: Rescue 3B|You land, and with a heavy heart, report that the <npc> was lost with all hands. The Remnant are saddened at the news, but thank you regardless and hand off your resource allocation of <payment>.|634|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 634,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 3B",
+   "english": "You land, and with a heavy heart, report that the <npc> was lost with all hands. The Remnant are saddened at the news, but thank you regardless and hand off your resource allocation of <payment>.",
+   "italian": "Atterri e, con il cuore pesante, riferisci che la <npc> è andata perduta con tutto l'equipaggio. I Remnant si rattristano alla notizia, ma ti ringraziano comunque e ti consegnano l'assegnazione di risorse di <payment>.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 17,
+   "id": "mission:Remnant: Rescue 3B|You have returned, yet the <npc> is still missing.|637|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 637,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 3B",
+   "english": "You have returned, yet the <npc> is still missing.",
+   "italian": "Sei tornato, ma la <npc> risulta ancora dispersa.",
+   "ratio": 0.98
+  },
+  {
+   "idx": 18,
+   "id": "mission:Remnant: Rescue 4|name|644|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 644,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Rescue 4",
+   "english": "Distress Signal: Graveyard",
+   "italian": "Distress Signal: Graveyard",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "mission:Remnant: Rescue 4|description|645|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 645,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Rescue 4",
+   "english": "A distress signal has been received from the <npc> in the Graveyard. Follow the telemetry data to find them, and help return them safely to <destination>.",
+   "italian": "Abbiamo ricevuto un segnale di soccorso dalla <npc> nel Cimitero. Segui i dati di telemetria per trovarla e aiutala a tornare sana e salva su <destination>.",
+   "ratio": 1.013
+  },
+  {
+   "idx": 20,
+   "id": "mission:Remnant: Rescue 4|Upon landing, the captain of the <npc> meets you at your ship to thank you personally for rescuing them from the Graveyard, leaving you with a heartfelt sentence: \"May the Embers burn bright for you.\"|670|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 670,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 4",
+   "english": "Upon landing, the captain of the <npc> meets you at your ship to thank you personally for rescuing them from the Graveyard, leaving you with a heartfelt sentence: \"May the Embers burn bright for you.\"",
+   "italian": "Quando atterri, il capitano della <npc> ti aspetta alla tua nave per ringraziarti di persona di averla tratta in salvo dal Cimitero, e ti congeda con una frase sentita: \"Che le Braci ardano luminose per te.\"",
+   "ratio": 1.035
+  },
+  {
+   "idx": 21,
+   "id": "mission:Remnant: Rescue 4|\tSoon after, your communicator notifies you of a resource allocation of <payment>.|671|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 671,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 4",
+   "english": "\tSoon after, your communicator notifies you of a resource allocation of <payment>.",
+   "italian": "\tPoco dopo, il tuo comunicatore ti notifica un'assegnazione di risorse di <payment>.",
+   "ratio": 1.024
+  },
+  {
+   "idx": 22,
+   "id": "mission:Remnant: Rescue 4|You have returned, yet the <npc> has not.|674|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 674,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Remnant: Rescue 4",
+   "english": "You have returned, yet the <npc> has not.",
+   "italian": "Sei tornato, ma la <npc> no.",
+   "ratio": 0.683
+  },
+  {
+   "idx": 23,
+   "id": "mission:Remnant: Rescue 5|name|681|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 681,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Rescue 5",
+   "english": "Search and Rescue: Terminus",
+   "italian": "Search and Rescue: Terminus",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "mission:Remnant: Rescue 5|description|682|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 682,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Rescue 5",
+   "english": "While scouting around Terminus, the <npc> has stopped reporting in. Find out what happened and return to <destination>.",
+   "italian": "Mentre era in ricognizione nei dintorni di Terminus, la <npc> ha smesso di dare notizie. Scopri che cosa è successo e torna su <destination>.",
+   "ratio": 1.185
+  }
+ ]
+}

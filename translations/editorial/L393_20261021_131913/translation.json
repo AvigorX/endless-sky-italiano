@@ -1,0 +1,132 @@
+{
+ "block": {
+  "path": "data/avgi/avgi sales.txt",
+  "line_from": 79,
+  "line_to": 192,
+  "units": 11
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "(root)|\"Nettle\" KKV|79|0",
+   "path": "data/avgi/avgi sales.txt",
+   "line": 79,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Nettle\" KKV",
+   "italian": "\"Nettle\" KKV",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "(root)|Z-333 \"Spark\" Fusion Torch|128|0",
+   "path": "data/avgi/avgi sales.txt",
+   "line": 128,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "Z-333 \"Spark\" Fusion Torch",
+   "italian": "Z-333 \"Spark\" Fusion Torch",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "(root)|Z-333 \"Spark\" Fusion Torch|135|0",
+   "path": "data/avgi/avgi sales.txt",
+   "line": 135,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "Z-333 \"Spark\" Fusion Torch",
+   "italian": "Z-333 \"Spark\" Fusion Torch",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "(root)|Z-666 \"Zap\" Fusion Torch|136|0",
+   "path": "data/avgi/avgi sales.txt",
+   "line": 136,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "Z-666 \"Zap\" Fusion Torch",
+   "italian": "Z-666 \"Zap\" Fusion Torch",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "(root)|\"Nettle\" KKV|149|0",
+   "path": "data/avgi/avgi sales.txt",
+   "line": 149,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Nettle\" KKV",
+   "italian": "\"Nettle\" KKV",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "(root)|\"Nettle\" KKV|164|0",
+   "path": "data/avgi/avgi sales.txt",
+   "line": 164,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Nettle\" KKV",
+   "italian": "\"Nettle\" KKV",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "(root)|\"Ophrys\" Nuclear Torpedo|172|0",
+   "path": "data/avgi/avgi sales.txt",
+   "line": 172,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Ophrys\" Nuclear Torpedo",
+   "italian": "\"Ophrys\" Nuclear Torpedo",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "(root)|\"Orchid\" Nuclear Missile|174|0",
+   "path": "data/avgi/avgi sales.txt",
+   "line": 174,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Orchid\" Nuclear Missile",
+   "italian": "\"Orchid\" Nuclear Missile",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "(root)|\"Nettle\" KKV|183|0",
+   "path": "data/avgi/avgi sales.txt",
+   "line": 183,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Nettle\" KKV",
+   "italian": "\"Nettle\" KKV",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "(root)|Z-333 \"Spark\" Fusion Torch|191|0",
+   "path": "data/avgi/avgi sales.txt",
+   "line": 191,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "Z-333 \"Spark\" Fusion Torch",
+   "italian": "Z-333 \"Spark\" Fusion Torch",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "(root)|Z-666 \"Zap\" Fusion Torch|192|0",
+   "path": "data/avgi/avgi sales.txt",
+   "line": 192,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "Z-666 \"Zap\" Fusion Torch",
+   "italian": "Z-666 \"Zap\" Fusion Torch",
+   "ratio": 1.0
+  }
+ ]
+}

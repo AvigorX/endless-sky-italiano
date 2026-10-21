@@ -1,0 +1,76 @@
+{
+ "batch": "B004",
+ "at": "2026-10-17T11:48:14Z",
+ "results": 25,
+ "errors": 0,
+ "warnings": 11,
+ "status": "APPROVED",
+ "issues": [
+  {
+   "unit_id": "help:player info|The player info panel can be brought up at any time by pressing <View player info>, including mid-flight. However, some functionalities of the panel can only be accessed while landed.|102|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "help:ship info|The ship info tab lets you view detailed information about ships in your fleet at any time. This includes any information you could see at a shipyard or outfitter, as well as the cargo and passengers distributed among each ship.|109|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "help:multiple ship controls|Once you're in space with multiple ships that you own, you can give orders to those escorts. Orders will be given to all selected escorts, or if no escorts are selected then all your escorts will receive the order. Escorts can be selected by either clicking on them in space, clicking the ship icon at the bottom left of the screen, or by clicking and dragging to select a group of escorts in space. The list of escort order keys can be found in the preferences panel.|113|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "help:multiple ship controls|Escorts can also be ordered with the mouse. Right-clicking on an empty point in space will order escorts to fly to and hold position at that point, while right-clicking on a hostile ship will order your escorts to focus fire on it, and right-clicking on a friendly target will cause them to follow it.|114|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "help:multiple ship controls|Ship group management can be done while flying around or while in the shipyard, outfitter, or player info panel.|116|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "help:fleet asteroid mining|If your escort or fighter has no weapons but has cargo space, then it will chase after mined resources instead of mining.|120|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "help:fleet asteroid mining shortcuts|\t<Select nearest asteroid> selects the nearest asteroid if you have an asteroid scanner.|124|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "help:fleet asteroid mining shortcuts|\t<Fleet: Fight my target> will focus your fleet on mining a targeted asteroid.|125|0",
+   "code": "GLOSSARY",
+   "severity": "info",
+   "detail": "'Target' -> 'bersaglio' not found"
+  },
+  {
+   "unit_id": "help:fleet asteroid mining shortcuts|\tLeft click - will target an asteroid without mining it.|129|0",
+   "code": "GLOSSARY",
+   "severity": "info",
+   "detail": "'Target' -> 'bersaglio' not found"
+  },
+  {
+   "unit_id": "help:fleet harvest tutorial|You can order your escort to pick up discarded cargo or asteroid flotsam.|133|0",
+   "code": "GLOSSARY",
+   "severity": "info",
+   "detail": "'asteroid' -> 'asteroide' not found"
+  },
+  {
+   "unit_id": "help:fleet harvest tutorial|Equip an asteroid scanner to learn more.|137|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  }
+ ]
+}

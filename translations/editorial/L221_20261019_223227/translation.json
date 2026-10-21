@@ -1,0 +1,275 @@
+{
+ "block": {
+  "path": "data/successors/successor ships.txt",
+  "line_from": 904,
+  "line_to": 1137,
+  "units": 24
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Seiitej|\"Ojet\" Bimodal Coilgun|904|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 904,
+   "kind": "TEXT",
+   "context": "ship:Seiitej",
+   "english": "\"Ojet\" Bimodal Coilgun",
+   "italian": "\"Ojet\" Bimodal Coilgun",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Seiitej|\"Ryuit\" Fusion Core|906|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 906,
+   "kind": "TEXT",
+   "context": "ship:Seiitej",
+   "english": "\"Ryuit\" Fusion Core",
+   "italian": "\"Ryuit\" Fusion Core",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "ship:Seiitej|\"Jaase\" Shield Cortex|908|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 908,
+   "kind": "TEXT",
+   "context": "ship:Seiitej",
+   "english": "\"Jaase\" Shield Cortex",
+   "italian": "\"Jaase\" Shield Cortex",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Seiitej|\"Veusa\" Inductive Thruster|913|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 913,
+   "kind": "TEXT",
+   "context": "ship:Seiitej",
+   "english": "\"Veusa\" Inductive Thruster",
+   "italian": "\"Veusa\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Seiitej|\"Veusa\" Inductive Steering|914|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 914,
+   "kind": "TEXT",
+   "context": "ship:Seiitej",
+   "english": "\"Veusa\" Inductive Steering",
+   "italian": "\"Veusa\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Seiitej|description|953|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 953,
+   "kind": "DESCRIPTION",
+   "context": "ship:Seiitej",
+   "english": "The Seiitej is the High Houses' vessel of choice for transporting small amounts of cargo and passengers throughout Successor space. Though less spacious than a dedicated civilian freighter or transport vessel, it is much more durable while remaining fast and maneuverable. While these vessels support a relatively light armament (by the standards of the High Houses), their speed and flexible internals allow them to frequently serve as patrol craft as well.",
+   "italian": "La Seiitej è la nave che le Alte Case prediligono per trasportare piccole quantità di carico e passeggeri in tutto lo spazio dei Successori. Sebbene sia meno spaziosa di un cargo o di un trasporto civile dedicato, è molto più resistente pur restando veloce e manovrabile. Queste navi montano un armamento relativamente leggero (per gli standard delle Alte Case), ma la loro velocità e gli interni flessibili fanno sì che vengano usate spesso anche come pattugliatori.",
+   "ratio": 1.02
+  },
+  {
+   "idx": 7,
+   "id": "ship:Seiitej|description|954|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 954,
+   "kind": "DESCRIPTION",
+   "context": "ship:Seiitej",
+   "english": "\tTheir lighter armor and smaller combat systems also make them significantly less expensive to manufacture than the High Houses' purpose-built warships, which contributes to their growing ubiquity.",
+   "italian": "\tLa corazzatura più leggera e i sistemi di combattimento più piccoli le rendono anche notevolmente meno costose da costruire delle navi da guerra progettate appositamente dalle Alte Case, il che contribuisce alla loro crescente diffusione.",
+   "ratio": 1.213
+  },
+  {
+   "idx": 8,
+   "id": "ship:Stolsaqra|plural|959|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 959,
+   "kind": "VALUE",
+   "context": "ship:Stolsaqra",
+   "english": "Stolsaqran",
+   "italian": "Stolsaqran",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "ship:Stolsaqra|3-\"Kaska\" Betavoltaic Cell|992|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 992,
+   "kind": "TEXT",
+   "context": "ship:Stolsaqra",
+   "english": "3-\"Kaska\" Betavoltaic Cell",
+   "italian": "3-\"Kaska\" Betavoltaic Cell",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "ship:Stolsaqra|1-\"Uurau\" Betavoltaic Cell|993|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 993,
+   "kind": "TEXT",
+   "context": "ship:Stolsaqra",
+   "english": "1-\"Uurau\" Betavoltaic Cell",
+   "italian": "1-\"Uurau\" Betavoltaic Cell",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "ship:Stolsaqra|\"Byiaa\" Shield Cortex|995|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 995,
+   "kind": "TEXT",
+   "context": "ship:Stolsaqra",
+   "english": "\"Byiaa\" Shield Cortex",
+   "italian": "\"Byiaa\" Shield Cortex",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "ship:Stolsaqra|\"Aqra\" Inductive Thruster|997|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 997,
+   "kind": "TEXT",
+   "context": "ship:Stolsaqra",
+   "english": "\"Aqra\" Inductive Thruster",
+   "italian": "\"Aqra\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "ship:Stolsaqra|\"Aqra\" Inductive Steering|998|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 998,
+   "kind": "TEXT",
+   "context": "ship:Stolsaqra",
+   "english": "\"Aqra\" Inductive Steering",
+   "italian": "\"Aqra\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "ship:Stolsaqra|\"Aqra\" Inductive Reverser|999|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 999,
+   "kind": "TEXT",
+   "context": "ship:Stolsaqra",
+   "english": "\"Aqra\" Inductive Reverser",
+   "italian": "\"Aqra\" Inductive Reverser",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "ship:Stolsaqra|description|1040|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1040,
+   "kind": "DESCRIPTION",
+   "context": "ship:Stolsaqra",
+   "english": "The Successors have limited experience in making warships this small, and while their attempt at an interceptor is durable and sports a surprising amount of firepower for a ship of its size, it is also plagued with power and propulsion issues, as most of their standard technology is either too large or not powerful enough to yield effective combat performance at this scale. The result is a ship that ambitious pilots call a challenge and prudent captains call a deathtrap, but that continues to see use as a patrol and escort vessel because of its speed and heavy armament.",
+   "italian": "I Successori hanno poca esperienza nella costruzione di navi da guerra così piccole, e il loro tentativo di intercettore, pur essendo resistente e sfoggiando una potenza di fuoco sorprendente per una nave delle sue dimensioni, è anche afflitto da problemi di energia e propulsione, perché la maggior parte della loro tecnologia standard è troppo ingombrante o non abbastanza potente per garantire prestazioni di combattimento efficaci su questa scala. Il risultato è una nave che i piloti ambiziosi chiamano una sfida e i capitani prudenti chiamano una trappola mortale, ma che continua a essere impiegata come pattugliatore e scorta per la sua velocità e il suo armamento pesante.",
+   "ratio": 1.182
+  },
+  {
+   "idx": 16,
+   "id": "ship:Stolsaqra|description|1041|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1041,
+   "kind": "DESCRIPTION",
+   "context": "ship:Stolsaqra",
+   "english": "\tThe Stolsaqra also has the distinction of being the only purpose-built warship manufactured by the High Houses that is made available to the general public, albeit with significantly downgraded systems compared to the military-exclusive model.",
+   "italian": "\tLa Stolsaqra ha anche il primato di essere l'unica nave da guerra progettata appositamente dalle Alte Case a essere messa a disposizione del pubblico, anche se con sistemi notevolmente depotenziati rispetto al modello riservato ai militari.",
+   "ratio": 0.988
+  },
+  {
+   "idx": 17,
+   "id": "ship:Stolsaqra|description|1045|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1045,
+   "kind": "DESCRIPTION",
+   "context": "ship:Stolsaqra",
+   "english": "The Successors' attempt at an interceptor is quite compact and sports a surprising amount of firepower for a ship of its size, though restrictive internal space leaves it plagued with power and propulsion issues if it is equipped to fully utilize its weapons capacity. While it is manufactured by the High Houses, the Stolsaqra is made available to the general Successor public, albeit with significantly downgraded systems compared to the military-exclusive model.",
+   "italian": "Il tentativo dei Successori di realizzare un intercettore è piuttosto compatto e sfoggia una potenza di fuoco sorprendente per una nave delle sue dimensioni, anche se lo spazio interno limitato lo lascia afflitto da problemi di energia e propulsione quando viene equipaggiato per sfruttare appieno la sua capacità di fuoco. Pur essendo costruita dalle Alte Case, la Stolsaqra è messa a disposizione del pubblico dei Successori, anche se con sistemi notevolmente depotenziati rispetto al modello riservato ai militari.",
+   "ratio": 1.112
+  },
+  {
+   "idx": 18,
+   "id": "ship:Veusade|plural|1050|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1050,
+   "kind": "VALUE",
+   "context": "ship:Veusade",
+   "english": "Veusaden",
+   "italian": "Veusaden",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "ship:Veusade|\"Ryuit\" Fusion Core|1083|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1083,
+   "kind": "TEXT",
+   "context": "ship:Veusade",
+   "english": "\"Ryuit\" Fusion Core",
+   "italian": "\"Ryuit\" Fusion Core",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "ship:Veusade|\"Jaase\" Shield Cortex|1085|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1085,
+   "kind": "TEXT",
+   "context": "ship:Veusade",
+   "english": "\"Jaase\" Shield Cortex",
+   "italian": "\"Jaase\" Shield Cortex",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "ship:Veusade|\"Veusa\" Inductive Thruster|1091|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1091,
+   "kind": "TEXT",
+   "context": "ship:Veusade",
+   "english": "\"Veusa\" Inductive Thruster",
+   "italian": "\"Veusa\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "ship:Veusade|\"Veusa\" Inductive Steering|1092|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1092,
+   "kind": "TEXT",
+   "context": "ship:Veusade",
+   "english": "\"Veusa\" Inductive Steering",
+   "italian": "\"Veusa\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "ship:Veusade|description|1136|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1136,
+   "kind": "DESCRIPTION",
+   "context": "ship:Veusade",
+   "english": "Blessed with the honor of being named with the Successor word for swiftness, the Veusade is designed for only one purpose: to carry eight drag cannons as close to an enemy ship's hull as possible.",
+   "italian": "Onorata di portare il nome che nella lingua dei Successori significa rapidità, la Veusade è progettata per un solo scopo: portare otto cannoni a trascinamento il più vicino possibile allo scafo di una nave nemica.",
+   "ratio": 1.087
+  },
+  {
+   "idx": 24,
+   "id": "ship:Veusade|description|1137|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1137,
+   "kind": "DESCRIPTION",
+   "context": "ship:Veusade",
+   "english": "\tVessels of this lineage earned renown in many of the conflicts between the Predecessors' High Houses, catching and killing ships many times their size and escaping before reinforcements could arrive. In the present, such a narrowly-focused design makes these vessels ill-suited for multipurpose use, but they are frequently seen as auxiliary or police craft, owing to their ability to rapidly intercept and immobilize fleeing ships.",
+   "italian": "\tI vascelli di questa linea si guadagnarono fama in molti dei conflitti tra le Alte Case dei Predecessori, raggiungendo e distruggendo navi molte volte più grandi e dileguandosi prima che potessero arrivare i rinforzi. Oggi un progetto così specializzato rende queste navi inadatte all'uso polivalente, ma vengono spesso impiegate come unità ausiliarie o di polizia, grazie alla capacità di intercettare e immobilizzare rapidamente le navi in fuga.",
+   "ratio": 1.035
+  }
+ ]
+}

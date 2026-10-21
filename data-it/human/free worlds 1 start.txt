@@ -1,0 +1,2344 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Liberate Kornephoros"
+	autosave
+	description "Viaggia con la milizia delle Free Worlds fino al sistema <system> e respingi la flotta della Marina che occupa il sistema."
+	source "Longjump"
+	destination "Deep"
+	clearance
+	to offer
+		has "Defend Sabik: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "prepare for battle of Kornephoros"
+		conversation
+			`L'umore nello spazioporto è solenne. Nessuno ha ancora avuto il tempo di contare le perdite, da entrambe le parti della battaglia, ma è probabile che siano andate perse più di mille vite. E dato che la Marina è tenuta in così alta considerazione anche qui, dove il Parlamento e i Mondi Paradisiaci sono guardati con disgusto, molti capitani della milizia sono quasi altrettanto addolorati per la perdita di vite della Marina che per quella dei loro compagni.`
+			`	Trovi Tomek che cammina fra la flotta, parlando con un folto gruppo di capitani e membri dell'equipaggio e valutando i danni subiti. Quando ti vede dice: "Capitano <last>! Come sta la <ship>?"`
+			choice
+				`	"Ha preso un bel po' di botte, ma l'ho rattoppata."`
+				`	"Benissimo. Ci vorrebbe più di qualche Carrier per distruggere la <ship>."`
+			
+			`	"Sono contento di sentirlo," dice prima di tornare verso la folla. "Ascoltate! Dobbiamo sfruttare il nostro vantaggio prima che la Repubblica abbia il tempo di chiedere rinforzi. Se colpiamo in fretta, potremmo riprendere Kornephoros. È importante rompere il blocco su quel sistema, per il bene del commercio con il resto della galassia. E inoltre, se non lo sapete, la consigliera Katya Reynolds era su Clink quando la Marina ha preso il sistema e deve essere salvata." Senti un mormorio nella folla dopo questa notizia; sembra che l'indagine di Katya su Clink non fosse di pubblico dominio.`
+			`	"Abbiamo una grande flotta di rinforzi in arrivo dal Bordo," continua Tomek, "e qualche nave qui in grado di sostenere un'altra battaglia. Voglio che decolliate tutti, aspettiate l'arrivo dei rinforzi e poi riprendiate Kornephoros. Se le navi della Marina si ritirano, lasciatele ritirare. Se si arrendono, lasciatele arrendere. Se restano a combattere, mettetele fuori uso se potete. Distruggetele solo se dovete. Sono stato chiaro?"`
+			`	"Sissignore!" rispondono all'unisono i capitani.`
+			`	"Allora muovetevi!" urla Tomek, e i capitani e gli equipaggi si precipitano verso le loro navi.`
+			`	Tomek torna da te dopo aver spinto la milizia all'azione. "Sei ancora con noi in questa battaglia?"`
+			choice
+				`	"Sì, signore. Mi muovo subito."`
+					accept
+				`	"Vorrei che non si fosse arrivati a questo."`
+			
+			`	"Lo vorremmo tutti," dice. "Nessuno voleva questa guerra. Non noi, e di certo non la Marina. Ma se ci attaccano per toglierci la libertà, dobbiamo difenderci per mantenerla. Capito?"`
+			choice
+				`	"Sì, signore. Preparo la nave per un'altra battaglia."`
+					accept
+	
+	npc
+		government "Free Worlds"
+		personality heroic disables
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon"
+				"Osprey"
+				"Osprey (Missile)"
+	npc
+		government "Free Worlds"
+		personality heroic disables
+		system "Zubenelgenubi"
+		fleet
+			names "free worlds capital"
+			variant
+				"Osprey"
+				"Falcon (Heavy)"
+				"Hawk" 2
+		fleet
+			names "free worlds small"
+			variant
+				"Hawk"
+				"Sparrow" 2
+		fleet
+			names "free worlds small"
+			variant
+				"Hawk (Rocket)"
+				"Fury (Missile)" 2
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon"
+				"Osprey (Laser)"
+				"Hawk"
+				"Hawk (Rocket)"
+				"Sparrow" 3
+		fleet
+			names "free worlds capital"
+			variant
+				"Bastion (Heavy)" 2
+				"Argosy (Blaster)" 3
+				"Fury" 3
+	npc evade
+		government "Republic"
+		personality staying heroic
+		system "Kornephoros"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Heavy)" 2
+				"Combat Drone" 8
+				"Rainmaker" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Heavy)"
+				"Combat Drone" 4
+				"Frigate"
+				"Gunboat" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Gunboat" 2
+				"Frigate"
+				"Rainmaker"
+	
+	on visit
+		dialog `Ci sono ancora navi della Marina che pattugliano là sopra. Restare su <planet> mentre i tuoi alleati muoiono in orbita sarebbe un'idea pessima.`
+	on complete
+		event "recapture of Kornephoros"
+		log "Le Free Worlds hanno ripreso il sistema Kornephoros, con gravi perdite da entrambe le parti. E purtroppo non c'è traccia di Katya; potrebbe essere stata presa prigioniera dalla Marina."
+		conversation
+			`L'ultima nave della Marina in orbita è stata sopraffatta. Mentre atterri, scopri che diversi trasporti di truppe delle Free Worlds sono già scesi nello spazioporto e hanno radunato gli ufficiali della Marina rimasti in un piccolo cerchio. Valuteresti che ci siano diverse centinaia di prigionieri della Marina. Atterra un altro trasporto, con altri prigionieri: le truppe della Marina che sorvegliavano le miniere su Clink.`
+			`	Per diverse ore non cambia nulla: le truppe della Marina stanno accalcate in un piccolo cerchio, circondate dalle guardie. Quando arriva mezzogiorno, alcune guardie vanno al mercato e portano lì i venditori che preparano pasti sui loro carretti; tornano con i carretti e distribuiscono il cibo ai prigionieri. Poi atterra un altro trasporto e ne scende Tomek.`
+			`	Ti prende da parte e ti chiede: "Come vanno le cose qui?"`
+			choice
+				`	"Molto tranquille. Non ci hanno dato alcun problema."`
+				`	"La battaglia è stata brutale. Spero che non dovremo continuare a fare una cosa del genere."`
+					goto brutal
+			
+			`	"Sono contento di sentirlo," dice.`
+				goto speech
+			
+			label brutal
+			`	"Lo spero anch'io," dice. "Forse possiamo cominciare a muoverci in quella direzione proprio adesso."`
+			
+			label speech
+			`	Tomek sale sullo scafo di una nave lì vicino e si rivolge ai prigionieri. "Salve," dice. Qualche ufficiale della Marina risponde, con diffidenza. "Mi chiamo Tomek Voigt. La nostra milizia è organizzata in modo molto fluido, ma sono io quello che la organizza." Questo strappa qualche risata alle guardie delle Free Worlds. "E come tale, sono io che decido del vostro destino."`
+			`	A queste parole cala il silenzio sulla folla. "Il Consiglio ha deciso," continua, "che chiunque di voi ci dia la propria parola, giurando di non prendere più parte ai combattimenti contro le Free Worlds, sarà riportato nello spazio della Repubblica. Ci darete la vostra parola d'onore che cercherete un nuovo incarico in un'altra parte della galassia, oppure che rassegnerete le dimissioni dalla vostra carica."`
+			`	Qualche guardia delle Free Worlds grida: "Che cosa?" Ma solo una minoranza sorprendente. Gli altri annuiscono, apparentemente soddisfatti della scelta del Consiglio. Tomek scende dallo scafo e si avvicina ai prigionieri, e noti che Alondo e Freya si sono uniti a lui.`
+			`	Uno degli ufficiali della Marina si alza. "Accetto quel giuramento," dice, "se voi rispetterete la vostra parte."`
+			`	Tomek prende le mani dell'uomo, lo guarda negli occhi e chiede: "Giuri davanti a Dio e a questi testimoni di non prendere più parte ad azioni militari contro le Free Worlds?"`
+			`	"Lo giuro," dice l'ufficiale. Diversi altri prigionieri si alzano, e in poco tempo tutti tranne una manciata hanno giurato.`
+			`	Quando hanno finito, Tomek si volta verso di te e verso qualche altro capitano. "Emily, Marco, <first>, Sarah, per favore raggiungetemi al caffè dello spazioporto quando siete pronti." Si allontana.`
+
+
+
+event "prepare for battle of Kornephoros"
+	system "Kornephoros"
+		fleet "Small Free Worlds" 10000
+
+
+
+mission "FW Prisoner Parole"
+	name "Parola dei prigionieri"
+	description "Scorta una flotta di trasporti con prigionieri di guerra fino a <planet>. Il cessate il fuoco temporaneo finirà il <date>."
+	source "Deep"
+	destination "New Tibet"
+	deadline 7
+	to offer
+		has "Liberate Kornephoros: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		"reputation: Republic" = 1
+		event "temporary ceasefire"
+		event "start of hostilities" 8
+		conversation
+			`Quando vi siete riuniti tutti al caffè, Tomek vi spiega la situazione. "Alondo ha ottenuto un cessate il fuoco di una settimana per restituire i prigionieri che ci hanno dato la parola," dice. "Questo vi dà giusto il tempo di trasportarli a New Tibet e tornare qui. Se incontrate navi della Repubblica, non ingaggiate battaglia. Lasciate i prigionieri e tornate. Domande?"`
+			choice
+				`	"No, sono pronto a partire."`
+					accept
+				`	"Che cosa dobbiamo fare se ci attaccano?"`
+				`	"Che cosa sarà fatto dei soldati che non hanno giurato?"`
+					goto oath
+			
+			`	"Se potete, tornate qui senza ingaggiarli. Non ha senso perdere altre vite. E del resto la Marina è onorevole e rispetterà il cessate il fuoco, non ne ho dubbio. Solo se vi attardate le cose si faranno difficili per voi. Ora andate. Il tempo è limitato."`
+				accept
+			
+			label oath
+			`	"Saranno trasportati in una struttura penitenziaria su Bourne e trattati bene, e se in qualsiasi momento cambieranno idea, sarà permesso loro di andarsene. Ora andate. Il tempo è limitato."`
+				accept
+	
+	npc accompany save
+		government "Free Worlds"
+		personality timid escort
+		ship "Falcon (Prisoner Transport)" "F.S. Starry Warrior"
+		ship "Blackbird (Prisoner Transport)" "Flight of Fancy"
+		ship "Blackbird (Prisoner Transport)" "Southern Luxury"
+	
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivi in questo sistema.`
+	on complete
+		dialog `Lasci i prigionieri della Marina su <planet>. Ora è tempo di tornare a Deep con la tua flotta, prima che il cessate il fuoco finisca.`
+
+
+
+mission "FW Prisoner Parole 2"
+	landing
+	name "Parola dei prigionieri"
+	description "Torna a Deep prima che il cessate il fuoco finisca."
+	source "New Tibet"
+	destination "Deep"
+	to offer
+		has "FW Prisoner Parole: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	npc accompany save
+		government "Free Worlds"
+		personality timid escort
+		ship "Falcon (Prisoner Transport)" "F.S. Starry Warrior"
+		ship "Blackbird (Prisoner Transport)" "Flight of Fancy"
+		ship "Blackbird (Prisoner Transport)" "Southern Luxury"
+	
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivi in questo sistema.`
+	
+	on complete
+		"reputation: Republic" <?= -1000
+		event "oathkeepers founded" 50
+		log "Hai restituito alcuni prigionieri di guerra della Marina, dopo che hanno dato la loro parola e promesso di non prendere parte a future battaglie contro le Free Worlds."
+		conversation
+			`Tomek sembra molto sollevato nel vedervi tutti tornati interi. "Grazie per il vostro servizio," dice. "Presentatevi ai vostri comandanti della milizia locale per i prossimi ordini. Capitano <last>, rimani qui."`
+			`	Quando tutti gli altri hanno lasciato la stanza, ti dice: "Mi dispiace, ma ho brutte notizie per te. Abbiamo perquisito tutto l'avamposto su Clink. Nessuna traccia di Katya. I minatori non sanno che cosa le sia successo, ma direi che è quasi certo che sia morta o prigioniera."`
+			choice
+				`	"Allora, che cosa facciamo adesso?"`
+					goto next
+				`	"Vorrei che l'avessimo saputo qualche giorno prima. Avremmo potuto organizzare uno scambio di prigionieri."`
+			
+			`	"Lo so," dice. "È quello che stanno dicendo molti dei nostri, adesso. Ma quello che abbiamo fatto, un gesto di pura buona fede senza chiedere nulla in cambio, potrebbe farci piacere in futuro. La mia speranza era creare un precedente, dare forma al carattere di qualunque conflitto nasca da questa storia, e continuo a pensare che fosse la cosa giusta da fare."`
+			`	"Allora, che cosa facciamo adesso?" chiedi.`
+			
+			label next
+			`	"La Marina ha subito due sconfitte schiaccianti," dice. "Esiterà ad attaccare di nuovo finché le sue forze non saranno molto più numerose. Questo ci dà un po' di tempo per la diplomazia, per rafforzare la nostra posizione e cercare alleati, o almeno simpatizzanti. Ed è qui che entri in gioco tu. Ti chiederò di trasportare Alondo per una serie di missioni diplomatiche. Incontraci allo spazioporto quando sei pronto."`
+
+
+
+mission "oathkeepers founded"
+	landing
+	source
+		government "Free Worlds"
+	to offer
+		has "event: oathkeepers founded"
+	on offer
+		log "A quanto pare i prigionieri della Marina rilasciati sulla parola dopo la battaglia per Kornephoros hanno intenzione di mantenere la promessa di non combattere contro le Free Worlds. Hanno formato un nuovo reggimento della Marina che sorveglia l'estremo nord dello spazio umano."
+		log "Factions" "Oathkeepers" `Gli "Oathkeepers" sono un reggimento di ufficiali della Marina catturati dalle Free Worlds e rilasciati sulla parola, a condizione che non prendano più parte ai combattimenti contro le Free Worlds. Sono guidati da William Danforth, un famoso ammiraglio della Marina. La loro missione dichiarata è proteggere i Mondi Paradisiaci dai pirati che vivono sui mondi anarchici nell'estremo nord dello spazio umano.`
+		log "People" "William Danforth" `Danforth è un famoso ammiraglio della Marina, un eroe popolare in tutto lo spazio umano per il suo comportamento leale e onorevole e per la sua disponibilità a usare la flotta per aiutare chi è in difficoltà, anche quando questo significa andare contro gli ordini del Parlamento. Attualmente è a capo del reggimento della Marina che si fa chiamare "Oathkeepers".`
+		conversation
+			`Quando atterri su <origin>, sembra che tutti nello spazioporto parlino di una notizia recente: la Marina ha appena annunciato la formazione di un nuovo reggimento, chiamato Oathkeepers. Ne fanno parte soprattutto i prigionieri che hai rilasciato sulla parola da Kornephoros, i quali vogliono onorare il giuramento di non prendere più parte al conflitto contro le Free Worlds. Avranno il quartier generale su Farpoint, nell'estremo nord, per difendere quella regione di spazio dalle incursioni dei pirati.`
+			`	Inoltre, a guidare gli Oathkeepers sarà l'ammiraglio Danforth, un ammiraglio anziano che è una specie di eroe popolare e di cui si parla con ammirazione e rispetto anche qui nello spazio delle Free Worlds. Anche se non era uno dei prigionieri rilasciati sulla parola, è diventato un convinto sostenitore di una soluzione diplomatica al conflitto con le Free Worlds.`
+			`	È una notizia incoraggiante, ma non puoi fare a meno di notare quante persone nello spazioporto stiano parlando del fatto che la Marina è davvero piena di gente "perbene" e "onorevole", e che è un peccato che le Free Worlds abbiano dovuto combatterla. Rispondendo al tuo gesto generoso con uno altrettanto generoso, la Marina ha ottenuto una netta vittoria politica, e dato che doveva comunque difendere il Nord, è una vittoria che le è costata pochissimo.`
+				decline
+
+
+
+mission "FW Syndicate Diplomacy 1"
+	autosave
+	name "Diplomazia con il Sindacato"
+	description "Trasporta Alondo Gruyere al quartier generale del Sindacato su <planet>."
+	source "Deep"
+	destination "Hephaestus"
+	clearance "Alondo has a brief chat with the spaceport controller and manages to get you permission to land."
+		attributes "dirt belt"
+	passengers 1
+	blocked `Alondo ti contatta e dice: "Capitano, avrai bisogno di una cuccetta libera per me. Hai spazio?" Non ne hai, quindi dovresti completare o interrompere un'altra missione per fargli posto, poi tornare qui.`
+	to offer
+		has "FW Prisoner Parole 2: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Incontri Tomek e Alondo allo spazioporto. "Abbiamo deciso che ora sarebbe un buon momento per le missioni diplomatiche," dice Alondo. "Abbiamo dimostrato di essere una forza con cui fare i conti, ma anche di essere aperti a lavorare per la pace. Cominceremo con il Sindacato, perché un rapporto con loro sarebbe per noi un vantaggio significativo."`
+			choice
+				`	"Pensi che combatteranno dalla nostra parte?"`
+				`	"Aspetta, il Sindacato non è una megacorporazione malvagia?"`
+					goto evil
+			
+			`	"Certamente no," dice Alondo. "A differenza nostra, il Sindacato ha pochi motivi di lamentela con la Repubblica. La Marina non pattuglia il Nucleo, e il Sindacato finanzia una propria sicurezza privata per la regione. Non vedo che cosa guadagnerebbe a unirsi alla battaglia dalla nostra parte. Ma è molto interessato a massimizzare i propri profitti, quindi confido che possiamo organizzare l'acquisto di materiali per le navi da loro. E se non altro, confido che almeno promettano di non affittare le loro forze di sicurezza come mercenari alla Repubblica."`
+				goto time
+			
+			label evil
+			`	"Beh, hanno una lunga storia di violazioni ambientali e dei diritti umani. Ma sono anche il più grande datore di lavoro della galassia, e una delle ragioni principali della stabilità di cui la Repubblica gode da alcuni secoli. Il Sindacato, poi, non è un monolite. Ci sono almeno alcune persone perbene dentro il Sindacato. Io... ne conoscevo una," dice Alondo con una certa apprensione. "Quindi non definirei il Sindacato 'malvagio'. È più complicato di così."`
+			
+			label time
+			`	"Raggiungere lo spazio del Sindacato potrebbe essere difficile una volta che la Marina avrà il tempo di riorganizzarsi," dice Tomek. "Questa potrebbe essere l'ultima finestra di opportunità che avremo per un po' per incontrarli di persona."`
+			`	"Ho molti contatti nella Fascia di Terra," dice Alondo, "quindi se un pianeta non ci lascerà atterrare, potremo semplicemente chiamarlo e dovrei riuscire a negoziare. Anzi, spero che un effetto collaterale di questo viaggio sia capire quanta simpatia abbiamo nei sistemi intorno."`
+			choice
+				`	"Mi sembra bene! Facciamolo!"`
+					accept
+				`	"Perché incontrarli di persona? Come sappiamo che non è una trappola?"`
+				`	"Che cosa dobbiamo fare se incontriamo navi della Marina?"`
+					goto navy
+			
+			`	"I dati viaggiano nella rete dell'iperspazio più velocemente delle navi, ma qualsiasi scambio sostanziale richiederebbe più tempo di quanto ne serva per presentarsi di persona. Il Sindacato, poi, è spesso spinto dall'avidità, e valiamo di più come clienti del Sindacato che come prigionieri della Repubblica. Se non altro, presentarsi di persona è un segno di buona fede. Mette la nostra fiducia nel Sindacato, una fiducia che difficilmente tradirebbero, visto il rischio che ci vedrebbero correre solo per incontrarli."`
+			choice
+				`	"Spero che tu abbia ragione! Andiamo."`
+					accept
+			
+			label navy
+			`	"Suggerirei di evitarli," dice Alondo. "Da un punto di vista diplomatico preferirei lasciarli vivi, ma Tomek potrebbe pensarla diversamente."`
+			`	"No," risponde Tomek. "Sono d'accordo. Come dici tu che ci sono persone perbene dentro il Sindacato, ci sono persone perbene anche dentro la Marina. Una cosa è combattere in battaglia, un'altra è che vogliamo invadere il territorio della Repubblica: vogliamo solo attraversarlo. Risparmia le energie e difenditi solo se devi."`
+			choice
+				`	"Va bene. Andiamo!"`
+					accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Alondo non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Syndicate Diplomacy 1B"
+	landing
+	name "Diplomazia con Tarazed"
+	description "Trasporta Alondo Gruyere su <planet> per negoziare con la Tarazed Corporation."
+	source "Hephaestus"
+	destination "Wayfarer"
+	clearance "Alondo has a brief chat with the spaceport controller and manages to get you permission to land."
+		attributes "dirt belt"
+	passengers 1
+	to offer
+		has "FW Syndicate Diplomacy 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		set "met remington"
+		log "Hai visitato il Sindacato e hai definito un accordo in cui promette di restare neutrale. Conta di guadagnare vendendo armi a entrambe le parti di questa guerra. Hai anche scoperto che Katya è in custodia della Repubblica ed è accusata di attività terroristica."
+		log "People" "Katya Reynolds" `Katya era su Clink quando la Marina ha invaso il sistema Kornephoros, ed è stata catturata e imprigionata come criminale di guerra.`
+		log "People" "Samuel Remington" `Samuel Remington è il responsabile delle pubbliche relazioni del Sindacato, e sembra aver aiutato le Free Worlds a ottenere un accordo migliore di quello che avrebbero altrimenti ricevuto. Lui e Alondo sembrano avere un passato insieme, anche se nessuno dei due ne parla in dettaglio.`
+		event "syndicate convoys to Tarazed"
+		conversation
+			`Mentre atterri, Alondo ti dice: "Lascia parlare me, per favore." Venite accolti quasi subito da due uomini in abito scuro, che vi accompagnano in una stanza del quartier generale del Sindacato. Sei uomini sono seduti da un lato di un grande tavolo da conferenza in mogano; vi fanno cenno di sedervi dall'altro lato.`
+			`	Vi presentate. "Grazie per averci ricevuto," dice Alondo.`
+			`	Un uomo che sembra molto più giovane degli altri si presenta come Samuel Remington e risponde. "Sentire che rappresentanti delle Free Worlds erano in arrivo è stata certo una sorpresa. Mi scuso perché il CEO Korban oggi non ha potuto incontrarvi. Ha mandato me al suo posto per assicurarsi che questo incontro fosse gestito con la massima delicatezza. Dunque, che cosa vi porta qui?"`
+			`	"Vorremmo assicurarci l'acquisto di materiali da costruzione per nuove navi," dice Alondo. "E chiedere che il Sindacato si astenga dall'entrare in guerra come mercenario. La nostra contesa è con la Repubblica, non con il Sindacato."`
+			`	"Siamo sempre aperti a nuove opportunità commerciali," dice un altro uomo, Lopez, "anche se negoziare con noti terroristi è... disgustoso." Sfoglia una cartellina di carte, ne estrae una e la fa scivolare verso di voi. È una foto di Katya, e la didascalia sotto dice: "Capo banda terrorista catturato in un raid nel sistema Kornephoros." Porta una data di qualche giorno dopo l'assalto iniziale della Marina, prima che riprendeste il sistema.`
+			choice
+				`	(Lascia che se ne occupi Alondo.)`
+				`	(Prova a spiegare che cosa ci faceva Katya in quel sistema.)`
+					goto explain
+			
+			`	Alondo è diventato pallidissimo, ma alla fine dice: "Non l'hanno annunciato pubblicamente."`
+			`	"No," dice Lopez, "l'hanno condiviso solo con certi... amici fidati della Repubblica."`
+			`	Alondo dice: "Non hanno annunciato niente perché sanno che era innocente. Stava dando la caccia ai terroristi, non li stava aiutando."`
+				goto ijs
+			
+			label explain
+			`	"Era là per cercare i terroristi. Non era una di loro," dici.`
+			`	Alondo ti lancia un'occhiata di traverso, pallidissimo.`
+			
+			label ijs
+			`	"Può essere vero," dice un terzo uomo, Badenoch. "Sono disposto a credere che steste dando la caccia ai terroristi, perché so da fonti mie che le Free Worlds si sono assicurate i servizi di un certo Ijs Springborn, le cui capacità sarebbero adatte proprio a una caccia del genere. E che oggi forse non sarebbe in una posizione così sicura, se non gli aveste dato una ragione per lasciare questo settore di spazio, dove è... universalmente disprezzato. Ciò detto, non possiamo vendere forniture ai nemici della Repubblica."`
+			`	"La pirateria è in aumento nella Fascia di Terra," dice Alondo. "E so che avete clienti là. Come la Tarazed Corporation. Se possiamo considerarvi fra i nostri amici, potremmo assicurarci che i vostri convogli arrivino a Tarazed indisturbati."`
+			`	"E voi senza dubbio comprereste subito quelle forniture da Tarazed," dice Badenoch.`
+			`	Un uomo molto più anziano seduto accanto a lui, Akihito, dice: "Certo, e quelle armi finirebbero per essere comprate con un sensibile ricarico sul prezzo." Sta sogghignando.`
+			`	"No," dice Remington, sorprendendo alcuni degli altri uomini al tavolo. "Nessun ricarico necessario." Nessuno degli altri discute con Remington su questo punto.`
+			`	Parlate ancora per un po', ma Alondo riesce a definire un accordo: le Free Worlds difenderanno qualsiasi nave del Sindacato incontrino nella Fascia di Terra, in cambio della promessa che il Sindacato non servirà come mercenario della Repubblica e non vi impedirà di comprare il suo equipaggiamento indirettamente tramite Tarazed. Inoltre Remington ha suggerito che potreste trovare qualche "dolcetto in più" proprio nei convogli del Sindacato diretti a Tarazed. Ringraziate i capi del Sindacato e cominciate il viaggio di ritorno alla nave.`
+			`	Alondo è silenzioso. Mentre state per lasciare lo spazioporto per le piazzole di atterraggio, senti qualcuno gridare dietro di voi. "Non c'è bisogno di fare lo sconosciuto, Gruyere. Non puoi fermarti per un drink?" Ti volti per vedere chi sia, ma Alondo continua a camminare. Trovi Samuel Remington che si avvicina, senza badare a te. "Sei ancora arrabbiato con me, Gruyere?" chiede.`
+			choice
+				`	(Mettiti sulla strada di Remington.)`
+					goto stand
+				`	(Non dargli corda.)`
+			
+			`	Remington si ferma qualche passo più in là mentre Alondo sale sulla tua nave. Remington scuote la testa prima di guardare di nuovo verso di te. "Immagino che uno non possa parlare con un vecchio amico."`
+				goto remington
+			
+			label stand
+			`	Fai un passo sulla strada di Remington mentre Alondo sale sulla tua nave. Remington si ferma faccia a faccia con te. "Come, uno non può parlare con un vecchio amico?" dice guardandoti alle spalle.`
+			label remington
+			choice
+				`	"Chiaramente non gli interessa."`
+					goto interested
+				`	"Conosci Alondo?"`
+			
+			`	"Più di quanto immagini," dice Remington con un risolino. "Non è mai stato uno da mostrare gratitudine per i regali. Spero che i nuovi giocattoli in quelle spedizioni che ho appena assicurato ti piacciano più che a lui."`
+				goto alondo
+			
+			label interested
+			`	"Come se questo mi avesse mai fermato prima," dice Remington con un risolino. "Non è mai stato uno da mostrare gratitudine per i regali. Spero che i nuovi giocattoli in quelle spedizioni che ho appena assicurato ti piacciano più che a lui."`
+			
+			label alondo
+			`	"Quali nuovi giocattoli?" chiedi.`
+			`	"Vedrai," dice, voltandosi di nuovo verso lo spazioporto e lasciandoti lì.`
+			`	Raggiungi Alondo sulla tua nave e lo trovi che fissa solennemente fuori dal finestrino.`
+			choice
+				`	"Mi sembra che le trattative siano andate piuttosto bene."`
+					goto well
+				`	"Che cosa era tutta quella scena?"`
+					goto that
+				`	"Che cosa facciamo per Katya?"`
+					goto katya
+			
+			label that
+			`	"Samuel e io abbiamo... un passato. Uno di cui preferirei non parlare," risponde Alondo. "Comunque dobbiamo proseguire la nostra missione. È tempo di fare una visita a Tarazed. Andiamo."`
+				accept
+			
+			label well
+			`	"Sono andate. Anche se sembra che sia stato quasi troppo facile. Il sostegno di Samuel non è troppo inatteso, ma mi sarei aspettato che gli altri lo combattessero per spremerei un po' di più." Alondo si ferma un momento. "Comunque dobbiamo proseguire la nostra missione. È tempo di fare una visita a Tarazed."`
+				accept
+			
+			label katya
+			`	"Dovrò parlarne con il Consiglio quando torniamo. Ma se è prigioniera dell'Ufficio dell'Intelligence, non c'è modo di salvarla. La sua unica speranza è che riconoscano la sua innocenza. Per ora dobbiamo proseguire la nostra missione. È tempo di fare una visita a Tarazed."`
+				accept
+	
+	npc
+		government "Republic"
+		personality heroic
+		system "Sol"
+		fleet "Small Republic" 3
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Alondo non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Syndicate Diplomacy 1C"
+	landing
+	name "Diplomazia con Poisonwood"
+	description "Va' su <planet> con Alondo Gruyere, per fare un'ultima visita diplomatica."
+	source "Wayfarer"
+	destination "Poisonwood"
+	clearance "Alondo has a brief chat with the spaceport controller and manages to get you permission to land."
+		attributes "dirt belt" "south"
+	passengers 1
+	to offer
+		has "FW Syndicate Diplomacy 1B: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "Tarazed neutrality" 0
+		log "Le forniture extra del Sindacato hanno cominciato ad arrivare a Tarazed, e comprendono armi ed equipaggiamenti che di solito non vengono spediti al Sud. Hai parlato con Emily Lane, il CEO della Tarazed Corporation. È sospettosa di questo presunto gesto di buona volontà del Sindacato e suggerisce di restare vigili sulle sue azioni."
+		conversation
+			`Quando arrivi su <origin>, scopri che ci sono già alcune navi del Sindacato che scaricano un carico che dev'essere stato spedito prima di te. Intravedi alcune casse e vedi grandi quantità di materiali per navi, oltre a casse di blaster, cannoni protonici e altri prodotti del Sindacato.`
+			`	Dopo aver contattato la Tarazed Corporation, tu e Alondo venite condotti nella sala riunioni di Tarazed, che è diversa da quella del Sindacato per due aspetti. Primo, è molto meno lussuosa. Secondo, ci sono delle donne: a differenza del Sindacato, notoriamente misogino, Tarazed è attualmente guidata da un CEO donna, Emily Lane.`
+			`	"Sono lieta di darvi il benvenuto qui," dice Emily. "È bello parlare finalmente con te di persona, Alondo. Molti di noi simpatizzano per la vostra causa."`
+			`	"Grazie," dice Alondo, "anche se per il momento il modo migliore per sostenerci potrebbe essere restare neutrali in questo conflitto." Spiega le trattative con il Sindacato e l'idea di Tarazed come intermediario per le forniture del Sindacato.`
+			`	"Non mi piace trattare con il Sindacato," dice Emily, "ma come voi, non potremmo costruire navi senza i sistemi che producono. Naturalmente i materiali che riceviamo dallo spazio delle Free Worlds sono altrettanto preziosi. Ma se restiamo nominalmente parte della Repubblica, avranno pieno accesso a questo sistema, compresa la possibilità di perquisire i mercantili in arrivo e in partenza."`
+			choice
+				`	"Ricevete armi e materiali per navi in continuazione. Finché non sanno che vanno a noi, non dovrebbe importare."`
+					goto skip
+				`	(Lascia parlare Alondo.)`
+			`	"Vero," dice Alondo, "ma una flotta della Marina qui sarebbe vulnerabile al rischio di essere tagliata fuori dallo spazio della Repubblica, quindi a meno che non occupino tutta la Fascia di Terra, non credo che correrebbero il rischio."`
+			label skip
+			`	"Forse," risponde Emily. "Anche se devo chiedervi quali corde abbiate tirato per ottenere quello che avete ottenuto. Poco prima del vostro arrivo abbiamo cominciato a ricevere forniture del Sindacato che non avevamo mai ordinato. Torrette blaster quadruple. Cannoni protonici. Torrette antimissile. Persino propulsori atomici della Deep, che il Sindacato di solito non vende. È tutto per le Free Worlds?"`
+			`	Alondo si ferma. "Ho... un vecchio amico dentro il Sindacato. Faceva parte delle trattative e ha accennato che ci sarebbero stati dei 'dolcetti in più' nei prossimi convogli. Non ci parliamo da anni, e suppongo che questo sia il suo tentativo di tornare nelle mie grazie."`
+			`	"Dubito che forniture di queste quantità siano solo un tentativo di vecchi amici di riappacificarsi," dice Emily. "Il Sindacato non fa giochi del genere senza averci qualcosa da guadagnare. Non penserei troppo bene di questo gesto."`
+			`	Continuano a parlare per un po', e te ne vai ben convinto che Tarazed sia disposta a sostenervi e che il modo migliore per farlo, per ora, sia restare neutrale. Sono state sollevate delle domande sulle intenzioni del Sindacato, però.`
+			`	"Ora," dice Alondo, "vorrei fare un'ultima visita diplomatica. Il pianeta <planet> ha insistito per restare fedele alla Repubblica, anche se si trova in profondità dentro il nostro spazio. Vorrei incontrare i loro capi e vedere se riconsidereranno l'idea di unirsi a noi."`
+				accept
+	
+	npc
+		government "Republic"
+		personality heroic
+		system "Rutilicus"
+		fleet "Small Republic" 3
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Alondo non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	
+	
+	
+mission "FW Syndicate Diplomacy 1D"
+	landing
+	name "Ritorna su <planet>"
+	description "Torna su <planet> con Alondo, per riferire sull'esito della tua missione diplomatica."
+	source "Poisonwood"
+	destination "Longjump"
+	passengers 1
+	to offer
+		has "FW Syndicate Diplomacy 1C: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Hai cercato di convincere Poisonwood, un mondo confinante con il territorio delle Free Worlds, a cambiare schieramento. Ma sono ferocemente fedeli alla Repubblica, perché la Marina li ha liberati decenni fa dal dominio dei signori della guerra Alphas."
+		conversation
+			`Mentre atterri su Poisonwood, Alondo spiega: "Trent'anni fa questa era una colonia di schiavi. La Marina è stata responsabile della loro liberazione, e di conseguenza sentono ancora un debito profondo verso la Repubblica. Ma anche se non si uniranno a noi, forse possiamo stabilire rapporti più amichevoli con loro."`
+			`	Poco dopo che atterri, la governatrice di Poisonwood manda un assistente a scortarvi nel suo ufficio. La governatrice avrà probabilmente quasi sessant'anni, e mentre parlate la luce del sole le coglie a volte il viso o le braccia esattamente all'angolo giusto per mostrare le linee tenui e incrociate di cicatrici molto vecchie. Dev'essere stata una delle schiave liberate dalla Marina.`
+			`	Appena vi siete seduti, dice: "Ora, non voglio darvi false speranze. Non ci uniremo alle Free Worlds."`
+			`	"Capito," dice Alondo. "Siamo venuti soprattutto per assicurarvi che le Free Worlds non tenteranno mai di prendere il controllo di un pianeta che non abbia scelto volontariamente di unirsi a noi. Ma senza il nostro sostegno, il vostro mondo è isolato e vulnerabile."`
+			`	"Esatto," dice, con una smorfia. Parlano per un po', ma è chiaro che non ritiene che la sua gente sosterrebbe mai nemmeno un trattato di neutralità con la "ribellione". Alla fine cambia argomento. "Capitano <last>," dice, "quale ritiene che sia la più grande minaccia che l'umanità affronta oggi?"`
+			choice
+				`	"Un governo corrotto."`
+				`	"Le corporazioni potenti e il capitalismo senza freni."`
+					goto corporations
+				`	"Il ritorno degli Alphas, o di qualcosa di simile."`
+					goto alphas
+				`	"La pirateria e l'anarchia, come i pirati che dominavano il vostro mondo."`
+					goto anarchy
+				`	"Un'invasione aliena."`
+					goto aliens
+				`	"Io."`
+					to display
+						or
+							"combat rating" >= 22026
+							"armament deterrence" >= 10
+					goto me
+			
+			`	Ride. "Una risposta tipica delle Free Worlds. Confesso che non sono affatto una grande sostenitrice del Parlamento, che ordina alla Marina di passare il tempo nel settore paradisiaco ad assistere piloti ricchi e snob rimasti senza carburante, invece di difendere quaggiù dalle minacce molto reali che si annidano sui mondi pirata."`
+				goto threat
+			
+			label corporations
+			`	"Dato che c'è una sola corporazione nella galassia che corrisponde a quella descrizione," dice, "suppongo che parliate del Sindacato. Qualsiasi organizzazione umana può prendere vita propria e agire in modi che ognuno dei suoi singoli membri considererebbe immorali. È un pericolo che il Sindacato corre davvero. Ma io mi trovo più preoccupata per certe minacce che sono più vicine a casa."`
+				goto threat
+			
+			label alphas
+			`	Sembra sorpresa. "Non molti della tua generazione direbbero così," dice. "Anche qui su Poisonwood, dove dovremmo saperne di più, molti di quelli nati dopo gli anni della schiavitù pensano che gli Alphas non siano altro che un mito, una storia che il Parlamento usa per giustificare il mantenimento di una Marina così grande."`
+			`	Alondo sembra preoccupato. "Ho sentito i racconti della liberazione di Poisonwood," dice, "ma non c'è mai stata alcuna prova. Nessuna foto, nessuno di loro catturato. Pensavo fosse solo propaganda."`
+				goto story
+			
+			label anarchy
+			`	Ride. "Teppisti. Ragazzini senza speranza nel futuro. Piccoli criminali. I pirati sono male organizzati e i loro giorni di gloria sono finiti da tempo. Ma hai ragione, in un certo senso, perché quei mondi senza legge offrono un nascondiglio ai pochi individui che davvero sono un pericolo per la nostra specie. Ed è quella la minaccia che mi pesa di più sulla mente."`
+				goto threat
+			
+			label aliens
+			`	Ride. "Devi guardare troppi video. Le specie più potenti di questa galassia sono anche le più amanti della pace. Fidati, lo so bene. Qui ai margini dello spazio umano riceviamo... visite, ogni tanto. Non si intromettono negli affari umani, ma sono venuti a cercare informazioni su una minaccia che riguarda entrambi."`
+				goto threat
+			
+			label me
+			`	Si acciglia. "È di cattivo gusto, non ti pare? Certo, hai una certa... reputazione, lo ammetto. Potresti essere la più grande minaccia che la Repubblica affronta oggi, ma per l'umanità? La minaccia di cui mi preoccupo è molto più grande di qualsiasi singolo capitano, per quanto potente sia la sua flotta."`
+			
+			label threat
+			`	"Che tipo di minaccia?" chiedi.`
+			
+			label story
+			`	"Il nostro mondo è stato in schiavitù per quasi un decennio," dice. "Quasi tutta la mia infanzia. Prima di allora, però, eravamo poco più di una colonia anarchica, quindi la Repubblica non fece nulla per aiutarci. Fino alla Sparizione."`
+			choice
+				`	"Che cos'è stata la Sparizione?"`
+			
+			`	"All'epoca ero un'adolescente schiava che lavorava nelle fabbriche," dice. "Esattamente l'età sbagliata, come si è scoperto. Un giorno i sorveglianti ci informarono che tutte le ragazze di diciotto anni dovevano fare dei 'controlli medici' obbligatori quel giorno. Non descriverò che cosa prevedesse il 'controllo', ma è stato sconcertante e sgradevole. E quasi tutte quelle ragazze sono sparite, quel giorno. Non sono mai tornate dai 'controlli'. Solo poche di noi sono state lasciate indietro. Per lo più erano ragazze che avevano avuto la sfortuna di essere già incinte a quell'età. O la fortuna, come si è scoperto. Ma non capivo perché non avessero preso me."`
+			`	Alondo sembra molto turbato dalla storia. "Vendevano le ragazze alla prostituzione?" dice.`
+			`	"È quello che abbiamo supposto," dice, "ma c'erano decine di ragazze come me che non sono state prese, anche se non erano incinte. Non aveva senso. Comunque, in qualche modo la notizia di quell'evento è uscita dal pianeta e non molto dopo è arrivata la Marina in forze enormi, ha distrutto le flotte degli schiavisti e ha liberato il nostro pianeta. Nel farlo hanno cercato di invadere un impianto sotterraneo su nelle montagne, dove pensavano che le ragazze fossero tenute. Ma l'impianto era predisposto per autodistruggersi, e non hanno mai scoperto che cosa succedesse là dentro. Nessuno all'interno è sopravvissuto."`
+			choice
+				`	"Avete mai scoperto perché vi hanno lasciate andare?"`
+			
+			`	"I miei genitori dicevano che era perché ero troppo volitiva e testarda, difficile da controllare," dice. "Ma anni dopo abbiamo cominciato a scoprire che tutte noi che eravamo state saltate avevamo una cosa in comune. Eravamo tutte sterili. Lo eravamo già, il giorno della Sparizione. Il che significa che o un gruppo di pirati aveva improvvisamente deciso di lasciarsi alle spalle la vita criminale per metter su famiglia... oppure quelle ragazze venivano usate come incubatrici."`
+			`	Alondo dice: "Ho sentito che era comune durante le guerre con gli Alphas. La genetica degli Alphas era così instabile che avevano bisogno di centinaia di soggetti di prova per produrre una manciata di bambini Alphas vitali. Erano giorni malvagi."`
+			`	"Giorni che potrebbero ancora tornare," dice. "Da qualche parte, magari anche qui vicino, su Bloodsea o Greenrock o Albatross, i resti degli Alphas potrebbero essere ancora nascosti. Creature allevate per essere forti e astute e capaci di uccidere senza il minimo rimorso. E ora che questo settore di spazio è vostro, anche il dovere di difendersi da loro diventa vostro. È per questo che ho accettato di parlare con voi: per avvertirvi di quella realtà."`
+			`	Tu e Alondo tornate alla nave con un pensiero in più di cui le giovani Free Worlds devono preoccuparsi. "Credo che ora dovremmo tornare su <planet> e riferire al Consiglio," dice.`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Alondo non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		payment 200000
+		event "fw dirt belt patrols"
+		event "syndicate assistance" 30
+		event "tarazed assistance" 60
+		event "unofficial ceasefire" 120
+		conversation
+			`Incontri Tomek, Freya e JJ allo spazioporto, e il Consiglio al completo si riunisce in fretta. Dato che eri il trasporto di Alondo durante la sua missione, sei incluso nella riunione. Alondo riassume i risultati della missione diplomatica, che ritiene un successo. Sentendo delle forniture extra dirette a Tarazed, Tomek propone di aumentare le pattuglie nella Fascia di Terra a est, per aiutare a difendere i convogli del Sindacato e allo stesso tempo spostare i rifornimenti da Tarazed ai vari pianeti delle Free Worlds.`
+			`	"Ci stiamo ancora riprendendo dall'ultima serie di battaglie," dice JJ. "Una presenza maggiore delle Free Worlds fuori dal nostro territorio dichiarato potrebbe essere vista come una provocazione."`
+			`	"Lo sarà senz'altro, ma dobbiamo mantenere la nostra parte dell'accordo con il Sindacato se vogliamo tenercelo come alleato provvisorio," risponde Tomek. "Abbiamo anche il nostro accordo con Tarazed perché comincino a vendere alcune delle loro navi nel nostro territorio. Quelle navi non ci serviranno a molto se vengono fatte a pezzi dai pirati prima ancora di arrivare."`
+			choice
+				`	"Un accordo con Tarazed per nuove navi? Quando l'hai fatto?"`
+					goto deals
+				`	"Sono disposto a offrirmi volontario per il servizio di scorta."`
+			`	"Non serve," dice JJ. "Abbiamo molti capitani già assegnati al servizio di scorta. Potremmo aver bisogno di te altrove."`
+				goto end
+			label deals
+			`	"Prima che la situazione degenerasse," dice Tomek, "mi sono assicurato di poter garantire una linea di rifornimento per nuove navi da guerra fuori dai nostri confini. Southbound sarà anche un buon cantiere, ma da sola non può fornirci le navi da guerra che ci servono, tanto più che la più grande che costruisce è la Bastion. Purtroppo la Marina ha attaccato prima che si potesse concludere tutto, e lo scoppio della guerra ha rallentato le cose, ma Tarazed ci ha assicurato che l'accordo va avanti."`
+			`	"Non dimenticare che Tarazed è anche il nostro unico fornitore di caccia per i trasportatori Type F di Southbound," aggiunge Freya. "A meno che tu non voglia contare sui Boxwing, ma in combattimento non aiutano molto."`
+			`	"In questo conflitto ci sono molti pezzi in movimento, Capitano <last>," dice JJ. "Ti chiediamo solo di restare concentrato su dove ti puntiamo, e di lasciare a noi i dettagli più fini."`
+			label end
+			`	Dopo altre discussioni sull'argomento, il Consiglio approva l'aumento delle pattuglie, anche se JJ resta un po' apprensivo.`
+			`	"C'è un'altra cosa," dice Alondo. "Il Sindacato ci ha informati che la Repubblica ha Katya in custodia, accusata di terrorismo."`
+			`	La notizia è uno shock per tutti. "Avevo cominciato a temere che fosse così," dice Freya.`
+			`	"I miei contatti nella Marina avevano sentito voci, ma suppongo che questo lo confermi," dice JJ.`
+			`	"Perché non l'hanno annunciato pubblicamente?" chiede Tomek.`
+			`	"Sospetto che sia perché sanno che è innocente," dice Alondo. "Dicono che sia impossibile mentire agli Interrogatori, e in questo caso sarà a suo favore."`
+			`	Dopo altre discussioni, il Consiglio alla fine ti congeda, passando ad altri argomenti che non ti riguardano direttamente.`
+			`	Un po' più tardi, dopo che la riunione del Consiglio è stata aggiornata, Tomek ti si avvicina e dice: "Incontrami allo spazioporto quando sei pronto per il tuo prossimo incarico. E inoltre," ti dà <payment>, "il Consiglio ha approvato un bonus per te. Ottimo lavoro, Capitano."`
+
+
+
+mission "FW Hope Recon 1"
+	autosave
+	name "Sistemi di allerta precoce"
+	description "Atterra sul pianeta abbandonato <destination> e installa lì dei sensori per monitorare l'attività della flotta della Marina nel sistema."
+	source "Longjump"
+	destination "Hope"
+	cargo "sensors" 10
+	blocked `Freya ti contatta e dice: "<first>, avrai bisogno di dieci tonnellate di spazio cargo per questa prossima missione." Dovresti tornare qui dopo aver liberato <capacity>.`
+	to offer
+		has "FW Syndicate Diplomacy 1D: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Incontri Tomek e Freya, che stanno esaminando una mappa dei sistemi vicini. "Questo è un punto di strozzatura," dice Freya, indicando il sistema Wei. "Qualsiasi attacco contro di noi arriverà da Wei o da Lesath, e Wei è molto più probabile. E questo significa anche che, se riusciamo a monitorare che cosa succede là, avremo un avviso anticipato di qualsiasi attacco."`
+			`	"E dato che stiamo rafforzando le pattuglie a est, avremo bisogno di ogni avviso anticipato che possiamo ottenere, anche di un solo giorno," dice Tomek. "Ora, come forse saprai, il pianeta Hope è nel sistema Wei. È un'ex colonia che ora è un pianeta di ghiaccio. Il nostro piano è installare su Hope una rete di sensori che segua ogni nave nel sistema. Freya ha progettato l'equipaggiamento, quindi può spiegarti come installarlo."`
+			`	Freya spiega dove va installato ciascun sensore sul pianeta e come ricoprirlo di schermature isolanti, così che le sue firme termiche ed energetiche siano difficili da rilevare. "Una volta installata la rete," dice, "comincerai a ricevere la telemetria. Un buon modo per provarla è assicurarsi che rilevi la tua stessa nave. Domande?"`
+			choice
+				`	"No, mi sembra bene."`
+					accept
+	
+	on visit
+		dialog phrase "generic cargo on visit"
+
+
+
+mission "FW Hope Recon 1B"
+	landing
+	name "Sistemi di allerta precoce"
+	description "Riferisci a Freya su <planet>."
+	source "Hope"
+	destination "Longjump"
+	to offer
+		has "FW Hope Recon 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+
+
+
+ship "Gunboat" "Gunboat (Bunks)"
+	outfits
+		"Heavy Laser" 2
+		"Heavy Laser Turret"
+		
+		"Bunk Room"
+		"RT-I Radiothermal"
+		"LP036a Battery Pack"
+		"LP072a Battery Pack"
+		"D14-RN Shield Generator"
+		"Small Radar Jammer"
+		
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+
+
+
+mission "FW Hope Recon 1C"
+	landing
+	invisible
+	source "Hope"
+	to offer
+		has "FW Hope Recon 1: done"
+	to fail
+		has "FW Hope Recon 1B: done"
+	
+	on offer
+		"reputation: Republic (Friendly)" >?= 0
+		log "Hai installato alcuni sensori sul mondo abbandonato di Hope, come sistema di allerta precoce contro le incursioni della Marina nello spazio delle Free Worlds. A quanto pare anche la Marina sta facendo qualcosa su questo mondo."
+		conversation
+			`Atterri su Hope, installi gli apparecchi di sorveglianza di Freya nei punti che ha indicato e li accendi. La telemetria comincia ad arrivare, e verifichi che anche la tua nave compare nelle scansioni. Però rilevano anche una firma termica non identificata in un'altra zona di Hope. Vuoi indagare?`
+			choice
+				`	(Certo, altroché!)`
+				`	(No, sembra rischioso.)`
+					decline
+			
+			action
+				set "fw caught navy planting sensors"
+			`	Ti avvicini alla posizione volando basso per non essere rilevato, e arrivi davanti a una cannoniera della Marina atterrata sul pianeta. A una certa distanza dalla nave, diverse figure in pesanti tute da neve stanno montando una specie di apparecchiatura con molte antenne. Sembra che la Marina abbia avuto la stessa idea di Freya: usare questo mondo come posto di ascolto. I tuoi sensori mostrano che la cannoniera è spenta.`
+			`	Nel momento in cui la tua nave appare all'orizzonte, quelli cominciano a correre verso la cannoniera. Distruggi la loro apparecchiatura con qualche colpo ben piazzato, poi punti i cannoni sull'equipaggio, che è ancora a una certa distanza dalla nave. Quando capiscono che non possono arrivarci prima di essere colpiti, alzano le mani in segno di resa.`
+			`	Conti otto membri dell'equipaggio nel gruppo, che è il numero tipico di una cannoniera. Questo potrebbe significare che la cannoniera è senza equipaggio, e potresti uccidere l'equipaggio e prendertela. D'altra parte, se a bordo ci fosse altro equipaggio, sarebbe meglio distruggere prima la nave e poi finire il gruppo a terra.`
+			choice
+				`	(Distruggi la nave, poi finisci l'equipaggio.)`
+					goto destroy
+				`	(Uccidi il gruppo a terra, poi prenditi la nave.)`
+					goto steal
+				`	(Accetta la resa dell'equipaggio.)`
+					goto accept
+			
+			label destroy
+			`	A quanto pare hai fatto la scelta giusta: qualcuno è davvero ancora a bordo della cannoniera, perché nel momento in cui apri il fuoco alza gli scudi e comincia ad accendere motori e armi. Ma i tuoi primi colpi devono aver danneggiato qualche sistema critico, perché riesce solo a spararti qualche colpo e a sollevarsi di una trentina di metri prima di schiantarsi di nuovo sul ghiaccio ed esplodere. Elimini in fretta anche il gruppo a terra; non hanno dove nascondersi nella distesa glaciale ampia e piatta.`
+			`	La tua missione è conclusa, quindi è tempo di tornare su <planet> e riferire a Freya.`
+				decline
+			
+			label steal
+			`	Il gruppo a terra non ha assolutamente dove nascondersi in questo campo glaciale; li elimini facilmente. Non c'è risposta dalla nave, quindi atterri accanto e ti prepari ad abbordarla. Ma nel momento in cui apri il portello, l'altra nave si risveglia con un rombo, accende i motori e batte in ritirata in fretta, sparandoti qualche colpo di commiato dalla torretta. Accendi i tuoi motori e la insegui...`
+				launch
+			
+			label accept
+			action
+				karma ++
+				set "fw accepted Susquehanna's word of honor"
+			`	La maggior parte delle navi è dotata di altoparlanti esterni proprio per situazioni come questa. Inquadri la nave, e i tuoi scanner la identificano come la <npc>.`
+			`	"Equipaggio della <npc>, sono il Capitano <last> della nave <ship> delle Free Worlds," annunci. "Accetto la vostra resa, ma mi date ciascuno la vostra parola d'onore che non prenderete più parte ai combattimenti contro le Free Worlds?"`
+			`	I soldati sembrano riflettere un momento, poi uno di loro alza la mano davanti a sé e ti fa il pollice in su. Gli altri lo imitano subito, senza esitazione.`
+			`	"Grazie," rispondi. "Potete tornare alla vostra nave e rientrare nello spazio della Repubblica."`
+			`	I soldati della Marina si scambiano sguardi, apparentemente sorpresi, ma si riprendono in fretta. Uno di loro scatta sull'attenti e ti fa il saluto. Ricambi il saluto, e poi, rendendoti conto che il loro capitano non può vederti, fai lampeggiare le luci esterne della nave in segno di riconoscimento. L'equipaggio della <npc> si mette in formazione, torna alla nave, accende i motori e decolla. I sistemi d'arma restano scarichi e inattivi, per quanto possano dire i tuoi sensori.`
+			`	Conclusa la tua missione su questo pianeta, decolli anche tu, tenendo d'occhio la nave della Marina.`
+				launch
+	
+	npc
+		government "Republic (Friendly)"
+		personality fleeing uninterested timid
+		ship "Gunboat (Bunks)" "R.N.S. Susquehanna"
+	
+	
+	
+mission "FW Hope Recon 1D"
+	landing
+	name "Distruggi i sensori"
+	description "Torna su <destination> e distruggi tutti i sensori della Repubblica che ci trovi."
+	source "Longjump"
+	destination "Hope"
+	to offer
+		has "FW Hope Recon 1B: done"
+	
+	on offer
+		conversation
+			branch caught
+				has "fw caught navy planting sensors"
+			`Riferisci a Freya e Tomek. "Ho visto uno strano segnale dei sensori," dici, "ma avevo paura di andare a controllare. Potrebbero essere stati della Marina, che installava sensori propri, o che faceva qualcos'altro sul pianeta."`
+				goto sensors
+			label caught
+			`Riferisci a Freya e Tomek. "I sensori sono installati," dici, "ma ho sorpreso la Marina a fare la stessa cosa. Ho distrutto una delle loro installazioni, ma potrebbero essercene altre."`
+			label sensors
+			`	Tomek si acciglia. "Che cosa ne pensi, Freya?"`
+			`	"Direi: vivi e lascia vivere. Non abbiamo piani di espansione a nord, quindi non ci costa niente che sappiano che cosa succede in quel sistema. E non abbiamo risorse da sprecare per setacciare il pianeta in cerca dei loro sensori."`
+			choice
+				`	"Mi sembra sensato."`
+				`	"Beh, preferirei non dargli alcun vantaggio, per quanto piccolo."`
+					goto attack
+			
+			`	"Bene," dice Freya, "perché ho un lavoro molto più interessante per te. Quelli della Kraz Cybernetics hanno un giocattolo nuovo che vogliono provare, e ti ho offerto volontario per dare una mano. Ti aspettano su Rust, nel sistema Kraz."`
+				decline
+			
+			label attack
+			`	"Dipende da te," dice Tomek. "Se vuoi tornarci, puoi. Ma creerà solo altra ostilità, senza darci alcun vantaggio tattico."`
+			`	"Inoltre," dice Freya, "ho una missione molto più interessante per te. Quelli della Kraz Cybernetics hanno un giocattolo nuovo che vogliono provare, e ti ho offerto volontario per dare una mano. Ti aspettano su Rust, nel sistema Kraz."`
+			choice
+				`	"Mi dispiace, ma odio lasciare un lavoro a metà. Voglio distruggere quei sensori."`
+				`	"Va bene, mi hai convinto."`
+					decline
+			
+			`	"Bene," dice Freya, "ma presentati su Rust quando hai finito. E cerca di non farti ammazzare." È chiaramente delusa da te.`
+				accept
+	
+	npc
+		government "Republic"
+		personality staying
+		system "Wei"
+		fleet "Large Republic"
+	
+	on complete
+		log "Hai distrutto alcune installazioni di sensori della Marina su Hope, ma probabilmente passeranno solo pochi giorni prima che le sostituiscano."
+		conversation
+			`Passi un po' di tempo a setacciare il pianeta, sperando che la Marina non ti dia la caccia. In tutto scopri altre tre installazioni di sensori. Non c'è modo di essere sicuro di averle trovate tutte, ma ora è tempo di presentarti in servizio su Rust.`
+
+
+
+mission "FW Plasma Testing 1"
+	landing
+	name "Prova delle armi"
+	description "Presentati su <destination> per assistere a una prova sperimentale di armi."
+	source "Longjump"
+	destination "Rust"
+	to offer
+		has "FW Hope Recon 1B: done"
+	on fail
+		dialog phrase "free worlds failed"
+
+
+
+mission "FW Plasma Testing 1B"
+	autosave
+	landing
+	name "Prova delle armi"
+	description "Come prova della nuova torretta al plasma, aiuta la Walloping Window-Blind a distruggere la Red Nile, una nave pirata che probabilmente si trova nel sistema <marks>. Poi torna su <planet>."
+	source "Rust"
+	mark "Ildaria"
+	to offer
+		has "FW Plasma Testing 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "People" "Edward Tivrusky" `Barmy Edward è il capo ingegnere offensivo della Kraz Cybernetics, noto per i suoi progetti di armi fantasiosi e a volte poco pratici. A quanto pare i suoi ingegneri gli hanno affibbiato il soprannome "Barmy" dopo un incidente in cui un cannone sperimentale a base di resina epossidica su cui stava lavorando è esploso e lo ha incollato al soffitto.`
+		conversation
+			scene "scene/loc5"
+			`Nello spazioporto ti accoglie un ingegnere junior della Kraz Cybernetics, che ti porta alla loro struttura e ti presenta il suo capo, noto come "Barmy Edward". Edward indossa un paio di spessi occhiali da saldatura e sta fumando una sigaretta. "Piacere di conoscerti," dice, tendendoti una mano racchiusa in un pesante guanto di cuoio.`
+			choice
+				`	"Piacere mio, signore."`
+				`	"Altrettanto."`
+					goto same
+			
+			`	"Non chiamarmi 'signore'," dice. "Non porto la cravatta."`
+			`	"Scusa," dici. "Sono tutte queste abitudini da milizia che sto imparando."`
+				goto explain
+			
+			label same
+			`	"Ho sentito parlare bene del tuo lavoro," dice. "Aiutare le Free Worlds e tutto il resto. Non che mi interessi molto la politica, ma mi piace far saltare le cose in aria."`
+			choice
+				`	"Anche a me."`
+				`	"Beh, noi cerchiamo di far saltare le cose in aria solo quando è strettamente necessario."`
+			
+			label explain
+			`	"Certo," dice. "Comunque, scommetto che ti stai chiedendo con quali giocattoli nuovi ti faremo giocare." Annuisci. Dice: "Stavamo cercando di mettere a punto un'arma per le nostre navi capitali, qualcosa che regga il confronto con una delle torrette laser pesanti della Marina. Qualcosa di più elegante di quelle orribili torrette blaster quadruple che produce il Sindacato. Così ho pensato: perché non prendere la cosa più grande che abbiamo e montarne un paio su una torretta?" Ti fa cenno di seguirlo e ti guida attraverso una porta in un hangar.`
+			scene "outfit/plasma turret"
+			`	Davanti a te c'è una torretta. È grande quasi in modo assurdo: un paio di cannoni al plasma montati su una massiccia base rotante. "Sessanta tonnellate," dice Barmy Edward. "Assorbe più energia di... beh, praticamente di qualsiasi altra cosa. Scalda anche un bel po'."`
+			choice
+				`	"È così... grande!"`
+				`	"Ne voglio una!"`
+					goto want
+				`	"È la torretta più brutta che abbia mai visto."`
+					goto ugly
+			
+			`	"Un po' ipnotica, eh?" dice.`
+				goto plan
+			
+			label want
+			`	"Beh, dovrai aspettare un mese o due perché sistemiamo i difetti," dice.`
+				goto plan
+			
+			label ugly
+			`	"Se cerchi la bellezza," dice, "vai a comprarti uno di quei cannoncini mollaccioni che sfornano ai Lovelace Labs. Qui non facciamo cose belle."`
+			
+			label plan
+			`	"Allora, dove entro in scena io?" chiedi.`
+			`	"Beh, il Consiglio dice niente test contro la Marina... per ora. Non ha senso provocare uno scontro solo per provare un'arma mai collaudata. Così ho chiesto che altro bersaglio potessero suggerire, e mi hanno parlato di questa nave pirata di nome Red Nile che infesta il sistema <marks>, cecchinando i mercanti che sbagliano strada e finiscono là."`
+			`	Con un gesto ampio ti indica un vecchio Falcon di Tarazed parcheggiato nell'angolo più lontano dell'hangar. È un po' arrugginito e la vernice si sta staccando, ma un Falcon è una nave impressionante in ogni caso. "Abbiamo infilato quattro dei nostri prototipi nella nave collaudo del nostro reparto, la Walloping Window-Blind. Non possiamo lasciarti pilotarla, naturalmente," dice, "perché ci è più cara dei nostri figli. Quindi il piano è: la Window-Blind ti accompagna su <marks>, combattete insieme i pirati, e tu prendi nota con attenzione di come si comportano i cannoni. Ti sembra divertente?"`
+			choice
+				`	"Decisamente!"`
+					accept
+				`	"Che tipo di nave è la Red Nile?"`
+			
+			`	"Una di quelle antichità di Betelgeuse," dice. "Non dovrebbe darti fastidio. Torna qui quando hai finito."`
+				accept
+	
+	npc accompany save
+		government "Free Worlds"
+		personality heroic escort
+		ship "Falcon (Plasma)" "Walloping Window-Blind"
+	npc kill
+		government "Pirate"
+		personality plunders staying target
+		system "Ildaria"
+		ship "Leviathan (Heavy)" "Red Nile"
+		on kill
+			unmark "Ildaria"
+			dialog `La <npc> è stata eliminata. È tempo di tornare su <destination> e riferire a Barmy Edward.`
+	
+	on visit
+		dialog `Sei tornato su <planet>, ma la tua missione non è completa: o la Red Nile non è stata distrutta, o hai lasciato indietro la Walloping Window-Blind.`
+	on complete
+		payment 200000
+		event "plasma turret available" 50
+		log "Hai assistito un ingegnere della Kraz Cybernetics noto come Barmy Edward nella prova di una nuova ed estremamente potente torretta con cannoni al plasma."
+		conversation
+			scene "scene/loc7"
+			`Quando entri nell'hangar, la Window-Blind è appena rientrata, e una squadra di ingegneri la sta esaminando. Barmy Edward posa il lavoro per venire a farti il debriefing. "Come si sono comportate le torrette?" chiede.`
+			choice
+				`	"Molto impressionanti. Ne voglio un paio sulla mia nave."`
+				`	"Beh, ero un po' preoccupato per il surriscaldamento della nave, ma per il resto funzionano bene."`
+					goto overheat
+			
+			`	"Sì," dice, "la squadra mi ha mandato qualche video della battaglia. Un massacro di prima qualità. Sono molto soddisfatto. Punti deboli che hai notato?"`
+				goto improve
+			
+			label overheat
+			`	"Sì, richiederà molto raffreddamento," dice. "Altri punti deboli?"`
+			
+			label improve
+			choice
+				`	"Sembra che l'unico modo per montare un cannone così grande sulla maggior parte delle navi sia lasciare vuota metà dei punti di attacco. È un po' poco pratico."`
+				`	"Ha funzionato bene contro una nave grande, ma mi chiedo quanto bene le torrette riescano a seguire i caccia."`
+					goto fighters
+			
+			label hardpoints
+			`	"È vero," dice, "la maggior parte delle navi è progettata prevedendo un numero maggiore di cannoni più piccoli. Ma pensiamo che questo possa aprire qualche nuova direzione interessante nella progettazione delle navi.`
+				goto next
+			
+			label fighters
+			`	"Immagino che dovremo provarlo per scoprirlo," dice, "ma il nostro obiettivo principale era avere un'arma capace di fare danni seri a un incrociatore. Al momento le navi più pesanti della Marina hanno le nostre nettamente surclassate come armamento.`
+			
+			label next
+			`	"Questo è per ringraziarti del tuo aiuto." Barmy ti dà <payment>. "Per aiutarti a pagare la tua prima torretta al plasma, quando le avremo messe sul mercato," dice.`
+			`	"Quando pensi che sarà?" chiedi.`
+			`	"Un mese o due. Ti manderò un messaggio quando saranno disponibili. Oh, e quanto al tuo prossimo incarico, scorterai un convoglio di rifornimenti al fronte. Puoi incontrarli allo spazioporto."`
+
+
+
+mission "plasma turret available"
+	landing
+	source
+		near "Kraz" 100
+	to offer
+		has "event: plasma turret available"
+	on offer
+		conversation
+			`Quando atterri, sul comunicatore ti compare un messaggio di Barmy Edward. C'è anche una fotografia allegata. Il messaggio dice:`
+			scene "outfit/plasma turret"
+			`	Rallegrati, Capitano! La prossima volta che sarai su Rust potrai comprare le torrette al plasma tutte per te.`
+			`				Cordiali saluti,`
+			`						B. Edward Tivrusky`
+			`						Capo ingegnere offensivo`
+			`						Kraz Cybernetics`
+				decline
+
+
+
+mission "FW Supply Convoy 1"
+	autosave
+	name "Scorta rifornimenti"
+	description "Scorta questo convoglio che trasporta equipaggiamento della Kraz Cybernetics alla base della milizia su <destination>."
+	source "Rust"
+	destination "Longjump"
+	to offer
+		has "FW Plasma Testing 1B: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Nello spazioporto incontri una donna in uniforme della milizia con una cartellina in mano. "È lei il Capitano <last>?" chiede. Annuisci. "Abbiamo un grosso carico di armi ed equipaggiamento che deve andare alla base della milizia su <planet>. Il suo compito è assicurarsi che nessuna di queste navi si... perda per strada." Indica una grande piazzola di atterraggio dove conti dieci Star Barge allineate una accanto all'altra.`
+			choice
+				`	"Non è rischioso trasportare un carico prezioso su navi così fragili e vulnerabili?"`
+				`	"Ehi, io sono un capitano di astronave, non un mandriano!"`
+					goto cattle
+				`	"Nessun problema. Farò in modo che arrivino sane e salve."`
+					accept
+			
+			`	"Lo sarebbe, se non fosse che la nostra presenza militare delle Free Worlds ha quasi, ma non del tutto, eliminato la pirateria nel Bordo. Quindi, anche se ci serve ancora una scorta, risparmiamo un sacco di soldi sugli stipendi degli equipaggi usando navi che si pilotano da sole una persona."`
+			choice
+				`	"Va bene, spero che tu abbia ragione!"`
+					accept
+			
+			label cattle
+			`	Sogghigna. "Sì, lo so che non è un lavoro molto glamour, e tenere d'occhio una grande flotta di navi lente è una seccatura. Ma i Bulk Freighter costano troppo per usarli nei convogli interni. Assicurati solo di fare il conto quando arrivi in ogni sistema."`
+			choice
+				`	"Va bene, qualunque cosa serva a portare avanti la causa della libertà, la farò."`
+					accept
+	
+	npc accompany save
+		government "Free Worlds"
+		personality timid escort
+		fleet
+			cargo 4
+			names "civilian"
+			variant
+				"Star Barge (Armed)" 10
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Sabik"
+		fleet "Small Southern Pirates" 2
+	
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivi in questo sistema.`
+	on complete
+		dialog `Ti assicuri che tutte e dieci le Star Barge siano atterrate sane e salve, poi riferisci al quartiermastro. Ti ringrazia per il lavoro e ti dice che Tomek ti ha chiesto al bar dello spazioporto.`
+
+
+
+mission "FW Pirates 1"
+	name "Ricognizione pirata"
+	description "Esplora quattro sistemi pirata ai margini meridionali dello spazio umano, poi riferisci a Tomek su <planet>."
+	source "Longjump"
+	waypoint "Antares"
+	waypoint "Men"
+	waypoint "Nunki"
+	waypoint "Shaula"
+	to offer
+		has "FW Supply Convoy 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		"salary: Free Worlds" = 2100
+		log "Tomek, del Consiglio delle Free Worlds, sta cercando di decidere come affrontare al meglio la minaccia dei pirati a sud dello spazio delle Free Worlds."
+		conversation
+			`Trovi Tomek seduto al bar dello spazioporto con una mappa galattica. La mappa è piena di annotazioni, con linee che segnano i territori attuali delle Free Worlds e della Repubblica. "Bello vederti, <first>!" dice. "Spero che le armi che Barmy Edward ti ha fatto provare abbiano funzionato bene. La maggior parte delle sue invenzioni è puro genio, ma alcune sono solo bizzarre e inutili."`
+			`	Gli descrivi le prestazioni impressionanti delle torrette al plasma e la difficoltà di trovare una nave abbastanza grande per montarle. "Eccellente!" dice. "Si aprono possibilità tattiche interessanti. Ma ora è tempo di cambiare completamente discorso."`
+			`	Stende bene la mappa, spazzandone via qualche arachide e briciola sparse. A quanto pare è seduto qui da parecchio. "Al momento," dice, "la Marina ci lascia in pace, e non abbiamo un buon motivo per attaccarla. Così il Consiglio ha cominciato a occuparsi di altre questioni, cioè dei pirati. Sono una grande minaccia per i nostri trasporti, e ogni carico perso per la pirateria è un colpo al nostro sforzo bellico. E poi, se riuscissimo a fare qualcosa per loro, guadagneremmo un bel po' di sostegno nei sistemi della Repubblica qui vicino. Se riusciamo a guadagnarci la simpatia dei mondi della Repubblica, ridurremo la voglia di guerra della Repubblica."`
+			choice
+				`	"D'accordo."`
+					goto agree
+				`	"Ma la Marina non resta comunque la minaccia più grande?"`
+			
+			`	"Certo che sì, ma al momento possiamo fare poco contro di loro, a parte prepararci alla loro prossima mossa. Non abbiamo alcun desiderio di togliere alla Repubblica tutto lo spazio umano. Vogliamo solo la libertà di governare noi stessi, qui nel nostro angolo di galassia. Quindi attaccare sistemi che la Repubblica controlla ora non avrebbe assolutamente senso, e probabilmente non farebbe che incoraggiare la Repubblica, rafforzando la sua voglia di vederci conquistati."`
+			`	"Suppongo che tu abbia ragione," dici.`
+			
+			label agree
+			`	"Allora, il piano è questo," dice. "Questi quattro sistemi appartengono ai pirati." Li indica sulla mappa. "Vogliamo che tu esplori tutti e quattro i sistemi. Solo un rapido sorvolo, non serve atterrare sui loro pianeti. Poi riferisci a noi, e decideremo quale sarà il nostro prossimo passo."`
+			choice
+				`	"Mi sembra bene."`
+					goto leave
+				`	"E i sistemi pirata che stanno a nord di Men?"`
+			`	Tomek alza le spalle. "Detto semplicemente, quei mondi non sono una minaccia per noi al momento. Da quanto riusciamo a capire, la maggior parte delle fazioni là è concentrata su lotte interne per il potere, più che sulla pirateria nel Bordo. Quei guerriglieri della CCOR bastano e avanzano per tenere occupato qualsiasi signore della guerra pirata, per il futuro immediato."`
+			choice
+				`	"CCOR?"`
+					goto ccor
+				`	"Capito."`
+					goto leave
+			label ccor
+			`	Tomek sembra sorpreso. "Pensavo che lo sapessi. I Consigli Confederati del Bordo Esterno (CCOR) erano un governo che cercava di praticare la propria personale variante di comunismo fuori dall'influenza della Repubblica. Sono caduti circa 50 anni fa, e i loro vecchi pianeti sono ora sotto il controllo di bande pirata o di gruppi di guerriglia che cercano di restaurare la CCOR. Non mi preoccuperei troppo dei guerriglieri: a questo punto non sono molto più di una banda pirata loro stessi."`
+			label leave
+			`	Mentre stai per andartene, dice: "Oh, un'altra cosa: ti è stato approvato un aumento di stipendio a 2.100 crediti. Pensiamo che aiutarti a mantenere una nave un po' più grande sia un investimento che vale la pena. Congratulazioni, Capitano."`
+				accept
+	
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on complete
+		dialog `Hai esplorato tutti e quattro i sistemi pirata che Tomek ti ha chiesto di visitare. È tempo di tornare al bar dello spazioporto e vedere se ti sta aspettando.`
+
+
+
+
+mission "FW Senate 1"
+	name "La senatrice Huygens"
+	description "Incontra la senatrice Arianna Huygens su <planet> e trasportala al nuovo palazzo del Senato delle Free Worlds su Bourne."
+	source "Longjump"
+	destination "Mere"
+	to offer
+		has "FW Pirates 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Le Free Worlds hanno finalmente eletto un Senato, che si riunirà per la prima volta a breve su Bourne."
+		conversation
+			`Sorprendentemente, quando torni su <origin> scopri che Tomek non è più lì. Un corriere ti consegna un breve biglietto: "Capitano <last>: poiché la decisione su come affrontare i pirati interessa tutte le Free Worlds, il Consiglio ha deciso di convocare la prima sessione del Senato delle Free Worlds in anticipo sui tempi. Sono già partito per Bourne. Le è stato assegnato il trasporto della senatrice Arianna Huygens di <planet>; la prega di andare a prenderla il prima possibile e di portarla con sé."`
+				accept
+
+
+
+mission "FW Senate 1B"
+	landing
+	name "La senatrice Huygens"
+	description "Trasporta la senatrice Arianna Huygens su <destination>."
+	source "Mere"
+	destination "Bourne"
+	passengers 1
+	blocked "Hai raggiunto <origin>, ma non hai una cuccetta libera per la senatrice Huygens. Dovresti tornare qui dopo aver liberato una cuccetta."
+	to offer
+		has "FW Senate 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fw senate timer" 8
+		conversation
+			`La senatrice Huygens si rivela una donna attraente sulla metà dei cinquant'anni, con un'espressione burbera. "Era ora che ti facessi vedere," è tutto quello che dice quando ti presenti.`
+			`	Le prendi una delle valigie e la guidi nella tua nave fino alla sua cabina. Quando arrivate, dice: "Sono contenta che il Consiglio abbia ceduto e abbia accettato di convocare il Senato. Avevo cominciato a temere che la democrazia che abbiamo sottoscritto fosse diventata un'oligarchia."`
+			`	"Che cosa vuoi dire?" chiedi.`
+			`	"Non fare il finto tonto. Parlo del Consiglio, che decide tutto."`
+			choice
+				`	"Non preoccuparti, non è mai stata loro intenzione tenersi il potere una volta che ogni mondo avesse avuto il tempo sufficiente per eleggere i propri rappresentanti."`
+				`	"Ehi, il Consiglio ha dato una grande guida in un momento in cui nessun altro era pronto a prendere il comando. Portagli un po' di rispetto."`
+			`	Sembra arrabbiata per un minuto, poi la sua espressione si addolcisce. "Oh, mi scusi," dice. "La stavo trattando come l'ennesimo politico intrigante, ma ora mi rendo conto che è troppo sprovveduto per esserlo. Mi dica, Capitano, sa che cosa rende la politica simile al pilotare una nave?"`
+			choice
+				`	"Non ne ho idea."`
+				`	"Ehm... entrambe comportano decisioni epocali con conseguenze serie?"`
+				`	"Entrambe richiedono che al comando ci sia qualcuno abile e deciso?"`
+			branch jd
+				has "outfit (flagship installed): Jump Drive"
+			`	"La risposta corretta," dice, "era: 'assolutamente niente; sono discipline del tutto diverse'. Ora sbrigati, spero di essere su Bourne fra una settimana." Valuti se spiegarle che è impossibile arrivarci così in fretta, ma decidi di no.`
+				accept
+			label jd
+			`	"La risposta corretta," dice, "era: 'assolutamente niente; sono discipline del tutto diverse'. Ora sbrigati, spero di essere su Bourne fra una settimana." Valuti se spiegarle che è impossibile arrivarci così in fretta con un iperpropulsore, ma decidi di no.`
+			`	Meno male che hai un motore di salto.`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta la senatrice Huygens non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		log "People" "Ijs Springborn" `Ijs ora sta lavorando per fondare il Conservatorio, un'università delle Free Worlds finanziata con fondi pubblici che avrà un'attenzione particolare per la tecnologia del terraformaggio. Il loro obiettivo è rendere i metodi di terraformaggio abbastanza efficienti che persino i mondi della Fascia di Terra possano permetterseli.`
+		conversation
+			branch slow
+				has "event: fw senate timer"
+			`Fai scendere la senatrice Huygens, che sembra insolitamente soddisfatta. "Bel lavoro, Capitano <last>, vedo che abbiamo fatto buon tempo. Sembra che lei sia molto più affidabile della maggior parte dei capitani con cui lavoro," dice prima di allontanarsi.`
+				goto waiting
+			label slow
+			`Fai scendere la senatrice Huygens, che non dice nulla per riconoscere il tuo aiuto se non: "Era ora di arrivare." Si allontana in fretta.`
+			label waiting
+			`	Pochi minuti dopo, qualcuno grida: "Salve, Capitano <last>!" È Ijs Springborn. "Sono contento di rivederti," dice.`
+			choice
+				`	"Anche io. Che cosa ti porta a Bourne?"`
+				`	"Anche io. Hai sentito che cosa è successo a Katya?"`
+					goto katya
+			`	"Immagino di essere una specie di lobbista," dice, "qui per trasformare in realtà il sogno di Katya."`
+				goto dream
+			label katya
+			`	"Sì, ecco perché sono qui," dice, "per assicurarmi che il suo sogno diventi realtà."`
+			label dream
+			`	"Quale sogno?" chiedi.`
+			`	"Il terraformaggio per tutti. Un'università e un centro di ricerca finanziati pubblicamente. Conosci il modello fiscale delle Free Worlds?"`
+			`	"Non proprio," dici.`
+			`	"È geniale. E probabilmente del tutto insostenibile. Ogni mondo che si unisce a noi negozia un certo importo fiscale annuo in base alla popolazione e alle risorse. In cambio ottiene l'accesso alla nostra flotta di difesa e ad altre risorse condivise. Il venti per cento delle imposte di ogni pianeta è 'senza vincoli', denaro che le Free Worlds possono usare per quello che ritengono più importante. Ma il resto delle imposte può essere destinato ai progetti che quel mondo ritiene più importanti. Quelle imposte possono anche assumere la forma di una donazione, per esempio fornire navi o equipaggi per la milizia comune..."`
+			`	Continua a parlare per parecchio. Smetti persino di provare a seguirlo. Alla fine vede l'espressione vuota sul tuo viso e smette di cianciare. "Il punto è," dice, "che se riusciamo a convincere abbastanza mondi a mettere insieme i loro soldi, il Conservatorio diventerà realtà. Una nostra università pubblica."`
+			choice
+				`	"Quindi sei qui per parlare ai senatori?"`
+				`	"Sembra che potrebbe essere una grande mossa di pubbliche relazioni per convincere altri mondi a unirsi a noi."`
+			`	"Esatto," dice. "Comunque, io vado a una riunione, ma raggiungimi più tardi allo spazioporto se hai spazio per qualche passeggero."`
+
+event "fw senate timer"
+
+
+
+mission "FW Pirates 2"
+	autosave
+	landing
+	name "Pattuglia nel Sud"
+	description "Guida una pattuglia attraverso i sistemi delle Free Worlds sul Bordo meridionale, respingendo i pirati che incontri, poi incontra Tomek su <destination>."
+	source "Bourne"
+	destination "Longjump"
+	waypoint "Alniyat"
+	waypoint "Atria"
+	waypoint "Beta Lupi"
+	waypoint "Dschubba"
+	waypoint "Han"
+	waypoint "Kappa Centauri"
+	waypoint "Pherkad"
+	waypoint "Yed Prior"
+	to offer
+		has "FW Senate 1B: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Pochi minuti dopo, Tomek si presenta alla tua nave. "Sono contento che sia andata," dice. "Scusa se sono sparito prima."`
+			choice
+				`	"Il Senato ha deciso qualcosa sui pirati?"`
+				`	"Sembra che alcune persone siano un po' ostili verso il Consiglio."`
+					goto council
+			`	"Non ancora. È per questo che volevo fare il più possibile mentre eravamo ancora sotto una struttura di comando relativamente snella. Mettere d'accordo due dozzine di politici su una linea d'azione è... difficile. Che cosa ha rivelato la tua ricognizione?"`
+				goto recon
+			label council
+			`	"Vuoi dire Arianna? Non preoccuparti, è una di quelle persone che per riflesso si oppongono a qualsiasi idea venga da qualcuno che non siano loro. Ai più piace quello che il Consiglio ha fatto, e anzi, prima ancora che tu arrivassi, il Senato ha votato per darci un ruolo consultivo permanente, sotto la supervisione del Senato."`
+			`	"Hanno votato prima che lei arrivasse?"`
+			`	"Sì, avevamo già il numero legale. Lei è stata l'ultima ad arrivare, per i suoi problemi di trasporto. Scusa se ti ho dato un incarico così meschino, comunque. Ora, che cosa mi puoi dire dei pirati?"`
+			label recon
+			`	Gli mostri i registri dei sensori. "Sto cercando di decidere quale consiglio dare al Senato," dice. "Un assalto di shock e terrore su Greenrock potrebbe mettere sotto il nostro controllo dall'oggi al domani tutti i sistemi pirata di questo settore. Ma avremmo forse meno perdite attaccando prima i mondi più piccoli e poi chiedendo a Greenrock di arrendersi. In ogni caso, qualcosa va fatto. Anche se la nostra preoccupazione più grande è la Repubblica, buona parte dell'ostilità verso di loro nasce dal loro fallimento nel tenere a freno la pirateria in questa regione. Dobbiamo riuscire dove hanno fallito, altrimenti non saremo migliori di loro. Se la fiducia in questo progetto vacilla, le Free Worlds crolleranno e torneremo al punto di partenza, con la differenza che tutta la nostra dirigenza, tutti quelli che ci hanno portato fin qui, sarà in prigione."`
+			choice
+				`	"Io dico di colpire il loro cuore e lanciare un assalto massiccio su Greenrock."`
+				`	"Perché non cominciare ripulendo il sistema Antares? Non è difeso molto bene."`
+					goto antares
+				`	"Occupare quattro sistemi pirata in eterno sarebbe un enorme spreco delle nostre risorse. Perché non proviamo a negoziare, offrendo a quei mondi la libertà da ogni nostra interferenza finché smettono di sostenere le flotte pirata?"`
+					goto diplomacy
+			
+			action
+				set "fw pirate suggestion: greenrock"
+			`	"È decisamente la soluzione più rapida," dice, "anche se sarebbe anche difficile. Difendere un assalto della Marina era una cosa, ma soggiogare la sede del potere pirata della regione è un'altra. Sarebbe però una bella dimostrazione di forza, non solo per i pirati, ma anche per la Repubblica."`
+				goto next
+			
+			label antares
+			action
+				set "fw pirate suggestion: antares"
+			`	"Mi sembra ragionevole," dice. "Probabilmente potremmo farlo con perdite minime. Ma il rischio è che Greenrock rifiuti comunque di arrendersi. Chiunque potrebbe mordere il membro più debole del branco, ma se abbattiamo prima Greenrock sarebbe una grande prova di forza, davanti ai pirati e anche alla Repubblica."`
+				goto next
+			
+			label diplomacy
+			action
+				set "fw pirate suggestion: diplomacy"
+			`	Si acciglia. "Negoziare con dei criminali?"`
+			`	"Mi dicono che solo una piccola parte della gente di quei mondi pratichi davvero la pirateria," dici, "e molti sono ragazzi arruolati a forza come membri dell'equipaggio."`
+			`	"Può essere," dice, "ma i loro capi sono criminali pericolosi, forse più pericolosi della Marina, perché non hanno né onore né moralità. Ogni mondo anarchico è anche un possibile rifugio per altri individui senza legge, compresi gli Alphas che si nascondono ancora, quindi dico che dobbiamo conquistare e controllare quei mondi. Il cuore della pirateria in questa regione è Greenrock, e se colpiamo Greenrock per primo mostreremmo i muscoli, ai pirati e alla Repubblica insieme."`
+			
+			label next
+			`	"Ma suppongo che dobbiamo aspettare la decisione del Senato?" chiedi.`
+			`	"Forse," dice. "Nel frattempo ho una missione collegata per te. Mentre il Senato delibera, vorrei che guidassi una pattuglia attraverso i nostri sistemi nel Bordo meridionale, per mantenere una presenza sufficiente a tenere a bada i pirati. Quando hai finito di pattugliare, riporta la flotta su <planet>. A quel punto dovrei essere tornato anch'io, e parleremo dei prossimi passi."`
+				accept
+	
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		fleet "Small Free Worlds" 2
+		fleet "Large Free Worlds"
+	
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on complete
+		dialog `La tua flotta di pattuglia è ancora impegnata a trovare posti dove atterrare, ma il tuo lavoro è finito. È tempo di andare al bar dello spazioporto e vedere se Tomek è lì.`
+
+
+
+# To tell players to go to Longjump to resume the story if they were in the middle of one of the deleted missions.
+mission "FW Pirates Patch"
+	landing
+	name "Ritorna su <planet>"
+	description "Torna su <destination> per continuare il tuo lavoro con le Free Worlds."
+	source
+		not planet "Longjump"
+	destination "Longjump"
+	to offer
+		or
+			has "FW Pirates 3: offered"
+			has "FW Pirates 3.1: offered"
+			has "FW Pirates 3.2: offered"
+			has "FW Pirates 3.2A: offered"
+			has "FW Pirates 3.1B: offered"
+			has "FW Pirates 3.2B: offered"
+			has "FW Pirates 4: offered"
+			has "FW Pirates 4B: offered"
+			has "FW Pirates 4.1: offered"
+		not "FW Pirates: Attack 1: offered"
+		not "FW Senate Hearing: offered"
+		not "FW Refinery 1: offered"
+	on offer
+		conversation
+			`Quando hai aggiornato il gioco, eri nel mezzo di un arco narrativo della campagna delle Free Worlds che da allora è stato modificato. Per continuare, dovresti andare su <destination>.`
+				accept
+
+
+
+mission "FW Pirates: Attack 1"
+	name "Attacca Greenrock"
+	description "Disobbedendo agli ordini del Senato, vai su <destination> e raduna una flotta delle Free Worlds per un assalto in forze al mondo pirata di Greenrock."
+	source "Longjump"
+	destination "Trinket"
+	to offer
+		has "FW Pirates 2: done"
+		# Backwards compatibility conditions. This mission was renamed, and these conditions avoid it from offering again on older saves.
+		not "fw first chapter done"
+		not "FW Refinery 1: offered"
+	to fail
+		has "FW Pirates: Diplomacy 1: done"
+	
+	on offer
+		log "Il Senato delle Free Worlds ti ha ordinato di scortare una missione diplomatica sul pianeta anarchico Thule. Tomek non è contento di trattare con i pirati invece di combatterli."
+		conversation
+			branch diplomacy
+				has "fw pirate suggestion: diplomacy"
+			`Tomek ti incontra fuori dal bar dello spazioporto e ti tira bruscamente da parte in un vicolo. "Pensi ancora che un attacco ai pirati sia la nostra opzione migliore?" chiede.`
+			choice
+				`	"Sì, è la nostra migliore possibilità di eliminare i pirati."`
+					goto yes
+				`	"Solo se il Senato è d'accordo. Questo è un governo democratico, dopotutto."`
+				`	"Perché? Che cosa succede?"`
+			`	"Quei folli del Senato vogliono che negoziamo con i pirati," dice. "Dobbiamo salvarli dalla loro stessa stupidità. Ho radunato una flotta da battaglia che ti aspetta su <planet>, capitani coraggiosi disposti a unirsi all'assalto a Greenrock."`
+				goto others
+			
+			label yes
+			`	"Allora vai subito su <planet>. Ho radunato là alcuni capitani della milizia che si uniranno a te in una flotta da battaglia. Il nostro obiettivo è Greenrock. È ora o mai più, prima che il Senato finisca il suo lavoro di evirazione del nostro esercito."`
+			
+			label others
+			`	Proprio allora JJ esce dal bar e ti vede parlare con Tomek. "Tomek," dice, "che cosa stai facendo? Freya e io ti aspettiamo dentro." Ti fa cenno di entrare nel bar.`
+			`	Dentro, Freya e Alondo sono seduti a un tavolo e guardano la mappa galattica malconcia di Tomek. Tomek, JJ e tu vi sedete con loro.`
+				goto explain
+			
+			label diplomacy
+			`Trovi Tomek nel bar dello spazioporto, che parla con Freya, JJ e Alondo intorno alla sua mappa galattica malconcia. "Beh, Capitano," dice Tomek, "sarai contento di sentirlo. Il Senato ha raccomandato lo stesso approccio che hai proposto tu: negoziare con i pirati." Sembra molto contrariato.`
+			
+			label explain
+			`	JJ spiega: "Ci è stato chiesto di consegnare un ultimatum a ogni mondo pirata: le Free Worlds mantengono il diritto di attaccare qualsiasi nave impegnata nella pirateria. Ogni mondo che continuerà a sostenere la pirateria, la schiavitù o la fabbricazione illegale di armi sarà un obiettivo militare legittimo per noi. Ma prima dobbiamo offrire a ogni mondo la possibilità di diventare davvero autonomo e libero da interventi esterni, se si impegnerà a cessare quelle attività."`
+			`	Freya dice: "Il fatto è che, come in qualsiasi altro mondo, la maggior parte della gente sui pianeti 'pirata' è solo di contadini comuni, o operai, o roba del genere. L'unica differenza è che non vogliono un governo esterno che dica loro come vivere. Quindi è questo che offriremo."`
+			`	"La nostra prima missione sarà su Thule, nel sistema Men," dice Alondo. "Anche se Thule non è il più grande centro di pirateria della regione, è il più popoloso con quasi un miliardo di persone, una popolazione maggiore di tutti gli altri mondi pirata della regione messi insieme. Speriamo che, raggiungendo prima un accordo con la maggioranza della popolazione dei mondi pirata della regione, sarà più facile negoziare con gli altri. Le trattative le guiderò io."`
+			choice
+				`	"È una buona notizia! Penso che il Senato abbia fatto la scelta giusta."`
+				`	"Come si negozia con un miliardo di anarchici? Sembra che ci vorrà un'eternità."`
+					goto anarchists
+				`	"Non ha alcun senso. Se lasciamo in pace quei mondi pirata, ci pugnaleranno alle spalle prima o poi."`
+					goto disagree
+			
+			`	"Beh, penso che il Senato abbia acqua nelle vene invece del sangue," dice Tomek, "e penso che chiedere agli anarchici un contratto diplomatico vincolante sia un esercizio di futilità. Dovremmo parlare con loro nell'unico linguaggio che capiscono: la violenza."`
+				goto plan
+			
+			label anarchists
+			`	"Bella domanda," commenta Tomek con sarcasmo. "È quasi come se questo fosse un esercizio di futilità. Dovremmo parlare con loro nell'unico linguaggio che capiscono: la violenza."`
+				goto plan
+			
+			label disagree
+			`	"Assolutamente," dice Tomek. "Il Senato non sa che cosa sia meglio per loro. Forse dovremmo salvarli dalla loro stessa stupidità e assicurarci che si faccia la cosa giusta. Un mondo di anarchici non arriverà mai a un accordo vincolante. Dovremmo parlare con loro nell'unico linguaggio che capiscono: la violenza."`
+			
+			label plan
+			`	"Tomek," dice Freya, "questa è una democrazia. Seguiamo gli ordini del Senato."`
+			`	"E se quegli ordini fossero sbagliati?" urla Tomek, attirando l'attenzione di alcuni avventori del bar. "Quando mai la diplomazia ha funzionato con i pirati? La diplomazia ha funzionato per la Repubblica negli anni 2800, quando cercava di eliminare la tratta degli schiavi in tutta la galassia? Ha funzionato la diplomazia durante gli anni di abbandono in cui la Marina ci ha lasciati soli con le incursioni continue che il Sud ha subito? No, non ha funzionato! È stata la forza della Marina della Repubblica a quasi eliminare la tratta degli schiavi! È stata la forza della NOSTRA milizia a porre finalmente fine alle incursioni continue contro la nostra gente!"`
+			`	"Tomek, basta così," dice Alondo a voce bassa.`
+			`	JJ, ignorando le sfuriate di Tomek, ti dice: "Capitano <last>, il Senato vuole che tu vada su Thule e consegni il loro ultimatum. Ti sarà data una sola Falcon come scorta: non abbastanza per una flotta da battaglia, appena sufficiente a tenerti al sicuro. Devi evitare di ingaggiare i pirati che incontri, se possibile. Alondo sarà a bordo della Falcon e negozierà con la gente del posto quando arrivate. Chiaro?"`
+			choice
+				`	"Chiaro."`
+					goto agree
+				`	"Quindi non attaccheremo i pirati?"`
+			`	Tomek dice: "No, li lasceremo stare lì ad aspettare di pugnalarci alle spalle alla prima occasione."`
+				goto senate
+			
+			label agree
+			`	Tomek ti guarda incredulo. "Quindi dai ragione a loro? Lasci che i pirati ci pugnalino alle spalle alla prima occasione?"`
+			
+			label senate
+			`	JJ gli mette una mano sulla spalla e dice, con un tono un po' più fermo di quello di Alondo: "Calmati, Tomek. Stiamo obbedendo agli ordini del Senato. Dobbiamo onorare il processo democratico anche quando non ci piacciono le decisioni che prende."`
+			`	"Oh, il Senato. Certo. Il Senato di qua, il Senato di là," dice Tomek con sarcasmo, buttando la testa all'indietro. "Il Senato non è in posizione per comandare questa guerra. Non ha l'esperienza militare di JJ o la mia. Pensi che il Parlamento della Repubblica si metta a votare su ogni piccolo movimento di flotta, o pensi che abbiano messo la cosa nelle mani della Marina dicendole di vincere questa guerra? Ti ho spiegato chiaramente molte volte perché non volevo convocare il Senato: perché non avrebbe fatto che ostacolarci e azzopparci, impedendoci di vincere questa guerra, ed è esattamente quello che sta già facendo!"`
+			`	"Tomek! Basta così!" urla JJ, il che sembra attirare ancora più sorpresa e attenzione di quando ha urlato Tomek. "Il Consiglio ha deciso che il Senato si sarebbe riunito, e così è stato. È solo per grazia del Senato che il Consiglio esiste ancora."`
+			`	"E sarà per grazia di Dio che non finiremo tutti morti per colpa sua," risponde Tomek.`
+			`	JJ si volta verso di te e Alondo. "<first>. Alondo. Prego che la vostra missione su Thule sia un successo."`
+			`	"Ti presento la tua scorta," dice Tomek, liberandosi della mano di JJ mentre ti porta fuori dal bar.`
+			
+			branch remember
+				not "fw pirate suggestion: diplomacy"
+			`	Una volta fuori, ti prende da parte e dice: "Se in qualsiasi momento vieni attaccato dai pirati lungo la strada o cambi idea, vai su <planet>. Ho radunato là una flotta da battaglia che aspetta: capitani coraggiosi disposti a unirsi all'assalto a Greenrock. Se ti unisci a loro, dovrebbero avere abbastanza potenza di fuoco per prendere il sistema."`
+			choice
+				`	"Mi stai chiedendo di andare contro la decisione del Senato?"`
+				`	"Capito."`
+					accept
+			`	"Lascia perdere," dice, "immagino che tu sia debole di volontà come tutti gli altri." Torna nel bar e ti lascia solo.`
+				accept
+			
+			label remember
+			`	Una volta fuori, ti prende da parte e dice: "Ricordati di quello di cui abbiamo parlato, <first>." Torna nel bar e ti lascia solo.`
+				accept
+
+
+
+mission "FW Pirates: Attack 2"
+	landing
+	name "Attacca Greenrock"
+	description "Disobbedendo agli ordini del Senato, lancia un attacco in forze al mondo pirata di <destination>, poi atterraci."
+	source "Trinket"
+	destination "Greenrock"
+	clearance
+	to offer
+		has "FW Pirates: Attack 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Quando atterri su <origin>, trovi la flotta di cui Tomek parlava: qualche nave da guerra pesante e media della milizia, una porta-navi, tre squadroni di intercettori e persino quattro mercantili di dimensioni diverse. In totale la flotta è quasi grande quanto una di quelle che hanno difeso Sabik o Kornephoros, ma mentre passi in rassegna quel misto eterogeneo di veterani induriti della milizia, giovani piloti di intercettore ingenui e capitani mercantili pieni di entusiasmo, non puoi fare a meno di chiederti se una flotta di queste dimensioni abbia buone possibilità contro il più forte mondo pirata dello spazio del Sud.`
+			`	La Marina non è riuscita a conquistare Longjump. Perché mai una flotta di dimensioni simili dovrebbe riuscire a conquistare Greenrock? Forse il Senato aveva ragione a suggerire una soluzione diplomatica. O forse la fortuna sarà dalla tua parte.`
+			choice
+				`	(Procedi e attacca Greenrock, disobbedendo agli ordini del Senato quali che siano le conseguenze.)`
+				`	(Rinuncia al piano di Tomek e segui gli ordini del Senato di fare una visita diplomatica a Thule.)`
+					decline
+			`	Parli con alcuni capitani della flotta d'invasione. A quanto pare Tomek è stato impegnato a girare per gli spazioporti tenendo discorsi infiammati sulla fine della pirateria e della schiavitù una volta per tutte nel Sud, ed è per questo che la flotta è così grande nonostante non sia autorizzata dal Senato. Questo spiega anche la presenza di qualche capitano mercantile: probabilmente capitani del posto che hanno sentito i discorsi e non hanno interesse a unirsi alle Free Worlds per combattere contro la Marina, ma sarebbero più che felici di rendere la vita più facile ai loro mercantili se la cosa riesce.`
+			`	Hai intenzione di partire dopo il calare della notte, il che sperabilmente significa che Alondo non si accorgerà che l'hai lasciato indietro finché non sarà troppo tardi. Ora non resta che viaggiare fino a <system>, sconfiggere qualsiasi opposizione trovi e atterrare su <planet>. O morire provandoci.`
+				accept
+	
+	on accept
+		event "battle for Greenrock"
+
+	npc evade
+		government "Pirate"
+		personality plunders staying
+		system "Shaula"
+		fleet
+			government "Pirate"
+			names "pirate"
+			variant
+				"Falcon (Heavy)"
+				"Clipper (Heavy)"
+				"Modified Argosy"
+		fleet
+			government "Pirate"
+			names "pirate"
+			variant
+				"Bastion"
+				"Modified Argosy" 2
+		fleet
+			government "Pirate"
+			names "pirate"
+			variant
+				"Bastion"
+				"Sparrow (Gatling)" 3
+		fleet
+			government "Pirate"
+			names "pirate"
+			variant
+				"Splinter (Proton)"
+		fleet
+			government "Pirate"
+			names "pirate"
+			variant
+				"Firebird (Plasma)"
+				"Corvette (Speedy)"
+				"Scout (Speedy)"
+		fleet
+			government "Pirate"
+			names "pirate"
+			variant
+				"Hawk"
+				"Hawk (Rocket)"
+		fleet
+			government "Pirate"
+			names "pirate"
+			variant
+				"Mule (Heavy)"
+				"Dagger"
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora pirati che difendono il sistema. Tutti i pirati del sistema devono essere eliminati prima che <planet> possa essere preso.`
+	on complete
+		event "fw suppressed Greenrock"
+		log "Hai disobbedito al Senato delle Free Worlds aiutando a lanciare un attacco al mondo centrale della pirateria, Greenrock. Hai conquistato il pianeta dopo una battaglia enorme, ma non è chiaro per quanto tempo le Free Worlds possano permettersi di tenerlo sottomesso con la forza."
+		conversation
+			`Mentre il resto della flotta d'invasione si avvicina per atterrare su <origin>, vedi piccole navi pirata disperdersi dallo spazioporto, non verso lo spazio, ma verso gli angoli più remoti delle terre selvagge di Greenrock. Quando raggiungi lo spazioporto, c'è un misto selvaggio di emozioni fra la gente del posto rimasta. Alcuni ti sputano addosso e ti insultano. Altri ti ringraziano per aver scacciato i pirati, anche se solo temporaneamente. Altri ancora ti ringraziano per averli liberati e chiedono un passaggio fuori dal pianeta prima che gli schiavisti tornino; Greenrock è il centro della tratta clandestina di schiavi della galassia, e sembra che nella confusione e nella fretta di alcuni criminali di fuggire dallo spazioporto, gli schiavi siano stati lasciati indietro.`
+			`	Nel tentativo di non farsi assassinare da pirati in cerca di vendetta, la flotta dispone le navi in cerchio appena fuori dallo spazioporto e tiene d'occhio eventuali aggressori, aspettando che si presenti Tomek, o chiunque abbia autorità nelle Free Worlds, per decidere la prossima mossa.`
+			`	Ore dopo arriva la nave di Tomek, con ancora più navi al seguito, probabilmente per sostenere un'occupazione prolungata. Tomek saluta la flotta d'invasione, raggiante. "Lavoro meraviglioso, tutti quanti. La gente delle Free Worlds vi ringrazierà per generazioni." Tomek ordina ai membri della flotta di occupazione di setacciare lo spazioporto, liberando gli schiavi che trovano e arrestando i criminali e i signori della guerra noti. "Non possiamo certamente prendere ogni criminale che c'è qui, ma se trovate qualcuno con un nome importante, dobbiamo cogliere l'occasione di arrestarlo."`
+			`	Quando Tomek ha finito di dare ordini e di festeggiare, si avvicina a te e ti stringe la mano con fermezza. "Grazie per aver ascoltato la ragione, Capitano <last>. So di averti chiesto molto quando ti ho chiesto di disobbedire direttamente agli ordini del Senato."`
+			choice
+				`	"E adesso?"`
+				`	"Sono sicuro che ci metteremo nei guai per questo."`
+					goto trouble
+			
+			`	Tomek sorride. "Adesso facciamo quello che possiamo per stanare i criminali e i signori della guerra da questo posto finché abbiamo il vantaggio. Più danni riusciamo a fargli, meno gente innocente dentro le Free Worlds verrà ferita dalla pirateria in futuro. Ho già ordinato agli uomini di setacciare lo spazioporto, e lasceremo qui una flotta di stanza per un po' a mantenere la pace. Col tempo potremmo doverci ritirare per concentrarci di nuovo sulla Marina, ma per ora Greenrock è nostra."`
+			`	"E il Senato?" chiedi. "Ci metteremo di sicuro nei guai per questo."`
+			
+			label trouble
+			`	"Nessuna buona azione resta impunita, suppongo," dice Tomek. "Nonostante la grande occasione che abbiamo creato per le Free Worlds, non ho dubbi che il Senato non sarà contento di quello che abbiamo fatto qui. Se tenteranno di punirci, lascia che mi prenda io la piena responsabilità di quello che è stato fatto. Hanno bisogno di me, quindi la mia punizione non sarà troppo severa, e qualsiasi punizione venga inflitta a te dovrebbe essere sperabilmente minore in confronto. Se ti chiedono, stavi semplicemente seguendo gli ordini di un superiore."`
+			`	Proprio allora senti un'altra nave in avvicinamento per atterrare. Alzate entrambi lo sguardo e vedete un Falcon atterrare nello spazioporto: il Falcon di Alondo, quello che avresti dovuto scortare fino a Thule. Tomek ha un'espressione cupa. "Lascia che parli io con loro per primo," ti dice. "Raggiungici allo spazioporto più tardi. Speriamo che a quel punto abbia appianato le cose."`
+
+
+mission "FW Pirates: Invasion Fleet"
+	invisible
+	landing
+	source "Trinket"
+	# The fleet despawns immediately, but the mission persists until it gets "completed" alongside
+	# the next visible mission in the chain and so can be used as a condition in later missions.
+	destination "Deep"
+	to offer
+		has "FW Pirates: Attack 1: done"
+	to complete
+		has "FW Pirates: Attack 2: done"
+	to fail
+		has "FW Pirates: Attack 2: declined"
+
+	npc save
+		to despawn
+			or
+				has "FW Pirates: Attack 2: done"
+				has "FW Pirates: Attack 2: declined"
+		government "Free Worlds"
+		personality heroic escort
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Laser)"
+				"Bastion (Laser)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Osprey"
+				"Osprey (Missile)"
+		fleet
+			names "free worlds capital"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Skein"
+				"Finch" 6
+		fleet
+			names "free worlds small"
+			variant
+				"Hawk"
+				"Hawk (Speedy)"
+				"Hawk (Plasma)"
+				"Hawk (Bomber)"
+		fleet
+			names "free worlds small"
+			variant
+				"Fury (Missile)" 2
+				"Fury (Bomber)"
+		fleet
+			names "free worlds small"
+			variant
+				"Sparrow" 5
+	npc save
+		to despawn
+			or
+				has "FW Pirates: Attack 2: done"
+				has "FW Pirates: Attack 2: declined"
+		government "Merchant"
+		personality heroic escort
+		fleet
+			names "civilian"
+			variant
+				"Firebird"
+				"Behemoth"
+				"Modified Argosy"
+				"Clipper (Speedy)"
+
+
+event "battle for Greenrock"
+	system "Shaula"
+		fleet "Small Southern Pirates" 10000
+
+
+
+mission "FW Pirates: Attack 3"
+	name "Allerta precoce"
+	description "I sistemi di allerta precoce che hai installato su Hope hanno rilevato una presenza maggiore della Marina. Va' su <destination> per difenderti dal potenziale assalto della Marina. Qualsiasi punizione per l'invasione di Greenrock arriverà più tardi."
+	source "Greenrock"
+	destination "Deep"
+	to offer
+		has "FW Pirates: Attack 2: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Quando torni allo spazioporto, un ufficiale della milizia ti indica una piccola tenda adibita a posto di comando. Dentro trovi Tomek che parla con Freya e Alondo, entrambi piuttosto scontenti.`
+			`	"Non ti rendi conto in che posizione debole ci mette questo?" dice Alondo a Tomek. "Se vogliamo tenere Greenrock, sarà uno spreco continuo di risorse che al momento non possiamo permetterci."`
+			`	"Non stai guardando il quadro generale," risponde Tomek. "Sì, dovremo spendere risorse per tenere Greenrock sotto controllo, ma stiamo già spendendo quantità enormi di risorse per difendere i nostri pianeti, i nostri sistemi e i nostri mercantili dai pirati. Se abbiamo Greenrock sotto controllo e gli altri mondi pirata cominciano ad aver paura di agire contro di noi, allora sarà un unico posto concentrato su cui dobbiamo concentrarci, invece di essere sparsi in tutto il nostro territorio. Alla fine immagino che sarà un guadagno netto per noi."`
+			`	"Questo è ancora da vedere," dice Freya, "ma al momento siamo in rosso. Sai quanto dovremo spendere in riparazioni per via di questa tua trovata, non solo in crediti ma in ore di lavoro? Una quantità enorme della nostra flotta è fuori uso per colpa di questo. Se la Marina attaccasse adesso, saremmo praticamente indifesi."`
+			`	Tomek si interrompe quando ti nota sull'ingresso della tenda. Anche Freya e Alondo si voltano verso di te. "Vuoi spiegarci che cosa è successo?" chiede Freya.`
+			choice
+				`	"Stavo semplicemente seguendo gli ordini di un superiore. È stata un'idea di Tomek."`
+				`	"No."`
+					goto no
+			`	"Gli ordini del tuo superiore erano gli ordini del Senato di scortarmi a Thule per una missione diplomatica," risponde Alondo arrabbiato. "Ora che sono in ritardo e la notizia si è sparsa in fretta, la gente di Thule non ha interesse a negoziare. Sono sicuro che al Senato piacerebbe sentire la tua spiegazione. Sai benissimo che non dovevi venire qui, e invece sei venuto. Tu, Tomek e ogni altro capitano qui dovrete rispondere al Senato a breve."`
+				goto emergency
+			
+			label no
+			branch live
+				random < 99
+			`	Freya tira un profondo sospiro e guarda di lato per un momento, poi allunga la mano verso il fianco, estrae l'arma e ti spara. Non hai il tempo di reagire. Devi aver beccato Freya in una giornata particolarmente storta. Riprova.`
+				die
+			
+			label live
+			`	"Beh, forse sarai disposto a spiegarti davanti al Senato," risponde Alondo arrabbiato. "I tuoi ordini erano di scortarmi a Thule per una missione diplomatica, ma ora che sono in ritardo e la notizia si è sparsa in fretta, la gente di Thule non ha interesse a negoziare. Sai benissimo che non dovevi venire qui, e invece sei venuto. Tu, Tomek e ogni altro capitano che ha partecipato a questo attacco dovrete rispondere al Senato a breve."`
+			
+			label emergency
+			`	Prima che qualcuno possa continuare a discutere, JJ irrompe nella tenda. "Scusate l'interruzione, ma questa piccola lite dovrà aspettare. Mi è appena arrivata voce che i nostri sensori su Hope hanno rilevato movimenti crescenti della flotta della Marina. Sembra che si stiano preparando a un assalto."`
+			`	"Sono entrati nel nostro spazio?" chiede Alondo.`
+			`	"No, non ancora. Nemmeno un esploratore," dice JJ.`
+			`	"Lasciate qui una piccola flotta a mantenere l'occupazione, ma spostate il resto delle nostre forze disponibili su <system>," dice Tomek, prendendo in mano la situazione. "Richiamate le pattuglie a est. Potrebbero arrivare in ritardo a un eventuale battaglia, ma almeno possono servire da rinforzi se necessario."`
+			`	"Non sei in posizione per dare ordini," dice Freya, guardando Tomek con disgusto. "Tu e <first> dovreste essere entrambi agli arresti per aver disobbedito al Senato."`
+			`	"No," dice JJ. "Almeno non ancora. Se la Marina sta per attaccare, allora abbiamo bisogno di tutti quelli che possiamo avere. Risolveremo questa faccenda quando avremo il tempo. E per ora Tomek fa ancora parte del Consiglio. Ma se non vuoi ascoltare i suoi ordini, immagino che ascolterai i miei, e io sono d'accordo con Tomek, almeno in questo caso. Fate quello che dice. Spostate le nostre forze su <system> e richiamate le pattuglie."`
+			`	Detto questo, JJ lascia la tenda e corre verso una nave. Anche Alondo se ne va senza dire una parola. Mentre Freya si appresta a uscire, si volta verso di te e Tomek. "Sono molto delusa da voi. Da entrambi." Esce dalla tenda, lasciandovi soli.`
+			`	"Dovresti andare," dice Tomek, solenne. "E non farti ammazzare in questa battaglia solo per colpa di questo piccolo pasticcio. Per quanto delusi possano essere, hai ancora una parte da recitare. Le Free Worlds hanno ancora bisogno di te. Lo sento." Si ferma un momento prima di dire: "Ci vediamo su <planet>," e andarsene.`
+				accept
+	
+	on enter
+		dialog `Quando decolli, ricevi un messaggio dalla Terebinth, il trasporto di Alondo. "Salve, Capitano <last>. Sono il capitano della F.S. Terebinth. Ho il Consiglio a bordo. So che Greenrock è stata repressa, ma non mi sorprenderebbe se ci fossero pirati in cerca di vendetta. Ti va di coprirmi le spalle mentre andiamo su <planet>? Grazie."`
+	
+	npc accompany save
+		government "Free Worlds"
+		personality timid escort
+		ship "Falcon" "F.S. Terebinth"
+	npc
+		government "Pirate"
+		personality vindictive
+		system "Sargas"
+		fleet "Large Southern Pirates" 2
+	
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"
+
+
+
+mission "FW Pirates: Diplomacy 1"
+	autosave
+	name "Diplomazia con i pirati"
+	description "Seguendo gli ordini del Senato, va' su <destination> e negozia con le autorità che governano il pianeta. Non combattere i pirati se non devi, e non lasciare che la tua scorta venga distrutta."
+	source "Longjump"
+	destination "Thule"
+	clearance
+	to offer
+		has "FW Pirates 2: done"
+		# Backwards compatibility conditions. This mission was renamed, and these conditions avoid it from offering again on older saves.
+		not "fw first chapter done"
+		not "FW Refinery 1: offered"
+	to fail
+		has "event: battle for Greenrock"
+	
+	npc accompany save
+		government "Free Worlds"
+		personality timid escort
+		ship "Falcon" "F.S. Terebinth"
+	
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"
+	on complete
+		karma ++
+
+
+
+mission "FW Pirates: Diplomacy 2"
+	autosave
+	landing
+	name "Difendi Thule"
+	description "Distruggi la flotta pirata che sta attaccando lo spazioporto su Thule. I rinforzi delle Free Worlds dovrebbero essere in arrivo."
+	source "Thule"
+	clearance
+	to offer
+		has "FW Pirates: Diplomacy 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "battle for Thule"
+		conversation
+			`Una delle prime persone a scendere dal Falcon "Terebinth" quando atterra è Alondo. Gli chiedi qual è il piano.`
+			`	"Beh," dice, "le persone che incontrerò qui sono una specie di anziani delle tribù. Ma le tribù sono separate non tanto per etnia, quanto per geografia e ideologia. Non posso dire di capire tutte le sottigliezze, davvero, ma nelle questioni che riguardano l'intero pianeta hanno l'autorità di prendere decisioni per consenso. Naturalmente ci sono centinaia di insediamenti e gruppi indipendenti che possono o non possono rispettare quella decisione. Quindi mi dispiace dirlo, ma Tomek ha ragione che sarà difficile riuscirci."`
+			choice
+				`	"Quante probabilità pensi che abbiamo di una negoziazione riuscita?"`
+				`	"Che cosa facciamo se la diplomazia non funziona?"`
+			scene "scene/army0"
+			`	Prima che abbia la possibilità di rispondere, il cielo si illumina di raggi di particelle in arrivo, e vedi uno dei motori della Terebinth esplodere in una vampata di fiamme. "Che diavolo succede?" dice Alondo.`
+			`	Il capitano della Terebinth, che ti sta accanto, fissa la sua nave a bocca aperta per un secondo prima di scattare. "Capitano <last>," dice, "accendi subito la nave e vai dietro a chiunque ci stia attaccando. Chiamerò i rinforzi, ma dovrai tenere occupati gli attaccanti finché non arrivano."`
+				launch
+	
+	npc evade
+		government "Pirate"
+		personality plunders
+		ship "Leviathan" "Dire Rain"
+	npc evade
+		government "Pirate"
+		personality plunders entering
+		ship "Leviathan (Heavy)" "Red Dawn"
+		ship "Leviathan (Laser)" "Bleak Omen"
+	npc
+		government "Free Worlds"
+		personality heroic
+		system "Pherkad"
+		fleet "Small Free Worlds"
+		fleet "Large Free Worlds"
+	npc
+		government "Free Worlds"
+		personality heroic
+		system "Alniyat"
+		fleet "Small Free Worlds" 2
+		fleet "Large Free Worlds" 4
+	npc
+		government "Free Worlds"
+		personality heroic
+		system "Sabik"
+		ship "Falcon (Plasma)" "F.S. White Oak"
+		ship "Falcon (Plasma)" "F.S. Larch"
+		ship "Falcon (Plasma)" "F.S. Ironwood"
+	
+	on visit
+		dialog phrase "generic pirate fleet battle on visit"
+
+
+
+event "battle for Thule"
+	system "Men"
+		fleet "Small Southern Pirates" 10000
+
+
+
+mission "FW Pirates: Diplomacy 3"
+	autosave
+	landing
+	name "Torna a Longjump"
+	description "Scorta la F.S. Terebinth, appena riparata, fino alla base delle Free Worlds su <destination>."
+	source "Thule"
+	destination "Longjump"
+	to offer
+		has "FW Pirates: Diplomacy 2: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		"reputation: Independent" >?= 10
+		event "Thule becomes independent"
+		log "Gli anziani di Thule non vogliono unirsi alle Free Worlds, ma hanno accettato di contrastare l'attività pirata nel loro sistema e di accogliere i visitatori delle Free Worlds sul loro pianeta."
+		conversation
+			`Una coltre di fumo pende ancora sullo spazioporto, e mentre ti avvicini per atterrare sorvoli una piazzola dove sono stati disposti fianco a fianco i corpi coperti da lenzuoli: decine di vittime. Diversi edifici sono in rovina, alcuni ancora fumanti.`
+			`	Alondo è sopravvissuto, per fortuna. Ti dice: "Mentre lo scontro infuriava là sopra, ho incontrato gli anziani, e hanno convenuto che, ora che le Free Worlds esistono e opporsi ai pirati è un'opzione praticabile, cercheranno di porre fine alla pirateria in questo sistema. Ma non hanno alcun interesse a unirsi alle Free Worlds."`
+			choice
+				`	"Era il massimo che potevamo sperare, no?"`
+					goto best
+				`	"Finché abbiamo la flotta qui, perché non chiedere semplicemente che si uniscano a noi?"`
+			`	"Non puoi costringere la gente a unirsi a una democrazia," dice. "Magari un giorno saranno pronti, ma nel frattempo qualsiasi pressione che esercitiamo su di loro li trasformerà da quasi-alleati in nemici."`
+				goto next
+			label best
+			`	"Esatto," dice, "mi dispiace dirlo, ma quell'attacco dei pirati ha in realtà aiutato la nostra causa. Ma solo il tempo dirà che cosa verrà da questo esperimento di lasciare i mondi 'indipendenti'. Se sempre più mondi cominceranno a volere l'indipendenza totale, invece di unirsi a noi, il nostro futuro potrebbe non essere sostenibile."`
+			label next
+			`	"E allora qual è il prossimo passo?" chiedi.`
+			`	"Beh, la Terebinth è stata rattoppata, ma un po' di scorta fino a <planet> le servirebbe. Dopo, dovrai vedere che cosa vogliono farti fare il Senato o il Consiglio."`
+				accept
+	
+	npc accompany save
+		government "Free Worlds"
+		personality timid escort
+		ship "Falcon" "F.S. Terebinth"
+	
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"
+
+
+
+mission "FW Pirates: Diplomacy 4"
+	landing
+	name "Allerta precoce"
+	description "I sistemi di allerta precoce che hai installato su Hope hanno rilevato una presenza maggiore della Marina. Va' su <destination> per difenderti dal potenziale assalto della Marina. Qualsiasi punizione per l'invasione di Greenrock arriverà più tardi."
+	source "Longjump"
+	destination "Deep"
+	to offer
+		has "FW Pirates: Diplomacy 3: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fw suppressed Greenrock"
+		conversation
+			`Torni su Longjump e trovi un'accoglienza da eroe. La gente ha sentito della battaglia che hai combattuto su Thule e dell'accordo raggiunto con la gente del posto. Anche JJ e Freya ti salutano e si congratulano. Ma poi Freya dice: "Dobbiamo parlare in privato."`
+			`	Li fai entrare nella tua nave, dove Freya spiega: "Poco dopo la tua partenza per Thule, Tomek è partito per conto suo e ha radunato una flotta per un attacco a Greenrock. Pensava che il piano del Senato di fare un accordo con i mondi pirata fosse troppo codardo, e che invece servisse una dimostrazione di forza. Sorprendentemente, la sua trovata è riuscita; Greenrock ora è nominalmente sotto il controllo delle Free Worlds."`
+			`	"Questo ci mette in una posizione piuttosto difficile," dice JJ. "Gran parte della flotta di Tomek non è sopravvissuta all'assalto, e quelle navi non sono uscite dal nulla: erano destinate alla difesa nel caso la Marina attacchi di nuovo. La notizia si è sparsa in fretta. Thule sta già rimettendo in discussione l'accordo con noi, e se Thule ne ha sentito parlare, non ho alcun dubbio che anche la Repubblica lo sappia."`
+			`	"E a prescindere dal suo successo, un'invasione di Greenrock non è stata approvata dal Senato," dice Freya. "Tomek è stato fermato su Greenrock da alcuni dei nostri ufficiali su ordine del Senato, e al momento è in trasferimento verso Bourne per un'udienza."`
+			choice
+				`	"Perché Tomek avrebbe fatto una cosa del genere? È impensabile!"`
+				`	"Come fa il Senato ad arrestarlo? Fa parte del Consiglio!"`
+					goto defend
+			`	"È facile rispondere," dice Freya. "Non gli piaceva l'idea di prendere ordini dal Senato. Pensava che dovessero trattarlo come un eroe e assecondare quello che riteneva meglio."`
+			`	"È davvero così facile?" dice JJ a voce bassa. Freya alza un sopracciglio, ma non risponde alla domanda.`
+				goto next
+			label defend
+			`	JJ e Freya restano entrambi in silenzio per un minuto, poi Freya dice: "Sai, ci sono persone nel Senato che temono che il Consiglio possa diventare l'autorità dominante nelle Free Worlds, invece di un Senato democratico. Non sarebbe la prima volta che una rivoluzione popolare si trasforma in un'oligarchia. Noi del Consiglio dobbiamo stare attenti a non permetterlo."`
+			label next
+			`	"Allora, che cosa succederà a Tomek?" chiedi.`
+			`	"Lo deciderà il Senato," dice JJ. "Ma è un genio tattico. Avremo bisogno dei suoi consigli, se questa guerra peggiora."`
+			`	Proprio allora Alondo entra di corsa nella tua nave, con un'aria particolarmente preoccupata. "Spero di non interrompere niente di troppo importante, ma mi è appena arrivata voce che i nostri sensori su Hope hanno rilevato movimenti crescenti della flotta della Marina. Sembra che si stiano preparando a un assalto."`
+			`	"Sono entrati nel nostro spazio?" chiede JJ.`
+			`	"No, non ancora. Nemmeno un esploratore," dice Alondo.`
+			`	"Dovremmo andare su <planet> prima di decidere la prossima mossa," dice Freya.`
+			`	"A proposito," dice Alondo. "Sembra che Tomek ci abbia battuti sul tempo. La notizia che il Senato lo stava arrestando non si è sparsa abbastanza in fretta, e un ufficiale gli ha dato la notizia dei sensori. Ha sostenuto che, dato che la sua posizione nel Consiglio non è ancora stata revocata, ha ancora il potere di comandare la milizia, e ha già ordinato a tutte le forze disponibili di andare su <system>, compreso il richiamo delle nostre pattuglie nella Fascia di Terra orientale. Gli ufficiali che lo trattenevano hanno accettato a malincuore, vista la situazione, e l'hanno rilasciato."`
+			`	"Che cosa?" dice Freya incredula. "Tomek non è in posizione per dare ordini! Fate sapere a tutti che non va obbedito!"`
+			`	"No," dice JJ. "Almeno non ancora. Se la Marina sta per attaccare, abbiamo bisogno di tutti quelli che possiamo avere. Risolveremo la faccenda quando avremo il tempo. E per ora Tomek fa ancora parte del Consiglio. Ma se non vuoi ascoltare i suoi ordini, immagino che ascolterai i miei, e io sono d'accordo con Tomek, almeno in questo caso. Fate quello che dice. Spostate le nostre forze su <system> e richiamate le pattuglie."`
+			`	Freya non discute con JJ. "Dovremmo andare," dice Alondo. "La Terebinth ha spazio per tutti noi. Sono sicuro che Tomek troverà il modo di arrivare su <planet> da solo."`
+				accept
+	
+	npc accompany save
+		government "Free Worlds"
+		personality timid escort
+		ship "Falcon" "F.S. Terebinth"
+	
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"
+
+
+
+mission "FW Early Warning 1"
+	landing
+	name "Allerta precoce"
+	description "La Marina sembra prepararsi a un attacco. Esplora i sistemi <waypoints>, appena a nord dello spazio delle Free Worlds, per stabilire la forza della Marina che c'è."
+	source "Deep"
+	waypoint "Alioth"
+	waypoint "Alnasl"
+	waypoint "Alphecca"
+	waypoint "Seginus"
+	waypoint "Wei"
+	to offer
+		or
+			has "FW Pirates: Attack 3: done"
+			has "FW Pirates: Diplomacy 4: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			branch greenrock
+				has "FW Pirates: Attack 3: done"
+			`Quando arrivi all'edificio del quartiermastro nello spazioporto, dove si sta radunando la milizia, scopri che il resto del Consiglio ha già trovato Tomek e sta discutendo con lui davanti a una folla silenziosa di ufficiali della milizia che sembrano assistere a una lite fra i genitori.`
+			`	"Non ti rendi conto in che posizione debole ci mette questo?" dice Alondo a Tomek. "Se vogliamo tenere Greenrock, sarà uno spreco continuo di risorse che al momento non possiamo permetterci."`
+			`	"Non stai guardando il quadro generale," risponde Tomek. "Sì, dovremo spendere risorse per tenere Greenrock sotto controllo, ma stiamo già spendendo quantità enormi di risorse per difendere i nostri pianeti, i nostri sistemi e i nostri mercantili dai pirati. Se abbiamo Greenrock sotto controllo e gli altri mondi pirata cominciano ad aver paura di agire contro di noi, allora sarà un unico posto concentrato su cui dobbiamo concentrarci, invece di essere sparsi in tutto il nostro territorio. Alla fine immagino che sarà un guadagno netto per noi."`
+			`	"Questo è ancora da vedere," dice Freya, "ma al momento siamo in rosso. Sai quanto dovremo spendere in riparazioni per via di questa tua trovata, non solo in crediti ma in ore di lavoro? Una quantità enorme della nostra flotta è fuori uso per colpa di questo. Se la Marina attaccasse adesso, saremmo praticamente indifesi."`
+			`	Tomek si ferma un momento, lasciando spazio a JJ. "Possiamo discutere le conseguenze delle azioni di Tomek più tardi. Per ora dobbiamo concentrarci sulla situazione presente."`
+				goto report
+			
+			label greenrock
+			`Arrivi all'edificio del quartiermastro nello spazioporto, dove si sta radunando la milizia. Il Consiglio è fuori, insieme a una folla silenziosa di ufficiali della milizia che sembra aver appena assistito a una lite fra i genitori.`
+			
+			label report
+			`	"Entriamo," dice Tomek, facendo cenno a diversi ufficiali della milizia di seguirlo. Mentre entrano in fila, fa cenno anche a te.`
+			choice
+				`	(Entra pure.)`
+			`	Dentro c'è un grande tavolo con al centro una mappa della regione, molto più bella di quella che Tomek usava su Longjump. "Ufficiale Sullivan, ci dia un rapporto sulla situazione," dice JJ.`
+			`	"Sissignore. Come quartiermastro di Deep, ho monitorato i risultati dei sensori di allerta precoce installati su Hope dal Capitano <last>. Per mesi abbiamo ricevuto solo un ping occasionale di navi della Marina che entravano nel sistema, presumibilmente flotte esplorative o flotte di passaggio dal settore occidentale della Fascia di Terra verso est.`
+			`	"Ma a partire dall'ultima settimana, il numero di navi della Marina che attraversano il sistema ha cominciato ad aumentare rapidamente. Siamo passati da una flotta ogni pochi giorni a più di una al giorno, e quelle flotte che entravano spesso restavano più a lungo per ragioni ignote."`
+			branch sensors
+				has "fw caught navy planting sensors"
+			`	"Qualunque cosa siamo capaci di fare noi, loro sono capaci di farla e anche di più," dice JJ. "Non mi sorprenderebbe se sapessero dei nostri sensori e stessero cercando di usarli contro di noi."`
+				goto next
+			
+			label sensors
+			`	"Il Capitano <last> ha scoperto una cannoniera della Marina che installava sensori propri su Hope quando abbiamo installato i nostri," dice JJ. "Di sicuro sospettano che ne abbiamo anche noi."`
+			label next
+			`	"Ci stanno provocando," dice Tomek. "O ci stanno distraendo."`
+			`	"Distraendo da che cosa?" chiede Alondo.`
+			`	Tomek riflette un momento. "Qualcuna delle pattuglie orientali è già rientrata?"`
+			`	"Nessuna," dice un ufficiale. "La maggior parte delle nostre pattuglie è rimasta vicino a Tarazed per restare fuori portata della Marina. Ci vorranno ancora qualche giorno perché comincino ad arrivare."`
+			branch "no casualties"
+				has "FW Pirates: Invasion Fleet: done"
+			
+			`	"Ci farebbero proprio comodo quelle navi perse attaccando Greenrock," sibila Freya.`
+				goto task
+
+			label "no casualties"
+			`	"Tirare fuori le nostre flotte dalla posizione per attaccare Greenrock ha proprio aiutato il nostro programma di pattugliamento," sibila Freya.`
+
+			label task
+			`	Tomek la ignora. "Va bene, Capitano <last>, voglio che esplori <waypoints>. Entra nei sistemi, guarda che forze ha la Marina, poi vattene il prima possibile. Dobbiamo sapere contro che cosa stiamo andando, se la Marina si sta davvero muovendo per attaccare da Wei. Se si scopre che è una distrazione, sperabilmente a quel punto avremo informazioni dalle flotte di pattuglia che rientrano."`
+				accept
+	
+	npc
+		government "Republic"
+		personality staying heroic
+		system "Wei"
+		fleet
+			names "republic capital"
+			variant
+				"Frigate"
+				"Gunboat" 3
+				"Rainmaker"
+	npc
+		government "Republic"
+		personality staying heroic
+		system "Seginus"
+		fleet
+			names "republic capital"
+			variant
+				"Frigate" 2
+				"Gunboat" 2
+				"Rainmaker"
+		fleet
+			names "republic capital"
+			variant
+				"Protector (Quad Blaster)"
+	npc
+		government "Republic"
+		personality staying heroic
+		system "Alphecca"
+		fleet
+			names "republic capital"
+			variant
+				"Frigate" 2
+				"Gunboat" 2
+				"Rainmaker"
+		fleet
+			names "republic capital"
+			variant
+				"Frigate"
+				"Gunboat" 2
+
+	npc
+		government "Republic"
+		personality staying heroic
+		system "Alioth"
+		fleet
+			names "republic capital"
+			variant
+				"Gunboat"
+				"Rainmaker" 2
+		fleet
+			names "republic capital"
+			variant
+				"Protector (Quad Blaster)"
+				"Protector"
+	
+	on visit
+		dialog phrase "generic waypoint on visit"
+
+
+
+mission "FW Early Warning 2"
+	landing
+	name "Alla ricerca di Harmony"
+	description "<planet> è diventata una zona di cessate il fuoco non ufficiale per le pattuglie della Marina e delle Free Worlds nella Fascia di Terra orientale. Porta lì JJ per tentare di negoziare con la Marina e impedire un attacco."
+	source "Deep"
+	destination "Harmony"
+	passengers 1
+	blocked `JJ ti contatta e dice: "Capitano, avrai bisogno di una cuccetta libera per me. Hai spazio?" Non ne hai, quindi dovresti completare o interrompere un'altra missione per fargli posto, poi tornare qui.`
+	to offer
+		has "FW Early Warning 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	on offer
+		conversation
+			`Quando torni, trovi Tomek e JJ che parlano con i capitani delle pattuglie orientali. Il resto del Consiglio è stato allontanato dal pianeta nel caso la Marina riprenda Kornephoros.`
+			`	"Bentornato, Capitano," dice Tomek. "Spero che la tua missione di ricognizione sia andata bene."`
+			choice
+				`	"Sì. La Marina non mi ha dato troppo fastidio attraversando i loro sistemi."`
+				`	"La Marina mi ha dato qualche difficoltà, ma sono riuscito a cavarmela."`
+			`	Riferisci a Tomek e JJ della forza delle flotte della Marina, menzionando le piccole flotte a Wei e le flotte più grandi ad Alioth, Alphecca e Seginus. "Ho anche avvistato qualche Protector con i colori della Marina," aggiungi. "Facevano parte delle flotte della Marina."`
+			`	"Pensavo avessimo un accordo sul fatto che il Sindacato non avrebbe agito come mercenario per la Repubblica," dice JJ.`
+			`	"Non hanno mai detto niente sulla vendita di forniture alla Repubblica," dice Tomek. "Dopotutto fanno la stessa cosa per noi."`
+			choice
+				`	"Qual è la nostra prossima mossa?"`
+				`	"Abbiamo imparato qualcosa dalle pattuglie?"`
+			`	"Le pattuglie ci dicono che la presenza della Marina a est è calata di recente," dice Tomek. "La maggior parte è ancora là, ma il calo è stato abbastanza grande da essere notato dalle nostre pattuglie."`
+			`	"A quanto pare le pattuglie della Marina e quelle della milizia nella Fascia di Terra orientale sono in rapporti amichevoli," dice JJ. "Nessuno scambio di informazioni, naturalmente, ma non si sparano addosso. Nessuna delle due parti ha trovato vantaggioso attaccare l'altra: le pattuglie della Marina sono più armate delle nostre, quindi le nostre non le provocano, ma se le pattuglie della Marina attirassero la nostra attenzione potrebbero essere facilmente tagliate fuori. Così facendo, siamo riusciti a tenere un conteggio accurato delle rispettive presenze a est."`
+			`	"Il che significa che avranno notato anche il nostro calo di presenza là," dice Tomek. "Sanno che noi sappiamo che si stanno muovendo a nord di noi. Speriamo che attirarci a richiamare le pattuglie non facesse parte del loro piano."`
+			`	"Beh, se le nostre pattuglie sono già amichevoli, forse possiamo convincerli a evitare un'altra battaglia," dice JJ.`
+			`	"<planet> è diventata una specie di zona neutrale," interviene uno degli ufficiali della milizia, presumibilmente uno delle pattuglie orientali. "Le pattuglie della Marina e della milizia si incrociano nello spazioporto senza incidenti. Gente della Repubblica e delle Free Worlds che si conosce si incontra lì spesso. Potremmo organizzare un incontro là."`
+			`	"Andrò io a parlare con la Marina. Il Capitano <last> sarà il mio trasporto," dice JJ. "Tomek resterà qui con la flotta." Tomek annuisce d'accordo. "Riunione aggiornata."`
+			`	Dopo che gli ufficiali se ne sono andati, restate solo tu, JJ e Tomek. JJ ti dice di aspettare fuori. "Voglio parlare con Tomek in privato un momento."`
+			`	Esci dall'edificio e ti fermi accanto alla porta. Da dentro senti il mormorio di Tomek e JJ che parlano. Potresti probabilmente premere l'orecchio sulla porta per sentire che cosa succede.`
+			choice
+				`	(Allontanati per non sentire niente.)`
+					goto away
+				`	(Metti l'orecchio alla porta.)`
+			`	"Andrai pacificamente al Senato quando questa situazione sarà risolta, vero, Tomek?" chiede JJ.`
+			`	"Ho fatto quello che dovevo, e non combatterò la punizione che riceverò," risponde Tomek. "Ma sta a te non sprecare l'occasione che ci ho offerto."`
+			`	"Farò quello che posso," dice JJ.`
+			`	Senti JJ avvicinarsi alla porta e ti allontani per non essere visto origliare. Esce dall'edificio.`
+				goto end
+			label away
+			`	Quando hanno finito di parlare, JJ esce dall'edificio.`
+			label end
+			`	"Va bene, muoviamoci in fretta," dice. "Non si può sapere quando la Marina potrebbe attaccare. Traccia una rotta per <destination>. Contatterò la Marina e organizzerò l'incontro mentre andiamo."`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta JJ non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Early Warning 3"
+	autosave
+	landing
+	name "Harmony perduta"
+	description "I colloqui di pace con la Marina sono falliti. Un'altra battaglia sembra inevitabile. Torna su <destination> con JJ per prepararti."
+	source "Harmony"
+	destination "Deep"
+	passengers 1
+	to offer
+		has "FW Early Warning 2: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "People" "Ranulph Hines" "Ranulph Hines is a commander within the Republic Navy. While a competent leader, he has a reputation for disregarding many of the Navy's old traditions, instead preferring to do things his own way."
+		conversation
+			`Quando arrivi, vedi che i soldati della Marina e delle Free Worlds del posto si sono già radunati nello spazioporto, tenendosi a distanza gli uni dagli altri. La notizia dell'incontro deve essersi già sparsa fra i ranghi. Vedi alcuni civili che continuano la loro giornata, mentre altri stanno intorno a guardare i soldati, ma anche con tutti quei soldati e civili le strade sembrano vuote; forse molti dei civili che di solito sarebbero qui hanno cercato rifugio per paura della violenza.`
+			`	JJ parla con un ufficiale della Marina, chiedendogli con chi si incontrerà per negoziare. "Il comandante Ranulph Hines, signore." L'ufficiale risponde, sembrando correggersi sul fatto di aver chiamato JJ "signore". JJ ha un'espressione preoccupata, ma non credi che sia per l'ufficiale della Marina che lo ha chiamato "signore".`
+			choice
+				`	"Qualcosa non va?"`
+				`	(Non dire niente.)`
+					goto talk
+			`	"Niente," risponde JJ, poi si ferma prima di dire: "Temo che non finirà bene."`
+			label talk
+			`	L'ufficiale ti indirizza con JJ verso la zona all'aperto di uno dei ristoranti dello spazioporto, dove trovi il comandante Ranulph Hines che finisce quello che sembra un piatto di salmone. JJ si siede di fronte a lui.`
+			`	"Tenente comandante Jean-Jacques Soleau, in carne e ossa davanti ai miei occhi," dice Hines, asciugandosi gli angoli della bocca. "Non avrei mai immaginato di rivederti, dopo che hai lasciato la Marina con tanta poca cerimonia."`
+			`	"Non sono qui per discutere del passato, comandante," risponde JJ. "Sono qui per impedire altro spargimento di sangue in questa guerra senza senso."`
+			`	"Lo sono anch'io, Soleau, lo sono anch'io. Anche se potrei chiedere: le vite perse nei vostri attacchi a Geminus e Martini sono state inutili, o sono state perdite necessarie?"`
+			`	"Le Free Worlds non sono responsabili di quei bombardamenti," dice JJ, con la voce un po' scossa. "Sosteniamo la nostra innocenza, e stavamo cercando di scoprire chi fosse il responsabile prima che la Repubblica ordinasse alla Marina di toglierci Kornephoros."`
+			`	"Non c'è stato nessun 'togliere', Soleau. Kornephoros è legittimamente territorio della Repubblica. Stavamo semplicemente eseguendo un'azione di polizia su uno dei nostri mondi, arrestando i terroristi che..."`
+			`	"Quindi sei venuto qui solo per insultare me e le Free Worlds, o sei qui per discutere di pace come ho chiesto?" dice JJ, interrompendo Hines. "Come ho detto, sono qui per impedire altro spargimento di sangue. Le morti di quelli di Geminus e Martini e quelle di Kornephoros e Sabik sono già state abbastanza. Un ulteriore spargimento di sangue non soddisferà nessuna delle due parti in questa guerra."`
+			`	"Un ulteriore spargimento di sangue come quello che c'è stato su Greenrock solo pochi giorni fa?" ribatte Hines. "Sono sicuro che saprai che la Marina non può scatenare tutte le sue forze contro le 'Free Worlds'. Abbiamo confini da pattugliare e pirateria da gestire. Voi, invece, avete appena distrutto il più grande centro di pirateria della regione, e non ho dubbio che questo abbia liberato molte risorse. Mi sembra che siate voi a stare consolidando le forze per un'offensiva e per altro spargimento di sangue, nonostante insistiate sul contrario."`
+			`	"Le azioni intraprese su Greenrock non sono state autorizzate dal Senato né dal Consiglio delle Free Worlds," risponde JJ. "Sono state il risultato di elementi incontrollati di cui ci siamo già occupati."`
+			`	"Elementi incontrollati nei vostri ranghi? Avete certo una storia di questi elementi, se è stato un elemento incontrollato della vostra insurrezione a commettere gli atti terroristici che hanno ucciso migliaia di cittadini della Repubblica. O almeno, presumo che fosse un elemento incontrollato, dato che non ho mai conosciuto il venerabile Jean-Jacques Soleau come un bugiardo, quindi ti credo certamente quando mi dici che le tue 'Free Worlds' non farebbero una cosa del genere. Anche se sono sicuro che mi avresti detto anche che le tue 'Free Worlds' non avrebbero mai soggiogato la popolazione di Greenrock."`
+			choice
+				`	"Questo tizio non sembra troppo interessato ai colloqui di pace. Dovremmo andarcene."`
+				`	(Lascia che JJ gestisca la situazione.)`
+					goto handle
+			`	Gli sussurri le tue preoccupazioni a JJ. "No," risponde. "Posso gestirla io."`
+			label handle
+			`	"Quindi sembra che la risposta alla mia domanda sia no," dice JJ, alzando la voce. "Non sei interessato ai colloqui di pace."`
+			`	"Temo di no, Soleau. La Repubblica non desidera abbassarsi a negoziare con i terroristi. Pertanto ordino l'arresto tuo e di ogni capitano e membro dell'equipaggio delle cosiddette 'Free Worlds' qui presenti, per atti di terrorismo e tradimento contro la Repubblica."`
+			`	Alcune delle milizie che assistono cominciano ad allungare le mani verso le armi o ad allontanarsi mentre alcuni soldati della Marina fanno un passo avanti, ma JJ alza la mano per farli fermare. I miliziani se ne accorgono e tengono la posizione, e così i soldati della Marina. "Dov'è finito l'onore della Marina di cui abbiamo tanto sentito parlare?" grida JJ, abbastanza forte perché tutti quelli che guardano lo sentano. "Veniamo qui a braccia aperte chiedendo colloqui di pace e voi vi muovete per arrestarci?" Senti dei fischi da alcuni dei civili che guardano.`
+			`	Hines arriccia il naso. "Questo è senza dubbio territorio della Repubblica, Soleau, e quindi abbiamo tutto il diritto di arrestarti."`
+			`	"Credo che i tuoi uomini non siano d'accordo," osserva JJ. Tutto il personale della Marina è rimasto o è tornato in formazione. "Ricorda che anch'io facevo parte della Marina. Una Marina che ognuno dei tuoi onorevoli uomini ricorda certamente, o perché l'ha vissuta o perché è cresciuto rispettandola. Ma una Marina che ho lasciato per colpa di gente come te. Mi dispiace deluderti, ma se non possiamo negoziare colloqui di pace, ce ne andremo. Prego che tu sia abbastanza saggio da vedere l'errore delle tue vie e lasciarci andare." JJ si alza e comincia ad allontanarsi, lasciando Hines a rimuginare sulla sedia.`
+			`	"I tuoi giorni sono contati, Soleau," grida Hines, ma resta sulla sedia e non dà ordini ai suoi soldati.`
+			`	La Marina vi lascia andare indisturbati mentre entri nella nave con JJ. "Decolla subito e torna su <planet>," dice. "L'unica cosa che nella Marina rivaleggia con l'onore è il dovere, e non voglio essere nei paraggi quando Hines comincia a fomentare i suoi uomini a sua immagine."`
+				launch
+	
+	on enter "Kornephoros"
+		dialog `Entrando nel sistema <system>, avvisti navi delle Free Worlds in combattimento con la Marina. Sembra che la Marina abbia mandato finora solo una piccola forza; restano poche navi e non sembrano esserci molte navi distrutte. In ogni caso, i capitani delle Free Worlds che difendono il sistema apprezzeranno probabilmente un aiuto a ripulire il resto prima che atterri.`
+	
+	npc
+		government "Free Worlds"
+		personality heroic disables staying
+		system "Kornephoros"
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon" 2
+				"Osprey" 2
+		fleet
+			names "free worlds capital"
+			variant
+				"Bastion"
+				"Argosy (Missile)" 2
+	npc
+		government "Free Worlds"
+		personality heroic disables staying derelict
+		system "Kornephoros"
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon"
+				"Osprey"
+				"Sparrow" 3
+	npc evade
+		government "Republic"
+		personality heroic staying
+		system "Kornephoros"
+		fleet
+			names "republic capital"
+			variant
+				"Protector (Quad Blaster)"
+				"Frigate" 2
+	npc evade
+		government "Republic"
+		personality heroic staying derelict
+		system "Kornephoros"
+		fleet
+			names "republic capital"
+			variant
+				"Cruiser"
+				"Gunboat"
+				"Rainmaker"
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma non hai ancora completato tutti gli obiettivi. O ci sono ancora navi della Marina nel sistema, o una delle tue navi che porta JJ non è ancora nel sistema.`
+
+
+
+mission "FW Early Warning 4"
+	landing
+	name "Attacco preventivo"
+	description "Incontra le navi della Marina in battaglia a <system>, attaccandole prima che possano entrare nello spazio delle Free Worlds. Una volta distrutte tutte le navi, atterra su <planet>."
+	source "Deep"
+	destination "Hope"
+	to offer
+		has "FW Early Warning 3: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "battle in Wei"
+		conversation
+			`Quando torni, Tomek è impegnato a preparare la flotta. Sembra che la maggior parte delle navi sia pronta a partire, e alcune stanno già accendendo i motori. "Immagino che i colloqui di pace non siano andati bene," dice.`
+			`	"Non proprio," dice JJ. "Anche se penso che abbiamo vinto una piccola vittoria in un altro senso."`
+			`	"Me lo racconterai più tardi," dice Tomek, cominciando a gridare mentre le navi intorno a voi cominciano a decollare. "Capitano <last>, prepara la nave al decollo. I nostri sensori ci dicono che c'è una flotta enorme della Marina a <system>. Potrebbero saltare qui da un'ora all'altra. Ho ordinato un attacco preventivo: ci precipiteremo a <system> e li prenderemo di petto prima che possano raggiungere il nostro territorio. Trattieni il personale della Marina sopravvissuto su <planet> e manderemo dei trasporti per riportarli alla Repubblica se accettano di unirsi agli Oathkeepers, o a Bourne se rifiutano. Ora muoviti. Non abbiamo tempo da perdere."`
+				accept
+	
+	npc
+		government "Free Worlds"
+		personality heroic disables escort
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon"
+				"Osprey"
+		fleet
+			names "free worlds capital"
+			variant
+				"Bastion"
+				"Argosy (Missile)" 2
+	npc
+		government "Free Worlds"
+		personality heroic disables waiting escort
+		fleet
+			names "free worlds capital"
+			variant
+				"Osprey"
+				"Osprey (Missile)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon"
+				"Osprey (Laser)"
+				"Hawk" 3
+				"Sparrow" 5
+		fleet
+			names "free worlds capital"
+			variant
+				"Bastion (Heavy)"
+				"Argosy (Blaster)" 3
+				"Fury" 4
+	npc
+		government "Free Worlds"
+		personality heroic disables entering escort
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Heavy)"
+				"Hawk" 2
+		fleet
+			names "free worlds small"
+			variant
+				"Hawk"
+				"Sparrow" 2
+		fleet
+			names "free worlds small"
+			variant
+				"Hawk (Rocket)"
+				"Fury (Missile)" 2
+	npc evade
+		government "Republic"
+		personality heroic staying
+		system "Wei"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Heavy)" 2
+				"Combat Drone" 8
+				"Frigate"
+				"Rainmaker" 2
+		fleet
+			names "republic capital"
+			variant
+				"Protector (Quad Blaster)"
+				"Frigate" 2
+				"Gunboat"
+		fleet
+			names "republic capital"
+			variant
+				"Protector (Quad Blaster)" 2
+				"Frigate"
+				"Rainmaker" 2
+	
+	on visit
+		dialog `Ci sono ancora navi della Marina là sopra. Restare su <planet> mentre i tuoi alleati muoiono in orbita sarebbe un'idea pessima.`
+	on complete
+		event "battle in Wei over"
+		dialog `Anche se la battaglia è vinta, l'umore è cupo, come nelle prime battaglie della guerra. Aiuti la milizia a curare i feriti di entrambe le parti, prendendoti cura dei sopravvissuti della Marina, anche su questo pianeta freddo e nevoso. Nel giro di un'ora arrivano i trasporti di truppe delle Free Worlds a prelevarli. Mentre i trasporti decollano, ricevi un messaggio di Freya che ti richiama a Longjump.`
+
+
+
+event "battle in Wei"
+	system "Wei"
+		fleet "Small Free Worlds" 5000
+
+
+
+event "battle in Wei over"
+	system "Wei"
+		fleet "Small Southern Merchants" 600
+		fleet "Large Southern Merchants" 2000
+		fleet "Small Southern Pirates" 4000
+
+
+
+mission "FW Early Warning 5"
+	autosave
+	landing
+	name "Ritorna su <planet>"
+	description "Con la battaglia vinta, torna su <destination> per riferire a Freya."
+	source "Hope"
+	destination "Longjump"
+	to offer
+		has "FW Early Warning 4: done"
+	on fail
+		dialog phrase "free worlds failed"
+
+
+
+mission "FW Senate Hearing"
+	autosave
+	landing
+	name "Udienza al Senato"
+	description "Presentati su <destination> per un'udienza del Senato sul tuo recente rifiuto di obbedire ai loro ordini. Se non arrivi entro il <date>, il tuo servizio sarà terminato."
+	source "Longjump"
+	destination "Bourne"
+	deadline 14
+	to offer
+		has "FW Early Warning 5: done"
+		has "FW Pirates: Attack 3: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		clear "salary: Free Worlds"
+		conversation
+			`JJ e Freya ti incontrano poco dopo che atterri su <origin>. "Ottimo lavoro nella battaglia, Capitano," dice Freya. "Purtroppo non possiamo più rimandare l'esito del tuo attacco a Greenrock."`
+			`	JJ dice: "Sei stato sospeso dal tuo servizio alle Free Worlds per ordine del Consiglio delle Free Worlds, e hai il comando di presentarti su <planet> per un'udienza del Senato entro le prossime due settimane. Lì il Senato deciderà il tuo destino. Se non ti presenterai all'udienza, il tuo servizio sarà terminato."`
+			choice
+				`	"È stato un onore servire con voi."`
+				`	"Che cosa è successo a Tomek?"`
+					goto tomek
+			`	"Sei stato un buon soldato," dice JJ. "Che tu possa tornare da noi in tempo. Addio, Capitano."`
+				accept
+			label tomek
+			`	"Tomek è in viaggio verso il Senato proprio ora," dice Freya. "È partito appena è arrivata la notizia della vittoria. Immagino che la sua udienza al Senato sarà già avvenuta quando arriverai su <planet>." Si ferma. "Addio, Capitano."`
+				accept
+	
+	on complete
+		event "wolf pack reveal" 30
+		event "fw stripped of service"
+		set "fw first chapter done"
+		log "Sei stato ufficialmente censurato dal Senato delle Free Worlds per aver lanciato un attacco a un mondo pirata invece di obbedire alle istruzioni di cercare una soluzione diplomatica. Potrebbe volerci un po' prima che sia disponibile altro lavoro per le Free Worlds."
+		log "People" "Tomek Voigt" `Tomek è stato rimosso dal Consiglio e posto agli arresti domiciliari dal Senato dopo aver disobbedito ai loro ordini e aver conquistato il mondo pirata di Greenrock invece di perseguire la soluzione diplomatica che il Senato preferiva.`
+		conversation
+			`Con una certa apprensione entri nell'edificio del Senato e ti presenti alla reception. L'uomo dice: "La prego di aspettare qui. Qualcuno verrà a chiamarla quando sarà pronto."`
+			`	Passano diverse ore. Alla fine vieni condotto nella camera del Senato, dove siedono alcune decine di senatori, ciascuno con un cartellino che identifica il mondo che rappresenta. La senatrice Huygens di Mere fa la prima domanda. "Capitano <last>, è vero che ha preso parte a un recente attacco non autorizzato a Greenrock, nel sistema Shaula?"`
+			choice
+				`	"Sì, è corretto."`
+					goto knew
+				`	"Stavo seguendo gli ordini di Tomek, del Consiglio."`
+			`	"Non ho chiesto quale sia la sua scusa," dice. "Ho chiesto se ha preso parte all'attacco."`
+			`	"Sì, ho partecipato," dici.`
+			label knew
+			`	"Era consapevole, al momento, di andare contro gli ordini del Senato?"`
+			choice
+				`	"Sì."`
+					goto reason
+				`	"No, mi era stato fatto credere che stessi seguendo gli ordini del Senato."`
+			`	"Interessante," dice Arianna. "Non è quello che ci ha detto Tomek. E sia JJ sia Freya hanno detto che lei era ben consapevole dei desideri del Senato."`
+			label reason
+			`	Un altro senatore, un uomo anziano, chiede: "Perché ha scelto di prendere parte all'attacco?"`
+			choice
+				`	"Volevo fare qualcosa per porre fine alla minaccia dei pirati."`
+				`	"Mi fidavo del fatto che Tomek conoscesse la strategia migliore."`
+				`	"Immagino di essermi fatto troppo prendere dal voler fare l'eroe."`
+					goto hero
+				`	"Sapevo che la mia flotta poteva soggiogare il pianeta senza subire gravi perdite."`
+					to display
+						or
+							"has FW Pirates: Invasion Fleet: done"
+							"combat rating" >= 8103
+							"armament deterrence" >= 8
+					goto losses
+			`	"E come è andata?" dice l'anziano. "Poco dopo il suo attacco a Greenrock, la Marina si è mossa per invaderci ancora una volta, un piano a cui senza dubbio hanno contribuito le sue azioni."`
+				goto sentence
+			label hero
+			`	"Esatto," dice il senatore. "E scommetto che non è passato molto dalla battaglia prima che lei si rendesse conto che salvare la galassia non è così facile."`
+				goto sentence
+			label losses
+			branch intact
+				"has FW Pirates: Invasion Fleet: done"
+			`	"Eppure la flotta ha subito perdite," dice il senatore. "Senza contare che ha preso le sue navi, che sono fra le più forti di tutte le Free Worlds, e le ha impegnate in una battaglia senza senso che rischiava di aprire un fronte completamente nuovo della guerra. Sta dicendo di aver fatto tutto questo senza permesso, senza nemmeno considerare le ragioni per cui le Free Worlds avevano deciso di non lanciare un assalto, solo perché pensava di potersela cavare?"`
+				goto sentence
+
+			label intact
+			`	"Capitano," risponde il senatore, "non si rende conto che non si tratta di vittime? Non importa che lei abbia condotto l'invasione in modo impeccabile: su questo siamo tutti d'accordo. Quello che importa è che un'invasione non doveva esserci. Non vede come le sue azioni hanno sconvolto l'intera strategia militare e diplomatica delle Free Worlds?"`
+			`	"Suppongo di sì," ammetti.`
+			`	Interviene un terzo senatore, una donna il cui cartellino la identifica come Sara, di Skymoot. "È tutto, Capitano <last>. Il Senato si riunirà e deciderà se vogliamo i suoi servizi ancora."`
+			`	Vieni riportato nella sala d'attesa, dove aspetti per quella che sembra un'altra ora. Durante quel tempo parli con qualcun altro e scopri che Tomek è stato rimosso dal Consiglio e posto agli arresti domiciliari. Curiosamente, però, nonostante Tomek abbia disobbedito agli ordini, il Senato ha deciso di continuare l'occupazione di Greenrock, almeno per ora, perché lasciare il pianeta così in fretta non farebbe che fomentare maggiore caos nella regione.`
+			`	Alla fine arriva un messaggero e ti consegna un piccolo foglietto. Lo apri. Il messaggio dice: "Abbiamo deciso che sarai sospeso senza stipendio e privato del tuo grado. Quando avremo di nuovo bisogno dei tuoi servizi, ti contatteremo, e il tuo grado sarà reintegrato come il Senato o il Consiglio riterranno opportuno." Sembra che per ora tu sia tornato a essere un semplice capitano mercantile.`
+				decline
+
+			label sentence
+			`	"Suppongo di sì," ammetti.`
+			`	Interviene un terzo senatore, una donna il cui cartellino la identifica come Sara, di Skymoot. "È tutto, Capitano <last>. Il Senato si riunirà e deciderà se vogliamo i suoi servizi ancora."`
+			`	Vieni riportato nella sala d'attesa, dove aspetti per quella che sembra un'altra ora. Durante quel tempo parli con qualcun altro e scopri che Tomek è stato rimosso dal Consiglio e posto agli arresti domiciliari. Curiosamente, però, nonostante Tomek abbia disobbedito agli ordini, il Senato ha deciso di continuare l'occupazione di Greenrock, almeno per ora, perché lasciare il pianeta così in fretta "disonorerebbe quelli che hanno perso la vita facendo quello che credevano giusto".`
+			`	Alla fine arriva un messaggero e ti consegna un piccolo foglietto. Lo apri. Il messaggio dice: "Abbiamo deciso che sarai sospeso senza stipendio e privato del tuo grado. Quando avremo di nuovo bisogno dei tuoi servizi, ti contatteremo, e il tuo grado sarà reintegrato come il Senato o il Consiglio riterranno opportuno." Sembra che per ora tu sia tornato a essere un semplice capitano mercantile.`
+
+
+
+event "fw stripped of service"
+	government "Escort"
+		swizzle 5
+
+
+
+mission "FW Refinery 1"
+	autosave
+	landing
+	name "Riparazioni a Smuggler's Den"
+	description "Va' su <planet> e ritira una spedizione di equipaggiamento dal Sindacato per riparare la raffineria su Smuggler's Den."
+	source "Longjump"
+	destination "Tundra"
+	clearance
+	to offer
+		has "FW Early Warning 5: done"
+		has "FW Pirates: Diplomacy 4: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`JJ e Freya ti incontrano poco dopo che atterri su <origin>. "Ottimo lavoro nella battaglia, Capitano," dice Freya. "Purtroppo ora dobbiamo occuparci di ripulire il pasticcio di Tomek."`
+			`	"La gente di Thule è diventata diffidente verso il nostro accordo dopo l'attacco di Tomek a Greenrock," spiega JJ. "Temevano di essere i prossimi, e che le nostre trattative con loro fossero solo un tentativo di allontanarli da quella che sarebbe stata la loro principale linea di difesa."`
+			`	"Dobbiamo dimostrare loro che la nostra offerta era sincera," dice Freya.`
+			choice
+				`	"E come facciamo a farlo?"`
+					goto repairs
+				`	"E che cosa succede a Tomek, adesso?"`
+			`	"Tomek è in viaggio verso Bourne proprio ora," dice Freya. "È partito appena è arrivata la notizia della vittoria. Immagino che sapremo l'esito della sua udienza al Senato quando sarai tornato dalla missione."`
+			`	"Quale missione?" chiedi.`
+			label repairs
+			`	"Beh, grazie a te il sistema Men non è più impegnato nella pirateria," dice JJ. "E questo significa che la gente di Smuggler's Den ha bisogno di un nuovo lavoro. Quella stazione era una raffineria di deuterio. Con un po' di lavoro, può tornare a esserlo."`
+			`	"Una raffineria funzionante potrebbe portare a quel sistema più introiti di quanti ne abbia mai portati la pirateria, e aiutare a ripararla dimostrerebbe alla gente di Thule che non vogliamo far loro del male," dice Freya. "L'unico problema è che i pezzi di ricambio sono rari e difficili da trovare. Il Sindacato ha accettato di venderci i pezzi, ma solo se li incontriamo a metà strada, su <planet>. Che si trova nel sistema <system>. A un solo salto da una delle principali nuove basi della Marina."`
+			choice
+				`	"Dobbiamo portare un convoglio di rifornimenti attraverso lo spazio della Repubblica?"`
+					goto convoy
+				`	"Come facciamo a sapere che non è una trappola?"`
+			`	"Non lo sappiamo," dice Freya, "ma il Sindacato ci ha già aiutati in passato, e sono sempre disposti a fare affari. Non credo che siano pronti a rinunciare alla possibilità di vendere le loro merci a entrambe le parti di questa guerra, non ancora."`
+			`	"Comunque, come pensano che possiamo portare un convoglio sano e salvo su Tundra?" chiedi`
+			label convoy
+			`	"Non un convoglio," dice JJ. "Solo tu, Capitano. Sono appena dieci tonnellate di pezzi di ricambio. Il tuo compito è volare su Tundra, ritirare i pezzi e tornare qui."`
+			choice
+				`	"Farò del mio meglio."`
+					accept
+				`	"Spero che non si riveli una missione suicida."`
+			`	"Lo spero anch'io," dice Freya. "Se la tua nave ha abbastanza capacità di carburante, potresti provare a volare fino al territorio neutrale di Dabih o di Tarazed, e da lì salire a Cebalrai, per evitare il grosso delle pattuglie della Marina. Buona fortuna, Capitano. Se qualcuno può farcela, quello sei tu."`
+				accept
+
+
+
+mission "FW Refinery 1A"
+	landing
+	name "Riparazioni a <planet>"
+	description "Porta una spedizione di equipaggiamento speciale per la raffineria su <destination>."
+	source "Tundra"
+	destination "Smuggler's Den"
+	cargo "refinery equipment" 10
+	blocked "Hai raggiunto <origin>, ma non hai dieci tonnellate di spazio cargo libere per l'equipaggiamento. Torna qui quando avrai liberato più spazio."
+	to offer
+		has "FW Refinery 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Il tuo luogo di atterraggio è un insediamento abbandonato a mille chilometri dallo spazioporto principale di <origin>. È un vecchio campo petrolifero prosciugato da decenni, e solo poche piazzole di atterraggio sono ancora utilizzabili. I dipendenti del Sindacato caricano in fretta il carico sulla tua nave e dicono: "Ora decolla in fretta, prima che la Marina ci veda fare affari con una nave che vola con i colori delle Free Worlds."`
+				launch
+	
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		event "wolf pack reveal" 15
+		set "fw first chapter done"
+		log "Hai portato rifornimenti a Smuggler's Den per aiutare ad aggiornare la stazione a una raffineria di deuterio funzionante. Nessun altro ordine dalle Free Worlds, quindi potrebbe essere un buon momento per trovare modi di guadagnare più soldi per conto tuo."
+		log "People" "Tomek Voigt" `Tomek è stato rimosso dal Consiglio e posto agli arresti domiciliari dal Senato dopo aver disobbedito ai loro ordini e aver conquistato il mondo pirata di Greenrock invece di perseguire la soluzione diplomatica che il Senato preferiva.`
+		conversation
+			`Dopo aver scaricato i rifornimenti, mandi a Freya e JJ un messaggio per far sapere che sei arrivato sano e salvo con l'equipaggiamento della raffineria. La gente del posto lavora insieme ai membri della milizia delle Free Worlds per buttare via il vecchio hardware arrugginito e installare il nuovo. Ci vorranno probabilmente qualche giorno perché tutto riprenda a funzionare, ma la gente di questo sistema sembra impaziente di tornare a un lavoro più onesto.`
+			`	Alla fine della giornata ricevi una risposta da JJ. "Ottimo lavoro, Capitano! Questo gesto sarà molto utile. Con un duro colpo inferto alla Marina, dubito che verranno da noi presto, e con il nostro rapporto con Thule riparato, sono sicuro che la pirateria sarà al minimo da anni in questa regione. Grazie ai nostri successi, al momento non abbiamo altro lavoro per te. Ti chiameremo in futuro quando avremo bisogno di te, ma nel frattempo potresti aiutare i nostri ufficiali con qualche lavoretto occasionale. Hanno messo annunci nelle bacheche degli incarichi in giro per le Free Worlds cercando aiuto da capitani della milizia con tempo libero. Oppure potresti semplicemente prenderti un po' di tempo per riposarti, se ne hai bisogno. La guerra può pesare sull'anima. Riposa se devi.`
+			`	"Prima di chiudere, devo anche dirti che ho appena saputo della decisione del Senato su Tomek. È stato rimosso dal Consiglio e posto agli arresti domiciliari fino a nuovo ordine. Inoltre il Senato ha deciso che l'occupazione di Greenrock continuerà, almeno per ora. Anche se disapprovano la disobbedienza di Tomek, sembra che durante l'udienza li abbia convinti che tenere Greenrock offrirebbe un vantaggio tattico. Preghiamo che sia la decisione giusta.`
+			`	"Addio, Capitano. Stai bene."`
+			`	Dopo mesi passati solo a girare seguendo gli ordini degli altri, sembra strano essere lasciato a te stesso, per cambiare.`
+
+
+
+event "wolf pack reveal"
+
+
+
+mission "FW Rogue Elements"
+	landing
+	invisible
+	source
+		government "Free Worlds"
+	to offer
+		has "event: wolf pack reveal"
+	on offer
+		event "navy occupying the south" 45
+		event "memorial on Deep"
+		conversation
+			`Dopo che atterri, noti che una folla considerevole si è radunata intorno a uno schermo video vicino al bordo dello spazioporto di <origin>. Ti avvicini per scoprire che cosa succede. Stai per chiedere a qualcuno che cosa stia accadendo quando senti la voce di Tomek uscire dallo schermo. Alzi lo sguardo e vedi un video di Tomek in piedi sopra una nave da guerra delle Free Worlds che si rivolge a una folla che non si vede.`
+			`	"Per generazioni siamo stati trascurati dalla Repubblica!" grida. "Le nostre lamentele sono state ignorate! Il nostro dolore e la nostra sofferenza sono stati ignorati! I nostri bisogni sono stati ignorati! Abbiamo gridato aiuto, e la Repubblica non ha fatto nulla, lasciando che i nostri pianeti fossero devastati dalla pirateria mentre continuava a tassare i nostri crediti per servizi che non ci venivano forniti. E con il passare degli anni i pirati sono diventati sempre più audaci.`
+			`	"Abbiamo fatto del nostro meglio, anche con il sistema schierato contro di noi. La consigliera Katya Reynolds e altri come lei hanno parlato a nome di miliardi di persone nel Sud, nel Bordo e nella Fascia di Terra. A nome nostro. A nome dei nostri fratelli e delle nostre sorelle, dei nostri padri e delle nostre madri, dei nostri figli e delle nostre figlie. E gli hanno sputato in faccia! E quando l'hanno fatto, hanno sputato in faccia a noi!`
+			`	"E così ci siamo uniti. Amici e famiglie a braccetto, a fare quello che la Repubblica non faceva. Ci siamo presi cura gli uni degli altri e abbiamo eretto le nostre difese contro la pirateria che tanto temevamo. E poi ci siamo alzati insieme e abbiamo detto alla Repubblica che non avremmo più accettato la sua negligenza. Abbiamo gridato che il sistema non funziona, e quindi ne creeremo uno nostro! Noi, con il sudore, il sangue e le lacrime di generazioni, abbiamo partorito queste Free Worlds!`
+			`	"E come risponde la Repubblica a questo? Finalmente ci hanno dato l'attenzione che chiedevamo, ma non nella forma che desideravamo. Ci hanno attaccati! Ci hanno fatto guerra! E così facendo Katya è diventata prigioniera di guerra, tenuta per crimini che non ha commesso da un sistema che non l'ha ascoltata nonostante i suoi più grandi sforzi di farsi sentire."`
+			choice
+				`	"È in diretta?"`
+				`	"Che cosa sta succedendo?"`
+			`	"Non lo so," dice un uomo accanto a te. "Stava trasmettendo le notizie come al solito quando all'improvviso è comparso questo."`
+			`	Alzi di nuovo lo sguardo verso Tomek. "Eppure anche ora la nostra lotta non finisce. Il nostro nuovo sistema ha già cominciato a tradirci. Vi dico ora che il Senato delle Free Worlds ha deciso che, invece di combattere la pirateria, negozierà con essa! Tenteranno di negoziare con quelli che in questa galassia sono più noti per mentire, pugnalare alle spalle e truffare. Quelli più noti per non rispettare le leggi della Repubblica, e che senza dubbio si rifiuteranno di rispettare le leggi di queste Free Worlds.`
+			`	"E così faccio appello a voi, a quelli che combattono per chi non può farlo, di unirvi a me in armi per dare ai pirati quello che si meritano! Per averci inflitto tanto dolore! Per aver ridotto in schiavitù e ucciso i nostri amici e le nostre famiglie! Per aver rovinato le nostre vite e le nostre attività! Per averci fatto vivere nel terrore e nella paura! Chi si unirà a me per mettere fine a tutto questo?"`
+			`	Si sente la folla nel video acclamare, e persino alcuni della folla intorno a te si uniscono alle acclamazioni.`
+			`	Lo schermo passa poi dal video di Tomek a un'immagine di un ritaglio di giornale che parla dei suoi arresti domiciliari, con parole che lampeggiano sullo schermo: "Ha combattuto per noi, e per questo lo hanno abbattuto." Compare un simbolo di tre lupi verdi che ululano a una luna piena, poi lo schermo si oscura. Pochi secondi dopo la registrazione si ripete, mostrando Tomek che sale sopra una nave da guerra delle Free Worlds. "Capitani ed equipaggi delle Free Worlds. Mercanti delle Free Worlds. Gente delle Free Worlds. Vi prego di darmi la vostra attenzione. Ho un appello, un grido d'aiuto rimasto senza risposta.`
+			`	"Per generazioni siamo stati trascurati dalla Repubblica! Le nostre lamentele..." Il video continua come l'hai visto. Lasci la folla, non del tutto sicuro di che cosa pensare di questa situazione.`
+				decline

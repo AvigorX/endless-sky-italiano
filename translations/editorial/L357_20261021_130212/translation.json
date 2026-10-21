@@ -1,0 +1,297 @@
+{
+ "block": {
+  "path": "data/kahet/beyond patir assets.txt",
+  "line_from": 48,
+  "line_to": 2445,
+  "units": 26
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Asteroid Large 1|display name|48|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 48,
+   "kind": "VALUE",
+   "context": "ship:Asteroid Large 1",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Asteroid Large 2|display name|101|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 101,
+   "kind": "VALUE",
+   "context": "ship:Asteroid Large 2",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "ship:Asteroid Large 3|display name|156|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 156,
+   "kind": "VALUE",
+   "context": "ship:Asteroid Large 3",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Asteroid Large 4|display name|209|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 209,
+   "kind": "VALUE",
+   "context": "ship:Asteroid Large 4",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Asteroid Large 5|display name|262|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 262,
+   "kind": "VALUE",
+   "context": "ship:Asteroid Large 5",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Asteroid Medium|display name|315|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 315,
+   "kind": "VALUE",
+   "context": "ship:Asteroid Medium",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Asteroid Young 1|display name|367|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 367,
+   "kind": "VALUE",
+   "context": "ship:Asteroid Young 1",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "ship:Asteroid Young 2|display name|418|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 418,
+   "kind": "VALUE",
+   "context": "ship:Asteroid Young 2",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "ship:Asteroid Young 3|display name|469|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 469,
+   "kind": "VALUE",
+   "context": "ship:Asteroid Young 3",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "ship:Asteroid Young 4|display name|520|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 520,
+   "kind": "VALUE",
+   "context": "ship:Asteroid Young 4",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Asteroid Anti-Missile|display name|573|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 573,
+   "kind": "VALUE",
+   "context": "outfit:Asteroid Anti-Missile",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Asteroid Anti-Missile|description|590|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 590,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Asteroid Anti-Missile",
+   "english": "Though its specifics are essentially the same as its smaller variant, its bubble shield is far bigger and just as indestructible. It has clearly become more unstable in the process, but this does not seem to have affected its capabilities.",
+   "italian": "Though its specifics are essentially the same as its smaller variant, its bubble shield is far bigger and just as indestructible. It has clearly become more unstable in the process, but this does not seem to have affected its capabilities.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Asteroid Anti-Missile 2|display name|599|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 599,
+   "kind": "VALUE",
+   "context": "outfit:Asteroid Anti-Missile 2",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Asteroid Anti-Missile 2|description|618|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 618,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Asteroid Anti-Missile 2",
+   "english": "A nearly impenetrable anti-missile field, instantly eliminating even the strongest missile that tries to pass through. However, the size of this protective bubble greatly limits its capabilities.",
+   "italian": "A nearly impenetrable anti-missile field, instantly eliminating even the strongest missile that tries to pass through. However, the size of this protective bubble greatly limits its capabilities.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Asteroid Weapon Small|display name|627|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 627,
+   "kind": "VALUE",
+   "context": "outfit:Asteroid Weapon Small",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Asteroid Weapon Small|description|654|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 654,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Asteroid Weapon Small",
+   "english": "Similar in appearance to the anti-missile used by some of these ships, this weapon was created with two functions in mind: slowing down an opponent until it gets close enough, and then eliminating it with heavy, direct damage to the hull.",
+   "italian": "Similar in appearance to the anti-missile used by some of these ships, this weapon was created with two functions in mind: slowing down an opponent until it gets close enough, and then eliminating it with heavy, direct damage to the hull.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:Asteroid Weapon Large|display name|676|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 676,
+   "kind": "VALUE",
+   "context": "outfit:Asteroid Weapon Large",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "outfit:Asteroid Weapon Large|description|696|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 696,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Asteroid Weapon Large",
+   "english": "By creating a circle of energy-based mines and then converting them into missiles at the same time, this weapon is capable of breaking through anti-missile defenses better than most.",
+   "italian": "By creating a circle of energy-based mines and then converting them into missiles at the same time, this weapon is capable of breaking through anti-missile defenses better than most.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "outfit:Asteroid Weapon Large 2|display name|1105|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 1105,
+   "kind": "VALUE",
+   "context": "outfit:Asteroid Weapon Large 2",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "outfit:Asteroid Weapon Large 2|description|1128|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 1128,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Asteroid Weapon Large 2",
+   "english": "This very peculiar weapon overwhelms its target by creating an array of short-living, laser-armed entities. However, the precision it requires, as well as its low raw damage output, limits its potential.",
+   "italian": "This very peculiar weapon overwhelms its target by creating an array of short-living, laser-armed entities. However, the precision it requires, as well as its low raw damage output, limits its potential.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "outfit:Asteroid Weapon Large 3|display name|1457|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 1457,
+   "kind": "VALUE",
+   "context": "outfit:Asteroid Weapon Large 3",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "outfit:Asteroid Weapon Large 3|description|1487|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 1487,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Asteroid Weapon Large 3",
+   "english": "While it may be technically described as a missile, its specifics differ from the average rocket launcher. The heap of energy created by this weapon's fire continuously releases projectiles which home in onto enemies, until finally exploding and breaking up into an enormous barrage of similar projectiles. These attributes make it very good at overwhelming anti-missiles enough to render them useless, then impacting a fair share of damage while they are down.",
+   "italian": "While it may be technically described as a missile, its specifics differ from the average rocket launcher. The heap of energy created by this weapon's fire continuously releases projectiles which home in onto enemies, until finally exploding and breaking up into an enormous barrage of similar projectiles. These attributes make it very good at overwhelming anti-missiles enough to render them useless, then impacting a fair share of damage while they are down.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "outfit:Asteroid Weapon Large 4|display name|1600|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 1600,
+   "kind": "VALUE",
+   "context": "outfit:Asteroid Weapon Large 4",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "outfit:Asteroid Weapon Large 4|description|1624|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 1624,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Asteroid Weapon Large 4",
+   "english": "An impressive defensive weapon, fending off even the mightiest attackers by projecting enormous bubble-shaped minefields all around itself. Though not a rapid-fire weapon by any means, it is able to maintain one of those fields continuously without issue.",
+   "italian": "An impressive defensive weapon, fending off even the mightiest attackers by projecting enormous bubble-shaped minefields all around itself. Though not a rapid-fire weapon by any means, it is able to maintain one of those fields continuously without issue.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 25,
+   "id": "outfit:Asteroid Jump Drive|display name|2410|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 2410,
+   "kind": "VALUE",
+   "context": "outfit:Asteroid Jump Drive",
+   "english": "???",
+   "italian": "???",
+   "ratio": 1.0
+  },
+  {
+   "idx": 26,
+   "id": "outfit:Asteroid Jump Drive|description|2445|0",
+   "path": "data/kahet/beyond patir assets.txt",
+   "line": 2445,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Asteroid Jump Drive",
+   "english": "Whatever the mechanism that hides beneath the translucent orb may be, it functions similarly to a jump drive, bridging different parts of the universe together for the cost of merely 200 units of fuel.",
+   "italian": "Whatever the mechanism that hides beneath the translucent orb may be, it functions similarly to a jump drive, bridging different parts of the universe together for the cost of merely 200 units of fuel.",
+   "ratio": 1.0
+  }
+ ]
+}

@@ -1,0 +1,297 @@
+{
+ "block": {
+  "path": "data/wanderer/wanderer jobs.txt",
+  "line_from": 15,
+  "line_to": 261,
+  "units": 26
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Wanderer Workers [0]|name|15|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 15,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Workers [0]",
+   "english": "Wanderer workers to <planet>",
+   "italian": "Lavoratori Wanderer per <planet>",
+   "ratio": 1.143
+  },
+  {
+   "idx": 2,
+   "id": "mission:Wanderer Workers [0]|description|18|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 18,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Workers [0]",
+   "english": "These <bunks> Wanderer workers require transportation to <destination>. They will pay you <payment> to take them there.",
+   "italian": "Questi <bunks> lavoratori Wanderer hanno bisogno di un trasporto fino a <destination>. Ti pagheranno <payment> per portarli fin là.",
+   "ratio": 1.101
+  },
+  {
+   "idx": 3,
+   "id": "mission:Wanderer Workers [1]|name|40|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 40,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Workers [1]",
+   "english": "Wanderer workers to <planet>",
+   "italian": "Lavoratori Wanderer per <planet>",
+   "ratio": 1.143
+  },
+  {
+   "idx": 4,
+   "id": "mission:Wanderer Workers [1]|description|43|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 43,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Workers [1]",
+   "english": "These <bunks> Wanderer workers require transportation to <destination>. They will pay you <payment> to take them there.",
+   "italian": "Questi <bunks> lavoratori Wanderer hanno bisogno di un trasporto fino a <destination>. Ti pagheranno <payment> per portarli fin là.",
+   "ratio": 1.101
+  },
+  {
+   "idx": 5,
+   "id": "mission:Wanderer Farmers [0]|name|64|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 64,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Farmers [0]",
+   "english": "Wanderer farmers to <planet>",
+   "italian": "Contadini Wanderer per <planet>",
+   "ratio": 1.107
+  },
+  {
+   "idx": 6,
+   "id": "mission:Wanderer Farmers [0]|description|67|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 67,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Farmers [0]",
+   "english": "These <bunks> Wanderer farmers require transportation to <destination>. They will pay you <payment> to take them there.",
+   "italian": "Questi <bunks> agricoltori Wanderer hanno bisogno di un trasporto fino a <destination>. Ti pagheranno <payment> per portarli fin là.",
+   "ratio": 1.109
+  },
+  {
+   "idx": 7,
+   "id": "mission:Wanderer Farmers [1]|name|89|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 89,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Farmers [1]",
+   "english": "Wanderer farmers to <planet>",
+   "italian": "Contadini Wanderer per <planet>",
+   "ratio": 1.107
+  },
+  {
+   "idx": 8,
+   "id": "mission:Wanderer Farmers [1]|description|92|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 92,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Farmers [1]",
+   "english": "These <bunks> Wanderer farmers require transportation to <destination>. They will pay you <payment> to take them there.",
+   "italian": "Questi <bunks> agricoltori Wanderer hanno bisogno di un trasporto fino a <destination>. Ti pagheranno <payment> per portarli fin là.",
+   "ratio": 1.109
+  },
+  {
+   "idx": 9,
+   "id": "mission:Wanderer Younglings [0]|name|114|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 114,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Younglings [0]",
+   "english": "Wanderer younglings to <planet>",
+   "italian": "Piccoli Wanderer per <planet>",
+   "ratio": 0.935
+  },
+  {
+   "idx": 10,
+   "id": "mission:Wanderer Younglings [0]|description|117|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 117,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Younglings [0]",
+   "english": "These <bunks> Wanderer younglings are looking for transport to <destination> to learn more about the Wanderer terraforming process. The adult with them will pay you <payment>.",
+   "italian": "Questi <bunks> piccoli Wanderer cercano un trasporto fino a <destination> per saperne di più sul processo di terraformazione dei Wanderer. L'adulto che li accompagna ti pagherà <payment>.",
+   "ratio": 1.069
+  },
+  {
+   "idx": 11,
+   "id": "mission:Wanderer Younglings [0]|dialog|135|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 135,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Younglings [0]",
+   "english": "The younglings depart your ship and meet up with another group of Wanderers across the spaceport. Before following after the younglings, the adult Wanderer thanks you and hands you <payment>.",
+   "italian": "I piccoli scendono dalla tua nave e si ricongiungono con un altro gruppo di Wanderer dall'altra parte dello spazioporto. Prima di seguire i piccoli, l'adulto Wanderer ti ringrazia e ti consegna <payment>.",
+   "ratio": 1.068
+  },
+  {
+   "idx": 12,
+   "id": "mission:Wanderer Younglings [1]|name|138|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 138,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Younglings [1]",
+   "english": "Wanderer younglings to <planet>",
+   "italian": "Piccoli Wanderer per <planet>",
+   "ratio": 0.935
+  },
+  {
+   "idx": 13,
+   "id": "mission:Wanderer Younglings [1]|description|141|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 141,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Younglings [1]",
+   "english": "These <bunks> Wanderer younglings are looking for transport to <destination> to learn more about the Wanderer terraforming process. The adult with them will pay you <payment>.",
+   "italian": "Questi <bunks> piccoli Wanderer cercano un trasporto fino a <destination> per saperne di più sul processo di terraformazione dei Wanderer. L'adulto che li accompagna ti pagherà <payment>.",
+   "ratio": 1.069
+  },
+  {
+   "idx": 14,
+   "id": "mission:Wanderer Younglings [1]|dialog|159|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 159,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Younglings [1]",
+   "english": "The younglings depart your ship and meet up with another group of Wanderers across the spaceport. Before following after the younglings, the adult Wanderer thanks you and hands you <payment>.",
+   "italian": "I piccoli scendono dalla tua nave e si ricongiungono con un altro gruppo di Wanderer dall'altra parte dello spazioporto. Prima di seguire i piccoli, l'adulto Wanderer ti ringrazia e ti consegna <payment>.",
+   "ratio": 1.068
+  },
+  {
+   "idx": 15,
+   "id": "mission:Wanderer Scientists (Pollution) [0]|name|162|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 162,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Scientists (Pollution) [0]",
+   "english": "Spike in pollution on <planet>",
+   "italian": "Picco di inquinamento su <planet>",
+   "ratio": 1.1
+  },
+  {
+   "idx": 16,
+   "id": "mission:Wanderer Scientists (Pollution) [0]|description|165|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 165,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Scientists (Pollution) [0]",
+   "english": "These <bunks> Wanderer scientists wish to get to <destination> with their <cargo> by <date> to investigate a strange spike in atmospheric pollutants. Payment will be <payment>.",
+   "italian": "Questi <bunks> scienziati Wanderer vogliono arrivare a <destination> con il loro <cargo> entro il <date> per indagare su uno strano picco di inquinanti atmosferici. Il pagamento sarà <payment>.",
+   "ratio": 1.097
+  },
+  {
+   "idx": 17,
+   "id": "mission:Wanderer Scientists (Pollution) [0]|dialog|185|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 185,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Scientists (Pollution) [0]",
+   "english": "You wish the scientists the best of luck on <planet> as they carry their scientific equipment off of your ship and hand you your payment of <payment>.",
+   "italian": "Fai gli auguri agli scienziati su <planet> mentre portano fuori la loro attrezzatura scientifica e ti consegnano il pagamento di <payment>.",
+   "ratio": 0.927
+  },
+  {
+   "idx": 18,
+   "id": "mission:Wanderer Scientists (Pollution) [1]|name|188|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 188,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Scientists (Pollution) [1]",
+   "english": "Spike in pollution on <planet>",
+   "italian": "Picco di inquinamento su <planet>",
+   "ratio": 1.1
+  },
+  {
+   "idx": 19,
+   "id": "mission:Wanderer Scientists (Pollution) [1]|description|191|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 191,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Scientists (Pollution) [1]",
+   "english": "These <bunks> Wanderer scientists wish to get to <destination> with their <cargo> by <date> to investigate a strange spike in atmospheric pollutants. Payment will be <payment>.",
+   "italian": "Questi <bunks> scienziati Wanderer vogliono arrivare a <destination> con il loro <cargo> entro il <date> per indagare su uno strano picco di inquinanti atmosferici. Il pagamento sarà <payment>.",
+   "ratio": 1.097
+  },
+  {
+   "idx": 20,
+   "id": "mission:Wanderer Scientists (Pollution) [1]|dialog|211|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 211,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Scientists (Pollution) [1]",
+   "english": "You wish the scientists the best of luck on <planet> as they carry their scientific equipment off of your ship and hand you your payment of <payment>.",
+   "italian": "Fai gli auguri agli scienziati su <planet> mentre portano fuori la loro attrezzatura scientifica e ti consegnano il pagamento di <payment>.",
+   "ratio": 0.927
+  },
+  {
+   "idx": 21,
+   "id": "mission:Wanderer Scientists (Phenomenon) [0]|name|214|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 214,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Scientists (Phenomenon) [0]",
+   "english": "Natural phenomenon on <planet>",
+   "italian": "Fenomeno naturale su <planet>",
+   "ratio": 0.967
+  },
+  {
+   "idx": 22,
+   "id": "mission:Wanderer Scientists (Phenomenon) [0]|description|217|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 217,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Scientists (Phenomenon) [0]",
+   "english": "These <bunks> Wanderer scientists wish to get to <destination> with their <cargo> by <date> to observe a rare natural phenomenon. Payment will be <payment>.",
+   "italian": "Questi <bunks> scienziati Wanderer vogliono arrivare a <destination> con il loro <cargo> entro il <date> per osservare un raro fenomeno naturale. Il pagamento sarà <payment>.",
+   "ratio": 1.115
+  },
+  {
+   "idx": 23,
+   "id": "mission:Wanderer Scientists (Phenomenon) [0]|dialog|236|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 236,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Scientists (Phenomenon) [0]",
+   "english": "You wish the scientists the best of luck on <planet> as they carry their scientific equipment off of your ship and hand you your payment of <payment>.",
+   "italian": "Fai gli auguri agli scienziati su <planet> mentre portano fuori la loro attrezzatura scientifica e ti consegnano il pagamento di <payment>.",
+   "ratio": 0.927
+  },
+  {
+   "idx": 24,
+   "id": "mission:Wanderer Scientists (Phenomenon) [1]|name|239|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 239,
+   "kind": "VALUE",
+   "context": "mission:Wanderer Scientists (Phenomenon) [1]",
+   "english": "Natural phenomenon on <planet>",
+   "italian": "Fenomeno naturale su <planet>",
+   "ratio": 0.967
+  },
+  {
+   "idx": 25,
+   "id": "mission:Wanderer Scientists (Phenomenon) [1]|description|242|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 242,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderer Scientists (Phenomenon) [1]",
+   "english": "These <bunks> Wanderer scientists wish to get to <destination> with their <cargo> by <date> to observe a rare natural phenomenon. Payment will be <payment>.",
+   "italian": "Questi <bunks> scienziati Wanderer vogliono arrivare a <destination> con il loro <cargo> entro il <date> per osservare un raro fenomeno naturale. Il pagamento sarà <payment>.",
+   "ratio": 1.115
+  },
+  {
+   "idx": 26,
+   "id": "mission:Wanderer Scientists (Phenomenon) [1]|dialog|261|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 261,
+   "kind": "DIALOG",
+   "context": "mission:Wanderer Scientists (Phenomenon) [1]",
+   "english": "You wish the scientists the best of luck on <planet> as they carry their scientific equipment off of your ship and hand you your payment of <payment>.",
+   "italian": "Fai gli auguri agli scienziati su <planet> mentre portano fuori la loro attrezzatura scientifica e ti consegnano il pagamento di <payment>.",
+   "ratio": 0.927
+  }
+ ]
+}

@@ -1,0 +1,286 @@
+{
+ "block": {
+  "path": "data/remnant/remnant jobs.txt",
+  "line_from": 19,
+  "line_to": 209,
+  "units": 25
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Remnant: Bounty|name|19|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 19,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Bounty",
+   "english": "Crippled <npc model> Bounty",
+   "italian": "Crippled <npc model> Bounty",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "mission:Remnant: Bounty|description|20|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 20,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Bounty",
+   "english": "A crippled Korath ship is lurking in Remnant territory. Hunt it down, and then return to <planet> to receive your payment of <payment>.",
+   "italian": "Una nave Korath in avaria si aggira nel territorio dei Remnant. Dalle la caccia e poi torna su <planet> per ricevere il pagamento di <payment>.",
+   "ratio": 1.059
+  },
+  {
+   "idx": 3,
+   "id": "mission:Remnant: Bounty|dialog|40|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 40,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Bounty",
+   "english": "You have destroyed the Korath ship. You can now return to <planet> to collect your payment.",
+   "italian": "Hai distrutto la nave Korath. Ora puoi tornare su <planet> per riscuotere il pagamento.",
+   "ratio": 0.956
+  },
+  {
+   "idx": 4,
+   "id": "mission:Remnant: Bounty|dialog|45|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 45,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Bounty",
+   "english": "A Remnant military leader thanks you for hunting down the <npc>, and gives you the agreed-upon payment of <payment>.",
+   "italian": "Un comandante militare dei Remnant ti ringrazia per aver dato la caccia alla <npc> e ti consegna il pagamento concordato di <payment>.",
+   "ratio": 1.155
+  },
+  {
+   "idx": 5,
+   "id": "mission:Remnant: Bounty 2|name|52|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 52,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Bounty 2",
+   "english": "Troublesome <npc model> Bounty",
+   "italian": "Troublesome <npc model> Bounty",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "mission:Remnant: Bounty 2|description|53|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 53,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Bounty 2",
+   "english": "A Korath ship is proving troublesome in Remnant territory. Hunt it down, and then return to <planet> to receive your payment of <payment>.",
+   "italian": "Una nave Korath sta creando problemi nel territorio dei Remnant. Dalle la caccia e poi torna su <planet> per ricevere il pagamento di <payment>.",
+   "ratio": 1.043
+  },
+  {
+   "idx": 7,
+   "id": "mission:Remnant: Bounty 2|dialog|73|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 73,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Bounty 2",
+   "english": "You have destroyed the Korath ship. You can now return to <planet> to collect your payment.",
+   "italian": "Hai distrutto la nave Korath. Ora puoi tornare su <planet> per riscuotere il pagamento.",
+   "ratio": 0.956
+  },
+  {
+   "idx": 8,
+   "id": "mission:Remnant: Bounty 2|dialog|78|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 78,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Bounty 2",
+   "english": "A Remnant military leader thanks you for hunting down the Korath ship <npc>, and gives you the agreed-upon payment of <payment>.",
+   "italian": "Un comandante militare dei Remnant ti ringrazia per aver dato la caccia alla nave Korath <npc> e ti consegna il pagamento concordato di <payment>.",
+   "ratio": 1.141
+  },
+  {
+   "idx": 9,
+   "id": "mission:Remnant: Broken Jump Drive job|name|83|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 83,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Broken Jump Drive job",
+   "english": "Broken Jump Drive Delivery",
+   "italian": "Consegna di un motore di salto rotto",
+   "ratio": 1.385
+  },
+  {
+   "idx": 10,
+   "id": "mission:Remnant: Broken Jump Drive job|description|84|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 84,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Broken Jump Drive job",
+   "english": "The researchers on <planet> need another broken jump drive to continue their project.",
+   "italian": "I ricercatori su <planet> hanno bisogno di un altro motore di salto guasto per proseguire il loro progetto.",
+   "ratio": 1.259
+  },
+  {
+   "idx": 11,
+   "id": "mission:Remnant: Broken Jump Drive job|dialog|108|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 108,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Broken Jump Drive job",
+   "english": "The research team quickly offloads the broken jump drive and pays you <payment> before hurrying back to their lab.",
+   "italian": "La squadra di ricerca scarica in fretta il motore di salto guasto e ti paga <payment> prima di correre di nuovo in laboratorio.",
+   "ratio": 1.114
+  },
+  {
+   "idx": 12,
+   "id": "mission:Remnant: Expanded Horizons Astral job|name|115|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 115,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Expanded Horizons Astral job",
+   "english": "Research Expedition to <waypoints>",
+   "italian": "Spedizione di ricerca su <waypoints>",
+   "ratio": 1.059
+  },
+  {
+   "idx": 13,
+   "id": "mission:Remnant: Expanded Horizons Astral job|description|116|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 116,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Expanded Horizons Astral job",
+   "english": "Travel to <waypoints> with a Research Laboratory to collect data, then return to <destination>.",
+   "italian": "Raggiungi <waypoints> con un Laboratorio di Ricerca per raccogliere dati, poi torna su <destination>.",
+   "ratio": 1.063
+  },
+  {
+   "idx": 14,
+   "id": "mission:Remnant: Expanded Horizons Astral job|dialog|134|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 134,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Expanded Horizons Astral job",
+   "english": "Your scientist unpacks the laboratory and takes the requested observations. A short while later, they have the data compiled on a set of data crystals and inform you that everything is ready for departure.",
+   "italian": "Il tuo scienziato scarica il laboratorio e fa le osservazioni richieste. Poco dopo ha i dati compilati su una serie di cristalli di dati e ti informa che tutto è pronto per la partenza.",
+   "ratio": 0.902
+  },
+  {
+   "idx": 15,
+   "id": "mission:Remnant: Expanded Horizons Astral job|dialog|138|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 138,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Expanded Horizons Astral job",
+   "english": "When you land, a researcher quickly retrieves the data crystals with the information about the surveyed system and hands you the logistics allotment of <payment>.",
+   "italian": "Quando atterri, un ricercatore recupera in fretta i cristalli di dati con le informazioni sul sistema rilevato e ti consegna l'indennità logistica di <payment>.",
+   "ratio": 0.988
+  },
+  {
+   "idx": 16,
+   "id": "mission:Remnant: Expanded Horizons Astral job late|name|145|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 145,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Expanded Horizons Astral job late",
+   "english": "Research Expedition to <waypoints>",
+   "italian": "Spedizione di ricerca su <waypoints>",
+   "ratio": 1.059
+  },
+  {
+   "idx": 17,
+   "id": "mission:Remnant: Expanded Horizons Astral job late|description|146|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 146,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Expanded Horizons Astral job late",
+   "english": "Travel to <waypoints> with a Research Laboratory to collect data, then return to <destination>.",
+   "italian": "Raggiungi <waypoints> con un Laboratorio di Ricerca per raccogliere dati, poi torna su <destination>.",
+   "ratio": 1.063
+  },
+  {
+   "idx": 18,
+   "id": "mission:Remnant: Expanded Horizons Astral job late|dialog|163|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 163,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Expanded Horizons Astral job late",
+   "english": "Your scientist unpacks the laboratory and takes the requested observations. A short while later, they have the data compiled on a set of data crystals and inform you that everything is ready for departure.",
+   "italian": "Il tuo scienziato scarica il laboratorio e fa le osservazioni richieste. Poco dopo ha i dati compilati su una serie di cristalli di dati e ti informa che tutto è pronto per la partenza.",
+   "ratio": 0.902
+  },
+  {
+   "idx": 19,
+   "id": "mission:Remnant: Expanded Horizons Astral job late|dialog|167|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 167,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Expanded Horizons Astral job late",
+   "english": "When you land, a researcher quickly retrieves the data crystals with the information about the surveyed system and hands you the logistics allotment of <payment>.",
+   "italian": "Quando atterri, un ricercatore recupera in fretta i cristalli di dati con le informazioni sul sistema rilevato e ti consegna l'indennità logistica di <payment>.",
+   "ratio": 0.988
+  },
+  {
+   "idx": 20,
+   "id": "mission:Remnant: Bounty 3|name|174|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 174,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Bounty 3",
+   "english": "Damaged Rano'erek Bounty",
+   "italian": "Damaged Rano'erek Bounty",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "mission:Remnant: Bounty 3|description|175|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 175,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Bounty 3",
+   "english": "A damaged Korath ship is lurking in Remnant territory. Hunt it down, and then return to <planet> to receive your payment of <payment>.",
+   "italian": "Una nave Korath danneggiata si aggira nel territorio dei Remnant. Dalle la caccia e poi torna su <planet> per ricevere il pagamento di <payment>.",
+   "ratio": 1.082
+  },
+  {
+   "idx": 22,
+   "id": "mission:Remnant: Bounty 3|dialog|196|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 196,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Bounty 3",
+   "english": "You have destroyed the Korath ship. You can now return to <planet> to collect your payment.",
+   "italian": "Hai distrutto la nave Korath. Ora puoi tornare su <planet> per riscuotere il pagamento.",
+   "ratio": 0.956
+  },
+  {
+   "idx": 23,
+   "id": "mission:Remnant: Bounty 3|dialog|201|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 201,
+   "kind": "DIALOG",
+   "context": "mission:Remnant: Bounty 3",
+   "english": "A Remnant military leader thanks you for hunting down the Korath ship <npc>, and gives you the agreed-upon payment of <payment>.",
+   "italian": "Un comandante militare dei Remnant ti ringrazia per aver dato la caccia alla nave Korath <npc> e ti consegna il pagamento concordato di <payment>.",
+   "ratio": 1.141
+  },
+  {
+   "idx": 24,
+   "id": "mission:Remnant: Bounty 4|name|208|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 208,
+   "kind": "VALUE",
+   "context": "mission:Remnant: Bounty 4",
+   "english": "Marauding Rano'erek Bounty",
+   "italian": "Marauding Rano'erek Bounty",
+   "ratio": 1.0
+  },
+  {
+   "idx": 25,
+   "id": "mission:Remnant: Bounty 4|description|209|0",
+   "path": "data/remnant/remnant jobs.txt",
+   "line": 209,
+   "kind": "DESCRIPTION",
+   "context": "mission:Remnant: Bounty 4",
+   "english": "A Korath ship is marauding through Remnant territory. Hunt it down, and then return to <planet> to receive your payment of <payment>.",
+   "italian": "Una nave Korath sta saccheggiando il territorio dei Remnant. Dalle la caccia e poi torna su <planet> per ricevere il pagamento di <payment>.",
+   "ratio": 1.053
+  }
+ ]
+}

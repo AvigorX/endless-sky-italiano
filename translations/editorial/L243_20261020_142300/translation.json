@@ -1,0 +1,330 @@
+{
+ "block": {
+  "path": "data/hai/hai ships.txt",
+  "line_from": 15,
+  "line_to": 332,
+  "units": 29
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Anomalocaris|plural|15|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 15,
+   "kind": "VALUE",
+   "context": "ship:Anomalocaris",
+   "english": "Anomalocarises",
+   "italian": "Anomalocarises",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Anomalocaris|\"Biroo\" Atomic Thruster|51|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 51,
+   "kind": "TEXT",
+   "context": "ship:Anomalocaris",
+   "english": "\"Biroo\" Atomic Thruster",
+   "italian": "\"Biroo\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "ship:Anomalocaris|\"Bondir\" Atomic Steering|52|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 52,
+   "kind": "TEXT",
+   "context": "ship:Anomalocaris",
+   "english": "\"Bondir\" Atomic Steering",
+   "italian": "\"Bondir\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Anomalocaris|description|75|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 75,
+   "kind": "DESCRIPTION",
+   "context": "ship:Anomalocaris",
+   "english": "First created during the Hai's initial conflicts with the Sheragi, the Anomalocaris was supposedly one of the most versatile Hai warships of its time. Its high cargo capacity and low engine space suggest the original purpose of the ship was for mining or hauling, though it could also have found use in looting enemy ships and carrying ammunition. Vessels from the time were manufactured out of more expensive materials, making the Anomalocaris more sturdy and able to take larger amounts of damage.",
+   "italian": "Creata durante i primi conflitti degli Hai con gli Sheragi, l'Anomalocaris sarebbe stata una delle navi da guerra Hai più versatili del suo tempo. L'ampia capacità di carico e il poco spazio per i motori suggeriscono che lo scopo originale della nave fosse l'estrazione mineraria o il trasporto, anche se avrebbe potuto servire anche a saccheggiare navi nemiche e a trasportare munizioni. Le navi dell'epoca erano costruite con materiali più costosi, il che rendeva l'Anomalocaris più robusta e capace di assorbire danni maggiori.",
+   "ratio": 1.062
+  },
+  {
+   "idx": 5,
+   "id": "ship:Anomalocaris|\"Biroo\" Atomic Thruster|91|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 91,
+   "kind": "TEXT",
+   "context": "ship:Anomalocaris",
+   "english": "\"Biroo\" Atomic Thruster",
+   "italian": "\"Biroo\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Anomalocaris|\"Bondir\" Atomic Steering|92|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 92,
+   "kind": "TEXT",
+   "context": "ship:Anomalocaris",
+   "english": "\"Bondir\" Atomic Steering",
+   "italian": "\"Bondir\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Anomalocaris|description|99|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 99,
+   "kind": "DESCRIPTION",
+   "context": "ship:Anomalocaris",
+   "english": "First created during the Hai's initial conflicts with the Sheragi, the Anomalocaris was supposedly one of the most versatile Hai warships of its time. Its high cargo capacity and low engine space suggest the original purpose of the ship was for mining or hauling, though it could also have found use in looting enemy ships and carrying ammunition. Vessels from the time were manufactured out of more expensive materials, making the Anomalocaris more sturdy, although this one has accrued damage after being submerged underwater for a long period of time.",
+   "italian": "Creata durante i primi conflitti degli Hai con gli Sheragi, l'Anomalocaris sarebbe stata una delle navi da guerra Hai più versatili del suo tempo. L'ampia capacità di carico e il poco spazio per i motori suggeriscono che lo scopo originale della nave fosse l'estrazione mineraria o il trasporto, anche se avrebbe potuto servire anche a saccheggiare navi nemiche e a trasportare munizioni. Le navi dell'epoca erano costruite con materiali più costosi, il che rendeva l'Anomalocaris più robusta, anche se questa ha accumulato danni dopo essere rimasta a lungo sott'acqua.",
+   "ratio": 1.027
+  },
+  {
+   "idx": 8,
+   "id": "ship:Aphid|\"Basrem\" Atomic Thruster|130|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 130,
+   "kind": "TEXT",
+   "context": "ship:Aphid",
+   "english": "\"Basrem\" Atomic Thruster",
+   "italian": "\"Basrem\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "ship:Aphid|\"Basrem\" Atomic Steering|131|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 131,
+   "kind": "TEXT",
+   "context": "ship:Aphid",
+   "english": "\"Basrem\" Atomic Steering",
+   "italian": "\"Basrem\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "ship:Aphid|description|140|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 140,
+   "kind": "DESCRIPTION",
+   "context": "ship:Aphid",
+   "english": "The Aphid is the lightest freighter used by the Hai and was for many millennia the backbone of the Hai interplanetary economy. Because of how peaceful Hai space has been for much of its history, Aphids only come with basic defenses as stock, and rely on larger Hai ships for more serious protection.",
+   "italian": "L'Aphid è il mercantile più leggero usato dagli Hai e per molti millenni è stato la spina dorsale dell'economia interplanetaria Hai. Dato che lo spazio Hai è stato pacifico per gran parte della sua storia, le Aphid escono di serie con difese solo basilari e si affidano alle navi Hai più grandi per una protezione più seria.",
+   "ratio": 1.084
+  },
+  {
+   "idx": 11,
+   "id": "ship:Aphid|\"Benga\" Atomic Thruster|151|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 151,
+   "kind": "TEXT",
+   "context": "ship:Aphid",
+   "english": "\"Benga\" Atomic Thruster",
+   "italian": "\"Benga\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "ship:Aphid|\"Benga\" Atomic Steering|152|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 152,
+   "kind": "TEXT",
+   "context": "ship:Aphid",
+   "english": "\"Benga\" Atomic Steering",
+   "italian": "\"Benga\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "ship:Aphid|\"Benga\" Atomic Thruster|165|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 165,
+   "kind": "TEXT",
+   "context": "ship:Aphid",
+   "english": "\"Benga\" Atomic Thruster",
+   "italian": "\"Benga\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "ship:Aphid|\"Benga\" Atomic Steering|166|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 166,
+   "kind": "TEXT",
+   "context": "ship:Aphid",
+   "english": "\"Benga\" Atomic Steering",
+   "italian": "\"Benga\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "ship:Aphid|\"Basrem\" Atomic Steering|180|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 180,
+   "kind": "TEXT",
+   "context": "ship:Aphid",
+   "english": "\"Basrem\" Atomic Steering",
+   "italian": "\"Basrem\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "ship:Aphid|\"Basrem\" Atomic Thruster|181|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 181,
+   "kind": "TEXT",
+   "context": "ship:Aphid",
+   "english": "\"Basrem\" Atomic Thruster",
+   "italian": "\"Basrem\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "ship:Centipede|\"Biroo\" Atomic Thruster|220|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 220,
+   "kind": "TEXT",
+   "context": "ship:Centipede",
+   "english": "\"Biroo\" Atomic Thruster",
+   "italian": "\"Biroo\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "ship:Centipede|\"Biroo\" Atomic Steering|221|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 221,
+   "kind": "TEXT",
+   "context": "ship:Centipede",
+   "english": "\"Biroo\" Atomic Steering",
+   "italian": "\"Biroo\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "ship:Centipede|\"Basrem\" Atomic Steering|222|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 222,
+   "kind": "TEXT",
+   "context": "ship:Centipede",
+   "english": "\"Basrem\" Atomic Steering",
+   "italian": "\"Basrem\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "ship:Centipede|description|240|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 240,
+   "kind": "DESCRIPTION",
+   "context": "ship:Centipede",
+   "english": "The introduction of humans to the Hai civilization has led to a substantial amount of cultural exchange. While some may argue that pickled acorns have been the greatest product of this relationship, many more will point to this luxury transport ship. The product of human-Hai cooperation from the project's inception, the Centipede was released around the turn of the 31st century, but has already become quite popular among Hai fleets.",
+   "italian": "L'introduzione degli umani nella civiltà Hai ha portato a uno scambio culturale sostanzioso. C'è chi sostiene che le ghiande in salamoia siano il miglior prodotto di questo rapporto, ma molti di più indicheranno questa nave da trasporto di lusso. Frutto della cooperazione tra umani e Hai fin dal suo concepimento, la Centipede è entrata in servizio intorno all'inizio del trentunesimo secolo, ma è già molto popolare tra le flotte Hai.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "ship:Centipede|\"Biroo\" Atomic Thruster|255|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 255,
+   "kind": "TEXT",
+   "context": "ship:Centipede",
+   "english": "\"Biroo\" Atomic Thruster",
+   "italian": "\"Biroo\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "ship:Centipede|\"Biroo\" Atomic Steering|256|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 256,
+   "kind": "TEXT",
+   "context": "ship:Centipede",
+   "english": "\"Biroo\" Atomic Steering",
+   "italian": "\"Biroo\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "ship:Centipede|\"Basrem\" Atomic Steering|257|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 257,
+   "kind": "TEXT",
+   "context": "ship:Centipede",
+   "english": "\"Basrem\" Atomic Steering",
+   "italian": "\"Basrem\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "ship:Centipede|\"Biroo\" Atomic Thruster|272|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 272,
+   "kind": "TEXT",
+   "context": "ship:Centipede",
+   "english": "\"Biroo\" Atomic Thruster",
+   "italian": "\"Biroo\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 25,
+   "id": "ship:Centipede|\"Basrem\" Atomic Steering|273|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 273,
+   "kind": "TEXT",
+   "context": "ship:Centipede",
+   "english": "\"Basrem\" Atomic Steering",
+   "italian": "\"Basrem\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 26,
+   "id": "ship:Centipede|\"Biroo\" Atomic Steering|274|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 274,
+   "kind": "TEXT",
+   "context": "ship:Centipede",
+   "english": "\"Biroo\" Atomic Steering",
+   "italian": "\"Biroo\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 27,
+   "id": "ship:Cicada|\"Benga\" Atomic Thruster|314|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 314,
+   "kind": "TEXT",
+   "context": "ship:Cicada",
+   "english": "\"Benga\" Atomic Thruster",
+   "italian": "\"Benga\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 28,
+   "id": "ship:Cicada|\"Benga\" Atomic Steering|315|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 315,
+   "kind": "TEXT",
+   "context": "ship:Cicada",
+   "english": "\"Benga\" Atomic Steering",
+   "italian": "\"Benga\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 29,
+   "id": "ship:Cicada|description|332|0",
+   "path": "data/hai/hai ships.txt",
+   "line": 332,
+   "kind": "DESCRIPTION",
+   "context": "ship:Cicada",
+   "english": "A design nearly as old as the Aphid, practically no new Cicadas have been built in recent memory; it is so reliable that the second-hand market is saturated with Cicadas that have outlived not just one pilot, but in many cases whole lineages of Hai that have owned one and passed it down through the generations. This feature is likely the main factor which has kept the popularity of the Scarab in check as well as defining the Yeer e Ki shipyard's motto: \"Service for Life.\"",
+   "italian": "Progetto quasi vecchio quanto l'Aphid, negli ultimi tempi non sono state costruite praticamente nuove Cicada; è così affidabile che il mercato dell'usato è saturo di Cicada che sono sopravvissute non a un solo pilota, ma in molti casi a intere discendenze di Hai che ne hanno posseduta una e l'hanno tramandata di generazione in generazione. È probabilmente questo il fattore principale che ha tenuto a freno la popolarità della Scarab e che ha dettato il motto del cantiere Yeer e Ki: \"Al servizio per tutta la vita.\"",
+   "ratio": 1.088
+  }
+ ]
+}

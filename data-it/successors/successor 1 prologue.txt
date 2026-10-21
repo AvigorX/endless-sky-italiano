@@ -1,0 +1,1024 @@
+# Copyright (c) 2024 by Daeridanii
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Successors: Entering the Scar"
+	invisible
+	entering
+	source
+		attributes "predecessor"
+	destination "Earth"
+	to offer
+		not "Successors: Safe at Last: failed"
+	on offer
+		conversation
+			`Poco dopo essere entrato in questo sistema, i sensori della nave cominciano a registrare danni piccoli ma progressivi allo scafo e ai sistemi interni, benché non ci sia nessun'altra nave nei paraggi. Altrettanto inspiegabile, il motore di salto sembra ancora parzialmente attivo.`
+				decline
+
+mission "Successors: Safe at Last"
+	invisible
+	entering
+	source
+		system "Myruet-Kvelq"
+	destination "Earth"
+	to offer
+		not "Successors: First Contact 1: offered"
+	on offer
+		conversation
+			`Il sistema dall'altra parte del cunicolo è il primo da giorni a cui i tuoi sensori non rispondono con allarmi. A parte la presenza del cunicolo, lo spazio qui sembra del tutto normale.`
+				decline
+
+mission "Successors: First Contact 1"
+	landing
+	name "Primo contatto con gli ottopodi"
+	description "Gli alieni di questa zona di spazio ti hanno indicato di recarti in un sistema a est."
+	source
+		attributes "successor"
+		not attributes "uninhabited"
+	destination "Staja-Kella-Oa"
+	clearance
+	to fail
+		has "Successors: Unified Defense: offered"
+	on offer
+		conversation
+			`Dopo esserti fatto strada attraverso diversi sistemi avvolti dalla foschia e in gran parte morti, hai finalmente trovato un pianeta con abitanti vivi. Mentre entri nell'atmosfera superiore, la tua nave viene circondata da tre intercettori e scansionata a fondo. Poco dopo, la nave di testa ti trasmette un saluto in una lingua aliena dal flusso tagliente, poi punta verso un complesso spazioportuale che galleggia su una grande struttura lungo la costa. Il gruppo ti scorta su una delle poche piazzole del tutto asciutte, e col passare dei minuti intorno alla nave comincia a raccogliersi una piccola folla.`
+			`	Apri con cautela il portello della <ship> ed esci per stabilire il contatto.`
+			`	La specie dominante qui è fatta di ottopodi enormi che si sollevano da terra sui loro lunghi bracci muniti di ventose. In media sono alti tre metri anche con i bracci avvolti sotto di sé. A quelli che stanno sulla terraferma si uniscono altri che strisciano fuori da una rete di vasche e canali pieni d'acqua per venire a guardarti. La loro pelle luccica di umidità mucosa e la vedi cambiare colore e consistenza mentre passano le loro pupille a forma di clessidra sulla tua persona e sulla tua nave.`
+			`	Dopo un paio di minuti di movimento nella folla, un individuo in uniforme e particolarmente vivace si stacca dagli altri e comincia a venire verso di te, scivolando piano e silenzioso sul terreno. Dice qualcosa nella stessa lingua straniera, tremolando di onde di colore, poi aspetta che tu risponda.`
+			choice
+				`	(Non dire nulla.)`
+					goto map
+				`	"Salve, sono il capitano <first> <last>."`
+					goto introduce
+				`	"Vengo in pace."`
+					goto introduce
+				`	(Spara loro.)`
+			`	Estrai l'arma e spari direttamente al centro dell'alieno in uniforme, ma il colpo non riesce nemmeno a bruciare il tessuto dei suoi vestiti. Prima che tu abbia il tempo di sparare una seconda volta, senti un rumore incomprensibilmente forte che ti spinge indietro e ti lascia morto prima ancora che il tuo corpo tocchi terra.`
+				die
+			label introduce
+			`	L'alieno fa scorrere i bracci sul posto e avvicina il viso al tuo, ripetendo quanto aveva detto, questa volta più lentamente e con un tono più basso. Quando di nuovo non dai una risposta soddisfacente, si ritrae.`
+			label map
+			`	Dopo altri momenti di silenzio, l'alieno grugnisce in un gesto che ricorda un sospiro di delusione, poi si volta e dice qualcosa a un altro individuo in uniforme che aspetta ai margini della folla ormai consistente. La pelle dell'altro lampeggia di blu intenso prima che se ne vada, scivolando verso uno degli intercettori ora parcheggiati accanto alla tua nave.`
+			`	Tornano poco dopo, tenendo in un braccio un piccolo dispositivo sferico, e lo consegnano all'alieno che sembra al comando. Il capo a sua volta te lo offre, e borbotta una frase incomprensibile in quello che potresti definire un tono incoraggiante. Gli individui che compongono la folla ormai si allungano gli uni sopra gli altri per guardarti, e in lontananza ne vedi altri che scivolano e nuotano verso il tuo punto d'atterraggio.`
+			choice
+				`	(Prendi il dispositivo.)`
+				`	(Rifiuta.)`
+					goto refused
+			action
+				log "Hai preso contatto con un gruppo di alieni molto a sud del Graveyard. Hai accettato da loro un dispositivo che indicava un sistema a un paio di salti a est."
+			`	Prendi il dispositivo dall'alieno. Si liquefa nel momento in cui tocca la tua pelle, poi si congela a metà dello schizzo per proiettare una mappa stellare olografica piccola ma dettagliata dei sistemi circostanti. Tra un mare di caratteri alieni è evidenziato un sistema a pochi salti a est. L'individuo di fronte a te grugnisce con energia mentre i tre intercettori cominciano a librarsi per prepararsi al decollo: pare che questa gente, chiunque sia, voglia che tu vada fin là.`
+				accept
+			label refused
+			action
+				log "Hai preso contatto con un gruppo di alieni molto a sud del Graveyard. Hai rifiutato il dispositivo che ti offrivano e sei stato costretto a tornare in orbita."
+			`	Indietreggi dall'alieno che ti offre lo strano dispositivo e ti ritiri al riparo del portello della <ship>. Nessuno degli alieni fa nulla per farti del male, ma dall'interno noti che dopo un paio di minuti l'acqua comincia lentamente a fluire sulla piazzola. Quando il carrello d'atterraggio comincia a sommergersi, sei costretto a decollare finché puoi.`
+				flee
+
+	npc accompany save
+		government "House Sioeora"
+		personality timid launching escort
+		ship "Stolsaqra (Mission Escort)" "Kijet-i-khisa"
+		ship "Stolsaqra (Mission Escort)" "Iyiq-sora"
+		ship "Stolsaqra (Mission Escort)" "Seqra-saqra"
+
+	on fail
+		dialog `Almeno uno degli intercettori dei Successori che ti scortano è stato distrutto. Se vuoi proseguire la linea narrativa dei Successori, torna a un salvataggio precedente.`
+
+	on visit
+		conversation
+			`Senza le tue scorte dei Successori, ti viene negato il permesso di atterraggio allo spazioporto di <planet> e devi tornare in orbita finché non arrivano.`
+				launch
+
+	on complete
+		event "label successor space"
+		event "successors: first contact wait" 8
+		log `Hai preso contatto con un gruppo di alieni molto a sud del Graveyard che si fanno chiamare "i Successori". Ti è stato ordinato di tornare a Staja-Kella-Oa entro otto giorni, quando il loro governo deciderà cosa fare del tuo arrivo.`
+		log "Factions" "Successors" `I Successori sono una società di alieni che occupa un territorio sul bordo esterno sudorientale della galassia: ottopodi anfibi alti circa tre metri. Sono governati dalle loro Casate Alte, istituzioni costruite intorno a diverse famiglie nobili i cui eredi detengono potere politico e militare. Non incontrano umani da 1500 anni, quando i loro Predecessori esploravano gran parte della galassia.`
+		"reputation: Successor" += 1
+		"reputation: House Chydiyi" += 1
+		"reputation: House Myurej" += 1
+		"reputation: House Sioeora" += 1
+		conversation
+			`Come l'ultima volta, gli intercettori ti scortano fino a una piazzola dello spazioporto di questo pianeta. Qui però ti guidano verso una zona piccola e defilata, molto lontana dal complesso principale, dove diversi alieni in uniforme sono radunati sulla piazzola, sull'attenti.`
+			`	Dopo aver atteso diversi minuti, una navetta atterra sulla piazzola accanto alla tua e ne scendono diversi individui. Due si portano davanti agli altri, dove le guardie li lasciano passare per avvicinarsi a te. Quello a sinistra è un ufficiale in uniforme che indossa quella che sembra una pesante armatura corporale, con placche metalliche scintillanti che brillano alla luce. A destra c'è un alieno più piccolo, avvolto in un abito scuro simile a un bozzolo da cui emergono la testa e le braccia. L'ufficiale dice qualcosa al più piccolo, che risponde piano e poi estrae da una tasca del proprio abito un foglio liscio che consulta più volte prima di rivolgerti la parola con esitazione.`
+			`	"Salve... nobile visitatore! Ti diamo... il benvenuto e lieti auspici." I due ti osservano attentamente mentre aspettano una risposta.`
+			choice
+				`	"Salve. Sono il capitano <first> <last>."`
+				`	"Sono <last>, della <ship>. Piacere di conoscerti."`
+			`	I due procedono di nuovo lentamente e con cautela, e chi parla si consulta brevemente con l'ufficiale militare prima di ogni frase. "Sono Sieasej... di Casa Sioeora, tra i Successori. Tu sei un umano, non è vero?"`
+			choice
+				`	"Sì, lo sono."`
+				`	"E che altro dovrei essere?"`
+			`	Questo scatena un'onda di colore tra i presenti, soprattutto in Sieasej, che resta per diversi secondi in una vivace tonalità d'arancione prima di tornare al suo colore di riposo. "Allora è confermato. È motivo di grande emozione, <last>, perché sei il primo umano che incontriamo in millecinquecento anni, da molto prima che la tua specie lasciasse i confini delle nuvole del suo pianeta. Casa Sioeora è onorata di essere quella che ti dà il benvenuto. E lo sono io, capitano, per la parte che mi tocca." I membri del gruppo aprono i bracci liberi verso di te e luccicano di increspature blu sulla pelle. Tu rispondi con un breve inchino.`
+			label questions
+			choice
+				`	"Che cosa dovrei fare adesso?"`
+					goto "what now"
+				`	"Come fai a conoscere la mia lingua?"`
+					to display
+						not "Successors: language"
+					goto language
+				`	"Che vuoi dire con 'siete stati strappati alla galassia'?"`
+					to display
+						has "Successors: history"
+						not "Successors: ripped"
+					goto ripped
+				`	"Come avete potuto incontrare umani millecinquecento anni fa?"`
+					to display
+						not "Successors: history"
+					goto history
+				`	"Gli umani sono certo cambiati molto negli ultimi millecinquecento anni."`
+					to display
+						has "Successors: language"
+						not "Successors: changed"
+					goto changed
+				`	"Che cos'è Casa Sioeora?"`
+					to display
+						not "Successors: house"
+					goto house
+			label language
+			`	"Ci fu un tempo in cui i domini dei nostri Predecessori si spingevano più a nord, e più lontano ancora arrivava la loro intenzione di esplorare. Perché la vita è cosa rara e preziosa, e doppiamente lo è quella vita che possiede sapienza e cultura, nobile nella ragione e infinita nelle facoltà, come la tua. Così i nostri Predecessori attendevano sotto il manto del buio per osservarti in silenzio nel tuo sviluppo scintillante. E se non fossimo stati strappati così prematuramente al resto delle stelle, avremmo certo avuto il piacere di guardare la tua specie avanzare fino al punto in cui è ora."`
+				to display
+					has "Successors: history"
+			action
+				set "Successors: language"
+				set "Successors: history"
+			`	Sieasej si ferma un momento, dimenandosi sotto il proprio mantello. "Sono uno studioso di alcune antiche lingue," dice, "e dei mondi che i nostri Predecessori incontrarono tanto tempo fa. Ho imparato la tua lingua, o almeno quella che era millecinquecento anni fa."`
+				goto questions
+			label "language short"
+			action
+				set "Successors: language"
+			`	"È vero," dicono. "Sono uno studioso di alcune antiche lingue, e dei mondi che i nostri Predecessori incontrarono tanto tempo fa. Ho imparato la tua lingua, o almeno quella che era millecinquecento anni fa."`
+				goto questions
+			label changed
+			action
+				set "Successors: changed"
+			`	Altre onde di colore, sottili ma percettibili, passano sul corpo di Sieasej. "Lo speravo," dicono, "che foste ancora una specie giovane, con una storia più lunga davanti; che un giorno avreste preso le stelle, come pare abbiate fatto ora. Purtroppo la mia nobile Casa Sioeora non mi permette di interrogare la tua conoscenza tanto a fondo quanto desidererei, perché il tuo arrivo ci annuncia molto, e molto dobbiamo predisporre."`
+				goto questions
+			label ripped
+			action
+				set "Successors: ripped"
+			`	Sieasej conferma la risposta con l'ufficiale in uniforme prima di rispondere alla tua domanda. "Devi certo aver attraversato quella fascia di stelle distorta e fratturata a cui i nostri mondi moderni restano ancorati, per quanto sottile e fragile sia il filo. Sono i cittadini di quei mondi, molto tempo fa, di cui oggi siamo i Successori."`
+				goto questions
+			label history
+			action
+				set "Successors: history"
+			`	"Ci fu un tempo in cui i domini dei nostri Predecessori si spingevano più a nord, e più lontano ancora arrivava la loro intenzione di esplorare. Perché la vita è cosa rara e preziosa, e doppiamente lo è quella vita che possiede sapienza e cultura, nobile nella ragione e infinita nelle facoltà, come la tua. Così i nostri Predecessori attendevano sotto il manto del buio per osservarti in silenzio nel tuo sviluppo scintillante. E se non fossimo stati strappati così prematuramente al resto delle stelle, avremmo certo avuto il piacere di guardare la tua specie avanzare fino al punto in cui è ora."`
+			choice
+				`	"Che cosa dovrei fare adesso?"`
+					goto "what now"
+				`	"È così che conosci la mia lingua?"` # This follow up question reverts to "How do you know my language?" if it isn't immediately asked
+					to display
+						not "Successors: language"
+					goto "language short"
+				`	"Che vuoi dire con 'siete stati strappati alla galassia'?"`
+					goto ripped
+				`	"Che cos'è Casa Sioeora?"`
+					to display
+						not "Successors: house"
+					goto house
+			label house
+			action
+				set "Successors: house"
+			`	Questa volta Sieasej traduce la tua domanda all'ufficiale militare, che riflette un momento prima di rispondere qualcosa, e poi Sieasej parla di nuovo. "Sioeora è la casata nobile della cui grande tenuta vedi ciò che ti circonda. Ce ne sono molte altre nel più ampio reame: le stelle da questo lato del cunicolo. Ma è Sioeora ad aver preso patrocinio su di te, perché la custodia della nostra storia è il... cuore del suo desiderio. Se fossi stato preso tra le braccia di un'altra," dice Sieasej, indicando un intercettore atterrato su un'altra piazzola, "saresti certo rimasto senza riconoscimento, come una creatura troppo lontana nel nostro passato."`
+				goto questions
+			label "what now"
+			action
+				clear "Successors: changed"
+				clear "Successors: history"
+				clear "Successors: house"
+				clear "Successors: language"
+				clear "Successors: ripped"
+			`	Sieasej traduce questa domanda all'ufficiale in uniforme, che trasmette una risposta dettagliata accompagnata da una serie di esibizioni di colore e consistenza sulla pelle. Sopra di voi, uno stormo ronzante di intercettori passa e atterra su una serie di piazzole più vicine al centro del complesso spazioportuale. Alla fine Sieasej risponde, e lo fa con ancora più lentezza e cautela di prima. "Gli eredi della nobile Casa Sioeora hanno fatto sapere alle altre Casate Alte che sei ospite nel loro spazio e che procederai sotto la loro protezione. Potrai esplorare quei nostri mondi che ti offrono la loro grazia. Senza la nostra lingua, però, avrai ben poche occasioni di fare altro che osservare. Quanto a questo," continua Sieasej, "i nostri nobili eredi cominceranno la loro riunione qui tra otto giorni. E poiché hai destato la loro attenta curiosità, si attende che tu riceva un invito alla loro unione."`
+			`	Detto questo, Sieasej e alcuni degli altri si allontanano, lasciandoti solo sulla piazzola con la tua nave e l'anello delle guardie, che restano in silenzio e sull'attenti.`
+
+mission "Successors: First Contact 2 Prompt"
+	landing
+	name "Torna su <planet>"
+	description `Gli eredi di Casa Sioeora hanno chiesto la tua presenza immediata su <planet>, perché tu possa "prestare servizio e aiuto" a loro.`
+	source
+		attributes "successor"
+		not attributes "uninhabited"
+		not planet "Staja-Kella-Oa"
+	destination "Staja-Kella-Oa"
+	to offer
+		has "event: successors: first contact wait"
+		not "Successors: First Contact 2: offered"
+	to fail
+		has "Successors: Unified Defense: offered"
+	on offer
+		event "successors: tardy for sioeora" 14
+		conversation
+			`Mentre esci dalla <ship>, noti che un gruppo di Successori in uniforme è schierato sull'attenti sulla piazzola. L'ufficiale di testa ti si avvicina e ti consegna una piccola sfera metallica molto simile al dispositivo-mappa che ti era stato offerto prima. Invece di proiettare una mappa, però, la sfera comincia a riprodurre una registrazione appena la tocchi.`
+			`	"Capitano <first> <last>! Ho l'incarico di informarti che i nostri onoratissimi eredi della nobile Casa Sioeora desiderano che tu ti presenti davanti a loro per prestare a loro il tuo servizio e il tuo aiuto. Essi, hm... esigono che tu ti affretti di nuovo verso il nostro bel mondo, e che ti prepari come meglio ti aggrada a un'udienza davanti a loro. A conferma di questo messaggio, io stesso attesto: Vijaat Ojniis Sieasej, onorato studioso del terzo iret al servizio della nostra nobile Casa."`
+			`	La registrazione finisce lì, e la sfera cambia per mostrare una mappa stellare come prima.`
+				accept
+
+mission "Successors: First Contact 2"
+	landing
+	invisible
+	source "Staja-Kella-Oa"
+	to offer
+		has "event: successors: first contact wait"
+	to fail
+		has "Successors: Unified Defense: offered"
+	on offer
+		log "People" "Sieasej" "Sieasej is a Successor scholar of historical linguistics and a member of the noble House Sioeora. Because of their area of study, they are one of the only Successors who can speak to and understand human language without the benefit of a translation device."
+		conversation
+			`Poco dopo essere entrato nell'atmosfera di <planet>, la <ship> viene affiancata da due intercettori che ti guidano verso un complesso esteso nell'emisfero settentrionale, sul bordo di un grande lago. Le tue scorte si posano su due piccole piazzole vicine alla riva, e vedi che un'altra piazzola tra le due è stata illuminata con colori che corrispondono alla livrea della tua nave.`
+			`	Come prima, il luogo del tuo atterraggio è circondato da un gruppo di individui in uniforme, ma questa volta ce ne sono quasi un centinaio sull'attenti lungo il perimetro della piazzola, e la maggior parte sembra pesantemente armata. Anche questa volta, appena sbarchi, un ufficiale di testa ti si avvicina, accompagnato da un gruppo di otto che lo segue in formazione serrata. Il capo fa un gesto con uno dei bracci verso il centro del complesso, come per ordinarti di andare.`
+			choice
+				`	(Va' con loro.)`
+					goto inside
+				`	"Che cos'è questo posto?"`
+			`	L'individuo di testa ti studia e fa scorrere un po' i bracci, poi ripete il gesto verso il centro del complesso.`
+			choice
+				`	(Va' con loro.)`
+					goto inside
+				`	"È qui che stanno gli eredi?"`
+			`	Il capo dice qualcosa a uno degli altri, poi riporta l'attenzione su di te e fa di nuovo un gesto, questa volta con l'arma.`
+			choice
+				`	(Va'.)`
+			label inside
+			`	La tua scorta si rilassa mentre ti muovi verso il complesso interno, e il gruppo di otto ti segue mentre ti avvicini alle porte esterne.`
+			`	L'interno del complesso è opulento e immenso, con soffitti a volta che si innalzano su colonne uscite dall'acqua del lago. Alcune imitano forme e consistenze di tronchi e si aprono sul soffitto in una volta di foglie metalliche sottili che ondeggiano piano e coprono le luci incassate sopra di esse. Ogni sala che attraversi è una scultura unica ed enorme: l'arco di un'onda un attimo prima di infrangersi; la spirale di un enorme braccio munito di ventose. Arrivi infine a una grande porta che la tua scorta tocca con un braccio. Appena lo fa, la porta comincia a liquefarsi e a fluire in un canale nel pavimento. Quando ha finito, varchi la soglia in un'ultima stanza circolare dove un gruppo di Successori aspetta in piedi. Ne riconosci uno: è Sieasej, ora con nuove vesti dall'aspetto metallico; gli altri ti sono estranei e sono vestiti in modo particolarmente ricco.`
+			`	Uno degli individui adorni ti guarda e parla, e un momento dopo Sieasej traduce.`
+			branch "tardy"
+				has "event: successors: tardy for sioeora"
+			`	"Salve, capitano! Apprezziamo la tua sollecitudine nell'ottemperare alla nostra richiesta. Sono Riijaaora, onorato erede di Casa Sioeora. Parlerò oggi per i miei compagni e per la Casa."`
+				goto greet
+			label tardy
+			`	"Salve, capitano! Il tuo ritardo parla male di te. Sono Riijaaora, onorato erede di Casa Sioeora. Parlerò oggi per i miei compagni e per la Casa."`
+			label greet
+			choice
+				`	(Non dire nulla.)`
+					goto request
+				`	"Salve. Sono <first> <last>."`
+					goto introduce
+				`	"Mi scuso per il ritardo."`
+					to display
+						has "event: successors: tardy for sioeora"
+					goto "apologize tardiness"
+			label introduce
+			`	"Lo sappiamo. L'introduzione di un alieno come te non è attesa né richiesta in questa sala."`
+				goto request
+			label "apologize tardiness"
+			`	"La tua scusa è presa in nota."`
+			label request
+			`	Riijaaora continua. "Ti abbiamo convocato qui perché tu possa prestare servizio a questa Casa. Abbiamo un compito per te e, se saprai compierlo abilmente, anche un dono: un simbolo del nostro patrocinio."`
+			choice
+				`	(Non dire nulla.)`
+				`	"Che genere di compito?"`
+				`	"Che genere di dono?"`
+					goto gift
+				`	"Non apprezzo che mi si dia ordini."`
+					goto rude
+			label task
+			`	"È un mondo dentro la cicatrice di sistemi avvolti dalla foschia, a nord, che un tempo aveva il nome di Raaqa-Uur-Kaav. Ti chiediamo di andare là e, sulla sua superficie, di cercare una certa bestia e di riportarcela, integra e non guastata. Lo studioso Sieasej ti scorterà: un inviato di questa Casa che assisterà e sorveglierà i tuoi sforzi. E se riuscirai a recuperare la preda, riterremo opportuno concederti il dono impareggiabile della lingua, così che tu non debba mai più ricorrere a un traduttore, come fai qui e ora."`
+			choice
+				`	"Accetto."`
+					goto accepted
+				`	"Vuoi che faccia le tue commissioni? Non ci penso!"`
+					goto rejected
+			label gift
+			`	"Chi ti rivolge queste parole conosce bene il valore che la lingua conferisce, e sospettiamo che anche tu lo sappia. C'è un mondo dentro la cicatrice di sistemi avvolti dalla foschia, a nord, che un tempo aveva il nome di Raaqa-Uur-Kaav. Ti chiediamo di andare là e, sulla sua superficie, di cercare una certa bestia e di riportarcela, integra e non guastata. Lo studioso Sieasej ti scorterà: un inviato di questa Casa che assisterà e sorveglierà i tuoi sforzi. E se riuscirai a recuperare la preda, avrai da noi la ricompensa della lingua e tutto ciò che essa conferisce."`
+			choice
+				`	"Accetto."`
+					goto accepted
+				`	"Vuoi che faccia le tue commissioni? Non ci penso!"`
+					goto rejected
+			label rude
+			`	"Il tuo apprezzamento, o la tua incapacità di apprezzare, non sono cose che ci riguardino in questa sala. Puoi essere un alieno, ancora avvolto nella tua ignoranza, e proprio questo ti rende ancor più ospite sui nostri mondi e, hm... fruitore della nostra grazia. La tua obbedienza è attesa; in cambio, la nostra generosità."`
+			choice
+				`	"Chiedo scusa."`
+				`	"Non ho alcun desiderio di essere il tuo servo."`
+					goto rejected
+			`	"La tua scusa è presa in nota."`
+				goto task
+			label accepted
+			action
+				log "Hai incontrato i capi della Casa Alta Sioeora dei Successori e ti è stato ordinato di recuperare un animale dal pianeta Raaqa-Uur-Kaav. Ti è stato promesso un dispositivo di traduzione come ricompensa. Hai accettato la loro offerta."
+			`	"Mostri saggezza nella tua scelta. Già ora la tua nave viene preparata nello spazioporto di questa tenuta. Dovresti recarti là quando la tua udienza sarà finita, e là cominciare senza indugio il tuo nobile compito." L'erede si ferma un momento prima di continuare. "Ma sappi, caro capitano..." Sieasej freme di colore mentre l'erede pronuncia la frase seguente, "che non ti affidiamo un nostro cittadino senza contropartita. Se chi pronuncia queste parole subirà un danno mentre è sotto la tua protezione, o se non ce lo riporterai qui entro trenta giorni, ti considereremo un nemico e ti infliggeremo ogni male che potremo radunare."`
+				decline
+			label rejected
+			action
+				log "Hai incontrato i capi della Casa Alta Sioeora dei Successori e ti è stato ordinato di recuperare un animale dal pianeta Raaqa-Uur-Kaav. Ti è stato promesso un dispositivo di traduzione come ricompensa. Hai rifiutato."
+				set "Successors: First Contact 2: rejected"
+				"reputation: House Sioeora" <?= 0
+			`	Un'increspatura di colore risale il corpo di Sieasej e di diversi altri Successori. L'erede dà la propria risposta lentamente. "Allora il nostro atto di grazia di oggi sarà di permetterti di lasciare questo nobile luogo ancora in possesso della tua libertà e dei tuoi averi. Non riceverai altro aiuto né conforto da questa Casa, e sarai bandito, a piacere dei suoi eredi, da tutti i mondi che stanno sotto il nostro dominio."`
+			`	Sieasej e gli eredi ti voltano le spalle, e una fila di soldati converge dalle pareti a formare una linea che ti separa da loro. L'ufficiale di testa che ti ha scortato dentro fa un gesto con l'arma perché tu te ne vada.`
+			`	Mentre esci, la porta si chiude dietro di te e torna a essere metallo solido.`
+				flee
+
+mission "Successors: First Contact 3"
+	name "Cattura un animale per Casa Sioeora"
+	description `Gli eredi di Casa Sioeora ti hanno ordinato di visitare il pianeta <planet stopovers> e di catturare un "Kijra-riitaa" da riportare loro sano e salvo su <planet>. Torna entro <date>, o considereranno che tu abbia rapito Sieasej.`
+	source "Staja-Kella-Oa"
+	to offer
+		has "event: successors: first contact wait"
+		not "Successors: First Contact 2: rejected"
+	to fail
+		has "Successors: Unified Defense: offered"
+	deadline 30
+	stopover "Raaqa-Uur-Kaav"
+	destination "Staja-Kella-Oa"
+	passengers 1
+	cargo "Animal Transport Container" 1
+	blocked `Parli con Sieasej, che ti informa che gli servono almeno 1 cuccetta libera per viaggiare e 1 tonnellata di spazio cargo per trasportare il "Kijra-riitaa" nello spazio dei Successori.`
+	substitutions
+		"<tranq h2h>" "Pug staff"
+		"<tranq h2h>" "Heliarch staff"
+			has "outfit: Enforcer Riot Staff"
+		"<a tranq h2h long>" "a Pug Peacekeeping Staff"
+		"<a tranq h2h long>" "an Enforcer Riot Staff"
+			has "outfit: Enforcer Riot Staff"
+	on offer
+		conversation
+			`Nello spazioporto di Casa Sioeora ti viene incontro Sieasej, che ha lasciato le vesti metalliche adornate indossate alla presenza degli eredi per un abito simile a un bozzolo, più robusto e resistente. "Ah, capitano <last>," dicono. "Ti sei comportato bene con gli eredi della Casa. Abbastanza bene, almeno, per un alieno."`
+			choice
+				`	"Grazie. Che cosa puoi dirmi della nostra missione?"`
+					goto task
+				`	"Che vuoi dire con 'abbastanza bene per un alieno'?"`
+			`	Un'increspatura di consistenza ruvida e verdastra passa sulla pelle di Sieasej prima di attenuarsi. "Udienze come quella sono soggette a una litania di aspettative sociali. Se fossi uno di noi, la tua ignoranza di queste cose sembrerebbe quanto meno villana, ma... gli eredi non sono sciocchi. Sono più che disposti a sopportare un po' di scortesia in nome dei loro obiettivi."`
+			`	"Capisco," dici. "Immagino di non essere da meno."`
+			`	"Non preoccuparti," dice Sieasej, "perché l'eleganza del tuo parlare non era né attesa né richiesta. Ogni cosa ha un luogo e un tempo in cui serve, e un luogo e un tempo in cui non serve."`
+			label task
+			`	Sieasej fa scorrere i bracci sotto di sé. "Ah. Devo di nuovo parlare a nome di Sioeora." Estrae da una tasca del proprio abito un'altra sfera di dati metallica e te la offre. "Questa sfera ti darà il segnaposto del sistema verso cui dobbiamo andare. Sulla seconda luna del secondo pianeta dobbiamo atterrare e trovare un Kijra-riitaa, un Kijra-'pet', una sorta di bestia, come gli eredi ti hanno detto prima, nella tua udienza con loro."`
+			label questions
+			choice
+				`	"Meglio cominciare, allora."`
+					goto embark
+				`	"Che volevi dire che i motori di salto vi sono 'familiari'?"`
+					to display
+						has "Successors: knowledge"
+						not "Successors: jump drives"
+					goto "jump drives"
+				`	"Gli eredi hanno motori di salto propri?"`
+					to display
+						has "Successors: jump drives"
+						not "Successors: warning"
+					goto warning
+				`	"Che altro puoi dirmi di questi Kijra-pet?"`
+					to display
+						not "Successors: kijra-pet"
+					goto kijra-pet
+				`	"Come fa Sioeora a sapere che i Kijra-pet sono su questa luna?"`
+					to display
+						not "Successors: knowledge"
+					goto knowledge
+				`	"Sei certo che ti vada bene venire con me?"`
+					to display
+						not "Successors: you okay"
+					goto "you okay"
+				`	"C'è qualcosa a cui dovrei stare attento?"`
+					to display
+						not "Successors: watch out"
+					goto "watch out"
+			label kijra-pet
+			action
+				set "Successors: kijra-pet"
+			`	Sieasej freme un poco e sceglie le parole lentamente. "I Kijran sono molto discussi nella storia del nostro popolo. Erano animali domestici e bestie da caccia prediletti tra... alcune delle nostre genti dei Predecessori, ai loro tempi. La larva è della misura di una... hm, della tua testa, più o meno; con un corpo delicato e una pelle di vetro, e ali di seta finissima. Ma se si accoppia e depone le uova, si sottopone a diverse mute finché non diventa più grande e più temibile per difendere la covata nascente. I Kijran-Riitaa, i Kijra-'pet', sono i piccoli di questi, e i Kijran-Khora gli adulti temuti. Se sei saggio," Sieasej sottolinea questo con un'onda di colore, "dovresti catturare i piccoli e nient'altro."`
+				goto questions
+			label knowledge
+			action
+				set "Successors: knowledge"
+			`	"È un insieme di cose," dice Sieasej. "I... percorsi nello spazio che collegano quelle stelle cambiano continuamente, anno dopo anno. È un rischio di quello spazio. Qualche anno fa c'era un percorso che conduceva fin là, attraverso il quale le navi di tutte le Casate potevano trovare passaggio ed esplorare. Ora è chiuso da molti anni e i nostri vascelli non possono entrarvi. Gli eredi sanno che devi possedere un motore di salto perché tu sia potuto arrivare fino a noi, perché questa tecnologia ci è familiare. E così sanno che puoi recuperare quella cosa che desiderano."`
+				goto questions
+			label "jump drives"
+			action
+				set "Successors: jump drives"
+			`	"Ricorda, capitano, che i nostri Predecessori solcarono le stelle per diecimila anni prima che noi posassimo di nuovo gli occhi sulla tua specie, che allora aveva appena scoperto l'industria. Motori come quello della tua nave ci sono noti da molto prima del tuo passato."`
+				goto questions
+			label warning
+			action
+				set "Successors: warning"
+			`	"Questo non sta a me saperlo, né, credo, a te."`
+				goto questions
+			label "you okay"
+			action
+				set "Successors: you okay"
+			`	Macchie di colore arancione emergono sulle punte dei bracci di Sieasej. "Confesso che questo è un po' strano, e so che la prospettiva di questo... viaggio mi suscita qualche pensiero di trepidazione. Ma visitare quei mondi è già di per sé una ricompensa, e farlo in tua compagnia, proprio degli alieni che ho studiato, la rende doppiamente grande. Devi renderti conto che sei il sogno di uno storico. Sei una creatura uscita da una pagina di una storia lontana, fatta carne e sangue nell'età moderna."`
+				goto questions
+			label "watch out"
+			action
+				set "Successors: watch out"
+			`	"La Casa mi ha avvertito dei pericoli che quello spazio comporta. La tua nave deve aver resistito abbastanza da arrivare qui intatta, quindi devo fidarmi che resisterà ancora."`
+				goto questions
+			label embark
+			action
+				clear "Successors: jump drives"
+				clear "Successors: kijra-pet"
+				clear "Successors: knowledge"
+				clear "Successors: warning"
+				clear "Successors: watch out"
+				clear "Successors: you okay"
+			`	"Sono d'accordo," dice Sieasej. "Non abbiamo tempo da sprecare."`
+				accept
+	on stopover
+		conversation
+			`Alcuni minuti dopo che sei entrato nel sistema, Sieasej entra nella cabina di pilotaggio e ti indica un punto nell'emisfero meridionale del pianeta, sul bordo di uno dei continenti minori. "Qui, capitano," dicono, "c'era un luogo dove un tempo le bestie venivano allevate. L'ultima volta che le nostre navi vennero qui, fu in questo punto che ne notarono molti di Kijran-Riitaa."`
+			`	Mentre ti avvicini alle coordinate per atterrare, vedi che contengono i resti di un complesso notevole: ci sono più di una dozzina di grandi edifici e diverse piazzole in disuso, collegate da sentieri di metallo liscio e intatto. I materiali mostrano una qualità curiosa, insieme immacolata e invasa dalla vegetazione: viticci si aggrappano a pareti per il resto senza macchia, e i vari camminamenti, benché spesso ombreggiati da grandi piante, non mostrano detriti sulle loro superfici.`
+			branch "retrieve tranqs"
+				or
+					has "outfit (flagship installed): Enforcer Riot Staff"
+					has "outfit (flagship installed): Pug Peacekeeping Staff"
+			`	Posi la <ship> su una delle piazzole ed esci sulla superficie, non prima di aver recuperato una rete dalla stiva. Ti accompagna Sieasej, che tiene sollevato un dispositivo cilindrico e lo agita nell'aria per diversi secondi. "Percepisce i richiami delle creature nel vento, più tenui di quanto le nostre orecchie noterebbero. Siamo fortunati, capitano. Non dovremo andare lontano." Agita ancora il dispositivo, con movimenti più lenti ma più ampi, prima di parlare di nuovo. "Il più vicino è a ovest, a poca distanza lungo il sentiero."`
+				goto approach
+			label "retrieve tranqs"
+			`	Posi la <ship> su una delle piazzole ed esci sulla superficie, non prima di aver recuperato una rete dalla stiva, insieme a <a tranq h2h long> come arma tranquillante improvvisata. Ti accompagna Sieasej, che tiene sollevato un dispositivo cilindrico e lo agita nell'aria per diversi secondi. "Percepisce i richiami delle creature nel vento, più tenui di quanto le nostre orecchie noterebbero. Siamo fortunati, capitano. Non dovremo andare lontano." Agita ancora il dispositivo, con movimenti più lenti ma più ampi, prima di parlare di nuovo. "Il più vicino è a ovest, a poca distanza lungo il sentiero."`
+			label approach
+			choice
+				`	(Avvicinati al luogo.)`
+					goto encounter
+				`	"Sai molto di tracciamento, per essere uno studioso."`
+			`	"Ah," dice Sieasej, fermandosi un momento. "Frutto di un addestramento che non uso da molti anni. Forse Sioeora è lungimirante quanto vorrebbe farci credere."`
+			label encounter
+			`	Ti fai strada lungo uno dei camminamenti verso ovest, scostando le foglie enormi delle piante invadenti. Sieasej continua ad agitare il dispositivo di triangolazione e a riferire piano i tuoi progressi; man mano che ti avvicini, senti un fruscio leggero che capisci precedere ogni rilevamento del dispositivo. Dopo aver attraversato una parete di vegetazione particolarmente fitta, scorci il tuo bersaglio: un animale dalle ali di vetro appollaiato su una pianta oltre il bordo del camminamento, che saggia il ramo su cui sta con lunghe antenne che si protendono dalla testa.`
+			choice
+				`	(Prova a tranquillizzarlo.)`
+					goto tranq
+					to display
+						or
+							has "outfit (flagship installed): Enforcer Riot Staff"
+							has "outfit (flagship installed): Pug Peacekeeping Staff"
+				`	(Prova a catturarlo con una rete.)`
+					goto net
+				`	(Resta fermo e prova a catturarlo senza aggressività.)`
+					goto lure
+			label tranq
+			branch tranqed
+				random < 70
+			`	Miri e spari un colpo della <tranq h2h> contro l'animale, ma all'ultimo momento quello scatta via, così che il colpo lo sfiora appena. Crolla al suolo strillando, e anche se presto tace mentre il tranquillante fa effetto, lo strillo è riecheggiato da altri animali della zona. Poco dopo anche quelli tacciono, e le tue orecchie sono trafitte da un lungo lamento tremolante in lontananza.`
+				goto escape
+			label tranqed
+			`	Miri e spari un colpo della <tranq h2h> al centro dell'animale. Salta per un istante nel tentativo di fuggire, ma presto crolla al suolo in una nuvola di foglie e piume impolverate.`
+				goto "bring tranq"
+			label net
+			`	Lanci una rete sull'animale, che cade a terra e strilla per un po' prima di tacere. Lo strillo è presto riecheggiato da altri simili provenienti da altri animali della zona, e quando anche quelli tacciono, le tue orecchie sono trafitte da un lungo lamento tremolante in lontananza.`
+				goto escape
+			label lure
+			`	Anche l'animale resta immobile, esaminandoti da vicino. I suoi occhi sono grandi e furtivi, con iridi di un rosso brillante e le stesse pupille a forma di clessidra dei Successori. Dopo averti studiato, alla fine si avvicina alla tua mano, la annusa piano e sfiora la tua pelle con gli arti anteriori coperti di piumino.`
+			choice
+				`	(Prova a portarlo con te solo con del cibo.)`
+				`	(Tranquillizzalo ora.)`
+					goto "tranq friends"
+					to display
+						or
+							has "outfit (flagship installed): Enforcer Riot Staff"
+							has "outfit (flagship installed): Pug Peacekeeping Staff"
+				`	(Catturalo con una rete.)`
+					goto "net friends alarmed"
+			action
+				set "Successors FC3: nonviolent kijra-pet capture"
+			`	Recuperi un boccone di cibo e lo offri al Kijra-pet, che lo annusa a lungo prima di cominciare a mangiare, trillando piano mentre dà un paio di piccoli morsi. Ripiega le ali dietro il corpo come una libellula e distende dalla testa due lunghe antenne simili a piume, che si uniscono alle zampe nell'esplorare la tua pelle e i tuoi vestiti. Presto salta sul tuo braccio annusandoti le tasche, tubando e frugando più a fondo in quella dove tenevi il cibo. Cominci a tornare verso la nave mentre continua a esplorarti le tasche, attento a non spaventarlo con movimenti bruschi.`
+			`	"Non c'è da stupirsi," dice Sieasej, "che fossero animali tanto apprezzati, se il loro carattere è così docile e arrendevole." Rimette il dispositivo di triangolazione in una tasca del proprio abito e scivola al tuo fianco.`
+				goto ambush
+			label "tranq friends"
+			`	Mentre l'animale è distratto, miri e spari un colpo della tua <tranq h2h>. Salta per un istante nel tentativo di fuggire, ma presto crolla al suolo in una nuvola di foglie e piume impolverate.`
+				goto "bring tranq"
+			label "net friends alarmed"
+			`	Mentre l'animale è distratto, gli lanci addosso una rete e quello cade a terra, dove strilla per un po' prima di tacere. Lo strillo è presto riecheggiato da altri simili provenienti da altri animali della zona, e quando anche quelli tacciono, le tue orecchie sono trafitte da un lungo lamento tremolante in lontananza.`
+				goto escape
+			label "bring tranq"
+			`	Raccogli l'animale tranquillizzato, attento a non danneggiargli le estremità, e cominci a tornare verso la nave.`
+				goto ambush
+			label escape
+			choice
+				`	(Afferralo e corri!)`
+			`	Raccogli l'animale immobilizzato e cominci a correre verso la nave mentre il lamento alle tue spalle cresce di tono e intensità. Mentre tu e Sieasej correte tra il fogliame, la luce del sole sopra di voi si oscura all'improvviso per l'ombra di qualcosa che vola sopra le vostre teste.`
+			choice
+				`	(Continua a correre.)`
+				`	(Prova a sparare a qualunque cosa ci sia sopra di me.)`
+					goto "shoot ambush"
+			`	Improvvisamente l'ombra sparisce e il lamento cessa. Continui a correre verso la nave, ma non riesci a scrollarti di dosso la sensazione di essere osservato.`
+				goto ambush
+			label "shoot ambush"
+			`	Estrai l'arma da fianco e guardi in alto per vedere cosa ci sia, ma l'ombra è sparita all'improvviso e resti a fissare la luce del sole e le foglie. Anche il lamento è cessato; anzi, tutta la zona resta stranamente silenziosa mentre continui a correre verso la nave.`
+			label ambush
+			`	Quando arrivi, però, trovi due grosse creature che ti bloccano l'ingresso alla <ship>. La loro pelle di vetro somiglia a quella della creatura più piccola che hai catturato, ma sono grandi diversi metri ciascuna. Le loro antenne, invece che morbide e piumate, sono simili a fruste e seghettate, con la punta armata di barbigli dall'aria feroce, che protendono verso di te e verso Sieasej appena notano la vostra presenza. I loro molti occhi guizzano tra te e l'animale che hai catturato, e le due emettono all'unisono un lamento acuto. Onde di rosso e blu scorrono sul corpo di Sieasej: probabilmente un'espressione di paura.`
+			choice
+				`	(Corri oltre.)`
+				`	(Sparagli con l'arma da fianco.)`
+					goto shoot
+				`	(Ordina al mio equipaggio di sparare con una torretta.)`
+					to display
+						"flagship base attribute: turret mounts" > "flagship attribute: turret mounts"
+						"flagship crew" > ( "flagship required crew" - 1 )
+					goto "ship shoot"
+				`	(Libera l'animale che ho catturato.)`
+					goto release
+			`	Tenti di correre oltre le creature, ma prima ancora che tu possa avvicinarti, una di loro ti sferza con l'antenna munita di barbigli, conficcandotela in profondità nel petto. L'ultima cosa che vedi è Sieasej che si allontana in fretta mentre le creature inseguono anche loro.`
+				die
+			label shoot
+			`	Estrai l'arma da fianco e spari alle creature, colpendone una a metà del corpo. Quella si accascia, e subito dopo l'altra ti carica. Appena in tempo, riesci a sparare anche a quella, che ruzzola al suolo sollevando terra e foglie morte e lanciando un lamento prima di tacere.`
+				goto successful
+			label "ship shoot"
+			`	Chiami la <ship> via radio e ordini al tuo equipaggio di sparare una torretta contro le creature. La potenza delle armi di una nave spaziale a una distanza così ravvicinata basta a liquidare rapidamente e senza cerimonie il paio, prima che abbiano l'occasione di attaccare.`
+				goto successful
+			label release
+			branch "release friends"
+				has "Successors FC3: nonviolent kijra-pet capture"
+			action
+				set "Successors FC3: released kijra-pet"
+			`	Posi delicatamente a terra l'animale che hai catturato, davanti a te, e indietreggi lentamente, spostandoti di lato mentre le due creature più grandi gli si avvicinano e lo accarezzano piano con le antenne. Il piccolo si dimena un poco, poi distende le ali di garza e svolazza via nel fogliame. Alla fine le due creature più grandi lo seguono, non prima che una si volti a guardare te e Sieasej e vocalizzi.`
+				goto released
+			label "release friends"
+			action
+				set "Successors FC3: released kijra-pet"
+				set "Successors FC3: friend to animals" # Nonviolent capture AND released at first opportunity
+			`	Inviti piano l'animale a scendere dal tuo braccio e a posarsi a terra davanti a te, indietreggiando lentamente e spostandoti di lato. Quello corre verso le due creature più grandi, toccando le punte delle loro antenne con le proprie e trillando piano come prima. Dopo un po' si dimena e distende le ali di garza, svolazzando via nel fogliame. Alla fine le due più grandi lo seguono, non prima che una si volti a guardare te e Sieasej e vocalizzi, un trillo più lungo e più basso, quasi come le fusa di un gatto.`
+				goto released
+			label successful
+			`	Liquidate le creature più grandi, tu e Sieasej vi precipitate nella nave con la preda al sicuro. Le onde di colore che scorrono sul corpo di Sieasej si attenuano lentamente. "Ben fatto, capitano," dicono alla fine. "Sono certo che Sioeora sarà compiaciuta di te."`
+			`	Mentre Sieasej torna nella propria cabina, riponga il Kijra-riitaa catturato in un contenitore cargo per il trasporto di animali nella stiva della <ship>. Sembra non gradire la gabbia: ringhia piano e va avanti e indietro nel contenitore, sollevando pezzetti di paglia.`
+			choice
+				`	(Lascialo stare.)`
+					goto "take off"
+				`	(Metti un po' più di giaciglio nel contenitore.)`
+				`	(Liberalo.)`
+					goto "better late than never"
+			action
+				set "Successors FC3: captured kijra-pet"
+			`	Frughi negli altri contenitori cargo finché non trovi qualche ritaglio di tessuto di scorta e foglie secche, di cui aggiungi un paio di manciate alla gabbia dell'animale. Sistemato questo, fai i preparativi per il decollo.`
+				goto end
+			label "take off"
+			action
+				set "Successors FC3: captured kijra-pet"
+			`	Con l'animale sistemato, fai i preparativi per il decollo.`
+				goto end
+			label "better late than never"
+			action
+				set "Successors FC3: released kijra-pet"
+			`	Apri la porta del contenitore e inviti il Kijra-riitaa a uscire dalla nave. Spicca il volo poco dopo essere uscito, sparendo presto in un puntino contro il vasto cielo azzurro. Non resta altro da fare qui, quindi fai i preparativi per il decollo, così da poter almeno riportare Sieasej dai suoi.`
+				goto end
+			label released
+			`	Le onde di colore sul corpo di Sieasej si attenuano lentamente quando gli animali se ne sono andati. "Confesso che non ti avevo preso per un'anima così tenera," dicono alla fine.`
+			choice
+				`	"Ho fatto solo ciò che pensavo ci avrebbe riportati a casa vivi."`
+					goto "back alive"
+				`	"Non era giusto far loro del male."`
+			`	"Ah," dicono. "Siamo stati fortunati, allora, che pensassero lo stesso di noi."`
+				goto "released 2"
+			label "back alive"
+			`	"Ah," dicono. "Beh, io per parte mia ti ringrazierò per la prudenza." Dopo una pausa, aggiungono: "Anche se la mia nobile casata non lo farà."`
+			label "released 2"
+			`	Sieasej agita brevemente il dispositivo nell'aria, senza successo. "Ciò nonostante," dicono, "il tuo atto di clemenza qui ci costa un fallimento. Sotto minaccia, gli adulti nasconderanno di certo i loro piccoli, e così è accaduto qui. Pare che dobbiamo tornare a mani vuote." Ondeggiano brevemente in un modo che somiglia a una risata. "In ogni caso, credo che non affronterei un'altra caccia come questa."`
+			`	Tornate entrambi alla <ship> e fate i preparativi per il decollo, così da poter almeno riportare Sieasej dai suoi.`
+			label end
+
+	on fail
+		dialog `Non sei riuscito a riportare Sieasej dai suoi in tempo. Se vuoi proseguire la linea narrativa dei Successori, torna a un salvataggio precedente.`
+		"reputation: House Sioeora" = -999
+		"reputation: Successor" <?= 0
+		"reputation: House Chydiyi" <?= 0
+		"reputation: House Myurej" <?= 0
+
+	on complete
+		conversation
+			branch capture
+				has "Successors FC3: captured kijra-pet"
+			label release
+			action
+				"reputation: House Sioeora" <?= 0
+				event "successors: released kijra-pet wait" 32
+				log "Hai liberato l'animale che Casa Sioeora ti aveva chiesto di portarle. Hai restituito il loro cittadino, ma ti è stato vietato ogni ulteriore rapporto con la Casa."
+			`Come prima, vieni indirizzato allo spazioporto privato di Casa Sioeora nell'emisfero settentrionale, dove una piazzola è già stata liberata per il tuo arrivo. A te e a Sieasej vengono assegnate meno scorte di prima, e non puoi fare a meno di chiederti se l'assenza della tua preda sia particolarmente evidente ai loro occhi. Ben presto arrivi di nuovo nella camera degli eredi, dove Riijaaora e gli altri aspettano in piedi.`
+			`	"Salve, capitano <last>!" dice Riijaaora, questa volta parlando con la propria voce. I suoni sembrano distorti e irregolari, come se venissero riordinati a mezz'aria. "Dicci, hai portato quella cosa che desideriamo?"`
+			choice
+				`	"No, non l'ho portata."`
+				`	"Sono quasi morto! Ho finito di fare il vostro sporco lavoro."`
+			`	Un lampo di pelle nera e arruffata passa sul corpo di Riijaaora. Diversi altri eredi fanno esibizioni simili. "È un peccato, capitano," dicono. "Se non puoi offrire alcuna utilità a questa Casa, allora vediamo poco motivo di tenerti come alleato, e ancor meno di ricompensarti per un servizio che non c'è stato. Non importunarci oltre, e vattene." Si voltano per darti le spalle, e le guardie si staccano lentamente dalle pareti per scortarti fuori. Sieasej resta a guardare finché la porta non si chiude dietro di te.`
+			`	Mentre torni alla piazzola, noti che la tua nave è stata rifornita, ma la piazzola stessa viene lentamente allagata, in un gesto tutt'altro che sottile che ti invita ad andartene.`
+				goto exit
+
+			label capture
+			action
+				set "known to the successors"
+				set "language: Successor"
+				set "successors sioeora patron"
+				event "successors: trust 1"
+				"reputation: Successor" += 1
+				"reputation: House Chydiyi" += 1
+				"reputation: House Myurej" += 1
+				"reputation: House Sioeora" += 1
+				"reputation: House Aqrabe" += 2
+				"reputation: House Seineq" += 2
+				"reputation: People's Houses" += 2
+				log "Hai catturato e riportato l'animale che Casa Sioeora ti aveva chiesto di portarle. Sei stato ricompensato con un dispositivo di traduzione e con dati storici che ti permettono di atterrare sulla maggior parte dei mondi dei Successori. Ti è stato detto che aiutare i Successori in lavori e missioni ti avrebbe alla fine permesso di acquistare parte della loro tecnologia."
+			`Come prima, vieni indirizzato allo spazioporto privato di Casa Sioeora nell'emisfero settentrionale, dove una piazzola è già stata liberata per il tuo arrivo. Prima di uscire, recuperi il Kijra-riitaa in gabbia dalla stiva della <ship>. L'animale ha un'aria un po' compassionevole, con le ali ripiegate e il corpo rannicchiato in una palla, ma per il resto sembra intatto. A te e a Sieasej vengono assegnate meno scorte di prima; quelle che avete vi guidano più a fondo nel complesso. Ben presto arrivi di nuovo nella camera degli eredi, dove Riijaaora e gli altri aspettano in piedi.`
+			`	"Salve, capitano <last>!" dice Riijaaora, questa volta parlando con la propria voce. I suoni sembrano distorti e irregolari, come se venissero riordinati a mezz'aria. "Vediamo che sei tornato dalla caccia con successo!"`
+			choice
+				`	"Sì, è così."`
+				`	"Naturalmente."`
+			`	Riijaaora si dimena in quello che potrebbe essere un'espressione di gioia, poi, insieme agli altri eredi, apre i bracci davanti a te. "Hai reso un grande servizio a questa Casa, capitano," dicono. "Saremmo orgogliosi di chiamarti 'alleato' e di ricompensarti per la tua utilità." Uno degli ufficiali militari in piedi accanto agli eredi si avvicina e ti prende gentilmente dalle mani l'animale in gabbia. Quello cinguetta piano mentre lo consegni.`
+			`	Riijaaora indica una piccola spilla di legno fissata allo strato esterno del proprio abito. "Conserviamo diversi di questi dispositivi, pieni di suono e di lingua, ma pochissimi per la tua lingua. Questo... è un pezzo d'arte, emesso molti anni fa per una rappresentazione della Tempesta del tuo Shakespeare, perché i nostri nobili Predecessori potessero vivere l'opera nella sua forma più vera. Ora è il dono che ti era promesso."`
+			`	Riijaaora stacca il dispositivo dall'abito e te lo offre.`
+			choice
+				`	(Prendilo.)`
+			`	Il dispositivo è di legno intagliato, o almeno di qualcosa che vi assomiglia, e raffigura nella venatura ben verniciata una nave a vela spinta contro gli scogli. Mentre lo appunti sulla giacca, la nave comincia a dondolare piano sul posto e senti un leggero formicolio nei condotti uditivi. Riijaaora si volta verso Sieasej per parlare con loro. "E non pensare, onesto cittadino, che il tuo contributo resti senza riconoscimento. Anche tu sarai ricompensato per la tua parte in questo." Riijaaora fa cenno a un altro ufficiale di scortarli via, non prima che Sieasej ti offra un breve aprirsi delle braccia in segno di addio.`
+			`	Un ufficiale ti si avvicina per offrirti una sfera di dati. "Dentro questa," dice Riijaaora, "sta la conoscenza della storia della maggior parte dei mondi del nostro spazio. Unita alla tua nuova capacità con le lingue, troverai i nostri mondi e le nostre città più rivelatori al tuo sguardo e più fruttuosi per i tuoi sforzi. Ti sarà permesso guardare le nostre creazioni e i nostri vascelli. Se la prospettiva ti interessa, siamo certi che le altre Casate nel loro consiglio acconsentiranno a estenderti i diritti d'acquisto, purché tu mostri loro la tua benevolenza e la tua utilità. Ci sono molti compiti minori da completare sui nostri mondi; senza dubbio il tuo pronto aiuto gioverà a tale ingraziamento presso gli altri." Riijaaora ondeggia. "È tutto, a meno che tu non abbia altre domande che dobbiamo risolvere?"`
+			label questions
+			choice
+				`	"Non ho domande."`
+					to display
+						not "Successors: others"
+						not "Successors: animal"
+					goto end
+				`	"Non ho altre domande."`
+					to display
+						or
+							has "Successors: others"
+							has "Successors: animal"
+					goto end
+				`	"Essere vostro alleato mi porterà in conflitto con le altre Casate?"`
+					to display
+						not "Successors: others"
+					goto others
+				`	"Che cosa farete all'animale?"`
+					to display
+						not "Successors: animal"
+					goto animal
+			label others
+			action
+				set "Successors: others"
+			`	La pelle di Riijaaora si macchia di colori. "Di certo no, crediamo. Nessuno oserebbe un affronto tanto ardito da mettere in pericolo il vassallo di un'altra. Puoi viaggiare tra le nostre stelle senza timore."`
+				goto questions
+			label animal
+			action
+				set "Successors: animal"
+			`	"Non è cosa che ti riguardi, onesto capitano. Tuttavia, se temi crudeltà da parte nostra, sappi che il tuo dono sarà da noi ben custodito e ben conservato. Non temere per lui, e placa il tuo cuore dubbioso."`
+				goto questions
+			label end
+			action
+				clear "Successors: animal"
+				clear "Successors: others"
+			`	"Bene. Ti diamo dunque un buon commiato, e buoni presagi nei tuoi viaggi." Riijaaora e gli altri eredi si voltano per darti le spalle. Gli ufficiali che ti hanno scortato dentro ti riaccompagnano fuori verso la nave, attraverso i vari passaggi scultorei del complesso di Sioeora.`
+			label exit
+
+mission "Successors: Kaatrij Monoglot Prompt"
+	landing
+	invisible
+	to offer
+		has "event: successors: released kijra-pet wait"
+		not "Successors: First Contact 3: failed"
+		and
+			not "language: Hai"
+			not "language: Coalition"
+	to fail
+		has "Successors: Unified Defense: offered"
+	on offer
+		conversation
+			`Poco dopo aver posato la <ship> su <origin>, noti un trillo tenue provenire dalla tua cabina di bordo. Dopo aver frugato tra le tue cose, scopri che viene da una sfera di dati dei Successori, che vibra intensamente. La prendi in mano, e proietta un messaggio in una scrittura aliena dall'aspetto stranissimo che purtroppo non riconosci. Se ti fossi mai procurato qualche dispositivo di traduzione alieno, potresti riuscire a decifrarlo.`
+				decline
+
+mission "Successors: First Contact 3: Fix Friend to Animals"
+	landing
+	invisible
+	to offer
+		# Impossible to detect if the stopover happened, so patch the conditions after the mission completes
+		has "Successors: First Contact 3: done"
+		has "Successors FC3: nonviolent kijra-pet capture"
+		not "Successors FC3: released kijra-pet"
+		not "Successors FC3: captured kijra-pet"
+	on offer
+		set "Successors FC3: released kijra-pet"
+		set "Successors FC3: friend to animals"
+		fail
+
+mission "Successors: Kaatrij First Contact 1"
+	landing
+	clearance
+	infiltrating
+	name "Convocazione su <destination>"
+	description "Una sfera di dati dei Successori lasciata nella tua nave sembra emettere una convocazione di Casa Kaatrij verso <destination>."
+	destination "Raaqa-Puan-Uuoru"
+	to offer
+		has "event: successors: released kijra-pet wait"
+		not "Successors: First Contact 3: failed"
+		or
+			has "language: Hai"
+			has "language: Coalition"
+	to fail
+		has "Successors: Unified Defense: offered"
+	substitutions
+		"<coalition ally>" "Heliarchy"
+		"<coalition ally>" "Lunarium"
+			has "joined the lunarium"
+	on offer
+		conversation
+			branch "was monoglot"
+				has "Successors: Kaatrij Monoglot Prompt: offered"
+			branch hai
+				has "language: Hai"
+			`Poco dopo aver posato la <ship> su <origin>, noti un trillo tenue provenire dalla tua cabina di bordo. Dopo aver frugato tra le tue cose, scopri che viene da una sfera di dati dei Successori, che vibra intensamente. La prendi in mano, e proietta un messaggio in una scrittura dall'aspetto familiare che capisci subito appartenere a una delle specie della Coalition. Dopo aver passato il testo nella scatola di traduzione che hai ottenuto dai <coalition ally>, riesci a decifrare il messaggio:`
+				goto "message coalition"
+			label hai
+			`Poco dopo aver posato la <ship> su <origin>, noti un trillo tenue provenire dalla tua cabina di bordo. Dopo aver frugato tra le tue cose, scopri che viene da una sfera di dati dei Successori, che vibra intensamente. La prendi in mano, e proietta un messaggio in una scrittura dall'aspetto familiare che capisci subito essere quella degli Hai. Dopo aver passato il testo nel traduttore Hai della tua nave, riesci a decifrare il messaggio:`
+				goto "message hai"
+
+			label "was monoglot"
+			branch "hai monoglot"
+				has "language: Hai"
+			`Appena atterri qui, ti torna in mente la sfera di dati dei Successori che hai trovato nella tua nave tempo fa. Dato che di recente hai procurato una scatola di traduzione della Coalition, potresti riuscire a decifrarne il messaggio.`
+			choice
+				`	(Prova a decifrarlo.)`
+				`	(Forse più tardi.)`
+					defer
+				`	(Non decifrarlo.)`
+					decline
+			`	Recuperi la sfera, che proietta il suo messaggio in una scrittura dall'aspetto familiare che capisci subito appartenere a una delle specie della Coalition. Dopo aver passato il testo nella scatola di traduzione che hai ottenuto dai <coalition ally>, riesci a decifrarlo:`
+				goto "message coalition"
+			label "hai monoglot"
+			`Appena atterri qui, ti torna in mente la sfera di dati dei Successori che hai trovato nella tua nave tempo fa. Dato che di recente hai procurato un traduttore Hai, potresti riuscire a decifrarne il messaggio.`
+			choice
+				`	(Prova a decifrarlo.)`
+				`	(Forse più tardi.)`
+					defer
+				`	(Non decifrarlo.)`
+					decline
+			`	Recuperi la sfera, che proietta il suo messaggio in una scrittura dall'aspetto familiare che capisci subito essere quella degli Hai. Dopo aver passato il testo nella scatola di traduzione che hai ottenuto da loro, riesci a decifrarlo:`
+				goto "message hai"
+			label "message coalition"
+			`		UDIENZA DEL CAPITANO UMANO, CASA KAATRIJ RICHIEDE`
+				goto end
+			label "message hai"
+			`		CASA KAATRIJ [RICHIEDE, ESIGE] UDIENZA DEL CAPITANO UMANO`
+			label end
+			`	La sfera alterna lentamente la visualizzazione di questo messaggio e quella di una mappa verso un sistema nello spazio occidentale dei Successori.`
+				accept
+	on complete
+		conversation
+			`Mentre entri nell'atmosfera di questo pianeta, la sfera di dati ricomincia a trillare e proietta una mappa diversa, questa volta evidenziando una serie di coordinate sul lato notturno. Correggi la rotta per volare fin là e posi la <ship> su un tratto di terra accanto a un grande lago. La sfera di dati non offre altre indicazioni.`
+			choice
+				`	(Aspetta.)`
+			`	Un paio di animali nuotano nell'acqua in lontananza, emettendo ogni tanto dei tenui starnazzi che indugiano nell'aria stellata.`
+			choice
+				`	(Guardati intorno.)`
+				`	(Vattene.)`
+					goto premature
+			`	Il bagliore delle luci della <ship> attira uno sciame di creature volanti simili a insetti che si tuffano su di esse invano, ancora e ancora. Una brezza leggera increspa le foglie della vegetazione intorno al lago.`
+			choice
+				`	(Controlla i miei sensori.)`
+				`	(Vattene.)`
+					goto premature
+			`	All'interno, una luce sul pannello di controllo della cabina lampeggia come se la nave venisse scansionata, ma sui sensori non c'è nulla, e l'allarme sparisce quasi subito dopo essere cominciato. Tuoni lontani da una tempesta in arrivo spaventano gli animali del lago, che saltano in aria prima di ridiscendere sulla superficie dell'acqua a una certa distanza.`
+			choice
+				`	(Esci fuori.)`
+				`	(Vattene.)`
+					goto premature
+			`	I minuti della notte passano e, incuriosito, scendi sulla rampa d'imbarco della nave per vedere meglio ciò che ti circonda, senza risultato. Ciò nonostante, continui ad aspettare. Alla fine, dopo che la notte è andata un po' più avanti, senti il rumore dell'acqua che si precipita; un piccolo veicolo emerge dal lago e si ferma accanto alla tua nave. Ne scendono un paio di Successori, uno dei quali si avvicina a te.`
+			`	"Capitano <first> <last>," dicono. La loro voce suona strana, come se le loro parole fossero portate dal vento da molto lontano; i suoni ondeggiano e si piegano mentre le pronunciano.`
+			choice
+				`	"È esatto."`
+				`	"Chi sei?"`
+			`	"Hmm. Bene. Sono un inviato dei nobili eredi di Casa Kaatrij. Lo attesto io stesso come Saajret, di Somber Sejra." La pelle di Saajret erompe di schizzi verdi mentre lo dicono. "La tua liberale pazienza è molto apprezzata." Aprono i bracci nello stesso modo in cui ti avevano salutato i Successori la prima volta, e i due dietro di loro fanno lo stesso. "Ah," continuano, "ma devi certo essere curioso di sapere perché ti abbiamo chiamato qui. Le tue azioni, consapevoli o no, hanno giovato a questa nobile Casa, e saremmo vili sciocchi a non riconoscere il fatto. Sappi dunque che Raaqa-Uur-Kaav era il nostro mondo, non di Sioeora. E anche i Kijran, nostri, non sono mai stati loro da tenere o da ghermire."`
+			choice
+				`	"Quindi i Kijran appartengono a voi?"`
+					goto kijran
+				`	"Come fai a comunicare con me?"`
+					to display
+						not "language: Successor"
+					goto communicate
+			label questions
+			choice
+				`	"Come fai a comunicare con me?"`
+					to display
+						not "language: Successor"
+					goto communicate
+				`	"Che cosa succede adesso?"`
+					to display
+						has "language: Successor"
+					goto end
+				`	"Il vostro sostegno mi porterà in conflitto con Casa Sioeora?"`
+					to display
+						has "language: Successor"
+						not "Successors: sioeora"
+					goto sioeora
+				`	"Puoi dirmi qualcosa di più su di te?"`
+					to display
+						has "language: Successor"
+						not "Successors: saajret"
+					goto saajret
+				`	"Hai detto prima che i Kijran 'appartengono' a voi?"`
+					to display
+						not "Successors: kijran"
+					goto kijran
+			label kijran
+			action
+				set "Successors: kijran"
+			`	Saajret freme di consistenza. "Più che solo 'appartengono a noi', è vero. I Kijran, Kiitaa e Khora ugualmente, sono creazioni nostre, allevate e plasmate come ibridi di una dozzina di ceppi. Perché la vita del nostro mondo è sopravvissuta mentre la vita del resto è da tempo perita, erosa dall'asprezza del vuoto gravido tra stelle devastate? Fu la vecchia Casa Kaatrij a rafforzare i loro figli contro questo decadimento. Che fossimo costretti a lasciarli indietro fu uno dei molti dolori, ed è molto meglio che la tua preda voli libera piuttosto che un'altra Casa sottoponga i nostri protetti ai suoi capricci.`
+				goto questions
+			label communicate
+			`	"Ah, ecco quella faccenda. Per quanto le Casate Alte preferiscano credere che loro, o meglio noi, agiscano sempre sotto il velo della segretezza, siamo tutti troppo intrecciati perché i nostri progetti restino nascosti a lungo. I dettagli del tuo accordo con Sioeora e le sue ripercussioni ci sono stati chiari subito dopo la sua conclusione. E certo anche i dettagli di questo incontro diventeranno alla fine evidenti alle altre Casate e ai loro eredi."`
+			`	Saajret si ferma un momento per sistemare alcuni dettagli del proprio abito, poi indica una piccola spilla di legno fissata a uno strato esterno di tessuto. "Conserviamo diversi di questi dispositivi, pieni di suono e di lingua, ma pochissimi per la tua lingua: questo è l'unico che possediamo. Mi dicono che è un pezzo d'arte, commissionato per una rappresentazione della Tempesta del tuo Shakespeare, perché i nostri Predecessori potessero vivere l'opera nella sua forma originale. È troppo antico e raro perché si sposi con le nostre attrezzature; di qui la necessità di contattarti con le parole di un altro."`
+			`	Saajret stacca il dispositivo dall'abito e te lo offre.`
+			choice
+				`	(Prendilo.)`
+			action
+				set "language: Successor"
+			`	Il dispositivo è di legno intagliato, o almeno di qualcosa che vi assomiglia, e raffigura nella venatura ben verniciata una nave a vela spinta contro gli scogli. Mentre lo appunti sulla giacca, la nave comincia a dondolare piano sul posto.`
+			`	"È un dono di Casa Kaatrij a te, capitano," dice Saajret. "Hai reso servizio a questa Casa e, in cambio, faremo lo stesso per te. Finché lo indosserai, tradurrà le nostre parole a te e le tue a noi. Trattalo con cura, perché è abbastanza unico che non possiamo offrirne un sostituto." Saajret apre di nuovo i bracci, come per sottolineare la fine della frase.`
+				goto questions
+			label sioeora
+			action
+				set "Successors: sioeora"
+			`	Saajret canticchia in un modo che non sai bene collocare. "Sioeora sarà senza dubbio contrariata che una delle Casate Nuove patrocini ora l'alieno che ha incontrato per prima, ma è abbastanza costretta a nuotare nell'acqua che ha salato da sé. Non dovresti temere la loro ira, al di là delle loro manovre politiche, e a convivere con quelle siamo abbastanza abituati."`
+				goto questions
+			label saajret
+			action
+				log "People" "Saajret, of Somber Sejra" "Saajret, of Somber Sejra is an archivist, among other things, for the Successor High House Kaatrij. They are a member of the noble lineage of the now-defunct House Sejra, some of whose citizens were absorbed into House Kaatrij during the partial collapse of their Predecessors' society."
+				set "Successors: saajret"
+			`	Un'onda di rosa scende lungo i bracci di Saajret prima che rispondano. "Sono Saajret, onorato cittadino della nobile Casa Kaatrij, membro della sobria linea nobile di Casa Sejra, che più non sussiste se non come uno stendardo sotto le ali vigili di Kaatrij. Ah. Non tutte le nostre Casate sono sopravvissute alla caduta: Jaasii, Vejret, Ijridanii, Sejra e molte altre sono andate perdute per sempre, le loro famiglie disperse e le loro storie spezzate. Kaatrij ha assorbito i cittadini di alcune dentro di sé, e oggi è un mosaico che ci ricorda che siamo tutti mosaici, metamorfici e composti. I miei ruoli in essa sono molti, ma il primo tra loro è che sono una sorta di archivista. Conservo la vecchia tecnologia che ancora resta in nostro possesso e, quando serve, la metto in uso, nel modo migliore che giudichiamo possibile."`
+				goto questions
+			label premature
+			`	Decidi di aver aspettato abbastanza, attivi i propulsori repulsori della <ship> e torni in orbita.`
+				flee
+			label end
+			`	Saajret produce una sfera di dati e te la consegna. "Dentro questa," dicono, "ci sono i dati storici della maggior parte dei mondi del nostro spazio. Unita alla tua nuova padronanza della nostra lingua, dovresti trovare i tuoi sforzi sui nostri mondi e nelle nostre città più rivelatori e più fruttuosi. Ufficialmente sarai ospite patrocinato di Casa Kaatrij e procederai con la nostra protezione e le nostre benedizioni. Potrai forse acquistare una certa serie di opere minori senza difficoltà, ma la maggior parte delle nostre tecnologie richiede una verifica che, da alieno, potrebbe costarti tempo e fatica. Se la prospettiva ti interessa, il tuo aiuto in lavori e altri compiti contribuirebbe senza dubbio a dimostrare che sei un alleato del nostro popolo."`
+			`	Saajret si ferma per sistemare ancora una volta il proprio abito. "Devo ora congedarmi, capitano <first> <last>. Kaatrij continuerà a tenersi informata delle tue azioni. Spero che la prossima volta in cui parleremo sia su termini altrettanto positivi." Detto questo, Saajret e la loro scorta tornano al veicolo, che scivola di nuovo nel lago. Quando la <ship> è pronta a decollare, le increspature sull'acqua si sono quasi del tutto dissipate e i primi bagliori del sole strisciano sulle colline lontane.`
+			action
+				clear "Successors: kijran"
+				clear "Successors: saajret"
+				clear "Successors: sioeora"
+				log "Sei stato convocato dalla Casa Alta Kaatrij dei Successori sul loro mondo natale, dove ti è stato spiegato che sono i custodi ancestrali degli animali che avevi rifiutato di catturare per Casa Sioeora. Sei stato ricompensato per aver tenuto gli animali lontano da Sioeora con un dispositivo di traduzione e dati culturali, che ti aprono molti dei mondi dei Successori. Ti è stato detto che aiutare i Successori in lavori e missioni ti avrebbe alla fine permesso di acquistare parte della loro tecnologia."
+				set "known to the successors"
+				set "successors kaatrij patron"
+				event "successors: trust 1"
+				"reputation: Successor" += 1
+				"reputation: House Chydiyi" += 1
+				"reputation: House Myurej" += 1
+				"reputation: House Aqrabe" += 2
+				"reputation: House Kaatrij" += 2
+				"reputation: House Seineq" += 2
+				"reputation: People's Houses" += 2
+
+mission "Successors: Trusted"
+	landing
+	name "Incontra le Casate Alte"
+	description "Le Casate Alte sono compiaciute di come ti sei comportato nello spazio dei Successori, e desiderano incontrarti in consiglio per rafforzare il vostro rapporto."
+	source
+		attributes "successor"
+		not attributes "quiet" "crime" "uninhabited"
+	destination "Aava-Aasa-Khora"
+	to offer
+		has "language: Successor"
+		"successor jobs" >= 10
+	to fail
+		has "Successors: Unified Defense: offered"
+	substitutions
+		"<successor patron>" "Sioeora"
+		"<successor patron>" "Kaatrij"
+			has "successors kaatrij patron"
+		"<successor opponent>" "Kaatrij"
+		"<successor opponent>" "Sioeora"
+			has "successors kaatrij patron"
+	on offer
+		"reputation: Old Houses" += 1
+		"reputation: New Houses" += 1
+		conversation
+			`Poco dopo essere atterrato nello spazioporto qui, ti si avvicina un gruppo di Successori in uniforme navale, chiaramente e sorprendentemente al servizio di diverse Casate Alte; c'è una qualche differenza nel disegno delle uniformi dei vari membri. Il loro capo si rivolge a te con tono calmo e con quella freddezza inconfondibile che gli ufficiali militari sembrano avere a prescindere dalla specie, la pelle che resta di un grigio piatto per tutto il tempo.`
+			`	"Capitano <last>. Le Casate Alte hanno preso nota delle tue azioni nel loro spazio e, desiderando fare di te un alleato più forte alla loro causa, ti hanno convocato per incontrarle in consiglio. Sei invitato a fare in fretta verso il sistema <system>.`
+			choice
+				`	"Grazie per avermelo detto. Mi preparerò a partire subito."`
+					accept
+				`	"Che vuoi dire con 'incontrarle in consiglio'?"`
+			`	"Le Casate si riuniscono spesso per determinare che cosa fare di quelle questioni che interessano a tutte. Diversi delegati delle Casate Alte si sono radunati per decidere i loro piani su di te, ora che hai dimostrato la tua utilità e la tua buona volontà. Più di questo, non posso dire."`
+				accept
+	on complete
+		set "license: Successor"
+		"reputation: Successor" += 1
+		"reputation: House Chydiyi" += 1
+		set "trusted by the successors"
+		event "successors: trust 2"
+		log "Sei stato convocato per incontrare in consiglio le Casate Alte dei Successori e ti è stato dato il diritto di acquistare la loro tecnologia civile."
+		log "Factions" "Successors" `Le Casate Alte sono organizzate in due grandi alleanze chiamate Casate Vecchie e Casate Nuove, storicamente in tensione tra loro. Le Casate cooperano in consiglio con i loro alleati e, in generale, con le altre Casate.`
+		conversation
+			`Dopo esserti seduto allo spazioporto, ti viene incontro un altro gruppo di ufficiali navali dei Successori. Noti che questo gruppo sembra ancora più vario del precedente, con diversi stili di uniforme e livree. A unirli tutti c'è una piccola spilla bianca e blu fissata ai loro abiti, che non corrisponde all'insegna di nessuna delle Casate Alte. Gli ufficiali ti guidano, con cortesia ma con fermezza, verso uno dei treni monorotaia che si snodano dallo spazioporto verso altri impianti del pianeta, e vi stipate tutti insieme in una delle carrozze, che sembra essere stata completamente sgomberata dai passeggeri normali, se mai ne ha portati.`
+			`	Diversi minuti dopo, la monorotaia ti deposita in un complesso particolarmente grande e ben decorato, brulicante di militari e di civili ben vestiti, alcuni dei quali appaiono così opulenti e ingioiellati che sospetti che i loro effetti personali valgano più della maggior parte delle navi stellari. Ognuno di loro, senza eccezione, porta la stessa insegna bianca e blu delle tue scorte, anche se molti l'hanno incorporata nel disegno dei vestiti o addirittura la mostrano come motivo nella colorazione della pelle.`
+			`	Mentre la tua scorta si disperde tra la folla, scorci in lontananza un volto familiare: Sieasej, lo studioso dei Successori, che si illumina visibilmente quando ti vede e poi si avvicina.`
+			`	"Capitano! Che bello incontrarti di nuovo! Sei arrivato in un'ora fortunata, perché mancano ancora alcuni minuti all'inizio delle riunioni di oggi."`
+			label questions
+			choice
+				`	"Meglio mettersi al lavoro, allora."`
+					goto start
+				`	"Puoi spiegarmi che cosa succede qui?"`
+					to display
+						not "Successors: explain"
+					goto explain
+				`	"Come sta Casa Sioeora?"`
+					to display
+						not "Successors: sioeora"
+					goto sioeora
+				`	"Che cosa ci fai qui?"`
+					to display
+						not "Successors: about you"
+					goto "about you"
+			label explain
+			action
+				set "Successors: explain"
+			`	"Questo è un mondo diplomatico dove gli inviati delle Casate si incontrano in consiglio, risolvono dispute, litigano, combattono e si uniscono. E sospetto che, nel tuo caso, serva a offrire dispense speciali a cittadini utili e ad alieni patrocinati."`
+				goto questions
+			label sioeora
+			action
+				set "Successors: sioeora"
+			branch "sioeora opposed"
+				has "successors kaatrij patron"
+			`	"I nostri patroni reciproci restano quelli di sempre, con tutto ciò che ne consegue. Crederesti che Riijaaora in persona mi ha informato del tuo invito qui? Si sono fatti leader tra gli altri grazie alla loro fruttuosa difesa di te... ah, ma divago. Basti dire che Sioeora ti sosterrà senza dubbio qui oggi, perché ormai sei un investimento riuscito da parte loro."`
+				goto "sioeora choice"
+			label "sioeora opposed"
+			`	"Ah, approvano la tua presenza qui e il resto?" Sieasej esamina brevemente un braccio munito di ventose prima di chinarsi un po' più vicino. "È vero che gli eredi della mia onorata Casa restano verso di te un po' freddi; e doppiamente per il fatto che tu abbia trovato un altro patrono, che, confesso, è forse ciò che li irrita di più. Resti comunque una persona di interesse per loro, e sospetto che sarebbero piuttosto compiaciuti di sapere che ti ho incontrato in consiglio. Quindi, che rimugginino, dico io, perché se Sioeora avrà ancora bisogno di te, non saranno così villani da non farti di nuovo la tua conoscenza, credo."`
+			label "sioeora choice"
+			choice
+				`	"Meglio cominciare, allora."`
+					goto start
+				`	"Consiglio?"`
+					to display
+						not "Successors: explain"
+					goto explain
+				`	"Che cosa ci fai qui?"`
+					to display
+						not "Successors: about you"
+					goto "about you"
+			label "about you"
+			action
+				set "Successors: about you"
+			`	Sieasej diventa brevemente di una tonalità verde, in un'esibizione che potresti quasi definire un rossore. "Sono stato convocato anche io, perché il tuo arrivo tra i nostri mondi ha destato un certo interesse per i nostri passati rapporti con la tua specie. Mi è stato ordinato di parlare ad alcuni gruppi qui come sedicente esperto della materia."`
+			choice
+				`	"Infatti. Sono pronto a cominciare, allora."`
+					goto start
+				`	"Come sta Casa Sioeora?"`
+					to display
+						not "Successors: sioeora"
+					goto sioeora
+			label start
+			`	"Bene! Faremmo bene a essere puntuali ai nostri appuntamenti."`
+			`	Sieasej ti porta da una sorta di concierge, che alla fine ti informa che dovresti dirigerti verso una delle stanze più piccole che si diramano dalla hall. Le porte si aprono su una zona simile a un giardino, piena di grandi piante dalle foglie lunghe che circondano una depressione centrale riempita a metà d'acqua. Diversi Successori, molti vestiti bene come prima, sono riuniti nella vasca; non puoi fare a meno di sussultare un po' quando l'acqua gelida ti inonda gli stivali.`
+			branch kaatrij
+				has "successors kaatrij patron"
+			`	Dopo qualche minuto, mentre altri Successori sono entrati uno alla volta, la riunione comincia sul serio. Uno dei Successori si porta al centro della vasca e si rivolge direttamente a te.`
+			`	"Capitano. Casa Sioeora ti ha sostenuto con il dono del nostro dispositivo delle lingue, e continuiamo a riconoscere il tuo potenziale come alleato. Desideriamo apprezzare ulteriormente il bene che hai fatto sui nostri mondi, e proponiamo che ti siano concessi i diritti d'acquisto per le nostre tecnologie minori."`
+			`	Quel rappresentante torna poi al bordo esterno del cerchio e un altro prende il centro, questa volta rivolto al rappresentante che ha appena parlato.`
+			`	"Casa Sioeora. Casa Chydiyi vede bene la tua perspicacia e, anche, il valore dimostrato dal capitano, e quindi sosteniamo la tua giusta proposta. Il capitano si è dimostrato un viaggiatore benevolo nel nostro spazio, per il quale abbiamo ogni desiderio di renderlo un elemento sempre più positivo e utile."`
+			`	Un terzo rappresentante prende ora la posizione centrale, rivolgendosi ai due oratori precedenti.`
+			`	"Nobili Casate Sioeora e Chydiyi. Casa Kaatrij propone che a questo alieno non siano dati altri diritti né doni finché non avrà dimostrato di essere neutrale. Le Casate Vecchie, che Sioeora e Chydiyi oggi qui rappresentano, cercano chiaramente di piegare il favore di questo alieno con corruzione e inganno, di sfruttare la sua mancanza di conoscenza delle nostre usanze, e di usarlo come hanno già fatto per perseguire i propri interessi in conflitto con il bene comune."`
+			`	Quel rappresentante torna poi al bordo del cerchio, dove continua a fissarti con sospetto. C'è una pausa nella conversazione.`
+			choice
+				`	(Resta in silenzio.)`
+					goto silent
+				`	"Non intendo schierarmi nei vostri conflitti."`
+					goto no
+			label kaatrij
+			`	Dopo qualche minuto, mentre altri Successori sono entrati uno alla volta, la riunione comincia sul serio. Uno dei Successori si porta al centro della vasca e si rivolge direttamente a te.`
+			`	"Capitano ospite. Casa Kaatrij ti ha prima sostenuto con il dono della nostra spilla da traduzione e, in cambio, hai dimostrato la lungimiranza di quell'offerta con i tuoi atti pubblici di aiuto e operosità. Desideriamo mostrare ancora una volta tale lungimiranza, e proponiamo quindi che ti siano offerti i diritti di acquisto delle nostre tecnologie minori."`
+			`	Quel rappresentante torna poi al bordo esterno del cerchio e un altro prende il centro, questa volta rivolto al rappresentante che ha appena parlato.`
+			`	"Casa Kaatrij. Casa Chydiyi vede bene la tua perspicacia e, anche, il valore dimostrato dal capitano, e quindi sosteniamo la tua giusta proposta. Il capitano si è dimostrato un viaggiatore benevolo nel nostro spazio, per il quale abbiamo ogni desiderio di renderlo un elemento sempre più positivo e utile."`
+			`	Un terzo rappresentante prende ora la posizione centrale, rivolgendosi ai due oratori precedenti.`
+			`	"Nobili Casate Kaatrij e Chydiyi. Casa Sioeora propone che a questo alieno non siano dati altri diritti né doni finché non avrà dimostrato di essere una parte neutrale. L'alieno ha già abbandonato un compito e un'offerta di questa Casa in favore di un'altra: Kaatrij, la cui capacità di piegarne il favore con corruzione e inganno è chiara come il ghiaccio. Se all'alieno fossero dati i diritti d'acquisto, la sua capacità di offrire ricchezza e potere a fazioni simili sarebbe ancora più formidabile. Sioeora si manterrà salda e risoluta nell'opporsi a questa nascente e volgare corruzione."`
+			`	Quel rappresentante torna poi al bordo del cerchio, dove continua a fissarti con sospetto. C'è una pausa nella conversazione.`
+			choice
+				`	(Resta in silenzio.)`
+					goto silent
+				`	"Non intendo schierarmi nei vostri conflitti."`
+					goto no
+			label no
+			branch "no kaatrij"
+				has "successors kaatrij patron"
+			`	Questo suscita un mormorio tra i Successori riuniti, sia i rappresentanti stessi sia gli altri membri più silenziosi che continuano a stare intorno al perimetro della vasca. Non c'è risposta diretta per un po', finché, dopo quelli che sembrano diversi minuti, il rappresentante di Casa Kaatrij torna al centro e parla.`
+			`	"Ospite. Casa Kaatrij riconoscerà le tue nobili parole, anche se non abbiamo motivo di credervi. Permetteremo agli altri di lasciarti acquistare le nostre cianfrusaglie, e ti osserveremo da vicino per vedere se le tue parole corrispondono ai fatti."`
+			`	Senza altri commenti da parte dei Successori, il rappresentante di Casa Sioeora chiede un voto tra i rappresentanti riuniti. Sioeora e Chydiyi votano a favore della proposta e Kaatrij si astiene, restando al bordo della vasca a osservare attentamente il tuo comportamento. Il rappresentante di Sioeora produce poi subito un'altra piccola scatola dall'interno del proprio abito e te la presenta. L'apri e trovi una delle spille-insegna che hai visto durante tutta questa riunione.`
+				goto license
+			label "no kaatrij"
+			`	Questo suscita un mormorio tra i Successori riuniti, sia i rappresentanti stessi sia gli altri membri più silenziosi che continuano a stare intorno al perimetro della vasca. Non c'è risposta diretta per un po', finché, dopo quelli che sembrano diversi minuti, il rappresentante di Casa Sioeora torna al centro e parla.`
+			`	"Alieno. Casa Sioeora ascolta bene le tue parole, ma deve impegnarsi in opposizione a questa proposta di dono. Non puoi certo restare una parte neutrale mentre il tuo patrono cerca già di onorarti davanti a questo consiglio, offrendo benefici che di certo guadagneranno favore abbastanza presto. Le tue magre parole fanno poca differenza."`
+			`	Senza altri commenti da parte dei Successori, il rappresentante di Casa Kaatrij chiede un voto tra i rappresentanti riuniti. Kaatrij e Chydiyi votano a favore della proposta e Sioeora vota contro, restando immobile al bordo della vasca. Il rappresentante di Kaatrij produce poi subito un'altra piccola scatola dall'interno del proprio abito e te la presenta. L'apri e trovi una delle spille-insegna che hai visto durante tutta questa riunione.`
+				goto license
+			label silent
+			`	Senza altri commenti da parte dei Successori, il rappresentante di Casa <successor patron> chiede un voto tra i rappresentanti riuniti. Non sorprende che <successor patron> e Chydiyi votino a favore della proposta e <successor opponent> voti contro, e il rappresentante di <successor patron> produce poi subito un'altra piccola scatola dall'interno del proprio abito e te la presenta. L'apri e trovi una delle spille-insegna che hai visto durante tutta questa riunione.`
+			label license
+			scene "outfit/successor license"
+			`	"È il segno dei nostri diplomatici e il nostro simbolo di fiducia e cooperazione," dicono. "La nostra gente potrà restare diffidente verso un alieno in mezzo a lei, ma ovunque tu mostri questo, si saprà che hai ricevuto la benedizione delle Casate Alte nel nostro consiglio e che possono commerciare con te in amicizia e senza timore."`
+			`	Detto questo, Chydiyi lascia la stanza, seguita dalla maggior parte degli altri rappresentanti e dei membri riuniti, e i restanti cominciano a mescolarsi tra loro e a chiacchierare; la riunione è evidentemente finita.`
+			`	Fuori, ti imbatti di nuovo in Sieasej, appena tornato da una riunione propria. "Bene, capitano, come è andata la tua riunione in consiglio? Fruttuosa, spero?"`
+			choice
+				`	"Sì, mi sono stati concessi i diritti di acquisto della tecnologia."`
+				`	"Sì, lo è stata. E la tua?"`
+					goto yours
+			`	"Io, per parte mia, sono lieto di sentirlo, capitano. Le Casate possono essere gelose dei loro favori, ma nel tuo caso credo che siano sagge a dispensarli con più liberalità. Ah," dicono, interrompendosi, "vorrei poter restare, ma il mio ruolo qui non è ancora finito e ho un'altra riunione da seguire. Buon viaggio, capitano, e che possiamo incontrarci di nuovo." Aprono i bracci in un gesto ampio che hai visto molte volte, e tu rispondi con un breve inchino.`
+				goto end
+			label yours
+			`	"Sono lieto di sentirlo, capitano. Ho parlato a lungo della mia ricerca sulle tue parole e sulla storia, come la conosciamo. Ah, le tue lingue sono oggetti affascinanti e producono suoni davvero interessanti... Mi sono anche intrattenuto su diverse domande su di te! Qualche giovane archivista di Kaatrij, credo? A dire il vero, a volte confondo quelle Casate Nuove tra loro. Ah," dicono, interrompendosi, "ma il mio ruolo qui non è ancora finito e ho un'altra riunione da seguire. Buon viaggio, capitano, e che possiamo incontrarci di nuovo." Aprono i bracci in un gesto ampio che hai visto molte volte, e tu rispondi con un breve inchino.`
+			label end
+			action
+				clear "Successors: aboutyou"
+				clear "Successors: explain"
+				clear "Successors: sioeora"
+			`	Con la tua riunione qui conclusa, torni alla stazione della monorotaia e prendi il treno successivo per lo spazioporto.`

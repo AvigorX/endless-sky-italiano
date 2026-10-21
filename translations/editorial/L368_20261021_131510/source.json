@@ -1,0 +1,102 @@
+{
+ "block": {
+  "path": "data/vyrmeid/vyrmeid.txt",
+  "line_from": 16,
+  "line_to": 239,
+  "units": 7
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Vyrmeid|plural|16|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 16,
+   "kind": "VALUE",
+   "context": "ship:Vyrmeid",
+   "english": "Vyrmeid",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tplural \"Vyrmeid\"",
+   "english_hash": "5772f92567a820ad"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Vyrmeid|description|54|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 54,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vyrmeid",
+   "english": "These are tiny space creatures that feed on solar energy, storing it into two receptors found at the front of their bodies. They are extremely docile, and are found in large groups, almost never seen alone.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `These are tiny space creatures that feed on solar energy, storing it into two receptors found at the front of their bodies. They are extremely docile, and are found in large groups, almost never seen alone.`",
+   "english_hash": "654424cf17521cb1"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Vyrmeid|plural|75|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 75,
+   "kind": "VALUE",
+   "context": "ship:Vyrmeid",
+   "english": "Vyrmeid",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tplural \"Vyrmeid\"",
+   "english_hash": "5772f92567a820ad"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Vyrmeid|description|109|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 109,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vyrmeid",
+   "english": "Oddly shaped like a boomerang, these space creatures are in a constant rotary motion caused by a small internal organ. The motion provides a natural defense against small debris and projectiles that threaten to intercept the creature, which is harmless otherwise.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Oddly shaped like a boomerang, these space creatures are in a constant rotary motion caused by a small internal organ. The motion provides a natural defense against small debris and projectiles that threaten to intercept the creature, which is harmless otherwise.`",
+   "english_hash": "4d6656cbfbba589e"
+  },
+  {
+   "idx": 5,
+   "id": "ship:Vyrmeid|plural|128|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 128,
+   "kind": "VALUE",
+   "context": "ship:Vyrmeid",
+   "english": "Vyrmeid",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tplural \"Vyrmeid\"",
+   "english_hash": "5772f92567a820ad"
+  },
+  {
+   "idx": 6,
+   "id": "ship:Vyrmeid|description|167|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 167,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vyrmeid",
+   "english": "This species of space life is found around hotter stars and feeds on solar energy, storing it in four organs that give off the appearance of eyes. Due to all of the internal energy and pressure, these creatures explode violently upon death, which may surprise aggressors.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `This species of space life is found around hotter stars and feeds on solar energy, storing it in four organs that give off the appearance of eyes. Due to all of the internal energy and pressure, these creatures explode violently upon death, which may surprise aggressors.`",
+   "english_hash": "cdc2591c5293798a"
+  },
+  {
+   "idx": 7,
+   "id": "ship:Astral Cetacean|description|239|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 239,
+   "kind": "DESCRIPTION",
+   "context": "ship:Astral Cetacean",
+   "english": "Only a few captains have had the chance to observe this illustrious creature. Its natural attenuation to the depths of space allows it to travel beyond where most ships are able, and its appearance reflects both the beauty and mystery of the void itself.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Only a few captains have had the chance to observe this illustrious creature. Its natural attenuation to the depths of space allows it to travel beyond where most ships are able, and its appearance reflects both the beauty and mystery of the void itself.`",
+   "english_hash": "0d020ea4d019559d"
+  }
+ ]
+}

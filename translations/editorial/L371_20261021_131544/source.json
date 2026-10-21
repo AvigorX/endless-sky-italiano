@@ -1,0 +1,63 @@
+{
+ "block": {
+  "path": "data/pug/pug ships.txt",
+  "line_from": 62,
+  "line_to": 238,
+  "units": 4
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Pug Zibruka|description|62|0",
+   "path": "data/pug/pug ships.txt",
+   "line": 62,
+   "kind": "DESCRIPTION",
+   "context": "ship:Pug Zibruka",
+   "english": "The Zibruka is the smallest Pug warship that you know of. Despite having only two gun ports, its two advanced guns combined with its fast and efficient engine systems make it a fearsome ship to face off against, especially in swarms.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Zibruka is the smallest Pug warship that you know of. Despite having only two gun ports, its two advanced guns combined with its fast and efficient engine systems make it a fearsome ship to face off against, especially in swarms.`",
+   "english_hash": "af9cdb2d62d9fd13"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Pug Enfolta|description|118|0",
+   "path": "data/pug/pug ships.txt",
+   "line": 118,
+   "kind": "DESCRIPTION",
+   "context": "ship:Pug Enfolta",
+   "english": "The Enfolta is a medium-sized Pug warship. It has a formidable armament of advanced weaponry supported by powerful integrated energy generation. A single Enfolta can take on multiple smaller human ships.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Enfolta is a medium-sized Pug warship. It has a formidable armament of advanced weaponry supported by powerful integrated energy generation. A single Enfolta can take on multiple smaller human ships.`",
+   "english_hash": "0b07d1c3ac172394"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Pug Maboro|description|176|0",
+   "path": "data/pug/pug ships.txt",
+   "line": 176,
+   "kind": "DESCRIPTION",
+   "context": "ship:Pug Maboro",
+   "english": "The Maboro appears to be the Pug's capital warship. Its shield matrix and hull are much weaker than human capital ships; however, it is able to regenerate its shields quickly. Its fearsome ordnance and advanced anti-missile defenses make it a ship that only the strongest human capital ships are able to oppose.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Maboro appears to be the Pug's capital warship. Its shield matrix and hull are much weaker than human capital ships; however, it is able to regenerate its shields quickly. Its fearsome ordnance and advanced anti-missile defenses make it a ship that only the strongest human capital ships are able to oppose.`",
+   "english_hash": "131a473e6eeedc20"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Pug Arfecta|description|238|0",
+   "path": "data/pug/pug ships.txt",
+   "line": 238,
+   "kind": "DESCRIPTION",
+   "context": "ship:Pug Arfecta",
+   "english": "This is a Pug \"tier 3\" warship, intended for use in combat against either a species on par with the Quarg, or a lesser species that has decided to be particularly meddlesome.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `This is a Pug \"tier 3\" warship, intended for use in combat against either a species on par with the Quarg, or a lesser species that has decided to be particularly meddlesome.`",
+   "english_hash": "1c932f95a00d1dea"
+  }
+ ]
+}

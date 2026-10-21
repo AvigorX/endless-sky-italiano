@@ -1,0 +1,110 @@
+{
+ "block": {
+  "path": "data/bunrodea/bunrodea weapons.txt",
+  "line_from": 38,
+  "line_to": 292,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Locust Blaster|description|38|0",
+   "path": "data/bunrodea/bunrodea weapons.txt",
+   "line": 38,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Locust Blaster",
+   "english": "The Locust Blaster might look small, but its destructive potential for its size is nothing to scoff at. A single blaster is capable of sustaining 1,200 rounds per minute. While each individual projectile from the blaster deals rather insignificant damage, the sheer deluge of projectiles can rip even the largest of ships to shreds in due time.",
+   "italian": "The Locust Blaster might look small, but its destructive potential for its size is nothing to scoff at. A single blaster is capable of sustaining 1,200 rounds per minute. While each individual projectile from the blaster deals rather insignificant damage, the sheer deluge of projectiles can rip even the largest of ships to shreds in due time.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Locust Turret|description|66|0",
+   "path": "data/bunrodea/bunrodea weapons.txt",
+   "line": 66,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Locust Turret",
+   "english": "Although Bunrodean ships typically rely on the power of their forward facing guns and fill any turret mounts with anti-missile systems, they have developed a turret mount for the Locust Blaster. This turret carries three Locust Blasters that all fire at once, resulting in an astonishing 3,600 projectiles per minute being thrown at the target.",
+   "italian": "Although Bunrodean ships typically rely on the power of their forward facing guns and fill any turret mounts with anti-missile systems, they have developed a turret mount for the Locust Blaster. This turret carries three Locust Blasters that all fire at once, resulting in an astonishing 3,600 projectiles per minute being thrown at the target.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Mandible Cannon|description|98|0",
+   "path": "data/bunrodea/bunrodea weapons.txt",
+   "line": 98,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Mandible Cannon",
+   "english": "The Mandible Cannon is a significant part of the Bunrodean arsenal due to its versatility. Its range exceeds that of smaller weapons, and its size allows it to be used in numbers on most Bunrodean ships. However, the energy draw required to fire is rather significant, particularly for Bunrodean ships that rely on solar cells.",
+   "italian": "The Mandible Cannon is a significant part of the Bunrodean arsenal due to its versatility. Its range exceeds that of smaller weapons, and its size allows it to be used in numbers on most Bunrodean ships. However, the energy draw required to fire is rather significant, particularly for Bunrodean ships that rely on solar cells.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Thorax Cannon|description|135|0",
+   "path": "data/bunrodea/bunrodea weapons.txt",
+   "line": 135,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thorax Cannon",
+   "english": "The Thorax Cannon is a massive, slow-firing weapon that few ships can even support, not only because of its size but also because of the energy needed to fire it. It comes with its own energy capacitors to help alleviate the steep energy cost.",
+   "italian": "The Thorax Cannon is a massive, slow-firing weapon that few ships can even support, not only because of its size but also because of the energy needed to fire it. It comes with its own energy capacitors to help alleviate the steep energy cost.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Swarm Clip|description|190|0",
+   "path": "data/bunrodea/bunrodea weapons.txt",
+   "line": 190,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Swarm Clip",
+   "english": "Swarm Clips provide a sizable increase in ammo capacity for Swarm Pods, holding a respectable 200 missiles able to be swiftly loaded into a launcher after its current clip is empty.",
+   "italian": "Swarm Clips provide a sizable increase in ammo capacity for Swarm Pods, holding a respectable 200 missiles able to be swiftly loaded into a launcher after its current clip is empty.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Swarm Missile|description|200|0",
+   "path": "data/bunrodea/bunrodea weapons.txt",
+   "line": 200,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Swarm Missile",
+   "english": "Swarm missiles are small, fast moving munitions for the Swarm Pod.",
+   "italian": "Swarm missiles are small, fast moving munitions for the Swarm Pod.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Swarm Pod|description|238|0",
+   "path": "data/bunrodea/bunrodea weapons.txt",
+   "line": 238,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Swarm Pod",
+   "english": "The Swarm Pod proved to be an effective weapon in early conflicts with the Korath by overpowering early Korath anti-missile defenses. But just as the Bunrodea developed technology to combat Korath weaponry, the Korath did the same, prompting them to create their own rapid-fire anti-missile turret that limited the usefulness of the Swarm Pod against some Korath targets.",
+   "italian": "The Swarm Pod proved to be an effective weapon in early conflicts with the Korath by overpowering early Korath anti-missile defenses. But just as the Bunrodea developed technology to combat Korath weaponry, the Korath did the same, prompting them to create their own rapid-fire anti-missile turret that limited the usefulness of the Swarm Pod against some Korath targets.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Swarm Pod|description|239|0",
+   "path": "data/bunrodea/bunrodea weapons.txt",
+   "line": 239,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Swarm Pod",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Buzzer Anti-Missile|description|292|0",
+   "path": "data/bunrodea/bunrodea weapons.txt",
+   "line": 292,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Buzzer Anti-Missile",
+   "english": "As the Korath began to saturate systems with mines, the effectiveness of Bunrodean fighters dropped substantially. In response, the Bunrodea developed this rapid-fire anti-missile turret, able to clear sections of a system of Korath mines at blinding speed.",
+   "italian": "As the Korath began to saturate systems with mines, the effectiveness of Bunrodean fighters dropped substantially. In response, the Bunrodea developed this rapid-fire anti-missile turret, able to clear sections of a system of Korath mines at blinding speed.",
+   "ratio": 1.0
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "batch": "B006",
+ "name": "Tooltips SAFE (part 3)",
+ "source_hash": "e752b88018c9d045",
+ "instructions": "return JSON array [{\"id\": ..., \"it\": ...}] with one entry per id",
+ "units": [
+  {
+   "id": "tip:cloaking fuel:|Fuel consumed per second when cloaked.|139|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 139,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloaking fuel:",
+   "english": "Fuel consumed per second when cloaked."
+  },
+  {
+   "id": "tip:cloaking heat:|Heat generated per second when cloaked.|142|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 142,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloaking heat:",
+   "english": "Heat generated per second when cloaked."
+  },
+  {
+   "id": "tip:cloaking shields:|Shields consumed per second while cloaked.|145|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 145,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloaking shields:",
+   "english": "Shields consumed per second while cloaked."
+  },
+  {
+   "id": "tip:cloaking shield delay:|This ship is unable to regenerate shields whilst cloaked, instead its shield regeneration will suffer a delay that will grow the longer it is cloaked|148|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 148,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloaking shield delay:",
+   "english": "This ship is unable to regenerate shields whilst cloaked, instead its shield regeneration will suffer a delay that will grow the longer it is cloaked"
+  },
+  {
+   "id": "tip:cloaking hull:|Hull consumed per second while cloaked.|151|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 151,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloaking hull:",
+   "english": "Hull consumed per second while cloaked."
+  },
+  {
+   "id": "tip:cloaking repair delay:|This ship is unable to regenerate hull whilst cloaked, instead its hull regeneration will suffer a delay that will grow the longer it is cloaked.|154|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 154,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloaking repair delay:",
+   "english": "This ship is unable to regenerate hull whilst cloaked, instead its hull regeneration will suffer a delay that will grow the longer it is cloaked."
+  },
+  {
+   "id": "tip:cloak hull protection:|Protection provided against weapons that do hull damage when the cloak is active. Increases by the given factor how much hull damage a ship can withstand before it loses as much energy as an unprotected ship.|157|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 157,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloak hull protection:",
+   "english": "Protection provided against weapons that do hull damage when the cloak is active. Increases by the given factor how much hull damage a ship can withstand before it loses as much energy as an unprotected ship."
+  },
+  {
+   "id": "tip:cloak shield protection:|Protection provided against weapons that do shield damage when the cloak is active. Increases by the given factor how much shield damage a ship can withstand before it loses as much energy as an unprotected ship.|160|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 160,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloak shield protection:",
+   "english": "Protection provided against weapons that do shield damage when the cloak is active. Increases by the given factor how much shield damage a ship can withstand before it loses as much energy as an unprotected ship."
+  },
+  {
+   "id": "tip:cloak phasing:|When cloaked, weapons cannot affect this ship, and pass right through.|163|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 163,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloak phasing:",
+   "english": "When cloaked, weapons cannot affect this ship, and pass right through."
+  },
+  {
+   "id": "tip:cloaked firing:|This device is so efficient at hiding you that you may shoot when cloaking, losing this amount of cloaking in the process, before being cloaked again. A negative value means shooting does not even hinder your cloak.|166|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 166,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloaked firing:",
+   "english": "This device is so efficient at hiding you that you may shoot when cloaking, losing this amount of cloaking in the process, before being cloaked again. A negative value means shooting does not even hinder your cloak."
+  },
+  {
+   "id": "tip:cloak hull threshold:|If you have hull lower than this value (seen as a % between 0 and 1) the cloaking device can no longer operate.|169|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 169,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cloak hull threshold:",
+   "english": "If you have hull lower than this value (seen as a % between 0 and 1) the cloaking device can no longer operate."
+  },
+  {
+   "id": "tip:cooling:|Heat dissipated per second. This is for when your ship's built-in heat dissipation is not sufficient to keep it from overheating.|172|0",
+   "path": "data/_ui/tooltips.txt",
+   "line": 172,
+   "kind": "TUTORIAL_TIP",
+   "context": "tip:cooling:",
+   "english": "Heat dissipated per second. This is for when your ship's built-in heat dissipation is not sufficient to keep it from overheating."
+  }
+ ]
+}

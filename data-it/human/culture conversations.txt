@@ -1,0 +1,1123 @@
+# Copyright (c) 2021 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Sad Gamblers - Republic"
+	minor
+	source
+		government "Republic"
+		attributes "near earth"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Attraversando lo spazioporto vedi un gruppo consistente di persone in attesa di un'estrazione della lotteria. Senti un urlo di gioia, e la tua attenzione è catturata quando uno di loro vince una somma modesta con una vincita di dodicesima categoria. È il valore di uno o due giorni di paga normale.`
+			`	È difficile non provare pietà mentre ricomprano subito altri biglietti con l'intera somma.`
+				decline
+
+mission "Sad Gamblers - Syndicate"
+	minor
+	source
+		government "Syndicate"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Attraversando lo spazioporto vedi un gruppo consistente di persone in attesa di un'estrazione della lotteria. Senti un urlo di gioia, e la tua attenzione è catturata quando uno di loro vince una somma modesta con una vincita di dodicesima categoria. È il valore di uno o due giorni di paga normale.`
+			`	È difficile non provare pietà mentre ricomprano subito altri biglietti con l'intera somma.`
+				decline
+
+
+
+mission "Foiled Kidnapping Witnessed"
+	minor
+	source
+		government "Syndicate"
+		not attributes "station" "frontier" "urban"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Un posto di blocco interrompe il tuo percorso mentre ti avvii verso la città, costringendoti a rallentare al passaggio, abbastanza da capire di cosa si tratta. La polizia fa passare un'auto dopo l'altra provenienti dalla direzione opposta, guardando dentro i veicoli finché uno non viene tirato da parte, il che blocca brevemente tutto il traffico. Il conducente sembra in difficoltà e rifiuta di aprire il bagagliaio anche quando viene fermato; il suo viso diventa pallido quando dentro viene trovata una bambina.`
+			`	Non sai bene cosa provare quando la polizia ti fa cenno di andare, togliendoti la vista della scena.`
+				decline
+
+
+
+mission "Gift Store Interaction"
+	minor
+	source
+		government "Republic"
+		attributes "deep"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Mentre giri per lo spazioporto con uno spuntino, aspettando che la nave faccia rifornimento, passi davanti a un negozio di souvenir locale e ficchi la testa dentro per ammazzare un po' il tempo. Vedi una tazza dall'aspetto decoroso con la scritta "Pace, Prosperità, Progresso" stampata sotto l'insegna del Deep e la prendi in mano per sentire com'è. Il manico è solido, non troppo piccolo per le tue dita, e il bordo sembra comodo per bere.`
+			`	Due giovani adulti entrano nel corridoio a un paio di metri da te, parlando in una lingua che non capisci, forse locale del Deep. Tubano su un oggetto che hanno trovato, ma quando uno lo gira per guardare il cartellino del prezzo c'è uno scambio immediato di sguardi ed espressioni che non ha bisogno di traduzione. L'oggetto torna sullo scaffale fra una risatina e un cenno del capo.`
+			branch broke
+				credits < 50
+			`	Curioso, giri anche la tua tazza e vedi che costa davvero almeno cinque volte quello che ti aspetteresti di pagare per una tazza, anche buona: 50 crediti. Comunque è senz'altro una curiosità...`
+			choice
+				`	(Compra la tazza.)`
+					goto buy
+				`	(Rimettila a posto.)`
+			`	Alzi gli occhi al cielo e la rimetti a posto. Certe esperienze sono davvero universali.`
+				decline
+			
+			label buy
+			action
+				payment -50
+				outfit "Mug"
+			`	Compri la tazza d'impulso. Almeno puoi buttare quella che hai, che ha una scheggiatura.`
+				decline
+			
+			label broke
+			`	Curioso, giri la tua tazza e quando vedi il cartellino di 50 crediti ti si stringe il cuore. Non potresti mai permetterti una tazza così costosa. La rimetti a posto e ti allontani riflettendo sulla tua situazione finanziaria.`
+				decline
+
+
+
+mission "New China Mourners"
+	minor
+	source "New China"
+	"offer precedence" 5
+	to offer
+		random < 10
+	on offer
+		conversation
+			`Il cielo si rovescia sul mondo sotto, piangendo insieme alla folla mentre una bara semplice ma imponente viene portata lentamente fuori da un pianterreno aperto. Un lamento ritmico si mescola alla pioggia sussurrante e riempie l'aria, mentre la bara è seguita da vicino da un corteo di persone in lutto che sembra un raduno esteso di famiglia. Anche quando viene sistemata nel furgone non lasciano il defunto: molte mani si posano su di essa come per spingere la persona verso il suo ultimo riposo. I due in lutto più avanti, una donna e un giovane, salgono e prendono posto accanto alla bara. Da qualche parte vicino comincia la musica, mentre il veicolo si muove lentamente.`
+			`	Ti chiedi quanto fosse conosciuta la persona prima di morire, mentre quelli rimasti si voltano infine dal furgone che si allontana e cominciano a passare davanti ad alcuni addetti discreti che non avevi notato subito, accettando pantofole per i piedi scalzi prima di salire sugli autobus che li porteranno dietro al furgone.`
+				decline
+
+
+
+mission "New Holland Foibles"
+	minor
+	source "New Holland"
+	"offer precedence" 5
+	to offer
+		random < 10
+	on offer
+		conversation
+			`L'odore di metallo bruciato riempie l'aria mentre percorri le strade poco affollate della città-fabbrica vicino allo spazioporto, tenendoti lontano dalla via di rifornimento principale che alimenta direttamente il porto e i suoi hangar.`
+			`	Nonostante la distanza e l'assenza di traffico, però, non è affatto silenzioso. Diversi edifici industriali producono un ronzio distinguibile, e mentre indaghi senti l'eco delle molatrici nel silenzio. Girato l'angolo, trovi un vicolo che corre lungo una lunga recinzione a maglie metalliche. Oltre, vedi una folla di uomini che tagliano una nave spaziale. Pezzi cadono regolarmente a terra, e gli operai sembrano incuranti di chi sta sotto.`
+			`	Anche mentre guardi, vedi una lastra di scafo oscillare pericolosamente sopra la testa di un operaio.`
+			choice
+				`	(Grida un avvertimento.)`
+				`	(Lasciali stare.)`
+					goto leave
+			`	Gridi un avvertimento e la maggior parte degli uomini si ferma a guardarti; la lastra oscilla piano mentre chi tiene la mola incriminata socchiude gli occhi verso di te. Uno degli uomini più anziani, che ora capisci sovrintendeva almeno in parte l'attività, fa un passo avanti e ti fa un gesto con le mani come per scacciarti. "Ehi tu, levati di torno. Abbiamo il nostro addetto alla sicurezza, non ci serve il tuo naso nei nostri affari."`
+			choice
+				`	(Contesta l'affermazione.)`
+				`	(Lasciali stare.)`
+					goto leave
+			`	Fai notare che quello che vedevi non sembrava affatto sicuro, controllo o no, e l'uomo si guarda intorno un istante prima di avvicinarsi stizzito e fermarsi di fronte a te, dietro la recinzione. "Senti, straniero", dice, "qui il lavoro è difficile da trovare. Quelli che lavorano qui non hanno tempo da perdere. Ma la paga è buona e almeno possiamo sfamare i nostri figli. Certo, qualcuno si fa qualche graffio e qualche livido, ma nessuno è morto sotto la mia sorveglianza, e Rik ha perso solo il dito più piccolo. Se ti va di guardare, va bene, resta lì in giro, ma lasciaci in pace, ok? Tanto qui non c'è nessuno a cui importi quello che hai da dire."`
+			`	Ti guarda dritto negli occhi, e quando è sicuro che tu abbia capito il messaggio torna a passi pesanti dalla sua squadra, che riprende il lavoro. Li guardi smontare la nave morta finché i pezzi riempiono completamente il rimorchio che hanno con sé, poi si portano via le parti verso una fabbrica in lontananza.`
+				decline
+			label leave
+			`	Ti volti e te ne vai. Un momento dopo senti un fragore e un grido, ma quando ti volti indietro nessuno sembra essersi fatto male.`
+				decline
+
+
+
+mission "Trash Fire Crops"
+	minor
+	source
+		government "Republic"
+		attributes "dirt belt"
+		attributes "farming"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		"bumper crop year" = "year"
+		conversation
+			`Mentre ti muovi per lo spazioporto non puoi evitare il terribile odore. È come un rogo di rifiuti, ma non vedi nessun tipo di fumo.`
+			choice
+				`	(Ignoralo.)`
+					goto ignore
+				`	(Chiedi in giro.)`
+			`	Chiedi a uno dei locali che non sembra troppo occupato. Ti informa con tristezza che c'è stato un raccolto eccezionale di banane, ma sfortunatamente altri mondi più ricchi hanno avuto un raccolto eccezionale nello stesso periodo, e non c'è posto dove vendere o conservare un surplus così grande. Gli agricoltori in difficoltà bruciano la frutta in eccesso per fare fertilizzante per la stagione successiva, e il vento ha portato l'odore per tutta la città.`
+				decline
+			label ignore
+			`	Lasci l'odore misterioso ai locali e torni alle tue faccende.`
+				decline
+
+
+
+mission "Worker's Occasion"
+	minor
+	source
+		government "Republic"
+		attributes "dirt belt"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Sostando a considerare un ristorante per la cena, noti un operaio locale con un pugno di crediti che guarda con desiderio il menù. I suoi vestiti sono consumati con ordine e sembrano appena spazzolati, ma è impossibile non notare le macchie e le tracce di sporco che non sono andate via. L'uomo sembra indubbiamente nervoso, e guarda la disposizione formale della sala con un'evidente mancanza di familiarità. Guardando il menù anche tu, ti rendi conto che i prezzi, per te molto accessibili, sarebbero stati irraggiungibili prima del tuo cambio di carriera.`
+			choice
+				`	(Offriti di pagare la cena all'uomo.)`
+					goto aid
+				`	(Compatiscilo in silenzio.)`
+					goto pity
+				`	(Sorridi all'uomo.)`
+			`	Sorridi all'uomo e rifletti sul valore dei piccoli traguardi. Lui coglie il tuo sorriso con la coda dell'occhio e ti ricambia con un cenno esitante ma amichevole prima che tu torni alle tue faccende.`
+				decline
+			label aid
+			`	Entri nel ristorante e attiri l'attenzione dell'uomo, offrendoti di pagargli il pasto.`
+			`	Ti riconosce come pilota e si acciglia, poi ti dice, in termini coloriti, dove puoi ficcarti quell'offerta. Mentre ti allontani, pensi a quale sarebbe la tua reazione se una persona molto più ricca ti compatisse pagandoti la cena.`
+				decline
+			label pity
+			`	Compatisci l'uomo che deve lavorare un mese intero per permetterselo e prosegui per la tua strada.`
+				decline
+
+
+
+mission "Paradise Cleaner Incident"
+	minor
+	source
+		government "Republic"
+		attributes "paradise"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Visitare gli spazioporti di Paradise è sempre un'esperienza interessante per chi viene da fuori. In nessun altro luogo la classe è una componente così radicata della vita quotidiana. Ti ritrovi a notare persone che sembrano invisibili ai più, ma loro non incrociano mai il tuo sguardo. Sembrano sempre fare del loro meglio per non farsi notare.`
+			`	In passato non avevi notato bambini che sembrassero poveri qui, ma in questa occasione ne vedi uno che rovescia un mocio e un secchio... proprio davanti a un uomo d'affari e alla sua famiglia che trascinano le valigie per lo spazioporto. Non hai mai visto qualcuno diventare così pallido come la donna delle pulizie, la madre del bambino, che si precipita a sistemare le cose prima ancora che l'uomo tiri il fiato.`
+			`	Un paio di agenti di sicurezza compaiono quasi subito, prima che tu possa intervenire in un modo o nell'altro, mentre l'uomo e la sua famiglia cominciano a lamentarsi. Un agente fornisce rassicurazioni mentre l'altro sorveglia la donna delle pulizie, che porta rapidamente il figlio fuori dai guai.`
+				decline
+
+
+
+mission "Curious Waiter"
+	minor
+	source
+		government "Syndicate"
+		attributes "factory"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Per un capriccio decidi di cenare in un ristorante lontano dallo spazioporto affollato. Ti ritrovi presto a scorrere un elenco di prelibatezze su un menù cartaceo mentre la gente passa davanti alla vetrina accanto al tuo tavolo, tutti con l'aria provata da una lunga giornata di lavoro. Ordinata presto la cena, continui a guardare la folla finché non arriva, una versione locale del katsu don, e ti metti a mangiare.`
+			`	Il locale è silenzioso, forse è ancora presto per l'ora di punta della cena, e sei a metà del pasto quando un cameriere si ferma accanto a te e tossisce per attirare la tua attenzione.`
+			choice
+				`	"Posso aiutarla?"`
+				`	"Sì?"`
+				`	"Cosa vuole?"`
+			`	"Mi scusi", dice, afferrando i lembi della camicia. "Ma... posso chiedere... com'è vedere le stelle? Visitare altri mondi?"`
+			choice
+				`	"La maggior parte dei mondi è uguale a questo, o peggio."`
+				`	"Le stelle sono più belle sotto un'atmosfera."`
+				`	"È un'avventura, ma non per i deboli di cuore."`
+			`	"Oh... non ho mai visto nessun pilota, quindi non ho mai potuto chiedere", dice, un po' abbattuto. "Grazie mille però per avermelo raccontato!"`
+			`	Torna al suo lavoro, con un'espressione pensierosa di neutra soddisfazione sul viso.`
+				decline
+
+
+
+mission "Syndicated Security Troops"
+	minor
+	source
+		government "Syndicate"
+		attributes "urban"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Il rombo basso dei "Tonner", i camion pesanti per spostare truppe e rifornimenti, che scendono lungo la strada, fa voltare le teste verso i veicoli massicci ma imponenti che rallentano fino a fermarsi. Il conducente e il comandante del veicolo di testa tengono gli occhi sulla strada, attenti a qualsiasi pericolo del traffico che possa minacciare il veicolo o la loro scorta.`
+			`	Le truppe nel retro di ogni tonner, invece, fanno conversazione, con il camuffamento sul viso che si scioglie per il caldo. Uno di loro ti indica, dicendo qualcosa che gli guadagna un gemito dei compagni, e decidi che probabilmente non vuoi sapere cosa ha detto.`
+				decline
+
+
+
+mission "Class Trip to Port"
+	minor
+	source
+		attributes "south"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Un gruppo di bambini ti saluta con la mano mentre scendi dalla nave, meravigliati dal veicolo spaziale in mostra mentre le loro insegnanti cercano senza successo di tenere la loro attenzione. Da lontano vedi sbiadire i colori delle loro divise mentre il gruppo passa, e nessuno di loro sembra minimamente scontento. Mentre ti avvii verso lo spazioporto, ti chiedi quanti di loro finiranno per avere una nave propria e volare tra le stelle.`
+				decline
+
+
+
+mission "Old Defense Turrets"
+	minor
+	source
+		attributes "south"
+		not attributes "station" "frontier"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Una sosta fastidiosamente lunga ti ha spinto a esplorare un po', così noleggi un'auto per un breve giro nei dintorni. Più tardi, mentre infili l'auto nel parcheggio designato per la riconsegna, il rumore inatteso di grandi motori idraulici attira la tua attenzione. Guardi una torretta enorme sollevarsi da dietro una barricata vicina e voltarsi verso il cielo, con il suo unico cannone pronto a sparare contro apparentemente nulla.`
+			`	Cercando in giro una qualche spiegazione, trovi una targa sistemata lì vicino in modo comodo che dedica la torretta, e altre cinque come lei, offrendo protezione e scoraggiando la pirateria fino ad anni relativamente recenti. Non puoi fare a meno di chiederti come se la caverebbero le torrette se venissero davvero usate di nuovo.`
+				decline
+
+
+
+mission "Blind Landing"
+	minor
+	landing
+	source
+		government "Free Worlds"
+		attributes "farming"
+		not attributes "station" "frontier"
+	"offer precedence" 5
+	to offer
+		"year" > "bumper crop year" + 2
+		random < 1
+		has "Trash Fire Crops: declined"
+	on offer
+		conversation
+			`Lo smog riempie il parabrezza mentre scendi, cercando senza successo di vedere qualcosa oltre a pochi metri davanti a te. I sistemi di pilota automatico però mostrano verde pieno su tutta la gamma di indicatori, e il controllo del traffico ha confermato l'aggancio.`
+			choice
+				`	(Atterra con il pilota automatico.)`
+				`	(Torna in orbita.)`
+					goto orbit
+			`	Lasci che il mezzo esegua l'atterraggio, fissando la foschia senza vederci nulla finché non si dirada.`
+			`	A terra ne vedi la causa: campi e campi di piantagioni in fiamme. Vedi una folla in gran parte di agricoltori che blocca un gruppo più piccolo di vigili del fuoco, discutendo e cercando di impedire loro di spegnere le fiamme, mentre gli aerei passano sopra scaricando acqua e ritardanti dove serve.`
+			`	Ricordi di aver visto qualcosa del genere anni fa: agricoltori che bruciavano i raccolti per rendere fertile la terra, e quanto fosse cattiva l'aria per mesi.`
+				decline
+			label orbit
+			`	Non volendo fidarti di un atterraggio alla cieca in una situazione sconosciuta, torni in orbita e rientri nella coda di smistamento dello spazioporto. Un giorno di ritardo è un prezzo che vale la certezza.`
+				flee
+
+
+
+mission "Forest Fire"
+	minor
+	source
+		government "Free Worlds"
+		attributes "frontier"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`L'odore di fumo bruciato impregna l'aria mentre scendi dal mezzo, facendoti correre verso il riparo più vicino, tossendo per la strada. Una volta lì, trovi gente che urla e si affanna a incollare nastro adesivo sulle finestre. Nessuno sembra aver notato il tuo arrivo e nessuno dà spiegazioni.`
+			choice
+				`	"Ehi! Cosa succede? Posso aiutare!"`
+					goto help
+				`	(Cerca qualcuno che non stia correndo.)`
+			`	Cerchi una donna incinta seduta su una sedia, con una maschera addosso, che spiega: "È scoppiato un grande incendio qui vicino, e il vento lo sta spingendo verso lo spazioporto. Potrebbe essere stato qualche sciocco che giocava col fuoco, o qualche pirata che manda un messaggio a un locale. Non lo sappiamo, qui può essere qualsiasi cosa davvero. Ci stiamo barricando e speriamo che si spenga prima di fare troppi danni."`
+			choice
+				`	"Ho una nave là fuori. Lasciami aiutare."`
+			`	Le si spalancano gli occhi e si guarda intorno, attirando bruscamente l'attenzione di una delle tante persone che si affannano.`
+				goto fight
+			label help
+			`	Un giovane che sospetti fosse al controllo del traffico aereo venti minuti fa ti guarda e frena di colpo. "Oh, sei un pilota! La tua nave può aiutare?"`
+			choice
+				`	"Sì."`
+			label fight
+			`	Dopo la tua dichiarazione gli addetti al molo si affannano a caricare l'attrezzatura antincendio sulla nave, istruendoti a sganciare i ritardanti sul perimetro dell'incendio. Riesci a malapena a ricordare cosa fa ogni pulsante prima che il controllore del traffico aereo ti dia il via, e dirigi il mezzo verso le fiamme.`
+			`	L'incendio infuria come un inferno e solleva fumo nero in ondate profonde mentre ti avvicini. Mentre lasci cadere i ritardanti, attento a tenere bassa la velocità, gli animali scappano verso terreni più sicuri. Cerchi di assicurarti di non aver svuotato il carico proprio sopra di loro ogni volta che torni per un altro giro.`
+			`	Ore dopo guardi il tuo lavoro: una lunga linea rossa che trattiene le fiamme mentre l'incendio comincia a spegnersi. Comunichi i tuoi progressi via radio e ricevi una risposta allegra che ti ringrazia per l'aiuto.`
+				decline
+
+
+
+mission "Local Politics"
+	minor
+	source
+		attributes "frontier"
+		attributes "south"
+		not attributes "station" "urban" "ex-pirate"
+	"offer precedence" 5
+	to offer
+		or
+			and
+				random < 5
+				or
+					has "flagship planet attribute: south pirate"
+					not "event: war begins"
+			and
+				random < 1
+				has "event: war begins"
+				not "event: fw suppressed Greenrock"
+	on offer
+		conversation
+			`Mentre atterri sulla piattaforma noti un'assenza generale intorno allo spazioporto. Nessuno si è precipitato ad agganciare la nave, né qualcun altro ha riconosciuto il tuo arrivo. Invece, quando esci dalla nave, trovi solo un biglietto nello spazioporto che spiega dove i loro "signori" possono trovare il tributo annuale.`
+			`	Decidi di non scoprire dove siano finiti gli abitanti.`
+				decline
+
+
+
+mission "Military Response Test"
+	landing
+	minor
+	source
+		government "Free Worlds"
+		not attributes "station" "urban" "frontier"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Con una serie di istruzioni strana, il controllore del traffico aereo ti fa inserire un insieme di coordinate che ti porta vicino a un'enorme base militare lungo la strada per la zona di atterraggio. Lasci fare al pilota automatico mentre guardi il panorama dal finestrino, sperando che le torrette della base non ti sparino giù.`
+			`	Da dove guardi, vedi una donna sola in piedi nel piazzale della parata, con una mano alzata come se guardasse l'orologio. Passano secondi prima che alzi l'altra mano e faccia un pollice in su a chiunque la stia guardando. All'improvviso una sirena forte risuona su tutta la base, udibile anche dalla nave che passa a quota ragionevole. Guardi i soldati lasciare cadere tutto quello che stanno facendo: alcuni corrono negli edifici, altri verso i veicoli corazzati. In pochi minuti i veicoli della base rotolano verso il piazzale mentre i soldati in equipaggiamento completo corrono a schierarsi in file ordinate.`
+			`	Non sei sicuro se quello che facevano fosse in programma o una risposta al tuo volo.`
+				decline
+
+
+
+mission "Missed Mugging"
+	minor
+	source
+		government "Free Worlds"
+		not attributes "station" "frontier"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Il sole è già tramontato quando esci dallo spazioporto, cercando un ristorante vicino per assaggiare quello che offrono. Guardandoti intorno, l'unica fonte di luce viene dall'edificio da cui sei appena uscito, un faro in mezzo a un mare di buio.`
+			`	Scegliendo una direzione a caso, decidi di percorrere la strada silenziosa, godendoti la vista. Vieni interrotto quando due uomini sbucano da un vicolo e ti passano accanto spingendoti. Prima che tu possa reagire, vedi una donna uscire di corsa, con i vestiti in disordine, che insegue i due senza successo. Solo in ritardo capisci che avevano una borsetta, molto dopo che sono spariti, dissolti nel nero oltre.`
+				decline
+
+
+
+mission "Sojourn Sunday Sales"
+	minor
+	source
+		government "Free Worlds"
+		attributes "urban"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Entri nello spazioporto e socchiudi gli occhi per la sorpresa, guardando folle di persone che si fanno largo tra le catene umane di code avvolte intorno all'area commerciale. Scansionando l'ambiente noti inserzioni su inserzioni di località di vacanza, tutte a uno sconto assurdamente alto. Eppure, nonostante i prezzi molto ridotti, le vacanze pubblicizzate costano ancora somme così grandi che un te più giovane non avrebbe mai potuto giustificare una spesa simile.`
+				decline
+
+
+
+mission "Tarazed Ship Christening"
+	minor
+	source "Wayfarer"
+	to offer
+		random < 10
+		has "main plot completed"
+	"offer precedence" 5
+	on offer
+		conversation
+			`Mentre passi davanti a diverse navi e a equipaggi al lavoro nello spazioporto, un piccolo capannello davanti a uno Shuttle attira la tua attenzione. Una giovane donna con un'uniforme da pilota piuttosto pacchiana è al centro di un gruppetto di persone che festeggiano insieme. Mentre passi, un uomo in piedi in cima a una scala rompe una bottiglia di champagne sullo scafo della nave (chiaramente non nuova). Dal gruppo esplode un grido di esultanza, che fa arrossire la giovane donna per l'imbarazzo.`
+			choice
+				`	(Dare un'occhiata più da vicino.)`
+					goto investigate
+				`	(Gridare gli auguri mentre passo.)`
+					goto "pass by"
+				`	(Ignorarli, ho cose più importanti da fare.)`
+			`	Ti affretti oltre il gruppo chiassoso, infastidito dal trambusto.`
+				decline
+			label "pass by"
+			`	Ti affretti oltre il gruppo mentre si calmano. Approfittando della pausa momentanea, gridi verso di loro: "Buona fortuna! Ce la puoi fare!" Rispondono con un altro grido di esultanza, tranne la giovane donna, che si copre il viso con le mani.`
+				decline
+			label investigate
+			`	Ti avvicini al gruppo mentre si calmano, notando un accenno di ansia nell'aria.`
+			`	"Non c'è niente come comprare la propria prima nave stellare", dici sopra le loro chiacchiere. Il festeggiamento si spegne mentre si voltano a vedere chi ha interrotto la loro piccola festa.`
+			`	"È stata senz'altro un'esperienza...", risponde la giovane donna quando sei a distanza comoda per parlare.`
+			choice
+				`	"Hai programmi importanti con la nave?"`
+					goto plans
+				`	(Dare qualche consiglio.)`
+					goto advice
+				`	"Allora, chi è il pilota fortunato?"`
+			`	Indichi lo Shuttle e ti guardi intorno come se dovesse essere qualcun altro.`
+			`	"Ehm... sarei io", dice la donna, guardandosi intorno con imbarazzo.`
+			choice
+				`	(Provare a salvare la situazione imbarazzante.)`
+				`	(Andarsene finché posso.)`
+					goto "get out"
+			`	"Ti sto solo prendendo in giro; anche il mio psichiatra non la trova divertente quando lo faccio a lui."`
+			`	"Oh", dice la donna piano, "che... carino, credo."`
+			label "get out"
+			`	Ti rendi conto di aver messo parecchio a disagio questa giovane signora piombandole addosso con il tuo parere.`
+			`	"Beh, buona fortuna!", dici con un cenno della mano mentre ti allontani in fretta. Senti a malapena il "grazie" sommesso sopra il bruciore alle orecchie.`
+				decline
+			label plans
+			`	"Al momento", dice con un sospiro, "l'unico programma che ho è liberarmi del debito enorme in cui sono per colpa sua."`
+			label advice
+			`	"Il mutuo non è così terribile se sei disposta a lavorare sodo", dici con un sorriso, "e non mancano di certo le persone che hanno bisogno di una nave e di un buon pilota."`
+			`	"Sapevo che con una nave si può vivere decentemente, ma è davvero così facile?", chiede.`
+			`	"Il lavoro non è facile, ma trovare un impiego è il minore dei tuoi problemi. Sono sicuro che estinguerai il debito della nave in men che non si dica."`
+			`	Resti lì a parlare con l'aspirante pilota per qualche minuto, dandole consigli e suggerimenti, prima di dire che hai del lavoro da fare. Mentre ti volti per andartene, un uomo più anziano ti mette una mano sul braccio e ti ferma.`
+			`	"Prima che vada", dice l'uomo, "all'inizio non eravamo molto convinti di tutta questa faccenda del 'pilota', ma è bello sentire che mia figlia ha preso la decisione giusta. Grazie per questo."`
+			`	"È il minimo che potessi fare", dici prima di allontanarti.`
+				decline
+
+
+
+mission "Masquerade Hanging"
+	minor
+	source
+		government "Pirate"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`L'odore di polvere da sparo bruciata aleggia nell'aria mentre entri in una piazza, guardando un corpo che viene fatto rotolare giù da una piattaforma rialzata. Grida e urla riempiono l'aria mentre un uomo mascherato trascina una donna attraverso la piattaforma fino al palco centrale, con una pistola vecchio stile alla tempia mentre le chiede qualcosa che non riesci a distinguere. Per fortuna l'uomo non spara: toglie l'arma dalla tempia e poi la stende con l'arma stessa.`
+			`	Pochi istanti dopo la piccola folla gli permette di allontanarsi dal lato opposto rispetto a te, senza incidenti e senza spiegazioni. Non sei del tutto sicuro di cosa pensare di questa scena, mentre i corpi vengono trascinati via in fretta.`
+				decline
+
+mission "News Reporter - Paradise"
+	minor
+	source
+		government "Republic"
+		attributes "paradise"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 8
+		has "event: war begins"
+		not "event: joined the free worlds"
+	on offer
+		conversation
+			`Stai attraversando lo spazioporto quando vedi una giovane donna che cammina verso di te. Dietro di lei sfilano moltissimi droni-fotocamera, ciascuno contrassegnato da un logo composto da due curve che puntano verso l'interno.`
+			choice
+				`	(Aspetta che si avvicini.)`
+					goto walk
+				`	(Spera che non mi noti.)`
+					goto notice
+				`	(Cerca di evitarla.)`
+			`	Prendi un corridoio laterale per sfuggirle. Proprio quando pensi di essere fuori vista, senti una voce. "Mi scusi!" Ti volti e vedi la reporter che ti segue.`
+				goto walk
+			label notice
+			`	Mentre continui a camminare, la senti chiamare: "Mi scusi!" Soffocando un sospiro, ti volti verso la reporter.`
+			label walk
+			`	Quando ti si avvicina, sorride. "Salve, capitano! Sarebbe disposto a rispondere a qualche domanda per i nostri spettatori?"`
+			choice
+				`	"Certo, non mi dispiace."`
+					goto questions
+				`	"No, preferirei di no."`
+					decline
+			label questions
+			`	I droni-fotocamera ti girano intorno mentre lei si prepara all'intervista. Dopo qualche secondo sorride a uno dei droni e comincia.`
+			`	"Bentornati. Sono qui su <origin> per riferire della situazione con le Free Worlds. Mi accompagna un capitano mercantile attualmente tra un viaggio e l'altro. Capitano, cosa pensa dell'ultimatum inviato al Parlamento?"`
+			choice
+				`	"Penso che il Parlamento dovrebbe riconsiderare e riflettere un po' sulla situazione."`
+				`	"Il Parlamento ha preso la decisione giusta rifiutando le richieste."`
+					goto right
+			`	La reporter si acciglia. "Può spiegare la sua risposta per i nostri spettatori?"`
+			choice
+				`	"Gli interessi di ogni mondo dovrebbero essere considerati, che siamo d'accordo o no."`
+				`	"Le Free Worlds non sono rappresentate abbastanza da ottenere risultati per i canali normali."`
+				`	"La Marina difende a malapena quel territorio, quindi le tasse non dovrebbero essere così alte."`
+				`	"Preferirei non rispondere."`
+			`	"Non sono sicura che il Parlamento sarebbe d'accordo con lei, ma voglio ringraziarla per le risposte e per il tempo che ci ha dedicato!" dice.`
+			`	I droni tornano a seguirla mentre prosegue per lo spazioporto.`
+				decline
+			label right
+			`	La reporter sorride. "Può spiegare quella risposta per i nostri spettatori?"`
+			choice
+				`	"Ci sono canali adeguati per presentare le proprie lamentele, e questo non è uno di quelli."`
+				`	"È una cosa molto ingrata da fare, quando è il Parlamento a proteggerli."`
+				`	"Preferirei non rispondere."`
+			`	"Siamo fortunati che molte persone la pensino così! Grazie per le risposte e per il tempo che ci ha dedicato!" dice.`
+			`	I droni tornano a seguirla mentre prosegue per lo spazioporto.`
+				decline
+
+mission "Scientists at the Pub after a Conference"
+	minor
+	source
+		government "Republic"
+		attributes "urban"
+		not attributes "station"
+	"offer precedence" 5
+	to offer
+		random < 1
+	on offer
+		conversation
+			`Mentre ti prendi una pausa dopo un lungo viaggio e una procedura di atterraggio che è sembrata ancora più lunga, noti un gruppo di persone entrare nel pub dove sei seduto, che arriva in fiume dal complesso congressuale dall'altra parte della strada. Differiscono per età, abbigliamento e accento, ma i più hanno un badge identico appeso a un cordoncino al collo. Ne noti uno caduto a terra, che dice "Partecipante - Trentacinquesimo Congresso Pan-galattico annuale di genomica microbica interstellare e dinamica delle popolazioni". Il gruppo prende posto a un lungo tavolo vicino a te.`
+			choice
+				`	(Ordina un pasto e ascolta la loro conversazione.)`
+					goto "overheard scientists 1"
+				`	(Trova un posto più tranquillo per rilassarti.)`
+					decline
+			label "overheard scientists 1"
+			`	Frammenti di conversazione ti arrivano attraverso il chiasso del pub.`
+			``
+			`	Due dei partecipanti più giovani sembrano un po' nervosi. "Sono così contento di aver finito la mia presentazione. Ero così preoccupato di dover presentare il primo giorno, ma ora posso finalmente rilassarmi e ascoltare davvero gli altri interventi!"`
+			`	"Oh, assolutamente! Io probabilmente non dovrei nemmeno essere qui: dovrei davvero ripassare... Oh! Cameriere, un'altra birra, per favore!"`
+			`	"Hai le slide pronte per domani?"`
+			`	"Sì, ma sono ancora terrorizzato. Odio parlare in pubblico."`
+			`	"Non preoccuparti, del tuo specifico campo ne sai più di loro. Andrà bene appena sei sul palco! E poi, il dottorato è un unico grande esercizio di parlare in pubblico. La sicurezza arriva con la pratica."`
+			``
+			`	Un altro scienziato alza gli occhi al cielo dopo un'autopsia degli eventi della giornata. "Esiste qualche legge che non conosco per cui ogni 'domanda' deve cominciare con 'Credo che questa non sia tanto una domanda quanto un commento...'?"`
+			``
+			`	Un'accademica esasperata parla con enfasi alla sua amica di quello che deduci essere un intervento che hanno ascoltato entrambe prima. "Non credo affatto che le prove sui nucleotidi sostengano la loro ipotesi! Cioè, lo so che i dati proteomici potrebbero essere usati per sostenere la loro conclusione, ma stanno ignorando le mutazioni sinonime!"`
+			choice
+				`	(Ordina un'altra bevanda e continua ad ascoltare.)`
+					goto "overheard scientists 2"
+				`	(Finisci il pasto e vattene.)`
+					decline
+			label "overheard scientists 2"
+			`	La conversazione del gruppo si fa più forte, sia per la passione per l'argomento sia per l'effetto di qualche drink.`
+			`	"Guarda, l'analisi può anche essere a posto, ma se non si degnano nemmeno di fornire i numeri di versione del loro software di analisi, allora non è riproducibile e per me è un 'rifiuto' automatico."`
+			``
+			`	Una persona sembra un po' scossa dopo aver considerato quello che sarebbe potuto succedere. "Ci credi che il mio computer si è bloccato proprio prima che dovessi presentare? Meno male che avevo i backup. Due è uno e uno è niente."`
+			``
+			`	Un gruppo sembra discutere di altri colleghi del campo che, presumibilmente, non sono presenti stasera. "Singh ed Esterhazy sono dei gran presuntuosi. Il loro lavoro è discreto, credo, ma non abbastanza da giustificare le loro personalità da rockstar mancate!"`
+			`	"Certo, ma non sono solo presuntuosi: sono presuntuosi carismatici. Il carisma attira bravi dottorandi nel loro laboratorio, che producono buoni articoli, su cui loro mettono il nome. È un ciclo di retroazione positivo."`
+			``
+			`	Le domande di finanziamento sembrano un argomento comune. "L'Agenzia Repubblicana per la Ricerca Medica dice che il mio lavoro è troppo teorico, ma il Dipartimento di Microbiologia dell'Università di Chiron dice che è troppo applicato!"`
+			`	"È un bel rompicapo, davvero. Forse potresti trovare finanziamenti dall'industria? Il Sindacato potrebbe essere interessato al tuo lavoro."`
+			`	"Sì, ma non sono ancora sicuro di voler rinunciare alla mia libertà accademica."`
+			choice
+				`	(Finisci con i miei tempi.)`
+					goto "overheard scientists 3"
+				`	(Salda il conto il più in fretta possibile e vattene.)`
+					decline
+			label "overheard scientists 3"
+			`	Due partecipanti confrontano le loro lamentele sulle richieste del lavoro. "Insegnare fa schifo. Tra ore di lezione, ricevimento e preparazione delle lezioni, non resta quasi nessun tempo per la ricerca."`
+			`	"Che buffo! Insegnare agli studenti del triennio è la mia unica tregua dalla scrittura di progetti!"`
+			``
+			`	Un uomo socievole ma dall'aria esausta è sprofondato nella sedia. "Questi congressi durano solo tre o quattro giorni, ma sembra sempre che ti invecchino di un anno."`
+			`	Te ne vai dopo aver finito il pasto, riflettendo su aver origliato uno spaccato di una vita molto diversa dalla tua.`
+				decline
+
+
+mission "Sol-Bound Shuttle"
+	minor
+	source
+		system "Sol"
+	"offer precedence" 5
+	to offer
+		random < 10
+	on offer
+		conversation
+			`	Entrando nello spazioporto immenso, noti che un gruppo di operai di fabbrica sta parlando con una capitana. Quando ti avvicini, vedi che la sua nave ammiraglia, uno Shuttle che ha conosciuto giorni migliori, è priva di iperguida.`
+			choice
+				`	"Dov'è la tua iperguida?"`
+				`	"Come farai a viaggiare da qualche parte con quella nave?"`
+				`	(Torna alla mia nave.)`
+					decline
+			`	La capitana ride. "La maggior parte dei piloti è del tipo avventuroso. Io no. Faccio un buon gruzzolo solo portando gente dalla Terra a Marte e ritorno. Ogni tanto faccio viaggi sulla Luna per i turisti." Noti che usa il termine arcaico per Luna. Dev'essere un'espressione locale.`
+			choice
+				`	"Non diventa noioso?"`
+					goto boring
+				`	"C'è davvero abbastanza traffico dentro il Sol perché tu ci possa vivere?"`
+			`	"Rimarresti sorpreso. In questo sistema c'è molta gente, dopotutto, e molta di quella gente ha abbastanza soldi per lasciare la Terra ma non abbastanza per lasciare il Sol. È una bella nicchia che mi sono ritagliata."`
+				goto end
+			label boring
+			`	"Per te, forse. Dal tuo accento capisco che hai viaggiato un po' dal tuo pianeta natale. Io però preferisco restare vicina a casa. Con tutta l'instabilità della galassia, pirati, alieni e chissà cos'altro, restare nel Sol mi tiene al sicuro. Dimmi che sono paranoica, ma stare in un posto dove non devo preoccuparmene è qualcosa che tengo." Guarda di lato una nave a cui stanno riparando lo scafo. Il danno sembra essere stato causato da un'arma a raggio.`
+			label end
+			`	Vi salutate mentre salite sulle rispettive navi. Anche se siete entrambi capitani, le traiettorie delle vostre vite hanno preso strade molto diverse.`
+				decline
+
+# Note about Earth Day and Earth Hour:
+# Earth Day (in 2023) is a day of awareness about climate change and occurs every 22nd of April. Earth Hour is an hour
+# of blackout around cities worldwide, also to bring awareness to climate change, and it's observed on the last Saturday
+# of March.
+
+# Since Earth Day has become a quasi-'national day' for Earthlings in Endless Sky, it would be interesting to have Earth
+# Hour be conflated with Earth Day as well, to demonstrate how people in a thousand years' time observe what we observe
+# today and how its meaning has changed.
+mission "Earth Day Blackout"
+	minor
+	landing
+	source "Earth"
+	"offer precedence" 5
+	to offer
+		day == 22
+		month == 4
+	on offer
+		conversation
+			`Mentre segui i ripetitori di tracciamento verso lo spazioporto centrale della Terra, ti rendi conto che c'è qualcosa di molto strano. Quella che era una città-spazioporto piena di vita ora è completamente immobile, e anche se è quasi mezzanotte i grattacieli enormi sono stranamente bui; non c'è una luce accesa per chilometri.`
+			`	Nonostante questo, lo spazioporto sembra ancora operativo, perché le procedure automatiche di firma dei documenti di atterraggio, rifornimento e controllo dell'idoneità spaziale della nave si completano mentre atterri. Nel terminale dello spazioporto ci sono candele di cera distanziate per portare un po' di luce nei corridoi ora bui. È una vista strana per il pianeta più popoloso dello spazio umano.`
+			choice
+				`	(Trova qualcuno e chiedi.)`
+				`	(Il blackout passerà probabilmente.)`
+					goto pass
+			branch attendant tourist
+				random > 50
+
+			label attendant
+			`	Ti avvicini a un banco informazioni nell'atrio del terminale che, data la situazione, non sembra così affollato come ci si aspetterebbe. Dopo un momento arrivi all'addetto dietro il banco.`
+			choice
+				`	"Che succede con il blackout?"`
+				`	"Quando verrà risolto il blackout?"`
+			`	L'addetto ridacchia. "Avrei dovuto aspettarmelo, una domanda così, dal tuo accento. Oggi è la Giornata della Terra, quando tutte le città della Terra, e dico tutte, partecipano a un blackout totale. Anche l'edificio del Parlamento oggi era spento. Ci fa pensare alle nostre origini; che un tempo vivevamo sulla terraferma senza elettricità, tutti confinati su questo unico pianeta, divisi e incerti. Certo, gente come me deve continuare a lavorare, ma per gli altri è un giorno libero per godersi quel poco di natura e di Terra che noi terrestri ci siamo lasciati, ironicamente. Hai altre domande?`
+			choice
+				`	"Quando è iniziata questa tradizione?"`
+				`	"Grazie per avermelo detto."`
+					goto pass
+			`	"Beh, la mia vecchia lezione di storia mi dice che la prima Giornata della Terra è stata intorno al XX secolo, qualche anno dopo che siamo atterrati sulla Luna per la prima volta. Allora c'erano un mucchio di conflitti e dispute per le risorse e su come ci combattevamo dappertutto e scavavamo tutto per alimentare tutte quelle auto sporche e primitive, le centrali e le fabbriche che avevamo allora. Così, come dimostrazione di unità contro tutto questo, la gente ha cominciato a celebrare la bellezza naturale della Terra riportandoci al nostro passato."`
+			`	Appena finisce, le luci del soffitto si riaccendono. "Ah, ecco fatto. Peccato essermi perso i festeggiamenti, ma questa è la fine della Giornata della Terra e del mio turno di notte. Spero che tu abbia passato una buona Giornata della Terra, e buona notte!"`
+				decline
+
+			label tourist
+			`	Ti avvicini a una donna con un mucchio di borse oversize raggruppate intorno alla sedia. Sta picchiettando velocemente sul datapad, ma alza comunque lo sguardo quando ti avvicini. "Scusa, capitano, stavo cercando di capire quando riapre la metropolitana. Lo sai?"`
+			choice
+				`	"Ne so quanto te, mi dispiace."`
+				`	"Forse ha a che fare con il blackout?"`
+					goto "way in"
+			`	"Ah, spengono tutto per la Giornata della Terra e poi danno per scontato che tutti noi che veniamo da fuori lo capiamo. Chi l'avrebbe detto..."`
+			choice
+				`	"Giornata della Terra?"`
+				`	"Spengono tutto?"`
+			`	"Non hai visto quello che succedeva fuori mentre entravi? Ha a che fare con la Giornata della Terra. In quei tempi antichi, prima che gli umani riuscissero a lasciare questo pianeta, erano bloccati in una catena di problemi e dispute sull'energia. Sai, allora non avevano reattori a fusione. Tempi terribilmente primitivi.`
+				goto decided
+
+			label "way in"
+			`	"Sì, suppongo che tu abbia visto quello che succedeva fuori mentre entravi. Ha a che fare con la Giornata della Terra. In quei tempi antichi, prima che gli umani riuscissero a lasciare questo pianeta, erano bloccati in una catena di problemi e dispute sull'energia. Sai, allora non avevano reattori a fusione. Tempi terribilmente primitivi.`
+
+			label decided
+			`	"Così hanno deciso che, il 22 aprile di ogni anno, tutta la Terra sarebbe entrata in un blackout totale per simboleggiare che non avevano abbastanza energia per sostentarsi, e per ricordare loro che l'unico modo per avanzare era continuare a spingersi avanti, trovare nuove vie per l'energia, altrimenti quei blackout sarebbero diventati più lunghi e più frequenti. Affascinante, eh?"`
+			choice
+				`	"Mi sembra un po' un passo indietro."`
+				`	"È affascinante, grazie."`
+					goto pass
+			`	"Beh, forse. Ma la Terra è così a volte. È sopravvissuta a così tanto, e senza la Giornata della Terra per ricordare ai nostri antenati che dobbiamo continuare a guardare avanti, forse non saresti sulla tua graziosa navicella, vero?"`
+			`	Le luci dello spazioporto si riaccendono mentre lo dice, e lei si volta di nuovo verso il datapad. "Oh, è mezzanotte. Devo vedere se la metropolitana ha aperto per arrivare al mio alloggio. Buon viaggio!"`
+				decline
+
+			label pass
+			`	Dopo che l'orologio supera la mezzanotte, le luci dello spazioporto si riaccendono, seguite dalle insegne e dalle luci della città intorno. Alcuni operai passano a spegnere le candele e poi le ripongono in armadi che non si vedono.`
+				decline
+
+mission "Burthen Triathlon"
+	minor
+	source
+		planet "Burthen"
+	"offer precedence" 5
+	to offer
+		random < 10
+	on offer
+		conversation
+			`Grazie all'alta gravità del pianeta, Burthen non è una destinazione comune, ma oggi lo spazioporto sembra avere molti visitatori. Molte delle piattaforme di atterraggio di solito vuote sono occupate, e mentre esci sul piazzale piuttosto immacolato noti una folla consistente ai margini dello spazioporto. Alcuni della folla sono chiaramente di altri mondi, a giudicare dall'altezza, e ci sono persino alcune troupe mediatiche in attesa, anche se i loro droni-fotocamera sembrano faticare con la gravità di Burthen.`
+			choice
+				`	(Vedi cosa succede.)`
+				`	(Evita la confusione e pensa ai fatti miei.)`
+					decline
+			`	Ogni passo costa molta più fatica del solito, ma alla fine raggiungi la folla. Dai cartelli affissi lungo la strada sembra che oggi si svolga il "Triathlon di Burthen", e che lo spazioporto sia stato designato come punto d'arrivo. Sono stati montati un paio di tendoni dall'aspetto particolarmente robusto: quello più piccolo sembra il tendone dell'amministrazione, per ora accessibile solo allo staff dell'evento, mentre l'altro è molto più grande e serve cibo e bevande alla folla lì vicino.`
+			choice
+				`	(Vai al tendone del ristoro.)`
+				`	(Resta fuori.)`
+					goto outside
+				`	(Torna alla mia nave.)`
+					decline
+
+			`	Per fortuna la camminata fino al tendone del ristoro è molto più breve di quella dalla nave, ma arrivi comunque esausto quando ti trascini dentro. È stato fatto molto lavoro per questo tendone: le sedie di metallo sono tutte costruite robuste perché chi viene da fuori possa tirarsi su, ma imbottite per non renderle scomode. Al centro del tendone è stato costruito un piccolo braciere, con un paio di estintori sistemati lì vicino, e tutto il locale è illuminato intensamente, in contrasto con il clima di solito freddo di Burthen. Parecchie persone, sia di Burthen sia di altri mondi, si mescolano qui.`
+			`	In un angolo c'è un bancone a due livelli, evidentemente perché il burtheniano che lo serve possa servire sia quelli di fuori sia i locali. Oltre alle solite bevande che hai visto nei bar degli spazioporti e ad alcune locali del Core meridionale, il bancone offre anche una bevanda locale chiamata "Antigrav" che promette di "alleviare i visitatori dal richiamo naturale di Burthen", e arriva in un bicchiere fatto apposta, tutto per 30 crediti.`
+			branch "no credits"
+				credits < 2
+			choice
+				`	(Ordina una bevanda normale dal bancone.)`
+				`	(Ordina l'Antigrav dal bancone.)`
+					goto antigrav
+					to display
+						credits >= 30
+				`	(Non ordinare nulla e lascia il tendone.)`
+					goto "leave tent"
+
+			action
+				payment -2
+			`	Consegni un paio di crediti per la bevanda e lasci il tendone, sorseggiando con una certa difficoltà mentre cammini. Il burtheniano al bancone ti consiglia di non berne troppo in una volta, e di non lasciar cadere il bicchiere "a meno che tu non voglia un piede maciullato per qualche settimana".`
+				goto "leave tent"
+
+			label antigrav
+			action
+				payment -30
+				outfit "Antigrav Glass"
+			`	Si scopre che il bicchiere dell'Antigrav ha installato un repulsore miniaturizzato, così non devi tenerlo in mano mentre bevi. La bevanda in sé è una soda molto gassata che sa di qualcosa a metà fra il mirtillo rosso e il lampone, fatta con le bacche autoctone che si trovano nel Westland, il distretto in cui si trova lo spazioporto. Il burtheniano al bancone ti consiglia di non berne troppo in una volta e di non spegnerlo mentre levita, "perché non cada sul tuo piede e dobbiamo curarti le fratture".`
+				goto "leave tent"
+
+			label "no credits"
+			`	Sfortunatamente, sembra che tutte le bevande siano troppo care per te.`
+			choice
+				`	(Lascia il tendone.)`
+
+			label "leave tent"
+			`	La folla è un po' più attiva quando torni fuori, e sopra le teste dei locali vedi su un grande schermo portatile che il triatleta in testa è un burtheniano particolarmente tarchiato, con un casco bianco e un abbigliamento sportivo scuro e aderente.`
+				goto "after tent"
+
+			label outside
+			`	Restando fuori nella gravità opprimente e nella temperatura fredda, ti sposti a bordo pista e guardi il grande schermo portatile che trasmette i concorrenti in testa dall'alto. Sembra che i concorrenti siano divisi fra burtheniani e forestieri, con i burtheniani in casco bianco e i forestieri in casco rosso. È quasi la fine dell'evento; il concorrente in testa si chiama Abernathy, un burtheniano tarchiato che sta facendo il suo undicesimo Triathlon di Burthen. Intanto il forestiero in testa è cinquecento metri dietro di lui, un concorrente di Martini di nome Caldarone. A quanto pare sono in gara da più di 11 ore, cominciando con 1,5 chilometri di nuoto, poi 40 chilometri in bicicletta e infine 10 chilometri di corsa.`
+			`	Dopo un paio di minuti Abernathy sbuca da dietro una curva, con i droni-fotocamera alle calcagna. Dalla folla erompono acclamazioni, urla e grida piuttosto entusiaste, che si alzano enormemente quando attraversa il rettilineo finale, con i droni che ora gli girano intorno. Sopra la folla un altoparlante annuncia: "Ed ecco il vincitore del Triathlon di Burthen della Syndicate Athletics, il campione mondiale di triathlon, concorrente numero cinquantotto: Samuel Abernathy!"`
+				goto end
+
+			label "after tent"
+			`	Quando si avvicina al traguardo, dalla folla erompono le acclamazioni entusiaste, le urla e le grida dei burtheniani, e i droni-fotocamera, ora con i repulsori calibrati per la gravità di Burthen, girano intorno al rettilineo finale. Sopra la folla un altoparlante annuncia: "Ed ecco il vincitore del Triathlon di Burthen della Syndicate Athletics, il campione mondiale di triathlon, concorrente numero cinquantotto: Samuel Abernathy!"`
+
+			label "end"
+			`	Abernathy non rallenta finché non è a un braccio dal traguardo; quando lo attraversa afferra il nastro, emettendo un guaito di gioia e sollievo insieme. Tiene il nastro in alto davanti a tutta la folla e alle telecamere puntate su di lui, assaporando l'attenzione (e riprendendo fiato) prima di accettare una bottiglia d'acqua da qualcuno a bordo pista.`
+				decline
+
+mission "CCOR Guerrilla Standoff"
+	minor
+	source "Gagarin"
+	"offer precedence" 5
+	to offer
+		random < 10
+	on offer
+		conversation
+			`Ogni mappa dello spazio umano mette Gagarin nella lista dei porti pirata loschi e a proprio rischio, che farebbero pensare alle fosse di combattimento di Greenrock e ai bazar di attrezzature di Freedom. Eppure appare molto simile a qualsiasi altro spazioporto vecchio e un po' malconcio del Sud, solo su scala molto più grande. Essendo il centro dell'esteso sistema di trasporti del pianeta, sembra che ti stia facendo largo tra migliaia di gagariani e forestieri in ogni atrio e corridoio di questo spazioporto, mentre loro fanno lo stesso per prendere le coincidenze dentro e fuori dal pianeta.`
+			`	Ma mentre ti fai strada nella sala centrale, noti che dove ti aspetteresti la massima attività tutto si è fermato. Persino i carrelli a gravità zero sempre in movimento, carichi di merci e rifornimenti, sono fermi e immobili, e l'attenzione di tutti è rivolta a una specie di trambusto proprio al centro dello spazioporto.`
+			choice
+				`	(Dai un'occhiata.)`
+				`	(Torna indietro alla mia nave.)`
+					decline
+			`	Passando negli spazi della folla già formata finisci accanto a un gendarme dello spazioporto. Sembra che dovrebbe essere di pattuglia ma è troppo impegnato a guardare la distrazione per fare il suo lavoro in questo momento. Guardando oltre la ringhiera accanto a lui, vedi prima l'enorme e stranamente vuoto spazio al centro della sala, poi una squadra di uomini in tuta da lavoro armati di trapani e spazzole. Intorno a loro c'è un cordone di guerriglieri nelle loro uniformi CCOR color rosa, che valutano il pubblico e la sicurezza dello spazioporto intorno a loro con fucili e pistole.`
+			`	I guerriglieri-pittori stanno finendo in fretta i ritocchi di quella che sembra una statua dell'emblema bordeaux e bianco dei Consigli Confederati, mentre un mucchio di macerie accanto suggerisce che al suo posto stava un simbolo del governo locale. Quando si scostano dalla statua, un uomo solo, in un'uniforme molto più curata di quella degli altri, fa un passo avanti davanti al loro lavoro. Senti l'aria raffreddarsi mentre alza la testa per parlare.`
+			choice
+				`	(Ascolta.)`
+				`	(Allontanati prima che faccia il discorso.)`
+					decline
+			`	Non vedi nessuna attrezzatura di amplificazione, eppure la sua voce riempie la sala senza sforzo.`
+			`	"Gagariani e forestieri. Capitani e viaggiatori. Militari e contadini.`
+			`	"I mondi del Bordo Esterno, e anzi quelli della Repubblica e dell'intera umanità, sono stati e continuano a essere depredati e devastati da un profitto spietato.`
+			`	"I dirigenti del Sindacato e la nobiltà terriera dei Mondi del Paradiso rubano il lavoro di decine di miliardi di uomini, donne e bambini, da Prime a Foundry; da Valhalla alla Terra; da Bourne a Hestia, e oltre. E per quasi un secolo hanno cospirato per imporre i loro piani sui nostri mondi! L'insurrezione aziendale di Novo Minho e le guerre tra bande nel nord del Bordo Esterno sono un'estensione evidente del braccio di gente come Alastair Korban, che porta solo a ulteriore sofferenza e amara distruzione nella nostra regione!`
+			`	"Ma c'è ancora speranza. Possiamo portare all'indipendenza di Gagarin e unire questo mondo perduto in mano agli oligarchi sponsorizzati dal Sindacato, ai loro accoliti e ai funzionari burattini. Possiamo riunire il Bordo Esterno e restituire la prosperità che ci è stata rubata. Possiamo formare nuovi Consigli Confederati e far brillare di nuovo la luce di Belenos su tutta la galassia!"`
+			`	I gendarmi si guardano intorno e valutano la reazione della folla intorno a loro mentre l'uomo conclude il discorso tra applausi sparsi. L'oratore scende e ordina ai suoi guerriglieri di mettersi in formazione prima di farli marciare fuori dalla folla ancora immobile e nel retro di un furgone militare bordeaux e impolverato che non avevi notato prima, lasciando i resti della vecchia statua sparsi intorno allo spazio vuoto.`
+			`	Ti volti e vedi il gendarme accanto al quale eri finito. Incrocia il tuo sguardo e riconosce la tua aria da forestiero.`
+			`	"Solo un'interruzione quotidiana, capitano", dice. "Solo nostalgici della vecchia causa. Ne abbiamo una dozzina di questi incidenti al mese." Sembra essere interrotto da un ronzio del ricevitore radio al fianco e si allontana a passi lunghi nella folla, lasciandoti sulla balaustra.`
+			`	Lentamente ma in modo costante, lo spazioporto esce dallo shock e riprende lo slancio di prima, anche se voltandoti passi davanti a due camion con il marchio del governo e montati con gru, quasi certamente lì per portare via la statua appena installata e ripulire il disordine lasciato dai guerriglieri.`
+
+mission "Raider returning to Mordente-Bridi"
+	source "Mordente-Bridi"
+	"offer precedence" 5
+	to offer
+		random < 10
+	on offer
+		conversation
+			`Osservando la sezione a microgravità dello spazioporto da uno dei bar del Cilindro Mordente, vedi un Bastion con i contrassegni dei pirati che arriva quasi troppo veloce per un avvicinamento sicuro alla stazione, con lo scafo coperto di squarci e bruciature che sembrano da colpi di cannone al plasma.`
+			`	Quando si ferma in una baia di manutenzione, gli shuttle tecnici dello spazioporto spuntano da ogni parte e cominciano a ronzargli intorno, valutando i danni e iniziando le riparazioni. Intanto l'equipaggio si disperde dalla nave e comincia subito a scaricare dalla stiva una moltitudine di casse e container ammaccati, probabilmente razziati da un trasporto civile. Sembra che il bottino valesse il danno.`
+			`	Nel giro di un'ora gli shuttle tecnici si disperdono dalla nave dopo aver finito di rattopparne lo scafo malconcio, e il Bastion esce dalla baia quasi con la stessa disinvoltura con cui era entrato.`
+
+mission "Militia returning to Solace"
+	source "Solace"
+	"offer precedence" 5
+	to offer
+		random < 10
+	on offer
+		conversation
+			`Girando per lo spazioporto principale di Solace, noti diverse file di piattaforme di atterraggio nuove di zecca accanto agli uffici della Delta V. Un grande striscione annuncia che stai assistendo alla grande inaugurazione del nuovo spazioporto privato della Delta V, e una folla di curiosi si è radunata vicino al perimetro della recinzione.`
+			`	All'improvviso un Argosy sfreccia dal cielo, quasi schiantandosi contro diverse navi più piccole nello spazioporto principale prima di scomparire dietro un hangar in direzione delle nuove piattaforme. Dalla folla dei curiosi arrivano grida: sembrano tutti convinti che fosse un numero acrobatico. Il tuo occhio più esperto però ti dice che sullo scafo dell'Argosy ci sono segni di proiettili da mitragliatrice Gatling. Probabilmente è stato un errore di calcolo del computer del pilota a causare quasi la collisione.`
+			`	Poco dopo un annuncio da un grande altoparlante dice agli astanti che non è successo niente di male e che possono tornare a casa. Dopo essere rimasta un po' per curiosità, la folla si disperde. Tu però resti e vedi l'Argosy tornare in vista per atterrare nello spazioporto principale.`
+
+mission "Republic 300 Year Anniversary"
+	landing
+	source
+		government "Republic"
+		not attributes "uninhabited"
+	"offer precedence" 5
+	to offer
+		year == 3030
+	on offer
+		conversation
+			`I titoli delle notizie ti bombardano le comunicazioni mentre atterri su <origin>: oggi è il trecentesimo anniversario della Repubblica. Una folla si è radunata nello spazioporto locale in una specie di festeggiamento, sintonizzata sulle principali stazioni, sui siti e sui blog di tutto lo spazio umano che commentano questa giornata memorabile. Noti però molti passanti che si muovono con aria di disprezzo per i festeggiamenti, cercando solo di sbrigare le proprie faccende e irritati dall'inevitabile lentezza delle strutture locali oggi.`
+			`	Formata in origine dalla Terra e dai pianeti vicini, dal Bordo e da alcuni mondi della Cintura di Terra, la Repubblica si è poi progressivamente espansa incorporando il Sindacato, i Mondi del Paradiso e il Deep. Da trecento anni ormai la maggior parte dell'umanità vive sotto la sua bandiera, e tra proteste e rinascimento spaziale, ondate di colonizzazione, espansione e battaglie contro i resti degli Alfa, quella bandiera sventola ancora oggi su quasi tutti i mondi umani.`
+			branch "war over"
+				has "main plot completed"
+			branch "war ongoing"
+				has "chosen sides"
+				not "main plot completed"
+			`	Non tutto va bene, naturalmente: il bombardamento di Geminus e Martini sembra aver portato la Repubblica sull'orlo della guerra con le Free Worlds, nella parte meridionale dello spazio umano. Non puoi fare a meno di pensare che buona parte dell'allegria per questa data abbia più a che vedere con la festa nazionale che con un apprezzamento profondo della storia della Repubblica e di ciò che rappresenta.`
+				goto end
+			label "war ongoing"
+			`	La guerra in corso con le Free Worlds ha ridotto molto quello che il Dipartimento dell'Arte e della Cultura della Repubblica sperava senza dubbio di trasformare nell'evento pubblico dell'anno. Operai locali e capitani mercantili sussurrano tra loro, il personale della Marina marcia avanti e indietro verso navi da guerra che vanno e vengono a un ritmo allarmante, apparentemente indifferente alla data storica, e in qualche bar scoppiano risse tra locali patrioti probabilmente ubriachi e chi è tanto imprudente da esprimere qui il proprio sostegno alle Free Worlds.`
+				goto end
+			label "war over"
+			`	La recente guerra con le Free Worlds sembrava minacciare questa lunga storia di stabilità: le battaglie infuriavano nei cieli di decine di pianeti e la minaccia di una guerra nucleare aperta si faceva più vicina man mano che il conflitto cresceva. La sparizione indiscriminata di molti sistemi vicino alla Terra, seguita dal fronte umano unito contro gli invasori Pug, sembra aver ricucito i sentimenti di molti nella Repubblica, almeno per ora.`
+			branch "zenith bombed"
+				has "Wanderers: Sestor: Return to Wanderers: done"
+			branch "sestor beaten at farpoint" end
+				has "Wanderers: Sestor Alt: Return to Wanderers: done"
+			label "zenith bombed"
+			`	Ad abbassare l'umore dei titoli per il resto per lo più positivi ci sono i commenti su una misteriosa armata di navi da guerra robotiche che invade il Nord Lontano. Dopo aver schiacciato le forze della Marina su Farpoint, la flotta è stata battuta solo in parte dopo la detonazione di una bomba terribile su Zenith, che ha devastato buona parte del pianeta. Ci sono volute settimane prima che le navi disperse fossero distrutte del tutto, e la fiducia nella capacità della Marina, e per estensione della Repubblica, di tenere al sicuro l'umanità sembra esserne stata toccata in modo significativo...`
+				goto end
+			label "sestor beaten at farpoint"
+			`	I commenti sul web e i conduttori delle notizie sembrano particolarmente entusiasti di commentare la recente vittoria della Marina sulla misteriosa armata di navi robotiche che ha invaso il Nord Lontano. A un costo elevato per le guarnigioni della flotta settentrionale, le flotte invasori sono state fermate alla base di Farpoint, impedendo alle navi di fare altri danni. I veterani della battaglia di Farpoint sembrano monopolizzare le luci della ribalta, con resoconti emozionati del loro ricordo dello scontro e dei sacrifici affrontati per ottenere la vittoria.`
+			label end
+			choice
+				`	(Unisciti ai festeggiamenti per il trecentesimo anniversario della Repubblica.)`
+					goto celebrate
+				`	(Vai avanti con la mia giornata come al solito.)`
+			`	Chiudi i canali media sui festeggiamenti e ti dedichi ai controlli dei sistemi della nave. Quando hai finito, ti prepari a un'altra giornata qualunque.`
+				decline
+			label celebrate
+			`	Ti prendi un'ora o due per unirti ai festeggiamenti, perché dopotutto non tutti possono dire di aver visto l'anniversario centenario di una nazione. Scendendo dalla <ship>, vai allo spazioporto, bevi un paio di bicchieri, parli con alcuni locali e fai festa con qualche altro. Quando si fa tardi, torni alla nave e rifletti sul significato di questa giornata in tutto lo spazio umano.`
+				decline
+
+mission "Exotic Life: Buccaneer Bay"
+	minor
+	source "Buccaneer Bay"
+	"offer precedence" 5
+	to offer
+		random < 10
+		credits > 379
+	on offer
+		conversation
+			`Passeggi sul lungomare sbiancato dal sole del pianeta, passando davanti a decine di bar impregnati di rum. Alla fine vedi un ristorante angusto incastrato tra un negozio di souvenir chiuso e l'ennesimo bar. L'edificio è dipinto color corallo e ha una pensilina di lamiera ammaccata, e sopra la porta pende un cartello scritto a mano con le parole "Pesce Piatto Fresco e Squisito".`
+			`	Un cameriere allampanato con una barba argentata intrecciata e l'occhio sinistro cibernetico ti fa cenno con insistenza di entrare e lancia un grido ben esercitato: "Il miglior Pesce Piatto della città! Esperienza irripetibile, più un souvenir famoso in tutto il mondo! Prova il Pesce Piatto: il pesce che è un piatto!"`
+			choice
+				`	"Cosa?"`
+				`	"Quanto costa?"`
+					goto price
+				`	"No, grazie."`
+					decline
+			`	"Pesce Piatto! È un pesce che è un piatto. Buccaneer Bay è famosa per questi." Il cameriere ti fulmina con un fastidio moderato. "È un pesce piatto con una testa grande. Il cranio è piatto e ha tre corna, quindi sta in piedi da solo come un piatto, e il resto del pesce lo cuciniamo per servirlo lì sopra. Il cranio te lo puoi tenere come piatto. Piatto. Pesce."`
+			label price
+			`	Il cameriere ti mette una mano sulla spalla. "Solo 99 crediti, che affare! Il cranio da solo costerebbe 200 crediti ovunque. Che ne dici, vuoi il pasto di una vita?"`
+			choice
+				`	"Certo."`
+				`	"No, grazie."`
+					decline
+			action
+				payment -379
+			`	"Perfetto! Il costo del servizio è incluso." Il cameriere ti strappa i crediti, ti sbatte in mano un menù plastificato e uno scontrino, e ti spinge in un box angusto prima di correre via verso la cucina. Guardi lo scontrino e scopri che ti hanno addebitato 20 crediti per il 'posto a sedere', 30 per 'servizio di comodità', 50 per 'pulizia del pesce', 80 per 'montaggio del piatto' e 100 per 'oneri di servizio': un totale di 379 crediti.`
+			`	Seduto dentro, il ristorante è ancora più stretto di quanto sembrasse da fuori. C'è un'unica fila di tavolini, un soffitto basso e una manciata di altri clienti che sembrano turisti spaesati. Il menù stesso copre pesce e cibo affine al mare come la Torta Nove Occhi, l'Elmo Pestato a Mano, la Lasagna Idrozoica e un 'Pescato del Capitano' dal nome sospetto. In cima al menù c'è un piatto in evidenza scritto in un corsivo sciatto, con sotto un riquadro vistoso che occupa un terzo dell'intero menù:`
+			``
+			`		Pesce Piatto: meraviglia naturale e souvenir - 99 crediti`
+			`		(oneri aggiuntivi non inclusi)`
+			`			- Gli oceani di Buccaneer Bay sono pieni di creature senza mascelle simili a pesci, comunemente note come Teste d'Osso di Buccaneer Bay, che hanno una singola placca ossea sopra la testa e il corpo, un cranio sovradimensionato!`
+			`			- Dal punto di vista ecologico sono per lo più filtratori, detritivori e brucatori, che consumano piccoli organismi o detriti dall'acqua, dal sedimento o dal fondo oceanico.`
+			`			- I Pesci Piatti differiscono dalle altre Teste d'Osso di Buccaneer Bay: hanno una placca cranica quasi perfettamente circolare, tre piccole corna per respingere i predatori e nessun occhio, perché vivono sui fondali oceanici profondi e poco illuminati.`
+			`			- Questi tratti rendono la placca cranica del Pesce Piatto il piatto-souvenir perfetto: rotondo, sigillato, con un treppiede integrato. Prendi il tuo oggi!`
+			`	Il cameriere torna, e il piatto è inconfondibile. Porta un disco d'avorio di dimensioni rispettabili, l'osso liscio e lucidato, sostenuto sul tavolo da tre corna affusolate. Sul piatto c'è una singola coda carbonizzata, infilzata e grigliata finché la pelle sfrigola. È impressionante e appetitoso insieme.`
+			choice
+				`	(Dai un morso.)`
+				`	(Ringrazia il cameriere e vattene.)`
+					goto thanks
+			`	Dai un morso. La carne è... un tentativo atroce di cibo. All'inizio c'è una nota muffita e sulfurea, come compost bagnato, e sotto c'è un sapore quasi marcio che smentisce la freschezza visiva del pesce. La cosa più vicina a un sapore che salvi il tutto è un debole retrogusto terroso di fango salato.`
+			label thanks
+			`	Il cameriere arriva a pulire il Pesce Piatto con uno straccio, ti ringrazia di aver onorato il locale e fa un cenno col pollice verso la porta: una chiusura col botto per il tuo 'pasto di una vita'.`
+				decline
+
+mission "Exotic Life: New Greenland"
+	minor
+	source "New Greenland"
+	to offer
+		random < 10
+	on offer
+		conversation
+			`Scendi sulla piattaforma di atterraggio e il tuo fiato forma un alone bianco. Lo spazioporto è insolitamente nebbioso, e il vento gelido ti fa correre un brivido alla base della nuca.`
+			`	Dalla nebbia emerge un uomo incartapecorito, con un'andatura tranquilla e senza fretta, un fucile laser a tracolla. Al suo fianco avanza pesante una bestia enorme: un segugio grande come un cavallo, avvolto in una folta pelliccia lanosa orlata di brina. Due zanne enormi gli sporgono dal muso come sciabole pallide. Il vapore esce a ondate dalle narici dilatate mentre gira la testa quasi con pigrizia verso di te. I suoi occhi hanno una pazienza cupa.`
+			`	L'uomo ti vede e grugnisce: "Non fissare un Mastino Mammut."`
+			choice
+				`	"Cos'è un Mastino Mammut?"`
+				`	"Non dirmi cosa devo fare!"`
+					goto ending
+				`	(Distogli lo sguardo e torna alla mia nave.)`
+					decline
+			`	"Un fantasma di tempi più duri, allevato su Hestia quando era ancora ghiaccio senza vita. Ora non è più che uno strumento del mestiere." Dà una pacca alla creatura, che emette un ringhio basso.`
+			label ending
+			`	L'uomo scoppia in una risata profonda mentre la nebbia si infittisce. Gli occhi della creatura sono l'ultima cosa che trapassa la foschia prima che uomo e mastino svaniscano. Ti ritrovi di nuovo solo.`
+				decline
+
+mission "Exotic Life: Mainsail"
+	minor
+	source Mainsail
+	to offer
+		random < 10
+	on offer
+		conversation
+			`Ti reggi sulla città-nave galleggiante mentre la collana di chiatte, moli e gru scricchiola e ondeggia sotto l'influsso delle onde senza fine di Mainsail. Lo spruzzo salmastro ti punge il viso mentre ti dirigi verso l'anello. Una chiatta si avvicina ondeggiando, la coperta viscida di alghe, mentre un locale passeggia senza paura al guinzaglio una creatura quadrupede simile a una balena: una massa compatta di muscoli grande come una foca sotto un pelo ardesia, con zampe palmate che ticchettano sulle assi, un lungo muso baffuto irto di denti aghiformi e una larga coda appiattita che scodinzola di aspettativa.`
+			`	Il locale ti coglie a fissare, abbozza un sorriso segnato dal sale e chiama: "Non hai mai visto un cane di mare?`
+			choice
+				`	"Non posso dire di sì!"`
+				`	"Cos'è quella cosa?"`
+				`	"Certo che ho già visto un cane di mare!"`
+					goto seen
+				`	(Distogli lo sguardo e torna alla mia nave.)`
+					decline
+			action
+				set "exotic animals: mainsail seadog known"
+			`	"Ah, quello, amico mio, è un Cane di Mare di Mainsail, il miglior segugio acquatico dei Mondi del Paradiso. Allevati circa quattro secoli fa negli atelier di questo stesso pianeta, uniscono vecchi ceppi di cani d'acqua con sangue di delfino e di lontra, con un tocco di castoro per la coda, di coccodrillo per le mascelle e di barracuda per lo scatto", dice con un occhiolino. "Fiutano un banco, tirano su il pesce migliore e ti posano una testa umida e riconoscente sugli stivali: una rarità pregiata, da quando la Repubblica ha chiuso i laboratori genetici."`
+				goto ending
+			label seen
+			`	"Sono contento di sentirlo, amico mio! Oggi troppo pochi hanno visto la rarità pregiata di un Cane di Mare di Mainsail, da quando la Repubblica ha chiuso i laboratori."`
+			label ending
+			`	Con un movimento esperto salta dalla chiatta su uno skiff snello e senza motore. Il cane di mare scivola dalla chiatta come un nastro, si tuffa pulito in mare e mette la larga coda alle onde. In uno spruzzo di sale la creatura d'acciaio li trascina via, e la barca si allontana come un carro di Poseidone nella foschia del porto.`
+				decline
+
+mission "Struggling Author Gone Missing"
+	minor
+	landing
+	source "Zug"
+	to offer
+		random < 88
+		has "event: beyond the hyperdrive is published"
+	on offer
+		conversation
+			`Mentre la tua nave si posa sulla piattaforma A5B, si avvicinano due giovani. Uno prende la parola: "Salve, capitano. Ha visto da qualche parte una donna di nome Anna Fangvin? È stata vista l'ultima volta nello spazioporto, e dev'essere partita sulla nave di qualcuno."`
+			`	Intorno allo spazioporto vedi altri gruppi che fanno la stessa cosa. Anna forse era più popolare di quanto pensasse.`
+			choice
+				`	"È andata in un altro sistema stellare, molto lontano da qui. Non potrete raggiungerla."`
+				`	"No, non lo so. Mi dispiace."`
+					goto continue
+			`	"Se mai la rivedrà, le dica che la Coalizione degli Amanti dei Libri apprezza il suo lavoro. Non sarebbe possibile per lei portarci da lei?" Rispondi di no, e i due si dirigono verso gli altri gruppi a spargere la notizia.`
+			label continue
+			`	Sui muri di molti spazioporti ci sono manifesti; anche qui, dunque i libri di Anna dovevano essere famosi. I manifesti dicono:`
+			`	SPARITA:`
+			`		Anna Fangvin, giovane autrice i cui libri sono stati condivisi su tutto il pianeta. Si prega di segnalare qualsiasi notizia alla Coalizione degli Amanti dei Libri, indirizzo 5662 Myrtle Lane, Sizertown, Zug.`
+				decline
+
+mission "Exotic Life: Bloodsea"
+	minor
+	source Bloodsea
+	to offer
+		random < 10
+	on offer
+		conversation
+			branch formerpirates
+				or
+					has "event: bloodsea independent"
+					has "event: bloodsea joins free worlds"
+			`Ti fai lentamente strada nel sudicio spazioporto improvvisato. È pieno di venditori e pirati che contrattano merci illegali. In lontananza il sole tramonta sull'oceano rosso sangue che dà il nome a Bloodsea.`
+			`	Nell'ombra dietro una baracca malridotta, sopra la quale un'insegna pubblicizza "il gas nervino più economico da questa parte del Sol", vedi un uomo che tossisce. Raschia e rantola per un po', e quando finalmente si riprende noti che ha le labbra macchiate di sangue. Mentre ti volti, incroci lo sguardo di un vecchio incartapecorito al banco accanto.`
+				goto restofhello
+			label formerpirates
+			`Ti fai lentamente strada nel sudicio spazioporto. È pieno di venditori e personaggi loschi che contrattano merci di dubbia provenienza. In lontananza il sole tramonta sull'oceano rosso sangue che dà il nome a Bloodsea.`
+			`	Nell'ombra dietro una baracca malridotta, sopra la quale un'insegna pubblicizza "le granate più economiche da questa parte del Sol", vedi un uomo che tossisce. Raschia e rantola per un po', e quando finalmente si riprende noti che ha le labbra macchiate di sangue. Mentre ti volti, incroci lo sguardo di un vecchio incartapecorito al banco accanto.`
+			label restofhello
+			`	"Ha la Fioritura", sentenzia il vecchio gravemente. "Sarà morto in poche settimane. È la marea di sangue che lo fa, gli sciocchi."`
+			choice
+				`	"Cos'è?"`
+				`	"È contagioso?"`
+					goto contagious
+				`	(Vattene.)`
+					decline
+			`	Ride con disprezzo. "Il mare spruzza veleno. Nessuno ci va, tranne spaziali e sciocchi. Mare di sangue e sciocchi di sangue.`
+				goto next
+			label contagious
+			`	"Sì", dice semplicemente. Ti ritrai d'istinto dall'uomo che tossisce.`
+			label next
+			`	"Prima ti prudono gli occhi, poi la gola, poi i polmoni. A quel punto è troppo tardi, troppo tardi. Ma c'è sempre chi non impara."`
+			`	Sorride con derisione. "Beh, ti farò a pezzi e ti getterò alla Fioritura se non mi compri del pesce. Tre barili." Ficca la mano dentro e tira fuori un pesce. "Ancora fresco. 1000 crediti l'uno."`
+			choice
+				`	(Compra tre barili di pesce da lui.)`
+					to display
+						credits >= 3000
+					goto three
+				`	(Compra due barili di pesce da lui.)`
+					to display
+						credits >= 2000
+					goto two
+				`	(Compra un barile di pesce da lui.)`
+					to display
+						credits >= 1000
+					goto one
+				`	(Scappo via.)`
+			`	Ti giri di colpo e ti allontani in fretta nella direzione opposta. Senti ancora le imprecazioni nelle orecchie quando arrivi alla nave.`
+				decline
+			label three
+			action
+				payment -900
+			`	Tiri fuori i soldi per tre barili e glieli consegni. Li soppesa con sospetto. Quando è soddisfatto, rotoli i barili fino allo spazioporto. Dopo qualche ora estenuante di una trattativa dopo l'altra, riesci a venderli al pannello commerciale dello spazioporto per 2100 crediti.`
+				decline
+			label two
+			action
+				payment -600
+			`	Tiri fuori i soldi per due barili e glieli consegni. Li soppesa con sospetto e borbotta qualcosa sull'unico barile rimasto. Rotoli i barili fino allo spazioporto e, dopo un'ora di duro lavoro, riesci a venderli al pannello commerciale per 1400 crediti.`
+				decline
+			label one
+			action
+				payment -294
+			`	Tiri fuori i soldi e glieli consegni. Li strofina, poi esplode di rabbia. "Fuori!" urla, lanciandoti in faccia i gettoni di credito. Scappi, e quando arrivi alla nave ti rendi conto di aver lasciato 294 crediti con il vecchio nella fretta di fuggire.`
+				decline
+
+mission "Exotic Life: Delve"
+	minor
+	source Delve
+	to offer
+		random < 20
+	on offer
+		log `Ho sentito parlare di piccole creature chiamate "teredini di Delve" che riescono a mangiare lo scafo di una nave. A quanto pare le infestazioni stanno diventando più frequenti.`
+		conversation
+			`L'aria di montagna sa di fresco dopo aver respirato a lungo l'aria sempre riciclata della <ship>, così ti prendi un momento per fare un bel respiro pieno e goderti la vista. Poco alla tua destra, tecnici di terra in tuta sottile e maschere respiratorie stanno spruzzando una specie di sostanza chimica sullo scafo di un Sunder parcheggiato. La nebbiolina sottile riflette un arcobaleno vivido che contrasta in modo sorprendente con il grigio opaco del metallo dello scafo.`
+			`	Ti avvicini, attento a non finire troppo vicino allo spruzzo, che supponi tossico. Uno dei tecnici scende da una scala appoggiata allo scafo mentre ti avvicini, poi si volta verso di te e si toglie la maschera, rivelando un uomo dalla pelle scura sulla ventina, con i capelli incollati alla fronte da copiose quantità di sudore.`
+			`	"È la tua nave?", chiede con un'espressione professionalmente neutra.`
+			choice
+				`	"No, sono solo curioso. Cosa ci stai facendo?"`
+					goto curious
+				`	"Sì. Come procede il lavoro?"`
+			`	Il tecnico scuote la testa con aria mesta.`
+			`	"È confermato. Teredine. Caso brutto, anche: mi sorprende che il tuo scafo tenesse ancora l'atmosfera." Guarda di nuovo il Sunder, misurandolo con gli occhi. "Dovremmo finire la decontaminazione in un paio d'ore, ma poi dovremo passarla tutta con il sigillante. Probabilmente due mani. Finiremo domani pomeriggio, al più presto."`
+			choice
+				`	"Teredine? Mai sentite."`
+					goto whatisshipworm
+				`	"Oh. Va bene, continua."`
+					decline
+			label curious
+			`	Ti guarda da capo a piedi, forse chiedendosi se si metterà nei guai a parlarti della nave di un altro capitano, poi alza le spalle e si apre.`
+			`	"Infestazione di teredine. La terza questa settimana." Si tira indietro il cappuccio e si passa la mano tra i capelli unti. "Sinceramente mi sorprende che i media non ne abbiano ancora parlato. Forse aspettano la prima depressurizzazione spontanea per avere qualcosa di davvero succoso di cui parlare."`
+			choice
+				`	"Teredine? Cosa sono?"`
+				`	"Credi che sia un insabbiamento?"`
+					goto coverup
+			label whatisshipworm
+			`	"Sono piccole creature, grandi più o meno come una capocchia di spillo, e finiscono dappertutto se non stai attento. Si nutrono di un mucchio di metalli diversi, la cosa fa saltare la testa ai cervelloni della scienza. Finora non hanno trovato una lega che questi cosini non riescano a digerire."`
+			label coverup
+				`	"Come modello di dipendente del Sindacato", dice sardonicamente, "posso dirti che le voci secondo cui le teredine sono autoctone di questo pianeta sono false, e che i minatori non le tirano assolutamente fuori dal terreno insieme al minerale. Anzi, se usi anche solo l'espressione 'teredine di Delve' ci sono buone probabilità che gli avvocati del Sindacato ti facciano causa per diffamazione."`
+			`	Ringrazi il tecnico per la disponibilità e torni verso la <ship>, chiedendoti se non sia il caso di parcheggiarla un po' più lontano.`
+				decline
+
+
+mission "Exotic Life: Ada"
+	minor
+	source Ada
+	to offer
+		random < 20
+		has "Exotic Life: Delve: declined"
+	on offer
+		conversation
+			`Un trambusto rumoroso attira la tua attenzione mentre attraversi lo spazioporto e alzi lo sguardo: tre grossi agenti di sicurezza dei Lovelace Labs stanno circondando un pilota furibondo.`
+			`	"Ma devo scaricare il mio carico!", sta urlando il pilota proprio in faccia a un agente che sembra del tutto imperturbabile.`
+			`	"Non qui, no", dice lei con aria annoiata, come se affrontasse questo genere di situazione venti volte al giorno. "Non prima che la tua nave sia decontaminata."`
+			`	Ora sei solo uno di una folla di curiosi che circonda il gruppo in un grande cerchio. Il pilota sembra accorgersi di essere al centro dell'attenzione e decide di appellarsi alla folla.`
+			`	"Vedete cosa stanno facendo?", urla. "Questo è... questo è un abuso! Sono vittima di molestie!"`
+			`	L'agente non si scompone, e picchietta su un datapad mentre parla.`
+			`	"Le regole sono regole e devi seguirle come tutti gli altri." Alza lo sguardo, gli occhi socchiusi. "Qui dice che il tuo carico è fatto di statuine in miniatura. E di cosa sono fatte, esattamente?"`
+			`	Il pilota sembra improvvisamente mortificato e alza le mani in segno di resa.`
+			`	"Va bene, va bene", dice. "Farò la procedura di decon. Ok? Hai vinto."`
+			`	"Di. Cosa. Sono. Fatte?"`
+			`	"Acciaio inossidabile."`
+			`	"Ahia", dice lei, ma l'espressione annoiata è sparita e sembra divertirsi. "Dodici tonnellate di statuine e dovremo scansionarle tutte, una per una, per assicurarci che non siano contaminate. Potrebbe volerci un po'."`
+			`	Tra qualche risatina sparsa e qualche gemito di compassione la folla comincia a disperdersi, e gli altri due agenti riportano il pilota verso la sua nave, lasciando l'agente principale a picchiettare allegramente sul datapad. Dopo qualche istante alza lo sguardo e nota che la stai guardando.`
+			choice
+				`	"Teredini di Delve?"`
+					goto shipworms
+				`	"Mi è sembrato un po' duro."`
+				`	"È stato divertente."`
+			`	Alza le spalle. "Faccio solo il mio lavoro."`
+				decline
+			label shipworms
+			`	"Uh-huh", dice. "Solo che ora le vediamo su navi che non sono state da nessuna parte vicino a Delve. Sembra che si stiano diffondendo."`
+				decline

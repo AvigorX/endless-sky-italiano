@@ -1,0 +1,52 @@
+{
+ "batch": "B001",
+ "at": "2026-10-17T11:28:05Z",
+ "results": 244,
+ "errors": 0,
+ "warnings": 7,
+ "status": "APPROVED",
+ "issues": [
+  {
+   "unit_id": "interface:controls|wrapped label|599|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "interface:boarding|label|1921|0",
+   "code": "GLOSSARY",
+   "severity": "info",
+   "detail": "'crew' -> 'equipaggio' not found"
+  },
+  {
+   "unit_id": "interface:boarding|label|1957|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "interface:boarding|label|1970|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "interface:hiring|label|2103|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "interface:hiring (small screen)|label|2200|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "interface:message log|label|2889|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  }
+ ]
+}

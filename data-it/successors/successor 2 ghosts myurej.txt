@@ -1,0 +1,532 @@
+# Copyright (c) 2026 by Daeridanii
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Successors: Ghosts Myurej 1"
+	landing
+	name "Recupera i regali di nozze rubati"
+	description "Cerca una partita di regali di nozze rubata, destinata a Casa Myurej, su <destination>."
+	source Raaqa-Kvelq-Ryuit
+	destination Kasii-Tuur-Saqru
+	to offer
+		or
+			and
+				has "Successors: Ghosts Prelude Wedding: offered"
+				random < 40
+			and
+				has "Successors: Ghosts Prelude Wedding: offered"
+				has "Successors: Ghosts 4: offered"
+	on offer
+		conversation
+			`Mentre cammini per lo spazioporto, due ufficiali militari di Casa Myurej ti prendono da parte. "Vieni con noi," dice uno, "non ti sarà fatto alcun male, ma ti attende un incontro privato a cui devi presenziare."`
+			choice
+				`	(Vai con loro.)`
+				`	(Scappa via.)`
+					goto run
+			`	I due ti conducono in un fitto intrico di botteghe e alberghi su una collina che sovrasta una delle enormi banchine di carico dello spazioporto; la banchina sta certo a più di cento metri sotto. Una rete di canali si intreccia alle strade, perennemente avvolte nella foschia, e guardando dentro vedi gruppi di Successori che nuotano in varie direzioni, ogni tanto emergendo sui sentieri asciutti e scrollandosi di dosso l'acqua dai tessuti idrofobici dei loro abiti. Ti fanno entrare in un piccolo albergo dall'aria accogliente che dà su uno di questi canali, e ti lasciano in una stanza oblunga di medie dimensioni, divisa all'incirca a metà da un paravento di tessuto color olio. Le guardie ti fanno cenno di sederti su una sedia da un lato, e tu obbedisci.`
+			`	Dall'altro lato del paravento arriva una voce lenta, che il tuo dispositivo di traduzione riordina puntualmente nella tua lingua: "Capitano <first> <last>, credo?"`
+			choice
+				`	"Sì?"`
+				`	"E tu chi sei?"`
+			`	"Casa Myurej desidera avvalersi dei tuoi servigi. Ci è stato rubato qualcosa. Sarai ricompensato per il suo sicuro recupero. Ti interessa?" Il paravento ondeggia in una lunga onda scintillante. Dietro di te, una delle guardie si muove irrequieta.`
+			`	"Dovrai dirmi qualcosa di più," dici.`
+			`	L'onda rimbalza sulla parete in fondo e ridiscende lungo il paravento. "Sei mai entrato nei vincoli del matrimonio?" dice la voce. Prima che tu possa rispondere, prosegue. "È usanza, quando ciò avviene, che i celebranti offrano alcuni doni minori ai novelli uniti, a commemorazione dell'intreccio delle famiglie, per sempre. Rubare simili gingilli sarebbe un atto vile e meschino: una razza bambina come la vostra dovrebbe pur concepirlo." L'onda continua a riecheggiare, avanti e indietro. "Un certo farabutto delle cosiddette Casate del Popolo ha pensato bene di insultare così questa felice Casa, alla vigilia di un altro giorno di gioia, senza dubbio credendo, con mente morta, di essere fuori dalla nostra portata. Riportaci i nostri doni e ti pagheremo..." La voce tace per un po', come assorto nei pensieri. "E forse ti sarai guadagnato un favore, benché tu sia uno straniero."`
+			choice
+				`	"Perché proprio me?"`
+				`	"Quanto mi pagherai?"`
+					goto pay
+				`	"Va bene, lo faccio."`
+					goto yes
+				`	"Mi dispiace, ma non voglio entrarci."`
+					goto no
+			branch kaatrij
+				has "successors kaatrij patron"
+			`	"Riijaaora di Casa Sioeora parla bene di te, lo sai? Della tua affidabilità, della tua forza di volontà. Dicono che sei capace di questo compito, e sappiamo che sei particolarmente adatto. Accetti?"`
+				goto "follow up"
+			label kaatrij
+			`	"Dopo che hai fallito con Sioeora come hai fatto, credi? Eppure sei più adatto alle nostre esigenze di chiunque altro. Se rifiutassi, passeremmo semplicemente al prossimo. Dunque, accetti?"`
+				goto "follow up"
+			label pay
+			`	La voce emette un breve ronzio. "Quattrocentomila crediti," dice, "non trattabili. Accetti?"`
+			label "follow up"
+			choice
+				`	"Va bene, lo faccio."`
+				`	"Mi dispiace, ma non voglio entrarci."`
+					goto no
+			label yes
+			action
+				log "People" "Riiria" "One of the most influential members of the People's Houses of the Successors. They personally control a substantial portion of Kasii-Tuur-Saqru via a mix of charismatic leadership and brute strength. Suspected of hijacking a transport of gifts for the upcoming wedding between scions of Houses Myurej and Chydiyi."
+				log "Hai accettato l'offerta di Casa Myurej di rintracciare e recuperare una partita di regali di nozze rubata da un membro delle Casate del Popolo."
+			`	L'onda scintillante sembra perdere energia, facendosi più lenta e fievole a ogni ciclo avanti e indietro. "Eccellente," dice la voce. "La preda che devi cercare su Kasii-Tuur-Saqru si chiama Riiria, ladra ben nota e utile sciocca. Se i tuoi mezzi di ricerca ti dovessero mancare, abbiamo là anche un amico della Casa, un capitano mercante dall'occhio acuto, impaziente di immischiarsi in ciò che ritiene remunerativo. I nostri agenti qui provvederanno a farti avere i dettagli alla tua nave." Senti il fruscio del tessuto e un debole strisciare umido: un Successore che si muove. Le guardie dietro di te si rilassano e, quando ti volti a guardarle, accennano alla porta. Prima che tu esca, la voce parla un'ultima volta. "Non deluderci, capitano."`
+			`	Le guardie ti riaccompagnano fino al margine della zona residenziale e ti lasciano andare da solo verso la tua nave. Mentre la squadra di terra finisce di rifornirla e di fare manutenzione alla <ship>, uno di loro ti porge una sfera di dati con le informazioni su Riiria e sul contatto di Casa Myurej su Kasii-Tuur-Saqru.`
+				accept
+
+			label run
+			`	Calciando un sasso di lato per distrarre la coppia, ti tuffi tra la folla prima che possano fermarti. Sei probabilmente fortunato che non ti abbiano sparato per questo.`
+				decline
+			label no
+			`	La voce emette un lungo ronzio ma non dice altro. Dopo un paio di momenti ti alzi esitante e, visto che le guardie non fanno alcun gesto per trattenerti, te ne vai.`
+				decline
+	on complete
+		conversation
+			`Guidi la <ship> nello spazioporto affollato di <planet>, evitando per un soffio la collisione con uno stormo di Kvelqden corazzati che schizza fuori dalla sezione di attracco.`
+			choice
+				`	(Cerca il contatto di Casa Myurej.)`
+					goto contact
+				`	(Prima guardati un po' intorno.)`
+			action
+				"successors: ghosts suspicion" ++
+			`	Esplorare la parte della stazione accessibile ai visitatori è un'esperienza insolita: c'è uno stridente contrasto tra la presenza di tutte le tecnologie avanzate dei Successori e il fatto che tante di esse siano in così cattivo stato. Hai visto costruzioni dei Successori vecchie di centinaia o persino migliaia di anni in condizioni migliori di queste. Provi a parlare con alcuni dei Successori dei dintorni di Riiria, ma tutti ti liquidano in fretta, la maggior parte senza dire nemmeno una parola.`
+			`	Alla fine arrivi a una specie di bottega: quello che sembra un Myaede sventrato, imbullonato alla struttura della stazione e riempito di espositori di tessuti e pezzi di nave, il tutto sorvegliato da una dozzina circa di piccoli robot che corrono su rotaie fissate al soffitto. Ti seguono come un banco di pesci; un paio di loro hanno sul davanti alcune aperture dall'aria minacciosa. All'improvviso senti, dietro uno degli espositori di quelli che sembrano iniettori per motori, il suono rielaborato del parlare dei Successori. Un piccolo schermo proietta l'immagine di un Successore che parla:`
+			`	"...la violenza contro Kaatrij riguarda anche noi, fratelli! L'unica delle Casate che si degni di darci il cenno di un braccio! Da tempo i Vecchi ci vogliono spariti del tutto, e credetemi, questo sarà solo l'inizio! Beh, se vengono a prendere noi, Riiria li farà sanguinare come faccio sempre io!" La trasmissione si interrompe lì e, senza altre piste sulla posizione di Riiria, decidi di rintracciare il contatto di Casa Myurej.`
+			label contact
+			`	Il capitano mercante di Casa Myurej si rivela essere quasi un chilometro più in là lungo il perimetro della stazione, tra alcune banchine di carico dove il controllo della stazione evidentemente non manda navi sconosciute. Sta dirigendo diversi membri del suo equipaggio nello scarico di alcune casse: una è caduta e ha rovesciato una collezione di ninnoli di metallo sconosciuti.`
+			choice
+				`	"Sono il capitano <first> <last>. Mi manda Myurej."`
+					goto introduce
+				`	"Che cos'è tutta quella roba?"`
+			`	"Che te ne importa? Sei tra i piedi, vattene." Ti allontanano con un gesto.`
+			`	"Va bene," dici. "Capitano <first> <last>. Mi manda Myurej."`
+			label introduce
+			`	Un'onda di rosso e nero gli irriga la pelle. "Ma certo," dicono. "Avrei dovuto immaginarlo. Vieni a mandarmi in qualche folle impresa per un gingillo, eh? Qualche rampollo viziato che ha perso il suo gioiello preferito?"`
+			`	"Beh, più o meno," dici. "Tutto quello che mi serve da te è il luogo in cui si trova Riiria. Hanno rubato qualcosa a Myurej che la Casa rivuole indietro."`
+			`	"Prevedibile," dicono. "Un colpo all'orgoglio e si prendono un farabutto come te che striscia nel fango."`
+			choice
+				`	"Vieni al dunque."`
+					goto point
+				`	"Perché sei così arrabbiato?"`
+			`	"No, non arrabbiato," dicono. "Stanco. Mi pagano per cambiare le mie rotte, e accetto. Mi pagano per parlare con gli sciocchi che mi mandano, e accetto. Mi pagano per trasportare cose incomprensibili, e io ne approfitto. Pensavo che il legame di famiglia avrebbe reso le cose più facili, ma che fai quando quella 'famiglia' ti sta dietro solo per ciò che puoi darle?" Lasciano che i colori della collera si placino e si strofinano piano tre delle loro braccia l'una contro l'altra.`
+			label point
+			`	"Va bene. Ho sentito che Riiria si nasconde tra le stazioni cave attorno alle stelle vicine. Sono un buon nascondiglio se hai rubato qualcosa: è maledettamente difficile scansionare una nave dormiente tra le guglie spezzate. Quella più a nord... Vade-Osolaa-Kaska, mi pare, è un posto preferito da Riiria e dai suoi simili. Se fossi in te, striscerei là per primo." Il Successore si ferma a guardare una delle casse che vengono scaricate e emette un verso esasperato. "Non che essere te sia qualcosa che preferirei, sia chiaro."`
+			choice
+				`	"Grazie."`
+				`	"Finalmente."`
+			`	Il colore torna a irrigare la loro pelle, ma solo per un momento. "Ora vai, prima che ci vedano insieme," dicono, e ti allontanano con un gesto. Trovi la strada per tornare alla tua nave e segni sulla mappa la stazione disabitata più vicina.`
+
+mission "Successors: Ghosts Myurej 2"
+	landing
+	priority
+	name "Cerca <planet>"
+	description "Seguendo le informazioni del contatto di Casa Myurej, cerca Riiria su <destination>."
+	source Kasii-Tuur-Saqru
+	destination Vade-Osolaa-Kaska
+	to offer
+		has "Successors: Ghosts Myurej 1: done"
+	on complete
+		conversation
+			`Entri nello sterminato spazioporto di <planet> e lo trovi quasi deserto. Ci sono però abbondanti prove a sostegno del suggerimento del tuo contatto. Diversi container di carico vuoti, aperti di recente, sono sparsi contro una delle pareti in fondo; accanto a uno di essi c'è persino una piccola scorta di quello che sembra equipaggiamento personale: uno zaino di tessuto resistente, una piccola arma da fianco, perfino alcuni pacchetti di cibo essiccato. Qualcuno se n'è andato di qui in fretta.`
+			choice
+				`	(Fruga nello zaino.)`
+				`	(Preparati a partire.)`
+					goto end
+			action
+				"successors: ghosts suspicion" ++
+			`	Dentro, tra le cianfrusaglie degli averi di questo Successore, trovi una sfera di dati ancora calda. Si risveglia appena la tocchi e trasmette il suo messaggio più recente:`
+			`	"Riiria dice che le Casate non ci troveranno qui, che vedono questi miserabili relitti come icone della propria follia e non osano toccarli. Ha ragione, lo so, eppure rabbrividisco soprattutto al pensiero di quello straniero che le Casate sono così felici di usare. Riiria dice che gli stolti sono molto più temibili dei saggi."`
+			`	Il messaggio finisce lì, e non riesci a capire come accedere al resto dei dati della sfera, così la lasci stare.`
+			label end
+			`	Se Riiria non è in questa stazione, potrebbe essere nell'altra, a sud; torni quindi alla tua nave e inserisci le coordinate sulla mappa.`
+
+mission "Successors: Ghosts Myurej 3"
+	landing
+	name "Continua la ricerca"
+	description "Non avendo trovato Riiria su <origin>, cercala su <destination>."
+	source Vade-Osolaa-Kaska
+	destination Myiara-Sola-Tej
+	to offer
+		has "Successors: Ghosts Myurej 2: done"
+	on complete
+		conversation
+			`Poco dopo aver guidato la <ship> attraverso l'apertura di attracco della stazione, vedi parcheggiata su una delle piazzole in disuso una nave cargo dei Successori chiaramente priva di alimentazione. È in pessime condizioni: gran parte della corazzatura dello scafo è stata rimossa e un foro è stato praticato dall'alto, proprio sopra il vano del generatore.`
+			`	Per fortuna gli scanner della tua nave riescono ancora a leggerne il numero di identificazione, e tu cerchi in fretta la sfera di dati di Casa Myurej per confrontarlo con i dati che Myurej ti ha fornito. È la nave che ti hanno mandato a cercare, concludi.`
+			choice
+				`	(Usa lo scanner di carico per identificarne il carico.)`
+					to display
+						has "flagship attribute: cargo scan power"
+				`	(Controlla tu stesso il suo carico.)`
+					goto self
+			`	Come prevedibile, le stive della nave sono state ripulite e i regali di nozze che ti hanno mandato a recuperare non sono qui. Lo scanner riesce però a interfacciarsi con un terminale non protetto e quasi senza alimentazione dentro il relitto, e ti trasmette il manifesto di carico più recente della nave:`
+			``
+				goto manifest
+			label self
+			`	Scendi dalla <ship> e cammini nella stiva squarciata dell'Ojde per confermare quello che già sembra probabile: ogni traccia del carico della nave è stata rimossa. Riesci però ad accedere a un terminale con alimentazione autonoma dentro la stiva e, mentre borbotta accendendosi, ti mostra il manifesto di carico più recente della nave:`
+			``
+			label manifest
+			`		37 tonnellate di regali vari (comuni)`
+			`		4 tonnellate di gioielli in oro rosso`
+			`		9 tonnellate di acqua programmata (per le vasche del Consiglio)`
+			`		3 tonnellate di armi cerimoniali`
+			`		9 tonnellate di animali rari (in stasi, richiedono alimentazione costante)`
+			`		16 tonnellate di filtri di lusso ad alta pressione (richiedono ambiente pressurizzato)`
+			``
+			`	Sebbene la maggior parte delle voci non ti dica granché, l'ultima sembra poter essere un indizio, e premi sul terminale per avere dettagli:`
+			`	"Unità filtranti di lusso costruite dalle Casate, progettate per l'estrazione e la programmazione dell'ossigeno in ambiente subacqueo. Disperdono particelle che alleggeriscono l'umore a concentrazione variabile. Da tenere in ambiente ad alta pressione per evitare danni. 8 milioni di crediti per unità."`
+			branch mvk
+				has "visited planet: Maspa-Viir-Kella"
+			`	Mentre ti scolleghi dal terminale, pensi ai pianeti vicini che potrebbero soddisfare i requisiti di stoccaggio di questi filtri, ma non te ne viene in mente nessuno. A quanto pare dovrai controllare i mondi vicini uno per uno.`
+				goto end
+			label mvk
+			`	Mentre ti scolleghi dal terminale, pensi ai pianeti vicini che potrebbero soddisfare i requisiti di stoccaggio di questi filtri, e uno ti viene in mente: Maspa-Viir-Kella, un mondo disabitato nel sistema di Osolaa-Uuoru, a nord. Atterrarvi in passato era difficile a causa dell'atmosfera densa; se l'inafferrabile Riiria nasconde il bottino da qualche parte, quello sarebbe un buon posto.`
+			label end
+
+
+mission "Successors: Ghosts Myurej 3 Direct"
+	landing
+	name "Rintraccia Riiria"
+	description "In base agli indizi raccolti su <origin>, vai ad affrontare Riiria su <destination>."
+	source Myiara-Sola-Tej
+	destination Maspa-Viir-Kella
+	to fail
+		has "Successors: Ghosts Myurej 4: offered"
+	to offer
+		has "Successors: Ghosts Myurej 3: done"
+		has "visited planet: Maspa-Viir-Kella"
+
+mission "Successors: Ghosts Myurej 3 Checking"
+	landing
+	name "Rintraccia Riiria"
+	description "Gli indizi raccolti su <origin> indicano che Riiria si nasconde probabilmente su un pianeta dello spazio occidentale dei Successori."
+	source Myiara-Sola-Tej
+	stopover Maspa-Viir-Kella
+	stopover Vyraa-Giiq-Sora
+	stopover Chyyra-Raaqa-Tuur
+	stopover Giiq-Oj-Sol
+	stopover Giiq-Sou-Kella
+	complete at
+		planet
+			Maspa-Viir-Kella
+	to fail
+		has "flagship planet: Maspa-Viir-Kella"
+	to offer
+		has "Successors: Ghosts Myurej 3: done"
+		not "visited planet: Maspa-Viir-Kella"
+
+mission "Successors: Ghosts Myurej 4"
+	landing
+	name "Sconfiggi Riiria e torna"
+	description "Se possibile, recupera da Riiria i regali di nozze rubati e torna, con o senza i regali, da Casa Myurej su <destination>."
+	source Maspa-Viir-Kella
+	destination Raaqa-Kvelq-Ryuit
+	to offer
+		has "Successors: Ghosts Myurej 3: done"
+	on offer
+		conversation
+			`Gli scanner della <ship> si risvegliano poco dopo che entri nell'atmosfera di <origin>, segnalando diverse navi non identificate in una valle vicina, sotto il velo di nubi spesse. Mentre i venti sferzano la tua nave, confronti le letture che ricevi con i dati forniti da Myurej, e sembrano corrispondere, almeno per la più grande delle navi.`
+			choice
+				`	(Attaccali finché hai il vantaggio della sorpresa.)`
+				`	(Prova a negoziare.)`
+			`	Mentre avvicini la tua nave, una forte raffica di vento ti sbalza all'improvviso fuori rotta. Riprendi il controllo dell'assetto solo un momento dopo, ma basta perché le navi di Riiria ti individuino e si preparino al decollo...`
+				launch
+	npc board
+		government `People's Houses (Hostile)`
+		personality staying target launching heroic
+		system "Osolaa-Uuoru"
+		ship "Ejniisde-Khora (Bombed)" "Riiria-i-Nnesan"
+		conversation
+			action
+				log "Sei salito a bordo della nave di Riiria, prima di essere respinto dalle esplosioni interne che hanno distrutto sia la nave di Riiria sia i regali di nozze che presumibilmente trasportava."
+			`Affianchi la nave di Riiria, ormai inattiva, attento ad allineare uno dei tuoi boccaporti alla porta di carico. Mentre attraversi l'interno della tua nave per prepararti a tagliare la porta, però, un'esplosione scuote lo scafo: sembra venire dal boccaporto. Pochi secondi dopo ne scoppia un'altra, e poi un'altra ancora. Corri verso la plancia e ti stacchi dalla nave che esplode proprio mentre un'altra deflagrazione squarcia la sua stiva, distruggendo senza dubbio il prezioso carico che ti sei tanto sforzato di rintracciare. Spiegarlo a Casa Myurej non sarà piacevole.`
+				launch
+	npc
+		government `People's Houses (Hostile)`
+		personality staying launching
+		system "Osolaa-Uuoru"
+		ship "Kvelqde-Khora" "Akja-o-Riiria"
+		ship "Kvelqde-Khora" "Miti-o-Riiria"
+		ship "Kvelqde-Khora" "Kaska-Kisiri"
+		ship "Kvelqde-Khora" "Tesja-qii"
+	on complete
+		conversation
+			`Il controllo del traffico ti indirizza a una parte riservata dello spazioporto di <planet>, dove all'industria spoglia delle aree pubbliche subentra l'ostentazione di Myurej. La <ship> si posa su una piazzola dai bordi di bronzo e, mentre scendi, le guardie armate e corazzate ti indicano uno degli edifici adiacenti. Dentro, la stanza in cui ti conducono è divisa più o meno come l'altra volta che hai incontrato Casa Myurej: un lungo schermo nero ondeggia davanti a te, e aspetti che la voce cominci.`
+			`	"Ti avevamo dato un compito semplice," dice. "Eppure sembra che persino una cosa così elementare ti sfugga." Poi tace per un momento.`
+			branch sioeora
+				has "successors sioeora patron"
+			`	"Forse avremmo dovuto imparare dal tuo fallimento con Sioeora. Hai un'abitudine, ci pare."`
+			label sioeora
+			choice
+				`	"Non ho nulla a che fare con l'esplosione della nave di Riiria."`
+				`	"Mi sembra che sia tu quello che deve scusarsi. Sono quasi morto!"`
+					goto angry
+				`	"Mi dispiace."`
+					goto grovel
+			`	Lo schermo ondeggia senza colore. "Che ce ne importa? Se avessimo mandato un altro, sarebbe andata diversamente?"`
+				goto again
+			label angry
+			`	Lo schermo ondeggia, scuro e minaccioso. "Prendere incarichi come questo è ciò che fai, non è così? È forse comune tra gli stranieri minori, come te, rimproverare i propri committenti perché osano offrire lavoro?"`
+				goto again
+			label grovel
+			`	Lo schermo ondeggia, privo di luce come il catrame. "Le tue scuse ci interessano poco," dice la voce, "ma è bene che tu abbia un qualche sentore della tua incapacità."`
+			label again
+			`	All'improvviso un'onda di colore guizza sullo schermo. Quando la voce riprende, c'è qualcosa che non sai bene collocare. "Potresti però rimediare a questo fallimento, capitano. Trovaci qualcosa che sostituisca ciò che hai perduto nella tua follia. Potresti ancora guadagnarti il nostro denaro, la nostra gratitudine. Di certo dovresti cogliere l'occasione."`
+			choice
+				`	"Mi stai prendendo in giro? Con te ho chiuso."`
+				`	"Va bene. Dimmi di più."`
+					goto more
+			`	Qualcosa pulsa nelle tue orecchie, spingendo una punta di dolore in fondo alla testa; capisci che è il dispositivo di traduzione, che capta qualcos'altro nella stanza, un altro frammento di suono impercettibile che mormora sullo sfondo. La voce lo interrompe. "Sappiamo cosa desideri, capitano," dice. "Per essere parte degli eventi che verranno, ti servirà l'appoggio delle Casate. Nulla accade in questo spazio senza la nostra benedizione. Puoi strillare e abbaiare quanto vuoi, ma hai ancora bisogno di noi."`
+			choice
+				`	"Allora dimmi cosa vuoi, e deciderò se vale il mio tempo."`
+					goto more
+				`	"Che cos'è questo suono?"`
+			`	Lo senti di nuovo, questa volta molto più tenue. Non riesci a toglierti di dosso la sensazione che qualcosa ti abbia notato. "Non distrarti, capitano," dice la voce, e la pressione si scioglie.`
+			`	"Va bene," dici, "dimmi solo cosa vuoi, così posso decidere se voglio ancora avere a che fare con te."`
+			label more
+			`	"Come l'altra volta," dice la voce, "quando Sioeora ti chiese un favore, abbiamo qualcosa che vogliamo recuperare dal gorgo dello Shroud. Nulla che turbi la tua delicata etica: solo ninnoli di quando la Casa era giovane. Sarebbe per noi un giusto risarcimento, e ti perdoneremmo, e conosceresti la benevolenza di questa Casa."`
+			branch "not met solitude enforcers"
+				not "Successors: Ghosts Aqrabe 7: offered"
+			`	"Certo che qualche nave da guerra drone non mi verrà dietro appena prendo i tuoi ninnoli?" dici, ricordando l'esperienza con Casa Aqrabe. Questo sembra cogliere la voce di sorpresa, anche solo un poco, e passa un momento prima che risponda. "Qualunque incontro tu abbia già affrontato una volta, non dovresti certo temere di affrontarlo di nuovo."`
+			label "not met solitude enforcers"
+			choice
+				`	"Non apprezzo essere trattato come qualcosa di usa e getta."`
+					to display
+						has "Successors: Ghosts Aqrabe 7: offered"
+				`	"Va bene, lo faccio. Ma è meglio che tu mantenga la tua parte dell'accordo."`
+					goto yes
+				`	"Ho chiuso con questa storia."`
+					goto no
+			`	"Non sei uno strumento da gettare via, capitano, ma da coltivare, lucidare fino a farlo brillare. Non ti manderemmo certo a morire: che vantaggio ne trarrebbe la Casa? Torna allo spazioporto qui quando sei pronto a cominciare."`
+				goto end
+			label yes
+			action
+				log "Hai accettato di assumere per Casa Myurej una missione aggiuntiva per recuperare manufatti dei Predecessori."
+			`	"Lo faremo," dice la voce, "lo facciamo sempre. Torna allo spazioporto quando sei pronto a cominciare."`
+				goto end
+			label no
+			action
+				log "Hai rifiutato di assumere per Casa Myurej una missione aggiuntiva per recuperare manufatti dei Predecessori. Puoi tornare allo spazioporto di Raaqa-Kvelq-Ryuit per accettarla in un secondo momento."
+			`	"Come dici tu," dice la voce. "Quando cambi idea, torna allo spazioporto qui per cominciare."`
+			label end
+			`	Esci dalla stanza con lo schermo e torni alla piazzola con la tua nave.`
+
+mission "Successors: Ghosts Myurej 5"
+	priority
+	name "Trova la cripta nascosta"
+	description "Entra nella cripta nascosta di Casa Myurej su <destination>, accompagnato da Ijaset e da due soldati di Casa Myurej."
+	source Raaqa-Kvelq-Ryuit
+	destination Kella-Uuoru-Sossa
+	passengers 3
+	to offer
+		has "Successors: Ghosts Myurej 4: done"
+	on offer
+		conversation
+			`Aspetti allo spazioporto in una zona bassa, fiancheggiata da colonne. Cavità circolari nel terreno contengono vasche d'acqua, e ogni tanto un Successore passa e vi si infila per qualche minuto prima di tornare alle proprie faccende. Dopo un po' ti viene incontro quello che dev'essere un inviato di Casa Myurej: un Successore alto, vestito degli stessi colori dei loro ufficiali militari, anche se in un abito un po' meno marziale. Due soldati lo affiancano. "Capitano <last>?" dice. "Che piacere incontrarti."`
+			choice
+				`	"Sì. E tu chi sei?"`
+					goto hello
+				`	"Sembri più educato del resto di Myurej."`
+			`	"Non sono sicuro di capire cosa intendi. Non ho certo nulla contro di te."`
+			label hello
+			`	Inclina la testa verso di te per un momento prima di parlare di nuovo. "Sono Ijaset. Contribuisco agli sforzi di Myurej per esplorare oltre il wormhole."`
+			`	"E i tuoi amici?" dici, indicando i soldati.`
+			`	Macchie blu corrono sulla pelle di Ijaset; ti rendi conto che è la prima volta che vedi un Successore di Myurej mostrare dei colori. "Sono qui per assicurare il successo del nostro compito."`
+			label questions
+			choice
+				`	"Puoi dirmi qualcosa di più sulla nostra missione?"`
+					goto mission
+				`	"In che cosa consistono esattamente i vostri sforzi di esplorare oltre il wormhole?"`
+					to display
+						not "Successors: efforts"
+					goto efforts
+				`	"Sembra che le guardie siano più che altro una minaccia sottintesa."`
+					to display
+						not "Successors: threat"
+					goto threat
+			label efforts
+			action
+				set "Successors: efforts"
+			`	Ijaset si rilassa e si appoggia a una colonna, guardando la vasca più vicina. "Per lo più sonde. Sono abbastanza piccole da essere accelerate con un cannone a bobina planetario e, dopo un paio d'anni, ci tornano indietro dei dati. In anni passati alcune delle stelle più vicine erano più collegate di adesso, e potevamo mandare navi intere. Ma mai così lontano come Myurej adesso ci chiede di andare."`
+				goto questions
+			label threat
+			action
+				set "Successors: threat"
+			`	I soldati si muovono un po' sul posto e Ijaset si irrigidisce. "Le Casate non hanno bisogno di minacciarti, <last>. Ottengono ciò che vogliono senza simili mezzi: hanno avuto eoni per imparare a farlo."`
+				goto questions
+			label mission
+			action
+				clear "Successors: animal"
+				clear "Successors: others"
+			`	"Myurej vuole mandarci su <planet>," dice. "La posizione e la chiave di una cripta nascosta sulla superficie sono state impresse in me. Lì dentro i Predecessori di Myurej custodivano una congerie di cose ineffabili, ma non dobbiamo recuperarne molto. Oggi ci chiedono solo una collezione di gioielli che vi è contenuta." Si ferma e lascia emergere su di sé una distesa di colori. Una brezza gentile fischia tra le colonne. "Le cose più piccole preannunciano i viaggi più grandiosi," dice. "Andiamo alla tua nave e cominciamo in fretta."`
+				accept
+	on complete
+		conversation
+			`Posi la <ship> alla periferia di una delle città più piccole di <planet>. Gli edifici sono in condizioni notevolmente buone per essere rimasti qui migliaia di anni; almeno la maggior parte, perché diversi sono stati rasi al suolo dal fuoco delle armi. L'intero quartiere più orientale della città è ridotto in macerie; travi di metallo contorte si levano dove un tempo c'erano palazzi, e le piazze di pietra giacciono in frantumi nella polvere e nel sole.`
+			`	Ijaset ti guida, insieme ai due soldati di Myurej, in una zona che è un curioso riflesso dell'area con le vasche e le colonne dello spazioporto di Myurej, anche se qui l'acqua è evaporata da tempo. Questa è anche più grande, e mentre attraversi la foresta di pilastri bianchi diventa sempre più difficile distinguere la tua nave in lontananza.`
+			`	Alla fine Ijaset si ferma sull'orlo di una delle cavità. "È qui," dice, senza emozione, e indica la direzione alle due guardie. Loro controllano qualcosa su un datapad che tirano fuori dai vestiti, poi scivolano verso una delle colonne e stendono tre braccia per tastarne la circonferenza. Poco dopo qualcosa scatta e sotto di voi comincia un rombo, sempre più forte, finché non si ferma e un'apertura si apre al centro della cavità. Un tunnel si spalanca in profondità nel terreno.`
+			choice
+				`	"È un bel pezzo giù."`
+					goto down
+				`	"Perché mettere una cripta in un posto così?"`
+			`	Ijaset emette un ronzio. "Un tempo questo era un quartiere riservato ai nobili di Myurej. Segreto per chi stava fuori, ma noto a chi non lo era. Allora come oggi, la conoscenza era questione di posizione."`
+			label down
+			`	Ti affacci sull'orlo e Ijaset ti raggiunge. "Dobbiamo aspettarci un lungo viaggio," dice. "Doveva essere protetta proprio da un bombardamento come quello che c'è stato."`
+			`	Scendete tutti e quattro nel tunnel, che sembra sprofondare nel pianeta per chilometri. Le pareti di metallo scuro si fanno calde al tatto e il pavimento scivoloso si rivela più insidioso per te che per i Successori: devi aggrapparti alla ringhiera diverse volte. Alla fine arrivate in un'enorme sala sferica, tanto grande che la parete opposta si perde nel buio, mentre da un pozzo sopra di voi entra un fascio di luce solare che sembra penetrare ogni cosa. Lungo le pareti corrono migliaia e migliaia di incassi circolari, ciascuno largo molti metri. I loro centri hanno un riflesso lucido, come se fossero leggermente bagnati.`
+			choice
+				`	"Non avevo idea che le Casate avessero tanto."`
+				`	"Non saremo qui solo per dei gioielli, vero?"`
+			`	"Myurej aveva dozzine di cripte come questa," dice Ijaset. "La maggior parte non qui, non sul mondo natale. Navi, armi, grandi ricchezze cresciute nel cuore delle stelle... tutto va preservato, perché i Quarg o qualche altro saccheggiatore non venga a svuotarle. Oggi veniamo per dei ninnoli, così domani potremo venire per il resto."`
+			choice
+				`	"Concentriamoci su ciò per cui siamo qui."`
+					goto next
+				`	"Con il contenuto di una cripta come questa, ognuna delle Casate potrebbe dominare le altre, non è vero?"`
+			`	Una delle guardie dice qualcosa a Ijaset, abbastanza forte perché tu lo senta, ma in un dialetto che il tuo dispositivo di traduzione non capta. Ijaset annuisce. "Kaatrij ferita, le Casate del Popolo in disordine, persino la buona Myurej presto sempre più legata a Chydiyi. È un tempo di cambiamento e di incertezza. Con il contenuto di una cripta come questa, ognuna delle Casate potrebbe crearsi la propria certezza."`
+			label next
+			`	Ijaset consulta il datapad e vi guida per un paio di gradi lungo la circonferenza della grande sala, fermandosi davanti a uno degli incassi. Tira fuori da una tasca una sfera di dati dorata e la preme sulla superficie; guardi i filamenti dorati che la circondano distendersi sul davanti, formando una rete frattale di metallo scintillante. Quando finalmente si fermano, l'intera faccia dell'incasso si liquefa, oro compreso. Dietro c'è una sala circolare profonda, stipata di eleganti scatole di legno. Entrate tutti e quattro e Ijaset prende alcuni piccoli oggetti, la maggior parte non più grandi della tua mano. Ne dà la maggior parte ai soldati, ma tre o quattro li tiene per sé.`
+			`	"Tutto qui?"`
+			`	"Proprio così," dice Ijaset. "Dispiace lasciare il resto, lo so, ma se è rimasto per mille anni, ne sopporterà altri mille."`
+			`	Vi ritirate tutti dalla sala della cripta: prima Ijaset, poi tu, poi i soldati. Mentre il loro ultimo braccio striscia oltre la soglia, la faccia della cripta si riforma rapida come si era sciolta, i filamenti dorati si ritraggono nella sfera di dati e la sala torna com'era. Mentre vi preparate a risalire, però, qualcosa ti risuona acuto nell'orecchio.`
+			choice
+				`	"Che cos'è?"`
+				`	"L'hai sentito?"`
+			`	Ijaset ti guarda con un'ombra di preoccupazione. Apre la bocca, ma non ne esce nulla di comprensibile: solo la stessa lingua dal suono tagliente che hai sentito dai Successori prima di procurarti il dispositivo di traduzione. Poi, un secondo dopo, arriva un'altra sensazione acuta e le loro parole si ricompongono. "...le tue orecchie? Puoi... ecco, ora lo vedo. Dobbiamo andarcene, <last>."`
+			`	La cripta trema per il suono profondo e lontano di qualcosa che si spezza. Il tuo dispositivo di traduzione sembra quasi tornato alla normalità, ma qualcosa non va del tutto: come se stesse cercando di rimodellare un rumore ambientale profondo, sullo sfondo. È difficile concentrarsi. Un'altra ondata di suono, e segui i tre Successori su per il tunnel. Adesso sembra ancora più lungo di prima.`
+			`	Proprio mentre emergi alla luce del sole, qualcosa si abbatte al suolo in lontananza e ti scaraventa sulla pietra. Quando ti rialzi, senti Ijaset gridare una parola che il tuo dispositivo di traduzione non riesce a rendere. Un paio di secondi dopo vedi cosa ti ha buttato a terra: un fiotto di plasma abbagliante illumina il cielo mentre un proiettile ad altissima velocità colpisce uno degli edifici della città. L'aria puzza di ozono.`
+			choice
+				`	(Corri alla tua nave.)`
+					goto run
+				`	(Chiama la nave via radio perché ti venga a prendere.)`
+					to display
+						has "flagship attribute: shields"
+						has "flagship crew"
+			`	Trasmetti in fretta nuove coordinate di atterraggio per la <ship> e i suoi repulsori sollevano polvere mentre un altro edificio della città viene raso al suolo. Mentre si avvicina all'area con le colonne, l'arma orbitale spara di nuovo, questa volta contro la tua nave. Gli scudi lampeggiano mentre frantumano il proiettile, e le schegge squarciano una fascia di colonne alla tua sinistra. Ti precipiti sulla rampa d'imbarco con i Successori subito dietro, un altro impatto sbalza la nave di lato e tu ti prepari a volare in orbita finché gli scudi tengono.`
+				launch
+			label run
+			`	Corri di nuovo tra il campo di colonne mentre il bombardamento continua. Alcuni impatti sembrano avvicinarsi man mano che ti allontani, ma alla fine arrivi dove hai posato la <ship> e ti affretti a entrare con gli agenti di Myurej subito dietro. Mentre raggiungi la plancia, un altro impatto cade pericolosamente vicino alla tua area di atterraggio, e ti prepari a volare in orbita finché puoi.`
+				launch
+
+mission "Successors: Ghosts Myurej 6"
+	landing
+	priority
+	name "Fuggi verso lo spazio dei Successori"
+	description "Sfuggi alle navi da guerra che ti attaccano e radunati nello spazio dei Successori."
+	source Kella-Uuoru-Sossa
+	destination Uuoru-Veldt-Stir
+	passengers 3
+	to offer
+		has "Successors: Ghosts Myurej 5: done"
+	npc evade
+		ship "Queru, Luminous Gaze" "Kis, Lamenting 9-3"
+		ship "Queru, Luminous Gaze" "Maki, Recalling 11-2"
+		government "Solitude Enforcer"
+		personality waiting heroic nemesis unconstrained vindictive
+		on kill
+			set "Successors: Ghosts Queru transmission"
+			dialog "Quando la seconda nave drone esplode, trasmette alcuni dati alla tua nave. Al momento non è possibile decifrarli."
+	on enter "Myruet-Kvelq"
+		"successors: ghosts met solitude enforcers" ++
+		"successors: ghosts suspicion" ++
+		dialog `Ijaset ti ordina di atterrare sul mondo disabitato qui vicino per consegnare i manufatti dei Predecessori.`
+	on complete
+		payment 400000
+		log "Hai consegnato i gioielli che Casa Myurej voleva, dopo essere stato cacciato dallo spazio dei Predecessori da due navi da guerra a lungo raggio."
+		conversation
+			`La <ship> si posa sulle colline morbide di <planet>, accanto a un cargo Myaede dall'aspetto dimesso. L'aria qui è troppo rarefatta perché tu possa respirarla, ma Ijaset e i due soldati Successori sembrano reggerla senza problemi, e trasferiscono il loro carico di scatolette sul cargo. Mentre guardi dalla tua nave, ti pare di riconoscere il capitano del cargo: è lo stesso capitano mercante con cui hai parlato su Kasii-Tuur-Saqru. I due soldati salgono sul cargo, mentre Ijaset torna sulla tua nave per parlarti.`
+			`	"Ben fatto, <last>," dicono. "Hai mantenuto la calma molto bene."`
+			choice
+				`	"Sai qualcosa delle navi che ci hanno attaccato?"`
+				`	"Perché tutta questa segretezza?"`
+					goto secrecy
+			action
+				"successors: ghosts suspicion" ++
+			`	Ijaset emette un lungo sospiro, accompagnato da un colore spento. "Navi da guerra antiche, a quanto pare, costruite dai nostri Predecessori ai loro tempi. C'è qualcosa di familiare, ma non erano di Myurej, se è questo che ti preoccupa. Qualcosa..." Scintille cremisi punteggiano la loro pelle, come collera o frustrazione, "almeno non erano grandi cimeli di famiglia come quelli che le Casate hanno contrabbandato attraverso il wormhole. Sospetto che aspettassero noi, o qualcuno come noi, per disturbare l'esoterica dei mondi perduti."`
+			choice
+				`	"Perché tutto questo mistero?"`
+					goto secrecy
+			label secrecy
+			`	Ijaset si appoggia a una paratia. "Penso che Myurej voglia mettere i nostri ninnoli nelle mani di qualcuno che non sa cosa sono. Non si fidano di te, e puoi biasimarli?"`
+			choice
+				`	"Suppongo di no."`
+				`	"In realtà sì, posso."`
+			`	"È giusto, <last>," dicono. "Ti informo che la tua tariffa concordata di <payment> ti sarà versata presto. Quanto al favore di Myurej, non è cosa che possa trasmetterti io. Suppongo che vorranno contattarti quando vorranno, per decidere della tua posizione con la Casa. Fino ad allora, ti lascio. Se ci incontreremo di nuovo, che sia in termini piacevoli."`
+
+mission "Successors: Ghosts Myurej 7"
+	landing
+	name "Torna da Myurej"
+	description "Torna da Casa Myurej su <destination> per scoprire se hanno ancora qualcosa per te."
+	source
+		attributes successor
+		not attributes uninhabited
+	destination Raaqa-Kvelq-Ryuit
+	to offer
+		has "Successors: Ghosts Myurej 6: done"
+		random < 40
+	on offer
+		conversation
+			`Poco dopo essere atterrato allo spazioporto, ricevi un messaggio consegnato tramite una sfera di dati:`
+			`	Capitano <first> <last>. Casa Myurej ti chiede di unirti a noi su <planet> appena ti è possibile, così da concludere i nostri affari con te.`
+			`	Appena la riproduzione finisce, aggiunge un punto di rotta alla mappa della tua nave.`
+				accept
+
+mission "Successors: Ghosts Myurej 8"
+	landing
+	name "Consegna le forniture per il matrimonio"
+	description "Un addetto portuale di <origin> ti ha incaricato di consegnare <tons> di forniture per il matrimonio di Casa Myurej su <destination>."
+	source Raaqa-Kvelq-Ryuit
+	destination Iyra-Ijasa-Iret
+	cargo "Wedding supplies" 5
+	to offer
+		has "Successors: Ghosts Myurej 7: done"
+	on offer
+		conversation
+			`Ancora una volta il controllo del traffico ti indirizza alla parte riservata dello spazioporto di <origin>, con le piazzole dai bordi di bronzo. Fuori ti accoglie un addetto portuale dall'aria piuttosto stressata, che si illumina parecchio quando ti vede.`
+			`	"Certo, certo," dice, "ti stavamo aspettando! Un trasporto della Casa verso <planet>, con le forniture per il matrimonio, giusto?"`
+			choice
+				`	"Come scusa?"`
+				`	"Credo di dover incontrare qualcuno qui."`
+			`	L'addetto controlla il datapad, guardando alternatamente lui e te, prima di annunciare di nuovo con sicurezza che devi trasportare <tons> di forniture per il matrimonio imminente di Myurej su <planet>.`
+			choice
+				`	"Beh, suppongo che dovrai caricale."`
+					accept
+				`	"Tornerò più tardi."`
+					defer
+	on complete
+		"successors: ghosts houses dealt with" ++
+		set "successors: ghosts dealt with myurej"
+		log "Hai parlato con Khiajsore, erede di Casa Myurej, in una sede subacquea dove sta per svolgersi un matrimonio tra Casate."
+		conversation
+			`La <ship> si posa in una delle bolle metalliche dello spazioporto di <planet> e, poco dopo, mentre la squadra di terra scarica il carico, due soldati di Casa Myurej vengono a guidarti attraverso la struttura. Ti portano a un ascensore fuori dall'area pubblica dello spazioporto; entri, e pochi secondi dopo la partenza l'ascensore supera il grosso del complesso e ti mostra una vista fantastica sull'oceano del pianeta mentre scende più in profondità nell'acqua. Purtroppo sei dalla parte sbagliata del pianeta per vedere i rivoli algali bioluminescenti dei "Ribbons of Iret", ma anche il mare relativamente scuro è impressionante per la sua scala e per la vastità delle infrastrutture subacquee che i Successori vi hanno costruito.`
+			`	Alla fine l'ascensore si adagia in un complesso sul fondo del mare, e le due guardie ti guidano attraverso una serie di corridoi trasparenti fino a una grande area centrale. Sopra di te nuotano i pesci, in banchi dietro un oculo circolare. Un altro Successore arriva da uno dei corridoi laterali, ed è subito evidente che si tratta di uno degli eredi di Myurej: sono coperti di tanto oro rosso e di tanti gioielli che è un miracolo che riescano a tenersi dritti. Quando parlano, non è la voce che hai sentito dietro lo schermo ondeggiante, ma una più morbida e più curiosa.`
+			`	"Capitano, capitano," dicono, "tu, capitano, che ci hai portato così graziosi scintillii con così nobile lealtà. E attraverso stretti così pericolosi, mi dicono? Il farabutto Riiria, i temibili guardiani dello Shroud... non potevo sopportare di non vederti in carne e ossa, la carne che racchiude tutta questa forza superiore!" I loro ornamenti tintinnano mentre gesticolano, pungolando l'aria con delicatezza.`
+			choice
+				`	"Spero di essere all'altezza delle tue aspettative."`
+					goto flirty
+				`	"Sembra un bel po' di fatica per dei piccoli ninnoli."`
+					goto unamused
+				`	"E tu chi sei?"`
+			`	L'erede apre le braccia con delicatezza. "Myurej M- Khiajsore. Cugino di colui che ti ha parlato prima, che ricorderai."`
+				goto next
+			label flirty
+			`	"Proprio così!" dice l'erede. "Dicono che una... come si chiama... una 'febbre dei bipedi' si sia diffusa tra la gente da quando sei arrivato, che all'improvviso tutti i mondi invochino storie di umani nobili e ingegnosi nel pieno dei nostri Predecessori. All'inizio non ne capivo il fascino, ma dalle tue azioni e vedendoti ora... c'è una strana eleganza in quelle poche braccia, nella tua simmetria incompleta." Emettono un breve ronzio. "Ma perdonami, non è per questo che siamo qui, né tu né io." Aprono le braccia con un movimento fluido. "Myurej M- Khiajsore. Sono cugino di colui che ti ha parlato prima, dietro il velo."`
+				goto next
+			label unamused
+			`	L'erede allunga un braccio dorato, facendo tintinnare i molti piercing e gioielli che lo ricoprono, come per contemplarli. "Oh, mi credi forse materialista? Eppure le cose preziose diventano preziose solo per il dolore di procurarsele. I gioielli che hai riportato dallo Shroud si sono già guadagnati le loro storie... come inizio di un grande progetto di restauro, forse, e almeno come qualcosa di del tutto unico." Emettono un ronzio soddisfatto. "E tuttavia non è per questo che siamo qui, né tu né io." Aprono le braccia in segno di riconoscimento. "Myurej M- Khiajsore. Sono cugino di colui che ti ha parlato prima, dietro il velo."`
+			label next
+			`	Khiajsore ti fa cenno di unirti a loro per una passeggiata nel complesso, con le guardie che restano diversi metri indietro. Piante dai fiori color zafferano costeggiano canali pieni d'acqua sul pavimento; le loro corolle seguono voi due mentre camminate e strisciate avanti.`
+			branch patron
+				has "successor kaatrij patron"
+			`	"Riguarda i nostri amici di Casa Kaatrij," dicono.`
+				goto kaatrij
+			label patron
+			`	"Riguarda i nostri amici di Casa Kaatrij," dicono. "Sei amico anche loro, lo so. L'ilarità mi sale addosso ogni volta che vedo Riijaaora, sapendo ciò che gli hai negato. È sempre stato un tipo di cattivo umore."`
+			label kaatrij
+			`	Una delle piante color zafferano esplode in una nuvola di polline che forma una pellicola sulla superficie dell'acqua del canale. "Conosco Kaatrij da molto ormai, con tutto il loro amore per la segretezza e la sobrietà. Penso, caro capitano, che siano feriti e instabili, e so," dicono, scintillando di energia, "che qualcun altro, dietro le quinte, muove tutti i loro pezzi in tondo e per ora sta vincendo questa grande partita."`
+			choice
+				`	"Non sono pronto a saltare alle conclusioni."`
+				`	"Perché non Myurej?"`
+					goto myurej
+			`	L'ilarità macchia la pelle dell'erede. "Cerchi di aggiungere la saggezza alla tua lista di virtù? Te ne parlo perché tu possa apprezzare le circostanze in cui ti guadagni il nostro favore, e in cui te lo consegneremo. Presto, mentre noi Casate ti promettiamo navi e tecnologie, arriverà un nuovo giorno di caos, e te le prometteremo mentre le nostre inibizioni si affievoliscono e il nostro giudizio si deforma nella luce di questo nuovo sole."`
+				goto stop
+			label myurej
+			`	Khiajsore emette di nuovo quel ronzio. Sembra quasi un pezzo di musica; niente che tu conosca, naturalmente. "Myurej, Myurej, Myurej," dicono. "Per chi sta qui fuori, Myurej è lo Stato, ma per noi che ci siamo dentro, Myurej è la famiglia. Se fossimo noi a creare questa crisi, di certo non te lo direi, per discreto che tu abbia saputo essere." Tinte pastello gioviali colorano il corpo dorato dell'erede. "Presto noi Casate ti prometteremo ogni sorta di ninnoli, navi e tecnologie, mentre le nostre inibizioni svaniscono in questo disordine. Il nostro giudizio sarà volto a nuovi fini."`
+			label stop
+			`	Khiajsore si ferma in una sala circolare dove i fiori si sono allargati a colonizzare lo spazio, impolverando d'aria e d'acqua col loro polline luminoso. "Voglio invitarti al nostro matrimonio, capitano. Non il mio!" ridacchiano, "ma quello di Myurej. Si terrà qui, sotto le onde, come la nostra specie cominciò eoni fa. E sarà un raduno delle Casate, di tutti quelli che contano. Se ti sei fatto alleati di altri, come li hai fatti di noi, quello sarà il luogo per perorare la tua causa davanti a tutti i presenti. E," aggiungono con tono luminoso, "spero proprio che ti godrai lo spettacolo."`
+			`	Scivolano verso una delle pareti e colgono uno dei fiori, poi tornano e te lo offrono. Il fiore dorato ruota per affrontarti mentre lo prendi, aprendosi ampio a rivelare il suo interno luminoso. "Ora addio," dicono, "il complesso qui soddisferà le tue necessità, se hai bisogno di riposo o di altro prima di dover partire. Che il nostro prossimo incontro sia piacevole come quello di oggi, capitano." Khiajsore apre di nuovo le braccia verso di te, e si uniscono a loro le due scorte mentre scivolano giù per uno dei corridoi del complesso.`
+			`	Quando, un po' più tardi, prendi l'ascensore per risalire in superficie, non puoi fare a meno di notare quanto la finestra sull'oceano scuro somigli allo schermo nero e ondeggiante di Myurej.`
+

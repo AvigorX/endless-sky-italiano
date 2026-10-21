@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/bunrodea/bunrodea missions.txt",
+  "line_from": 64,
+  "line_to": 91,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:First Contact: Bunrodea (Hostile)|As you enter the atmosphere, you're flanked by two large alien ships which guide you to the surface, leading you to a particular landing zone. When you leave your ship, you're met by two aliens that look similar to the ones that startled you on <origin>, including having the same weaponry.|64|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 64,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "As you enter the atmosphere, you're flanked by two large alien ships which guide you to the surface, leading you to a particular landing zone. When you leave your ship, you're met by two aliens that look similar to the ones that startled you on <origin>, including having the same weaponry.",
+   "italian": "Entrando nell'atmosfera, ti affiancano due grandi navi aliene che ti guidano verso la superficie, portandoti a una zona di atterraggio precisa. Quando esci dalla nave, ti accolgono due alieni simili a quelli che ti avevano fatto sussultare su <origin>, armi comprese.",
+   "ratio": 0.921
+  },
+  {
+   "idx": 2,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tAs you take a moment to look around, you find yourself in the middle of a massive metropolis. Skyscrapers taller than anything you've ever seen in human space cover the horizon, although most of the buildings around you appear far more elegant in architecture. Directly ahead is a large palace-like building with a considerable number of steps leading up to the front doors.|65|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 65,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tAs you take a moment to look around, you find yourself in the middle of a massive metropolis. Skyscrapers taller than anything you've ever seen in human space cover the horizon, although most of the buildings around you appear far more elegant in architecture. Directly ahead is a large palace-like building with a considerable number of steps leading up to the front doors.",
+   "italian": "\tMentre ti prendi un momento per guardarti intorno, ti ritrovi nel bel mezzo di una metropoli enorme. Grattacieli più alti di qualsiasi cosa tu abbia mai visto nello spazio umano coprono l'orizzonte, anche se la maggior parte degli edifici intorno a te sembra di architettura molto più elegante. Proprio davanti c'è un grande palazzo con una quantità considerevole di gradini che portano alle porte d'ingresso.",
+   "ratio": 1.093
+  },
+  {
+   "idx": 3,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tYou take a step forward, but one of the aliens says something while waving its weapon around, and you take the hint that you shouldn't be moving right now. The other says something into a communication device, then sits down on the ground and gestures for you to do the same. You suspect that you might be waiting here for a while.|66|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 66,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tYou take a step forward, but one of the aliens says something while waving its weapon around, and you take the hint that you shouldn't be moving right now. The other says something into a communication device, then sits down on the ground and gestures for you to do the same. You suspect that you might be waiting here for a while.",
+   "italian": "\tFai un passo avanti, ma uno degli alieni dice qualcosa agitando l'arma, e capisci al volo che non dovresti muoverti adesso. L'altro parla in un dispositivo di comunicazione, poi si siede a terra e ti fa cenno di fare lo stesso. Sospetti che dovrai aspettare qui per un po'.",
+   "ratio": 0.825
+  },
+  {
+   "idx": 4,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\t(Sit down.)|68|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 68,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\t(Sit down.)",
+   "italian": "\t(Siediti.)",
+   "ratio": 0.917
+  },
+  {
+   "idx": 5,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\t(Turn around and re-enter my ship.)|70|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 70,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\t(Turn around and re-enter my ship.)",
+   "italian": "\t(Girati e rientra nella mia nave.)",
+   "ratio": 0.972
+  },
+  {
+   "idx": 6,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tYou re-enter your ship, and the aliens don't move to stop you. You decide to turn your ship back on and attempt to take off, but just as you try to activate the repulsor engines, you hear a loud buzzing sound coming from outside. You look out the nearest window, and see that the aliens have moved some sort of vehicle near your ship, buzzing with energy. You attempt to take off, but your ship's repulsor engines aren't moving you anywhere. The vehicle seems like it is deactivating any nearby repulsors.|71|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 71,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tYou re-enter your ship, and the aliens don't move to stop you. You decide to turn your ship back on and attempt to take off, but just as you try to activate the repulsor engines, you hear a loud buzzing sound coming from outside. You look out the nearest window, and see that the aliens have moved some sort of vehicle near your ship, buzzing with energy. You attempt to take off, but your ship's repulsor engines aren't moving you anywhere. The vehicle seems like it is deactivating any nearby repulsors.",
+   "italian": "\tRientri nella nave e gli alieni non ti fermano. Decidi di riaccenderla e di provare a decollare, ma proprio mentre cerchi di attivare i motori repulsori senti un forte ronzio provenire dall'esterno. Ti affacci alla finestra più vicina e vedi che gli alieni hanno portato un qualche veicolo vicino alla tua nave, che ronza di energia. Provi a decollare, ma i motori repulsori non ti spostano di un metro. Il veicolo sembra disattivare tutti i repulsori nelle vicinanze.",
+   "ratio": 0.927
+  },
+  {
+   "idx": 7,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\t(Blast the vehicle with a turret.)|73|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 73,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\t(Blast the vehicle with a turret.)",
+   "italian": "\t(Colpisci il veicolo con una torretta.)",
+   "ratio": 1.143
+  },
+  {
+   "idx": 8,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\t(Leave my ship and sit down with the aliens.)|76|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 76,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\t(Leave my ship and sit down with the aliens.)",
+   "italian": "\t(Esci dalla nave e siediti con gli alieni.)",
+   "ratio": 0.957
+  },
+  {
+   "idx": 9,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tYou turn one of your turrets toward the vehicle and fire, then immediately try to pull up. It looks like your shot either destroyed the vehicle or disrupted it enough for you to escape its influence as your ship rapidly rises into the atmosphere. It looks like the aliens didn't take too kindly to your action, though, as you begin seeing ships targeting you on your radar.|83|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 83,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tYou turn one of your turrets toward the vehicle and fire, then immediately try to pull up. It looks like your shot either destroyed the vehicle or disrupted it enough for you to escape its influence as your ship rapidly rises into the atmosphere. It looks like the aliens didn't take too kindly to your action, though, as you begin seeing ships targeting you on your radar.",
+   "italian": "\tGiri una delle torrette verso il veicolo e spari, poi cerchi subito di sollevarti. Sembra che il colpo abbia distrutto il veicolo o lo abbia disturbato abbastanza da permetterti di sfuggire alla sua influenza, mentre la nave sale rapidamente nell'atmosfera. Però non sembra che gli alieni abbiano gradito il gesto: cominci a vedere navi che ti prendono di mira sul radar.",
+   "ratio": 0.995
+  },
+  {
+   "idx": 10,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tYou exit your ship and sit down on the boarding ramp. The aliens that are watching you don't seem to care that you just tried to leave.|86|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 86,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tYou exit your ship and sit down on the boarding ramp. The aliens that are watching you don't seem to care that you just tried to leave.",
+   "italian": "\tEsci dalla nave e ti siedi sulla rampa d'imbarco. Gli alieni che ti sorvegliano non sembrano preoccuparsi che tu abbia appena provato ad andartene.",
+   "ratio": 1.088
+  },
+  {
+   "idx": 11,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tYou sit down on the boarding ramp of your ship and gaze at the scenery while you wait.|89|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 89,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tYou sit down on the boarding ramp of your ship and gaze at the scenery while you wait.",
+   "italian": "\tTi siedi sulla rampa d'imbarco della nave e guardi il panorama mentre aspetti.",
+   "ratio": 0.908
+  },
+  {
+   "idx": 12,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tAfter some time, you look up to the palace steps and notice a six-limbed creature unlike the mantis-like aliens watching over you. As it slowly makes its way downward and gets to the last few steps, the aliens guarding you stand to attention. You wonder if this entire time you've just been waiting for this alien to reach the bottom of the stairs.|91|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 91,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tAfter some time, you look up to the palace steps and notice a six-limbed creature unlike the mantis-like aliens watching over you. As it slowly makes its way downward and gets to the last few steps, the aliens guarding you stand to attention. You wonder if this entire time you've just been waiting for this alien to reach the bottom of the stairs.",
+   "italian": "\tDopo un po', alzi lo sguardo verso i gradini del palazzo e noti una creatura a sei arti, diversa dagli alieni simili a mantidi che ti sorvegliano. Mentre scende lentamente e arriva agli ultimi gradini, gli alieni di guardia si mettono sull'attenti. Ti chiedi se per tutto questo tempo non stessi aspettando altro che il momento in cui questo alieno avrebbe raggiunto il fondo delle scale.",
+   "ratio": 1.115
+  }
+ ]
+}

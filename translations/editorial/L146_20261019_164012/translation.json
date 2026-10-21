@@ -1,0 +1,220 @@
+{
+ "block": {
+  "path": "data/hai/unfettered 0 prologue.txt",
+  "line_from": 460,
+  "line_to": 530,
+  "units": 19
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Unfettered Jump Drive Trading|label|460|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 460,
+   "kind": "UI_LABEL",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "back to choose",
+   "italian": "back to choose",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"However, we only have these weapons in very limited quantities, and as such we cannot afford to give these to you yet. So, about my offer, have you made up your mind?\"|461|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 461,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"However, we only have these weapons in very limited quantities, and as such we cannot afford to give these to you yet. So, about my offer, have you made up your mind?\"",
+   "italian": "\t\"Però di queste armi ne abbiamo in quantità molto limitate, e quindi non possiamo ancora permetterci di dartele. Dunque, tornando alla mia offerta, hai deciso?\"",
+   "ratio": 0.953
+  },
+  {
+   "idx": 3,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"Oh. Well, in that case, we will not bother you again with this weapon, or any other, Captain, here or in the job board.\"|465|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 465,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"Oh. Well, in that case, we will not bother you again with this weapon, or any other, Captain, here or in the job board.\"",
+   "italian": "\t\"Oh. Beh, in tal caso non ti disturberemo più con quest'arma, né con nessun'altra, capitano, né qui né nella bacheca degli incarichi.\"",
+   "ratio": 1.107
+  },
+  {
+   "idx": 4,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"Sounds good to me.\"|467|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 467,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"Sounds good to me.\"",
+   "italian": "\t\"Mi sembra un buon accordo.\"",
+   "ratio": 1.381
+  },
+  {
+   "idx": 5,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"Wait, what was that weapon again?\"|468|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 468,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"Wait, what was that weapon again?\"",
+   "italian": "\t\"Aspetta, com'era quell'arma?\"",
+   "ratio": 0.861
+  },
+  {
+   "idx": 6,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"As you wish. Do remember that if you want to sell further jump drives to us for money you may go to the job board.\"|473|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 473,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"As you wish. Do remember that if you want to sell further jump drives to us for money you may go to the job board.\"",
+   "italian": "\t\"Come vuoi. Ricorda però che se vuoi venderci altri motori di salto in cambio di denaro puoi andare alla bacheca degli incarichi.\"",
+   "ratio": 1.12
+  },
+  {
+   "idx": 7,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"The Tripulse Shredder may seem crude, but it packs a punch! Its specialty is how it combines a lot of firepower in one gun slot, and, due to its burst nature, it's perfect for pilots who already use hit and run tactics. Some captains even say that a Sea Scorpion can get the upper hand against a Shield Beetle when it uses four of them, if you know what you're doing, of course! As I said, I may offer you two of these in exchange for your jump drive.\"|480|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 480,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"The Tripulse Shredder may seem crude, but it packs a punch! Its specialty is how it combines a lot of firepower in one gun slot, and, due to its burst nature, it's perfect for pilots who already use hit and run tactics. Some captains even say that a Sea Scorpion can get the upper hand against a Shield Beetle when it uses four of them, if you know what you're doing, of course! As I said, I may offer you two of these in exchange for your jump drive.\"",
+   "italian": "\t\"Il Tripulse Shredder può sembrare grezzo, ma colpisce duro! La sua specialità è concentrare molta potenza di fuoco in un solo alloggiamento per arma e, grazie alla sua natura a raffica, è perfetto per i piloti che usano già tattiche mordi e fuggi. Alcuni capitani dicono perfino che uno Sea Scorpion possa avere la meglio su uno Shield Beetle se ne monta quattro, se sai quello che fai, naturalmente! Come dicevo, posso offrirti due di queste in cambio del tuo motore di salto.\"",
+   "ratio": 1.057
+  },
+  {
+   "idx": 8,
+   "id": "mission:Unfettered Jump Drive Trading|label|482|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 482,
+   "kind": "UI_LABEL",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "buy tripulse",
+   "italian": "buy tripulse",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "mission:Unfettered Jump Drive Trading|\tThey order their crew to do the transfer and come to address you before leaving. \"Do note that if you ever want more weapons, we will always be willing to trade them for jump drives in the job board. However, we can always offer money instead if that is of higher value to you. Of course, we can only do this exchange here on <origin>, given it is where these advanced weapons are produced and stocked.\"|485|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 485,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tThey order their crew to do the transfer and come to address you before leaving. \"Do note that if you ever want more weapons, we will always be willing to trade them for jump drives in the job board. However, we can always offer money instead if that is of higher value to you. Of course, we can only do this exchange here on <origin>, given it is where these advanced weapons are produced and stocked.\"",
+   "italian": "\tFanno eseguire il trasferimento ai loro uomini e ti si rivolgono prima di andarsene. \"Tieni presente che, se mai volessi altre armi, saremo sempre disposti a scambiarle con motori di salto nella bacheca degli incarichi. Possiamo però sempre offrirti del denaro, se per te vale di più. Naturalmente possiamo fare questo scambio solo qui su <origin>, dato che è il luogo dove queste armi avanzate vengono prodotte e immagazzinate.\"",
+   "ratio": 1.064
+  },
+  {
+   "idx": 10,
+   "id": "mission:Unfettered Jump Drive Trading|\tThe engineer leaves and you return to your ship after being escorted out of the facility.|492|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 492,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tThe engineer leaves and you return to your ship after being escorted out of the facility.",
+   "italian": "\tL'ingegnere se ne va e tu torni alla tua nave, dopo che ti hanno scortato fuori dalla struttura.",
+   "ratio": 1.078
+  },
+  {
+   "idx": 11,
+   "id": "mission:Unfettered Jump Drive Trading|\t<as before (run)> manage to dodge the blade but are then left defenseless when the same Unfettered closes with another one and slashes down to strike. They stop at the last possible moment, dissatisfaction clear on their face.|499|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 499,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t<as before (run)> manage to dodge the blade but are then left defenseless when the same Unfettered closes with another one and slashes down to strike. They stop at the last possible moment, dissatisfaction clear on their face.",
+   "italian": "\t<as before (run)> riesci a schivare la lama, ma poi resti senza difese quando la stessa Slegata si fa sotto con un'altra e cala il fendente. Si ferma all'ultimo istante possibile, con la delusione evidente sul volto.",
+   "ratio": 0.956
+  },
+  {
+   "idx": 12,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"So this is how you 'fight,' Captain? You hide? You dodge? You refuse to seize our weapons, so you will not have them.\"|502|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 502,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"So this is how you 'fight,' Captain? You hide? You dodge? You refuse to seize our weapons, so you will not have them.\"",
+   "italian": "\t\"È così che 'combatti', capitano? Ti nascondi? Schivi? Ti rifiuti di impadronirti delle nostre armi, quindi non le avrai.\"",
+   "ratio": 1.025
+  },
+  {
+   "idx": 13,
+   "id": "mission:Unfettered Jump Drive Trading|\t<as before (flee)> run away from the blade without any difficulty, but the Hai that threw it catches up to you in mere seconds and immobilizes you with their blade on your throat.|508|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 508,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t<as before (flee)> run away from the blade without any difficulty, but the Hai that threw it catches up to you in mere seconds and immobilizes you with their blade on your throat.",
+   "italian": "\t<as before (flee)> fuggi dalla lama senza alcuna difficoltà, ma l'Hai che l'ha lanciata ti raggiunge in pochi secondi e ti immobilizza con la lama alla gola.",
+   "ratio": 0.878
+  },
+  {
+   "idx": 14,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"You disappoint me, Captain. In battle it is of great importance that you identify your advantages over the enemy and not show weakness by running, else they will come in for the kill. You have failed in both ways here. Never would you have been able to outrun me. All you did was show fear.\"|509|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 509,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"You disappoint me, Captain. In battle it is of great importance that you identify your advantages over the enemy and not show weakness by running, else they will come in for the kill. You have failed in both ways here. Never would you have been able to outrun me. All you did was show fear.\"",
+   "italian": "\t\"Mi deludi, capitano. In battaglia è di grande importanza individuare i propri vantaggi sul nemico e non mostrare debolezza fuggendo, altrimenti ti verranno a prendere per ucciderti. Hai fallito in entrambi i modi. Non avresti mai potuto superarmi in velocità. Hai solo mostrato paura.\"",
+   "ratio": 0.98
+  },
+  {
+   "idx": 15,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"You really keep on disappointing me, Captain. At one time you tried to avoid a fight you could not flee from, and the other to dodge a weapon that was so readily presented to you? Maybe you truly are no warrior and let most of your subordinates do the dirty work.\"|515|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 515,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"You really keep on disappointing me, Captain. At one time you tried to avoid a fight you could not flee from, and the other to dodge a weapon that was so readily presented to you? Maybe you truly are no warrior and let most of your subordinates do the dirty work.\"",
+   "italian": "\t\"Continui davvero a deludermi, capitano. Una volta hai cercato di evitare uno scontro da cui non potevi fuggire, e l'altra di schivare un'arma che ti era offerta bell'e pronta? Forse davvero non sei un guerriero e lasci che siano i tuoi subordinati a fare il lavoro sporco.\"",
+   "ratio": 1.034
+  },
+  {
+   "idx": 16,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"I will not keep on teaching you the same lesson! You had your chance. We cannot accept one that does not learn from their mistakes. It seems that we cannot trust you with our most advanced weapons.\" She then leaves, visibly irritated.|519|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 519,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"I will not keep on teaching you the same lesson! You had your chance. We cannot accept one that does not learn from their mistakes. It seems that we cannot trust you with our most advanced weapons.\" She then leaves, visibly irritated.",
+   "italian": "\t\"Non continuerò a insegnarti la stessa lezione! Hai avuto la tua occasione. Non possiamo accettare chi non impara dai propri errori. A quanto pare non possiamo fidarci di te per le nostre armi più avanzate.\" Poi se ne va, visibilmente irritata.",
+   "ratio": 1.038
+  },
+  {
+   "idx": 17,
+   "id": "mission:Unfettered Jump Drive Trading|\t<leave> The engineer, who had watched the fight then explains, \"Since you have failed the test we cannot give you access to our vault yet. Our weapons are only meant for the most capable of warriors. You will of course still be able to trade jump drives for money, but until you otherwise prove yourself, that is the extent of it.\"|525|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 525,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t<leave> The engineer, who had watched the fight then explains, \"Since you have failed the test we cannot give you access to our vault yet. Our weapons are only meant for the most capable of warriors. You will of course still be able to trade jump drives for money, but until you otherwise prove yourself, that is the extent of it.\"",
+   "italian": "\t<leave> L'ingegnere, che aveva assistito allo scontro, spiega poi: \"Dato che non hai superato la prova, non possiamo ancora darti accesso alla nostra camera blindata. Le nostre armi sono destinate solo ai guerrieri più capaci. Potrai naturalmente continuare a scambiare motori di salto in cambio di denaro, ma finché non dimostrerai il contrario, questo è quanto.\"",
+   "ratio": 1.099
+  },
+  {
+   "idx": 18,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"This mistake is not permanent; I am sure she will happily forgive you, if you will only bring us more jump drives. Another engineer will be waiting for you at your hatch when that is the case.\"|526|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 526,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"This mistake is not permanent; I am sure she will happily forgive you, if you will only bring us more jump drives. Another engineer will be waiting for you at your hatch when that is the case.\"",
+   "italian": "\t\"Questo errore non è definitivo; sono certo che ti perdonerà volentieri, se solo ci porterai altri motori di salto. Un altro ingegnere ti aspetterà al portello quando sarà il caso.\"",
+   "ratio": 0.933
+  },
+  {
+   "idx": 19,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"In fact, your reputation for bringing us jump drives is so great she has no choice but to forgive you in the near future. Another engineer will be waiting for you at your hatch when that is the case.\"|530|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 530,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"In fact, your reputation for bringing us jump drives is so great she has no choice but to forgive you in the near future. Another engineer will be waiting for you at your hatch when that is the case.\"",
+   "italian": "\t\"Anzi, la tua fama di portatore di motori di salto è tale che non avrà altra scelta che perdonarti nel prossimo futuro. Un altro ingegnere ti aspetterà al portello quando sarà il caso.\"",
+   "ratio": 0.921
+  }
+ ]
+}

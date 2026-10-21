@@ -1,0 +1,231 @@
+{
+ "block": {
+  "path": "data/hai/unfettered 0 prologue.txt",
+  "line_from": 83,
+  "line_to": 132,
+  "units": 20
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:First Contact: Unfettered|\t\"This is our story,\" they say. \"Once, many worlds beyond wormhole were ours. Once, hundred thousand years now gone. We needed more worlds. A species that does not expand becomes like brackish water, like stunted tree. But dragonfolk in the south had created hyperdrive, and human monkeys had begun banging rocks together in what the Drak said was very intelligent fashion. So we were forbidden from taking more worlds.\"|83|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 83,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"This is our story,\" they say. \"Once, many worlds beyond wormhole were ours. Once, hundred thousand years now gone. We needed more worlds. A species that does not expand becomes like brackish water, like stunted tree. But dragonfolk in the south had created hyperdrive, and human monkeys had begun banging rocks together in what the Drak said was very intelligent fashion. So we were forbidden from taking more worlds.\"",
+   "italian": "\t\"Questa è la nostra storia,\" dicono. \"Una volta, molti mondi oltre il wormhole erano nostri. Una volta, centomila anni ormai passati. Avevamo bisogno di più mondi. Una specie che non si espande diventa come acqua salmastra, come albero rinsecchito. Ma i popoli-drago a sud avevano creato l'iperpropulsore, e le scimmie umane avevano cominciato a battere le pietre l'una contro l'altra in quello che i Drak dicevano essere un modo molto intelligente. Così ci è stato vietato di prendere altri mondi.\"",
+   "ratio": 1.19
+  },
+  {
+   "idx": 2,
+   "id": "mission:First Contact: Unfettered|\t\"'Dragonfolk?'\" you ask. \"I've never heard of them.\"|86|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 86,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"'Dragonfolk?'\" you ask. \"I've never heard of them.\"",
+   "italian": "\t\"'Popoli-drago?'\" chiedi. \"Non ne ho mai sentito parlare.\"",
+   "ratio": 1.113
+  },
+  {
+   "idx": 3,
+   "id": "mission:First Contact: Unfettered|\t\"Sheragi,\" they say, \"they are extinct. Only their dumb ancestors survive, just as monkeys will outlast the thinking humans.\"|87|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 87,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"Sheragi,\" they say, \"they are extinct. Only their dumb ancestors survive, just as monkeys will outlast the thinking humans.\"",
+   "italian": "\t\"Sheragi,\" dicono, \"sono estinti. sopravvivono solo i loro antenati ottusi, proprio come le scimmie sopravvivranno agli umani pensanti.\"",
+   "ratio": 1.087
+  },
+  {
+   "idx": 4,
+   "id": "mission:First Contact: Unfettered|\t\"'Dragonfolk?'\" you ask. \"Do you mean the Sheragi?\"|91|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 91,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"'Dragonfolk?'\" you ask. \"Do you mean the Sheragi?\"",
+   "italian": "\t\"'Popoli-drago?'\" chiedi. \"Intendi gli Sheragi?\"",
+   "ratio": 0.942
+  },
+  {
+   "idx": 5,
+   "id": "mission:First Contact: Unfettered|\t\"Impressive,\" they reply, \"the monkey knows of Sheragi. We outlived them all. Funny that only their dumb ancestors survive, just as monkeys will outlast the thinking humans.\"|92|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 92,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"Impressive,\" they reply, \"the monkey knows of Sheragi. We outlived them all. Funny that only their dumb ancestors survive, just as monkeys will outlast the thinking humans.\"",
+   "italian": "\t\"Notevole,\" rispondono, \"la scimmia conosce gli Sheragi. Siamo sopravvissuti a tutti loro. Divertente che sopravvivono solo i loro antenati ottusi, proprio come le scimmie sopravvivranno agli umani pensanti.\"",
+   "ratio": 1.194
+  },
+  {
+   "idx": 6,
+   "id": "mission:First Contact: Unfettered|\t\"How were you altered?\" you ask.|95|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 95,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"How were you altered?\" you ask.",
+   "italian": "\t\"Come siete stati alterati?\" chiedi.",
+   "ratio": 1.121
+  },
+  {
+   "idx": 7,
+   "id": "mission:First Contact: Unfettered|\tThey say, \"We Hai fought Sheragi and took worlds that Drak said belonged to them, worlds that Sheragi had not yet even discovered. Drak retaliated. On all Hai worlds, Drak ships appeared in orbit. Sickness swept each planet: quick fever, strange feeling of frailness, like you are brittle bones with mouth full of dirt. Victims left alive, but all ambition gone, no desire but to die of comfortable old age.\"|96|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 96,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\tThey say, \"We Hai fought Sheragi and took worlds that Drak said belonged to them, worlds that Sheragi had not yet even discovered. Drak retaliated. On all Hai worlds, Drak ships appeared in orbit. Sickness swept each planet: quick fever, strange feeling of frailness, like you are brittle bones with mouth full of dirt. Victims left alive, but all ambition gone, no desire but to die of comfortable old age.\"",
+   "italian": "\tDicono: \"Noi Hai abbiamo combattuto gli Sheragi e preso mondi che i Drak dicevano appartenere a loro, mondi che gli Sheragi non avevano nemmeno ancora scoperto. I Drak hanno reagito. Su tutti i mondi Hai sono apparse navi Drak in orbita. Una malattia ha attraversato ogni pianeta: febbre rapida, strana sensazione di fragilità, come essere ossa fragili con la bocca piena di terra. Le vittime restavano vive, ma ogni ambizione svanita, nessun desiderio se non morire di vecchiaia comoda.\"",
+   "ratio": 1.196
+  },
+  {
+   "idx": 8,
+   "id": "mission:First Contact: Unfettered|\t\"Did you try to resist the Drak?\"|98|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 98,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"Did you try to resist the Drak?\"",
+   "italian": "\t\"Avete provato a resistere ai Drak?\"",
+   "ratio": 1.088
+  },
+  {
+   "idx": 9,
+   "id": "mission:First Contact: Unfettered|\t\"How do you know this, if it happened a hundred thousand years ago?\"|100|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 100,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"How do you know this, if it happened a hundred thousand years ago?\"",
+   "italian": "\t\"Come fai a saperlo, se è successo centomila anni fa?\"",
+   "ratio": 0.797
+  },
+  {
+   "idx": 10,
+   "id": "mission:First Contact: Unfettered|\t\"Silly monkey,\" they say, \"none can resist. They are strong. Their will prevails. And their will is for the galaxy to be a zoo, little remnants of each species all in separate cages. For now they let humans run free so humans will grow in knowledge, but soon they will fashion a cage for humans too.\"|104|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 104,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"Silly monkey,\" they say, \"none can resist. They are strong. Their will prevails. And their will is for the galaxy to be a zoo, little remnants of each species all in separate cages. For now they let humans run free so humans will grow in knowledge, but soon they will fashion a cage for humans too.\"",
+   "italian": "\t\"Scimmia sciocca,\" dicono, \"nessuno può resistere. Sono forti. La loro volontà prevale. E la loro volontà è che la galassia sia uno zoo, piccoli resti di ogni specie ognuno in una gabbia separata. Per ora lasciano gli umani liberi perché gli umani crescano in conoscenza, ma presto fabbricheranno una gabbia anche per gli umani.\"",
+   "ratio": 1.096
+  },
+  {
+   "idx": 11,
+   "id": "mission:First Contact: Unfettered|\t\"All Hai know. The story is passed down. Others tell an altered version, where the way of peace was choice and not an inflicted wound, but some in each generation learn truth, and join us here.\"|108|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 108,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"All Hai know. The story is passed down. Others tell an altered version, where the way of peace was choice and not an inflicted wound, but some in each generation learn truth, and join us here.\"",
+   "italian": "\t\"Tutti gli Hai lo sanno. La storia si tramanda. Gli altri raccontano una versione alterata, in cui la via della pace fu una scelta e non una ferita inflitta, ma alcuni in ogni generazione apprendono la verità, e si uniscono a noi qui.\"",
+   "ratio": 1.21
+  },
+  {
+   "idx": 12,
+   "id": "mission:First Contact: Unfettered|\t\"That is a frightening story. Thank you for taking the time to speak with me.\"|113|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 113,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"That is a frightening story. Thank you for taking the time to speak with me.\"",
+   "italian": "\t\"È una storia spaventosa. Grazie per avermi dedicato il tuo tempo.\"",
+   "ratio": 0.861
+  },
+  {
+   "idx": 13,
+   "id": "mission:First Contact: Unfettered|\t\"Is there anything I can do to help you?\"|115|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 115,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"Is there anything I can do to help you?\"",
+   "italian": "\t\"C'è qualcosa che posso fare per aiutarvi?\"",
+   "ratio": 1.048
+  },
+  {
+   "idx": 14,
+   "id": "mission:First Contact: Unfettered|\t\"If you are ever willing to sell us a jump drive,\" they say, \"we will richly reward you. And if you discover the secret of how we can construct our own jump drives and escape from this prison, bring it to us and you will live as a god among us.\"|118|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 118,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"If you are ever willing to sell us a jump drive,\" they say, \"we will richly reward you. And if you discover the secret of how we can construct our own jump drives and escape from this prison, bring it to us and you will live as a god among us.\"",
+   "italian": "\t\"Se mai vorrai venderci un motore di salto,\" dicono, \"ti ricompenseremo lautamente. E se scopri il segreto per costruire i nostri motori di salto e fuggire da questa prigione, portacelo e vivrai come un dio fra noi.\"",
+   "ratio": 0.882
+  },
+  {
+   "idx": 15,
+   "id": "mission:First Contact: Unfettered|\t\"I'm sorry, I don't know the secret of the jump drive. No human being does.\"|120|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 120,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"I'm sorry, I don't know the secret of the jump drive. No human being does.\"",
+   "italian": "\t\"Mi dispiace, non conosco il segreto del motore di salto. Nessun essere umano lo conosce.\"",
+   "ratio": 1.182
+  },
+  {
+   "idx": 16,
+   "id": "mission:First Contact: Unfettered|\t\"If I ever have an extra jump drive to sell, I will bring it to you.\"|121|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 121,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"If I ever have an extra jump drive to sell, I will bring it to you.\"",
+   "italian": "\t\"Se mai avrò un motore di salto in più da vendere, te lo porterò.\"",
+   "ratio": 0.957
+  },
+  {
+   "idx": 17,
+   "id": "mission:First Contact: Unfettered|\t\"Then leave us alone,\" they say, and they walk off.|123|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 123,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"Then leave us alone,\" they say, and they walk off.",
+   "italian": "\t\"Allora lasciaci in pace,\" dicono, e se ne vanno.",
+   "ratio": 0.962
+  },
+  {
+   "idx": 18,
+   "id": "mission:First Contact: Unfettered|\t\"Bring us a jump drive,\" they say, \"and we will count you among our friends. Bring us more, and we may even consider you worthy of a share of the plunder, when we take back what is ours.\"|127|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 127,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Unfettered",
+   "english": "\t\"Bring us a jump drive,\" they say, \"and we will count you among our friends. Bring us more, and we may even consider you worthy of a share of the plunder, when we take back what is ours.\"",
+   "italian": "\t\"Portaci un motore di salto,\" dicono, \"e ti conteremo fra i nostri amici. Portacene altri, e potremmo persino considerarti degno di una parte del bottino, quando riprenderemo ciò che è nostro.\"",
+   "ratio": 1.032
+  },
+  {
+   "idx": 19,
+   "id": "mission:First Contact: Unfettered|log|131|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 131,
+   "kind": "LOGBOOK",
+   "context": "mission:First Contact: Unfettered",
+   "english": "The \"Unfettered\" are a faction within the Hai species who are not as peaceful as the rest, and are normally not friendly toward humans. They claim that long ago the Drak altered the Hai to make them docile and peaceful, and that the Unfettered are descendants of those Hai who avoided undergoing that alteration. They are seeking jump drives so that they can escape the \"prison\" they are now stuck in: a few deteriorating worlds on the far northern edge of Hai space.",
+   "italian": "Gli \"Unfettered\" sono una fazione interna alla specie Hai, meno pacifica del resto e di norma non amichevole verso gli umani. Sostengono che molto tempo fa i Drak alterarono gli Hai per renderli docili e pacifici, e che gli Unfettered discendono da quegli Hai che evitarono quell'alterazione. Cercano motori di salto per fuggire dalla \"prigione\" in cui sono ora bloccati: alcuni mondi in degrado sul confine più settentrionale dello spazio Hai.",
+   "ratio": 0.951
+  },
+  {
+   "idx": 20,
+   "id": "mission:First Contact: Unfettered|log|132|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 132,
+   "kind": "LOGBOOK",
+   "context": "mission:First Contact: Unfettered",
+   "english": "The Unfettered Hai say that a dragon-like species called the \"Sheragi\" who are long extinct used to live in human space, back when much of what is now human territory was occupied by the Hai.",
+   "italian": "Gli Hai Slegati dicono che una specie simile a un drago, chiamata \"Sheragi\" e da tempo estinta, viveva nello spazio umano, quando gran parte di quello che oggi è territorio umano era occupato dagli Hai.",
+   "ratio": 1.058
+  }
+ ]
+}

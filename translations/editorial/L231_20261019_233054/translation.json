@@ -1,0 +1,242 @@
+{
+ "block": {
+  "path": "data/korath/korath outfits.txt",
+  "line_from": 596,
+  "line_to": 808,
+  "units": 21
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Thruster (Comet Class)|description|596|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 596,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thruster (Comet Class)",
+   "english": "Like most Korath technology, this thruster's power is offset by its energy requirements and heat output.",
+   "italian": "Like most Korath technology, this thruster's power is offset by its energy requirements and heat output.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Thruster (Lunar Class)|plural|599|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 599,
+   "kind": "VALUE",
+   "context": "outfit:Thruster (Lunar Class)",
+   "english": "Thrusters (Lunar Class)",
+   "italian": "Thrusters (Lunar Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Thruster (Lunar Class)|description|614|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 614,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thruster (Lunar Class)",
+   "english": "The Korath have the dubious distinction of relying on propulsion systems that produce more waste heat than the weapon systems of most other species.",
+   "italian": "The Korath have the dubious distinction of relying on propulsion systems that produce more waste heat than the weapon systems of most other species.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Thruster (Planetary Class)|plural|617|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 617,
+   "kind": "VALUE",
+   "context": "outfit:Thruster (Planetary Class)",
+   "english": "Thrusters (Planetary Class)",
+   "italian": "Thrusters (Planetary Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Thruster (Planetary Class)|description|632|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 632,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thruster (Planetary Class)",
+   "english": "The Quarg, who do all things efficiently, view the Korath propulsion systems with particular distaste.",
+   "italian": "The Quarg, who do all things efficiently, view the Korath propulsion systems with particular distaste.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Thruster (Stellar Class)|plural|635|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 635,
+   "kind": "VALUE",
+   "context": "outfit:Thruster (Stellar Class)",
+   "english": "Thrusters (Stellar Class)",
+   "italian": "Thrusters (Stellar Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Thruster (Stellar Class)|description|650|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 650,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thruster (Stellar Class)",
+   "english": "A legend among the Korath claims that when they were first testing out their latest generation of plasma thrusters, a concerned Quarg fleet approached and volunteered to help evacuate the Korath crew from what they assumed was a dying ship. The Quarg were surprised to learn that the flames shooting out the back of the ship were in fact its intended mode of propulsion.",
+   "italian": "A legend among the Korath claims that when they were first testing out their latest generation of plasma thrusters, a concerned Quarg fleet approached and volunteered to help evacuate the Korath crew from what they assumed was a dying ship. The Quarg were surprised to learn that the flames shooting out the back of the ship were in fact its intended mode of propulsion.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Steering (Asteroid Class)|plural|653|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 653,
+   "kind": "VALUE",
+   "context": "outfit:Steering (Asteroid Class)",
+   "english": "Steerings (Asteroid Class)",
+   "italian": "Steerings (Asteroid Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Steering (Asteroid Class)|description|668|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 668,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Steering (Asteroid Class)",
+   "english": "The Korath use these steering systems only in the very smallest of their ships.",
+   "italian": "The Korath use these steering systems only in the very smallest of their ships.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Steering (Comet Class)|plural|671|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 671,
+   "kind": "VALUE",
+   "context": "outfit:Steering (Comet Class)",
+   "english": "Steerings (Comet Class)",
+   "italian": "Steerings (Comet Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Steering (Comet Class)|description|686|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 686,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Steering (Comet Class)",
+   "english": "This compact steering system is a classic example of Korath technology: small, powerful, and woefully inefficient.",
+   "italian": "This compact steering system is a classic example of Korath technology: small, powerful, and woefully inefficient.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Steering (Lunar Class)|plural|689|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 689,
+   "kind": "VALUE",
+   "context": "outfit:Steering (Lunar Class)",
+   "english": "Steerings (Lunar Class)",
+   "italian": "Steerings (Lunar Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Steering (Lunar Class)|description|704|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 704,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Steering (Lunar Class)",
+   "english": "Korath engines can be fitted into just about any ship, but unless accompanied by some Korath cooling systems as well, their heat output will often be more than the ship can handle.",
+   "italian": "Korath engines can be fitted into just about any ship, but unless accompanied by some Korath cooling systems as well, their heat output will often be more than the ship can handle.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Steering (Planetary Class)|plural|707|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 707,
+   "kind": "VALUE",
+   "context": "outfit:Steering (Planetary Class)",
+   "english": "Steerings (Planetary Class)",
+   "italian": "Steerings (Planetary Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Steering (Planetary Class)|description|722|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 722,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Steering (Planetary Class)",
+   "english": "Where other species might focus on converting energy into thrust as efficiently as possible, the Korath instead strive to pack as much power as possible into the smallest area. This steering system is a classic example of their work.",
+   "italian": "Where other species might focus on converting energy into thrust as efficiently as possible, the Korath instead strive to pack as much power as possible into the smallest area. This steering system is a classic example of their work.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Steering (Stellar Class)|plural|725|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 725,
+   "kind": "VALUE",
+   "context": "outfit:Steering (Stellar Class)",
+   "english": "Steerings (Stellar Class)",
+   "italian": "Steerings (Stellar Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:Steering (Stellar Class)|description|740|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 740,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Steering (Stellar Class)",
+   "english": "After millennia of war, the Korath have developed some truly enormous warships. These steering systems give even their largest warships a reasonable amount of agility in combat.",
+   "italian": "After millennia of war, the Korath have developed some truly enormous warships. These steering systems give even their largest warships a reasonable amount of agility in combat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "outfit:Arkrof GP Hybrid Thruster|description|757|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 757,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Arkrof GP Hybrid Thruster",
+   "english": "Efreti engineers have begun to grudgingly take inspiration from their not-entirely-welcome Quarg guardians. The incorporation of gravitational propulsion increases the thrust output for engines in this line, at the cost of even higher energy use. These are the smallest such gravitoplasma-based thrusters.",
+   "italian": "Efreti engineers have begun to grudgingly take inspiration from their not-entirely-welcome Quarg guardians. The incorporation of gravitational propulsion increases the thrust output for engines in this line, at the cost of even higher energy use. These are the smallest such gravitoplasma-based thrusters.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "outfit:Farves GP Hybrid Thruster|description|774|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 774,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Farves GP Hybrid Thruster",
+   "english": "The forced retreat from research into interstellar jump drive technology has left the Efreti engineers with little else to tinker with than subluminal propulsion. These resulting thrusters are one important example of this effort. Synthesizing gravitational propulsion with more traditional plasma thrusters moderates the heat output from these engines.",
+   "italian": "The forced retreat from research into interstellar jump drive technology has left the Efreti engineers with little else to tinker with than subluminal propulsion. These resulting thrusters are one important example of this effort. Synthesizing gravitational propulsion with more traditional plasma thrusters moderates the heat output from these engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "outfit:Gaktem GP Hybrid Thruster|description|791|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 791,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Gaktem GP Hybrid Thruster",
+   "english": "The design of these engines suggests Efreti physicists appear to have gone considerably further than the mathematically self-consistent, but stubbornly unfalsifiable, conjectures of String Theory. Despite the Efreti's limited resources, these thrusters allow their engines to maintain the traditional Korath emphasis on speed in a small package while keeping heat output down.",
+   "italian": "The design of these engines suggests Efreti physicists appear to have gone considerably further than the mathematically self-consistent, but stubbornly unfalsifiable, conjectures of String Theory. Despite the Efreti's limited resources, these thrusters allow their engines to maintain the traditional Korath emphasis on speed in a small package while keeping heat output down.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "outfit:Nelmeb GP Hybrid Thruster|description|808|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 808,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Nelmeb GP Hybrid Thruster",
+   "english": "Korath physicists have, for several centuries, understood concrete aspects of the unity that underlies both quantum gravity and the forces that bind quarks and gluons together. However, as Efreti efforts are comparatively recent, this technological synthesis lags behind comparable Quarg technology.",
+   "italian": "Korath physicists have, for several centuries, understood concrete aspects of the unity that underlies both quantum gravity and the forces that bind quarks and gluons together. However, as Efreti efforts are comparatively recent, this technological synthesis lags behind comparable Quarg technology.",
+   "ratio": 1.0
+  }
+ ]
+}

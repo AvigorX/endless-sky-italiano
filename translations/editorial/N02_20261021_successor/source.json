@@ -1,0 +1,1082 @@
+{
+ "block": {
+  "path": "data/successors/successor news.txt",
+  "line_from": 0,
+  "line_to": 0,
+  "units": 119
+ },
+ "note": "estrazione delle alternative `word` non viste dall'estrattore ufficiale",
+ "units": [
+  {
+   "idx": 1,
+   "id": "N|successor_news|word|25|0",
+   "path": "data/successors/successor news.txt",
+   "line": 25,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Emissary of a High House"
+  },
+  {
+   "idx": 2,
+   "id": "N|successor_news|word|26|0",
+   "path": "data/successors/successor news.txt",
+   "line": 26,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Official of a High House"
+  },
+  {
+   "idx": 3,
+   "id": "N|successor_news|word|27|0",
+   "path": "data/successors/successor news.txt",
+   "line": 27,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Agent of a High House"
+  },
+  {
+   "idx": 4,
+   "id": "N|successor_news|word|28|0",
+   "path": "data/successors/successor news.txt",
+   "line": 28,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "High House Emissary"
+  },
+  {
+   "idx": 5,
+   "id": "N|successor_news|word|29|0",
+   "path": "data/successors/successor news.txt",
+   "line": 29,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "High House Official"
+  },
+  {
+   "idx": 6,
+   "id": "N|successor_news|word|30|0",
+   "path": "data/successors/successor news.txt",
+   "line": 30,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "High House Agent"
+  },
+  {
+   "idx": 7,
+   "id": "N|successor_news|word|35|0",
+   "path": "data/successors/successor news.txt",
+   "line": 35,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "I hope thou has't enjoyed thy time amongst our people."
+  },
+  {
+   "idx": 8,
+   "id": "N|successor_news|word|36|0",
+   "path": "data/successors/successor news.txt",
+   "line": 36,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "The alien! Hath thou news from far in this endless sky?"
+  },
+  {
+   "idx": 9,
+   "id": "N|successor_news|word|37|0",
+   "path": "data/successors/successor news.txt",
+   "line": 37,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Fair traveler, I've heard of thee. How must thy voyage weigh upon thy mind."
+  },
+  {
+   "idx": 10,
+   "id": "N|successor_news|word|38|0",
+   "path": "data/successors/successor news.txt",
+   "line": 38,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Welcome to our space, honored alien. A pleasure 'tis to meet thee."
+  },
+  {
+   "idx": 11,
+   "id": "N|successor_news|word|51|0",
+   "path": "data/successors/successor news.txt",
+   "line": 51,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Port official"
+  },
+  {
+   "idx": 12,
+   "id": "N|successor_news|word|52|0",
+   "path": "data/successors/successor news.txt",
+   "line": 52,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Port officer"
+  },
+  {
+   "idx": 13,
+   "id": "N|successor_news|word|57|0",
+   "path": "data/successors/successor news.txt",
+   "line": 57,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "The Houses welcome thee as a guest among our people; "
+  },
+  {
+   "idx": 14,
+   "id": "N|successor_news|word|58|0",
+   "path": "data/successors/successor news.txt",
+   "line": 58,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Please remain in concord with our people; "
+  },
+  {
+   "idx": 15,
+   "id": "N|successor_news|word|59|0",
+   "path": "data/successors/successor news.txt",
+   "line": 59,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Informed, am I, of thy recent arrival; "
+  },
+  {
+   "idx": 16,
+   "id": "N|successor_news|word|60|0",
+   "path": "data/successors/successor news.txt",
+   "line": 60,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Can I provide assistance, honored traveler? "
+  },
+  {
+   "idx": 17,
+   "id": "N|successor_news|word|61|0",
+   "path": "data/successors/successor news.txt",
+   "line": 61,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Our noble house does greet thee full of joy; "
+  },
+  {
+   "idx": 18,
+   "id": "N|successor_news|word|63|0",
+   "path": "data/successors/successor news.txt",
+   "line": 63,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "I am at thy service if 'tis needed."
+  },
+  {
+   "idx": 19,
+   "id": "N|successor_news|word|64|0",
+   "path": "data/successors/successor news.txt",
+   "line": 64,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Today's been rather busy, please speak quickly."
+  },
+  {
+   "idx": 20,
+   "id": "N|successor_news|word|71|0",
+   "path": "data/successors/successor news.txt",
+   "line": 71,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Please submit to scans if 'tis requested"
+  },
+  {
+   "idx": 21,
+   "id": "N|successor_news|word|72|0",
+   "path": "data/successors/successor news.txt",
+   "line": 72,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Taxes on transactions are collected"
+  },
+  {
+   "idx": 22,
+   "id": "N|successor_news|word|73|0",
+   "path": "data/successors/successor news.txt",
+   "line": 73,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Transactions in this area are surveilled"
+  },
+  {
+   "idx": 23,
+   "id": "N|successor_news|word|74|0",
+   "path": "data/successors/successor news.txt",
+   "line": 74,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "If thou see'st something suspect, report't promptly"
+  },
+  {
+   "idx": 24,
+   "id": "N|successor_news|word|76|0",
+   "path": "data/successors/successor news.txt",
+   "line": 76,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "; port rules and regulations should be posted."
+  },
+  {
+   "idx": 25,
+   "id": "N|successor_news|word|77|0",
+   "path": "data/successors/successor news.txt",
+   "line": 77,
+   "kind": "NEWS",
+   "context": "news",
+   "english": " in accordance with our standard port procedure."
+  },
+  {
+   "idx": 26,
+   "id": "N|successor_news|word|91|0",
+   "path": "data/successors/successor news.txt",
+   "line": 91,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Student"
+  },
+  {
+   "idx": 27,
+   "id": "N|successor_news|word|92|0",
+   "path": "data/successors/successor news.txt",
+   "line": 92,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Successor student"
+  },
+  {
+   "idx": 28,
+   "id": "N|successor_news|word|97|0",
+   "path": "data/successors/successor news.txt",
+   "line": 97,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Exams, I think, shall never know their end,"
+  },
+  {
+   "idx": 29,
+   "id": "N|successor_news|word|98|0",
+   "path": "data/successors/successor news.txt",
+   "line": 98,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Hath I forgot my geographic terms?"
+  },
+  {
+   "idx": 30,
+   "id": "N|successor_news|word|99|0",
+   "path": "data/successors/successor news.txt",
+   "line": 99,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Hath I forgot my chemical reagents?"
+  },
+  {
+   "idx": 31,
+   "id": "N|successor_news|word|100|0",
+   "path": "data/successors/successor news.txt",
+   "line": 100,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Hyperspace Mechanics hurts my brain,"
+  },
+  {
+   "idx": 32,
+   "id": "N|successor_news|word|101|0",
+   "path": "data/successors/successor news.txt",
+   "line": 101,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Predecessor His'try is a bore,"
+  },
+  {
+   "idx": 33,
+   "id": "N|successor_news|word|102|0",
+   "path": "data/successors/successor news.txt",
+   "line": 102,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Plasma Flow Dynamics is a drag,"
+  },
+  {
+   "idx": 34,
+   "id": "N|successor_news|word|103|0",
+   "path": "data/successors/successor news.txt",
+   "line": 103,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Particle Kinetics is a pain,"
+  },
+  {
+   "idx": 35,
+   "id": "N|successor_news|word|107|0",
+   "path": "data/successors/successor news.txt",
+   "line": 107,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "I know not sleep nor food nor meager rest"
+  },
+  {
+   "idx": 36,
+   "id": "N|successor_news|word|108|0",
+   "path": "data/successors/successor news.txt",
+   "line": 108,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "I wish that I could learn while I'm asleep"
+  },
+  {
+   "idx": 37,
+   "id": "N|successor_news|word|109|0",
+   "path": "data/successors/successor news.txt",
+   "line": 109,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "I know not how I even stay awake"
+  },
+  {
+   "idx": 38,
+   "id": "N|successor_news|word|110|0",
+   "path": "data/successors/successor news.txt",
+   "line": 110,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "I wish I knew some better study tricks"
+  },
+  {
+   "idx": 39,
+   "id": "N|successor_news|word|126|0",
+   "path": "data/successors/successor news.txt",
+   "line": 126,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Independent merchant"
+  },
+  {
+   "idx": 40,
+   "id": "N|successor_news|word|131|0",
+   "path": "data/successors/successor news.txt",
+   "line": 131,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Interested in "
+  },
+  {
+   "idx": 41,
+   "id": "N|successor_news|word|135|0",
+   "path": "data/successors/successor news.txt",
+   "line": 135,
+   "kind": "NEWS",
+   "context": "news",
+   "english": ", noble traveler?"
+  },
+  {
+   "idx": 42,
+   "id": "N|successor_news|word|136|0",
+   "path": "data/successors/successor news.txt",
+   "line": 136,
+   "kind": "NEWS",
+   "context": "news",
+   "english": ", canny buyer?"
+  },
+  {
+   "idx": 43,
+   "id": "N|successor_news|word|137|0",
+   "path": "data/successors/successor news.txt",
+   "line": 137,
+   "kind": "NEWS",
+   "context": "news",
+   "english": ", noble captain?"
+  },
+  {
+   "idx": 44,
+   "id": "N|successor_news|word|138|0",
+   "path": "data/successors/successor news.txt",
+   "line": 138,
+   "kind": "NEWS",
+   "context": "news",
+   "english": ", clever buyer?"
+  },
+  {
+   "idx": 45,
+   "id": "N|successor_news|word|139|0",
+   "path": "data/successors/successor news.txt",
+   "line": 139,
+   "kind": "NEWS",
+   "context": "news",
+   "english": ", newest friend?"
+  },
+  {
+   "idx": 46,
+   "id": "N|successor_news|word|140|0",
+   "path": "data/successors/successor news.txt",
+   "line": 140,
+   "kind": "NEWS",
+   "context": "news",
+   "english": ", thoughtful buyer?"
+  },
+  {
+   "idx": 47,
+   "id": "N|successor_news|word|141|0",
+   "path": "data/successors/successor news.txt",
+   "line": 141,
+   "kind": "NEWS",
+   "context": "news",
+   "english": ", thoughtful captain?"
+  },
+  {
+   "idx": 48,
+   "id": "N|successor_news|word|148|0",
+   "path": "data/successors/successor news.txt",
+   "line": 148,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "I miss the days I used to be a "
+  },
+  {
+   "idx": 49,
+   "id": "N|successor_news|word|149|0",
+   "path": "data/successors/successor news.txt",
+   "line": 149,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "I miss the times I used to be a "
+  },
+  {
+   "idx": 50,
+   "id": "N|successor_news|word|150|0",
+   "path": "data/successors/successor news.txt",
+   "line": 150,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "I still think back to when I was a "
+  },
+  {
+   "idx": 51,
+   "id": "N|successor_news|word|151|0",
+   "path": "data/successors/successor news.txt",
+   "line": 151,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Thou remindeth me of when I was a "
+  },
+  {
+   "idx": 52,
+   "id": "N|successor_news|word|153|0",
+   "path": "data/successors/successor news.txt",
+   "line": 153,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "pilot, "
+  },
+  {
+   "idx": 53,
+   "id": "N|successor_news|word|154|0",
+   "path": "data/successors/successor news.txt",
+   "line": 154,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "captain, "
+  },
+  {
+   "idx": 54,
+   "id": "N|successor_news|word|155|0",
+   "path": "data/successors/successor news.txt",
+   "line": 155,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "ranger, "
+  },
+  {
+   "idx": 55,
+   "id": "N|successor_news|word|157|0",
+   "path": "data/successors/successor news.txt",
+   "line": 157,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "but alas, "
+  },
+  {
+   "idx": 56,
+   "id": "N|successor_news|word|159|0",
+   "path": "data/successors/successor news.txt",
+   "line": 159,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "now 'tis planetside I shall remain."
+  },
+  {
+   "idx": 57,
+   "id": "N|successor_news|word|160|0",
+   "path": "data/successors/successor news.txt",
+   "line": 160,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "'twas never brave enough to stay."
+  },
+  {
+   "idx": 58,
+   "id": "N|successor_news|word|161|0",
+   "path": "data/successors/successor news.txt",
+   "line": 161,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "I was a spacesick little knave."
+  },
+  {
+   "idx": 59,
+   "id": "N|successor_news|word|162|0",
+   "path": "data/successors/successor news.txt",
+   "line": 162,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "it's down at earth I feel at home."
+  },
+  {
+   "idx": 60,
+   "id": "N|successor_news|word|163|0",
+   "path": "data/successors/successor news.txt",
+   "line": 163,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "it's selling items that's for me."
+  },
+  {
+   "idx": 61,
+   "id": "N|successor_news|word|164|0",
+   "path": "data/successors/successor news.txt",
+   "line": 164,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "my family needed my return."
+  },
+  {
+   "idx": 62,
+   "id": "N|successor_news|word|165|0",
+   "path": "data/successors/successor news.txt",
+   "line": 165,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "possessed of talent I was not."
+  },
+  {
+   "idx": 63,
+   "id": "N|successor_news|word|172|0",
+   "path": "data/successors/successor news.txt",
+   "line": 172,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "pushy "
+  },
+  {
+   "idx": 64,
+   "id": "N|successor_news|word|173|0",
+   "path": "data/successors/successor news.txt",
+   "line": 173,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "friendly-looking "
+  },
+  {
+   "idx": 65,
+   "id": "N|successor_news|word|174|0",
+   "path": "data/successors/successor news.txt",
+   "line": 174,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "nervous-looking "
+  },
+  {
+   "idx": 66,
+   "id": "N|successor_news|word|175|0",
+   "path": "data/successors/successor news.txt",
+   "line": 175,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "furtive "
+  },
+  {
+   "idx": 67,
+   "id": "N|successor_news|word|176|0",
+   "path": "data/successors/successor news.txt",
+   "line": 176,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "brightly-colored "
+  },
+  {
+   "idx": 68,
+   "id": "N|successor_news|word|177|0",
+   "path": "data/successors/successor news.txt",
+   "line": 177,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "vibrantly-dressed "
+  },
+  {
+   "idx": 69,
+   "id": "N|successor_news|word|178|0",
+   "path": "data/successors/successor news.txt",
+   "line": 178,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "dour-looking "
+  },
+  {
+   "idx": 70,
+   "id": "N|successor_news|word|180|0",
+   "path": "data/successors/successor news.txt",
+   "line": 180,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "merchant "
+  },
+  {
+   "idx": 71,
+   "id": "N|successor_news|word|181|0",
+   "path": "data/successors/successor news.txt",
+   "line": 181,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "trader "
+  },
+  {
+   "idx": 72,
+   "id": "N|successor_news|word|182|0",
+   "path": "data/successors/successor news.txt",
+   "line": 182,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "artisan "
+  },
+  {
+   "idx": 73,
+   "id": "N|successor_news|word|183|0",
+   "path": "data/successors/successor news.txt",
+   "line": 183,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Successor "
+  },
+  {
+   "idx": 74,
+   "id": "N|successor_news|word|185|0",
+   "path": "data/successors/successor news.txt",
+   "line": 185,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "tries to get you to "
+  },
+  {
+   "idx": 75,
+   "id": "N|successor_news|word|187|0",
+   "path": "data/successors/successor news.txt",
+   "line": 187,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "purchase "
+  },
+  {
+   "idx": 76,
+   "id": "N|successor_news|word|188|0",
+   "path": "data/successors/successor news.txt",
+   "line": 188,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "buy "
+  },
+  {
+   "idx": 77,
+   "id": "N|successor_news|word|190|0",
+   "path": "data/successors/successor news.txt",
+   "line": 190,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "some "
+  },
+  {
+   "idx": 78,
+   "id": "N|successor_news|word|205|0",
+   "path": "data/successors/successor news.txt",
+   "line": 205,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "High House broadcast"
+  },
+  {
+   "idx": 79,
+   "id": "N|successor_news|word|206|0",
+   "path": "data/successors/successor news.txt",
+   "line": 206,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Government broadcast"
+  },
+  {
+   "idx": 80,
+   "id": "N|successor_news|word|207|0",
+   "path": "data/successors/successor news.txt",
+   "line": 207,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Video screen"
+  },
+  {
+   "idx": 81,
+   "id": "N|successor_news|word|208|0",
+   "path": "data/successors/successor news.txt",
+   "line": 208,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Official broadcast"
+  },
+  {
+   "idx": 82,
+   "id": "N|successor_news|word|211|0",
+   "path": "data/successors/successor news.txt",
+   "line": 211,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "An advertisement shows a Successor warship performing a variety of deftly-executed maneuvers before encouraging the viewer to enlist in the armed forces of one of the High Houses."
+  },
+  {
+   "idx": 83,
+   "id": "N|successor_news|word|212|0",
+   "path": "data/successors/successor news.txt",
+   "line": 212,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "An advertisement plays, showing a group of Successors standing close together against a factory backdrop, their skins all tinted a happy green. It is followed by a voiceover noting that wages have been recently increased."
+  },
+  {
+   "idx": 84,
+   "id": "N|successor_news|word|213|0",
+   "path": "data/successors/successor news.txt",
+   "line": 213,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A short video plays showing the construction of a new spaceport on the surface of a prospering Successor planet. Several warships of the High Houses painted in ceremonial livery pass across the screen, showing clearly who is to be thanked."
+  },
+  {
+   "idx": 85,
+   "id": "N|successor_news|word|214|0",
+   "path": "data/successors/successor news.txt",
+   "line": 214,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A proud-looking Successor naval officer stands before an imposing-looking warship: \"Enlist!\" the caption reads. \"See the stars today!\""
+  },
+  {
+   "idx": 86,
+   "id": "N|successor_news|word|215|0",
+   "path": "data/successors/successor news.txt",
+   "line": 215,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Several short vignettes play: a group of Successors unearthing ruins, the inside of a laboratory, a calm pastoral scene. A voiceover speaks: \"Uncovering our heritage; bettering our lives.\" Meticulously-dressed officials of the High Houses are present in each situation, presented as supportive overseers."
+  },
+  {
+   "idx": 87,
+   "id": "N|successor_news|word|216|0",
+   "path": "data/successors/successor news.txt",
+   "line": 216,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A advertisement plays showing the sleek lines of a Successor warship, its polished armor gleaming in the sunlight. It goes on for several minutes, showing the vessel from numerous angles while a sweeping soundtrack plays."
+  },
+  {
+   "idx": 88,
+   "id": "N|successor_news|word|227|0",
+   "path": "data/successors/successor news.txt",
+   "line": 227,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Video display"
+  },
+  {
+   "idx": 89,
+   "id": "N|successor_news|word|228|0",
+   "path": "data/successors/successor news.txt",
+   "line": 228,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Commercial advertisement"
+  },
+  {
+   "idx": 90,
+   "id": "N|successor_news|word|231|0",
+   "path": "data/successors/successor news.txt",
+   "line": 231,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A bowl of a stringy kelp-like food dances around a screen while various seasonings are applied to it. After about thirty seconds, a Successor is shown slurping some of the strands, and their skin turns a happy pink."
+  },
+  {
+   "idx": 91,
+   "id": "N|successor_news|word|232|0",
+   "path": "data/successors/successor news.txt",
+   "line": 232,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A cluster of small recreational sailing ships are shown on a pristine lake at sunset, their Successor crew either manning them or splashing happily in the water. A caption at the bottom encourages the viewer to purchase their own."
+  },
+  {
+   "idx": 92,
+   "id": "N|successor_news|word|233|0",
+   "path": "data/successors/successor news.txt",
+   "line": 233,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "An advertisement plays for the Successor Pulse Laser: it is shown being constructed in a clean, bright factory, installed on a ship, and extracting minerals from asteroids. It is never shown in a combat situation."
+  },
+  {
+   "idx": 93,
+   "id": "N|successor_news|word|234|0",
+   "path": "data/successors/successor news.txt",
+   "line": 234,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "An advertisement plays showing a variety of attractive and expensive-looking jewellery, made of gold, silver, and other stranger metals which you cannot recognize. A variety of models display it wrapped around their arms or other parts of their body, gently undulating as the camera moves."
+  },
+  {
+   "idx": 94,
+   "id": "N|successor_news|word|235|0",
+   "path": "data/successors/successor news.txt",
+   "line": 235,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A screen shows an advertisement for one of the Successor universities, showing elegant, sculptural buildings emerging from the ground under a rain-soaked sky."
+  },
+  {
+   "idx": 95,
+   "id": "N|successor_news|word|236|0",
+   "path": "data/successors/successor news.txt",
+   "line": 236,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A field of large, floral plants are shown growing long strings of gleaming metal which are quickly harvested by agricultural robots."
+  },
+  {
+   "idx": 96,
+   "id": "N|successor_news|word|237|0",
+   "path": "data/successors/successor news.txt",
+   "line": 237,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A series of images of Successor models flash one after another so quickly that it is hard to tell what they are actually advertising."
+  },
+  {
+   "idx": 97,
+   "id": "N|successor_news|word|238|0",
+   "path": "data/successors/successor news.txt",
+   "line": 238,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A short video clip is shown advertising a performance in a local concert hall. The stage is divided into two sections: one is underwater and the other is dry."
+  },
+  {
+   "idx": 98,
+   "id": "N|successor_news|word|239|0",
+   "path": "data/successors/successor news.txt",
+   "line": 239,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A bright and colorful interactive game is displayed on one of the port video screens. It accrues a small group of young Successors; they appear captivated by it."
+  },
+  {
+   "idx": 99,
+   "id": "N|successor_news|word|240|0",
+   "path": "data/successors/successor news.txt",
+   "line": 240,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "An eye covering vaguely resembling a contact lens is shown being applied to the eyes of several models, changing their color and shape when applied."
+  },
+  {
+   "idx": 100,
+   "id": "N|successor_news|word|241|0",
+   "path": "data/successors/successor news.txt",
+   "line": 241,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A shipbuilding organization advertises a members' discount on Kvelqde shuttles. They make sure to note that their operation is supported by one of the High Houses."
+  },
+  {
+   "idx": 101,
+   "id": "N|successor_news|word|242|0",
+   "path": "data/successors/successor news.txt",
+   "line": 242,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "An independent pilot briefly advertises their courier services in a pre-recorded message, offering guaranteed fastest-possible-delivery on packages under ten tons."
+  },
+  {
+   "idx": 102,
+   "id": "N|successor_news|word|254|0",
+   "path": "data/successors/successor news.txt",
+   "line": 254,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Local news report"
+  },
+  {
+   "idx": 103,
+   "id": "N|successor_news|word|255|0",
+   "path": "data/successors/successor news.txt",
+   "line": 255,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "News report"
+  },
+  {
+   "idx": 104,
+   "id": "N|successor_news|word|256|0",
+   "path": "data/successors/successor news.txt",
+   "line": 256,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "News program"
+  },
+  {
+   "idx": 105,
+   "id": "N|successor_news|word|259|0",
+   "path": "data/successors/successor news.txt",
+   "line": 259,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A broadcast quietly lists out the details of a recent weather control unit failure, which resulted in a brief evacuation but no injuries. A photo shows a few dozen Successors gathered together along a shoreline while several ships swarm in the distance."
+  },
+  {
+   "idx": 106,
+   "id": "N|successor_news|word|260|0",
+   "path": "data/successors/successor news.txt",
+   "line": 260,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A muted advertisement plays, showing architectural renders of several small underwater homes with walls that change color and texture from simulated wood, to simulated shell, to even a dark, amorphous metal resembling the hull of a starship."
+  },
+  {
+   "idx": 107,
+   "id": "N|successor_news|word|261|0",
+   "path": "data/successors/successor news.txt",
+   "line": 261,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A short broadcast discusses a recent thunderstorm, showing several colorful pictures of lightning and rain taken by locals during the event."
+  },
+  {
+   "idx": 108,
+   "id": "N|successor_news|word|262|0",
+   "path": "data/successors/successor news.txt",
+   "line": 262,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A text-only broadcast discusses a recent touch-based art performance. The script shimmers as you move your head around, the translation device doing its best to transcribe it."
+  },
+  {
+   "idx": 109,
+   "id": "N|successor_news|word|263|0",
+   "path": "data/successors/successor news.txt",
+   "line": 263,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A broadcast shows a brief interview with a local florist, who shows off a collection of their living-metal plants."
+  },
+  {
+   "idx": 110,
+   "id": "N|successor_news|word|264|0",
+   "path": "data/successors/successor news.txt",
+   "line": 264,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A formal document is shown with a column of text to the side of it. This describes it as a new trade ordinance, and lists its effects on independent merchants."
+  },
+  {
+   "idx": 111,
+   "id": "N|successor_news|word|265|0",
+   "path": "data/successors/successor news.txt",
+   "line": 265,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A brief program on erosion control and restoration is narrated, in monotone, by a tired-looking Successor in an equally drab outfit."
+  },
+  {
+   "idx": 112,
+   "id": "N|successor_news|word|266|0",
+   "path": "data/successors/successor news.txt",
+   "line": 266,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "The news report playing on the video screen is briefly interrupted to display a general-use map for the spaceport."
+  },
+  {
+   "idx": 113,
+   "id": "N|successor_news|word|278|0",
+   "path": "data/successors/successor news.txt",
+   "line": 278,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Station Report"
+  },
+  {
+   "idx": 114,
+   "id": "N|successor_news|word|279|0",
+   "path": "data/successors/successor news.txt",
+   "line": 279,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Announcement System"
+  },
+  {
+   "idx": 115,
+   "id": "N|successor_news|word|280|0",
+   "path": "data/successors/successor news.txt",
+   "line": 280,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "Public Address System"
+  },
+  {
+   "idx": 116,
+   "id": "N|successor_news|word|283|0",
+   "path": "data/successors/successor news.txt",
+   "line": 283,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A public announcement clarifies that an inefficiency in the station's atmosphere processing units was resolved overnight."
+  },
+  {
+   "idx": 117,
+   "id": "N|successor_news|word|284|0",
+   "path": "data/successors/successor news.txt",
+   "line": 284,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A schedule listing departure and arrival times for planetary shuttles is updated to account for a planetside delay."
+  },
+  {
+   "idx": 118,
+   "id": "N|successor_news|word|285|0",
+   "path": "data/successors/successor news.txt",
+   "line": 285,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A graphic displays an interactive map of the station for visitors to access."
+  },
+  {
+   "idx": 119,
+   "id": "N|successor_news|word|286|0",
+   "path": "data/successors/successor news.txt",
+   "line": 286,
+   "kind": "NEWS",
+   "context": "news",
+   "english": "A public announcement encourages residents to conserve water."
+  }
+ ]
+}

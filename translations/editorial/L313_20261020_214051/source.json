@@ -1,0 +1,128 @@
+{
+ "block": {
+  "path": "data/bunrodea/bunrodea outfits.txt",
+  "line_from": 250,
+  "line_to": 402,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Lasher Pistol|description|250|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 250,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Lasher Pistol",
+   "english": "During their wars with the Korath, it was not uncommon for Bunrodean vessels to be boarded by Korath raiders looking for technology and supplies to steal. As such, effective small arms weapons became an essential part of every Bunrodean crew that may need to fight off any boarding parties.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"During their wars with the Korath, it was not uncommon for Bunrodean vessels to be boarded by Korath raiders looking for technology and supplies to steal. As such, effective small arms weapons became an essential part of every Bunrodean crew that may need to fight off any boarding parties.\"",
+   "english_hash": "3f832693928db7ab"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Chiisana Rift Thruster|description|271|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 271,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Chiisana Rift Thruster",
+   "english": "While the Korath favor raw power in their engines, the Bunrodea favor efficiency, opting to make use of engines that produce less thrust for significantly less heat produced.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"While the Korath favor raw power in their engines, the Bunrodea favor efficiency, opting to make use of engines that produce less thrust for significantly less heat produced.\"",
+   "english_hash": "02f89cf8c7757a95"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Nami Rift Thruster|description|290|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 290,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Nami Rift Thruster",
+   "english": "Although rift engines are extremely heat efficient, their energy requirement is rather high compared to the thrust they produce, even next to terribly inefficient Korath engines.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Although rift engines are extremely heat efficient, their energy requirement is rather high compared to the thrust they produce, even next to terribly inefficient Korath engines.\"",
+   "english_hash": "c0e7569d4b8aad72"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Ookii Rift Thruster|description|309|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 309,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ookii Rift Thruster",
+   "english": "Even though the energy drawn per unit thrust of rift engines is poorer than that of Korath engines, the overall energy requirement of rift engines is still far lesser by comparison.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Even though the energy drawn per unit thrust of rift engines is poorer than that of Korath engines, the overall energy requirement of rift engines is still far lesser by comparison.\"",
+   "english_hash": "db66530528364bd8"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Subarashii Rift Thruster|description|327|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 327,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Subarashii Rift Thruster",
+   "english": "Given the lower size and thrust of rift engines, Bunrodean ships aren't well known for their pursuit capabilities. But there are rumors among some Bunrodea of an ancient cache of engines, more powerful than even those of the Korath, that would allow any ship to zip across the stars like a comet and chase down any potential target.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Given the lower size and thrust of rift engines, Bunrodean ships aren't well known for their pursuit capabilities. But there are rumors among some Bunrodea of an ancient cache of engines, more powerful than even those of the Korath, that would allow any ship to zip across the stars like a comet and chase down any potential target.\"",
+   "english_hash": "dc5d7194490216c9"
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Chiisana Rift Steering|description|346|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 346,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Chiisana Rift Steering",
+   "english": "Given that Bunrodean ships are typically focused on making heavy use of their forward facing guns, the Bunrodea favor high turn rates much more than high speeds. As such, rift steering systems are larger than the respective thruster systems of the same size category.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Given that Bunrodean ships are typically focused on making heavy use of their forward facing guns, the Bunrodea favor high turn rates much more than high speeds. As such, rift steering systems are larger than the respective thruster systems of the same size category.\"",
+   "english_hash": "7e2c00e667b1c96a"
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Nami Rift Steering|description|365|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 365,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Nami Rift Steering",
+   "english": "As with many Bunrodean systems, rift engines produce very little heat. This allows their ships to forgo the use of any significant cooling systems, leaving more room for other systems, be they defensive or offensive.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"As with many Bunrodean systems, rift engines produce very little heat. This allows their ships to forgo the use of any significant cooling systems, leaving more room for other systems, be they defensive or offensive.\"",
+   "english_hash": "d92df7b1fcdeef48"
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Ookii Rift Steering|description|384|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 384,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ookii Rift Steering",
+   "english": "Although the focus on steering over thrust makes Bunrodean ships easy targets to track, the power of their weapons systems would leave anyone foolish to believe that they are sitting ducks.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Although the focus on steering over thrust makes Bunrodean ships easy targets to track, the power of their weapons systems would leave anyone foolish to believe that they are sitting ducks.\"",
+   "english_hash": "9597bf7078ff507e"
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Subarashii Rift Steering|description|402|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 402,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Subarashii Rift Steering",
+   "english": "The largest of the rift steering systems, these engines are what allow the Bunrodea's heavy gunships to bear their many guns toward their unfortunate target.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The largest of the rift steering systems, these engines are what allow the Bunrodea's heavy gunships to bear their many guns toward their unfortunate target.\"",
+   "english_hash": "b27b5acde822120a"
+  }
+ ]
+}

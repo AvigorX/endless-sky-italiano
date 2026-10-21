@@ -1,0 +1,17 @@
+{
+ "1": "With an asteroid scanner and a fleet, you can direct your fleet to assist with mining operations and collect mined resources.",
+ "2": "If your escort or fighter has no weapons but has cargo space, then it will chase after mined resources instead of mining.",
+ "3": "Shortcuts for asteroid targeting:",
+ "4": "\t<Select nearest asteroid> selects the nearest asteroid if you have an asteroid scanner.",
+ "5": "\t<Fleet: Fight my target> will focus your fleet on mining a targeted asteroid.",
+ "6": "\t<Fleet: Harvest flotsam> will toggle whether your fleet tries to pick up flotsam.",
+ "7": "Alternate targeting:",
+ "8": "\tLeft click - will target an asteroid without mining it.",
+ "9": "\tRight click - will focus your fleet to chase an asteroid and mine it.",
+ "10": "You can order your escort to pick up discarded cargo or asteroid flotsam.",
+ "11": "<Fleet: Harvest flotsam> will order your fleet to collect flotsam if they have free cargo.",
+ "12": "Equip an asteroid scanner to learn more.",
+ "15": "You have a carrier which can use fighters to collect dropped materials if the fighter has cargo space.",
+ "16": "\tIn Preferences and Settings under the Gameplay section, turn on \"Fighters transfer cargo\" to learn more.",
+ "17": "Welcome to the sky! To travel to another star system, press <View star map> to view your map, and click on the system you want to travel to. Your hyperdrive can only travel along the \"links\" shown on your map. After selecting a destination, close your map and press <Initiate hyperspace jump> to jump to that system."
+}

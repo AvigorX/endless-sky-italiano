@@ -1,0 +1,187 @@
+{
+ "block": {
+  "path": "data/pug/pug missions.txt",
+  "line_from": 20,
+  "line_to": 64,
+  "units": 16
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Ruin: Landing|You scan this planet's surface and pick up only a single, faint energy source. Cautiously, you approach it, and find an abandoned fueling depot: a ring of landing pads around a cluster of tanks of all different shapes and sizes. Some of the tanks must be cryogenic, because they are covered in ice. A few slow-moving insectoid robots are busy clearing off the ice and cleaning the tanks, but they do not appear to be armed and you see no sign of any other creatures or of any defense systems.|20|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 20,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Ruin: Landing",
+   "english": "You scan this planet's surface and pick up only a single, faint energy source. Cautiously, you approach it, and find an abandoned fueling depot: a ring of landing pads around a cluster of tanks of all different shapes and sizes. Some of the tanks must be cryogenic, because they are covered in ice. A few slow-moving insectoid robots are busy clearing off the ice and cleaning the tanks, but they do not appear to be armed and you see no sign of any other creatures or of any defense systems.",
+   "italian": "Scansioni la superficie del pianeta e rilevi una sola, debole fonte di energia. Ti avvicini con cautela e trovi un deposito di rifornimento abbandonato: un anello di piazzole di atterraggio attorno a un gruppo di serbatoi di forme e dimensioni diverse. Alcuni devono essere criogenici, perché sono coperti di ghiaccio. Alcuni robot insettoidi si muovono lentamente e sono impegnati a togliere il ghiaccio e a pulire i serbatoi, ma non sembrano armati e non vedi traccia di altre creature né di sistemi di difesa.",
+   "ratio": 1.041
+  },
+  {
+   "idx": 2,
+   "id": "mission:Ruin: Landing|\tYou land your ship. Your sensors say the air is safe to breathe, but you wear a respirator just in case as you step off your ship and explore the depot. The spider robots pay no attention to you. From the fact that some of the tanks are covered in frost and others are not, you would guess that each one contains a different fuel, and each tank has dozens of different connectors branching off from it. With surprise, you discover that one of those connectors is the style used in human space, and you are able to use it to refuel your ship.|21|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 21,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Ruin: Landing",
+   "english": "\tYou land your ship. Your sensors say the air is safe to breathe, but you wear a respirator just in case as you step off your ship and explore the depot. The spider robots pay no attention to you. From the fact that some of the tanks are covered in frost and others are not, you would guess that each one contains a different fuel, and each tank has dozens of different connectors branching off from it. With surprise, you discover that one of those connectors is the style used in human space, and you are able to use it to refuel your ship.",
+   "italian": "\tFai atterrare la nave. I sensori dicono che l'aria è respirabile, ma per sicurezza indossi un respiratore mentre scendi ed esplori il deposito. I robot ragno non ti badano. Dal fatto che alcuni serbatoi siano coperti di brina e altri no, diresti che ognuno contenga un carburante diverso, e da ogni serbatoio si diramano decine di raccordi differenti. Con sorpresa scopri che uno di quei raccordi è del tipo usato nello spazio umano, e riesci a usarlo per rifornire la nave.",
+   "ratio": 0.876
+  },
+  {
+   "idx": 3,
+   "id": "mission:Ruin: Landing|\tOther than the robots and the fog swirling in the valley below you, there is no sign of life or motion here, and the air is uncomfortably moist and cold despite the hot steam rising up from a few nearby vents in the ground.|22|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 22,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Ruin: Landing",
+   "english": "\tOther than the robots and the fog swirling in the valley below you, there is no sign of life or motion here, and the air is uncomfortably moist and cold despite the hot steam rising up from a few nearby vents in the ground.",
+   "italian": "\tA parte i robot e la nebbia che vortica nella valle sotto di te, non c'è segno di vita né di movimento, e l'aria è scomodamente umida e fredda nonostante il vapore caldo che sale da alcune fenditure nel terreno lì vicino.",
+   "ratio": 0.991
+  },
+  {
+   "idx": 4,
+   "id": "mission:Pug in Wanderer Space|This world is populated by the Pug, the same enigmatic species that recently invaded human space - and left without giving you any clear answers about why they did so. Here, they appear peaceful enough, but they are ignoring you completely. Do you want to try to talk to one of them?|43|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 43,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "This world is populated by the Pug, the same enigmatic species that recently invaded human space - and left without giving you any clear answers about why they did so. Here, they appear peaceful enough, but they are ignoring you completely. Do you want to try to talk to one of them?",
+   "italian": "Questo mondo è popolato dai Pug, la stessa enigmatica specie che di recente ha invaso lo spazio umano - e se n'è andata senza darti risposte chiare sul perché. Qui sembrano abbastanza pacifici, ma ti ignorano del tutto. Vuoi provare a parlare con uno di loro?",
+   "ratio": 0.915
+  },
+  {
+   "idx": 5,
+   "id": "mission:Pug in Wanderer Space|\t(Yes.)|45|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 45,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\t(Yes.)",
+   "italian": "\t(Sì.)",
+   "ratio": 0.857
+  },
+  {
+   "idx": 6,
+   "id": "mission:Pug in Wanderer Space|\t(No, don't risk it.)|46|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 46,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\t(No, don't risk it.)",
+   "italian": "\t(No, non rischiare.)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "mission:Pug in Wanderer Space|\tYou try to talk to several of the Pug who are walking by, but they do not respond or even look at you. If you stand to block their path, they step around you, and you determine by intentionally bumping into one of them that they are real and not just a holographic projection. From the brief eye contact that a few of them make before looking away from you, you get the feeling that they are intentionally ignoring you.|48|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 48,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\tYou try to talk to several of the Pug who are walking by, but they do not respond or even look at you. If you stand to block their path, they step around you, and you determine by intentionally bumping into one of them that they are real and not just a holographic projection. From the brief eye contact that a few of them make before looking away from you, you get the feeling that they are intentionally ignoring you.",
+   "italian": "\tProvi a parlare con diversi Pug che passano, ma non rispondono né ti guardano. Se ti metti a bloccargli la strada, ti girano attorno, e urtandone uno di proposito ti accerti che sono reali e non proiezioni olografiche. Da qualche fugace contatto visivo, prima che distolgano lo sguardo, hai la sensazione che ti stiano ignorando di proposito.",
+   "ratio": 0.817
+  },
+  {
+   "idx": 8,
+   "id": "mission:Pug in Wanderer Space|\tThe Pug are not terribly strong. You could probably grab one of them and demand that it answer your questions, without much risk of it hurting you.|49|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 49,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\tThe Pug are not terribly strong. You could probably grab one of them and demand that it answer your questions, without much risk of it hurting you.",
+   "italian": "\tI Pug non sono molto forti. Potresti probabilmente afferrarne uno e pretendere che risponda alle tue domande, senza molti rischi di farti male.",
+   "ratio": 0.973
+  },
+  {
+   "idx": 9,
+   "id": "mission:Pug in Wanderer Space|\t(Grab one of them.)|51|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 51,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\t(Grab one of them.)",
+   "italian": "\t(Afferrane uno.)",
+   "ratio": 0.85
+  },
+  {
+   "idx": 10,
+   "id": "mission:Pug in Wanderer Space|\t(Give up and leave.)|52|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 52,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\t(Give up and leave.)",
+   "italian": "\t(Rinuncia e vattene.)",
+   "ratio": 1.048
+  },
+  {
+   "idx": 11,
+   "id": "mission:Pug in Wanderer Space|\tYou grab one of the Pug by the arm. \"You need to give me some answers,\" you say. It begins to babble in a language you do not know, and a crowd of Pug gather around you. Eventually a few more of them arrive holding some sort of staff that they point at you menacingly, while shouting commands at you, again in their own language. It is possible that none of the Pug here actually speak the human language, in which case trying to communicate with them will be fruitless.|54|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 54,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\tYou grab one of the Pug by the arm. \"You need to give me some answers,\" you say. It begins to babble in a language you do not know, and a crowd of Pug gather around you. Eventually a few more of them arrive holding some sort of staff that they point at you menacingly, while shouting commands at you, again in their own language. It is possible that none of the Pug here actually speak the human language, in which case trying to communicate with them will be fruitless.",
+   "italian": "\tAfferri un Pug per il braccio. \"Devi darmi delle risposte\", dici. Lui comincia a blaterare in una lingua che non conosci, e una folla di Pug ti si raduna attorno. Alla fine ne arrivano altri, che impugnano una specie di bastone e te lo puntano contro in modo minaccioso, gridandoti ordini, sempre nella loro lingua. È possibile che nessuno dei Pug qui parli davvero la lingua umana, e in tal caso cercare di comunicare con loro sarà inutile.",
+   "ratio": 0.938
+  },
+  {
+   "idx": 12,
+   "id": "mission:Pug in Wanderer Space|\t(Let the Pug go, and walk away.)|56|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 56,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\t(Let the Pug go, and walk away.)",
+   "italian": "\t(Lascia andare il Pug e allontanati.)",
+   "ratio": 1.152
+  },
+  {
+   "idx": 13,
+   "id": "mission:Pug in Wanderer Space|\t(Threaten to shoot them.)|58|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 58,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\t(Threaten to shoot them.)",
+   "italian": "\t(Minaccia di sparargli.)",
+   "ratio": 0.962
+  },
+  {
+   "idx": 14,
+   "id": "mission:Pug in Wanderer Space|\tThe moment you reach for your gun, one of the armed Pug fires a burst of light from its staff, and a warm, pleasant feeling washes over you - the most wonderful feeling you have ever experienced. In a daze, you begin to wander back to your ship, stopping occasionally to marvel at the things around you that you had not noticed before: the glittering of sunlight on the water, the sparkling drops of ocean spray hanging from the tips of sea marsh grass, the sky that has the bluest blueness of all the blues you have ever seen. It is all so beautiful that you start to cry. Once you reach your ship, you sit in the cockpit fascinated by the blinking lights on the control panel and unable to remember what any of them are for.|59|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 59,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\tThe moment you reach for your gun, one of the armed Pug fires a burst of light from its staff, and a warm, pleasant feeling washes over you - the most wonderful feeling you have ever experienced. In a daze, you begin to wander back to your ship, stopping occasionally to marvel at the things around you that you had not noticed before: the glittering of sunlight on the water, the sparkling drops of ocean spray hanging from the tips of sea marsh grass, the sky that has the bluest blueness of all the blues you have ever seen. It is all so beautiful that you start to cry. Once you reach your ship, you sit in the cockpit fascinated by the blinking lights on the control panel and unable to remember what any of them are for.",
+   "italian": "\tAppena allunghi la mano verso l'arma, uno dei Pug armati spara un getto di luce dal bastone, e una sensazione calda e piacevole ti invade: la cosa più meravigliosa che tu abbia mai provato. Inebetito, cominci a tornare verso la nave, fermandoti ogni tanto a stupirti di cose che prima non avevi notato: il luccichio del sole sull'acqua, le gocce scintillanti di spruzzi marini appese alle punte dell'erba di palude, il cielo che ha il blu più blu di tutti i blu che tu abbia mai visto. È tutto così bello che ti metti a piangere. Arrivato alla nave, ti siedi nella cabina di pilotaggio affascinato dalle luci che lampeggiano sul pannello e incapace di ricordare a che cosa serva ciascuna.",
+   "ratio": 0.948
+  },
+  {
+   "idx": 15,
+   "id": "mission:Pug in Wanderer Space|\tA few hours later, the wonderful feeling is replaced by a wave of nausea and a pounding headache.|60|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 60,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\tA few hours later, the wonderful feeling is replaced by a wave of nausea and a pounding headache.",
+   "italian": "\tPoche ore dopo, quella sensazione meravigliosa lascia il posto a un'ondata di nausea e a un martellante mal di testa.",
+   "ratio": 1.204
+  },
+  {
+   "idx": 16,
+   "id": "mission:Pug in Wanderer Space|\tYou decide to play it safe and return to your ship. The Pug remain as enigmatic as ever.|64|0",
+   "path": "data/pug/pug missions.txt",
+   "line": 64,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Pug in Wanderer Space",
+   "english": "\tYou decide to play it safe and return to your ship. The Pug remain as enigmatic as ever.",
+   "italian": "\tDecidi di non rischiare e torni alla nave. I Pug restano enigmatici come sempre.",
+   "ratio": 0.91
+  }
+ ]
+}

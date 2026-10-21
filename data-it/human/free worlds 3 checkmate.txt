@@ -1,0 +1,2463 @@
+# Copyright (c) 2015 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "FWC Scouting 1"
+	landing
+	name "Esplora Kaus Borealis"
+	description "Attraversa il sistema <waypoints> per stabilire quanto è forte la presenza della Marina lì, mentre JJ lavora a radunare una flotta per attaccarla."
+	autosave
+	source "New Portland"
+	waypoint "Kaus Borealis"
+	to offer
+		has "FW Liberate Delta Sagittarii: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log `Hai scacciato la Marina da Delta Sagittarii con l'aiuto del "Branco di Lupi", un gruppo di miliziani favorevole a misure più estreme che ha lanciato un attacco preventivo prima che arrivasse la forza principale delle Free Worlds. Le Free Worlds sono ora impegnate a combattere la Repubblica fino a ridurla all'impotenza invece di dimostrare la propria innocenza; il disertore è stato ripreso dal Sindacato e tutte le informazioni che aveva da condividere sono ormai perdute.`
+		conversation
+			`È stata una battaglia combattuta, e sarebbe potuta andare molto diversamente senza l'attacco del Branco di Lupi, avvenuto prima del tuo arrivo e che ha messo fuori uso o distrutto la maggior parte della flotta della Marina. Non puoi fare a meno di chiederti come abbia fatto il Branco di Lupi a mettere insieme una flotta abbastanza grande da fare un danno simile.`
+			`	"Beh," dice JJ, "il dado è tratto. È troppo tardi ormai per chiedersi che cosa fosse quella storia con il Sindacato; ora siamo in una lotta all'ultimo sangue con la Repubblica. Il che significa che dobbiamo colpire presto, prima che abbiano il tempo di portare altri rinforzi. Capitano <last>, vorrei che facessi una missione di ricognizione mentre io lavoro a radunare una nuova flotta. Il nostro prossimo obiettivo dev'essere la base della Marina su New Iceland. Se riusciamo a scacciarli da quel sistema, la nostra posizione migliorerà molto. Quindi vorrei che passassi per Kaus Borealis e tornassi qui a riferire sulla consistenza della loro flotta. Chiaro?"`
+			choice
+				`	"Nessun problema."`
+					goto freya
+				`	"Certo, ma prima puoi dirmi come ha fatto il Branco di Lupi a fare così tanti danni alla Marina?"`
+			`	"Come ho detto," dice JJ, "hanno radunato un numero sorprendente di cacciatori di taglie e altra gente che opera ai margini della società, e che simpatizza per la nostra causa."`
+			label freya
+			`	"Un'altra cosa," dice Freya, "mentre sei a nord, mi chiedevo se potessi aiutare a scortare un convoglio dal sistema Zeta Aquilae. Non c'è nessuna fretta estrema, ma trasportano i rifornimenti che ci servono per un nuovo nucleo del reattore per i Dreadnought, quindi prima li incontri, prima avremo i nuovi reattori."`
+				accept
+	
+	npc
+		personality staying heroic
+		system "Kaus Borealis"
+		government "Republic"
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+		fleet 3
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+
+
+mission "FWC Attack Kaus Borealis"
+	landing
+	name "Attacca Kaus Borealis"
+	description "Distruggi la flotta della Marina che difende Kaus Borealis. Il Branco di Lupi li attaccherà per primo per ammorbidirli."
+	autosave
+	source "New Portland"
+	destination "New Iceland"
+	clearance
+	to offer
+		has "FWC Scouting 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fwc attack kaus borealis"
+		conversation
+			`Quando torni su New Portland, una flotta consistente delle Free Worlds è già parcheggiata sulle piazzole intorno allo spazioporto. JJ ti spiega: "Quando la Marina ha attaccato e ha tagliato in due il nostro territorio, molte di queste navi sono rimaste separate dalla loro catena di comando e si sono rifugiate dove potevano. Quindi ci è voluto un po' per radunarle tutte. E ora ci serve un'altra vittoria che dia entusiasmo, o ricominceranno a disperdersi."`
+			choice
+				`	"Stai dicendo che rischiamo che i membri della nostra milizia disertino?"`
+					goto desert
+				`	"Beh, il fatto che siano tutti tornati a combattere è un buon segno."`
+					goto fight
+			label desert
+			`	"Sì," dice JJ, "alcuni l'hanno già fatto. Mettiti nei panni di un miliziano: ti sei arruolato per difendere un pianeta da qualche pirata ogni tanto, non per passare anni a spostarti da un sistema all'altro combattendo la Marina. Alcuni ne hanno semplicemente abbastanza. Questa guerra deve finire, e finire presto."`
+				goto battle
+			label fight
+			`	"Beh," dice JJ, "almeno alcuni sono tornati a combattere. Ma molti no. Mettiti nei panni di un miliziano: ti sei arruolato per difendere un pianeta da qualche pirata ogni tanto, non per passare anni a spostarti da un sistema all'altro combattendo la Marina. Alcuni ne hanno semplicemente abbastanza. Questa guerra deve finire, e finire presto."`
+				goto battle
+			label battle
+			choice
+				`	"Beh, non possiamo certo conquistare la Repubblica. Non dovremmo provare la diplomazia?"`
+					goto diplomacy
+				`	"A me sembra che dobbiamo mostrare una forza abbastanza convincente perché il Parlamento accetti un cessate il fuoco."`
+					goto strength
+			label diplomacy
+			`	"Sì," dice JJ, "alla fine dovrà essere una soluzione diplomatica. Ma dobbiamo negoziarla da una posizione di forza, non di debolezza. E questo significa scacciare la Marina dal nostro territorio."`
+				goto plan
+			label strength
+			`	"Esattamente," dice JJ, "e l'unico modo per farlo è scacciare la Marina dal nostro territorio. E se non dovesse bastare... abbiamo dei piani anche per quell'eventualità."`
+				goto plan
+			label plan
+			`	"Quindi ora attacchiamo Kaus Borealis?" chiedi.`
+			`	"Esatto," dice. "Ancora una volta il Branco di Lupi andrà avanti per primo e li ammorbidirà, poi tu e le tue navi farete pulizia. Ho già dato al Branco di Lupi l'ordine di attaccare, quindi vai dritto a Kaus Borealis per unirti alla mischia prima che abbiano il tempo di riprendersi."`
+				accept
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi della Marina che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		event "fwc capture kaus borealis"
+	
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		fleet
+			names "free worlds capital"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Dreadnought"
+				"Skein"
+				"Finch" 6
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon (Heavy)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon (Plasma)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Osprey"
+	
+	npc evade
+		personality staying heroic
+		system "Kaus Borealis"
+		government "Republic"
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+		fleet 3
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+	
+	npc
+		personality staying derelict
+		system "Kaus Borealis"
+		government "Republic"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Frigate" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Frigate" 2
+
+
+
+mission "FWC Cebalrai 1"
+	landing
+	name "Esplora Cebalrai"
+	description "Esplora la presenza della Marina nel sistema <waypoints>, poi riferisci a Tomek su <planet>."
+	autosave
+	source "New Iceland"
+	waypoint "Cebalrai"
+	to offer
+		has "FWC Attack Kaus Borealis: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Hai conquistato il sistema Kaus Borealis strappandolo alla Marina, anche se la gente del posto è ancora leale alla Repubblica. Hai anche scoperto che le navi del Branco di Lupi usano missili nucleari, ed è per questo che sono stati così efficaci nel decimare la flotta della Marina."
+		conversation
+			`Mentre porti la nave ad atterrare, ti rendi conto che questa è la prima volta che combatti per un sistema stellare della Repubblica che non aveva deciso spontaneamente di unirsi alle Free Worlds, e non sei sicuro di che cosa fare adesso. Per fortuna, presto cominciano ad arrivare altre navi delle Free Worlds, e una di queste trasporta Alondo. Tomek è con lui. "Ciao, <first>," dice Tomek. "Scommetto che non ti aspettavi di rivedermi, eh?"`
+			`	Alondo dice: "<first>, vi lascio a voi due, così vi aggiornate. Io devo andare subito a parlare con il governatore. Non c'è modo che la gente del posto non si sia accorta delle esplosioni nucleari nello spazio proprio sopra la loro testa."`
+			choice
+				`	"Come? Non stavamo usando testate nucleari, solo armi convenzionali."`
+					goto conventional
+				`	"Aspetta, è questo che stava usando il Branco di Lupi?"`
+					goto wolf
+			label conventional
+			`	"Sì," dice Tomek, "ma il Branco di Lupi usava testate nucleari." Vedendo la tua espressione incredula, dice: "Beh, come pensavi che facessero tutti quei danni? Credevi che avessero una flotta da battaglia enorme nascosta da qualche parte che nessuno conosce?"`
+				goto next
+			label wolf
+			`	"Esatto," dice Tomek. Non sembra affatto contento. "In che altro modo avrebbero potuto fare così tanti danni alla Marina? Non è che abbiano una flotta da battaglia enorme messa da parte da qualche parte."`
+				goto next
+			label next
+			`	Alondo si affretta verso il municipio per cercare di incontrare il governatore, e Tomek spiega: "Il Branco di Lupi ha solo una manciata di navi molto veloci armate di testate nucleari. Entrano nel sistema, scaricano i missili su tutti i bersagli che trovano, e poi se la svignano prima che la Marina abbia il tempo di reagire. Bel pasticcio in cui vi siete cacciati mentre ero via, comunque."`
+			choice
+				`	"Non eri agli arresti domiciliari?"`
+				`	"Quindi il fatto che tu sia qui significa che il Senato ti ha graziato?"`
+			`	"Sì," dice. "Dopo quell'incidente con gli Alphas su Poisonwood, alcuni al Senato hanno cominciato a pensare che avessi ragione a considerare i pirati una minaccia. E quando la Marina è passata all'offensiva, hanno deciso che servivo allo sforzo bellico. Quindi sono stato reintegrato. Sono contento di sapere che ora sei anche tu nel Consiglio."`
+			choice
+				`	"Allora, qual è il nostro prossimo passo?"`
+					goto end
+				`	"Continuo a non capire perché usiamo testate nucleari. Né da dove le prendiamo."`
+			`	Tomek aggrotta la fronte. "Non ne sono contento nemmeno io. Il Branco di Lupi le compra da un signore della guerra su Greenrock. E lo paga con l'uranio, quindi ogni testata che ci dà significa una o due che può costruirsi da solo. Non è una bella situazione, se vuoi la mia opinione, ma immagino che il Branco di Lupi pensasse che fosse l'unico modo per ribaltare le sorti della guerra."`
+			`	"Allora, che cosa facciamo adesso?" chiedi.`
+			label end
+			`	"Beh," dice, "se riusciamo a prendere Cebalrai, tutto il nostro territorio resterà dietro appena due colli di bottiglia, il che ci permetterà di difenderci dalla Marina senza sparpagliare troppo la flotta. Quindi come prossimo passo vorrei che andassi a esplorare il sistema Cebalrai e riferissi sulla posizione della Marina."`
+				accept
+	on visit
+		dialog phrase "generic waypoint on visit"
+	
+	on enter "Cebalrai"
+		dialog
+			`Ci sono alcune navi della Marina qui, ma niente a che vedere con quelle che c'erano nel sistema Kaus Borealis prima del tuo ultimo attacco. Forse la Marina ha deciso di ritirare le sue forze.`
+	
+	npc
+		personality staying heroic
+		system "Cebalrai"
+		government "Republic"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Gunboat (Mark II)" 2
+
+
+
+mission "FWC Cebalrai 1B"
+	landing
+	name "Cattura Cebalrai"
+	description "Guida un attacco al sistema Cebalrai e scaccia o distruggi tutte le navi della Marina che trovi."
+	autosave
+	source "New Iceland"
+	destination "Tundra"
+	clearance
+	passengers 1
+	to offer
+		has "FWC Cebalrai 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fwc attack cebalrai"
+		event "fw tarazed republic"
+		conversation
+			`Incontri Tomek e Alondo e racconti loro che le difese nel sistema Cebalrai non sembravano particolarmente forti. "Devono aver visto come stavano le cose e ritirato il resto della flotta," dice Alondo.`
+			`	"O," dice Tomek, "sono cauti all'idea di affrontarci di nuovo, ora che sanno che siamo disposti a usare testate nucleari. Il che, per inciso, continua a non piacermi. È solo questione di tempo prima che rispondano con la stessa moneta. Ma in ogni caso la prossima mossa è chiara: porta una flotta a Cebalrai e conquista il sistema. <first>, sarai tu al comando di quella flotta. Alondo può viaggiare con te per gestire le conseguenze diplomatiche."`
+			`	"Prima di andare avanti," dice Alondo, "dovete sapere che ho appena saputo che Tarazed ha deciso di troncare ufficialmente i rapporti con noi."`
+			`	Tomek sembra piuttosto cupo prima di dire: "Mossa ardita, per un sistema che abbiamo completamente circondato. Non sono affari nostri, al momento. Andiamo a Cebalrai."`
+				accept
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi della Marina che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		event "fwc capture cebalrai"
+	
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Bastion"
+				"Fury (Flamethrower)" 4
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon (Heavy)"
+				"Hawk" 2
+		fleet
+			names "free worlds capital"
+			variant
+				"Osprey"
+				"Argosy (Blaster)" 2
+	
+	npc evade
+		personality staying heroic
+		system "Cebalrai"
+		government "Republic"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Frigate (Mark II)" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Frigate (Mark II)"
+				"Gunboat (Mark II)" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Frigate"
+				"Gunboat" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser"
+				"Combat Drone" 4
+				"Frigate"
+
+
+
+mission "FWC Nuke Supply 1"
+	landing
+	name "Convoglio di uranio"
+	description "Va' su Oblivion per scortare un mercantile che consegna uranio a un signore della guerra su Greenrock."
+	autosave
+	source Tundra
+	destination Oblivion
+	to offer
+		has "FWC Cebalrai 1B: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Mentre porti la nave ad atterrare, senti uno strano tintinnio sullo scafo, simile al suono di volare attraverso uno sciame di micrometeoriti. Dopo qualche secondo capisci che è il rumore della tua nave colpita da armi leggere dalla città sotto di te. Lo scafo è troppo resistente perché i proiettili lo danneggino, ma il messaggio è chiaro: qui non sei il benvenuto.`
+			`	Lo spazioporto è apparentemente deserto, e nessuno sembra ansioso di uscire a salutarti. Qualche proiettile continua a rimbalzare innocuo sullo scafo, sparato da cecchini negli edifici vicini. "Credo che per me sia meglio contattare il governatore via radio," dice Alondo.`
+			choice
+				`	"Non sanno che la nostra flotta potrebbe distruggerli facilmente, se volessimo?"`
+					goto destroy
+				`	"Pensi che abbiamo qualche possibilità di un accordo di pace?"`
+					goto peace
+			label destroy
+			`	"Sarebbe un precedente orribile," dice Alondo, "forse peggiore del fatto che usiamo testate nucleari. Se le popolazioni civili diventano un bersaglio legittimo, qualsiasi nostro mondo potrebbe essere attaccato in qualsiasi momento. E non è che ci sia modo di difendere un pianeta da un bombardamento orbitale. Nessuno potrebbe più sentirsi al sicuro a casa propria."`
+				goto next
+			label peace
+			`	"Lo spero," dice Alondo. "Li lasceremo sparare ancora un po', per sfogare la rabbia e dimostrare il loro punto. Poi, quando vedranno che la Marina non verrà a salvarli, negozieremo. È davvero la nostra unica alternativa. Non voglio essere la persona che autorizza il primo attacco contro obiettivi civili dall'alba della Repubblica."`
+				goto next
+			label next
+			`	Aspetti circa un'ora. Nel frattempo altre navi delle Free Worlds continuano a entrare nel sistema, e una di queste trasporta Tomek. Ti chiama via radio e dice: "Credo che qui abbiamo la situazione sotto controllo, il che significa che c'è una nuova missione per te. Probabilmente non ti piacerà, ma dobbiamo che tu scorti un mercantile da Oblivion. Parte del nostro patto in corso con il Diavolo: un carico di uranio diretto a Greenrock."`
+			`	Una nave delle Free Worlds atterra abbastanza vicino alla tua perché Alondo possa trasferirsi senza essere visto dai cecchini. "Buona fortuna," dice andandosene. "Spero che al tuo ritorno avremo negoziato un qualche incontro con il Parlamento."`
+				accept
+
+
+
+mission "FWC Nuke Supply: Enemies"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "FWC Nuke Supply 1: done"
+	
+	to fail
+		has "FWC Nuke Supply 1C: done"
+	
+	npc kill
+		government Republic
+		personality nemesis heroic
+		system Cebalrai
+		fleet
+			names "republic capital"
+			variant
+				"Gunboat (Mark II)" 3
+	npc kill
+		government Republic
+		personality nemesis heroic
+		system Castor
+		fleet
+			names "republic capital"
+			variant
+				"Gunboat (Mark II)" 3
+	npc kill
+		government Republic
+		personality nemesis heroic
+		system Betelgeuse
+		fleet
+			names "republic capital"
+			variant
+				"Gunboat (Mark II)" 3
+
+
+
+mission "FWC Nuke Supply 1B"
+	landing
+	name "Convoglio di uranio"
+	description "Scorta un mercantile che consegna uranio a un signore della guerra su Greenrock."
+	autosave
+	source Oblivion
+	destination Greenrock
+	clearance
+	to offer
+		has "FWC Nuke Supply 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Atterri su <origin> e incontri il capitano dal volto cupo di un trasporto container di nome Blue Yonder. "Il carico è già a bordo," dice, "e sono pronto a partire. Prima ci togliamo questa roba dalle stive e posso tornare a trasportare cibo e medicine, meglio è. Spero davvero che voi del Consiglio sappiate quello che fate."`
+				accept
+	
+	npc accompany save
+		personality escort timid
+		government Merchant
+		ship "Container Transport" "F.S. Blue Yonder"
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma la Blue Yonder non è ancora qui! Meglio ripartire e aspettare che arrivi in questo sistema."
+
+
+
+mission "FWC Nuke Supply 1C"
+	landing
+	name "Convoglio di testate"
+	description "Scorta un mercantile che trasporta testate nucleari fino a Solace."
+	source Greenrock
+	destination Solace
+	to offer
+		has "FWC Nuke Supply 1B: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Hai consegnato un carico di uranio arricchito alla fortezza di un signore della guerra su Greenrock, in cambio di testate che le Free Worlds useranno contro la Marina. Speriamo che stringere un rapporto così amichevole con criminali pericolosi non crei problemi alle Free Worlds in futuro."
+		conversation
+			`Atterri in una delle tante fortezze private su Greenrock, di proprietà di vari signori della guerra in competizione. Alcuni operai scaricano il carico dalla Blue Yonder e la riempiono con casse foderate di piombo e ben imbottite, che devono contenere testate nucleari. Non sei sicuro che ti piaccia farne parte, ma forse è vero che è l'unico modo per avere una possibilità contro la Marina.`
+				accept
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"
+	
+	npc accompany save
+		personality escort timid
+		government Merchant
+		ship "Container Transport" "F.S. Blue Yonder"
+
+
+
+mission "FWC Diplomacy 1"
+	landing
+	name "Proviamo la diplomazia"
+	description "Torna su Tundra per incontrare Alondo e portarlo a un'altra visita al Parlamento. Magari questa volta saranno disposti a negoziare una tregua."
+	autosave
+	source Solace
+	destination Tundra
+	to offer
+		has "FWC Nuke Supply 1C: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Un membro del Branco di Lupi che si presenta come "Odie" sovrintende allo scarico delle testate dalla tua nave. "Eccellente," dice. "Ci vorrà un po' per installarle nei missili. Ma una volta fatto, in riconoscimento di quanto ci hai aiutato, Fifi ci ha autorizzato a vendertele, se le vuoi."`
+			choice
+				`	"Ottimo! Credo che ne vorrei una dozzina."`
+					goto yes
+				`	"Scusa, sto seguendo gli ordini portando qui questo convoglio, ma non voglio avere niente a che fare con l'uso di armi nucleari, nemmeno per vincere questa guerra."`
+					goto no
+				`	"Aspetta, 'Fifi'? È la vostra capa?"`
+					goto fifi
+			label yes
+			`	Ride. "Temo che non sia possibile. A differenza della maggior parte dei sistemi missilistici, non abbiamo ancora sviluppato nessun tipo di alimentatore che ti permetta di lanciare più missili dalla stessa bocca di fuoco. Quindi è un'arma che puoi sparare una volta sola da una data bocca. Ma il lato positivo è che due bastano a tirare giù gli scudi anche della nave più grande della Marina."`
+				goto next
+			label no
+			`	"È comprensibile," dice. "E anche sciocco e miope. Ma capisco perché alcuni vogliano aggrapparsi all'idea che la guerra sia una specie di nobile impresa invece di una lotta per la sopravvivenza senza esclusione di colpi."`
+				goto next
+			label fifi
+			`	"Sì," dice, "Fifi è la capa del Branco di Lupi. Ed è una persona assolutamente feroce. Ti assicuro che non vuoi essere responsabile di averla contrariata. Non che ti capiterà mai, naturalmente, perché siamo tutti dalla stessa parte." Sorride.`
+				goto next
+			label next
+			`	Poco dopo che ha finito di scaricare il carico, ricevi un messaggio da Alondo: "Buone notizie, <first>! La Repubblica ha accettato di permetterci una visita diplomatica al Parlamento. Torna qui su <planet> in fretta, prima che cambino idea."`
+				accept
+
+
+
+mission "FWC Diplomacy 1B"
+	landing
+	name "Proviamo la diplomazia"
+	description "Va' sulla Terra con Alondo e incontra il Parlamento per cercare di negoziare i termini di una tregua."
+	autosave
+	source Tundra
+	destination Earth
+	clearance
+	to offer
+		has "FWC Diplomacy 1: done"
+	passengers 2
+	blocked "Hai raggiunto <origin>, ma non hai una cuccetta libera per Alondo! Dovresti tornare su <origin> quando ne avrai liberata una."
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fw safe passage starts"
+		event "fw safe passage ends" 7
+		conversation
+			`Quando incontri Alondo, sembra entusiasta e ottimista. "La Repubblica ha concesso una settimana di salvacondotto," dice, "giusto il tempo di andare sulla Terra e tornare. E per di più ho detto loro che una delle nostre condizioni sarebbe stata la liberazione reciproca di tutti i prigionieri di guerra, compresa Katya, e hanno accettato."`
+			choice
+				`	"È un'ottima notizia! Andiamo!"`
+					goto escort
+				`	"Aspetta, non è la terza volta che promettono di restituirci Katya? Comincio a pensare che non sia nemmeno viva."`
+			`	"Beh, spero sinceramente che tu ti sbagli," dice Alondo. "Mi manca. Forse non saremmo mai arrivati a un punto così disperato se fosse stata lei a guidarci."`
+				goto escort
+			label escort
+			`	Mentre tornate alla tua nave, Alondo ti indica un'Argosy parcheggiata accanto e dice: "A proposito, questa nave ci scorterà in questa missione. Per darci un po' di difesa in più."`
+			choice
+				`	"Ehm, non credo che un'Argosy sia abbastanza forte da spostare gli equilibri in una battaglia contro la Marina."`
+				`	"Ti prego, dimmi che quella cosa non è armata con testate nucleari. Perché sarebbe un incidente diplomatico bello e buono."`
+					goto nukes
+			`	Alondo sospira. "Sì, ma il Senato pensava che se avessimo portato qualcosa di più grande sarebbe sembrata una flotta d'attacco invece di una scorta. E naturalmente non trasporta testate nucleari, perché se la Marina le rilevasse ai sensori ci abbatterebbe molto prima che possiamo atterrare sulla Terra. Comunque, andiamo e speriamo bene."`
+				accept
+			label nukes
+			`	"No, no, certo che no," dice Alondo. "Se la Marina le rilevasse ai sensori ci abbatterebbe molto prima che possiamo atterrare sulla Terra. Comunque, andiamo e speriamo bene."`
+				accept
+	
+	npc accompany save
+		government "Escort"
+		personality timid escort
+		ship "Argosy" "F.S. Big Brother"
+
+	on visit
+		dialog "Hai raggiunto <planet>, ma la Big Brother non è ancora qui! Meglio ripartire e aspettare che arrivi in questo sistema."
+
+
+
+mission "FWC Diplomacy 1C"
+	landing
+	name "Torna su <planet>"
+	description "I negoziati di pace con il Parlamento sono falliti. Torna su <planet> senza farti distruggere dalla Marina."
+	source Earth
+	destination Tundra
+	to offer
+		has "FWC Diplomacy 1B: done"
+	passengers 2
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Hai visitato la Terra con Alondo per cercare di spingere il Parlamento ad accettare un accordo di pace. I negoziati sono falliti. Siete riusciti a lasciare il pianeta sani e salvi solo perché una nave delle Free Worlds in orbita ha minacciato di bombardare l'edificio del Parlamento."
+		log "Hai liberato Katya dalla custodia della Repubblica. Non è contenta delle misure estreme che le Free Worlds stanno prendendo per vincere questa guerra."
+		event "fw safe passage ends" 1
+		conversation
+			`Quando atterri sulla Terra, la Big Brother scende allo spazioporto con te per assicurarsi che arrivi sano e salvo, poi riparte subito. Tu e Alondo venite scortati alla Camera del Parlamento. Mentre aspettate di essere chiamati a parlare, Alondo sembra molto nervoso: cammina avanti e indietro e ogni pochi minuti giocherella con l'orologio.`
+			`	Alla fine venite invitati nella sala del Parlamento, e Douglas Xao, il Presidente, dice: "Rappresentanti delle Free Worlds, siamo pronti ad ascoltare le vostre richieste."`
+			`	Alondo dice: "Non siamo qui per avanzare richieste. Siamo qui per lavorare insieme a un accordo di pace. Le Free Worlds sono pronte a restituire tutti i nostri prigionieri di guerra, a cedere alla Repubblica il controllo dei sistemi Cebalrai e Kaus Borealis, e a promettere di non espandere il nostro territorio a nord verso i cosiddetti mondi del 'granaio', anche se quei mondi volessero unirsi a noi. In cambio chiediamo solo autonomia, pace, e la restituzione dei prigionieri che avete preso, compresa Katya Reynolds."`
+			`	Xao fa un cenno alle guardie, che scortano dentro una terza persona e la fanno stare accanto a voi due. Ti ci vuole un momento per capire che è Katya, piuttosto provata e malridotta. Ti sussurra: "Quindi ora usate le testate nucleari? Di chi è stata questa dannata idea?"`
+			choice
+				`	"Era l'unico modo per resistere alla Marina."`
+				`	"Ho scoperto che era questo che stavano facendo solo dopo. Non mi piace più di quanto piaccia a te."`
+			`	"Giusto," dice, "ma spero che non ci rovini le possibilità di negoziare."`
+			`	Xao si rivolge a tutti e tre. "Vi abbiamo ascoltato," dice, "e ora ecco la nostra risposta. Katerina Reynolds, Alondo Gruyere e <first> <last>, siete accusati di tradimento e di insurrezione. Il vostro processo comincerà immediatamente."`
+			choice
+				`	"Come? Ci era stato garantito il salvacondotto!"`
+				`	"Ve ne pentirete! Se ci arrestate, le Free Worlds reagiranno contro di voi."`
+			`	Mentre cerchi di protestare, Alondo prende la parola. Non sta urlando, ma la sua voce copre il mormorio delle altre voci. "Abbiamo una nave in orbita. Se non torniamo..."`
+			`	Xao lo interrompe. "La vostra nave non è una minaccia per noi. Abbiamo già verificato che non trasporta armi nucleari, e le protezioni di questo edificio e i sistemi antimissile sono più che sufficienti contro armi convenzionali. E nella sua stiva non c'è altro che metalli comuni, non radioattivi."`
+			`	Alondo dice: "Esatto. Tungsteno, per l'esattezza. Barre aerodinamiche di tungsteno, ciascuna grande quanto un tronco d'albero, con un semplice sistema di guida a un'estremità. La nostra nave è in orbita terrestre bassa, a una velocità di circa otto chilometri al secondo." Mentre parla, la sala del Parlamento diventa via via molto silenziosa. "Quindi torneremo alla nostra nave," dice Alondo, "con la signorina Reynolds. Se la nave in orbita non riceve mie notizie ogni due minuti, sgancerà il carico, e di questo edificio non resterà che un cratere." Indica l'orologio che porta, e ti rendi conto che dev'essere una specie di comunicatore.`
+			`	Dopo una breve consultazione sussurrata con alcuni altri membri del Parlamento, Xao dice: "Perderete questa guerra, e la pagherete cara. Guardie, lasciateli tornare alla loro nave." Vi affrettate verso la vostra nave e decollate subito, consapevoli che appena sarete fuori dalla portata della Terra la Marina sarà probabilmente più che disposta ad attaccarvi.`
+				launch
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Alondo e Katya sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	
+	npc
+		government "Escort"
+		personality timid escort
+		ship "Argosy" "F.S. Big Brother"
+
+	npc
+		personality staying heroic
+		system "Vega"
+		government "Republic"
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+	
+	npc
+		personality staying heroic
+		system "Denebola"
+		government "Republic"
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+
+
+
+mission "FWC Checkmate 1"
+	landing
+	name "Difendi Cebalrai"
+	description "Distruggi le navi della Repubblica che attaccano questo sistema, poi atterra e decidi che cosa fare. I rinforzi delle Free Worlds dovrebbero essere in arrivo."
+	autosave
+	source Tundra
+	to offer
+		has "FWC Diplomacy 1C: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fwc defend cebalrai"
+		conversation
+			`Quando atterri su Tundra, Tomek sembra contento di riavere Katya, ma percepisci che è anche un po' diffidente su come reagirà alle scelte che le Free Worlds stanno facendo. "Usare testate nucleari, minacciare un bombardamento orbitale," dice Katya, "trattare il Sindacato come un alleato. Mi sono persa qualcos'altro mentre ero via?"`
+			choice
+				`	"Vogliamo solo che questa guerra finisca il prima possibile."`
+				`	"Stavamo solo cercando di non farci distruggere dalla Marina, e le cose ci sono un po' sfuggite di mano."`
+			`	"Capisco," dice. "Avevate un piano per quello che viene dopo, o state improvvisando?"`
+			`	Alondo dice: "Purtroppo un piano ce l'abbiamo. Il nostro ultimo piano di riserva. Lo chiamiamo opzione 'scacco matto'. La nostra flotta spingerà a nord..."`
+			`	Viene interrotto da uno degli uomini di Tomek che irrompe nella stanza. "Signore, abbiamo in arrivo una grande flotta della Marina. Dobbiamo mandare in aria tutte le navi immediatamente per respingerli. I rinforzi sono in viaggio, ma potrebbero non arrivare per un po'."`
+			`	Tomek dice: "Allora comincia. Capitano <last>, torna alla tua nave e aiuta nella difesa."`
+				launch
+	
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		fleet
+			names "free worlds capital"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Dreadnought"
+				"Skein"
+				"Finch" 6
+				"Fury (Flamethrower)" 4
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon (Heavy)"
+				"Hawk" 2
+		fleet
+			names "free worlds capital"
+			variant
+				"Osprey"
+				"Argosy (Blaster)" 2
+	
+	npc
+		personality heroic waiting
+		government "Free Worlds"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Bastion (Laser)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon (Laser)"
+	
+	npc evade
+		personality staying heroic
+		government "Republic"
+		fleet 3
+			names "republic small"
+			fighters
+				names "republic fighter"
+			variant
+				"Frigate (Mark II)"
+				"Gunboat (Mark II)" 2
+				"Rainmaker (Mark II)" 2
+	
+	npc evade
+		personality heroic
+		government "Republic"
+		system Menkent
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+	
+	npc evade
+		personality heroic
+		government "Republic"
+		system Sol
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+		fleet 3
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+	
+	npc evade
+		personality heroic
+		government "Republic"
+		system Pollux
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+	
+	npc
+		personality heroic
+		system Rastaban
+		government "Free Worlds"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Bastion"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon (Plasma)"
+	
+	npc
+		personality heroic
+		system Alniyat
+		government "Free Worlds"
+		fleet
+			names "free worlds capital"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Dreadnought"
+				"Skein"
+				"Finch" 6
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon (Heavy)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon (Plasma)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Osprey (Missile)"
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi della Marina che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		log "Hai difeso Tundra da una grande controffensiva della Marina. Da qui in poi, l'unica risorsa che resta alle Free Worlds sembra essere spingersi in profondità nel territorio della Repubblica e conquistare il sistema Sol, costringendo la Marina ad arrendersi. Le armi nucleari sono ora in vendita su Solace per sostenere l'assalto finale."
+		event "fwc defended cebalrai"
+		event "fwc solace has nukes"
+		"salary: Free Worlds" = 17000
+		conversation
+			`Tomek e Alondo ti incontrano quando atterri. Tomek dice: "Bel lavoro nella difesa. Ora dobbiamo muoverci prima che la Marina abbia il tempo di riorganizzarsi. E il Senato ha deciso che sarai tu al comando della flotta del nostro contrattacco."`
+			`	Alondo dice: "Hanno anche approvato un aumento del tuo stipendio, a diciassettemila crediti al giorno. So che probabilmente non basta ancora, ma siamo un po' a corto di liquidità."`
+			`	"Un'altra cosa," dice Tomek. "Non so come la prenderai, ma ho ricevuto notizia da Solace che hanno testate nucleari in vendita, se ne vuoi. Io te lo sconsiglio, ma decidi tu. Inoltre, dato che sarai l'ammiraglia del nostro assalto, dovresti fare tutte le migliorie che ritieni necessarie alla tua nave. Poi raggiungici qui, allo spazioporto. Naturalmente, se sei pronto a partire subito va bene lo stesso."`
+
+
+
+mission "FWC Checkmate 1: Equipment"
+	landing
+	name "Migliora la tua nave"
+	description "Se vuoi, va' su <destination> per installare missili nucleari sulla tua nave. Potresti anche voler investire in altre migliorie. Poi incontra Tomek e gli altri allo spazioporto su Tundra."
+	source Tundra
+	destination Solace
+	to offer
+		has "FWC Checkmate 1: done"
+	
+	to fail
+		has "FWC Checkmate 1B: offered"
+
+
+
+mission "FWC Checkmate 1: Equipment 2"
+	landing
+	name "Migliora la tua nave"
+	description "Fai tutte le ulteriori migliorie alla tua nave che ritieni necessarie. Poi incontra Tomek e gli altri allo spazioporto su Tundra."
+	source Solace
+	destination Tundra
+	to offer
+		has "FWC Checkmate 1: Equipment: done"
+	
+	to fail
+		has "FWC Checkmate 1B: offered"
+
+
+
+mission "FWC Checkmate 1B"
+	name "Attacca Menkent"
+	description "Il Branco di Lupi ha lanciato un attacco preliminare al sistema Menkent. Segui con la tua flotta e finisci le difese della Marina. Katya viaggerà con te."
+	autosave
+	source Tundra
+	destination "New Austria"
+	clearance
+	to offer
+		has "FWC Checkmate 1: done"
+	passengers 1
+	blocked "Sei tornato su <origin>, ma non hai una cuccetta libera per Katya. Dovresti tornare qui quando ne avrai una."
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fwc attack menkent"
+		conversation
+			`Incontri Tomek allo spazioporto. Sta parlando con il capitano di uno di un gruppo di quattro Clipper atterrati uno accanto all'altro, a una certa distanza dal resto della flotta delle Free Worlds. I Clipper sembrano avere motori e postbruciatori insolitamente grandi, e al posto dei cannoni montano ciascuno quattro missili. Tomek ti vede avvicinare e dice: "Ed ecco il capitano <last>. Capitano, sei pronto a guidare l'attacco?"`
+			choice
+				`	"Sì, sono pronto."`
+					goto ready
+				`	"Queste sono le navi del Branco di Lupi?"`
+			`	"Proprio così," dice Tomek. "Lo so, probabilmente hai sentimenti contrastanti al riguardo, ma sono davvero il modo più rapido per vincere questa guerra."`
+			label ready
+			`	Tomek dice al capitano del Branco di Lupi: "Va bene, siamo pronti. Partite subito, e il capitano <last> vi seguirà. <first>, Katya ha chiesto di viaggiare con te; vuole tornare in azione, e ho pensato che avrebbe più possibilità di chiunque altro di trattare con la gente a terra su <planet>. Ancora una volta, dovrai scacciare tutte le navi della Marina prima di atterrare. Buona fortuna."`
+				accept
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi della Marina che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		event "fwc capture menkent"
+
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		fleet
+			names "free worlds capital"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Dreadnought"
+				"Skein"
+				"Finch" 6
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon (Plasma)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Osprey (Missile)"
+	
+	npc
+		personality staying heroic uninterested disables
+		government "Free Worlds"
+		system Menkent
+		ship "Clipper (Nuclear)" "F.S. Warmaker"
+		ship "Clipper (Nuclear)" "F.S. Pestilence"
+		ship "Clipper (Nuclear)" "F.S. Disease"
+		ship "Clipper (Nuclear)" "F.S. Famine"
+	
+	npc evade
+		personality heroic staying
+		government "Republic"
+		system Menkent
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+	
+	npc
+		personality derelict
+		government "Republic"
+		system Menkent
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Frigate (Mark II)" 2
+				"Gunboat (Mark II)" 1
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Frigate (Mark II)" 1
+				"Gunboat (Mark II)" 2
+
+
+
+mission "FWC Checkmate 1C"
+	landing
+	name "Cattura <planet>"
+	description "Porta una flotta su <destination>, scacciando tutte le navi della Repubblica nel sistema."
+	autosave
+	source "New Austria"
+	destination "Silver"
+	clearance
+	to offer
+		has "FWC Checkmate 1B: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fwc attack vega"
+		conversation
+			`Appena atterri, tu e Katya contattate Tomek e gli comunicate che il sistema è nostro. "Eccellente," dice. "Prosegui con la tua flotta e prendi Vega prima che abbiano il tempo di riorganizzarsi. Un'altra flotta del Branco di Lupi vi incontrerà lì per l'assalto finale al sistema Sol."`
+			choice
+				`	"Capito. Partiremo immediatamente."`
+					accept
+				`	"Siamo davvero sicuri di voler attaccare la Terra?"`
+			`	"Ci hanno lasciato qualche altra scelta?" chiede Tomek. "Abbiamo provato la diplomazia. E non possiamo sperare di sconfiggere l'intera Marina. Quindi, a meno che non vogliamo arrenderci e finire tutti sotto processo come criminali di guerra, dobbiamo andare avanti e prendere il sopravvento nell'unico modo che abbiamo. Il Senato e il Consiglio sono d'accordo su questo." Non hai altra scelta che seguire i suoi ordini e cominciare a preparare la tua flotta per il prossimo attacco.`
+			``
+			`[Abbi cura di questa flotta, perché dovrà durarti per il resto della campagna: se delle navi vengono messe fuori uso, abbordale per "ripararle" una volta finita la battaglia. E, quando salti in battaglia, ricorda che puoi tenere premuto il tasto del salto per preparare tutte le tue navi a saltare contemporaneamente, così nessuna nave entra nel sistema per prima e si prende tutto il fuoco nemico.]`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Katya è su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		log "Le Free Worlds hanno conquistato il sistema Vega, a un solo salto iper da Terra. Le navi del Branco di Lupi armate di testate nucleari arriveranno a breve per aprire la strada all'assalto, ma la flotta della Marina che difende la Terra sarà enorme. Le perdite da entrambe le parti saranno probabilmente altissime."
+		conversation
+			`Il sistema Vega è stranamente deserto. Sospetti che la Marina abbia ritirato tutte le navi disponibili per difendere la Terra, invece di provare a combatterti qui. Cerchi di non pensare a quanto debba essere enorme la flotta laggiù, e a quanto siano scarse le tue possibilità di distruggerla.`
+			`	Katya dice: "Beh, ci siamo, l'assalto finale. Incontrami allo spazioporto quando sei pronto per l'attacco alla Terra."`
+
+
+
+mission "FWC Checkmate Escorts"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "FWC Checkmate 1B: done"
+	to fail
+		has "FWC Pug 4: done"
+	
+	npc kill
+		government "Free Worlds"
+		personality heroic escort disables
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Bastion (Laser)"
+				"Argosy (Blaster)"
+				"Argosy (Laser)"
+		fleet
+			names "free worlds capital"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Skein"
+				"Finch" 6
+				"Dreadnought"
+				"Falcon (Plasma)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon (Laser)"
+				"Osprey (Laser)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Heavy)"
+				"Osprey (Laser)"
+				"Argosy (Turret)"
+
+
+
+mission "FWC Pug 1"
+	name "Difendi <planet>"
+	description "<planet> è sotto attacco da navi di un tipo sconosciuto. Scacciale, poi torna sul pianeta per capire che cosa fare."
+	source "Silver"
+	to offer
+		has "FWC Checkmate 1C: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fwc pug invasion"
+		conversation
+			`Dopo che vi siete radunati allo spazioporto con i capitani al comando della tua flotta, Katya contatta Tomek e chiede istruzioni. Lui dice: "Una flotta del Branco di Lupi dovrebbe arrivare lì a breve. Trasportano tutte le testate che ci restano. Andranno avanti per primi e..."`
+			`	All'improvviso la sua voce si interrompe in una scarica di fruscii statici. "Che diavolo?" dice Katya. Cerca di ristabilire un collegamento con Tomek, ma non ci riesce. Confusa, dice: "Che succede? La Marina sta distruggendo i ripetitori delle comunicazioni iperspaziali? O li sta disturbando in qualche modo?"`
+			`	Uno dei tecnici delle comunicazioni dice: "Devono aver messo fuori uso i ripetitori. Non riesco a ottenere un segnale dalla Terra, né da Tundra, né da Bourne, né, beh, da nessun altro posto, per quanto mi riguarda, tranne il sistema Altair, proprio accanto a questo."`
+			choice
+				`	"Come funzionano i ripetitori iperspaziali? C'è qualche modo per aggirarli?"`
+					goto around
+				`	"Sei sicuro che il segnale sia stato tagliato, e non solo disturbato?"`
+					goto jam
+			
+			label around
+			`	"Solo se vuoi comunicare alla velocità della luce," dice il tecnico, "e in quel caso dovresti aspettare qualche anno per far arrivare un messaggio a Tomek. Quindi no, non c'è modo di aggirare i ripetitori. Sono essenziali per la rete di comunicazioni galattica, ed è per questo che nemmeno nei momenti peggiori di questa guerra abbiamo mai considerato seriamente di distruggerli."`
+				goto attack
+			
+			label jam
+			`	"Non conosco nessuna tecnologia che possa disturbarli," dice il tecnico. "È possibile, ma penso che la spiegazione più probabile sia che siano stati distrutti. Il che è assurdo, perché l'intera rete di comunicazioni galattica dipende da loro. Nemmeno nei momenti peggiori di questa guerra abbiamo mai considerato seriamente di distruggerli."`
+				goto attack
+			
+			label attack
+			`	Proprio allora un altro ufficiale della milizia irrompe nella stanza. "Siamo sotto attacco!" dice. "Ci serve ogni nave della nostra flotta in orbita, adesso!"`
+			choice
+				`	"Chi ci sta attaccando? La Marina?"`
+				`	"Sono già arrivati i rinforzi del Branco di Lupi?"`
+					goto reinforcements
+			
+			`	"No," dice. "Non ho mai visto navi come queste in vita mia. I rinforzi del Branco di Lupi sono appena arrivati in orbita, e un secondo dopo sono comparse queste navi, che hanno cominciato a farli a pezzi. Se non porti la tua flotta lassù, di loro non resterà niente."`
+				goto end
+			
+			label reinforcements
+			`	"Sì," dice, "e un secondo dopo il loro arrivo è comparsa quest'altra flotta di navi, diverse da qualsiasi nave abbia mai visto. Stanno facendo a pezzi la flotta del Branco di Lupi. Se non sali lassù immediatamente, non ne resterà vivo nessuno."`
+			label end
+			`	Ti precipiti alla tua nave e la accendi per un decollo affrettato...`
+				launch
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi aliene che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	
+	npc
+		personality waiting heroic
+		government "Free Worlds"
+		fleet
+			names "free worlds small"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Skein"
+				"Finch" 6
+				"Clipper"
+				"Clipper (Heavy)"
+				"Clipper (Speedy)"
+		fleet 4
+			names "free worlds small"
+			variant
+				"Clipper (Nuclear)"
+		fleet
+			names "free worlds small"
+			variant
+				"Bastion (Laser)"
+				"Argosy"
+				"Argosy (Blaster)"
+				"Argosy (Laser)"
+				"Argosy (Missile)"
+				"Argosy (Turret)"
+	
+	npc evade
+		personality staying disables heroic
+		government Pug
+		fleet 2
+			names "pug"
+			variant
+				"Pug Maboro"
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+		fleet
+			names "pug"
+			variant
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+	
+	npc evade
+		personality entering disables heroic
+		government Pug
+		fleet
+			names "pug"
+			variant
+				"Pug Maboro"
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+		fleet 2
+			names "pug"
+			variant
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+	
+	npc evade
+		personality disables heroic
+		government Pug
+		system "Delta Capricorni"
+		fleet 2
+			names "pug"
+			variant
+				"Pug Maboro"
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+		fleet
+			names "pug"
+			variant
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+
+
+
+mission "FWC Pug 1B"
+	landing
+	name "Indaga su <system>"
+	description "Questa zona dello spazio è stata in qualche modo tagliata fuori dal resto della galassia. Visita <planet> per vedere se anche lì sono stati invasi dagli alieni."
+	source "Silver"
+	destination "Shiver"
+	to offer
+		has "FWC Pug 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Nel momento in cui le navi del Branco di Lupi armate di testate nucleari sono arrivate nel sistema per preparare l'assalto alla Terra, è comparsa una flotta di navi aliene e le ha attaccate. Inoltre gli alieni hanno in qualche modo tagliato fuori il sistema Vega dal resto dello spazio umano."
+		event "fwc pug peaceful"
+		conversation
+			`Lo spazioporto è nel caos. Alla fine trovi Katya e le riferisci che la flotta d'invasione aliena è stata distrutta, ma a un prezzo altissimo. "Sono sicura che rimpiangeremo profondamente quelle perdite," dice. "Le testate del Branco di Lupi sono state tutte spese per respingere quell'assalto. E da quello che abbiamo scoperto qui, non riceveremo rinforzi per un pezzo. Siamo stati in qualche modo tagliati fuori dal resto dello spazio umano."`
+			choice
+				`	"Come è possibile?"`
+					goto possible
+				`	"Abbiamo idea di chi siano questi alieni?"`
+					goto aliens
+			
+			label possible
+			`	"Non ne ho la minima idea," dice, "ma gli alieni devono avere la capacità di far collassare i collegamenti iperspaziali. È per questo che le nostre comunicazioni si sono interrotte. Non sono stati distrutti i ripetitori, sono state le vie iperspaziali stesse. E intanto sono comparsi alcuni collegamenti nuovi, verso qui." Ti indica sulla mappa una stella che, fino a ora, era del tutto inaccessibile per via iperspaziale. "Deneb. Dev'essere da lì che sono arrivati gli alieni."`
+				goto next
+			
+			label aliens
+			`	"Non ne abbiamo idea," dice. "Ma sembrano avere la capacità di distruggere i collegamenti iperspaziali. È per questo che le nostre comunicazioni sono morte: non abbiamo perso i ripetitori, ma le vie stesse. E a quanto pare sono capaci anche di crearne di nuovi." Indica una mappa galattica che stava esaminando quando sei entrato; diversi collegamenti sono cancellati e altri sono stati tracciati. "Questa è la stella che chiamiamo Deneb," dice, indicando una stella che fino a ora era inaccessibile per via iperspaziale. "Dev'essere da lì che sono venuti."`
+				goto next
+			
+			label next
+			`	"Che cosa facciamo adesso?" chiedi.`
+			`	"Beh," dice, "per cominciare ci servono più informazioni. Spero che tu riesca in qualche modo a superare gli alieni e ad atterrare su <planet>, per vedere se anche lì sono stati attaccati e, in caso affermativo, se qualcuno è ancora vivo. Io resto qui con il resto del Branco di Lupi, nel caso dobbiamo respingere un altro attacco."`
+				accept
+
+
+
+mission "FWC Pug 2"
+	landing
+	name "Riferisci a Katya"
+	description "Su Shiver hai incontrato qualcuno in grado di darti più informazioni sugli alieni e sulle loro intenzioni. Riferisci a Katya quello che hai scoperto."
+	source "Shiver"
+	destination "Silver"
+	to offer
+		has "FWC Pug 1B: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Hai scoperto che gli alieni che hanno attaccato la flotta del Branco di Lupi si fanno chiamare Pug. Dopo aver distrutto quella flotta, gli alieni non hanno attaccato nessun altro, tranne qualche mercante che ha provato a resistergli. Sono venuti da un sistema stellare vicino che prima non aveva alcun collegamento iperspaziale con lo spazio umano, e sembrano intenzionati a controllare e forse a ridurre in schiavitù la popolazione umana del posto."
+		conversation
+			`Quando atterri allo spazioporto su <origin>, non trovi traccia di violenza: i capitani mercantili camminano liberamente, contrattano merci e parlano fra loro come in qualsiasi altro spazioporto tu abbia visitato. Tuttavia lo spazioporto è anche pattugliato da piccoli gruppi di alieni snelli, bipedi e dalla pelle chiara. Ognuno tiene in mano un bastone di metallo che sembra una specie di arma, ma nessuno si muove per attaccarti.`
+			`	Poco dopo l'atterraggio, scorgi un uomo che si fa strada verso la tua nave, nascondendosi dietro altre navi e casse ogni volta che un gruppo di alieni guarda nella sua direzione. Se è una specie di fuggitivo, potrebbe essere poco saggio schierarti con lui. D'altra parte, potrebbe avere informazioni preziose per te.`
+			choice
+				`	(Resta qui e parlagli.)`
+					goto board
+				`	(Decolla prima di attirare l'attenzione degli alieni.)`
+			
+			`	Cominci a prepararti al decollo, ma lui ti fa cenni urgenti. Di malavoglia, decidi di aspettare e sentire che cosa ha da dire.`
+			label board
+			`	Apri il portello della nave e lo lasci salire. "Che cosa succede qui?" chiedi. "Chi sono questi alieni?"`
+			`	"Sono uno che vive sul pianeta," dice, "quindi la prima volta che ne ho sentito parlare è stato quando queste navi diverse da qualsiasi cosa avessi mai visto sono scese dal cielo e si sono fermate sopra lo spazioporto. Poi hanno cominciato a trasmettere messaggi radio su tutte le frequenze, dicendo che questo mondo ora fa parte del Protettorato Pug, e che dobbiamo astenerci dalla violenza e consegnare loro una parte dei beni che il nostro mondo produce."`
+			choice
+				`	"Qualcuno ha provato a resistergli?"`
+					goto resist
+				`	"Che intenzioni pensi che abbiano?"`
+					goto intentions
+				`	"Hanno spiegato perché vi hanno tagliato fuori dal resto della galassia?"`
+					goto cut
+			
+			label resist
+			`	"Qualcuno. Le loro navi non sono invulnerabili; un mercante su un'Argosy è riuscito a mettere fuori uso una delle loro navi più piccole mentre era atterrata con gli scudi spenti, prima che gli facessero saltare la nave per rappresaglia. E quei bastoni che portano sparano una specie di raggio stordente, ma se li tagli sanguinano, come qualsiasi altra creatura." Si ferma, poi tocca il coltello che porta alla cintura e dice: "Solo che sanguinano blu. Un blu latteo pallido."`
+			choice
+				`	"Che intenzioni pensi che abbiano?"`
+					goto intentions2
+				`	"Hanno spiegato perché vi hanno tagliato fuori dal resto della galassia?"`
+					goto cut2
+			
+			label intentions
+			`	"Beh, vogliono le nostre risorse, naturalmente. E dicono di essere venuti a portare una nuova era di pace e a mettere fine a ogni violenza e conflitto. Io però non ci credo; hanno visto che l'umanità era troppo divisa per resistergli, e hanno colto l'occasione per invaderci e depredarci. È semplice così."`
+			choice
+				`	"Qualcuno ha provato a resistergli?"`
+					goto resist2
+				`	"Hanno spiegato perché vi hanno tagliato fuori dal resto della galassia?"`
+					goto cut2
+			
+			label cut
+			`	"Direi che è ovvio. Con i collegamenti iperspaziali tagliati, non c'è modo per nessuno da fuori di aiutarci. E hanno colpito una parte dello spazio umano senza granché in fatto di milizie, cacciatori di taglie o protezione della Marina. E le poche navi da guerra decenti che si trovavano nel sistema quando hanno attaccato sono già state distrutte nel tentativo di combatterli."`
+			choice
+				`	"Qualcuno ha provato a resistergli?"`
+					goto resist2
+				`	"Che intenzioni pensi che abbiano?"`
+					goto intentions2
+			
+			label resist2
+			`	"Qualcuno. Le loro navi non sono invulnerabili; un mercante su un'Argosy è riuscito a mettere fuori uso una delle loro navi più piccole mentre era atterrata con gli scudi spenti, prima che gli facessero saltare la nave per rappresaglia. E quei bastoni che portano sparano una specie di raggio stordente, ma se li tagli sanguinano, come qualsiasi altra creatura." Si ferma, poi tocca il coltello che porta alla cintura e dice: "Solo che sanguinano blu. Un blu latteo pallido."`
+				goto end
+			
+			label intentions2
+			`	"Beh, vogliono le nostre risorse, naturalmente. E dicono di essere venuti a portare una nuova era di pace e a mettere fine a ogni violenza e conflitto. Io però non ci credo; hanno visto che l'umanità era troppo divisa per resistergli, e hanno colto l'occasione per invaderci e depredarci. È semplice così."`
+				goto end
+			
+			label cut2
+			`	"Direi che è ovvio. Con i collegamenti iperspaziali tagliati, non c'è modo per nessuno da fuori di aiutarci. E hanno colpito una parte dello spazio umano senza granché in fatto di milizie, cacciatori di taglie o protezione della Marina. E le poche navi da guerra decenti che si trovavano nel sistema quando hanno attaccato sono già state distrutte nel tentativo di combatterli."`
+				goto end
+			
+			label end
+			`	Lo ringrazi per le informazioni e ti prepari a tornare nel sistema <system> per parlare con Katya. Forse il fatto che gli alieni non ti attacchino più significa che è possibile negoziare una qualche tregua.`
+				accept
+
+
+
+mission "FWC Pug 2B"
+	landing
+	name "Visita i Pug"
+	description "Individua il mondo natale dei Pug, che presumibilmente si trova nel sistema <system>, e vedi se puoi negoziare con loro."
+	source "Silver"
+	destination "Pugglemug"
+	clearance
+	to offer
+		has "FWC Pug 2: done"
+	passengers 1
+	blocked "Per continuare con la prossima missione ti serve una cuccetta libera per Katya. Completa o annulla la missione che sta occupando tutto il tuo spazio passeggeri, poi torna qui su <origin>."
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Riferisci a Katya che le navi aliene non ti hanno attaccato nel viaggio di andata e ritorno da Shiver, e che la gente del posto sembra aver acconsentito a essere governata dagli alieni in cambio della pace. "Qui non abbiamo avuto altri attacchi," dice. "Pensi che sia sicuro provare a visitare il mondo natale degli alieni?"`
+			choice
+				`	"Penso che, finché non li attacchiamo, non ci attaccheranno."`
+					goto yes
+				`	"No, ma voglio delle risposte da loro, e forse è l'unico modo per averle."`
+					goto no
+			
+			label yes
+			`	"Non ne sono così sicura," dice. "Dopotutto ci hanno già attaccato una volta. E da quello che sento dai capitani del Branco di Lupi, sono stati gli alieni a sparare per primi. D'altra parte, non credo che abbiamo molta scelta, a meno di volerci sistemare e passare il resto della nostra vita come vassalli alieni, tagliati fuori da tutti i nostri amici nel resto della galassia."`
+				goto end
+			
+			label no
+			`	"D'accordo," dice. "Potrebbero scegliere di distruggerci, ma non è che abbiamo altre opzioni. Non ho particolare voglia di sistemarmi e passare il resto della mia vita come vassalla aliena, tagliata fuori da tutti i nostri amici nel resto della galassia."`
+				goto end
+			
+			label end
+			`	Katya sale sulla tua nave, e vi preparate a una visita diplomatica al mondo natale degli alieni.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Katya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FWC Pug 2B: Pugglequat"
+	landing
+	source Pugglequat
+	to offer
+		has "FWC Pug 2B: active"
+		not "FWC Pug 2C: done"
+	
+	on offer
+		conversation
+			`Questo pianeta è chiaramente uno dei mondi nativi dei Pug, e non un mondo umano occupato. L'architettura è del tutto aliena, e non vedi navi né persone umane qui, solo gli alieni. Ma sembra per lo più un mondo di miniere e fabbriche; tutti gli alieni sono impegnati nel loro lavoro, e nessuno sembra parlare la tua lingua o avere interesse a parlare con te; ti fanno invece cenno verso il cielo, forse per indicare che dovresti visitare l'altro pianeta Pug in questo sistema.`
+				decline
+
+
+
+mission "FWC Pug 2C"
+	name "Visita <planet>"
+	description "Visita <destination>, che faceva parte del territorio delle Free Worlds prima dell'invasione aliena, e vedi se c'è ancora equipaggiamento militare disponibile."
+	landing
+	source Pugglemug
+	destination Oblivion
+	to offer
+		has "FWC Pug 2B: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log `Hai visitato il mondo natale dei Pug, gli alieni che hanno conquistato questa regione dello spazio. Sostengono che, quando la flotta delle Free Worlds minacciava di invadere la Terra, non avevano altra scelta che intervenire per impedire all'umanità di distruggere se stessa. Dicono che il loro piano è portare lentamente sempre più mondi umani sotto la loro "protezione", ma quello di cui parlano somiglia più alla schiavitù.`
+		log "Factions" "Pug" `I Pug sono alieni dal corpo a botte, gambe esili e sangue blu latteo. Sostengono di essere intervenuti nella guerra civile umana solo per impedire altro spargimento di sangue e aiutare gli umani a vivere insieme in pace.`
+		conversation
+			`Questo è un mondo interamente alieno. Gli edifici hanno forme stranamente fluide e affusolate, non dissimili dalle astronavi Pug, e dall'orbita conti dozzine di grandi città che coprono buona parte della massa continentale. Se fosse un mondo umano, stimeresti la sua popolazione in oltre un miliardo di abitanti. Segui una delle navi Pug che sta atterrando e scopri un grande spazioporto dove, oltre agli alieni, è parcheggiato un numero sorprendente di navi mercantili umane.`
+			`	Altrove ti hanno per lo più ignorato, ma qui la tua nave viene subito avvicinata da un piccolo gruppo di alieni delicati e dalla pelle chiara. I Pug hanno proporzioni curiose: braccia e gambe lunghe, ma torsi corti a botte e teste grandi, e anche se hanno solo due gambe il loro passo è vagamente insettico. "Voi siete quelli che ci hanno resistito," dice uno di loro. "Non siete vincolati al Protettorato. Volete pronunciare ora il vostro voto di lealtà e di pace?"`
+			choice
+				`	"No, siamo qui per scoprire perché ci avete attaccato, e per pretendere che ci lasciate in pace."`
+				`	"Siamo disposti a fare la pace, ma solo se ci restituite il controllo dei nostri sistemi stellari."`
+			`	"Non abbiamo alcun desiderio di farvi del male," dice l'alieno. "Col tempo lo riconoscerete. Siamo intervenuti nella vostra guerra solo per portare la pace e impedire alla vostra specie di fare un grande male a se stessa. E dobbiamo mantenere il controllo di questi sistemi finché non saremo certi che non continuerete a combattere se i collegamenti vengono ripristinati."`
+			choice
+				`	"Se non volete farci del male, perché avete massacrato la nostra flotta?"`
+				`	"Non avevate alcun diritto di invadere il nostro spazio e di intromettervi nei nostri affari, qualunque fossero le vostre intenzioni."`
+					goto interfere
+		
+			`	"La flotta che trasportava armi nucleari, armi di genocidio? Ha scelto la violenza, e quindi è perita di violenza. Questa è giustizia."`
+			`	Katya dice: "Continuo a non capire che cosa vi faccia pensare di avere il diritto di intromettervi negli affari umani."`
+		
+			label interfere
+			`	"'Intromettervi'?" dice l'alieno. "Ci siamo 'intromessi' molte volte in passato, e sempre ne avete tratto vantaggio. Se non ci credete, chiedete a quelli che vivono nel posto che chiamate Deep. Li abbiamo aiutati a sconfiggere le esseri metà umani e distorti che avete creato nei vostri sciocchi tentativi di migliorare il codice genetico della vostra specie. Li abbiamo aiutati a tenere a bada quelle creature nei secoli successivi. E abbiamo aiutato in molti altri modi."`
+			choice
+				`	"Io vengo da Deep, e non ho mai sentito parlare di voi."`
+					to display
+						has "start: deep"
+				`	"Che cosa volete da noi in cambio?"`
+					goto goals
+				`	"Che cosa avete intenzione di fare con questi sistemi che avete occupato?"`
+					goto goals
+			`	"Allora forse conoscerete i miti degli 'elfi', e la tradizione della tributazione," dice l'alieno. "Ci bastava proteggere la vostra specie da lontano, lasciando che la vostra gente prendesse i nostri successi come propri, ma è chiaro che serve un intervento ulteriore."`
+			`	Katya dice: "Quindi vi siete stancati di farci da baby-sitter? Non vedo perché questo significhi che dovete conquistarci invece di lasciarci in pace."`
+			label goals
+			`	"Abbiamo portato la pace in questa regione," dice l'alieno, "e continueremo a diffondere la pace finché la violenza non sarà finita in tutto lo spazio umano. È il nostro unico desiderio. Tutto quello che chiediamo in cambio è una parte dei beni che i vostri mondi producono, per aiutarci a sostenere il costo del sorvegliare e proteggere così tanti mondi umani. E dopo un po', permetteremo di nuovo agli esseri umani il controllo autonomo di alcune parti del vostro territorio, quando dimostrerete di essere capaci di vivere in pace."`
+			`	"Con 'diffondere la pace' intendete occupare altri sistemi?" chiede Katya.`
+			`	"Intendiamo mettere fine alla vostra guerra e alle vostre divisioni," dice l'alieno. "Quei mondi e quei popoli che si sono dimostrati incapaci di vivere in pace li dobbiamo governare, per insegnare loro la pace. Chiunque ci attacchi lo dobbiamo distruggere, perché noi portiamo la pace, e chi ci attacca non è dalla parte della pace. Ora, siete pronti a dichiarare la vostra fedeltà?"`
+			choice
+				`	"Mi dispiace, ma non avete il diritto di governarci."`
+					goto no
+				`	"Molto bene, dichiariamo la nostra fedeltà."`
+					goto yes
+			
+			label no
+			`	"Molto bene, se non siete ancora pronti ad acconsentire a essere governati da noi, vi daremo più tempo," dice l'alieno. "Nel frattempo, per favore non attaccate le nostre navi, o saremo costretti a distruggervi. Il che ci dispiacerebbe profondamente." Fa uno strano gesto simile a un inchino e si allontana.`
+				goto end
+			
+			label yes
+			`	"Sono lieto di sentirlo," dice. "Col tempo arriverete a essere grati di essere stati presenti all'inizio di questa nuova era di pace e prosperità per la vostra specie. E non temete per i vostri amici in altre parti dello spazio umano che per un po' saranno tagliati fuori da voi. Vi riunirete presto, sotto la nostra protezione." Fa uno strano gesto simile a un inchino e si allontana.`
+				goto end
+			
+			label end
+			`	"Non mi piace per niente," dice Katya. "Andiamo su <planet> e vediamo se resta un po' del nostro equipaggiamento, da quando era parte del fronte nella guerra contro la Repubblica. Magari troviamo qualcosa di utile."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Katya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FWC Pug 2D"
+	landing
+	name "Fuggi dallo spazio dei Pug"
+	description "Metti fuori uso una nave Pug, rubale il motore di salto e usalo per fuggire dal loro territorio e riferire alle Free Worlds che un'invasione aliena è imminente."
+	source "Oblivion"
+	destination "New Iceland"
+	clearance "The locals are terrified by the fact that you have decided to fight the Pug, but eventually they agree to let you land."
+		planet Oblivion
+	to offer
+		has "FWC Pug 2C: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fwc navy retakes cebalrai"
+		conversation
+			`Come su Shiver, lo spazioporto su Oblivion è pattugliato dai Pug, e la gente del posto sembra rassegnata al proprio destino. Non sorprende scoprire che restano poche scorte di quando la flotta principale delle Free Worlds era di stanza qui per qualche giorno. Ma almeno lo spazioporto ha un'officina di riparazione e un banco di equipaggiamenti funzionanti.`
+			`	Mentre esplori lo spazioporto, un gruppo di uomini in uno dei pub locali ti vede passare e ti fa cenno. "Ehi, vieni qui," sussurra uno di loro. Ti riconoscono come membro del Consiglio e ti dicono di essere i capi di un movimento di resistenza locale, in attesa del momento giusto per colpire i Pug. "Avete un piano?" chiedono.`
+			choice
+				`	"Scusate, non ancora."`
+				`	"Vi faremo sapere quando sarà il momento."`
+			`	Sembrano delusi che tu non sia lì per liberarli immediatamente, ma dici loro di aspettare e, per ora, di non fare niente di sciocco, e loro ti spiegano come contattarli quando sarai pronto. Tornato sulla tua nave, parli con Katya. "Sembra che gli alieni abbiano intenzione di invadere altri sistemi," dice. "Dobbiamo far uscire un avvertimento in qualche modo. E l'unico modo è con un motore di salto. Dovremo mettere fuori uso una delle navi aliene, prendere il suo motore di salto e installarlo sulla tua nave. Poi possiamo portare la tua nave su <planet> e contattare il Senato e il resto del Consiglio."`
+			choice
+				`	"Sembra rischioso, ma proviamoci!"`
+					accept
+				`	"Ehm, vogliamo davvero rischiare di far arrabbiare gli alieni?"`
+			
+			`	"Non credo che abbiamo altra scelta," dice. "I nostri amici là fuori devono sapere che cosa sta succedendo qui. E magari questo, finalmente, darà alla Marina un motivo per smettere di combatterci e cominciare a lavorare insieme per la pace." Di malavoglia, sei d'accordo.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Katya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi. (Se le tue scorte non hanno motori di salto, prova a parcheggiarle in modo che Katya sia sulla tua ammiraglia.)`
+
+
+
+mission "FWC Pug 3"
+	landing
+	name "Parla con la Marina"
+	description "Freya è su <planet>, presumibilmente in custodia della Marina. Va' lì e vedi se, date le circostanze, la Marina è disposta a parlare con te."
+	source "New Iceland"
+	destination "New Austria"
+	clearance
+	to offer
+		has "FWC Pug 2D: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Sei fuggito dal territorio conquistato dai Pug usando un motore di salto. Hai scoperto che Freya è stata catturata dalla Marina mentre cercava di capire il motivo della sparizione dei collegamenti iperspaziali. La Marina pensa che le Free Worlds siano dietro i disservizi iperspaziali. Ma fare la pace con la Marina potrebbe essere l'unico modo per sconfiggere i Pug."
+		event "fwc peace with the navy"
+		set "event: fw armistice"
+		conversation
+			`La tua nave fa un certo scalpore quando entra nel sistema col motore di salto, e appena sei atterrato Alondo ti aspetta fuori dal portello per parlarti. "Che diavolo sta succedendo?" dice. "Che fine ha fatto la tua flotta? E come diamine hai fatto a procurarti un motore di salto? Abbiamo chiesto ai Quarg di venderciene uno, ma ci hanno dato qualche risposta vaga sul 'non intromettersi negli affari di altre specie'."`
+			`	Katya dice: "Siamo stati attaccati da alieni. Hanno tagliato i collegamenti iperspaziali. Ed è probabile che invadano altri sistemi. Dobbiamo avvertire tutti. Compresi la Repubblica e la Marina." Gli spiega meglio la situazione e gli consegna una copia delle scansioni dei sensori delle navi aliene.`
+			`	Alondo dice: "Che cosa pensate che dovremmo fare adesso?"`
+			choice
+				`	"Dovremmo negoziare un cessate il fuoco con la Marina."`
+					goto navy
+				`	"Dovremmo trovare un modo per ripristinare quei collegamenti iperspaziali."`
+					goto links
+			
+			label navy
+			`	Alondo dice: "Se credono alla tua storia dell'invasione aliena, potrebbe funzionare. Dopotutto, se l'umanità è minacciata dagli alieni, questo ha certo la precedenza sul combattere noi. L'unico problema è che la maggior parte della Repubblica sembra convinta che, quando quei sistemi sono spariti, sia stata qualche nuova arma scoperta dalle Free Worlds. Danno la colpa a noi. Ci hanno appena ripreso Cebalrai e Menkent, e hanno catturato Freya nel processo."`
+			`	"Freya?" chiede Katya. "Come hanno fatto a catturarla?"`
+			`	"Era su <planet>," dice, "a installare qualcosa che chiamava 'rivelatore di gravitoni' per analizzare il collegamento iperspaziale collassato. Quando è arrivata la Marina, le abbiamo detto di andarsene, ma aveva appena avuto un'intuizione nella sua ricerca, e ha detto solo: 'Al diavolo la vostra guerra, questa è più importante.'" Se è ancora lì, potrebbe essere la nostra migliore speranza per capirci qualcosa.`
+				goto next
+			
+			label links
+			`	Alondo dice: "È quello su cui stava lavorando Freya. Appena la tua flotta è sparita, ha cominciato a indagare, ed è andata su <planet> a installare qualcosa che chiamava 'rivelatore di gravitoni' puntato verso Vega. Poco prima che quel sistema fosse preso, ci ha mandato un messaggio dicendo di aver trovato una specie di traccia residua del collegamento, forse un modo per riaprirlo."`
+			`	"Aspetta," dice Katya, "che cosa vuoi dire con 'poco prima che il sistema fosse preso'? Da chi?"`
+			`	"Dalla Marina," dice Alondo. "Pensano che le Free Worlds siano dietro la sparizione di quei sistemi. E con la tua flotta sparita, non ci restavano abbastanza navi per resistergli. Freya avrebbe potuto evacuare, ma è rimasta per finire la sua ricerca. Credo che le sue parole esatte siano state: 'Al diavolo la vostra guerra, questa è più importante.'" Se è ancora lì, potrebbe essere la nostra migliore speranza per capirci qualcosa.`
+				goto next
+			
+			label next
+			choice
+				`	"Pensi che la Marina la lasci continuare la sua ricerca?"`
+					goto research
+				`	"Puoi contattare la Marina e chiedere un cessate il fuoco?"`
+					goto ceasefire
+			
+			label research
+			`	"O magari la stanno interrogando," dice Alondo, "e in quel caso hanno almeno scoperto che siamo confusi quanto loro sul taglio dei collegamenti iperspaziali. Credo che, qualunque cosa facciamo adesso, avremo bisogno di Freya, e avremo bisogno della Marina. Li contatterò e chiederò di non aprire il fuoco sulla tua nave. Ma non posso garantire che ti lascino andare una volta che sei nelle loro mani."`
+				goto end
+			
+			label ceasefire
+			`	"Contatterò la Marina e dirò loro che stai arrivando per negoziare, e di non aprire il fuoco sulla tua nave. È il meglio che posso fare," dice Alondo.`
+				goto end
+			
+			label end
+			`	Tu e Katya tornate alla nave e vi preparate a una visita su <planet>. Speriamo che Freya sia ancora lì, e che la Marina ti lasci parlare con lei.`
+				accept
+
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Katya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+mission "FWC Pug 3A"
+	landing
+	name "Porta Freya su <planet>"
+	description "Freya pensa che, se riuscisse a localizzare l'equipaggiamento che i Pug hanno usato per interrompere i collegamenti iperspaziali, potrebbe ripristinarli. Portala su <planet>, mentre Katya resta in custodia della Marina."
+	source "New Austria"
+	destination "Oblivion"
+	clearance
+	to offer
+		has "FWC Pug 3: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Hai convinto la Marina che la sparizione dei collegamenti iperspaziali è davvero un attacco alieno e non una specie di superarma delle Free Worlds. Freya pensa di poter annullare il disturbo iperspaziale e permettere alla Marina di entrare nel territorio conquistato e cominciare a respingere i Pug."
+		conversation
+			branch know
+				has "FW Alphas 1.1: done"
+			`Sorprendentemente, la Marina ti lascia atterrare senza spararti; il fatto che tu sia entrato nel sistema col motore di salto deve aver fatto una bella impressione. Ma quando la nave atterra, viene subito circondata da truppe della Marina. Esitando, tu e Katya sbarcate. Vi accoglie un ammiraglio della Marina che riconosci come William Danforth, il capo degli Oathkeepers. Anche fra le Free Worlds si parla di Danforth con rispetto, per il suo coraggio e la sua lucidità in battaglia e per aver guidato innumerevoli missioni umanitarie.`
+				goto introductions
+			label know
+			`Sorprendentemente, la Marina ti lascia atterrare senza spararti; il fatto che tu sia entrato nel sistema col motore di salto deve aver fatto una bella impressione. Ma quando la nave atterra, viene subito circondata da truppe della Marina. Esitando, tu e Katya sbarcate. Vi accoglie l'ammiraglio Danforth, il capo degli Oathkeepers che in precedenza ti aveva aiutato a scacciare gli Alphas e la loro flotta mercenaria da Poisonwood.`
+				goto introductions
+			label introductions
+			`	Accanto a Danforth c'è quella che pensi possa essere la sua guardia del corpo: una donna dalla pelle scura vestita interamente di nero. Persino il bianco dei suoi occhi è nero: quando si avvicina, vedi che è in realtà un tatuaggio sclerale, un intricato disegno di nodi celtici inciso nel bianco degli occhi. Con sorpresa, Katya la riconosce. "Raven!" dice Katya. Non sei sicuro che Katya sembri contenta di vederla, o spaventata.`
+			`	"Salve, consigliera," dice la donna.`
+			`	Danforth dice: "Ci risulta che venite dal territorio isolato, e che portate notizie di una possibile invasione aliena. Venite con noi, per favore." Vi accompagna su uno degli incrociatori della Marina parcheggiati lì vicino, e in una stanza che supponi essere il suo ufficio privato; le guardie vi perquisiscono, te e Katya, in cerca di armi, poi vi lasciano soli con Danforth e Raven. "Ora," dice Danforth, "risponderete alle nostre domande."`
+			`	Fa un cenno a Raven, che si avvicina a te e ti tende le mani. "Prendimi le mani, per favore, Capitano," dice.`
+			choice
+				`	(Prendile le mani.)`
+					goto hands
+				`	"Ehm, perché? Che cosa mi farai?"`
+			`	"È una degli Interrogatori, <first>," dice Katya, sottovoce. "Una di quelle che mi hanno interrogata quando ero loro prigioniera. Prendile le mani e non dire altro che la verità."`
+			label hands
+			`	Di malavoglia le prendi le mani, e lei comincia a farti domande sugli alieni. Rispondi il più sinceramente possibile. Tenere le mani di una perfetta sconosciuta mentre ti fissa negli occhi senza battere ciglio e ti interroga è un'esperienza invadente e intima in modo scomodo, accentuata dal sospetto che, se dicessi una bugia, lei in qualche modo lo saprebbe. Quando ha finito di interrogarti, sei madido di sudore e le tue mani tremano. Raven si volta verso Danforth e dice: "Dicono la verità."`
+			`	Tu e Katya tirate entrambi un sospiro di sollievo, e Danforth dice: "Molto bene. Portiamoli a vedere la signorina Winters."`
+			`	Vi guida fuori dalla sua nave e in un magazzino dove persone in tuta da lavoro e camici bianchi sono indaffarate intorno a una delle macchine più strane che tu abbia mai visto. Freya è una di loro. "Katya!" dice. "<first>! Sono contenta che siate qui."`
+			choice
+				`	"Ora lavori per la Marina?"`
+				`	"Abbiamo saputo che potresti avere un modo per riaprire i collegamenti iperspaziali."`
+					goto reopen
+			
+			`	"Beh," dice, "tecnicamente sono una prigioniera. Ma mi stanno aiutando con la mia ricerca."`
+			`	Katya chiede: "Hai capito come ripristinare i collegamenti iperspaziali?"`
+			
+			label reopen
+			`	"No," dice Freya, "ma almeno ho scoperto che potrebbe essere possibile. I collegamenti non sono recisi del tutto, vedi. C'è una specie di segnale di distorsione che li disturba attivamente. Se riusciamo a eliminare l'interferenza, i collegamenti potrebbero tornare. Ma l'interferenza arriva dall'altro capo."`
+			`	Danforth dice: "Capitano <last>, rilasceremo la signorina Winters perché viaggi con te, a condizione che la consigliera Reynolds resti qui al suo posto. Se riuscirai a ripristinare un collegamento iperspaziale verso i sistemi isolati, rilasceremo entrambe. È un accordo accettabile?"`
+			choice
+				`	"Va bene, siamo d'accordo."`
+					goto end
+				`	"E se Freya non riesce a ripristinare il collegamento?"`
+			
+			`	"Allora la consigliera Reynolds resterà qui come nostra prigioniera," dice.`
+			`	"Vai, <first>," dice Katya. "È la nostra migliore possibilità."`
+			label end
+			`	Torni alla tua nave con Freya, che porta una grande quantità di sensori e attrezzature. "Proviamo prima con <planet>," dice, "e vediamo se c'è tecnologia aliena che possiamo usare. Spero che ti restino ancora delle navi della flotta da battaglia per aiutarci a difenderci."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Freya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FWC Pug 3B"
+	landing
+	name "Difendi <planet>"
+	description "Freya ha trovato un pezzo di tecnologia aliena che ritiene utilizzabile per ripristinare il collegamento iperspaziale. Trattieni i Pug abbastanza a lungo perché lei capisca come funziona."
+	source Oblivion
+	destination Oblivion
+	clearance
+	to offer
+		has "FWC Pug 3A: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fwc defend oblivion"
+		conversation
+			`Volando basso sopra <planet> e sperando che i Pug non ti stiano tracciando, contatti il gruppo di resistenza che avevi incontrato. Nel frattempo Freya dice: "Ho un segnale energetico. Sembrano gli impulsi di gravitoni che stanno disturbando il collegamento iperspaziale." Ti dà le coordinate, e tu le inoltri al gruppo di resistenza. Con un po' di aiuto dalle armi della tua nave, riescono a eliminare le guardie Pug nei paraggi.`
+			`	Fai atterrare la nave, incontri i combattenti della resistenza e ti avvicini con cautela alla struttura. "È stato fin troppo facile," dice Freya. "Magari semplicemente non si aspettavano che qualcuno reagisse?" L'edificio assomiglia vagamente a un trasmettitore radio, e man mano che ti avvicini il terreno sembra oscillare e beccheggiare sotto i piedi come il ponte di una barca. "Onde gravitoniche," dice Freya. "È questo, senza dubbio. Capitano, pensi di poter trattenere i Pug abbastanza a lungo perché io capisca come funziona questa cosa?"`
+			choice
+				`	"Farò del mio meglio."`
+					goto end
+				`	"Non temi che le loro truppe di terra ti attacchino?"`
+		
+			`	"Sappiamo gestirli," dice uno degli uomini. "Per quanto ne sappiamo, la loro unica arma sono quei bastoni stordenti. Non sono certo all'altezza di proiettili veri. Le loro navi sono una minaccia molto più seria."`
+			label end
+			branch alone
+				has "FWC Checkmate Escorts: done"
+			`	I combattenti della resistenza ti dicono che la loro flotta partirà a breve. Torni alla tua nave e accendi i motori. Speriamo che le navi rimaste della tua flotta d'attacco bastino a trattenere i Pug finché Freya non finisce il suo lavoro quaggiù...`
+				launch
+			label alone
+			`	I combattenti della resistenza ti dicono che la loro flotta partirà a breve. Torni alla tua nave e accendi i motori, augurandoti di essere riuscito a tenere in vita qualche nave della tua flotta d'attacco, e sperando di riuscire a trattenere i Pug finché Freya non finisce il suo lavoro quaggiù...`
+				launch
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi Pug che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		fleet
+			names "free worlds capital"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Skein"
+				"Finch" 6
+				"Argosy (Blaster)"
+				"Argosy (Laser)"
+				"Argosy (Turret)"
+	
+	npc disable
+		personality entering disables heroic
+		government Pug
+		fleet
+			names "pug"
+			variant
+				"Pug Maboro"
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+		fleet
+			names "pug"
+			variant
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+		dialog `Ricevi un messaggio da Freya: "Capitano, ci serve che torni quaggiù. Credo di aver scoperto un modo per ripristinare il collegamento, ma dovremo tornare su New Austria per farlo, e in fretta, prima che i Pug abbiano il tempo di mandare altre navi in questo sistema. E spero che tu abbia spazio nella stiva per un bel po' di attrezzatura."`
+
+
+
+mission "FWC Pug 3C"
+	landing
+	name "Torna su <planet>"
+	description `Torna su <planet> con Freya, portando un "riflettore di gravitoni" che secondo Freya può essere usato per ripristinare il collegamento iperspaziale.`
+	source Oblivion
+	destination Tundra
+	on enter Cebalrai
+		dialog
+			"As soon as you re-enter human space, you contact the Navy and tell them to send an attack fleet to the Cebalrai system. Then, just for good measure, you contact the Free Worlds and ask them to do the same."
+	to offer
+		has "FWC Pug 3B: done"
+	passengers 1
+	cargo "graviton reflector" 10
+	blocked `Mentre stai atterrando, Freya ti contatta e dice: "Per questa missione ti serviranno dieci tonnellate di spazio di carico, e anche una cuccetta per me." Il che significa che devi liberare <capacity>.`
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Atterri vicino alla struttura aliena, e Freya ti viene incontro fuori, con un grosso pezzo di macchinario alieno caricato su un camion a pianale. "Spero che tu abbia spazio nella stiva per questo," dice. Noti che il terreno non sembra più oscillare in modo irregolare come prima, ma ti senti ancora un po' stordito, come se l'orizzonte non volesse restare del tutto livellato.`
+			choice
+				`	"Che cosa hai scoperto?"`
+				`	"Il collegamento è già ripristinato?"`
+			
+			`	Dice: "Non sono riuscita a capire esattamente come funzioni questa tecnologia, ma è una specie di trasmettitore di gravitoni. Sono riuscita a farlo passare dall'invio di un segnale caotico a uno coerente. In teoria questo rafforzerà lentamente il collegamento. Ma potrebbero volerci anni perché si riapra, e probabilmente abbiamo solo pochi giorni prima che i Pug scoprano che cosa è successo qui e travolgano questo sistema. Quindi dobbiamo tornare su <planet>, l'altro capo del collegamento, e installare questa cosa. Credo che sia una specie di riflettore di gravitoni." Indica l'attrezzatura aliena sul camion. "Una volta in posizione, possiamo creare una risonanza armonica fra questo sistema stellare e <system>, e in teoria il collegamento si rigenererà molto più in fretta."`
+			choice
+				`	"Va bene, proviamoci!"`
+					accept
+				`	"Ma hai davvero idea di quello che stai facendo?"`
+			`	"Nessuna," dice. "Sto solo improvvisando man mano, in base a quello che so della fisica dell'iperspazio. E per quanto ne so le navi Pug potrebbero avere le stesse capacità di disturbo iperspaziale di questa struttura, e tutto questo non servirebbe a niente. Ma proviamoci, va bene?"`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Freya e il riflettore di gravitoni non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FWC Pug 3D"
+	landing
+	name "Libera <system>"
+	description "Recati nel sistema <system> con una flotta congiunta di navi della Marina e delle Free Worlds, scaccia i Pug e occupa il sistema perché i Pug non possano tornare a recidere il collegamento iperspaziale."
+	source Tundra
+	destination Oblivion
+	clearance
+	to offer
+		has "FWC Pug 3C: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Sei riuscito a ripristinare il collegamento iperspaziale verso il sistema Rasalhague. Con l'aiuto della Marina, ora potrebbe essere possibile ribaltare le sorti contro i Pug."
+		event "fwc battle for rasalhague"
+		conversation
+			`Anche se <origin> è ora di nuovo sotto il controllo della Marina, ti lasciano atterrare volentieri. Aiuti Freya a installare l'attrezzatura aliena e ad accenderla. Ancora una volta cominci a sentirti stordito, e la sensazione cresce lentamente di intensità mentre Freya regola i comandi. "Funziona," dice. "Ho un ciclo di retroazione positivo. Prova a contattare Oblivion."`
+			`	Cerchi di stabilire un collegamento di comunicazione con i combattenti della resistenza, e arrivano brevi frammenti di conversazione, intervallati da fruscii. Dopo qualche minuto il fruscio comincia a calare, e riesci a sentire le loro voci più chiaramente. "Funziona!" dice Freya.`
+			`	Nel frattempo navi della Marina e delle Free Worlds hanno cominciato a riversarsi nel sistema. Sospetti che la battaglia che ci aspetta sarà feroce, ma con una flotta da guerra della Marina dalla tua parte non sembra più una causa disperata. "Il collegamento dovrebbe essere abbastanza forte perché possiamo attraversarlo a breve," dice Freya. "È ora di tornare nel sistema <system>."`
+				accept
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi Pug che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	
+	npc evade
+		personality disables heroic staying
+		government Pug
+		system Rasalhague
+		fleet
+			names "pug"
+			variant
+				"Pug Maboro"
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+		fleet 2
+			names "pug"
+			variant
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+
+
+
+mission "FWC Pug 3D: Reinforcements"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "FWC Pug 3C: done"
+	to fail
+		has "FWC Pug 4: done"
+	
+	npc kill
+		government "Navy (Oathkeeper)"
+		personality heroic waiting
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Gunboat (Mark II)" 3
+	npc kill
+		government Republic
+		personality heroic waiting
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser"
+				"Combat Drone" 4
+				"Frigate" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier"
+				"Lance" 8
+				"Combat Drone" 6
+				"Gunboat" 2
+	npc kill
+		government "Free Worlds"
+		personality heroic escort waiting
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Bastion (Laser)"
+				"Argosy (Laser)"
+		fleet
+			names "free worlds capital"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Dreadnought"
+				"Falcon (Plasma)"
+				"Skein"
+				"Finch" 6
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Heavy)"
+				"Osprey (Laser)"
+				"Argosy (Turret)"
+
+
+
+mission "FWC Pug 4"
+	landing
+	name "Difendi <system>"
+	description "Scaccia la flotta Pug che sta invadendo <system>."
+	source Oblivion
+	destination Oblivion
+	clearance
+	to offer
+		has "FWC Pug 3D: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`La tua flotta atterra su <planet>, e con tua sorpresa la gente del posto dice che poco prima del vostro arrivo tutti i Pug presenti sul pianeta se ne sono andati; chiaramente si aspettavano il vostro arrivo e non avevano alcun desiderio di diventare vostri prigionieri. Hai solo poche ore per farti un quadro della situazione prima che la Marina ti informi di aver rilevato un'altra flotta Pug in arrivo...`
+				launch
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi Pug che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		event "fwc liberation of rasalhague"
+	
+	npc disable
+		personality disables heroic entering
+		government Pug
+		system Rasalhague
+		fleet
+			names "pug"
+			variant
+				"Pug Maboro"
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+		fleet 2
+			names "pug"
+			variant
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+	
+	npc disable
+		personality disables heroic
+		government Pug
+		system Alderamin
+		fleet 2
+			names "pug"
+			variant
+				"Pug Maboro"
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+		fleet 2
+			names "pug"
+			variant
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+	
+	npc disable
+		personality disables heroic
+		government Pug
+		system Markab
+		fleet 4
+			names "pug"
+			variant
+				"Pug Maboro"
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+	
+	npc disable
+		personality disables heroic
+		government Pug
+		system Alpheratz
+		fleet 2
+			names "pug"
+			variant
+				"Pug Maboro"
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+		fleet 3
+			names "pug"
+			variant
+				"Pug Enfolta"
+				"Pug Zibruka" 2
+
+
+
+mission "FWC Pug 4A"
+	landing
+	name "Equipaggiamento da <planet>"
+	description "Viaggia con Freya per recuperare l'attrezzatura aliena che hai installato su <planet> e portala su Arabia per riaprire un altro dei collegamenti iperspaziali."
+	autosave
+	source Oblivion
+	destination Tundra
+	to offer
+		has "FWC Pug 4: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Hai respinto un altro attacco dei Pug. Combattere fianco a fianco comincia a creare un po' di cameratismo fra le Free Worlds e la Marina, anche se fino a poco fa erano nemici."
+		conversation
+			`Quando atterri su <origin>, gli equipaggi della Marina e delle Free Worlds si congratulano a vicenda per essere riusciti a resistere all'attacco alieno. Freya dice: "Immagino che niente crei cameratismo più in fretta del combattere fianco a fianco contro un nemico comune."`
+			choice
+				`	"Sì, spero solo che la nostra gente non si abitui troppo a considerare la Marina un alleato."`
+					goto negative
+				`	"Non credo che avremmo potuto vincere quella battaglia senza l'aiuto della Marina. Forse sbagliavamo a pensare di non avere affatto bisogno della Repubblica."`
+					goto positive
+			
+			label negative
+			`	"Esatto," dice. "Resta comunque che sarà dura ricominciare a combatterli quando tutto questo sarà finito."`
+				goto plan
+			
+			label positive
+			`	"Potresti avere ragione," dice. "Mi chiedo se, invece di puntare all'indipendenza completa dalla Repubblica, non avremmo dovuto provare qualcosa di più simile a quello che ha il Sindacato: autonomia relativa, ma dentro il quadro della Repubblica."`
+				goto plan
+			
+			label plan
+			`	Incontri Danforth, che dice: "Beh, ora abbiamo una testa di ponte, ma è fragile. Signorina Winters, pensa di poter aprire altri collegamenti iperspaziali?"`
+			`	Freya dice: "Certo, se recuperiamo l'attrezzatura da Tundra. Ma la stazione trasmettitrice non era esattamente trasportabile, quindi se vogliamo aprire altri sistemi non collegati a questo, dovremo trovare trasmettitori già installati anche lì."`
+			`	Danforth dice: "Cominciamo provando a ristabilire il collegamento da qui al sistema Ascella. Se funziona, manderò parte della mia flotta a prendere Zeta Aquilae e vedere se riescono a mettere in sicurezza un'altra stazione trasmettitrice. Ci darebbe due rotte verso lo spazio dei Pug invece del singolo collo di bottiglia che abbiamo adesso. Capitano <last>, saresti disposto a tornare indietro con Freya su <planet>?"`
+			choice
+				`	"Certo, possiamo partire subito."`
+					accept
+				`	"E se i Pug attaccano qui nel frattempo?"`
+					goto defend
+				`	"Non dovremmo attaccare il mondo natale dei Pug finché abbiamo qui una flotta così grande?"`
+					goto attack
+			
+			label defend
+			`	"Non preoccuparti," dice, "i rinforzi della Marina arrivano di continuo. Presto la nostra flotta qui sarà due volte più forte di quella che abbiamo impiegato nell'attacco di ieri." Di malavoglia, accetti di affidare a lui le difese mentre porti Freya nello spazio delle Free Worlds per aiutare ad aprire altri collegamenti iperspaziali.`
+				accept
+			label attack
+			`	"'Una flotta così grande'?" dice. "Questa non è nemmeno un ventesimo della potenza di combattimento attuale della Marina. E credo che ci serviranno molte più navi prima di essere pronti ad attaccare il mondo natale degli alieni. Ma non preoccuparti, i rinforzi arrivano qui di continuo. Tu vai a fare la tua parte, e noi baderemo alla nostra."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Freya è su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FWC Pug 4B"
+	landing
+	name "Equipaggiamento per <planet>"
+	description "Viaggia con Freya su <planet> per installare l'attrezzatura aliena e vedere se puoi riaprire un altro dei collegamenti iperspaziali interrotti."
+	source Tundra
+	destination Arabia
+	to offer
+		has "FWC Pug 4A: done"
+	cargo "graviton reflector" 10
+	passengers 1
+	blocked `Quando atterri su <origin>, Freya dice: "Capitano, sembra che ti serva <capacity> per continuare questa missione." Dovresti liberare altro spazio, poi tornare qui.`
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Atterri su <origin> e cominci subito a imballare l'attrezzatura aliena che avevi lasciato qui. Parecchi abitanti ti osservano da lontano, ma sembrano amichevoli nonostante il loro mondo sia stato occupato dalle Free Worlds contro la loro volontà così di recente. Chiaramente il tuo successo nell'aprire una via perché la Marina entrasse nella regione isolata dello spazio è diventato di dominio pubblico.`
+			`	Mentre stai installando l'attrezzatura aliena, Freya dice: "Non ti sembra tutto un po' troppo... pulito? Voglio dire, che gli alieni chiudano i collegamenti iperspaziali e poi, per qualche ragione, lascino dietro di sé esattamente l'attrezzatura che ci serve per riaprirli pian piano? E che la tecnologia necessaria sia così semplice, un trasmettitore e un riflettore? Combacia tutto fin troppo bene."`
+			choice
+				`	"Stai suggerendo che gli alieni volessero che facessimo esattamente quello che stiamo facendo?"`
+				`	"Sembra davvero strano che possiamo avere qualche successo combattendo una specie apparentemente così sofisticata."`
+			`	Annuisce. "Ho la sgradevole sensazione di essere dentro a un gioco che non capiamo," dice. "E prima di fare la prossima mossa dovremmo ottenere più informazioni."`
+			`	"Da chi?" chiedi.`
+			`	"Dai Quarg," dice. "Siamo a pochi salti dal loro spazio, e sostengono di sapere che cosa succede in tutta la galassia. E quando è cominciata questa crisi e abbiamo chiesto loro un motore di salto, hanno detto che non volevano intromettersi negli affari di altre specie, il che significa che forse sapevano che qui era coinvolta un'altra specie."`
+			choice
+				`	"La nostra missione è urgente. Dovremmo andare avanti verso Arabia."`
+				`	"Va bene, facciamo una deviazione per parlare con i Quarg."`
+					goto detour
+			
+			`	"Beh," dice, "sei tu il capitano, lascio decidere a te."`
+				accept
+			label detour
+			`	"Grazie," dice, "speriamo solo di riuscire a ottenere qualche risposta vera."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Freya e il riflettore di gravitoni sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FWC Pug 4B: Quarg"
+	landing
+	name "Visita i Quarg"
+	description "Se vuoi, visita i Quarg per vedere che cosa possono dirti sui Pug, prima di continuare a combatterli."
+	source Tundra
+	destination Lagrange
+	to offer
+		has "FWC Pug 4: done"
+	to fail
+		has "FWC Pug 5: done"
+	
+	on complete
+		log "Hai saputo dai Quarg che sono consapevoli da molto tempo della presenza dei Pug nel sistema Deneb. A quanto pare i Pug vengono da un'altra galassia e possiedono una tecnologia così avanzata che nemmeno i Quarg osano interferire con loro."
+		log "Tuttavia, è noto che i Pug trattano la guerra come un gioco, usando intenzionalmente tecnologia più debole quando combattono specie meno avanzate, per dare loro una possibilità equa di vincere la battaglia. Quindi combatterli non sarà una causa persa, ma i Quarg non sono disposti a fornire alcun aiuto."
+		log "Factions" "Pug" `I Quarg sostengono che i Pug trattano la guerra come un gioco. Quando combattono un'altra specie, i Pug si limitano a navi e armi abbastanza deboli perché l'altra specie abbia una possibilità di sconfiggerli.`
+		conversation
+			`Atterrate sulla stazione dei Quarg, ma nessuno dei due sa che cosa fare adesso. Come si trova un diplomatico Quarg? Ne hanno mai avuto uno? Mentre tu e Freya restate nell'hangar con un'aria piuttosto smarrita, uno dei Quarg vi si avvicina e dice: "Questi qui hanno domande?"`
+			`	Freya dice: "Siamo stati attaccati da alieni che si fanno chiamare Pug. Ci chiedevamo che cosa sapete di loro."`
+			`	La pelle dei Quarg è normalmente tutta grigia, come i loro vestiti, ma diverse macchie di pelle sul volto del Quarg diventano rosse alla parola "Pug". Hai sentito teorie secondo cui sarebbe un segno di emozione nei Quarg, ma nessuno sa con precisione quale emozione. Rabbia? Imbarazzo? Il Quarg con cui stai parlando dice semplicemente: "Venite," e vi guida in un angolo di uno dei corridoi principali, dove un altro Quarg sta dietro una scrivania. Ti colpisce quanto poco sappiate di questa specie: stai parlando con una guida turistica, o con un diplomatico? È il governatore della stazione, o solo un esperto di lingue umane? Il Quarg dietro la scrivania dice: "Avete domande per me?"`
+			choice
+				`	"Potete aiutarci a combattere i Pug?"`
+				`	"Potete darci informazioni sui Pug?"`
+					goto info
+			
+			`	"No," dice. "Molto tempo fa abbiamo provato a resistere ai Pug. Per rappresaglia hanno spezzato uno dei nostri anelli." Indica dalla finestra della stazione il mondo ad anello mezzo finito. "Questo anello è completo a metà, e ci sono voluti mille dei vostri anni per costruirlo. Gli anelli sono le nostre creazioni più preziose, quasi impossibili da distruggere, ma i Pug sanno come torcere e tagliare il tessuto dello spazio stesso."`
+			`	"Quindi avete già incontrato i Pug?" chiede Freya. "Sapete di loro?"`
+			
+			label info
+			`	"I Pug si sono intromessi negli affari di molte specie di questa galassia," dice, "ma non sono nativi di qui. Sono arrivati per mezzo di wormhole artificiali: una tecnologia che nemmeno i Drak possiedono. Le loro azioni sono imprevedibili. O sono del tutto illogici, o operano secondo una logica così superiore alla nostra da apparire priva di senso per noi. Sostengono che sia la seconda: che si muovano secondo una qualche conoscenza speciale del tempo e del futuro."`
+			choice
+				`	"Se sono così avanzati, abbiamo qualche possibilità di sconfiggerli?"`
+					goto defeat
+				`	"Pensi che i Drak si unirebbero a noi per combatterli?"`
+					goto drak
+			
+			label defeat
+			`	"Sì," dice. "In battaglia i Pug rispondono sempre con la forza appena sufficiente perché il loro avversario abbia una possibilità equa di vittoria."`
+			`	Freya è confusa. "Che cosa vuoi dire?" chiede.`
+				goto balance
+			
+			label drak
+			`	"No," dice. "I Drak non interferiscono in una guerra, a meno che le loro regole non vengano infrante. E comunque non vi aiuterebbe; i Pug regolano sempre la forza della loro flotta per dare all'avversario quelle che considerano possibilità eque."`
+			`	"Aspetta," dice Freya, "stai dicendo che ci attaccherebbero intenzionalmente con una forza più debole invece di usare tutta la loro potenza e garantirsi la vittoria?"`
+				goto balance
+			
+			label balance
+			`	"La guerra è un gioco per i Pug," dice il Quarg. "Sono una specie strana. Anche quando iniziano una guerra, il loro scopo può non essere vincerla, ma perderla in un certo modo. Li abbiamo visti perdere battaglie contro specie molto meno avanzate della vostra, anche se avevano armi che avrebbero garantito loro la vittoria. Se vogliono la guerra, dovete giocare al loro gioco, e se giocate al loro gioco, potrebbero permettervi di vincere."`
+			`	"Non ha alcun senso," dice Freya. "Morirebbero per il bene di un gioco?"`
+			`	Il Quarg resta in silenzio un momento, come se cercasse le parole. "Io sono me stesso, e sono anche Quarg. Voi siete voi stessi, e siete anche umani. Ma pensiamo che forse un Pug è Pug prima, e poi anche se stesso."`
+			`	"La loro identità è comunitaria, non individuale?" dice Freya.`
+			`	"Esatto. E poiché sono così profondamente connessi, percepiscono tutte le cose come connesse a loro. Almeno, è la migliore comprensione che siamo riusciti a raggiungere della loro specie."`
+			`	Parlate ancora un po', ma non ottenete altre informazioni di valore.`
+
+
+
+mission "FWC Pug 4C"
+	landing
+	name "Libera <planet>"
+	description "Recati nel sistema <system> per assistere la Marina nello scacciare i Pug e nel ristabilire un collegamento iperspaziale diretto al sistema Ascella."
+	autosave
+	source Arabia
+	destination Rand
+	clearance
+	to offer
+		has "FWC Pug 4B: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fwc reconnect ascella" 0
+		conversation
+			`Aiuti Freya a scaricare e installare il riflettore, poi contatti la Marina su Oblivion e le ordini di puntare il trasmettitore nella tua direzione. Pochi minuti dopo l'ammiraglio Danforth ti contatta. "Anche questo collegamento sembra tornare," dice. "Quindi andiamo avanti. Ora faremo un attacco al sistema <system>, e accoglieremmo con piacere il tuo aiuto in questa battaglia." Lasci l'attrezzatura su <origin> e torni alla tua nave con Freya.`
+				accept
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi Pug che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		log "Sei riuscito a ripristinare altri collegamenti iperspaziali e a respingere i Pug (con l'aiuto della Marina). Ma Freya pensa che sia fin troppo casuale che gli alieni abbiano lasciato dietro di sé esattamente la tecnologia necessaria per riparare i disturbi iperspaziali; sembra che i Pug stiano giocando a un gioco invece di combattere una guerra seria."
+		event "fwc reconnect zeta aquilae" 0
+		dialog `Dopo qualche minuto di scansione della superficie di <planet>, Freya individua un'altra stazione trasmettitrice identica a quella che avevi trovato su Oblivion. Contatti l'ammiraglio Danforth per dirgli dove si trova, e lui manda un equipaggio a prenderne il controllo. Ti riferisce anche che, ancora una volta, a quanto pare tutti i Pug hanno lasciato il pianeta nel corso della battaglia. "Peccato," dice. "Se avessimo preso dei prigionieri, forse avremmo potuto ottenere qualche risposta da loro. Comunque, raggiungimi allo spazioporto quando sei pronto ad aiutare con la prossima missione."`
+	
+	npc evade
+		personality disables heroic staying
+		government Pug
+		system "Zeta Aquilae"
+		fleet 6
+			names "pug"
+			variant
+				"Pug Maboro"
+				"Pug Enfolta" 2
+
+	npc
+		government "Navy (Oathkeeper)"
+		system "Zeta Aquilae"
+		personality heroic staying
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Gunboat (Mark II)" 2
+	npc
+		government Republic
+		system "Zeta Aquilae"
+		personality heroic staying uninterested
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Gunboat (Mark II)" 2
+
+
+
+mission "FWC Pug 5"
+	name "Libera <system>"
+	description "Alcune navi della Marina sono state dotate di motori di salto. Viaggia con loro nel sistema <system>, evitando la flotta principale dei Pug nel loro sistema natale, e riprendi il controllo del pianeta."
+	autosave
+	source Rand
+	destination Silver
+	clearance
+	to offer
+		has "FWC Pug 4C: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Trovi l'ammiraglio Danforth che sovrintende alle riparazioni delle navi danneggiate della Marina. "Sono contento che tu sia sopravvissuto a quella battaglia!" dice. "Queste navi aliene sono molto più avanzate delle nostre, ma noi siamo più numerosi, quindi ora che abbiamo stabilito una solida testa di ponte credo che abbiamo davvero una possibilità di sconfiggerli. L'unico problema è che la maggior parte della nostra flotta è ancora a nord. Con il sistema Vega tagliato fuori, le nostre linee di rifornimento devono fare tutto il giro attraverso la Fascia di Terra. Quindi vorrei proporre di liberare Vega come prossimo passo."`
+			choice
+				`	"Mi sembra davvero una buona scelta strategica."`
+				`	"Come farà la tua flotta ad arrivare a Vega senza passare dal sistema natale dei Pug? Quel sistema brulica delle loro navi."`
+			`	Danforth dice: "Durante la battaglia siamo riusciti a recuperare dei motori di salto da alcune navi Pug. Li abbiamo installati su tre delle nostre portaerei. Speriamo che, con il tuo aiuto, basti a superare qualsiasi resistenza nel sistema Vega. Poi la signorina Winters potrà fare di nuovo la sua magia con i collegamenti iperspaziali, e potremo portare dalla Sol una flotta di rinforzo imponente."`
+			`	"Mi sembra bene," dice Freya. "Vorrei che più navi nostre avessero motori di salto, così potremmo assistervi."`
+			`	"Esatto," dice Danforth. "È per questo che è così importante che la nave del capitano <last> faccia parte di questa battaglia. Quando sarà finita, voglio poter dire al Parlamento che questa guerra è stata vinta dalle Free Worlds e dalla Marina combattendo fianco a fianco in ogni momento. E spero che tu possa dire lo stesso al tuo Senato, così sarà più disposto a un compromesso fra noi."`
+			choice
+				`	"Sono contento di sentirtelo dire. La tua flotta è così più forte della nostra che potresti prenderti facilmente tutto il merito."`
+					goto navy
+				`	"Siamo stati noi a scoprire gli alieni e il modo di ripristinare i collegamenti iperspaziali. Il merito vero spetta alle Free Worlds."`
+					goto free
+			label navy
+			`	"Non voglio il merito," dice, "voglio la pace." Ti augura buona fortuna nell'attacco a Vega e ti dice di contattarlo appena il collegamento sarà ripristinato e i rinforzi pronti.`
+				accept
+			label free
+			`	"Capitano," dice, "il punto non è chi merita più merito. Il punto è come raccontiamo questa storia in modo che la gente dalla mia parte e dalla tua sia più disposta a fare la pace. È l'unica cosa che mi interessa." Ti augura buona fortuna nell'attacco a Vega e ti dice di contattarlo appena il collegamento sarà ripristinato e i rinforzi pronti.`
+				accept
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi Pug che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		event "fwc liberation of vega" 0
+	
+	npc
+		government "Navy (Oathkeeper)"
+		personality heroic escort
+		fleet 3
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Jump)"
+				"Combat Drone" 6
+				"Dagger" 8
+	
+	npc evade
+		personality disables heroic staying
+		government Pug
+		system Vega
+		fleet 2
+			names "pug"
+			variant
+				"Pug Enfolta"
+				"Pug Zibruka" 4
+		fleet 2
+			names "pug"
+			variant
+				"Pug Enfolta"
+				"Pug Zibruka" 3
+
+
+
+mission "FWC Pug 5B"
+	landing
+	name "Va' su <planet>"
+	description `Viaggia con Freya su <planet>, dove puoi installare il "riflettore di gravitoni" per ripristinare il collegamento iperspaziale dalla Sol al territorio dei Pug. (Pensa che Marte sia un'opzione migliore di un pianeta densamente popolato come la Terra.)`
+	autosave
+	source Silver
+	destination Mars
+	to offer
+		has "FWC Pug 5: done"
+	passengers 1
+	cargo "graviton reflector" 10
+	blocked `Quando atterri su <origin>, Freya dice: "Capitano, sembra che ti serva <capacity> per continuare questa missione." Dovresti liberare altro spazio, poi tornare qui.`
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Hai scacciato i Pug dal sistema Vega con l'aiuto di alcune navi della Marina dotate di motori di salto. Ancora una volta i Pug sono riusciti in qualche modo a evacuare tutta la loro gente dal pianeta prima dell'arrivo della Marina, come se si aspettassero già di perdere questo sistema."
+		conversation
+			`Ancora una volta i Pug sembrano aver previsto il tuo attacco e aver evacuato tutto il loro personale dal pianeta prima del tuo arrivo. È un po' inquietante che sembrino aver pianificato che gli eventi andassero esattamente in questo modo. Ancora una volta trovi una delle stazioni trasmettitrici, abbandonata su <origin> ma ancora funzionante, e dentro la stazione Freya individua un altro dei "riflettori" che le servono per completare il collegamento. "Non capisco," dice. "Avrebbero dovuto distruggere tutto questo prima di andarsene."`
+			choice
+				`	"Sì, spero che non stiamo cadendo in qualche tipo di trappola."`
+					goto trap
+				`	"Beh, ringraziamo il cielo che non l'abbiano fatto."`
+			`	"Immagino," dice. "È solo che non mi piace non capire le cose, e di questi alieni non capisco proprio niente."`
+				goto next
+			label trap
+			`	"Esatto," dice. "È difficile immaginare che una specie così avanzata possa fare così tanti errori tattici."`
+			label next
+			`	Carichi l'attrezzatura sulla tua nave, e Freya dice: "Installiamola su <planet>, invece che sulla Terra. Non credo che le radiazioni gravitoniche siano dannose per gli esseri umani, ma non ha senso metterla su un pianeta così densamente popolato."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Freya e il riflettore di gravitoni non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	
+	npc
+		government Republic
+		system Sol
+		personality heroic staying uninterested
+		fleet 3
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)" 2
+				"Gunboat (Mark II)" 2
+				"Rainmaker (Mark II)" 2
+
+
+
+mission "FWC Pug 5C"
+	landing
+	name "Torna su <planet>"
+	description "Torna su <planet> e unisciti alla flotta della Marina preparandoti a un attacco al sistema natale dei Pug. Una flotta delle Free Worlds attaccherà da sud nello stesso momento."
+	autosave
+	source Mars
+	destination Silver
+	to offer
+		has "FWC Pug 5B: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fwc reconnect vega"
+		conversation
+			`Appena Freya ha installato la sua attrezzatura e verificato che funzioni, contatti l'ammiraglio Danforth. "Siamo su Marte," gli dici, "e dovremmo avere presto ripristinato il collegamento iperspaziale verso Vega."`
+			`	"Eccellente," dice. "Per favore contatta il tuo Consiglio e organizza la vostra flotta perché colpisca da sud nello stesso momento in cui la flotta da Vega salta dentro da nord."`
+			`	Contatti Tomek e gli dici che la Marina è pronta per un assalto finale, e lui accetta di mandare tutte le navi che può risparmiare per unirsi a te. Ora è il momento di tornare su <planet> e attendere il segnale dell'attacco.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Freya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	
+	npc
+		government Republic
+		system Sol
+		personality heroic waiting
+		fleet 3
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)" 2
+				"Gunboat (Mark II)" 2
+				"Rainmaker (Mark II)" 2
+
+
+
+mission "FWC Pug 6"
+	landing
+	name "Sconfiggi i Pug"
+	description "Unisciti alla flotta della Marina nell'attacco al sistema natale dei Pug. Una volta eliminata la loro flotta, atterra sul loro mondo natale <planet> per tentare di negoziare la pace."
+	autosave
+	source Silver
+	destination Pugglemug
+	clearance
+	to offer
+		has "FWC Pug 5C: done"
+	passengers 1
+	blocked "Per continuare questa missione ti serve almeno una cuccetta libera per Freya."
+	on enter Deneb
+		dialog
+			`Entri nel sistema Deneb aspettandoti una massiccia flotta da battaglia Pug ad attenderti. Invece è del tutto deserto. Inoltre i tuoi sensori captano una qualche anomalia fuori dall'orbita del pianeta più esterno.`
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Ti stai preparando all'assalto finale al mondo natale dei Pug. Non sembra esserci altra opzione che costringerli ad arrendersi, ma con l'aiuto della Marina non sembra più un'impresa impossibile."
+		event "pug flee"
+		conversation
+			`Il piccolo spazioporto su Silver è stipato di gente, mentre sempre più navi della Marina arrivano ad atterrare. Gli ammiragli della Marina hanno deciso che non ha senso rimandare: domani mattina lancerete un attacco al mondo natale dei Pug. Nonostante i successi ottenuti finora contro i Pug, sai che, se l'intera loro flotta vi si opponesse, nemmeno la Marina potrebbe essere abbastanza forte da sconfiggerli. Questa potrebbe essere l'ultima volta che vedi vivi molti di questi ufficiali e membri degli equipaggi.`
+			`	Ognuno si prepara alla morte a modo suo. Il pub dello spazioporto è pieno zeppo, con la folla che si riversa nel corridoio e musica ad alto volume che rimbomba. La cappella è altrettanto piena, e il suono di preghiere sussurrate e canti si scontra con la musica da ballo del pub. Dalla porta della cappella vedi alcuni seduti a gambe incrociate sul pavimento e altri inginocchiati su tappeti da preghiera, mentre le varie culture che compongono la Repubblica fanno del loro meglio per condividere lo spazio.`
+			`	Trovi Freya seduta in un angolo appartato al piano superiore dell'edificio dello spazioporto, a guardare le stelle e la sabbia che scorre fuori dalla finestra. "Pronto per l'ultima battaglia, Capitano?" chiede.`
+			choice
+				`	"Certo, con la Marina alle spalle credo che abbiamo buone possibilità."`
+				`	"Pronto quanto lo sarò mai, immagino."`
+			`	Ride. "Immagino sia il meglio che possiamo sperare. Ti dispiace se domani viaggio sulla tua nave, invece che su una delle altre? Se questa è la fine, preferirei affrontarla con gente che conosco." Sei d'accordo. Lei si volta di nuovo a guardare fuori dalla finestra.`
+			`	Dato che Freya sembra voler restare sola, torni di sotto, e scopri che è arrivata una flotta consistente di Oathkeepers. Nel vestibolo principale dello spazioporto, un ufficiale Oathkeeper guida un gruppo in meditazione qigong. E con sorpresa scorgi l'ammiraglio Danforth seduto con il gruppo di preghiera musulmana, che canta in un arabo fluente. Intanto la festa fuori dal pub continua.`
+			`	Alla fine arriva il mattino, e prepari la tua nave all'assalto al mondo natale dei Pug...`
+				accept
+	
+	npc
+		government Republic
+		personality heroic
+		fleet 3
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)" 2
+				"Gunboat (Mark II)" 2
+				"Rainmaker (Mark II)" 2
+	npc
+		government "Navy (Oathkeeper)"
+		personality heroic
+		system Cebalrai
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Frigate (Mark II)" 2
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Gunboat (Mark II)" 3
+	npc
+		personality heroic
+		system Cebalrai
+		government "Free Worlds"
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Bastion (Laser)"
+				"Argosy (Blaster)"
+				"Argosy (Laser)"
+		fleet
+			names "free worlds capital"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Dreadnought"
+				"Falcon (Plasma)"
+				"Skein"
+				"Finch" 6
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+				"Falcon (Laser)"
+				"Osprey (Laser)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Heavy)"
+				"Osprey (Laser)"
+				"Argosy (Turret)"
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Freya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		log `I Pug sono fuggiti, a quanto pare attraversando un wormhole artificiale verso qualunque galassia da cui erano venuti. E si scopre che molte delle loro città su "Pugglemug" erano solo di facciata: edifici senza abitanti, con ologrammi che creavano l'apparenza di un mondo densamente popolato. Non hanno lasciato tecnologia avanzata, né traccia di quali fossero le loro vere intenzioni, ma si scopre che le città finte qui erano progettate per l'abitazione umana. Dovevano aver pianificato questa partenza da molto, molto tempo.`
+		log `Ora che i Pug se ne sono andati, la Marina potrà usare i "riflettori di gravitoni" per riparare i collegamenti iperspaziali interrotti e riconnettere tutto lo spazio umano.`
+		log "Factions" "Pug" `I Pug sono spariti dallo spazio umano, lasciando dietro di sé più domande che risposte. È possibile che il vero scopo del loro attacco fosse dare agli esseri umani un nemico comune che li costringesse a unirsi e a dimenticare le loro lotte interne.`
+		event "fwc pug defeated"
+		event "fwc link restoration 1" 10
+		event "fwc link restoration 2" 18
+		event "fwc link restoration 3" 29
+		conversation
+			`Mentre porti la tua flotta ad atterrare, scopri che lo spazioporto principale dei Pug è sorprendentemente vuoto. Però un gruppo di bambini Pug è raccolto in cerchio su una delle piazzole. Sembrano giocare a qualcosa; ignorano la tua flotta sopra di loro.`
+			choice
+				`	(Attaccali.)`
+				`	(Evita di fargli del male e atterra.)`
+					goto avoid
+			
+			`	Spara un solo colpo al centro del cerchio, lasciando una cicatrice scura sulla piazzola e sollevando una colonna di polvere e fumo. I bambini continuano il loro gioco, come se non fosse successo niente.`
+			label avoid
+			`	Fai atterrare la nave vicino al cerchio dei bambini Pug. Si passano una palla avanti e indietro, e ignorano ostinatamente la tua presenza. A parte il rumore della palla che colpisce l'asfalto, l'intera città è inquietantemente silenziosa. "È davvero strano," dice Freya.`
+			choice
+				`	(Esplora la città.)`
+					goto city
+				`	(Unisciti al gioco.)`
+					goto join
+			
+			label join
+			`	Entri nel cerchio e cerchi di afferrare la palla, ma ti passa dritta attraverso le dita. Freya allunga la mano per toccare uno dei bambini, e anche la sua mano li attraversa. "Qualche tipo di proiezione olografica," dice.`
+			`	Le navi della Marina cominciano ad atterrare e a mandare gli equipaggi a esplorare. Tu e Freya entrate in città, passando accanto a due Pug adulti seduti a un tavolo fuori da quello che sembra una specie di caffè, che giocano a un gioco da tavolo con pietre bianche e nere su una griglia esagonale. Controlli e scopri che anche loro sono un'illusione olografica.`
+				goto house
+			
+			label city
+			`	Le navi della Marina cominciano ad atterrare e a mandare gli equipaggi a esplorare. Tu e Freya entrate in città. Le strade sono per lo più deserte, ma in una passate accanto a due Pug adulti seduti a un tavolo fuori da quello che sembra una specie di caffè, che giocano a un gioco da tavolo con pietre bianche e nere su una griglia esagonale.`
+			choice
+				`	(Attaccali.)`
+					goto attack
+				`	(Prova a parlare con loro.)`
+					goto talk
+			
+			label attack
+			`	Tiri un pugno a uno dei Pug al tavolo, ma il tuo pugno attraversa la sua testa come se non ci fosse nulla. Sorpresa, Freya allunga la mano per toccare l'altro, e di nuovo la sua mano li attraversa. "Qualche tipo di proiezione olografica," dice. Continuate a esplorare.`
+				goto house
+			
+			label talk
+			`	Provi a parlare con i Pug, ma loro, come i bambini, ti ignorano completamente; non sembrano nemmeno accorgersi della tua esistenza. Alla fine Freya allunga la mano per scuotere uno di loro per la spalla, e la sua mano lo attraversa. Sorpresa, agita le mani avanti e indietro attraverso entrambi. "Qualche tipo di proiezione olografica," dice.`
+				goto house
+			
+			label house
+			`	Continuate a esplorare per un po'. A parte le illusioni, la città sembra deserta. "Diamo un'occhiata dentro una delle case," dice alla fine Freya. Salite i gradini di quello che sembra un edificio di appartamenti e scoprite che tutte le porte sono aperte. Dentro uno degli alloggi esplorate le varie stanze e scoprite che gli impianti idraulici e l'elettricità funzionano, ma uno spesso strato di polvere copre ogni cosa. Freya, intanto, fissa una delle prese elettriche. "<first>," dice, "ci vedi niente di strano?"`
+			choice
+				`	"No, è una normale presa elettrica."`
+				`	"Qui è tutto strano. La città, gli ologrammi, tutto."`
+			`	Dice: "È una presa elettrica normale, di tipo umano. Umana. In una città aliena. E i gradini che abbiamo salito per arrivare qui: i Pug hanno le gambe una volta e mezza le nostre. Ma l'altezza dei gradini era quella normale per un umano. Questo edificio non è stato fatto per i Pug. È stato fatto per noi."`
+			`	Cominciano ad arrivare rapporti mentre la Marina esplora il resto del pianeta, e trovano tutti la stessa cosa: le città sono abbandonate, molte con segni che non sono mai state abitate. La prima volta che hai visitato questo pianeta, hai pensato che dovesse avere un miliardo di abitanti, ma ora sembra che la popolazione reale fosse meno di un milione: tutti quanti, a quanto pare, partiti verso un luogo oltre il wormhole.`
+			`	Freya dice: "Torniamo allo spazioporto e incontriamo gli ammiragli."`
+
+
+
+mission "FWC End"
+	name "Parla con il Parlamento"
+	description "Va' sulla Terra per un altro incontro con il Parlamento. Alondo e Katya ti incontreranno lì. (Speriamo che vada meglio della tua ultima visita.)"
+	autosave
+	source Pugglemug
+	destination Earth
+	to offer
+		has "FWC Pug 6: done"
+	passengers 1
+	blocked "Per continuare questa missione ti serve almeno una cuccetta libera per Freya."
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		"reputation: Republic" += 20
+		conversation
+			`Trovi l'ammiraglio Danforth che ispeziona lo spazioporto dei Pug. "È tutto molto strano," dice. "Sono contento che gli alieni sembrino essersene andati, ma vorrei sapere da dove sono venuti e se è probabile che tornino."`
+			`	Freya dice: "Che cosa dovremmo fare adesso?"`
+			`	"Ho contattato New Austria e ho detto loro che la consigliera Reynolds è libera di andarsene," dice. "Mi ha detto che il vostro Senato ha accettato che le Free Worlds diventino un distretto semiautonomo della Repubblica, simile ai sistemi del Sindacato. Ha anche chiesto che tu e il capitano <last> la incontriate insieme ad Alondo Gruyere sulla Terra, dove si incontreranno con il Parlamento. Ho mandato alla Terra un rapporto che sottolinea con molta forza il ruolo che le Free Worlds hanno avuto in questa vittoria, quindi il Parlamento dovrebbe essere abbastanza disposto a negoziare con voi."`
+			choice
+				`	"Grazie. È stato un onore combattere al tuo fianco."`
+					goto honor
+				`	"L'ultima volta che abbiamo visitato il Parlamento, hanno violato il nostro accordo di salvacondotto e ci hanno messo sotto processo."`
+					goto trial
+			label honor
+			`	"No, l'onore è stato mio," dice. "Passa a trovarmi su Farpoint ogni volta che sei da queste parti."`
+				accept
+			label trial
+			`	"Fidati," dice, "questa volta non dovrai preoccupartene. Il fatto che un attacco alieno così vicino alla Terra sia stato sventato con l'aiuto delle Free Worlds ha messo il Parlamento in un umore molto... ricettivo. Buona fortuna, capitano <last>, e spero che le nostre strade si incrocino di nuovo."`
+				accept
+	
+	on complete
+		log "Il Parlamento ha accettato un trattato di pace, perché la minaccia di un'invasione aliena ora sembra molto più urgente della guerra civile con le Free Worlds. Qualunque fosse la vera intenzione dei Pug, il risultato del loro intervento è che l'umanità è di nuovo in pace. Ci sono state perdite enormi, ma nulla in confronto a quello che sarebbe successo se le Free Worlds avessero provato a conquistare la Terra."
+		log "Potrebbe volerci un po' prima che i membri delle Free Worlds riescano a riconquistare la fiducia del resto dell'umanità."
+		log "Factions" "Free Worlds" `Le tensioni fra le Free Worlds e la Repubblica crebbero quando altri sistemi decisero di lasciare la Repubblica e unirsi alle Free Worlds, culminando in una serie di scontri militari che terminarono quando i Pug invasero lo spazio umano. Dopo che l'umanità si unì per scacciare gli invasori Pug, la Repubblica concesse ufficialmente l'autonomia alle Free Worlds.`
+		event "deep sky tech available"
+		event "syndicate tech available"
+		"salary: Free Worlds" = 8900
+		set "main plot completed"
+		set "free worlds plot completed"
+		set "free worlds checkmate"
+		event "stack core for sale"
+		event "fwc kaus borealis ceded back"
+		conversation
+			`Arrivi nell'edificio del Parlamento proprio mentre Alondo e Katya hanno appena finito di incontrarli. "Buone notizie," dice Katya. "Siamo tutti ufficialmente graziati. E tu, capitano <last>, sei diventato una specie di eroe."`
+			`	"Meglio ancora," dice Alondo, "la guerra con la Repubblica è finita. Abbiamo accettato di limitare il nostro territorio alle dimensioni attuali, e una tassa molto ridotta per coprire il costo della protezione della Marina se gli alieni attaccheranno di nuovo o se capiterà qualche altra catastrofe. In cambio, alle Free Worlds è stata concessa l'autonomia dalla Repubblica."`
+			`	"Inoltre," dice Katya, "come loro espressione di gratitudine, i membri del Sindacato nel Parlamento hanno offerto di mettere a nostra disposizione, a un prezzo accessibile, alcune delle loro nuove tecnologie sviluppate durante la guerra."`
+			choice
+				`	"È molto generoso da parte loro."`
+				`	"Mi chiedo se sia il loro modo di comprarsi il nostro sostegno e di farci stare zitti sul presunto disertore."`
+			`	"Può darsi," dice Alondo. "Anche l'amministratore delegato del Sindacato, Alastair Korban, si dimette. Forse gli eventi sono collegati. Per il resto, ora che la guerra è finita e i Pug sono stati sconfitti, il Senato ha votato per sciogliere il Consiglio, lasciandoci liberi di tornare alla vita civile. Tuttavia hanno anche accettato di pagarti, <first>, uno stipendio ridotto in onore del tuo servizio. Allora, che cosa pensi di fare adesso?"`
+			choice
+				`	"Metterò su una flotta mercantile e vivrò una vita tranquilla e sicura."`
+				`	"Vedrò se la gente dei mondi di frontiera ha bisogno di aiuto contro i pirati."`
+				`	"Userò il mio motore di salto per esplorare oltre lo spazio umano."`
+			`	"Beh, ti auguriamo ogni bene," dice Freya. "Non avremmo mai vinto questa guerra senza di te. Mi raccomando, tieniti in contatto." Abbracci ciascuno di loro per salutarti e torni alla tua nave. Quello che farai adesso dipende da te...`

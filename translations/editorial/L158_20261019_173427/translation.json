@@ -1,0 +1,209 @@
+{
+ "block": {
+  "path": "data/human/weapons.txt",
+  "line_from": 1015,
+  "line_to": 1228,
+  "units": 18
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Sidewinder Missile|description|1015|0",
+   "path": "data/human/weapons.txt",
+   "line": 1015,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Sidewinder Missile",
+   "english": "The Sidewinder Missile is ammunition for the Sidewinder Missile Launcher; each launcher that you have installed can be armed with up to 45 of them, while pods can carry 4. You cannot install a missile without a pod or launcher to fire it from.",
+   "italian": "The Sidewinder Missile is ammunition for the Sidewinder Missile Launcher; each launcher that you have installed can be armed with up to 45 of them, while pods can carry 4. You cannot install a missile without a pod or launcher to fire it from.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Sidewinder Missile Rack|description|1027|0",
+   "path": "data/human/weapons.txt",
+   "line": 1027,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Sidewinder Missile Rack",
+   "english": "The Sidewinder Missile Rack is used to store extra ammunition for Sidewinder Missile Launchers.",
+   "italian": "The Sidewinder Missile Rack is used to store extra ammunition for Sidewinder Missile Launchers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Sidewinder Missile Launcher|description|1067|0",
+   "path": "data/human/weapons.txt",
+   "line": 1067,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Sidewinder Missile Launcher",
+   "english": "The Sidewinder Missile is designed by Lovelace Labs, which is ironically also the designer of the Anti-Missile Turret. Rumors say that the two engineering teams at Lovelace who make the missiles and the anti-missiles are locked in furious competition with each other: the result has been generation after generation of smarter missiles and then smarter turrets to fend them off.",
+   "italian": "The Sidewinder Missile is designed by Lovelace Labs, which is ironically also the designer of the Anti-Missile Turret. Rumors say that the two engineering teams at Lovelace who make the missiles and the anti-missiles are locked in furious competition with each other: the result has been generation after generation of smarter missiles and then smarter turrets to fend them off.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Sidewinder Missile Launcher|description|1068|0",
+   "path": "data/human/weapons.txt",
+   "line": 1068,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Sidewinder Missile Launcher",
+   "english": "\tAlthough not as powerful or cheap as the popular Meteor Missiles, Sidewinders have several advantages, including their superior maneuverability, better tracking systems, and protective casings that make them much harder for anti-missile systems to destroy.",
+   "italian": "\tAlthough not as powerful or cheap as the popular Meteor Missiles, Sidewinders have several advantages, including their superior maneuverability, better tracking systems, and protective casings that make them much harder for anti-missile systems to destroy.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Sidewinder Missile Launcher|description|1069|0",
+   "path": "data/human/weapons.txt",
+   "line": 1069,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Sidewinder Missile Launcher",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Sidewinder Missile Pod|description|1113|0",
+   "path": "data/human/weapons.txt",
+   "line": 1113,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Sidewinder Missile Pod",
+   "english": "The Sidewinder Missile is designed by Lovelace Labs, which is ironically also the designer of the Anti-Missile Turret. Rumors say that the two engineering teams at Lovelace who make the missiles and the anti-missiles are locked in furious competition with each other: the result has been generation after generation of smarter missiles and then smarter turrets to fend them off.",
+   "italian": "The Sidewinder Missile is designed by Lovelace Labs, which is ironically also the designer of the Anti-Missile Turret. Rumors say that the two engineering teams at Lovelace who make the missiles and the anti-missiles are locked in furious competition with each other: the result has been generation after generation of smarter missiles and then smarter turrets to fend them off.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Sidewinder Missile Pod|description|1114|0",
+   "path": "data/human/weapons.txt",
+   "line": 1114,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Sidewinder Missile Pod",
+   "english": "\tAlthough not as powerful or cheap as the popular Meteor Missiles, Sidewinders have several advantages, including their superior maneuverability, better tracking systems, and protective casings that make them much harder for anti-missile systems to destroy.",
+   "italian": "\tAlthough not as powerful or cheap as the popular Meteor Missiles, Sidewinders have several advantages, including their superior maneuverability, better tracking systems, and protective casings that make them much harder for anti-missile systems to destroy.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Sidewinder Missile Pod|description|1115|0",
+   "path": "data/human/weapons.txt",
+   "line": 1115,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Sidewinder Missile Pod",
+   "english": "\tPods enable fighters and other light craft to carry small quantities of missiles into battle while retaining enough space for other weapons. Large ships are better off with full-size launchers.",
+   "italian": "\tPods enable fighters and other light craft to carry small quantities of missiles into battle while retaining enough space for other weapons. Large ships are better off with full-size launchers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Sidewinder Missile Pod|description|1116|0",
+   "path": "data/human/weapons.txt",
+   "line": 1116,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Sidewinder Missile Pod",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Javelin|description|1149|0",
+   "path": "data/human/weapons.txt",
+   "line": 1149,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Javelin",
+   "english": "A Javelin missile is ammunition for the Javelin Pod; without a Pod to store them in you cannot purchase or use Javelins.",
+   "italian": "A Javelin missile is ammunition for the Javelin Pod; without a Pod to store them in you cannot purchase or use Javelins.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Javelin Storage Crate|description|1161|0",
+   "path": "data/human/weapons.txt",
+   "line": 1161,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Javelin Storage Crate",
+   "english": "The Javelin Storage Crate is used to store extra ammunition for Javelin Pods.",
+   "italian": "The Javelin Storage Crate is used to store extra ammunition for Javelin Pods.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Javelin Pod|description|1190|0",
+   "path": "data/human/weapons.txt",
+   "line": 1190,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Javelin Pod",
+   "english": "The Javelin Pod fires a rapid stream of unguided missiles. A Javelin Pod does far more damage than any gun of a comparable size, and has a longer range as well, but once a ship has expended all of its ammunition it must leave combat and find a planet where it can buy more, which makes Javelins less useful in protracted battles.",
+   "italian": "The Javelin Pod fires a rapid stream of unguided missiles. A Javelin Pod does far more damage than any gun of a comparable size, and has a longer range as well, but once a ship has expended all of its ammunition it must leave combat and find a planet where it can buy more, which makes Javelins less useful in protracted battles.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Javelin Pod|description|1191|0",
+   "path": "data/human/weapons.txt",
+   "line": 1191,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Javelin Pod",
+   "english": "\tThe weapon's high rate of fire also makes it useful for saturating well-protected ships' anti-missile defenses so that more dangerous projectiles fired by allied ships can sneak through.",
+   "italian": "\tThe weapon's high rate of fire also makes it useful for saturating well-protected ships' anti-missile defenses so that more dangerous projectiles fired by allied ships can sneak through.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Javelin Pod|description|1192|0",
+   "path": "data/human/weapons.txt",
+   "line": 1192,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Javelin Pod",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Javelin Mini Pod|description|1225|0",
+   "path": "data/human/weapons.txt",
+   "line": 1225,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Javelin Mini Pod",
+   "english": "The Javelin Pod fires a rapid stream of unguided missiles. A Javelin Pod does far more damage than any gun of a comparable size, and has a longer range as well, but once a ship has expended all of its ammunition it must leave combat and find a planet where it can buy more, which makes Javelins less useful in protracted battles.",
+   "italian": "The Javelin Pod fires a rapid stream of unguided missiles. A Javelin Pod does far more damage than any gun of a comparable size, and has a longer range as well, but once a ship has expended all of its ammunition it must leave combat and find a planet where it can buy more, which makes Javelins less useful in protracted battles.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Javelin Mini Pod|description|1226|0",
+   "path": "data/human/weapons.txt",
+   "line": 1226,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Javelin Mini Pod",
+   "english": "\tThe weapon's high rate of fire also makes it useful for saturating well-protected ships' anti-missile defenses so that more dangerous projectiles fired by allied ships can sneak through.",
+   "italian": "\tThe weapon's high rate of fire also makes it useful for saturating well-protected ships' anti-missile defenses so that more dangerous projectiles fired by allied ships can sneak through.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:Javelin Mini Pod|description|1227|0",
+   "path": "data/human/weapons.txt",
+   "line": 1227,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Javelin Mini Pod",
+   "english": "\tMini pods enable fighters and other light craft to carry small quantities of Javelins into battle while retaining enough space for other weapons. Large ships are better off with full-size pods.",
+   "italian": "\tMini pods enable fighters and other light craft to carry small quantities of Javelins into battle while retaining enough space for other weapons. Large ships are better off with full-size pods.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "outfit:Javelin Mini Pod|description|1228|0",
+   "path": "data/human/weapons.txt",
+   "line": 1228,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Javelin Mini Pod",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  }
+ ]
+}

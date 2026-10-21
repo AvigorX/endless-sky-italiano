@@ -1,0 +1,24 @@
+{
+ "block": {
+  "path": "data/gegno/gegno outfits.txt",
+  "line_from": 1137,
+  "line_to": 1137,
+  "units": 1
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Scin Adjutant License|description|1137|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 1137,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Scin Adjutant License",
+   "english": "Productive acts perpetrated by you have raised the interests of the Gegno Scin, and they authorize you to purchase their most basic technology.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Productive acts perpetrated by you have raised the interests of the Gegno Scin, and they authorize you to purchase their most basic technology.\"",
+   "english_hash": "b7e0798d190492f8"
+  }
+ ]
+}

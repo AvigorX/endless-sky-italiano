@@ -1,0 +1,99 @@
+{
+ "block": {
+  "path": "data/korath/korath ships.txt",
+  "line_from": 95,
+  "line_to": 360,
+  "units": 8
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Rano'erek|description|95|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 95,
+   "kind": "DESCRIPTION",
+   "context": "ship:Rano'erek",
+   "english": "After the Korath were exiled from their homelands, efficient resource collection became a priority. World-ships were too precious to risk on dangerous forays, and raiders lacked the cargo capacity. The Rano'erek-class Asteroid Dredging Ship, named for a respected civilian politician and economist, was born as an answer to this problem.",
+   "italian": "Dopo che i Korath furono esiliati dalle loro terre d'origine, la raccolta efficiente delle risorse divenne una priorità. Le navi-mondo erano troppo preziose per rischiarle in sortite pericolose, e ai razziatori mancava la capacità di carico. La nave dragante per asteroidi di classe Rano'erek, intitolata a un rispettato politico ed economista civile, nacque come risposta a questo problema.",
+   "ratio": 1.16
+  },
+  {
+   "idx": 2,
+   "id": "ship:Rano'erek|description|96|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 96,
+   "kind": "DESCRIPTION",
+   "context": "ship:Rano'erek",
+   "english": "\tFeaturing an abundance of cargo and passenger space in addition to their formidable defensive armament, these bulky ships can also offer potent support for frontline Palavrets.",
+   "italian": "\tDotate di abbondante spazio per carico e passeggeri oltre a un formidabile armamento difensivo, queste navi massicce possono anche offrire un valido supporto ai Palavret in prima linea.",
+   "ratio": 1.051
+  },
+  {
+   "idx": 3,
+   "id": "ship:Palavret|description|170|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 170,
+   "kind": "DESCRIPTION",
+   "context": "ship:Palavret",
+   "english": "Successive raider designs have been the Korath warship of choice for plundering neighboring species for generations. Named for a celebrated captain who gave her life to ensure her crippled vessel made it back to port with its desperately needed cargo of stolen fish, the Palavret-Class Raiding Ship continues that grim tradition.",
+   "italian": "I vari modelli di razziatori che si sono succeduti sono stati per generazioni la nave da guerra Korath preferita per depredare le specie vicine. Intitolata a una celebre capitana che diede la vita perché la sua nave menomata riuscisse a tornare in porto con il carico di pesce rubato di cui c'era disperato bisogno, la nave da razzia di classe Palavret prosegue quella cupa tradizione.",
+   "ratio": 1.17
+  },
+  {
+   "idx": 4,
+   "id": "ship:Palavret|description|171|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 171,
+   "kind": "DESCRIPTION",
+   "context": "ship:Palavret",
+   "english": "\tLike all Exile ships, the Palavret has been adapted to house as many Korath as possible, as comfortably as possible, inflating its size beyond similarly armed warships. The spaceborne construction techniques employed allow for the ship's easy replacement, facilitating continued raids of nearby systems.",
+   "italian": "\tCome tutte le navi dell'Esilio, la Palavret è stata adattata per ospitare il maggior numero possibile di Korath, nel massimo comfort possibile, gonfiando le sue dimensioni oltre quelle di navi da guerra con armamento simile. Le tecniche di costruzione spaziale impiegate ne consentono una facile sostituzione, il che agevola le razzie continue nei sistemi vicini.",
+   "ratio": 1.197
+  },
+  {
+   "idx": 5,
+   "id": "ship:Tubfalet|description|285|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 285,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tubfalet",
+   "english": "The venerable Palavret has been a mainstay of the Korath raiding fleet, elements of its design dating back from before the era of shortages and desperation caused by a life in exile. Over forty generations of raiders have terrorized neighboring systems over the centuries.",
+   "italian": "La venerabile Palavret è stata un pilastro della flotta di razzia Korath, con elementi del suo progetto che risalgono a prima dell'era di penuria e disperazione causata dalla vita in esilio. Oltre quaranta generazioni di razziatori hanno terrorizzato i sistemi vicini nel corso dei secoli.",
+   "ratio": 1.062
+  },
+  {
+   "idx": 6,
+   "id": "ship:Tubfalet|description|286|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 286,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tubfalet",
+   "english": "\tConstant warfare against surrounding aliens has been building pressure on Korath shipyards to recover some of their ancient prowess. Now, with a fresh industrial network to draw upon, the Korath have created a new raider to deal with modern targets, and the Tubfalet-Class Raiding Ship is named for an admiral who dealt with such enemies. Despite extensive injuries, he remained on his flag bridge during a Remnant attack, leading his squadron to victory.",
+   "italian": "\tLa guerra costante contro gli alieni circostanti ha fatto crescere la pressione sui cantieri Korath perché recuperassero parte della loro antica abilità. Ora, potendo contare su una rete industriale nuova, i Korath hanno creato un razziatore per affrontare bersagli moderni, e la nave da razzia di classe Tubfalet è intitolata a un ammiraglio che affrontò nemici simili. Nonostante le ferite estese, rimase sul ponte ammiraglia durante un attacco dei Remnant, guidando il suo squadrone alla vittoria.",
+   "ratio": 1.099
+  },
+  {
+   "idx": 7,
+   "id": "ship:'nra'ret|description|359|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 359,
+   "kind": "DESCRIPTION",
+   "context": "ship:'nra'ret",
+   "english": "While perhaps, at first, seeming like a super-sized 'olofez-Class Carried Chaser, the 'nra'ret-Class Chaser is not only the first truly unique warship design the Exiles have fielded since the Exodus, but also the first built solely for combat instead of needing to double as a habitat or supply ship. Its size and non-modular nature also means it must be constructed wholesale at the largest Korath facilities, something that, until recently, was generally reserved for the likes of the massive Ik'atilajej and the Korsmanath A'awoj.",
+   "italian": "Pur sembrando a prima vista un cacciatore imbarcato di classe 'olofez in formato gigante, il cacciatore di classe 'nra'ret non è solo il primo progetto di nave da guerra davvero originale che gli Esiliati abbiano schierato dopo l'Esodo, ma anche il primo costruito esclusivamente per il combattimento, senza dover servire anche da abitazione o da nave di rifornimento. Le sue dimensioni e la sua natura non modulare significano anche che va costruito per intero nelle più grandi strutture Korath, cosa che fino a poco tempo fa era riservata in genere a colossi come gli enormi Ik'atilajej e il Korsmanath A'awoj.",
+   "ratio": 1.148
+  },
+  {
+   "idx": 8,
+   "id": "ship:'nra'ret|description|360|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 360,
+   "kind": "DESCRIPTION",
+   "context": "ship:'nra'ret",
+   "english": "\tThe 'nra'ret-Class Chaser, named in honor of a brilliant weapons engineer who took their own life to avoid having their secrets captured by a hostile alien force, provides the Exiles with a fast and powerful patrol striker both in support of large raiding fleets and as independent units. To this end, it is armed with numerous missile ports designed to rain fire on enemies from afar. It also carries a pair of langrage heavers for sustained operations, and two Fire-Lances for emergency use in close quarters.",
+   "italian": "\tIl cacciatore di classe 'nra'ret, intitolato in onore di un brillante ingegnere delle armi che si tolse la vita per evitare che i suoi segreti finissero in mano a una forza aliena ostile, dà agli Esiliati un veloce e potente battitore di pattuglia, sia a supporto delle grandi flotte di razzia sia come unità indipendente. A questo scopo è armato con numerosi portelli lanciamissili, pensati per far piovere fuoco sul nemico da lontano. Porta anche un paio di lanciatori di mitraglia per le operazioni prolungate, e due Lance di fuoco per l'uso d'emergenza negli scontri ravvicinati.",
+   "ratio": 1.141
+  }
+ ]
+}

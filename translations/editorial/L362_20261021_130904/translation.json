@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/drak/drak outfits.txt",
+  "line_from": 34,
+  "line_to": 277,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Drak Distancer|description|34|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 34,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Distancer",
+   "english": "This is a thruster that can produce force in any direction, allowing a Drak ship to keep a safe distance away from its target.",
+   "italian": "This is a thruster that can produce force in any direction, allowing a Drak ship to keep a safe distance away from its target.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Drak Draining Field|description|72|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 72,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Draining Field",
+   "english": "This device is the Archon's primary defensive tool: not only does it disrupt the shields and energy supplies of all hostile ships within it, it also exerts a powerful repelling force that keeps ships from closing in with the Archon.",
+   "italian": "This device is the Archon's primary defensive tool: not only does it disrupt the shields and energy supplies of all hostile ships within it, it also exerts a powerful repelling force that keeps ships from closing in with the Archon.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Drak Draining Field (Augmented)|description|105|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 105,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Draining Field (Augmented)",
+   "english": "This device is the Archon's primary defensive tool: not only does it disrupt the shields and energy supplies of all hostile ships within it, it also exerts a powerful repelling force that keeps ships from closing in with the Archon.",
+   "italian": "This device is the Archon's primary defensive tool: not only does it disrupt the shields and energy supplies of all hostile ships within it, it also exerts a powerful repelling force that keeps ships from closing in with the Archon.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Drak Draining Field (Augmented)|description|106|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 106,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Draining Field (Augmented)",
+   "english": "\tWhile normally kept at minimal strength, the Archons have demonstrated the ability to ramp up the field to be vastly stronger when faced with a serious threat.",
+   "italian": "\tWhile normally kept at minimal strength, the Archons have demonstrated the ability to ramp up the field to be vastly stronger when faced with a serious threat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Drak Anti-Missile Field|description|127|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 127,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Anti-Missile Field",
+   "english": "This device produces a field that destroys any missiles that come within it.",
+   "italian": "This device produces a field that destroys any missiles that come within it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Drak Anti-Missile Field (Augmented)|description|149|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 149,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Anti-Missile Field (Augmented)",
+   "english": "This device produces a field that destroys any missiles that come within it.",
+   "italian": "This device produces a field that destroys any missiles that come within it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Drak Anti-Missile Field (Augmented)|description|150|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 150,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Anti-Missile Field (Augmented)",
+   "english": "\tThis level of anti-missile effectiveness is required only when dealing with the most powerful of threats.",
+   "italian": "\tThis level of anti-missile effectiveness is required only when dealing with the most powerful of threats.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Drak Turret|description|179|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 179,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Turret",
+   "english": "This is a turret-based cannon with significant range and accuracy.",
+   "italian": "This is a turret-based cannon with significant range and accuracy.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Drak Turret (Augmented)|description|209|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 209,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Turret (Augmented)",
+   "english": "This is a turret-based cannon with significant range and accuracy.",
+   "italian": "This is a turret-based cannon with significant range and accuracy.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Drak Turret (Augmented)|description|210|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 210,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Turret (Augmented)",
+   "english": "\tAgainst most threats, Archons respond with their weapons set to very low levels. They are, however, more than capable of dealing much more damage when the situation requires it.",
+   "italian": "\tAgainst most threats, Archons respond with their weapons set to very low levels. They are, however, more than capable of dealing much more damage when the situation requires it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Drak Antimatter Cannon|description|248|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 248,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Antimatter Cannon",
+   "english": "This is the most powerful weapon that the Archons deign to utilize in the presence of the younger races.",
+   "italian": "This is the most powerful weapon that the Archons deign to utilize in the presence of the younger races.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Drak Antimatter Cannon (Augmented)|description|277|0",
+   "path": "data/drak/drak outfits.txt",
+   "line": 277,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Drak Antimatter Cannon (Augmented)",
+   "english": "This is the most powerful weapon that the Archons deign to utilize in the presence of the younger races. Hitherto unknown as Archons are rarely pushed to the point of needing to use more than their minimum abilities, the Antimatter Cannon is capable of far more damage than originally thought.",
+   "italian": "This is the most powerful weapon that the Archons deign to utilize in the presence of the younger races. Hitherto unknown as Archons are rarely pushed to the point of needing to use more than their minimum abilities, the Antimatter Cannon is capable of far more damage than originally thought.",
+   "ratio": 1.0
+  }
+ ]
+}

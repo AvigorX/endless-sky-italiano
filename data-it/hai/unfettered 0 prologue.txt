@@ -1,0 +1,542 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "First Contact: Unfettered"
+	landing
+	source
+		attributes "unfettered"
+	on offer
+		conversation
+			branch hai
+				has "First Contact: Hai: offered"
+			`Questo pianeta è popolato da una specie aliena ostile che somiglia a scoiattoli giganti e intelligenti. Sebbene, nonostante la loro ostilità in orbita, in superficie non ti badano quasi. Vuoi avvicinarti a uno di loro?`
+			choice
+				`	(Certo.)`
+					goto sure
+				`	(Non ora, è troppo rischioso.)`
+					defer
+
+			label sure
+			`	Incontri lo sguardo di uno degli alieni che lavorano alla banchina e lui si avvicina. "Ah," dice, "la scimmia è curiosa. La scimmia non è mai stata faccia a faccia con un vero Hai?"`
+			choice
+				`	"Hai? È così che vi chiamate?"`
+					goto name
+				`	"Che cosa intendi con 'veri Hai'?"`
+					goto true
+				`	"Perché mi avete sparato? Siete in guerra?"`
+					goto war
+
+			label hai
+			`Gli Hai qui sembrano in guerra con il resto della loro specie. Vuoi avvicinarti a uno di loro e chiedere perché?`
+			choice
+				`	(Certo.)`
+				`	(Non ora, è troppo rischioso.)`
+					defer
+			`	Uno degli Hai che lavorano alla banchina incrocia il tuo sguardo e si avvicina. "Ah," dice, "la scimmia è curiosa. La scimmia non è mai stata faccia a faccia con un vero Hai?"`
+			choice
+				`	"No, ho incontrato molti dei tuoi simili a sud di qui."`
+					goto brethren
+				`	"Che cosa intendi con 'veri Hai'?"`
+					goto true
+				`	"Perché siete in guerra con tutti gli altri?"`
+					goto everyone
+			
+			label brethren
+			`	Sibila. "Non sono veri Hai. Noi siamo gli Hai. Gli inalterati. Eravamo padroni di cento mondi quando le scimmie umane non avevano ancora imparato a usare i pollici."`
+				goto masters
+			
+			label true
+			`	"Significa che siamo inalterati, Hai come gli Hai furono creati all'inizio. Gli Hai conquistatori. Eravamo padroni di cento mondi quando le scimmie umane non avevano ancora imparato a usare i pollici."`
+				goto masters
+			
+			label name
+			`	"Noi siamo gli Hai. Gli Hai conquistatori. Eravamo padroni di cento mondi quando le scimmie umane non avevano ancora imparato a usare i pollici."`
+				goto masters
+			
+			label war
+			`	"Combattiamo per difenderci dall'estinzione," dicono.`
+			`	"Estinzione?" chiedi. "Vuoi dire che non ci sono altri Hai?"`
+			`	"Siamo tutto ciò che resta degli Hai originali," dicono. "Inalterati. I conquistatori. Eravamo padroni di cento mondi quando le scimmie umane non avevano ancora imparato a usare i pollici."`
+				goto masters
+			
+			label everyone
+			`	"Combattiamo per difenderci dall'estinzione," dicono.`
+			`	"Estinzione?" chiedi. "Vuoi dire che non siete la stessa specie degli altri Hai?"`
+			`	"Esatto," dicono. "Siamo tutto ciò che resta degli Hai originali. Inalterati. I conquistatori. Eravamo padroni di cento mondi quando le scimmie umane non avevano ancora imparato a usare i pollici."`
+				goto masters
+			
+			label masters
+			choice
+				`	"Dov'era il vostro territorio? Perché non ho mai sentito parlare di voi?"`
+				`	"Che cosa intendi con 'gli Hai sono stati alterati'?"`
+			
+			`	"Questa è la nostra storia," dicono. "Una volta, molti mondi oltre il wormhole erano nostri. Una volta, centomila anni ormai passati. Avevamo bisogno di più mondi. Una specie che non si espande diventa come acqua salmastra, come albero rinsecchito. Ma i popoli-drago a sud avevano creato l'iperpropulsore, e le scimmie umane avevano cominciato a battere le pietre l'una contro l'altra in quello che i Drak dicevano essere un modo molto intelligente. Così ci è stato vietato di prendere altri mondi."`
+			branch sheragi
+				has "Rim Archaeology 6: offered"
+			`	"'Popoli-drago?'" chiedi. "Non ne ho mai sentito parlare."`
+			`	"Sheragi," dicono, "sono estinti. sopravvivono solo i loro antenati ottusi, proprio come le scimmie sopravvivranno agli umani pensanti."`
+				goto altered
+
+			label sheragi
+			`	"'Popoli-drago?'" chiedi. "Intendi gli Sheragi?"`
+			`	"Notevole," rispondono, "la scimmia conosce gli Sheragi. Siamo sopravvissuti a tutti loro. Divertente che sopravvivono solo i loro antenati ottusi, proprio come le scimmie sopravvivranno agli umani pensanti."`
+
+			label altered
+			`	"Come siete stati alterati?" chiedi.`
+			`	Dicono: "Noi Hai abbiamo combattuto gli Sheragi e preso mondi che i Drak dicevano appartenere a loro, mondi che gli Sheragi non avevano nemmeno ancora scoperto. I Drak hanno reagito. Su tutti i mondi Hai sono apparse navi Drak in orbita. Una malattia ha attraversato ogni pianeta: febbre rapida, strana sensazione di fragilità, come essere ossa fragili con la bocca piena di terra. Le vittime restavano vive, ma ogni ambizione svanita, nessun desiderio se non morire di vecchiaia comoda."`
+			choice
+				`	"Avete provato a resistere ai Drak?"`
+					goto resist
+				`	"Come fai a saperlo, se è successo centomila anni fa?"`
+					goto know
+			
+			label resist
+			`	"Scimmia sciocca," dicono, "nessuno può resistere. Sono forti. La loro volontà prevale. E la loro volontà è che la galassia sia uno zoo, piccoli resti di ogni specie ognuno in una gabbia separata. Per ora lasciano gli umani liberi perché gli umani crescano in conoscenza, ma presto fabbricheranno una gabbia anche per gli umani."`
+				goto help
+			
+			label know
+			`	"Tutti gli Hai lo sanno. La storia si tramanda. Gli altri raccontano una versione alterata, in cui la via della pace fu una scelta e non una ferita inflitta, ma alcuni in ogni generazione apprendono la verità, e si uniscono a noi qui."`
+				goto help
+			
+			label help
+			choice
+				`	"È una storia spaventosa. Grazie per avermi dedicato il tuo tempo."`
+					decline
+				`	"C'è qualcosa che posso fare per aiutarvi?"`
+			action
+				set "unfettered requested jump drives"
+			`	"Se mai vorrai venderci un motore di salto," dicono, "ti ricompenseremo lautamente. E se scopri il segreto per costruire i nostri motori di salto e fuggire da questa prigione, portacelo e vivrai come un dio fra noi."`
+			choice
+				`	"Mi dispiace, non conosco il segreto del motore di salto. Nessun essere umano lo conosce."`
+				`	"Se mai avrò un motore di salto in più da vendere, te lo porterò."`
+					goto sell
+			`	"Allora lasciaci in pace," dicono, e se ne vanno.`
+				decline
+			
+			label sell
+			`	"Portaci un motore di salto," dicono, "e ti conteremo fra i nostri amici. Portacene altri, e potremmo persino considerarti degno di una parte del bottino, quando riprenderemo ciò che è nostro."`
+				decline
+	
+	on decline
+		log "Factions" "Unfettered Hai" `Gli "Unfettered" sono una fazione interna alla specie Hai, meno pacifica del resto e di norma non amichevole verso gli umani. Sostengono che molto tempo fa i Drak alterarono gli Hai per renderli docili e pacifici, e che gli Unfettered discendono da quegli Hai che evitarono quell'alterazione. Cercano motori di salto per fuggire dalla "prigione" in cui sono ora bloccati: alcuni mondi in degrado sul confine più settentrionale dello spazio Hai.`
+		log "Factions" "Sheragi" `Gli Hai Slegati dicono che una specie simile a un drago, chiamata "Sheragi" e da tempo estinta, viveva nello spazio umano, quando gran parte di quello che oggi è territorio umano era occupato dagli Hai.`
+
+
+
+mission "Unfettered Jump Drive 1"
+	minor
+	landing
+	name "Altri motori di salto"
+	description "Gli Hai Slegati ti hanno promesso ricompense ricche se porti loro altri motori di salto."
+	to offer
+		has "First Contact: Unfettered: offered"
+		not "Wanderers: Jump Drive Source: active"
+	to fail
+		has "event: wanderers: unfettered invasion starts"
+	to complete
+		has "Unfettered Jump Drive 2: offered"
+	source
+		attributes "unfettered"
+	on offer
+		conversation
+			`Gli Slegati hanno chiaramente notato che hai un motore di salto: una grande folla si è radunata attorno alla tua nave. Vuoi parlare con loro, e magari organizzare la vendita del tuo motore di salto?`
+			choice
+				`	(No.)`
+					defer
+				`	(Sì.)`
+			`	Appena ti avvicini alla folla, uno di loro fa un passo avanti e dice: "Un milione di crediti, e l'amicizia del vero popolo Hai. Questa è la nostra offerta, per il motore di salto."`
+			choice
+				`	"Certo, accetto l'accordo."`
+					goto end
+				`	"Potete offrirmi di più?"`
+					goto more
+				`	"Come farà la mia nave a partire senza il mio motore di salto?"`
+			
+			`	"Possiamo darti un iperpropulsore al suo posto, se necessario," dicono, "e sarai contato come nostro amico, così non dovrai partire in fretta, né sotto minaccia di violenza." Non puoi fare a meno di chiederti se proveranno a prendere la tua nave con la forza se non accetti l'accordo.`
+			`	"Oh, e a proposito, non ti sarà più richiesto di tenere la tua Anomalocaris in condizioni di funzionare per garantirti la nostra amicizia," aggiungono.`
+				to display
+					has "Hai Legacy 3: done"
+			choice
+				`	"Va bene, accetto la vostra generosa offerta."`
+					goto end
+				`	"Mi dispiace, ma se ti do questo motore di salto perderò la capacità di catturarne altri. Abbi pazienza, e te ne porterò diversi quando potrò."`
+					goto refuse
+			
+			label refuse
+			`	Ci riflettono un momento, poi dicono: "Molto bene. La nostra offerta resta valida, ogni volta che sceglierai di tornare." Ti lasciano tornare alla tua nave senza problemi.`
+				defer
+			
+			label more
+			`	"Non sottovalutare il valore della nostra amicizia," dicono. "Presto saremo di nuovo potenti, con molti mondi fruttuosi sotto il nostro controllo, e quando quel giorno arriverà trarrai grande beneficio dall'essere nostro alleato."`
+			choice
+				`	"Va bene, purché mi diate un iperpropulsore al suo posto, vi darò il mio motore di salto."`
+					to display
+						"outfit (cargo): Jump Drive" + "outfit (flagship installed): Hyperdrive" + "outfit (flagship installed): Scram Drive" + "outfit (flagship installed): Jump Drive" == 1
+					goto end
+				`	"Potete prendere il motore di salto, ma non ho bisogno di un iperpropulsore in cambio."`
+					to display
+						"outfit (cargo): Jump Drive" + "outfit (flagship installed): Hyperdrive" + "outfit (flagship installed): Scram Drive" + "outfit (flagship installed): Jump Drive" > 1
+					goto spareJD
+				`	"Mi dispiace, ma se ti do questo motore di salto perderò la capacità di catturarne altri. Abbi pazienza, e te ne porterò diversi quando potrò."`
+					goto refuse
+			
+			label end
+			branch spareJD
+				"outfit (cargo): Jump Drive" + "outfit (flagship installed): Hyperdrive" + "outfit (flagship installed): Scram Drive" + "outfit (flagship installed): Jump Drive" > 1
+			action
+				outfit "Hyperdrive" 1
+			`	Gli ingegneri Slegati rimuovono in fretta e con cura il tuo motore di salto e lo sostituiscono con un normale iperpropulsore. Speri sinceramente di non stare commettendo un errore dando loro questa nuova tecnologia. "Ricorda," dice uno di loro mentre ti consegna il pagamento, "quando avrai altri motori di salto, torna qui con loro e ti daremo altre ricompense. Fino ad allora, che la fortuna ti assista, amico umano."`
+				accept
+			label spareJD
+			`	Gli ingegneri Slegati recuperano in fretta il motore di salto. Speri sinceramente di non stare commettendo un errore dando loro questa nuova tecnologia. "Ricorda," dice uno di loro mentre ti consegna il pagamento, "quando avrai altri motori di salto, torna qui con loro e ti daremo altre ricompense. Fino ad allora, che la fortuna ti assista, amico umano."`
+				accept
+	
+	on accept
+		outfit "Jump Drive" -1
+		payment 1000000
+		"reputation: Hai (Unfettered)" >?= 10
+
+
+
+mission "Unfettered Jump Drive 2"
+	minor
+	landing
+	name "Altri motori di salto"
+	description "Gli Hai Slegati ti hanno promesso ricompense ricche, e più informazioni sui loro piani, se porterai loro altri motori di salto."
+	to offer
+		has "Unfettered Jump Drive 1: offered"
+		not "Wanderers: Jump Drive Source: active"
+	to fail
+		has "event: wanderers: unfettered invasion starts"
+	to complete
+		has "Unfettered Jump Drive 3: offered"
+	source
+		attributes "unfettered"
+	on offer
+		conversation
+			`Come prima, quando atterri su questo mondo Slegato con un motore di salto, una grande folla si raduna attorno alla tua nave. Chiaramente sperano che anche stavolta organizzi una vendita. Vuoi trattare con loro?`
+			choice
+				`	(No.)`
+					defer
+				`	(Sì.)`
+			`	Quando ti avvicini alla folla, uno di loro dice: "Salve, amico umano. Ti abbiamo fatto conoscere a tutti i nostri fratelli e sorelle come una delle poche creature che hanno scelto di aiutare i veri Hai a conquistare la libertà. Se ci dai un altro motore di salto, ti pagheremo un altro milione di crediti, e ti faremo uno dei nostri emissari per raccogliere i pagamenti con cui i nostri fragili fratelli cercano di comprare la pace. Accetti questo scambio?"`
+			choice
+				`	"Mi dispiace, mi serve questo motore di salto adesso, ma tornerò più tardi e te lo venderò."`
+					defer
+				`	"Sì, vi venderò il mio motore di salto."`
+			
+			branch spareJD
+				"outfit (cargo): Jump Drive" + "outfit (flagship installed): Hyperdrive" + "outfit (flagship installed): Scram Drive" + "outfit (flagship installed): Jump Drive" > 1
+			action
+				outfit "Hyperdrive" 1
+			label spareJD
+			`	Ancora una volta scambiano il tuo motore di salto con un iperpropulsore, e ti pagano molto più di quanto potresti venderlo altrove. "Diremo agli altri veri Hai di offrirti lavoro nelle nostre bacheche," ti dicono, "e ricorda che ci servono ancora altri motori di salto."`
+			choice
+				`	"Allora ne troverò altri, e ve li porterò."`
+					accept
+				`	"Potete dirmi a cosa vi servono?"`
+			`	"Non ancora. Se dimostrerai ancora la tua amicizia, forse lo faremo." Assicuri loro che continuerai a fare del tuo meglio per aiutarli.`
+				accept
+	
+	on accept
+		outfit "Jump Drive" -1
+		payment 1000000
+		"reputation: Hai (Unfettered)" >?= 20
+		fail "Unfettered Jump Drive 1"
+
+
+
+mission "Unfettered Jump Drive 3"
+	minor
+	landing
+	invisible
+	to offer
+		has "Unfettered Jump Drive 2: offered"
+		not "Wanderers: Jump Drive Source: active"
+	source
+		attributes "unfettered"
+	on offer
+		conversation
+			`Hai un altro motore di salto, e gli Slegati saranno senz'altro disposti a pagarlo bene. Hanno anche accennato che potrebbero darti più informazioni su che cosa intendono fare con i motori di salto. Vuoi vendergli un altro motore?`
+			choice
+				`	(No.)`
+					defer
+				`	(Sì.)`
+			`	Ti incontri con alcuni capi locali degli Slegati, che ti pagano di nuovo un milione di crediti e fanno scambiare il motore di salto dalla tua nave. "Se ne porterai altri, continueremo a pagarti," dicono.`
+			choice
+				`	"Potete dirmi a cosa vi servono i motori di salto?"`
+				`	"Grazie, ne porterò senz'altro altri quando potrò."`
+					goto job
+			action
+				set "unfettered know of wanderers"
+			`	Dopo una breve discussione sussurrata nella loro lingua, uno dei capi dice: "Hai dimostrato il tuo valore, quindi condivideremo il nostro segreto. Gli Hai possedevano un tempo molti mondi ai margini della galassia, un territorio che possiamo raggiungere solo con il motore di salto. Quei mondi sono fertili e quasi disabitati. Li rivendicheremo come nostri, e lì ci sarà cibo per sfamare gli Slegati per molte migliaia di anni a venire."`
+			branch know
+				or
+					has "First Contact: Wanderer: offered"
+					has "First Contact: Wanderer (Before Hai): offered"
+			choice
+				`	"C'è un altro modo in cui posso aiutarvi a rivendicare quei mondi?"`
+					goto help
+				`	"'Quasi disabitati?' Vuoi dire che un'altra specie abita oggi alcuni di quei mondi?"`
+					goto wanderers
+			
+			label know
+			`	Sospetti che stiano parlando del territorio oggi abitato dai Wanderer.`
+			choice
+				`	"Siete in guerra con i Wanderer? Posso aiutarvi a rivendicare il vostro territorio?"`
+					goto help
+				`	"Che cosa farete alla specie che possiede quei mondi adesso?"`
+					goto wanderers
+			
+			label help
+			`	"Il tuo aiuto potrebbe davvero esserci utile," dice il capo. "Dirò agli altri di contattarti se hanno missioni particolari che puoi svolgere."`
+			choice
+				`	"Non vedo l'ora di sentire da loro."`
+					goto job
+				`	"Che cosa pensate di fare alla specie che abita quei mondi adesso?"`
+			
+			label wanderers
+			`	"Quei mondi sono ora tenuti da una specie di sciacalli, che banchettano sulle rovine di civiltà orgogliose. Le nostre sentinelle ci dicono che questi divoratori di carogne hanno cancellato quasi ogni artefatto Hai, fondendo le nostre città per ricavarne metallo per le loro navi e le loro fabbriche, e nascondendo le cicatrici delle nostre guerre sotto foreste appena piantate. Sono una specie antica e forte, ma poco numerosa, e quei mondi sono nostri di diritto."`
+			`	Provi a incalzarli per ottenere altre informazioni, ma non ti dicono nulla di utile, oltre a prometterti che cercheranno il tuo aiuto quando sarà il momento di rivendicare il loro territorio.`
+			label job
+			branch spareJD
+				"outfit (cargo): Jump Drive" + "outfit (flagship installed): Hyperdrive" + "outfit (flagship installed): Scram Drive" + "outfit (flagship installed): Jump Drive" > 1
+			action
+				outfit "Hyperdrive" 1
+			label spareJD
+			`	"Se vuoi fornirci altri motori di salto, d'ora in poi visita la bacheca degli incarichi," dice il capo. "Avremo guerrieri pronti a riceverli da te per il solito compenso."`
+				accept
+	
+	on accept
+		outfit "Jump Drive" -1
+		payment 1000000
+		"reputation: Hai (Unfettered)" >?= 30
+		fail "Unfettered Jump Drive 2"
+		fail
+
+
+
+mission "Unfettered Jump Drive Trading"
+	minor
+	landing
+	invisible
+	source "Darkcloak"
+	substitutions
+		<hood> ""
+		<hood> ", with their face hidden,"
+			has "unfettered: blade rodeo"
+		<learned> ""
+		<learned> "It did take you two tries, but I am glad that you were able to learn from your mistake. "
+			"unfettered: blade rodeo" == 1
+		<learned> "You finally learned from your mistakes. This is why our challenges are never fatal. "
+			"unfettered: blade rodeo" == 2
+		"<The engineer>" "The engineer, who had stepped back during the fight,"
+		"<The engineer>" "The real engineer then moves out of the crowd,"
+			"unfettered: blade rodeo" == 1
+		"<The engineer>" "The engineer, who had stepped back during the fight, reveals their face and"
+			"unfettered: blade rodeo" == 2
+		"<as before (run)>" "You"
+		"<as before (run)>" "As before, you"
+			has "unfettered: dodged the blade"
+		"<as before (flee)>" "You"
+		"<as before (flee)>" "Just like last time, you"
+			has "unfettered: flee from the blade"
+		<leave> "She then leaves, to your surprise."
+		<leave> "She then leaves, her anger barely contained."
+			has "unfettered: blade rodeo"
+	to offer
+		has "Unfettered Jump Drive 3: offered"
+		not "Wanderers: Jump Drive Source: active"
+		not "Wanderers: Jump Drive Source: done"
+		# There is no minimum amount of JD to sell (other than the first 3), except if you failed to prove yourself the first time.
+		# "Unfettered Jump Drive 4: failed" represents the amount of JD sold.
+		"unfettered: jd to sell" <= "Unfettered Jump Drive 4: failed"
+		random < 20 + 8 * "Unfettered Jump Drive 4: failed"
+	on offer
+		conversation
+			`Mentre esci dalla nave per andare allo spazioporto, vedi che un Hai Slegato<hood> ti aspetta al portello.`
+			`	Avvicinandoti, deduci che sia un ingegnere, a giudicare dalla tavoletta e dall'attrezzatura che porta. Forse intende scambiare qualcosa di diverso dal denaro. Vuoi trattare con loro per un altro motore?`
+				to display
+					not "unfettered: blade rodeo"
+			`	Probabilmente intendono offrirti lo stesso accordo di prima: motori di salto in cambio di armi. Vuoi provare a dimostrare il tuo valore questa volta, e trattare per un motore di salto?`
+				to display
+					has "unfettered: blade rodeo"
+			choice
+				`	(No.)`
+					defer
+				`	(Sì.)`
+			`	Appena metti piede sul mondo, la presunta ingegnera lascia cadere la propria attrezzatura e ti lancia una lama, proprio come l'altra volta: sembra che non voglia più perdere tempo con te.`
+				to display
+					"unfettered: blade rodeo" == 1
+				goto blade
+			`	Esci dalla nave, ma prima ancora di raggiungere l'ingegnere, un altro Slegato grida per attirare la tua attenzione e poi ti lancia una lama, senza altri avvertimenti né cerimonie.`
+				to display
+					"unfettered: blade rodeo" > 1
+				goto blade
+			`	Esci dalla nave e subito l'ingegnere ti conduce dal fornitore. "Abbiamo armi da mostrarti, per il tuo aiuto nel procurarci motori di salto. Per ora potrai commerciare solo per una, ma se continuerai ad assisterci, potresti dimostrarti degno di accedere alle altre." Non si fermano mai a chiedere se le nuove armi ti interessano davvero.`
+			label repeat
+			choice
+				`	(Seguili.)`
+					goto next
+				`	"Le armi Hai non mi interessano davvero."`
+					to display
+						not "unfettered: uninterested in weapons"
+					goto uninterested
+				`	"Non ho davvero voglia di farlo adesso."`
+			action
+				clear "unfettered: uninterested in weapons"
+				"unfettered: jd to sell" ++
+			`	"Che maleducazione. Meglio che speri ci sia qualcun altro a guidarti la prossima volta!" dice l'ingegnere mentre torni alla tua nave.`
+				defer
+			label uninterested
+			action
+				set "unfettered: uninterested in weapons"
+			`	"Queste non sono armi Hai standard, capitano, credimi. E sarebbe poco saggio giudicare prima di vederle, no?"`
+				goto repeat
+			label next
+			`	Ti conducono attraverso il solito fornitore, ma poi vanno in una zona che non avevi mai notato, probabilmente perché non dovevi. Mentre stai per passare quello che supponi essere un controllo di sicurezza, uno Slegato ti lancia una lama in faccia!`
+			label blade
+			`	Riconosci la stessa Slegata dell'altra volta; deve adorare lanciare lame alla gente.`
+				to display
+					has "unfettered: blade rodeo"
+			choice
+				`	(Prova ad afferrarla.)`
+					goto grab
+				`	(Prova a schivarla.)`
+					goto dodge
+				`	(Balza di lato e usa la mia arma.)`
+				`	(Fuggi.)`
+					goto flee
+			`	Balzi di lato, afferrando la tua arma appena in tempo per minacciare lo Slegato che ti ha lanciato la lama. Sembrando un po' sorpreso dalle tue tattiche poco ortodosse, abbassa la propria arma. "Ben fatto! In verità, non c'è onore più alto che sopravvivere sul campo di battaglia, perché solo allora puoi portare il bottino a chi ne ha bisogno! Una tattica è buona solo se riesci a trovarla ed eseguirla abbastanza in fretta da darti un vantaggio, e tu l'hai fatto. <learned>Sono Desneeparu, ed è un piacere conoscerti, capitano."`
+				goto meet
+			label grab
+			`	Riesci ad afferrare l'arma, appena in tempo per deviare un attacco della stessa Slegata. Duella con te per quello che sembra un'eternità. All'inizio sei stupito di essere riuscito a sopravvivere così a lungo, ma presto capisci che, non essendo riuscito a mettere a segno un solo colpo, deve trattarsi di una sorta di prova deliberata.`
+			`	Poi, all'improvviso, senti cambiare il ritmo dell'avversaria: il gioco è finito. Sferra un colpo magistrale che ti disarma con facilità, poi sorride e abbassa la propria arma. "Sembra che tu sappia come si usa una lama! <learned>Sono Desneeparu, ed è un piacere conoscerti, capitano <last>!" esclama, prima di ridere della tua faccia sorpresa. Capisci che ti stava prendendo in giro fin dall'inizio, ma, ciononostante, sembra soddisfatta della tua prova.`
+			label meet
+			action
+				log "Minor People" "Desneeparu" `Un guerriero Slegato che sa come si maneggia una lama. Messo alla prova da lei prima di ricevere l'accesso alle nuove armi Slegate. Sarebbe stata la fine, se lei non si fosse trattenuta.`
+			`	Fa una specie di saluto col pugno prima di andarsene. "Ora devo andare. Spero che troverai l'arma che ti serve."`
+			`	<The engineer> ti conduce sottoterra, tra file e file di armi prototipo, alcune delle quali sono in lavorazione da parte degli ingegneri. Spiegano: "Preferiamo fare la maggior parte dei nostri collaudi sul campo di battaglia. Qui eseguiamo solo i controlli di sicurezza più elementari prima che i capitani Slegati possano metterci le mani. Spesso cominciano andando a Firelode per portare l'arma al limite, per assicurarsi che non esploda in mezzo all'azione. Più interesse suscita un prototipo, più lo sviluppiamo." Continuate a camminare finché non entrate nella sezione del fornitore della struttura, dove noti che gli articoli in esposizione sono molto più avanzati di qualunque cosa tu abbia visto in superficie: tanto che potrebbe quasi passare per un fornitore Hai 'normale', se non fosse per la sensazione sovraccarica e opprimente delle aree di prova.`
+			`	"Benvenuto nella sezione avanzata del fornitore, capitano! È riservata ai nostri ospiti più illustri. Ora che ci hai venduto diversi motori di salto, posso dirti che offriamo qualcosa di molto più prezioso del denaro. Per ora posso offrirti solo il possente Tripulse Shredder, ma col tempo ti daremo accesso a ogni tipo di arma. Due Tripulse Shredder e la nostra riconoscenza in cambio di un motore di salto: è l'accordo che propongo," dicono, porgendoti le armi. Ora che puoi guardarle più da vicino, noti che sembrano piuttosto simili alle altre armi Hai, ma sono potenziate in un modo o nell'altro. Accanto ai Tripulse puoi scorgere quello che sembra un Ion Cannon molto piccolo e un Ion Cannon montato su torretta.`
+			label weapons
+			choice
+				`	"Dimmi di più di quei Tripulse Shredder che posso comprare."`
+					to display
+						not "choice: tripulse"
+					goto tripulse
+				`	"Allora mi accontento del tripulse."`
+					to display
+						has "choice: tripulse"
+					goto "buy tripulse"
+				`	"Puoi dirmi di più di quell'arma ionica piccola?"`
+					to display
+						not "choice: blaster"
+				`	"Mi piacerebbe sapere di più di questo... ion cannon montato su una torretta?"`
+					to display
+						not "choice: turret"
+					goto turret
+				`	"In verità, preferirei semplicemente il denaro."`
+					goto money
+			action
+				set "choice: blaster"
+			scene "outfit/hai ionic blaster"
+			`	"Ah, il Blaster. È prediletto da molti capitani di Shield Beetle, perché li aiuta facilmente a ribaltare le sorti di una battaglia senza dover dedicare troppo spazio a bordo alle armi. Soprattutto considerando i suoi altri effetti, il suo potenziale di danno è accettabile. È vero che non infligge abbastanza danni ionici da neutralizzare da sola una nave, ma riesce a inceppare le armi e ti darà il vantaggio in uno scontro prolungato. Questa però è un'innovazione recente, e alcuni dicono che le manchi la... finezza delle altre.`
+				goto "back to choose"
+			label turret
+			action
+				set "choice: turret"
+			scene "outfit/hai ionic turret"
+			`	"È di gran lunga la mia arma preferita fra tutte. A differenza dell'Ion Cannon, che è un'arma ibrida pensata per danneggiare il nemico a lunga distanza applicando al contempo una buona ionizzazione, il suo ruolo è soprattutto neutralizzare le navi nemiche. Perfino una nave con molte batterie si inchinerà davanti a quest'arma! E grazie alla sua lunga gittata e alla rapidità di rotazione, le navi piccole e perfino i caccia non ti daranno più fastidio!`
+			label "back to choose"
+			`	"Però di queste armi ne abbiamo in quantità molto limitate, e quindi non possiamo ancora permetterci di dartele. Dunque, tornando alla mia offerta, hai deciso?"`
+				goto weapons
+
+			label money
+			`	"Oh. Beh, in tal caso non ti disturberemo più con quest'arma, né con nessun'altra, capitano, né qui né nella bacheca degli incarichi."`
+			choice
+				`	"Mi sembra un buon accordo."`
+				`	"Aspetta, com'era quell'arma?"`
+					goto tripulse
+			action
+				payment 1000000
+				set "unfettered: money for drives"
+			`	"Come vuoi. Ricorda però che se vuoi venderci altri motori di salto in cambio di denaro puoi andare alla bacheca degli incarichi."`
+				goto end
+
+			label tripulse
+			action
+				set "choice: tripulse"
+			scene "outfit/tripulse shredder"
+			`	"Il Tripulse Shredder può sembrare grezzo, ma colpisce duro! La sua specialità è concentrare molta potenza di fuoco in un solo alloggiamento per arma e, grazie alla sua natura a raffica, è perfetto per i piloti che usano già tattiche mordi e fuggi. Alcuni capitani dicono perfino che uno Sea Scorpion possa avere la meglio su uno Shield Beetle se ne monta quattro, se sai quello che fai, naturalmente! Come dicevo, posso offrirti due di queste in cambio del tuo motore di salto."`
+				goto weapons
+			label "buy tripulse"
+			action
+				outfit "Tripulse Shredder" 2
+			`	Fanno eseguire il trasferimento ai loro uomini e ti si rivolgono prima di andarsene. "Tieni presente che, se mai volessi altre armi, saremo sempre disposti a scambiarle con motori di salto nella bacheca degli incarichi. Possiamo però sempre offrirti del denaro, se per te vale di più. Naturalmente possiamo fare questo scambio solo qui su <origin>, dato che è il luogo dove queste armi avanzate vengono prodotte e immagazzinate."`
+			label end
+			branch spareJD
+				"outfit (cargo): Jump Drive" + "outfit (flagship installed): Hyperdrive" + "outfit (flagship installed): Scram Drive" + "outfit (flagship installed): Jump Drive" > 1
+			action
+				outfit "Hyperdrive" 1
+			label spareJD
+			`	L'ingegnere se ne va e tu torni alla tua nave, dopo che ti hanno scortato fuori dalla struttura.`
+				accept
+
+			label dodge
+			action
+				"unfettered: jd to sell" += 2
+				"unfettered: dodged the blade" ++
+			`	<as before (run)> riesci a schivare la lama, ma poi resti senza difese quando la stessa Slegata si fa sotto con un'altra e cala il fendente. Si ferma all'ultimo istante possibile, con la delusione evidente sul volto.`
+			branch fail
+				has "unfettered: flee from the blade"
+			`	"È così che 'combatti', capitano? Ti nascondi? Schivi? Ti rifiuti di impadronirti delle nostre armi, quindi non le avrai."`
+				goto fail
+			label flee
+			action
+				"unfettered: jd to sell" += 4
+				"unfettered: flee from the blade" ++
+			`	<as before (flee)> fuggi dalla lama senza alcuna difficoltà, ma l'Hai che l'ha lanciata ti raggiunge in pochi secondi e ti immobilizza con la lama alla gola.`
+			`	"Mi deludi, capitano. In battaglia è di grande importanza individuare i propri vantaggi sul nemico e non mostrare debolezza fuggendo, altrimenti ti verranno a prendere per ucciderti. Hai fallito in entrambi i modi. Non avresti mai potuto superarmi in velocità. Hai solo mostrato paura."`
+				to display
+					not "unfettered: dodged the blade"
+			label fail
+			action
+				"unfettered: blade rodeo" ++
+			`	"Continui davvero a deludermi, capitano. Una volta hai cercato di evitare uno scontro da cui non potevi fuggire, e l'altra di schivare un'arma che ti era offerta bell'e pronta? Forse davvero non sei un guerriero e lasci che siano i tuoi subordinati a fare il lavoro sporco."`
+				to display
+					"unfettered: flee from the blade" == 1
+					"unfettered: dodged the blade" == 1
+			`	"Non continuerò a insegnarti la stessa lezione! Hai avuto la tua occasione. Non possiamo accettare chi non impara dai propri errori. A quanto pare non possiamo fidarci di te per le nostre armi più avanzate." Poi se ne va, visibilmente irritata.`
+				to display
+					or
+						"unfettered: dodged the blade" > 1
+						"unfettered: flee from the blade" > 1
+				decline
+			`	<leave> L'ingegnere, che aveva assistito allo scontro, spiega poi: "Dato che non hai superato la prova, non possiamo ancora darti accesso alla nostra camera blindata. Le nostre armi sono destinate solo ai guerrieri più capaci. Potrai naturalmente continuare a scambiare motori di salto in cambio di denaro, ma finché non dimostrerai il contrario, questo è quanto."`
+			`	"Questo errore non è definitivo; sono certo che ti perdonerà volentieri, se solo ci porterai altri motori di salto. Un altro ingegnere ti aspetterà al portello quando sarà il caso."`
+				to display
+					"unfettered: jd to sell" < "Unfettered Jump Drive 4: failed"
+				defer
+			`	"Anzi, la tua fama di portatore di motori di salto è tale che non avrà altra scelta che perdonarti nel prossimo futuro. Un altro ingegnere ti aspetterà al portello quando sarà il caso."`
+				to display
+					"unfettered: jd to sell" > "Unfettered Jump Drive 4: failed"
+				defer
+	on accept
+		clear "unfettered: uninterested in weapons"
+		clear "unfettered: blade rodeo"
+		clear "choice: turret"
+		clear "choice: tripulse"
+		clear "choice: blaster"
+		outfit "Jump Drive" -1
+		"reputation: Hai (Unfettered)" >?= 40
+		fail

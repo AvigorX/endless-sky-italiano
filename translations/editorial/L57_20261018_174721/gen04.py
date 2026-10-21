@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+# part04: unita' 105-127 (Gegno Asteroid Mining Prologue) - chiude il segmento e il file.
+import json
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+P = {
+105: "Estrai 5 tonnellate di ferro",
+106: "Estrai e consegna 5 tonnellate di ferro su <destination>.",
+107: "Arrivi a destinazione: una stazione spaziale enorme. Stavolta, invece di restare in piedi dietro di te nella cabina di pilotaggio, il Gegno si è seduto accanto a una delle tue cuccette libere e non ha mosso un muscolo fino a ora. Nonostante la grandiosità di quella che è l'unica stazione spaziale dei Gegno, sembra molto vecchia e inattiva. Mentre ti fanno girare per l'interno spazioso, in gran parte ridotto a uno scheletro di tubi, sbarre e strutture di sostegno, noti una mancanza evidente di personale e di macchinari in funzione. Alcune sezioni non sono nemmeno pressurizzate a dovere, ma per fortuna la tuta spaziale compensa. Ogni tanto incontri qualche operaio, ma sembrano molto letargici, o forse solo demotivati.",
+108: "Alla fine arrivi in un grande portello di attracco dove ci sono altri operai e altre navi. Alcuni operai trasportano casse di materiali avanti e indietro, altri parlano tra loro. Il Gegno al tuo fianco indica un pannello mezzo rotto su una delle pareti dall'altra parte della sala. Con un ultimo sguardo significativo, il Gegno ti lascia alle tue faccende. Ti chiedi se lo rivedrai mai, considerando come è stato trattato su Dueyu Eitch.",
+109: "(Vai al pannello.)",
+110: "(Prova a comunicare con gli altri Gegno intorno a me.)",
+111: "Provi ad attirare l'attenzione di alcuni degli altri Gegno presenti nella struttura, ma i più ti lanciano sguardi strani o ti ignorano del tutto, finché un Gegno apparentemente infastidito ti indica il grande schermo incrinato.",
+112: "board",
+113: "Lo schermo, anche se incrinato e malmesso, sembra comunque funzionante. Presenta una serie di grafici in un elenco che sembra aggiornarsi in tempo reale. A sinistra di ogni grafico ci sono vari tipi di asteroidi estraibili, a destra dei segni di conteggio. Sembra una sorta di elenco di lavori collegato alla stazione, il che implica che i Gegno ti stiano almeno dando la possibilità di \"fare la tua parte\", o forse di rimediare a quello che hai fatto.",
+114: "(Accetta uno dei lavori.)",
+115: "(Vattene senza fare nulla.)",
+116: "accept",
+117: "Armeggi con lo schermo, cercando di capire come usarlo. Alcuni Gegno ti guardano mentre lo fai. Mentre giudicano in silenzio, riesci a capire che è un'interfaccia sensibile al tocco, anche se serve molta forza per farla funzionare.",
+118: "La prima volta che riesci a far funzionare il dispositivo vedi l'immagine di un asteroide di ematite, ricco di ferro, con cinque strani segni di conteggio accanto. Estrarre per loro forse non è il modo migliore per saperne di più sui Gegno, ma lavorare per loro è un inizio.",
+119: "nothing",
+120: "Decidi di lasciare la struttura. Nessuno dei Gegno ti dedica attenzione mentre lo fai, e sono di nuovo concentrati sul loro lavoro.",
+121: "returned",
+122: "Nonostante tu abbia già lasciato la stazione, ti viene dato di nuovo il permesso di atterrare. Vuoi andare alla struttura dei lavori e provare ad accettare uno degli annunci?",
+123: "(Sì.)",
+124: "(No.)",
+125: "Sei tornato su <origin>, ma non hai 5 tonnellate di ferro estratte e a bordo. Assicurati di estrarre 5 tonnellate di ferro e di raccoglierle nel carico prima di atterrare.",
+126: "Ti agganci alla stazione dal porto della struttura, invece che dall'altra parte. Ti aspettano molti operai Gegno, tutti con attrezzature arrugginite o danneggiate. Dopo qualche momento di fissaggio e di discussione tra loro, scaricano i minerali dalla nave e poi tornano alle loro faccende come se nulla fosse. Un altro ti si avvicina e, con tua sorpresa, ti paga una somma di <payment> per il lavoro. Pare che i Gegno apprezzino e ricompensino lo sforzo, chiunque lo faccia, persino un membro di un'altra specie.",
+127: "Per il momento la stazione resta accessibile a te, così come questi piccoli lavoretti di estrazione. Speriamo che un giorno i Gegno riconoscano che vali più di qualsiasi etichetta ti abbiano appiccicato.",
+}
+
+json.dump({str(k): v for k, v in sorted(P.items())},
+          open(os.path.join(HERE, 'parts', 'part04.json'), 'w', encoding='utf-8'),
+          ensure_ascii=False, indent=1)
+print('part04:', len(P), 'unita', min(P), '-', max(P))

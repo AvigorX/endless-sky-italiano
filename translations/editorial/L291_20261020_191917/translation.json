@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/avgi/avgi culture conversations.txt",
+  "line_from": 122,
+  "line_to": 227,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Avgi Culture: Dissonance Graffiti 1|You find colorful, curvy symbols scrawled all across the walls, floor, and ceiling of <planet>'s spaceport terminal, and you can see a handful of Avgi with brushes and mops attempting to remove them. You aren't sure what they say, but other Avgi seems to be laughing and pointing as they stroll by. The workers scrubbing the graffiti away seem to be less than amused, however.|122|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 122,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Dissonance Graffiti 1",
+   "english": "You find colorful, curvy symbols scrawled all across the walls, floor, and ceiling of <planet>'s spaceport terminal, and you can see a handful of Avgi with brushes and mops attempting to remove them. You aren't sure what they say, but other Avgi seems to be laughing and pointing as they stroll by. The workers scrubbing the graffiti away seem to be less than amused, however.",
+   "italian": "Trovi simboli colorati e ricurvi tracciati su pareti, pavimento e soffitto del terminal dello spazioporto di <planet>, e vedi un pugno di Avgi con spazzole e mocci che cercano di rimuoverli. Non sei sicuro di che cosa dicano, ma altri Avgi sembrano ridere e indicare mentre passano. Gli addetti che strofinano via i graffiti, però, sembrano divertirsi molto meno.",
+   "ratio": 0.965
+  },
+  {
+   "idx": 2,
+   "id": "mission:Avgi Culture: Dissonance Graffiti 1|Colorful, curvy symbols are scrawled all across the walls, floor, and ceiling of <planet>'s spaceport terminal, and you can see a handful of Avgi with brushes and mops attempting to remove them. Much of the paint has run down the walls or overlaps with other symbols, and what you can see is sloppy, but you can make out words like 'taxes' and 'defenestrate' and the phrase 'Twilight Guard? More like Twilight Gourd.'|126|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 126,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Dissonance Graffiti 1",
+   "english": "Colorful, curvy symbols are scrawled all across the walls, floor, and ceiling of <planet>'s spaceport terminal, and you can see a handful of Avgi with brushes and mops attempting to remove them. Much of the paint has run down the walls or overlaps with other symbols, and what you can see is sloppy, but you can make out words like 'taxes' and 'defenestrate' and the phrase 'Twilight Guard? More like Twilight Gourd.'",
+   "italian": "Simboli colorati e ricurvi sono tracciati su pareti, pavimento e soffitto del terminal dello spazioporto di <planet>, e vedi un pugno di Avgi con spazzole e mocci che cercano di rimuoverli. Buona parte della vernice è colata lungo le pareti o si sovrappone ad altri simboli, e quello che riesci a vedere è fatto male, ma riesci a distinguere parole come 'tasse' e 'defenestrare' e la frase 'Twilight Guard? Più che altro Twilight Gourd.'",
+   "ratio": 1.048
+  },
+  {
+   "idx": 3,
+   "id": "mission:Avgi Culture: We Live In A Society|An Avgi passes you, head buried in something that looks remarkably like a newspaper. You hear him mutter as he strolls by, \"Unbelievable. We truly live in a society, consideration.\"|140|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 140,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: We Live In A Society",
+   "english": "An Avgi passes you, head buried in something that looks remarkably like a newspaper. You hear him mutter as he strolls by, \"Unbelievable. We truly live in a society, consideration.\"",
+   "italian": "Un Avgi ti passa accanto, con la testa immersa in qualcosa che somiglia notevolmente a un giornale. Lo senti borbottare mentre passa: \"Incredibile. Viviamo davvero in una società, considerazione.\"",
+   "ratio": 1.083
+  },
+  {
+   "idx": 4,
+   "id": "mission:Avgi Culture: Realism|An pair of Avgi walk by you, deep in conversation. \"Appreciation. I'm just glad we're being realistic here,\" says one. The other doesn't respond, but you sense a feeling of great despair.|154|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 154,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Realism",
+   "english": "An pair of Avgi walk by you, deep in conversation. \"Appreciation. I'm just glad we're being realistic here,\" says one. The other doesn't respond, but you sense a feeling of great despair.",
+   "italian": "Una coppia di Avgi ti passa accanto, immersa in una conversazione. \"Apprezzamento. Sono solo contento che qui siamo realistici,\" dice uno. L'altro non risponde, ma percepisci un senso di grande disperazione.",
+   "ratio": 1.107
+  },
+  {
+   "idx": 5,
+   "id": "mission:Avgi Culture: Doomed Korath|An Avgi stands by a doorway, speaking into a megaphone. \"Proclamation. Take warning, denizens! Without proper balance in your life, you'll be doomed! Doomed, I say! Just like those Korath I've heard about. The end times are near!\"|168|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 168,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Doomed Korath",
+   "english": "An Avgi stands by a doorway, speaking into a megaphone. \"Proclamation. Take warning, denizens! Without proper balance in your life, you'll be doomed! Doomed, I say! Just like those Korath I've heard about. The end times are near!\"",
+   "italian": "Un Avgi sta su un uscio e parla in un megafono. \"Proclama. Prendete avvertimento, abitanti! Senza un giusto equilibrio nella vostra vita, sarete condannati! Condannati, dico! Proprio come quei Korath di cui ho sentito parlare. La fine dei tempi è vicina!\"",
+   "ratio": 1.109
+  },
+  {
+   "idx": 6,
+   "id": "mission:Avgi Culture: General Ripper|An Avgi stands at a crossroads, waving a sign and a laser rifle. \"Declaration. The Aberrant are polluting our precious bodily fluids, citizens! Take action now! We must not allow a fluid gap!\"|182|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 182,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: General Ripper",
+   "english": "An Avgi stands at a crossroads, waving a sign and a laser rifle. \"Declaration. The Aberrant are polluting our precious bodily fluids, citizens! Take action now! We must not allow a fluid gap!\"",
+   "italian": "Un Avgi sta a un incrocio, agitando un cartello e un fucile laser. \"Dichiarazione. Gli Aberrant stanno inquinando i nostri preziosi fluidi corporei, cittadini! Agite ora! Non possiamo permettere un divario di fluidi!\"",
+   "ratio": 1.13
+  },
+  {
+   "idx": 7,
+   "id": "mission:Avgi Culture: General Ripper|\tSecurity personnel soon arrive and begin trying to talk the Avgi down, eyeing the laser rifle nervously.|183|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 183,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: General Ripper",
+   "english": "\tSecurity personnel soon arrive and begin trying to talk the Avgi down, eyeing the laser rifle nervously.",
+   "italian": "\tPresto arrivano gli addetti alla sicurezza e cominciano a cercare di calmare l'Avgi, guardando il fucile laser con nervosismo.",
+   "ratio": 1.21
+  },
+  {
+   "idx": 8,
+   "id": "mission:Avgi Culture: Criminal Mischief|A bright green Avgi wearing a black scarf darts above you towards one of the spaceport terminal gates, a comically oversized burlap sack dangling behind her. A trio of Avgi dressed in bright yellow force their way through a confused crowd in mid-air, waving batons. \"Attention! Stop, thief!\"|197|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 197,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Criminal Mischief",
+   "english": "A bright green Avgi wearing a black scarf darts above you towards one of the spaceport terminal gates, a comically oversized burlap sack dangling behind her. A trio of Avgi dressed in bright yellow force their way through a confused crowd in mid-air, waving batons. \"Attention! Stop, thief!\"",
+   "italian": "Un Avgi verde brillante con una sciarpa nera ti sfreccia sopra la testa verso uno dei cancelli del terminal dello spazioporto, con un sacco di tela comicamente enorme che le penzola dietro. Un terzetto di Avgi vestiti di giallo brillante si fa largo a forza fra una folla confusa a mezz'aria, agitando manganelli. \"Attenzione! Fermo, ladra!\"",
+   "ratio": 1.172
+  },
+  {
+   "idx": 9,
+   "id": "mission:Avgi Culture: Criminal Mischief|\t\"Taunt! You'll never catch me alive!\" the thief shouts, before promptly running into a wall. You shake your head as she's led away in restraints.|198|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 198,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Criminal Mischief",
+   "english": "\t\"Taunt! You'll never catch me alive!\" the thief shouts, before promptly running into a wall. You shake your head as she's led away in restraints.",
+   "italian": "\t\"Scherno! Non mi prenderete mai viva!\" grida la ladra, prima di schiantarsi subito contro una parete. Scuoti la testa mentre la portano via in manette.",
+   "ratio": 1.041
+  },
+  {
+   "idx": 10,
+   "id": "mission:Avgi Culture: False Alarm|The spaceport is lit up by flashing yellow lights as a robotic voice proclaims its message. \"Command. Radiation danger, seek prompt shelter. Command. Radiation danger, seek prompt shelter.\"|212|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 212,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: False Alarm",
+   "english": "The spaceport is lit up by flashing yellow lights as a robotic voice proclaims its message. \"Command. Radiation danger, seek prompt shelter. Command. Radiation danger, seek prompt shelter.\"",
+   "italian": "Lo spazioporto si illumina di luci gialle lampeggianti mentre una voce robotica proclama il suo messaggio. \"Comando. Pericolo di radiazioni, cercate subito riparo. Comando. Pericolo di radiazioni, cercate subito riparo.\"",
+   "ratio": 1.164
+  },
+  {
+   "idx": 11,
+   "id": "mission:Avgi Culture: False Alarm|\tThe crowd has only barely had time to panic before the voice is cut off with a squeal of static. \"Abashment. Apologies, false alert. Mindaro dropped his drink on the console, there is no radiation danger.\"|213|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 213,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: False Alarm",
+   "english": "\tThe crowd has only barely had time to panic before the voice is cut off with a squeal of static. \"Abashment. Apologies, false alert. Mindaro dropped his drink on the console, there is no radiation danger.\"",
+   "italian": "\tLa folla ha appena avuto il tempo di farsi prendere dal panico che la voce si spegne con uno stridio di statica. \"Imbarazzo. Scuse, falso allarme. Mindaro ha rovesciato la sua bevanda sulla console, non c'è pericolo di radiazioni.\"",
+   "ratio": 1.126
+  },
+  {
+   "idx": 12,
+   "id": "mission:Avgi Culture: Fencing|While walking through the spaceport on <planet>, you spot a pair of Avgi moving toward a large building. They are holding what look like long, thin rapiers.|227|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 227,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "While walking through the spaceport on <planet>, you spot a pair of Avgi moving toward a large building. They are holding what look like long, thin rapiers.",
+   "italian": "Mentre attraversi lo spazioporto su <planet>, noti una coppia di Avgi che si dirige verso un grande edificio. Hanno in mano quelli che sembrano lunghi e sottili stocchi.",
+   "ratio": 1.083
+  }
+ ]
+}

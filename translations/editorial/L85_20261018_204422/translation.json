@@ -1,0 +1,88 @@
+{
+ "block": {
+  "path": "data/successors/predecessors.txt",
+  "line_from": 621,
+  "line_to": 800,
+  "units": 7
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:\"Tijra\" Heirloom Lance|description|648|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 648,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Tijra\" Heirloom Lance",
+   "english": "Among the largest and most powerful of the Predecessors' weapons, this massive coilgun propels its magnetic projectiles to a sizable fraction of the speed of light, delivering enough kinetic energy on impact to destroy a small city or, alternatively, a large warship.",
+   "italian": "Among the largest and most powerful of the Predecessors' weapons, this massive coilgun propels its magnetic projectiles to a sizable fraction of the speed of light, delivering enough kinetic energy on impact to destroy a small city or, alternatively, a large warship.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:\"Ija\" Heirloom Reactor|description|663|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 663,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Ija\" Heirloom Reactor",
+   "english": "The Myiaran Predecessors viewed the mastery of technology as an art rather than a science, and this reactor is a perfect example of that: a graceful, elegant machine easily mistaken for a sculpture. It is also, of course, an extremely efficient and powerful fusion reactor that far outstrips their Successors' attempts at replicating it.",
+   "italian": "The Myiaran Predecessors viewed the mastery of technology as an art rather than a science, and this reactor is a perfect example of that: a graceful, elegant machine easily mistaken for a sculpture. It is also, of course, an extremely efficient and powerful fusion reactor that far outstrips their Successors' attempts at replicating it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Heirloom Power Reserve|description|676|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 676,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Heirloom Power Reserve",
+   "english": "This Predecessor battery stores energy in the almost innumerable voids of a stellar metal foam, a technology now unfortunately lost to time.",
+   "italian": "This Predecessor battery stores energy in the almost innumerable voids of a stellar metal foam, a technology now unfortunately lost to time.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Heirloom Cooling|description|690|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 690,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Heirloom Cooling",
+   "english": "The Successors' modern equipment does not produce nearly enough heat to necessitate the large and powerful cooling units their Predecessors used in the past.",
+   "italian": "The Successors' modern equipment does not produce nearly enough heat to necessitate the large and powerful cooling units their Predecessors used in the past.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:\"Jiita\" Heirloom Shielding|description|705|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 705,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Jiita\" Heirloom Shielding",
+   "english": "Polished to gleaming for over a thousand years, this ancient shield generator yearns to see combat once again.",
+   "italian": "Polished to gleaming for over a thousand years, this ancient shield generator yearns to see combat once again.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Point Drive|description|728|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 728,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Point Drive",
+   "english": "\"There was a terrible emptiness inside,\" Resja said of the device, \"like a black spot in one's vision that grew larger with every blink, that spread moment by moment until the world went away. The first time I truly understood one, I felt that absence within grow to envelop me. And long after I have died, long after the name of the Myiara fades to a future era, that pang-ridden emptiness will remain.\"",
+   "italian": "\"There was a terrible emptiness inside,\" Resja said of the device, \"like a black spot in one's vision that grew larger with every blink, that spread moment by moment until the world went away. The first time I truly understood one, I felt that absence within grow to envelop me. And long after I have died, long after the name of the Myiara fades to a future era, that pang-ridden emptiness will remain.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Stolen Cloak (Deactivated)|description|782|0",
+   "path": "data/successors/predecessors.txt",
+   "line": 782,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Stolen Cloak (Deactivated)",
+   "english": "An ancient cloaking device stolen from House Kaatrij. It has been temporarily deactivated by a detector device.",
+   "italian": "An ancient cloaking device stolen from House Kaatrij. It has been temporarily deactivated by a detector device.",
+   "ratio": 1.0
+  }
+ ]
+}

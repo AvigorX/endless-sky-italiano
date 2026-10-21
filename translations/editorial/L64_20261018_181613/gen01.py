@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+# part01: unita' 1-25 (Burthen Triathlon).
+import json
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+P = {
+1: "Grazie all'alta gravità del pianeta, Burthen non è una destinazione comune, ma oggi lo spazioporto sembra avere molti visitatori. Molte delle piattaforme di atterraggio di solito vuote sono occupate, e mentre esci sul piazzale piuttosto immacolato noti una folla consistente ai margini dello spazioporto. Alcuni della folla sono chiaramente di altri mondi, a giudicare dall'altezza, e ci sono persino alcune troupe mediatiche in attesa, anche se i loro droni-fotocamera sembrano faticare con la gravità di Burthen.",
+2: "(Vedi cosa succede.)",
+3: "(Evita la confusione e pensa ai fatti miei.)",
+4: "Ogni passo costa molta più fatica del solito, ma alla fine raggiungi la folla. Dai cartelli affissi lungo la strada sembra che oggi si svolga il \"Triathlon di Burthen\", e che lo spazioporto sia stato designato come punto d'arrivo. Sono stati montati un paio di tendoni dall'aspetto particolarmente robusto: quello più piccolo sembra il tendone dell'amministrazione, per ora accessibile solo allo staff dell'evento, mentre l'altro è molto più grande e serve cibo e bevande alla folla lì vicino.",
+5: "(Vai al tendone del ristoro.)",
+6: "(Resta fuori.)",
+7: "(Torna alla mia nave.)",
+8: "Per fortuna la camminata fino al tendone del ristoro è molto più breve di quella dalla nave, ma arrivi comunque esausto quando ti trascini dentro. È stato fatto molto lavoro per questo tendone: le sedie di metallo sono tutte costruite robuste perché chi viene da fuori possa tirarsi su, ma imbottite per non renderle scomode. Al centro del tendone è stato costruito un piccolo braciere, con un paio di estintori sistemati lì vicino, e tutto il locale è illuminato intensamente, in contrasto con il clima di solito freddo di Burthen. Parecchie persone, sia di Burthen sia di altri mondi, si mescolano qui.",
+9: "In un angolo c'è un bancone a due livelli, evidentemente perché il burtheniano che lo serve possa servire sia quelli di fuori sia i locali. Oltre alle solite bevande che hai visto nei bar degli spazioporti e ad alcune locali del Core meridionale, il bancone offre anche una bevanda locale chiamata \"Antigrav\" che promette di \"alleviare i visitatori dal richiamo naturale di Burthen\", e arriva in un bicchiere fatto apposta, tutto per 30 crediti.",
+10: "(Ordina una bevanda normale dal bancone.)",
+11: "(Ordina l'Antigrav dal bancone.)",
+12: "(Non ordinare nulla e lascia il tendone.)",
+13: "Consegni un paio di crediti per la bevanda e lasci il tendone, sorseggiando con una certa difficoltà mentre cammini. Il burtheniano al bancone ti consiglia di non berne troppo in una volta, e di non lasciar cadere il bicchiere \"a meno che tu non voglia un piede maciullato per qualche settimana\".",
+14: "Si scopre che il bicchiere dell'Antigrav ha installato un repulsore miniaturizzato, così non devi tenerlo in mano mentre bevi. La bevanda in sé è una soda molto gassata che sa di qualcosa a metà fra il mirtillo rosso e il lampone, fatta con le bacche autoctone che si trovano nel Westland, il distretto in cui si trova lo spazioporto. Il burtheniano al bancone ti consiglia di non berne troppo in una volta e di non spegnerlo mentre levita, \"perché non cada sul tuo piede e dobbiamo curarti le fratture\".",
+15: "no credits",
+16: "Sfortunatamente, sembra che tutte le bevande siano troppo care per te.",
+17: "(Lascia il tendone.)",
+18: "leave tent",
+19: "La folla è un po' più attiva quando torni fuori, e sopra le teste dei locali vedi su un grande schermo portatile che il triatleta in testa è un burtheniano particolarmente tarchiato, con un casco bianco e un abbigliamento sportivo scuro e aderente.",
+20: "Restando fuori nella gravità opprimente e nella temperatura fredda, ti sposti a bordo pista e guardi il grande schermo portatile che trasmette i concorrenti in testa dall'alto. Sembra che i concorrenti siano divisi fra burtheniani e forestieri, con i burtheniani in casco bianco e i forestieri in casco rosso. È quasi la fine dell'evento; il concorrente in testa si chiama Abernathy, un burtheniano tarchiato che sta facendo il suo undicesimo Triathlon di Burthen. Intanto il forestiero in testa è cinquecento metri dietro di lui, un concorrente di Martini di nome Caldarone. A quanto pare sono in gara da più di 11 ore, cominciando con 1,5 chilometri di nuoto, poi 40 chilometri in bicicletta e infine 10 chilometri di corsa.",
+21: "Dopo un paio di minuti Abernathy sbuca da dietro una curva, con i droni-fotocamera alle calcagna. Dalla folla erompono acclamazioni, urla e grida piuttosto entusiaste, che si alzano enormemente quando attraversa il rettilineo finale, con i droni che ora gli girano intorno. Sopra la folla un altoparlante annuncia: \"Ed ecco il vincitore del Triathlon di Burthen della Syndicate Athletics, il campione mondiale di triathlon, concorrente numero cinquantotto: Samuel Abernathy!\"",
+22: "after tent",
+23: "Quando si avvicina al traguardo, dalla folla erompono le acclamazioni entusiaste, le urla e le grida dei burtheniani, e i droni-fotocamera, ora con i repulsori calibrati per la gravità di Burthen, girano intorno al rettilineo finale. Sopra la folla un altoparlante annuncia: \"Ed ecco il vincitore del Triathlon di Burthen della Syndicate Athletics, il campione mondiale di triathlon, concorrente numero cinquantotto: Samuel Abernathy!\"",
+24: "end",
+25: "Abernathy non rallenta finché non è a un braccio dal traguardo; quando lo attraversa afferra il nastro, emettendo un guaito di gioia e sollievo insieme. Tiene il nastro in alto davanti a tutta la folla e alle telecamere puntate su di lui, assaporando l'attenzione (e riprendendo fiato) prima di accettare una bottiglia d'acqua da qualcuno a bordo pista.",
+}
+
+json.dump({str(k): v for k, v in sorted(P.items())},
+          open(os.path.join(HERE, 'parts', 'part01.json'), 'w', encoding='utf-8'),
+          ensure_ascii=False, indent=1)
+print('part01:', len(P), 'unita', min(P), '-', max(P))

@@ -1,0 +1,209 @@
+{
+ "block": {
+  "path": "data/wanderer/wanderer outfits.txt",
+  "line_from": 40,
+  "line_to": 450,
+  "units": 18
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Sunbeam|description|40|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 40,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Sunbeam",
+   "english": "The Wanderers do not devote much time to developing weapon technology, preferring to focus their attention on more constructive endeavors. However, the few weapons they have created are efficient and deadly.",
+   "italian": "The Wanderers do not devote much time to developing weapon technology, preferring to focus their attention on more constructive endeavors. However, the few weapons they have created are efficient and deadly.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Sunbeam Turret|description|82|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 82,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Sunbeam Turret",
+   "english": "As the Wanderers slowly cope with the transition from peacetime to the growing conflict with the Unfettered Hai, they have begun building ships that are capable of carrying turret-mounted weapons. Because of the sheer size of the Sunbeam, this turret only carries one of them.",
+   "italian": "As the Wanderers slowly cope with the transition from peacetime to the growing conflict with the Unfettered Hai, they have begun building ships that are capable of carrying turret-mounted weapons. Because of the sheer size of the Sunbeam, this turret only carries one of them.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Dual Sunbeam Turret|description|114|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 114,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Dual Sunbeam Turret",
+   "english": "This turret carries a pair of Wanderer Sunbeams. For any ship that can support its energy requirements, it is an immensely powerful weapon.",
+   "italian": "This turret carries a pair of Wanderer Sunbeams. For any ship that can support its energy requirements, it is an immensely powerful weapon.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Moonbeam|description|145|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 145,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Moonbeam",
+   "english": "Because their Sunbeams are not very effective against the heavy plating of the Korath drones, the Wanderers have developed a new beam weapon that is considerably more effective against hull armor.",
+   "italian": "Because their Sunbeams are not very effective against the heavy plating of the Korath drones, the Wanderers have developed a new beam weapon that is considerably more effective against hull armor.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Moonbeam Turret|description|195|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 195,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Moonbeam Turret",
+   "english": "This turret only carries a single Moonbeam weapon, but with its duty cycle increased so it can do 50% more damage than the non-turreted version.",
+   "italian": "This turret only carries a single Moonbeam weapon, but with its duty cycle increased so it can do 50% more damage than the non-turreted version.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Wanderer Anti-Missile|description|219|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 219,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Wanderer Anti-Missile",
+   "english": "As a defense against the tracker pods used by the Unfettered Hai, the Wanderers have developed a hard-hitting anti-missile system that can knock almost any missile out of the sky with a single shot.",
+   "italian": "As a defense against the tracker pods used by the Unfettered Hai, the Wanderers have developed a hard-hitting anti-missile system that can knock almost any missile out of the sky with a single shot.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Thunderhead Launcher|description|270|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 270,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thunderhead Launcher",
+   "english": "A prime example of Wanderer ingenuity, Thunderhead Missiles each carry five submunitions that are capable of independent tracking. Even if the target is able to shoot down or evade a few of them, the remaining missile fragments will still find their mark.",
+   "italian": "A prime example of Wanderer ingenuity, Thunderhead Missiles each carry five submunitions that are capable of independent tracking. Even if the target is able to shoot down or evade a few of them, the remaining missile fragments will still find their mark.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Thunderhead Launcher|description|271|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 271,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thunderhead Launcher",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Thunderhead Missile|description|283|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 283,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thunderhead Missile",
+   "english": "Thunderhead cluster munitions are long-range Wanderer missiles that split into five fast and agile submunitions when they are close to their target. Each launcher can hold up to 40 of these.",
+   "italian": "Thunderhead cluster munitions are long-range Wanderer missiles that split into five fast and agile submunitions when they are close to their target. Each launcher can hold up to 40 of these.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Thunderhead Storage Array|description|320|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 320,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thunderhead Storage Array",
+   "english": "The Thunderhead Storage Array is used to store extra ammunition for Thunderhead Launchers.",
+   "italian": "The Thunderhead Storage Array is used to store extra ammunition for Thunderhead Launchers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Small Biochemical Cell|description|346|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 346,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Biochemical Cell",
+   "english": "This tiny generator draws energy from the metabolic byproducts of a collection of microorganisms that have been engineered by the Wanderers specifically for this purpose.",
+   "italian": "This tiny generator draws energy from the metabolic byproducts of a collection of microorganisms that have been engineered by the Wanderers specifically for this purpose.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Large Biochemical Cell|description|361|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 361,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Biochemical Cell",
+   "english": "The Wanderers are masters of unusual and efficient technology. This bioreactor is fueled by a culture of microorganisms that produce a small electric charge.",
+   "italian": "The Wanderers are masters of unusual and efficient technology. This bioreactor is fueled by a culture of microorganisms that produce a small electric charge.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Red Sun Reactor|description|376|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 376,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Red Sun Reactor",
+   "english": "The Wanderers have recently begun producing this tiny reactor as a way to squeeze a bit more energy production into their warships.",
+   "italian": "The Wanderers have recently begun producing this tiny reactor as a way to squeeze a bit more energy production into their warships.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Yellow Sun Reactor|description|391|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 391,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Yellow Sun Reactor",
+   "english": "This is a compact nuclear reactor designed by the Wanderers. In addition to generating power, it is able to store a small amount of energy.",
+   "italian": "This is a compact nuclear reactor designed by the Wanderers. In addition to generating power, it is able to store a small amount of energy.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:White Sun Reactor|description|406|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 406,
+   "kind": "DESCRIPTION",
+   "context": "outfit:White Sun Reactor",
+   "english": "The White Sun is a large nuclear reactor that the Wanderers use for powering their Strong Wind warships.",
+   "italian": "The White Sun is a large nuclear reactor that the Wanderers use for powering their Strong Wind warships.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Blue Sun Reactor|description|421|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 421,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Blue Sun Reactor",
+   "english": "As the Wanderers have begun producing heavy warships, a need has arisen for larger and larger reactor cores to power them.",
+   "italian": "As the Wanderers have begun producing heavy warships, a need has arisen for larger and larger reactor cores to power them.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:Bright Cloud Shielding|description|436|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 436,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Bright Cloud Shielding",
+   "english": "This small Wanderer shield generator is able to recharge a ship's shields at a considerable rate, but it also consumes more energy than some other shield generators do.",
+   "italian": "This small Wanderer shield generator is able to recharge a ship's shields at a considerable rate, but it also consumes more energy than some other shield generators do.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "outfit:Dark Storm Shielding|description|450|0",
+   "path": "data/wanderer/wanderer outfits.txt",
+   "line": 450,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Dark Storm Shielding",
+   "english": "This Wanderer shield generator can restore a ship's shield strength more quickly than any human shielding technology, but while recharging shields it also draws a much larger amount of power.",
+   "italian": "This Wanderer shield generator can restore a ship's shield strength more quickly than any human shielding technology, but while recharging shields it also draws a much larger amount of power.",
+   "ratio": 1.0
+  }
+ ]
+}

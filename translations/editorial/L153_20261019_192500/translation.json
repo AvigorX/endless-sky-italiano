@@ -1,0 +1,231 @@
+{
+ "block": {
+  "path": "data/coalition/coalition jobs.txt",
+  "line_from": 1360,
+  "line_to": 1469,
+  "units": 20
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|log|1360|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1360,
+   "kind": "LOGBOOK",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "The spider-like Arachi were the last of the three Coalition species to discover interstellar travel. Most members of their society owe allegiance to one of the great Arach \"Houses,\" organizations that are somewhat similar to guilds and that each specialize in one particular form of industry or technology.",
+   "italian": "Gli Arachi, simili a ragni, sono stati l'ultima delle tre specie della Coalizione a scoprire il viaggio interstellare. La maggior parte dei membri della loro società deve fedeltà a una delle grandi \"Case\" Arach, organizzazioni in qualche modo simili a corporazioni, ognuna specializzata in una particolare forma di industria o tecnologia.",
+   "ratio": 1.105
+  },
+  {
+   "idx": 2,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|\tShe thanks you yet again, salutes, and leaves to follow the entourage guarding the newly purchased jump drive. Not a minute after she has left, three more Heliarchs arrive at your ship, a delegation consisting of a member of each of the three Coalition species, all wearing golden circlets denoting their rank and authority. \"A most unexpected, but greatly value contribution this is,\" the Saryd says, \"to think that so eager would our visitor be to prove their diligence and commitment.\"|1361|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1361,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "\tShe thanks you yet again, salutes, and leaves to follow the entourage guarding the newly purchased jump drive. Not a minute after she has left, three more Heliarchs arrive at your ship, a delegation consisting of a member of each of the three Coalition species, all wearing golden circlets denoting their rank and authority. \"A most unexpected, but greatly value contribution this is,\" the Saryd says, \"to think that so eager would our visitor be to prove their diligence and commitment.\"",
+   "italian": "\tTi ringrazia ancora una volta, fa il saluto e si allontana per seguire il corteo che scorta il motore di salto appena acquistato. Nemmeno un minuto dopo che se n'è andata, altre tre Heliarch arrivano alla tua nave: una delegazione composta da un membro di ciascuna delle tre specie della Coalizione, tutti con cerchietti d'oro che indicano rango e autorità. \"Un contributo del tutto inatteso, ma di grande valore è questo,\" dice il Saryd, \"pensare a quanto fosse desideroso il nostro visitatore di dimostrare diligenza e impegno.\"",
+   "ratio": 1.086
+  },
+  {
+   "idx": 3,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|\tThe Kimek says, \"As aided you have our society in breaking free of the Quarg's cages, with our society's technology may you be trusted.\"|1362|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1362,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "\tThe Kimek says, \"As aided you have our society in breaking free of the Quarg's cages, with our society's technology may you be trusted.\"",
+   "italian": "\tIl Kimek dice: \"Come hai aiutato la nostra società a liberarsi dalle gabbie dei Quarg, così della tecnologia della nostra società puoi fidarti.\"",
+   "ratio": 1.058
+  },
+  {
+   "idx": 4,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|\t\"But,\" says the Arach, \"like all civilians, even citizens, to you our weapons and warships we still cannot sell.\"|1363|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1363,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "\t\"But,\" says the Arach, \"like all civilians, even citizens, to you our weapons and warships we still cannot sell.\"",
+   "italian": "\t\"Ma,\" dice l'Arach, \"come a tutti i civili, e perfino ai cittadini, a te le nostre armi e le nostre navi da guerra ancora non possiamo vendere.\"",
+   "ratio": 1.272
+  },
+  {
+   "idx": 5,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|\t\"Thank you.\"|1365|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1365,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "\t\"Thank you.\"",
+   "italian": "\t\"Grazie.\"",
+   "ratio": 0.769
+  },
+  {
+   "idx": 6,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|\t\"Why don't you allow civilians to purchase weapons or warships?\"|1367|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1367,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "\t\"Why don't you allow civilians to purchase weapons or warships?\"",
+   "italian": "\t\"Perché non permettete ai civili di acquistare armi o navi da guerra?\"",
+   "ratio": 1.092
+  },
+  {
+   "idx": 7,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|\t\"For the sake of peace it is,\" says the Saryd. \"The Heliarch military, well-trained to use weapons only for defense and only for justice, they are. And to place the needs of the Coalition over the ambitions of their own native species, each one committed is. No such discipline do civilians have, even you. But as a respectful guest you are, to maintain your weapons we shall allow.\"|1368|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1368,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "\t\"For the sake of peace it is,\" says the Saryd. \"The Heliarch military, well-trained to use weapons only for defense and only for justice, they are. And to place the needs of the Coalition over the ambitions of their own native species, each one committed is. No such discipline do civilians have, even you. But as a respectful guest you are, to maintain your weapons we shall allow.\"",
+   "italian": "\t\"Per amore della pace,\" dice il Saryd. \"L'esercito Heliarch, ben addestrato a usare le armi solo per difesa e solo per giustizia, è. E a mettere i bisogni della Coalizione sopra le ambizioni della propria specie d'origine, ognuno è impegnato. Nessuna disciplina simile hanno i civili, nemmeno tu. Ma poiché un ospite rispettoso sei, a mantenere le tue armi ti permetteremo.\"",
+   "ratio": 0.977
+  },
+  {
+   "idx": 8,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|\tApparently nothing is for sale here, but they assure you that many Coalition worlds will now grant you access to their shipyards and outfitters. The three Heliarchs all express their deep gratitude for your generosity with providing them a fresh jump drive, and wish you well.|1370|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1370,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "\tApparently nothing is for sale here, but they assure you that many Coalition worlds will now grant you access to their shipyards and outfitters. The three Heliarchs all express their deep gratitude for your generosity with providing them a fresh jump drive, and wish you well.",
+   "italian": "\tA quanto pare qui non c'è niente in vendita, ma ti assicurano che molti mondi della Coalizione ti daranno ora accesso ai loro cantieri e ai loro fornitori. I tre Heliarch esprimono tutti la loro profonda gratitudine per la generosità con cui hai fornito loro un motore di salto nuovo, e ti augurano il meglio.",
+   "ratio": 1.119
+  },
+  {
+   "idx": 9,
+   "id": "mission:Heliarchs Buy Jump Drive Job 2|name|1380|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1380,
+   "kind": "VALUE",
+   "context": "mission:Heliarchs Buy Jump Drive Job 2",
+   "english": "Sell Jump Drive",
+   "italian": "Vendi motore di salto",
+   "ratio": 1.4
+  },
+  {
+   "idx": 10,
+   "id": "mission:Heliarchs Buy Jump Drive Job 2|description|1382|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1382,
+   "kind": "DESCRIPTION",
+   "context": "mission:Heliarchs Buy Jump Drive Job 2",
+   "english": "Sell a jump drive to the Heliarchs for <payment>.",
+   "italian": "Vendi un motore di salto agli Heliarch per <payment>.",
+   "ratio": 1.082
+  },
+  {
+   "idx": 11,
+   "id": "mission:Heliarchs Buy Jump Drive Job 2|dialog|1393|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1393,
+   "kind": "DIALOG",
+   "context": "mission:Heliarchs Buy Jump Drive Job 2",
+   "english": "A team of Heliarch engineers carefully removes the spare jump drive from your ship and brings it to a restricted section of the ring. You're approached by the Heliarch who supervised the procedure, who thanks you for bringing in another drive, and hands you the pay of <payment>.",
+   "italian": "Una squadra di ingegneri Heliarch rimuove con cura il motore di salto di riserva dalla tua nave e lo porta in una sezione riservata dell'anello. Ti si avvicina l'Heliarch che ha sovrinteso alla procedura, che ti ringrazia per aver portato un altro motore e ti consegna il compenso di <payment>.",
+   "ratio": 1.054
+  },
+  {
+   "idx": 12,
+   "id": "mission:Heliarch Contain True|name|1403|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1403,
+   "kind": "VALUE",
+   "context": "mission:Heliarch Contain True",
+   "english": "Contain Criminals",
+   "italian": "Contain Criminals",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "mission:Heliarch Contain True|description|1404|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1404,
+   "kind": "DESCRIPTION",
+   "context": "mission:Heliarch Contain True",
+   "english": "Fly to <destination> by <date> so that you and <bunks> other Heliarch agents can combat criminals on site. Payment is <payment>.",
+   "italian": "Vola a <destination> entro il <date> così che tu e altri <bunks> agenti Heliarch possiate combattere i criminali sul posto. Il compenso è <payment>.",
+   "ratio": 1.156
+  },
+  {
+   "idx": 14,
+   "id": "mission:Heliarch Contain True|dialog|1422|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1422,
+   "kind": "DIALOG",
+   "context": "mission:Heliarch Contain True",
+   "english": "You and the other agents converge on the marked area and quickly move to cut off any exits. After a brief firefight, the criminals surrender and a Heliarch ship swoops in to pick them up. You bid your Heliarch colleagues farewell and return to your ship, where you are happy to see that <payment> have already been transferred to your account.",
+   "italian": "Tu e gli altri agenti convergete sull'area indicata e vi muovete rapidamente per tagliare ogni via di fuga. Dopo un breve scontro a fuoco i criminali si arrendono e una nave Heliarch piomba a prelevarli. Saluti i colleghi Heliarch e torni alla tua nave, dove scopri con piacere che <payment> sono già stati trasferiti sul tuo conto.",
+   "ratio": 0.968
+  },
+  {
+   "idx": 15,
+   "id": "mission:Heliarch Contain Fail|name|1427|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1427,
+   "kind": "VALUE",
+   "context": "mission:Heliarch Contain Fail",
+   "english": "Contain Criminals",
+   "italian": "Contain Criminals",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "mission:Heliarch Contain Fail|description|1428|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1428,
+   "kind": "DESCRIPTION",
+   "context": "mission:Heliarch Contain Fail",
+   "english": "Fly to <destination> by <date> so that you and <bunks> other Heliarch agents can combat criminals on site. Payment is <payment>.",
+   "italian": "Vola a <destination> entro il <date> così che tu e altri <bunks> agenti Heliarch possiate combattere i criminali sul posto. Il compenso è <payment>.",
+   "ratio": 1.156
+  },
+  {
+   "idx": 17,
+   "id": "mission:Heliarch Contain Fail|dialog|1445|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1445,
+   "kind": "DIALOG",
+   "context": "mission:Heliarch Contain Fail",
+   "english": "You and the other agents head to the marked area, but when you arrive it becomes evident that whoever occupied the place has managed to escape. You bring the other agents to the spaceport as they lament the failed job.",
+   "italian": "Tu e gli altri agenti vi dirigete verso l'area indicata, ma quando arrivate è evidente che chiunque occupasse il posto è riuscito a fuggire. Riporti gli altri agenti allo spazioporto mentre si lamentano del lavoro fallito.",
+   "ratio": 1.018
+  },
+  {
+   "idx": 18,
+   "id": "mission:Heliarch Contain Fake|name|1450|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1450,
+   "kind": "VALUE",
+   "context": "mission:Heliarch Contain Fake",
+   "english": "Contain Criminals",
+   "italian": "Contain Criminals",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "mission:Heliarch Contain Fake|description|1451|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1451,
+   "kind": "DESCRIPTION",
+   "context": "mission:Heliarch Contain Fake",
+   "english": "Fly to <destination> by <date> so that you and <bunks> other Heliarch agents can combat criminals on the site. Payment is <payment>.",
+   "italian": "Vola a <destination> entro il <date> così che tu e altri <bunks> agenti Heliarch possiate combattere i criminali sul luogo. Il compenso è <payment>.",
+   "ratio": 1.121
+  },
+  {
+   "idx": 20,
+   "id": "mission:Heliarch Contain Fake|dialog|1469|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1469,
+   "kind": "DIALOG",
+   "context": "mission:Heliarch Contain Fake",
+   "english": "Your team pounces and catches the targets entirely by surprise. They offer no resistance, relinquishing their weapons immediately. You call for a Heliarch ship to pick them up and then bid the other agents farewell as you leave. An extra <payment> is already waiting in your account when you return to your ship.",
+   "italian": "La tua squadra piomba sui bersagli e li coglie del tutto di sorpresa. Non oppongono resistenza e consegnano subito le armi. Chiami una nave Heliarch perché li prelevi e poi saluti gli altri agenti mentre te ne vai. Un <payment> extra ti aspetta già sul conto quando torni alla tua nave.",
+   "ratio": 0.917
+  }
+ ]
+}

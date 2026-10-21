@@ -1,0 +1,981 @@
+{
+ "batch": "B001",
+ "results": [
+  {
+   "id": "interface:performance info|label|248|0",
+   "it": "CPU: calcolo..."
+  },
+  {
+   "id": "interface:performance info|label|252|0",
+   "it": "GPU: calcolo..."
+  },
+  {
+   "id": "interface:performance info|label|256|0",
+   "it": "MEM: calcolo..."
+  },
+  {
+   "id": "interface:map detail panel|button|280|0",
+   "it": "_Annulla ordine"
+  },
+  {
+   "id": "interface:main menu|button|327|0",
+   "it": "_Entra nella nave"
+  },
+  {
+   "id": "interface:main menu|button|333|0",
+   "it": "_Regole"
+  },
+  {
+   "id": "interface:main menu|button|337|0",
+   "it": "_Nuovo pilota"
+  },
+  {
+   "id": "interface:main menu|button|341|0",
+   "it": "_Ricarica pilota"
+  },
+  {
+   "id": "interface:main menu|button|346|0",
+   "it": "_Gestisci piloti..."
+  },
+  {
+   "id": "interface:main menu|button|351|0",
+   "it": "_Esci"
+  },
+  {
+   "id": "interface:main menu|button|354|0",
+   "it": "_Preferenze..."
+  },
+  {
+   "id": "interface:menu player info|label|364|0",
+   "it": "pilota:"
+  },
+  {
+   "id": "interface:menu player info|label|372|0",
+   "it": "nave:"
+  },
+  {
+   "id": "interface:menu player info|label|380|0",
+   "it": "pianeta:"
+  },
+  {
+   "id": "interface:menu player info|label|388|0",
+   "it": "sistema:"
+  },
+  {
+   "id": "interface:menu player info|label|396|0",
+   "it": "crediti:"
+  },
+  {
+   "id": "interface:menu player info|label|402|0",
+   "it": "data:"
+  },
+  {
+   "id": "interface:menu player info|label|408|0",
+   "it": "tempo di gioco:"
+  },
+  {
+   "id": "interface:menu start info|label|422|0",
+   "it": "nome:"
+  },
+  {
+   "id": "interface:menu start info|label|428|0",
+   "it": "data:"
+  },
+  {
+   "id": "interface:menu start info|label|434|0",
+   "it": "pianeta:"
+  },
+  {
+   "id": "interface:menu start info|label|440|0",
+   "it": "sistema:"
+  },
+  {
+   "id": "interface:menu start info|label|446|0",
+   "it": "crediti:"
+  },
+  {
+   "id": "interface:menu start info|label|452|0",
+   "it": "debito:"
+  },
+  {
+   "id": "interface:start conditions menu|button|469|0",
+   "it": "_Torna al menu"
+  },
+  {
+   "id": "interface:start conditions menu|button|473|0",
+   "it": "_Inizia partita"
+  },
+  {
+   "id": "interface:start conditions menu|button|479|0",
+   "it": "_Regole"
+  },
+  {
+   "id": "interface:load menu|button|521|0",
+   "it": "_Nuovo pilota"
+  },
+  {
+   "id": "interface:load menu|button|525|0",
+   "it": "_Elimina"
+  },
+  {
+   "id": "interface:load menu|button|532|0",
+   "it": "_Apri salvataggi"
+  },
+  {
+   "id": "interface:load menu|button|537|0",
+   "it": "_Aggiungi istantanea"
+  },
+  {
+   "id": "interface:load menu|button|541|0",
+   "it": "R_imuovi"
+  },
+  {
+   "id": "interface:load menu|button|546|0",
+   "it": "_Torna al menu"
+  },
+  {
+   "id": "interface:load menu|button|550|0",
+   "it": "_Carica partita"
+  },
+  {
+   "id": "interface:load menu|button|557|0",
+   "it": "_Regole"
+  },
+  {
+   "id": "interface:controls|button|572|0",
+   "it": "_Comandi"
+  },
+  {
+   "id": "interface:controls|button|576|0",
+   "it": "_Impostazioni"
+  },
+  {
+   "id": "interface:controls|button|581|0",
+   "it": "_Plugin"
+  },
+  {
+   "id": "interface:controls|button|586|0",
+   "it": "_Audio"
+  },
+  {
+   "id": "interface:controls|label|592|0",
+   "it": "Informazioni aggiuntive"
+  },
+  {
+   "id": "interface:controls|wrapped label|599|0",
+   "it": "Premi '_x' su un comando per rimuovere l'assegnazione. Più comandi possono condividere lo stesso tasto."
+  },
+  {
+   "id": "interface:controls|button|608|0",
+   "it": "_Avanti"
+  },
+  {
+   "id": "interface:controls|button|614|0",
+   "it": "P_recedente"
+  },
+  {
+   "id": "interface:settings|button|627|0",
+   "it": "_Comandi"
+  },
+  {
+   "id": "interface:settings|button|632|0",
+   "it": "_Impostazioni"
+  },
+  {
+   "id": "interface:settings|button|636|0",
+   "it": "_Plugin"
+  },
+  {
+   "id": "interface:settings|button|641|0",
+   "it": "_Audio"
+  },
+  {
+   "id": "interface:settings|button|650|0",
+   "it": "_Avanti"
+  },
+  {
+   "id": "interface:settings|button|656|0",
+   "it": "P_recedente"
+  },
+  {
+   "id": "interface:plugins|button|671|0",
+   "it": "_Comandi"
+  },
+  {
+   "id": "interface:plugins|button|676|0",
+   "it": "_Impostazioni"
+  },
+  {
+   "id": "interface:plugins|button|681|0",
+   "it": "_Plugin"
+  },
+  {
+   "id": "interface:plugins|button|685|0",
+   "it": "_Audio"
+  },
+  {
+   "id": "interface:plugins|button|690|0",
+   "it": "_Apri plugin"
+  },
+  {
+   "id": "interface:plugins|label|694|0",
+   "it": "Riavvia per applicare le modifiche"
+  },
+  {
+   "id": "interface:plugins|label|699|0",
+   "it": "Plugin installati:"
+  },
+  {
+   "id": "interface:audio|button|720|0",
+   "it": "_Comandi"
+  },
+  {
+   "id": "interface:audio|button|725|0",
+   "it": "_Impostazioni"
+  },
+  {
+   "id": "interface:audio|button|730|0",
+   "it": "_Plugin"
+  },
+  {
+   "id": "interface:audio|button|735|0",
+   "it": "_Audio"
+  },
+  {
+   "id": "interface:audio|label|741|0",
+   "it": "Musica"
+  },
+  {
+   "id": "interface:audio|label|771|0",
+   "it": "UI"
+  },
+  {
+   "id": "interface:audio|label|801|0",
+   "it": "Antimissili"
+  },
+  {
+   "id": "interface:audio|label|831|0",
+   "it": "Armi"
+  },
+  {
+   "id": "interface:audio|label|861|0",
+   "it": "Motori"
+  },
+  {
+   "id": "interface:audio|label|891|0",
+   "it": "Postbruciatori"
+  },
+  {
+   "id": "interface:audio|label|921|0",
+   "it": "Motori iperspaziali"
+  },
+  {
+   "id": "interface:audio|label|951|0",
+   "it": "Esplosioni"
+  },
+  {
+   "id": "interface:audio|label|981|0",
+   "it": "Scansioni"
+  },
+  {
+   "id": "interface:audio|label|1011|0",
+   "it": "Ambiente"
+  },
+  {
+   "id": "interface:audio|label|1041|0",
+   "it": "Avvisi"
+  },
+  {
+   "id": "interface:preferences|button|1073|0",
+   "it": "_Torna al menu..."
+  },
+  {
+   "id": "interface:gamerules|button|1111|0",
+   "it": "_Torna al menu..."
+  },
+  {
+   "id": "interface:gamerules|button|1114|0",
+   "it": "_Regole"
+  },
+  {
+   "id": "interface:gamerules|button|1119|0",
+   "it": "_Preset"
+  },
+  {
+   "id": "interface:gamerules|label|1125|0",
+   "it": "Informazioni aggiuntive"
+  },
+  {
+   "id": "interface:gamerules|wrapped label|1132|0",
+   "it": "Premi '_x' su una regola per riportarla al valore del preset scelto."
+  },
+  {
+   "id": "interface:gamerules|button|1141|0",
+   "it": "_Avanti"
+  },
+  {
+   "id": "interface:gamerules|button|1147|0",
+   "it": "P_recedente"
+  },
+  {
+   "id": "interface:gamerules presets|button|1159|0",
+   "it": "_Torna al menu..."
+  },
+  {
+   "id": "interface:gamerules presets|button|1162|0",
+   "it": "_Regole"
+  },
+  {
+   "id": "interface:gamerules presets|button|1167|0",
+   "it": "_Preset"
+  },
+  {
+   "id": "interface:gamerules presets|label|1172|0",
+   "it": "Preset delle regole di gioco:"
+  },
+  {
+   "id": "interface:gamerules presets|label|1183|0",
+   "it": "Informazioni aggiuntive"
+  },
+  {
+   "id": "interface:gamerules presets|wrapped label|1190|0",
+   "it": "Seleziona la casella accanto a un preset per attivarlo."
+  },
+  {
+   "id": "interface:planet|button|1643|0",
+   "it": "_Commercio"
+  },
+  {
+   "id": "interface:planet|button|1653|0",
+   "it": "_Incarichi"
+  },
+  {
+   "id": "interface:planet|button|1663|0",
+   "it": "Dati _pilota"
+  },
+  {
+   "id": "interface:planet|button|1673|0",
+   "it": "_Banca"
+  },
+  {
+   "id": "interface:planet|button|1693|0",
+   "it": "_Cantiere"
+  },
+  {
+   "id": "interface:planet|button|1703|0",
+   "it": "_Fornitore"
+  },
+  {
+   "id": "interface:planet|button|1713|0",
+   "it": "_Assumi equipaggio"
+  },
+  {
+   "id": "interface:planet|button|1724|0",
+   "it": "_Partenza"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1748|0",
+   "it": "_Commercio"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1758|0",
+   "it": "_Incarichi"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1768|0",
+   "it": "Dati _pilota"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1778|0",
+   "it": "_Banca"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1798|0",
+   "it": "_Cantiere"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1808|0",
+   "it": "_Fornitore"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1818|0",
+   "it": "_Assumi equipaggio"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1829|0",
+   "it": "_Partenza"
+  },
+  {
+   "id": "interface:boarding|label|1904|0",
+   "it": "oggetto"
+  },
+  {
+   "id": "interface:boarding|label|1907|0",
+   "it": "valore"
+  },
+  {
+   "id": "interface:boarding|label|1910|0",
+   "it": "misura"
+  },
+  {
+   "id": "interface:boarding|label|1914|0",
+   "it": "spazio carico libero:"
+  },
+  {
+   "id": "interface:boarding|label|1921|0",
+   "it": "membri"
+  },
+  {
+   "id": "interface:boarding|label|1924|0",
+   "it": "attacco"
+  },
+  {
+   "id": "interface:boarding|label|1927|0",
+   "it": "difesa"
+  },
+  {
+   "id": "interface:boarding|label|1931|0",
+   "it": "la tua nave:"
+  },
+  {
+   "id": "interface:boarding|label|1944|0",
+   "it": "nave nemica:"
+  },
+  {
+   "id": "interface:boarding|label|1957|0",
+   "it": "probabilità di cattura (attaccando):"
+  },
+  {
+   "id": "interface:boarding|label|1963|0",
+   "it": "perdite previste:"
+  },
+  {
+   "id": "interface:boarding|label|1970|0",
+   "it": "probabilità di sopravvivenza (difendendo):"
+  },
+  {
+   "id": "interface:boarding|label|1976|0",
+   "it": "perdite previste:"
+  },
+  {
+   "id": "interface:boarding|button|1988|0",
+   "it": "_Prendi"
+  },
+  {
+   "id": "interface:boarding|button|1993|0",
+   "it": "_Fatto"
+  },
+  {
+   "id": "interface:boarding|button|1998|0",
+   "it": "Tenta la _cattura"
+  },
+  {
+   "id": "interface:boarding|button|2003|0",
+   "it": "_Attacca"
+  },
+  {
+   "id": "interface:boarding|button|2008|0",
+   "it": "D_ifendi"
+  },
+  {
+   "id": "interface:hiring|label|2016|0",
+   "it": "ammiraglia"
+  },
+  {
+   "id": "interface:hiring|label|2020|0",
+   "it": "intera flotta"
+  },
+  {
+   "id": "interface:hiring|label|2024|0",
+   "it": "stipendio"
+  },
+  {
+   "id": "interface:hiring|label|2033|0",
+   "it": "posti letto"
+  },
+  {
+   "id": "interface:hiring|label|2043|0",
+   "it": "equipaggio richiesto"
+  },
+  {
+   "id": "interface:hiring|label|2056|0",
+   "it": "equipaggio extra"
+  },
+  {
+   "id": "interface:hiring|button|2069|0",
+   "it": "_Assumi"
+  },
+  {
+   "id": "interface:hiring|button|2076|0",
+   "it": "_Licenzia"
+  },
+  {
+   "id": "interface:hiring|label|2086|0",
+   "it": "spazio passeggeri"
+  },
+  {
+   "id": "interface:hiring|label|2096|0",
+   "it": "passeggeri"
+  },
+  {
+   "id": "interface:hiring|label|2103|0",
+   "it": "(Equipaggio extra sull'ammiraglia aumenta le probabilità di catturare navi,"
+  },
+  {
+   "id": "interface:hiring|label|2105|0",
+   "it": "e dopo aver catturato una nave servono membri dell'equipaggio per presidiarla.)"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2113|0",
+   "it": "ammiraglia"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2117|0",
+   "it": "intera flotta"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2121|0",
+   "it": "stipendio"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2130|0",
+   "it": "posti letto"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2140|0",
+   "it": "equipaggio richiesto"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2153|0",
+   "it": "equipaggio extra"
+  },
+  {
+   "id": "interface:hiring (small screen)|button|2166|0",
+   "it": "_Assumi"
+  },
+  {
+   "id": "interface:hiring (small screen)|button|2173|0",
+   "it": "_Licenzia"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2183|0",
+   "it": "spazio passeggeri"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2193|0",
+   "it": "passeggeri"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2200|0",
+   "it": "(Equipaggio extra sull'ammiraglia aumenta le probabilità di catturare navi,"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2202|0",
+   "it": "e dopo aver catturato una nave servono membri dell'equipaggio per presidiarla.)"
+  },
+  {
+   "id": "interface:trade|label|2222|0",
+   "it": "Merce"
+  },
+  {
+   "id": "interface:trade|label|2226|0",
+   "it": "Prezzo"
+  },
+  {
+   "id": "interface:trade|label|2231|0",
+   "it": "Profitto"
+  },
+  {
+   "id": "interface:trade|label|2244|0",
+   "it": "In stiva"
+  },
+  {
+   "id": "interface:trade|label|2253|0",
+   "it": "liberi:"
+  },
+  {
+   "id": "interface:trade|button|2265|0",
+   "it": "C_ompra tutto"
+  },
+  {
+   "id": "interface:trade|button|2272|0",
+   "it": "V_endi tutto"
+  },
+  {
+   "id": "interface:trade|button|2279|0",
+   "it": "Equipaggiamenti in _deposito"
+  },
+  {
+   "id": "interface:trade|button|2286|0",
+   "it": "Vendi i _minerali"
+  },
+  {
+   "id": "interface:trade|button|2293|0",
+   "it": "Vendi gli _equipaggiamenti"
+  },
+  {
+   "id": "interface:trade (small screen)|label|2314|0",
+   "it": "Merce"
+  },
+  {
+   "id": "interface:trade (small screen)|label|2318|0",
+   "it": "Prezzo"
+  },
+  {
+   "id": "interface:trade (small screen)|label|2323|0",
+   "it": "Profitto"
+  },
+  {
+   "id": "interface:trade (small screen)|label|2336|0",
+   "it": "In stiva"
+  },
+  {
+   "id": "interface:trade (small screen)|label|2345|0",
+   "it": "liberi:"
+  },
+  {
+   "id": "interface:trade (small screen)|button|2357|0",
+   "it": "C_ompra tutto"
+  },
+  {
+   "id": "interface:trade (small screen)|button|2364|0",
+   "it": "V_endi tutto"
+  },
+  {
+   "id": "interface:trade (small screen)|button|2371|0",
+   "it": "Equipaggiamenti in _deposito"
+  },
+  {
+   "id": "interface:trade (small screen)|button|2378|0",
+   "it": "Vendi i _minerali"
+  },
+  {
+   "id": "interface:trade (small screen)|button|2385|0",
+   "it": "Vendi gli _equipaggiamenti"
+  },
+  {
+   "id": "interface:bank|button|2402|0",
+   "it": "Paga _tutto"
+  },
+  {
+   "id": "interface:bank (small screen)|button|2419|0",
+   "it": "Paga _tutto"
+  },
+  {
+   "id": "interface:mission|label|2436|0",
+   "it": "spazio carico libero:"
+  },
+  {
+   "id": "interface:mission|label|2441|0",
+   "it": "spazio passeggeri:"
+  },
+  {
+   "id": "interface:mission|label|2446|0",
+   "it": "data odierna:"
+  },
+  {
+   "id": "interface:mission|button|2452|0",
+   "it": "_Accetta missione"
+  },
+  {
+   "id": "interface:mission|button|2457|0",
+   "it": "A_bortisci"
+  },
+  {
+   "id": "interface:map buttons|button|2467|0",
+   "it": "_Cantieri"
+  },
+  {
+   "id": "interface:map buttons|button|2473|0",
+   "it": "_Fornitori"
+  },
+  {
+   "id": "interface:map buttons|button|2479|0",
+   "it": "M_issioni"
+  },
+  {
+   "id": "interface:map buttons|button|2485|0",
+   "it": "_Porti"
+  },
+  {
+   "id": "interface:map buttons|button|2491|0",
+   "it": "S_telle"
+  },
+  {
+   "id": "interface:map buttons|button|2497|0",
+   "it": "_Fatto"
+  },
+  {
+   "id": "interface:map buttons|button|2503|0",
+   "it": "_Trova"
+  },
+  {
+   "id": "interface:map buttons|button|2509|0",
+   "it": "_+"
+  },
+  {
+   "id": "interface:map buttons|button|2513|0",
+   "it": "_-"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2522|0",
+   "it": "_Cantieri"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2528|0",
+   "it": "_Fornitori"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2534|0",
+   "it": "M_issioni"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2540|0",
+   "it": "_Porti"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2546|0",
+   "it": "S_telle"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2552|0",
+   "it": "_Fatto"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2558|0",
+   "it": "_Trova"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2564|0",
+   "it": "_+"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2568|0",
+   "it": "_-"
+  },
+  {
+   "id": "interface:map buttons (simplified)|button|2578|0",
+   "it": "_Fatto"
+  },
+  {
+   "id": "interface:map buttons (simplified)|button|2584|0",
+   "it": "_Trova"
+  },
+  {
+   "id": "interface:map buttons (simplified)|button|2590|0",
+   "it": "_+"
+  },
+  {
+   "id": "interface:map buttons (simplified)|button|2594|0",
+   "it": "_-"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2653|0",
+   "it": "Incarico disponibile; accettabile"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2658|0",
+   "it": "Incarico disponibile; accettabile"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2663|0",
+   "it": "Spazio insufficiente"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2668|0",
+   "it": "Spazio insufficiente"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2673|0",
+   "it": "Incarico attivo; vai qui per completarlo"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2678|0",
+   "it": "Incarico attivo; vai qui per completarlo"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2683|0",
+   "it": "Requisiti incompleti"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2688|0",
+   "it": "Requisiti incompleti"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2693|0",
+   "it": "Sistema di interesse"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2698|0",
+   "it": "Sistema di interesse"
+  },
+  {
+   "id": "interface:info panel|label|2735|0",
+   "it": "Dati nave"
+  },
+  {
+   "id": "interface:info panel|label|2738|0",
+   "it": "Dati _pilota"
+  },
+  {
+   "id": "interface:info panel|label|2747|0",
+   "it": "_Dati nave"
+  },
+  {
+   "id": "interface:info panel|label|2749|0",
+   "it": "Dati pilota"
+  },
+  {
+   "id": "interface:info panel|button|2757|0",
+   "it": "_Fatto"
+  },
+  {
+   "id": "interface:info panel|button|2760|0",
+   "it": "_Missioni..."
+  },
+  {
+   "id": "interface:info panel|button|2764|0",
+   "it": "_Diario..."
+  },
+  {
+   "id": "interface:info panel|button|2770|0",
+   "it": "_Avanti"
+  },
+  {
+   "id": "interface:info panel|button|2773|0",
+   "it": "_Indietro"
+  },
+  {
+   "id": "interface:info panel|button|2781|0",
+   "it": "Par_cheggia"
+  },
+  {
+   "id": "interface:info panel|button|2789|0",
+   "it": "R_iprendi"
+  },
+  {
+   "id": "interface:info panel|button|2796|0",
+   "it": "Abbando_na"
+  },
+  {
+   "id": "interface:info panel|button|2803|0",
+   "it": "_Rinomina"
+  },
+  {
+   "id": "interface:info panel|button|2812|0",
+   "it": "Scarica _carico"
+  },
+  {
+   "id": "interface:info panel|button|2816|0",
+   "it": "_Espelli"
+  },
+  {
+   "id": "interface:info panel|button|2824|0",
+   "it": "Parcheggia _tutte"
+  },
+  {
+   "id": "interface:info panel|button|2830|0",
+   "it": "Riprendi _tutte"
+  },
+  {
+   "id": "interface:info panel|button|2836|0",
+   "it": "Parcheggia le _locali"
+  },
+  {
+   "id": "interface:info panel|button|2842|0",
+   "it": "Riprendi le _locali"
+  },
+  {
+   "id": "interface:info panel|button|2848|0",
+   "it": "Sal_va ordine"
+  },
+  {
+   "id": "interface:message log|button|2860|0",
+   "it": "A"
+  },
+  {
+   "id": "interface:message log|wrapped label|2876|0",
+   "it": "Nascondi i messaggi meno _importanti"
+  },
+  {
+   "id": "interface:message log|button|2884|0",
+   "it": "_Pulisci"
+  },
+  {
+   "id": "interface:message log|label|2889|0",
+   "it": "(Il registro dei messaggi è vuoto.)"
+  },
+  {
+   "id": "interface:hail panel|button|2907|0",
+   "it": "_Fatto"
+  },
+  {
+   "id": "interface:hail panel|button|2913|0",
+   "it": "Offri una _tangente"
+  },
+  {
+   "id": "interface:hail panel|button|2918|0",
+   "it": "Paga la _tangente"
+  },
+  {
+   "id": "interface:hail panel|button|2924|0",
+   "it": "Chiedi _tributo"
+  },
+  {
+   "id": "interface:hail panel|button|2928|0",
+   "it": "Rinuncia al _tributo"
+  },
+  {
+   "id": "interface:hail panel|button|2933|0",
+   "it": "Chiedi _aiuto"
+  },
+  {
+   "id": "interface:map: sales key|label|2971|0",
+   "it": "Senza cantiere"
+  },
+  {
+   "id": "interface:map: sales key|label|2974|0",
+   "it": "Con cantiere"
+  },
+  {
+   "id": "interface:map: sales key|label|2977|0",
+   "it": "Vende questa nave"
+  },
+  {
+   "id": "interface:map: sales key|label|2980|0",
+   "it": "Nave parcheggiata qui"
+  },
+  {
+   "id": "interface:map: sales key|label|2985|0",
+   "it": "Senza fornitore"
+  },
+  {
+   "id": "interface:map: sales key|label|2988|0",
+   "it": "Con fornitore"
+  },
+  {
+   "id": "interface:map: sales key|label|2991|0",
+   "it": "Vende questo equipaggiamento"
+  },
+  {
+   "id": "interface:map: sales key|label|2994|0",
+   "it": "Equipaggiamento in deposito"
+  },
+  {
+   "id": "interface:map: sales key|label|2999|0",
+   "it": "Senza fornitore"
+  },
+  {
+   "id": "interface:map: sales key|label|3002|0",
+   "it": "Con fornitore"
+  },
+  {
+   "id": "interface:map: sales key|label|3005|0",
+   "it": "Estrazione possibile"
+  },
+  {
+   "id": "interface:map: sales key|label|3008|0",
+   "it": "Minerale in deposito"
+  }
+ ]
+}

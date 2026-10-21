@@ -1,0 +1,154 @@
+{
+ "block": {
+  "path": "data/gegno/gegno outfits.txt",
+  "line_from": 739,
+  "line_to": 1012,
+  "units": 13
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Acuit Artillery|plural|739|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 739,
+   "kind": "VALUE",
+   "context": "outfit:Acuit Artillery",
+   "english": "Acuit Artillery",
+   "italian": "Acuit Artillery",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Acuit Artillery|description|770|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 770,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Acuit Artillery",
+   "english": "With a better grasp on plasma and energy weaponry, the Gegno Scin developed a larger blaster weapon to mount on the Feldspar Carrier as a counter to the Gegno Vi's huge cannon weaponry. Acuit Artillery turrets outrange most weapons in Gegno space, while having a higher rate of fire as well, making them very efficient bombardment weapons.",
+   "italian": "With a better grasp on plasma and energy weaponry, the Gegno Scin developed a larger blaster weapon to mount on the Feldspar Carrier as a counter to the Gegno Vi's huge cannon weaponry. Acuit Artillery turrets outrange most weapons in Gegno space, while having a higher rate of fire as well, making them very efficient bombardment weapons.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Acumen Bolt Cannon|description|808|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 808,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Acumen Bolt Cannon",
+   "english": "Further progressing their research in energy weaponry, the Gegno Scin recently designed the Acumen Bolt Cannon - a proof-of-concept neutron cannon that fires dangerous balls of plasma capable of dealing decent damage to armor and shielding alike.",
+   "italian": "Further progressing their research in energy weaponry, the Gegno Scin recently designed the Acumen Bolt Cannon - a proof-of-concept neutron cannon that fires dangerous balls of plasma capable of dealing decent damage to armor and shielding alike.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Acumen Bolt Cannon|description|809|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 809,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Acumen Bolt Cannon",
+   "english": "\tAlthough more powerful than Astuit blaster projectiles, Acumen plasma bolts are harder to fire accurately, travel much slower, and require more energy to fire.",
+   "italian": "\tAlthough more powerful than Astuit blaster projectiles, Acumen plasma bolts are harder to fire accurately, travel much slower, and require more energy to fire.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Guile Pulse Laser|description|853|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 853,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Guile Pulse Laser",
+   "english": "The Guile Pulse Laser is a recent experimental advancement in Scin plasma weapon technology. Rather than rapid firing plasma slugs, this weapon fires concentrated pulses of energy that only last for a brief moment. Each blast impacts the target ship almost instantaneously with a powerful hit, and a consistent amount of fire from Guile Lasers is extremely effective against slow moving targets.",
+   "italian": "The Guile Pulse Laser is a recent experimental advancement in Scin plasma weapon technology. Rather than rapid firing plasma slugs, this weapon fires concentrated pulses of energy that only last for a brief moment. Each blast impacts the target ship almost instantaneously with a powerful hit, and a consistent amount of fire from Guile Lasers is extremely effective against slow moving targets.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Guile Pulse Laser|description|854|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 854,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Guile Pulse Laser",
+   "english": "\tGuile Pulse Lasers have noticeable drawbacks as they quickly consume energy and generate notable heat per shot. Unlike a beam-type weapon, they are incapable of consistent output, and have a fairly short range.",
+   "italian": "\tGuile Pulse Lasers have noticeable drawbacks as they quickly consume energy and generate notable heat per shot. Unlike a beam-type weapon, they are incapable of consistent output, and have a fairly short range.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Excavator|description|886|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 886,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Excavator",
+   "english": "Excavators are large drills designed by the Gegno that rip materials out of asteroids in an efficient manner. These types of drill systems are only found on ships specifically designed around them as they require substantial infrastructure to be functional.",
+   "italian": "Excavators are large drills designed by the Gegno that rip materials out of asteroids in an efficient manner. These types of drill systems are only found on ships specifically designed around them as they require substantial infrastructure to be functional.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Burrower|description|932|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 932,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Burrower",
+   "english": "Burrower Drills are longer, thinner, and more precise than the larger Excavator Drill system, although they are nowhere near as powerful. Burrowers can mine asteroids more carefully, preserving more materials in the process. Rather than constructing the spaceship around the base system, these drills are more compact and are mounted on self-sustaining drill spars, resulting in lower required internal space and machinery.",
+   "italian": "Burrower Drills are longer, thinner, and more precise than the larger Excavator Drill system, although they are nowhere near as powerful. Burrowers can mine asteroids more carefully, preserving more materials in the process. Rather than constructing the spaceship around the base system, these drills are more compact and are mounted on self-sustaining drill spars, resulting in lower required internal space and machinery.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Burrower|description|933|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 933,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Burrower",
+   "english": "\tThis mining outfit requires a drill spar port, in addition to a gun port, in order to be mounted.",
+   "italian": "\tThis mining outfit requires a drill spar port, in addition to a gun port, in order to be mounted.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Ion Torch|plural|949|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 949,
+   "kind": "VALUE",
+   "context": "outfit:Ion Torch",
+   "english": "Ion Torches",
+   "italian": "Ion Torches",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Ion Torch|description|986|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 986,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ion Torch",
+   "english": "Based on the RG-series Torch engine, Ion Torches are a unique type of utility mining weapon that focus the originally explosive exhaust into a thinner, more powerful flare. The more-controlled flame is akin to a heated blade allowing for more precise handling. In contrast to the Excavator, which aggressively grinds asteroids down, an Ion Torch can remove materials more accurately and safely from an asteroid. Additionally, the flare can be tuned down to serve as a makeshift reverse thruster.",
+   "italian": "Based on the RG-series Torch engine, Ion Torches are a unique type of utility mining weapon that focus the originally explosive exhaust into a thinner, more powerful flare. The more-controlled flame is akin to a heated blade allowing for more precise handling. In contrast to the Excavator, which aggressively grinds asteroids down, an Ion Torch can remove materials more accurately and safely from an asteroid. Additionally, the flare can be tuned down to serve as a makeshift reverse thruster.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Ion Torch|description|987|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 987,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ion Torch",
+   "english": "\tThis mining outfit requires a drill spar port, in addition to a gun port, in order to be mounted.",
+   "italian": "\tThis mining outfit requires a drill spar port, in addition to a gun port, in order to be mounted.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Savagery Bludgeon|description|1012|0",
+   "path": "data/gegno/gegno outfits.txt",
+   "line": 1012,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Savagery Bludgeon",
+   "english": "A Savagery Bludgeon is a mace-like weapon found jammed into the Gegno Vi's Dunite duelist ships. They are used as melee weapons for close-quarter rams and jousts during duels. However, they have hardly any use as a weapon outside of this as they merely scratch larger ship's hulls and barely put a dent into anything shielded.",
+   "italian": "A Savagery Bludgeon is a mace-like weapon found jammed into the Gegno Vi's Dunite duelist ships. They are used as melee weapons for close-quarter rams and jousts during duels. However, they have hardly any use as a weapon outside of this as they merely scratch larger ship's hulls and barely put a dent into anything shielded.",
+   "ratio": 1.0
+  }
+ ]
+}

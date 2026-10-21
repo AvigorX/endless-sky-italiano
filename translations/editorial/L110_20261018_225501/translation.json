@@ -1,0 +1,297 @@
+{
+ "block": {
+  "path": "data/korath/korath missions.txt",
+  "line_from": 474,
+  "line_to": 580,
+  "units": 26
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Efreti: Distress Call 6|name|474|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 474,
+   "kind": "VALUE",
+   "context": "mission:Efreti: Distress Call 6",
+   "english": "Salvage the <EDC-ship>",
+   "italian": "Salvage the <EDC-ship>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "mission:Efreti: Distress Call 6|description|475|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 475,
+   "kind": "DESCRIPTION",
+   "context": "mission:Efreti: Distress Call 6",
+   "english": "Salvage the <EDC-ship> and return it to <planet> to claim rights to it.",
+   "italian": "Recupera la <EDC-ship> e riportala su <planet> per rivendicarne la proprietà.",
+   "ratio": 1.085
+  },
+  {
+   "idx": 3,
+   "id": "mission:Efreti: Distress Call 6|blocked|479|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 479,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 6",
+   "english": "You need to be able to carry <bunks> additional crew to salvage the ship. Return here when you have sufficient crew capacity.",
+   "italian": "Devi poter trasportare <bunks> membri d'equipaggio in più per recuperare la nave. Torna qui quando avrai capienza sufficiente per l'equipaggio.",
+   "ratio": 1.144
+  },
+  {
+   "idx": 4,
+   "id": "mission:Efreti: Distress Call 7|name|508|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 508,
+   "kind": "VALUE",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "Salvage the <EDC-ship>",
+   "italian": "Salvage the <EDC-ship>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "mission:Efreti: Distress Call 7|description|509|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 509,
+   "kind": "DESCRIPTION",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "Salvage the <EDC-ship> and return it to <planet> to claim rights to it.",
+   "italian": "Recupera la <EDC-ship> e riportala su <planet> per rivendicarne la proprietà.",
+   "ratio": 1.085
+  },
+  {
+   "idx": 6,
+   "id": "mission:Efreti: Distress Call 7|Thanks to the work of your crew, the atmosphere on the ship is brought to human standards, if a bit tropical. As the salvage continues, you and your crew start to become familiar with the ship. Its strong hull appears spaceworthy, but the ship has barely any weapons, the battery systems are beyond repair, and shield regeneration is impossible. If the Mereti attack, the <EDC-ship> won't be able to survive long.|516|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 516,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "Thanks to the work of your crew, the atmosphere on the ship is brought to human standards, if a bit tropical. As the salvage continues, you and your crew start to become familiar with the ship. Its strong hull appears spaceworthy, but the ship has barely any weapons, the battery systems are beyond repair, and shield regeneration is impossible. If the Mereti attack, the <EDC-ship> won't be able to survive long.",
+   "italian": "Grazie al lavoro del vostro equipaggio, l'atmosfera della nave viene portata agli standard umani, anche se un po' tropicali. Mentre il recupero prosegue, voi e il vostro equipaggio cominciate a familiarizzare con la nave. Lo scafo robusto sembra in grado di volare nello spazio, ma la nave non ha quasi armi, i sistemi delle batterie sono irrecuperabili e la rigenerazione degli scudi è impossibile. Se i Mereti attaccano, la <EDC-ship> non sopravviverà a lungo.",
+   "ratio": 1.119
+  },
+  {
+   "idx": 7,
+   "id": "mission:Efreti: Distress Call 7|\t(Fly the <EDC-ship> home.)|518|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 518,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "\t(Fly the <EDC-ship> home.)",
+   "italian": "\t(Porta la <EDC-ship> a casa.)",
+   "ratio": 1.111
+  },
+  {
+   "idx": 8,
+   "id": "mission:Efreti: Distress Call 7|\t(Abandon the ship.)|520|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 520,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "\t(Abandon the ship.)",
+   "italian": "\t(Abbandona la nave.)",
+   "ratio": 1.05
+  },
+  {
+   "idx": 9,
+   "id": "mission:Efreti: Distress Call 7|\tYour crew abandons the Korath ship to the elements, just one more tragic story amid the ruins of their civilization.|526|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 526,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "\tYour crew abandons the Korath ship to the elements, just one more tragic story amid the ruins of their civilization.",
+   "italian": "\tIl vostro equipaggio abbandona la nave Korath alle intemperie, solo un'altra storia tragica fra le rovine della loro civiltà.",
+   "ratio": 1.077
+  },
+  {
+   "idx": 10,
+   "id": "mission:Efreti: Distress Call 7|\tYou manage to bring up the shields, at least initially, using the <ship>. Your crew on the <EDC-ship> take their stations as you prepare to evade Mereti patrols on your way to <destination>.|530|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 530,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "\tYou manage to bring up the shields, at least initially, using the <ship>. Your crew on the <EDC-ship> take their stations as you prepare to evade Mereti patrols on your way to <destination>.",
+   "italian": "\tRiuscite ad attivare gli scudi, almeno all'inizio, usando la <ship>. Il vostro equipaggio sulla <EDC-ship> prende posizione mentre vi preparate a evitare le pattuglie Mereti sulla strada per <destination>.",
+   "ratio": 1.079
+  },
+  {
+   "idx": 11,
+   "id": "mission:Efreti: Distress Call 7|dialog|533|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 533,
+   "kind": "DIALOG",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "You arrive, but you notice the <EDC-ship> is absent. You'll have to bring it here to finish the salvage mission.",
+   "italian": "Arrivate, ma notate che la <EDC-ship> non c'è. Dovrete portarla qui per completare la missione di recupero.",
+   "ratio": 0.955
+  },
+  {
+   "idx": 12,
+   "id": "mission:Efreti: Distress Call 7|This time, there are no crowds waiting for you when you land; rather, the ground crews seem astonished to see the ship. It takes you some time to arrange for additional repairs, but by the time you're finished, a pavilion has been set up near the <EDC-ship>, and small groups of Korath periodically stop by.|544|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 544,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "This time, there are no crowds waiting for you when you land; rather, the ground crews seem astonished to see the ship. It takes you some time to arrange for additional repairs, but by the time you're finished, a pavilion has been set up near the <EDC-ship>, and small groups of Korath periodically stop by.",
+   "italian": "Questa volta non ci sono folle ad aspettarvi quando atterrate; piuttosto, le squadre di terra sembrano stupite di vedere la nave. Vi serve un po' di tempo per organizzare riparazioni aggiuntive, ma quando avete finito un padiglione è stato montato vicino alla <EDC-ship>, e piccoli gruppi di Korath si fermano lì di tanto in tanto.",
+   "ratio": 1.078
+  },
+  {
+   "idx": 13,
+   "id": "mission:Efreti: Distress Call 7|\t(Check it out.)|546|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 546,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "\t(Check it out.)",
+   "italian": "\t(Dai un'occhiata.)",
+   "ratio": 1.188
+  },
+  {
+   "idx": 14,
+   "id": "mission:Efreti: Distress Call 7|\t(I've got places to be.)|547|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 547,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "\t(I've got places to be.)",
+   "italian": "\t(Ho altro da fare.)",
+   "ratio": 0.8
+  },
+  {
+   "idx": 15,
+   "id": "mission:Efreti: Distress Call 7|\tThe tent is larger than you expected. At the back there is a group of Korath arranged like a choir, but standing oddly still. A Korath in some kind of robe stands next to a table piled with sweets and cups of some kind of thick drink. As you approach, you realize that the \"choir\" is made of holograms. You do a quick mental count and guess that these are the Korath that died on the ship; this is probably some type of memorial. The Korath in robes greets you and presses a cup into your hand.|550|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 550,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "\tThe tent is larger than you expected. At the back there is a group of Korath arranged like a choir, but standing oddly still. A Korath in some kind of robe stands next to a table piled with sweets and cups of some kind of thick drink. As you approach, you realize that the \"choir\" is made of holograms. You do a quick mental count and guess that these are the Korath that died on the ship; this is probably some type of memorial. The Korath in robes greets you and presses a cup into your hand.",
+   "italian": "\tLa tenda è più grande di quanto vi aspettaste. In fondo c'è un gruppo di Korath disposti come un coro, ma stranamente immobili. Un Korath in una specie di veste sta accanto a un tavolo ingombro di dolciumi e di coppe colme di una bevanda densa. Avvicinandovi, capite che il \"coro\" è fatto di ologrammi. Fate un rapido conto mentale e supponete che siano i Korath morti sulla nave; probabilmente è una specie di memoriale. Il Korath in veste vi saluta e vi preme una coppa in mano.",
+   "ratio": 0.972
+  },
+  {
+   "idx": 16,
+   "id": "mission:Efreti: Distress Call 7|\t(Drink it.)|552|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 552,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "\t(Drink it.)",
+   "italian": "\t(Bevi.)",
+   "ratio": 0.667
+  },
+  {
+   "idx": 17,
+   "id": "mission:Efreti: Distress Call 7|\t(Make a motion as if drinking.)|554|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 554,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "\t(Make a motion as if drinking.)",
+   "italian": "\t(Fai il gesto di bere.)",
+   "ratio": 0.75
+  },
+  {
+   "idx": 18,
+   "id": "mission:Efreti: Distress Call 7|\tEither the Efret don't notice your ruse, or they are too polite to say. They press the sweets on you so you take them. You see a few groups from the spaceport follow the same ritual, though some of them walk up to the \"choir\" and say something to them. When you finish the food, you take your leave and return to your ship.|555|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 555,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "\tEither the Efret don't notice your ruse, or they are too polite to say. They press the sweets on you so you take them. You see a few groups from the spaceport follow the same ritual, though some of them walk up to the \"choir\" and say something to them. When you finish the food, you take your leave and return to your ship.",
+   "italian": "\tO gli Efret non si accorgono del vostro trucco, o sono troppo educati per dirlo. Vi insistono con i dolciumi, così li prendete. Vedete alcuni gruppi dello spazioporto seguire lo stesso rituale, anche se alcuni si avvicinano al \"coro\" e gli dicono qualcosa. Quando avete finito il cibo, vi congedate e tornate alla vostra nave.",
+   "ratio": 1.009
+  },
+  {
+   "idx": 19,
+   "id": "mission:Efreti: Distress Call 7|\tThe drink is fermented, and has a sweet and sour taste that leaves your lips and mouth tingling, eventually numbing them. The Korath then presses the sweets on you, and you humbly accept them. A few groups from the spaceport follow the same ritual, though some of them walk up to the \"choir\" and say something to them. When you finish the food, you take your leave and return to your ship.|558|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 558,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 7",
+   "english": "\tThe drink is fermented, and has a sweet and sour taste that leaves your lips and mouth tingling, eventually numbing them. The Korath then presses the sweets on you, and you humbly accept them. A few groups from the spaceport follow the same ritual, though some of them walk up to the \"choir\" and say something to them. When you finish the food, you take your leave and return to your ship.",
+   "italian": "\tLa bevanda è fermentata e ha un sapore agrodolce che lascia le labbra e la bocca formicolanti, finché non le intorpidisce. Poi il Korath vi insiste con i dolciumi, e voi li accettate con umiltà. Alcuni gruppi dello spazioporto seguono lo stesso rituale, anche se alcuni si avvicinano al \"coro\" e gli dicono qualcosa. Quando avete finito il cibo, vi congedate e tornate alla vostra nave.",
+   "ratio": 0.992
+  },
+  {
+   "idx": 20,
+   "id": "mission:Efreti: Distress Call 8|The Quarg have translated the Korath language for you in the past. You have the data chip from when you helped the Efret salvage the <EDC-ship>. Would you like to see if the Quarg can tell you what the data chip says?|570|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 570,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 8",
+   "english": "The Quarg have translated the Korath language for you in the past. You have the data chip from when you helped the Efret salvage the <EDC-ship>. Would you like to see if the Quarg can tell you what the data chip says?",
+   "italian": "In passato i Quarg vi hanno tradotto la lingua Korath. Avete il chip dati di quando avete aiutato gli Efret a recuperare la <EDC-ship>. Volete vedere se i Quarg possono dirvi cosa c'è scritto nel chip?",
+   "ratio": 0.926
+  },
+  {
+   "idx": 21,
+   "id": "mission:Efreti: Distress Call 8|\t(Ask the Quarg to translate the data chip.)|572|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 572,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 8",
+   "english": "\t(Ask the Quarg to translate the data chip.)",
+   "italian": "\t(Chiedi ai Quarg di tradurre il chip dati.)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "mission:Efreti: Distress Call 8|\t(Maybe another time.)|573|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 573,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 8",
+   "english": "\t(Maybe another time.)",
+   "italian": "\t(Magari un'altra volta.)",
+   "ratio": 1.136
+  },
+  {
+   "idx": 23,
+   "id": "mission:Efreti: Distress Call 8|\t(I don't care what it says.)|575|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 575,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 8",
+   "english": "\t(I don't care what it says.)",
+   "italian": "\t(Non m'importa cosa dice.)",
+   "ratio": 0.931
+  },
+  {
+   "idx": 24,
+   "id": "mission:Efreti: Distress Call 8|\tYou approach one of the Quarg in the spaceport and request assistance with the data chip. It stops and acknowledges you, but doesn't speak. It pauses for a few moments after you make your request, but then holds out its hand. Taking the data chip, it slots it into a communicator of some sort, slowly nods to itself, and hands it back to you.|578|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 578,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 8",
+   "english": "\tYou approach one of the Quarg in the spaceport and request assistance with the data chip. It stops and acknowledges you, but doesn't speak. It pauses for a few moments after you make your request, but then holds out its hand. Taking the data chip, it slots it into a communicator of some sort, slowly nods to itself, and hands it back to you.",
+   "italian": "\tVi avvicinate a uno dei Quarg nello spazioporto e chiedete aiuto con il chip dati. Si ferma e vi riconosce, ma non parla. Esita qualche istante dopo la vostra richiesta, poi tende la mano. Preso il chip dati, lo inserisce in una specie di comunicatore, annuisce lentamente fra sé e ve lo restituisce.",
+   "ratio": 0.878
+  },
+  {
+   "idx": 25,
+   "id": "mission:Efreti: Distress Call 8|\tYou return to your ship and try plugging the chip into your systems again, which now displays two files: one in the Korath language, and one in your own. You open the file in your language, and it reads: \"The <EDC-ship> is a ship of grief, bringing great pain in memories that sing for generations. Love is a void in the souls of many. Know all that <first> <last> is a true Efret by heart, if not by skin. The <EDC-ship> is theirs, to save lives and keep memories.\"|579|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 579,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 8",
+   "english": "\tYou return to your ship and try plugging the chip into your systems again, which now displays two files: one in the Korath language, and one in your own. You open the file in your language, and it reads: \"The <EDC-ship> is a ship of grief, bringing great pain in memories that sing for generations. Love is a void in the souls of many. Know all that <first> <last> is a true Efret by heart, if not by skin. The <EDC-ship> is theirs, to save lives and keep memories.\"",
+   "italian": "\tTornate alla vostra nave e provate a inserire di nuovo il chip nei vostri sistemi, che ora mostrano due file: uno in lingua Korath e uno nella vostra. Aprite il file nella vostra lingua e legge: \"La <EDC-ship> è una nave di dolore, che porta grande pena in memorie che cantano per generazioni. L'amore è un vuoto nell'anima di molti. Sappiate tutti che <first> <last> è un Efret autentico di cuore, se non di pelle. La <EDC-ship> è sua, per salvare vite e custodire memorie.\"",
+   "ratio": 1.019
+  },
+  {
+   "idx": 26,
+   "id": "mission:Efreti: Distress Call 8|\tYou carefully store the chip in a safe place.|580|0",
+   "path": "data/korath/korath missions.txt",
+   "line": 580,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Efreti: Distress Call 8",
+   "english": "\tYou carefully store the chip in a safe place.",
+   "italian": "\tRiponete con cura il chip in un posto sicuro.",
+   "ratio": 1.0
+  }
+ ]
+}

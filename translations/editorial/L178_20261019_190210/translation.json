@@ -1,0 +1,165 @@
+{
+ "block": {
+  "path": "data/avgi/avgi ships.txt",
+  "line_from": 2424,
+  "line_to": 2667,
+  "units": 14
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Akoustiki|description|2424|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2424,
+   "kind": "DESCRIPTION",
+   "context": "ship:Akoustiki",
+   "english": "The Akoustiki Excursion Vehicle is a modern take on the utility pod, a small personal craft designed to aid in the maintenance and repair of a station, or a carrier vessel and its escorts. It is just as commonly seen flitting about the orbitals as it is servicing satellites or acting as a personal transport shuttle between stations and low gravity bodies. Recent advances in magnetoplasmadynamic engines have made it a capable mining craft as well, albeit one with little cargo space for ores.",
+   "italian": "L'Akoustiki Excursion Vehicle è una rivisitazione moderna della capsula di servizio, un piccolo mezzo personale progettato per aiutare nella manutenzione e nella riparazione di una stazione, o di una nave portaerei e delle sue scorte. Si vede altrettanto spesso svolazzare intorno agli orbitali quanto in servizio presso i satelliti o come navetta di trasporto personale fra stazioni e corpi a bassa gravità. Recenti progressi nei motori magnetoplasmadinamici ne hanno fatto anche un valido mezzo minerario, anche se con poco spazio per il minerale.",
+   "ratio": 1.109
+  },
+  {
+   "idx": 2,
+   "id": "ship:Akoustiki|description|2425|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2425,
+   "kind": "DESCRIPTION",
+   "context": "ship:Akoustiki",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI caccia non sono dotati di iperguida. Non puoi trasportare un caccia a meno che tu non abbia nella tua flotta una nave con una baia per caccia.",
+   "ratio": 1.09
+  },
+  {
+   "idx": 3,
+   "id": "ship:Photikon|description|2500|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2500,
+   "kind": "DESCRIPTION",
+   "context": "ship:Photikon",
+   "english": "The Photikon Torpedo Bomber is the cornerstone of Avgi anti-ship carrier doctrine. While it is possible for a swarm of Vibratia and similar interdiction drones to engage capital ships, it is the Photikon that is capable of delivering the nuclear anti-ship munitions necessary to bring down the largest warships. By bringing a nuclear torpedo within close range, the payload has a higher chance of surviving enemy point defense weapons compared with standard missiles.",
+   "italian": "Il bombardiere silurante Photikon è la pietra angolare della dottrina delle portaerei antisuperficie Avgi. Se è pur vero che uno sciame di Vibratia e di droni di interdizione simili può impegnare navi capitali, è il Photikon a poter consegnare le munizioni nucleari antisuperficie necessarie ad abbattere le navi da guerra più grandi. Portando un siluro nucleare a distanza ravvicinata, il carico ha più probabilità di sopravvivere alle armi di difesa puntuale nemiche rispetto ai missili standard.",
+   "ratio": 1.066
+  },
+  {
+   "idx": 4,
+   "id": "ship:Photikon|description|2501|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2501,
+   "kind": "DESCRIPTION",
+   "context": "ship:Photikon",
+   "english": "\tPhotikons are also often used as gun platforms, mounting a Speckle Turret instead of their standard armament of two Ophrys Torpedoes.",
+   "italian": "\tI Photikon sono usati spesso anche come piattaforme d'arma, montando una Speckle Turret al posto del loro armamento standard di due siluri Ophrys.",
+   "ratio": 1.097
+  },
+  {
+   "idx": 5,
+   "id": "ship:Photikon|description|2502|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2502,
+   "kind": "DESCRIPTION",
+   "context": "ship:Photikon",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI caccia non sono dotati di iperguida. Non puoi trasportare un caccia a meno che tu non abbia nella tua flotta una nave con una baia per caccia.",
+   "ratio": 1.09
+  },
+  {
+   "idx": 6,
+   "id": "ship:Photikon|\"Nettle\" KKV|2508|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2508,
+   "kind": "TEXT",
+   "context": "ship:Photikon",
+   "english": "\"Nettle\" KKV",
+   "italian": "\"Nettle\" KKV",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Photikon|\"Ophrys\" Nuclear Torpedo|2520|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2520,
+   "kind": "TEXT",
+   "context": "ship:Photikon",
+   "english": "\"Ophrys\" Nuclear Torpedo",
+   "italian": "\"Ophrys\" Nuclear Torpedo",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "ship:Vibratia|plural|2532|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2532,
+   "kind": "VALUE",
+   "context": "ship:Vibratia",
+   "english": "Vibratia",
+   "italian": "Vibratia",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "ship:Vibratia|description|2593|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2593,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vibratia",
+   "english": "The Vibratia Interdictor is the primary Avgi strike fighter. While individually fragile, Vibratia are usually deployed in large swarms, and are agile enough to be surprisingly survivable even under heavy fire.",
+   "italian": "L'interdittore Vibratia è il principale caccia d'attacco Avgi. Sebbene fragile individualmente, i Vibratia vengono di solito schierati in grandi sciami, e sono abbastanza agili da risultare sorprendentemente capaci di sopravvivere anche sotto un fuoco pesante.",
+   "ratio": 1.244
+  },
+  {
+   "idx": 10,
+   "id": "ship:Vibratia|description|2594|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2594,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vibratia",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "italian": "\tI droni non sono dotati di iperguida. Non puoi trasportare un drone a meno che tu non abbia nella tua flotta una nave con una baia per droni.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 11,
+   "id": "ship:Undulon|\"Orchid\" Nuclear Missile|2625|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2625,
+   "kind": "TEXT",
+   "context": "ship:Undulon",
+   "english": "\"Orchid\" Nuclear Missile",
+   "italian": "\"Orchid\" Nuclear Missile",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "ship:Undulon|description|2665|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2665,
+   "kind": "DESCRIPTION",
+   "context": "ship:Undulon",
+   "english": "The Undulon Orbital Silo was first envisioned as a cheap static defense satellite, little more than a tube capable of storing and launching nuclear-tipped missiles. Over time, this specialization was broadened, and the modern line of Undulons is capable of both mounting a large fixed gun and carrying the energy supply needed to support it. Their mostly hollow construction provides a great deal of internal space for their size, but also makes the drone quite fragile.",
+   "italian": "Il silo orbitale Undulon fu concepito in origine come un satellite di difesa statico ed economico, poco più che un tubo capace di immagazzinare e lanciare missili a testata nucleare. Col tempo questa specializzazione è stata ampliata, e la linea moderna di Undulon è in grado sia di montare un grosso cannone fisso sia di portare l'alimentazione energetica necessaria a sostenerlo. La costruzione per lo più cava offre molto spazio interno per le sue dimensioni, ma rende anche il drone piuttosto fragile.",
+   "ratio": 1.074
+  },
+  {
+   "idx": 13,
+   "id": "ship:Undulon|description|2666|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2666,
+   "kind": "DESCRIPTION",
+   "context": "ship:Undulon",
+   "english": "\tUndulons are usually seen defending critical planets and stations, ready to unload their atomic payloads on any hostile ships that jump into the system.",
+   "italian": "\tGli Undulon si vedono di solito a difesa di pianeti e stazioni critici, pronti a scaricare i loro carichi atomici su qualsiasi nave ostile che entri nel sistema.",
+   "ratio": 1.059
+  },
+  {
+   "idx": 14,
+   "id": "ship:Undulon|description|2667|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2667,
+   "kind": "DESCRIPTION",
+   "context": "ship:Undulon",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "italian": "\tI droni non sono dotati di iperguida. Non puoi trasportare un drone a meno che tu non abbia nella tua flotta una nave con una baia per droni.",
+   "ratio": 1.118
+  }
+ ]
+}

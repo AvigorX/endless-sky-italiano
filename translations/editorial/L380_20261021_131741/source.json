@@ -1,0 +1,63 @@
+{
+ "block": {
+  "path": "data/remnant/remnant.txt",
+  "line_from": 367,
+  "line_to": 370,
+  "units": 4
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "phrase:remnant uncontacted|\"If you value the continued survival of humanity, do not scan our ships,\" a strangely melodic voice says.|367|0",
+   "path": "data/remnant/remnant.txt",
+   "line": 367,
+   "kind": "TEXT",
+   "context": "phrase:remnant uncontacted",
+   "english": "\"If you value the continued survival of humanity, do not scan our ships,\" a strangely melodic voice says.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t`\"If you value the continued survival of humanity, do not scan our ships,\" a strangely melodic voice says.`",
+   "english_hash": "22670668f727ab24"
+  },
+  {
+   "idx": 2,
+   "id": "phrase:remnant uncontacted|\"If you value your continued survival, do not scan our ships.\" The voice speaks with a tone reminiscent of singing.|368|0",
+   "path": "data/remnant/remnant.txt",
+   "line": 368,
+   "kind": "TEXT",
+   "context": "phrase:remnant uncontacted",
+   "english": "\"If you value your continued survival, do not scan our ships.\" The voice speaks with a tone reminiscent of singing.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t`\"If you value your continued survival, do not scan our ships.\" The voice speaks with a tone reminiscent of singing.`",
+   "english_hash": "ab50fb5cbc7eaad2"
+  },
+  {
+   "idx": 3,
+   "id": "phrase:remnant uncontacted|\"We value our privacy, and will respond to scanning with deadly force.\" The voice is strangely melodic.|369|0",
+   "path": "data/remnant/remnant.txt",
+   "line": 369,
+   "kind": "TEXT",
+   "context": "phrase:remnant uncontacted",
+   "english": "\"We value our privacy, and will respond to scanning with deadly force.\" The voice is strangely melodic.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t`\"We value our privacy, and will respond to scanning with deadly force.\" The voice is strangely melodic.`",
+   "english_hash": "b7f1f5be0f850795"
+  },
+  {
+   "idx": 4,
+   "id": "phrase:remnant uncontacted|\"Do not scan our ships,\" someone sings to you.|370|0",
+   "path": "data/remnant/remnant.txt",
+   "line": 370,
+   "kind": "TEXT",
+   "context": "phrase:remnant uncontacted",
+   "english": "\"Do not scan our ships,\" someone sings to you.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t`\"Do not scan our ships,\" someone sings to you.`",
+   "english_hash": "50d64f936387ddde"
+  }
+ ]
+}

@@ -1,0 +1,297 @@
+{
+ "block": {
+  "path": "data/human/culture conversations.txt",
+  "line_from": 511,
+  "line_to": 552,
+  "units": 26
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:News Reporter - Paradise|You are passing through the spaceport when you see a young woman walking in your direction. Trailing behind her is a multitude of camera drones, each one marked with a logo consisting of two curves pointing inwards.|511|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 511,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "You are passing through the spaceport when you see a young woman walking in your direction. Trailing behind her is a multitude of camera drones, each one marked with a logo consisting of two curves pointing inwards.",
+   "italian": "Stai attraversando lo spazioporto quando vedi una giovane donna che cammina verso di te. Dietro di lei sfilano moltissimi droni-fotocamera, ciascuno contrassegnato da un logo composto da due curve che puntano verso l'interno.",
+   "ratio": 1.047
+  },
+  {
+   "idx": 2,
+   "id": "mission:News Reporter - Paradise|\t(Wait for her to approach.)|513|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 513,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t(Wait for her to approach.)",
+   "italian": "\t(Aspetta che si avvicini.)",
+   "ratio": 0.964
+  },
+  {
+   "idx": 3,
+   "id": "mission:News Reporter - Paradise|\t(Hope she doesn't notice me.)|515|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 515,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t(Hope she doesn't notice me.)",
+   "italian": "\t(Spera che non mi noti.)",
+   "ratio": 0.833
+  },
+  {
+   "idx": 4,
+   "id": "mission:News Reporter - Paradise|\t(Try to avoid her.)|517|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 517,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t(Try to avoid her.)",
+   "italian": "\t(Cerca di evitarla.)",
+   "ratio": 1.05
+  },
+  {
+   "idx": 5,
+   "id": "mission:News Reporter - Paradise|\tYou take a hallway off to the side to evade her. Just as you think you've gotten out of sight, you hear a voice. \"Excuse me!\" You turn to see the reporter following you.|518|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 518,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\tYou take a hallway off to the side to evade her. Just as you think you've gotten out of sight, you hear a voice. \"Excuse me!\" You turn to see the reporter following you.",
+   "italian": "\tPrendi un corridoio laterale per sfuggirle. Proprio quando pensi di essere fuori vista, senti una voce. \"Mi scusi!\" Ti volti e vedi la reporter che ti segue.",
+   "ratio": 0.929
+  },
+  {
+   "idx": 6,
+   "id": "mission:News Reporter - Paradise|\tAs you continue walking, you hear her call out, \"Excuse me!\" Suppressing a sigh, you turn to face the reporter.|521|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 521,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\tAs you continue walking, you hear her call out, \"Excuse me!\" Suppressing a sigh, you turn to face the reporter.",
+   "italian": "\tMentre continui a camminare, la senti chiamare: \"Mi scusi!\" Soffocando un sospiro, ti volti verso la reporter.",
+   "ratio": 0.991
+  },
+  {
+   "idx": 7,
+   "id": "mission:News Reporter - Paradise|\tAs she gets closer to you, she smiles. \"Hello Captain! Would you be willing to answer a few questions for our viewers?\"|523|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 523,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\tAs she gets closer to you, she smiles. \"Hello Captain! Would you be willing to answer a few questions for our viewers?\"",
+   "italian": "\tQuando ti si avvicina, sorride. \"Salve, capitano! Sarebbe disposto a rispondere a qualche domanda per i nostri spettatori?\"",
+   "ratio": 1.033
+  },
+  {
+   "idx": 8,
+   "id": "mission:News Reporter - Paradise|\t\"Sure, I wouldn't mind.\"|525|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 525,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"Sure, I wouldn't mind.\"",
+   "italian": "\t\"Certo, non mi dispiace.\"",
+   "ratio": 1.04
+  },
+  {
+   "idx": 9,
+   "id": "mission:News Reporter - Paradise|\t\"No, I'd rather not.\"|527|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 527,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"No, I'd rather not.\"",
+   "italian": "\t\"No, preferirei di no.\"",
+   "ratio": 1.091
+  },
+  {
+   "idx": 10,
+   "id": "mission:News Reporter - Paradise|\tThe camera drones circle around you as she prepares for the interview. After a few seconds, she smiles at one of the drones and begins.|530|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 530,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\tThe camera drones circle around you as she prepares for the interview. After a few seconds, she smiles at one of the drones and begins.",
+   "italian": "\tI droni-fotocamera ti girano intorno mentre lei si prepara all'intervista. Dopo qualche secondo sorride a uno dei droni e comincia.",
+   "ratio": 0.971
+  },
+  {
+   "idx": 11,
+   "id": "mission:News Reporter - Paradise|\t\"Welcome back. I'm here on <origin> reporting on the situation with the Free Worlds. I'm joined by a merchant captain currently between trips. Captain, what do you think of the ultimatum sent to Parliament?\"|531|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 531,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"Welcome back. I'm here on <origin> reporting on the situation with the Free Worlds. I'm joined by a merchant captain currently between trips. Captain, what do you think of the ultimatum sent to Parliament?\"",
+   "italian": "\t\"Bentornati. Sono qui su <origin> per riferire della situazione con le Free Worlds. Mi accompagna un capitano mercantile attualmente tra un viaggio e l'altro. Capitano, cosa pensa dell'ultimatum inviato al Parlamento?\"",
+   "ratio": 1.053
+  },
+  {
+   "idx": 12,
+   "id": "mission:News Reporter - Paradise|\t\"I think Parliament should reconsider and give the situation some thought.\"|533|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 533,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"I think Parliament should reconsider and give the situation some thought.\"",
+   "italian": "\t\"Penso che il Parlamento dovrebbe riconsiderare e riflettere un po' sulla situazione.\"",
+   "ratio": 1.145
+  },
+  {
+   "idx": 13,
+   "id": "mission:News Reporter - Paradise|\t\"Parliament made the right decision by refusing the demands.\"|534|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 534,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"Parliament made the right decision by refusing the demands.\"",
+   "italian": "\t\"Il Parlamento ha preso la decisione giusta rifiutando le richieste.\"",
+   "ratio": 1.129
+  },
+  {
+   "idx": 14,
+   "id": "mission:News Reporter - Paradise|\tThe reporter frowns. \"Can you explain your answer for our viewers?\"|536|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 536,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\tThe reporter frowns. \"Can you explain your answer for our viewers?\"",
+   "italian": "\tLa reporter si acciglia. \"Può spiegare la sua risposta per i nostri spettatori?\"",
+   "ratio": 1.191
+  },
+  {
+   "idx": 15,
+   "id": "mission:News Reporter - Paradise|\t\"The interests of every world should be considered, whether we agree or not.\"|538|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 538,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"The interests of every world should be considered, whether we agree or not.\"",
+   "italian": "\t\"Gli interessi di ogni mondo dovrebbero essere considerati, che siamo d'accordo o no.\"",
+   "ratio": 1.115
+  },
+  {
+   "idx": 16,
+   "id": "mission:News Reporter - Paradise|\t\"The Free Worlds aren't represented well enough to gain traction through normal channels.\"|539|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 539,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"The Free Worlds aren't represented well enough to gain traction through normal channels.\"",
+   "italian": "\t\"Le Free Worlds non sono rappresentate abbastanza da ottenere risultati per i canali normali.\"",
+   "ratio": 1.044
+  },
+  {
+   "idx": 17,
+   "id": "mission:News Reporter - Paradise|\t\"The Navy is hardly defending that territory, so taxes shouldn't be as much.\"|540|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 540,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"The Navy is hardly defending that territory, so taxes shouldn't be as much.\"",
+   "italian": "\t\"La Marina difende a malapena quel territorio, quindi le tasse non dovrebbero essere così alte.\"",
+   "ratio": 1.244
+  },
+  {
+   "idx": 18,
+   "id": "mission:News Reporter - Paradise|\t\"I would prefer to not answer.\"|541|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 541,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"I would prefer to not answer.\"",
+   "italian": "\t\"Preferirei non rispondere.\"",
+   "ratio": 0.906
+  },
+  {
+   "idx": 19,
+   "id": "mission:News Reporter - Paradise|\t\"I'm not sure that Parliament would agree with you, but I want to thank you for your answers, and for taking the time to do this interview!\" she says.|542|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 542,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"I'm not sure that Parliament would agree with you, but I want to thank you for your answers, and for taking the time to do this interview!\" she says.",
+   "italian": "\t\"Non sono sicura che il Parlamento sarebbe d'accordo con lei, ma voglio ringraziarla per le risposte e per il tempo che ci ha dedicato!\" dice.",
+   "ratio": 0.947
+  },
+  {
+   "idx": 20,
+   "id": "mission:News Reporter - Paradise|\tThe drones dart back to follow her as she continues through the spaceport.|543|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 543,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\tThe drones dart back to follow her as she continues through the spaceport.",
+   "italian": "\tI droni tornano a seguirla mentre prosegue per lo spazioporto.",
+   "ratio": 0.84
+  },
+  {
+   "idx": 21,
+   "id": "mission:News Reporter - Paradise|\tThe reporter smiles. \"Can you explain that answer for our viewers?\"|546|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 546,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\tThe reporter smiles. \"Can you explain that answer for our viewers?\"",
+   "italian": "\tLa reporter sorride. \"Può spiegare quella risposta per i nostri spettatori?\"",
+   "ratio": 1.132
+  },
+  {
+   "idx": 22,
+   "id": "mission:News Reporter - Paradise|\t\"There are proper channels for presenting grievances, and this isn't one of them.\"|548|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 548,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"There are proper channels for presenting grievances, and this isn't one of them.\"",
+   "italian": "\t\"Ci sono canali adeguati per presentare le proprie lamentele, e questo non è uno di quelli.\"",
+   "ratio": 1.12
+  },
+  {
+   "idx": 23,
+   "id": "mission:News Reporter - Paradise|\t\"It's a very ungrateful thing to do when Parliament is the one protecting them.\"|549|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 549,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"It's a very ungrateful thing to do when Parliament is the one protecting them.\"",
+   "italian": "\t\"È una cosa molto ingrata da fare, quando è il Parlamento a proteggerli.\"",
+   "ratio": 0.914
+  },
+  {
+   "idx": 24,
+   "id": "mission:News Reporter - Paradise|\t\"I would prefer to not answer.\"|550|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 550,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"I would prefer to not answer.\"",
+   "italian": "\t\"Preferirei non rispondere.\"",
+   "ratio": 0.906
+  },
+  {
+   "idx": 25,
+   "id": "mission:News Reporter - Paradise|\t\"We are fortunate that many people feel this way! Thank you for your answers, and for taking the time to do this interview!\" she says.|551|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 551,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\t\"We are fortunate that many people feel this way! Thank you for your answers, and for taking the time to do this interview!\" she says.",
+   "italian": "\t\"Siamo fortunati che molte persone la pensino così! Grazie per le risposte e per il tempo che ci ha dedicato!\" dice.",
+   "ratio": 0.867
+  },
+  {
+   "idx": 26,
+   "id": "mission:News Reporter - Paradise|\tThe drones dart back to follow her as she continues through the spaceport.|552|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 552,
+   "kind": "MISSION_TEXT",
+   "context": "mission:News Reporter - Paradise",
+   "english": "\tThe drones dart back to follow her as she continues through the spaceport.",
+   "italian": "\tI droni tornano a seguirla mentre prosegue per lo spazioporto.",
+   "ratio": 0.84
+  }
+ ]
+}

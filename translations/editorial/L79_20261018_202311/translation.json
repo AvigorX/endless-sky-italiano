@@ -1,0 +1,330 @@
+{
+ "block": {
+  "path": "data/successors/successor side missions.txt",
+  "line_from": 326,
+  "line_to": 400,
+  "units": 29
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Successors: People's Houses: First Contact|Compared to most of the spaceports you have been to in Successor space, this one is dingy, crowded, and uncomfortable. Most of the Successors you see look equally dirty and unhappy, and the majority of the few ships you've noticed landing are painted in a different, darker shade of red.|336|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 336,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "Compared to most of the spaceports you have been to in Successor space, this one is dingy, crowded, and uncomfortable. Most of the Successors you see look equally dirty and unhappy, and the majority of the few ships you've noticed landing are painted in a different, darker shade of red.",
+   "italian": "Rispetto alla maggior parte degli spazioporti in cui sei stato nello spazio dei Successori, questo è squallido, affollato e scomodo. La maggior parte dei Successori che vedi sembra ugualmente sporca e infelice, e la maggior parte delle poche navi che hai visto atterrare è dipinta di una tonalità di rosso diversa, più scura.",
+   "ratio": 1.132
+  },
+  {
+   "idx": 2,
+   "id": "mission:Successors: People's Houses: First Contact|\tWould you like to ask someone here about this place?|337|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 337,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\tWould you like to ask someone here about this place?",
+   "italian": "\tVuoi chiedere a qualcuno, qui, informazioni su questo posto?",
+   "ratio": 1.151
+  },
+  {
+   "idx": 3,
+   "id": "mission:Successors: People's Houses: First Contact|\t(Yes.)|339|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 339,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t(Yes.)",
+   "italian": "\t(Sì.)",
+   "ratio": 0.857
+  },
+  {
+   "idx": 4,
+   "id": "mission:Successors: People's Houses: First Contact|\t(Not now.)|340|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 340,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t(Not now.)",
+   "italian": "\t(Non ora.)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "mission:Successors: People's Houses: First Contact|\t(Never.)|342|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 342,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t(Never.)",
+   "italian": "\t(Mai.)",
+   "ratio": 0.778
+  },
+  {
+   "idx": 6,
+   "id": "mission:Successors: People's Houses: First Contact|\tYou approach one of the crew members disembarking from one of the red-painted ships, which, as you draw closer, you see bears several large burns and scars.|344|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 344,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\tYou approach one of the crew members disembarking from one of the red-painted ships, which, as you draw closer, you see bears several large burns and scars.",
+   "italian": "\tTi avvicini a uno dei membri dell'equipaggio che sbarca da una delle navi dipinte di rosso, e che, avvicinandoti, vedi coperta di diverse bruciature e cicatrici profonde.",
+   "ratio": 1.089
+  },
+  {
+   "idx": 7,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Excuse me, I was wondering if you could tell me about this place. It seems different to the rest of Successor space I've been through.\"|345|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 345,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Excuse me, I was wondering if you could tell me about this place. It seems different to the rest of Successor space I've been through.\"",
+   "italian": "\t\"Mi scusi, mi chiedevo se potesse dirmi qualcosa di questo posto. Sembra diverso dal resto dello spazio dei Successori che ho attraversato.\"",
+   "ratio": 1.029
+  },
+  {
+   "idx": 8,
+   "id": "mission:Successors: People's Houses: First Contact|\tThe Successor looks over at the spaceport for a moment before grunting quietly and deciding to reply. Their voice is lower and darker than that of most Successors you have heard, and their skin changes color and texture rapidly, almost with every word.|346|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 346,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\tThe Successor looks over at the spaceport for a moment before grunting quietly and deciding to reply. Their voice is lower and darker than that of most Successors you have heard, and their skin changes color and texture rapidly, almost with every word.",
+   "italian": "\tIl Successore guarda lo spazioporto per un momento, poi grugnisce piano e decide di rispondere. La loro voce è più bassa e più cupa di quella della maggior parte dei Successori che hai sentito, e la pelle cambia colore e consistenza rapidamente, quasi a ogni parola.",
+   "ratio": 1.055
+  },
+  {
+   "idx": 9,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Thou art the alien vis'tor brought by the Old Houses, art thou not? Their 'noble guest' whom they parade around with such delight?\"|349|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 349,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Thou art the alien vis'tor brought by the Old Houses, art thou not? Their 'noble guest' whom they parade around with such delight?\"",
+   "italian": "\t\"Sei l'alieno visitatore portato dalle Vecchie Casate, non è vero? Il loro 'ospite nobile' che si portano in giro con tanto piacere?\"",
+   "ratio": 1.008
+  },
+  {
+   "idx": 10,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Thou art the alien vis'tor paraded 'round between the Houses, art thou not? Their 'noble guest' or 'flighty knave' that depends on t'which thee speaks?|352|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 352,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Thou art the alien vis'tor paraded 'round between the Houses, art thou not? Their 'noble guest' or 'flighty knave' that depends on t'which thee speaks?",
+   "italian": "\t\"Sei l'alieno visitatore portato in giro fra le Casate, non è vero? Il loro 'ospite nobile' o 'furfante volubile', a seconda di chi ti parla?",
+   "ratio": 0.928
+  },
+  {
+   "idx": 11,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Yes.\"|355|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 355,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Yes.\"",
+   "italian": "\t\"Sì.\"",
+   "ratio": 0.857
+  },
+  {
+   "idx": 12,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"You could say so.\"|356|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 356,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"You could say so.\"",
+   "italian": "\t\"Si può dire.\"",
+   "ratio": 0.75
+  },
+  {
+   "idx": 13,
+   "id": "mission:Successors: People's Houses: First Contact|\tDespite the accusation of being \"paraded around,\" the Successor grunts again at your response; with approval or disgust you cannot tell. They lean against one of the cargo containers on the spaceport floor and continue.|357|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 357,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\tDespite the accusation of being \"paraded around,\" the Successor grunts again at your response; with approval or disgust you cannot tell. They lean against one of the cargo containers on the spaceport floor and continue.",
+   "italian": "\tNonostante l'accusa di essere \"portato in giro\", il Successore grugnisce di nuovo alla tua risposta; con approvazione o con disgusto non sapresti dire. Si appoggia a uno dei container da carico sul pavimento dello spazioporto e continua.",
+   "ratio": 1.082
+  },
+  {
+   "idx": 14,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"So then thou art another indolent fool, no doubt deceived by their fine promises, of wealth and power so long as you toe the line? Well, look around and see the value of their noble word! The Houses care but naught for you or I or any of them.\" The Successor gestures to the crowd in a broad sweeping motion.|358|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 358,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"So then thou art another indolent fool, no doubt deceived by their fine promises, of wealth and power so long as you toe the line? Well, look around and see the value of their noble word! The Houses care but naught for you or I or any of them.\" The Successor gestures to the crowd in a broad sweeping motion.",
+   "italian": "\t\"Allora sei un altro stolto indolente, senza dubbio ingannato dalle loro belle promesse, di ricchezza e potere finché te ne starai in riga? Beh, guardati intorno e vedi quanto vale la loro parola nobile! Alle Casate non importa nulla di te, di me, o di nessuno di loro.\" Il Successore indica la folla con un ampio gesto circolare.",
+   "ratio": 1.068
+  },
+  {
+   "idx": 15,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Who are they?\"|360|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 360,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Who are they?\"",
+   "italian": "\t\"Chi sono?\"",
+   "ratio": 0.75
+  },
+  {
+   "idx": 16,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"I don't think of myself as a fool.\"|362|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 362,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"I don't think of myself as a fool.\"",
+   "italian": "\t\"Non penso di essere uno stolto.\"",
+   "ratio": 0.919
+  },
+  {
+   "idx": 17,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Then thou art doubly so, because thy time within this space is new and short and so the thoughts contained within thy brain are like those of a child, still blind to the world. But keep thy friends if they appear so kind; and take the time to recollect what I have said when in thy back their dagger nests.\"|363|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 363,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Then thou art doubly so, because thy time within this space is new and short and so the thoughts contained within thy brain are like those of a child, still blind to the world. But keep thy friends if they appear so kind; and take the time to recollect what I have said when in thy back their dagger nests.\"",
+   "italian": "\t\"Allora lo sei due volte, perché il tuo tempo in questo spazio è nuovo e breve, e quindi i pensieri nella tua testa sono come quelli di un bambino, ancora cieco al mondo. Ma tieniti i tuoi amici, se sembrano così gentili; e trova il tempo di ripensare a ciò che ho detto quando il loro pugnale ti niderà nella schiena.\"",
+   "ratio": 1.036
+  },
+  {
+   "idx": 18,
+   "id": "mission:Successors: People's Houses: First Contact|\tWith that, the Successor leaves, rising from the cargo containers and heading silently towards the spaceport.|364|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 364,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\tWith that, the Successor leaves, rising from the cargo containers and heading silently towards the spaceport.",
+   "italian": "\tDetto questo, il Successore se ne va, alzandosi dai container e dirigendosi in silenzio verso lo spazioporto.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"They are the outcasts of the Houses New, who, like the rest, were forced here when the old empire crumbled into ash. But while the rest of the New Houses had ample wealth to move and grow into their new domains, not all of us were able to escape this intermediary place they shoved us into while we waited. A thousand years and still they paint us with their scorn and demonize our yearning to be free.\"|367|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 367,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"They are the outcasts of the Houses New, who, like the rest, were forced here when the old empire crumbled into ash. But while the rest of the New Houses had ample wealth to move and grow into their new domains, not all of us were able to escape this intermediary place they shoved us into while we waited. A thousand years and still they paint us with their scorn and demonize our yearning to be free.\"",
+   "italian": "\t\"Sono i reietti delle Casate Nuove, che, come gli altri, sono stati costretti a venire qui quando l'antico impero si è ridotto in cenere. Ma mentre il resto delle Nuove Casate aveva ricchezze sufficienti per spostarsi e crescere nei nuovi domini, non tutti noi siamo riusciti a sfuggire a questo luogo intermedio in cui ci hanno spinto mentre aspettavamo. Mille anni, e ancora ci dipingono con il loro disprezzo e demonizzano il nostro desiderio di essere liberi.\"",
+   "ratio": 1.148
+  },
+  {
+   "idx": 20,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Free?\"|369|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 369,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Free?\"",
+   "italian": "\t\"Liberi?\"",
+   "ratio": 1.25
+  },
+  {
+   "idx": 21,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Thank you. I have no more questions.\"|371|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 371,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Thank you. I have no more questions.\"",
+   "italian": "\t\"Grazie. Non ho altre domande.\"",
+   "ratio": 0.821
+  },
+  {
+   "idx": 22,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Thou would be wise, if thou possesses that rare art, to keep and guard thy back against thy new and treacherous 'friends.'|372|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 372,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Thou would be wise, if thou possesses that rare art, to keep and guard thy back against thy new and treacherous 'friends.'",
+   "italian": "\t\"Faresti bene, se possiedi quell'arte rara, a guardarti le spalle dai tuoi nuovi e infidi 'amici'.",
+   "ratio": 0.798
+  },
+  {
+   "idx": 23,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Or don't. Another buried fool makes little difference.\"|373|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 373,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Or don't. Another buried fool makes little difference.\"",
+   "italian": "\t\"Oppure no. Un altro stolto sepolto fa poca differenza.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "mission:Successors: People's Houses: First Contact|\tWith that, the Successor leaves, rising from the cargo containers and heading silently towards the spaceport.|374|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 374,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\tWith that, the Successor leaves, rising from the cargo containers and heading silently towards the spaceport.",
+   "italian": "\tDetto questo, il Successore se ne va, alzandosi dai container e dirigendosi in silenzio verso lo spazioporto.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 25,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Free, or freer than Old and New permit. The People's Houses stand not for the rich and those of noble blood, but for the true and honest heirs of that which was.\"|377|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 377,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Free, or freer than Old and New permit. The People's Houses stand not for the rich and those of noble blood, but for the true and honest heirs of that which was.\"",
+   "italian": "\t\"Liberi, o più liberi di quanto le Vecchie e le Nuove permettano. Le Casate del Popolo non stanno dalla parte dei ricchi e di chi ha sangue nobile, ma degli eredi veri e onesti di ciò che è stato.\"",
+   "ratio": 1.207
+  },
+  {
+   "idx": 26,
+   "id": "mission:Successors: People's Houses: First Contact|\tThe Successor looks over to the spaceport, before returning their attention to you for the last time.|378|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 378,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\tThe Successor looks over to the spaceport, before returning their attention to you for the last time.",
+   "italian": "\tIl Successore guarda verso lo spazioporto, prima di rivolgerti l'attenzione un'ultima volta.",
+   "ratio": 0.912
+  },
+  {
+   "idx": 27,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Thou would be wise, if thou possesses that rare art, to keep and guard thy back against thy new and treacherous 'friends.'|379|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 379,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Thou would be wise, if thou possesses that rare art, to keep and guard thy back against thy new and treacherous 'friends.'",
+   "italian": "\t\"Faresti bene, se possiedi quell'arte rara, a guardarti le spalle dai tuoi nuovi e infidi 'amici'.",
+   "ratio": 0.798
+  },
+  {
+   "idx": 28,
+   "id": "mission:Successors: People's Houses: First Contact|\t\"Or don't. Another buried fool makes little difference.\"|380|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 380,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\t\"Or don't. Another buried fool makes little difference.\"",
+   "italian": "\t\"Oppure no. Un altro stolto sepolto fa poca differenza.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 29,
+   "id": "mission:Successors: People's Houses: First Contact|\tWith that, the Successor leaves, rising from the cargo containers and heading silently towards the spaceport.|381|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 381,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: People's Houses: First Contact",
+   "english": "\tWith that, the Successor leaves, rising from the cargo containers and heading silently towards the spaceport.",
+   "italian": "\tDetto questo, il Successore se ne va, alzandosi dai container e dirigendosi in silenzio verso lo spazioporto.",
+   "ratio": 1.0
+  }
+ ]
+}

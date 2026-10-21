@@ -1,0 +1,412 @@
+# Copyright (c) 2017 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Drought Relief"
+	name `Soccorso per la siccità su <planet>`
+	job
+	repeat
+	description `Il mondo agricolo di <destination> sta attraversando una siccità. Consegna <cargo> sul pianeta entro <date> per <payment>.`
+	cargo "drought relief supplies" 25 2 .05
+	deadline
+	to offer
+		random < 10
+	source
+		government "Republic"
+		not attributes "farming"
+	destination
+		distance 3 10
+		attributes "dirt belt"
+		attributes "farming"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 10000 160
+		dialog "Scarichi il carico di <commodity> e ritiri il pagamento di <payment>. Un gruppo di cittadini di <planet> ti ringrazia e ti saluta."
+
+
+mission "To Remembrance Day celebration [0]"
+	name `Festa del Ricordo`
+	job
+	repeat
+	description `Porta <fare> a <destination> entro <date> per la Festa del Ricordo del 19 febbraio. Il pagamento è <payment>.`
+	passengers 4 4 .5
+	deadline
+	to offer
+		or
+			and
+				random < 20
+				month == 12
+				day >= 21
+			and
+				random < 30
+				month == 1
+			and
+				random < 10
+				month == 2
+				day < 19
+	to fail
+		month * 100 + day >= 219
+	source
+		attributes "dirt belt"
+	destination
+		distance 3 15
+		attributes "dirt belt"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 1000 180
+		dialog "Auguri ai tuoi <passengers> per il loro soggiorno su <planet>. I bambini scendono dalla nave con la faccia dipinta di verde, e i genitori ti pagano <payment>."
+
+
+mission "To Remembrance Day celebration [1]"
+	name `Festa del Ricordo`
+	job
+	repeat
+	description `Consegna <cargo> a <destination> entro <date>, in preparazione della Festa del Ricordo del 19 febbraio. Il pagamento è <payment>.`
+	cargo random 5 2 .1
+	deadline
+	to offer
+		or
+			and
+				random < 40
+				month == 12
+				day >= 21
+			and
+				random < 60
+				month == 1
+			and
+				random < 20
+				month == 2
+				day < 19
+	to fail
+		month * 100 + day >= 219
+	source
+		attributes "dirt belt"
+	destination
+		distance 3 15
+		attributes "dirt belt"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 1000 180
+		dialog `Gli operai dello spazioporto, già vestiti a festa per la Festa del Ricordo, scaricano dalla tua nave il carico di <commodity> e ti consegnano il pagamento di <payment>.`
+
+mission "To Remembrance Day celebration [2]"
+	name `Festa del Ricordo`
+	job
+	repeat
+	description `Consegna <cargo> a <destination> entro <date>, in preparazione della Festa del Ricordo del 19 febbraio. Il pagamento è <payment>.`
+	cargo random 5 2 .1
+	deadline
+	to offer
+		or
+			and
+				random < 40
+				month == 12
+				day >= 21
+			and
+				random < 60
+				month == 1
+			and
+				random < 20
+				month == 2
+				day < 19
+	to fail
+		month * 100 + day >= 219
+	source
+		attributes "dirt belt"
+	destination
+		distance 3 15
+		attributes "dirt belt"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 1000 180
+		dialog `Gli operai dello spazioporto, già vestiti a festa per la Festa del Ricordo, scaricano dalla tua nave il carico di <commodity> e ti consegnano il pagamento di <payment>.`
+
+
+mission "To Remembrance Day celebration [3]"
+	name `Festa del Ricordo`
+	job
+	repeat
+	description `Porta <fare> a <destination> entro <date> per la Festa del Ricordo del 19 febbraio. Il pagamento è <payment>.`
+	passengers 20 4 .15
+	deadline
+	to offer
+		random < ( "passenger space" - 30 ) * 2
+		or
+			and
+				random < 20
+				month == 12
+				day >= 21
+			and
+				random < 90
+				month == 1
+			and
+				random < 30
+				month == 2
+				day < 19
+	to fail
+		month * 100 + day >= 219
+	source
+		attributes "dirt belt"
+	destination
+		distance 3 15
+		attributes "dirt belt"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 200000 120
+		dialog "Auguri ai tuoi <passengers> per il loro soggiorno su <planet>. I bambini scendono dalla nave con la faccia dipinta di verde, e i genitori ti pagano <payment>."
+
+
+mission "From Remembrance Day celebration [0]"
+	name `Ritorno dalla Festa del Ricordo`
+	job
+	repeat
+	description `Riporta <fare> a casa, su <destination>, dopo la Festa del Ricordo. Il pagamento è <payment>.`
+	passengers 4 4 .5
+	to offer
+		or
+			and
+				random < 25
+				month == 2
+				day > 19
+			and
+				random < 15
+				month == 3
+			and
+				random < 10
+				month == 4
+				day < 20
+	source
+		attributes "dirt belt"
+	destination
+		distance 3 15
+		attributes "dirt belt"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		payment 1000
+		dialog `I tuoi passeggeri ti ringraziano per averli riportati su <planet>, e ritiri il pagamento di <payment>.`
+
+
+mission "From Remembrance Day celebration [1]"
+	name `Ritorno dalla Festa del Ricordo`
+	job
+	repeat
+	description `Riporta <fare> a casa, su <destination>, dopo la Festa del Ricordo. Il pagamento è <payment>.`
+	passengers 4 4 .3
+	to offer
+		or
+			and
+				random < 20
+				month == 2
+				day > 19
+			and
+				random < 10
+				month == 3
+			and
+				random < 5
+				month == 4
+				day < 20
+	source
+		attributes "dirt belt"
+	destination
+		distance 3 15
+		attributes "dirt belt"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		payment 1000
+		dialog `I tuoi passeggeri ti ringraziano per averli riportati su <planet>, e ritiri il pagamento di <payment>.`
+
+
+mission "From Remembrance Day celebration [2]"
+	name `Ritorno dalla Festa del Ricordo`
+	job
+	repeat
+	description `Riporta <fare> a casa, su <destination>, dopo la Festa del Ricordo. Il pagamento è <payment>.`
+	passengers 20 4 .15
+	to offer
+		random < ( "passenger space" - 30 ) * 2
+		or
+			and
+				random < 60
+				month == 2
+				day > 19
+			and
+				random < 30
+				month == 3
+			and
+				random < 15
+				month == 4
+				day < 20
+	source
+		attributes "dirt belt"
+	destination
+		distance 3 15
+		attributes "dirt belt"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 120000 100
+		dialog `I tuoi passeggeri ti ringraziano per averli riportati su <planet>, e ritiri il pagamento di <payment>.`
+
+
+mission "Food Convoy [0]"
+	name `Convoglio di cibo per <planet>`
+	job
+	repeat
+	deadline
+	description `Il capitano della <npc>, a capo di un piccolo convoglio di navi cariche di cibo, ti pagherà <payment> per scortarle fino a <destination> entro <date>.`
+	to offer
+		random < 30
+		"combat rating" > 30
+	source
+		attributes "dirt belt"
+	destination
+		distance 2 8
+		attributes "near earth" "paradise" "core"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+		system destination
+		fleet "Small Northern Pirates"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+		system destination
+		fleet "Small Northern Pirates"
+	npc
+		government "Pirate"
+		personality nemesis entering harvests plunders
+		system destination
+		fleet "Small Northern Pirates"
+	npc
+		government "Pirate"
+		personality nemesis staying harvests plunders
+		system destination
+		fleet "Small Northern Pirates" 2
+	
+	npc accompany save
+		government "Merchant"
+		personality escort timid
+		"cargo settings"
+			commodities "Food"
+		fleet
+			names "civilian"
+			variant
+				"Freighter" 3
+	on complete
+		payment 100000
+		dialog "Il capitano della <npc> ti ringrazia per aver scortato le loro navi in sicurezza e ti paga <payment>."
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"
+
+
+mission "Food Convoy [1]"
+	name `Convoglio di cibo per <planet>`
+	job
+	repeat
+	deadline
+	description `Il capitano della <npc>, a capo di un convoglio di navi cariche di cibo, ti pagherà <payment> per scortarle fino a <destination> entro <date>.`
+	to offer
+		random < 25
+		"combat rating" > 60
+	source
+		attributes "dirt belt"
+	destination
+		distance 3 9
+		attributes "near earth" "paradise" "core"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+		system destination
+		fleet "Large Northern Pirates"
+	npc
+		government "Pirate"
+		personality nemesis entering harvests plunders
+		system destination
+		fleet "Small Northern Pirates"
+	npc
+		government "Pirate"
+		personality nemesis staying harvests plunders
+		system destination
+		fleet "Large Northern Pirates"
+	
+	npc accompany save
+		government "Merchant"
+		personality escort timid
+		"cargo settings"
+			commodities "Food"
+		fleet
+			names "civilian"
+			variant
+				"Behemoth"
+				"Freighter" 2
+	on complete
+		payment 160000
+		dialog "Il capitano della <npc> ti ringrazia per aver scortato le loro navi in sicurezza e ti paga <payment>."
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"
+
+
+mission "Food Convoy [2]"
+	name `Convoglio di cibo per <planet>`
+	job
+	repeat
+	deadline
+	description `Il capitano della <npc>, a capo di un grande convoglio di navi cariche di cibo, ti pagherà <payment> per scortarle fino a <destination> entro <date>.`
+	to offer
+		random < 15
+		"combat rating" > 90
+	source
+		attributes "dirt belt"
+	destination
+		distance 4 10
+		attributes "near earth" "paradise" "core"
+	npc
+		government "Pirate"
+		personality nemesis harvests plunders
+		system destination
+		fleet "Small Northern Pirates"
+		fleet "Large Northern Pirates"
+	npc
+		government "Pirate"
+		personality nemesis entering harvests plunders
+		system destination
+		fleet "Large Northern Pirates"
+	npc
+		government "Pirate"
+		personality nemesis staying harvests plunders
+		system destination
+		fleet "Small Northern Pirates"
+		fleet "Large Northern Pirates"
+	
+	npc accompany save
+		government "Merchant"
+		personality escort timid
+		"cargo settings"
+			commodities "Food"
+		fleet
+			names "civilian"
+			variant
+				"Behemoth" 2
+	on complete
+		payment 220000
+		dialog "Il capitano della <npc> ti ringrazia per aver scortato le loro navi in sicurezza e ti paga <payment>."
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"

@@ -1,0 +1,297 @@
+{
+ "block": {
+  "path": "data/hai/hai culture conversations.txt",
+  "line_from": 321,
+  "line_to": 386,
+  "units": 26
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Hai Film Release|Upon visiting the spaceport, you notice a poster for a movie in Hai. You recognize it as taking place on Darkrest, and quickly realize that this must be the movie that Likeet had made. The Hai-language title has been translated to \"The Final Rest,\" but the full movie doesn't appear to have been subtitled in your language yet.|321|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 321,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Hai Film Release",
+   "english": "Upon visiting the spaceport, you notice a poster for a movie in Hai. You recognize it as taking place on Darkrest, and quickly realize that this must be the movie that Likeet had made. The Hai-language title has been translated to \"The Final Rest,\" but the full movie doesn't appear to have been subtitled in your language yet.",
+   "italian": "Entrando nello spazioporto, notate la locandina di un film in Hai. Riconoscete che è ambientato su Darkrest e capite subito che dev'essere il film che Likeet aveva fatto. Il titolo in lingua Hai è stato tradotto con \"L'ultimo riposo\", ma il film completo non sembra ancora sottotitolato nella vostra lingua.",
+   "ratio": 0.939
+  },
+  {
+   "idx": 2,
+   "id": "mission:Hai Film Release|\t(Go see it.)|323|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 323,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Hai Film Release",
+   "english": "\t(Go see it.)",
+   "italian": "\t(Vado a vederlo.)",
+   "ratio": 1.385
+  },
+  {
+   "idx": 3,
+   "id": "mission:Hai Film Release|\t(Pass.)|324|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 324,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Hai Film Release",
+   "english": "\t(Pass.)",
+   "italian": "\t(Passo.)",
+   "ratio": 1.125
+  },
+  {
+   "idx": 4,
+   "id": "mission:Hai Film Release|\tYou find a movie theater showing Likeet's film. You're not quite sure what's happening: something to do with an unseen monster inhabiting the station that slowly drives those it meets insane. It seems to be a hit with the Hai audience, though, and you leave the theater feeling distinctly unnerved.|328|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 328,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Hai Film Release",
+   "english": "\tYou find a movie theater showing Likeet's film. You're not quite sure what's happening: something to do with an unseen monster inhabiting the station that slowly drives those it meets insane. It seems to be a hit with the Hai audience, though, and you leave the theater feeling distinctly unnerved.",
+   "italian": "\tTrovate un cinema che proietta il film di Likeet. Non siete del tutto sicuri di cosa stia succedendo: qualcosa che ha a che fare con un mostro invisibile che abita la stazione e fa lentamente impazzire chi incontra. Sembra però un successo presso il pubblico Hai, e uscite dalla sala decisamente scossi.",
+   "ratio": 1.017
+  },
+  {
+   "idx": 5,
+   "id": "mission:Hai Film Release|\tYou find a movie theater showing Likeet's film, but your translator is of little help here. The movie is sparse on dialog, and the few lines spoken in the movie seem to be cryptic references to Hai literature and philosophy. The most you are able to make out is that the movie is about an unseen monster inhabiting the station that slowly drives those it meets insane. It seems to be a hit with the Hai audience, though, and you leave the theater feeling distinctly unnerved.|331|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 331,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Hai Film Release",
+   "english": "\tYou find a movie theater showing Likeet's film, but your translator is of little help here. The movie is sparse on dialog, and the few lines spoken in the movie seem to be cryptic references to Hai literature and philosophy. The most you are able to make out is that the movie is about an unseen monster inhabiting the station that slowly drives those it meets insane. It seems to be a hit with the Hai audience, though, and you leave the theater feeling distinctly unnerved.",
+   "italian": "\tTrovate un cinema che proietta il film di Likeet, ma il vostro traduttore qui serve a poco. Il film è scarso di dialoghi, e le poche battute pronunciate sembrano riferimenti criptici alla letteratura e alla filosofia Hai. Il massimo che riuscite a capire è che il film parla di un mostro invisibile che abita la stazione e fa lentamente impazzire chi incontra. Sembra però un successo presso il pubblico Hai, e uscite dalla sala decisamente scossi.",
+   "ratio": 0.943
+  },
+  {
+   "idx": 6,
+   "id": "mission:Sick of Acorn Bread|With some time to kill while your ship is being serviced by the Hai dockhands, you enter the spaceport searching for a bite to eat. Restaurants advertise their menus in bright, attention-grabbing colors on their windows; among the selection, you spot one that promises \"authentic Hai cuisine,\" along with some large text printed in the Hai language. Next to it, you see a human street food vendor offering snacks and ready-made meals.|346|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 346,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "With some time to kill while your ship is being serviced by the Hai dockhands, you enter the spaceport searching for a bite to eat. Restaurants advertise their menus in bright, attention-grabbing colors on their windows; among the selection, you spot one that promises \"authentic Hai cuisine,\" along with some large text printed in the Hai language. Next to it, you see a human street food vendor offering snacks and ready-made meals.",
+   "italian": "Con un po' di tempo da ammazzare mentre gli addetti Hai vi fanno la manutenzione alla nave, entrate nello spazioporto in cerca di qualcosa da mangiare. I ristoranti pubblicizzano i loro menù sulle vetrine con colori vivaci e accattivanti; fra la scelta ne notate uno che promette \"autentica cucina Hai\", insieme a un grande testo scritto in lingua Hai. Accanto c'è un venditore ambulante umano che offre snack e pasti già pronti.",
+   "ratio": 0.988
+  },
+  {
+   "idx": 7,
+   "id": "mission:Sick of Acorn Bread|\t(Enter the restaurant.)|348|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 348,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\t(Enter the restaurant.)",
+   "italian": "\t(Entro nel ristorante.)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "mission:Sick of Acorn Bread|\t(Buy something from the human food vendor instead.)|350|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 350,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\t(Buy something from the human food vendor instead.)",
+   "italian": "\t(Compro qualcosa dal venditore umano.)",
+   "ratio": 0.75
+  },
+  {
+   "idx": 9,
+   "id": "mission:Sick of Acorn Bread|\t(On second thought, I'm not that hungry.)|351|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 351,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\t(On second thought, I'm not that hungry.)",
+   "italian": "\t(Ripensandoci, non ho poi così fame.)",
+   "ratio": 0.905
+  },
+  {
+   "idx": 10,
+   "id": "mission:Sick of Acorn Bread|\tFood made by humans is certainly the safer option. The vendor sells you a dish comprised of steamed vegetables, along with a fillet of some yellow-tinged fish which she assures you is perfectly edible. The meal is somewhat bland, but the fish is buttery and tender. You dispose of the leftovers in a nearby garbage receptacle, and you watch as it beeps melodically, incinerating the refuse.|355|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 355,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\tFood made by humans is certainly the safer option. The vendor sells you a dish comprised of steamed vegetables, along with a fillet of some yellow-tinged fish which she assures you is perfectly edible. The meal is somewhat bland, but the fish is buttery and tender. You dispose of the leftovers in a nearby garbage receptacle, and you watch as it beeps melodically, incinerating the refuse.",
+   "italian": "\tIl cibo fatto dagli umani è di certo l'opzione più sicura. Il venditore vi vende un piatto di verdure al vapore, insieme a un filetto di un pesce dalla tinta giallastra che vi assicura essere perfettamente commestibile. Il pasto è alquanto insipido, ma il pesce è burroso e tenero. Smaltite gli avanzi in un contenitore della spazzatura lì vicino, e lo guardate emettere un bip melodioso mentre incenerisce i rifiuti.",
+   "ratio": 1.069
+  },
+  {
+   "idx": 11,
+   "id": "mission:Sick of Acorn Bread|\tA Hai restaurant is sure to provide a more unique experience. The door jingles a short melody as you enter the establishment, and a middle-aged female Hai with her back to you shouts something in the Hai language.|358|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 358,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\tA Hai restaurant is sure to provide a more unique experience. The door jingles a short melody as you enter the establishment, and a middle-aged female Hai with her back to you shouts something in the Hai language.",
+   "italian": "\tUn ristorante Hai offrirà di sicuro un'esperienza più originale. La porta fa un breve motivetto quando entrate, e una Hai di mezza età con le spalle voltate verso di voi grida qualcosa in lingua Hai.",
+   "ratio": 0.935
+  },
+  {
+   "idx": 12,
+   "id": "mission:Sick of Acorn Bread|\tYou freeze for a second, as it is unclear what the Hai wants from you.|361|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 361,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\tYou freeze for a second, as it is unclear what the Hai wants from you.",
+   "italian": "\tRestate immobili per un secondo, perché non è chiaro cosa voglia da voi.",
+   "ratio": 1.028
+  },
+  {
+   "idx": 13,
+   "id": "mission:Sick of Acorn Bread|\tYour translator chirps dutifully, \"Have a [seat, rest] anywhere you like! I'll be right with you.\"|364|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 364,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\tYour translator chirps dutifully, \"Have a [seat, rest] anywhere you like! I'll be right with you.\"",
+   "italian": "\tIl vostro traduttore cinguetta ubbidiente: \"Si accomodi [a sedere, a riposare] dove preferisce! Arrivo subito.\"",
+   "ratio": 1.131
+  },
+  {
+   "idx": 14,
+   "id": "mission:Sick of Acorn Bread|\tOnly a short moment later, the same Hai hostess peers over at you and chitters in what you assume is embarrassment. \"I'm so sorry. I didn't realize I would have the pleasure of serving a human today. Please, have a seat anywhere at the bar. I'll come to take your order shortly.\"|366|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 366,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\tOnly a short moment later, the same Hai hostess peers over at you and chitters in what you assume is embarrassment. \"I'm so sorry. I didn't realize I would have the pleasure of serving a human today. Please, have a seat anywhere at the bar. I'll come to take your order shortly.\"",
+   "italian": "\tSolo un attimo dopo, la stessa cameriera vi guarda e cinguetta in quello che immaginate sia imbarazzo. \"Mi dispiace tanto. Non sapevo che oggi avrei avuto il piacere di servire un umano. Prego, si sieda pure al bancone. Vengo subito a prendere l'ordine.\"",
+   "ratio": 0.911
+  },
+  {
+   "idx": 15,
+   "id": "mission:Sick of Acorn Bread|\tYou take a look around and note that the restaurant is actually quite crowded. There are Hai dressed in fancy tuxedos, fashionable clothing, casual dress, and even some wearing peculiar overalls with holes in the backs for their tails; there don't seem to be any other humans. With only a few seats available, you select one on the end, next to a rather large Hai wearing green overalls and an orange straw hat. He grunts noncommittally as you sit down on a stool clearly designed for an organism with a tail. Before long, the hostess approaches and asks for your order.|367|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 367,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\tYou take a look around and note that the restaurant is actually quite crowded. There are Hai dressed in fancy tuxedos, fashionable clothing, casual dress, and even some wearing peculiar overalls with holes in the backs for their tails; there don't seem to be any other humans. With only a few seats available, you select one on the end, next to a rather large Hai wearing green overalls and an orange straw hat. He grunts noncommittally as you sit down on a stool clearly designed for an organism with a tail. Before long, the hostess approaches and asks for your order.",
+   "italian": "\tDate un'occhiata in giro e notate che il ristorante è in realtà piuttosto affollato. Ci sono Hai in smoking eleganti, in abiti alla moda, in tenuta casual, e persino alcuni con certe tute da lavoro con un buco dietro per la coda; non sembra esserci nessun altro umano. Con pochi posti liberi, ne scegliete uno all'estremità, accanto a un Hai piuttosto grande con una tuta verde e un cappello di paglia arancione. Grugnisce in modo evasivo mentre vi sedete su uno sgabello chiaramente progettato per un organismo con la coda. Poco dopo la cameriera si avvicina e vi chiede l'ordine.",
+   "ratio": 1.019
+  },
+  {
+   "idx": 16,
+   "id": "mission:Sick of Acorn Bread|\t\"I'll have today's special.\"|369|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 369,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\t\"I'll have today's special.\"",
+   "italian": "\t\"Prendo il piatto del giorno.\"",
+   "ratio": 1.069
+  },
+  {
+   "idx": 17,
+   "id": "mission:Sick of Acorn Bread|\t\"I'd like some soup, please.\"|370|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 370,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\t\"I'd like some soup, please.\"",
+   "italian": "\t\"Vorrei della zuppa, per favore.\"",
+   "ratio": 1.133
+  },
+  {
+   "idx": 18,
+   "id": "mission:Sick of Acorn Bread|\t\"You're in luck,\" she says. \"Today only, each meal is served with a free side of acorn bread.\" She scampers off to place and retrieve your order.|371|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 371,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\t\"You're in luck,\" she says. \"Today only, each meal is served with a free side of acorn bread.\" She scampers off to place and retrieve your order.",
+   "italian": "\t\"Lei è fortunato,\" dice. \"Solo per oggi, ogni pasto è servito con un contorno gratuito di pane di ghiande.\" Sgambetta via per registrare e ritirare il vostro ordine.",
+   "ratio": 1.137
+  },
+  {
+   "idx": 19,
+   "id": "mission:Sick of Acorn Bread|\tThe Hai next to you grunts again - this time with clear frustration - and turns to speak. \"Acorn bread! That's all they serve here anymore. Ever since you humans arrived in our space, that's all we get to eat. Traditional Hai breadmaking has become a lost art.\"|372|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 372,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\tThe Hai next to you grunts again - this time with clear frustration - and turns to speak. \"Acorn bread! That's all they serve here anymore. Ever since you humans arrived in our space, that's all we get to eat. Traditional Hai breadmaking has become a lost art.\"",
+   "italian": "\tL'Hai accanto a voi grugnisce di nuovo, questa volta con evidente frustrazione, e si volta a parlare. \"Pane di ghiande! Qui non servono altro, ormai. Da quando voi umani siete arrivati nel nostro spazio, è tutto quello che ci tocca mangiare. La panificazione tradizionale Hai è diventata un'arte perduta.\"",
+   "ratio": 1.168
+  },
+  {
+   "idx": 20,
+   "id": "mission:Sick of Acorn Bread|\t\"Can you tell me about traditional Hai breadmaking?\"|374|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 374,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\t\"Can you tell me about traditional Hai breadmaking?\"",
+   "italian": "\t\"Mi può parlare della panificazione tradizionale Hai?\"",
+   "ratio": 1.038
+  },
+  {
+   "idx": 21,
+   "id": "mission:Sick of Acorn Bread|\t\"I'm sorry. I didn't mean to offend your culture.\"|375|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 375,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\t\"I'm sorry. I didn't mean to offend your culture.\"",
+   "italian": "\t\"Mi dispiace. Non volevo offendere la vostra cultura.\"",
+   "ratio": 1.078
+  },
+  {
+   "idx": 22,
+   "id": "mission:Sick of Acorn Bread|\tHe seems somewhat calmed by your interest.|377|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 377,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\tHe seems somewhat calmed by your interest.",
+   "italian": "\tSembra in qualche modo calmato dal vostro interesse.",
+   "ratio": 1.233
+  },
+  {
+   "idx": 23,
+   "id": "mission:Sick of Acorn Bread|\tThe look on his face softens. \"I should be the one to apologize. It's not your fault that our spaceports' menus have changed in this respect. Humans have also brought new life to many parts of Hai society. It is only a pity that we have to travel far to find the types of bread that we had in years past.\"|380|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 380,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\tThe look on his face softens. \"I should be the one to apologize. It's not your fault that our spaceports' menus have changed in this respect. Humans have also brought new life to many parts of Hai society. It is only a pity that we have to travel far to find the types of bread that we had in years past.\"",
+   "italian": "\tL'espressione del suo viso si addolcisce. \"Dovrei essere io a scusarmi. Non è colpa vostra se i menù dei nostri spazioporti sono cambiati sotto questo aspetto. Gli umani hanno anche portato nuova vita in molte parti della società Hai. È solo un peccato che si debba viaggiare lontano per trovare i tipi di pane che avevamo anni fa.\"",
+   "ratio": 1.088
+  },
+  {
+   "idx": 24,
+   "id": "mission:Sick of Acorn Bread|\t\"Can you tell me about other types of bread?\" you ask.|381|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 381,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\t\"Can you tell me about other types of bread?\" you ask.",
+   "italian": "\t\"Mi può parlare di altri tipi di pane?\" chiedete.",
+   "ratio": 0.909
+  },
+  {
+   "idx": 25,
+   "id": "mission:Sick of Acorn Bread|\t\"Oh yes.\" He shifts his weight on the stool. \"I'm old enough to remember hayipp bread, yur ki bread - you name it. Hayipp is a grain, similar to your human 'corn,' which creates a wholesome ruddy brown flour when milled. The bread was hearty, yet exquisite.\" You note the wistful look on his face. \"Yur ki is a milk, sourced from livestock we raise. You may have seen some on Newhome; I'm told your kind has a similar animal called 'sheep.' Bread made from yur ki is rich and decadent. It is among my favorite foods to have for breakfast.\" He pauses for a moment and looks a bit downcast. \"Acorn bread was once a rare sight in Hai cuisine. Far too sweet. But, since humans have joined us on our planets, all they want is acorn bread. The high demand has displaced all of the traditional breads that I grew up with from high traffic areas such as this spaceport restaurant. I miss having them easily available.\"|383|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 383,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\t\"Oh yes.\" He shifts his weight on the stool. \"I'm old enough to remember hayipp bread, yur ki bread - you name it. Hayipp is a grain, similar to your human 'corn,' which creates a wholesome ruddy brown flour when milled. The bread was hearty, yet exquisite.\" You note the wistful look on his face. \"Yur ki is a milk, sourced from livestock we raise. You may have seen some on Newhome; I'm told your kind has a similar animal called 'sheep.' Bread made from yur ki is rich and decadent. It is among my favorite foods to have for breakfast.\" He pauses for a moment and looks a bit downcast. \"Acorn bread was once a rare sight in Hai cuisine. Far too sweet. But, since humans have joined us on our planets, all they want is acorn bread. The high demand has displaced all of the traditional breads that I grew up with from high traffic areas such as this spaceport restaurant. I miss having them easily available.\"",
+   "italian": "\t\"Oh sì.\" Si sposta sul suo sgabello. \"Sono abbastanza vecchio da ricordare il pane hayipp, il pane yur ki e altri ancora. Hayipp è un cereale, simile al vostro 'granturco' umano, che macinato dà una farina integra di un bruno rossastro. Il pane era sostanzioso ma squisito.\" Notate il suo sguardo malinconico. \"Yur ki è un latte, che ricaviamo dal bestiame che alleviamo. Forse ne avete visto un po' su Newhome; mi dicono che la vostra specie ha un animale simile chiamato 'pecora'. Il pane fatto con lo yur ki è ricco e sontuoso. È fra i miei cibi preferiti per colazione.\" Si ferma un momento e sembra un po' abbattuto. \"Il pane di ghiande un tempo era raro nella cucina Hai. Troppo dolce. Ma da quando gli umani si sono uniti a noi sui nostri pianeti, vogliono solo pane di ghiande. La grande richiesta ha spostato tutti i pani tradizionali con cui sono cresciuto dalle zone ad alto passaggio come questo ristorante dello spazioporto. Mi manca averli facilmente a disposizione.\"",
+   "ratio": 1.078
+  },
+  {
+   "idx": 26,
+   "id": "mission:Sick of Acorn Bread|\tAs if on cue, the hostess arrives with both of your meals. The Hai next to you, whose name you still do not know, sighs as he sees his free acorn bread, but he eats it nonetheless. You each finish your meals in silence and leave.|386|0",
+   "path": "data/hai/hai culture conversations.txt",
+   "line": 386,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Sick of Acorn Bread",
+   "english": "\tAs if on cue, the hostess arrives with both of your meals. The Hai next to you, whose name you still do not know, sighs as he sees his free acorn bread, but he eats it nonetheless. You each finish your meals in silence and leave.",
+   "italian": "\tCome se fosse una battuta, la cameriera arriva con i pasti di entrambi. L'Hai accanto a voi, di cui ancora non sapete il nome, sospira vedendo il suo pane di ghiande gratuito, ma lo mangia comunque. Finite i vostri pasti in silenzio e ve ne andate.",
+   "ratio": 1.083
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "block": {
+  "path": "data/rulei/rulei outfits.txt",
+  "line_from": 42,
+  "line_to": 154,
+  "units": 3
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Fate Sealer|description|42|0",
+   "path": "data/rulei/rulei outfits.txt",
+   "line": 42,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Fate Sealer",
+   "english": "An energy particle weapon that intensifies a blast to a single location after a brief duration. The after-effect of the explosion pulls the target closer to the origin of the blast.",
+   "italian": "An energy particle weapon that intensifies a blast to a single location after a brief duration. The after-effect of the explosion pulls the target closer to the origin of the blast.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Fate Divider|description|86|0",
+   "path": "data/rulei/rulei outfits.txt",
+   "line": 86,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Fate Divider",
+   "english": "An energy particle weapon that intensifies a blast to a single location after a brief duration. The after-effect of the explosion pushes the target farther from the origin of the blast.",
+   "italian": "An energy particle weapon that intensifies a blast to a single location after a brief duration. The after-effect of the explosion pushes the target farther from the origin of the blast.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Abyssal Composer|description|154|0",
+   "path": "data/rulei/rulei outfits.txt",
+   "line": 154,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Abyssal Composer",
+   "english": "This is an extremely dangerous device that uses graviton technology to pull a target's mass and energy apart, and then feeds the materials to the firing ship's systems.",
+   "italian": "This is an extremely dangerous device that uses graviton technology to pull a target's mass and energy apart, and then feeds the materials to the firing ship's systems.",
+   "ratio": 1.0
+  }
+ ]
+}

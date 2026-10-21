@@ -1,0 +1,24 @@
+{
+ "batch": "BX",
+ "name": "batch BX",
+ "source_hash": "043a8e0cbe7f4ae4",
+ "instructions": "return JSON array [{\"id\": ..., \"it\": ...}] with one entry per id",
+ "units": [
+  {
+   "id": "help:fighters transfer cargo|By enabling the \"Fighters transfer cargo\" preference, drones and fighters in your fleet will transfer cargo to their parent carrier if there is cargo space in the carrier. If a fighter cargo hold is full then it will return to the carrier automatically.|140|0",
+   "path": "data/_ui/help.txt",
+   "line": 140,
+   "kind": "HELP",
+   "context": "help:fighters transfer cargo",
+   "english": "By enabling the \"Fighters transfer cargo\" preference, drones and fighters in your fleet will transfer cargo to their parent carrier if there is cargo space in the carrier. If a fighter cargo hold is full then it will return to the carrier automatically."
+  },
+  {
+   "id": "help:fighters transfer cargo|Drones and fighters will transfer cargo upon docking with their carrier for any reason.|142|0",
+   "path": "data/_ui/help.txt",
+   "line": 142,
+   "kind": "HELP",
+   "context": "help:fighters transfer cargo",
+   "english": "Drones and fighters will transfer cargo upon docking with their carrier for any reason."
+  }
+ ]
+}

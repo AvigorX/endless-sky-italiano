@@ -1,0 +1,231 @@
+{
+ "block": {
+  "path": "data/hai/unfettered 0 prologue.txt",
+  "line_from": 367,
+  "line_to": 420,
+  "units": 20
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Unfettered Jump Drive Trading|As you exit your ship to head to the spaceport you see that an Unfettered Hai<hood> is waiting for you at your hatch.|367|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 367,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "As you exit your ship to head to the spaceport you see that an Unfettered Hai<hood> is waiting for you at your hatch.",
+   "italian": "Mentre esci dalla nave per andare allo spazioporto, vedi che un Hai Slegato<hood> ti aspetta al portello.",
+   "ratio": 0.897
+  },
+  {
+   "idx": 2,
+   "id": "mission:Unfettered Jump Drive Trading|\tAs you get closer you surmise it is an engineer, judging by the writing pad and equipment they have. Maybe they mean to trade something other than money with you. Do you want to bargain for another drive with them?|368|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 368,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tAs you get closer you surmise it is an engineer, judging by the writing pad and equipment they have. Maybe they mean to trade something other than money with you. Do you want to bargain for another drive with them?",
+   "italian": "\tAvvicinandoti, deduci che sia un ingegnere, a giudicare dalla tavoletta e dall'attrezzatura che porta. Forse intende scambiare qualcosa di diverso dal denaro. Vuoi trattare con loro per un altro motore?",
+   "ratio": 0.944
+  },
+  {
+   "idx": 3,
+   "id": "mission:Unfettered Jump Drive Trading|\tThey probably mean to offer the same deal of exchanging jump drives for weapons as before. Do you want to try and see if you can prove yourself worthy this time, and bargain for a jump drive?|371|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 371,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tThey probably mean to offer the same deal of exchanging jump drives for weapons as before. Do you want to try and see if you can prove yourself worthy this time, and bargain for a jump drive?",
+   "italian": "\tProbabilmente intendono offrirti lo stesso accordo di prima: motori di salto in cambio di armi. Vuoi provare a dimostrare il tuo valore questa volta, e trattare per un motore di salto?",
+   "ratio": 0.964
+  },
+  {
+   "idx": 4,
+   "id": "mission:Unfettered Jump Drive Trading|\t(No.)|375|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 375,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t(No.)",
+   "italian": "\t(No.)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "mission:Unfettered Jump Drive Trading|\t(Yes.)|377|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 377,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t(Yes.)",
+   "italian": "\t(Sì.)",
+   "ratio": 0.857
+  },
+  {
+   "idx": 6,
+   "id": "mission:Unfettered Jump Drive Trading|\tAs soon as you set foot on the world the supposed engineer drops her equipment and throws a blade at you just like before - it seems that she does not want to waste time with you anymore.|378|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 378,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tAs soon as you set foot on the world the supposed engineer drops her equipment and throws a blade at you just like before - it seems that she does not want to waste time with you anymore.",
+   "italian": "\tAppena metti piede sul mondo, la presunta ingegnera lascia cadere la propria attrezzatura e ti lancia una lama, proprio come l'altra volta: sembra che non voglia più perdere tempo con te.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "mission:Unfettered Jump Drive Trading|\tYou exit your ship, but before you can even reach the engineer, another Unfettered shouts to attract your attention and then throws a blade at you, without any other warning or ceremony.|382|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 382,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tYou exit your ship, but before you can even reach the engineer, another Unfettered shouts to attract your attention and then throws a blade at you, without any other warning or ceremony.",
+   "italian": "\tEsci dalla nave, ma prima ancora di raggiungere l'ingegnere, un altro Slegato grida per attirare la tua attenzione e poi ti lancia una lama, senza altri avvertimenti né cerimonie.",
+   "ratio": 0.963
+  },
+  {
+   "idx": 8,
+   "id": "mission:Unfettered Jump Drive Trading|\tYou exit your ship and immediately the engineer leads you to the outfitter. \"We have weapons to show you for your assistance in providing us with jump drives. For now you will only be allowed to trade for the one, but if you continue to provide assistance to us, you may prove yourself worthy to access the others.\" They never stop to ask if you are actually interested in new weapons.|386|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 386,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tYou exit your ship and immediately the engineer leads you to the outfitter. \"We have weapons to show you for your assistance in providing us with jump drives. For now you will only be allowed to trade for the one, but if you continue to provide assistance to us, you may prove yourself worthy to access the others.\" They never stop to ask if you are actually interested in new weapons.",
+   "italian": "\tEsci dalla nave e subito l'ingegnere ti conduce dal fornitore. \"Abbiamo armi da mostrarti, per il tuo aiuto nel procurarci motori di salto. Per ora potrai commerciare solo per una, ma se continuerai ad assisterci, potresti dimostrarti degno di accedere alle altre.\" Non si fermano mai a chiedere se le nuove armi ti interessano davvero.",
+   "ratio": 0.873
+  },
+  {
+   "idx": 9,
+   "id": "mission:Unfettered Jump Drive Trading|\t(Follow them.)|389|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 389,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t(Follow them.)",
+   "italian": "\t(Seguili.)",
+   "ratio": 0.733
+  },
+  {
+   "idx": 10,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"I'm not really interested in Hai weapons.\"|391|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 391,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"I'm not really interested in Hai weapons.\"",
+   "italian": "\t\"Le armi Hai non mi interessano davvero.\"",
+   "ratio": 0.955
+  },
+  {
+   "idx": 11,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"I don't really want to do this right now.\"|395|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 395,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"I don't really want to do this right now.\"",
+   "italian": "\t\"Non ho davvero voglia di farlo adesso.\"",
+   "ratio": 0.932
+  },
+  {
+   "idx": 12,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"How rude. You better hope there will be someone else to guide you next time!\" says the engineer as you return to your ship.|399|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 399,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"How rude. You better hope there will be someone else to guide you next time!\" says the engineer as you return to your ship.",
+   "italian": "\t\"Che maleducazione. Meglio che speri ci sia qualcun altro a guidarti la prossima volta!\" dice l'ingegnere mentre torni alla tua nave.",
+   "ratio": 1.072
+  },
+  {
+   "idx": 13,
+   "id": "mission:Unfettered Jump Drive Trading|\t\"These are not standard Hai weapons, Captain, trust me. Also, it would be ill-advised to judge before seeing them, would it not?\"|404|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 404,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t\"These are not standard Hai weapons, Captain, trust me. Also, it would be ill-advised to judge before seeing them, would it not?\"",
+   "italian": "\t\"Queste non sono armi Hai standard, capitano, credimi. E sarebbe poco saggio giudicare prima di vederle, no?\"",
+   "ratio": 0.846
+  },
+  {
+   "idx": 14,
+   "id": "mission:Unfettered Jump Drive Trading|\tThey lead you through the usual outfitter but then go to an area you have never noticed before, probably because you were not meant to. As you are about to pass through what you assume to be a security check, an Unfettered throws a blade at your face!|407|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 407,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tThey lead you through the usual outfitter but then go to an area you have never noticed before, probably because you were not meant to. As you are about to pass through what you assume to be a security check, an Unfettered throws a blade at your face!",
+   "italian": "\tTi conducono attraverso il solito fornitore, ma poi vanno in una zona che non avevi mai notato, probabilmente perché non dovevi. Mentre stai per passare quello che supponi essere un controllo di sicurezza, uno Slegato ti lancia una lama in faccia!",
+   "ratio": 0.984
+  },
+  {
+   "idx": 15,
+   "id": "mission:Unfettered Jump Drive Trading|\tYou recognize the same Unfettered from last time; she must fancy throwing blades at people.|409|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 409,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tYou recognize the same Unfettered from last time; she must fancy throwing blades at people.",
+   "italian": "\tRiconosci la stessa Slegata dell'altra volta; deve adorare lanciare lame alla gente.",
+   "ratio": 0.924
+  },
+  {
+   "idx": 16,
+   "id": "mission:Unfettered Jump Drive Trading|\t(Try to grab it.)|413|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 413,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t(Try to grab it.)",
+   "italian": "\t(Prova ad afferrarla.)",
+   "ratio": 1.278
+  },
+  {
+   "idx": 17,
+   "id": "mission:Unfettered Jump Drive Trading|\t(Try to dodge it.)|415|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 415,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t(Try to dodge it.)",
+   "italian": "\t(Prova a schivarla.)",
+   "ratio": 1.105
+  },
+  {
+   "idx": 18,
+   "id": "mission:Unfettered Jump Drive Trading|\t(Leap to the side and use my own weapon.)|417|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 417,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t(Leap to the side and use my own weapon.)",
+   "italian": "\t(Balza di lato e usa la mia arma.)",
+   "ratio": 0.833
+  },
+  {
+   "idx": 19,
+   "id": "mission:Unfettered Jump Drive Trading|\t(Flee.)|418|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 418,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\t(Flee.)",
+   "italian": "\t(Fuggi.)",
+   "ratio": 1.125
+  },
+  {
+   "idx": 20,
+   "id": "mission:Unfettered Jump Drive Trading|\tYou leap to the side, grabbing your own weapon just in time to threaten the Unfettered that threw the blade at you. Seeming a bit surprised by your unconventional tactics, they lower their own weapon. \"Well done! In truth, there is no higher honor than surviving on the field of battle, because only then can you bring loot back to those who need it! A tactic is only good if you can find and execute it quickly enough to give you an edge, which you did. <learned>I am Desneeparu, and it is my pleasure to meet you, Captain.\"|420|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 420,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive Trading",
+   "english": "\tYou leap to the side, grabbing your own weapon just in time to threaten the Unfettered that threw the blade at you. Seeming a bit surprised by your unconventional tactics, they lower their own weapon. \"Well done! In truth, there is no higher honor than surviving on the field of battle, because only then can you bring loot back to those who need it! A tactic is only good if you can find and execute it quickly enough to give you an edge, which you did. <learned>I am Desneeparu, and it is my pleasure to meet you, Captain.\"",
+   "italian": "\tBalzi di lato, afferrando la tua arma appena in tempo per minacciare lo Slegato che ti ha lanciato la lama. Sembrando un po' sorpreso dalle tue tattiche poco ortodosse, abbassa la propria arma. \"Ben fatto! In verità, non c'è onore più alto che sopravvivere sul campo di battaglia, perché solo allora puoi portare il bottino a chi ne ha bisogno! Una tattica è buona solo se riesci a trovarla ed eseguirla abbastanza in fretta da darti un vantaggio, e tu l'hai fatto. <learned>Sono Desneeparu, ed è un piacere conoscerti, capitano.\"",
+   "ratio": 1.01
+  }
+ ]
+}

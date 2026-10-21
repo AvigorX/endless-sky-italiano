@@ -1,0 +1,18 @@
+{
+ "1": "Cerca <planet>",
+ "2": "Seguendo le informazioni del contatto di Casa Myurej, cerca Riiria su <destination>.",
+ "3": "Entri nello sterminato spazioporto di <planet> e lo trovi quasi deserto. Ci sono però abbondanti prove a sostegno del suggerimento del tuo contatto. Diversi container di carico vuoti, aperti di recente, sono sparsi contro una delle pareti in fondo; accanto a uno di essi c'è persino una piccola scorta di quello che sembra equipaggiamento personale: uno zaino di tessuto resistente, una piccola arma da fianco, perfino alcuni pacchetti di cibo essiccato. Qualcuno se n'è andato di qui in fretta.",
+ "4": "\t(Fruga nello zaino.)",
+ "5": "\t(Preparati a partire.)",
+ "6": "\tDentro, tra le cianfrusaglie degli averi di questo Successore, trovi una sfera di dati ancora calda. Si risveglia appena la tocchi e trasmette il suo messaggio più recente:",
+ "7": "\t\"Riiria dice che le Casate non ci troveranno qui, che vedono questi miserabili relitti come icone della propria follia e non osano toccarli. Ha ragione, lo so, eppure rabbrividisco soprattutto al pensiero di quello straniero che le Casate sono così felici di usare. Riiria dice che gli stolti sono molto più temibili dei saggi.\"",
+ "8": "\tIl messaggio finisce lì, e non riesci a capire come accedere al resto dei dati della sfera, così la lasci stare.",
+ "9": "\tSe Riiria non è in questa stazione, potrebbe essere nell'altra, a sud; torni quindi alla tua nave e inserisci le coordinate sulla mappa.",
+ "10": "Continua la ricerca",
+ "11": "Non avendo trovato Riiria su <origin>, cercala su <destination>.",
+ "12": "Poco dopo aver guidato la <ship> attraverso l'apertura di attracco della stazione, vedi parcheggiata su una delle piazzole in disuso una nave cargo dei Successori chiaramente priva di alimentazione. È in pessime condizioni: gran parte della corazzatura dello scafo è stata rimossa e un foro è stato praticato dall'alto, proprio sopra il vano del generatore.",
+ "13": "\tPer fortuna gli scanner della tua nave riescono ancora a leggerne il numero di identificazione, e tu cerchi in fretta la sfera di dati di Casa Myurej per confrontarlo con i dati che Myurej ti ha fornito. È la nave che ti hanno mandato a cercare, concludi.",
+ "14": "\t(Usa lo scanner di carico per identificarne il carico.)",
+ "15": "\t(Controlla tu stesso il suo carico.)",
+ "16": "\tCome prevedibile, le stive della nave sono state ripulite e i regali di nozze che ti hanno mandato a recuperare non sono qui. Lo scanner riesce però a interfacciarsi con un terminale non protetto e quasi senza alimentazione dentro il relitto, e ti trasmette il manifesto di carico più recente della nave:"
+}

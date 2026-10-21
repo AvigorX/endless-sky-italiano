@@ -1,0 +1,99 @@
+{
+ "block": {
+  "path": "data/remnant/remnant news.txt",
+  "line_from": 116,
+  "line_to": 212,
+  "units": 8
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:remnant security advisory|\"|116|0",
+   "path": "data/remnant/remnant news.txt",
+   "line": 116,
+   "kind": "NEWS",
+   "context": "news:remnant security advisory",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "news:remnant security advisory|\"|135|0",
+   "path": "data/remnant/remnant news.txt",
+   "line": 135,
+   "kind": "NEWS",
+   "context": "news:remnant security advisory",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "news:remnant security advisory|\"|138|0",
+   "path": "data/remnant/remnant news.txt",
+   "line": 138,
+   "kind": "NEWS",
+   "context": "news:remnant security advisory",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "news:remnant security advisory|\"|157|0",
+   "path": "data/remnant/remnant news.txt",
+   "line": 157,
+   "kind": "NEWS",
+   "context": "news:remnant security advisory",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "news:remnant security advisory|\"|160|0",
+   "path": "data/remnant/remnant news.txt",
+   "line": 160,
+   "kind": "NEWS",
+   "context": "news:remnant security advisory",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "news:remnant security advisory|\"|199|0",
+   "path": "data/remnant/remnant news.txt",
+   "line": 199,
+   "kind": "NEWS",
+   "context": "news:remnant security advisory",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "news:remnant security advisory|\"|202|0",
+   "path": "data/remnant/remnant news.txt",
+   "line": 202,
+   "kind": "NEWS",
+   "context": "news:remnant security advisory",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "news:remnant security advisory|\"|212|0",
+   "path": "data/remnant/remnant news.txt",
+   "line": 212,
+   "kind": "NEWS",
+   "context": "news:remnant security advisory",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  }
+ ]
+}

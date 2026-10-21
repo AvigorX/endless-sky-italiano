@@ -1,0 +1,165 @@
+{
+ "block": {
+  "path": "data/avgi/avgi ships.txt",
+  "line_from": 120,
+  "line_to": 522,
+  "units": 14
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Koryfi|description|120|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 120,
+   "kind": "DESCRIPTION",
+   "context": "ship:Koryfi",
+   "english": "The Koryfi is a light passenger transport whose basic design predates the invention of the hyperdrive. Originally restricted to intrasystem travel, its spin gravity system ensured a comfortable voyage for passengers long before the development of gravity plating. Today, it is a popular choice among independent captains for its high maintainability and ample living space, with many using them as permanent homes.",
+   "italian": "La Koryfi è un trasporto passeggeri leggero il cui progetto di base precede l'invenzione dell'iperguida. In origine limitata ai viaggi intrasistemici, il suo sistema di gravità per rotazione garantiva ai passeggeri un viaggio confortevole molto prima dello sviluppo delle piastre gravitazionali. Oggi è una scelta popolare fra i capitani indipendenti per la sua facile manutenibilità e gli ampi spazi abitabili, e molti la usano come casa permanente.",
+   "ratio": 1.087
+  },
+  {
+   "idx": 2,
+   "id": "ship:Koryfi|description|121|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 121,
+   "kind": "DESCRIPTION",
+   "context": "ship:Koryfi",
+   "english": "\tEnterprising captains often exploit the commonality of the Koryfi and Avlaki designs, swapping out the modular centrifuge for a set of standard cargo containers.",
+   "italian": "\tI capitani intraprendenti sfruttano spesso la comunanza dei progetti Koryfi e Avlaki, sostituendo la centrifuga modulare con un set di container standard.",
+   "ratio": 0.957
+  },
+  {
+   "idx": 3,
+   "id": "ship:Koryfi|description|122|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 122,
+   "kind": "DESCRIPTION",
+   "context": "ship:Koryfi",
+   "english": "\tWhile its standard set of magnetoplasmadynamic thrusters give it an acceleration generously described as sluggish, the Koryfi's constant thrust flight profile allows it to reach an impressive cruising velocity given enough time.",
+   "italian": "\tSebbene il suo set standard di propulsori magnetoplasmadinamici le conferisca un'accelerazione generosamente descritta come fiacca, il profilo di volo a spinta continua di Koryfi consente di raggiungere un'impressionante velocità di crociera, dato tempo sufficiente.",
+   "ratio": 1.166
+  },
+  {
+   "idx": 4,
+   "id": "ship:Melodikos|plural|126|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 126,
+   "kind": "VALUE",
+   "context": "ship:Melodikos",
+   "english": "Melodikos",
+   "italian": "Melodikos",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Melodikos|description|266|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 266,
+   "kind": "DESCRIPTION",
+   "context": "ship:Melodikos",
+   "english": "The Melodikos is a large passenger transport built around a similar propulsion and structural frame as the Koryfi and Avlaki, but with a vastly enlarged solar array, as well as a spacious centrifuge habitat. Once used as an interplanetary cycler, it is now used for mass transit between the stars.",
+   "italian": "La Melodikos è un grande trasporto passeggeri costruito su una struttura portante e propulsiva simile a quella di Koryfi e Avlaki, ma con una distesa solare enormemente più grande e un spazioso habitat centrifugo. Un tempo usata come ciclatore interplanetario, oggi serve il trasporto di massa fra le stelle.",
+   "ratio": 1.037
+  },
+  {
+   "idx": 6,
+   "id": "ship:Melodikos|description|267|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 267,
+   "kind": "DESCRIPTION",
+   "context": "ship:Melodikos",
+   "english": "\tWhile not as modular as the Koryfi and Avlaki designs, the Melodikos shares the same solar array and structural frame as the Harmonikos. Refits to swap the centrifuge for a set of cargo pods are uncommon due to the work involved, but still possible.",
+   "italian": "\tPur non essendo modulare come i progetti Koryfi e Avlaki, la Melodikos condivide la stessa distesa solare e la stessa struttura portante della Harmonikos. Gli adattamenti per sostituire la centrifuga con un set di moduli cargo sono rari per il lavoro che comportano, ma restano possibili.",
+   "ratio": 1.156
+  },
+  {
+   "idx": 7,
+   "id": "ship:Melodikos|description|268|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 268,
+   "kind": "DESCRIPTION",
+   "context": "ship:Melodikos",
+   "english": "\tWhile its standard set of magnetoplasmadynamic thrusters give it an acceleration generously described as sluggish, the Melodikos' constant thrust flight profile allows it to reach an impressive cruising velocity given enough time.",
+   "italian": "\tSebbene il suo set standard di propulsori magnetoplasmadinamici le conferisca un'accelerazione generosamente descritta come fiacca, il profilo di volo a spinta continua di Melodikos consente di raggiungere un'impressionante velocità di crociera, dato tempo sufficiente.",
+   "ratio": 1.169
+  },
+  {
+   "idx": 8,
+   "id": "ship:Avlaki|description|375|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 375,
+   "kind": "DESCRIPTION",
+   "context": "ship:Avlaki",
+   "english": "The Avlaki is a mid-sized freighter loosely descended from a pre-hyperdrive solar-electric tug design. Its low cost and renowned maintainability has enabled it to remain in service to this day, and is a popular choice among independent captains.",
+   "italian": "L'Avlaki è un mercantile di medie dimensioni, discendente alla lontana da un progetto di rimorchiatore solare-elettrico precedente all'iperguida. Il basso costo e la rinomata manutenibilità le hanno permesso di restare in servizio ancora oggi, ed è una scelta popolare fra i capitani indipendenti.",
+   "ratio": 1.212
+  },
+  {
+   "idx": 9,
+   "id": "ship:Avlaki|description|376|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 376,
+   "kind": "DESCRIPTION",
+   "context": "ship:Avlaki",
+   "english": "\tEnterprising captains often exploit the commonality of the Koryfi and Avlaki designs, swapping out the standard cargo containers for a centrifuge habitat.",
+   "italian": "\tI capitani intraprendenti sfruttano spesso la comunanza dei progetti Koryfi e Avlaki, sostituendo i container standard con un habitat centrifugo.",
+   "ratio": 0.942
+  },
+  {
+   "idx": 10,
+   "id": "ship:Avlaki|description|377|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 377,
+   "kind": "DESCRIPTION",
+   "context": "ship:Avlaki",
+   "english": "\tWhile its standard set of magnetoplasmadynamic thrusters give it an acceleration generously described as sluggish, the Avlaki's constant thrust flight profile allows it to reach an impressive cruising velocity given enough time.",
+   "italian": "\tSebbene il suo set standard di propulsori magnetoplasmadinamici le conferisca un'accelerazione generosamente descritta come fiacca, il profilo di volo a spinta continua di Avlaki consente di raggiungere un'impressionante velocità di crociera, dato tempo sufficiente.",
+   "ratio": 1.166
+  },
+  {
+   "idx": 11,
+   "id": "ship:Harmonikos|plural|381|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 381,
+   "kind": "VALUE",
+   "context": "ship:Harmonikos",
+   "english": "Harmonikos",
+   "italian": "Harmonikos",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "ship:Harmonikos|description|520|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 520,
+   "kind": "DESCRIPTION",
+   "context": "ship:Harmonikos",
+   "english": "The Harmonikos is a large freighter built around a similar propulsion and structural frame as the Koryfi and Avlaki, but with a vastly enlarged solar array, as well as a huge assembly of cargo modules towed behind the main truss. Once used as an interplanetary bulk freighter, it is now used for shipping cargo between the stars.",
+   "italian": "La Harmonikos è un grande mercantile costruito su una struttura portante e propulsiva simile a quella di Koryfi e Avlaki, ma con una distesa solare enormemente più grande e un enorme insieme di moduli cargo trainati dietro la trave principale. Un tempo usata come nave da carico interplanetaria, oggi trasporta merci fra le stelle.",
+   "ratio": 1.006
+  },
+  {
+   "idx": 13,
+   "id": "ship:Harmonikos|description|521|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 521,
+   "kind": "DESCRIPTION",
+   "context": "ship:Harmonikos",
+   "english": "\tWhile not as modular as the Koryfi and Avlaki designs, the Harmonikos shares the same solar array and structural frame as the Melodikos. Its generous cargo space is occasionally seen filled with equipment and bunks to create an ad-hoc passenger transport, albeit one lacking the artificial gravity of the Melodikos.",
+   "italian": "\tPur non essendo modulare come i progetti Koryfi e Avlaki, la Harmonikos condivide la stessa distesa solare e la stessa struttura portante della Melodikos. Il suo generoso spazio cargo si vede talvolta riempito di attrezzature e cuccette per ricavarne un trasporto passeggeri improvvisato, privo però della gravità artificiale della Melodikos.",
+   "ratio": 1.085
+  },
+  {
+   "idx": 14,
+   "id": "ship:Harmonikos|description|522|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 522,
+   "kind": "DESCRIPTION",
+   "context": "ship:Harmonikos",
+   "english": "\tWhile its standard set of magnetoplasmadynamic thrusters give it an acceleration generously described as sluggish, the Harmonikos' constant thrust flight profile allows it to reach an impressive cruising velocity given enough time.",
+   "italian": "\tSebbene il suo set standard di propulsori magnetoplasmadinamici le conferisca un'accelerazione generosamente descritta come fiacca, il profilo di volo a spinta continua di Harmonikos consente di raggiungere un'impressionante velocità di crociera, dato tempo sufficiente.",
+   "ratio": 1.168
+  }
+ ]
+}

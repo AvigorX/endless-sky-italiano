@@ -1,0 +1,198 @@
+{
+ "block": {
+  "path": "data/wanderer/wanderer ships.txt",
+  "line_from": 15,
+  "line_to": 1200,
+  "units": 17
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Earth Shaper|description|49|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 49,
+   "kind": "DESCRIPTION",
+   "context": "ship:Earth Shaper",
+   "english": "The Earth Shaper is a robotic drone that the Wanderers use for mining, exploring, surveying, and terraforming.",
+   "italian": "L'Earth Shaper è un drone robotico che i Wanderer usano per estrarre, esplorare, fare rilevamenti e terraformare.",
+   "ratio": 1.027
+  },
+  {
+   "idx": 2,
+   "id": "ship:Flycatcher|description|88|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 88,
+   "kind": "DESCRIPTION",
+   "context": "ship:Flycatcher",
+   "english": "Flycatcher drones are used by the Wanderers to keep their star systems safe. Rather than carrying weapons of its own, a stock Flycatcher just carries an anti-missile turret for defending other ships.",
+   "italian": "I droni Flycatcher servono ai Wanderer per tenere al sicuro i loro sistemi stellari. Invece di portare armi proprie, un Flycatcher di serie monta solo una torretta antimissile per difendere le altre navi.",
+   "ratio": 1.025
+  },
+  {
+   "idx": 3,
+   "id": "ship:Flycatcher|description|89|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 89,
+   "kind": "DESCRIPTION",
+   "context": "ship:Flycatcher",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "italian": "\tI droni non vengono forniti con un motore iperspaziale. Non puoi trasportare un drone se non hai nella flotta una nave con una baia per droni.",
+   "ratio": 1.126
+  },
+  {
+   "idx": 4,
+   "id": "ship:Summer Leaf|plural|94|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 94,
+   "kind": "VALUE",
+   "context": "ship:Summer Leaf",
+   "english": "Summer Leaves",
+   "italian": "Summer Leaves",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Summer Leaf|description|140|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 140,
+   "kind": "DESCRIPTION",
+   "context": "ship:Summer Leaf",
+   "english": "The Summer Leaf is mostly used by the Wanderers as a light transport, but it is also quite effective in combat.",
+   "italian": "La Summer Leaf è usata dai Wanderer soprattutto come trasporto leggero, ma è anche piuttosto efficace in combattimento.",
+   "ratio": 1.072
+  },
+  {
+   "idx": 6,
+   "id": "ship:Autumn Leaf|plural|145|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 145,
+   "kind": "VALUE",
+   "context": "ship:Autumn Leaf",
+   "english": "Autumn Leaves",
+   "italian": "Autumn Leaves",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Autumn Leaf|description|192|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 192,
+   "kind": "DESCRIPTION",
+   "context": "ship:Autumn Leaf",
+   "english": "The Autumn Leaf is based on the Wanderer Summer Leaf light warship, but slightly larger and better equipped for combat. Unlike Wanderer peacetime ships, it is equipped with a turret mount in addition to the ports for fixed guns.",
+   "italian": "La Autumn Leaf deriva dalla Summer Leaf, la nave da guerra leggera dei Wanderer, ma è un po' più grande e meglio equipaggiata per il combattimento. A differenza delle navi Wanderer in tempo di pace, monta anche un supporto per torretta oltre ai supporti per i cannoni fissi.",
+   "ratio": 1.202
+  },
+  {
+   "idx": 8,
+   "id": "ship:Strong Wind|description|263|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 263,
+   "kind": "DESCRIPTION",
+   "context": "ship:Strong Wind",
+   "english": "The Strong Wind was originally designed for science and exploration, but recently the Wanderers have modified the design to allow it to be used as a warship.",
+   "italian": "La Strong Wind fu progettata in origine per la scienza e l'esplorazione, ma di recente i Wanderer ne hanno modificato il progetto per poterla usare come nave da guerra.",
+   "ratio": 1.07
+  },
+  {
+   "idx": 9,
+   "id": "ship:Heavy Gust|description|322|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 322,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heavy Gust",
+   "english": "The Heavy Gust is a further modification of the Strong Wind, adjusted even more heavily for combat purposes at the expense of much of its precursor's peacetime utility. With these modifications, the Heavy Gust becomes both faster and deadlier, pushing the original civilian frame to its limits.",
+   "italian": "La Heavy Gust è un'ulteriore modifica della Strong Wind, adattata ancora più pesantemente al combattimento a scapito di gran parte dell'utilità in tempo di pace della sua antenata. Con queste modifiche la Heavy Gust diventa sia più veloce sia più letale, spingendo la struttura civile originale al limite.",
+   "ratio": 1.037
+  },
+  {
+   "idx": 10,
+   "id": "ship:Tempest|description|392|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 392,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tempest",
+   "english": "In response to the Unfettered invasion, the Wanderers have begun digging up ancient warship designs from their archives and putting them back into production. The Tempest is the first purpose-built warship they have manufactured in tens of thousands of years.",
+   "italian": "In risposta all'invasione degli Unfettered, i Wanderer hanno cominciato a riesumare dagli archivi antichi progetti di navi da guerra e a rimetterli in produzione. La Tempest è la prima nave da guerra progettata apposta che abbiano costruito in decine di migliaia di anni.",
+   "ratio": 1.046
+  },
+  {
+   "idx": 11,
+   "id": "ship:Derecho|description|523|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 523,
+   "kind": "DESCRIPTION",
+   "context": "ship:Derecho",
+   "english": "Like a latent gene waiting to express itself, the knowledge of how to wage war in space has been passed down through hundreds of generations of Wanderers. Based on one of their ancient designs, the Derecho has a mixture of agility and raw firepower that is well-suited to their present, rapidly changing situation.",
+   "italian": "Come un gene latente in attesa di esprimersi, la conoscenza di come si fa la guerra nello spazio è stata tramandata attraverso centinaia di generazioni di Wanderer. Basata su uno dei loro progetti antichi, la Derecho ha un misto di agilità e potenza di fuoco grezza che si adatta bene alla loro situazione attuale, in rapido mutamento.",
+   "ratio": 1.067
+  },
+  {
+   "idx": 12,
+   "id": "ship:Hurricane|description|653|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 653,
+   "kind": "DESCRIPTION",
+   "context": "ship:Hurricane",
+   "english": "The Hurricane is not built for speed, elegance, or versatility, but for one simple purpose: to be durable enough to serve as a rearguard, absorbing an enemy's attacks for long enough to allow the fleet it is guarding to escape.",
+   "italian": "La Hurricane non è costruita per la velocità, l'eleganza o la versatilità, ma per un unico semplice scopo: essere abbastanza resistente da fare da retroguardia, assorbendo gli attacchi del nemico abbastanza a lungo da permettere alla flotta che protegge di fuggire.",
+   "ratio": 1.167
+  },
+  {
+   "idx": 13,
+   "id": "ship:Cool Breeze|description|777|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 777,
+   "kind": "DESCRIPTION",
+   "context": "ship:Cool Breeze",
+   "english": "This is the first ship the Wanderers have built in millennia that is designed to be operated by a single pilot instead of a crew. They are flown mostly by young warriors eager to prove their mettle by winning individual glory in battle.",
+   "italian": "È la prima nave che i Wanderer costruiscono in millenni ed è progettata per essere pilotata da un solo pilota invece che da un equipaggio. La guidano soprattutto giovani guerrieri desiderosi di dimostrare il proprio valore vincendo gloria individuale in battaglia.",
+   "ratio": 1.119
+  },
+  {
+   "idx": 14,
+   "id": "ship:Winter Gale|description|844|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 844,
+   "kind": "DESCRIPTION",
+   "context": "ship:Winter Gale",
+   "english": "The Winter Gale was designed by the Wanderers as a hardier and better-armed alternative to their existing light patrol ships. The Gale's large number of weapon hardpoints makes it flexible enough to reconfigure for facing a wide variety of enemies.",
+   "italian": "La Winter Gale è stata progettata dai Wanderer come alternativa più robusta e meglio armata alle loro navi di pattuglia leggere. Il gran numero di supporti per armi della Gale la rende abbastanza flessibile da essere riconfigurata per affrontare nemici molto diversi.",
+   "ratio": 1.077
+  },
+  {
+   "idx": 15,
+   "id": "ship:Deep River|description|949|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 949,
+   "kind": "DESCRIPTION",
+   "context": "ship:Deep River",
+   "english": "The Deep River is a modular freighter, designed to carry cargo in detachable pods.",
+   "italian": "La Deep River è un mercantile modulare, progettato per portare carico in capsule staccabili.",
+   "ratio": 1.122
+  },
+  {
+   "idx": 16,
+   "id": "ship:Deep River Transport|description|1035|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 1035,
+   "kind": "DESCRIPTION",
+   "context": "ship:Deep River Transport",
+   "english": "This is a Deep River freighter that has been converted into a transport ship for refugees.",
+   "italian": "È una Deep River trasformata in nave per il trasporto di profughi.",
+   "ratio": 0.733
+  },
+  {
+   "idx": 17,
+   "id": "ship:Riptide|description|1087|0",
+   "path": "data/wanderer/wanderer ships.txt",
+   "line": 1087,
+   "kind": "DESCRIPTION",
+   "context": "ship:Riptide",
+   "english": "The Riptide is a dedicated transport ship meant to replace the temporary Deep River freighters that were converted into transport ships for refugee evacuation. Although not as durable as the Deep River, the Riptide is far more nimble of a ship while at the same time being able to carry more passengers.",
+   "italian": "La Riptide è una nave da trasporto dedicata, pensata per sostituire i mercantili Deep River convertiti alla meno peggio in navi per l'evacuazione dei profughi. Benché non sia resistente come la Deep River, la Riptide è una nave molto più agile e allo stesso tempo capace di portare più passeggeri.",
+   "ratio": 0.98
+  }
+ ]
+}

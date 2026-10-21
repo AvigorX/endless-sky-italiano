@@ -1,0 +1,128 @@
+{
+ "block": {
+  "path": "data/kahet/aberrant outfits.txt",
+  "line_from": 58,
+  "line_to": 192,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Aberrant Spiker|description|58|0",
+   "path": "data/kahet/aberrant outfits.txt",
+   "line": 58,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Aberrant Spiker",
+   "english": "Spikes grow on the backs of many Aberrant variants, made of a seemingly random assortment of materials both metallic and mineral in nature. This device appears to allow an Aberrant to launch these spikes as an offensive weapon, but just how they are able to guide and propel themselves through space is a mystery that a cursory examination of this outfit does not reveal.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Spikes grow on the backs of many Aberrant variants, made of a seemingly random assortment of materials both metallic and mineral in nature. This device appears to allow an Aberrant to launch these spikes as an offensive weapon, but just how they are able to guide and propel themselves through space is a mystery that a cursory examination of this outfit does not reveal.\"",
+   "english_hash": "4123f666f7ebb947"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Nucleolysis Beam|description|113|0",
+   "path": "data/kahet/aberrant outfits.txt",
+   "line": 113,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Nucleolysis Beam",
+   "english": "This beam weapon creates a field inside which otherwise stable atomic nuclei rapidly decay. This effect seems to be inversely proportional to the mass of the nucleus, causing isotopes like deuterium to break down at a higher rate than heavier elements. As the resultant products have a higher energy state than the original nucleus, the beam cools its target, defying conventional thermodynamics.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This beam weapon creates a field inside which otherwise stable atomic nuclei rapidly decay. This effect seems to be inversely proportional to the mass of the nucleus, causing isotopes like deuterium to break down at a higher rate than heavier elements. As the resultant products have a higher energy state than the original nucleus, the beam cools its target, defying conventional thermodynamics.\"",
+   "english_hash": "5195950ae838c05b"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Nucleolysis Beam|description|114|0",
+   "path": "data/kahet/aberrant outfits.txt",
+   "line": 114,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Nucleolysis Beam",
+   "english": "In practice, this beam can deplete a ship's deuterium fuel while causing the very matter of its hull to decay.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"In practice, this beam can deplete a ship's deuterium fuel while causing the very matter of its hull to decay.\"",
+   "english_hash": "b7e67e9ef6a5f117"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Telescopic Antimissile|description|137|0",
+   "path": "data/kahet/aberrant outfits.txt",
+   "line": 137,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Telescopic Antimissile",
+   "english": "Oddly enough, this antimissile system resembles an array of scanners and telescopes. Such an assortment of sensing devices was certainly not intended to be used as a weapon, but somehow enough power has been pumped through this scanner's optics to make it a potent antimissile defense.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Oddly enough, this antimissile system resembles an array of scanners and telescopes. Such an assortment of sensing devices was certainly not intended to be used as a weapon, but somehow enough power has been pumped through this scanner's optics to make it a potent antimissile defense.\"",
+   "english_hash": "1c943284699fe85f"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Telescopic Antimissile|description|138|0",
+   "path": "data/kahet/aberrant outfits.txt",
+   "line": 138,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Telescopic Antimissile",
+   "english": "The various lenses and mirrors that make up a large telescope seem to be used to focus the emitted beam, giving this antimissile system a very long range.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The various lenses and mirrors that make up a large telescope seem to be used to focus the emitted beam, giving this antimissile system a very long range.\"",
+   "english_hash": "30e4cf9c24f8ba1a"
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Anomalous Shield Restorer|description|156|0",
+   "path": "data/kahet/aberrant outfits.txt",
+   "line": 156,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Anomalous Shield Restorer",
+   "english": "This emitter produces no detectable fields of any kind, but a shield springs into existence whenever any danger comes near.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This emitter produces no detectable fields of any kind, but a shield springs into existence whenever any danger comes near.\"",
+   "english_hash": "3acdfdcad8d118ba"
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Antimatter Power Cell|description|174|0",
+   "path": "data/kahet/aberrant outfits.txt",
+   "line": 174,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Antimatter Power Cell",
+   "english": "This strange device seems to be partially organic in nature, slowly leaking antiprotons through a constantly-regrowing spongelike structure to release energy. The amount of power produced is inconsistent with the amount of matter and antimatter annihilated, generating more energy than should be possible.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This strange device seems to be partially organic in nature, slowly leaking antiprotons through a constantly-regrowing spongelike structure to release energy. The amount of power produced is inconsistent with the amount of matter and antimatter annihilated, generating more energy than should be possible.\"",
+   "english_hash": "306c35495642f653"
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Anomalous Mass|plural|180|0",
+   "path": "data/kahet/aberrant outfits.txt",
+   "line": 180,
+   "kind": "VALUE",
+   "context": "outfit:Anomalous Mass",
+   "english": "Anomalous Masses",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tplural \"Anomalous Masses\"",
+   "english_hash": "b8eac27caad4b09a"
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Anomalous Mass|description|192|0",
+   "path": "data/kahet/aberrant outfits.txt",
+   "line": 192,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Anomalous Mass",
+   "english": "Found with widely varying properties in different mechanisms of an Aberration, this mass of glassy, fleshy material is characterized by the very difficulty of classifying its composition. Webs of anomalous material embedded in the mass seem not to be composed of atomic matter as the Avgi know it, but by something entirely different, which resists any attempts to probe its makeup. This is thought to enable many of the Aberrants' more baffling abilities, for lack of any other explanation.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Found with widely varying properties in different mechanisms of an Aberration, this mass of glassy, fleshy material is characterized by the very difficulty of classifying its composition. Webs of anomalous material embedded in the mass seem not to be composed of atomic matter as the Avgi know it, but by something entirely different, which resists any attempts to probe its makeup. This is thought to enable many of the Aberrants' more baffling abilities, for lack of any other explanation.\"",
+   "english_hash": "da52d3548e480f25"
+  }
+ ]
+}

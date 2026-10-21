@@ -1,0 +1,220 @@
+{
+ "block": {
+  "path": "data/successors/successor side missions.txt",
+  "line_from": 401,
+  "line_to": 460,
+  "units": 19
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Successors: Unified Defense|You notice after landing here that the spaceport crew is making no effort to refuel or repair your ship, and that a large contingent of Successor military officers is gathering around your landing pad, their weapons trained on your vessel. As several interceptors begin to hover over your ship as well with their weapons ready, you are forced to take off.|416|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 416,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "You notice after landing here that the spaceport crew is making no effort to refuel or repair your ship, and that a large contingent of Successor military officers is gathering around your landing pad, their weapons trained on your vessel. As several interceptors begin to hover over your ship as well with their weapons ready, you are forced to take off.",
+   "italian": "Dopo l'atterraggio noti che l'equipaggio dello spazioporto non fa alcuno sforzo per rifornire o riparare la tua nave, e che un folto contingente di ufficiali militari Successori si sta radunando intorno alla tua piazzola, con le armi puntate sulla nave. Mentre anche diversi intercettori cominciano a librarsi sopra la nave con le armi pronte, sei costretto a decollare.",
+   "ratio": 1.042
+  },
+  {
+   "idx": 2,
+   "id": "mission:Successors: Unified Defense|label|418|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 418,
+   "kind": "UI_LABEL",
+   "context": "mission:Successors: Unified Defense",
+   "english": "populated language",
+   "italian": "populated language",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "mission:Successors: Unified Defense|You notice after landing here that the spaceport crew is making no effort to refuel or repair your ship, and that a large contingent of Successor military officers is gathering around your landing pad.|419|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 419,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "You notice after landing here that the spaceport crew is making no effort to refuel or repair your ship, and that a large contingent of Successor military officers is gathering around your landing pad.",
+   "italian": "Dopo l'atterraggio noti che l'equipaggio dello spazioporto non fa alcuno sforzo per rifornire o riparare la tua nave, e che un folto contingente di ufficiali militari Successori si sta radunando intorno alla tua piazzola.",
+   "ratio": 1.1
+  },
+  {
+   "idx": 4,
+   "id": "mission:Successors: Unified Defense|\tYou soon receive a transmission routed through the local spaceport. \"Thy recent actions against our people make it very clear that we were unwise to permit thee access to our space. The Houses have decreed in council that thou art an enemy, and thou shalt be treated accordingly hereforth.\"|420|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 420,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "\tYou soon receive a transmission routed through the local spaceport. \"Thy recent actions against our people make it very clear that we were unwise to permit thee access to our space. The Houses have decreed in council that thou art an enemy, and thou shalt be treated accordingly hereforth.\"",
+   "italian": "\tRicevi presto una trasmissione instradata attraverso lo spazioporto locale. \"Le tue recenti azioni contro il nostro popolo rendono molto chiaro che è stato imprudente permetterti l'accesso al nostro spazio. Le Casate hanno decretato in consiglio che sei un nemico, e da ora in poi sarai trattato come tale.\"",
+   "ratio": 1.058
+  },
+  {
+   "idx": 5,
+   "id": "mission:Successors: Unified Defense|\t\"It was an accident!\"|422|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 422,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "\t\"It was an accident!\"",
+   "italian": "\t\"È stato un incidente!\"",
+   "ratio": 1.091
+  },
+  {
+   "idx": 6,
+   "id": "mission:Successors: Unified Defense|\t\"I apologize for the transgression. I won't do it again.\"|424|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 424,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "\t\"I apologize for the transgression. I won't do it again.\"",
+   "italian": "\t\"Chiedo scusa per la trasgressione. Non lo farò più.\"",
+   "ratio": 0.931
+  },
+  {
+   "idx": 7,
+   "id": "mission:Successors: Unified Defense|\t\"They deserved it.\"|426|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 426,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "\t\"They deserved it.\"",
+   "italian": "\t\"Se lo meritavano.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "mission:Successors: Unified Defense|Shortly after landing here, you receive a long-range transmission from the Successors. Though you can't make sense of any of the words, you get the distinct impression that they are angry at you.|431|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 431,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "Shortly after landing here, you receive a long-range transmission from the Successors. Though you can't make sense of any of the words, you get the distinct impression that they are angry at you.",
+   "italian": "Poco dopo l'atterraggio ricevi una trasmissione a lungo raggio dai Successori. Anche se non riesci a dare un senso a nessuna delle parole, hai la netta impressione che siano arrabbiati con te.",
+   "ratio": 0.985
+  },
+  {
+   "idx": 9,
+   "id": "mission:Successors: Unified Defense|label|433|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 433,
+   "kind": "UI_LABEL",
+   "context": "mission:Successors: Unified Defense",
+   "english": "uninhabited language",
+   "italian": "uninhabited language",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "mission:Successors: Unified Defense|Shortly after landing here, you receive a long-range transmission from the Successors. \"Thy recent actions against our people make it very clear that we were unwise to permit thee access to our space. The Houses have decreed in council that thou art an enemy, and thou shalt be treated accordingly hereforth.\"|434|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 434,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "Shortly after landing here, you receive a long-range transmission from the Successors. \"Thy recent actions against our people make it very clear that we were unwise to permit thee access to our space. The Houses have decreed in council that thou art an enemy, and thou shalt be treated accordingly hereforth.\"",
+   "italian": "Poco dopo l'atterraggio ricevi una trasmissione a lungo raggio dai Successori. \"Le tue recenti azioni contro il nostro popolo rendono molto chiaro che è stato imprudente permetterti l'accesso al nostro spazio. Le Casate hanno decretato in consiglio che sei un nemico, e da ora in poi sarai trattato come tale.\"",
+   "ratio": 1.003
+  },
+  {
+   "idx": 11,
+   "id": "mission:Successors: Unified Defense|\t\"It was an accident!\"|436|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 436,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "\t\"It was an accident!\"",
+   "italian": "\t\"È stato un incidente!\"",
+   "ratio": 1.091
+  },
+  {
+   "idx": 12,
+   "id": "mission:Successors: Unified Defense|\t\"I apologize for the transgression. I won't do it again.\"|438|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 438,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "\t\"I apologize for the transgression. I won't do it again.\"",
+   "italian": "\t\"Chiedo scusa per la trasgressione. Non lo farò più.\"",
+   "ratio": 0.931
+  },
+  {
+   "idx": 13,
+   "id": "mission:Successors: Unified Defense|\t\"They deserved it.\"|440|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 440,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "\t\"They deserved it.\"",
+   "italian": "\t\"Se lo meritavano.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "mission:Successors: Unified Defense|\tSpots of flaming orange appear over the Successor's skin. \"Any creature prone to such 'accidents' has no place among our worlds.\" They end the transmission there.|443|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 443,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "\tSpots of flaming orange appear over the Successor's skin. \"Any creature prone to such 'accidents' has no place among our worlds.\" They end the transmission there.",
+   "italian": "\tMacchie di arancione fiammeggiante compaiono sulla pelle del Successore. \"Qualunque creatura incline a simili 'incidenti' non ha posto fra i nostri mondi.\" Chiudono lì la trasmissione.",
+   "ratio": 1.135
+  },
+  {
+   "idx": 15,
+   "id": "mission:Successors: Unified Defense|label|445|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 445,
+   "kind": "UI_LABEL",
+   "context": "mission:Successors: Unified Defense",
+   "english": "never again",
+   "italian": "never again",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "mission:Successors: Unified Defense|\tThe Successor flashes a dark red. \"Our fleets will make sure of it.\" They end the transmission there.|446|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 446,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "\tThe Successor flashes a dark red. \"Our fleets will make sure of it.\" They end the transmission there.",
+   "italian": "\tIl Successore lampeggia di un rosso scuro. \"Le nostre flotte se ne assicureranno.\" Chiudono lì la trasmissione.",
+   "ratio": 1.098
+  },
+  {
+   "idx": 17,
+   "id": "mission:Successors: Unified Defense|label|448|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 448,
+   "kind": "UI_LABEL",
+   "context": "mission:Successors: Unified Defense",
+   "english": "deserved it",
+   "italian": "deserved it",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "mission:Successors: Unified Defense|\tA wave of bristling black runs over the Successor's body before they end the transmission.|449|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 449,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "\tA wave of bristling black runs over the Successor's body before they end the transmission.",
+   "italian": "\tUn'onda di nero irto corre sul corpo del Successore prima che chiudano la trasmissione.",
+   "ratio": 0.967
+  },
+  {
+   "idx": 19,
+   "id": "mission:Successors: Unified Defense|\tYour landing permission is revoked and the contingent of officers train their weapons on your ship. As several interceptors begin to hover over your landing pad, weapons ready, you are forced to take off.|453|0",
+   "path": "data/successors/successor side missions.txt",
+   "line": 453,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Unified Defense",
+   "english": "\tYour landing permission is revoked and the contingent of officers train their weapons on your ship. As several interceptors begin to hover over your landing pad, weapons ready, you are forced to take off.",
+   "italian": "\tIl tuo permesso di atterraggio viene revocato e il contingente di ufficiali punta le armi sulla nave. Mentre diversi intercettori cominciano a librarsi sopra la tua piazzola, con le armi pronte, sei costretto a decollare.",
+   "ratio": 1.083
+  }
+ ]
+}

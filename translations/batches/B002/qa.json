@@ -1,0 +1,118 @@
+{
+ "batch": "B002",
+ "at": "2026-10-17T11:28:39Z",
+ "results": 40,
+ "errors": 0,
+ "warnings": 18,
+ "status": "APPROVED",
+ "issues": [
+  {
+   "unit_id": "tip:acceleration:|How quickly this ship gains speed. The higher a ship's mass (including the mass of any cargo or fighters it is carrying), the slower it accelerates.|22|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:active cooling:|Cooling provided per second when running at full strength. Active cooling requires energy, but if your heat level is low it runs at a lower cooling rate and lower energy draw. The amount of cooling is proportional to the temperature of your ship, reaching the full level only if you are about to overheat.|28|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:asteroid scan power:|Allows scanning of asteroids. The range of this asteroid scanner is proportional to the square root of this value.|73|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:atmosphere scan:|This type of scanning cannot be performed by your ship, but this outfit might be useful for certain missions.|76|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:automaton:|A ship with this attribute does not need any crew to operate, even if it has outfits that normally require additional crew. However, you cannot use it as your flagship in this state.|79|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:bunks:|The number of people (passengers or crew) your ship can hold.|82|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:burn protection:|Protection provided against burn damage. Increases by the given factor how much burn damage a ship can withstand before its heat rises as much as an unprotected ship.|85|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:capture attack:|Increases the \"strength\" of one crew member when attacking another ship to capture it. Each crew member can only wield one weapon at a time, but they will use whichever weapons provide the highest power.|100|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:capture defense:|Increases the \"strength\" of one crew member when defending against an attempt to capture this ship. Each crew member can only wield one weapon at a time, but they will use whichever weapons provide the highest power.|103|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:cargo:|Tons of cargo this ship is carrying right now, out of its maximum.|106|0",
+   "code": "GLOSSARY",
+   "severity": "info",
+   "detail": "'ship' -> 'nave' not found"
+  },
+  {
+   "unit_id": "tip:cargo scan power:|Allows scanning of your target ship's cargo. The range of this cargo scanner is proportional to the square root of this value.|112|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:cargo scan speed:|Determines how long it takes to perform a cargo scan. A higher value will correspond to a quicker scan.|115|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:cargo scan efficiency:|The maximum speed of this cargo scanner is proportional to the square root of this value. The observed scan speed will be impacted by multiple factors. Targets which are farther away or have a larger cargo hold will take longer to scan.|118|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:cargo scan opacity:|Increases the time required for other ships to perform a cargo scan of this ship. A value of one has the same influence on the time taken as adding one more ton of cargo space to scan.|121|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:cargo scan opacity:|Increases the time required for other ships to perform a cargo scan of this ship. A value of one has the same influence on the time taken as adding one more ton of cargo space to scan.|121|0",
+   "code": "GLOSSARY",
+   "severity": "info",
+   "detail": "'ton' -> 'tonnellata / tonnellate' not found"
+  },
+  {
+   "unit_id": "tip:cargo space:|Tons of cargo (commodities, mission cargo, and plundered outfits) this ship can carry.|124|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:cloak by mass:|This outfit allows your ship to cloak. The value represents how long it takes to fully activate or deactivate cloaking for a ship with 1000 mass. The higher a ship's mass, the slower the cloak works, the lower its mass, the faster the cloak works. Ships cannot fire while cloaked, except if they have the related \"cloaked firing\" attribute.|133|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  },
+  {
+   "unit_id": "tip:cloaking energy:|Energy consumed per second when cloaked.|136|0",
+   "code": "NON_ASCII",
+   "severity": "warning",
+   "detail": "accented characters need the extended font atlas (audit IT-002)"
+  }
+ ]
+}

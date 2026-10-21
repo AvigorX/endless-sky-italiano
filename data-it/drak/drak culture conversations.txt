@@ -1,0 +1,140 @@
+# Copyright (c) 2025 by Arachi-Lover
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Drak Revelations: Arachi"
+	entering
+	invisible
+	source
+		system "Flugbu"
+	destination "Earth"
+	to offer
+		has "drak revelations: arachi"
+		has "entered system by: takeoff"
+	on offer
+		clear "drak revelations: arachi"
+		conversation
+			`Mentre la <ship> sale attraverso l'ultimo strato di nuvole, ti sorprendi a scoprirti del tutto fuori dalla nave, sottoterra.`
+			`	Piccoli fori lasciano penetrare solo una quantità minima di luce nel complesso di tunnel angusti, e non basta a illuminare le forme delle varie creature che vi si nascondono. Da quel poco che riesci a vedere, sembrano stringersi insieme, tremare, acquattarsi.`
+			`	Sopra la testa si svolge una marcia continua, che fa rimbombare i tunnel. Alcune delle creature meno timide ti passano accanto di corsa, con pesanti piastre di corazza che coprono del tutto il corpo e le numerose zampe. Scavano verso l'alto e si lanciano contro il primo oggetto color oro pallido che giunge in vista, facendo cadere il gigante.`
+			`	Non ne rivedrai più nessuno, mentre altre creature continuano a spingersi e a riversarsi fuori dal foro, dirigendosi in ogni direzione. Alcune si fermano solo un istante a parlare con quelli che si nascondono, prima di risalire.`
+			`	Durante una di queste ondate tutti i fori si riempiono per il solo numero di creature, e tutto diventa buio. Quando la luce torna, vedi di aver appena finito di uscire dall'atmosfera.`
+				decline
+
+
+mission "Drak Revelations: Hai"
+	landing
+	minor
+	invisible
+	source "Darkwaste"
+	to offer
+		"flagship model" == "Anomalocaris"
+	on offer
+		conversation
+			`Scendi dalla <ship> e cominci a esplorare ciò che ti circonda. Trovi una piccola pozzanghera vicino al bordo della scogliera dove sei atterrato e la guardi per un momento.`
+			`	Quando ti accorgi che non riesci più a distogliere lo sguardo, nella pozzanghera sembrano formarsi piccoli cumuli di terra, e la pozzanghera sembra diventare molto più profonda. Noti minuscoli vascelli che si spostano da una delle "isole" all'altra.`
+			`	Le navi si spargono lontano, e l'arcipelago comincia a brulicare di attività. Ma le onde e la luce del sole si fanno più aspre, e presto il calore intenso comincia a bruciare le isole e le navi e a far bollire i mari. Le onde diventano sempre più alte, inghiottono intere navi e isole e tentano di allungarsi per spegnere il sole.`
+			`	Quando i mari finalmente si calmano e il sole tramonta, tutte le isole giacciono in rovina, se pure esistono ancora, e restano pochissime navi a viaggiare fra l'una e l'altra.`
+			`	Batti le palpebre e vedi che la pozzanghera è tornata normale.`
+				decline
+
+
+mission "Drak Revelations Setup: Humanity"
+	landing
+	invisible
+	non-blocking
+	source "Jupiter"
+	to offer
+		has "chosen sides"
+		not "main plot completed"
+	on offer
+		set "drak revelations: humanity"
+		fail
+
+
+mission "Drak Revelations: Humanity"
+	landing
+	minor
+	invisible
+	source "Earth"
+	to offer
+		has "drak revelations: humanity"
+	on offer
+		clear "drak revelations: humanity"
+		conversation
+			`Al calare della notte la <ship> atterra su <origin> e, dopo aver sovrinteso alle procedure di rifornimento e completato i controlli di integrità della nave, ti ritiri nei tuoi alloggi per riposare.`
+			`	Mentre ti assopisco, una luce tenue bussa ai confini della tua vista, avvolgendosi attorno a bordi che non riesci bene a identificare. Tutt'intorno delle sbarre salgono verso l'alto e si collegano a strutture di sostegno, come una culla. La piattaforma sembra ruotare lentamente nel buio.`
+			`	All'improvviso un enorme masso precipita verso di te, sul punto di fracassare la culla, quando la luce lampeggia intensa. Il masso svanisce.`
+			`	La culla ruota di nuovo. Il buio è travolto da fiamme rosso sangue che rodono i bordi della culla, ma proprio quando il legno comincia a crepitare e a scricchiolare, la luce pulsa ancora una volta attorno al tuo sguardo, e le fiamme stesse cominciano a consumarsi.`
+			`	Per molto tempo c'è solo buio. E poi c'è una battaglia: entità senza forma che si scontrano fra loro tutt'intorno alla culla, ignorandola con una sprezzante indifferenza. Questa volta la luce erompe tutt'intorno a te e i tuoi occhi sono costretti a chiudersi.`
+			`	Li riapri e ti ritrovi sdraiato nel tuo letto.`
+				decline
+
+
+mission "Drak Revelations: Korath"
+	entering
+	invisible
+	source
+		system "Mesuket"
+	destination "Earth"
+	to offer
+		has "Efreti: Distress Call 7: done"
+	on offer
+		conversation
+			`Proprio mentre la tua nave raggiunge <origin>, batti le palpebre e non sei più nell'abitacolo.`
+			`	Su un altopiano roccioso, ghiaia e sabbia fanno da base a strutture che stanno costruendo figure massicce e vagamente umanoidi, fatte di terra e ruggine. Una luce forte scende dall'alto e illumina la zona.`
+			`	Hai la sensazione che il tempo scorra in fretta. Col passare dei mesi e degli anni le creature costruiscono torri sempre più alte e imponenti, sollevandosi e al tempo stesso chiudendo fuori la luce a poco a poco. Alla fine l'intero altopiano fa da basamento a una grande torre a cupola.`
+			`	La luce filtra debolmente da crepe e fessure, ma le creature le richiudono in fretta, e sembrano sibilare alla luce in segno di disapprovazione. Cominciano a riscaldarsi e a brillare, sempre più calde, finché si liberano dei loro gusci sporchi e assumono forme di bronzo lucente e incandescente.`
+			`	Le creature se ne stanno fiere e salde nelle loro nuove forme, ma i loro corpi continuano a riscaldarsi: il bronzo si fonde e le loro torri cominciano a sgretolarsi e a deformarsi per il calore intenso, finché l'intera cupola crolla.`
+			`	Riapri gli occhi e sei di nuovo nell'abitacolo della <ship>.`
+				decline
+
+
+mission "Drak Revelations: Quarg"
+	entering
+	invisible
+	source
+		system "Terra Incognita"
+	destination "Earth"
+	to offer
+		or
+			has "FW Pug 3: Quarg: done"
+			has "FWC Pug 4B: Quarg: done"
+		has "Ruin: Landing: offered"
+		not "entered system by: takeoff"
+	on offer
+		conversation
+			`Nell'istante in cui la nave conclude il suo salto, le luci dell'abitacolo cominciano a spegnersi una dopo l'altra, finché tutto diventa buio.`
+			`	All'inizio vedi solo terreno brullo e umido, appena illuminato da una luce fioca e lontana che viene dall'alto. Una nebbia fitta risale dalle crepe del suolo e in lontananza riesci a malapena a distinguere il fragore ripetuto delle onde.`
+			`	Un gigante scarno color oro pallido fende la nebbia in preda a un accesso furioso, percuotendo il suolo mentre ulula e cerca di scacciare a schiaffi e calci l'acqua da terra, invano. La luce tremola e si attenua insieme ai suoi colpi e al suo pianto.`
+			`	Quando lampeggia appena abbastanza, riesci a distinguere le tombe. Tutt'intorno a te sembrano estendersi senza fine verso l'orizzonte, in ogni direzione. Il gigante non tocca né sporca mai le tombe e, nei suoi brevi momenti di tregua, sembra a malapena riuscire a guardarle prima di infuriarsi di nuovo.`
+			`	La luce si spegne e non vedi più nulla. Le luci della nave si riaccendono e ti ritrovi nell'abitacolo.`
+				decline
+
+
+mission "Drak Revelations: Saryds"
+	landing
+	minor
+	invisible
+	source "Chosen Nexus"
+	to offer
+		has "drak revelations: saryds"
+	on offer
+		clear "drak revelations: saryds"
+		conversation
+			`Atterrando su <origin>, ti alzi per uscire dall'abitacolo e cominciare i controlli successivi all'atterraggio. Quando apri la porta, non trovi il corridoio principale della <ship>, ma una radura illuminata dal sole. Guardandoti indietro, anche il tuo abitacolo sembra essere stato sostituito da una foresta.`
+			`	Grandi cervi d'acciaio riposano al centro della radura e si alzano, curiosi e allarmati, mentre un piccolo gruppo di grandi giganti color oro pallido si avvicina. I giganti allungano le braccia con delicatezza e uno dopo l'altro i cervi passano dall'acciaio opaco a un argento splendente. Scende la notte.`
+			`	Il giorno dopo la luce del sole torna debolmente. Oltre il margine della foresta vedi i giganti inseguire piccoli animali e rinchiuderli in piccole gabbie. I cervi si radunano di nuovo nella radura, e sembrano discutere di che cosa fare della guerra là fuori. Il sole tramonta di nuovo.`
+			`	Poi la scena si sposta nei campi appena fuori dalla foresta, ora illuminati solo dai fulmini abbondanti di un temporale furioso che ha avvolto tutto. Cervi e giganti giacciono morti al suolo, con ferite brutali inferte a entrambe le parti. Restano pochi cervi, che avanzano in lutto sulla terra cosparsa di cadaveri. Con lo sguardo basso, guardano le gabbie in frantumi.`
+			`	La scena si dissolve così come si era manifestata, e ti ritrovi in piedi davanti alla porta del tuo abitacolo.`
+				decline
+

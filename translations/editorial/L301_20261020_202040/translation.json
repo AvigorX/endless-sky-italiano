@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/remnant/remnant ships.txt",
+  "line_from": 17,
+  "line_to": 806,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Albatross|plural|17|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 17,
+   "kind": "VALUE",
+   "context": "ship:Albatross",
+   "english": "Albatrosses",
+   "italian": "Albatrosses",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Albatross|description|88|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 88,
+   "kind": "DESCRIPTION",
+   "context": "ship:Albatross",
+   "english": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space.",
+   "italian": "Una volta lasciato lo spazio umano, ai Remnant fu chiaro che avrebbero dovuto costruirsi i propri cantieri per difendersi se fossero stati scoperti dagli Alphas o da qualche altra fazione ostile. Con i nuovi materiali compositi che avevano scoperto, costruirono navi molto diverse da tutto ciò che si era visto nello spazio umano.",
+   "ratio": 0.997
+  },
+  {
+   "idx": 3,
+   "id": "ship:Modified Dromedary|plural|274|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 274,
+   "kind": "VALUE",
+   "context": "ship:Modified Dromedary",
+   "english": "Modified Dromedaries",
+   "italian": "Modified Dromedaries",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Modified Dromedary|description|350|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 350,
+   "kind": "DESCRIPTION",
+   "context": "ship:Modified Dromedary",
+   "english": "The Tycho Crater Cooperative's Dromedary was one of the foremost colonization ships during the early era before piracy became rampant and triggered the necessity for city-ships to be more combat-oriented. These ships incorporate extensive hydroponics, large construction equipment installations, and hundreds of densely packed \"dream cells\" built to transport people in bulk.",
+   "italian": "Il Dromedary della Tycho Crater Cooperative fu una delle prime navi da colonizzazione dell'era iniziale, prima che la pirateria dilagasse e rendesse necessario orientare le navi-città al combattimento. Queste navi integrano estese serre idroponiche, grandi impianti per macchinari da costruzione e centinaia di \"celle del sogno\" stipate una sull'altra, costruite per trasportare persone in massa.",
+   "ratio": 1.056
+  },
+  {
+   "idx": 5,
+   "id": "ship:Modified Dromedary|description|351|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 351,
+   "kind": "DESCRIPTION",
+   "context": "ship:Modified Dromedary",
+   "english": "\tSince the Remnant do not have schematics for the Dromedary, just the highly-modified example of the Shattered Light, this ship is actually a commemorative replica of that specific ship. As such, it combines the original's odd mix of eclectic modifications with new Remnant systems.",
+   "italian": "\tPoiché i Remnant non hanno i progetti del Dromedary, ma solo l'esemplare fortemente modificato della Shattered Light, questa nave è in realtà una replica commemorativa di quella nave specifica. Come tale, unisce il bizzarro insieme di modifiche eterogenee dell'originale ai nuovi sistemi Remnant.",
+   "ratio": 1.053
+  },
+  {
+   "idx": 6,
+   "id": "ship:Modified Dromedary|description|352|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 352,
+   "kind": "DESCRIPTION",
+   "context": "ship:Modified Dromedary",
+   "english": "\tUnfortunately, since they lack the manufacturing facilities that would normally support a large construction project, it will cost massively more than it would have originally back on Luna.",
+   "italian": "\tPurtroppo, mancando gli impianti produttivi che normalmente sostengono un grande progetto di costruzione, costerà molto più di quanto sarebbe costata all'epoca, sulla Luna.",
+   "ratio": 0.911
+  },
+  {
+   "idx": 7,
+   "id": "ship:Modified Dromedary|description|474|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 474,
+   "kind": "DESCRIPTION",
+   "context": "ship:Modified Dromedary",
+   "english": "The Tycho Crater Cooperative's Dromedary was one of the foremost colonization ships during the early era before piracy became rampant and triggered the necessity for city-ships to be more combat-oriented. These ships incorporate extensive hydroponics, large construction equipment installations, and hundreds of densely packed \"dream cells\" built to transport people in bulk.",
+   "italian": "Il Dromedary della Tycho Crater Cooperative fu una delle prime navi da colonizzazione dell'era iniziale, prima che la pirateria dilagasse e rendesse necessario orientare le navi-città al combattimento. Queste navi integrano estese serre idroponiche, grandi impianti per macchinari da costruzione e centinaia di \"celle del sogno\" stipate una sull'altra, costruite per trasportare persone in massa.",
+   "ratio": 1.056
+  },
+  {
+   "idx": 8,
+   "id": "ship:Modified Dromedary|description|475|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 475,
+   "kind": "DESCRIPTION",
+   "context": "ship:Modified Dromedary",
+   "english": "\tThis is a wreck. A ship that once might have held hundreds of people has no functional environmental system, the once verdant hydroponics domes are shattered, and much of the ship appears to be destroyed. Burns, strange scrapes, and twists to structural elements abound. Only a smattering of droids persistently continuing their work manage to maintain any degree of functionality.",
+   "italian": "\tQuesto è un relitto. Una nave che un tempo può aver ospitato centinaia di persone non ha più un impianto di sostentamento funzionante, le cupole idroponiche un tempo verdeggianti sono in frantumi e buona parte della nave sembra distrutta. Bruciature, strani graffi e deformazioni degli elementi strutturali sono ovunque. Solo una manciata di droidi che continuano ostinatamente il loro lavoro riesce a mantenere un qualche grado di funzionalità.",
+   "ratio": 1.168
+  },
+  {
+   "idx": 9,
+   "id": "ship:Gull|description|547|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 547,
+   "kind": "DESCRIPTION",
+   "context": "ship:Gull",
+   "english": "While the Starling was the first successful ship to use technology derived from alien ruins, the Gull is the most recent. The current increase in Korath activities has caused foraging for resources to become a risky endeavor, forcing the Remnant to develop a specialized freighter for hauling cargo from remote sites without revealing their presence to hostile aliens.",
+   "italian": "Se la Starling è stata la prima nave di successo a usare tecnologia derivata da rovine aliene, la Gull è la più recente. L'attuale aumento delle attività Korath ha reso la raccolta di risorse un'impresa rischiosa, costringendo i Remnant a sviluppare un mercantile specializzato per trasportare carichi da siti remoti senza rivelare la propria presenza ad alieni ostili.",
+   "ratio": 1.003
+  },
+  {
+   "idx": 10,
+   "id": "ship:Gull|description|548|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 548,
+   "kind": "DESCRIPTION",
+   "context": "ship:Gull",
+   "english": "\tThe Gull has quickly proven its worth, allowing the Starling fleets to return to riskier activities while the Gull takes over the hazardous convoy routes. It is now the primary element of the Remnant's extra-territorial resource operations.",
+   "italian": "\tLa Gull ha dimostrato in fretta il proprio valore, permettendo alle flotte di Starling di tornare ad attività più rischiose mentre la Gull si assume le rotte pericolose dei convogli. Oggi è l'elemento principale delle operazioni di approvvigionamento extraterritoriali dei Remnant.",
+   "ratio": 1.17
+  },
+  {
+   "idx": 11,
+   "id": "ship:Gull|description|549|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 549,
+   "kind": "DESCRIPTION",
+   "context": "ship:Gull",
+   "english": "\tThe cloaking technology is built into the Gull's hull; it cannot be removed or transferred to another ship.",
+   "italian": "\tLa tecnologia di occultamento è incorporata nello scafo della Gull; non può essere rimossa né trasferita a un'altra nave.",
+   "ratio": 1.13
+  },
+  {
+   "idx": 12,
+   "id": "ship:Heron|description|806|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 806,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heron",
+   "english": "The Heron is the Remnant's ultimate last resort: Flight. These mobile starports are built to serve as the core elements of evacuation fleets when the Remnant are ultimately pushed to the brink of destruction in their home systems. These massive ships are capable of lifting enormous amounts of resources and operate both in space and on land, and are continuously updated to make full use of the latest technological innovations.",
+   "italian": "La Heron è l'ultima risorsa dei Remnant: la fuga. Questi spazioporti mobili sono costruiti per essere il nucleo delle flotte di evacuazione, quando i Remnant saranno infine spinti sull'orlo della distruzione nei loro sistemi d'origine. Navi enormi, capaci di sollevare quantità immense di risorse e di operare sia nello spazio sia sulla terraferma, vengono aggiornate di continuo per sfruttare appieno le più recenti innovazioni tecnologiche.",
+   "ratio": 1.03
+  }
+ ]
+}

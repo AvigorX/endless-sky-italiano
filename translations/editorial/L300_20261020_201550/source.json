@@ -1,0 +1,76 @@
+{
+ "block": {
+  "path": "data/coalition/coalition outfits.txt",
+  "line_from": 516,
+  "line_to": 533,
+  "units": 5
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Coalition License|description|516|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 516,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Coalition License",
+   "english": "A digital chip in the form of a stylized badge, this document signifies the permission of the owner to browse, employ and deal in transactions involving civilian Coalition technology.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"A digital chip in the form of a stylized badge, this document signifies the permission of the owner to browse, employ and deal in transactions involving civilian Coalition technology.\"",
+   "english_hash": "b3d2292ee1bd75e8"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Coalition License|description|517|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 517,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Coalition License",
+   "english": "\tThere is a history of controversy surrounding this license, as throughout the millennia several Heliarch laws have been in a back and forth regarding the conditions that need to be met for someone to obtain a license. This argument started with the third Civil Goods and Fares Act, created just a few decades after the War of Independence. It has continued all the way to the relatively recent twenty-sixth addendum to the second article of the Ninth Rectification on Commerce and Traffic, passed two hundred years ago, which made the acquisition requirements much more flexible.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tThere is a history of controversy surrounding this license, as throughout the millennia several Heliarch laws have been in a back and forth regarding the conditions that need to be met for someone to obtain a license. This argument started with the third Civil Goods and Fares Act, created just a few decades after the War of Independence. It has continued all the way to the relatively recent twenty-sixth addendum to the second article of the Ninth Rectification on Commerce and Traffic, passed two hundred years ago, which made the acquisition requirements much more flexible.\"",
+   "english_hash": "17230e7397163b4e"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Heliarch License|description|524|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 524,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Heliarch License",
+   "english": "An ornate circlet of gold and platinum, it serves as both a symbol of rank and as a license to access exclusive Heliarch facilities. Custom-made to fit a human's head, it's surprisingly light and comfortable.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"An ornate circlet of gold and platinum, it serves as both a symbol of rank and as a license to access exclusive Heliarch facilities. Custom-made to fit a human's head, it's surprisingly light and comfortable.\"",
+   "english_hash": "c5b3c6e903a92d11"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Beyond the Hyperdrive|description|532|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 532,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Beyond the Hyperdrive",
+   "english": "A book gifted to you by Anna Fangvin, a struggling author who found success in Coalition space. It is a signed copy.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"A book gifted to you by Anna Fangvin, a struggling author who found success in Coalition space. It is a signed copy.\"",
+   "english_hash": "752326425330a5c1"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Beyond the Hyperdrive|description|533|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 533,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Beyond the Hyperdrive",
+   "english": "\tThe story follows a human captain who steals a jump drive from the Quarg and travels beyond the hyperlanes, learning new things about the aliens of the galaxy.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tThe story follows a human captain who steals a jump drive from the Quarg and travels beyond the hyperlanes, learning new things about the aliens of the galaxy.\"",
+   "english_hash": "e7229b5c611fe9de"
+  }
+ ]
+}

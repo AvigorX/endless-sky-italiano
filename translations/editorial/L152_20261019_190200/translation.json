@@ -1,0 +1,242 @@
+{
+ "block": {
+  "path": "data/coalition/coalition jobs.txt",
+  "line_from": 1191,
+  "line_to": 1359,
+  "units": 21
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "phrase:coalition games dialog|The passengers thank you for bringing them to <planet> and pay you <payment>.|1191|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1191,
+   "kind": "TEXT",
+   "context": "phrase:coalition games dialog",
+   "english": "The passengers thank you for bringing them to <planet> and pay you <payment>.",
+   "italian": "I passeggeri ti ringraziano per averli portati su <planet> e ti pagano <payment>.",
+   "ratio": 1.052
+  },
+  {
+   "idx": 2,
+   "id": "mission:Coalition: To Games 1|name|1196|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1196,
+   "kind": "VALUE",
+   "context": "mission:Coalition: To Games 1",
+   "english": "Spectators to <planet>",
+   "italian": "Spettatori per <planet>",
+   "ratio": 1.045
+  },
+  {
+   "idx": 3,
+   "id": "mission:Coalition: To Games 1|description|1197|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1197,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: To Games 1",
+   "english": "These <bunks> passengers will pay <payment> for transportation to <planet> in time for the Coalition Games (by <date>).",
+   "italian": "Questi <bunks> passeggeri ti pagheranno <payment> per essere trasportati su <planet> in tempo per i Giochi della Coalizione (entro il <date>).",
+   "ratio": 1.193
+  },
+  {
+   "idx": 4,
+   "id": "mission:Coalition: To Games 2|name|1219|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1219,
+   "kind": "VALUE",
+   "context": "mission:Coalition: To Games 2",
+   "english": "Spectators to <planet>",
+   "italian": "Spettatori per <planet>",
+   "ratio": 1.045
+  },
+  {
+   "idx": 5,
+   "id": "mission:Coalition: To Games 2|description|1220|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1220,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: To Games 2",
+   "english": "These <bunks> passengers will pay <payment> for transportation to <planet> in time for the Coalition Games (by <date>).",
+   "italian": "Questi <bunks> passeggeri ti pagheranno <payment> per essere trasportati su <planet> in tempo per i Giochi della Coalizione (entro il <date>).",
+   "ratio": 1.193
+  },
+  {
+   "idx": 6,
+   "id": "mission:Coalition: To Games 3|name|1242|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1242,
+   "kind": "VALUE",
+   "context": "mission:Coalition: To Games 3",
+   "english": "Spectators to <planet>",
+   "italian": "Spettatori per <planet>",
+   "ratio": 1.045
+  },
+  {
+   "idx": 7,
+   "id": "mission:Coalition: To Games 3|description|1243|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1243,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: To Games 3",
+   "english": "These <bunks> passengers will pay <payment> for transportation to <planet> in time for the Coalition Games (by <date>).",
+   "italian": "Questi <bunks> passeggeri ti pagheranno <payment> per essere trasportati su <planet> in tempo per i Giochi della Coalizione (entro il <date>).",
+   "ratio": 1.193
+  },
+  {
+   "idx": 8,
+   "id": "mission:Coalition: From Games 1|name|1266|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1266,
+   "kind": "VALUE",
+   "context": "mission:Coalition: From Games 1",
+   "english": "Passengers to <planet>",
+   "italian": "Passeggeri per <planet>",
+   "ratio": 1.045
+  },
+  {
+   "idx": 9,
+   "id": "mission:Coalition: From Games 1|description|1267|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1267,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: From Games 1",
+   "english": "Transport <bunks> passengers, who were on <origin> for the Coalition Games, back to their home world of <destination>. Payment is <payment>.",
+   "italian": "Trasporta <bunks> passeggeri, che si trovavano su <origin> per i Giochi della Coalizione, sul loro mondo d'origine, <destination>. Il compenso è <payment>.",
+   "ratio": 1.107
+  },
+  {
+   "idx": 10,
+   "id": "mission:Coalition: From Games 2|name|1289|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1289,
+   "kind": "VALUE",
+   "context": "mission:Coalition: From Games 2",
+   "english": "Passengers to <planet>",
+   "italian": "Passeggeri per <planet>",
+   "ratio": 1.045
+  },
+  {
+   "idx": 11,
+   "id": "mission:Coalition: From Games 2|description|1290|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1290,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: From Games 2",
+   "english": "Transport <bunks> passengers, who were on <origin> for the Coalition Games, back to their home world of <destination>. Payment is <payment>.",
+   "italian": "Trasporta <bunks> passeggeri, che si trovavano su <origin> per i Giochi della Coalizione, sul loro mondo d'origine, <destination>. Il compenso è <payment>.",
+   "ratio": 1.107
+  },
+  {
+   "idx": 12,
+   "id": "mission:Coalition: From Games 3|name|1312|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1312,
+   "kind": "VALUE",
+   "context": "mission:Coalition: From Games 3",
+   "english": "Passengers to <planet>",
+   "italian": "Passeggeri per <planet>",
+   "ratio": 1.045
+  },
+  {
+   "idx": 13,
+   "id": "mission:Coalition: From Games 3|description|1313|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1313,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: From Games 3",
+   "english": "Transport <bunks> passengers, who were on <origin> for the Coalition Games, back to their home world of <destination>. Payment is <payment>.",
+   "italian": "Trasporta <bunks> passeggeri, che si trovavano su <origin> per i Giochi della Coalizione, sul loro mondo d'origine, <destination>. Il compenso è <payment>.",
+   "ratio": 1.107
+  },
+  {
+   "idx": 14,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|name|1335|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1335,
+   "kind": "VALUE",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "Sell Jump Drive",
+   "italian": "Vendi motore di salto",
+   "ratio": 1.4
+  },
+  {
+   "idx": 15,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|description|1337|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1337,
+   "kind": "DESCRIPTION",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "Sell a jump drive to the Heliarchs for <payment>.",
+   "italian": "Vendi un motore di salto agli Heliarch per <payment>.",
+   "ratio": 1.082
+  },
+  {
+   "idx": 16,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|The Heliarchs thank you profusely when they see you've taken them up on their offer, and soon enough several of their ships have landed near your own. Apparently they've learned of your change of mind and are excited to see the exchange, leaving their ships and surrounding yours. Soon enough, they make space for an army of engineers to come and remove the spare jump drive from your ship. Still watching the scene, only now in formations, the Heliarch agents whisper among themselves, rarely shifting their eyes, as if looking at a spectacle.|1346|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1346,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "The Heliarchs thank you profusely when they see you've taken them up on their offer, and soon enough several of their ships have landed near your own. Apparently they've learned of your change of mind and are excited to see the exchange, leaving their ships and surrounding yours. Soon enough, they make space for an army of engineers to come and remove the spare jump drive from your ship. Still watching the scene, only now in formations, the Heliarch agents whisper among themselves, rarely shifting their eyes, as if looking at a spectacle.",
+   "italian": "Gli Heliarch ti ringraziano profusamente quando vedono che hai accettato la loro offerta, e ben presto diverse loro navi sono atterrate accanto alla tua. A quanto pare hanno saputo che hai cambiato idea e sono ansiosi di assistere allo scambio: lasciano le navi e circondano la tua. Ben presto fanno spazio a un esercito di ingegneri che vengono a rimuovere il motore di salto di riserva dalla tua nave. Sempre a guardare la scena, ora però in formazioni, gli agenti Heliarch sussurrano fra loro, spostando di rado lo sguardo, come se assistessero a uno spettacolo.",
+   "ratio": 1.039
+  },
+  {
+   "idx": 17,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|\tOnce the drive is out of your ship, it is secured in an excessively reinforced container and transported to a restricted section of the ring, under the guard of hundreds of armed soldiers. One of the Heliarchs who seem to be in charge of the procedure, an Arach, personally comes to you, thanking you again and handing you <payment>. \"Honor us you do with such generosity, Captain. Though made great progress in studying jump drives and their mechanisms, we have, still incapable of creating our own, we are, and means of acquiring new copies we have not. Tremendously valuable, each and every drive you could bring us is. If interested in selling any more jump drives, you are, continue to offer you such jobs, we will.\"|1347|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1347,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "\tOnce the drive is out of your ship, it is secured in an excessively reinforced container and transported to a restricted section of the ring, under the guard of hundreds of armed soldiers. One of the Heliarchs who seem to be in charge of the procedure, an Arach, personally comes to you, thanking you again and handing you <payment>. \"Honor us you do with such generosity, Captain. Though made great progress in studying jump drives and their mechanisms, we have, still incapable of creating our own, we are, and means of acquiring new copies we have not. Tremendously valuable, each and every drive you could bring us is. If interested in selling any more jump drives, you are, continue to offer you such jobs, we will.\"",
+   "italian": "\tAppena il motore è fuori dalla nave, viene sistemato in un contenitore eccessivamente rinforzato e trasportato in una sezione riservata dell'anello, sotto la scorta di centinaia di soldati armati. Uno degli Heliarch che sembrano dirigere la procedura, un Arach, viene personalmente da te, ringraziandoti ancora e consegnandoti <payment>. \"Ci onori con tanta generosità, capitano. Sebbene grandi progressi nello studio dei motori di salto e dei loro meccanismi abbiamo fatto, ancora incapaci di crearne uno nostro siamo, e mezzi per procurarcene nuove copie non abbiamo. Enormemente prezioso è ogni singolo motore che potresti portarci. Se interessato a vendere altri motori di salto sei, continueremo a offrirti lavori simili.\"",
+   "ratio": 1.008
+  },
+  {
+   "idx": 18,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|\tShe thanks you yet again, salutes, and leaves to follow the entourage guarding the newly purchased jump drive.|1350|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1350,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "\tShe thanks you yet again, salutes, and leaves to follow the entourage guarding the newly purchased jump drive.",
+   "italian": "\tTi ringrazia ancora una volta, fa il saluto e si allontana per seguire il corteo che scorta il motore di salto appena acquistato.",
+   "ratio": 1.171
+  },
+  {
+   "idx": 19,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|log|1357|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1357,
+   "kind": "LOGBOOK",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "Sold a jump drive to the Heliarchs and received permission to purchase Coalition civilian technology and ships.",
+   "italian": "Ho venduto un motore di salto agli Heliarch e ho ricevuto il permesso di acquistare tecnologia e navi civili della Coalizione.",
+   "ratio": 1.135
+  },
+  {
+   "idx": 20,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|log|1358|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1358,
+   "kind": "LOGBOOK",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "Saryds are an alien species who look suspiciously similar to the centaurs found in early human mythology. They prefer to live on worlds with as much green space as possible, and even their major cities are full of parks and gardens. Most Saryds live in small communes with up to a few dozen of them per house.",
+   "italian": "I Saryd sono una specie aliena che somiglia in modo sospetto ai centauri della mitologia umana delle origini. Preferiscono vivere su mondi con quanta più vegetazione possibile, e perfino le loro grandi città sono piene di parchi e giardini. La maggior parte dei Saryd vive in piccole comunità, con al massimo qualche decina di individui per casa.",
+   "ratio": 1.12
+  },
+  {
+   "idx": 21,
+   "id": "mission:Heliarchs Buy Jump Drive Job 1|log|1359|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 1359,
+   "kind": "LOGBOOK",
+   "context": "mission:Heliarchs Buy Jump Drive Job 1",
+   "english": "The Kimek are large insectoid aliens, and are members of the Coalition. They discovered spaceflight after the Saryds, but before the Arachi. They are intensely social creatures, preferring to live together in massive buildings with thousands of inhabitants, and many of their worlds have populations in the tens of billions, far more than any human world.",
+   "italian": "I Kimek sono grandi alieni insettoidi e fanno parte della Coalizione. Hanno scoperto il volo spaziale dopo i Saryd, ma prima degli Arachi. Sono creature intensamente sociali, che preferiscono vivere insieme in edifici enormi con migliaia di abitanti, e molti dei loro mondi hanno popolazioni nell'ordine delle decine di miliardi, molto più di qualunque mondo umano.",
+   "ratio": 1.028
+  }
+ ]
+}

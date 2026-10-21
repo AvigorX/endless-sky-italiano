@@ -1,0 +1,110 @@
+{
+ "block": {
+  "path": "data/gegno/gegno ships.txt",
+  "line_from": 725,
+  "line_to": 1192,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Rhyolite|description|725|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 725,
+   "kind": "DESCRIPTION",
+   "context": "ship:Rhyolite",
+   "english": "The Rhyolite is a prototype Vi interceptor design constructed by the same shipyard that manufactures the Eclogite and Diorite. Only a few have been produced, and those that exist are currently piloted by a handful of Vi warriors either testing the vessel or owning one privately.",
+   "italian": "Il Rhyolite è un progetto di intercettore Vi allo stato di prototipo, costruito dallo stesso cantiere che produce l'Eclogite e il Diorite. Ne sono stati prodotti solo pochi esemplari, e quelli esistenti sono attualmente pilotati da una manciata di guerrieri Vi che stanno collaudando il vascello o ne possiedono uno privatamente.",
+   "ratio": 1.179
+  },
+  {
+   "idx": 2,
+   "id": "ship:Eclogite|description|776|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 776,
+   "kind": "DESCRIPTION",
+   "context": "ship:Eclogite",
+   "english": "While the style of longer battleship-esque vessels is a Gegno Vi staple, another shipyard rose to the competition for Vi warship designs. The Eclogite is one of the newest designs in the Vi fleet - a gunboat armed to the teeth with cannons, and maneuverability that the Vi's larger ships lack. It plays the role of a hit-and-run vessel, unloading volleys of shells against a target's armor in a rapid maneuver before adjusting its position for another run.",
+   "italian": "Mentre lo stile dei vascelli più lunghi, da nave da battaglia, è un tratto tipico dei Gegno Vi, un altro cantiere è entrato in competizione per i progetti delle navi da guerra Vi. L'Eclogite è uno dei progetti più recenti della flotta Vi: una cannoniera armata fino ai denti di cannoni, con una manovrabilità che le navi più grandi dei Vi non hanno. Svolge il ruolo di vascello mordi-e-fuggi, scaricando salve di proiettili contro la corazzatura del bersaglio con una manovra rapida, prima di aggiustare la posizione per un altro passaggio.",
+   "ratio": 1.184
+  },
+  {
+   "idx": 3,
+   "id": "ship:Diorite|description|832|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 832,
+   "kind": "DESCRIPTION",
+   "context": "ship:Diorite",
+   "english": "Continuing on with the design concept of the Vi's Eclogite, the Diorite is made by a separate shipyard from other larger Vi vessels. It is much more maneuverable than other Vi ships in its class, allowing it to easily keep a bead on other ships its size, and sometimes smaller ones as well.",
+   "italian": "Proseguendo il concetto progettuale dell'Eclogite dei Vi, il Diorite è costruito da un cantiere diverso da quello delle altre navi Vi più grandi. È molto più manovrabile delle altre navi Vi della sua classe, il che gli permette di tenere facilmente la mira su navi della sua dimensione, e a volte anche su quelle più piccole.",
+   "ratio": 1.121
+  },
+  {
+   "idx": 4,
+   "id": "ship:Hornfel|description|917|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 917,
+   "kind": "DESCRIPTION",
+   "context": "ship:Hornfel",
+   "english": "Hornfels are the workhorse of the Gegno Vi's military - decently sized, decently fast, and more than decently armed warships designed for the frontline of operations. Hornfels are also the most configurable ship in the Vi's fleet, lined with many mounting points to support cargo pods, allowing them to provide a secondary transport role for when the Vi require replacement supplies in war. Other variants of Hornfels are instead occasionally found with adjustments to carry a larger armament. This multi-role function is extremely valued and is the reason why the Hornfel is one of the Vi's most popular ships.",
+   "italian": "Gli Hornfel sono la bestia da soma dell'esercito dei Gegno Vi: navi da guerra di dimensioni discrete, discretamente veloci e armate più che discretamente, progettate per il fronte delle operazioni. Gli Hornfel sono anche la nave più configurabile della flotta Vi, rivestita di numerosi punti di attacco per supportare capsule da carico, il che permette loro di svolgere un ruolo di trasporto secondario quando i Vi hanno bisogno di rifornimenti sostitutivi in guerra. Altre varianti degli Hornfel si trovano invece a volte con modifiche per portare un armamento maggiore. Questa funzione multiruolo è estremamente apprezzata ed è il motivo per cui l'Hornfel è una delle navi più diffuse dei Vi.",
+   "ratio": 1.136
+  },
+  {
+   "idx": 5,
+   "id": "ship:Gneiss|plural|983|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 983,
+   "kind": "VALUE",
+   "context": "ship:Gneiss",
+   "english": "Gneiss",
+   "italian": "Gneiss",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Gneiss|description|1061|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1061,
+   "kind": "DESCRIPTION",
+   "context": "ship:Gneiss",
+   "english": "Gneiss battleships are the Gegno Vi's true sword and shield in war. They are slightly older than the Hornfels and Schists, but carry the heaviest armament, bearing three huge mounts dedicated to holding enormous Ballistic Cannons. Gneiss also have extremely strong armor plating, and can take a hefty beating while firing threatening broadsides at the opposing force.",
+   "italian": "Le navi da battaglia Gneiss sono la vera spada e il vero scudo dei Gegno Vi in guerra. Sono un po' più vecchie degli Hornfel e degli Schist, ma portano l'armamento più pesante, con tre enormi supporti dedicati a ospitare giganteschi Ballistic Cannons. I Gneiss hanno anche una corazzatura estremamente robusta, e possono incassare colpi pesanti mentre sparano minacciose bordate contro la forza avversaria.",
+   "ratio": 1.106
+  },
+  {
+   "idx": 7,
+   "id": "ship:Gneiss|description|1062|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1062,
+   "kind": "DESCRIPTION",
+   "context": "ship:Gneiss",
+   "english": "\tUnfortunately, in exchange for huge firepower and defensive armor, they lack speed and maneuverability, even when fitted with the largest engine systems the Vi have to offer.",
+   "italian": "\tPurtroppo, in cambio di una potenza di fuoco enorme e di una corazzatura difensiva, mancano di velocità e manovrabilità, anche quando montano i più grandi sistemi motore che i Vi abbiano da offrire.",
+   "ratio": 1.137
+  },
+  {
+   "idx": 8,
+   "id": "ship:Granulite|description|1149|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1149,
+   "kind": "DESCRIPTION",
+   "context": "ship:Granulite",
+   "english": "Granulites are descendants of the Gegno's early generation ships used to colonize nearby systems before the invention of the hyperdrive. They now carry hundreds of Vi both in and out of war, and huge cargo loads to supply depots. They are not typically used as warships, but can support enough weaponry to threaten most smaller vessels, or fend off larger ships long enough for reinforcements to arrive.",
+   "italian": "I Granulite discendono dalle prime navi generazionali dei Gegno, usate per colonizzare i sistemi vicini prima dell'invenzione dell'iperguida. Oggi trasportano centinaia di Vi, in guerra e fuori, e carichi enormi per rifornire i depositi. Di norma non sono usati come navi da guerra, ma possono montare armamento sufficiente a minacciare la maggior parte dei vascelli più piccoli, o a respingere navi più grandi abbastanza a lungo perché arrivino i rinforzi.",
+   "ratio": 1.134
+  },
+  {
+   "idx": 9,
+   "id": "ship:Halite|description|1192|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1192,
+   "kind": "DESCRIPTION",
+   "context": "ship:Halite",
+   "english": "Halites are a successful experimental test platform designed by the Gegno Scin. They are the Gegno's first fighter-based craft, and the first to equip both early-stage pulse weapon and shield technology; almost half the hull is dedicated to these new developments.",
+   "italian": "Gli Halite sono una piattaforma di prova sperimentale riuscita, progettata dai Gegno Scin. Sono il primo velivolo da combattimento dei Gegno e i primi a montare sia la tecnologia degli impulsi sia quella degli scudi ai loro primi stadi; quasi metà dello scafo è dedicata a questi nuovi sviluppi.",
+   "ratio": 1.117
+  }
+ ]
+}

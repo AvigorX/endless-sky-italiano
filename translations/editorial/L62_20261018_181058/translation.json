@@ -1,0 +1,341 @@
+{
+ "block": {
+  "path": "data/human/culture conversations.txt",
+  "line_from": 555,
+  "line_to": 611,
+  "units": 30
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Scientists at the Pub after a Conference|As you take a break after a long journey and a longer-feeling landing procedure, you notice a group of people enter the pub where you're sitting, streaming in from the conference complex across the street. They vary in age, dress, and accent, but most have an identical badge dangling from a lanyard around their necks. You notice one badge that's been dropped on the floor, reading \"Attendee - 35th Annual Pan-galactic Conference on Interstellar Microbial Genomics and Population Dynamics.\" The group takes their seats at a long table near to you.|566|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 566,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "As you take a break after a long journey and a longer-feeling landing procedure, you notice a group of people enter the pub where you're sitting, streaming in from the conference complex across the street. They vary in age, dress, and accent, but most have an identical badge dangling from a lanyard around their necks. You notice one badge that's been dropped on the floor, reading \"Attendee - 35th Annual Pan-galactic Conference on Interstellar Microbial Genomics and Population Dynamics.\" The group takes their seats at a long table near to you.",
+   "italian": "Mentre ti prendi una pausa dopo un lungo viaggio e una procedura di atterraggio che è sembrata ancora più lunga, noti un gruppo di persone entrare nel pub dove sei seduto, che arriva in fiume dal complesso congressuale dall'altra parte della strada. Differiscono per età, abbigliamento e accento, ma i più hanno un badge identico appeso a un cordoncino al collo. Ne noti uno caduto a terra, che dice \"Partecipante - Trentacinquesimo Congresso Pan-galattico annuale di genomica microbica interstellare e dinamica delle popolazioni\". Il gruppo prende posto a un lungo tavolo vicino a te.",
+   "ratio": 1.068
+  },
+  {
+   "idx": 2,
+   "id": "mission:Scientists at the Pub after a Conference|\t(Order a meal and listen in to their conversation.)|568|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 568,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t(Order a meal and listen in to their conversation.)",
+   "italian": "\t(Ordina un pasto e ascolta la loro conversazione.)",
+   "ratio": 0.981
+  },
+  {
+   "idx": 3,
+   "id": "mission:Scientists at the Pub after a Conference|\t(Find somewhere quieter to relax.)|570|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 570,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t(Find somewhere quieter to relax.)",
+   "italian": "\t(Trova un posto più tranquillo per rilassarti.)",
+   "ratio": 1.371
+  },
+  {
+   "idx": 4,
+   "id": "mission:Scientists at the Pub after a Conference|label|572|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 572,
+   "kind": "UI_LABEL",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "overheard scientists 1",
+   "italian": "overheard scientists 1",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "mission:Scientists at the Pub after a Conference|\tFragments of conversation make their way to you through the din of the pub.|573|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 573,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\tFragments of conversation make their way to you through the din of the pub.",
+   "italian": "\tFrammenti di conversazione ti arrivano attraverso il chiasso del pub.",
+   "ratio": 0.921
+  },
+  {
+   "idx": 6,
+   "id": "mission:Scientists at the Pub after a Conference|\tTwo of the younger attendees are looking a bit nervous. \"I'm so glad to have my presentation over with. I was so worried about having to present on the first day, but now I can finally just relax and actually listen to the other talks!\"|575|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 575,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\tTwo of the younger attendees are looking a bit nervous. \"I'm so glad to have my presentation over with. I was so worried about having to present on the first day, but now I can finally just relax and actually listen to the other talks!\"",
+   "italian": "\tDue dei partecipanti più giovani sembrano un po' nervosi. \"Sono così contento di aver finito la mia presentazione. Ero così preoccupato di dover presentare il primo giorno, ma ora posso finalmente rilassarmi e ascoltare davvero gli altri interventi!\"",
+   "ratio": 1.059
+  },
+  {
+   "idx": 7,
+   "id": "mission:Scientists at the Pub after a Conference|\t\"Oh definitely! I probably shouldn't even be here - I should really be rehearsing... Oh! Waiter, another beer, please!\"|576|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 576,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t\"Oh definitely! I probably shouldn't even be here - I should really be rehearsing... Oh! Waiter, another beer, please!\"",
+   "italian": "\t\"Oh, assolutamente! Io probabilmente non dovrei nemmeno essere qui: dovrei davvero ripassare... Oh! Cameriere, un'altra birra, per favore!\"",
+   "ratio": 1.167
+  },
+  {
+   "idx": 8,
+   "id": "mission:Scientists at the Pub after a Conference|\t\"Got your slide deck ready for tomorrow?\"|577|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 577,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t\"Got your slide deck ready for tomorrow?\"",
+   "italian": "\t\"Hai le slide pronte per domani?\"",
+   "ratio": 0.81
+  },
+  {
+   "idx": 9,
+   "id": "mission:Scientists at the Pub after a Conference|\t\"Yeah, but I'm still terrified. I hate public speaking.\"|578|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 578,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t\"Yeah, but I'm still terrified. I hate public speaking.\"",
+   "italian": "\t\"Sì, ma sono ancora terrorizzato. Odio parlare in pubblico.\"",
+   "ratio": 1.07
+  },
+  {
+   "idx": 10,
+   "id": "mission:Scientists at the Pub after a Conference|\t\"Don't worry, you know more about your particular area of expertise than they do. You'll be fine once you're on stage! And besides, graduate school is one giant exercise in public speaking. Comfort comes with practice.\"|579|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 579,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t\"Don't worry, you know more about your particular area of expertise than they do. You'll be fine once you're on stage! And besides, graduate school is one giant exercise in public speaking. Comfort comes with practice.\"",
+   "italian": "\t\"Non preoccuparti, del tuo specifico campo ne sai più di loro. Andrà bene appena sei sul palco! E poi, il dottorato è un unico grande esercizio di parlare in pubblico. La sicurezza arriva con la pratica.\"",
+   "ratio": 0.932
+  },
+  {
+   "idx": 11,
+   "id": "mission:Scientists at the Pub after a Conference|\tAnother scientist is rolling his eyes after a post-mortem of the day's events. \"Is there some law I don't know about that requires every 'question' to start with 'I guess this isn't so much a question as a comment...'?\"|581|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 581,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\tAnother scientist is rolling his eyes after a post-mortem of the day's events. \"Is there some law I don't know about that requires every 'question' to start with 'I guess this isn't so much a question as a comment...'?\"",
+   "italian": "\tUn altro scienziato alza gli occhi al cielo dopo un'autopsia degli eventi della giornata. \"Esiste qualche legge che non conosco per cui ogni 'domanda' deve cominciare con 'Credo che questa non sia tanto una domanda quanto un commento...'?\"",
+   "ratio": 1.091
+  },
+  {
+   "idx": 12,
+   "id": "mission:Scientists at the Pub after a Conference|\tAn exasperated academic is speaking emphatically to her friend about what you infer to be a presentation they both heard earlier. \"I don't think the nucleotide evidence supports their hypothesis at all! Like, I know the proteomic data could be used to support their conclusion, but they're ignoring synonymous mutations!\"|583|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 583,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\tAn exasperated academic is speaking emphatically to her friend about what you infer to be a presentation they both heard earlier. \"I don't think the nucleotide evidence supports their hypothesis at all! Like, I know the proteomic data could be used to support their conclusion, but they're ignoring synonymous mutations!\"",
+   "italian": "\tUn'accademica esasperata parla con enfasi alla sua amica di quello che deduci essere un intervento che hanno ascoltato entrambe prima. \"Non credo affatto che le prove sui nucleotidi sostengano la loro ipotesi! Cioè, lo so che i dati proteomici potrebbero essere usati per sostenere la loro conclusione, ma stanno ignorando le mutazioni sinonime!\"",
+   "ratio": 1.078
+  },
+  {
+   "idx": 13,
+   "id": "mission:Scientists at the Pub after a Conference|\t(Order another beverage and continue listening.)|585|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 585,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t(Order another beverage and continue listening.)",
+   "italian": "\t(Ordina un'altra bevanda e continua ad ascoltare.)",
+   "ratio": 1.041
+  },
+  {
+   "idx": 14,
+   "id": "mission:Scientists at the Pub after a Conference|\t(Finish my meal and leave.)|587|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 587,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t(Finish my meal and leave.)",
+   "italian": "\t(Finisci il pasto e vattene.)",
+   "ratio": 1.071
+  },
+  {
+   "idx": 15,
+   "id": "mission:Scientists at the Pub after a Conference|label|589|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 589,
+   "kind": "UI_LABEL",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "overheard scientists 2",
+   "italian": "overheard scientists 2",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "mission:Scientists at the Pub after a Conference|\tThe group's conversation grows louder by virtue of both passion for the subject as well as the influence of a few drinks.|590|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 590,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\tThe group's conversation grows louder by virtue of both passion for the subject as well as the influence of a few drinks.",
+   "italian": "\tLa conversazione del gruppo si fa più forte, sia per la passione per l'argomento sia per l'effetto di qualche drink.",
+   "ratio": 0.959
+  },
+  {
+   "idx": 17,
+   "id": "mission:Scientists at the Pub after a Conference|\t\"Look, the analysis might be fine, but if they can't even be bothered to provide the version numbers for their analytical software, then it isn't reproducible and that's an automatic 'reject' from me.\"|591|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 591,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t\"Look, the analysis might be fine, but if they can't even be bothered to provide the version numbers for their analytical software, then it isn't reproducible and that's an automatic 'reject' from me.\"",
+   "italian": "\t\"Guarda, l'analisi può anche essere a posto, ma se non si degnano nemmeno di fornire i numeri di versione del loro software di analisi, allora non è riproducibile e per me è un 'rifiuto' automatico.\"",
+   "ratio": 0.99
+  },
+  {
+   "idx": 18,
+   "id": "mission:Scientists at the Pub after a Conference|\tOne person is looking slightly shell-shocked after considering what might have been. \"Can you believe my computer crashed right before I had to present? Good thing I had backups. Two is one and one is none.\"|593|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 593,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\tOne person is looking slightly shell-shocked after considering what might have been. \"Can you believe my computer crashed right before I had to present? Good thing I had backups. Two is one and one is none.\"",
+   "italian": "\tUna persona sembra un po' scossa dopo aver considerato quello che sarebbe potuto succedere. \"Ci credi che il mio computer si è bloccato proprio prima che dovessi presentare? Meno male che avevo i backup. Due è uno e uno è niente.\"",
+   "ratio": 1.111
+  },
+  {
+   "idx": 19,
+   "id": "mission:Scientists at the Pub after a Conference|\tA group seem to be discussing some other colleagues in the field who are, presumably, not present this evening. \"Singh and Esterhazy are such arrogant jerks. Their work is okay, I guess, but not enough to justify their wannabe rockstar personalities!\"|595|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 595,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\tA group seem to be discussing some other colleagues in the field who are, presumably, not present this evening. \"Singh and Esterhazy are such arrogant jerks. Their work is okay, I guess, but not enough to justify their wannabe rockstar personalities!\"",
+   "italian": "\tUn gruppo sembra discutere di altri colleghi del campo che, presumibilmente, non sono presenti stasera. \"Singh ed Esterhazy sono dei gran presuntuosi. Il loro lavoro è discreto, credo, ma non abbastanza da giustificare le loro personalità da rockstar mancate!\"",
+   "ratio": 1.036
+  },
+  {
+   "idx": 20,
+   "id": "mission:Scientists at the Pub after a Conference|\t\"Sure, but they aren't just arrogant jerks, they're charismatic arrogant jerks. Charisma attracts good grad students to their lab, who produce good papers, who they put their name on. It's a positive feedback loop.\"|596|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 596,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t\"Sure, but they aren't just arrogant jerks, they're charismatic arrogant jerks. Charisma attracts good grad students to their lab, who produce good papers, who they put their name on. It's a positive feedback loop.\"",
+   "italian": "\t\"Certo, ma non sono solo presuntuosi: sono presuntuosi carismatici. Il carisma attira bravi dottorandi nel loro laboratorio, che producono buoni articoli, su cui loro mettono il nome. È un ciclo di retroazione positivo.\"",
+   "ratio": 1.023
+  },
+  {
+   "idx": 21,
+   "id": "mission:Scientists at the Pub after a Conference|\tGrant applications seem to be a common subject. \"The Republic Medical Research Agency said my work is too theoretical, but the University of Chiron Department of Microbiology says it's too applied!\"|598|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 598,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\tGrant applications seem to be a common subject. \"The Republic Medical Research Agency said my work is too theoretical, but the University of Chiron Department of Microbiology says it's too applied!\"",
+   "italian": "\tLe domande di finanziamento sembrano un argomento comune. \"L'Agenzia Repubblicana per la Ricerca Medica dice che il mio lavoro è troppo teorico, ma il Dipartimento di Microbiologia dell'Università di Chiron dice che è troppo applicato!\"",
+   "ratio": 1.191
+  },
+  {
+   "idx": 22,
+   "id": "mission:Scientists at the Pub after a Conference|\t\"That's a conundrum, alright. Maybe you could find some funding from industry? The Syndicate might be interested in your work.\"|599|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 599,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t\"That's a conundrum, alright. Maybe you could find some funding from industry? The Syndicate might be interested in your work.\"",
+   "italian": "\t\"È un bel rompicapo, davvero. Forse potresti trovare finanziamenti dall'industria? Il Sindacato potrebbe essere interessato al tuo lavoro.\"",
+   "ratio": 1.094
+  },
+  {
+   "idx": 23,
+   "id": "mission:Scientists at the Pub after a Conference|\t\"Yeah, but I'm not sure yet if I'm willing to give up my academic freedom.\"|600|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 600,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t\"Yeah, but I'm not sure yet if I'm willing to give up my academic freedom.\"",
+   "italian": "\t\"Sì, ma non sono ancora sicuro di voler rinunciare alla mia libertà accademica.\"",
+   "ratio": 1.066
+  },
+  {
+   "idx": 24,
+   "id": "mission:Scientists at the Pub after a Conference|\t(Finish up at my own pace.)|602|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 602,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t(Finish up at my own pace.)",
+   "italian": "\t(Finisci con i miei tempi.)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 25,
+   "id": "mission:Scientists at the Pub after a Conference|\t(Settle my bill as quickly as possible and leave.)|604|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 604,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t(Settle my bill as quickly as possible and leave.)",
+   "italian": "\t(Salda il conto il più in fretta possibile e vattene.)",
+   "ratio": 1.078
+  },
+  {
+   "idx": 26,
+   "id": "mission:Scientists at the Pub after a Conference|label|606|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 606,
+   "kind": "UI_LABEL",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "overheard scientists 3",
+   "italian": "overheard scientists 3",
+   "ratio": 1.0
+  },
+  {
+   "idx": 27,
+   "id": "mission:Scientists at the Pub after a Conference|\tTwo attendees compare gripes about job demands. \"Teaching sucks. Between class hours, office hours, and preparing lectures, there's hardly any time left for research.\"|607|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 607,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\tTwo attendees compare gripes about job demands. \"Teaching sucks. Between class hours, office hours, and preparing lectures, there's hardly any time left for research.\"",
+   "italian": "\tDue partecipanti confrontano le loro lamentele sulle richieste del lavoro. \"Insegnare fa schifo. Tra ore di lezione, ricevimento e preparazione delle lezioni, non resta quasi nessun tempo per la ricerca.\"",
+   "ratio": 1.22
+  },
+  {
+   "idx": 28,
+   "id": "mission:Scientists at the Pub after a Conference|\t\"That's funny! Teaching undergrads is my one respite from grant-writing!\"|608|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 608,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\t\"That's funny! Teaching undergrads is my one respite from grant-writing!\"",
+   "italian": "\t\"Che buffo! Insegnare agli studenti del triennio è la mia unica tregua dalla scrittura di progetti!\"",
+   "ratio": 1.365
+  },
+  {
+   "idx": 29,
+   "id": "mission:Scientists at the Pub after a Conference|\tA sociable but exhausted-looking man is sitting back in his chair. \"These conferences only last three or four days, but it always feels like it ages you a year.\"|610|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 610,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\tA sociable but exhausted-looking man is sitting back in his chair. \"These conferences only last three or four days, but it always feels like it ages you a year.\"",
+   "italian": "\tUn uomo socievole ma dall'aria esausta è sprofondato nella sedia. \"Questi congressi durano solo tre o quattro giorni, ma sembra sempre che ti invecchino di un anno.\"",
+   "ratio": 1.025
+  },
+  {
+   "idx": 30,
+   "id": "mission:Scientists at the Pub after a Conference|\tYou leave after finishing your meal, reflecting on having overheard a slice of a life very different from your own.|611|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 611,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Scientists at the Pub after a Conference",
+   "english": "\tYou leave after finishing your meal, reflecting on having overheard a slice of a life very different from your own.",
+   "italian": "\tTe ne vai dopo aver finito il pasto, riflettendo su aver origliato uno spaccato di una vita molto diversa dalla tua.",
+   "ratio": 1.009
+  }
+ ]
+}

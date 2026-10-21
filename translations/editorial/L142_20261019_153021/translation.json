@@ -1,0 +1,231 @@
+{
+ "block": {
+  "path": "data/hai/unfettered 0 prologue.txt",
+  "line_from": 139,
+  "line_to": 201,
+  "units": 20
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Unfettered Jump Drive 1|name|139|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 139,
+   "kind": "VALUE",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "More Jump Drives",
+   "italian": "Altri motori di salto",
+   "ratio": 1.312
+  },
+  {
+   "idx": 2,
+   "id": "mission:Unfettered Jump Drive 1|description|140|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 140,
+   "kind": "DESCRIPTION",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "The Unfettered Hai have promised you rich rewards if you bring them more jump drives.",
+   "italian": "Gli Hai Slegati ti hanno promesso ricompense ricche se porti loro altri motori di salto.",
+   "ratio": 1.035
+  },
+  {
+   "idx": 3,
+   "id": "mission:Unfettered Jump Drive 1|The Unfettered have clearly noticed that you have a jump drive; a large crowd of them has gathered around your ship. Do you want to talk with them, and perhaps arrange a sale of your jump drive?|152|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 152,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "The Unfettered have clearly noticed that you have a jump drive; a large crowd of them has gathered around your ship. Do you want to talk with them, and perhaps arrange a sale of your jump drive?",
+   "italian": "Gli Slegati hanno chiaramente notato che hai un motore di salto: una grande folla si è radunata attorno alla tua nave. Vuoi parlare con loro, e magari organizzare la vendita del tuo motore di salto?",
+   "ratio": 1.021
+  },
+  {
+   "idx": 4,
+   "id": "mission:Unfettered Jump Drive 1|\t(No.)|154|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 154,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t(No.)",
+   "italian": "\t(No.)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "mission:Unfettered Jump Drive 1|\t(Yes.)|156|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 156,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t(Yes.)",
+   "italian": "\t(Sì.)",
+   "ratio": 0.857
+  },
+  {
+   "idx": 6,
+   "id": "mission:Unfettered Jump Drive 1|\tAs soon as you approach the crowd, one of them steps forward and says, \"One million credits, and the friendship of the true Hai people. This is our offer, for the jump drive.\"|157|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 157,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\tAs soon as you approach the crowd, one of them steps forward and says, \"One million credits, and the friendship of the true Hai people. This is our offer, for the jump drive.\"",
+   "italian": "\tAppena ti avvicini alla folla, uno di loro fa un passo avanti e dice: \"Un milione di crediti, e l'amicizia del vero popolo Hai. Questa è la nostra offerta, per il motore di salto.\"",
+   "ratio": 1.028
+  },
+  {
+   "idx": 7,
+   "id": "mission:Unfettered Jump Drive 1|\t\"Sure, I will accept that deal.\"|159|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 159,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t\"Sure, I will accept that deal.\"",
+   "italian": "\t\"Certo, accetto l'accordo.\"",
+   "ratio": 0.848
+  },
+  {
+   "idx": 8,
+   "id": "mission:Unfettered Jump Drive 1|\t\"Can you offer me more than that?\"|161|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 161,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t\"Can you offer me more than that?\"",
+   "italian": "\t\"Potete offrirmi di più?\"",
+   "ratio": 0.743
+  },
+  {
+   "idx": 9,
+   "id": "mission:Unfettered Jump Drive 1|\t\"How will my ship leave here without my jump drive?\"|163|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 163,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t\"How will my ship leave here without my jump drive?\"",
+   "italian": "\t\"Come farà la mia nave a partire senza il mio motore di salto?\"",
+   "ratio": 1.208
+  },
+  {
+   "idx": 10,
+   "id": "mission:Unfettered Jump Drive 1|\t\"We can give you a hyperdrive in its place, if required,\" they say, \"and you will be counted as our friend, so you will not need to leave here quickly, or under threat of violence.\" You can't help but wonder if they will try to take your ship by force if you do not agree to the deal.|165|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 165,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t\"We can give you a hyperdrive in its place, if required,\" they say, \"and you will be counted as our friend, so you will not need to leave here quickly, or under threat of violence.\" You can't help but wonder if they will try to take your ship by force if you do not agree to the deal.",
+   "italian": "\t\"Possiamo darti un iperpropulsore al suo posto, se necessario,\" dicono, \"e sarai contato come nostro amico, così non dovrai partire in fretta, né sotto minaccia di violenza.\" Non puoi fare a meno di chiederti se proveranno a prendere la tua nave con la forza se non accetti l'accordo.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "mission:Unfettered Jump Drive 1|\t\"Oh, and by the way, you will no longer be required to keep your Anomalocaris in working condition to guarantee our friendship,\" they add.|166|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 166,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t\"Oh, and by the way, you will no longer be required to keep your Anomalocaris in working condition to guarantee our friendship,\" they add.",
+   "italian": "\t\"Oh, e a proposito, non ti sarà più richiesto di tenere la tua Anomalocaris in condizioni di funzionare per garantirti la nostra amicizia,\" aggiungono.",
+   "ratio": 1.094
+  },
+  {
+   "idx": 12,
+   "id": "mission:Unfettered Jump Drive 1|\t\"Okay, I accept your generous offer.\"|170|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 170,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t\"Okay, I accept your generous offer.\"",
+   "italian": "\t\"Va bene, accetto la vostra generosa offerta.\"",
+   "ratio": 1.237
+  },
+  {
+   "idx": 13,
+   "id": "mission:Unfettered Jump Drive 1|\t\"Sorry, but if I give you this jump drive, I will lose my ability to capture more of them. Be patient, and I will bring you several of them when I am able.\"|172|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 172,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t\"Sorry, but if I give you this jump drive, I will lose my ability to capture more of them. Be patient, and I will bring you several of them when I am able.\"",
+   "italian": "\t\"Mi dispiace, ma se ti do questo motore di salto perderò la capacità di catturarne altri. Abbi pazienza, e te ne porterò diversi quando potrò.\"",
+   "ratio": 0.917
+  },
+  {
+   "idx": 14,
+   "id": "mission:Unfettered Jump Drive 1|\tThey ponder this for a while, and says, \"Very well. Our offer stands, whenever you choose to return.\" They allow you to return to your ship peacefully.|176|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 176,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\tThey ponder this for a while, and says, \"Very well. Our offer stands, whenever you choose to return.\" They allow you to return to your ship peacefully.",
+   "italian": "\tCi riflettono un momento, poi dicono: \"Molto bene. La nostra offerta resta valida, ogni volta che sceglierai di tornare.\" Ti lasciano tornare alla tua nave senza problemi.",
+   "ratio": 1.132
+  },
+  {
+   "idx": 15,
+   "id": "mission:Unfettered Jump Drive 1|\t\"Do not underestimate the value of our friendship,\" they say. \"Soon we will become powerful once more, with many fruitful worlds under our control, and when that day comes you will benefit greatly from being our ally.\"|180|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 180,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t\"Do not underestimate the value of our friendship,\" they say. \"Soon we will become powerful once more, with many fruitful worlds under our control, and when that day comes you will benefit greatly from being our ally.\"",
+   "italian": "\t\"Non sottovalutare il valore della nostra amicizia,\" dicono. \"Presto saremo di nuovo potenti, con molti mondi fruttuosi sotto il nostro controllo, e quando quel giorno arriverà trarrai grande beneficio dall'essere nostro alleato.\"",
+   "ratio": 1.055
+  },
+  {
+   "idx": 16,
+   "id": "mission:Unfettered Jump Drive 1|\t\"Okay, as long as you give me a hyperdrive to take its place, I'll give you my jump drive.\"|182|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 182,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t\"Okay, as long as you give me a hyperdrive to take its place, I'll give you my jump drive.\"",
+   "italian": "\t\"Va bene, purché mi diate un iperpropulsore al suo posto, vi darò il mio motore di salto.\"",
+   "ratio": 0.989
+  },
+  {
+   "idx": 17,
+   "id": "mission:Unfettered Jump Drive 1|\t\"You can take the jump drive, but I don't need a hyperdrive in exchange.\"|186|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 186,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t\"You can take the jump drive, but I don't need a hyperdrive in exchange.\"",
+   "italian": "\t\"Potete prendere il motore di salto, ma non ho bisogno di un iperpropulsore in cambio.\"",
+   "ratio": 1.189
+  },
+  {
+   "idx": 18,
+   "id": "mission:Unfettered Jump Drive 1|\t\"Sorry, but if I give you this jump drive, I will lose my ability to capture more of them. Be patient, and I will bring you several of them when I am able.\"|190|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 190,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\t\"Sorry, but if I give you this jump drive, I will lose my ability to capture more of them. Be patient, and I will bring you several of them when I am able.\"",
+   "italian": "\t\"Mi dispiace, ma se ti do questo motore di salto perderò la capacità di catturarne altri. Abbi pazienza, e te ne porterò diversi quando potrò.\"",
+   "ratio": 0.917
+  },
+  {
+   "idx": 19,
+   "id": "mission:Unfettered Jump Drive 1|\tThe Unfettered engineers quickly and carefully remove your jump drive and replace it with an ordinary hyperdrive. You sincerely hope that you are not making a mistake by giving them this new technology. \"Remember,\" one of them says as they hand you your payment, \"when you acquire more jump drives, return here with them and we will give you further rewards. Until then, may fortune favor you, human friend.\"|198|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 198,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\tThe Unfettered engineers quickly and carefully remove your jump drive and replace it with an ordinary hyperdrive. You sincerely hope that you are not making a mistake by giving them this new technology. \"Remember,\" one of them says as they hand you your payment, \"when you acquire more jump drives, return here with them and we will give you further rewards. Until then, may fortune favor you, human friend.\"",
+   "italian": "\tGli ingegneri Slegati rimuovono in fretta e con cura il tuo motore di salto e lo sostituiscono con un normale iperpropulsore. Speri sinceramente di non stare commettendo un errore dando loro questa nuova tecnologia. \"Ricorda,\" dice uno di loro mentre ti consegna il pagamento, \"quando avrai altri motori di salto, torna qui con loro e ti daremo altre ricompense. Fino ad allora, che la fortuna ti assista, amico umano.\"",
+   "ratio": 1.027
+  },
+  {
+   "idx": 20,
+   "id": "mission:Unfettered Jump Drive 1|\tThe Unfettered engineers quickly retrieve the jump drive. You sincerely hope that you are not making a mistake by giving them this new technology. \"Remember,\" one of them says as they hand you your payment, \"when you acquire more jump drives, return here with them and we will give you further rewards. Until then, may fortune favor you, human friend.\"|201|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 201,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 1",
+   "english": "\tThe Unfettered engineers quickly retrieve the jump drive. You sincerely hope that you are not making a mistake by giving them this new technology. \"Remember,\" one of them says as they hand you your payment, \"when you acquire more jump drives, return here with them and we will give you further rewards. Until then, may fortune favor you, human friend.\"",
+   "italian": "\tGli ingegneri Slegati recuperano in fretta il motore di salto. Speri sinceramente di non stare commettendo un errore dando loro questa nuova tecnologia. \"Ricorda,\" dice uno di loro mentre ti consegna il pagamento, \"quando avrai altri motori di salto, torna qui con loro e ti daremo altre ricompense. Fino ad allora, che la fortuna ti assista, amico umano.\"",
+   "ratio": 1.011
+  }
+ ]
+}

@@ -1,0 +1,297 @@
+{
+ "block": {
+  "path": "data/korath/korath outfits.txt",
+  "line_from": 319,
+  "line_to": 581,
+  "units": 26
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Afterburner (Planetary Class)|description|319|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 319,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Afterburner (Planetary Class)",
+   "english": "\tKorath afterburners pump super-heated hyperspace fuel directly into a thruster's plasma stream, resulting in a phenomenal explosion that nearly melts the thruster.",
+   "italian": "\tKorath afterburners pump super-heated hyperspace fuel directly into a thruster's plasma stream, resulting in a phenomenal explosion that nearly melts the thruster.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Afterburner (Stellar Class)|plural|322|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 322,
+   "kind": "VALUE",
+   "context": "outfit:Afterburner (Stellar Class)",
+   "english": "Afterburners (Stellar Class)",
+   "italian": "Afterburners (Stellar Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Afterburner (Stellar Class)|description|339|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 339,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Afterburner (Stellar Class)",
+   "english": "The very largest of Korath afterburners have integrated active cooling systems, powered by the fuel-plasma explosion, in order to keep the reaction chambers from melting.",
+   "italian": "The very largest of Korath afterburners have integrated active cooling systems, powered by the fuel-plasma explosion, in order to keep the reaction chambers from melting.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Afterburner (Stellar Class)|description|340|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 340,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Afterburner (Stellar Class)",
+   "english": "\tKorath afterburners pump super-heated hyperspace fuel directly into a thruster's plasma stream, resulting in a phenomenal explosion that nearly melts the thruster.",
+   "italian": "\tKorath afterburners pump super-heated hyperspace fuel directly into a thruster's plasma stream, resulting in a phenomenal explosion that nearly melts the thruster.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Engine (Meteor Class)|plural|413|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 413,
+   "kind": "VALUE",
+   "context": "outfit:Engine (Meteor Class)",
+   "english": "Engines (Meteor Class)",
+   "italian": "Engines (Meteor Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Engine (Meteor Class)|description|434|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 434,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Engine (Meteor Class)",
+   "english": "Although the prevailing Korath attitude towards engine construction has always been with a focus on making things bigger, faster, and more powerful, the Exiles found it necessary to develop these engines to allow their fighters to carry larger weapons or more cargo, at the cost of some speed.",
+   "italian": "Although the prevailing Korath attitude towards engine construction has always been with a focus on making things bigger, faster, and more powerful, the Exiles found it necessary to develop these engines to allow their fighters to carry larger weapons or more cargo, at the cost of some speed.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Bow Drive (Meteor Class)|plural|437|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 437,
+   "kind": "VALUE",
+   "context": "outfit:Bow Drive (Meteor Class)",
+   "english": "Bow Drives (Meteor Class)",
+   "italian": "Bow Drives (Meteor Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Bow Drive (Meteor Class)|description|459|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 459,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Bow Drive (Meteor Class)",
+   "english": "This modification of the Meteor Class engines acts as a reverser, allowing a full range of mobility for small craft when paired with more powerful base thrusters.",
+   "italian": "This modification of the Meteor Class engines acts as a reverser, allowing a full range of mobility for small craft when paired with more powerful base thrusters.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Reverser (Asteroid Class)|plural|462|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 462,
+   "kind": "VALUE",
+   "context": "outfit:Reverser (Asteroid Class)",
+   "english": "Reversers (Asteroid Class)",
+   "italian": "Reversers (Asteroid Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Reverser (Asteroid Class)|description|478|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 478,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reverser (Asteroid Class)",
+   "english": "The Asteroid Class reverser provides a modest amount of thrust, giving Korath captains with weapon space to spare a small edge in battle.",
+   "italian": "The Asteroid Class reverser provides a modest amount of thrust, giving Korath captains with weapon space to spare a small edge in battle.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Reverser (Asteroid Class)|description|479|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 479,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reverser (Asteroid Class)",
+   "english": "\tThis Korath engine has been modified to be partially installed in a ship's weapon space, allowing it to push the ship in reverse.",
+   "italian": "\tThis Korath engine has been modified to be partially installed in a ship's weapon space, allowing it to push the ship in reverse.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Reverser (Comet Class)|plural|482|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 482,
+   "kind": "VALUE",
+   "context": "outfit:Reverser (Comet Class)",
+   "english": "Reversers (Comet Class)",
+   "italian": "Reversers (Comet Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Reverser (Comet Class)|description|498|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 498,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reverser (Comet Class)",
+   "english": "The Comet Class reverser is unpopular amongst Korath captains, who find it a bit weak to pair with Planetary Class engines, yet too large to be worth sacrificing weapon space.",
+   "italian": "The Comet Class reverser is unpopular amongst Korath captains, who find it a bit weak to pair with Planetary Class engines, yet too large to be worth sacrificing weapon space.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Reverser (Comet Class)|description|499|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 499,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reverser (Comet Class)",
+   "english": "\tThis Korath engine has been modified to be partially installed in a ship's weapon space, allowing it to push the ship in reverse.",
+   "italian": "\tThis Korath engine has been modified to be partially installed in a ship's weapon space, allowing it to push the ship in reverse.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Reverser (Lunar Class)|plural|502|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 502,
+   "kind": "VALUE",
+   "context": "outfit:Reverser (Lunar Class)",
+   "english": "Reversers (Lunar Class)",
+   "italian": "Reversers (Lunar Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Reverser (Lunar Class)|description|518|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 518,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reverser (Lunar Class)",
+   "english": "Dwarfing any reversers in human space, this engine provides a considerable amount of reverse thrust for medium-sized Korath ships, where it is most commonly found.",
+   "italian": "Dwarfing any reversers in human space, this engine provides a considerable amount of reverse thrust for medium-sized Korath ships, where it is most commonly found.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:Reverser (Lunar Class)|description|519|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 519,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reverser (Lunar Class)",
+   "english": "\tThis Korath engine has been modified to be partially installed in a ship's weapon space, allowing it to push the ship in reverse.",
+   "italian": "\tThis Korath engine has been modified to be partially installed in a ship's weapon space, allowing it to push the ship in reverse.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "outfit:Reverser (Planetary Class)|plural|522|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 522,
+   "kind": "VALUE",
+   "context": "outfit:Reverser (Planetary Class)",
+   "english": "Reversers (Planetary Class)",
+   "italian": "Reversers (Planetary Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "outfit:Reverser (Planetary Class)|description|538|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 538,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reverser (Planetary Class)",
+   "english": "Being essentially a slightly altered Planetary Class engine, this reverser provides an enormous amount of reverse thrust for any ship capable of installing it.",
+   "italian": "Being essentially a slightly altered Planetary Class engine, this reverser provides an enormous amount of reverse thrust for any ship capable of installing it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "outfit:Reverser (Planetary Class)|description|539|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 539,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reverser (Planetary Class)",
+   "english": "\tThis Korath engine has been modified to be partially installed in a ship's weapon space, allowing it to push the ship in reverse.",
+   "italian": "\tThis Korath engine has been modified to be partially installed in a ship's weapon space, allowing it to push the ship in reverse.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "outfit:Reverser (Stellar Class)|plural|542|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 542,
+   "kind": "VALUE",
+   "context": "outfit:Reverser (Stellar Class)",
+   "english": "Reversers (Stellar Class)",
+   "italian": "Reversers (Stellar Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "outfit:Reverser (Stellar Class)|description|558|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 558,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reverser (Stellar Class)",
+   "english": "Modeled on their largest engines, the Stellar Class reverser provides a reverse thrust unlike anything you've seen before.",
+   "italian": "Modeled on their largest engines, the Stellar Class reverser provides a reverse thrust unlike anything you've seen before.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "outfit:Reverser (Stellar Class)|description|559|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 559,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reverser (Stellar Class)",
+   "english": "\tThis Korath engine has been modified to be partially installed in a ship's weapon space, allowing it to push the ship in reverse.",
+   "italian": "\tThis Korath engine has been modified to be partially installed in a ship's weapon space, allowing it to push the ship in reverse.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "outfit:Thruster (Asteroid Class)|plural|563|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 563,
+   "kind": "VALUE",
+   "context": "outfit:Thruster (Asteroid Class)",
+   "english": "Thrusters (Asteroid Class)",
+   "italian": "Thrusters (Asteroid Class)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 25,
+   "id": "outfit:Thruster (Asteroid Class)|description|578|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 578,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thruster (Asteroid Class)",
+   "english": "Given its size, this tiny Korath thruster produces quite a kick. But, it also draws a considerable amount of power.",
+   "italian": "Given its size, this tiny Korath thruster produces quite a kick. But, it also draws a considerable amount of power.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 26,
+   "id": "outfit:Thruster (Comet Class)|plural|581|0",
+   "path": "data/korath/korath outfits.txt",
+   "line": 581,
+   "kind": "VALUE",
+   "context": "outfit:Thruster (Comet Class)",
+   "english": "Thrusters (Comet Class)",
+   "italian": "Thrusters (Comet Class)",
+   "ratio": 1.0
+  }
+ ]
+}

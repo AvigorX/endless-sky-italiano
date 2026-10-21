@@ -1,0 +1,24 @@
+{
+ "block": {
+  "path": "data/wanderer/wanderer jobs.txt",
+  "line_from": 891,
+  "line_to": 891,
+  "units": 1
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Wanderers to Kor Efreti|dialog|891|0",
+   "path": "data/wanderer/wanderer jobs.txt",
+   "line": 891,
+   "kind": "DIALOG",
+   "context": "mission:Wanderers to Kor Efreti",
+   "english": "When you return, the Wanderers thank you for taking them to the Kor Efreti and hand you <payment> before disembarking.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tdialog `When you return, the Wanderers thank you for taking them to the Kor Efreti and hand you <payment> before disembarking.`",
+   "english_hash": "91cd8820211f5f14"
+  }
+ ]
+}

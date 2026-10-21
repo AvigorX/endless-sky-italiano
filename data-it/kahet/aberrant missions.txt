@@ -1,0 +1,34 @@
+# Copyright (c) 2025 by Azure
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+
+mission "Disabled Aberrant"
+	boarding
+	invisible
+	source
+		government "Aberrant"
+	destination "Earth"
+	on offer
+		conversation
+			branch "boarded ka'het"
+				has "Disabled Ka'het: offered"
+			action
+				log `Sei riuscito ad abbordare un Aberrant. Durante l'ispezione sembrava esserci una strana presenza a osservare, che dava un senso di inquietudine. Pare essere un unico organismo grande quanto una nave, capace di viaggiare nello spazio usando uno speciale esoscheletro.`
+			`Accosti la <flagship> a questa strana entità che, nonostante l'immobilità, sembra emanare una presenza sinistra. C'è qualcosa di profondamente sbagliato in questa nave mentre ti avvicini a un foro in una parte vulnerabile dello scafo, che sembra una sorta di guscio attorno a una grande creatura simile a una lumaca. Colpita dal fuoco delle armi, la creatura sembra morta, ma ti sembra quasi che qualcosa ti stia osservando.`
+			`	Non hai problemi ad attraccare a quello che sembra il suo "esoscheletro", cercando di decidere che cosa fare. Benché l'Aberrant sia troppo diverso da una nave normale perché tu possa comandarlo, è lecito dire che ora puoi saccheggiare alcuni dei suoi equipaggiamenti. Gli altri sembrano incastonati in una sorta di tessuto duro e vitreo; forse distruggere la nave potrebbe liberarli.`
+				decline
+			label "boarded ka'het"
+			action
+				log `Sei riuscito ad abbordare un Aberrant. Sembra somigliare molto a un Ka'het, ma piegato in una forma nuova, che dà una sensazione di profondo sbaglio.`
+			`Accosti la <flagship> a questa strana entità, eppure quasi familiare, che nonostante l'immobilità sembra emanare una presenza sinistra. C'è qualcosa di profondamente sbagliato in questa nave, che superficialmente somiglia a un Ka'het ma chiaramente non lo è: forse un parente lontano, o un Ka'het cambiato irrimediabilmente da qualcos'altro. Ti avvicini a un foro in una parte vulnerabile dello scafo, dove una 'het slug sembra morta, ma ti sembra quasi che ti osservi ancora.`
+			`	Non hai problemi ad attraccare al suo "esoscheletro", cercando di decidere che cosa fare. Benché l'Aberrant sia troppo diverso da una nave normale perché tu possa comandarlo, è lecito dire che ora puoi saccheggiare alcuni dei suoi equipaggiamenti. Gli altri sembrano incastonati in una sorta di tessuto duro e vitreo; forse distruggere la nave potrebbe liberarli.`

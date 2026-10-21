@@ -1,0 +1,50 @@
+{
+ "block": {
+  "path": "data/incipias/tace mesa.txt",
+  "line_from": 32,
+  "line_to": 76,
+  "units": 3
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Strange Ray|description|32|0",
+   "path": "data/incipias/tace mesa.txt",
+   "line": 32,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Strange Ray",
+   "english": "It should be impossible for an organic being to heat up gas to this level, but this organ seems to be an exception.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"It should be impossible for an organic being to heat up gas to this level, but this organ seems to be an exception.\"",
+   "english_hash": "0f2ad028df9ad3c9"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Internal Plasma Exhaust|description|42|0",
+   "path": "data/incipias/tace mesa.txt",
+   "line": 42,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Internal Plasma Exhaust",
+   "english": "The Tace Mesa move by expelling plasma from the end of their body.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Tace Mesa move by expelling plasma from the end of their body.\"",
+   "english_hash": "c9d338eedb16b8e6"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Tace Mesa|description|76|0",
+   "path": "data/incipias/tace mesa.txt",
+   "line": 76,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tace Mesa",
+   "english": "The Tace Mesa are creatures whose origins and inner workings are yet to be understood. They have existed for millennia and will probably continue to exist for a long time. Rumors tell of even larger creatures further out in the rims of the system.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Tace Mesa are creatures whose origins and inner workings are yet to be understood. They have existed for millennia and will probably continue to exist for a long time. Rumors tell of even larger creatures further out in the rims of the system.\"",
+   "english_hash": "8bc1211956cafeb7"
+  }
+ ]
+}

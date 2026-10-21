@@ -1,0 +1,115 @@
+{
+ "block": {
+  "path": "data/hai/hai outfits.txt",
+  "line_from": 27,
+  "line_to": 164,
+  "units": 8
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Phantom Pallet|description|27|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 27,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Phantom Pallet",
+   "english": "Hai holographic outfits are made up of a set of individual \"holopads\" which work together to create a larger scene. The Phantom Pallet is an Unfettered variation of these holopads, durable enough to survive a firefight and easily hidden under floors, in walls, or in ceilings while remaining undetected. An enterprising privateer might pad their cargo bay with these and project fake cargo as sensor ghosts, confusing scanners into scanning empty space instead of contraband; that extra time has been known to make the difference between seized cargo and delivering needed supplies.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Hai holographic outfits are made up of a set of individual \"holopads\" which work together to create a larger scene. The Phantom Pallet is an Unfettered variation of these holopads, durable enough to survive a firefight and easily hidden under floors, in walls, or in ceilings while remaining undetected. An enterprising privateer might pad their cargo bay with these and project fake cargo as sensor ghosts, confusing scanners into scanning empty space instead of contraband; that extra time has been known to make the difference between seized cargo and delivering needed supplies.`",
+   "english_hash": "13cb1f51f0afa2a3"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Holovid Zone|description|43|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 43,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Holovid Zone",
+   "english": "Hai holographic technology far exceeds the comparable human equivalents, and nowhere is this best exemplified than in the Holovid Zone. Its holographic projectors and textured force fields present lifelike visuals, while phase array speakers emanate sounds from anywhere in the room.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Hai holographic technology far exceeds the comparable human equivalents, and nowhere is this best exemplified than in the Holovid Zone. Its holographic projectors and textured force fields present lifelike visuals, while phase array speakers emanate sounds from anywhere in the room.\"",
+   "english_hash": "7343005a6ba06e48"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Holovid Zone|description|44|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 44,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Holovid Zone",
+   "english": "\tFor the Hai, such technology is commonplace, being used to create 3D conference rooms, holovid theaters, gaming arcades, and more. In the past, Hai captains used to install Holovid Zones on their command deck, allowing them to generate tactical evaluations of battles in real-time.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tFor the Hai, such technology is commonplace, being used to create 3D conference rooms, holovid theaters, gaming arcades, and more. In the past, Hai captains used to install Holovid Zones on their command deck, allowing them to generate tactical evaluations of battles in real-time.\"",
+   "english_hash": "62eb7807fd4e9a8c"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Holovid Zone|description|45|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 45,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Holovid Zone",
+   "english": "\tThe possibilities are endless... especially for a sly captain who misuses the device. Should authorities seek contraband or illegal outfits, a Holovid Zone may fool them long enough for a smuggler to escape. Deathsticks are hard to find in a ship with fifty tons of holographic straw.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tThe possibilities are endless... especially for a sly captain who misuses the device. Should authorities seek contraband or illegal outfits, a Holovid Zone may fool them long enough for a smuggler to escape. Deathsticks are hard to find in a ship with fifty tons of holographic straw.\"",
+   "english_hash": "3f407166d667fc34"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Pulse Cannon|description|69|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 69,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pulse Cannon",
+   "english": "Like most examples of Hai engineering that you have seen, the Pulse Cannon does not stand out as a particularly advanced or elegant technology, but it has a reputation for being efficient, reliable, and well-balanced.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Like most examples of Hai engineering that you have seen, the Pulse Cannon does not stand out as a particularly advanced or elegant technology, but it has a reputation for being efficient, reliable, and well-balanced.\"",
+   "english_hash": "1e980e513fb511e9"
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Pulse Turret|description|97|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 97,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pulse Turret",
+   "english": "Pulse Cannons are the primary offensive weapon used by Hai ships. This turret mounts two Pulse Cannons side by side and allows them to track even the fastest-moving of targets.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Pulse Cannons are the primary offensive weapon used by Hai ships. This turret mounts two Pulse Cannons side by side and allows them to track even the fastest-moving of targets.\"",
+   "english_hash": "66ef6a3b5f62c144"
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Tripulse Shredder|description|124|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 124,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tripulse Shredder",
+   "english": "An early stage in the development of better and faster weaponry to rival that of the Wanderers, the Tripulse Shredder consists of three Pulse Cannons in a single housing. Advancements in cooling capabilities have reduced the heat generated by each shot at the cost of drawing slightly more power. Additionally, the single shared housing results in a less consistent firing pattern, limiting it to bursts. These factors have made the Tripulse Shredder a popular hit-and-run weapon among the Unfettered.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"An early stage in the development of better and faster weaponry to rival that of the Wanderers, the Tripulse Shredder consists of three Pulse Cannons in a single housing. Advancements in cooling capabilities have reduced the heat generated by each shot at the cost of drawing slightly more power. Additionally, the single shared housing results in a less consistent firing pattern, limiting it to bursts. These factors have made the Tripulse Shredder a popular hit-and-run weapon among the Unfettered.\"",
+   "english_hash": "a3308ed30b8ab547"
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Ion Cannon|description|164|0",
+   "path": "data/hai/hai outfits.txt",
+   "line": 164,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ion Cannon",
+   "english": "Ion cannons do not inflict as much damage as some other weapons, but they disrupt the electrical systems on any ship they hit, draining its energy and causing its weapons to jam. If a ship has sizable battery reserves, this may have little effect, but for a ship running at near its energy generation capacity an ion strike can take it out of the battle for a few seconds while it recovers, or otherwise cause it to have difficulty firing its weapons.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Ion cannons do not inflict as much damage as some other weapons, but they disrupt the electrical systems on any ship they hit, draining its energy and causing its weapons to jam. If a ship has sizable battery reserves, this may have little effect, but for a ship running at near its energy generation capacity an ion strike can take it out of the battle for a few seconds while it recovers, or otherwise cause it to have difficulty firing its weapons.\"",
+   "english_hash": "e00b3a4370b15741"
+  }
+ ]
+}

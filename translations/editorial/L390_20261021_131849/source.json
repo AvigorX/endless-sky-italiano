@@ -1,0 +1,37 @@
+{
+ "block": {
+  "path": "data/korath/korath news.txt",
+  "line_from": 107,
+  "line_to": 115,
+  "units": 2
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:wanderer at kor efret spaceport|\"|107|0",
+   "path": "data/korath/korath news.txt",
+   "line": 107,
+   "kind": "NEWS",
+   "context": "news:wanderer at kor efret spaceport",
+   "english": "\"",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t\t`\"`",
+   "english_hash": "8a331fdde7032f33"
+  },
+  {
+   "idx": 2,
+   "id": "news:wanderer at kor efret spaceport|\"|115|0",
+   "path": "data/korath/korath news.txt",
+   "line": 115,
+   "kind": "NEWS",
+   "context": "news:wanderer at kor efret spaceport",
+   "english": "\"",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t\t`\"`",
+   "english_hash": "8a331fdde7032f33"
+  }
+ ]
+}

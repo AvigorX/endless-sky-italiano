@@ -1,0 +1,286 @@
+{
+ "block": {
+  "path": "data/successors/successor ships.txt",
+  "line_from": 386,
+  "line_to": 629,
+  "units": 25
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Kvelqde|plural|386|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 386,
+   "kind": "VALUE",
+   "context": "ship:Kvelqde",
+   "english": "Kvelqden",
+   "italian": "Kvelqden",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Kvelqde|1-\"Uurau\" Betavoltaic Cell|413|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 413,
+   "kind": "TEXT",
+   "context": "ship:Kvelqde",
+   "english": "1-\"Uurau\" Betavoltaic Cell",
+   "italian": "1-\"Uurau\" Betavoltaic Cell",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "ship:Kvelqde|\"Ej\" Shield Cortex|414|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 414,
+   "kind": "TEXT",
+   "context": "ship:Kvelqde",
+   "english": "\"Ej\" Shield Cortex",
+   "italian": "\"Ej\" Shield Cortex",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Kvelqde|\"Aqra\" Inductive Thruster|416|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 416,
+   "kind": "TEXT",
+   "context": "ship:Kvelqde",
+   "english": "\"Aqra\" Inductive Thruster",
+   "italian": "\"Aqra\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Kvelqde|\"Aqra\" Inductive Steering|417|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 417,
+   "kind": "TEXT",
+   "context": "ship:Kvelqde",
+   "english": "\"Aqra\" Inductive Steering",
+   "italian": "\"Aqra\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Kvelqde|\"Aqra\" Inductive Reverser|418|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 418,
+   "kind": "TEXT",
+   "context": "ship:Kvelqde",
+   "english": "\"Aqra\" Inductive Reverser",
+   "italian": "\"Aqra\" Inductive Reverser",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Kvelqde|description|458|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 458,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kvelqde",
+   "english": "This tiny shuttle is the smallest vessel operating in Successor space, and the first ship that new Successor pilots are able to get their arms on. Despite their small size, they are capable multipurpose vessels, and are frequently used for transporting passengers and cargo, and for short-duration research expeditions.",
+   "italian": "Questa navetta minuscola è la nave più piccola in servizio nello spazio dei Successori, e la prima su cui i nuovi piloti dei Successori riescono a metterci le mani. Nonostante le dimensioni ridotte, sono validi vascelli polivalenti, e vengono spesso usati per trasportare passeggeri e carichi, e per spedizioni di ricerca di breve durata.",
+   "ratio": 1.06
+  },
+  {
+   "idx": 8,
+   "id": "ship:Kvelqde|description|459|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 459,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kvelqde",
+   "english": "\tThe design of the Kvelqde is, like most Successor vessels, based on originals from the time of the Predecessors. While the modern incarnation is nowhere near as advanced, successive iterations with more limited resources have promoted the cost-efficiency and user-friendliness of the design.",
+   "italian": "\tIl progetto della Kvelqde si basa, come la maggior parte delle navi dei Successori, su originali dell'epoca dei Predecessori. Sebbene l'incarnazione moderna sia ben lungi dall'essere altrettanto avanzata, le iterazioni successive con risorse più limitate hanno favorito l'economicità e la facilità d'uso del progetto.",
+   "ratio": 1.089
+  },
+  {
+   "idx": 9,
+   "id": "ship:Kvelqde|description|463|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 463,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kvelqde",
+   "english": "This tiny shuttle is the smallest vessel operating in Successor space, and appears to fulfill much the same role as the human shuttles with which you are familiar, transporting small groups of passengers and quantities of cargo throughout their space. While it has enough space to equip weapons if necessary, its limited internal space and the low energy density of civilian Successor generators make these hardpoints most suitable to mining rather than combat.",
+   "italian": "Questa navetta minuscola è la nave più piccola in servizio nello spazio dei Successori, e sembra svolgere più o meno lo stesso ruolo delle navette umane che conosci, trasportando piccoli gruppi di passeggeri e quantità di carico in tutto il loro spazio. Pur avendo spazio sufficiente per montare armi se necessario, lo spazio interno limitato e la bassa densità energetica dei generatori civili dei Successori rendono questi punti d'attacco più adatti all'estrazione mineraria che al combattimento.",
+   "ratio": 1.08
+  },
+  {
+   "idx": 10,
+   "id": "ship:Kvelqde-Khora|plural|468|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 468,
+   "kind": "VALUE",
+   "context": "ship:Kvelqde-Khora",
+   "english": "Kvelqden-Khora",
+   "italian": "Kvelqden-Khora",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "ship:Kvelqde-Khora|3-\"Kaska\" Betavoltaic Cell|498|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 498,
+   "kind": "TEXT",
+   "context": "ship:Kvelqde-Khora",
+   "english": "3-\"Kaska\" Betavoltaic Cell",
+   "italian": "3-\"Kaska\" Betavoltaic Cell",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "ship:Kvelqde-Khora|\"Ej\" Shield Cortex|500|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 500,
+   "kind": "TEXT",
+   "context": "ship:Kvelqde-Khora",
+   "english": "\"Ej\" Shield Cortex",
+   "italian": "\"Ej\" Shield Cortex",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "ship:Kvelqde-Khora|\"Aqra\" Inductive Thruster|502|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 502,
+   "kind": "TEXT",
+   "context": "ship:Kvelqde-Khora",
+   "english": "\"Aqra\" Inductive Thruster",
+   "italian": "\"Aqra\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "ship:Kvelqde-Khora|\"Aqra\" Inductive Steering|503|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 503,
+   "kind": "TEXT",
+   "context": "ship:Kvelqde-Khora",
+   "english": "\"Aqra\" Inductive Steering",
+   "italian": "\"Aqra\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "ship:Kvelqde-Khora|\"Aqra\" Inductive Reverser|504|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 504,
+   "kind": "TEXT",
+   "context": "ship:Kvelqde-Khora",
+   "english": "\"Aqra\" Inductive Reverser",
+   "italian": "\"Aqra\" Inductive Reverser",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "ship:Kvelqde-Khora|description|545|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 545,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kvelqde-Khora",
+   "english": "One of the more industrious members of the People's Houses has done their best to ruggedize this Kvelqde: additional armor plating has been laid over most of the exposed hull, a second gun port has been attached to the underside, and the shield grid has had its capacity substantially increased. While not quite capable of standing toe-to-toe with a production interceptor of the High Houses, it bares enough teeth for a bit of light piracy, and its greater durability is quite welcome for navigating the decaying stations and hostile worlds of southwestern Successor space.",
+   "italian": "Uno dei membri più operosi delle Case del Popolo ha fatto del suo meglio per irrobustire questa Kvelqde: placche corazzate aggiuntive sono state applicate su gran parte dello scafo esposto, una seconda feritoia per le armi è stata montata sul ventre, e la capacità della rete di scudi è stata notevolmente aumentata. Pur non essendo in grado di tenere testa a un intercettore di serie delle Alte Case, mostra abbastanza denti per un po' di pirateria leggera, e la sua maggiore resistenza è molto gradita per navigare le stazioni in degrado e i mondi ostili dello spazio sudoccidentale dei Successori.",
+   "ratio": 1.045
+  },
+  {
+   "idx": 17,
+   "id": "ship:Myaede|plural|550|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 550,
+   "kind": "VALUE",
+   "context": "ship:Myaede",
+   "english": "Myaeden",
+   "italian": "Myaeden",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "ship:Myaede|3-\"Kaska\" Betavoltaic Cell|579|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 579,
+   "kind": "TEXT",
+   "context": "ship:Myaede",
+   "english": "3-\"Kaska\" Betavoltaic Cell",
+   "italian": "3-\"Kaska\" Betavoltaic Cell",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "ship:Myaede|1-\"Uurau\" Betavoltaic Cell|580|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 580,
+   "kind": "TEXT",
+   "context": "ship:Myaede",
+   "english": "1-\"Uurau\" Betavoltaic Cell",
+   "italian": "1-\"Uurau\" Betavoltaic Cell",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "ship:Myaede|\"Ej\" Shield Cortex|581|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 581,
+   "kind": "TEXT",
+   "context": "ship:Myaede",
+   "english": "\"Ej\" Shield Cortex",
+   "italian": "\"Ej\" Shield Cortex",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "ship:Myaede|\"Chyyra\" Inductive Thruster|583|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 583,
+   "kind": "TEXT",
+   "context": "ship:Myaede",
+   "english": "\"Chyyra\" Inductive Thruster",
+   "italian": "\"Chyyra\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "ship:Myaede|\"Chyyra\" Inductive Steering|584|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 584,
+   "kind": "TEXT",
+   "context": "ship:Myaede",
+   "english": "\"Chyyra\" Inductive Steering",
+   "italian": "\"Chyyra\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "ship:Myaede|\"Aqra\" Inductive Reverser|585|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 585,
+   "kind": "TEXT",
+   "context": "ship:Myaede",
+   "english": "\"Aqra\" Inductive Reverser",
+   "italian": "\"Aqra\" Inductive Reverser",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "ship:Myaede|description|625|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 625,
+   "kind": "DESCRIPTION",
+   "context": "ship:Myaede",
+   "english": "The Myaede is neither elegant nor fast, but it has remained the mainstay of Successor commerce since before the collapse of the old empire over a thousand years ago, boasting a spacious cargo hold, heavy armor, and a flexible enough weapons layout to let it fight back in a pinch. Much like the grand heirlooms of the High Houses, a familial Myaede is often passed down through the lineage of spacefaring low-born Successors, and many of the pilots flying these first took the helm as children under a grandparent's watchful gaze.",
+   "italian": "La Myaede non è né elegante né veloce, ma resta il pilastro del commercio dei Successori da prima del crollo del vecchio impero, più di mille anni fa, vantando una stiva spaziosa, una corazzatura pesante e una disposizione delle armi abbastanza flessibile da permetterle di reagire all'occorrenza. Proprio come i grandi cimeli delle Alte Case, una Myaede di famiglia viene spesso tramandata lungo la discendenza dei Successori di umili origini che viaggiano nello spazio, e molti dei piloti che le guidano hanno preso il timone da bambini, sotto lo sguardo vigile di un nonno.",
+   "ratio": 1.087
+  },
+  {
+   "idx": 25,
+   "id": "ship:Myaede|description|629|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 629,
+   "kind": "DESCRIPTION",
+   "context": "ship:Myaede",
+   "english": "The Myaede is neither elegant nor fast, but has cemented itself as the backbone of Successor commerce with a spacious cargo hold, heavy armor, and a flexible enough weapons layout to let it fight back in a pinch. The design is robust and dependable; many of the ships you've seen appear old and worn but pass through the spaceport no less smoothly than their newer counterparts.",
+   "italian": "La Myaede non è né elegante né veloce, ma si è affermata come spina dorsale del commercio dei Successori grazie a una stiva spaziosa, una corazzatura pesante e una disposizione delle armi abbastanza flessibile da permetterle di reagire all'occorrenza. Il progetto è solido e affidabile; molte delle navi che hai visto sembrano vecchie e consunte, ma attraversano lo spazioporto con la stessa scioltezza delle loro controparti più recenti.",
+   "ratio": 1.159
+  }
+ ]
+}

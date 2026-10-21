@@ -1,0 +1,231 @@
+{
+ "block": {
+  "path": "data/human/syndicate jobs.txt",
+  "line_from": 157,
+  "line_to": 275,
+  "units": 20
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Rush fuel Delivery|name|157|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 157,
+   "kind": "VALUE",
+   "context": "mission:Rush fuel Delivery",
+   "english": "Rush fuel delivery to <planet>",
+   "italian": "Consegna urgente di carburante per <planet>",
+   "ratio": 1.433
+  },
+  {
+   "idx": 2,
+   "id": "mission:Rush fuel Delivery|description|161|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 161,
+   "kind": "DESCRIPTION",
+   "context": "mission:Rush fuel Delivery",
+   "english": "A civilian reactor on <destination> is running low on fuel and needs an emergency shipment of <cargo> by <date>. Payment is <payment>.",
+   "italian": "Un reattore civile su <destination> ha il carburante quasi esaurito e ha bisogno di una fornitura d'emergenza di <cargo> entro il <date>. Il pagamento è <payment>.",
+   "ratio": 1.216
+  },
+  {
+   "idx": 3,
+   "id": "mission:Rush fuel Delivery|dialog|176|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 176,
+   "kind": "DIALOG",
+   "context": "mission:Rush fuel Delivery",
+   "english": "You drop off your cargo of <commodity> at the loading bay of a towering nuclear complex and collect your payment of <payment>.",
+   "italian": "Scarichi il tuo carico di <commodity> alla baia di carico di un imponente complesso nucleare e incassi il pagamento di <payment>.",
+   "ratio": 1.024
+  },
+  {
+   "idx": 4,
+   "id": "mission:Rush equipment Delivery|name|180|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 180,
+   "kind": "VALUE",
+   "context": "mission:Rush equipment Delivery",
+   "english": "Rush equipment delivery to <planet>",
+   "italian": "Consegna urgente di attrezzature per <planet>",
+   "ratio": 1.286
+  },
+  {
+   "idx": 5,
+   "id": "mission:Rush equipment Delivery|description|184|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 184,
+   "kind": "DESCRIPTION",
+   "context": "mission:Rush equipment Delivery",
+   "english": "Syndicate techs on <destination> need a rush shipment of <tons> of specialized <commodity> by <date>. Payment is <payment>.",
+   "italian": "I tecnici del Sindacato su <destination> chiedono una spedizione urgente di <tons> di <commodity> per uso specialistico entro il <date>. Il pagamento è <payment>.",
+   "ratio": 1.317
+  },
+  {
+   "idx": 6,
+   "id": "mission:Rush equipment Delivery|dialog|198|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 198,
+   "kind": "DIALOG",
+   "context": "mission:Rush equipment Delivery",
+   "english": "You drop off your cargo of <commodity> at the loading bay of a towering nuclear complex and collect your payment of <payment>.",
+   "italian": "Scarichi il tuo carico di <commodity> alla baia di carico di un imponente complesso nucleare e incassi il pagamento di <payment>.",
+   "ratio": 1.024
+  },
+  {
+   "idx": 7,
+   "id": "mission:Syndicate target practice [0]|name|202|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 202,
+   "kind": "VALUE",
+   "context": "mission:Syndicate target practice [0]",
+   "english": "Syndicate target practice",
+   "italian": "Syndicate target practice",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "mission:Syndicate target practice [0]|description|205|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 205,
+   "kind": "DESCRIPTION",
+   "context": "mission:Syndicate target practice [0]",
+   "english": "Disable the robotic target dummy ship in <system>, collect test data for Syndicate engineers by scanning its cargo, and land on <planet>. Warning: the target ship is programmed to engage in self-defense behaviors to ensure a realistic simulation. Payment is <payment>.",
+   "italian": "Neutralizza la nave-bersaglio robotica in <system>, raccogli i dati di collaudo per gli ingegneri del Sindacato scansionandone il carico, e atterra su <planet>. Attenzione: la nave bersaglio è programmata per mettersi sulla difensiva, così da garantire una simulazione realistica. Il pagamento è <payment>.",
+   "ratio": 1.142
+  },
+  {
+   "idx": 9,
+   "id": "mission:Syndicate target practice [0]|dialog|221|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 221,
+   "kind": "DIALOG",
+   "context": "mission:Syndicate target practice [0]",
+   "english": "You scan the disabled craft and take careful measurements of the battle damage. Time to deliver the results on <planet>.",
+   "italian": "Scansioni il mezzo neutralizzato e prendi misurazioni accurate dei danni da combattimento. È ora di consegnare i risultati su <planet>.",
+   "ratio": 1.125
+  },
+  {
+   "idx": 10,
+   "id": "mission:Syndicate target practice [0]|dialog|223|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 223,
+   "kind": "DIALOG",
+   "context": "mission:Syndicate target practice [0]",
+   "english": "You forgot to either disable or scan the target dummy ship in <system>! You'll need to head back there and do that before you can return here for payment.",
+   "italian": "Hai dimenticato di neutralizzare o scansionare la nave-bersaglio in <system>! Dovrai tornare là e farlo prima di poter tornare qui a riscuotere.",
+   "ratio": 0.935
+  },
+  {
+   "idx": 11,
+   "id": "mission:Syndicate target practice [0]|dialog|227|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 227,
+   "kind": "DIALOG",
+   "context": "mission:Syndicate target practice [0]",
+   "english": "The robotic target ship has been destroyed. You are hailed by an angry Syndicate official who fines you <payment> and warns you that further mistakes of this nature may remove you from eligibility for these jobs.",
+   "italian": "La nave-bersaglio robotica è stata distrutta. Ti contatta un funzionario del Sindacato furioso, che ti multa di <payment> e ti avverte che altri errori di questo tipo potrebbero escluderti da questi lavori.",
+   "ratio": 0.972
+  },
+  {
+   "idx": 12,
+   "id": "mission:Syndicate target practice [0]|dialog|233|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 233,
+   "kind": "DIALOG",
+   "context": "mission:Syndicate target practice [0]",
+   "english": "You transmit the scan results to a team of eager engineers and collect your payment of <payment>.",
+   "italian": "Trasmetti i risultati delle scansioni a una squadra di ingegneri impazienti e incassi il pagamento di <payment>.",
+   "ratio": 1.155
+  },
+  {
+   "idx": 13,
+   "id": "mission:Syndicate target practice [1]|name|237|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 237,
+   "kind": "VALUE",
+   "context": "mission:Syndicate target practice [1]",
+   "english": "Syndicate target practice",
+   "italian": "Syndicate target practice",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "mission:Syndicate target practice [1]|description|240|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 240,
+   "kind": "DESCRIPTION",
+   "context": "mission:Syndicate target practice [1]",
+   "english": "Disable the robotic target dummy ship in <system>, collect test data for Syndicate engineers by scanning its cargo, and land on <planet>. Warning: the target ship is programmed to engage in self-defense behaviors to ensure a realistic simulation. Payment is <payment>.",
+   "italian": "Neutralizza la nave-bersaglio robotica in <system>, raccogli i dati di collaudo per gli ingegneri del Sindacato scansionandone il carico, e atterra su <planet>. Attenzione: la nave bersaglio è programmata per mettersi sulla difensiva, così da garantire una simulazione realistica. Il pagamento è <payment>.",
+   "ratio": 1.142
+  },
+  {
+   "idx": 15,
+   "id": "mission:Syndicate target practice [1]|dialog|256|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 256,
+   "kind": "DIALOG",
+   "context": "mission:Syndicate target practice [1]",
+   "english": "You scan the disabled craft and take careful measurements of the battle damage. Time to deliver the results on <planet>.",
+   "italian": "Scansioni il mezzo neutralizzato e prendi misurazioni accurate dei danni da combattimento. È ora di consegnare i risultati su <planet>.",
+   "ratio": 1.125
+  },
+  {
+   "idx": 16,
+   "id": "mission:Syndicate target practice [1]|dialog|258|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 258,
+   "kind": "DIALOG",
+   "context": "mission:Syndicate target practice [1]",
+   "english": "You forgot to either disable or scan the target dummy ship in <system>! You'll need to head back there and do that before you can return here for payment.",
+   "italian": "Hai dimenticato di disabilitare o scansionare la nave-bersaglio in <system>! Dovrai tornare là e farlo prima di poter tornare qui a riscuotere.",
+   "ratio": 0.929
+  },
+  {
+   "idx": 17,
+   "id": "mission:Syndicate target practice [1]|dialog|262|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 262,
+   "kind": "DIALOG",
+   "context": "mission:Syndicate target practice [1]",
+   "english": "The robotic target ship has been destroyed. You are hailed by an angry Syndicate official who fines you <payment> and warns you that further mistakes of this nature may remove you from eligibility for these jobs.",
+   "italian": "La nave-bersaglio robotica è stata distrutta. Ti contatta un funzionario del Sindacato furioso, che ti multa di <payment> e ti avverte che altri errori di questo tipo potrebbero escluderti da questi lavori.",
+   "ratio": 0.972
+  },
+  {
+   "idx": 18,
+   "id": "mission:Syndicate target practice [1]|dialog|268|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 268,
+   "kind": "DIALOG",
+   "context": "mission:Syndicate target practice [1]",
+   "english": "You transmit the scan results to a team of eager engineers and collect your payment of <payment>.",
+   "italian": "Trasmetti i risultati delle scansioni a una squadra di ingegneri impazienti e incassi il pagamento di <payment>.",
+   "ratio": 1.155
+  },
+  {
+   "idx": 19,
+   "id": "mission:Syndicate target practice [2]|name|272|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 272,
+   "kind": "VALUE",
+   "context": "mission:Syndicate target practice [2]",
+   "english": "Syndicate target practice",
+   "italian": "Syndicate target practice",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "mission:Syndicate target practice [2]|description|275|0",
+   "path": "data/human/syndicate jobs.txt",
+   "line": 275,
+   "kind": "DESCRIPTION",
+   "context": "mission:Syndicate target practice [2]",
+   "english": "Disable the robotic target dummy ship in <system>, collect test data for Syndicate engineers by scanning its cargo, and land on <planet>. Warning: the target ship is programmed to engage in self-defense behaviors to ensure a realistic simulation. Payment is <payment>.",
+   "italian": "Disabilita la nave-bersaglio robotica in <system>, raccogli i dati di collaudo per gli ingegneri del Sindacato scansionandone il carico, e atterra su <planet>. Attenzione: la nave bersaglio è programmata per mettersi sulla difensiva, così da garantire una simulazione realistica. Il pagamento è <payment>.",
+   "ratio": 1.138
+  }
+ ]
+}

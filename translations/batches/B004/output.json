@@ -1,0 +1,105 @@
+{
+ "batch": "B004",
+ "results": [
+  {
+   "id": "help:shop with multiple ships|If you want to select a few similar ships from your fleet at once, double-click one of them. Other ships of the same model, with the same outfits as the one you selected will be added to your selection.|96|0",
+   "it": "Se vuoi selezionare insieme alcune navi simili della tua flotta, fai doppio clic su una di esse. Verranno aggiunte alla selezione le altre navi dello stesso modello, con gli stessi equipaggiamenti di quella selezionata."
+  },
+  {
+   "id": "help:player info|The player info panel contains a wide variety of information about your pilot, including their net worth, combat rating, salary, and licenses.|99|0",
+   "it": "Il pannello dati pilota contiene molte informazioni sul tuo pilota: patrimonio netto, valutazione di combattimento, stipendio e licenze."
+  },
+  {
+   "id": "help:player info|It also contains a list of all ships you currently own. Clicking on a ship and then going to the ship info tab, or double clicking on it, will bring up more information about that ship.|100|0",
+   "it": "Contiene anche la lista di tutte le navi che possiedi. Cliccando su una nave e poi sulla scheda dati nave, oppure facendo doppio clic, vedrai maggiori informazioni su quella nave."
+  },
+  {
+   "id": "help:player info|Your pilot's logbook and current missions can be accessed by clicking on the buttons below the panel.|101|0",
+   "it": "Il diario del pilota e le missioni attive si aprono cliccando sui pulsanti sotto il pannello."
+  },
+  {
+   "id": "help:player info|The player info panel can be brought up at any time by pressing <View player info>, including mid-flight. However, some functionalities of the panel can only be accessed while landed.|102|0",
+   "it": "Il pannello dati pilota può essere aperto in qualsiasi momento premendo <View player info>, anche in volo. Alcune funzioni, però, sono disponibili solo quando sei atterrato."
+  },
+  {
+   "id": "help:fleet management|You can click on the column headers to temporarily sort your fleet. To make this order permanent, press the \"Save Order\" button.|105|0",
+   "it": "Puoi cliccare sulle intestazioni delle colonne per ordinare temporaneamente la flotta. Per rendere l'ordine permanente, premi il pulsante \"Salva ordine\"."
+  },
+  {
+   "id": "help:fleet management|You can also park your ships by selecting them and pressing \"Park\", or by pressing \"Park Local\" or \"Park All\". Parked ships will not launch or follow you, and do not require any crew salaries. You cannot park or unpark ships mid-flight.|106|0",
+   "it": "Puoi anche parcheggiare le navi selezionandole e premendo \"Parcheggia\", oppure \"Parcheggia le locali\" o \"Parcheggia tutte\". Le navi parcheggiate non partono e non ti seguono, e non richiedono stipendi per l'equipaggio. Non puoi parcheggiare o riprendere navi in volo."
+  },
+  {
+   "id": "help:ship info|The ship info tab lets you view detailed information about ships in your fleet at any time. This includes any information you could see at a shipyard or outfitter, as well as the cargo and passengers distributed among each ship.|109|0",
+   "it": "La scheda dati nave ti permette di vedere in ogni momento informazioni dettagliate sulle navi della tua flotta: tutto ciò che vedresti in un cantiere o da un fornitore, più il carico e i passeggeri distribuiti su ciascuna nave."
+  },
+  {
+   "id": "help:ship info|Ships can be renamed in this panel by clicking on the ship's name. While landed on a planet, you are able to change how guns and turrets are arranged by dragging the name of a weapon to another gun or turret location. While in flight, you are able to jettison individual pieces of cargo by clicking on the name of the cargo.|110|0",
+   "it": "Le navi possono essere rinominate in questo pannello cliccando sul nome della nave. Mentre sei atterrato su un pianeta puoi cambiare la disposizione di cannoni e torrette trascinando il nome di un'arma su un altro punto di montaggio. In volo puoi espellere singole partite di carico cliccando sul nome del carico."
+  },
+  {
+   "id": "help:multiple ship controls|Once you're in space with multiple ships that you own, you can give orders to those escorts. Orders will be given to all selected escorts, or if no escorts are selected then all your escorts will receive the order. Escorts can be selected by either clicking on them in space, clicking the ship icon at the bottom left of the screen, or by clicking and dragging to select a group of escorts in space. The list of escort order keys can be found in the preferences panel.|113|0",
+   "it": "Una volta nello spazio con più navi di tua proprietà, puoi dare ordini alle scorte. Gli ordini vengono dati a tutte le scorte selezionate; se non ne hai selezionata nessuna, li ricevono tutte. Puoi selezionare le scorte cliccandole nello spazio, cliccando l'icona della nave in basso a sinistra, oppure trascinando per selezionare un gruppo. L'elenco dei tasti di comando delle scorte è nel pannello delle preferenze."
+  },
+  {
+   "id": "help:multiple ship controls|Escorts can also be ordered with the mouse. Right-clicking on an empty point in space will order escorts to fly to and hold position at that point, while right-clicking on a hostile ship will order your escorts to focus fire on it, and right-clicking on a friendly target will cause them to follow it.|114|0",
+   "it": "Puoi dare ordini alle scorte anche con il mouse. Il clic destro su un punto vuoto dello spazio ordina alle scorte di volare lì e mantenere la posizione; su una nave ostile ordina di concentrare il fuoco; su un bersaglio amico ordina di seguirlo."
+  },
+  {
+   "id": "help:multiple ship controls|Escorts can be saved into control groups by pressing Control+number key. All selected escorts will then be bound to that number key, selecting the group when pressed.|115|0",
+   "it": "Le scorte possono essere salvate in gruppi di controllo premendo Control+tasto numerico. Tutte le scorte selezionate verranno associate a quel tasto, che le richiama quando premuto."
+  },
+  {
+   "id": "help:multiple ship controls|Ship group management can be done while flying around or while in the shipyard, outfitter, or player info panel.|116|0",
+   "it": "La gestione dei gruppi di navi si può fare in volo oppure nel cantiere, dal fornitore o nel pannello dati pilota."
+  },
+  {
+   "id": "help:fleet asteroid mining|With an asteroid scanner and a fleet, you can direct your fleet to assist with mining operations and collect mined resources.|119|0",
+   "it": "Con uno scanner per asteroidi e una flotta, puoi ordinare alla flotta di aiutarti nelle operazioni di estrazione e di raccogliere le risorse estratte."
+  },
+  {
+   "id": "help:fleet asteroid mining|If your escort or fighter has no weapons but has cargo space, then it will chase after mined resources instead of mining.|120|0",
+   "it": "Se la tua scorta o il tuo caccia non ha armi ma ha spazio carico, inseguirà le risorse estratte invece di estrarre."
+  },
+  {
+   "id": "help:fleet asteroid mining shortcuts|Shortcuts for asteroid targeting:|123|0",
+   "it": "Scorciatoie per il puntamento degli asteroidi:"
+  },
+  {
+   "id": "help:fleet asteroid mining shortcuts|\t<Select nearest asteroid> selects the nearest asteroid if you have an asteroid scanner.|124|0",
+   "it": "\t<Select nearest asteroid> seleziona l'asteroide più vicino, se hai uno scanner per asteroidi."
+  },
+  {
+   "id": "help:fleet asteroid mining shortcuts|\t<Fleet: Fight my target> will focus your fleet on mining a targeted asteroid.|125|0",
+   "it": "\t<Fleet: Fight my target> concentra la flotta sull'estrazione dell'asteroide selezionato."
+  },
+  {
+   "id": "help:fleet asteroid mining shortcuts|\t<Fleet: Harvest flotsam> will toggle whether your fleet tries to pick up flotsam.|126|0",
+   "it": "\t<Fleet: Harvest flotsam> attiva o disattiva il tentativo della flotta di raccogliere i carichi alla deriva."
+  },
+  {
+   "id": "help:fleet asteroid mining shortcuts|Alternate targeting:|128|0",
+   "it": "Puntamento alternativo:"
+  },
+  {
+   "id": "help:fleet asteroid mining shortcuts|\tLeft click - will target an asteroid without mining it.|129|0",
+   "it": "\tClic sinistro: seleziona un asteroide senza estrarlo."
+  },
+  {
+   "id": "help:fleet asteroid mining shortcuts|\tRight click - will focus your fleet to chase an asteroid and mine it.|130|0",
+   "it": "\tClic destro: concentra la flotta sull'inseguimento e sull'estrazione di un asteroide."
+  },
+  {
+   "id": "help:fleet harvest tutorial|You can order your escort to pick up discarded cargo or asteroid flotsam.|133|0",
+   "it": "Puoi ordinare alle scorte di raccogliere il carico abbandonato o i carichi alla deriva."
+  },
+  {
+   "id": "help:fleet harvest tutorial|<Fleet: Harvest flotsam> will order your fleet to collect flotsam if they have free cargo.|135|0",
+   "it": "<Fleet: Harvest flotsam> ordina alla flotta di raccogliere i carichi alla deriva se ha spazio carico libero."
+  },
+  {
+   "id": "help:fleet harvest tutorial|Equip an asteroid scanner to learn more.|137|0",
+   "it": "Monta uno scanner per asteroidi per saperne di più."
+  }
+ ]
+}

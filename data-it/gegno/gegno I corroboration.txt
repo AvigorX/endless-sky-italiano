@@ -1,0 +1,1287 @@
+# Copyright (c) 2023 by Saugia
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+
+
+mission "Passive-Aggressive Observations"
+	invisible
+	non-blocking
+	landing
+	destination "Vigales"
+	to offer
+		has "First Contact: Gegno Scin: offered"
+		not "Gegno Anticipation: offered"
+		not "Gegno Apprehension: offered"
+		not "Gegno Genocide Defense: offered"
+	on complete
+		"gegno: encounters" ++
+		conversation
+			`Mentre navighi i cieli di questo mondo desertico, rilevi letture sotterranee simili a quelle del pianeta dove hai incontrato per la prima volta un Gegno Vi. Probabilmente anche questo mondo ospita la stessa specie, o una simile, di grandi creature serpentine che affrontasti allora. Alla fine ti imbatti in un grande vascello Gegno Vi posato sulla superficie; a differenza del tuo incontro precedente, però, la nave non è sprofondata nel deserto: dev'essere atterrata qui di recente. Un gruppo di guerrieri Vi sta uscendo e si sta disponendo lì vicino, e mentre lo fanno compaiono sopra di te altre due navi Gegno.`
+			choice
+				`	(Vattene.)`
+					goto leave
+				`	(Continua a osservare.)`
+			`	Le navi in avvicinamento scendono verso la superficie senza dedicarti attenzione. Una è dello stesso modello di quella a terra, probabilmente un trasporto. L'altra invece sembra una specie di intercettore, anche se è decisamente più grande di qualcosa come uno Sparrow dello spazio umano, forse persino delle dimensioni di un Headhunter.`
+			`	Considerando che il pianeta ospita altri di quei mostri di prima, e che i Vi sono qui in forze, forse è meglio andarsene ora prima che la situazione sfugga di nuovo di mano.`
+			choice
+				`	(Vattene.)`
+					goto leave
+				`	(Avvicinati alla zona di atterraggio.)`
+			`	Dai gas e ti dirigi verso la zona di atterraggio dei Vi. Mentre il trasporto ha già toccato terra, l'intercettore, ancora in fase di atterraggio, si gira di colpo verso di te mentre ti avvicini. A differenza delle navi da guerra Scin che hai affrontato pochi giorni fa, più reattive alla tua presenza che dirette, i Vi qui si stanno facendo in quattro per avvicinare la tua nave. Un momento dopo ricevi quella che suona come una chiamata rabbiosa dall'intercettore.`
+			`	"Tchii ciei escitch tchii iedf teih Voordhte!"`
+			choice
+				`	(Vattene subito.)`
+				`	(Continua.)`
+					goto continue
+			`	Decidi che è meglio non invadere oltre lo spazio dei Vi: non si può sapere cosa farebbero se continuassi. Quando ti allontani, l'intercettore scatta brevemente in avanti verso di te, stizzito, e continua a osservarti finché non hai lasciato la zona. Mentre gli Scin sembravano più aperti all'interazione, i Vi ne sono chiaramente contrari.`
+				decline
+
+			label continue
+			action
+				set "provoked military"
+			`	Decidi di continuare a volare verso i Vi senza dare ascolto al loro avvertimento. Senza esitare, l'intercettore comincia a caricare verso di te e le navi a terra si preparano al decollo. Persino alcuni soldati Vi a terra gridano e gesticolano verso la tua nave con le armi. A quanto pare i Vi non tollerano più la tua presenza.`
+				decline
+
+			label leave
+			action
+			`	Decidi di ritirarti dalla zona, e le navi proseguono verso la superficie come se tu non fossi mai stato lì. Che potessero essere ostili o no, immischiarsi in quella che potrebbe essere un'esercitazione militare può essere pericoloso, soprattutto con i Vi.`
+				decline
+
+	npc save
+		on kill
+			set "yvx killed"
+		government "Gegno Vi"
+		personality heroic vindictive staying ramming daring uninterested
+		system "Vorsuke"
+		ship "Rhyolite" "Imtydei"
+	npc save
+		government "Gegno Vi"
+		personality heroic vindictive staying uninterested
+		system "Vorsuke"
+		ship "Schist" "Ess Ouec"
+
+mission "Vi Military Group"
+	invisible
+	non-blocking
+	landing
+	to offer
+		has "Passive-Aggressive Observations: done"
+	to complete
+		never
+	on enter "Vorsuke"
+		fail
+
+	npc
+		to spawn
+			has "provoked military"
+		on kill
+			set "yvx killed"
+		government "Gegno Vi (Combative)"
+		personality heroic vindictive ramming daring staying launching
+		system "Vorsuke"
+		ship "Rhyolite" "Imtydei"
+	npc
+		to spawn
+			has "provoked military"
+		government "Gegno Vi (Combative)"
+		personality heroic vindictive staying launching
+		system "Vorsuke"
+		ship "Schist" "Ess Ouec"
+	npc
+		to spawn
+			has "provoked military"
+		government "Gegno Vi (Combative)"
+		personality heroic vindictive staying launching
+		system "Vorsuke"
+		ship "Schist" "Ess Utchec"
+	npc
+		to spawn
+			has "provoked military"
+		government "Gegno Vi (Combative)"
+		personality heroic vindictive staying entering
+		system "Vorsuke"
+		fleet
+			names "gegno vi"
+			variant
+				"Hornfel (Heavy Weapons)" 1
+				"Eclogite" 2
+
+
+mission "Foreign Spectator I"
+	invisible
+	non-blocking
+	landing
+	to offer
+		has "First Contact: Gegno Scin: offered"
+		not "Gegno Anticipation: offered"
+		not "Gegno Apprehension: offered"
+		not "Gegno Genocide Defense: offered"
+	to complete
+		never
+	to fail
+		has "Battle over Zydee: offered"
+	on enter "Oihaug"
+		fail
+		"gegno: encounters" ++
+		conversation
+			`Entrando nel sistema noti al centro una flotta Vi e una Scin, anche se nessuna delle due attacca l'altra. Stanno invece osservando due navi, una per parte, che sembrano sfidarsi. Forse è una sorta di evento cerimoniale tra le fazioni Gegno. Meglio non interferire.`
+
+	npc
+		on provoke
+			set "interrupted arena"
+		government "Gegno Vi"
+		personality heroic vindictive ramming staying uninterested
+		system "Oihaug"
+		ship "Eclogite" "Tschelgi Dueyu"
+	npc
+		on provoke
+			set "interrupted arena"
+		government "Gegno Scin"
+		personality heroic vindictive staying uninterested
+			confusion "militia"
+		system "Oihaug"
+		ship "Felsic" "Tschelgi Dueich"
+	npc
+		on provoke
+			set "interrupted arena"
+		government "Gegno Vi (Neutral)"
+		personality heroic vindictive staying uninterested swarming
+		system "Oihaug"
+		fleet
+			names "gegno vi"
+			variant
+				"Hornfel"
+				"Slate" 2
+	npc
+		on provoke
+			set "interrupted arena"
+		government "Gegno Scin (Neutral)"
+		personality heroic vindictive staying uninterested swarming
+		system "Oihaug"
+		fleet
+			names "gegno scin"
+			variant
+				"Coesite" 2
+				"Tridymite"
+				"Mica"
+
+
+mission "Brief Bystander"
+	invisible
+	non-blocking
+	landing
+	destination "Esstch"
+	to offer
+		has "First Contact: Gegno Scin: offered"
+		not "Gegno Anticipation: offered"
+		not "Gegno Apprehension: offered"
+		not "Gegno Genocide Defense: offered"
+	on complete
+		"gegno: encounters" ++
+		conversation
+			`La presenza di vecchi strumenti di registrazione sparsi sulla superficie di questo pianeta sembra contraddire il disinteresse con cui i Gegno paiono trattarlo. Nonostante si trovi nel sistema natale dei Gegno, Heutesl, il pianeta è apparentemente deserto. Tuttavia, dato che non è sotto stretto controllo Gegno, è un buon posto dove fermarsi, e sembrano non accorgersi né interessarsi del tuo atterraggio.`
+			`	Però, mentre voli in cerchio, noti un piccolo shuttle Gegno parcheggiato a terra. Il colore marrone chiaro dello scafo suggerisce che sia un mezzo civile, ma cosa ci faccia qui è ignoto.`
+			choice
+				`	(Indaga.)`
+					goto investigate
+				`	(Lasciali stare.)`
+					decline
+
+			label investigate
+			action
+				set "gegno: approached bystander"
+			`	Dirigi la nave verso lo shuttle e, avvicinandoti, riesci a vedere un Gegno a terra che armeggia con uno dei dispositivi vicini. Mentre ti avvicini, smette di lavorare e torna al suo shuttle, decollando poco dopo. Sembra che non fosse interessato a un eventuale contatto con te.`
+			`	Atterrando accanto al satellite, scendi a dare un'occhiata. Il dispositivo è indistinguibile dagli altri che hai visto finora. L'unico tratto notevole sembra essere la sua età avanzata.`
+				decline
+
+
+mission "Scin on Cyife"
+	invisible
+	landing
+	source "Cyife"
+	to offer
+		has "First Contact: Gegno Scin: offered"
+		not "Gegno Anticipation: offered"
+		not "Gegno Apprehension: offered"
+		not "Gegno Genocide Defense: offered"
+	on offer
+		"gegno: encounters" ++
+		conversation
+			`Non c'è niente di molto interessante su questa luna fredda e inospitale in mezzo al nulla. C'è però qualcosa di un po' strano nella superficie di Cyife. Parte della luce rifratta attraverso la superficie sembra dissolversi o riflettersi in schemi strani. Anche se sembra ghiaccio, un esame più attento rivela che piccole chiazze del terreno sono fatte di un altro tipo di materiale cristallino. In lontananza c'è qualcosa che spicca davvero su questo mondo: una grande struttura a forma di uovo con una tonalità verde.`
+
+			branch "boarded epidote"
+				has "scin: entered epidote"
+
+			branch "saw epidote"
+				has "scin: approached epidote"
+
+			`	Avvicinandoti abbastanza, l'oggetto oblungo si rivela una grande nave Gegno con i colori della fazione Scin. Cosa ci faccia così lontano dal loro spazio natale è un mistero, come la luna su cui è posata. Dopo qualche secondo si lancia nell'atmosfera e lascia la luna. Non sembra essere rimasto nulla dove era parcheggiata, né traccia di cosa stessero facendo gli Scin qui.`
+				decline
+
+			label "saw epidote"
+			`	Avvicinandoti abbastanza, l'oggetto oblungo si rivela una grande nave Gegno Scin, simile a quella incontrata durante un'interazione con gli Scin tempo fa. Cosa ci faccia così lontano dal loro spazio natale è un mistero, come la luna su cui è posata. O almeno lo era: dopo qualche secondo si lancia nell'atmosfera e lascia la luna.`
+				decline
+
+			label "boarded epidote"
+			`	Avvicinandoti abbastanza, l'oggetto oblungo si rivela una delle grandi navi da ricerca degli Scin, dello stesso tipo di quella in cui sei entrato durante un'interazione con gli Scin tempo fa. È possibile che gli Scin abbiano trovato il mistero di Cyife abbastanza interessante da viaggiare così lontano dal loro spazio natale. Non lo saprai mai con certezza: dopo qualche secondo la nave si lancia nell'atmosfera e scompare nello spazio. Non sembrano aver lasciato nulla.`
+				decline
+
+
+mission "Battle over Zydee"
+	invisible
+	landing
+	to offer
+		has "First Contact: Gegno Scin: offered"
+		not "Gegno Anticipation: offered"
+		not "Gegno Apprehension: offered"
+		not "Gegno Genocide Defense: offered"
+	to complete
+		never
+	source "Zydee"
+	on offer
+		"gegno: encounters" ++
+		conversation
+			`Per quanto questo pianeta sia disabitato, ci sono più di qualche nave Gegno Scin parcheggiata sulla superficie. Sembra che sia in corso un'operazione per continuare a costruire le infrastrutture già edificate in passato, e gli Scin, instancabili, dedicano al tuo arrivo poca o nessuna attenzione.`
+			`	Pochi momenti dopo, però, gli Scin cominciano all'improvviso a correre verso le loro navi. Per quanto ne sai, non ti sei avvicinato abbastanza da allarmarli. Cominciano a decollare uno dopo l'altro in fretta, ma non verso di te: i sensori della <ship> rilevano all'improvviso una grande flotta Gegno Vi che entra nel sistema. Pare che questo posto stia diventando un campo di battaglia, e finirci in mezzo è probabilmente da evitare.`
+				accept
+	on enter "Kneirc"
+		event "gegno: vi occupy zydee" 1 3
+		fail
+
+	npc
+		on provoke
+			set "zydee interference"
+		government "Gegno Scin"
+		personality timid launching uninterested
+		system "Kneirc"
+		fleet
+			names "gegno scin"
+			variant
+				"Epidote"
+				"Coesite"
+				"Tridymite"
+				"Halite"
+	npc
+		on provoke
+			set "zydee interference"
+		government "Gegno Vi"
+		personality heroic staying
+		system "Kneirc"
+		fleet
+			names "gegno vi"
+			variant
+				"Gneiss"
+				"Hornfel (Heavy Weapons)"
+				"Hornfel (Heavy Load)"
+				"Eclogite" 3
+	npc
+		on provoke
+			set "zydee interference"
+		government "Gegno Vi"
+		personality heroic entering
+		system "Kneirc"
+		fleet
+			names "gegno vi"
+			variant
+				"Diorite"
+				"Schist (Heavy Load)"
+				"Schist (Light Load)"
+	npc
+		on provoke
+			set "zydee interference"
+		government "Gegno Scin"
+			confusion "militia"
+		personality heroic staying
+		system "Kneirc"
+		fleet
+			names "gegno scin"
+			variant
+				"Coesite" 3
+	npc
+		on provoke
+			set "zydee interference"
+		government "Gegno Scin"
+			confusion "militia"
+		personality heroic entering
+		system "Kneirc"
+		fleet
+			names "gegno scin"
+			variant
+				"Feldspar"
+				"Felsic" 3
+				"Coesite" 4
+				"Halite" 6
+
+# Zydee becomes occupied by the Vi even if the player doesn't find the above mission.
+mission "Vi Occupy Zydee"
+	invisible
+	non-blocking
+	landing
+	to offer
+		or
+			has "Gegno Anticipation: offered"
+			has "Gegno Apprehension: offered"
+		not "event: gegno: vi occupy zydee"
+		not "Gegno Genocide Defense: offered"
+	to complete
+		never
+	on offer
+		fail
+		event "gegno: vi occupy zydee" 1 3
+
+mission "Curious Civilians"
+	invisible
+	non-blocking
+	landing
+	to offer
+		has "First Contact: Gegno Scin: offered"
+		not "Gegno Genocide Defense: offered"
+	to complete
+		never
+	on enter
+		system
+			government "Gegno"
+		fail
+		"gegno: encounters" ++
+		event "gegno: civilian suspicion"
+
+
+mission "Gegno Suspicions"
+	invisible
+	landing
+	source "Giaru Gegno"
+	to offer
+		has "gegno: encounters"
+		"gegno: encounters" < 6
+		not "Gegno Intervention: offered"
+		not "Gegno Genocide Defense: offered"
+	on offer
+		conversation
+			`Dopo le tue procedure post-attracco entri nel mondo ad anello e non puoi fare a meno di sentire che qualcosa non va. Di solito i Quarg qui camminano svelti, concentrati sui loro compiti, ma per qualche ragione intorno ce ne sono meno del solito. In più, quelli che incroci a volte parlano tra loro, e a volte guardano nella tua direzione anche solo per un istante. La cosa che salta più all'occhio è l'assoluta assenza di Gegno nella zona che stai visitando.`
+			`	Qualche minuto dopo, mentre ti fai strada nell'interno immacolato dell'anello, senti una voce chiamarti da uno dei vari corridoi che si diramano. Voltandoti riconosci l'abbigliamento inconfondibile del Quarg che ti ha aiutato in passato, insieme a qualche altro. "Di nuovo saluti casuali, <first> <last>. Potremmo avere un momento significativo della tua attenzione?"`
+			choice
+				`	"Certo."`
+					goto follow
+				`	"Quanto ci vorrà?"`
+			`	"Tanto quanto serve, perché questa faccenda ha un'importanza simbolica", dice, con un tono leggermente più alto.`
+
+			label follow
+			`	Segui il gruppo di Quarg in una sala più piccola, simile a quella che hai visitato prima. O forse ogni volta ne hai visitata una diversa, considerando quanto è incomprensibilmente grande un mondo ad anello. Quando ti siedi, il Quarg di prima ti guarda per un momento, guarda il tavolo, poi torna a guardare te.`
+			
+			branch "negative rep"
+				or
+					"reputation: Gegno Vi" < 0
+					"reputation: Gegno Scin" < 0
+
+			`	"In passato ti ho offerto suggerimenti di cauta interazione riguardo ai Gegno. Ci è stato segnalato un certo numero di ulteriori incontri che hai avuto, anche se sembrano di natura minima. In quei casi è stato riferito che te ne sei andato in tempo, cosa di cui siamo notevolmente grati. Tuttavia", continua il Quarg, "nonostante i tuoi sforzi nelle cautele raccomandate, alcune figure Gegno di rango significativo hanno espresso frustrazione per le tue apparizioni marginali. Ci hanno chiesto della possibilità di inutili recidive."`
+			choice
+				`	"Perché li frustra?"`
+					goto imagine
+				`	"Non ho fatto loro alcun male."`
+					goto harm
+				`	"È stata più una coincidenza che altro."`
+					goto coincidental
+				`	"Vorrei saperne di più su di loro."`
+					goto learn
+
+			label harm
+			`	"Non serve invocare la violenza per fare molto male a un altro. Per quanto pure possano essere le intenzioni, anche la più piccola azione inconsapevole può rapidamente trasformarsi in una non prevista né desiderata." Il Quarg riflette per un momento.`
+				goto imagine
+				
+			label coincidental
+			`	"Persino una mera coincidenza può causare un risultato non voluto né previsto da chi l'ha innescata. Tutte le cose viventi devono la propria esistenza a serie di coincidenze arbitrarie." Il Quarg riflette per un momento.`
+				goto imagine
+
+			label learn
+			`	"Non sempre il desiderio di sapere porta a occasioni piacevoli. Le creature più curiose possono facilmente farsi male quando sono ignare della natura dei propri interessi." Il Quarg riflette per un momento.`
+
+			label imagine
+			`	"Immagina, se vuoi, che durante i conflitti sostanziali che gli umani chiamano Turf Wars, uno strano alieno giungesse nello spazio umano. Noi Quarg assistemmo con dolore a quel conflitto pericoloso: fu un tempo di grande spreco, di pericolo funesto e di sgradevole diffidenza tra l'umanità. I Gegno sono in uno stato di vulnerabilità notevolmente paragonabile a quel tempo, e l'introduzione di estranei non si addirebbe al caso. La verità è che alcuni Gegno di riguardo ci hanno contattato in merito alle tue passate presenze, e c'è stata una manifestazione di preoccupazione per le tue intenzioni non dichiarate." Dopo una breve pausa il Quarg ti guarda in modo strano, e non sai cosa pensare. "Tuttavia, inaspettatamente, in alcune rare occasioni ci è stato chiesto con curiosità delle tue origini, un'esperienza che non ci è molto familiare con i Gegno."`
+			`	Il Quarg lascia la sedia e ti fa cenno di fare lo stesso.`
+			choice
+				`	(Alzati.)`
+
+			`	"La nostra migliore raccomandazione è di evitare ulteriori contatti nel prossimo futuro. Intanto tenteremo una negoziazione molto attenta con la loro gerarchia per trovare i termini di una base di accettazione della tua presenza. Se troveremo un'intesa, riceverai comunicazione da uno con il titolo di 'Adrauni', come è stato conferito a me."`
+			`	Il resto dei Quarg, che hanno ascoltato la conversazione con attenzione per tutto il tempo, comincia a scortarti fuori dalla stanza. Se i Gegno sono disposti ad arrivare a contattare i Quarg per le tue apparizioni, allora è davvero una faccenda importante per loro. Per il momento è probabilmente meglio lasciare che i Quarg trovino una qualche soluzione con i Gegno mentre tu te ne stai a distanza.`
+				decline
+
+
+			label "negative rep"
+			`	"In passato ti ho offerto suggerimenti di cauta interazione riguardo ai Gegno. Tuttavia siamo sempre più consapevoli di avvenimenti correlati a loro che ti riguardano. Pare che eventi conseguenti si siano davvero verificati. Non spesso in passato fummo avvicinati dai Gegno, ma in alcune notevoli occasioni figure di rilievo ci hanno cercato per informarsi, soprattutto a causa di circostanze violente." Il Quarg ti fissa a lungo, aspettando una qualche risposta.`
+			choice
+				`	"Mi hanno attaccato loro per primi."`
+				`	"Volevo attirare la loro attenzione."`
+					goto attention
+				`	"La violenza accade continuamente nello spazio umano, ma i Quarg non sembrano interessati."`
+					goto violence
+
+			`	Il Quarg continua a guardarti per un po' prima di rispondere. "In base ad alcuni principi, posso vedere ragioni perché essi siano... inclini... a farlo. Tuttavia farlo in questo caso non si allineerebbe agli interessi dei loro anziani, né lo farebbe alcuna fabbricazione." Il Quarg sbatte le palpebre, poi riflette per un momento.`
+				goto cases
+
+			label attention
+			`	Il Quarg sbatte le palpebre. "E hai trovato una soluzione adeguata al tuo... problema... scatenando ostilità non provocate?" Poi continua a fissarti in quella che supponi essere un'aria giudicante per un tempo imbarazzante, prima di distogliere lo sguardo per riflettere tra sé.`
+				goto cases
+
+			label violence
+			`	Il Quarg prende un lungo momento per riflettere sulla tua affermazione, come se non si aspettasse una risposta simile. "Certo, è noto che il conflitto sia comunemente naturale tra voi litigiosi umani. Ma questa faccenda è di altro genere." Poi pensa di nuovo tra sé per un po'.`
+
+
+			label cases
+			`	"Immagina, se vuoi, che durante i conflitti sostanziali che gli umani chiamano Turf Wars, un alieno ostile giungesse nello spazio umano. Noi Quarg assistemmo con dolore a quel conflitto pericoloso: fu un tempo di grande spreco, di pericolo funesto e di sgradevole diffidenza tra l'umanità. I Gegno sono in uno stato di vulnerabilità notevolmente paragonabile a quel tempo, e l'introduzione di ancor più ostilità non si addirebbe al caso, soprattutto da parte di estranei. Siamo stati contattati da numerosi Gegno di alto rango e desideriamo che questa resti una faccenda di sole cautele più severe, ma purtroppo i Gegno la ritengono una questione che va oltre l'attenzione." Il Quarg lascia la sedia e ti fa cenno di fare lo stesso.`
+			choice
+				`	(Alzati.)`
+
+			`	"Ti si raccomanda di lasciare lo spazio Gegno da questo momento decisivo. Intanto tenteremo una negoziazione molto attenta con la loro gerarchia per arrivare ai termini di una tolleranza accettabile. Se troveremo un'intesa, riceverai comunicazione da uno con il titolo di 'Adrauni', come è stato conferito a me."`
+			`	Mentre il resto dei Quarg ti scorta fuori dalla stanza, il Quarg di nome 'Adrauni' ti si rivolge un'ultima volta. "Eviti qualsiasi ulteriore tendenza violenta, capitano." Se i Gegno sono disposti ad arrivare a contattare i Quarg, allora è davvero una faccenda importante per loro. Per il momento è probabilmente meglio ascoltare gli avvertimenti dei Quarg, questa volta, e lasciare lo spazio Gegno finché non si trovi una soluzione, sempre che ci sia.`
+				decline
+
+	on decline
+		event "gegno: quarg talks" 8
+
+
+mission "Under the Nose"
+	invisible
+	non-blocking
+	landing
+	source "Giaru Gegno"
+	to offer
+		has "Gegno Suspicions: declined"
+		not "Gegno Genocide Defense: offered"
+		not "yvx killed"
+	to complete
+		never
+	on enter "Aleit"
+		fail
+
+	npc
+		on kill
+			set "yvx killed"
+		government "Gegno Vi (Neutral)"
+		personality heroic vindictive ramming entering fleeing uninterested
+		system "Aleit"
+		ship "Rhyolite" "Imtydei"
+
+
+mission "Scin Surveillance"
+	invisible
+	non-blocking
+	repeat
+	landing
+	deadline 7
+	source
+		near "Heutesl" 100
+	to offer
+		random < 30
+		has "event: gegno: civilian suspicion"
+		not "Gegno Genocide Defense: offered"
+		not "Gegno Anticipation: offered"
+		not "Gegno Intervention: offered"
+	to complete
+		never
+	npc save
+		government "Gegno Scin"
+		personality surveillance
+			confusion "militia"
+		system
+			government "Gegno Scin"
+		fleet
+			names "gegno scin"
+			variant
+				"Tridymite"
+
+
+mission "Veering Vi A"
+	repeat
+	invisible
+	non-blocking
+	landing
+	deadline 7
+	to offer
+		random < 30
+		has "Gegno Suspicions: declined"
+		not "Full Vi Backlash: offered"
+		not "Gegno Genocide Defense: offered"
+		not	"Gegno Anticipation: offered"
+		not	"Gegno Intervention: offered"
+	npc
+		on kill
+			"vi backlash" ++
+		system "Ookmya"
+		government "Gegno Vi (Combative)"
+		personality heroic staying
+		fleet
+			names "gegno vi"
+			variant 10
+				"Dunite"
+			variant
+				"Dunite" 2
+
+
+mission "Veering Vi B"
+	repeat
+	invisible
+	non-blocking
+	landing
+	deadline 7
+	to offer
+		random < 30
+		has "Gegno Suspicions: declined"
+		not "Full Vi Backlash: offered"
+		not "Gegno Genocide Defense: offered"
+		not	"Gegno Anticipation: offered"
+		not	"Gegno Intervention: offered"
+	npc
+		on kill
+			"vi backlash" ++
+		system
+			government "Gegno Vi"
+		government "Gegno Vi (Combative)"
+		personality heroic staying
+		fleet
+			names "gegno vi"
+			variant
+				"Eclogite"
+
+
+mission "Full Vi Backlash"
+	invisible
+	non-blocking
+	landing
+	to offer
+		"vi backlash" >= 3
+		"reputation: Gegno Vi" >= 0
+	on offer
+		fail
+		clear "vi backlash"
+		"reputation: Gegno Vi" = -1
+
+
+mission "Return to Giaru Gegno"
+	entering
+	description `Il Quarg noto come Adrauni ti ha convocato di nuovo su <destination>.`
+	source
+		not system "Aleit"
+	destination "Giaru Gegno"
+	to offer
+		or
+			has "event: gegno: quarg talks"
+			"gegno: encounters" >= 6
+		not "Gegno Intervention: offered"
+		not "Gegno Genocide Defense: offered"
+	on enter
+		dialog `C'è un messaggio in arrivo sul tuo dispositivo di comunicazione. "Saluti, umano <first> <last>. Questo messaggio viene dal Quarg di nome Adrauni. Torna su <planet> alla prima occasione che ti è data."`
+	on complete
+		fail "Scin Surveillance"
+		fail "Veering Vi A"
+		fail "Veering Vi B"
+
+
+mission "Gegno Anticipation"
+	landing
+	name "Convocazione dei Gegno"
+	description "Presentati ai Gegno su <destination> entro i prossimi 8 giorni, dove scoprirai se hai un futuro con loro."
+	source "Giaru Gegno"
+	destination "Dueyu Eitch"
+	clearance
+	to offer
+		has "Return to Giaru Gegno: offered"
+		not "Gegno Genocide Defense: offered"
+		not "Gegno Intervention: offered"
+		not "event: gegno: apprehension"
+		"reputation: Gegno Vi" > -100
+		"reputation: Gegno Scin" > -50
+	on offer
+		conversation
+			branch "negative rep"
+				or
+					"reputation: Gegno Vi" < 0
+					"reputation: Gegno Scin" < 0
+
+			`Appena atterri sul mondo ad anello, ti accoglie un piccolo gruppo di Quarg che ti fa subito cenno di seguirli. Ti scortano attraverso varie sale dell'anello, che sembrano ancora prive di qualsiasi Gegno. In fondo al corridoio successivo vedi Adrauni che ti aspetta, e accanto a lui un Gegno con un abbigliamento di forma strana. Quando li raggiungi, gli altri Quarg si dirigono altrove e Adrauni comincia a camminare lungo un altro corridoio. "Ti prego, concediti di accompagnarci."`
+			`	Mentre li segui, Adrauni comincia a parlare tendendo un braccio. "Se puoi, come dicono gli umani, assecondami: cosa sospetti sia stato il risultato delle mie negoziazioni con i Gegno?"`
+			choice
+				`	"Che mi accetteranno?"`
+				`	"Che non vogliono avere niente a che fare con me?"`
+					goto "deny me"
+				`	"Non lo so."`
+					goto unsure
+
+			action
+				set "gegno word: accept"
+			`	Dopo una breve pausa Adrauni si volta verso il Gegno, mormora qualcosa nella loro lingua, poi ti risponde. "Capisco. E quale proponi che sia la ragione?"`
+			choice
+				`	"Li ho aiutati prima, e potrei aiutarli ora."`
+				`	"Pensavo che avreste potuto convincerli."`
+					goto convince
+				`	"Non lo so."`
+					goto unsure
+
+			`	Adrauni riflette per qualche momento mentre continuate a camminare nell'interno impeccabile del mondo ad anello. "È una risposta piuttosto umana. Tuttavia non confondere il tuo valore nell'assistenza con il loro. Anche se fornissi ai Gegno un aiuto benefico, una risposta benevola in cambio non è necessaria. A questo punto hai dato ascolto ai miei avvertimenti, eppure stai semplicemente facendo ciò che i Gegno desideravano dall'inizio: lasciarli stare."`
+			choice
+				`	"Forse è meglio che li lasci stare."`
+					goto better
+				`	"Deve esserci qualcosa che posso fare."`
+					goto understand
+
+			label "convince"
+			`	Adrauni ti lancia un'occhiataccia continuando attraverso il mondo ad anello. "Non ricordi la mia precedente menzione che noi Quarg abbiamo tentato simili persuasioni? Non è in nostra capacità convincere i Gegno di nulla. Sono molto devoti ai propri, e supererebbero ogni confine per opporsi a un consiglio, anche da noi Quarg."`
+			choice
+				`	"Forse è meglio che li lasci stare."`
+					goto better
+				`	"Deve esserci qualcosa che posso fare."`
+					goto understand
+
+			label "deny me"
+			action
+				set "gegno word: reject"
+			`	Dopo una breve pausa Adrauni si volta verso il Gegno, mormora qualcosa nella loro lingua, poi ti risponde. "Capisco. E quale proponi che sia la ragione?"`
+			choice
+				`	"Per come si comportano con me."`
+				`	"Da quello che mi hai detto prima."`
+					goto before
+				`	"Non lo so."`
+					goto unsure
+
+			`	"Certo, i Gegno sono diffidenti verso di te, che manchi di cautela." Passano alcuni secondi, e Adrauni lancia uno sguardo strano verso il Gegno. Non sai cosa stia pensando. Il Gegno sembra fare una domanda nella loro lingua, ma non riceve risposta. Adrauni tace ancora per un po' prima di parlare di nuovo. "Nonostante questo, ti sei trovato in situazioni precarie in cui noi non siamo stati. Noi come specie abbiamo abbracciato il contatto con i Gegno; tu, però, resti l'unico umano qui. Forse è lì che sta un'implicazione notevole di distinzione."`
+			choice
+				`	"Stai dicendo che c'è qualcosa che posso fare?"`
+					goto understand
+				`	"Non sono sicuro di capire."`
+					goto interest
+
+			label "before"
+			`	"Capisco." Adrauni sbatte le palpebre lentamente fissandoti. È quasi come se fosse sorpreso, o almeno non si aspettasse quella risposta. "È saggio che tu segua la mia fortunata istruzione. Se non fosse così, forse non sarei io a parlare con te in questo momento. O forse non ci sarebbe nessuno." Poi guarda di nuovo avanti mentre continuate la passeggiata, lasciandoti a pensare a quelle parole. "Purtroppo i Quarg non sono in grado di aiutarti ulteriormente in questa delicata faccenda. Se ricordi, abbiamo tentato un precedente consiglio con i Gegno, ma sono legati ai loro modi, anche se questo significa opporsi incredibilmente a noi Quarg."`
+			choice
+				`	"Forse è meglio che li lasci stare."`
+					goto better
+				`	"Deve esserci qualcosa che posso fare."`
+					goto understand
+
+			label "unsure"
+			action
+				set "gegno word: unsure"
+			`	Adrauni si volta brevemente verso di te, ti fissa senza espressione, poi si rivolge al Gegno e mormora qualcosa nella loro lingua prima di risponderti. "E perché mai sei incerto?"`
+			choice
+				`	"Non ero sicuro che avreste potuto convincerli."`
+					goto convince
+				`	"Non so niente di loro."`
+
+			action
+				set "gegno word: friend"
+			`	Dopo una pausa Adrauni si volta verso di te, ti lancia un'occhiataccia e poi guarda di nuovo avanti mentre proseguite tutti e tre attraverso l'anello. "Una conclusione piuttosto importante, non è vero? Molte volte l'ho detto: i Gegno non sono ciò di cui considererei gli umani possedere conoscenza. Se tu ne sapessi di più, temo che anche allora i Gegno non desidererebbero, come si dice in umano, la camerateria?" Il Gegno fa allora una domanda nella loro lingua, e Adrauni avvia con lui una conversazione piuttosto lunga.`
+			choice
+				`	"Forse è meglio che li lasci stare."`
+					goto better
+				`	"Deve esserci qualcosa che posso fare."`
+					goto understand
+
+			label "interest"
+			`	Il Quarg si volta di nuovo verso di te. "Sei qui non per capriccio della tua specie fanatica, ma per tua richiesta. Le azioni che compi possono essere di un umano, ma non sono volute dall'umanità." Sbattendo le palpebre lentamente, Adrauni si volta verso il Gegno che cammina al suo fianco e avvia con lui una conversazione piuttosto lunga.`
+				goto "visit a"
+
+			label "understand"
+			`	Camminate in silenzio per un periodo imbarazzante. La strana architettura del mondo ad anello ti rassicura poco; hai la sensazione di aver già percorso lo stesso tratto diverse volte. Qualche momento dopo cominci a seguire Adrauni e il Gegno in quella che sembra una sezione diversa, anche se stranamente più ampia delle precedenti. Prima che tu possa fare altre domande, Adrauni risponde finalmente. "È evidente che tu possa comprendere qualcosa della tua fragile situazione. Non è più ciò che io, anzi, i Quarg, possono fare per te. È ciò che tu puoi fare per te stesso."`
+				goto "visit a"
+
+			label "better"
+			`	Adrauni parla ancora a lungo con il Gegno. La strana architettura del mondo ad anello ti rassicura poco; hai la sensazione di aver già percorso lo stesso tratto diverse volte. Qualche momento dopo cominci a seguire Adrauni e il Gegno in quella che sembra una sezione diversa, anche se stranamente più ampia delle precedenti. "Sì, può essere che la tua partenza tempestiva sia l'esito più favorevole in questa faccenda." Segue un lungo silenzio imbarazzante, alla fine del quale Adrauni si ferma brevemente, sempre rivolto avanti, incrociando le braccia dietro la schiena. "Anche se tu ed io immaginiamo che sia... improbabile."`
+				goto "visit a"
+
+			label "visit a"
+			`	Il Gegno vi lascia all'ingresso di un corridoio separato, e tu segui Adrauni fino a un'ultima tappa. Sei alla fine del tuo lungo viaggio attraverso il mondo ad anello e ti ritrovi dove hai cominciato: la struttura di attracco dove è posata la tua nave. Anche se seguire Adrauni fin qui è sembrato un labirinto vertiginoso, non puoi fare a meno di immaginare quanto sarebbe più confuso esplorare un intero mondo ad anello, considerando che questo era solo qualche minuto. Adrauni si ferma e si volta verso di te, abbassandosi un poco per parlarti all'altezza dei tuoi occhi. "Devi cercare udienza per conto tuo, tenace. Visita il mondo natale dei Gegno, Dueyu Eitch, e presentati nel modo in cui desideri essere percepito. Solo allora troverai la risposta che cerchi."`
+			
+			label "epilogue a"
+			choice
+				`	"Non mi impediranno di atterrare?"`
+					to display
+						not "gegno: landing dialog"
+
+				`	"Non potevamo semplicemente chiedere al Gegno di prima?"`
+					to display
+						not "gegno: asked dialog"
+					goto ask
+
+				`	"Non sono sicuro che sia sicuro. Potresti scortarmi?"`
+					to display
+						not "gegno: escort dialog"
+					goto escort
+			
+				`	"Grazie. Parto ora."`
+					to display
+						has "gegno: landing dialog"
+					goto "end a"
+
+			action
+				set "gegno: landing dialog"
+			`	"Al contrario, credo piuttosto che ti stiano aspettando. Ricorda che devi contattare il pianeta per l'autorizzazione."`
+				goto "epilogue a"
+
+			label "ask"
+			action
+				set "gegno: asked dialog"
+			`	Adrauni riflette sulla tua domanda per qualche momento prima di rispondere. "Ah, sì, la tua ingenuità verso la cultura Gegno mi era sfuggita solo per un attimo. La tradizione tra le femmine Scin è di dedicare al tempo di ricerca poco meno di una vita. Quella di cui parli è molto devota a noi qui, nient'altro. Perché qualsiasi questione ufficiale con i Gegno passi, deve attraversare il grande cuore della colonia."`
+				goto "epilogue a"
+
+			label "escort"
+			action
+				set "gegno: escort dialog"
+			`	Adrauni sbatte le palpebre. "Avrei sperato che tu avessi capito cosa significava la tua precedente consapevolezza." Guarda di lato, immerso nei pensieri, poi torna a te. "Di norma noi Quarg visitiamo i Gegno raramente, e solo per motivi di poco conto. Se fossi accompagnato in questo momento, la percezione instabile che i Gegno hanno di te cambierebbe ancora. Immagina se i Quarg visitassero il vostro pianeta, chiamato Terra, con strani altri al seguito." Immagini che Adrauni faccia quello che per un Quarg sarebbe un sospiro. "Tuttavia, sì, sono in grado di mandarti una scorta. Sii certo di questa decisione."`
+			choice
+				`	"Sì, vorrei una scorta."`
+					goto "quarg escort"
+				`	"In realtà dovrei cavarmela da solo."`
+					goto "no escort"
+
+			label "quarg escort"
+			action
+				set "gegno: escort dialog"
+				set "gegno anticipation: quarg escort"
+			`	Adrauni risponde con esitazione. "Ne farò richiesta alla tua partenza."`
+				goto "epilogue a"
+
+			label "no escort"
+			action
+				set "gegno: escort dialog"
+			`	"Capisco. Che sia per il meglio, allora."`
+				goto "epilogue a"
+
+			label "end a"
+			`	"Buon viaggio, <first> <last>. Aspiro a che le tue audaci decisioni si addicano ai saggi nel cammino che ti attende." Adrauni ti fa un lungo inchino, poi lascia l'hangar. Hai la sensazione che questa possa essere stata l'ultima volta che lo incontri. Mentre torni alla nave, alcuni altri Quarg, che hanno osservato la conversazione da lontano, tornano alla loro routine come se nulla fosse. Ora tocca a te scoprire se i Gegno ti accetteranno.`
+				accept
+
+			label "negative rep"
+
+			`Appena atterri sul mondo ad anello, noti un gruppo di Gegno ai margini dell'hangar in cui sei posato. Hanno l'aspetto massiccio dei guerrieri Vi e, pur restando fermi, ti osservano intensamente mentre scendi dalla nave. Un piccolo gruppo di Quarg ti si avvicina e ti fa subito cenno di seguirli, scortandoti attraverso varie sale dell'anello. Alla fine sei condotto nella stanza dove hai incontrato Adrauni in passato, o forse in una identica. "Ti prego, siediti."`
+			`	Ti siedi, insieme ad altri due Quarg, e gli altri lasciano la stanza con la porta che si chiude alle loro spalle. Adrauni ti fissa senza espressione per un po', poi parla. "Presumo tu comprenda quale risultato sia venuto dalle mie negoziazioni con i tediosi Gegno."`
+			choice
+				`	"Che sono arrabbiati con me?"`
+					goto upset
+				`	"Che mi tollereranno?"`
+				`	"No, non lo capisco."`
+					goto "no idea"
+
+			`	Adrauni continua a fissarti, poi sbatte le palpebre lentamente. "Capisco. Qual è la tua strana interpretazione del termine 'tollerare' in questo contesto?"`
+			choice
+				`	"Il permesso di atterrare sui loro mondi."`
+				`	"Concedermi accesso alla loro tecnologia."`
+					goto tech
+				`	"Non lo so."`
+					goto "dont know"
+
+			`	Adrauni riflette per qualche momento. "È una risposta piuttosto umana. Per quanto noi Quarg siamo, secondo la tua definizione, minimamente tolleranti verso la tua specie, vi diamo accesso solo ad alcuni dei nostri mondi meravigliosi. Ma che dire degli umani verso gli altri? Se i Gegno, o specie di altre eccentricità, avessero libertà di accesso al vostro pianeta Terra? Con te forse sarebbe così, ma con l'umanità ansiosa certamente no." Uno degli altri Quarg nella stanza dice qualcosa ad Adrauni, che risponde con una conversazione nella propria lingua.`
+			choice
+				`	"Non c'è modo che io possa lavorare con i Gegno?"`
+					goto work
+				`	"Immagino che dovrei lasciarli stare."`
+					goto alone
+
+			label "tech"
+			`	Adrauni batte i denti insieme in quella che sembra una risata, una reazione che non gli avevi mai visto fare. "E a noi molti Quarg, tra quelli che vivono tra umani ambiziosi, abbiamo forse concesso la nostra tecnologia? Nessuno ha diritto alle invenzioni altrui in virtù di una tolleranza pretestuosa." Gli altri Quarg nella stanza guardano Adrauni in modo strano, dopo di che comincia con loro una conversazione nella loro lingua. Dopo qualche momento anche loro ti fissano con sguardi strani, seguiti da un silenzio imbarazzante, che Adrauni rompe parlandoti di nuovo. "Anche con noi, i Gegno condividono ben poco di interessante."`
+			choice
+				`	"Allora non c'è modo che io possa lavorare con i Gegno?"`
+					goto work
+				`	"Immagino che dovrei lasciarli stare."`
+					goto alone
+
+			label "dont know"
+			`	"Certo che no. Tollerare significa autorizzare un accadimento senza restrizioni nonostante una premessa indesiderata. In questo non sta l'interesse dei Gegno, come ho già detto una volta." Guarda in alto pensieroso per diversi momenti. "Forse nel tuo giudizio ingenuo mi sbaglio. Gli umani tollerano i propri indesiderabili, quelli divenuti noti come corsari. Parti della tua specie ne permettono le azioni moleste, altre no. Ciò nonostante, supponi che una specie diversa dall'umanità cominci un'agitazione simile. Presumerei che il caso sarebbe diverso." Adrauni comincia allora una conversazione con gli altri Quarg nella stanza.`
+			choice
+				`	"Stai dicendo che non c'è modo che io possa lavorare con i Gegno?"`
+					goto work
+				`	"Immagino che dovrei lasciarli stare."`
+					goto alone
+
+
+			label "upset"
+			`	"Evidentemente sì, visto che quelli dei Vi sono entrati sfrontatamente nel nostro anello. Una dimostrazione di forza è del tutto inaudita, ancor più in opposizione ad altri mezzi di comunicazione meno immodesti. Avevo la minima speranza che tu avessi compreso i miei ammonimenti sulla non violenza, perché credo che ci sia beneficio nelle aspirazioni ottimistiche delle specie più giovani, ma alla fine le mie speranze si sono rivelate infondate." Alcuni degli altri Quarg nella stanza si rivolgono bruscamente ad Adrauni come se tu non fossi presente e cominciano un lungo periodo di dibattito, punteggiato ogni tanto da occhiatacce nella tua direzione.`
+			choice
+				`	"Allora non c'è modo che io possa lavorare con i Gegno?"`
+					goto work
+				`	"Immagino che dovrei lasciarli stare."`
+					goto alone
+
+
+			label "no idea"
+			`	"Sì, credo che sia un tema ricorrente in questa situazione superflua. È una pratica piuttosto pericolosa compiere un atto prima della conoscenza, come noi Quarg consigliamo da molti anni a voi impulsivi umani. Nelle nostre discussioni con voi è evidente che questo si è dimostrato vero. Tuttavia i grandi limiti superati qui vanno oltre ciò che possiamo permetterci di accogliere." Adrauni cambia leggermente espressione, fulminandoti di nuovo. "Soprattutto dopo continui avvertimenti precedenti." Uno degli altri Quarg nella stanza dice qualcosa ad Adrauni, che avvia una conversazione nella propria lingua.`
+			choice
+				`	"Allora non c'è modo che io possa lavorare con i Gegno?"`
+					goto work
+				`	"Immagino che dovrei lasciarli stare."`
+					goto alone
+
+			
+			label "work"
+			`	Restate seduti in silenzio per un tempo scomodo, durante il quale persino i Quarg non si parlano. La strana struttura e le luci brillanti della stanza ti rassicurano poco mentre i Quarg riflettono tra sé. Qualche momento dopo ricominciano a parlare tra loro, ma non hai occasione di dire una parola. Dopo diversi altri minuti di discussione e sguardi strani, gli altri Quarg si alzano e ti affiancano da entrambi i lati, mentre Adrauni finalmente ti si rivolge di nuovo. "Purtroppo, a questo punto degli eventi, né io né i Quarg possiamo darti una risposta alla tua richiesta. Siamo concordi nella nostra ferma opposizione a ulteriori interazioni tra te e i Gegno." Poi fa quello che pensi sarebbe l'equivalente Quarg di un sospiro.`
+				goto "visit b"
+
+			label "alone"
+			`	Restate seduti in silenzio per un periodo scomodo, durante il quale persino i Quarg non si parlano. La strana struttura e le luci brillanti della stanza ti rassicurano poco mentre i Quarg riflettono tra sé. Qualche momento dopo ricominciano a parlare tra loro, ma non hai occasione di dire una parola. Dopo diversi altri minuti di discussione e sguardi strani, gli altri Quarg si alzano e ti affiancano da entrambi i lati, mentre Adrauni finalmente ti si rivolge di nuovo. "Certo, quella affermazione è nelle nostre più forti preferenze per questa faccenda." Si alza e incrocia le braccia dietro la schiena. "Anche se suppongo che tu ed io immaginiamo che sia... improbabile."`
+				goto "visit b"
+
+			label "visit b"
+			`	La porta si apre alle tue spalle e i Quarg ti fanno cenno di seguirli di nuovo, scortandoti fuori dalla stanza e riportandoti all'hangar dove è parcheggiata la tua nave. Sembrano esserci più Quarg del solito nei corridoi, alcuni di stanza presso vari ingressi. Non puoi fare a meno di ricordare che questa è solo una piccola parte dell'anello, il che rende il resto ancora più incomprensibilmente grande e pieno di Quarg. Tornato all'hangar, trovi la vista dei guerrieri Vi bloccati da un gruppo più numeroso di Quarg, anche se non sembrano esserci intenzioni ostili, né conversazione, da nessuna delle due parti. Adrauni si ferma allora davanti a te. "Non è più nella nostra giurisdizione assisterti in questo. Tuttavia, se davvero continui a perseguire questo desiderio di avere a che fare con i Gegno, devi cercare udienza da solo. Visita il mondo natale dei Gegno, Dueyu Eitch, e presentati nel modo in cui desideri essere percepito. Solo allora troverai risposta ai tuoi capricci."`
+
+			label "epilogue b"
+			choice
+				`	"Non mi negheranno il permesso di atterrare?"`
+					to display
+						not "gegno: deny dialog"
+
+				`	"Non potevamo semplicemente chiedere a quel Gegno là?"`
+					to display
+						not "gegno: there dialog"
+					goto there
+			
+				`	"Me ne andrò ora."`
+					to display
+						has "gegno: deny dialog"
+					goto "end b"
+
+			action
+				set "gegno: deny dialog"
+			`	Dopo una pausa Adrauni risponde. "Al contrario, credo piuttosto che ti stiano aspettando, considerate le loro esclamazioni sulla situazione."`
+				goto "epilogue b"
+
+			label "there"
+			action
+				set "gegno: there dialog"
+			`	"Quelli dei Vi non rappresentano quelli dei Gegno, cioè di un'intera specie. I Vi qui presenti sono solo di una famiglia, e di gruppi simili ce ne sono molti." Adrauni considera la tua domanda per qualche momento, quasi sembrando provarne un lieve interesse. "È diverso da ciò a cui voi umani siete abituati. La cultura Vi non designa una famiglia solo per discendenza o familiarità."`
+				goto "epilogue b"
+
+			label "end b"
+			`	"Per quanto le tue azioni finora siano insoddisfacenti, aspiro a che le decisioni future si addicano ai saggi nel cammino che ti attende. Ti auguro un viaggio istruttivo, <first> <last>." Adrauni ti fa un lungo inchino, poi lascia l'hangar. Hai la sensazione che questa possa essere stata l'ultima volta che lo incontri. Mentre torni alla nave, i guerrieri Vi continuano a osservare da lontano, ma i Quarg li bloccano con fermezza. Tocca a te capire se i Gegno ti tollereranno ancora.`
+				accept
+
+	on accept
+		clear "gegno: landing dialog"
+		clear "gegno: asked dialog"
+		clear "gegno: escort dialog"
+		clear "gegno: deny dialog"
+		clear "gegno: there dialog"
+
+	npc
+		to spawn
+			has "gegno anticipation: quarg escort"
+		government "Quarg (Gegno)"
+		system "Heutesl"
+		personality entering staying escort
+		fleet
+			names "quarg"
+			variant
+				"Quarg Wardragon"
+
+	npc
+		on provoke
+			fail
+			"reputation: Gegno" = -100
+			"reputation: Gegno Vi" = -100
+			"reputation: Gegno Vi (Neutral)" = -100
+			"reputation: Gegno Scin" = -100
+			"reputation: Gegno Scin (Neutral)" = -100
+			dialog `Dopo aver deciso di aprire il fuoco sulla flotta Gegno che sorvegliava la tua visita al loro mondo natale, ti trovi davanti a un'opposizione aggressiva e a quelle che suonano come innumerevoli chiamate furiose. Qualsiasi possibilità ti restasse di avere a che fare con i Gegno è ora svanita.`
+		government "Gegno Vi (Neutral)"
+		personality heroic vindictive staying
+		system "Heutesl"
+		fleet "Vi Warfleet" 3
+	npc
+		on provoke
+			fail
+			"reputation: Gegno" = -100
+			"reputation: Gegno Vi" = -100
+			"reputation: Gegno Vi (Neutral)" = -100
+			"reputation: Gegno Scin" = -100
+			"reputation: Gegno Scin (Neutral)" = -100
+			dialog `Dopo aver deciso di aprire il fuoco sulla flotta Gegno che sorvegliava la tua visita al loro mondo natale, ti trovi davanti a un'opposizione aggressiva e a quelle che suonano come innumerevoli chiamate furiose. Qualsiasi possibilità ti restasse di avere a che fare con i Gegno è ora svanita.`
+		government "Gegno Scin (Neutral)"
+		personality heroic vindictive staying
+			confusion "militia"
+		system "Heutesl"
+		fleet "Scin Warfleet" 3
+
+
+mission "Gegno Apprehension"
+	invisible
+	non-blocking
+	landing
+	to complete
+		never
+	to offer
+		or
+			"gegno: encounters" >= 6
+			has "dead augen"
+			and
+				"gegno: encounters" >= 3
+				has "Full Vi Backlash: offered"
+			and
+				"gegno: encounters" >= 3
+				or
+					"reputation: Gegno Vi" <= -100
+					"reputation: Gegno Scin" <= -50
+			and
+				"gegno: encounters" >= 3
+				or
+					has "interrupted arena"
+					has "zydee interference"
+	on offer
+		event "gegno: apprehension"
+		fail
+
+
+mission "Gegno Intervention"
+	landing
+	clearance
+	name "Convocazione dei Gegno"
+	description "Presentati ai Gegno su <destination> entro i prossimi 8 giorni, dove scoprirai se hai un futuro con loro."
+	to offer
+		has "event: gegno: apprehension"
+		not "Gegno Genocide Defense: offered"
+		not "Gegno Anticipation: offered"
+	source "Giaru Gegno"
+	destination "Dueyu Eitch"
+	deadline 8
+	on offer
+		fail "Scin Surveillance"
+		fail "Veering Vi A"
+		fail "Veering Vi B"
+		"reputation: Quarg (Gegno)" = 0
+		conversation
+			`Mentre sei in fase di attracco al mondo ad anello, noti una grande nave Gegno color marrone chiaro già presente nell'hangar assegnato, circondata da diverse navi di entrambe le fazioni, Vi e Scin. Lì vicino un piccolo gruppo di Quarg discute qualcosa con un gruppo più piccolo di Gegno che sembrano piuttosto scontenti. Appena esci dalla nave, entrambi i gruppi tacciono e guardano verso di te. Riconosci Adrauni che ti si avvicina rapidamente insieme a un Gegno che indossa un'armatura molto elaborata, dall'aspetto né Scin né Vi.`
+			`	Adrauni non esita a rivolgersi a te. "<first> <last>. Presumo che tu comprenda il significato di questa faccenda."`
+			choice
+				`	"Non sono sicuro di cosa stia succedendo."`
+				`	"Credo di aver capito il senso."`
+
+			`	Il Quarg ora ti sta davanti, leggermente abbassato per parlarti. "Come capita nella difficile situazione, diverse lamentele noi Quarg abbiamo ricevuto dai Gegno. Ti sei immischiato nei loro affari, una volta di troppo. Per quanto io desideri parlarti ancora della questione, né io né i Quarg ti saremo di ulteriore aiuto nelle tue imprese qui." Adrauni si volta verso il Gegno, che sembra quasi indifferente, o quanto meno cerca di evitare il tuo sguardo. Dopo una breve discussione di cui non capisci nulla, il Gegno si avvia verso la nave marrone chiaro. Come per un segnale, tutti gli altri Gegno nell'hangar tornano alle rispettive navi.`
+			`	Mentre guardi tutte le navi andarsene, Adrauni parla di nuovo. "Otto rivoluzioni ti sono state date dai Gegno per comparire sul loro mondo. Se non ottemperi, allora sei, nelle loro parole, congedato dal loro spazio."`
+			choice
+				`	"Congedato?"`
+				`	"Verrai con me?"`
+					goto coming
+				`	"Va bene, andrò."`
+					goto end
+
+			`	Adrauni riflette per un breve momento. "Un'espressione più appropriata sarebbe esiliato, o forse ripudiato? La cultura Gegno considera tutto come un'unica grande casa. La tua presenza nel loro spazio equivale a dire che sei già entrato, ma ora è un invito al quale non sei più gradito."`
+			choice
+				`	"Non sono già indesiderato?"`
+				`	"Non possono decidere dove vado."`
+					goto where
+			
+			`	"È una filosofia difficile da spiegare. Anche noi Quarg siamo stati soggetti a inospitalità. In alcune notevoli capacità lo siamo ancora, ma in modo diverso da questo."`
+				goto end
+
+			label "where"
+			`	"Sia come sia, non confondere precipitosamente questo con un'azione impunibile. Sui loro mondi vale il loro prudente arbitrio. Tuttavia, qualsiasi azione tu decida infine di compiere nel loro spazio non è priva di osservazione."`
+				goto end
+
+			label "coming"
+			`	"Non lo sarò. Certo, è spiacevole che non possa più essere d'aiuto, ma il destino di questa faccenda appartiene solo a te e ai Gegno."`
+				goto end
+
+			label "end"
+			`	Adrauni si alza in tutta la sua altezza davanti a te un'ultima volta. "Per conservare le poche relazioni che abbiamo con i Gegno, devo informarti che non possiamo più permettere l'accesso ai nostri mondi qui nel loro spazio. Nonostante questa disgrazia, aspiro a decisioni sagge da parte tua nel cammino che ti attende, <first> <last>." Adrauni ti fa un lungo inchino e lascia l'hangar; questa è probabilmente l'ultima volta che lo incontrerai. Ora tocca a te cercare una qualche base comune con i Gegno, se è ancora possibile.`
+				accept
+
+	npc
+		on provoke
+			fail
+			"reputation: Gegno" = -100
+			"reputation: Gegno Vi" = -100
+			"reputation: Gegno Vi (Neutral)" = -100
+			"reputation: Gegno Scin" = -100
+			"reputation: Gegno Scin (Neutral)" = -100
+			dialog `Dopo aver deciso di aprire il fuoco sulla flotta Gegno che sorvegliava la tua visita al loro mondo natale, ti trovi davanti a un'opposizione aggressiva e a quelle che suonano come innumerevoli chiamate furiose. Qualsiasi possibilità ti restasse di avere a che fare con i Gegno è ora svanita.`
+		government "Gegno Vi (Neutral)"
+		personality heroic vindictive staying
+		system "Heutesl"
+		fleet "Vi Warfleet" 3
+	npc
+		on provoke
+			fail
+			"reputation: Gegno" = -100
+			"reputation: Gegno Vi" = -100
+			"reputation: Gegno Vi (Neutral)" = -100
+			"reputation: Gegno Scin" = -100
+			"reputation: Gegno Scin (Neutral)" = -100
+			dialog `Dopo aver deciso di aprire il fuoco sulla flotta Gegno che sorvegliava la tua visita al loro mondo natale, ti trovi davanti a un'opposizione aggressiva e a quelle che suonano come innumerevoli chiamate furiose. Qualsiasi possibilità ti restasse di avere a che fare con i Gegno è ora svanita.`
+		government "Gegno Scin (Neutral)"
+		personality heroic vindictive staying
+			confusion "militia"
+		system "Heutesl"
+		fleet "Scin Warfleet" 3
+
+
+
+mission "Acquiescence"
+	name `Trasporta il guerriero Vi su <destination>.`
+	landing
+	clearance
+	description `Dirigiti su <destination>, con il guerriero Vi come tuo 'passeggero'.`
+	blocked `Ti serve almeno una cuccetta libera per accettare questa missione.`
+	source "Dueyu Eitch"
+	passengers 1
+	to offer
+		or
+			has "Gegno Anticipation: offered"
+			has "Gegno Intervention: offered"
+		not "Gegno Anticipation: failed"
+		not "Gegno Intervention: failed"
+		not "Gegno Genocide Defense: offered"
+
+	destination "Tschyss"
+	on offer
+		conversation
+			`I Gegno mostrano di nuovo cautela: flotte di navi Vi e Scin orbitano intorno al loro mondo natale mentre cominci la discesa. La tua "scorta" Quarg, che era già nel sistema prima di te, resta indietro. Alcune navi Gegno più piccole di entrambe le flotte ti seguono fino alla superficie del pianeta e si mettono davanti a te per guidarti alla destinazione.`
+				to display
+					has "gegno anticipation: quarg escort"
+				
+			`I Gegno mostrano di nuovo cautela: flotte di navi Vi e Scin orbitano intorno al loro mondo natale mentre cominci la discesa. Alcune navi Gegno più piccole di entrambe le flotte ti seguono fino alla superficie del pianeta e si mettono davanti a te per guidarti alla destinazione.`
+				to display
+					not "gegno anticipation: quarg escort"
+
+			`	Dopo aver attraversato diversi strati di smog, stai di nuovo volando intorno alle città torreggianti simili a castelli del mondo natale dei Gegno. Alla fine sei portato lontano dal viavai delle città, in una zona più remota con una struttura imponente avvolta dallo smog, forse quella che hai visitato la prima volta. L'attività intorno, però, sembra molto minore rispetto a tutto il resto.`
+			`	Invece che a uno dei portelli di attracco lungo la torre, le navi Gegno ti indirizzano alla base della struttura, oscurata da un'altra nube scura di smog. Quando raggiungi la superficie, le navi Gegno restano in posizione sopra di te mentre parcheggi la nave a terra. La zona sembra priva di altri Gegno, quasi inquietantemente.`
+			choice
+				`	(Resta nella mia nave.)`
+				`	(Esci dalla mia nave.)`
+					goto exit
+			
+			`	Decidi di restare al sicuro nella nave. I Gegno che ti librano sopra non ti aiutano più: ti stanno semplicemente osservando. A parte loro, non ci sono altri veicoli nella zona, men che meno navi. Prima che passi molto tempo, noti nel fumo più avanti una figura in ombra che porta una sorta di lungo bastone. Un Gegno solitario esce dalla nube di fumo, fa qualche altro passo pesante e si ferma a diversi metri dalla tua nave.`
+			`	Qualsiasi azione tu compia ora è esclusivamente a tua discrezione. Tuttavia ti resta una sola scelta da fare.`
+			choice
+				`	(Incontra il Gegno.)`
+				`	(Lascia il Gegno e il suo mondo.)`
+					goto "no more gegno"
+
+			`	Decidi di portare avanti il tuo intento. Sei arrivato fin qui, sei di nuovo sul loro mondo natale e non hanno ancora mostrato segni di volerti cacciare. L'ambiente esterno sembra "sicuro" per gli umani: condizioni simili a quelle della Terra, se la Terra fosse ancora più inquinata di quanto già non sia. Prendi l'arma da fianco in caso di emergenza, esci dalla nave e ti avvicini con cautela al Gegno. Anche se è un po' difficile dirlo, sei quasi certo che sia il Gegno che hai incontrato per la prima volta su quel pianeta desertico. L'unica differenza nel suo aspetto è una specie di fascia rossa sul braccio sinistro. Le navi sopra decollano all'improvviso, e il Gegno si volta e comincia a dirigersi verso l'imponente torre davanti a te.`
+				goto tower
+
+
+			label "exit"
+			`	L'ambiente esterno sembra "sicuro" per gli umani: condizioni simili a quelle della Terra, se fosse ancora più inquinata di quanto già non sia. Prendi l'arma da fianco in caso di emergenza ed esci dalla nave. I Gegno nelle navi sopra osservano attentamente ogni tuo movimento e, a parte il sibilo lontano dei loro motori, c'è un silenzio inquietante. Prima che passi molto tempo, noti nel fumo davanti alla nave una figura in ombra che porta una sorta di lungo bastone. Un Gegno solitario esce dalla nube di fumo e si avvicina lentamente. Si ferma a un paio di metri da te e, anche se è un po' difficile dirlo, sei quasi certo che sia il Gegno Vi che hai incontrato per la prima volta su quel pianeta desertico. L'unica differenza nel suo aspetto è una specie di fascia rossa sul braccio sinistro.`
+			`	A questo punto, qualsiasi azione tu compia è esclusivamente a tua discrezione. Tuttavia ti resta una sola scelta da fare.`
+			choice
+				`	(Incontra il Gegno.)`
+				`	(Lascia il Gegno e il suo mondo.)`
+					goto "no more gegno"
+
+			`	Decidi di portare avanti il tuo intento. Sei di nuovo sul loro mondo natale e non hanno ancora mostrato segni di volerti cacciare: non ha senso buttare via tutti i tuoi progressi. Avvicinandoti, il Gegno sembra davvero quello incontrato in passato. Le navi sopra decollano all'improvviso, e il Gegno si volta e comincia a dirigersi verso l'imponente torre davanti a te.`
+
+
+			label "tower"
+			`	La torre davanti a te è davvero uno spettacolo. Sembra più grande e più alta di qualsiasi cosa nell'architettura umana, ma appare molto antica, in modo notevole, rispetto alle parti che hai visto più in alto, nelle nubi di smog scuro. La base, che si allarga man mano che la torre sale, è fiancheggiata da file di strutture simili a torce con fiamme che si alzano oltre. L'interno è altrettanto curioso: la prima zona in cui entri sembra uscita direttamente da qualche antica fantasia medievale. Tutto appare roccioso e scolpito, anche se alcuni ingressi sembrano fatti di materiali metallici più recenti.`
+			`	Ti chiedi se tutta l'architettura Gegno sia costruita così, ma la tua curiosità viene interrotta quando il Gegno, che è molti passi avanti a te, grugnisce e ti fa cenno di entrare in una piattaforma simile a una gabbia dall'altra parte di una sala enorme.`
+			choice
+				`	(Entra nella gabbia.)`
+			`	Per fortuna la gabbia non è affatto una cella: con un tintinnio di catene e altri suoni indistinti, cominci a salire verso quella che sarà la prossima destinazione. Però lo scuotersi e il clangore dell'ascensore non ti tranquillizzano. All'improvviso cominci a sentire un rombo profondo e metodico venire da sopra. Nello stesso istante ti arriva addosso una raffica d'aria. La gabbia è all'esterno dell'edificio e sale a razzo, sostenuta solo da qualche rotaia e da alcune pulegge. Intorno al nucleo della torre, davanti a te, ci sono altre grandi pulegge metalliche, con il Gegno in una di esse alla tua sinistra, in lontananza. Mentre sali, vedi che molti Gegno sono schierati su diversi balconi a vari livelli della torre, e suonano grandi tamburi simili a timpani con un ritmo regolare. Ogni tanto urlano o suonano uno strumento simile a un corno.`
+			`	Altri minuti di tamburi, diversi strati di smog e quella che sembra sindrome da altitudine ti assalgono finché l'ascensore arriva in cima alla torre: un'enorme piattaforma circolare all'aperto, con un gruppo di Gegno in armature di fogge diverse schierati intorno a un grande tavolo, o una sorta di griglia espositiva, con sopra diversi modelli di pianeti e navi. Un anello di torce elettroniche che fiancheggia ogni lato della piattaforma si alza verso il cielo scuro.`
+			`	Il Gegno che ti ha guidato fin qui ti fa cenno di raggiungerlo tra gli altri.`
+			choice
+				`	(Vai dal Gegno.)`
+					goto meeting
+				`	(Resta dove sono.)`
+
+			`	Non passa molto prima che un paio di soldati Gegno si avvicinino e ti "spingano" di fatto a unirti agli altri. Tanto vale giocare con le loro regole, data la situazione.`
+
+			label meeting
+			`	Quando raggiungi gli altri Gegno, i tamburi si fermano di colpo. Al centro del tavolo appare del testo, di cui non capisci nulla. Tre Gegno in piedi uno accanto all'altro, separati dal resto, cominciano a parlare con voci basse e tonanti; la loro lingua è incomprensibile. Uno è molto massiccio e somiglia al tipo di Gegno che appartiene alla fazione Vi, mentre gli altri due sono più piccoli. Tutti e tre indossano lo stesso insieme di armatura elaborata, con strane sporgenze, drappi e altri dettagli. Tutti gli altri Gegno presenti hanno corporature diverse, ma nessuno indossa colori che indichino una fazione. Alcuni ogni tanto guardano verso di te, altri non ti dedicano alcuna attenzione.`
+			`	L'imbarazzo della situazione cresce con il passare dei minuti, durante i quali alcuni Gegno dalla folla si avvicinano al lato opposto del tavolo rispetto al trio e discutono. Guardi la tua guida Gegno al tuo fianco, con lo sguardo fisso sulle conversazioni davanti. Uno del trio lo chiama infine e posa sul tavolo il modello di un pianeta desertico: quello dove è cominciato tutto. Segue una discussione accesa e, osservando la tua guida, ti accorgi che è l'unico Gegno con quella fascia rossa sul braccio. Gli altri Gegno nella folla non sembrano molto contenti mentre la discussione continua.`
+			`	Anche se sembrava non dovesse accadere, arriva il momento in cui il più massiccio del trio ti fa un gesto diretto. La tensione schizza alle stelle mentre dicono qualcosa nella loro lingua, poi ti fanno cenno di metterti di fronte a loro. Tutti gli altri Gegno ora ti fissano, in attesa, mentre la tua guida si sposta di lato.`
+			choice
+				`	(Avvicinati al trio.)`
+					goto trio
+				`	(Rimango dove sono.)`
+
+			`	Scegli di non fare altro e resti dove sei. Qualsiasi cosa facessi sarebbe probabilmente usata contro di te. Passano altri momenti e il trio Gegno torna al tavolo, cominciando a discutere tra sé usando gli oggetti sulla griglia. Immagini e parole scorrono sul monitor, ma sei troppo lontano per vederle. Passano altri minuti e ti sembra che ti abbiano quasi dimenticato, mentre cominci a estraniarti dalla loro discussione. Alla fine vieni riportato alla realtà: tutto è di nuovo silenzioso e un membro del trio Gegno ti chiama per attirare la tua attenzione sullo schermo.`
+				goto "what does home mean"
+
+
+			label "trio"
+			`	Qualsiasi Gegno sulla tua strada si scosta mentre ti avvicini al centro della piattaforma. Ora sei sotto i riflettori, e il silenzio è assordante. Appena ti fermi davanti al trio, sul monitor del tavolo compaiono alcune immagini della <ship> in contesti diversi, e uno del trio sposta diverse miniature di pianeti che corrispondono a quelli che hai visitato nello spazio Gegno. Dopo un altro breve silenzio, che tutti sembrano sopportare con apprensione, uno dei tre ti si rivolge nella loro lingua, a un volume più basso di prima.`
+			`	"Eyuu udyom Gegno tyysis. Udiyh tei arrtes ofor tei piyepuo?"`
+			choice
+				`	"Mi stai chiedendo qualcosa sui Gegno?"`
+				`	"Vorrei trovare un accordo con i Gegno."`
+				`	"Mi dispiace, non capisco cosa stai dicendo."`
+
+			`	Il Gegno ti fissa, poi guarda lo schermo, che scorre lentamente tra le situazioni in cui ti sei trovato:`
+
+			`	Sullo schermo compare un'immagine più dettagliata di un pianeta desertico, diverso dal primo. Accanto ci sono molti grafici: uno rappresenta un plotone di guerrieri Vi, poi la singolare nave Gegno che hai visto lì, e alcune parole che scorrono, forse i nomi di ciascun guerriero presente quel giorno. Accanto al nome del pianeta c'è un grafico più piccolo di uno di quei vermi giganti della sabbia che hai combattuto, il che suggerisce che si trovino anche su altri mondi desertici oltre al primo.`
+				to display
+					has "Passive-Aggressive Observations: done"
+
+
+			`	A lato del tavolo noti un modello del pianeta simile a Mercurio su cui sei atterrato qui, nel loro sistema natale, anche se stranamente non compare mai sullo schermo.`
+				to display
+					has "Brief Bystander: done"
+
+
+			`	Compare l'immagine di due navi distinte, che corrispondono a una coppia di modelli sul tavolo. Una è lo stesso tipo di nave Vi che hai incontrato per la prima volta nella sabbia di un mondo desertico, e l'altra è una nave Scin che sembra una derivazione di altre navi Gegno. Senti qualcuno nella folla urlare forte, forse per la delusione, ma il trio Gegno lo zittisce.`
+				to display
+					has "Foreign Spectator I: failed"
+
+
+			`	Una delle situazioni più rilevanti è quella che ha coinvolto una grande battaglia tra Vi e Scin per una luna in orbita a un mondo boscoso. Scorre un lungo elenco di frasi con accanto i grafici di diverse navi Gegno, probabilmente quelle che hanno preso parte alla battaglia. I Gegno intorno a te mormorano tra loro, ogni tanto grugnendo.`
+				to display
+					has "Battle over Zydee: offered"
+
+
+			`	All'estremità opposta del tavolo vedi il piccolo modello di una luna di ghiaccio. Non compare nient'altro al riguardo.`
+				to display
+					has "Scin on Cyife: offered"
+
+			`	Alzi lo sguardo e vedi il trio di Gegno che ti fissa ancora intensamente. Tutti gli altri Gegno intorno a te hanno un'espressione simile. Sullo schermo compaiono due icone affiancate, e sotto ciascuna c'è un lungo elenco di frasi. Mentre scorrono, i Gegno cominciano a discutere tra loro, alcuni a voce alta e altri no. Quasi sobbalzi quando il trio si rivolge alla folla e comincia una specie di discorso, indicando a volte la folla e a volte te. Anche se la maggior parte dei Gegno sembra frustrata, il trio riesce a calmare l'assemblea.`
+				to display
+					or
+						"reputation: Gegno Vi" < 0
+						"reputation: Gegno Scin" < 0
+
+			`	Il Gegno più massiccio del trio posa allora al centro del tavolo il modello di un'enorme nave da guerra Vi, che riconosci senz'altro. Arrivano altre esplosioni di rabbia dai Gegno intorno, e mentre chi ha posato il modello ti fulmina, gli altri due alla fine placano il tumulto.`
+				to display
+					has "dead augen"
+
+
+			`	Dopo aver passato in rassegna tutti i casi che ti riguardano, il trio si rivolge di nuovo all'assemblea con un lungo discorso. Le loro voci echeggiano nell'aria aperta, e tutti i Gegno rispondono con muggiti o canti simultanei, seguiti da altro silenzio. Stranamente ti senti come se fossi tra loro come parte dell'assemblea, e non come uno straniero. Non sei affatto limitato, nemmeno con un'arma addosso.`
+			`	Uno dei Gegno più piccoli del trio ti fa un cenno e parla di nuovo. Continui a non capire una parola di quello che dicono, ma doveva essere importante, perché tutti gli altri Gegno, tranne la tua guida, fanno qualche passo indietro. Il membro del trio ti invita con entrambe le braccia a usare gli oggetti e il tavolo, mentre tutti e tre si ritirano, lasciandoti solo allo scoperto.`
+			choice
+				`	(Avvicinati al tavolo e prova a spiegare gli incidenti in cui sei stato coinvolto.)`
+					goto explain
+				`	(Resta dove sono e non fare nulla.)`
+
+			action
+				set "gegno: no proclamation"
+			`	Non ti avvicini al tavolo e resti impacciato allo scoperto. Forse è meglio non dire nulla, se sei tu quello che loro percepiscono come il problema. Passa un minuto intero di silenzio, e tutti i Gegno, trio compreso, non hanno detto una parola. Giudicano invece in silenzio la scelta che hai deciso di fare. Poi il trio torna al tavolo e sposta tutti i modelli di lato, come se stessero preparando qualcosa.`
+				goto "what does home mean"
+
+
+			label "explain"
+			`	Avvicinandoti al tavolo, provi con tutte le tue forze a spiegare ogni situazione una per una. Dato che non sai leggere né fare nulla con lo schermo vero e proprio, provi a raccogliere i modelli, cosa che sembra non dare fastidio a nessuno. Allo stesso tempo gesticoli con le mani, rappresentando soprattutto la tua nave che vola "via". Ti chiedi se qualcosa abbia senso per i Gegno, ma non sembrano prestare attenzione alle tue parole o ai tuoi gesti in sé: sembrano reagire al tono e all'emozione. Dopo aver fatto del tuo meglio per descrivere tutto, ti allontani dal tavolo. Il trio torna al tavolo e discute tra sé la tua risposta. Poi comincia a spostare tutti i modelli di lato, come se stessero preparando qualcosa.`
+				goto "what does home mean"
+
+
+			label "what does home mean"
+			`	Con sorpresa tua e degli altri Gegno, sul monitor compare un'immagine del pianeta Terra. Non c'è modo che i Gegno abbiano mai lasciato i confini del proprio territorio, figurarsi visitato lo spazio umano. Come abbiano ottenuto questa immagine è un mistero, ma il fatto è che davanti a te c'è un'immagine del mondo natale ancestrale dell'umanità. Il membro del trio Gegno che ha parlato meno fa allora un passo avanti, ma invece di dirigersi al tavolo viene direttamente verso di te.`
+			choice
+				`	(Non fare nulla.)`
+					goto home
+				`	(Metti la mano sulla fondina.)`
+			`	Se i Gegno hanno un'immagine della Terra, chissà cosa sanno di te, o dell'umanità in generale. Spostando lentamente la mano verso l'arma nella fondina, ti prepari a qualsiasi aggressione. Anche se lo fai, il Gegno non esita né smette di dirigersi verso di te, anche se qualcuno nella folla sembra leggermente preoccupato.`
+
+			label "home"
+			`	Ora in piedi a nemmeno due metri da te, il Gegno ti guarda intensamente. Un'immagine del mondo su cui ti trovi ora scorre sopra quella della Terra, e il Gegno la indica. "Gegno Dueyu Eitch echre, echre isend Gegno." L'immagine torna alla Terra, con il Gegno che indica ancora lo schermo. "Eyuu dueyu nnepta, viehetch eyuu." Ora il Gegno fa un gesto verso il terreno ai tuoi piedi. "Viehetch eyuu ayyr Dueyu Eitch. Udiyh tei tsider?"`
+			choice
+				`	(Non dire nulla.)`
+				`	"...Dueyu Earth?"`
+					goto dueyu
+
+			`	Senza dire una parola, continui a guardare il Gegno, che continua a fissarti riflettendo sul tuo silenzio. Emette un suono col naso, poi ti lascia per raggiungere gli altri due dietro di lui.`
+				goto decision
+
+			label "dueyu"
+			`	Il Gegno si avvicina alla tua altezza e mostra un'espressione singolare, forse di disapprovazione. Ti prende un po' il panico, e alcuni degli altri sembrano sorpresi che ti si sia avvicinato così tanto. Poi parla con un brontolio basso, un po' come un sussurro detto ad alta voce. "Eyuu idu keiou ghynem uf, 'Dueyu.'" Rialzandosi, il Gegno torna agli altri due dietro di lui.`
+
+			branch "done with the gegno"
+				or
+					or
+						"reputation: Gegno Vi" <= -100
+						"reputation: Gegno Scin" <= -50
+					and
+						"reputation: Gegno Vi" < 0
+						"reputation: Gegno Scin" < 0
+						has "zydee interference"
+					and
+						has "Full Vi Backlash: offered"
+						has "dead augen"
+					and
+						"gegno: encounters" >= 6
+						has "gegno: no proclamation"
+
+
+			label "decision"
+			action
+				"reputation: Gegno" = 1
+			`	Con un senso di finalità, il trio chiama la folla e comincia un altro lungo discorso. Sullo schermo compare l'immagine di una stazione spaziale, e tra gli altri Gegno, che si sono riavvicinati tra loro, comincia una grande discussione. Scoppiano alcuni litigi tra vari Gegno del pubblico. Intanto la tua guida Gegno ti urta e comincia a portarti via dalla discussione, verso l'ascensore a gabbia, senza che nessuno faccia caso a nulla.`
+			`	Diversi minuti dopo sei riaccompagnato alla base della torre, ora circondata da un grande gruppo di civili Gegno che vi fissano a bocca aperta. Sei riportato alla nave con la testa che gira un po', incerto su cosa pensare di tutto quell'incontro. Come la prima volta che sei stato con loro sul pianeta desertico, il Gegno si dirige alla tua nave e ti consegna un piccolo dispositivo a bussola, questa volta segnando una località diversa sulla mappa.`
+			`	Quantomeno puoi prenderlo come segno che non hanno ancora finito con te, quindi ti prepari a partire per la prossima destinazione.`
+				launch
+
+
+			label "done with the gegno"
+			`	Con un senso di finalità, il trio chiama la folla e comincia un altro lungo discorso. Quando hanno finito, la folla tace. La tua guida Gegno ti urta e comincia a riportarti all'ascensore a gabbia senza che nessuno faccia caso a nulla. Diversi minuti dopo sei riaccompagnato alla base della torre, ancora deserta come prima. Sei riportato alla nave con la testa che gira un po', incerto su cosa pensare di tutto quell'incontro. Il Gegno resta a distanza dalla tua nave mentre ti prepari a partire.`
+			`	Prima che tu parta, vedi che solleva l'arma-asta e la capovolge. Segue una nube esplosiva di fumo, e proprio accanto alla <ship> compare un cratere di dimensioni rispettabili. A quanto pare non sei più gradito qui, anche se il fatto che abbiano mancato di proposito un bersaglio così grande potrebbe avere altre implicazioni. In ogni caso, in qualsiasi momento di questo viaggio saresti potuto essere tu dall'altra parte di quell'esplosione.`
+			`	Nonostante l'azione aggressiva, non sei seguito mentre lasci il pianeta.`
+				flee
+
+
+			label "no more gegno"
+			`	Alla fine decidi che portare avanti questa messinscena con i Gegno non vale più lo sforzo. Anche se finissi in una qualche forma di dialogo con loro, ci vorrebbe probabilmente uno sforzo eccessivo per ottenere un qualsiasi progresso, ammesso che sia possibile. Forse persino atterrare qui è stato un errore. Non potresti mai indovinare cosa potrebbe succedere se continuassi, visto che sei del tutto solo sul mondo natale di una specie che si è dimostrata piuttosto xenofoba, persino con i Quarg.`
+			`	Mentre ti prepari a partire, il Gegno, che ti ha osservato per tutto il tempo con uno sguardo vuoto, solleva l'arma-asta e la capovolge. Segue una nube esplosiva di fumo, e proprio accanto alla <ship> compare un cratere di dimensioni rispettabili. A quanto pare sono, quantomeno, scontenti della tua decisione di andartene, il che è un po' strano considerando che prima non volevano avere niente a che fare con te. Il fatto che abbiano mancato di proposito un bersaglio così grande, però, potrebbe avere altre implicazioni. In ogni caso, saresti potuto essere tu dall'altra parte di quell'esplosione.`
+			`	Nonostante l'azione aggressiva, non sei seguito mentre lasci il pianeta.`
+				flee
+
+
+
+mission "Gegno Asteroid Mining Prologue"
+	landing
+	name "Estrai 5 tonnellate di ferro"
+	description "Estrai e consegna 5 tonnellate di ferro su <destination>."
+	source "Tschyss"
+	to offer
+		has "Acquiescence: offered"
+		not "Gegno Genocide Defense: offered"
+	on offer
+		conversation
+			branch "returned"
+				has "Gegno Asteroid Mining Prologue: deferred"
+
+			`Arrivi a destinazione: una stazione spaziale enorme. Stavolta, invece di restare in piedi dietro di te nella cabina di pilotaggio, il Gegno si è seduto accanto a una delle tue cuccette libere e non ha mosso un muscolo fino a ora. Nonostante la grandiosità di quella che è l'unica stazione spaziale dei Gegno, sembra molto vecchia e inattiva. Mentre ti fanno girare per l'interno spazioso, in gran parte ridotto a uno scheletro di tubi, sbarre e strutture di sostegno, noti una mancanza evidente di personale e di macchinari in funzione. Alcune sezioni non sono nemmeno pressurizzate a dovere, ma per fortuna la tuta spaziale compensa. Ogni tanto incontri qualche operaio, ma sembrano molto letargici, o forse solo demotivati.`
+			`	Alla fine arrivi in un grande portello di attracco dove ci sono altri operai e altre navi. Alcuni operai trasportano casse di materiali avanti e indietro, altri parlano tra loro. Il Gegno al tuo fianco indica un pannello mezzo rotto su una delle pareti dall'altra parte della sala. Con un ultimo sguardo significativo, il Gegno ti lascia alle tue faccende. Ti chiedi se lo rivedrai mai, considerando come è stato trattato su Dueyu Eitch.`
+			choice
+				`	(Vai al pannello.)`
+					goto board
+				`	(Prova a comunicare con gli altri Gegno intorno a me.)`
+			
+			`	Provi ad attirare l'attenzione di alcuni degli altri Gegno presenti nella struttura, ma i più ti lanciano sguardi strani o ti ignorano del tutto, finché un Gegno apparentemente infastidito ti indica il grande schermo incrinato.`
+
+			label "board"
+			`	Lo schermo, anche se incrinato e malmesso, sembra comunque funzionante. Presenta una serie di grafici in un elenco che sembra aggiornarsi in tempo reale. A sinistra di ogni grafico ci sono vari tipi di asteroidi estraibili, a destra dei segni di conteggio. Sembra una sorta di elenco di lavori collegato alla stazione, il che implica che i Gegno ti stiano almeno dando la possibilità di "fare la tua parte", o forse di rimediare a quello che hai fatto.`
+			choice
+				`	(Accetta uno dei lavori.)`
+				`	(Vattene senza fare nulla.)`
+					goto nothing
+			
+			label "accept"
+			`	Armeggi con lo schermo, cercando di capire come usarlo. Alcuni Gegno ti guardano mentre lo fai. Mentre giudicano in silenzio, riesci a capire che è un'interfaccia sensibile al tocco, anche se serve molta forza per farla funzionare.`
+			`	La prima volta che riesci a far funzionare il dispositivo vedi l'immagine di un asteroide di ematite, ricco di ferro, con cinque strani segni di conteggio accanto. Estrarre per loro forse non è il modo migliore per saperne di più sui Gegno, ma lavorare per loro è un inizio.`
+				accept
+
+			label "nothing"
+			`	Decidi di lasciare la struttura. Nessuno dei Gegno ti dedica attenzione mentre lo fai, e sono di nuovo concentrati sul loro lavoro.`
+				defer
+
+			label "returned"
+			`Nonostante tu abbia già lasciato la stazione, ti viene dato di nuovo il permesso di atterrare. Vuoi andare alla struttura dei lavori e provare ad accettare uno degli annunci?`
+			choice
+				`	(Sì.)`
+					goto accept
+				`	(No.)`
+					defer
+	on defer
+		set "Gegno Asteroid Mining Prologue: deferred"
+	on visit
+		dialog "Sei tornato su <origin>, ma non hai 5 tonnellate di ferro estratte e a bordo. Assicurati di estrarre 5 tonnellate di ferro e di raccoglierle nel carico prima di atterrare."
+	on complete
+		payment 12000
+		outfit "Iron" -5
+		conversation
+			`Ti agganci alla stazione dal porto della struttura, invece che dall'altra parte. Ti aspettano molti operai Gegno, tutti con attrezzature arrugginite o danneggiate. Dopo qualche momento di fissaggio e di discussione tra loro, scaricano i minerali dalla nave e poi tornano alle loro faccende come se nulla fosse. Un altro ti si avvicina e, con tua sorpresa, ti paga una somma di <payment> per il lavoro. Pare che i Gegno apprezzino e ricompensino lo sforzo, chiunque lo faccia, persino un membro di un'altra specie.`
+			`	Per il momento la stazione resta accessibile a te, così come questi piccoli lavoretti di estrazione. Speriamo che un giorno i Gegno riconoscano che vali più di qualsiasi etichetta ti abbiano appiccicato.`

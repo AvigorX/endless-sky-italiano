@@ -1,0 +1,121 @@
+{
+ "block": {
+  "path": "data/avgi/avgi ships.txt",
+  "line_from": 526,
+  "line_to": 885,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Phononos|plural|526|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 526,
+   "kind": "VALUE",
+   "context": "ship:Phononos",
+   "english": "Phononos",
+   "italian": "Phononos",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Phononos|description|585|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 585,
+   "kind": "DESCRIPTION",
+   "context": "ship:Phononos",
+   "english": "This retrofit of a decommissioned Photikon is little more than a set of cargo pods joined to the front of the former torpedo bomber, with container mounts taking the place of the hardpoints and pylons usually used to mount weapons. An expanded internal tank to fuel a hyperdrive has been barely crammed into the ship, at the expense of other internal systems and armor. Because of this, the Phononos is quite vulnerable to Dissonance piracy or even Aberrant incursions, and is thus always found as part of a larger fleet convoy. Even still, as an automated freighter it experiences much higher accident and loss rates in deep space, a fact that has kept crewed vessels like the Avlaki competitive.",
+   "italian": "Questo retrofit di un Photikon dismesso è poco più di un insieme di moduli cargo uniti alla parte anteriore del vecchio bombardiere silurante, con attacchi per container al posto dei punti di attacco e dei piloni normalmente usati per montare le armi. Un serbatoio interno ampliato per alimentare un'iperguida è stato stipato a fatica nella nave, a scapito di altri sistemi interni e della corazzatura. Per questo il Phononos è piuttosto vulnerabile alla pirateria dei Dissonance o persino alle incursioni degli Aberrant, e si trova sempre come parte di un convoglio più grande. Ciononostante, come mercantile automatizzato subisce tassi di incidenti e di perdite molto più alti nello spazio profondo, un fatto che ha mantenuto competitive le navi con equipaggio come l'Avlaki.",
+   "ratio": 1.115
+  },
+  {
+   "idx": 3,
+   "id": "ship:Phononos|description|586|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 586,
+   "kind": "DESCRIPTION",
+   "context": "ship:Phononos",
+   "english": "\tThe Phononos can carry an impressive amount of cargo with the same standardized containers used by the Avlaki and Harmonikos, which can be quickly swapped out at the destination for a set of empty ones without needing to unload them.",
+   "italian": "\tIl Phononos può trasportare una quantità impressionante di carico con gli stessi container standardizzati usati dall'Avlaki e dall'Harmonikos, che possono essere sostituiti rapidamente a destinazione con un set di container vuoti senza bisogno di scaricarli.",
+   "ratio": 1.107
+  },
+  {
+   "idx": 4,
+   "id": "ship:Frequentia|Z-333 \"Spark\" Fusion Torch|623|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 623,
+   "kind": "TEXT",
+   "context": "ship:Frequentia",
+   "english": "Z-333 \"Spark\" Fusion Torch",
+   "italian": "Z-333 \"Spark\" Fusion Torch",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Frequentia|description|658|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 658,
+   "kind": "DESCRIPTION",
+   "context": "ship:Frequentia",
+   "english": "The Frequentia-class Freighter is most commonly found serving as a fuel tender for ships in larger fleets, taking advantage of its large and ungainly cargo receptacle to store enough cryogenic deuterium to satisfy a small fleet's needs during long journeys. While its spherical fuel tank can be drained and used to transport dry goods and cargo, the cargo bay's notoriously small access door makes loading anything that can't be moved with a pump an exquisitely painful process.",
+   "italian": "Il mercantile classe Frequentia si trova più comunemente a servire come nave rifornitrice di carburante per le navi delle flotte più grandi, sfruttando il suo grande e sgraziato vano di carico per immagazzinare abbastanza deuterio criogenico da soddisfare le esigenze di una piccola flotta nei viaggi lunghi. Sebbene il suo serbatoio sferico possa essere svuotato e usato per trasportare merci secche e carichi, la porta d'accesso notoriamente piccola della stiva rende un processo estremamente penoso caricare qualsiasi cosa che non si possa spostare con una pompa.",
+   "ratio": 1.184
+  },
+  {
+   "idx": 6,
+   "id": "ship:Polari|Z-333 \"Spark\" Fusion Torch|705|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 705,
+   "kind": "TEXT",
+   "context": "ship:Polari",
+   "english": "Z-333 \"Spark\" Fusion Torch",
+   "italian": "Z-333 \"Spark\" Fusion Torch",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Polari|description|745|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 745,
+   "kind": "DESCRIPTION",
+   "context": "ship:Polari",
+   "english": "The Polari-class Scout is a legacy design that has managed to remain relevant in the current era by virtue of fulfilling a role historically not requiring much in the way of combat power. A specialized science ship, it is fitted with a spacious laboratory for analyzing samples and processing data, as well as an extensive suite of sensor arrays for recording observations. A pair of bays can deploy Optikon sensor drones, while an external mount is designed to hold an Akoustiki Excursion Vehicle for piloted sample gathering operations.",
+   "italian": "Il ricognitore classe Polari è un progetto d'epoca che è riuscito a restare attuale nell'era presente in virtù del fatto che ricopre un ruolo storicamente poco bisognoso di potenza di combattimento. Nave scientifica specializzata, è dotata di un ampio laboratorio per analizzare campioni ed elaborare dati, oltre a un'ampia dotazione di sensori per registrare osservazioni. Una coppia di baie può schierare droni sensori Optikon, mentre un supporto esterno è progettato per ospitare un Akoustiki Excursion Vehicle per le operazioni di raccolta campioni con equipaggio.",
+   "ratio": 1.056
+  },
+  {
+   "idx": 8,
+   "id": "ship:Polari|description|746|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 746,
+   "kind": "DESCRIPTION",
+   "context": "ship:Polari",
+   "english": "\tDespite this versatility, the contested battlespace of the post-Incursion Avgi cluster is one in which the Polari is simply not as capable in. As science crews are increasingly asked to lead risky scouting expeditions back to the Avgi homeworld, demands for a newer, more survivable science ship routinely make their way to the Twilight Guard.",
+   "italian": "\tNonostante questa versatilità, lo spazio conteso del cluster Avgi successivo all'Incursione è un ambiente in cui la Polari semplicemente non è altrettanto capace. Poiché agli equipaggi scientifici viene chiesto sempre più spesso di guidare rischiose spedizioni di ricognizione verso il mondo natale Avgi, richieste di una nave scientifica più recente e più capace di sopravvivere arrivano regolarmente alla Twilight Guard.",
+   "ratio": 1.23
+  },
+  {
+   "idx": 9,
+   "id": "ship:Entasi|description|884|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 884,
+   "kind": "DESCRIPTION",
+   "context": "ship:Entasi",
+   "english": "The Entasi is a mid-sized mining vessel, immediately recognizable by its pair of huge solar thermal generators. With the power and weapons capacity needed to support laser mining weapons, the Entasi is able to quickly and efficiently cut through asteroids, whose mineral contents can then be collected by the swarm of Sonikis cargo drones it can carry into an asteroid field.",
+   "italian": "L'Entasi è una nave mineraria di medie dimensioni, immediatamente riconoscibile per la coppia di enormi generatori solari termici. Con la potenza e la capacità di armamento necessarie a sostenere armi minerarie laser, l'Entasi è in grado di tagliare rapidamente ed efficientemente gli asteroidi, il cui contenuto minerale può poi essere raccolto dallo sciame di droni cargo Sonikis che può portare in un campo di asteroidi.",
+   "ratio": 1.128
+  },
+  {
+   "idx": 10,
+   "id": "ship:Entasi|description|885|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 885,
+   "kind": "DESCRIPTION",
+   "context": "ship:Entasi",
+   "english": "\tWhile somewhat fragile, the energy and space available to the Entasi can make it a potent warship with the right modifications. Rumors abound that certain Entasi captains sympathetic to the Dissonance movement maintain a stockpile of weapons for this very eventuality.",
+   "italian": "\tSebbene alquanto fragile, l'energia e lo spazio a disposizione dell'Entasi possono renderla una potente nave da guerra con le giuste modifiche. Abbondano le voci secondo cui alcuni capitani di Entasi simpatizzanti del movimento Dissonance tengano un deposito di armi proprio per questa eventualità.",
+   "ratio": 1.112
+  }
+ ]
+}

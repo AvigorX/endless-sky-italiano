@@ -1,0 +1,88 @@
+{
+ "block": {
+  "path": "data/gegno/gegno ships.txt",
+  "line_from": 53,
+  "line_to": 302,
+  "units": 7
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Shale|description|53|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 53,
+   "kind": "DESCRIPTION",
+   "context": "ship:Shale",
+   "english": "After the Gegno discovered hyperspace lanes and began to use them, their enormous (and expensive) generation ships became too cumbersome to use for the purpose of interstellar commerce, leading to the need for a smaller and more manageable ship such as this. The Shale is the Gegno's equivalent of a Shuttle: a small and compact transport. Whether it be cargo, trade goods, travelers, or recruits, Shales are the foundation of Gegno interstellar civilization.",
+   "italian": "Dopo che i Gegno scoprirono le rotte dell'iperspazio e cominciarono a usarle, le loro enormi (e costose) navi generazionali divennero troppo ingombranti per il commercio interstellare, facendo nascere l'esigenza di una nave più piccola e maneggevole come questa. Lo Shale è l'equivalente Gegno di una Shuttle: un trasporto piccolo e compatto. Che si tratti di carico, merci, viaggiatori o reclute, gli Shale sono il fondamento della civiltà interstellare dei Gegno.",
+   "ratio": 1.013
+  },
+  {
+   "idx": 2,
+   "id": "ship:Dolomite|description|97|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 97,
+   "kind": "DESCRIPTION",
+   "context": "ship:Dolomite",
+   "english": "Almost as large as a human cruiser, Dolomites are the Gegno's most common cargo vessel in service, its original design dating back to the early days of space colonization. They are used as both passenger liners and cargo vessels. Due to their popularity and continuous usage, both the Vi and Scin factions have developed on the original design for their own purposes.",
+   "italian": "Grandi quasi come un incrociatore umano, i Dolomite sono la nave da carico più diffusa in servizio presso i Gegno, con un progetto originale che risale ai primi tempi della colonizzazione spaziale. Sono usati sia come navi passeggeri sia come navi da carico. Grazie alla loro diffusione e all'uso continuo, entrambe le fazioni Vi e Scin hanno sviluppato il progetto originale per i propri scopi.",
+   "ratio": 1.076
+  },
+  {
+   "idx": 3,
+   "id": "ship:Conglomerate|description|146|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 146,
+   "kind": "DESCRIPTION",
+   "context": "ship:Conglomerate",
+   "english": "Over time, the Gegno needed larger vessels to carry materials to and from new worlds - ones that would be easier to build and operate than their older, outdated generation ships, but larger than their shuttlecraft. The Conglomerate was designed to fill that exact role.",
+   "italian": "Con il tempo, i Gegno ebbero bisogno di vascelli più grandi per trasportare materiali da e verso i nuovi mondi - navi più facili da costruire e da gestire delle loro vecchie navi generazionali ormai superate, ma più grandi delle loro navette. Il Conglomerate fu progettato proprio per quel ruolo.",
+   "ratio": 1.1
+  },
+  {
+   "idx": 4,
+   "id": "ship:Granofel|description|194|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 194,
+   "kind": "DESCRIPTION",
+   "context": "ship:Granofel",
+   "english": "Unlike many Gegno ships that are capable in a variety of roles, Granofels were designed for the sole purpose of hauling huge loads of cargo; they lack bunks for anything beyond a proper crew, and are most often found freighting massive shipments of both raw and refined ore to and from mining industries. They can also be seen paired with a mining vessel to extend the duration of a mining run due to the higher cargo capacity. Apart from mining, Granofels are also used in transporting heavy materials needed to construct other large ships.",
+   "italian": "A differenza di molte navi Gegno, capaci di coprire ruoli diversi, i Granofel furono progettati al solo scopo di trasportare enormi carichi; non hanno cuccette oltre a quelle per un equipaggio regolare, e si vedono più spesso mentre trasportano spedizioni massicce di minerale grezzo e raffinato da e verso le industrie estrattive. Li si vede anche in coppia con una nave mineraria, per prolungare la durata di un'uscita grazie alla maggiore capacità di carico. Oltre all'estrazione, i Granofel sono usati anche per trasportare i materiali pesanti necessari a costruire altre navi di grandi dimensioni.",
+   "ratio": 1.113
+  },
+  {
+   "idx": 5,
+   "id": "ship:Gypsum|description|243|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 243,
+   "kind": "DESCRIPTION",
+   "context": "ship:Gypsum",
+   "english": "To fuel their increasing need for materials, the Gegno designed a new ship class for the sole purpose of mining. The resulting platform, the Gypsum, is not much more than a flying drill with cargo containers, engines, and a bridge attached behind it, making it cost-efficient and easy to manufacture.",
+   "italian": "Per alimentare il loro crescente bisogno di materiali, i Gegno progettarono una nuova classe di navi al solo scopo di estrarre. La piattaforma che ne risultò, il Gypsum, non è molto più che un trapano volante con container, motori e un ponte di comando agganciato dietro, il che lo rende economico e facile da produrre.",
+   "ratio": 1.063
+  },
+  {
+   "idx": 6,
+   "id": "ship:Gypsum|description|244|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 244,
+   "kind": "DESCRIPTION",
+   "context": "ship:Gypsum",
+   "english": "\tBecause Gegno engines are not very powerful, the Gypsum has difficulty chasing faster-moving asteroids. In order to alleviate this problem without needing to massively increase the engine space on the ship, the Gegno have instead developed the powerful Excavator Drill, which can shred asteroids in a matter of seconds, meaning the Gypsum only needs to be near an asteroid for a mere moment in order to mine it.",
+   "italian": "\tPoiché i motori Gegno non sono molto potenti, il Gypsum ha difficoltà a inseguire gli asteroidi più veloci. Per alleviare il problema senza dover aumentare enormemente lo spazio motori della nave, i Gegno hanno invece sviluppato il potente Excavator Drill, capace di ridurre in pezzi un asteroide in pochi secondi, il che significa che il Gypsum deve restare vicino a un asteroide solo per un istante per estrarlo.",
+   "ratio": 1.007
+  },
+  {
+   "idx": 7,
+   "id": "ship:Corundum|description|302|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 302,
+   "kind": "DESCRIPTION",
+   "context": "ship:Corundum",
+   "english": "While the Gypsum has remained the most reliable mining platform for generations, the Corundum was designed for the purpose of modularity on account of the ever-growing technological potential of the Gegno. Using a similar principle to the Gypusm's design, the Corundum's structure is mostly built around not one but two adjustable drill systems that are capable of mounting more advanced mining tools.",
+   "italian": "Mentre il Gypsum è rimasto la piattaforma mineraria più affidabile per generazioni, il Corundum è stato progettato per la modularità, vista la crescente potenzialità tecnologica dei Gegno. Seguendo un principio simile a quello del progetto del Gypsum, la struttura del Corundum è costruita per lo più attorno non a uno ma a due sistemi di trivellazione regolabili, capaci di montare strumenti minerari più avanzati.",
+   "ratio": 1.035
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "block": {
+  "path": "data/human/post-war reactions.txt",
+  "line_from": 253,
+  "line_to": 264,
+  "units": 7
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:War Reactions: Syndicate Orphan|\t\"You went through hell for us, eh? That sounds less fun than I thought... Maybe I should stick to school and be an engineer instead of a pilot. I dunno.\"|253|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 253,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\t\"You went through hell for us, eh? That sounds less fun than I thought... Maybe I should stick to school and be an engineer instead of a pilot. I dunno.\"",
+   "italian": "\t\"Ci sei passato davvero all'inferno, eh? Sembra meno divertente di quanto pensassi... Forse è meglio che continui con la scuola e diventi un ingegnere invece di un pilota. Boh.\"",
+   "ratio": 1.156
+  },
+  {
+   "idx": 2,
+   "id": "mission:War Reactions: Syndicate Orphan|\t\"The Syndicate is training me to maintain and they're even going to train me to pilot their combat ships when I'm older! One day, I'll fight aliens like you did.\"|256|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 256,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\t\"The Syndicate is training me to maintain and they're even going to train me to pilot their combat ships when I'm older! One day, I'll fight aliens like you did.\"",
+   "italian": "\t\"Il Sindacato mi sta addestrando alla manutenzione, e quando sarò più grande mi addestreranno anche a pilotare le loro navi da combattimento! Un giorno combatterò gli alieni come hai fatto tu.\"",
+   "ratio": 1.19
+  },
+  {
+   "idx": 3,
+   "id": "mission:War Reactions: Syndicate Orphan|\t\"Honor... and service. The Syndicate will train boys like me, but I've wondered about joining the Navy. It isn't as profitable, but it sounds more noble.\"|259|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 259,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\t\"Honor... and service. The Syndicate will train boys like me, but I've wondered about joining the Navy. It isn't as profitable, but it sounds more noble.\"",
+   "italian": "\t\"Onore... e servizio. Il Sindacato addestra ragazzi come me, ma ho pensato di entrare nella Marina. Non è altrettanto redditizio, però sembra più nobile.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "mission:War Reactions: Syndicate Orphan|\tYou arrive at the repair shop, and an older boy, perhaps seventeen, meets the two of you. Gus stands to attention and gives you a well-practiced salute. You politely salute him in return.|261|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 261,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\tYou arrive at the repair shop, and an older boy, perhaps seventeen, meets the two of you. Gus stands to attention and gives you a well-practiced salute. You politely salute him in return.",
+   "italian": "\tArrivate all'officina e un ragazzo più grande, forse diciassettenne, vi viene incontro. Gus scatta sull'attenti e ti fa un saluto ben esercitato. Tu ricambi con cortesia.",
+   "ratio": 0.91
+  },
+  {
+   "idx": 5,
+   "id": "mission:War Reactions: Syndicate Orphan|\tAs Gus ends his salute, the boy attacks him from behind, putting him into a choke hold. It's clear he's taking extreme care when doing it. \"Did you wander out of the childcare district? Was it the spaceport landing area this time? I can see scratches and bruises all over you.\" Gus replies, \"I'm sorry, Calvin! I was curious.\"|262|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 262,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\tAs Gus ends his salute, the boy attacks him from behind, putting him into a choke hold. It's clear he's taking extreme care when doing it. \"Did you wander out of the childcare district? Was it the spaceport landing area this time? I can see scratches and bruises all over you.\" Gus replies, \"I'm sorry, Calvin! I was curious.\"",
+   "italian": "\tAppena Gus finisce il saluto, il ragazzo lo attacca da dietro e gli fa una presa al collo. Si vede che ci sta andando con estrema attenzione. \"Sei uscito dal distretto dell'infanzia? Stavolta era l'area di atterraggio dello spazioporto? Vedo graffi e lividi dappertutto.\" Gus risponde: \"Scusa, Calvin! Ero curioso.\"",
+   "ratio": 0.966
+  },
+  {
+   "idx": 6,
+   "id": "mission:War Reactions: Syndicate Orphan|\tCalvin lets him out of the hold and says to you, \"Thank you for saving my brother. He's the only family I have left, and I hope,\" he pinches him, \"he'll stop risking his life out of curiosity.\" He looks at Gus kindly. \"Come on, let's get you to the medic.\"|263|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 263,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\tCalvin lets him out of the hold and says to you, \"Thank you for saving my brother. He's the only family I have left, and I hope,\" he pinches him, \"he'll stop risking his life out of curiosity.\" He looks at Gus kindly. \"Come on, let's get you to the medic.\"",
+   "italian": "\tCalvin lo libera dalla presa e dice a te: \"Grazie per aver salvato mio fratello. È l'unica famiglia che mi resta, e spero\", gli dà un pizzicotto, \"che smetta di rischiare la vita per curiosità.\" Guarda Gus con affetto. \"Dai, andiamo dal medico.\"",
+   "ratio": 0.957
+  },
+  {
+   "idx": 7,
+   "id": "mission:War Reactions: Syndicate Orphan|\tCalvin waves goodbye as he walks his brother in.|264|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 264,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Syndicate Orphan",
+   "english": "\tCalvin waves goodbye as he walks his brother in.",
+   "italian": "\tCalvin ti saluta con la mano mentre accompagna dentro il fratello.",
+   "ratio": 1.367
+  }
+ ]
+}

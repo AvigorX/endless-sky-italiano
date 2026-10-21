@@ -1,0 +1,341 @@
+{
+ "block": {
+  "path": "data/successors/successor 2 ghosts aqrabe.txt",
+  "line_from": 401,
+  "line_to": 478,
+  "units": 30
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Successors: Ghosts Aqrabe 7|name|404|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 404,
+   "kind": "VALUE",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "Return to Kasii-Cavasaa-Oa",
+   "italian": "Ritorna a Kasii-Cavasaa-Oa",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "mission:Successors: Ghosts Aqrabe 7|description|405|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 405,
+   "kind": "DESCRIPTION",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "Escape the drone ship and return to <destination> with the stellar metal.",
+   "italian": "Fuggi dalla nave drone e torna a <destination> con il metallo stellare.",
+   "ratio": 0.973
+  },
+  {
+   "idx": 3,
+   "id": "mission:Successors: Ghosts Aqrabe 7|blocked|413|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 413,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "You will need <capacity> to collect the stellar metal. Return in the modified Vujlet when you have the space free.",
+   "italian": "Ti servirà <capacity> per raccogliere il metallo stellare. Torna con il Vujlet modificato quando avrai lo spazio libero.",
+   "ratio": 1.053
+  },
+  {
+   "idx": 4,
+   "id": "mission:Successors: Ghosts Aqrabe 7|Several minutes pass after landing before the hull of the <ship> has cooled enough to make it safe for exit - despite Kaatrij's loaned technology, the ship's armor still glows red-hot. The interior of the garden's loading bay is cavernous, the tangled metal strands drawn inside onto giant spools each many meters in diameter.|416|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 416,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "Several minutes pass after landing before the hull of the <ship> has cooled enough to make it safe for exit - despite Kaatrij's loaned technology, the ship's armor still glows red-hot. The interior of the garden's loading bay is cavernous, the tangled metal strands drawn inside onto giant spools each many meters in diameter.",
+   "italian": "Passano diversi minuti dall'atterraggio prima che lo scafo della <ship> sia abbastanza freddo da permetterti di uscire: nonostante la tecnologia prestata da Kaatrij, la corazza della nave è ancora rovente. L'interno della baia di carico del giardino è immenso, con i fili metallici aggrovigliati avvolti su enormi bobine, ciascuna larga molti metri.",
+   "ratio": 1.071
+  },
+  {
+   "idx": 5,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\tYour crew gets to work under the supervision of Tiliia and Kaatrij's observer, removing small bits of metal from the rolls and carting them, one by one, onto the ship. Soon, Tiliia calls you over to a side section of the facility, and points out one of the spools - unlike the others, this one is entirely empty.|417|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 417,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\tYour crew gets to work under the supervision of Tiliia and Kaatrij's observer, removing small bits of metal from the rolls and carting them, one by one, onto the ship. Soon, Tiliia calls you over to a side section of the facility, and points out one of the spools - unlike the others, this one is entirely empty.",
+   "italian": "\tIl tuo equipaggio si mette al lavoro sotto la supervisione di Tiliia e dell'osservatore di Kaatrij, staccando piccoli pezzi di metallo dai rotoli e portandoli sulla nave uno per uno. Presto Tiliia ti chiama in una sezione laterale dell'impianto e ti indica una delle bobine: a differenza delle altre, questa è completamente vuota.",
+   "ratio": 1.058
+  },
+  {
+   "idx": 6,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"It would seem to me that our visit here is not the first, Captain,\" they say.|418|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 418,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"It would seem to me that our visit here is not the first, Captain,\" they say.",
+   "italian": "\t\"Mi sembra di capire che la nostra visita qui non sia la prima, capitano,\" dicono.",
+   "ratio": 1.051
+  },
+  {
+   "idx": 7,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"Who might have done this?\"|420|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 420,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"Who might have done this?\"",
+   "italian": "\t\"Chi può essere stato?\"",
+   "ratio": 0.857
+  },
+  {
+   "idx": 8,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"How could they have landed here?\"|422|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 422,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"How could they have landed here?\"",
+   "italian": "\t\"Come hanno fatto ad atterrare qui?\"",
+   "ratio": 1.057
+  },
+  {
+   "idx": 9,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"'Tis impossible to know. Perhaps they had some shield as we had, or perhaps their craft was sturdy enough itself to bear the star's ire. Either one bodes poorly.\"|424|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 424,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"'Tis impossible to know. Perhaps they had some shield as we had, or perhaps their craft was sturdy enough itself to bear the star's ire. Either one bodes poorly.\"",
+   "italian": "\t\"È impossibile saperlo. Forse avevano qualche scudo come il nostro, o forse la loro nave era abbastanza robusta da sopportare l'ira della stella. In entrambi i casi è un cattivo segno.\"",
+   "ratio": 1.134
+  },
+  {
+   "idx": 10,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\tTiliia shudders with color. \"Were we fortunate, 'twas the Quarg or some of their nature, inspecting here in solitude. But lacking fortune, it may be that Kaatrij's aggressor seeks this bounty too - and has beaten us to it.\"|427|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 427,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\tTiliia shudders with color. \"Were we fortunate, 'twas the Quarg or some of their nature, inspecting here in solitude. But lacking fortune, it may be that Kaatrij's aggressor seeks this bounty too - and has beaten us to it.\"",
+   "italian": "\tTiliia freme di colore. \"Se siamo stati fortunati, erano i Quarg o qualcuno della loro natura, venuto qui a ispezionare in solitudine. Ma se la fortuna ci manca, può darsi che l'aggressore di Kaatrij cerchi anche lui questo bottino, e che ci abbia preceduti.\"",
+   "ratio": 1.161
+  },
+  {
+   "idx": 11,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"Either way,\" they say, \"we must hasten back t'bring this news to Aqrabe.\"|429|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 429,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"Either way,\" they say, \"we must hasten back t'bring this news to Aqrabe.\"",
+   "italian": "\t\"In ogni caso,\" dicono, \"dobbiamo affrettarci a riportare questa notizia ad Aqrabe.\"",
+   "ratio": 1.133
+  },
+  {
+   "idx": 12,
+   "id": "mission:Successors: Ghosts Aqrabe 7|dialog|435|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 435,
+   "kind": "DIALOG",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "As you take off from the stellar metal garden, your ship's proximity alarms begin to sound. Another ship is taking off too - and its weapons are aimed right at you!",
+   "italian": "Mentre decolli dal giardino di metallo stellare, gli allarmi di prossimità della tua nave cominciano a suonare. Anche un'altra nave sta decollando, e le sue armi sono puntate dritte su di te!",
+   "ratio": 1.165
+  },
+  {
+   "idx": 13,
+   "id": "mission:Successors: Ghosts Aqrabe 7|dialog|443|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 443,
+   "kind": "DIALOG",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "As the drone ship explodes it transmits some data to your own vessel. It cannot be deciphered at this time.",
+   "italian": "Quando la nave drone esplode, trasmette dei dati alla tua nave. Non possono essere decifrati per ora.",
+   "ratio": 0.944
+  },
+  {
+   "idx": 14,
+   "id": "mission:Successors: Ghosts Aqrabe 7|log|452|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 452,
+   "kind": "LOGBOOK",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "Retrieved stellar metal for House Kaatrij using a specially-equipped vessel, narrowly escaping pursuing warships.",
+   "italian": "Hai recuperato metallo stellare per Casa Kaatrij con una nave attrezzata allo scopo, sfuggendo per un soffio a navi da guerra all'inseguimento.",
+   "ratio": 1.265
+  },
+  {
+   "idx": 15,
+   "id": "mission:Successors: Ghosts Aqrabe 7|You set the ship down on <planet> in the midst of a sea of dockworkers, who begin removing the precious stellar metal from the <ship>'s cargo hold almost immediately, under the watchful gaze of the Kaatrij observer. Tiliia, after entering a bit of data on their pad, finally relaxes, quietly reciting a series of harsh-sounding and apparently untranslatable words.|454|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 454,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "You set the ship down on <planet> in the midst of a sea of dockworkers, who begin removing the precious stellar metal from the <ship>'s cargo hold almost immediately, under the watchful gaze of the Kaatrij observer. Tiliia, after entering a bit of data on their pad, finally relaxes, quietly reciting a series of harsh-sounding and apparently untranslatable words.",
+   "italian": "Posi la nave su <planet> in mezzo a un mare di scaricatori, che cominciano a togliere il prezioso metallo stellare dalla stiva della <ship> quasi subito, sotto lo sguardo vigile dell'osservatore di Kaatrij. Tiliia, dopo aver inserito qualche dato sul proprio pad, finalmente si rilassa, recitando piano una serie di parole dall'aspetto aspro e apparentemente intraducibili.",
+   "ratio": 1.025
+  },
+  {
+   "idx": 16,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"Do you know something about those ships?\" you ask them, eliciting a long groan and a wave of oily black over their skin.|455|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 455,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"Do you know something about those ships?\" you ask them, eliciting a long groan and a wave of oily black over their skin.",
+   "italian": "\t\"Sai qualcosa di quelle navi?\" chiedi, provocando un lungo gemito e un'onda di nero oleoso sulla loro pelle.",
+   "ratio": 0.893
+  },
+  {
+   "idx": 17,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"This is what we earn for tearing up a nest; going where we shouldn't,\" they say. \"'Twas a drone, an automated guardian from the days that garden was new. No doubt meant to chase off interlopers, as ourselves. But-\"|456|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 456,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"This is what we earn for tearing up a nest; going where we shouldn't,\" they say. \"'Twas a drone, an automated guardian from the days that garden was new. No doubt meant to chase off interlopers, as ourselves. But-\"",
+   "italian": "\t\"Questo è ciò che ci guadagnamo a devastare un nido, andando dove non dovremmo,\" dicono. \"Era un drone, un guardiano automatico dei giorni in cui quel giardino era nuovo. Senza dubbio destinato a scacciare gli intrusi, come noi. Ma...\"",
+   "ratio": 1.093
+  },
+  {
+   "idx": 18,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"What is it?\"|458|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 458,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"What is it?\"",
+   "italian": "\t\"Ma che cosa?\"",
+   "ratio": 1.071
+  },
+  {
+   "idx": 19,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"Spit it out!\"|459|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 459,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"Spit it out!\"",
+   "italian": "\t\"Dillo e basta!\"",
+   "ratio": 1.133
+  },
+  {
+   "idx": 20,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"Such a thing should not be. No House would've left a craft like that behind to molder, not for the sake of some petty metal. Heirlooms of that age are precious - I cannot see why such a thing should be so eas'ly discarded.\" They finally relax a bit, and the black wave subsides.|460|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 460,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"Such a thing should not be. No House would've left a craft like that behind to molder, not for the sake of some petty metal. Heirlooms of that age are precious - I cannot see why such a thing should be so eas'ly discarded.\" They finally relax a bit, and the black wave subsides.",
+   "italian": "\t\"Una cosa del genere non dovrebbe esistere. Nessuna Casata avrebbe lasciato indietro una nave così, a marcire, non per un po' di metallo da poco. I cimeli di quell'epoca sono preziosi: non capisco perché una cosa simile sia stata buttata via con tanta facilità.\" Alla fine si rilassano un po', e l'onda nera si placa.",
+   "ratio": 1.136
+  },
+  {
+   "idx": 21,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"Thou hast done us a duty, nonetheless. Thou shalt see thine account flusher soon.\"|461|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 461,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"Thou hast done us a duty, nonetheless. Thou shalt see thine account flusher soon.\"",
+   "italian": "\t\"Ci hai comunque reso un servizio. Presto vedrai il tuo conto più pieno.\"",
+   "ratio": 0.881
+  },
+  {
+   "idx": 22,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"What happens now?\"|463|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 463,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"What happens now?\"",
+   "italian": "\t\"E adesso che succede?\"",
+   "ratio": 1.2
+  },
+  {
+   "idx": 23,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"What about this ship? Do I get to keep it?\"|464|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 464,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"What about this ship? Do I get to keep it?\"",
+   "italian": "\t\"E questa nave? Posso tenermela?\"",
+   "ratio": 0.756
+  },
+  {
+   "idx": 24,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"Now we put this bounty to work, captain. I and the others here have a long task before us: I believe we shall be able to split up the keystones and amplify their effects with the stellar metal - 'tis only a matter of how much and how well. There's little thou canst do to assist now, though I'll be sure to note thy helpfulness to Aqrabe in this task.\"|467|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 467,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"Now we put this bounty to work, captain. I and the others here have a long task before us: I believe we shall be able to split up the keystones and amplify their effects with the stellar metal - 'tis only a matter of how much and how well. There's little thou canst do to assist now, though I'll be sure to note thy helpfulness to Aqrabe in this task.\"",
+   "italian": "\t\"Ora mettiamo al lavoro questo bottino, capitano. Io e gli altri qui abbiamo un lungo compito davanti: credo che riusciremo a dividere le pietre chiave e ad amplificarne gli effetti con il metallo stellare; è solo questione di quanto e di quanto bene. Ora c'è poco che tu possa fare per aiutarci, ma sarò certa di segnalare ad Aqrabe la tua utilità in questo compito.\"",
+   "ratio": 1.042
+  },
+  {
+   "idx": 25,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\t\"What about this ship? Do I get to keep it?|469|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 469,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\t\"What about this ship? Do I get to keep it?",
+   "italian": "\t\"E questa nave? Posso tenermela?",
+   "ratio": 0.75
+  },
+  {
+   "idx": 26,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\tTiliia nods. \"Before we left, I heard from our fleet liaison with Kaatrij. The ship lacks weapons or anything too perilous for thee to keep, and Kaatrij has no doubt already started removing their device. Thou mightst consider it a bonus to thy fee, a favor from the House to thee.\"|471|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 471,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\tTiliia nods. \"Before we left, I heard from our fleet liaison with Kaatrij. The ship lacks weapons or anything too perilous for thee to keep, and Kaatrij has no doubt already started removing their device. Thou mightst consider it a bonus to thy fee, a favor from the House to thee.\"",
+   "italian": "\tTiliia annuisce. \"Prima di partire ho sentito il nostro ufficiale di collegamento con Kaatrij. La nave non ha armi né nulla di troppo pericoloso perché tu la tenga, e Kaatrij ha senza dubbio già cominciato a rimuovere il suo congegno. Potresti considerarla un bonus sul tuo compenso, un favore della Casata nei tuoi confronti.\"",
+   "ratio": 1.159
+  },
+  {
+   "idx": 27,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\tTiliia turns to go away but stops themself. \"I've an apology to offer thee 'fore we part, captain,\" they say. \"I showed thee some disrespect when we spoke before leaving. 'Tis strange to be accused by one so foreign to our ways. But we've been cut off a long time now, I think, hearing only from ourselves and the ghosts of others. Greater things are moving than either of us now, but thou mayst trust that I'll be careful with our treasure. I can promise thee nothing more, but thou'rt right to remind me of that, at least.\"|475|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 475,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\tTiliia turns to go away but stops themself. \"I've an apology to offer thee 'fore we part, captain,\" they say. \"I showed thee some disrespect when we spoke before leaving. 'Tis strange to be accused by one so foreign to our ways. But we've been cut off a long time now, I think, hearing only from ourselves and the ghosts of others. Greater things are moving than either of us now, but thou mayst trust that I'll be careful with our treasure. I can promise thee nothing more, but thou'rt right to remind me of that, at least.\"",
+   "italian": "\tTiliia si volta per andarsene, ma si ferma. \"Ho delle scuse da farti prima di separarci, capitano,\" dicono. \"Ti ho mostrato una certa mancanza di rispetto quando abbiamo parlato prima di partire. È strano essere accusati da qualcuno così estraneo ai nostri modi. Ma siamo isolati da molto tempo ormai, credo, e ascoltiamo solo noi stessi e i fantasmi degli altri. Si muovono cose più grandi di entrambi, ora, ma puoi credermi se dico che sarò cauta con il nostro tesoro. Non posso prometterti altro, ma almeno hai ragione a ricordarmelo.\"",
+   "ratio": 1.025
+  },
+  {
+   "idx": 28,
+   "id": "mission:Successors: Ghosts Aqrabe 7|label|476|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 476,
+   "kind": "UI_LABEL",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "not confronted",
+   "italian": "not confronted",
+   "ratio": 1.0
+  },
+  {
+   "idx": 29,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\tThe two of you are interrupted by Kaatrij's observer, who informs the two of you that the metal offloading is complete. Tiliia, ready to get started on the next phase of their project, leaves with them, offering you a quick bow and courteous \"goodbye.\"|477|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 477,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\tThe two of you are interrupted by Kaatrij's observer, who informs the two of you that the metal offloading is complete. Tiliia, ready to get started on the next phase of their project, leaves with them, offering you a quick bow and courteous \"goodbye.\"",
+   "italian": "\tVenite interrotti dall'osservatore di Kaatrij, che vi informa che lo scarico del metallo è completo. Tiliia, pronta a cominciare la fase successiva del progetto, se ne va con loro, offrendoti un rapido inchino e un cortese \"arrivederci\".",
+   "ratio": 0.941
+  },
+  {
+   "idx": 30,
+   "id": "mission:Successors: Ghosts Aqrabe 7|\tA few minutes later, you are notified that you have received a payment of <payment> credits from House Aqrabe.|478|0",
+   "path": "data/successors/successor 2 ghosts aqrabe.txt",
+   "line": 478,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Successors: Ghosts Aqrabe 7",
+   "english": "\tA few minutes later, you are notified that you have received a payment of <payment> credits from House Aqrabe.",
+   "italian": "\tPochi minuti dopo, ti viene notificato che hai ricevuto un pagamento di <payment> crediti da Casa Aqrabe.",
+   "ratio": 0.955
+  }
+ ]
+}

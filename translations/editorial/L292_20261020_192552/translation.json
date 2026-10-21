@@ -1,0 +1,198 @@
+{
+ "block": {
+  "path": "data/avgi/avgi culture conversations.txt",
+  "line_from": 229,
+  "line_to": 259,
+  "units": 17
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Avgi Culture: Fencing|\t(Approach them.)|229|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 229,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t(Approach them.)",
+   "italian": "\t(Avvicinati.)",
+   "ratio": 0.824
+  },
+  {
+   "idx": 2,
+   "id": "mission:Avgi Culture: Fencing|\t(Ignore them.)|230|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 230,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t(Ignore them.)",
+   "italian": "\t(Ignorali.)",
+   "ratio": 0.8
+  },
+  {
+   "idx": 3,
+   "id": "mission:Avgi Culture: Fencing|\tAs you walk over to the two vibrantly colored Avgi, they glance in your direction. One of them, colored a muted teal, speaks up. \"Invitation. Human, are you perhaps interested in witnessing the ancient Avgi sport of fencing, question?\"|232|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 232,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tAs you walk over to the two vibrantly colored Avgi, they glance in your direction. One of them, colored a muted teal, speaks up. \"Invitation. Human, are you perhaps interested in witnessing the ancient Avgi sport of fencing, question?\"",
+   "italian": "\tMentre ti avvicini ai due Avgi dai colori vivaci, lanciano uno sguardo nella tua direzione. Uno dei due, di un verde acqua spento, prende la parola. \"Invito. Umano, sei forse interessato ad assistere all'antico sport Avgi della scherma, domanda?\"",
+   "ratio": 1.047
+  },
+  {
+   "idx": 4,
+   "id": "mission:Avgi Culture: Fencing|\t\"Fencing? Like the human sport?\"|234|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 234,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t\"Fencing? Like the human sport?\"",
+   "italian": "\t\"Scherma? Come lo sport umano?\"",
+   "ratio": 0.97
+  },
+  {
+   "idx": 5,
+   "id": "mission:Avgi Culture: Fencing|\t\"Sure, I'm willing to watch.\"|235|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 235,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t\"Sure, I'm willing to watch.\"",
+   "italian": "\t\"Certo, sono disposto a guardare.\"",
+   "ratio": 1.167
+  },
+  {
+   "idx": 6,
+   "id": "mission:Avgi Culture: Fencing|\t\"I'm good, thanks.\"|237|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 237,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t\"I'm good, thanks.\"",
+   "italian": "\t\"Sto bene così, grazie.\"",
+   "ratio": 1.25
+  },
+  {
+   "idx": 7,
+   "id": "mission:Avgi Culture: Fencing|\tThe other, colored a bright blue and purple sheen, chimes in. \"Assurance. While we as a species are unlikely to have preceded you in a sport such as this, I still implore you to attend.\"|239|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 239,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tThe other, colored a bright blue and purple sheen, chimes in. \"Assurance. While we as a species are unlikely to have preceded you in a sport such as this, I still implore you to attend.\"",
+   "italian": "\tL'altro, di un blu brillante con riflessi viola, interviene. \"Rassicurazione. Benché come specie sia improbabile che vi abbiamo preceduti in uno sport come questo, ti esorto comunque a venire.\"",
+   "ratio": 1.037
+  },
+  {
+   "idx": 8,
+   "id": "mission:Avgi Culture: Fencing|\tThe first Avgi continues, \"Addendum. Considering our... differences in agility, this will surely be a spectacle to you. Compared to the human sport, that is.\"|240|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 240,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tThe first Avgi continues, \"Addendum. Considering our... differences in agility, this will surely be a spectacle to you. Compared to the human sport, that is.\"",
+   "italian": "\tIl primo Avgi continua: \"Aggiunta. Considerate le nostre... differenze di agilità, sarà senz'altro uno spettacolo per te. Rispetto allo sport umano, s'intende.\"",
+   "ratio": 1.013
+  },
+  {
+   "idx": 9,
+   "id": "mission:Avgi Culture: Fencing|\t\"Sure, sounds like fun!\"|242|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 242,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t\"Sure, sounds like fun!\"",
+   "italian": "\t\"Certo, sembra divertente!\"",
+   "ratio": 1.12
+  },
+  {
+   "idx": 10,
+   "id": "mission:Avgi Culture: Fencing|\t\"I'll pass, thanks.\"|243|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 243,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t\"I'll pass, thanks.\"",
+   "italian": "\t\"Passo, grazie.\"",
+   "ratio": 0.81
+  },
+  {
+   "idx": 11,
+   "id": "mission:Avgi Culture: Fencing|\tA short walk later, you find yourself in a large open-air room, similar to a gymnasium but much taller. Rows of rails that look like they came from a skate park make up bleachers the whole way around the cylindrical area, packed to the brim with perched Avgi. Many are holding up signs with colorful lettering that appear to be in favor of one participant or the other.|248|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 248,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tA short walk later, you find yourself in a large open-air room, similar to a gymnasium but much taller. Rows of rails that look like they came from a skate park make up bleachers the whole way around the cylindrical area, packed to the brim with perched Avgi. Many are holding up signs with colorful lettering that appear to be in favor of one participant or the other.",
+   "italian": "\tDopo una breve camminata ti ritrovi in una grande sala all'aperto, simile a una palestra ma molto più alta. File di ringhiere che sembrano venire da uno skate park formano gradinate lungo tutto il perimetro dell'area cilindrica, stipate fino all'orlo di Avgi appollaiati. Molti tengono cartelli con scritte colorate che sembrano tifare per uno o per l'altro dei partecipanti.",
+   "ratio": 1.016
+  },
+  {
+   "idx": 12,
+   "id": "mission:Avgi Culture: Fencing|\tA short walk later, you find yourself in a large open-air room, similar to a gymnasium but much taller. Rows of rails that look like they came from a skate park make up bleachers the whole way around the cylindrical area, packed to the brim with perched Avgi. Many are holding up signs with colorful lettering that appear to be in favor of one participant or the other. One sign in particular states \"ZOMP TO STOMP THEM LIKE THE ASSEMBLY!\"|251|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 251,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tA short walk later, you find yourself in a large open-air room, similar to a gymnasium but much taller. Rows of rails that look like they came from a skate park make up bleachers the whole way around the cylindrical area, packed to the brim with perched Avgi. Many are holding up signs with colorful lettering that appear to be in favor of one participant or the other. One sign in particular states \"ZOMP TO STOMP THEM LIKE THE ASSEMBLY!\"",
+   "italian": "\tDopo una breve camminata ti ritrovi in una grande sala all'aperto, simile a una palestra ma molto più alta. File di ringhiere che sembrano venire da uno skate park formano gradinate lungo tutto il perimetro dell'area cilindrica, stipate fino all'orlo di Avgi appollaiati. Molti tengono cartelli con scritte colorate che sembrano tifare per uno o per l'altro dei partecipanti. Un cartello in particolare dice \"ZOMP PER SCHIACCIARLI COME L'ASSEMBLEA!\"",
+   "ratio": 1.023
+  },
+  {
+   "idx": 13,
+   "id": "mission:Avgi Culture: Fencing|log|255|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 255,
+   "kind": "LOGBOOK",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "Zomp is a muted teal Avgi who defeated the reigning champion Razmatazz in a fencing match.",
+   "italian": "Zomp è un Avgi di verde acqua spento che ha sconfitto il campione in carica, Razmatazz, in un incontro di scherma.",
+   "ratio": 1.267
+  },
+  {
+   "idx": 14,
+   "id": "mission:Avgi Culture: Fencing|log|256|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 256,
+   "kind": "LOGBOOK",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "Watched a fencing match between two Avgi onboard a Dissonance station with an extremely rowdy and excitable crowd. Witnessed an upset as an Avgi named Zomp defeated the reigning champion.",
+   "italian": "Ho assistito a un incontro di scherma fra due Avgi a bordo di una stazione della Dissonanza, con una folla estremamente chiassosa ed eccitabile. Ho visto una sorpresa: un Avgi di nome Zomp ha sconfitto il campione in carica.",
+   "ratio": 1.198
+  },
+  {
+   "idx": 15,
+   "id": "mission:Avgi Culture: Fencing|\tSoon after, the familiar muted teal and glistening purple Avgi walk out of a small door on the bottom level. The spectators in the arena erupt with a flurry of wing flapping in what seems to be a loud cheer; your translator picks up \"Excitement\" and \"Anticipation\", among other moods, dozens of times. The fencers' wings appear to be kitted out with thin copper wires, and they're carrying the same rapiers you saw them with before. They hop up onto small pedestals located on each edge of the arena.|257|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 257,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tSoon after, the familiar muted teal and glistening purple Avgi walk out of a small door on the bottom level. The spectators in the arena erupt with a flurry of wing flapping in what seems to be a loud cheer; your translator picks up \"Excitement\" and \"Anticipation\", among other moods, dozens of times. The fencers' wings appear to be kitted out with thin copper wires, and they're carrying the same rapiers you saw them with before. They hop up onto small pedestals located on each edge of the arena.",
+   "italian": "\tPoco dopo, i due Avgi ormai familiari, quello verde acqua spento e quello viola scintillante, escono da una porticina al livello inferiore. Il pubblico dell'arena esplode in un turbinio di battiti d'ala che sembra un boato di incitamento; il tuo traduttore capta \"Eccitazione\" e \"Attesa\", fra le altre emozioni, decine di volte. Le ali dei duellanti sembrano munite di sottili fili di rame, e portano gli stessi stocchi che avevi visto prima. Saltano su piccoli piedistalli collocati su ciascun bordo dell'arena.",
+   "ratio": 1.024
+  },
+  {
+   "idx": 16,
+   "id": "mission:Avgi Culture: Fencing|\tA voice booms over the many speakers present in the room. \"Proclamation. Here we have our reigning champion, Razmatazz, and the upstart challenger Zomp! Are you ready to witness this enthralling battle between these two paragons of the blade, question?\"|258|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 258,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tA voice booms over the many speakers present in the room. \"Proclamation. Here we have our reigning champion, Razmatazz, and the upstart challenger Zomp! Are you ready to witness this enthralling battle between these two paragons of the blade, question?\"",
+   "italian": "\tUna voce rimbomba dai molti altoparlanti presenti nella sala. \"Proclama. Ecco a voi il nostro campione in carica, Razmatazz, e lo sfidante arrivato dal nulla, Zomp! Siete pronti ad assistere a questa avvincente battaglia fra due paradigmi della lama, domanda?\"",
+   "ratio": 1.028
+  },
+  {
+   "idx": 17,
+   "id": "mission:Avgi Culture: Fencing|\tThe arena once more hums to life with the flutter of wings. \"Anticipation. Then let the duel... begin.\"|259|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 259,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tThe arena once more hums to life with the flutter of wings. \"Anticipation. Then let the duel... begin.\"",
+   "italian": "\tL'arena torna a vibrare di vita al frullare delle ali. \"Attesa. Allora che il duello... cominci.\"",
+   "ratio": 0.942
+  }
+ ]
+}

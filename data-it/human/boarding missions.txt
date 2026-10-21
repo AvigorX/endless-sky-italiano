@@ -1,0 +1,960 @@
+# Copyright (c) 2015 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+conversation "assisting merchant"
+	`${assist merchant 1} <origin>${assist merchant 2} ${assist merchant 3} <payment>${assist merchant 4}`
+		decline
+
+conversation "assisting merchant hazardous"
+	`${assist merchant 1 hazardous} <origin>${assist merchant 2} ${assist merchant 3} <payment>${assist merchant 4}`
+		decline
+
+mission "Assisting Merchant (Small)"
+	assisting
+	repeat
+	minor
+	to offer
+		random < 20
+	source
+		government "Merchant"
+		category "Interceptor" "Light Warship" "Transport" "Light Freighter"
+		not attributes "automaton"
+	on offer
+		payment 10000
+		conversation "assisting merchant"
+	# A mission with no destination will not be offered, so give it one.
+	# What the destination is doesn't matter, because you always 'decline' this.
+	destination "Earth"
+
+mission "Assisting Merchant (Medium)"
+	assisting
+	repeat
+	minor
+	to offer
+		random < 15
+	source
+		government "Merchant"
+		category "Medium Warship" "Heavy Freighter"
+		not attributes "automaton"
+	on offer
+		payment 20000
+		conversation "assisting merchant"
+	destination "Earth"
+
+mission "Assisting Merchant (Large)"
+	assisting
+	repeat
+	minor
+	to offer
+		random < 10
+	source
+		government "Merchant"
+		category "Heavy Warship"
+		not attributes "automaton"
+	on offer
+		payment 30000
+		conversation "assisting merchant"
+	destination "Earth"
+
+phrase "assist merchant 1"
+	phrase
+		"assist merchant 1-1"
+	phrase
+		"assist merchant 1-2"
+	phrase
+		"assist merchant 1-3"
+
+phrase "assist merchant 1 hazardous"
+	phrase
+		"assist merchant 1-1"
+	phrase
+		"assist merchant 1-2 hazardous"
+	phrase
+		"assist merchant 1-3"
+
+phrase "assist merchant 1-1"
+	word
+		`Sapendo che `
+		`Poiché `
+		`Comprendendo che `
+		`Considerando che `
+		`Visto che `
+		`Sapendo come `
+
+phrase "assist merchant 1-2"
+	word
+		`hai cambiato rotta `
+		`ti sei scomodato `
+		`potresti aver cambiato i tuoi piani di volo `
+
+phrase "assist merchant 1-2 hazardous"
+	word
+		`hai rischiato la vita `
+		`hai rischiato la nave `
+		`hai rischiato la tua nave `
+		`hai affrontato il fuoco nemico `
+		`hai affrontato il pericolo `
+
+phrase "assist merchant 1-3"
+	word
+		`per ` 4
+		`al fine di ` 2
+		`così che potessi `
+	word
+		`salvare `
+		`riparare `
+		`recuperare `
+		`assicurare `
+		`soccorrere `
+		`aiutare `
+	word
+		`il`
+
+phrase "assist merchant 2"
+	phrase
+		`assist merchant 2 simple` 2
+		`assist merchant 2 complex`
+
+phrase "assist merchant 2 simple"
+	word
+		`, `
+
+phrase "assist merchant 2 complex"
+	word
+		` e `
+	word
+		`salvare il suo carico, `
+		`assicurare il suo carico, `
+		`salvare il suo equipaggio, `
+		`recuperare il suo equipaggio, `
+
+phrase "assist merchant 3"
+	word
+		`il suo `
+		`il `
+		`della nave `
+		`del vascello `
+	word
+		`` 4
+		`sollevato `
+	word
+		`capitano `
+	word
+		`ti dà`
+		`ti offre`
+		`ti ricompensa con`
+
+phrase "assist merchant 4"
+	word
+		`.` 5
+		` in segno di gratitudine.`
+		` in segno di riconoscenza.`
+		` come espressione della loro gratitudine.`
+		` in ringraziamento.`
+		` per ringraziarti.`
+		` per il tuo aiuto.`
+
+
+
+mission "Asteroid Course"
+	assisting
+	minor
+	name "Passeggeri per <planet>"
+	description "Trasporta l'equipaggio rimasto di una nave distrutta, <bunks> persone che lavoravano sulla <origin>, fino a <destination>."
+	to offer
+		random < 6
+	source
+		government "Merchant" "Syndicate"
+		category "Light Freighter" "Interceptor"
+		not attributes "automaton"
+	passengers 3 7
+	destination
+		distance 1 3
+		not government "Pirate"
+		attributes shipyard
+	on offer
+		conversation
+			`Mentre ti avvicini alla <origin>, i tuoi sensori radar rilevano che la nave che stai assistendo sta per essere colpita in pieno da un gigantesco asteroide! In un volo normale non sarebbe un gran problema, ma una nave già gravemente danneggiata e incapace di schivare potrebbe essere distrutta del tutto.`
+			branch unarmed
+				not "armament deterrence"
+			choice
+				`	(Spara all'asteroide.)`
+					goto fire
+				`	(Manovra la mia nave per fare scudo alla <origin>.)`
+					goto move
+				`	(Prova a riparare la <origin> così che possa schivare l'asteroide.)`
+					goto repair
+				`	(Interrompi le manovre di attracco e vola via.)`
+					goto escape
+			label unarmed
+			choice
+				`	(Manovra la mia nave per fare scudo alla <origin>.)`
+					goto move
+				`	(Prova a riparare la <origin> così che possa schivare l'asteroide.)`
+					goto repair
+				`	(Interrompi le manovre di attracco e vola via.)`
+			label escape
+			`	Giri la nave e attivi i propulsori, cercando di allontanarti il più possibile dalla nave in avaria. Pochi secondi dopo, l'asteroide si scontra con la <origin>, facendola a pezzi e uccidendo tutti i membri dell'equipaggio, mentre sulla superficie dell'asteroide lascia poco più che un graffio.`
+				depart
+			label fire
+			branch success
+				random < 50
+			`	Sparisci all'asteroide nel tentativo di distruggerlo, ma sembra che tu abbia solo peggiorato le cose. L'asteroide si è ormai spezzato in decine di frammenti più piccoli che volano ancora dritti verso la <origin>. Prima che tu possa reagire per rimediare all'errore, la maggior parte dei frammenti ha già colpito la <origin>, che ora si sta rapidamente depressurizzando. Non c'è altro da fare che allontanarsi a una distanza di sicurezza dalla nave che esplode...`
+				depart
+			label success
+			`	I colpi che spari spezzano rapidamente l'asteroide, i cui frammenti sembrano aver cambiato rotta abbastanza da mancare del tutto la <origin>. Dopo averla riparata, chiami il suo capitano, che ti ringrazia con un pagamento di 30.000 crediti.`
+				decline
+			label repair
+			branch crew
+				random < 40
+			`	Attracchi alla <origin>, sperando di uscirne vivo, ma appena raggiungi il portello l'asteroide colpisce e una serie di esplosioni comincia a venire dalla nave in avaria. Riesci a raggiungere la cabina di pilotaggio e a sganciarti, ma l'equipaggio dell'altra nave non ha fatto in tempo a raggiungerti...`
+				depart
+			label crew
+			`	Attracchi alla <origin>, sperando di uscirne vivo, ma, appena raggiungi il portello, l'asteroide colpisce e una serie di esplosioni comincia a venire dalla nave in avaria. Quando ti sganci, la maggior parte dell'equipaggio dell'altra nave è riuscita a raggiungere la tua, e ti chiede di portarli su <destination>.`
+			choice
+				`	"Va bene, non è lontano."`
+					launch
+				`	"Quanto potete pagarmi?"`
+			`	"Ho qualche centinaio di migliaia di crediti", dice uno di loro, presumibilmente il capitano. "Devo metterne da parte abbastanza per comprare una nuova astronave, ma riceverai comunque una paga decente."`
+				launch
+			label move
+			`	L'asteroide, dopo aver colpito il tuo scudo, si spezza in un milione di frammenti che si allontanano dalla <origin>. Dopo averla riparata, chiami il suo capitano, che ti ringrazia con un pagamento di 30.000 crediti.`
+				decline
+	on decline
+		payment 30000
+	on complete
+		payment
+		payment 35000
+		dialog "Il capitano con cui avevi parlato ti ringrazia di nuovo per aver salvato lui e il suo equipaggio, e ti consegna <payment>."
+
+
+
+mission "Dangerous Journey"
+	assisting
+	minor
+	name "Consegna per <planet>"
+	description "Consegna <cargo> a <destination>. Il pagamento è <payment>."
+	to offer
+		random < 10
+	source
+		government "Merchant"
+		category "Light Freighter" "Heavy Freighter"
+		not attributes "automaton"
+	destination
+		government "Republic" "Syndicate" "Free Worlds"
+		attributes "frontier"
+		distance 2 3
+	cargo random 5 2 .1
+	on offer
+		conversation
+			`Quando ripari la <origin>, il capitano ti chiama. "È la quarta volta che quasi ci lascio le penne questa settimana facendo questo lavoro! Tieni, porta questo <cargo> a <destination> e finisci il lavoro al posto mio. Hanno detto che il pagamento è <payment>."`
+			choice
+				`	(Prendi il carico.)`
+					accept
+				`	(Non prendere il carico.)`
+			`	Il capitano comincia a imprecare ad alta voce, così interrompi la comunicazione. Speriamo che arrivi a destinazione tutto intero.`
+				decline
+	on complete
+		payment 7500
+		dialog `Scarichi il tuo carico di <commodity>, spieghi che il mercante che aveva accettato il lavoro ha rinunciato e ti ha passato il carico, e incassi il pagamento di <payment>.`
+
+
+
+conversation "assisting law enforcement"
+	`Il capitano della <origin> ti ringrazia per la riparazione, ma ti informa che i pirati che li hanno messi fuori uso sono solo una piccola parte di una flotta che attacca <destination>.`
+	`	Le autorità di <planet> probabilmente ti pagheranno bene se le assisti, ma potrebbe anche essere un modo facile di farti ammazzare.`
+	choice
+		`	(Non unirti allo scontro.)`
+			decline
+		`	(Unisciti alla flotta di difesa.)`
+			accept
+
+mission "Assisting Free Worlds"
+	assisting
+	repeat
+	minor
+	name "Difendi <planet>"
+	description "Sconfiggi un'incursione piratesca su <destination>."
+	to offer
+		"combat rating" > 100
+		random < 5
+	source
+		government "Free Worlds"
+		not category "Fighter" "Drone"
+		not attributes "automaton"
+	destination
+		government "Free Worlds"
+		distance 2 4
+	on offer
+		conversation "assisting law enforcement"
+	npc kill
+		government "Pirate"
+		personality heroic staying target harvests plunders
+		system destination
+		fleet "Large Southern Pirates" 2
+		fleet "Small Southern Pirates"
+	npc
+		government "Free Worlds"
+		personality heroic staying
+		system destination
+		fleet "Large Free Worlds"
+	on complete
+		payment 150000
+		dialog phrase "generic pirate attack payment dialog"
+
+mission "Assisting Republic"
+	assisting
+	repeat
+	minor
+	name "Difendi <planet>"
+	description "Sconfiggi un'incursione piratesca su <destination>."
+	to offer
+		"combat rating" > 100
+		random < 5
+	source
+		government "Republic"
+		not category "Fighter" "Drone"
+		not attributes "automaton"
+	destination
+		government "Republic"
+		distance 2 4
+	on offer
+		conversation "assisting law enforcement"
+	npc kill
+		government "Pirate"
+		personality heroic staying target harvests plunders
+		system destination
+		fleet "Large Northern Pirates" 2
+		fleet "Small Northern Pirates"
+	npc
+		government "Republic"
+		personality heroic staying
+		system destination
+		fleet "Small Republic" 2
+	on complete
+		payment 150000
+		dialog phrase "generic pirate attack payment dialog"
+
+mission "Assisting Deep Security"
+	assisting
+	repeat
+	minor
+	name "Difendi <planet>"
+	description "Sconfiggi un'incursione piratesca su <destination>."
+	to offer
+		"combat rating" > 100
+		random < 5
+	source
+		government "Deep Security"
+		not category "Fighter" "Drone"
+		not attributes "automaton"
+	destination
+		attributes "deep"
+		distance 2 4
+	on offer
+		conversation "assisting law enforcement"
+	npc kill
+		government "Pirate"
+		personality heroic staying target harvests plunders
+		system destination
+		fleet "Large Northern Pirates" 2
+		fleet "Small Northern Pirates"
+	npc
+		government "Deep Security"
+		personality heroic staying
+		system destination
+		fleet "Large Deep Security"
+	on complete
+		payment 150000
+		dialog phrase "generic pirate attack payment dialog"
+
+mission "Assisting Syndicate"
+	assisting
+	repeat
+	minor
+	name "Difendi <planet>"
+	description "Sconfiggi un'incursione piratesca su <destination>."
+	to offer
+		"combat rating" > 100
+		random < 5
+	source
+		government "Syndicate"
+		not category "Fighter" "Drone"
+		not attributes "automaton"
+	destination
+		government "Syndicate"
+		distance 2 4
+	on offer
+		conversation "assisting law enforcement"
+	npc kill
+		government "Pirate"
+		personality heroic staying target harvests plunders
+		system destination
+		fleet "Large Core Pirates" 2
+		fleet "Small Core Pirates"
+	npc
+		government "Syndicate"
+		personality heroic staying
+		system destination
+		fleet "Large Syndicate"
+	on complete
+		payment 150000
+		dialog phrase "generic pirate attack payment dialog"
+
+
+
+conversation "boarding pirate"
+	`Fai una scansione a corto raggio delle dotazioni e del carico della <origin>. Tra il carico trovi una cassa piena di gettoni di credito per un valore di <payment>. Trascini la cassa sulla tua nave prima di pensare alla prossima mossa.`
+		decline
+
+mission "Boarding Pirate (Small)"
+	boarding
+	repeat
+	minor
+	to offer
+		random < 7
+	source
+		government "Pirate"
+		category "Interceptor" "Light Warship" "Transport" "Light Freighter"
+	on offer
+		payment 50000
+		conversation "boarding pirate"
+	destination "Earth"
+
+mission "Boarding Pirate (Medium)"
+	boarding
+	repeat
+	minor
+	to offer
+		random < 5
+	source
+		government "Pirate"
+		category "Medium Warship" "Heavy Freighter"
+	on offer
+		payment 100000
+		conversation "boarding pirate"
+	destination "Earth"
+
+mission "Boarding Pirate (Large)"
+	boarding
+	repeat
+	minor
+	to offer
+		random < 3
+	source
+		government "Pirate"
+		category "Heavy Warship"
+	on offer
+		payment 150000
+		conversation "boarding pirate"
+	destination "Earth"
+
+
+
+mission "Pirate Ambush"
+	invisible
+	boarding
+	repeat
+	minor
+	deadline 1
+	to offer
+		"combat rating" > 100
+		random < 5
+	source
+		government "Pirate"
+		category "Interceptor" "Light Warship" "Transport" "Light Freighter"
+		not attributes "automaton"
+	on offer
+		conversation
+			`Sali a bordo della <origin>, ma non trovi nessun membro dell'equipaggio. Quando raggiungi la cabina di pilotaggio, guardi nello spazio e vedi una capsula di salvataggio che si allontana fluttuando. La <origin> sta emettendo un segnale di soccorso verso i pirati vicini, e una sequenza di autodistruzione è stata attivata! Corri di nuovo sulla tua nave e ti prepari a combattere.`
+				launch
+	destination "Earth"
+	npc kill
+		government "Pirate"
+		personality nemesis harvests plunders entering
+		fleet "pirate raid" 2
+
+
+
+mission "Pirate Mutiny"
+	boarding
+	minor
+	description "Porta <bunks> membri dell'equipaggio, ex pirati, su <destination>."
+	to offer
+		random < 10
+	source
+		government "Pirate"
+		category "Medium Warship" "Heavy Warship"
+		not attributes "automaton"
+	destination
+		government "Republic" "Free Worlds" "Syndicate" "Neutral" "Independent"
+		distance 2 4
+	passengers 10 20
+	on offer
+		conversation
+			`Quando sali a bordo della <origin>, trovi la maggior parte dell'equipaggio già morta. Uno dei superstiti, che sembra un ragazzo non più grande di sedici anni, ti si avvicina con le mani in aria. Spiega che dopo che la nave è stata messa fuori uso, una parte dell'equipaggio ha deciso di rovesciare il capitano tiranno. Continua dicendo che la maggior parte dei pirati viene costretta in servitù sulle navi pirata. I <bunks> superstiti ti supplicano di portarli su <destination> perché possano fuggire dalla schiavitù dei pirati.`
+			`	La battaglia sembra aver danneggiato la nave oltre ogni riparazione. Se lasci qui i pirati, potrebbe non durare molto più a lungo nel vuoto dello spazio.`
+			choice
+				`	(Aiuta l'equipaggio pirata.)`
+					launch
+				`	(Lascia l'equipaggio pirata.)`
+					flee
+	on complete
+		payment 25000
+		dialog `I membri dell'equipaggio pirata ti ringraziano per averli portati su <planet>. Uno di loro ti consegna un piccolo pagamento di <payment>. Auguri a tutti loro di fare fortuna nella nuova vita, e vi separate.`
+
+
+
+mission "Slave Crew Rescue"
+	invisible
+	assisting
+	deadline 1
+	passengers 1
+	to offer
+		random < 10
+	source
+		government "Merchant"
+		category "Heavy Freighter"
+		not attributes "automaton"
+	destination "Earth"
+	on offer
+		conversation
+			branch "boarding alone" "boarding with a big boarding party"
+				"flagship crew" < 3
+
+			label "boarding alone"
+			branch "flagship is empty" "first mate left on flagship"
+				"flagship crew" == 1
+
+			label "flagship is empty"
+			`Lasci la tua nave vuota e sali da solo sulla <origin>. Anche se non ti aspetti alcun pericolo, ti senti comunque apprensivo, tutto solo su un vascello sconosciuto e in avaria, così ti assicuri di portare un'arma da fianco. L'apprensione cresce quando ti rendi conto di non sentire alcun suono di attività frenetica né di vedere membri dell'equipaggio correre qua e là a riparare i danni come ti aspetteresti. Mentre raggiungi il ponte di comando, ti rilassi vedendo un solo giovane elegante e ben vestito che salda una paratia. I suoi movimenti sono agili e competenti, ma il tuo occhio esperto ti dice che la paratia è danneggiata oltre ogni riparazione, quindi il suo lavoro è inutile. Alza lo sguardo e si presenta come capitano Tarquin, offrendoti la principesca somma di 350.000 crediti per il tuo aiuto esperto nel riparare il suo vascello.`
+				goto "first decision"
+
+			label "first mate left on flagship"
+			`Lasci il tuo primo ufficiale al comando della tua nave e sali da solo sulla <origin>. Anche se non ti aspetti alcun pericolo, ti senti comunque apprensivo, tutto solo su un vascello sconosciuto e in avaria, così ti assicuri di portare un'arma da fianco. L'apprensione cresce quando ti rendi conto di non sentire alcun suono di attività frenetica né di vedere membri dell'equipaggio correre qua e là a riparare i danni come ti aspetteresti. Mentre raggiungi il ponte di comando, ti rilassi vedendo un solo giovane elegante e ben vestito che salda una paratia. I suoi movimenti sono agili e competenti, ma il tuo occhio esperto ti dice che la paratia è danneggiata oltre ogni riparazione, quindi il suo lavoro è inutile. Alza lo sguardo e si presenta come capitano Tarquin, offrendoti la principesca somma di 350.000 crediti per il tuo aiuto esperto nel riparare il suo vascello.`
+				goto "first decision"
+
+			label "boarding with a big boarding party"
+			`Mentre il tuo gruppo d'abbordaggio si arrampica a bordo della <origin>, ti rendi conto di non sentire alcun suono di attività frenetica né di vedere membri dell'equipaggio correre qua e là a riparare i danni come ti aspetteresti. Mentre raggiungi il ponte di comando, ti accoglie un solo giovane elegante e ben vestito che salda una paratia. I suoi movimenti sono agili e competenti, ma il tuo occhio esperto ti dice che la paratia è danneggiata oltre ogni riparazione, quindi il suo lavoro è inutile. Alza lo sguardo e si presenta come capitano Tarquin, offrendoti la principesca somma di 350.000 crediti per il tuo aiuto esperto nel riparare il suo vascello.`
+
+			label "first decision"
+			choice
+				`	(Accetta questo generoso pagamento e aiuta a riparare la nave.)`
+					accept
+				`	"Non vorrei guardare in bocca al cavallo donato, ma perché offri così tanti soldi per il mio aiuto?"`
+					goto probe
+				`	"Possiamo avere un po' di aiuto dal tuo equipaggio?"`
+					goto "crew missing"
+				`	"Una nave di queste dimensioni non dovrebbe avere più equipaggio?"`
+					goto "crew missing"
+
+			label probe
+			`	Tarquin ride con un po' d'imbarazzo. "La verità è che sono un po' disperato", dice. "La mia stiva è piena di merci deperibili che devono essere consegnate entro tre giorni a un cliente molto importante, che probabilmente mi taglierà fuori se non rispetto la scadenza. Ho pensato di risparmiare assumendo contadini inesperti come equipaggio, ma come vedi non ha funzionato granché bene. Sono rintanati nei loro alloggi anche adesso. Ti sto offrendo i miei profitti da spilorcio. Chiamiamolo pagare per una lezione imparata.`
+				goto "get to work"
+
+			label "crew missing"
+			`	Tarquin ride di gusto. "Quella gente? Sono un branco di semplici contadini che ho raccolto su New India, nascosti nei loro alloggi in questo momento. Gli zotici non sono abituati a questo genere di pericolo e non hanno grandi capacità tecniche. Colpa mia, che sono stato troppo tirchio per assumere gente valida, suppongo. Dopo che saremo usciti da questo pasticcio, prenderò di sicuro qualche membro dell'equipaggio più esperto e affidabile."`
+
+			label "get to work"
+			`	"Possiamo metterci al lavoro adesso?"`
+			choice
+				`	(Mettiti al lavoro e ripara la nave.)`
+					accept
+				`	(Insisti sulla questione.)`
+			`	Qualcosa nella spiegazione del capitano Tarquin non ti convince, così continui a fargli domande per distrarlo mentre ti avvicini con discrezione alla sezione alloggi dell'equipaggio. Man mano che ti avvicini cominci a sentire i deboli suoni di persone che battono sui muri e gridano aiuto. Il volto di Tarquin mostra un'espressione quasi inquietantemente neutra, ma il suo corpo è teso, come se ogni muscolo si fosse contratto in una volta sola.`
+			choice
+				`	"Credo che abbiamo sbagliato strada. Andiamo a riparare la tua nave."`
+					goto coward
+				`	"Ora vedo che tipo di nave gestisci, ma non preoccuparti, sei tra amici. Le riparazioni sono gratis."`
+					goto "trickster or monster"
+				`	"Ti aiuterò, ma il prezzo è appena salito a un milione di crediti, oppure ti lascio qui e dico alle autorità che gestisci una nave negriera."`
+					goto blackmailer
+				`	"Pretendo che tu liberi i tuoi schiavi."`
+					goto "the direct approach"
+				`	(Attaccalo subito.)`
+					goto "attack but tarquin is prepared"
+
+			label coward
+			`	"Sì, facciamolo", risponde Tarquin. Però la sua aria amichevole è sparita, e resta teso come un cavo d'acciaio. Lavorate in un silenzio di pietra e ritiri goffamente il tuo pagamento quando la <origin> torna a funzionare.`
+			action
+				set "tarquin hates you"
+			`	Ti senti sollevato che tutta la faccenda sia finita quando sei al sicuro di nuovo a bordo della tua nave.`
+				accept
+
+			label "trickster or monster"
+			`	Tarquin si rilassa. "È così bello incontrare un capitano che la pensa come me in questa galassia ostile", dice. "Non mi sognerei mai di accettare riparazioni gratis. Prendi comunque i soldi, insisto."`
+			choice
+				`	(Ora vai a riparare la sua nave.)`
+					accept
+				`	(Approfitta dell'apertura e attaccalo.)`
+					goto "attack with the element of surprise"
+
+			label "attack with the element of surprise"
+			branch "attack alone with the element of surprise" "attack with a big boarding party"
+				"flagship crew" < 3
+
+			label "attack but tarquin is prepared"
+			branch "attack alone but tarquin is prepared" "attack with a big boarding party"
+				"flagship crew" < 3
+
+			label "attack alone with the element of surprise"
+			`	Estrai l'arma il più in fretta che puoi.`
+			branch "good luck" "bad luck"
+				random < 80
+
+			label "attack alone but tarquin is prepared"
+			branch "good luck" "bad luck"
+				random < 40
+
+			label "attack with a big boarding party"
+			`	Tarquin non può sperare di reggere da solo contro tutto il tuo gruppo d'abbordaggio e si arrende in fretta. Uno sguardo di furia fredda gli brilla negli occhi, mentre il resto del volto resta calmo.`
+			choice
+				`	(Giustizialo qui e ora.)`
+					goto execution
+				`	(Prendilo prigioniero.)`
+			branch "has brig"
+				has "outfit (flagship installed): Brig"
+
+			`	Ordini a uno dei membri del tuo gruppo d'abbordaggio di legarlo e sorvegliarlo. Tarquin ti copre di insulti e si dimena mentre lo perquisisci, trovando una pistola e un coltello nascosti, e il gettone di credito con cui stava per pagarti. Vai a liberare l'equipaggio della nave.`
+			`	Gli alloggi dell'equipaggio sono stati trasformati in una cella con porte robuste. Non c'è un modo evidente di aprirle, così tu e i tuoi compagni cominciate a farle saltare.`
+			`	All'improvviso un clacson d'allarme squarcia il rumore con uno staccato aspro. La sequenza di autodistruzione della nave è stata attivata! Corri nella stanza dove era tenuto Tarquin e scopri che è in qualche modo fuggito. Al suo posto c'è un membro del tuo equipaggio privo di sensi, con uno squarcio feroce sul volto, evidentemente inferto da un'altra arma nascosta che non sei riuscito a trovare. Un pannello vicino indica che una capsula di salvataggio è stata espulsa.`
+			`	La nave esploderà in meno di 30 secondi. Capisci con amarezza che non hai alcuna possibilità di liberare i prigionieri in tempo, e che provarci comunque farebbe morire tutti. Tu e il tuo gruppo d'abbordaggio tornate furiosi sulla nave e sganciate i morsetti d'attracco appena in tempo perché la <origin> si disintegri in una nuvola di detriti spaziali, ponendo crudelmente fine alle vite già infelici delle vittime del capitano Tarquin.`
+			action
+				set "tarquin hates you"
+			`	Giuri che sarà l'ultima volta che sottovaluti il capitano Tarquin, se le vostre strade dovessero incrociarsi di nuovo.`
+				launch
+
+			label "has brig"
+			`	Perquisisci Tarquin e trovi una pistola e diversi coltelli nascosti, il gettone di credito con cui stava per pagarti e un piccolo dispositivo di sblocco. Poi ordini a uno dei membri del tuo gruppo d'abbordaggio di chiuderlo nella cella della tua nave. Tarquin ti copre di insulti mentre viene portato in prigionia sotto la minaccia delle armi. Decidi di pensare più tardi a cosa farne e vai a liberare l'equipaggio della nave.`
+				goto "rescue the crew with tarquin captured"
+
+			label execution
+			`	Abbatti il capitano Tarquin a sangue freddo, con shock di almeno un membro del tuo gruppo d'abbordaggio. Che se ne sia andato al diavolo, pensi, mentre perquisisci il corpo dell'ex capitano Tarquin. Trovi una pistola e diversi coltelli nascosti, il gettone di credito con cui stava per pagarti e un piccolo dispositivo di sblocco. Vai a liberare il suo equipaggio con quello.`
+				goto "rescue the crew"
+
+			label blackmailer
+			branch "blackmailing alone" "blackmailing with a big boarding party"
+				"flagship crew" < 3
+
+			label "blackmailing with a big boarding party"
+			`	Tarquin osserva il tuo gruppo d'abbordaggio e ti fissa gelido per almeno cinque secondi imbarazzanti prima di rispondere. "Va bene", dice freddo, gli occhi che ardono di una rabbia a stento contenuta, mentre il resto del volto resta calmo. Resta teso come un cavo d'acciaio mentre tu e la tua squadra riparate la nave in un silenzio di pietra, ritirando goffamente il pagamento quando la <origin> torna a funzionare.`
+			action
+				set "tarquin hates you"
+			`	Ti senti sollevato che tutta la faccenda sia finita quando sei al sicuro di nuovo a bordo della tua nave.`
+				decline
+
+			label "blackmailing alone"
+			`	"Ci vorrà un giorno freddo all'inferno prima che mi lasci ricattare da qualcuno abbastanza stupido da salire da solo su una nave in avaria", sogghigna Tarquin.`
+				goto "attack alone but tarquin is prepared"
+
+			label "the direct approach"
+			branch "acting stupid alone" "attack with a big boarding party"
+				"flagship crew" < 3
+
+			label "acting stupid alone"
+			`	Il capitano Tarquin getta la testa all'indietro e ride nell'esatto momento in cui estrae una pistola nascosta e ti spara cinque volte, tutto in un batter d'occhio. I tuoi ultimi pensieri riguardano l'efficacia della sua distrazione e la stupidità della tua spavalderia.`
+				die
+
+			label "bad luck"
+			`	Veloce come un lampo, estrae una pistola nascosta e ti trafigge la spina dorsale prima che tu possa reagire. Il gioco pericoloso a cui stavi giocando finisce di colpo.`
+				die
+
+			label "good luck"
+			`	Veloce come un lampo, estrae una pistola nascosta, ma tu sei più rapido. È l'ultimo errore che fa. Perquisisci il corpo dell'ex capitano Tarquin e trovi diversi coltelli nascosti oltre alla pistola, il gettone di credito con cui stava per pagarti e un piccolo dispositivo di sblocco. Vai a liberare l'equipaggio con quello.`
+				goto "rescue the crew"
+
+			label "rescue the crew"
+			`	Gli alloggi dell'equipaggio della nave sono stati trasformati in una cella con porte robuste. Per fortuna il dispositivo di sblocco le apre tutte, e quasi una dozzina di disgraziati denutriti esce barcollando, raccontandoti tutta la storia: il capitano Tarquin li teneva come schiavi da diversi mesi, chiudendoli nei loro alloggi quando la nave attraccava e senza cibo come punizione quando si lamentavano. Sono molto contenti di vedere il suo corpo senza vita disteso sul pavimento della nave.`
+			`	Consegni la <origin> a loro e torni alla tua nave.`
+				accept
+
+			label "rescue the crew with tarquin captured"
+			`	Gli alloggi dell'equipaggio della nave sono stati trasformati in una cella con porte robuste. Per fortuna il dispositivo di sblocco le apre tutte, e quasi una dozzina di disgraziati denutriti esce barcollando, raccontandoti tutta la storia: il capitano Tarquin li teneva come schiavi da diversi mesi, chiudendoli nei loro alloggi quando la nave attraccava e senza cibo come punizione quando si lamentavano. Sono molto contenti di sapere che è stato preso in prigionia.`
+			action
+				set "captured tarquin"
+			`	Consegni la <origin> a loro e torni alla tua nave per decidere cosa fare di Tarquin.`
+			`	Un rapido controllo dei dati pubblici nel database galattico della giustizia penale non rivela che sia ricercato per alcun crimine. Decidi di consegnarlo alle autorità di polizia sul pianeta più vicino.`
+				accept
+
+	on decline
+		payment 1000000
+	on accept
+		payment 350000
+
+mission "Turn in Tarquin"
+	description "Consegna il capitano Tarquin alle forze dell'ordine sul pianeta più vicino."
+	passengers 1
+	landing
+	to offer
+		has "captured tarquin"
+	destination "Earth"
+	on offer
+		set "turned in tarquin"
+		conversation
+			"You haul captain Tarquin out of your brig and bring him to the portside police station, presenting evidence from your suit cameras and notarized witness statements compiled from your crew members attesting to his crimes of being involved in slavery. The officer on duty thanks you for the service you've rendered, and takes Tarquin into custody. He shoots one final black look at you that sends a shiver up your spine."
+				decline
+
+mission "Boarding Derelict"
+	boarding
+	repeat
+	invisible
+	deadline 3
+	to complete
+		never
+	source
+		government "Derelict (Boardable)"
+	destination "Earth"
+	npc
+		government "Pirate"
+		personality entering nemesis vindictive staying
+		fleet "pirate raid" 2
+	on offer
+		conversation
+			`Sali a bordo della <origin> e ti guardi attorno nel suo scafo abbandonato, che sembra in condizioni abbastanza stabili. Potresti rischiare di ripararla per un profitto maggiore, oppure recuperare ciò che puoi dalla nave e lasciare il resto.`
+			choice
+				`	(Recupera ciò che puoi dalla nave.)`
+					goto salvage
+				`	(Prova a riparare la nave.)`
+			`	Deciso a puntare al colpo grosso, provi a riparare la nave.`
+			choice
+				`	(Ripara prima i motori.)`
+					goto engines
+				`	(Ripara prima lo scafo.)`
+					goto hull
+				`	(Ripara prima l'alimentazione.)`
+			branch powersurge
+				random < 80
+			`	Con qualche riparazione semplice riesci a rimettere in funzione e a far girare lisci i sistemi di alimentazione della nave.`
+			choice
+				`	(Ripara ora i motori.)`
+					goto engines(p)
+				`	(Ripara ora lo scafo.)`
+					goto hull(p)
+			label hull
+			branch crumple
+				random < 15
+			`	Ci vuole un po', ma riesci a stabilizzare lo scafo della nave. Nel farlo trovi e ripari dei cavi rotti incassati nello scafo, che avrebbero potuto causare una sovratensione.`
+			choice
+				`	(Ripara ora i motori.)`
+					goto engines(h)
+				`	(Ripara ora l'alimentazione.)`
+					goto power(h)
+			label hull(e)
+			branch crumple
+				random < 45
+			`	Ci vuole un po', ma riesci a stabilizzare lo scafo della nave. Nel farlo trovi e ripari dei cavi rotti incassati nello scafo, che avrebbero potuto causare una sovratensione.`
+			choice
+				`	(Ripara l'alimentazione.)`
+					goto power(eh)
+				`	(Fuggi dalla nave, temendo che le mie riparazioni l'abbiano resa più pericolosa.)`
+					goto flee
+			label hull(p)
+			branch crumple
+				random < 25
+			`	Ci vuole un po', ma riesci a stabilizzare lo scafo della nave. Nel farlo trovi e ripari dei cavi rotti incassati nello scafo, che avrebbero potuto causare una sovratensione.`
+			choice
+				`	(Ripara i motori.)`
+					goto engines(hp)
+				`	(Fuggi dalla nave, temendo che le mie riparazioni l'abbiano resa più pericolosa.)`
+					goto flee
+			label hull(ep)
+			branch crumple
+				random < 75
+			`	Ci vuole un po', ma riesci a stabilizzare lo scafo della nave. Nel farlo trovi e ripari dei cavi rotti incassati nello scafo, che avrebbero potuto causare una sovratensione.`
+			`	Finite le riparazioni, vai alla cabina di pilotaggio per vedere se la <origin> parte senza esplodere. Pronto a scattare verso il portello se qualcosa va storto, avvii la nave.`
+			branch fail
+				random < 40
+			`	La nave vibra e prende vita. Con il fiato sospeso aspetti il suono di qualche sistema che esplode, ma non succede nulla. Successo! La nave è tua.`
+				goto success
+			label engines
+			branch misfire
+				random < 60
+			`	Mentre ripari i sistemi dei motori, una valvola si apre di colpo. Per fortuna la valvola secondaria è meccanica e non ha bisogno di corrente, così si chiude da sola e impedisce al refrigerante di schizzare fuori con violenza. Con più cautela, concludi le riparazioni dei motori.`
+			choice
+				`	(Ripara ora lo scafo.)`
+					goto hull(e)
+				`	(Ripara ora l'alimentazione.)`
+					goto power(e)
+			label engines(h)
+			branch misfire
+				random < 60
+			`	Mentre ripari i sistemi dei motori, una valvola si apre di colpo. Per fortuna la valvola secondaria è meccanica e non ha bisogno di corrente, così si chiude da sola e impedisce al refrigerante di schizzare fuori con violenza. Con più cautela, concludi le riparazioni dei motori.`
+			choice
+				`	(Ripara l'alimentazione.)`
+					goto power(eh)
+				`	(Fuggi dalla nave, temendo che le mie riparazioni l'abbiano resa più pericolosa.)`
+					goto flee
+			label engines(p)
+			`	Mentre ripari i sistemi dei motori, una valvola si apre di colpo. Per fortuna hai ripristinato l'alimentazione, così la valvola secondaria si chiude da sola e impedisce al refrigerante di schizzare fuori con violenza. Con più cautela, concludi le riparazioni dei motori.`
+			choice
+				`	(Ripara lo scafo.)`
+					goto hull(ep)
+				`	(Fuggi dalla nave, temendo che le mie riparazioni l'abbiano resa più pericolosa.)`
+					goto flee
+			label engines(hp)
+			`	Mentre ripari i sistemi dei motori, una valvola si apre di colpo. Per fortuna hai ripristinato l'alimentazione, così la valvola secondaria si chiude da sola e impedisce al refrigerante di schizzare fuori con violenza. Con più cautela, concludi le riparazioni dei motori.`
+			`	Finite le riparazioni, vai alla cabina di pilotaggio per vedere se la <origin> parte senza esplodere. Pronto a scattare verso il portello se qualcosa va storto, avvii la nave.`
+			branch fail
+				random < 5
+			`	La nave vibra e prende vita. Con il fiato sospeso aspetti il suono di qualche sistema che esplode, ma non succede nulla. Successo! La nave è tua.`
+				goto success
+			label power(h)
+			branch powersurge
+				random < 5
+			`	Con qualche riparazione semplice riesci a rimettere in funzione e a far girare lisci i sistemi di alimentazione della nave.`
+			choice
+				`	(Ripara i motori.)`
+					goto engines(hp)
+				`	(Fuggi dalla nave, temendo che le mie riparazioni l'abbiano resa più pericolosa.)`
+					goto flee
+			label power(e)
+			branch powersurge
+				random < 55
+			`	Con qualche riparazione semplice riesci a rimettere in funzione e a far girare lisci i sistemi di alimentazione della nave.`
+			choice
+				`	(Ripara lo scafo.)`
+					goto hull(ep)
+				`	(Fuggi dalla nave, temendo che le mie riparazioni l'abbiano resa più pericolosa.)`
+					goto flee
+			label power(eh)
+			branch powersurge
+				random < 15
+			`	Con qualche riparazione semplice riesci a rimettere in funzione e a far girare lisci i sistemi di alimentazione della nave.`
+			`	Finite le riparazioni, vai alla cabina di pilotaggio per vedere se la <origin> parte senza esplodere. Pronto a scattare verso il portello se qualcosa va storto, avvii la nave.`
+			branch fail
+				random < 25
+			`	La nave vibra e prende vita. Con il fiato sospeso aspetti il suono di qualche sistema che esplode, ma non succede nulla. Successo! La nave è tua.`
+				goto success
+			label powersurge
+			`	Con qualche riparazione semplice riesci a rimettere in funzione i sistemi di alimentazione della nave. Per poco. L'alimentazione si spegne di nuovo mentre una vibrazione violenta scuote la nave. Torni di corsa sulla tua nave prima che la <origin> si sfaldi.`
+				depart
+			label crumple
+			`	Mentre rattoppi un segmento di scafo noti che una deformazione si sta allargando lentamente. Peggio ancora, è una parte strutturalmente essenziale dello scafo. Torni di corsa sulla tua nave prima che la <origin> si sfaldi.`
+				depart
+			label misfire
+			`	Mentre ripari i sistemi dei motori, una valvola si apre di colpo. Senza alimentazione la valvola secondaria non può chiudersi, e il refrigerante vola incontrollato dentro lo scafo. La forza del liquido provoca una vibrazione violenta che scuote la nave. Torni di corsa sulla tua nave prima che la <origin> si sfaldi.`
+				depart
+			label flee
+			action
+				payment 7500
+			`	Diffidente delle tue stesse riparazioni avventate, decidi di lasciare stare la nave. Però sei riuscito a tenerti un po' di rottame trovato durante i lavori, del valore di <payment>.`
+			`	I tuoi timori sembrano fondati: la <origin> comincia a sfaldarsi nel momento in cui ti sganci.`
+				depart
+			label fail
+			`	Appena la nave comincia a vibrare e prendere vita, una forte esplosione la scuote!`
+			choice
+				`	(Corri.)`
+			`	Cominci a correre nei corridoi stretti della nave. Oggetti rotolano ovunque, e altre esplosioni minacciano di farti cadere.`
+			choice
+				`	(Corri nel portello.)`
+					goto run
+				`	(Tuffati nel portello.)`
+					goto dive
+				`	(Scivola nel portello.)`
+			`	Mentre scivoli sul pavimento, esplosioni erompono ai tuoi due lati, e sei sicuro di sembrare un eroe d'azione mentre attraversi il portello a tutta velocità verso la salvezza. Scampato per un soffio alla morte e senza voglia di tentare la sorte, te ne vai in fretta.`
+				depart
+			label run
+			`	Mentre corri verso il portello, esplosioni erompono ai tuoi due lati, e sei sicuro di sembrare un eroe d'azione mentre ti apri un varco attraverso il portello verso la salvezza. Scampato per un soffio alla morte e senza voglia di tentare la sorte, te ne vai in fretta.`
+				depart
+			label dive
+			`	Mentre ti tuffi verso il portello, esplosioni erompono ai tuoi due lati, e sei sicuro di sembrare un eroe d'azione mentre ti raccogli e rotoli attraverso il portello verso la salvezza. Scampato per un soffio alla morte e senza voglia di tentare la sorte, te ne vai in fretta.`
+				depart
+			label success
+			branch beacon
+				random < 15
+			branch virus
+				random < 5
+				"credits" > 1000000
+			action
+				payment 65000
+			`	Nonostante tutti i tuoi sforzi per far volare davvero la nave, non ne vuole sapere. In compenso ora hai il tempo di saccheggiare e portarti via qualche modulo dalla nave a piacere. Prima di lasciare la cabina di pilotaggio trovi un gettone di credito appoggiato sui comandi, del valore di <payment>.`
+				decline
+			label beacon
+			`	Però noti una luce lampeggiante sui comandi della nave. Ti chiedi cosa possa segnalare mentre ti avvicini, e quando sei abbastanza vicino capisci che avverte dell'arrivo di "astronavi ostili" nel sistema. Il relitto doveva essere una trappola dei pirati, e a peggiorare le cose la nave sembra preparata a esplodere! Ora hai un buon sospetto di cosa stai affrontando mentre corri di nuovo verso la tua nave.`
+				launch
+			label virus
+			action
+				payment -200000
+			`	Però, poco dopo, uno schermo si illumina nella cabina di pilotaggio mostrando qualcosa di strano. Guardando più da vicino capisci che è una forma di software malevolo, e sta cercando di introdursi nel sistema della tua nave!`
+			`	Corri di nuovo alla tua nave, decolli in fretta e distruggi la <origin>, ma quando riesci a eliminare il virus ha già fatto irruzione nel tuo conto bancario; il conto riporta una variazione di saldo di <payment>.`
+				depart
+			label salvage
+			`	Deciso a non rischiare, setacci in fretta la nave in cerca di rottame e moduli di valore.`
+			branch valuable
+				random < 40
+			action
+				payment 10000
+			`	Dopo una breve ispezione della nave trovi pochi oggetti di valore, e riesci a recuperare solo una misera somma di <payment> dalla <origin>.`
+				goto detonate
+			label valuable
+			branch rare
+				or
+					and
+						random < 25
+						or
+							not "derelict treasure map: ion cannons"
+							not "derelict family investment"
+					random < 5
+			action
+				payment 63000
+			`	Cercando per la nave scopri che vale parecchio: riesci a recuperare dalla <origin> una somma sostanziosa, del valore di <payment>.`
+				goto detonate
+			label rare
+			branch quest
+				or
+					not "derelict treasure map: ion cannons"
+					not "derelict family investment"
+			action
+				payment 475000
+			`	Nascosta sotto un pannello trovi una piccola scatola. Aprendola scopri che è piena di <payment>.`
+				goto detonate
+			label quest
+			branch treasure
+				not "derelict treasure map: ion cannons"
+				or
+					random < 50
+					has "derelict family investment"
+			action
+				set "derelict family investment"
+			`	Mentre cerchi qualcosa di valore per la nave trovi una grande custodia nera piena di 325.000 crediti. Frugando ancora trovi accanto alla custodia un registro di testo, e decidi di portarti via entrambi.`
+				goto detonate
+			label treasure
+			action
+				set "derelict treasure map: ion cannons"
+				payment 26500
+			`	Mentre cerchi qualcosa di valore per la nave trovi una specie di mappa infilata in un pannello. È facile da portare, e ti lascia il tempo di recuperare ancora una misera somma di <payment> dalla <origin>.`
+				goto detonate
+			label detonate
+			choice
+				`	(Fai esplodere la nave e vattene, così nessun altro potrà saccheggiarla.)`
+				`	(Prova a recuperare ancora un po' di materiale.)`
+					goto continued
+			`	Prima di partire fai esplodere la nave, per impedire ad altri cacciatori di relitti di setacciare la nave ormai vuota.`
+				depart
+			label continued
+			branch unlucky
+				random < 75
+			action
+				payment 35000
+			`	Provi a cercare altri oggetti di valore e per fortuna trovi materiale in più, del valore di <payment>. Però lo scafo comincia a scricchiolare e gemere, e ti costringe a tornare in fretta sulla nave.`
+			`	Appena in tempo: la <origin> comincia a sfaldarsi con violenza nel momento in cui la tua nave si sgancia.`
+				depart
+			label unlucky
+			branch pirate
+				random < 20
+			`	Provi a cercare altri oggetti di valore ma senza successo. Però lo scafo comincia a scricchiolare e gemere, e ti costringe a tornare in fretta sulla nave.`
+			`	Appena in tempo: la <origin> comincia a sfaldarsi con violenza nel momento in cui la tua nave si sgancia.`
+				depart
+			label pirate
+			`	Ti dirigi alla cabina di pilotaggio sperando di trovare qualcosa di valore. Non trovando nulla all'inizio, ti volti per uscire e cercare in altre parti della nave.`
+				goto beacon

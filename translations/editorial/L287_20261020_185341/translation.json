@@ -1,0 +1,110 @@
+{
+ "block": {
+  "path": "data/gegno/gegno ships.txt",
+  "line_from": 303,
+  "line_to": 658,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Corundum|description|303|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 303,
+   "kind": "DESCRIPTION",
+   "context": "ship:Corundum",
+   "english": "\tAlthough not able to mount the powerful Excavator Drill, the Corundum's engine capacity is twice that of the Gypsum, and the modularity of the two new mounting systems grants it the ability to adapt to future technologies that the Gegno may develop.",
+   "italian": "\tPur non potendo montare il potente Excavator Drill, la capacità motore del Corundum è doppia rispetto a quella del Gypsum, e la modularità dei due nuovi sistemi di montaggio gli dà la capacità di adattarsi alle tecnologie future che i Gegno potranno sviluppare.",
+   "ratio": 1.048
+  },
+  {
+   "idx": 2,
+   "id": "ship:Protolith|description|371|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 371,
+   "kind": "DESCRIPTION",
+   "context": "ship:Protolith",
+   "english": "A relic from another age, Protoliths are the last of the Generation ships constructed by the Gegno to colonize the stars. Now that other more easily constructed and hyperdrive-capable transport ships are commonplace, Protoliths are no longer found in service, and the very few that are still functioning are either preserved as artifacts or seldom used as hauling vessels between planets of the Gegno home system of Heutesl.",
+   "italian": "Relitti di un'altra epoca, i Protolith sono le ultime navi generazionali costruite dai Gegno per colonizzare le stelle. Ora che altre navi da trasporto, più facili da costruire e capaci di iperguida, sono diffuse, i Protolith non si trovano più in servizio, e i pochissimi ancora funzionanti sono conservati come reperti oppure usati di rado come navi da trasporto fra i pianeti del sistema natale dei Gegno, Heutesl.",
+   "ratio": 0.983
+  },
+  {
+   "idx": 3,
+   "id": "ship:Dunite|description|417|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 417,
+   "kind": "DESCRIPTION",
+   "context": "ship:Dunite",
+   "english": "Dunites are unique vessels designed by the Gegno Vi entirely for the purpose of dueling. It is a hodgepodge of parts, simply being an engine, power system, cockpit, and Irate Cannon mashed together without any regard to structural integrity. The most notable feature is a long mace-like protrusion next to the Irate Cannon which is used for jousting and ramming other duelists.",
+   "italian": "I Dunite sono vascelli unici, progettati dai Gegno Vi al solo scopo di duellare. Sono un guazzabuglio di parti: semplicemente un motore, un sistema di alimentazione, un abitacolo e un Irate Cannon messi insieme senza alcun riguardo per l'integrità strutturale. Il tratto più notevole è una lunga sporgenza a forma di mazza accanto all'Irate Cannon, usata per giostrare e speronare gli altri duellanti.",
+   "ratio": 1.064
+  },
+  {
+   "idx": 4,
+   "id": "ship:Dunite|description|418|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 418,
+   "kind": "DESCRIPTION",
+   "context": "ship:Dunite",
+   "english": "\tBeing a mangled mess of machinery designed for only a single purpose, Dunites do not come equipped with nor have room for hyperdrives, and are purely intrastellar craft.",
+   "italian": "\tEssendo un ammasso di macchinari concepiti per un unico scopo, i Dunite non montano iperguida né hanno spazio per installarla, e sono vascelli puramente intrastellari.",
+   "ratio": 0.988
+  },
+  {
+   "idx": 5,
+   "id": "ship:Augen|description|553|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 553,
+   "kind": "DESCRIPTION",
+   "context": "ship:Augen",
+   "english": "The Augen-Class is an ancient battleship proposed by the Vi as a large weapons platform for their Ballistic Cannons. It was built in secret over many years in Enbi's canyon shipyard, and for many periods of time its construction was put on hold. The recent civil war with the Scin gave reason to complete the warship, although it is still somewhat of a relic compared to current vessels in the service of the Vi fleet.",
+   "italian": "L'Augen-Class è un'antica nave da battaglia proposta dai Vi come grande piattaforma d'arma per i loro Ballistic Cannons. Fu costruita in segreto nell'arco di molti anni nel cantiere del canyon di Enbi, e più volte la costruzione fu sospesa. La recente guerra civile con gli Scin ha dato motivo di completare la nave, benché resti in qualche modo un reperto rispetto alle navi attualmente in servizio nella flotta Vi.",
+   "ratio": 0.995
+  },
+  {
+   "idx": 6,
+   "id": "ship:Augen|description|554|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 554,
+   "kind": "DESCRIPTION",
+   "context": "ship:Augen",
+   "english": "\tThis project was meant to result in two sister-ship behemoths, but the blueprints for the other design went missing early in the process, and are currently nowhere to be found.",
+   "italian": "\tIl progetto doveva produrre due colossi gemelli, ma i progetti dell'altro modello sono scomparsi presto, e al momento non si trovano da nessuna parte.",
+   "ratio": 0.853
+  },
+  {
+   "idx": 7,
+   "id": "ship:Slate|description|594|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 594,
+   "kind": "DESCRIPTION",
+   "context": "ship:Slate",
+   "english": "Designed by the Gegno Vi, the Slate is a modified Shale with a stronger hull and more space, a prime characteristic of Vi vessels. Slightly larger than other shuttle ships to suit the Vi's stature, it is able to carry a few Gegno cadets, along with a decently increased cargo capacity.",
+   "italian": "Progettato dai Gegno Vi, lo Slate è uno Shale modificato, con scafo più robusto e più spazio: una caratteristica precipua delle navi Vi. Un po' più grande delle altre navette per adattarsi alla statura dei Vi, può trasportare alcuni cadetti Gegno, oltre a una capacità di carico discretamente maggiore.",
+   "ratio": 1.06
+  },
+  {
+   "idx": 8,
+   "id": "ship:Schist|description|657|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 657,
+   "kind": "DESCRIPTION",
+   "context": "ship:Schist",
+   "english": "Based on the Gegno's old Dolomite, the Schist is a mid-range ship used by the Vi. It can carry a decent amount of cargo, and has enough bunks to carry a whole platoon of warriors. It is the primary vessel used to transport recruits to the front lines, and veterans back to home territories.",
+   "italian": "Basato sul vecchio Dolomite dei Gegno, lo Schist è una nave di fascia media usata dai Vi. Può trasportare una discreta quantità di carico e ha cuccette sufficienti per un intero plotone di guerrieri. È il vascello principale per portare le reclute al fronte e i veterani nei territori d'origine.",
+   "ratio": 1.017
+  },
+  {
+   "idx": 9,
+   "id": "ship:Schist|description|658|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 658,
+   "kind": "DESCRIPTION",
+   "context": "ship:Schist",
+   "english": "\tAlthough is it lightly armed compared to other Vi ships, Schists still are mounted with a pair of forward facing cannons and a turret so they can bring some type of weaponry to any possible engagement, as well as a set of angled guns for deterring any smaller, faster ships from attempting to flank the vessel.",
+   "italian": "\tBenché siano armati in modo leggero rispetto alle altre navi Vi, gli Schist montano comunque una coppia di cannoni frontali e una torretta, così da portare qualche tipo di armamento in ogni possibile scontro, oltre a un set di cannoni angolati che dissuadono le navi più piccole e veloci dal tentare di aggirare il vascello.",
+   "ratio": 1.045
+  }
+ ]
+}

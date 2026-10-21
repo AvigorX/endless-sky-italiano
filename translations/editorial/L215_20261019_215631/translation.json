@@ -1,0 +1,286 @@
+{
+ "block": {
+  "path": "data/human/deep jobs.txt",
+  "line_from": 684,
+  "line_to": 864,
+  "units": 25
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Deep Security Package Reveal|\t\"Well, I looked at your record and it seems you've done quite a lot for the Deep, and you're well-regarded. We like to keep a list of pilots that we can call on if we need something delivered with either urgency or discretion, and it seems like you qualified. You passed the background check at any rate.|684|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 684,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\t\"Well, I looked at your record and it seems you've done quite a lot for the Deep, and you're well-regarded. We like to keep a list of pilots that we can call on if we need something delivered with either urgency or discretion, and it seems like you qualified. You passed the background check at any rate.",
+   "italian": "\t\"Be', ho guardato il tuo profilo e sembra che tu abbia fatto parecchio per il Deep, e che sia ben considerato. Ci piace tenere una lista di piloti a cui rivolgerci quando dobbiamo far consegnare qualcosa con urgenza o con discrezione, e pare che tu sia idoneo. Il controllo dei precedenti, in ogni caso, è andato bene.",
+   "ratio": 1.046
+  },
+  {
+   "idx": 2,
+   "id": "mission:Deep Security Package Reveal|\t\"So at any rate, I'm authorized to give you a one-time offer to join that list. Don't worry, I'm not asking anything of you right now.\"|685|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 685,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\t\"So at any rate, I'm authorized to give you a one-time offer to join that list. Don't worry, I'm not asking anything of you right now.\"",
+   "italian": "\t\"Quindi, in ogni caso, sono autorizzato a farti un'offerta una tantum per entrare in quella lista. Non preoccuparti, non ti sto chiedendo niente adesso.\"",
+   "ratio": 1.132
+  },
+  {
+   "idx": 3,
+   "id": "mission:Deep Security Package Reveal|\tHe stops keeping an eye on passers-by for a moment to look directly at you. \"So, are you interested?\"|686|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 686,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\tHe stops keeping an eye on passers-by for a moment to look directly at you. \"So, are you interested?\"",
+   "italian": "\tSmette per un momento di tenere d'occhio chi passa e ti guarda dritto. \"Allora, ti interessa?\"",
+   "ratio": 0.931
+  },
+  {
+   "idx": 4,
+   "id": "mission:Deep Security Package Reveal|\t\"I'm willing to help.\"|688|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 688,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\t\"I'm willing to help.\"",
+   "italian": "\t\"Sono disposto ad aiutare.\"",
+   "ratio": 1.217
+  },
+  {
+   "idx": 5,
+   "id": "mission:Deep Security Package Reveal|\t\"Sorry, but I don't think I want to get that involved.\"|690|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 690,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\t\"Sorry, but I don't think I want to get that involved.\"",
+   "italian": "\t\"Scusa, ma non credo di volermi immischiare così tanto.\"",
+   "ratio": 1.018
+  },
+  {
+   "idx": 6,
+   "id": "mission:Deep Security Package Reveal|\t\"You said 'at any rate' twice.\"|692|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 692,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\t\"You said 'at any rate' twice.\"",
+   "italian": "\t\"Hai detto 'in ogni caso' due volte.\"",
+   "ratio": 1.188
+  },
+  {
+   "idx": 7,
+   "id": "mission:Deep Security Package Reveal|\tHis expression twitches slightly but he carries on with a chuckle. \"Er, good catch. The question stands though.\"|693|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 693,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\tHis expression twitches slightly but he carries on with a chuckle. \"Er, good catch. The question stands though.\"",
+   "italian": "\tLa sua espressione ha un piccolo sussulto, ma prosegue con una risatina. \"Ehm, ben visto. La domanda resta però.\"",
+   "ratio": 1.009
+  },
+  {
+   "idx": 8,
+   "id": "mission:Deep Security Package Reveal|\t\"I'm willing to help.\"|695|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 695,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\t\"I'm willing to help.\"",
+   "italian": "\t\"Sono disposto ad aiutare.\"",
+   "ratio": 1.217
+  },
+  {
+   "idx": 9,
+   "id": "mission:Deep Security Package Reveal|\t\"Sorry, but I don't think I want to get that involved.\"|697|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 697,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\t\"Sorry, but I don't think I want to get that involved.\"",
+   "italian": "\t\"Scusa, ma non credo di volermi immischiare così tanto.\"",
+   "ratio": 1.018
+  },
+  {
+   "idx": 10,
+   "id": "mission:Deep Security Package Reveal|\t\"Excellent,\" he says, standing up and stretching as if concluding a friendly conversation. He turns back to you with a smile, \"I'll add you to the list as soon as I get back to the office then. Your ID will also let you see which packages are ours specifically too. Oh, and again, thank you!\"|700|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 700,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\t\"Excellent,\" he says, standing up and stretching as if concluding a friendly conversation. He turns back to you with a smile, \"I'll add you to the list as soon as I get back to the office then. Your ID will also let you see which packages are ours specifically too. Oh, and again, thank you!\"",
+   "italian": "\t\"Eccellente\" dice, alzandosi e sgranchirsi come se concludesse una conversazione amichevole. Si gira di nuovo verso di te con un sorriso: \"Allora ti aggiungo alla lista appena torno in ufficio. Il tuo ID ti permetterà anche di vedere quali pacchi sono specificamente nostri. Oh, e ancora grazie!\"",
+   "ratio": 1.014
+  },
+  {
+   "idx": 11,
+   "id": "mission:Deep Security Package Reveal|\tAgent Wayde appears to flick a subtle salute your direction, or perhaps merely tips an imaginary cap. \"Good day, captain. I look forward to working with you in the future.\"|703|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 703,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\tAgent Wayde appears to flick a subtle salute your direction, or perhaps merely tips an imaginary cap. \"Good day, captain. I look forward to working with you in the future.\"",
+   "italian": "\tL'agente Wayde accenna un saluto appena percettibile verso di te, o forse si limita a toccarsi un berretto immaginario. \"Buona giornata, capitano. Non vedo l'ora di lavorare con te in futuro.\"",
+   "ratio": 1.116
+  },
+  {
+   "idx": 12,
+   "id": "mission:Deep Security Package Reveal|\tWith a quick motion he flicks his hair back out his eyes and jogs away, sending one last wave your direction just before he turns a corner and disappears.|704|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 704,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "\tWith a quick motion he flicks his hair back out his eyes and jogs away, sending one last wave your direction just before he turns a corner and disappears.",
+   "italian": "\tCon un gesto rapido si rimette i capelli dietro gli occhi e si allontana di corsa, mandandoti un ultimo saluto con la mano appena prima di girare l'angolo e sparire.",
+   "ratio": 1.071
+  },
+  {
+   "idx": 13,
+   "id": "mission:Secure Transport Job (Basic) [0]|name|711|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 711,
+   "kind": "VALUE",
+   "context": "mission:Secure Transport Job (Basic) [0]",
+   "english": "Secure delivery to <planet>",
+   "italian": "Consegna al sicuro per <planet>",
+   "ratio": 1.148
+  },
+  {
+   "idx": 14,
+   "id": "mission:Secure Transport Job (Basic) [0]|description|712|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 712,
+   "kind": "DESCRIPTION",
+   "context": "mission:Secure Transport Job (Basic) [0]",
+   "english": "Deliver a secure package of supplies to <destination>. Payment is <payment>.",
+   "italian": "Consegna un pacco sicuro di provviste su <destination>. Il pagamento è <payment>.",
+   "ratio": 1.066
+  },
+  {
+   "idx": 15,
+   "id": "mission:Secure Transport Job (Basic) [1]|name|744|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 744,
+   "kind": "VALUE",
+   "context": "mission:Secure Transport Job (Basic) [1]",
+   "english": "Secure delivery to <planet>",
+   "italian": "Consegna al sicuro per <planet>",
+   "ratio": 1.148
+  },
+  {
+   "idx": 16,
+   "id": "mission:Secure Transport Job (Basic) [1]|description|745|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 745,
+   "kind": "DESCRIPTION",
+   "context": "mission:Secure Transport Job (Basic) [1]",
+   "english": "Deliver a secure package of supplies to <destination>. Payment is <payment>.",
+   "italian": "Consegna un pacco sicuro di provviste su <destination>. Il pagamento è <payment>.",
+   "ratio": 1.066
+  },
+  {
+   "idx": 17,
+   "id": "mission:Secure Transport Job (Deep Security) [0]|name|777|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 777,
+   "kind": "VALUE",
+   "context": "mission:Secure Transport Job (Deep Security) [0]",
+   "english": "Deep Security delivery to <planet>",
+   "italian": "Consegna della Sicurezza del Deep per <planet>",
+   "ratio": 1.353
+  },
+  {
+   "idx": 18,
+   "id": "mission:Secure Transport Job (Deep Security) [0]|description|778|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 778,
+   "kind": "DESCRIPTION",
+   "context": "mission:Secure Transport Job (Deep Security) [0]",
+   "english": "Deliver a Deep Security package to <destination>. Payment is <payment>.",
+   "italian": "Consegna un pacco della Deep Security su <destination>. Il pagamento è <payment>.",
+   "ratio": 1.141
+  },
+  {
+   "idx": 19,
+   "id": "mission:Secure Transport Job (Deep Security) [1]|name|810|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 810,
+   "kind": "VALUE",
+   "context": "mission:Secure Transport Job (Deep Security) [1]",
+   "english": "Deep Security delivery to <planet>",
+   "italian": "Consegna della Sicurezza del Deep per <planet>",
+   "ratio": 1.353
+  },
+  {
+   "idx": 20,
+   "id": "mission:Secure Transport Job (Deep Security) [1]|description|811|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 811,
+   "kind": "DESCRIPTION",
+   "context": "mission:Secure Transport Job (Deep Security) [1]",
+   "english": "Deliver a Deep Security package to <destination>. Payment is <payment>.",
+   "italian": "Consegna un pacco della Deep Security su <destination>. Il pagamento è <payment>.",
+   "ratio": 1.141
+  },
+  {
+   "idx": 21,
+   "id": "mission:Deep Consultants|name|843|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 843,
+   "kind": "VALUE",
+   "context": "mission:Deep Consultants",
+   "english": "Transport consultants to <planet>",
+   "italian": "Trasporta i consulenti su <planet>",
+   "ratio": 1.03
+  },
+  {
+   "idx": 22,
+   "id": "mission:Deep Consultants|description|844|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 844,
+   "kind": "DESCRIPTION",
+   "context": "mission:Deep Consultants",
+   "english": "Julie and her assistant missed their transport and need to reach <destination> by <date> in order to make several important business meetings.",
+   "italian": "Julie e la sua assistente hanno perso il trasporto e devono raggiungere <destination> entro <date> per partecipare a diverse riunioni di lavoro importanti.",
+   "ratio": 1.092
+  },
+  {
+   "idx": 23,
+   "id": "mission:Deep Consultants|Strolling through the spaceport, you are suddenly accosted by a young and breathless woman. \"Please, Captain,\" she wheezes, \"I'm so glad I caught you.\"|862|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 862,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "Strolling through the spaceport, you are suddenly accosted by a young and breathless woman. \"Please, Captain,\" she wheezes, \"I'm so glad I caught you.\"",
+   "italian": "Mentre passeggi per lo spazioporto, vieni improvvisamente avvicinato da una donna giovane e senza fiato. \"Per favore, Capitano\" ansima, \"sono così contenta di averti trovato.\"",
+   "ratio": 1.159
+  },
+  {
+   "idx": 24,
+   "id": "mission:Deep Consultants|\tAfter drawing in a deep breath, she stands up straighter and gestures to someone some distance away. \"Captain, I'm sorry, but my colleague Julie and I are in dire need of urgent transport. Can you help?\"|863|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 863,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\tAfter drawing in a deep breath, she stands up straighter and gestures to someone some distance away. \"Captain, I'm sorry, but my colleague Julie and I are in dire need of urgent transport. Can you help?\"",
+   "italian": "\tDopo un respiro profondo si raddrizza e fa un cenno a qualcuno poco più in là. \"Capitano, scusa, ma io e la mia collega Julie abbiamo un disperato bisogno di un trasporto urgente. Puoi aiutarci?\"",
+   "ratio": 0.961
+  },
+  {
+   "idx": 25,
+   "id": "mission:Deep Consultants|\tAs she catches her breath some more, her older colleague hustles over, bags in tow.|864|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 864,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Deep Consultants",
+   "english": "\tAs she catches her breath some more, her older colleague hustles over, bags in tow.",
+   "italian": "\tMentre riprende fiato, la sua collega più anziana si avvicina in fretta, con le borse al seguito.",
+   "ratio": 1.167
+  }
+ ]
+}

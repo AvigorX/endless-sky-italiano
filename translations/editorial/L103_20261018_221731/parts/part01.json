@@ -1,0 +1,23 @@
+{
+ "1": "Deploy Quarg Scanners",
+ "2": "Dirigetevi verso ciascuno dei sistemi segnalati per dispiegare i satelliti di scansione Quarg, poi andate su <destination> a ritirare il pagamento.",
+ "3": "Un Quarg si avvicina lentamente quando vi nota nello spazioporto. \"Salute, amico umano. Avresti per caso il tempo di ascoltare una proposta? Cerchiamo un pilota disposto ad aiutarci a dispiegare alcuni satelliti di scansione.\"",
+ "4": "\t\"Certo, dove li dispiego?\"",
+ "5": "\t\"A che servono i satelliti?\"",
+ "6": "\t\"Non ho tempo, no.\"",
+ "7": "\t\"Per aiutare gli umani dall'altra parte di questa regione, a Sud, a essere meglio preparati contro gli attacchi in arrivo, e ad aiutarli a tenere traccia delle navi che passano per i loro sistemi.\"",
+ "8": "\t\"Allora mi piacerebbe aiutare. Dove li dispiego?\"",
+ "9": "\t\"Aiutare? Perché volete aiutare la gente laggiù all'improvviso?\"",
+ "10": "\t\"In realtà adesso sono diretto in un'altra parte della galassia, mi dispiace.\"",
+ "11": "\t\"Perché?\" Si ferma un secondo. \"Di certo avrai visto gli stolti teppisti che infestano tutta questa regione. Qui possiamo occuparcene noi, ma di solito non viaggiamo lontano. Per promuovere la pace dappertutto, senza un altro inutile massacro, fornire qualche misura che scoraggi ulteriori attacchi è solo una cortesia.\"",
+ "12": "\t\"Allora mi piacerebbe aiutare. Dove li dispiego?\"",
+ "13": "\t\"In realtà adesso sono diretto in un'altra parte della galassia, mi dispiace.\"",
+ "14": "\t\"Su <waypoints>. Quando avrai finito, torna qui e riceverai <payment>.\"",
+ "15": "\tAppena arrivate alla vostra nave, trovate vari Quarg con robot caricatori che infilano i quattro satelliti nella stiva. I satelliti hanno la forma di piramidi triangolari, e ogni punta della piramide principale è sormontata da un'altra piramide triangolare più piccola. Da questa distanza non riuscite a distinguerlo bene, ma vi chiedete se anche le piramidi più piccole siano sormontate da piramidi ancora più piccole. Ognuno dei dispositivi è all'incirca grande la metà di voi, ma probabilmente pesa molto più di voi.",
+ "16": "Aprite la stiva e lasciate che uno scanner Quarg esca alla deriva nel vuoto.",
+ "17": "Guardando il pianeta che fu colonia di schiavi mentre dispiegate il loro scanner, vi chiedete se i Quarg abbiano saputo della storia di Poisonwood, e se sia per questo che hanno deciso di aiutare con la sorveglianza.",
+ "18": "Liberate uno scanner Quarg e lo lasciate andare via dalla nave.",
+ "19": "Sebbene chi vive sul pianeta qui non sembri preoccuparsi dei pirati che ogni tanto chiedono un tributo, forse arriveranno ad apprezzare la presenza pirata ridotta, ammesso che lo scanner Quarg serva davvero a questo.",
+ "20": "Atterrate e trovate un Quarg che vi aspetta proprio sulla banchina. Vi consegna <payment> e vi ringrazia per l'aiuto.",
+ "21": "Human Construction Materials"
+}

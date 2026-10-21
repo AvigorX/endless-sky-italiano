@@ -1,0 +1,115 @@
+# Copyright (c) 2020 by W1zrad
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+news "kor efret merchant"
+	location
+		government "Kor Efret"
+		not attributes "station"
+	name
+		word
+			"Mercante Korath"
+			"Mercante Kor Efret"
+			"Venditore Korath"
+			"Venditore Kor Efret"
+	message
+		word
+			"Un Korath ti fa cenno di avvicinarti a un banco pieno di cibi di ogni tipo. Vuole che tu compri qualcosa, ma niente sembra particolarmente appetitoso."
+			"Passi un po' di tempo a esaminare la merce di un venditore ambulante che vende piccoli pezzi di... una specie di tecnologia. Non hai idea di cosa siano."
+			"Un mercante grida nella propria lingua ai passanti indicando uno strano equipaggiamento che non hai mai visto. Alcuni si fermano a guardare, ma i più lo ignorano."
+			"Un Korath sembra mettere all'asta uno strano dispositivo davanti a una piccola folla."
+			"Entri in un edificio insolitamente affollato e vieni accolto da un Korath che pare lavorarci. È pieno di monitor che mostrano flora e fauna naturali. I Korath qui presenti ne sono affascinati."
+
+news "kor efret worker"
+	location
+		government "Kor Efret"
+		not attributes "station"
+	name
+		word
+			"Operaio Korath"
+			"Operaio Kor Efret"
+	message
+		word
+			"Il Korath che sta attaccando i cavi del carburante alla tua nave si ferma e alza entrambe le mani con i palmi verso di te quando si accorge che lo stai guardando."
+			"Due degli operai lì vicino parlano fra loro indicando la tua nave. Sembra che qui non siano abituati ai visitatori."
+			"Un operaio porta una cassa piena di attrezzi davanti a te e la consegna ad altri Korath. Sembrano riparare un equipaggiamento - o forse un condizionatore. Non riesci a capirlo."
+			"Un Korath esce da un edificio fatiscente qui vicino e comincia a sigillare ogni possibile accesso - finestre, porte, grosse crepe. Si muove con una tale efficienza che sei certo l'abbia già fatto molte volte."
+
+news "kor efret local"
+	location
+		government "Kor Efret"
+		not attributes "station"
+	name
+		word
+			"Abitante Korath"
+			"Abitante Kor Efret"
+			"Korath"
+			"Kor Efret"
+	message
+		word
+			"Una palla inseguita da un giovane Korath rotola fino ai tuoi piedi. La raccogli: il piccolo si ferma, ti fissa un momento, poi ti ringrazia con un gesto e prende la palla. Corre da un Korath adulto che alza entrambe le mani con i palmi verso di te."
+			"Un Korath del posto indica un edificio in cui non sei mai entrato. Per curiosità dai un'occhiata dentro e vedi gli alieni rettiliani che conversano e condividono da bere: è un bar. Certe cose non cambiano, in nessun angolo della galassia."
+			"Passi accanto a uno degli edifici abbandonati e senti una porta aprirsi e richiudersi rapidamente alle tue spalle. Ti volti e vedi un Korath vestito di stracci che si allontana in fretta nella direzione opposta."
+
+news "kor efret scientist"
+	location
+		government "Kor Efret"
+		not attributes "station"
+	name
+		word
+			"Scienziato Korath"
+			"Scienziato Kor Efret"
+			"Tecnologo Korath"
+			"Tecnologo Kor Efret"
+	message
+		word
+			"Un Kor Efret ti passa accanto spingendo un carrello pieno di strane sostanze chimiche e pezzi di tecnologia."
+			"Un Korath attraversa lo spazioporto leggendo numeri da un dispositivo e inserendoli in un altro. Sembra che stia prelevando campioni della qualità dell'aria."
+			
+news "kor efret station friendly"
+	location
+		government "Kor Efret"
+	name
+		word
+			"Abitante Korath"
+			"Abitante Kor Efret"
+			"Korath"
+			"Kor Efret"
+	message
+		word
+			"Lì vicino un Korath tiene in equilibrio precario diverse casse sopra la testa. Non capisci se sia un artista di strada o stia solo trasportando la merce."
+			"Un Kor Efret vicino alla tua nave sta parlando con un operaio, alzando sempre più la voce finché non finisce in uno strano misto di urla e sibili. All'improvviso si volta e se ne va a passi lunghi, col petto gonfio."
+			"Un Korath ti osserva attentamente da lontano. Immagini che non abbia mai visto un umano faccia a faccia."
+			"Un abitante ti saluta alzando entrambe le mani con i palmi verso di te."
+			
+news "wanderer at kor efret spaceport"
+	to show
+		has "wanderers sestor done"
+	location
+		government "Kor Efret"
+		not attributes "station"
+	name
+		word
+			"Wanderer"
+			"Capitano Wanderer"
+			"Commerciante Wanderer"
+	message
+		word
+			`"`
+		word
+			"I mondi Kor Efret sono pieni di problemi ambientali [duri, seri]. Non ho mai visto nulla di questa [portata, entità]."
+			"I Kor Efreti sono un popolo molto [orgoglioso, onorevole]. Ho offerto un favore a uno di loro senza chiedere nulla in cambio, e mi è parso offeso."
+			"Questo pianeta dovrà affrontare [rinnovamenti, cambiamenti] profondi prima che si possa fare progressi. Ci vorrà molto tempo perché sia del tutto [ripristinato, rinato]."
+			"Ho [ricevuto, accettato] un incarico da un terminale poco fa. I Kor Efreti stanno davvero mettendo a frutto questi terminali."
+			"È [scoraggiante, sconfortante] vedere quanto sia danneggiato questo mondo, ma mi consola sapere che lavoreremo per [ripristinarlo, farlo rinascere]."
+		word
+			`"`

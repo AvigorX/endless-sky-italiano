@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/korath/korath ships.txt",
+  "line_from": 1375,
+  "line_to": 1961,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Echo-Galleon|description|1375|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1375,
+   "kind": "DESCRIPTION",
+   "context": "ship:Echo-Galleon",
+   "english": "The largest of Korath production vessels are derived from a common and ancient chassis, including this large Efreti vessel. Facing very different challenges, and taking some inspiration from their Quarg protectors, the Efreti descendant of the \"World-Ships\" of old is lighter, faster, and more efficient, but less powerful than its Exile counterparts.",
+   "italian": "Le più grandi navi da produzione Korath derivano da un telaio comune e antico, compreso questo grande vascello degli Efreti. Affrontando sfide molto diverse, e traendo qualche ispirazione dai loro protettori Quarg, il discendente Efreti delle \"navi-mondo\" di un tempo è più leggero, più veloce e più efficiente, ma meno potente delle controparti dell'Esilio.",
+   "ratio": 1.02
+  },
+  {
+   "idx": 2,
+   "id": "ship:Arch-Carrack|description|1439|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1439,
+   "kind": "DESCRIPTION",
+   "context": "ship:Arch-Carrack",
+   "english": "Although they do not effectively provide for their own defense, the Efreti remain responsible for the day-to-day needs of civilian and cargo transportation. While not as bulky or powerful as other Korath designs, this freighter is much faster at making runs back and forth between the Efreti's handful of remaining planets, while still holding enough defensive loadout to ward off the odd Mereti drone that slips past the Quarg.",
+   "italian": "Benché non provvedano in modo efficace alla propria difesa, gli Efreti restano responsabili delle necessità quotidiane del trasporto civile e di quello merci. Pur non essendo così massiccio o potente come altri progetti Korath, questo mercantile è molto più rapido nei viaggi avanti e indietro fra la manciata di pianeti che restano agli Efreti, e conserva un equipaggiamento difensivo sufficiente a respingere il drone Mereti occasionale che riesce a sgusciare oltre i Quarg.",
+   "ratio": 1.112
+  },
+  {
+   "idx": 3,
+   "id": "ship:Charm-Shallop|description|1498|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1498,
+   "kind": "DESCRIPTION",
+   "context": "ship:Charm-Shallop",
+   "english": "A recent design, this Efreti multi-role vessel is found taking up many jobs previously relegated to a now scrapped fleet of early-model raiders. While some are used primarily for passenger transport, others are used in local mining to satiate the Efreti's perpetual demand for ores. Incorporating Quarg-inspired structural elements, its light frame allows it to complete tasks more nimbly than any other independent Korath ship.",
+   "italian": "Progetto recente, questo vascello multiruolo degli Efreti si trova a svolgere molti compiti che un tempo spettavano a una flotta ormai demolita di razziatori di primi modelli. Alcuni sono usati soprattutto per il trasporto passeggeri, altri per l'estrazione locale, per saziare la domanda perpetua di minerali degli Efreti. Con elementi strutturali ispirati ai Quarg, la sua struttura leggera gli permette di completare i compiti con più agilità di qualsiasi altra nave Korath indipendente.",
+   "ratio": 1.145
+  },
+  {
+   "idx": 4,
+   "id": "ship:Kar Ik Vot 349|description|1567|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1567,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kar Ik Vot 349",
+   "english": "The largest and deadliest of the Kor Sestor robotic warships, a single one of these battlecruisers can hold its own against an entire fleet of lesser ships.",
+   "italian": "La più grande e letale delle navi da guerra robotiche dei Kor Sestor: un solo esemplare di questi incrociatori da battaglia può tenere testa a un'intera flotta di navi inferiori.",
+   "ratio": 1.141
+  },
+  {
+   "idx": 5,
+   "id": "ship:Tek Far 71 - Lek|description|1648|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1648,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tek Far 71 - Lek",
+   "english": "The Kor Sestor war fleets rely heavily on small, powerful fighters and drones. This ship can carry up to ten of their drones, clamped to the exterior of its hull.",
+   "italian": "Le flotte da guerra dei Kor Sestor fanno molto affidamento su caccia e droni piccoli e potenti. Questa nave può trasportare fino a dieci dei loro droni, agganciati all'esterno dello scafo.",
+   "ratio": 1.16
+  },
+  {
+   "idx": 6,
+   "id": "ship:Tek Far 78 - Osk|description|1729|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1729,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tek Far 78 - Osk",
+   "english": "This carrier is equipped with docking clamps for up to nine fighters. When loaded with a full complement of the powerful Kor Sestor robotic fighters, it is a formidable opponent.",
+   "italian": "Questa portatrice è dotata di agganci d'attracco per un massimo di nove caccia. Caricata con un complemento completo dei potenti caccia robotici dei Kor Sestor, è un avversario formidabile.",
+   "ratio": 1.062
+  },
+  {
+   "idx": 7,
+   "id": "ship:Tek Far 109|description|1818|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1818,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tek Far 109",
+   "english": "The TF109 is designed almost solely for the purpose of carrying a fleet of Kor Sestor fighters and drones. Without them to serve as a protective screen, the ship itself is relatively helpless.",
+   "italian": "La TF109 è progettata quasi solo per trasportare una flotta di caccia e droni dei Kor Sestor. Senza di loro a fare da schermo protettivo, la nave in sé è relativamente indifesa.",
+   "ratio": 0.922
+  },
+  {
+   "idx": 8,
+   "id": "ship:Met Par Tek 53|description|1878|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1878,
+   "kind": "DESCRIPTION",
+   "context": "ship:Met Par Tek 53",
+   "english": "Although this is the smallest Kor Sestor ship other than their fighters, it is larger than most human capital ships and considerably more powerful.",
+   "italian": "Benché sia la più piccola nave Kor Sestor dopo i loro caccia, è più grande della maggior parte delle navi capitali umane e considerevolmente più potente.",
+   "ratio": 1.041
+  },
+  {
+   "idx": 9,
+   "id": "ship:Far Lek 14|description|1918|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1918,
+   "kind": "DESCRIPTION",
+   "context": "ship:Far Lek 14",
+   "english": "At the peak of their recent civil war, the Kor Sestor faction developed these automated attack drones, easy to manufacture and encased in an ultra-dense hull that can absorb a significant amount of damage.",
+   "italian": "All'apice della loro recente guerra civile, la fazione Kor Sestor sviluppò questi droni d'attacco automatici, facili da produrre e racchiusi in uno scafo ultradenso che assorbe una quantità significativa di danni.",
+   "ratio": 1.039
+  },
+  {
+   "idx": 10,
+   "id": "ship:Far Lek 14|description|1919|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1919,
+   "kind": "DESCRIPTION",
+   "context": "ship:Far Lek 14",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "italian": "\tI droni non sono dotati di iperguida. Non puoi trasportare un drone a meno che tu non abbia nella tua flotta una nave con una baia per droni.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 11,
+   "id": "ship:Far Osk 27|description|1960|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1960,
+   "kind": "DESCRIPTION",
+   "context": "ship:Far Osk 27",
+   "english": "Because it is piloted by a computer and has no need for a cockpit or life support systems, the FS27 fighter is able to support a thicker hull, more shields, and more powerful guns than any comparable human ship.",
+   "italian": "Poiché è pilotato da un computer e non ha bisogno di un abitacolo né di sistemi di supporto vitale, il caccia FS27 può montare uno scafo più spesso, più scudi e cannoni più potenti di qualsiasi nave umana paragonabile.",
+   "ratio": 1.033
+  },
+  {
+   "idx": 12,
+   "id": "ship:Far Osk 27|description|1961|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 1961,
+   "kind": "DESCRIPTION",
+   "context": "ship:Far Osk 27",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI caccia non sono dotati di iperguida. Non puoi trasportare un caccia a meno che tu non abbia nella tua flotta una nave con una baia di caccia.",
+   "ratio": 1.083
+  }
+ ]
+}

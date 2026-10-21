@@ -1,0 +1,102 @@
+{
+ "block": {
+  "path": "data/quarg/quarg.txt",
+  "line_from": 57,
+  "line_to": 65,
+  "units": 7
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "conversation:quarg imprisonment|You are immediately hailed by the Quarg in the system after they complete the scan of your ship.|57|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 57,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "You are immediately hailed by the Quarg in the system after they complete the scan of your ship.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t`You are immediately hailed by the Quarg in the system after they complete the scan of your ship.`",
+   "english_hash": "1ee5b1bc0fb7ae9d"
+  },
+  {
+   "idx": 2,
+   "id": "conversation:quarg imprisonment|\t\"<first> <last>, you are found to be in illegal possession of Quarg equipment. Our devices are precious and ours alone. Though it is regrettable, we must terminate you.\"|58|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 58,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "\t\"<first> <last>, you are found to be in illegal possession of Quarg equipment. Our devices are precious and ours alone. Though it is regrettable, we must terminate you.\"",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t`\t\"<first> <last>, you are found to be in illegal possession of Quarg equipment. Our devices are precious and ours alone. Though it is regrettable, we must terminate you.\"`",
+   "english_hash": "5187b87d40033283"
+  },
+  {
+   "idx": 3,
+   "id": "conversation:quarg imprisonment|\tThey close communications before you have a chance to respond, and you look to your radar to see their ships are already approaching, weapons readied...|59|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 59,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "\tThey close communications before you have a chance to respond, and you look to your radar to see their ships are already approaching, weapons readied...",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t`\tThey close communications before you have a chance to respond, and you look to your radar to see their ships are already approaching, weapons readied...`",
+   "english_hash": "ccde8cad9624ea19"
+  },
+  {
+   "idx": 4,
+   "id": "conversation:quarg imprisonment|Your ship loses all power immediately upon touching down on the landing pad. As you walk around to try and find the problem, you pass by your hatch. You find that it is already opened with dozens of Quarg coming in, all clad in elegant full-body armor suits.|62|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 62,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "Your ship loses all power immediately upon touching down on the landing pad. As you walk around to try and find the problem, you pass by your hatch. You find that it is already opened with dozens of Quarg coming in, all clad in elegant full-body armor suits.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t`Your ship loses all power immediately upon touching down on the landing pad. As you walk around to try and find the problem, you pass by your hatch. You find that it is already opened with dozens of Quarg coming in, all clad in elegant full-body armor suits.`",
+   "english_hash": "61149b0de5309d00"
+  },
+  {
+   "idx": 5,
+   "id": "conversation:quarg imprisonment|\t\"<first> <last>, you are found to be in illegal possession of Quarg equipment. Our devices are precious and ours alone. Though it is regrettable, we must seize you.\"|63|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 63,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "\t\"<first> <last>, you are found to be in illegal possession of Quarg equipment. Our devices are precious and ours alone. Though it is regrettable, we must seize you.\"",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t`\t\"<first> <last>, you are found to be in illegal possession of Quarg equipment. Our devices are precious and ours alone. Though it is regrettable, we must seize you.\"`",
+   "english_hash": "2afe9b38292e2b24"
+  },
+  {
+   "idx": 6,
+   "id": "conversation:quarg imprisonment|\tThey don't allow you to get as much as a word out before one of the guards has locked your arms behind your back, completely halting your attempts to fight back with surprisingly little effort. You are brought to something akin to a Quarg courtroom, where they lecture you for several hours on how dangerous it is for Quarg apparatuses to be stolen and used so blithely by others. At the end of it all, the jury sentences you to life imprisonment.|64|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 64,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "\tThey don't allow you to get as much as a word out before one of the guards has locked your arms behind your back, completely halting your attempts to fight back with surprisingly little effort. You are brought to something akin to a Quarg courtroom, where they lecture you for several hours on how dangerous it is for Quarg apparatuses to be stolen and used so blithely by others. At the end of it all, the jury sentences you to life imprisonment.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t`\tThey don't allow you to get as much as a word out before one of the guards has locked your arms behind your back, completely halting your attempts to fight back with surprisingly little effort. You are brought to something akin to a Quarg courtroom, where they lecture you for several hours on how dangerous it is for Quarg apparatuses to be stolen and used so blithely by others. At the end of it all, the jury sentences you to life imprisonment.`",
+   "english_hash": "307a187804245810"
+  },
+  {
+   "idx": 7,
+   "id": "conversation:quarg imprisonment|\tYou spend the rest of your days in the same cell, which although large and comfortable, quickly proves plain and dull. You're kept in very good health and are well-fed, but the Quarg do not allow you to leave the cell and seldom entertain your attempts at striking up a conversation. You get few visitors and can only wonder what life would've been like had you had the chance to live out all these years in freedom, the captain of a starship.|65|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 65,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "\tYou spend the rest of your days in the same cell, which although large and comfortable, quickly proves plain and dull. You're kept in very good health and are well-fed, but the Quarg do not allow you to leave the cell and seldom entertain your attempts at striking up a conversation. You get few visitors and can only wonder what life would've been like had you had the chance to live out all these years in freedom, the captain of a starship.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t`\tYou spend the rest of your days in the same cell, which although large and comfortable, quickly proves plain and dull. You're kept in very good health and are well-fed, but the Quarg do not allow you to leave the cell and seldom entertain your attempts at striking up a conversation. You get few visitors and can only wonder what life would've been like had you had the chance to live out all these years in freedom, the captain of a starship.`",
+   "english_hash": "361ee958b543f6f4"
+  }
+ ]
+}

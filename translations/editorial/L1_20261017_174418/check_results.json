@@ -1,0 +1,31 @@
+{
+ "units": 120,
+ "words_en": 5230,
+ "words_it": 5167,
+ "ratio_min": 0.87,
+ "ratio_max": 1.24,
+ "problems": [],
+ "notes": [
+  {
+   "idx": 5,
+   "code": "ENGLISH_WORD",
+   "words": [
+    "the"
+   ]
+  },
+  {
+   "idx": 6,
+   "code": "ENGLISH_WORD",
+   "words": [
+    "the"
+   ]
+  }
+ ],
+ "checks": {
+  "ids_complete": true,
+  "tabs": true,
+  "quotes": true,
+  "tokens": true,
+  "no_empty": true
+ }
+}

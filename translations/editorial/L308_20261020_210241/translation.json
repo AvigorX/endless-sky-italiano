@@ -1,0 +1,242 @@
+{
+ "block": {
+  "path": "data/avgi/avgi weapons.txt",
+  "line_from": 264,
+  "line_to": 703,
+  "units": 21
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Blue Optical Laser|description|264|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 264,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Blue Optical Laser",
+   "english": "This lightweight turret can be fed a beam of light from a lasing generator, which is then combined and focused to produce an intense beam ideal for damaging other ships. By pulsing thousands of times each second, the beam can create thermal and mechanical shocks in the target material, enhancing its ability to drill through armor. Unlike the advanced beam weapons used by some other species, this laser is subject to the effects of diffraction, causing its damage to become less intense with distance while also rendering it invisible. However, precise optics allow the beam to be targeted from an exceptional range, despite the tenuous damage at the edge of the laser's reach.",
+   "italian": "This lightweight turret can be fed a beam of light from a lasing generator, which is then combined and focused to produce an intense beam ideal for damaging other ships. By pulsing thousands of times each second, the beam can create thermal and mechanical shocks in the target material, enhancing its ability to drill through armor. Unlike the advanced beam weapons used by some other species, this laser is subject to the effects of diffraction, causing its damage to become less intense with distance while also rendering it invisible. However, precise optics allow the beam to be targeted from an exceptional range, despite the tenuous damage at the edge of the laser's reach.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Blue Optical Laser|description|265|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 265,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Blue Optical Laser",
+   "english": "\tThe turret itself only contains the optics needed to synthesize, focus, and target the beam, allowing the laser light to be produced elsewhere. Because of this, an Optical Lasing Generator is needed to run this turret, providing enough power to support a single Blue Laser.",
+   "italian": "\tThe turret itself only contains the optics needed to synthesize, focus, and target the beam, allowing the laser light to be produced elsewhere. Because of this, an Optical Lasing Generator is needed to run this turret, providing enough power to support a single Blue Laser.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:External Launch Rail|ammo|515|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 515,
+   "kind": "TEXT",
+   "context": "outfit:External Launch Rail",
+   "english": "\"Ophrys\" Nuclear Torpedo",
+   "italian": "\"Ophrys\" Nuclear Torpedo",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:External Launch Rail|description|531|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 531,
+   "kind": "DESCRIPTION",
+   "context": "outfit:External Launch Rail",
+   "english": "This pylon externally mounts a single torpedo, employing a small electromagnetic catapult to fling its payload towards a nearby target.",
+   "italian": "This pylon externally mounts a single torpedo, employing a small electromagnetic catapult to fling its payload towards a nearby target.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:External Launch Tube|ammo|551|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 551,
+   "kind": "TEXT",
+   "context": "outfit:External Launch Tube",
+   "english": "\"Orchid\" Nuclear Missile",
+   "italian": "\"Orchid\" Nuclear Missile",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:External Launch Tube|description|570|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 570,
+   "kind": "DESCRIPTION",
+   "context": "outfit:External Launch Tube",
+   "english": "This is a large launcher capable of carrying and deploying large torch-driven missiles and torpedoes. With a standardized design, it is compatible with a wide range of Avgi torch missiles. A coilgun-based ejection system allows missiles to be deployed with considerable initial velocity.",
+   "italian": "This is a large launcher capable of carrying and deploying large torch-driven missiles and torpedoes. With a standardized design, it is compatible with a wide range of Avgi torch missiles. A coilgun-based ejection system allows missiles to be deployed with considerable initial velocity.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Tiny VLS|display name|574|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 574,
+   "kind": "VALUE",
+   "context": "outfit:Tiny VLS",
+   "english": "Vertical Launch Array (9)",
+   "italian": "Vertical Launch Array (9)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Tiny VLS|ammo|592|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 592,
+   "kind": "TEXT",
+   "context": "outfit:Tiny VLS",
+   "english": "\"Nettle\" KKV",
+   "italian": "\"Nettle\" KKV",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Tiny VLS|description|613|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 613,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tiny VLS",
+   "english": "This tiny vertical launch system contains nine independent launch cells, each occupying one ton of outfit space. Compatible with small-to-medium Avgi missiles, the cells' contents can be easily swapped to suit a given mission. This array's compact footprint makes it suitable for drones and fighters, though the system still requires a turret mount.",
+   "italian": "This tiny vertical launch system contains nine independent launch cells, each occupying one ton of outfit space. Compatible with small-to-medium Avgi missiles, the cells' contents can be easily swapped to suit a given mission. This array's compact footprint makes it suitable for drones and fighters, though the system still requires a turret mount.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Tiny VLS|description|614|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 614,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tiny VLS",
+   "english": "\tVertical launch systems enable rapid and versatile missile deployment, but as dual launchers and magazines, no separate missile storage is available.",
+   "italian": "\tVertical launch systems enable rapid and versatile missile deployment, but as dual launchers and magazines, no separate missile storage is available.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Tiny VLS|description|615|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 615,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tiny VLS",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Small VLS|display name|618|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 618,
+   "kind": "VALUE",
+   "context": "outfit:Small VLS",
+   "english": "Vertical Launch Array (18)",
+   "italian": "Vertical Launch Array (18)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Small VLS|ammo|636|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 636,
+   "kind": "TEXT",
+   "context": "outfit:Small VLS",
+   "english": "\"Nettle\" KKV",
+   "italian": "\"Nettle\" KKV",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Small VLS|description|657|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 657,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small VLS",
+   "english": "This small vertical launch system contains 18 independent launch cells in a rectangular array. Designed for flexibility, the system can employ a variety of small or medium-sized missiles. Owing to its large surface footprint, a turret mount is required for the launcher to deploy missiles safely.",
+   "italian": "This small vertical launch system contains 18 independent launch cells in a rectangular array. Designed for flexibility, the system can employ a variety of small or medium-sized missiles. Owing to its large surface footprint, a turret mount is required for the launcher to deploy missiles safely.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Small VLS|description|658|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 658,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small VLS",
+   "english": "\tVertical launch systems enable rapid and versatile missile deployment, but as dual launchers and magazines, no separate missile storage is available.",
+   "italian": "\tVertical launch systems enable rapid and versatile missile deployment, but as dual launchers and magazines, no separate missile storage is available.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Small VLS|description|659|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 659,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small VLS",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:Medium VLS|display name|662|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 662,
+   "kind": "VALUE",
+   "context": "outfit:Medium VLS",
+   "english": "Vertical Launch Array (36)",
+   "italian": "Vertical Launch Array (36)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "outfit:Medium VLS|ammo|680|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 680,
+   "kind": "TEXT",
+   "context": "outfit:Medium VLS",
+   "english": "\"Nettle\" KKV",
+   "italian": "\"Nettle\" KKV",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "outfit:Medium VLS|description|701|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 701,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Medium VLS",
+   "english": "This medium vertical launch system contains 36 independent launch cells arrayed in parallel. A wide variety of small to mid-sized Avgi missiles are compatible with the launch cells, which can be easily interchanged. Designed for swift vertical cold-launch, the system needs an open space comparable to a turret mount to function properly.",
+   "italian": "This medium vertical launch system contains 36 independent launch cells arrayed in parallel. A wide variety of small to mid-sized Avgi missiles are compatible with the launch cells, which can be easily interchanged. Designed for swift vertical cold-launch, the system needs an open space comparable to a turret mount to function properly.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "outfit:Medium VLS|description|702|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 702,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Medium VLS",
+   "english": "\tVertical launch systems enable rapid and versatile missile deployment, but as dual launchers and magazines, no separate missile storage is available.",
+   "italian": "\tVertical launch systems enable rapid and versatile missile deployment, but as dual launchers and magazines, no separate missile storage is available.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "outfit:Medium VLS|description|703|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 703,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Medium VLS",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  }
+ ]
+}

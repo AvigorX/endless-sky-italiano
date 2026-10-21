@@ -1,0 +1,19 @@
+{
+ "1": "Squadre mediche vi aspettano appena atterrate, e ci vogliono diverse ore per evacuare i feriti. Dottori, o forse paramedici, si riversano su di loro per il triage, le cure e i preparativi per il trasporto. Tre che sono morti durante il volo vengono trattati con rispetto e portati fuori dalla <ship>.",
+ "2": "\tQuando arrivate allo spazioporto, trovate un messaggio dei Quarg. \"Umano audace! Con copiosa gratitudine vi ricompensiamo per aver aiutato i Korath rimasti in secca. I Korath piangono da sempre la perdita dei loro mondi e, di tanto in tanto, sfidano i loro pericoli. Recuperano ciò che possono fra le rovine e cercano mondi dove un giorno possano vivere di nuovo. Ai giovani questo dà speranza, ma a volte vengono presi, e agli Efreti si ricorda perché vivono pigiati intorno a queste poche stelle.\"",
+ "3": "\tIl vostro comunicatore vi notifica un pagamento di <payment>.",
+ "4": "Recupera l'equipaggio caduto della <EDC-ship>",
+ "5": "Recupera i corpi dell'equipaggio morto della <EDC-ship> su <destination> e riportali a <origin>.",
+ "6": "Prima che possiate partire, una delegazione di Korath vi si avvicina con una certa esitazione. Indossano abiti che sembrano molto più raffinati di quelli della maggior parte dei Korath che avete incontrato, di certo nulla che mettereste per lavorare in uno spazioporto. Mentre fanno il tradizionale gesto di saluto, che ricambiate, siete incuriositi sia da ciò che vogliono sia da come lo chiederanno.",
+ "7": "\tUno di loro tira fuori da una tasca una piccola custodia e ne estrae un dispositivo nero che sembra tre triangoli agganciati insieme. Ci sibila sopra per un momento e quello si solleva dalla sua mano. L'aria intorno comincia a tremolare, seguita dalla comparsa di un ologramma a grandezza naturale di un Quarg.",
+ "8": "\t\"Salute, viaggiatore lontano,\" romba il Quarg. \"Questi Amici dei Korath sono i principi del clan che avete soccorso. Grati per i vivi, non possono però piangere del tutto coloro che giacciono morti. Vi supplicano di tornare su <planet> e di riportare i loro perduti a casa, su <origin>.\"",
+ "9": "\t\"Li riporterò a casa.\"",
+ "10": "\t\"Lo farò, se mi pagano.\"",
+ "11": "\t\"Non rischio la mia nave per i morti.\"",
+ "12": "\tIl capo del gruppo si affloscia visibilmente mentre il Quarg traduce le vostre parole. Due Korath più giovani lo sorreggono mentre il gruppo si volta e se ne va.",
+ "13": "\tNon avevate capito quanto fosse teso il gruppo finché non li avete visti rilassarsi appena le vostre parole li raggiungono. Sembrano sollevati dalla vostra risposta.",
+ "14": "\tIl gruppo si distende in fretta, e vedete passare tra loro un'onda di sollievo e di orgoglio.",
+ "15": "\tIl capo si volta e parla direttamente a voi. I suoi occhi non si staccano mai dai vostri mentre aspettate la traduzione. \"Gli equipaggi Efreti hanno famiglie, perché i bambini imparano lavorando con i genitori. Per alcune famiglie sono andate perdute tre generazioni. Non tenteremo di recuperare la nave, perché nessuno ha il cuore di pilotarla. Vi offriamo il titolo per recuperare la <EDC-ship> e per portare il nostro lutto lontano da qui.\"",
+ "16": "Recupera i caduti della <EDC-ship>",
+ "17": "Riporta i corpi dell'equipaggio morto della <EDC-ship> su <planet>."
+}

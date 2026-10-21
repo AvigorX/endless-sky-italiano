@@ -1,0 +1,352 @@
+{
+ "block": {
+  "path": "data/human/culture conversations.txt",
+  "line_from": 429,
+  "line_to": 495,
+  "units": 31
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Tarazed Ship Christening|As you walk past a number of ships and crew going about their work in the spaceport, a small gathering in front of a Shuttle catches your attention. A young woman wearing a rather cheesy pilot uniform is in the midst of a little group of people all celebrating together. As you pass by them, a man standing on the top of a ladder breaks a bottle of Champagne on the (clearly not new) ship's hull. A loud cheer erupts from the group, earning an embarrassed blush from the young woman.|437|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 437,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "As you walk past a number of ships and crew going about their work in the spaceport, a small gathering in front of a Shuttle catches your attention. A young woman wearing a rather cheesy pilot uniform is in the midst of a little group of people all celebrating together. As you pass by them, a man standing on the top of a ladder breaks a bottle of Champagne on the (clearly not new) ship's hull. A loud cheer erupts from the group, earning an embarrassed blush from the young woman.",
+   "italian": "Mentre passi davanti a diverse navi e a equipaggi al lavoro nello spazioporto, un piccolo capannello davanti a uno Shuttle attira la tua attenzione. Una giovane donna con un'uniforme da pilota piuttosto pacchiana è al centro di un gruppetto di persone che festeggiano insieme. Mentre passi, un uomo in piedi in cima a una scala rompe una bottiglia di champagne sullo scafo della nave (chiaramente non nuova). Dal gruppo esplode un grido di esultanza, che fa arrossire la giovane donna per l'imbarazzo.",
+   "ratio": 1.037
+  },
+  {
+   "idx": 2,
+   "id": "mission:Tarazed Ship Christening|\t(Take a closer look.)|439|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 439,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t(Take a closer look.)",
+   "italian": "\t(Dare un'occhiata più da vicino.)",
+   "ratio": 1.545
+  },
+  {
+   "idx": 3,
+   "id": "mission:Tarazed Ship Christening|\t(Shout well wishes as I pass by.)|441|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 441,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t(Shout well wishes as I pass by.)",
+   "italian": "\t(Gridare gli auguri mentre passo.)",
+   "ratio": 1.029
+  },
+  {
+   "idx": 4,
+   "id": "mission:Tarazed Ship Christening|\t(Ignore them, I have more important things to do.)|443|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 443,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t(Ignore them, I have more important things to do.)",
+   "italian": "\t(Ignorarli, ho cose più importanti da fare.)",
+   "ratio": 0.882
+  },
+  {
+   "idx": 5,
+   "id": "mission:Tarazed Ship Christening|\tYou hurry past the rowdy group, annoyed by the disturbance.|444|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 444,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\tYou hurry past the rowdy group, annoyed by the disturbance.",
+   "italian": "\tTi affretti oltre il gruppo chiassoso, infastidito dal trambusto.",
+   "ratio": 1.1
+  },
+  {
+   "idx": 6,
+   "id": "mission:Tarazed Ship Christening|label|446|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 446,
+   "kind": "UI_LABEL",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "pass by",
+   "italian": "pass by",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "mission:Tarazed Ship Christening|\tYou hurry past the group as they quiet down. Taking advantage of the momentary lull, you shout \"Good luck! You've got this!\" toward them. They let out another cheer in response, with the exception of the young woman who buries her face in her hands.|447|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 447,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\tYou hurry past the group as they quiet down. Taking advantage of the momentary lull, you shout \"Good luck! You've got this!\" toward them. They let out another cheer in response, with the exception of the young woman who buries her face in her hands.",
+   "italian": "\tTi affretti oltre il gruppo mentre si calmano. Approfittando della pausa momentanea, gridi verso di loro: \"Buona fortuna! Ce la puoi fare!\" Rispondono con un altro grido di esultanza, tranne la giovane donna, che si copre il viso con le mani.",
+   "ratio": 0.972
+  },
+  {
+   "idx": 8,
+   "id": "mission:Tarazed Ship Christening|\tYou approach the group as they quiet down, noticing a hint of anxiety in the air.|450|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 450,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\tYou approach the group as they quiet down, noticing a hint of anxiety in the air.",
+   "italian": "\tTi avvicini al gruppo mentre si calmano, notando un accenno di ansia nell'aria.",
+   "ratio": 0.976
+  },
+  {
+   "idx": 9,
+   "id": "mission:Tarazed Ship Christening|\t\"Nothing quite like buying your very first starship,\" you say over their chatter. The celebration goes quiet as they turn to see who interrupted their little party.|451|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 451,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"Nothing quite like buying your very first starship,\" you say over their chatter. The celebration goes quiet as they turn to see who interrupted their little party.",
+   "italian": "\t\"Non c'è niente come comprare la propria prima nave stellare\", dici sopra le loro chiacchiere. Il festeggiamento si spegne mentre si voltano a vedere chi ha interrotto la loro piccola festa.",
+   "ratio": 1.158
+  },
+  {
+   "idx": 10,
+   "id": "mission:Tarazed Ship Christening|\t\"It's certainly been an... experience,\" the young woman replies once you are in comfortable talking distance.|452|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 452,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"It's certainly been an... experience,\" the young woman replies once you are in comfortable talking distance.",
+   "italian": "\t\"È stata senz'altro un'esperienza...\", risponde la giovane donna quando sei a distanza comoda per parlare.",
+   "ratio": 0.973
+  },
+  {
+   "idx": 11,
+   "id": "mission:Tarazed Ship Christening|\t\"Have you got any big plans with it?\"|454|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 454,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"Have you got any big plans with it?\"",
+   "italian": "\t\"Hai programmi importanti con la nave?\"",
+   "ratio": 1.053
+  },
+  {
+   "idx": 12,
+   "id": "mission:Tarazed Ship Christening|\t(Give some advice.)|456|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 456,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t(Give some advice.)",
+   "italian": "\t(Dare qualche consiglio.)",
+   "ratio": 1.3
+  },
+  {
+   "idx": 13,
+   "id": "mission:Tarazed Ship Christening|\t\"So, who's the lucky pilot?\"|458|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 458,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"So, who's the lucky pilot?\"",
+   "italian": "\t\"Allora, chi è il pilota fortunato?\"",
+   "ratio": 1.276
+  },
+  {
+   "idx": 14,
+   "id": "mission:Tarazed Ship Christening|\tYou gesture to the Shuttle and look around as if it should be anyone else.|459|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 459,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\tYou gesture to the Shuttle and look around as if it should be anyone else.",
+   "italian": "\tIndichi lo Shuttle e ti guardi intorno come se dovesse essere qualcun altro.",
+   "ratio": 1.027
+  },
+  {
+   "idx": 15,
+   "id": "mission:Tarazed Ship Christening|\t\"Uhh... that would be me,\" the woman says, glancing around awkwardly.|460|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 460,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"Uhh... that would be me,\" the woman says, glancing around awkwardly.",
+   "italian": "\t\"Ehm... sarei io\", dice la donna, guardandosi intorno con imbarazzo.",
+   "ratio": 0.986
+  },
+  {
+   "idx": 16,
+   "id": "mission:Tarazed Ship Christening|\t(Try to salvage the awkward situation.)|462|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 462,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t(Try to salvage the awkward situation.)",
+   "italian": "\t(Provare a salvare la situazione imbarazzante.)",
+   "ratio": 1.2
+  },
+  {
+   "idx": 17,
+   "id": "mission:Tarazed Ship Christening|\t(Get out while I can.)|463|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 463,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t(Get out while I can.)",
+   "italian": "\t(Andarsene finché posso.)",
+   "ratio": 1.13
+  },
+  {
+   "idx": 18,
+   "id": "mission:Tarazed Ship Christening|\t\"I'm just messing with you, my psychiatrist doesn't think it's very funny when I do it to him either.\"|465|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 465,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"I'm just messing with you, my psychiatrist doesn't think it's very funny when I do it to him either.\"",
+   "italian": "\t\"Ti sto solo prendendo in giro; anche il mio psichiatra non la trova divertente quando lo faccio a lui.\"",
+   "ratio": 1.019
+  },
+  {
+   "idx": 19,
+   "id": "mission:Tarazed Ship Christening|\t\"Oh,\" the woman says quietly, \"that's... nice, I guess.\"|466|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 466,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"Oh,\" the woman says quietly, \"that's... nice, I guess.\"",
+   "italian": "\t\"Oh\", dice la donna piano, \"che... carino, credo.\"",
+   "ratio": 0.895
+  },
+  {
+   "idx": 20,
+   "id": "mission:Tarazed Ship Christening|label|467|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 467,
+   "kind": "UI_LABEL",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "get out",
+   "italian": "get out",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "mission:Tarazed Ship Christening|\tYou realize that you have made this random young lady quite uncomfortable by barging in with your input.|468|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 468,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\tYou realize that you have made this random young lady quite uncomfortable by barging in with your input.",
+   "italian": "\tTi rendi conto di aver messo parecchio a disagio questa giovane signora piombandole addosso con il tuo parere.",
+   "ratio": 1.057
+  },
+  {
+   "idx": 22,
+   "id": "mission:Tarazed Ship Christening|\t\"Well, good luck!\" you say with a wave as you hurry away. You barely hear the quiet \"thank you\" over the burning in your ears.|469|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 469,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"Well, good luck!\" you say with a wave as you hurry away. You barely hear the quiet \"thank you\" over the burning in your ears.",
+   "italian": "\t\"Beh, buona fortuna!\", dici con un cenno della mano mentre ti allontani in fretta. Senti a malapena il \"grazie\" sommesso sopra il bruciore alle orecchie.",
+   "ratio": 1.213
+  },
+  {
+   "idx": 23,
+   "id": "mission:Tarazed Ship Christening|\t\"Right now,\" she says with a sigh, \"the only plan I have is to get rid of the massive debt that I'm in because of it.\"|472|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 472,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"Right now,\" she says with a sigh, \"the only plan I have is to get rid of the massive debt that I'm in because of it.\"",
+   "italian": "\t\"Al momento\", dice con un sospiro, \"l'unico programma che ho è liberarmi del debito enorme in cui sono per colpa sua.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "mission:Tarazed Ship Christening|\t\"The mortgage isn't so bad as long as you're willing to work hard,\" you say with a smile, \"and there is no shortage of people in need of a ship and a good pilot.\"|474|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 474,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"The mortgage isn't so bad as long as you're willing to work hard,\" you say with a smile, \"and there is no shortage of people in need of a ship and a good pilot.\"",
+   "italian": "\t\"Il mutuo non è così terribile se sei disposta a lavorare sodo\", dici con un sorriso, \"e non mancano di certo le persone che hanno bisogno di una nave e di un buon pilota.\"",
+   "ratio": 1.061
+  },
+  {
+   "idx": 25,
+   "id": "mission:Tarazed Ship Christening|\t\"I knew you could make a decent living with one, but is it really that easy?\" she asks.|475|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 475,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"I knew you could make a decent living with one, but is it really that easy?\" she asks.",
+   "italian": "\t\"Sapevo che con una nave si può vivere decentemente, ma è davvero così facile?\", chiede.",
+   "ratio": 1.011
+  },
+  {
+   "idx": 26,
+   "id": "mission:Tarazed Ship Christening|\t\"The work isn't easy, but finding a job is the least of your worries. I'm sure that you'll have this ship paid off in no time.\"|476|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 476,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"The work isn't easy, but finding a job is the least of your worries. I'm sure that you'll have this ship paid off in no time.\"",
+   "italian": "\t\"Il lavoro non è facile, ma trovare un impiego è il minore dei tuoi problemi. Sono sicuro che estinguerai il debito della nave in men che non si dica.\"",
+   "ratio": 1.188
+  },
+  {
+   "idx": 27,
+   "id": "mission:Tarazed Ship Christening|\tYou stay around and talk with the aspiring pilot for a few minutes, giving her tips and advice before stating that you have work to do. As you turn to leave, an older man places his hand on your arm, stopping you.|477|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 477,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\tYou stay around and talk with the aspiring pilot for a few minutes, giving her tips and advice before stating that you have work to do. As you turn to leave, an older man places his hand on your arm, stopping you.",
+   "italian": "\tResti lì a parlare con l'aspirante pilota per qualche minuto, dandole consigli e suggerimenti, prima di dire che hai del lavoro da fare. Mentre ti volti per andartene, un uomo più anziano ti mette una mano sul braccio e ti ferma.",
+   "ratio": 1.075
+  },
+  {
+   "idx": 28,
+   "id": "mission:Tarazed Ship Christening|\t\"Before you go,\" the man says, \"we weren't very sure about this whole 'pilot' thing at first, but it's good to hear that my little girl has made the right decision. Thank you for that.\"|478|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 478,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"Before you go,\" the man says, \"we weren't very sure about this whole 'pilot' thing at first, but it's good to hear that my little girl has made the right decision. Thank you for that.\"",
+   "italian": "\t\"Prima che vada\", dice l'uomo, \"all'inizio non eravamo molto convinti di tutta questa faccenda del 'pilota', ma è bello sentire che mia figlia ha preso la decisione giusta. Grazie per questo.\"",
+   "ratio": 1.038
+  },
+  {
+   "idx": 29,
+   "id": "mission:Tarazed Ship Christening|\t\"It's the least I could do,\" you say before walking away.|479|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 479,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Tarazed Ship Christening",
+   "english": "\t\"It's the least I could do,\" you say before walking away.",
+   "italian": "\t\"È il minimo che potessi fare\", dici prima di allontanarti.",
+   "ratio": 1.034
+  },
+  {
+   "idx": 30,
+   "id": "mission:Masquerade Hanging|The smell of burning gunpowder wafts about in the air as you enter a town square, watching as a body is rolled off of a raised platform. Cries and screams fill the air as a masked man drags a lady across the platform and onto the central dias, an old-fashioned pistol to her head as he asks her something you can't make out. Thankfully, the man doesn't shoot, taking his gun off her temple before subsequently knocking her out with his weapon.|494|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 494,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Masquerade Hanging",
+   "english": "The smell of burning gunpowder wafts about in the air as you enter a town square, watching as a body is rolled off of a raised platform. Cries and screams fill the air as a masked man drags a lady across the platform and onto the central dias, an old-fashioned pistol to her head as he asks her something you can't make out. Thankfully, the man doesn't shoot, taking his gun off her temple before subsequently knocking her out with his weapon.",
+   "italian": "L'odore di polvere da sparo bruciata aleggia nell'aria mentre entri in una piazza, guardando un corpo che viene fatto rotolare giù da una piattaforma rialzata. Grida e urla riempiono l'aria mentre un uomo mascherato trascina una donna attraverso la piattaforma fino al palco centrale, con una pistola vecchio stile alla tempia mentre le chiede qualcosa che non riesci a distinguere. Per fortuna l'uomo non spara: toglie l'arma dalla tempia e poi la stende con l'arma stessa.",
+   "ratio": 1.07
+  },
+  {
+   "idx": 31,
+   "id": "mission:Masquerade Hanging|\tMoments later the small crowd allows him to depart opposite your viewpoint, without incident and without explanation. You aren't quite sure what to make of this scene as the bodies are swiftly dragged away.|495|0",
+   "path": "data/human/culture conversations.txt",
+   "line": 495,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Masquerade Hanging",
+   "english": "\tMoments later the small crowd allows him to depart opposite your viewpoint, without incident and without explanation. You aren't quite sure what to make of this scene as the bodies are swiftly dragged away.",
+   "italian": "\tPochi istanti dopo la piccola folla gli permette di allontanarsi dal lato opposto rispetto a te, senza incidenti e senza spiegazioni. Non sei del tutto sicuro di cosa pensare di questa scena, mentre i corpi vengono trascinati via in fretta.",
+   "ratio": 1.164
+  }
+ ]
+}

@@ -1,0 +1,308 @@
+{
+ "block": {
+  "path": "data/hai/hai.txt",
+  "line_from": 72,
+  "line_to": 187,
+  "units": 27
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "(root)|\"Basrem\" Reverse Thruster|72|0",
+   "path": "data/hai/hai.txt",
+   "line": 72,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Basrem\" Reverse Thruster",
+   "italian": "\"Basrem\" Reverse Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "(root)|\"Basrem\" Atomic Thruster|73|0",
+   "path": "data/hai/hai.txt",
+   "line": 73,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Basrem\" Atomic Thruster",
+   "italian": "\"Basrem\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "(root)|\"Basrem\" Atomic Steering|74|0",
+   "path": "data/hai/hai.txt",
+   "line": 74,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Basrem\" Atomic Steering",
+   "italian": "\"Basrem\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "(root)|\"Basrem\" Reverse Thruster|102|0",
+   "path": "data/hai/hai.txt",
+   "line": 102,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Basrem\" Reverse Thruster",
+   "italian": "\"Basrem\" Reverse Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "(root)|\"Basrem\" Atomic Thruster|103|0",
+   "path": "data/hai/hai.txt",
+   "line": 103,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Basrem\" Atomic Thruster",
+   "italian": "\"Basrem\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "(root)|\"Basrem\" Atomic Steering|104|0",
+   "path": "data/hai/hai.txt",
+   "line": 104,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Basrem\" Atomic Steering",
+   "italian": "\"Basrem\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "(root)|\"Benga\" Reverse Thruster|105|0",
+   "path": "data/hai/hai.txt",
+   "line": 105,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Benga\" Reverse Thruster",
+   "italian": "\"Benga\" Reverse Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "(root)|\"Benga\" Atomic Thruster|106|0",
+   "path": "data/hai/hai.txt",
+   "line": 106,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Benga\" Atomic Thruster",
+   "italian": "\"Benga\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "(root)|\"Benga\" Atomic Steering|107|0",
+   "path": "data/hai/hai.txt",
+   "line": 107,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Benga\" Atomic Steering",
+   "italian": "\"Benga\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "(root)|\"Biroo\" Reverse Thruster|108|0",
+   "path": "data/hai/hai.txt",
+   "line": 108,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Biroo\" Reverse Thruster",
+   "italian": "\"Biroo\" Reverse Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "(root)|\"Biroo\" Atomic Thruster|109|0",
+   "path": "data/hai/hai.txt",
+   "line": 109,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Biroo\" Atomic Thruster",
+   "italian": "\"Biroo\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "(root)|\"Biroo\" Atomic Steering|110|0",
+   "path": "data/hai/hai.txt",
+   "line": 110,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Biroo\" Atomic Steering",
+   "italian": "\"Biroo\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "(root)|\"Basrem\" Reverse Thruster|146|0",
+   "path": "data/hai/hai.txt",
+   "line": 146,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Basrem\" Reverse Thruster",
+   "italian": "\"Basrem\" Reverse Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "(root)|\"Basrem\" Atomic Thruster|147|0",
+   "path": "data/hai/hai.txt",
+   "line": 147,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Basrem\" Atomic Thruster",
+   "italian": "\"Basrem\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "(root)|\"Basrem\" Atomic Steering|148|0",
+   "path": "data/hai/hai.txt",
+   "line": 148,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Basrem\" Atomic Steering",
+   "italian": "\"Basrem\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "(root)|\"Benga\" Reverse Thruster|149|0",
+   "path": "data/hai/hai.txt",
+   "line": 149,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Benga\" Reverse Thruster",
+   "italian": "\"Benga\" Reverse Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "(root)|\"Benga\" Atomic Thruster|150|0",
+   "path": "data/hai/hai.txt",
+   "line": 150,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Benga\" Atomic Thruster",
+   "italian": "\"Benga\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "(root)|\"Benga\" Atomic Steering|151|0",
+   "path": "data/hai/hai.txt",
+   "line": 151,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Benga\" Atomic Steering",
+   "italian": "\"Benga\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "(root)|\"Biroo\" Reverse Thruster|152|0",
+   "path": "data/hai/hai.txt",
+   "line": 152,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Biroo\" Reverse Thruster",
+   "italian": "\"Biroo\" Reverse Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "(root)|\"Biroo\" Atomic Thruster|153|0",
+   "path": "data/hai/hai.txt",
+   "line": 153,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Biroo\" Atomic Thruster",
+   "italian": "\"Biroo\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "(root)|\"Biroo\" Atomic Steering|154|0",
+   "path": "data/hai/hai.txt",
+   "line": 154,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Biroo\" Atomic Steering",
+   "italian": "\"Biroo\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "(root)|\"Bondir\" Atomic Thruster|155|0",
+   "path": "data/hai/hai.txt",
+   "line": 155,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Bondir\" Atomic Thruster",
+   "italian": "\"Bondir\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "(root)|\"Bondir\" Atomic Steering|156|0",
+   "path": "data/hai/hai.txt",
+   "line": 156,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Bondir\" Atomic Steering",
+   "italian": "\"Bondir\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "(root)|\"Bufaer\" Atomic Thruster|157|0",
+   "path": "data/hai/hai.txt",
+   "line": 157,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Bufaer\" Atomic Thruster",
+   "italian": "\"Bufaer\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 25,
+   "id": "(root)|\"Bufaer\" Atomic Steering|158|0",
+   "path": "data/hai/hai.txt",
+   "line": 158,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Bufaer\" Atomic Steering",
+   "italian": "\"Bufaer\" Atomic Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 26,
+   "id": "(root)|\"Basrem\" Atomic Thruster|186|0",
+   "path": "data/hai/hai.txt",
+   "line": 186,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Basrem\" Atomic Thruster",
+   "italian": "\"Basrem\" Atomic Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 27,
+   "id": "(root)|\"Basrem\" Atomic Steering|187|0",
+   "path": "data/hai/hai.txt",
+   "line": 187,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Basrem\" Atomic Steering",
+   "italian": "\"Basrem\" Atomic Steering",
+   "ratio": 1.0
+  }
+ ]
+}

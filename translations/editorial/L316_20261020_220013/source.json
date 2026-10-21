@@ -1,0 +1,141 @@
+{
+ "block": {
+  "path": "data/coalition/coalition ships.txt",
+  "line_from": 59,
+  "line_to": 969,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Arach Courier|description|59|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 59,
+   "kind": "DESCRIPTION",
+   "context": "ship:Arach Courier",
+   "english": "These hardy little cargo ships are the perfect size for young Arachi just setting out into the sky with dreams of one day building their own merchant fleets. Of course, an Arach lucky enough to be born into one of the great Houses can probably find a patron to buy them a much larger ship instead.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `These hardy little cargo ships are the perfect size for young Arachi just setting out into the sky with dreams of one day building their own merchant fleets. Of course, an Arach lucky enough to be born into one of the great Houses can probably find a patron to buy them a much larger ship instead.`",
+   "english_hash": "1f0eef56c645b0c2"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Arach Freighter|description|125|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 125,
+   "kind": "DESCRIPTION",
+   "context": "ship:Arach Freighter",
+   "english": "Arach cargo ship hulls are legendary for their durability. It is not uncommon for a large Arach family to convert a freighter that is no longer space-worthy into a planet-side dwelling, and even in the harshest of conditions these converted houses can last for hundreds of years with little or no exterior maintenance.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Arach cargo ship hulls are legendary for their durability. It is not uncommon for a large Arach family to convert a freighter that is no longer space-worthy into a planet-side dwelling, and even in the harshest of conditions these converted houses can last for hundreds of years with little or no exterior maintenance.`",
+   "english_hash": "0c6f3c1303958565"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Arach Hulk|description|200|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 200,
+   "kind": "DESCRIPTION",
+   "context": "ship:Arach Hulk",
+   "english": "The Arachi believe that efficient functionality is the highest form of beauty, and none of their ships demonstrate that principle more clearly than the ugly yet utilitarian Hulk, designed with detachable side pods that can be swapped out on a planet in a matter of minutes if the captain is in a hurry to reach the next destination.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Arachi believe that efficient functionality is the highest form of beauty, and none of their ships demonstrate that principle more clearly than the ugly yet utilitarian Hulk, designed with detachable side pods that can be swapped out on a planet in a matter of minutes if the captain is in a hurry to reach the next destination.`",
+   "english_hash": "2a574c0f85d49607"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Arach Spindle|description|275|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 275,
+   "kind": "DESCRIPTION",
+   "context": "ship:Arach Spindle",
+   "english": "The Arach Hulk is an ungainly, lumbering behemoth of a ship, but with its side pods removed it becomes the much more maneuverable Spindle. Because of its much lower cargo space, usually the only reason a fleet would include a Spindle is if they are planning on picking up new cargo pods at their destination.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Arach Hulk is an ungainly, lumbering behemoth of a ship, but with its side pods removed it becomes the much more maneuverable Spindle. Because of its much lower cargo space, usually the only reason a fleet would include a Spindle is if they are planning on picking up new cargo pods at their destination.`",
+   "english_hash": "cf9aec5b66b9e348"
+  },
+  {
+   "idx": 5,
+   "id": "ship:Arach Transport|description|383|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 383,
+   "kind": "DESCRIPTION",
+   "context": "ship:Arach Transport",
+   "english": "The Arach Transport is the oldest of their ship designs, dating back to the time when they first joined the Coalition in overthrowing the Quarg and capturing their ringworlds. Back then, Transports were occasionally used as warships, but now, thousands of years later, they are considered outdated compared to the latest Heliarch military ships.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Arach Transport is the oldest of their ship designs, dating back to the time when they first joined the Coalition in overthrowing the Quarg and capturing their ringworlds. Back then, Transports were occasionally used as warships, but now, thousands of years later, they are considered outdated compared to the latest Heliarch military ships.`",
+   "english_hash": "86a06c2fc2d4cc09"
+  },
+  {
+   "idx": 6,
+   "id": "ship:Heliarch Breacher|description|461|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 461,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Breacher",
+   "english": "The Breacher isn't the most durable Heliarch vessel, but its impressive forward speed and high firepower for its size make this ship ideal for strafing runs.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Breacher isn't the most durable Heliarch vessel, but its impressive forward speed and high firepower for its size make this ship ideal for strafing runs.`",
+   "english_hash": "e759624c7c82c142"
+  },
+  {
+   "idx": 7,
+   "id": "ship:Heliarch Hunter|description|588|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 588,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Hunter",
+   "english": "Although they mostly serve as patrol vessels nowadays in peacetime, Hunters were originally designed to quickly track down dissidents and bring them to justice.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Although they mostly serve as patrol vessels nowadays in peacetime, Hunters were originally designed to quickly track down dissidents and bring them to justice.`",
+   "english_hash": "e88850168af0c356"
+  },
+  {
+   "idx": 8,
+   "id": "ship:Heliarch Interdictor|description|779|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 779,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Interdictor",
+   "english": "Anyone who incurs the wrath of the Heliarchs cannot count on making a fast getaway thanks to the Interdictors, which were primarily designed to carry a pair of attractor and repulsor beams that can hold a ship a safe distance away while pushing it around enough to prevent it from getting a hyperspace lock to jump out of the system.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `Anyone who incurs the wrath of the Heliarchs cannot count on making a fast getaway thanks to the Interdictors, which were primarily designed to carry a pair of attractor and repulsor beams that can hold a ship a safe distance away while pushing it around enough to prevent it from getting a hyperspace lock to jump out of the system.`",
+   "english_hash": "b53a33bebfd452f5"
+  },
+  {
+   "idx": 9,
+   "id": "ship:Heliarch Judicator|description|968|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 968,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Judicator",
+   "english": "During their time battling the Quarg, the Coalition focused on producing the strongest, toughest warships they could, so fightercraft were out of the question. Now, however, the Heliarch's shield matrix and hull integrity technology is much more advanced, and they have recently experimented with such ships. The Judicator was made for transportation of these new fighters.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `During their time battling the Quarg, the Coalition focused on producing the strongest, toughest warships they could, so fightercraft were out of the question. Now, however, the Heliarch's shield matrix and hull integrity technology is much more advanced, and they have recently experimented with such ships. The Judicator was made for transportation of these new fighters.`",
+   "english_hash": "942c51ce9699ba8a"
+  },
+  {
+   "idx": 10,
+   "id": "ship:Heliarch Judicator|description|969|0",
+   "path": "data/coalition/coalition ships.txt",
+   "line": 969,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heliarch Judicator",
+   "english": "\tAlongside their six fighter bays, Judicators come with a large bunk count and higher cargo space than other Heliarch warships, thus doubling as a logistics vessel for transporting troops and equipment.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\tdescription `\tAlongside their six fighter bays, Judicators come with a large bunk count and higher cargo space than other Heliarch warships, thus doubling as a logistics vessel for transporting troops and equipment.`",
+   "english_hash": "13c324a3538c5128"
+  }
+ ]
+}

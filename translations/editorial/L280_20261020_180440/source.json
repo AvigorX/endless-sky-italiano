@@ -1,0 +1,37 @@
+{
+ "block": {
+  "path": "data/human/kestrel.txt",
+  "line_from": 252,
+  "line_to": 402,
+  "units": 2
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Kestrel Available|You receive a message from Charles Atinoda, the ship designer at Tarazed Corporation: \"Captain <last>, we are pleased to inform you that our latest warship is now available for sale here on Wayfarer. We've taken all your feedback into account in the final design. Thank you again!\"|252|0",
+   "path": "data/human/kestrel.txt",
+   "line": 252,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Kestrel Available",
+   "english": "You receive a message from Charles Atinoda, the ship designer at Tarazed Corporation: \"Captain <last>, we are pleased to inform you that our latest warship is now available for sale here on Wayfarer. We've taken all your feedback into account in the final design. Thank you again!\"",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t\t`You receive a message from Charles Atinoda, the ship designer at Tarazed Corporation: \"Captain <last>, we are pleased to inform you that our latest warship is now available for sale here on Wayfarer. We've taken all your feedback into account in the final design. Thank you again!\"`",
+   "english_hash": "880447119afacb16"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Kestrel|description|402|0",
+   "path": "data/human/kestrel.txt",
+   "line": 402,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kestrel",
+   "english": "Several years ago, while visiting a sweat lodge in search of spiritual renewal, Tarazed's chief ship designer fell into a trance and journeyed to a reality separate from our own. There he saw visions of a strange and elegant starship. Returning to his work with renewed purpose, he spent the next seven years making the Kestrel a reality.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Several years ago, while visiting a sweat lodge in search of spiritual renewal, Tarazed's chief ship designer fell into a trance and journeyed to a reality separate from our own. There he saw visions of a strange and elegant starship. Returning to his work with renewed purpose, he spent the next seven years making the Kestrel a reality.\"",
+   "english_hash": "6c0196d7a46efd4e"
+  }
+ ]
+}

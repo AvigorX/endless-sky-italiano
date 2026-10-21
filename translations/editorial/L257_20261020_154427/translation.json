@@ -1,0 +1,264 @@
+{
+ "block": {
+  "path": "data/human/post-war reactions.txt",
+  "line_from": 76,
+  "line_to": 151,
+  "units": 23
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:War Reactions: Asteroid Miners|\t\"Have you been under a rock the whole war? I'm Captain <first> <last>!\"|76|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 76,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Asteroid Miners",
+   "english": "\t\"Have you been under a rock the whole war? I'm Captain <first> <last>!\"",
+   "italian": "\t\"Sei vissuto sotto un sasso per tutta la guerra? Sono il capitano <first> <last>!\"",
+   "ratio": 1.153
+  },
+  {
+   "idx": 2,
+   "id": "mission:War Reactions: Asteroid Miners|\t\"Never mind.\"|77|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 77,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Asteroid Miners",
+   "english": "\t\"Never mind.\"",
+   "italian": "\t\"Lascia stare.\"",
+   "ratio": 1.143
+  },
+  {
+   "idx": 3,
+   "id": "mission:War Reactions: Asteroid Miners|\t\"At least I don't have a disheveled hamster stuck to my upper lip.\"|79|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 79,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Asteroid Miners",
+   "english": "\t\"At least I don't have a disheveled hamster stuck to my upper lip.\"",
+   "italian": "\t\"Almeno io non ho un criceto arruffato incollato al labbro superiore.\"",
+   "ratio": 1.044
+  },
+  {
+   "idx": 4,
+   "id": "mission:War Reactions: Asteroid Miners|\tBoth twins look confused, and the left one responds. \"We've been mining asteroids the whole war. The war was a big deal, but most of us had to keep living our lives. Do you think we have time to keep track of every warring captain?\"|81|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 81,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Asteroid Miners",
+   "english": "\tBoth twins look confused, and the left one responds. \"We've been mining asteroids the whole war. The war was a big deal, but most of us had to keep living our lives. Do you think we have time to keep track of every warring captain?\"",
+   "italian": "\tEntrambi i gemelli sembrano confusi, e quello di sinistra risponde: \"Abbiamo estratto minerali dagli asteroidi per tutta la guerra. La guerra è stata un evento enorme, ma quasi tutti noi dovevamo continuare a vivere. Credi che abbiamo tempo di tenere traccia di ogni capitano in guerra?\"",
+   "ratio": 1.236
+  },
+  {
+   "idx": 5,
+   "id": "mission:War Reactions: Asteroid Miners|\tThe right one says apologetically, \"Thank you for your service, Captain <last>.\"|82|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 82,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Asteroid Miners",
+   "english": "\tThe right one says apologetically, \"Thank you for your service, Captain <last>.\"",
+   "italian": "\tQuello di destra dice, con aria di scusa: \"Grazie per il tuo servizio, capitano <last>.\"",
+   "ratio": 1.099
+  },
+  {
+   "idx": 6,
+   "id": "mission:War Reactions: Asteroid Miners|\tThey both give clumsy but well-intentioned salutes and return to their ships.|83|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 83,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Asteroid Miners",
+   "english": "\tThey both give clumsy but well-intentioned salutes and return to their ships.",
+   "italian": "\tFanno entrambi un saluto goffo ma pieno di buone intenzioni e tornano alle loro navi.",
+   "ratio": 1.103
+  },
+  {
+   "idx": 7,
+   "id": "mission:War Reactions: Asteroid Miners|\tThe left twin laughs and says, \"Pardon us if we keep our eyes open and trust to our own guns.\" Both twins nod and depart to their ships.|86|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 86,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Asteroid Miners",
+   "english": "\tThe left twin laughs and says, \"Pardon us if we keep our eyes open and trust to our own guns.\" Both twins nod and depart to their ships.",
+   "italian": "\tIl gemello di sinistra ride e dice: \"Perdonaci se teniamo gli occhi aperti e ci affidiamo ai nostri cannoni.\" Entrambi i gemelli annuiscono e tornano alle loro navi.",
+   "ratio": 1.212
+  },
+  {
+   "idx": 8,
+   "id": "mission:War Reactions: Asteroid Miners|\tBoth twins shrug and leave for their ships.|89|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 89,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Asteroid Miners",
+   "english": "\tBoth twins shrug and leave for their ships.",
+   "italian": "\tI gemelli alzano le spalle e tornano alle navi.",
+   "ratio": 1.091
+  },
+  {
+   "idx": 9,
+   "id": "mission:War Reactions: Asteroid Miners|\tBoth twins' faces twist in a way that might indicate embarrassment or annoyance. It's hard to tell since their facial hair is halting any emotive power. They walk away in the direction of their ships.|92|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 92,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Asteroid Miners",
+   "english": "\tBoth twins' faces twist in a way that might indicate embarrassment or annoyance. It's hard to tell since their facial hair is halting any emotive power. They walk away in the direction of their ships.",
+   "italian": "\tLe facce di entrambi i gemelli si torcono in un modo che potrebbe indicare imbarazzo o fastidio. È difficile dirlo, perché i loro peli del viso bloccano ogni capacità espressiva. Si allontanano verso le loro navi.",
+   "ratio": 1.065
+  },
+  {
+   "idx": 10,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|You are relaxing in a cafe while your ship refuels, and a pair of middle-aged captains come to your table. One is Navy, the other is Free Worlds, and they bear a striking resemblance to each other.|110|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 110,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "You are relaxing in a cafe while your ship refuels, and a pair of middle-aged captains come to your table. One is Navy, the other is Free Worlds, and they bear a striking resemblance to each other.",
+   "italian": "Ti stai rilassando in un bar mentre la tua nave fa rifornimento, e due capitani di mezza età si avvicinano al tuo tavolo. Uno è della Marina, l'altro dei Free Worlds, e si somigliano in modo impressionante.",
+   "ratio": 1.046
+  },
+  {
+   "idx": 11,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Captain Rain, R.N.S. Camuy,\" says one. \"How's the <ship>, Captain <last>?\"|111|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 111,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Captain Rain, R.N.S. Camuy,\" says one. \"How's the <ship>, Captain <last>?\"",
+   "italian": "\t\"Capitano Rain, R.N.S. Camuy\", dice uno. \"Come va la <ship>, capitano <last>?\"",
+   "ratio": 1.039
+  },
+  {
+   "idx": 12,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Captain Fiona, F.S. Baobab,\" says the other. \"We both saw you in battle against the Pug. You're the war's most accomplished captain!|112|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 112,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Captain Fiona, F.S. Baobab,\" says the other. \"We both saw you in battle against the Pug. You're the war's most accomplished captain!",
+   "italian": "\t\"Capitano Fiona, F.S. Baobab\", dice l'altra. \"Ti abbiamo visto entrambi in battaglia contro i Pug. Sei il capitano più valente della guerra!",
+   "ratio": 1.052
+  },
+  {
+   "idx": 13,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"We've been patrolling together and we saw your ship, so we've come to say hi.\"|113|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 113,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"We've been patrolling together and we saw your ship, so we've come to say hi.\"",
+   "italian": "\t\"Stavamo pattugliando insieme e abbiamo visto la tua nave, così siamo venuti a salutarti.\"",
+   "ratio": 1.137
+  },
+  {
+   "idx": 14,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Why are Navy and Free Worlds captains traveling together?\"|118|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 118,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Why are Navy and Free Worlds captains traveling together?\"",
+   "italian": "\t\"Perché dei capitani della Marina e dei Free Worlds viaggiano insieme?\"",
+   "ratio": 1.2
+  },
+  {
+   "idx": 15,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Have you found any new aliens?\"|122|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 122,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Have you found any new aliens?\"",
+   "italian": "\t\"Avete trovato nuovi alieni?\"",
+   "ratio": 0.909
+  },
+  {
+   "idx": 16,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Did you fight on the other side of the war from each other?\"|127|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 127,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Did you fight on the other side of the war from each other?\"",
+   "italian": "\t\"Avete combattuto su fronti opposti nella guerra?\"",
+   "ratio": 0.823
+  },
+  {
+   "idx": 17,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"You were on opposite sides as sisters!?\"|131|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 131,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"You were on opposite sides as sisters!?\"",
+   "italian": "\t\"Eravate su fronti opposti, pur essendo sorelle!?\"",
+   "ratio": 1.214
+  },
+  {
+   "idx": 18,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"It was good meeting you both, but I must get back to my business now.\"|136|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 136,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"It was good meeting you both, but I must get back to my business now.\"",
+   "italian": "\t\"È stato bello conoscervi entrambi, ma ora devo tornare ai miei affari.\"",
+   "ratio": 1.014
+  },
+  {
+   "idx": 19,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Hello. Sorry, but I don't have much time to talk.\"|140|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 140,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Hello. Sorry, but I don't have much time to talk.\"",
+   "italian": "\t\"Salve. Scusa, ma non ho molto tempo per parlare.\"",
+   "ratio": 0.981
+  },
+  {
+   "idx": 20,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Oh, we should've guessed you were too busy to chat,\" says Captain Rain.|143|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 143,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Oh, we should've guessed you were too busy to chat,\" says Captain Rain.",
+   "italian": "\t\"Ah, avremmo dovuto capire che eri troppo impegnato per chiacchierare\", dice il capitano Rain.",
+   "ratio": 1.301
+  },
+  {
+   "idx": 21,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"The war might be over, but I'm sure there's still plenty of work for a captain such as yourself to do,\" says Captain Fiona. \"Well it was at least nice to meet you. Stay well.\"|144|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 144,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"The war might be over, but I'm sure there's still plenty of work for a captain such as yourself to do,\" says Captain Fiona. \"Well it was at least nice to meet you. Stay well.\"",
+   "italian": "\t\"La guerra sarà anche finita, ma sono sicura che ci sia ancora molto lavoro per un capitano come te\", dice il capitano Fiona. \"Beh, almeno è stato bello conoscerti. Stammi bene.\"",
+   "ratio": 1.011
+  },
+  {
+   "idx": 22,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\t\"Joint police operation,\" says Captain Rain. \"It's more common than you may think.\"|150|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 150,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\t\"Joint police operation,\" says Captain Rain. \"It's more common than you may think.\"",
+   "italian": "\t\"Un'operazione di polizia congiunta\", dice il capitano Rain. \"È più comune di quanto tu possa pensare.\"",
+   "ratio": 1.238
+  },
+  {
+   "idx": 23,
+   "id": "mission:War Reactions: Navy and Free Worlds Captains|\tCaptain Fiona nods. \"We're shutting down a galactic Spider Funk smuggling operation. It's an illegal hallucinogenic. Not addictive, but still dangerous. The organization running it is huge, well funded, and well armed.\"|151|0",
+   "path": "data/human/post-war reactions.txt",
+   "line": 151,
+   "kind": "MISSION_TEXT",
+   "context": "mission:War Reactions: Navy and Free Worlds Captains",
+   "english": "\tCaptain Fiona nods. \"We're shutting down a galactic Spider Funk smuggling operation. It's an illegal hallucinogenic. Not addictive, but still dangerous. The organization running it is huge, well funded, and well armed.\"",
+   "italian": "\tIl capitano Fiona annuisce. \"Stiamo smantellando un'operazione di contrabbando di Spider Funk su scala galattica. È un allucinogeno illegale. Non dà dipendenza, ma resta pericoloso. L'organizzazione che lo gestisce è enorme, ben finanziata e ben armata.\"",
+   "ratio": 1.159
+  }
+ ]
+}

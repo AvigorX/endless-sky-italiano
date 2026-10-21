@@ -1,0 +1,63 @@
+{
+ "block": {
+  "path": "data/gegno/gegno events.txt",
+  "line_from": 45,
+  "line_to": 51,
+  "units": 4
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "event:gegno: vi occupy zydee|description|45|0",
+   "path": "data/gegno/gegno events.txt",
+   "line": 45,
+   "kind": "DESCRIPTION",
+   "context": "event:gegno: vi occupy zydee",
+   "english": "There is evidence that the nearby Gegno Scin have attempted to establish a presence on this barren moon in the form of several partially-constructed buildings and landing zones scattered about the surface. In recent times, however, the opposing Gegno Vi have fielded their own forces to take control of the system, and have begun a number of operations to convert existing infrastructure and set up posts of their own, claiming the moon in their name.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tdescription `There is evidence that the nearby Gegno Scin have attempted to establish a presence on this barren moon in the form of several partially-constructed buildings and landing zones scattered about the surface. In recent times, however, the opposing Gegno Vi have fielded their own forces to take control of the system, and have begun a number of operations to convert existing infrastructure and set up posts of their own, claiming the moon in their name.`",
+   "english_hash": "137d5c9db06ca1df"
+  },
+  {
+   "idx": 2,
+   "id": "event:gegno: vi occupy zydee|spaceport|46|0",
+   "path": "data/gegno/gegno events.txt",
+   "line": 46,
+   "kind": "DESCRIPTION",
+   "context": "event:gegno: vi occupy zydee",
+   "english": "The Vi have made makeshift landing zones and outposts, such as this one, for the group of warriors they've distributed across the moon. Although their numbers are no more than that of a small village, those who are present have accomplished a considerable amount during their time on the surface while the fleets above defend them.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tspaceport `The Vi have made makeshift landing zones and outposts, such as this one, for the group of warriors they've distributed across the moon. Although their numbers are no more than that of a small village, those who are present have accomplished a considerable amount during their time on the surface while the fleets above defend them.`",
+   "english_hash": "ea1af7913fe1b903"
+  },
+  {
+   "idx": 3,
+   "id": "event:gegno: vi occupy zydee|description|50|0",
+   "path": "data/gegno/gegno events.txt",
+   "line": 50,
+   "kind": "DESCRIPTION",
+   "context": "event:gegno: vi occupy zydee",
+   "english": "Ghneoe's orbital period is dominated by a very long dry season due to the binary stars at the system's center. However, during a short portion of the year, Ghneoe experiences an intense water cycle that results in a boom of greenery and wildlife activity, developing a short-lived but flourishing ecosystem. Much of the flora and fauna have adapted to such drastic shifts in climate, and return to a dormant state once the intense heat cycle returns.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\tdescription `Ghneoe's orbital period is dominated by a very long dry season due to the binary stars at the system's center. However, during a short portion of the year, Ghneoe experiences an intense water cycle that results in a boom of greenery and wildlife activity, developing a short-lived but flourishing ecosystem. Much of the flora and fauna have adapted to such drastic shifts in climate, and return to a dormant state once the intense heat cycle returns.`",
+   "english_hash": "ac6b8181dafcc975"
+  },
+  {
+   "idx": 4,
+   "id": "event:gegno: vi occupy zydee|description|51|0",
+   "path": "data/gegno/gegno events.txt",
+   "line": 51,
+   "kind": "DESCRIPTION",
+   "context": "event:gegno: vi occupy zydee",
+   "english": "\tUnlike its moon, Ghneoe sees few to no colonization efforts from either the Gegno Vi or Scin, perhaps due to the abnormal weather cycles, continued system warfare, or a combination of both.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\tdescription `\tUnlike its moon, Ghneoe sees few to no colonization efforts from either the Gegno Vi or Scin, perhaps due to the abnormal weather cycles, continued system warfare, or a combination of both.`",
+   "english_hash": "99d5b6469dcfa4e1"
+  }
+ ]
+}

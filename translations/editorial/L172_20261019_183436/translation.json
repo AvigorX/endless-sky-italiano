@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/human/paradise world jobs.txt",
+  "line_from": 1230,
+  "line_to": 1336,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Martini Relief (Medical) [0]|name|1230|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1230,
+   "kind": "VALUE",
+   "context": "mission:Martini Relief (Medical) [0]",
+   "english": "Disaster relief to Martini",
+   "italian": "Disaster relief to Martini",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "mission:Martini Relief (Medical) [0]|description|1231|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1231,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Relief (Medical) [0]",
+   "english": "Due to the recent nuclear bombings, bring <cargo> to <planet> to help treat the wounded. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.",
+   "italian": "A causa dei recenti bombardamenti nucleari, porta <cargo> su <planet> per aiutare a curare i feriti. Dovrai chiamare via radio il controllore dello spazioporto per ottenere il permesso di scendere sul pianeta. Il compenso è di <payment>.",
+   "ratio": 1.247
+  },
+  {
+   "idx": 3,
+   "id": "mission:Martini Relief (Medical) [1]|name|1251|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1251,
+   "kind": "VALUE",
+   "context": "mission:Martini Relief (Medical) [1]",
+   "english": "Disaster relief to Martini",
+   "italian": "Disaster relief to Martini",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "mission:Martini Relief (Medical) [1]|description|1252|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1252,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Relief (Medical) [1]",
+   "english": "Due to the recent nuclear bombings, bring <cargo> to <planet> to help treat the wounded. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.",
+   "italian": "A causa dei recenti bombardamenti nucleari, porta <cargo> su <planet> per aiutare a curare i feriti. Dovrai chiamare via radio il controllore dello spazioporto per ottenere il permesso di scendere sul pianeta. Il compenso è di <payment>.",
+   "ratio": 1.247
+  },
+  {
+   "idx": 5,
+   "id": "mission:Martini Relief (Reconstruction)|name|1272|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1272,
+   "kind": "VALUE",
+   "context": "mission:Martini Relief (Reconstruction)",
+   "english": "Construction supplies to Martini",
+   "italian": "Construction supplies to Martini",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "mission:Martini Relief (Reconstruction)|description|1273|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1273,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Relief (Reconstruction)",
+   "english": "Due to the recent nuclear bombings, bring <cargo> to <planet> to help the reconstruction efforts. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.",
+   "italian": "A causa dei recenti bombardamenti nucleari, porta <cargo> su <planet> per aiutare gli sforzi di ricostruzione. Dovrai chiamare via radio il controllore dello spazioporto per ottenere il permesso di scendere sul pianeta. Il compenso è di <payment>.",
+   "ratio": 1.241
+  },
+  {
+   "idx": 7,
+   "id": "mission:Martini Relief (Food)|name|1293|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1293,
+   "kind": "VALUE",
+   "context": "mission:Martini Relief (Food)",
+   "english": "Food packages to Martini",
+   "italian": "Food packages to Martini",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "mission:Martini Relief (Food)|description|1294|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1294,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Relief (Food)",
+   "english": "Due to the recent nuclear bombings, bring <cargo> to <planet> to help keep up supply. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.",
+   "italian": "A causa dei recenti bombardamenti nucleari, porta <cargo> su <planet> per aiutare a mantenere le scorte. Dovrai chiamare via radio il controllore dello spazioporto per ottenere il permesso di scendere sul pianeta. Il compenso è di <payment>.",
+   "ratio": 1.289
+  },
+  {
+   "idx": 9,
+   "id": "mission:Martini Relief (Water Tablets)|name|1314|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1314,
+   "kind": "VALUE",
+   "context": "mission:Martini Relief (Water Tablets)",
+   "english": "Water purification tablets to Martini",
+   "italian": "Water purification tablets to Martini",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "mission:Martini Relief (Water Tablets)|description|1315|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1315,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Relief (Water Tablets)",
+   "english": "Due to the recent nuclear bombings, bring <cargo> to <planet> to help keep up supply. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.",
+   "italian": "A causa dei recenti bombardamenti nucleari, porta <cargo> su <planet> per aiutare a mantenere le scorte. Dovrai chiamare via radio il controllore dello spazioporto per ottenere il permesso di scendere sul pianeta. Il compenso è di <payment>.",
+   "ratio": 1.289
+  },
+  {
+   "idx": 11,
+   "id": "mission:Martini Relief (Fire Retardant)|name|1335|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1335,
+   "kind": "VALUE",
+   "context": "mission:Martini Relief (Fire Retardant)",
+   "english": "Fire retardant to Martini",
+   "italian": "Fire retardant to Martini",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "mission:Martini Relief (Fire Retardant)|description|1336|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 1336,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Relief (Fire Retardant)",
+   "english": "Due to the recent nuclear bombings, bring <cargo> to <planet> to help keep up supply. You will need to hail the spaceport controller to gain clearance to the planet. Payment is <payment>.",
+   "italian": "A causa dei recenti bombardamenti nucleari, porta <cargo> su <planet> per aiutare a mantenere le scorte. Dovrai chiamare via radio il controllore dello spazioporto per ottenere il permesso di scendere sul pianeta. Il compenso è di <payment>.",
+   "ratio": 1.289
+  }
+ ]
+}

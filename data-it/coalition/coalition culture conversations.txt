@@ -1,0 +1,463 @@
+# Copyright (c) 2021 by Arachi-Lover
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Coalition Folklore: Saryd"
+	minor
+	invisible
+	to offer
+		random < 30
+	source
+		attributes "saryd"
+		attributes "folklore"
+	on offer
+		conversation
+			`Attraversando lo spazioporto, venite avvicinati da un Saryd vestito in modo insolitamente tradizionale, anche per gli standard Saryd. Vesti di seta non troppo diverse dai kimono umani gli coprono gran parte del corpo, e sottili corde stringono saldamente il tessuto vicino agli zoccoli.`
+			`	"Salute, Capitano. Interessati a partecipare a una celebrazione culturale, sareste?" chiede.`
+			choice
+				`	"Che tipo di celebrazione?"`
+				`	"Mi dispiace, in questo momento ho da fare."`
+					decline
+			`	"Una celebrazione del folklore Saryd, è", spiega. "Benché da molto tempo fra le stelle viviamo, i classici senza tempo di prima della nostra età spaziale, ancora celebriamo. Una serie di spettacoli teatrali su alcuni di essi, oggi ospitiamo. Guardarli gratis, chiunque può."`
+			choice
+				`	"Ho sempre tempo per una storia. Fate strada."`
+				`	"Non è proprio il momento per una storia. Passo."`
+					decline
+			`	Lo seguite fuori dalla città-spazioporto e nel profondo di una foresta vicina. Lungo la strada, altri Saryd con abiti antichi simili guidano altre persone che l'offerta aveva incuriosito.`
+			`	Arrivate a una radura da cui si diramano tre sentieri diversi, e in fondo a ciascuno distinguete una luce fioca. Dopo qualche minuto, sembra che tutti i Saryd coinvolti nella celebrazione siano arrivati. Prendono tre scrigni da dietro un cespuglio e li depongono davanti a voi e agli altri che hanno condotto fin lì.`
+			`	"Ora amici, scegliere il vostro sentiero, dovete", dice uno dei Saryd, e molti fra la folla prendono piccoli oggetti dagli scrigni, evidentemente già pratici del rito. Vi avvicinate a guardare dentro gli scrigni e vedete che ognuno contiene cose diverse: quello di sinistra è pieno di semi, quello centrale di conchiglie e quello di destra di piume.`
+			choice
+				`	(Prendi un seme.)`
+					goto seed
+				`	(Prendi una conchiglia.)`
+					goto pearl
+				`	(Prendi una piuma.)`
+			`	Quando avete la piuma fra le mani, gli organizzatori vi dicono di imboccare il sentiero di destra.`
+			`	La luce che avevate visto si rivela un falò accanto a un palco di legno, grande circa un terzo dei palcoscenici d'opera umani, e trovate posto su uno dei tronchi disposti vicino al fuoco. Diverse luci illuminano il palco e, alzando lo sguardo, riuscite appena a scorgere alcuni riflettori nascosti in alto fra gli alberi. Quando il pubblico è radunato, il sipario si apre e rivela molte piccole figure fatte di quello che sembra carta, in uno stile che ricorda alla lontana gli origami. Sono sostenute da sottili aste di legno dal basso o da fili dall'alto. Alcune figure sono vicine al punto in cui era il sipario, altre più in fondo al palco: i vari strati danno profondità alla scena. Dopo un breve momento, lo spettacolo comincia:`
+			`	Entrando in una radura, una cacciatrice Saryd dai capelli grigi si avvicina furtiva a un grande uccello posato su una roccia. Si muove lungo i bordi della radura, nascondendosi dietro cespugli e alberelli. Cerca il punto migliore da cui colpire l'uccello con una freccia, arco e freccia pronti fra le mani. Solo quando si avvicina a un grande ingresso della radura, sul lato opposto a quello da cui è entrata, trova il punto e prende la mira.`
+			`	Viene interrotta da un ruggito fragoroso e si getta a terra, evitando per un soffio la bestia che le era arrivata alle spalle. Non sapete quanto fedele sia la raffigurazione di carta della creatura, ma non potete descriverla altrimenti che come un "leone da siepe": un po' più grande dei leoni della Terra, con aculei al posto della criniera. Gli aculei proseguono in fila lungo la schiena fino alla punta della coda.`
+			`	Schivato l'assalto, la cacciatrice corre oltre l'uccello in cerca di copertura, ma la foresta non è abbastanza fitta per fermare l'avanzata della bestia. La belva attacca di nuovo e la ferisce in cima a una delle zampe anteriori. Lei la colpisce con un'altra zampa e prepara una freccia, ma riesce solo a graffiarle il muso. L'animale si solleva sulle zampe posteriori per colpirla dall'alto, ma resta stordito: l'uccello gli ha attaccato gli occhi, accecandolo! La cacciatrice è rapida a prendere la mira nello spiraglio che le si offre, e una freccia trafigge il torso della creatura. Caduto il leone da siepe, l'uccello vola via e il sipario si chiude.`
+				goto end
+			label seed
+			`	Quando avete il seme fra le mani, gli organizzatori vi dicono di imboccare il sentiero di sinistra.`
+			`	La luce che avevate visto si rivela un falò accanto a un palco di legno, grande circa un terzo dei palcoscenici d'opera umani, e trovate posto su uno dei tronchi disposti vicino al fuoco. Diverse luci illuminano il palco e, alzando lo sguardo, riuscite appena a scorgere alcuni riflettori nascosti in alto fra gli alberi. Quando il pubblico è radunato, il sipario si apre e rivela molte piccole figure fatte di quello che sembra carta, in uno stile che ricorda alla lontana gli origami. Sono sostenute da sottili aste di legno dal basso o da fili dall'alto. Alcune figure sono vicine al punto in cui era il sipario, altre più in fondo al palco: i vari strati danno profondità alla scena. Dopo un breve momento, lo spettacolo comincia:`
+			`	La figura al centro è un giovane Saryd che galoppa in una foresta fitta. Cominciano effetti sonori di tuono, sempre più frequenti, che echeggiano intorno a voi come in un vero temporale. Un pezzo di carta bianca a forma di fulmine scende rapido e colpisce uno degli alberi sulla strada del ragazzo. Pieghe a forma di fiamma piovono dall'alto del palco e si attaccano all'albero che cade, bloccando il passaggio. Il ragazzo si volta e corre altrove. Un altro fulmine, un altro albero che crolla. Dopo qualche ripetizione, il ragazzo è troppo stanco per correre. Ferito da alcune fiamme, ora zoppica nella foresta.`
+			`	Mentre guaisce e il tuono si avvicina di nuovo, scorge un albero diverso dagli altri: una grande quercia con rami più spessi di quelli degli alberi intorno. La raggiunge, si sdraia alla sua base e poco dopo si addormenta, mentre il sipario si chiude.`
+			`	Si riapre dopo qualche istante, con il ragazzo che si sveglia nel buio. Quando si alza, ai rumori profondi si accompagnano raggi di luce che raggiungono il suolo, e capisce che la grande quercia aveva abbassato i rami intorno a lui. Sollevandoli, i vari alberelli caduti sui rami della quercia durante la tempesta vengono scagliati lontano. Con il sole come guida, il ragazzo riesce a uscire dalla foresta e il sipario si chiude di nuovo.`
+				goto end
+			label pearl
+			`	Quando avete la conchiglia fra le mani, gli organizzatori vi dicono di imboccare il sentiero centrale.`
+			`	La luce che avevate visto si rivela un falò accanto a un palco di legno, grande circa un terzo dei palcoscenici d'opera umani, e trovate posto su uno dei tronchi disposti vicino al fuoco. Diverse luci illuminano il palco e, alzando lo sguardo, riuscite appena a scorgere alcuni riflettori nascosti in alto fra gli alberi. Quando il pubblico è radunato, il sipario si apre e rivela molte piccole figure fatte di quello che sembra carta, in uno stile che ricorda alla lontana gli origami. Sono sostenute da sottili aste di legno dal basso o da fili dall'alto. Alcune figure sono vicine al punto in cui era il sipario, altre più in fondo al palco: i vari strati danno profondità alla scena. Dopo un breve momento, lo spettacolo comincia:`
+			`	Un Saryd sta in cima a una specie di lunga piattaforma di legno, con uno sfondo blu profondo sotto di essa. Solo quando vedete la canna da pesca capite che è su una barca, a pescare in mare. Sente un morso, ma quando tira su non c'è nulla sull'amo. Sente un altro morso e di nuovo non trova nulla. Più e più volte guarda l'amo e trova l'esca ancora lì, intatta, eppure continua a sentire morsi, alcuni così forti che persino la barca si muove un po'. La giornata passa in fretta, con un pezzo di carta che rappresenta il sole che si sposta rapido da un lato del "cielo" all'altro.`
+			`	Quando scende la notte, le onde si fanno sempre più forti e il Saryd smette del tutto di pescare. Posa la canna sulla barca e cerca di dirigerla verso la riva, ma non trova la via. Si avvicina un'onda enorme che supera l'altezza del palco e inghiotte la barca.`
+			`	Il pescatore scalcia e lotta per l'aria, avendo perso la barca ed essendo ancora in balia delle grandi onde. La scena sul palco comincia a scendere, seguendo i calci, e qualcosa comincia a salire incontro alle zampe del Saryd. Mentre riporta la scena verso l'alto, una creatura che ricorda una balena, ma con pinne molto più grandi e lunghe che quasi si collegano alla coda, affiora in superficie. Sale piano e con cura, come se cercasse di offrire un terreno al marinaio. Si avvicina un'altra onda, grande abbastanza da inghiottirli entrambi, ma la balena continua a salire finché non è fuori dall'acqua.`
+			`	Mentre vola nel cielo notturno, la balena bada a non far cadere il Saryd, aspettando sempre che trovi un appoggio stabile prima di virare. Per il resto della notte danza lentamente nel cielo e, quando arriva il mattino e le onde si calmano, torna al mare e nuota vicino alla riva. Quando il Saryd è sulla spiaggia, si volta e vede la coda della balena colpire l'acqua mentre si tuffa di nuovo negli abissi, e il sipario si chiude.`
+			label end
+			`	Il pubblico comincia ad alzarsi e a fare un breve inchino verso il palco, con le mani strette insieme vicino al petto, come per applaudire in silenzio lo spettacolo. Quando quasi tutti hanno finito, si preparano ad andarsene e voi li seguite. Tornati alla radura, rimettete il piccolo oggetto nel suo scrigno dopo aver visto gli altri fare lo stesso, e gli organizzatori riaccompagnano tutti allo spazioporto.`
+			`	Arrivati là, il Saryd che vi aveva avvicinato per primo dice: "Che lo spettacolo vi sia piaciuto, spero", e vi saluta.`
+				decline
+
+
+
+mission "Coalition Folklore: Arach"
+	minor
+	invisible
+	to offer
+		random < 30
+	source
+		attributes "arach"
+		attributes "folklore"
+	on offer
+		conversation
+			`Poco dopo il vostro ingresso nello spazioporto, notate un'Arach in quello che immaginate essere un "abito" formale: un delicato drappo di seta che le copre gran parte del corpo, con ogni zampa avvolta in una gonna ricamata. Grida qualcosa a voce alta in un dispositivo di comunicazione personale, poi lo ripone con uno scatto. Come tutti quelli che l'hanno vista per un istante, cercate di distogliere lo sguardo, ma l'Arach si è già guardata intorno, vi ha visti e si è subito avvicinata. "Nostro onorevole visitatore umano, saluto", dice a voce alta mentre colma la distanza. "Dica, Capitano, apprezzate le belle arti, voi? A una serata culturale sono diretta, ma occupato dal lavoro il mio caro papà è, quindi vuoto il suo posto riservato è. Mi accompagnate, volete?"`
+			choice
+				`	"Di che evento si tratta?"`
+				`	"In questo momento ho da fare, quindi passo."`
+					decline
+			`	"Non un semplice ritrovo, ma una raccolta di opere di professionisti stimati, completata da un'orchestra dedicata, la serata è", spiega. "Una celebrazione del folklore Arach, è, a cui nei nostri abiti migliori noi patroni locali partecipiamo. Trasmesso in diretta per gli altri, lo spettacolo è anche, ma paragonarsi all'esecuzione dal vivo, non può."`
+			choice
+				`	"Va bene, mi interessa. Dove si tiene questa 'serata'?"`
+				`	"Il teatro non mi appassiona, mi dispiace."`
+					decline
+			`	La seguite attraverso la parte centrale della città fino a un edificio che dall'esterno sembra una specie di auditorium; lì alcuni Arachi in uniforme controllano gli ingressi dei "patroni" dell'evento. "Un umano? Un ospite piuttosto esotico, avete portato, signora Matlub", dice uno di loro alla vostra guida mentre lei gli mostra un touchpad con due biglietti. Lui li verifica e vi lascia entrare. L'interno vi ricorda un teatro d'opera: un grande palco davanti a decine di file di poltrone e sei ordini di balconate su entrambi i lati. Matlub vi conduce a due ottimi posti in una delle prime file e vi aiuta a "regolare" la poltrona perché stiate più comodi. Subito davanti al palco c'è una zona qualche gradino sotto il livello dei posti, con alcuni musicisti Arach che accordano strumenti diversi. Sul soffitto e su tutte le balconate vedete piccole telecamere puntate verso il palco, per trasmettere l'evento a chi non ha potuto assistervi dal vivo.`
+			`	Mentre file e balconate si riempiono di altri ospiti, notate qualche Kimek e qualche Saryd fra le masse di Arach; quasi tutti accompagnano un patrone Arach, qualcuno sembra essere a sua volta patrone, entrato da solo. Molti di loro vi notano mentre vi guardate intorno, ma la vostra patrone ignora l'attenzione con studiata indifferenza.`
+			choice
+				`	"Capisco perché ne parlavate con tanto entusiasmo: sembra un evento davvero ben organizzato."`
+				`	"Non capita tutti i giorni che si veda un umano a una serata così, immagino?"`
+			`	Annuisce. "Un evento prestigioso, questo è. Portare amici da tutta la Coalizione a vedere, i patroni lo fanno. L'ospite più singolare che abbiamo avuto, voi siete."`
+			`	Quando tutti i posti sono occupati, le porte si chiudono e un Arach sale sul palco. "Accogliervi, stimati ospiti, a questa celebrazione di saga e canto, il nostro teatro ha il piacere di", dice. "Farvi aspettare ancora, non voglio, quindi per la nostra prima opera, un classico senza tempo caro a tutti, vi presento: Toccato dalla Luna."`
+			`	Esce rapidamente di scena mentre il sipario si apre su una parete rocciosa con due gallerie laterali. L'orchestra comincia a suonare un tema lento e dolce su strumenti simili a fisarmoniche, e un giovane Arach entra in scena dalla galleria di sinistra. Si tiene aggrappato alla parete rocciosa, con una piccola lanterna appesa all'addome e un grosso sacco legato sulla schiena. Poi stacca pietre dagli angoli della parete, gettandone la maggior parte a terra ma mettendone alcune nel sacco che porta. Quando il sacco è pieno, entra nella galleria di destra e la parete rocciosa ruota per mostrare l'altro lato; lì il giovane minatore è mostrato sotto il cielo notturno mentre fonde il minerale raccolto. Mentre guarda verso l'alto del palco con la schiena rivolta al pubblico, le fisarmoniche si fanno più sommesse, un'arpa comincia a suonare lentamente e una luna piena compare in cima allo sfondo del cielo.`
+			`	Il sipario si chiude mentre la scena cambia, e si riapre con le fisarmoniche che accelerano. L'Arach è ora su una parete più grande, con una sola galleria in alto. Graffia via gli angoli rocciosi e le fisarmoniche seguono il suo ritmo. Quando ha estratto quasi tutto il minerale, la parete comincia a tremare, come se la miniera stesse crollando. Le fisarmoniche diventano irregolari mentre lui si precipita verso la galleria di fuga. Con un clamore febbrile, la parete rocciosa sembra smontarsi sul palco: grandi massi scendono con grazia dalla torre scenica e fanno crollare la miniera. Le fisarmoniche tacciono, ma dopo una lunga pausa riprendono piano, insieme all'arpa. Il giovane Arach emerge allora alla vista e spinge via un masso, poi un altro, poi un altro ancora. Va avanti così finché l'Arach non si ritrova in cima a una montagna di metallo scavata nella roccia, con la mano tesa verso la luna. Quando quasi la tocca, il sipario si chiude e la musica si ferma.`
+			`	Gli Arachi del pubblico strofinano due zampe l'una contro l'altra, come per applaudire alla fine dello spettacolo. Poco dopo alcuni si alzano e si dirigono verso l'uscita, mentre le porte si riaprono. Nello stesso tempo altri patroni entrano per occupare i posti rimasti vuoti. "Interessati solo ad alcune opere, alcuni patroni sono, quindi solo per quelle che vogliono vedere, restano", spiega Matlub. "Andare via dopo qualsiasi esecuzione, potete, se altrove dovete essere, ma restare per il resto dello spettacolo, io lo farò."`
+			choice
+				`	(Resta per il prossimo spettacolo.)`
+				`	(Vai via.)`
+					goto leave
+			`	Quando tutti sono seduti, lo stesso Arach di prima torna sul palco. "Una sorpresa per voi, stasera abbiamo. Un'opera nuovissima, commissionata da un gruppo anonimo di patroni. Una critica a una delle questioni che ancora permangono nella nostra società, descritta è. Per la nostra seconda opera: Bebliss Balbettante."`
+			`	Mentre esce, il sipario si apre su una scenografia di strada Arach, dove un piccolo sta comprando una specie di dolciume. Da dietro un edificio della scena emerge un Arach che indossa alti "calzini" blu e bianchi, mentre trombe e tube attaccano un motivo fastidioso. Corre verso il piccolo e gli fa cadere i dolci a terra emettendo una specie di gorgoglio. Matlub sospira: "Un garbuglio, è. Insensatezze, e parole che è meglio non tradurre." L'attore Arach continua aggrappandosi alle pareti dell'edificio e prendendo cose dalla bottega di dolci, gettandole all'impazzata. Ormai molti patroni ben vestiti, probabilmente membri di Casa Bebliss, si alzano e lasciano il teatro. Nel frattempo un gruppo di Arach su una delle balconate non cerca nemmeno di soffocare le risate.`
+			`	La scena continua con una coppia che arriva in scena camminando lungo la strada. Mentre stanno per chinarsi in quello che sembra un bacio, l'Arach salta dall'edificio e atterra sul giovanotto con un tonfo. Ruba il bacio, mentre tube e trombe soffiano con tutta la loro forza. Dopo un po' arrivano le autorità, e l'Arach se la dà a gambe lungo la strada. L'orchestra suona un motivo tanto scoordinato quanto i suoi movimenti, e il sipario si chiude. Non molti in platea si esprimono: quasi tutti sospirano o si preparano ad andarsene, tranne il gruppo che rideva prima, che ora proclama a voce alta il proprio apprezzamento. "Di sottigliezza, Casa Chamgar non ne ha", dice Matlub. "Un peccato, è, che abbiano sporcato la serata con questa rivalità."`
+			`	Le porte si riaprono mentre nuovi patroni entrano per la terza opera.`
+			choice
+				`	(Resta per il prossimo spettacolo.)`
+				`	(Vai via.)`
+					goto leave
+			`	Tutti prendono posto e l'annunciatore Arach torna sul palco. "Una tragedia catartica, la nostra terza opera di questa sera è. Per la prossima rappresentazione: Fino alla Morte."`
+			`	Le luci del palco si spengono mentre il sipario si apre su un solo riflettore, che illumina un vecchio Arach che si veste dentro una piccola baracca sul lato destro della scena. Tossisce, e qualcosa di simile a un organo comincia a suonare una melodia malinconica. Quando esce, la baracca resta al buio e il riflettore lo segue al centro del palco, dove percorre con cautela una strada vuota. Gli è consentito oltrepassare il riflettore, che si spegne mentre la prospettiva cambia e un secondo riflettore rinnova la messa a fuoco. Il lato sinistro del palco si illumina finalmente: lì l'Arach comincia a curare un giardino davanti all'ingresso di una villa. L'organo interrompe il suo pianto ogni tanto, proprio quando l'Arach tossisce, per riprendere appena ha finito. Uscendo dalla villa, un Arach vestito con ricchezza indica uno dei fiori del giardino, mostrando che è avvizzito e morto. Lo coglie, lo getta a terra e se ne va. Il giardiniere raccoglie il fiore, se lo infila nei vestiti e riprende il suo lavoro.`
+			`	Finito il lavoro, torna alla sua baracca, e i riflettori lo seguono mentre si muove per il palco. Una volta dentro, fruga in una piccola cassetta, prende un vaso semplice e ci mette il fiore. Il palco si oscura mentre si corica e il pianoforte tace; solo qualche colpo di tosse riecheggia nel teatro. Quando la luce torna sulla baracca, l'Arach si alza lentamente ed esce di nuovo per il suo lavoro, fermandosi un momento nella parte del palco che è la strada durante un accesso di tosse violento. Finito il lavoro, mentre comincia a tornare a casa, ricomincia a tossire senza tregua, senza pause di più di un secondo. Intanto i riflettori passano alla sezione successiva del palco e il pianoforte suona una breve nota. Entrato nella baracca, crolla a terra rovesciando il vaso del fiore. Il pianoforte suona qualche accordo lento e l'ultimo riflettore si spegne sull'ultima nota.`
+			`	Sentite il sipario che si chiude e le luci del teatro si riaccendono mentre il pubblico è preso da un applauso. Quando si calma, l'annunciatore sale di nuovo sul palco. "E con questo, conclusa, la nostra serata è. Ringraziarvi tutti per averci onorato della vostra presenza, io, a nome del teatro, voglio." Abbassa il capo in un inchino e lascia il palco mentre quasi tutti i patroni in sala si alzano e si dirigono verso l'uscita; questa volta nessuno entra a occupare i posti. Nello stesso tempo l'orchestra comincia a riporre gli strumenti. Alcuni, però, restano seduti, compresa Matlub.`
+			choice
+				`	(Resta.)`
+					goto end
+				`	(Vai via.)`
+			label leave
+			`	Ringraziate Matlub per l'invito e, anche se non sembra darvi molto peso, sentite gli sguardi degli altri patroni Arach su di voi, che sussurrano fra loro mentre ve ne andate.`
+				decline
+			label end
+			action
+				set "drak revelations: arachi"
+			`	I tecnici del teatro escono uno dopo l'altro, lasciando voi e gli altri ospiti davanti a un palco vuoto. Dopo un po' le luci si spengono. Un paio di minuti più tardi, però, sentite il sipario che si apre, mentre alcuni violini cominciano a suonare all'unisono. La loro musica non viene da dove era seduta l'orchestra, ma come se fosse diffusa in tutto il teatro, dietro di voi e perfino sulle balconate. Una luce forte arriva dal palco, in gran parte bloccata da un'alta figura scura. Non è un attore: sembra fatta di parti di legno tenute su da fili sottili che riuscite appena a scorgere guardando la sommità del palco. Il canto dei violini è interrotto da colpi di tamburo sordi e successivi, e a quel punto la figura si muove, con le "braccia" che si aprono ai lati; diventa ancora più alta mentre si alza in piedi. È una creatura umanoide, e comincia a muoversi lentamente per il palco, come se danzasse su un pendolo. I violoncelli si uniscono alle urla dei violini e poi entra un coro, le cui parole non riuscite a capire. Riconoscete però che non sta cantando in nessuna lingua della Coalizione.`
+			`	La creatura sembra avvicinarsi al pubblico, crescendo di dimensioni, e mentre coro e strumenti diventano più intensi, alza un braccio e stacca i fili. Nonostante questo resta in piedi e continua a muoversi. Avvicina entrambe le braccia e colpisce la propria testa formando due piccoli fori da cui passa la luce dello sfondo. Poi cade in ginocchio, con un braccio teso verso il pubblico, mentre la luce dietro di essa si spegne e coro e musica si attenuano.`
+			`	Le luci si riaccendono e rivelano il sipario ancora aperto, ma il palco vuoto. Qualche tecnico entra per riordinare, e gli ospiti rimasti si alzano per andarsene. "La serata vi è piaciuta, Capitano?", chiede Matlub, alzandosi a sua volta per andare. "Venite, ora: davvero finito, lo spettacolo adesso è."`
+			choice
+				`	"Che diavolo era quella cosa?"`
+				`	"Se è finito solo adesso, perché quell'annunciatore è salito dopo la terza opera per congedare gli ospiti?"`
+			`	Non risponde e si dirige dritta verso l'uscita. La seguite fuori e lei vi guida di nuovo alla vostra nave. "Grata che mi abbiate accompagnata, io sono, Capitano. Buon viaggio, possiate avere."`
+				decline
+
+
+
+mission "Coalition Folklore: Kimek"
+	minor
+	invisible
+	to offer
+		random < 30
+	source
+		attributes "kimek"
+		attributes "folklore"
+	on offer
+		conversation
+			`Un Kimek vi ferma appena entrate nello spazioporto. "Occupato, Capitano?", chiede. "Oggi in corso, un festival culturale è, e parteciparvi, chiunque può. Una rievocazione della vecchia fiaba dell''Assedio di Primavera', è. Interpretare uno dei personaggi, chiunque può."`
+			choice
+				`	"Sembra divertente. Dove si tiene?"`
+				`	"Mi dispiace, in questo momento ho troppo da fare."`
+					decline
+			`	Vi chiede di seguirlo e insieme prendete un treno che porta in un'altra zona della città; scendete al limitare di un grande parco. Lì vedete molti gruppi di accampamenti sparsi nella savana e altrettanti forti di legno che dominano dalla cima di un lungo pendio. Ogni "gruppo" di forte e accampamento è separato dagli altri da molte chiazze di vegetazione che salgono lungo il pendio.`
+			`	Seguite il Kimek ancora per un po', finché non trova una coppia di accampamento e forte con un posto libero da entrambe le parti. "Beh Capitano, scegliere una parte da interpretare, dovete. Prenderci la mano, ci riuscirete, una volta iniziato, l'evento è, ma come rapido riassunto: prendere i 'raccolti' dentro il forte prima che il tempo scada, la squadra attaccante deve. Impedirglielo, i difensori devono. Alla fine, premiati, i vincitori sono."`
+			choice
+				`	"Mi unisco agli attaccanti."`
+					goto attack
+				`	"Mi unisco ai difensori."`
+					goto defend
+				`	"Un momento: se questa è una fiaba, come mai la rievocate come se potesse vincere una parte qualsiasi?"`
+			`	Cinguetta, come se si aspettasse la domanda. "Vista da un menestrello, la battaglia fu. Viaggiando su campi come questi, lui era, quando il forte e l'accampamento dei predoni scorse in lontananza. Nascosto nel fogliame vicino alla scena, si era, e scrivendola e dipingendola mentre accadeva, stava. Quando la battaglia raggiunse il suo culmine, sollevati dal vento, molti fiori furono, e la vista gli bloccarono. Quando il vento si placò, finita, la battaglia era. Primavera era, così 'Assedio di Primavera' divenne il titolo della storia."`
+			`	Vedendo che avete ancora domande, continua. "Sciocca e priva di senso, a volte, la storia è. Lo sappiamo, noi, e che il menestrello cercasse solo di intrattenere il pubblico, ma con ogni forma di racconto classico, non è forse così?" Cinguetta ancora, guarda il gruppo in cima al pendio e l'altro nell'accampamento, poi riprende. "Per quanto estraneo possa sembrare, partecipare, non lo farete? Forse divertirvi, potreste."`
+			choice
+				`	"Va bene, mi unisco agli attaccanti."`
+					goto attack
+				`	"Va bene, mi unisco ai difensori."`
+			label defend
+			`	Vi conduce al piccolo forte in cima al pendio. I cancelli si aprono mentre quelli dentro (per lo più Kimek, come previsto, ma anche un paio di Arach e un Saryd solitario) si stanno ancora preparando. Al centro c'è una piccola "fattoria", con riproduzioni di plastica al posto dei raccolti. Le mura del forte sono fatte di grossi tronchi, fittamente coperti da ciuffi di spine rossastre e insidiose, lunghe quasi quanto un braccio. All'interno vedete che un livello superiore con merli è raggiungibile da scale ai due lati del cortile; notate anche che i difensori indossano tutti una striscia di stoffa verde sopra i vestiti. Un altro organizzatore Kimek, con un gilet di cuoio grezzo che immaginate essere l'equivalente Kimek dell'armatura medievale, vi viene incontro al cancello. Saluta il collega, che vi presenta e dice che avete scelto di unirvi ai difensori, poi torna giù per il pendio.`
+			`	"Lieti di avervi nella guarnigione, il nostro forte è", esordisce il Kimek corazzato. "Informati sull'obiettivo del nemico, immagino che siate. Proteggere la nostra fattoria, dobbiamo, quindi lasciare che i raccolti vengano rubati, non possiamo." Vi dice di seguirlo fino al "maschio", una baracca troppo piccola per chiunque non sia Kimek, e vi consegna un lungo pezzo di stoffa verde. Vi spiega poi che va indossato, così che gli altri capiscano a quale squadra appartenete. Mentre ve lo avvolgete come una sciarpa, notate che dietro la baracca c'è un cancello più piccolo, che dà accesso al forte. Quando avete finito, vi fa fare un breve giro del resto del forte, portandovi sui merli e sopra il cancello principale, dove vedete secchi con quello che a prima vista sembra acqua. La guida vi spiega che il liquido dentro è in realtà piuttosto scivoloso e che durante la rievocazione viene versato lungo il pendio per rallentare gli attaccanti.`
+			`	Quando ha finito, vi dice di aspettare nel cortile, perché la "battaglia" comincerà presto. Passano alcuni minuti prima che risuoni un fischietto acuto, e il Kimek a capo del forte annuncia a tutti che l'altra parte ha iniziato l'attacco. Il cancello principale è chiuso e alcuni difensori cominciano a sistemare oggetti pesanti dietro per sbarrare l'ingresso; altri sono già sui merli, in attesa del momento giusto per usare i secchi di liquido scivoloso.`
+			choice
+				`	(Aiuta a rinforzare il cancello principale.)`
+					goto "defend r"
+				`	(Vai ad aiutare a rallentare gli attaccanti.)`
+					goto "defend w"
+			label "defend r"
+			`	Vi unite agli altri nel radunare e spostare oggetti pesanti e trovate presto alcune casse dietro la baracca, che un paio di Arach aiutano a portare al cancello. Alcuni Kimek prendono tronchi che trovano accatastati sotto una scala e li portano a loro volta, conficcandone un'estremità nel terreno e appoggiando l'altra contro la porta. Il liquido versato sugli attaccanti li rallenta per qualche minuto, ma quando avete finito stanno già martellando il cancello. Quasi tutti quelli dentro il forte, in particolare il Saryd che si è unito, corrono al cancello principale per cercare di tenerlo chiuso, ma alcuni Kimek girano dietro a controllare il cancello più piccolo.`
+			choice
+				`	(Aiuta a tenere chiuso il cancello principale.)`
+					goto "defend rw"
+				`	(Vai con gli altri a controllare il cancello posteriore.)`
+			`	Arrivati al cancello posteriore, voi e i Kimek restate in silenzio e tendete l'orecchio a chiunque si avvicini da quel lato del forte. In effetti, sentite le zampe Kimek frusciare nell'erba mentre gli attaccanti aggirano il forte. Per fortuna non molti sono venuti a questo cancello, così, con il vostro aiuto, i compagni Kimek non fanno molta fatica a tenerlo chiuso. Grazie al fatto che il cancello principale è stato rinforzato, il gruppo là tiene abbastanza bene che altri vengono sul retro a dare una mano, e dopo qualche minuto di lotta con gli attaccanti sul cancello risuona un altro fischietto. Segna che il tempo è scaduto e che i difensori hanno vinto.`
+				goto won
+			label "defend rw"
+			`	Con le fortificazioni di prima che aiutano a tenerlo chiuso, difendere il cancello principale si rivela abbastanza facile. Dopo qualche minuto, però, sentite un trambusto da dietro la baracca. Andate a controllare con gli altri e arrivate a vedere il cancello piccolo aperto: gli attaccanti, che portano fasce blu al posto del verde della vostra squadra, sono già entrati. Il fischietto risuona di nuovo, segnando la fine della battaglia e la vittoria degli attaccanti.`
+				goto lost
+			label "defend w"
+			`	Salite le scale e ricevete uno dei secchi con la sostanza scivolosa. Notate però che quassù sono tutti Kimek e Arach, e che versano il liquido solo direttamente davanti al cancello. Quando vedete alcuni attaccanti con le fasce blu avanzare dai lati, dove il liquido non è stato versato, lanciate un secchio nella loro direzione. Questo lascia una striscia di liquido su quel lato, e quelli che attaccano da lì perdono l'appoggio, inciampando e cadendo più e più volte. Quando i compagni capiscono cosa avete fatto, cominciano a incitarvi, spingendovi a lanciare altri secchi per coprire i lati mentre loro continuano a inondare il centro. Nonostante i vostri sforzi, però, gli attaccanti riescono alla fine a salire il pendio e cominciano a martellare il cancello. Quasi tutti quelli dentro il forte, compreso il Saryd, corrono al cancello principale per cercare di tenerlo chiuso, ma alcuni Kimek girano invece dietro a controllare il cancello più piccolo.`
+			choice
+				`	(Aiuta a tenere chiuso il cancello principale.)`
+					goto "defend ww"
+				`	(Vai con gli altri a controllare il cancello posteriore.)`
+			`	Arrivati al cancello posteriore, voi e i Kimek restate in silenzio e tendete l'orecchio a chiunque si avvicini da quel lato del forte. In effetti, sentite le zampe Kimek frusciare nell'erba mentre gli attaccanti aggirano il forte. Per fortuna non molti sono venuti a questo cancello, così, con il vostro aiuto, i compagni Kimek non fanno molta fatica a tenerlo chiuso. Il gruppo al cancello principale non è altrettanto fortunato, però, e dopo un breve minuto il fischietto risuona di nuovo. Il vostro gruppo torna nel cortile e trova il cancello sfondato: gli attaccanti con le fasce blu hanno vinto.`
+				goto lost
+			label "defend ww"
+			`	All'inizio tenere il cancello non è troppo difficile, ma dopo qualche minuto comincia a essere martellato da una specie di ariete, e in poco tempo il gruppo là non riesce più a tenerlo chiuso. Nello stesso tempo sentite un trambusto da dietro la baracca e, andando a controllare con gli altri, arrivate a vedere il cancello piccolo aperto. Con gli attaccanti entrati da entrambi i cancelli, il fischietto risuona di nuovo, segnando la fine della battaglia e la vittoria dell'altra parte.`
+				goto lost
+			label attack
+			`	Vi conduce all'accampamento vicino, dove molti Kimek, Arach e perfino qualche Saryd si sono radunati per l'evento. Quasi tutti aspettano con impazienza dentro una delle tende, o guardano verso il forte; tutti portano lunghe strisce di stoffa blu sopra i vestiti. Quando nota voi due, un'altra organizzatrice Kimek, con addosso quello che sembra un farsetto imbottito, viene a salutarvi. Saluta il collega, che vi presenta e le dice che avete scelto di unirvi agli attaccanti, poi lascia l'accampamento per accogliere una famiglia venuta ad assistere all'evento.`
+			`	"Onorate di avervi a combattere al nostro fianco, la nostra compagnia è", esordisce la Kimek corazzata. "Informati sul nostro obiettivo, immagino che siate. Entrare nel forte, dobbiamo, prima che il tempo scada. Dieci minuti, abbiamo, una volta iniziata, la battaglia è." Vi dice di seguirla fino alla "tenda da guerra", un po' più grande delle altre intorno. Lì vi consegna un lungo pezzo di stoffa blu e vi spiega che va indossato, così che gli altri capiscano a quale squadra appartenete. Mentre ve lo avvolgete attorno al collo come una sciarpa e vi guardate intorno nella tenda principale, vedete che qui è custodito un tronco tozzo rinforzato con pezzi di metallo, che la Kimek dice servirà da ariete per forzare i cancelli. Vi fa poi seguire fino al bordo dell'accampamento per mostrarvi i confini di questo "gruppo", segnati da chiazze di vegetazione che indicano i limiti del gioco. "Inoltre, scoraggiare chiunque dal provarci, le spine dovrebbero, ma contro le regole, è, arrampicarsi sulle mura del forte, quindi..." Si interrompe, guardandovi come se solo ora si rendesse conto che per voi una cosa del genere è impossibile. "Scusate, per abitudine, l'ho detto. Partecipare a questo evento, non molti di voi legati al suolo lo fanno; pochi Saryd qui ho incontrato. Ancor meno umani, come potete immaginare."`
+			`	Quando ha finito, vi dice che siete liberi di girare per l'accampamento mentre aspettate che la "battaglia" cominci. Passano alcuni minuti prima che risuoni un fischietto acuto, e la Kimek a capo dell'accampamento annuncia a tutti che è arrivato il momento. Guida la carica su per il pendio, con quasi tutti quelli dell'accampamento dietro di lei. Altri si dividono in gruppi più piccoli e salgono lungo gli alberi che separano i gruppi, cercando di avvicinarsi al forte dai lati.`
+			choice
+				`	(Carica con il gruppo principale.)`
+					goto "attack w"
+				`	(Prendi la strada più lunga, di lato.)`
+					goto "attack r"
+			label "attack w"
+			`	Seguite l'esempio della Kimek e cominciate a correre dritto su per il pendio, verso il forte. Avvicinandovi, però, vedete i difensori, con le strisce di stoffa verde invece che blu, versare secchi di quello che sembra acqua. Quando il liquido scende lungo il pendio incontro ai vostri passi, però, perdete subito l'equilibrio e i piedi scivolano via da sotto, e scivolate per un breve tratto giù per il pendio. Vi rialzate, ma per quanto proviate non trovate un appoggio stabile nell'erba bagnata, e dovete mettere i piedi sui pochi ciuffi cresciuti troppo alti perché il liquido li coprisse. Anche con tutte le loro zampe, i Kimek e i Saryd non se la cavano meglio e si trovano in difficoltà simili, perdendo l'equilibrio ancora e ancora. Solo gli Arach riescono ad avanzare, scavando nella terra sotto l'erba con metà delle zampe a ogni passo. Piano ma con sicurezza aiutano voi e gli altri a salire, e alla fine raggiungete il cancello, per scoprire che i gruppi arrivati dai lati stanno già lavorando per sfondarlo. Vedete anche che cosa intendeva la Kimek parlando di "spine": ciuffi di barbe rossastre e insidiose, lunghe quasi quanto un braccio, coprono i tronchi che formano le mura.`
+			choice
+				`	(Prova a trovare un altro modo per entrare.)`
+					goto "attack wr"
+				`	(Aiuta gli altri a sfondare il cancello.)`
+			`	Cominciate a spingere insieme agli altri: i Saryd si uniscono dal basso, i Kimek e gli Arach salgono strisciando per spingere sulla parte alta del cancello. Si danno il cambio quando qualcuno si stanca, così c'è sempre chi spinge, anche se i loro tentativi non sono dei più efficaci. Dopo un po' sentite uno schiocco e il cancello comincia finalmente a cedere di poco, come se qualcosa che lo sbarrava si fosse spezzato. Quando arrivano gli ultimi della forza principale, portando l'ariete, tutti si fanno da parte perché comincino a batterlo contro il cancello. Il cancello trema a ogni colpo e via via cede sempre di più, ma nemmeno la squadra dell'ariete riesce a sfondare in tempo: il fischietto che segna l'inizio dell'evento risuona di nuovo. Evidentemente significa che il tempo è scaduto e che i difensori hanno vinto.`
+				goto lost
+			label "attack wr"
+			`	Voi e una parte del gruppo restate vicini alle mura e le seguite fino all'altro lato, attenti a non graffiarvi con le spine lungo il forte. Trovate presto un altro cancello, più piccolo, e cominciate a spingere. A differenza di quanto potete vedere degli sforzi lasciati al cancello principale, sentite che questo cede subito, e non c'è terreno scivoloso di cui preoccuparvi. Quando si accorgono della vulnerabilità di questo cancello, i Saryd del gruppo chiedono agli altri di farsi da parte. Trasalite un po' quando lo caricano all'improvviso all'unisono, quasi forzandolo con un solo sforzo concertato. Arrivano però altri difensori a tenerlo, e il cancello diventa sempre più difficile da muovere. Un Arach torna al gruppo principale a chiedere altro aiuto, ma quando arrivano, arrivano anche altri difensori. La lotta continua per molti minuti, e gli attaccanti al vostro fianco non riescono a sfondare. Il fischietto risuona di nuovo, segnando la fine della battaglia e annunciando che i difensori hanno vinto.`
+				goto lost
+			label "attack r"
+			`	Seguite un gruppo fino ai bordi di questo gruppo, perdendo un po' di tempo prima di cominciare la corsa su per il pendio. Quando alla fine partite, vi voltate e vedete il gruppo principale inciampare e cadere all'indietro più e più volte. Sembra che i difensori, che portano contrassegni verdi invece che blu, stiano versando del liquido scivoloso dai merli sopra il cancello, rallentando chi arriva lungo la via diretta. Raggiungete la cima mentre la forza principale sta ancora lottando, e il vostro gruppo si dirige al cancello. Lungo la strada vedete che cosa intendeva la Kimek parlando di "spine": ciuffi ravvicinati di barbe rossastre e insidiose, lunghe quasi quanto un braccio, coprono i tronchi che formano le mura. Arrivate al cancello, ma per quanto spingiate non cede di un millimetro, chiaramente sbarrato dall'interno. Alla fine il gruppo principale vi raggiunge, ma anche con molte più persone a spingere il cancello resta saldo e immobile.`
+			choice
+				`	(Prova a trovare un altro modo per entrare.)`
+					goto "attack rr"
+				`	(Continua a cercare di sfondare il cancello.)`
+			`	Cominciate a spingere insieme agli altri: i Saryd si uniscono dal basso, i Kimek e gli Arach salgono strisciando per spingere sulla parte alta del cancello. Si danno il cambio quando qualcuno si stanca, così c'è sempre chi spinge, anche se i loro tentativi non sono dei più efficaci. Dopo un po' sentite uno schiocco e il cancello comincia finalmente a cedere di poco, come se qualcosa che lo sbarrava si fosse spezzato. Quando arrivano gli ultimi della forza principale, portando l'ariete, tutti si fanno da parte perché comincino a batterlo contro il cancello. Il cancello trema a ogni colpo e via via cede sempre di più, ma nemmeno la squadra dell'ariete riesce a sfondare in tempo: il fischietto che segna l'inizio dell'evento risuona di nuovo. Evidentemente significa che il tempo è scaduto e che i difensori hanno vinto.`
+				goto lost
+			label "attack rr"
+			`	Voi e una parte del gruppo restate vicini alle mura e le seguite fino all'altro lato, attenti a non graffiarvi con le spine lungo il forte. Trovate presto un altro cancello, più piccolo, e cominciate a spingere. A differenza di quanto potete vedere degli sforzi lasciati al cancello principale, sentite che questo cede subito, e non c'è terreno scivoloso di cui preoccuparvi. Quando si accorgono della vulnerabilità di questo cancello, i Saryd del gruppo chiedono agli altri di farsi da parte. Trasalite un po' quando lo caricano all'improvviso all'unisono, quasi forzandolo con un solo sforzo concertato. Arrivano però altri difensori a tenerlo, e il cancello diventa sempre più difficile da muovere. Un Arach torna al gruppo principale a chiedere altro aiuto, ma quando arrivano, arrivano anche altri difensori. La lotta continua per un po', finché non sentite forti colpi dall'altro lato del forte. L'organizzatrice Kimek gira sul retro per dire a tutti di tornare all'ingresso principale. Arrivati al cancello principale, vedete che l'ariete l'ha sfondato: cosa che dev'essere stata più facile perché in tanti l'avevano lasciato incustodito per difendere il cancello posteriore. A quel punto il fischietto risuona di nuovo, segnando la fine della battaglia e annunciando che gli attaccanti hanno vinto.`
+			label won
+			`	L'organizzatrice Kimek a capo della vostra parte lancia un evviva, che si diffonde rapidamente fra gli altri. Dopo che i capi delle due squadre si sono incontrati per salutarsi, a tutti viene chiesto di restituire la stoffa colorata ricevuta e di scendere dal pendio. Il vostro gruppo viene indirizzato a un edificio vicino per lavarsi via la terra, se serve. Una volta puliti, tornate all'accampamento, dove il Kimek che vi ha portato qui vi aspetta per guidarvi a molti tavoli bassi con i piatti sopra; a quanto pare, la ricompensa per la vittoria è un banchetto. Dato che quasi tutti i partecipanti sono Kimek, quasi tutto il cibo è preparato come piace a loro: una poltiglia brodosa e parzialmente digerita. Per fortuna ci sono alcuni pasti preparati come piacciono alle altre specie, quindi potete sceglierne uno pensato per i Saryd; i loro piatti sono quanto di più vicino alla cucina umana ci sia, qui.`
+			`	Il primo piatto Saryd offerto è fatto di molte verdure cotte, disposte in un piccolo mucchio sul piatto, con un sottile filo di vapore che ancora sale. Parlando con gli organizzatori, venite a sapere che i pasti vogliono rappresentare i raccolti della "fattoria" del forte, e che chi vince si guadagna il diritto al banchetto. Finito di mangiare, tornate dove il treno vi ha lasciati e salite sul successivo, diretto allo spazioporto.`
+				decline
+			label lost
+			`	L'organizzatore Kimek dell'altra parte lancia un evviva, che si diffonde rapidamente fra gli altri. Dopo che i capi delle due squadre si sono incontrati per salutarsi, a tutti viene chiesto di restituire la stoffa colorata ricevuta e di scendere dal pendio. Il vostro gruppo viene indirizzato a un edificio vicino per lavarsi via la terra, se serve. Una volta puliti, il Kimek che vi ha portato qui vi aspetta accanto all'accampamento per guidare i vostri avversari ai molti tavoli bassi con i piatti; a quanto pare, la ricompensa per la vittoria è un banchetto. "Un peccato, è, che la battaglia la vostra squadra abbia perso", dice. "Ma spero che, comunque, l'evento vi sia piaciuto."`
+			`	Prima di andarsene con i vincitori, vi spiega qualcosa in più sull'evento, dicendovi che i pasti serviti al banchetto vogliono rappresentare i raccolti della "fattoria" del forte, e che chi vince se ne guadagna il diritto. Infine vi ringrazia per aver partecipato e va con i vincitori ai tavoli. Voi tornate dove il treno vi ha lasciati e salite sul successivo, diretto allo spazioporto.`
+				decline
+
+
+
+mission "Coalition Departing Trouble - A"
+	minor
+	invisible
+	to offer
+		has "Coalition: First Contact: done"
+		random < 2
+	source
+		government "Coalition"
+		not attributes "coalition station"
+	on enter
+		fail
+		conversation
+			`La vostra nave evita per un soffio alcune piccole navi della Coalizione mentre uscite dall'atmosfera di <origin>. Nemmeno un secondo dopo, mentre siete ancora storditi dallo scampato urto, la <ship> rischia di nuovo di essere colpita da navi in arrivo, questa volta da navi da guerra Heliarch, in quella che sembra un inseguimento serrato alle navi di prima.`
+			`	Dopo che sono passate tutte, controllate le comunicazioni e il radar e trovate altre navi civili nei paraggi che sembrano aver provato uno shock simile al vostro. Alcune navi restano sospese sopra <origin> per un po', come se non sapessero cosa fare. Altre scattano via con i motori a piena potenza e lasciano il sistema in un battito di ciglia; altre ancora decidono alla fine di atterrare di nuovo, o troppo curiose della situazione, o forse desiderose di evitare guai.`
+			branch heliarch
+				has "joined the heliarchs"
+			branch lunarium
+				has "joined the lunarium"
+			`	Qualche minuto dopo, vedete alcune navi Heliarch fra quelle che vi erano passate vicine lasciare il pianeta. Non vi badano e, con vostro grande sollievo, questa volta mantengono una distanza di sicurezza dalla vostra nave.`
+				decline
+			label heliarch
+			`	Qualche minuto dopo, vedete alcune navi Heliarch fra quelle che vi erano passate vicine lasciare il pianeta, mantenendo questa volta una distanza di sicurezza dalla vostra nave. Il capitano di una di esse, un Interdictor Heliarch, vi chiama, si scusa per il disturbo di prima e accenna brevemente al fatto che hanno riportato la situazione sotto controllo. Vi augura buona giornata e si prepara a lasciare il sistema.`
+				decline
+			label lunarium
+			`	Qualche minuto dopo, vedete alcune navi Heliarch fra quelle che vi erano passate vicine lasciare il pianeta. Non vi badano e, con vostro grande sollievo, questa volta mantengono una distanza di sicurezza dalla vostra nave. Non potete fare a meno di chiedervi se le navi che stavano inseguendo portassero membri del Lunarium, o se fossero soltanto altri civili sfortunati.`
+	npc
+		personality launching fleeing uninterested
+		government "Heliarch"
+		fleet
+			names "heliarch"
+			variant
+				"Heliarch Hunter"
+				"Heliarch Interdictor"
+				"Heliarch Breacher"
+
+
+
+mission "Coalition Departing Trouble - B"
+	minor
+	invisible
+	to offer
+		has "Coalition: First Contact: done"
+		random < 2
+	source
+		government "Coalition"
+	on enter
+		fail
+		conversation
+			`Quando siete a buona distanza da <origin>, i sensori vi segnalano pericolo nel sistema: diverse esplosioni e un torrente di proiettili attraversano lo spazio vicino. Vi preparate in fretta alla minaccia, per scoprire poi che sono navi civili della Coalizione a saltare in aria verso il centro del sistema. Alcune navi da guerra Heliarch stanno in mezzo a loro e passano dall'una all'altra, indifferenti ai rottami mentre i vascelli esplodono intorno a loro.`
+			branch heliarch
+				has "joined the heliarchs"
+			branch lunarium
+				has "joined the lunarium"
+			branch neither
+				not "joined the heliarchs"
+				not "joined the lunarium"
+			label heliarch
+			`	Sembrano abbordare le poche navi non danneggiate abbastanza da avere lo scafo squarciato. Dopo pochi minuti sembrano averne preso il controllo e le fanno seguire le navi da guerra fuori dal sistema.`
+			`	Una delle navi vi chiama brevemente, apparentemente di buon umore mentre festeggia la cattura dei criminali. Vi augura buona giornata e buona fortuna nei vostri incarichi, e chiude le comunicazioni mentre si prepara a partire.`
+				decline
+			label lunarium
+			`	Sembrano abbordare le poche navi non danneggiate abbastanza da avere lo scafo squarciato. Dopo pochi minuti sembrano averne preso il controllo e le fanno seguire le navi da guerra fuori dal sistema.`
+			`	Mentre date un'occhiata ai rottami delle navi civili, provate un senso di disagio. Peggio ancora è il pensiero che vi colpisce poco dopo: se qualcuno dei capi del Lunarium che avete incontrato fosse a bordo di una di quelle navi.`
+				decline
+			label neither
+			`	Sembrano abbordare le poche navi non danneggiate abbastanza da avere lo scafo squarciato. Dopo pochi minuti sembrano averne preso il controllo e le fanno seguire le navi da guerra fuori dal sistema.`
+				decline
+	npc
+		personality waiting fleeing uninterested
+		government "Heliarch"
+		fleet
+			names "heliarch"
+			variant
+				"Heliarch Punisher"
+				"Heliarch Interdictor"
+				"Heliarch Hunter"
+				"Heliarch Neutralizer"
+		fleet
+			names "saryd"
+			variant
+				"Saryd Visitor"
+				"Saryd Runabout"
+		fleet
+			names "kimek"
+			variant
+				"Kimek Spire"
+				"Kimek Thistle"
+		fleet
+			names "arach"
+			variant
+				"Arach Spindle"
+				"Arach Transport"
+
+
+
+mission "Coalition Departing Trouble - C"
+	minor
+	invisible
+	to offer
+		has "Coalition: First Contact: done"
+		not "assisting lunarium"
+		not "joined the heliarchs"
+		random < 2
+	source
+		government "Coalition"
+	on enter
+		fail
+		conversation
+			`Partite e trovate una specie di schermo di navi da guerra Heliarch intorno a <origin>, che la circondano e si avvicinano a tutte le navi civili in partenza. Non va diversamente per la vostra <ship>, e ben presto venite chiamati da un Punisher Heliarch che si avvicina alla vostra posizione.`
+			`	"Saluti, Capitano <last>. Un'ispezione di routine, stiamo facendo. Vi abbordiamo tra un momento, per verificare la sicurezza della vostra nave, poi vi lasciamo ai vostri affari."`
+			branch lunarium
+				has "joined the lunarium"
+			`	Chiudono la comunicazione prima che possiate rispondere, e il Punisher si prepara ad abbordare la <ship>, mentre altre navi da guerra si radunano intorno alla scena. Decine di agenti Heliarch armati entrano in silenzio nella vostra nave e controllano con diligenza le cuccette, la cabina di pilotaggio, la sala macchine...`
+			`	In pochi minuti sembrano soddisfatti di aver messo la vostra nave sottosopra, e tornano tutti al Punisher. Vi ringraziano per la "collaborazione," e le navi vi aprono la strada per ripartire.`
+				decline
+			label lunarium
+			`	Chiudono la comunicazione prima che possiate rispondere, e il Punisher si prepara ad abbordare la <ship> mentre altre navi da guerra si radunano intorno alla scena. Benché non stiate svolgendo alcun incarico per il Lunarium, la preoccupazione cresce mentre il Punisher si avvicina e si collega alla vostra nave. Fate del vostro meglio per mantenere un contegno calmo mentre decine di agenti Heliarch armati entrano in silenzio nella vostra nave e controllano con diligenza le cuccette, la cabina di pilotaggio, la sala macchine...`
+			`	In pochi minuti sembrano soddisfatti di aver messo la vostra nave sottosopra, e tornano tutti al Punisher. Vi ringraziano per la "collaborazione", e le navi vi aprono la strada per ripartire. Quando sono abbastanza lontani dalla <ship>, cominciate a setacciarla in cerca di qualcosa che possano aver lasciato per tenervi d'occhio. Molto più tardi nella giornata, dopo aver verificato che non c'è nulla del genere, tirate un sospiro di sollievo.`
+	npc
+		personality waiting staying uninterested surveillance
+		government "Heliarch"
+		fleet
+			names "heliarch"
+			fighters
+				names "heliarch fighter"
+			variant
+				"Heliarch Punisher"
+				"Heliarch Punisher"
+				"Heliarch Interdictor"
+				"Heliarch Interdictor"
+				"Heliarch Hunter"
+				"Heliarch Hunter"
+				"Heliarch Judicator"
+				"Heliarch Judicator"
+				"Heliarch Pursuer" 4
+				"Heliarch Rover" 4
+				"Heliarch Stalker" 4
+				"Heliarch Neutralizer"
+				"Heliarch Neutralizer"
+				"Heliarch Neutralizer"
+				"Heliarch Breacher"
+				"Heliarch Breacher"
+				"Heliarch Breacher"
+
+
+
+mission "Coalition Incident: Secret Sky"
+	minor
+	invisible
+	to offer
+		has "Coalition: First Contact: done"
+		random < 3
+	source "Secret Sky"
+	on offer
+		conversation
+			`Vedete un capitano Arach che si aggira di fretta per lo spazioporto, parlando con chiunque sia disposto ad ascoltarlo. Conversa brevemente con ognuno, mostrando qualcosa in un piccolo monitor, e poco dopo passa al successivo. Dopo un po' arriva a voi.`
+			`	"Capitano? Un momento, se siete liberi?" chiede, agitando le zampe per accendere il monitor. Mostra l'immagine di un giovane Kimek. "Un mio passeggero. Fermato qui per far scendere alcuni pellegrini Saryd, ci eravamo, ma dopo averli salutati, ritrovare questo Kimek nella mia nave, non sono riuscito!" esclama, indicando un Transport Arach parcheggiato appena prima del punto in cui la nebbia fitta di <origin> vi toglie la vista. "Visto da qualche parte, l'avete?"`
+			choice
+				`	"Mi dispiace, no. Avete provato a contattare gli Heliarch locali?"`
+				`	"Mi dispiace, ma non l'ho visto nemmeno io."`
+					goto end
+			`	Annuisce. "Contattati un paio d'ore fa, li avevo. Cercare il mio passeggero nelle sezioni riservate, avrei voluto, ma lì non sono ammesso, quindi ho pensato di chiedere il loro aiuto." Sospira. "Presentato un rapporto e mandato alcuni agenti a cercarlo, l'hanno fatto, ma finora nessuna notizia da loro, non ho ricevuto."`
+			label end
+			`	Vi ringrazia comunque per averlo ascoltato e passa alla persona successiva nello spazioporto per chiedere del Kimek scomparso.`
+				decline
+
+
+
+mission "Coalition Incident: Hunger Tower"
+	minor
+	invisible
+	to offer
+		has "Coalition: First Contact: done"
+		random < 1
+	source
+		government "Coalition"
+		attributes "kimek"
+		not attributes "coalition station"
+		not attributes "farming"
+	on offer
+		conversation
+			`Lo spazioporto qui su <origin> è nel pieno di un trambusto. Migliaia di Kimek sembrano organizzati in quella che, cosa strana per un mondo della Coalizione, somiglia a una protesta. Alcuni portano dispositivi che ripetono un messaggio in lingua Kimek. Altri tengono cartelli che raffigurano la solita dieta Kimek, con i loro molti raccolti che condividono lo spazio con qualche pesce. La cosa più strana, però, è come gli Heliarch locali stanno gestendo la situazione: sembrano quasi esitanti, parlano ai civili in tono difensivo per cercare di calmarli, a volte si scusano o sono semplicemente costretti ad ascoltare le lamentele mentre diversi Kimek si accalcano intorno a loro.`
+			`	Quando alla fine riuscite a trovare un Heliarch non impegnato a tenere in ordine la zona, un Saryd, vi spiega la situazione. "Mancato la sua consegna, un convoglio di cibo ha. Ancora indaghiamo sul problema, noi; sappiamo solo che, in qualche modo, scomparsa, l'intera flotta è..." Sospira, scuotendo la testa. "Tenere calmi i locali, dobbiamo." Si allontana ad aiutare gli altri Heliarch, senza aggiungere altro.`
+			`	In pochi minuti che agli agenti Heliarch di stanza saranno sembrati ore, battaglioni di droni cominciano a uscire dall'edificio più alto della città: la torre della fame. Trasportando ciascuno diversi pasti, con una precisione impressionante, i droni volano fra la massa dei civili e distribuiscono il cibo. Centinaia di droni più grandi si dirigono verso le zone residenziali, presumibilmente per fornire ai cittadini le scorte necessarie fino all'arrivo del prossimo convoglio. Apparentemente soddisfatti, almeno per il momento, i Kimek si disperdono via via dallo spazioporto verso casa, lasciando lo spazioporto agli agenti Heliarch ormai esausti.`
+				decline
+
+
+
+mission "Coalition Incident: Arach Store"
+	minor
+	invisible
+	to offer
+		has "Coalition: First Contact: done"
+		random < 2
+	source
+		government "Coalition"
+		attributes "arach"
+		not attributes "coalition station"
+		not planet "Ahr"
+	on offer
+		conversation
+			`Una pattuglia Heliarch sembra discutere con un commesso Arach davanti a un grande negozio di abbigliamento Arach dall'aspetto prestigioso, nello spazioporto. Altri agenti impediscono a voi e agli altri presenti di avvicinarvi, ma dai loro gesti riuscite comunque a capire qualcosa. Sembra che gli Heliarch siano lì per confiscare alcuni capi del negozio che, immaginate, non rispettano le loro leggi, mentre il commesso cerca con preoccupazione di rispondere alle domande che gli pongono.`
+			`	Alla fine arriva la proprietaria del negozio. A giudicare dai suoi abiti raffinati e dalle reazioni degli Arach del posto, immaginate che sia molto famosa qui su <origin>, o forse che appartenga a una delle Casate Arach, anche se nulla nel suo abbigliamento sembra indicare una Casata precisa. Aiuta il commesso a calmarsi, poi si mette a conversare con gli agenti Heliarch mentre lui rientra nel negozio.`
+			`	Cerca di sdrammatizzare, parlando con calma e tentando di riportare i capi dentro il negozio, ma gli agenti Heliarch non cedono. Persa la pazienza, l'Heliarch a capo della pattuglia la interrompe mentre parla, prende con la forza tutti i capi in questione e fa strappare dagli agenti quelle che immaginate essere le parti incriminate dei tessuti. Sbalordita, l'Arach guarda mentre riducono la maggior parte dei capi a stracci inutilizzabili, tenendosi i pezzi che hanno tagliato e restituendole gli altri resti laceri. Senza aggiungere parola, lasciano la scena. L'Arach rientra, e da dove siete potete sentire la porta sbattere.`
+				decline
+
+
+
+mission "Coalition Incident: Ring of Wisdom"
+	minor
+	invisible
+	to offer
+		has "Coalition: First Contact: done"
+		random < 3
+	source "Ring of Wisdom"
+	on offer
+		conversation
+			`Dopo qualche minuto che camminate per lo spazioporto di <origin>, l'illuminazione passa all'improvviso dalle solite tonalità riposanti a una cacofonia di segnalazioni lampeggianti. Messaggi di avviso diagnostico compaiono su ogni tipo di schermo, e le sirene sono interrotte solo da messaggi d'allarme ripetuti in tutte e tre le lingue della Coalizione. Notate che non solo i civili nell'anello sono allarmati come voi, ma ogni agente Heliarch in vista comincia a muoversi a passo frettoloso, anche se ordinato, verso le sezioni riservate, le stanze e i magazzini riservati agli Heliarch.`
+			`	Non passa molto prima che centinaia di altri Heliarch arrivino da altre sezioni dell'anello. Quando il flusso finalmente si ferma, li vedete prendere il controllo dei macchinari vicino al bordo della sezione, attivando un'enorme barriera retrattile che isola questa parte dal resto dell'anello. Anche il traffico delle navi viene interrotto del tutto: squadroni Heliarch impediscono a qualunque nave di partire e navi da guerra sbarrano visibilmente gli ingressi degli hangar. Gli Heliarch organizzano i civili in fretta, allontanandoli dalla zona dove si sta radunando la maggior parte degli agenti.`
+			`	Mentre anche voi venite sospinti via dagli agenti, riuscite a strappare qualche informazione a uno di loro: una squadra Heliarch che esplorava una delle sezioni sconosciute dell'anello ha avuto una specie di incidente, e uno dei membri dovrebbe tornare nella zona dove si sta radunando la maggior parte degli agenti. Gli Heliarch restano in armi, pronti, con le armi puntate verso una porta che dà alle sezioni riservate e, come resi muti dall'attesa, tutti nella sezione in quarantena sembrano trattenere il respiro.`
+			`	In effetti, i molti minuti di silenzio sono rotti da urla che riecheggiano e si fanno sempre più forti: un'unica voce, incessante, che arriva dal passaggio chiuso sorvegliato dalle canne di quello che dev'essere un centinaio di fucili Heliarch. Un tonfo alla porta chiusa si fa strada per un istante fra le grida continue. La porta si apre su un Saryd solo e fuori di sé, con lo sguardo profondamente sconvolto. Non si ferma alla vista delle canne puntate contro di lui: estrae la propria arma e la punta verso il punto da cui è venuto, sparando all'impazzata nel passaggio buio.`
+			`	Poi si ferma. Le urla e gli spari cessano di colpo, e il Saryd lascia cadere l'arma e crolla a terra. Resta lì, senza reagire, catatonico, mentre gli agenti Heliarch si avvicinano per esaminarlo e alla fine lo nascondono del tutto alla vista. Qualche secondo dopo alcuni Heliarch indietreggiano e poi corrono verso una stanza riservata. Altri restano saldi di guardia, con le armi puntate verso il Saryd o verso il passaggio da cui è venuto.`
+			`	Alla fine arriva una squadra con quello che somiglia vagamente a una barella molto grande e una specie di grosso sacco. Gli agenti Heliarch intorno al Saryd si fanno da parte per lasciar passare chi porta l'attrezzatura e, in pochi minuti, portano via il Saryd, chiuso nel sacco come in un sacco per cadaveri e trasportato sulla barella. A metà strada verso le porte chiuse della sezione si fermano, perché il Saryd si muove in modo irregolare dentro il sacco, scalciando e dimenandosi all'impazzata. Si ferma in pochi secondi, e riprendono la via fuori dalla porzione dell'anello in quarantena.`
+			`	Passano diversi minuti prima che gli agenti Heliarch considerino sicuro il passaggio da cui è corso fuori il Saryd; alcune squadre entrano, mentre altre si muovono per riportare la sezione alla normalità. Sollevata la quarantena, quasi tutti i civili corrono alle proprie navi e partono immediatamente.`
+				decline

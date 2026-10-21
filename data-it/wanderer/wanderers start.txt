@@ -1,0 +1,3092 @@
+# Copyright (c) 2015 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "First Contact: Wanderer (Before Hai)"
+	landing
+	source
+		attributes "wanderer"
+	to offer
+		not "First Contact: Hai: offered"
+		not "First Contact: Unfettered: offered"
+	on offer
+		conversation
+			`Tutti gli altri mondi di questa specie sono sembrati riluttanti a lasciarti atterrare, ma qui trovi un'accoglienza leggermente più calorosa. Una nube di piccole navi di pattuglia, molto manovrabili, decolla dal pianeta mentre ti avvicini e ti spinge verso una piazzola di atterraggio precisa, dove dopo qualche minuto diversi alieni si avvicinano alla tua nave.`
+			`	Questa specie è di aspetto avicolo, ma con corpi quasi grandi quanto il tuo e ali che ti sovrastano. Scendono in picchiata dal cielo, girano intorno alla tua nave per ispezionarla, poi atterrano vicino al portello e aspettano che tu lo apra. Non sembrano armati, ma i loro artigli sono lunghi otto o nove centimetri.`
+			`	Con esitazione apri il portello e li saluti. Uno degli alieni ti parla: un suono fatto di trilli e schiocchi. Non hai idea di che cosa stia dicendo.`
+			choice
+				`	"Salve. Vengo in pace."`
+				`	"Mi chiamo <first>. Sono lieto di conoscervi."`
+			`	L'alieno si sporge in avanti mentre parli, come se cercasse di decifrare le tue parole. "Iyik'ka'ak kareek elik, ek karu karai kavet," dice. Scuoti la testa per far capire che non hai capito, e provi di nuovo a parlargli nella tua lingua. Di nuovo si sporge in avanti come se fosse profondamente concentrato su ciò che dici.`
+			`	Gli altri alieni in piedi accanto a lui ti esaminano con la stessa curiosità. Alla fine uno di loro dice al capo: "Ek kalek kiro suk i'hai, sek speru siyek ka'hai esek'ru fer'ek." Il capo risponde con un gesto, aprendo i palmi, e il secondo alieno fa un passo avanti e si rivolge a te in una lingua del tutto diversa, che non somiglia affatto a un canto di uccelli. Anzi, a giudicare dalla difficoltà che sembra avere nel pronunciarla, sospetti che sia la lingua di una specie completamente diversa. Purtroppo per te non è più comprensibile del linguaggio degli uccelli.`
+			`	Fanno altri tentativi di comunicare con te, ma senza successo. Alla fine rinunciano, e tutti tranne il capo se ne vanno. Il capo fa un gesto ampio verso il resto dello spazioporto, invitandoti apparentemente a esplorare.`
+				decline
+
+
+
+mission "First Contact: Wanderer"
+	landing
+	name "Un interprete Hai?"
+	description "Gli alieni a nord dello spazio Hai sembrano parlare la lingua Hai. Se riesci a trovare un Hai disposto a fare da interprete, forse potrai comunicare con loro."
+	source
+		attributes "wanderer"
+	to offer
+		or
+			has "First Contact: Hai: offered"
+			has "First Contact: Unfettered: offered"
+	to complete
+		has "Wanderers: Diplomacy: offered"
+	on offer
+		log "Scoperta una specie aliena di aspetto avicolo a nord dello spazio umano. Sembrano parlare la lingua Hai oltre alla propria, quindi con l'aiuto di un interprete Hai potrebbe essere possibile comunicare con loro."
+		conversation
+			branch revisit
+				has "First Contact: Wanderer (Before Hai): offered"
+			`Tutti gli altri mondi di questa specie sono sembrati riluttanti a lasciarti atterrare, ma qui trovi un'accoglienza leggermente più calorosa. Una nube di piccole navi di pattuglia, molto manovrabili, decolla dal pianeta mentre ti avvicini e ti spinge verso una piazzola di atterraggio precisa, dove dopo qualche minuto diversi alieni si avvicinano alla tua nave.`
+			`	Questa specie è di aspetto avicolo, ma con corpi quasi grandi quanto il tuo e ali che ti sovrastano. Scendono in picchiata dal cielo, girano intorno alla tua nave per ispezionarla, poi atterrano vicino al portello e aspettano che tu lo apra. Non sembrano armati, ma i loro artigli sono lunghi otto o nove centimetri.`
+			`	Con esitazione apri il portello e li saluti. Uno degli alieni ti parla: un suono fatto di trilli e schiocchi. Non hai idea di che cosa stia dicendo.`
+			choice
+				`	"Salve. Vengo in pace."`
+				`	"Mi chiamo <first>. Sono lieto di conoscervi."`
+			`	L'alieno si sporge in avanti mentre parli, come se cercasse di decifrare le tue parole. "Iyik'ka'ak kareek elik, ek karu karai kavet," dice. Scuoti la testa per far capire che non hai capito, e provi di nuovo a parlargli nella tua lingua. Di nuovo si sporge in avanti come se fosse profondamente concentrato su ciò che dici.`
+				goto hai
+			
+			label revisit
+			`Come prima, vieni scortato a terra da uno stormo delle piccole navi aliene, e alcune di loro volano fino alla tua nave e aspettano che tu esca per provare a parlare con loro. Come prima, non riconosci la loro lingua e loro non capiscono la tua, anche se il loro capo sembra concentrato intensamente nel tentativo di capirti.`
+			
+			label hai
+			`	Gli altri alieni in piedi accanto a lui ti esaminano con la stessa curiosità. Alla fine uno di loro dice al capo: "Ek kalek kiro suk i'hai, sek speru siyek ka'hai esek'ru fer'ek." Il capo risponde con un gesto, aprendo i palmi, e il secondo alieno fa un passo avanti e comincia a parlare in una lingua del tutto diversa. Dopo un momento, con sorpresa ti rendi conto che sta parlando la lingua degli Hai. La difficoltà che ha nel produrre i suoni gli dà un accento piuttosto rude, ma è quasi certamente l'Hai.`
+			`	"Hai, parli la lingua degli Hai?" chiedi. Ti metti le mani a coppa sopra le orecchie per imitare le grandi orecchie da roditore degli Hai.`
+			`	"Iy, ka'hai!" dice l'alieno, frullando le ali in quello che interpreti come un gesto di entusiasmo, "Speru ek ka'hai?" Allo stesso tempo, però, uno degli altri alieni fa un passo indietro e ti mostra gli artigli. Ti viene in mente che gli Hai forse qui non sono visti di buon occhio.`
+			choice
+				`	"Mi dispiace, non parlo la loro lingua."`
+				`	"Ci sono Hai qui?"`
+			`	Lo stesso alieno parla di nuovo, mimando la tua nave che vola in cielo e poi torna, e poi indica il tuo portello e ripete per gli Hai il gesto delle orecchie da roditore. Credi che ti stia dicendo di andare a cercare uno degli Hai che possa fare da interprete e di portarlo qui.`
+				accept
+	on visit
+		dialog `La tua nave è circondata dagli alieni avicoli. Quando scendi sul pianeta, uno degli alieni sembra riconoscerti. "Ka'hai?" sembrano chiedere, imitando ancora una volta con gli arti piumati le orecchie da roditore degli Hai. Scuoti la testa, perché sei tornato senza un Hai che faccia da interprete. Forse sarebbe saggio andare davvero dagli Hai prima di tornare, per vedere se qualcuno verrà con te.`
+
+
+
+mission "Discovered Wanderer Space"
+	landing
+	invisible
+	non-blocking
+	source
+		government "Wanderer"
+	on offer
+		event "label wanderer space"
+		fail
+
+event "label wanderer space"
+	galaxy "label wanderers"
+		sprite "label/wanderers"
+
+
+mission "Wanderers: Unfettered Diplomat"
+	landing
+	source
+		attributes "unfettered"
+	to offer
+		has "First Contact: Wanderer: offered"
+		has "First Contact: Unfettered: offered"
+		not "unfettered know of wanderers"
+		not "Wanderers: Hai Diplomat: offered"
+		not "Wanderers: Diplomacy: offered"
+	on offer
+		conversation
+			`Gli alieni a nord dello spazio Hai sembrano parlare la lingua Hai. Vuoi cercare qualcuno qui che possa fare da interprete?`
+			branch hai
+				has "First Contact: Hai"
+			choice
+				`	(Sì.)`
+					goto try
+				`	(Non adesso.)`
+					defer
+			label hai
+			choice
+				`	(Sì.)`
+				`	(No; gli altri Hai a sud di qui sono più adatti a questo.)`
+					decline
+			label try
+			`	Cerchi per lo spazioporto qualche segno di un governo locale. Alla fine uno degli Hai ti si avvicina. "Sei perduto, scimmia. Che cosa stai cercando?"`
+			choice
+				`	"Sai dove posso parlare con un funzionario?"`
+				`	"Sai dove posso trovare un interprete?"`
+					goto interpreter
+				`	"Sto bene, grazie mille."`
+					goto decline
+			`	L'Hai dice: "Se il motivo per cui vuoi parlare con i nostri capi è valido, ti ci porterò."`
+			`	"Cerco un interprete Hai," dici.`
+			label interpreter
+			`	Ti guarda di traverso, perplessa. "A che servirebbe un interprete? Le mie parole le capisci, no?"`
+			choice
+				`	"Me ne serve uno per parlare con gli alieni a nord di qui."`
+				`	"Penso che farò meglio a trovare uno dei capi da solo."`
+					goto decline
+			`	L'Hai arriccia il naso. "Scimmia sciocca. Abbiamo già contattato quegli alieni; un altro emissario ci serve a poco."`
+			choice
+				`	"Potete comunque fornirmi un interprete?"`
+				`	"Ho capito."`
+					goto end
+			`	"Non ti serve un interprete. Ti basta sapere che quegli alieni non valgono la pena di parlarci."`
+			label end
+			`	L'Hai se ne va, lasciandoti a cavartela da solo nello spazioporto.`
+				decline
+			label decline
+			`	L'Hai sbuffa. "Se non cerchi aiuto, né cerchi di aiutare, allora non hai posto sui nostri mondi." Si allontana, e passi un'altra ora a girare per lo spazioporto prima di rinunciare e tornare alla tua nave.`
+				decline
+
+
+
+mission "Wanderers: Hai Diplomat"
+	landing
+	name "Diplomatico Hai"
+	description "Recati su Hai-home a prendere un diplomatico che possa aiutarti a comunicare con i Wanderers."
+	source
+		not planet "Hai-home"
+		attributes "hai"
+	destination "Hai-home"
+	clearance
+	to offer
+		has "First Contact: Wanderer: offered"
+		has "First Contact: Hai: offered"
+		not "Wanderers: Diplomacy: offered"
+	on offer
+		conversation
+			`Gli alieni a nord dello spazio Hai sembrano parlare la lingua Hai. Vuoi cercare qualcuno qui che possa fare da interprete?`
+			choice
+				`	(Sì.)`
+				`	(Non adesso.)`
+					defer
+			`	Riesci a contattare l'ufficio del governatore locale, ma quando parli con lui ti dice: "Primo contatto? Umano, questo non è un compito per un Hai qualsiasi. Devi andare sul nostro mondo d'origine, dove un ambasciatore ufficiale può unirsi a te. Li contatterò e dirò loro di aspettarti."`
+				accept
+	on accept
+		"reputation: Hai" >?= 20
+		"reputation: Hai (Wormhole Access)" >?= 20
+		"reputation: Hai Merchant" >?= 20
+		"reputation: Hai Merchant (Human)" >?= 20
+		"reputation: Hai Merchant (Sympathizers)" >?= 20
+		"reputation: Hai" += 30
+		"reputation: Hai (Wormhole Access)" += 30
+		"reputation: Hai Merchant" += 30
+		"reputation: Hai Merchant (Human)" += 30
+		"reputation: Hai Merchant (Sympathizers)" += 30
+
+
+
+mission "Wanderers: Diplomacy"
+	landing
+	name "Diplomazia Wanderer"
+	description "Recati sul mondo d'origine dei Wanderers con un ambasciatore Hai che possa aiutarti a comunicare con loro."
+	source "Hai-home"
+	destination "Vara K'chrai"
+	clearance
+	passengers 1
+	to offer
+		has "First Contact: Wanderer: offered"
+	on offer
+		log "People" "Sayari" `L'ambasciatrice Sayari, una Hai, un secolo fa è stata loro inviata presso il governo umano (anche se nello spazio umano non esistono documenti pubblici che lo attestino). Ora gli Hai le hanno assegnato l'incarico di diplomatica presso i Wanderers, e anche quello di traduttrice.`
+		conversation
+			`Mentre ti avvicini a Hai-home, contatti il governo Hai e chiedi se sarebbero disposti a fornire un ambasciatore che ti aiuti a comunicare con gli alieni a nord, che sembrano parlare la lingua Hai. Ti indirizzano subito verso un hangar governativo privato, dove un diplomatico ti viene incontro. Ti porge una zampa in segno di saluto e dice: "Mi chiamo Sayari. Un secolo fa ero l'inviata presso il governo umano."`
+			`	Per quanto ne sai, la Repubblica non ha mai nominato gli Hai né ha mai ammesso pubblicamente di aver ricevuto un loro inviato.`
+				to display
+					not "hai space start"
+			choice
+				`	"Aspetta, la Repubblica umana sa che gli Hai esistono? Prima di trovare il cunicolo spaziale avevo sentito solo vaghe voci della vostra esistenza."`
+					to display
+						not "hai space start"
+				`	"Aspetta, la Repubblica umana sa che gli Hai esistono?"`
+					to display
+						has "hai space start"
+				`	"Piacere di conoscerti. Sei disposta a viaggiare con me?"`
+					goto travel
+			
+			`	Ride, alla maniera degli Hai: un rapido suono di cinguettii. "Sì, gli umani e gli Hai temevano entrambi che troppi umani sarebbero emigrati tutti insieme se avessero saputo delle nostre terre tranquille. Così abbiamo convenuto che gli Hai sarebbero rimasti un segreto, sempre qui perché gli avventurosi li scoprissero, ma difficili da trovare, così che l'immigrazione umana fosse abbastanza lenta da permetterci di adattarci poco alla volta."`
+			`	"Sei tu la traduttrice che viaggerà con me?" chiedi.`
+			label travel
+			`	"Sì," dice. "Se questi alieni mi daranno un posto, intendo vivere con loro in modo permanente, ambasciatrice fra il loro popolo e il nostro. Sono vecchia, e ho bisogno di una grande novità come questa per rendere di nuovo interessante la mia vita." Noti che il pelo del suo viso, soprattutto sul muso, è passato dal marrone al grigio argento: un segno dell'età nelle creature terrestri, e forse anche negli Hai.`
+			choice
+				`	"Sono contento di avere la compagnia di un'ambasciatrice così illustre. Andiamo subito a visitare questi alieni!"`
+					accept
+				`	"E se gli umani volessero un loro inviato presso questi alieni?"`
+			`	Dice: "Se si dimostrano amichevoli, ti aiuterò a trovare il modo di comunicare con loro direttamente, così non dovrai usare me come intermediaria. Ma il primo passo deve essere parlare con loro." La aiuti a salire sulla tua nave e ti prepari a tornare sul mondo d'origine degli alieni.`
+				accept
+	
+	on accept
+		fail "First Contact: Wanderer"
+	on visit
+		dialog `La tua nave è circondata dagli alieni avicoli. Quando scendi sul pianeta, uno degli alieni sembra riconoscerti. "Ka'hai?" sembrano chiedere, imitando ancora una volta con gli arti piumati le orecchie da roditore degli Hai. Provi a fare un gesto verso Sayari, ma ti imbarazzi quando ti rendi conto di averla lasciata su una delle tue scorte, che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers: Translation Machine"
+	landing
+	name "Macchina per tradurre"
+	description "Sayari, l'ambasciatrice Hai, ti ha suggerito di visitare <destination>, dove alcuni tecnologi Hai lavorano alle macchine per tradurre."
+	source "Vara K'chrai"
+	destination "Greenwater"
+	to offer
+		has "Wanderers: Diplomacy: done"
+	on offer
+		log `Sei riuscito a comunicare con i "Wanderers" avicoli con l'aiuto di un'ambasciatrice Hai. Si scopre che sono sotto attacco degli Hai Slegati già da tempo, e che hanno imparato la lingua Hai grazie ai prigionieri.`
+		log "Factions" "Wanderers" `I Wanderers sono una specie avicola che abita una piccola regione di spazio confinante con quello degli Hai. Sono sotto attacco degli Hai "Slegati" già da tempo. I Wanderers si dichiarano pacifici, e la maggior parte delle loro navi non è progettata per uso militare.`
+		conversation
+			`Ancora una volta i Wanderers ti permettono di atterrare, ma con un grande stormo delle loro navi da guerra leggere che ti circonda per spingerti in una zona di atterraggio precisa. Una piccola delegazione di Wanderers incontra te e Sayari, e saluta lei con esitazione in lingua Hai. Lei risponde, e segue uno scambio acceso. Non capisci nulla di quello che dicono.`
+			choice
+				`	(Chiedile di che cosa stanno parlando.)`
+				`	(Aspetta una pausa nella conversazione.)`
+			`	Alza una zampa verso di te mentre dice ancora qualche frase, poi dice: "Dicono che gli Hai li stanno attaccando, e vogliono sapere perché. Devono essere gli Slegati a depredarli, e io sto cercando di spiegare che gli Slegati non rappresentano il popolo Hai nel suo insieme."`
+			`	Continuano a parlare per un po', poi i Wanderers ti rivolgono una domanda. Sayari traduce: "Vogliono sapere che cosa vogliono gli umani, e perché sei venuto nel loro territorio."`
+			choice
+				`	"Sono solo un esploratore individuale. Non rappresento la mia specie né i suoi governi."`
+					goto explorer
+				`	"Spero che le nostre specie possano trarre entrambe vantaggio dallo scambio di merci e tecnologie."`
+					goto trade
+				`	"Credo che specie diverse dovrebbero comunicare fra loro invece di restare in un isolamento forzato."`
+					goto communication
+			
+			label explorer
+			`	Rispondono, e Sayari traduce: "Dicono che, come te, sono viaggiatori, e che questa regione di spazio non è la loro casa, quindi accoglieranno volentieri altri ospiti qui. Ma ti avvertono che se tradisci la loro fiducia, non sarà facile riconquistarla. Dicono anche..." Si ferma mentre i Wanderers parlano di nuovo, poi continua a tradurre. "Dicono che nei loro viaggi hanno incontrato poche specie davvero capaci di vivere in pace, e sperano che la tua sia una di quelle, perché..." Di nuovo si ferma mentre i Wanderers parlano, poi dice: "Perché odiano farsi nuovi amici solo per perderli di nuovo."`
+				goto end
+			
+			label trade
+			`	Rispondono, e Sayari traduce: "Dicono che forse sarebbero disposti a commerciare con te, anche se stipulare un accordo commerciale più ampio con gli umani sarebbe una decisione seria, che non possono prendere alla leggera." Si ferma ad ascoltare di nuovo, poi continua: "Dicono anche che discuteranno fra loro se darti accesso alla tecnologia dei Wanderers, ma anche questa non sarà una decisione presa in fretta." Si ferma mentre i Wanderers parlano di nuovo, poi continua a tradurre. "Dicono che nei loro viaggi hanno incontrato poche specie davvero capaci di vivere in pace, e sperano che la tua sia una di quelle, perché..." Di nuovo si ferma mentre i Wanderers parlano, poi dice: "Perché odiano farsi nuovi amici solo per perderli di nuovo."`
+				goto end
+			
+			label communication
+			`	Rispondono, e Sayari traduce: "Dicono che la loro specie in passato ha incontrato molte altre specie, e ha sempre trovato quegli incontri preziosi. Anche se..." Si ferma ad ascoltare mentre i Wanderers continuano a parlare. "Anche se, dicono, nei loro viaggi molto più spesso che incontrare specie vive si ritrovano a frugare fra i resti di una specie che si è distrutta con la guerra o per incuria. Sperano che tu non sia una di quelle, perché..." Di nuovo si ferma mentre i Wanderers parlano, poi dice: "Perché odiano farsi nuovi amici solo per perderli di nuovo."`
+			
+			label end
+			`	Parlando tramite Sayari, cerchi di rassicurare i Wanderers sulle tue intenzioni pacifiche. Parlano ancora un po' con lei. Ti dice: "Dicono che mi sarà permesso restare qui come ambasciatrice, e che ti lasceranno atterrare sulla maggior parte dei loro mondi. Ma non accoglieranno altri Hai nel loro territorio. Temo che diffidino degli Hai per le azioni degli Slegati, e che essere associato a me possa danneggiare le tue possibilità di conquistare il loro favore. Per il tuo bene, dovremmo trovare un altro modo perché tu possa comunicare con loro."`
+			choice
+				`	"Come possiamo fare?"`
+			`	Dice: "Ci sono scienziati sul mondo Hai di <planet> che sviluppano macchine parlanti, per permettere agli Hai che non conoscono la lingua umana di comunicare con gli umani. Scriverò una lettera chiedendo loro di darti una di queste macchine parlanti, così potrai parlare con i Wanderers senza bisogno di me come intermediaria."`
+				accept
+	on accept
+		"reputation: Wanderer" >?= 10
+
+
+
+conversation "eruk cultural data"
+	branch return
+		has "Human Cultural Archives: done"
+	`Atterri su <origin> e cerchi il tecnologo che Sayari ti ha detto di contattare: un Hai di nome Eruk. Gli occhi gli si illuminano quando gli descrivi che cosa ti serve da lui, e perché. "Contatto con una nuova specie! Che emozione," dice. "Sono contento per Sayari che le sia stata offerta un'occasione simile. Ma le nostre macchine parlanti sono molto preziose. Prima che te ne dia una, mi faresti un piccolo favore?"`
+	choice
+		`	"Certo. Di che cosa hai bisogno?"`
+			goto need
+		`	"Non posso semplicemente pagarti per averne una?"`
+			goto money
+	
+	label need
+	`	Dice: "Gli immigrati umani mi raccontano che nella regione del vostro spazio che chiamate il Deep c'è una stazione spaziale, una biblioteca che custodisce manufatti culturali umani e un database della letteratura e della storia umane. Portami una copia di quel database e ti darò una macchina parlante."`
+		goto end
+	
+	label money
+	`	"Denaro?" dice, con un gesto di scherno. "A che cosa serve il denaro? No, da te desidero qualcosa di molto più prezioso. Gli immigrati umani mi raccontano che nella regione del vostro spazio che chiamate il Deep c'è una stazione spaziale, una biblioteca che custodisce manufatti culturali umani e un database della letteratura e della storia umane. Portami una copia di quel database e ti darò una macchina parlante."`
+		goto end
+	
+	label end
+	branch data
+		has "human cultural data"
+	choice
+		`	"Nessun problema, ti porterò una copia del database il prima possibile."`
+			accept
+		`	"Come farò a convincerli a darmi una copia dei loro dati?"`
+	`	La tua domanda sembra confonderlo del tutto. "L'informazione," dice. "È quello che chiamate un bene non rivale, no? Quando do un'informazione non la perdo. Condividerla non mi costa nulla. I bibliotecari, di certo lo capiranno. Non temere."`
+		accept
+	
+	label data
+	choice
+		`	"In realtà ho già una copia di quei dati."`
+	`	"Davvero? Va' a prenderla, ti prego!" esclama.`
+	`	Vai alla tua nave a recuperare i dati e al ritorno glieli dai. Gli occhi gli si illuminano di eccitazione mentre fa una copia della scheda e ti restituisce l'originale.`
+		goto give
+	
+	label return
+	`Torni all'officina di Eruk e gli dai la scheda dati. Gli occhi gli si illuminano di eccitazione mentre fa una copia della scheda e ti restituisce l'originale.`
+	
+	label give
+	`	"Ho passato tutta la vita a studiare la cultura umana," dice. "Questo per me è un tesoro. E ora, ecco la tua macchina parlante." Ti porge un piccolo dispositivo sferico, con altoparlanti e microfoni montati sopra, e quello che sembra un obiettivo fotografico. "Il dispositivo è programmato con le lingue umana e Hai," dice. "Non è sempre possibile tradurre perfettamente fra le nostre due lingue, ma cercherà di darti un'idea della gamma di significati di ciò che viene detto."`
+	choice
+		`	"Grazie. Non vedo l'ora di provarla!"`
+			accept
+		`	"C'è qualcos'altro che devo sapere?"`
+	`	Ti accontenta dimostrandoti come funziona la macchina: tiene una conversazione con te parlando in lingua Hai, e la macchina traduce automaticamente per te, poi traduce le tue risposte nella sua lingua. A quanto pare usa le sue fotocamere per capire con chi stai parlando o chi stai ascoltando. È un pezzo di tecnologia impressionante, e abbastanza facile da usare. Lo ringrazi per l'aiuto e torni alla tua nave.`
+		accept
+
+
+
+mission "Human Cultural Archives"
+	landing
+	description "Eruk, il tecnologo Hai di <origin>, ha accettato di darti una macchina per tradurre se riesci a procurargli una copia dei dati culturali umani da <destination>."
+	source "Greenwater"
+	destination "Alexandria"
+	to offer
+		has "Wanderers: Translation Machine: done"
+		not "human cultural data"
+	on offer
+		conversation "eruk cultural data"
+	on visit
+		dialog
+			`La stazione ha un piccolo negozio di souvenir del museo che vende una copia dell'intero archivio su una scheda dati. Costa solo 40 crediti, ma dato che hai gestito malissimo le tue finanze non hai nemmeno quella somma a disposizione.`
+			`	Vai a guadagnare un po' di denaro, poi torna qui.`
+	on complete
+		set "human cultural data"
+		payment -40
+
+
+
+mission "Cultural Data to Greenwater"
+	landing
+	description "Porta una copia degli archivi culturali umani a <destination> in cambio di una macchina per tradurre."
+	source "Alexandria"
+	destination "Greenwater"
+	to offer
+		has "Human Cultural Archives: done"
+	on offer
+		conversation
+			`Ti chiedevi come avresti fatto a procurarti una copia dell'intero archivio culturale, ma si rivela più facile del previsto. La stazione ha un piccolo negozio di souvenir del museo, che vende una copia degli archivi su una scheda dati. ("Il regalo perfetto per lo storico in erba di famiglia! Tutta la storia umana nel palmo della tua mano. In offerta ora a soli 39,99!") Dato che una scheda dati economica costa una frazione di credito, è un po' una truffa, ma la compri volentieri per portarla a Eruk.`
+				accept
+
+
+
+mission "Visit Wanderers Again"
+	landing
+	description "Torna sul mondo d'origine dei Wanderers, <destination>, con un dispositivo che ti permetta di conversare con loro più liberamente."
+	source "Greenwater"
+	destination "Vara K'chrai"
+	to offer
+		has "Wanderers: Translation Machine: done"
+		has "human cultural data"
+	on offer
+		set "language: Wanderer"
+		set "language: Hai"
+		event "wanderer technology available"
+		log "Hai ricevuto un dispositivo, creato da uno scienziato Hai, che traduce fra la lingua umana e quella Hai. Dato che i Wanderers parlano la lingua Hai, dovrebbe permetterti di comunicare con loro direttamente."
+		conversation "eruk cultural data"
+
+event "wanderer technology available" # Name unchanged for compatibility
+	government "Wanderer"
+		"friendly hail" "friendly wanderer"
+		"friendly disabled hail" "friendly disabled wanderer"
+		"hostile hail" "hostile wanderer"
+		"hostile disabled hail" "hostile disabled wanderer"
+
+
+
+# Compatibility patch for saves before "language: Hai" variable was added.
+mission "Hai Language Patch"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "Visit Wanderers Again: offered"
+		not "language: Hai"
+	on offer
+		set "language: Hai"
+		fail
+
+
+
+# Compatibility patch for users pre-0.9.7 who don't have hostile Wanderer hails.
+mission "Wanderer Hail Patch"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "event: wanderer technology available"
+	on offer
+		event "wanderer technology available"
+		fail
+
+
+
+mission "Wanderers Conversation"
+	landing
+	source "Vara K'chrai"
+	to offer
+		has "Visit Wanderers Again: done"
+	on offer
+		set "license: Wanderer Outfits"
+		log "Hai parlato con un ambasciatore Wanderer di nome Iktat Rek, usando il dispositivo di traduzione. Hai ottenuto il permesso di acquistare parte della loro tecnologia, ma non le loro navi."
+		log "Factions" "Wanderers" `I Wanderers credono che il loro scopo nell'universo sia "riparare" i pianeti le cui biosfere sono state devastate da altre specie, per cattiva gestione o per effetto della guerra. Sono arrivati nel loro territorio attuale attraverso un cunicolo spaziale che chiamano "l'Occhio", e dicono che quando il loro lavoro qui sarà finito l'Occhio si aprirà e li condurrà a un nuovo territorio e a nuovi mondi di cui prendersi cura.`
+			`È possibile che i mondi che abitano ora facessero parte del territorio degli Hai. Questo spiegherebbe perché gli Slegati credono di avere il diritto di riprendersi quel territorio.`
+		log "People" "Iktat Rek" `Rek è un ambasciatore Wanderer, una professione nuova e inconsueta per una specie che fino a poco tempo fa non aveva contatti con alieni, salvo qualche occasionale incursione degli Hai Slegati. Il suo compito è aiutare i Wanderers a sviluppare un rapporto più profondo con gli umani.`
+		event "wanderers: vara k'chrai facilities"
+		conversation
+			`Con l'aiuto del tuo nuovo dispositivo di traduzione riesci a contattare il governo dei Wanderers. Ti danno di nuovo il benvenuto e ti dicono che un Wanderer di nome "Iktat Rek" è stato nominato inviato ufficiale per trattare con i visitatori umani, e che arriverà presto alla tua piazzola di atterraggio.`
+			`	Rek è leggermente più grande della maggior parte dei Wanderers che hai visto, con un piumaggio bianco e bruno dai toni smorzati e un portamento calmo e dignitoso. "È molto [raro, eccezionale] nella nostra storia dover [trattare con, convivere con] altre specie," dice, "e ora ci troviamo a trattare con due contemporaneamente." Parla la lingua Hai, e il dispositivo di traduzione fa del suo meglio per rendere le sue parole nella tua lingua.`
+			choice
+				`	"Come avete imparato la lingua Hai?"`
+					goto language
+				`	"Da quanto tempo combattete contro gli Hai Slegati?"`
+			
+			`	"Sono passati quasi venti [anni, cicli] ormai," dice. "All'inizio ci [ha visitato, ci ha invaso] una sola nave Hai, ma allora non avevamo difese in grado di fermarla. Per anni quella nave si è limitata a [raccogliere, rubare] cibo dai nostri mondi di frontiera, ed evitava il combattimento. Nella nostra cultura è un [obbligo, dovere] condividere il cibo con chi [lo chiede, lo pretende], quindi non ci siamo opposti alla nave Hai. Ma poi sono arrivate altre navi, hanno attaccato uno dei nostri mondi e se ne sono impadronite, uccidendo molti della nostra gente. Abbiamo costruito navi da guerra e li abbiamo respinti, eppure le loro [incursioni, attacchi] continuano."`
+				goto food
+			
+			label language
+			`	"Di recente siamo riusciti a [prendere, catturare] alcuni di loro come prigionieri," dice. "Ci [predano, visitano] da venti [anni, cicli]. All'inizio rubavano solo scorte di cibo incustodite, e fuggivano se ci avvicinavamo. Abbiamo lasciato che lo prendessero, perché nella nostra cultura è un [dovere, obbligo] condividere il cibo con chi [chiede, pretende]. Ma di recente sono diventati molto più [aggressivi, disperati]. Hanno conquistato uno dei nostri mondi e ucciso molti Wanderers, e noi abbiamo costruito navi da guerra e li abbiamo respinti. Alcuni hanno cercato di nascondersi sul pianeta, e li abbiamo resi nostri [prigionieri, ospiti] e poco alla volta abbiamo imparato la loro lingua."`
+			label food
+			`	"Sapete che cosa vogliono gli Slegati?" chiedi.`
+			`	"Vogliono cibo, e [terra, spazio]," dice Rek. "Lo abbiamo intuito quando ci hanno fatto la prima incursione, e l'Hai di nome Sayari me lo ha confermato: gli Slegati hanno [dissipato, consumato] i propri mondi e ora fanno la guerra per averne altri."`
+			choice
+				`	"Qual è la storia della vostra specie?"`
+					goto history
+				`	"Da quanto tempo i Wanderers sono in questa regione di spazio?"`
+			`	"Sono passati ormai quasi diecimila [anni, cicli] da quando abbiamo attraversato l'Occhio ed è entrati in questa [regione, territorio]," dice.`
+				goto eye
+			label history
+			`	"Siamo un popolo antico," dice. "Questa [regione, territorio] non è la nostra terra d'origine. Siamo arrivati qui attraverso l'Occhio quasi diecimila [anni, cicli] fa."`
+			label eye
+			`	"L'Occhio?" chiedi.`
+			`	"Un cunicolo spaziale," dice. "Una volta ogni [eone, era] l'Occhio si apre, e i Wanderers lo attraversano verso una nuova casa. Così è fin dai tempi della nostra più antica [storia, leggenda]. Cento volte, forse mille, abbiamo lasciato una casa e viaggiati verso un'altra. Ogni nuova casa in cui l'Occhio ci conduce è piena di [devastazione, distruzione], e servono molte vite per rimettere le cose a posto. Poi l'Occhio ci chiama di nuovo, e ripartiamo. E ogni volta che attraversiamo l'Occhio diventiamo qualcosa di nuovo."`
+			choice
+				`	"Perché attraversare il cunicolo, se lasciate mondi fertili che avete faticato a sviluppare e dall'altra parte vi aspettano solo mondi in rovina?"`
+					goto reason
+				`	"Che cosa volete dire con 'diventate qualcosa di nuovo'?"`
+			`	"La prima generazione di Wanderers che attraversa il cunicolo [riceve, subisce] la Muta," dice Iktat Rek. "Sono alterati nel loro [essere, essenza] e diventano [giganti, gente di fama]. Chi resta indietro nella sicurezza dei vecchi mondi resta solo se stesso, e piano piano si spegne. Perciò tutti i Wanderers che hanno [coraggio, ambizione] desiderano che l'Occhio si apra, così che la nostra specie possa di nuovo [crescere, evolvere]."`
+				goto molt
+			label reason
+			`	"Il motivo per cui attraversiamo l'Occhio è che coloro che [restano indietro, si stabiliscono] nella vita facile dei mondi che non hanno più bisogno di [guarigione, riparazione] si riducono. Ma chi attraversa l'Occhio e affronta la sfida di nuovi mondi subisce la Muta. Sono alterati nel loro [essere, essenza] e diventano [giganti, gente di fama]. Perciò tutti i Wanderers che hanno [coraggio, ambizione] desiderano che l'Occhio si apra, così che la nostra specie possa di nuovo [crescere, evolvere]."`
+			label molt
+			choice
+				`	"Che cosa fa aprire il cunicolo? Chi o che cosa lo controlla?"`
+				`	"Perché avviene la Muta? Come funziona?"`
+			`	"Sono domande che non ci poniamo," dice. "Per noi è un [tabù? religione? mistero?]."`
+			`	Fai qualche altra domanda, ma non ottieni molte altre informazioni. Ti dice però che gli altri mondi Wanderer hanno accettato di venderti parte della loro tecnologia, e che ti sarà permesso di "[guardare, ammirare, invidiare]" le loro navi, ma non di comprarle. Lo ringrazi per il tempo che ti ha dedicato e per la disponibilità a fidarsi di un membro di una specie del tutto sconosciuta, e torni alla tua nave.`
+				decline
+
+
+
+event "wanderers: vara k'chrai facilities"
+	planet "Vara K'chrai"
+		add port
+			recharges all
+			services all
+		add shipyard "Wanderer Advanced"
+		add outfitter "Wanderer Advanced"
+
+
+
+# Compatibility patch for pilots that did the above missions before 0.10.13.
+mission "Wanderers: Vara K'Chrai Facilities Patch"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "Wanderers Conversation: offered"
+	on offer
+		event "wanderers: vara k'chrai facilities"
+		fail
+
+
+
+# Compatibility patch for pilots that did the above missions before 0.9.7.
+mission "Wanderers: Outfit License Patch"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "Wanderers Conversation: offered"
+		not "license: Wanderer Outfits"
+	on offer
+		set "license: Wanderer Outfits"
+		fail
+
+
+
+mission "Tell Wanderers about the Pug"
+	landing
+	source "Vara K'chrai"
+	to offer
+		has "Wanderers Conversation: offered"
+		has "Pug in Wanderer Space: offered"
+	on offer
+		log "C'è un mondo dei Pug vicino allo spazio dei Wanderers. Dato che sono in grado di controllare i cunicoli spaziali, è probabile che siano loro a decidere dove e quando vanno i Wanderers. I Wanderers, però, non sembrano particolarmente turbati da questa informazione."
+		conversation
+			`Hai scoperto che c'è un avamposto dei Pug a nord dello spazio dei Wanderers. Dato che i Pug sono noti per la capacità di controllare i cunicoli spaziali, è probabile che siano loro a decidere dove e quando i Wanderers si spostano verso nuovi mondi. Vuoi dirlo a Iktat Rek?`
+			choice
+				`	(Sì.)`
+				`	(No.)`
+					decline
+			`	Incontri Rek e gli spieghi che i Pug sono una specie nota per intromettersi negli affari altrui, e che sospetti che siano loro ad aprire il cunicolo che spinge l'intera specie dei Wanderers a migrare. Rek sembra imperturbabile. "Spero che non farete nulla per [farli arrabbiare, offenderli]," dice.`
+			choice
+				`	"Certo, ma non vi disturba che stiano controllando la vostra specie?"`
+				`	"Stanno manipolando tutta la vostra specie, usandovi come squadra di pulizia planetaria. Non volete essere liberi dal loro controllo?"`
+			`	Le sue piume si arruffano un po' in risposta al tuo commento, ma dice solo: "È un grande [dono, benedizione] per la nostra specie che l'Occhio ci conduca verso nuove terre e nuove sfide ogni volta che diventiamo [compiaciuti, annoiati]. Se un'altra specie ricava qualche [vantaggio, beneficio] dal nostro lavoro, non dovrebbe forse renderci più [contenti, desiderosi] di farlo, invece che meno?"`
+			choice
+				`	"Ma non preferireste essere liberi dal loro controllo, liberi di restare su questi mondi che avete faticato tanto a restaurare?"`
+				`	"Se la vostra specie è controllata di nascosto da un'altra, non vi disturba?"`
+				`	"Va bene. Ho capito. È solo che mi preoccuperei se la mia specie fosse controllata in questo modo."`
+			`	"Siamo controllati," dice, "o è una collaborazione? Noi abbiamo il dono di far rifiorire di nuova vita i mondi [in rovina, corrotti]. Loro ci danno mondi dove i nostri doni possono essere [messi a frutto, preziosi]. Noi abbiamo bisogno di nuove sfide per spingere la nostra specie verso una maggiore [trasformazione, perfezione]. Loro ci aprono nuove galassie."`
+			`	Si ferma, poi dice: "Certo sappiamo che il modo in cui funziona l'Occhio è troppo [favorevole, su misura] per essere un fenomeno casuale. Ma è un [dono, benedizione] per noi, e non dovete fare nulla per allontanarli, altrimenti resteremo [intrappolati, bloccati] su questi pochi mondi e ristagneremo e decadremo."`
+				decline
+
+
+mission "Wanderers: Defend Vara Ke'sok Hint"
+	name "Rifornimenti Wanderer per <planet>"
+	description "Trasporta <cargo> a <destination>, dove servono riparazioni dopo gli attacchi degli Slegati."
+	passengers 1
+	cargo "building supplies" 10
+	source
+		near "Sich'ka'ara" 1 100
+	destination "Vara Ke'sok"
+	to offer
+		random < 60
+		has "Wanderers Conversation: offered"
+		not "Wanderers: Defend Vara Ke'sok: done"
+	on offer
+		conversation
+			`Mentre giri per lo spazioporto, due Wanderers ti si avvicinano. Uno di loro comincia a parlare in lingua Hai, che il tuo traduttore capta. "Salute, [forestiero, curioso]. Abbiamo saputo che sei capace di [offrire, donare] aiuto. È corretto?"`
+			choice
+				`	"Sì, è così. Di che cosa avete bisogno?"`
+					goto proposal
+				`	"Dipende da quanto siete disposti a pagare."`
+					goto jerk
+				`	"Che cosa volete dire?"`
+			branch hai
+				"reputation: Hai" > 100
+			branch war
+				has "main plot completed"
+			`	"L'ambasciatrice Sayari ha detto che gli umani fanno molti [lavori, passatempi] nel loro spazio. O sbagliamo?"`
+			choice
+				`	"In effetti è così."`
+					goto proposal
+				`	"Facciamo quei lavori solo per essere pagati."`
+					goto jerk
+			label war
+			`	"L'ambasciatrice Sayari ha detto che sei un grande [eroe, esploratore] nello spazio umano, e che hai risolto molti [problemi, disastri]. O sbagliamo?"`
+				goto choice2
+			label hai
+			`	"L'ambasciatrice Sayari ha detto che sei un grande [eroe, esploratore], anche nello spazio Hai, e che hai risolto molti [problemi, disastri]. O sbagliamo?"`
+				goto choice2
+			label choice2
+			choice
+				`	"Suppongo che si possa dire che sono un eroe."`
+					goto proposal
+				`	"Definirmi un 'grande' eroe sarebbe riduttivo."`
+					goto proposal
+				`	"Sono io, ma preferirei anche un po' di pagamento."`
+					goto jerk
+			label jerk
+			`	Il Wanderer che parla ti guarda con un'espressione vuota e dice semplicemente: "Ci può essere [compenso, un accordo] di <payment> per il lavoro.`
+			label proposal
+			`	"Sul [corpo celeste, pianeta] chiamato Vara Ke'sok ci sono [incursioni, conquiste] degli Slegati. Durante queste, varie strutture vengono [danneggiate, rovinate]. Vorremmo che ci aiutassi a [ripararle, sistemarle] trasportando <tons> di [provviste, materiali]."`
+			choice
+				`	"Lo farò volentieri."`
+				`	"Mi dispiace, ma ho cose più importanti a cui pensare."`
+					defer
+			`	Quando il Wanderer sente la tua risposta tradotta, cinguetta nella lingua dei Wanderers con il suo compagno, che annuisce e corre verso un magazzino vicino. "Caricheremo il carico sulla nave presto. Ti [accompagnerò, seguirò] fino a <planet> per dirigere [la guarigione, le riparazioni]."`
+				accept
+	on visit
+		dialog phrase "generic cargo and passenger on visit"
+	on complete
+		payment 10000 20
+
+
+mission "Wanderers: Defend Vara Ke'sok"
+	landing
+	name "Difendi <planet>"
+	description "Difendi <planet> da un attacco degli Slegati respingendo o distruggendo le navi Hai."
+	source "Vara Ke'sok"
+	to offer
+		has "Wanderers Conversation: offered"
+		not "Wanderers: Defend Vara Ke'sok Hint: active"
+		or
+			random < 50
+			has "Wanderers: Defend Vara Ke'sok Hint: done"
+	on offer
+		conversation
+			branch hint
+				has "Wanderers: Defend Vara Ke'sok Hint: done"
+			`Poco dopo che atterri nello spazioporto c'è un gran trambusto: molti Wanderers corrono alle loro navi, che cominciano a decollare dal pianeta. In cielo vedi lampi luminosi che potrebbero essere colpi di arma o esplosioni lontane.`
+			`	Sei investito dal vento quando uno dei Wanderers atterra accanto alla tua nave e dice, in lingua Hai: "Una flotta di [predoni, pirati] Slegati sta arrivando. Abbiamo messo del cibo su un mercantile, speriamo che prendano [l'offerta, il dono] e se ne vadano. Se non sono [placidati, soddisfatti], tu aiuti a convincerli ad andarsene. Sì?"`
+				goto choice
+			label hint
+			`Toccato il suolo, diversi Wanderers si radunano intorno alla tua nave e si preparano a portare fuori il carico. Prima che il Wanderer che hai trasportato fino a <planet> possa dire una parola, un grido d'uccello acuto riempie l'aria.`
+			`	Guardandoti intorno, vedi improvvisamente un gran trambusto: molti Wanderers corrono alle loro navi, che cominciano a decollare dal pianeta. In cielo vedi lampi luminosi che potrebbero essere colpi di arma o esplosioni lontane.`
+			`	Il Wanderer che ti aveva affidato il trasporto dei materiali da costruzione prende la parola. "Una flotta di [predoni, pirati] Slegati sta arrivando. Metteremo del cibo su un mercantile, speriamo che prendano [l'offerta, il dono] e se ne vadano. Se non sono [placidati, soddisfatti], tu aiuti a convincerli ad andarsene. [Capisci, comprendi]?"`
+			choice
+				`	"Aiuterò a scacciare gli Slegati."`
+					goto yes
+				`	"Perché devo aiutare? Ho accettato solo una missione di trasporto."`
+			`	Il Wanderer sembra un po' colto di sorpresa dalla tua risposta. "[Pericolo, Aggressione] imminente. Gli Slegati portano [devastazione, distruzione]. Molte [perdite, perdite di raccolti] se non ci aiuti. Ci aiuterai ora?"`
+			label choice
+			choice
+				`	"Sì, aiuterò a scacciare gli Slegati."`
+					goto yes
+				`	"No, non vi aiuterò a combatterli."`
+			`	Il Wanderer vola via per unirsi alla difesa. Qualche ora dopo i lampi in cielo finiscono: gli Slegati sono stati distrutti, oppure hanno ottenuto ciò che volevano e se ne sono andati.`
+				defer
+			label yes
+			`	Il Wanderer se ne va per unirsi a una delle navi che stanno decollando, e tu prepari in fretta la tua nave a seguirlo...`
+				launch
+	on accept
+		"reputation: Hai (Unfettered)" <?= -1
+		event "Sich'ka'ara empty"
+	on visit
+		dialog "Ci sono ancora navi da guerra degli Slegati là sopra. Dovresti decollare di nuovo e dare una mano nello scontro."
+	on complete
+		event "Sich'ka'ara restored"
+	
+	npc
+		government "Wanderer"
+		personality derelict fleeing uninterested waiting pacifist
+		fleet
+			names "wanderer"
+			variant
+				"Deep River"
+				"Deep River 4"
+				"Strong Wind" 2
+	npc evade
+		government "Hai (Unfettered)"
+		personality coward waiting disables plunders
+		fleet
+			names "hai"
+			variant
+				"Shield Beetle (Jump)" 4
+	npc
+		government "Wanderer"
+		personality waiting heroic uninterested
+		fleet
+			names "wanderer"
+			variant
+				"Strong Wind"
+				"Summer Leaf" 2
+	npc
+		government "Wanderer"
+		personality heroic uninterested
+		fleet
+			names "wanderer"
+			variant
+				"Summer Leaf" 4
+
+event "Sich'ka'ara empty"
+	system "Sich'ka'ara"
+		fleet "Wanderer Drones" 3000
+
+event "Sich'ka'ara restored"
+	system "Sich'ka'ara"
+		add fleet "Wanderer Freight" 600
+		add fleet "Wanderer Defense" 2000
+
+
+
+mission "Wanderers: Defended Vara Ke'sok"
+	name "Presentati su <planet>"
+	description "Presentati agli anziani dei Wanderers su <destination> per riferire che gli attacchi degli Slegati si stanno intensificando e avanzano sempre più in profondità rispetto al fronte."
+	landing
+	source "Vara Ke'sok"
+	destination "Vara K'chrai"
+	to offer
+		has "Wanderers: Defend Vara Ke'sok: done"
+	on offer
+		log "Hai aiutato a difendere un mondo dei Wanderers da un'incursione delle navi degli Hai Slegati."
+		conversation
+			`Uno dei Wanderers ti ringrazia per l'aiuto. "Questi nemici diventano più [pericolosi, aggressivi]," dice. "Ti presenterai ai [capi, anziani] su <planet>. Devono decidere la nostra [azione, risposta]."`
+				accept
+
+
+
+mission "Wanderers: Unfettered Diplomacy 1"
+	name "Diplomazia con gli Slegati"
+	description "Prendi un carico di cibo sul pianeta dei Wanderers <destination>, da consegnare agli Slegati come offerta di pace."
+	landing
+	source "Vara K'chrai"
+	destination "Var' Kar'i'i"
+	passengers 1
+	to offer
+		has "Wanderers: Defended Vara Ke'sok: done"
+	on offer
+		conversation
+			`Su <origin> incontri Iktat Rek e l'ambasciatrice Hai Sayari, e racconti loro di aver appena contribuito a respingere un'incursione degli Slegati sul mondo acquatico dei Wanderers, Vara Ke'sok. "La situazione non è [sostenibile, vivibile]," dice Rek. "Forse gli Slegati sono quelli [scelti, destinati] a [ereditare, ricevere] il frutto del nostro lavoro qui, ma finché l'Occhio non ci chiama a una nuova [casa, dimora] non abbiamo altro posto dove andare."`
+			choice
+				`	"Stai dicendo che, dopo aver faticato tanto a restaurare questi mondi, li dareste a qualcuno distruttivo come gli Slegati?"`
+				`	"Non può essere giusto. Gli Slegati hanno devastato i propri mondi. Devasterebbero anche i vostri."`
+			`	"Questo è il [modo, la vocazione] dei Wanderers," dice Rek. "Noi [restauriamo, ripariamo] i mondi e li lasciamo ad altri, sapendo che i loro nuovi [custodi, sorveglianti] sperpereranno quella ricchezza."`
+			`	"Ma perché?" chiedi. "Perché fare tanto lavoro per altri che sprecheranno ciò che avete costruito?"`
+			`	"Perché abbiamo curato i cimiteri di cento specie fallite," dice Rek, "che hanno [speso, bruciato] tutte le loro risorse prima di imparare [la saggezza, l'equilibrio]. Metti una creatura in una gabbia troppo piccola e [imbratterà, sporcherà, profanerà] la propria casa e morirà. Dalle più [spazio, opportunità] e potrà fiorire." Dice a Sayari: "Ambasciatrice, siamo [sciocchi, semplici] a nutrire questa speranza?"`
+			`	Sayari dice: "Gli Slegati non ci hanno fatto guerra, né a voi né a noi, fino a poco tempo fa, quando i loro tre mondi hanno cominciato a morire. Date loro una nuova frontiera e potremo avere di nuovo la pace."`
+			choice
+				`	"Ma che cosa possiamo fare per i loro attacchi?"`
+					goto attacks
+				`	"Invece di aiutarli a espandersi e a ripulire quelle 'gabbie', perché non fare qualcosa contro chi quelle gabbie le ha costruite?"`
+			`	Sayari dice: "Lasciare ogni specie libera di farsi guerra a vicenda? Sarebbe una follia. La guerra favorisce i forti, non i saggi."`
+			`	Iktat Rek annuisce d'accordo. "La vita è troppo [prolifica, creativa]," dice. "Nuove specie nascono troppo spesso, e nuovi pianeti troppo di rado, perché ognuna possa prendere tutto ciò che [esige, brama]. Quindi devono esserci [limiti, divisioni]."`
+			`	"Allora che cosa possiamo fare con gli Slegati?" chiedi. "Non finiranno prima o poi per volerne ancora di più?"`
+			label attacks
+			`	Sayari dice: "Per guadagnare tempo puoi offrire loro cibo in cambio della pace. Chiamalo 'tributo', non carità, altrimenti offenderai il loro orgoglio."`
+			`	Rek dice: "Questo è il miglior [piano, opzione] che abbia sentito. <last>, mi porterai su <planet> a organizzare un carico di cibo?"`
+			choice
+				`	"Certo, posso farlo."`
+					accept
+				`	"Mi dispiace, non voglio più dare una mano ai Wanderers."`
+					decline
+	on accept
+		log `Ti sei offerto di portare un carico di cibo agli Slegati, come "tributo" dei Wanderers, nella speranza che questo li plachi e li spinga a fare la pace.`
+	on visit
+		dialog `Quando atterri su <planet>, chiedi a uno dei Wanderers dove sia il carico di cibo. Lui inclina solo la testa e ti risponde nella lingua dei Wanderers. Ti guardi intorno in cerca di Iktat Rek perché traduca, ma ti rendi conto di averlo lasciato su una delle tue scorte, che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+ship "Deep River" "Deep River (Jump, Unarmed)"
+	outfits
+		"White Sun Reactor"
+		"Dark Storm Shielding" 3
+		"Fuel Pod"
+		"Type 2 Radiant Thruster"
+		"Type 4 Radiant Steering"
+		"Jump Drive"
+
+
+
+mission "Wanderers: Unfettered Diplomacy 1A"
+	name "Diplomazia con gli Slegati"
+	description `Scorta un mercantile che porta il "tributo" al mondo degli Slegati <destination>. Potrebbe essere necessario corrompere gli Slegati per evitare che ti attacchino.`
+	landing
+	source "Var' Kar'i'i"
+	destination "Firelode"
+	clearance
+	passengers 1
+	to offer
+		has "Wanderers: Unfettered Diplomacy 1: done"
+	on offer
+		conversation
+			`Una volta arrivato su <origin>, Iktat Rek spiega: "Abbiamo [catturato, recuperato] alcuni motori di salto dagli Slegati, e ne abbiamo installato uno su un mercantile. Per evitare di [provocare, minacciare] gli Slegati, il mercantile è disarmato. Sarebbe un cattivo inizio per la nostra [diplomazia, opera di pace] colpire gli Slegati con armi dei Wanderers."`
+			choice
+				`	"Vuol dire che non devo sparare nemmeno io?"`
+				`	"Che cosa dobbiamo fare, allora, se ci attaccano?"`
+			`	"Preferirei che evitassi il combattimento," dice. "Si dice che gli Slegati siano [avidi, desiderosi] di tangenti, se sei disposto a spendere denaro per comprare la pace. Oppure limitati a non rispondere al fuoco: il mercantile ha scudi validi."`
+			`	Servono diverse ore per caricare l'enorme mercantile dei Wanderers. Rek spiega che hanno tenuto traccia di quali tipi di cibo gli Slegati preferiscono rubare, quindi sanno che cosa sarà commestibile per loro. Dice: "La nostra destinazione si chiama <planet>. Sayari mi dice che tutti gli Hai condividono una [usanza, tabù] riguardo agli ospiti, quindi una volta atterrati sul loro pianeta potremo [parlare, negoziare] con loro in sicurezza."`
+				accept
+	on visit
+		dialog `Sei atterrato su <planet>, ma ti manca qualcosa! O il <npc> non è ancora entrato nel sistema, oppure Iktat Rek è su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare.`
+	npc accompany save
+		government "Wanderer"
+		personality timid escort
+		"cargo settings"
+			cargo 4
+			commodities "Food"
+		ship "Deep River (Jump, Unarmed)" "Ayi'i Ki'ak'var"
+
+
+
+mission "Wanderers: Unfettered Diplomacy 1B"
+	name "Diplomazia con gli Slegati"
+	description "Scorta questo mercantile dei Wanderers sano e salvo fino a <destination>."
+	landing
+	source "Firelode"
+	destination "Var' Kar'i'i"
+	passengers 1
+	to offer
+		has "Wanderers: Unfettered Diplomacy 1A: done"
+	on offer
+		conversation
+			`Gli Slegati non tentano di attaccarti una volta atterrato sul loro pianeta. L'equipaggio del Wanderer comincia a scaricare le casse di cibo sulla piazzola, e alla fine si avvicina una piccola delegazione di capi degli Slegati. Iktat Rek spiega che il cibo è un'offerta di pace.`
+			`	"È fin troppo poco," dice il capo degli Slegati, "troppo poco per ripagarci delle navi che avete distrutto e dei mondi che avete rubato. Finché non ci restituirete i nostri mondi, non potremo avere la pace."`
+			choice
+				`	(Lascia che sia Iktat Rek a parlare.)`
+					goto rek
+				`	"Intendi le navi distrutte mentre saccheggiavano i Wanderers? Vorresti che ti risarcissero anche per quelle?"`
+			`	"Pace, umano," dice Iktat Rek. "Non siamo qui per decidere chi ha ragione." Ti fa cenno di farti da parte e di lasciarlo parlare con gli Hai da solo.`
+			label rek
+			`	"Questo è davvero solo un [pegno, assaggio]," dice Iktat Rek. "Abbiamo molto altro da offrire, e di certo vedete anche voi che per noi combatterci a vicenda è uno spreco."`
+			`	Parlano ancora un po'. Alla fine il capo degli Hai si ferma su un accordo: "Vi manderemo i nostri mercantili. Ogni volta che il mercantile arriva, lo riempirete di cibo. Se no, è guerra. Se attaccate il mercantile, è guerra. E dovete lasciarci riprendere uno dei nostri mondi."`
+			`	Iktat Rek dice: "Vi daremo il cibo, ma non sono [autorizzato, permesso] a darvi un mondo. Devo parlare con il nostro [governo, consiglio degli anziani]." Gli Hai accettano, e tu ti prepari a riportare il mercantile su <planet>.`
+				accept
+	on accept
+		event "wanderer / unfettered peace"
+	on visit
+		dialog `Sei atterrato su <planet>, ma ti manca qualcosa! O il <npc> non è ancora entrato nel sistema, oppure Iktat Rek è su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare.`
+	npc accompany save
+		government "Wanderer"
+		personality timid escort
+		ship "Deep River (Jump, Unarmed)" "Ayi'i Ki'ak'var"
+
+fleet "Unfettered Tribute"
+	government "Hai (Unfettered Wanderer Tribute)"
+	names "hai"
+	personality coward timid
+	cargo 3
+	variant
+		"Water Bug (Jump)"
+
+event "wanderer / unfettered peace"
+	"reputation: Hai (Unfettered)" >?= 1
+	system "Ehma Ti"
+		remove fleet "Unfettered Raid"
+		add fleet "Unfettered Tribute" 1000
+	system "Chy'chra"
+		remove fleet "Unfettered Raid"
+		add fleet "Unfettered Tribute" 2000
+	system "Prakacha'a"
+		remove fleet "Unfettered Raid"
+		add fleet "Unfettered Tribute" 2000
+
+
+
+mission "Wanderers: Unfettered Diplomacy 1C"
+	name "Diplomazia con gli Slegati"
+	description "Riporta Iktat Rek su <destination>."
+	landing
+	source "Var' Kar'i'i"
+	destination "Vara K'chrai"
+	passengers 1
+	to offer
+		has "Wanderers: Unfettered Diplomacy 1B: done"
+	on offer
+		conversation
+			`Lasci il mercantile al sicuro su <origin>. Iktat Rek dice: "Ora devo tornare alla nostra casa, per [discutere, pianificare] con i nostri anziani. Non possiamo fidarci di dare agli Slegati un mondo nel nostro spazio: ci costruirebbero una [guarnigione, flotta da guerra] e ci attaccherebbero. Ma forse questo [accordo, patto] ci darà pace abbastanza a lungo da trovare una soluzione migliore."`
+				accept
+	on visit
+		dialog `Quando torni su <planet>, ti vengono incontro Sayari e alcuni anziani dei Wanderers. "Dov'è Iktat Rek?" chiede Sayari. Ti rendi conto di averlo lasciato su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		"reputation: Wanderer" >?= 20
+		set "license: Wanderer"
+		log "Sei riuscito a mediare un cessate il fuoco temporaneo fra gli Hai Slegati e i Wanderers. Come ricompensa ti è stato concesso l'accesso all'acquisto delle navi non militari dei Wanderers."
+		conversation
+			`Quando torni su <planet>, Iktat Rek si incontra con l'ambasciatrice Sayari e alcuni anziani dei Wanderers. Gli anziani ti ringraziano per il ruolo che hai avuto nel negoziare una pace temporanea, e Rek dice: "Ti [ricompenseremo, onoreremo] permettendoti di acquistare le nostre attuali navi [civili, di mantenimento della pace]. E ti [chiediamo, ingiungiamo] di non [attaccare, assalire] le navi inviate a riscuotere il [tributo], finché restano [pacifiche, collaborative]."`
+			`	Gli anziani sembrano concordare che questa è solo una soluzione temporanea. Agli Slegati non si può concedere una base nel territorio dei Wanderers: userebbero i pochi motori di salto per spostare qualche nave da guerra alla volta fino a quella base, finché non avessero una flotta troppo forte perché i Wanderers possano sconfiggerla. Prima o poi gli Slegati si stancheranno di chiedere una simile base e torneranno alla guerra aperta.`
+			`	Nel frattempo l'unico modo per disinnescare la situazione sarebbe togliere di mano agli Slegati tutti i motori di salto, e questo significa scoprire e fermare chi glieli fornisce.`
+
+
+
+mission "Wanderers: Truce Timer"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "Wanderers: Unfettered Diplomacy 1C: done"
+	on offer
+		event "wanderers: truce timer" 40
+		fail
+
+event "wanderers: truce timer"
+
+mission "Wanderers: Truce Check"
+	landing
+	name "Contattare Iktat Rek?"
+	description "Incontra Iktat Rek su <planet> per vedere se c'è altro che puoi fare per aiutare i Wanderers, ora che hanno stabilito un cessate il fuoco con gli Slegati."
+	to offer
+		has "main plot completed"
+		has "event: wanderers: truce timer"
+		not "Wanderers: Jump Drive Source: offered"
+	source
+		government "Wanderer"
+		near "Ka'ch'chrai" 1 100
+	destination "Vara K'chrai"
+	on offer
+		conversation
+			`È passato un po' di tempo da quando hai negoziato il cessate il fuoco fra i Wanderers e gli Slegati, e finora la tregua sembra reggere. Ora che la crisi immediata è sotto controllo, forse è il momento di incontrare Iktat Rek per parlare di una risposta più duratura all'incursione degli Slegati.`
+				accept
+
+
+
+mission "Wanderers: Jump Drive Source"
+	landing
+	name "La fonte dei motori di salto?"
+	description "Iktat Rek ti ha chiesto di procurarti un motore di salto di riserva e di venderlo agli Slegati in cambio di informazioni su dove si procurano i motori di salto. Poi torna su <destination>."
+	autosave
+	source "Vara K'chrai"
+	to offer
+		has "main plot completed"
+		has "event: wanderers: truce timer"
+	on offer
+		conversation
+			`Quando arrivi su <origin>, Iktat Rek ti accoglie con calore. "Umano," dice, "è un [sollievo, piacere] avere [pace, sicurezza] nel nostro territorio. Ma gli Slegati non saranno [placidati, soddisfatti] per sempre. Ne ho parlato con l'ambasciatrice Sayari e siamo d'accordo che dobbiamo sapere quali [alleati, complici] abbiano gli Slegati, quale sia la loro [forza, capacità], e come si siano procurati i motori di salto."`
+			branch naughty
+				has "Unfettered Jump Drive 3: offered"
+			choice
+				`	"D'accordo. Come posso aiutarti?"`
+					goto help
+			label naughty
+			choice
+				`	"D'accordo. Come posso aiutarti?"`
+					goto help
+				`	"Ehm... in realtà alcuni di quei motori di salto potrebbero averli avuti da me."`
+			`	Rek sembra sorpreso, ma alla fine dice: "Capisco. È [comprensibile, perdonabile] che tu volessi placarli. Quindi non te ne [farò una colpa, biasimerò]. Anzi, potrebbe esserci utile che tu l'abbia fatto. Quello che ti [chiediamo, desideriamo] è vendere loro un altro motore di salto, ma questa volta trovare un [pretesto, scusa] per chiedere chi altri li rifornisce di motori di salto. Dato che li hai [aiutati, assecondati], potrebbero fidarsi di te e dirtelo."`
+				goto end
+			label help
+			`	Rek dice: "Quello che ti [chiediamo, desideriamo] è procurarti un motore di salto e venderlo a loro, per [guadagnare, accattivarti] maggior favore. Poi trova un [pretesto, scusa] per chiedere chi altri li rifornisce di motori di salto. Poiché sei stato tu a [mediare, negoziare] il cessate il fuoco, potrebbero fidarsi di te e dirtelo."`
+			label end
+			choice
+				`	"Certo, posso farlo."`
+					accept
+				`	"Ma non vi danneggerà, alla lunga, che gli Slegati abbiano un altro motore di salto?"`
+			`	Rek dice: "Oltre cento delle loro navi hanno [fatto incursioni, violato] il nostro spazio negli ultimi anni. Qualcuno li sta [dotando, rifornendo] di molti motori di salto, e uno in più farà poca differenza. Dobbiamo [tagliare fuori, eliminare] la fonte."`
+			`	Prometti di fare del tuo meglio per carpire informazioni agli Slegati, e lui ti augura buona fortuna.`
+				accept
+	on accept
+		log "Hai accettato di provare a vendere un motore di salto agli Hai Slegati, come modo per ottenere da loro più informazioni su chi altro li rifornisce di motori di salto e rende possibili i loro attacchi ai Wanderers."
+	
+	to complete
+		has "Unfettered: Jump Drive Source: offered"
+	on visit
+		dialog `Non hai ancora provato a vendere un motore di salto agli Hai Slegati. Torna qui dopo averlo fatto.`
+	on complete
+		conversation
+			`Riferisci a Iktat Rek. "Molto [interessante, inquietante]," dice. "Se ciò che racconti di questi umani Alphas è [corretto, imparziale], sono un nemico pericoloso. E in cambio di tanti motori di salto, senza dubbio gli Slegati li hanno [riforniti, forniti] di molte armi." Si ferma a riflettere per un minuto, poi dice: "Devi rintracciarli. C'è un [dispositivo, tecnologia] dei Wanderers che può aiutarti. Ma devo chiedere il permesso ai nostri [anziani, governo] prima di darti accesso. Ti incontrerò di nuovo allo spazioporto presto."`
+
+
+
+mission "Unfettered: Jump Drive Source"
+	landing
+	invisible
+	source
+		attributes "unfettered"
+	to offer
+		has "Wanderers: Jump Drive Source: active"
+	on offer
+		conversation
+			`Seguendo il suggerimento di Iktat Rek, vuoi vendere un motore di salto agli Hai e vedere quali informazioni riesci a ottenere in cambio?`
+			choice
+				`	(Sì.)`
+				`	(Non ora.)`
+					defer
+			`	Alla fine trovi uno degli Slegati che parla la tua lingua. Ti indirizza all'ufficio del "governatore" (o forse signore della guerra) che sovrintende allo spazioporto. Il governatore dice: "Ti offro le stesse condizioni degli altri umani. Un milione di crediti, e ti diamo un iperpropulsore al posto del motore di salto. È accettabile?"`
+			choice
+				`	"Sì."`
+				`	"Mi dispiace, torni quando avrò un motore di salto da cedervi."`
+					defer
+			`	Con cautela, quasi con reverenza, i tecnici degli Slegati rimuovono il motore di salto dalla tua nave. Il governatore ti paga e poi resta lì a guardarli lavorare. Forse puoi ottenere altre informazioni da lui.`
+			choice
+				`	"Se volessi trovare altri motori di salto da darvi, dove dovrei cercare?"`
+				`	"Hai detto che anche altri umani vi vendono motori di salto?"`
+					goto others
+			`	Dice: "Gli umani senza freni non ci diranno la loro fonte, ma sospettiamo che rubino al nostro vecchio nemico, gli invasori Korath. Il capo degli umani senza freni mi ha raccontato una storia che non ho capito: che Prometeo fu punito per aver rubato agli dèi, ma nessuno viene punito per aver rubato a Prometeo. Prometeo era un eroe umano?"`
+				goto prometheus
+			label others
+			`	"Sì," dice, "gli umani senza freni. Ci vendono molti motori di salto. Dicono che è la loro vocazione aiutarci. Il capo degli umani senza freni mi ha raccontato una storia che non ho capito: che Prometeo fu punito per aver rubato agli dèi, ma nessuno viene punito per aver rubato a Prometeo. Prometeo era un eroe umano?"`
+			label prometheus
+			`	Gli spieghi il mito come meglio puoi, poi chiedi: "Che cosa vuoi dire con 'umani senza freni'?"`
+			`	Sembra sorpreso che tu non sappia di che cosa parla. "Quelli verdi," dice.`
+			choice
+				`	"Gli Alphas? Non dovete commerciare con gli Alphas! Sono criminali pericolosi e incontrollabili!"`
+				`	"Oh, certo. Gli umani verdi sono tenuti in così alta stima quanto Prometeo stesso. Puoi dirmi dove trovarli, così posso dar loro l'onore che meritano?"`
+					goto honor
+			`	"Questo è quello che dicono di noi Slegati gli Hai alterati," dice. "Lo dicono perché sono deboli e spaventati. Forse anche tu sei debole e spaventato, e ho sbagliato a trattare con te."`
+				goto end
+			label honor
+			`	Resta in silenzio e ti guarda con un'espressione circospetta e calcolatrice. "Non hanno detto da dove vengono," dice, "e hanno detto che altri sarebbero venuti a cercare di intrappolarli. Forse ho sbagliato a fidarmi di te."`
+			label end
+			`	Non riesci a ottenere altre informazioni da lui, ma quello che già sai è piuttosto prezioso. Dovresti riferirlo a Iktat Rek e sentire che cosa dice.`
+				accept
+	on accept
+		log `Hai saputo dagli Hai Slegati che stanno acquistando motori di salto dagli Alphas (che loro chiamano "umani senza freni").`
+		outfit "Jump Drive" -1
+		outfit "Hyperdrive" 1
+		payment 1000000
+		"reputation: Hai (Unfettered)" >?= 10
+		fail
+
+
+
+mission "Wanderers: Alpha Surveillance A"
+	name "Sorveglianza degli Alphas"
+	description "Rilascia micro-satelliti di sorveglianza nei tre sistemi d'origine degli Slegati, poi passa da <destination> per vedere se il governo Hai sa qualcosa di un insediamento Alpha lì vicino."
+	autosave
+	source "Vara K'chrai"
+	destination "Hai-home"
+	clearance
+	to offer
+		has "Wanderers: Jump Drive Source: done"
+	
+	waypoint "Ehma Ti"
+	on enter "Ehma Ti"
+		dialog "Apri il portello e getti nello spazio una manciata dei minuscoli cubi di sorveglianza dei Wanderers. Quando si sono allontanati di qualche metro, i sensori della tua nave non riescono più a rilevarli."
+	waypoint "Wah Yoot"
+	on enter "Wah Yoot"
+		dialog "Apri il portello e getti nello spazio una manciata dei minuscoli cubi di sorveglianza dei Wanderers. Quando si sono allontanati di qualche metro, i sensori della tua nave non riescono più a rilevarli."
+	waypoint "Hi Yahr"
+	on enter "Hi Yahr"
+		dialog "Apri il portello e getti nello spazio una manciata dei minuscoli cubi di sorveglianza dei Wanderers. Quando si sono allontanati di qualche metro, i sensori della tua nave non riescono più a rilevarli."
+	
+	on offer
+		conversation
+			`Quando incontri Iktat Rek, ti porge una scatola che contiene diversi piccoli cubi nero carbone, larghi circa due centimetri. "Questi sono gli [occhi, sensori] della nostra rete di [comunicazioni? sorveglianza? informazioni?]," dice. "Finché non ricevono il comando di [richiesta, interrogazione] non generano alcun [segnale, emissione elettromagnetica] e quasi nessun calore. Ma osservano, e [registrano, ricordano]. [Semina, spargi, schiera] diversi di questi in ciascun sistema degli Slegati. Poi dovresti visitare il [centro, mondo d'origine] degli Hai e vedere se sanno qualcosa delle [attività, presenza] degli Alphas."`
+			`	Porti i dispositivi di sorveglianza sulla tua nave. Sembra che Rek te ne abbia dati in più, presumibilmente perché tu ne possa schierare abbastanza in ogni sistema da avere ridondanza se alcuni si guastano. Probabilmente non cambierebbe nulla al successo della missione se ne tenessi uno per te, e da quello che ha detto Rek questa tecnologia potrebbe valere molto.`
+			choice
+				`	(Usali tutti per la missione, come richiesto.)`
+				`	(Ruba uno dei dispositivi e tienilo per me.)`
+					goto steal
+			`	Dividi i dispositivi in tre gruppi da lanciare dal portello in ciascuno dei tre sistemi degli Slegati. Speriamo che gli Slegati non si accorgano di quello che stai facendo.`
+				accept
+			label steal
+			action
+				set "stole a wanderer micro-sat"
+			`	Dividi i dispositivi in tre mucchi, uno per ciascun sistema degli Slegati, e ne tieni uno per te, ben nascosto in un posto sicuro sulla tua nave.`
+				accept
+	
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on complete
+		log "Hai piazzato alcuni dispositivi di sorveglianza, progettati dai Wanderers, nello spazio degli Hai Slegati. Fra un mese avranno finito di raccogliere dati sui movimenti delle navi nella zona, e potrebbero dare un indizio su da dove arrivino gli Alphas che vendono motori di salto agli Slegati."
+		event "wanderers: alpha surveillance done" 30
+		conversation
+			`I cubi di sorveglianza sono stati tutti schierati. Mentre aspetti che raccolgano le registrazioni del traffico di navi nei sistemi degli Slegati, passi dal centro di governo degli Hai e chiedi dell'ambasciatore umano. Quando capiscono che sei tu quello che ha contattato i Wanderers, ti danno subito un appuntamento.`
+			`	L'ambasciatore è un Hai anziano di nome Hiyamaharu. "Onorato umano," dice, "è un piacere conoscerti. Se posso esserti utile in qualunque modo, lo sarò."`
+			choice
+				`	"Grazie." (Spiega degli Alphas.)`
+			`	Dice: "Li conosciamo. Anzi, il nostro primo contatto con gli umani, due secoli fa, è stato proprio con questi verdi. Cercarono di ingannarci e di dominarci. Non sono semplicemente degli emarginati come gli Slegati: questi umani Alphas sono crudeli e interessati solo a se stessi. Ci credevano semplici perché siamo pacifici, ma siamo stati troppo astuti e troppo forti per loro, e ora sono banditi dal nostro territorio. Poi però sono arrivati gli umani pacifici, e abbiamo imparato che non siete tutti come gli Alphas."`
+			choice
+				`	"È possibile che abbiano una base nascosta su uno dei vostri mondi?"`
+				`	"Sapete dove sono andati quando li avete banditi dal vostro spazio?"`
+					goto where
+			`	"No," dice, "sono passati duecento anni, e i nostri mondi sono popolosi e sorvegliati con grande diligenza. A meno che non abbiano trovato rifugio presso gli Slegati, non sono nel nostro spazio."`
+			`	"E allora dove possono essere andati?" chiedi.`
+			label where
+			`	"Non lo sappiamo," dice. "Non è nostro compito seguire le faccende delle altre specie, fuori dal nostro territorio. E al tempo delle incursioni dei Korath non avremmo comunque avuto la capacità di rintracciarli."`
+			`	Lo ringrazi per il tempo che ti ha dedicato. Ora devi solo aspettare abbastanza a lungo che i cubi di sorveglianza raccolgano i loro dati, e sperare che registrino qualcosa di utile.`
+
+event "wanderers: alpha surveillance done"
+
+
+
+mission "Wanderers: Alpha Surveillance B"
+	landing
+	name "Sorveglianza degli Alphas"
+	description "Attraversa i tre sistemi degli Slegati per recuperare le registrazioni di sorveglianza, poi riferisci a Iktat Rek su <destination>."
+	destination "Vara K'chrai"
+	to offer
+		has "event: wanderers: alpha surveillance done"
+	
+	waypoint "Ehma Ti"
+	on enter "Ehma Ti"
+		dialog "Usando il trasmettitore fornito con i cubi di sorveglianza, invii il segnale e ricevi indietro le registrazioni criptate dell'attività della flotta."
+		"reputation: Hai (Unfettered)" <?= -1
+	waypoint "Wah Yoot"
+	on enter "Wah Yoot"
+		dialog "Usando il trasmettitore fornito con i cubi di sorveglianza, invii il segnale e ricevi indietro le registrazioni criptate dell'attività della flotta."
+		"reputation: Hai (Unfettered)" <?= -1
+	waypoint "Hi Yahr"
+	on enter "Hi Yahr"
+		dialog "Usando il trasmettitore fornito con i cubi di sorveglianza, invii il segnale e ricevi indietro le registrazioni criptate dell'attività della flotta."
+		"reputation: Hai (Unfettered)" <?= -1
+	
+	on offer
+		conversation
+			`È passato un mese da quando hai schierato i dispositivi di sorveglianza nei sistemi d'origine degli Slegati. È ora di tornare a recuperare le registrazioni che hanno fatto. Poi potrai portarle a Iktat Rek su <planet> per decriptarle e analizzarle.`
+			`	Speriamo che tu riesca a raccogliere i dati senza che gli Slegati intercettino le trasmissioni e capiscano di essere stati spiati.`
+				accept
+	
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on complete
+		conversation
+			`Quando arrivi allo spazioporto, contatti Iktat Rek e gli invii una copia delle registrazioni criptate. Gli racconti anche che gli Slegati ti hanno attaccato dopo che hai inviato il segnale di recupero dei dati. "Questo è [spiacevole, deplorevole]," dice Rek. "Spero che si [calmino, raffreddino] col tempo. Sospetto che potresti ricomprare la loro [amicizia, benevolenza] con un altro motore di salto, oppure ignorare per ora i loro [attacchi, antagonismo]."`
+			`	Chiedi che cosa devi fare adesso, e Rek dice: "Ci serve un po' di tempo per [analizzare, esaminare] i registri dei sensori. Incontrami allo spazioporto fra un'ora."`
+
+
+
+mission "Wanderers: Alpha Surveillance C"
+	name "Sorveglianza degli Alphas"
+	description "I Wanderers non hanno tecnologia per rintracciare una nave che usa un motore di salto, ma Iktat Rek pensa che i Quarg potrebbero riuscirci, e ti ha suggerito di andare da loro su <destination>."
+	source "Vara K'chrai"
+	destination "Alta Hai"
+	to offer
+		has "Wanderers: Alpha Surveillance B: done"
+		not "stole a wanderer micro-sat"
+		not "Wanderers: Alpha Surveillance C (Naughty): offered"
+	on offer
+		conversation
+			`Quando incontri Iktat Rek, ti mostra l'immagine di un Carrier della Marina. "I sensori [hanno osservato, hanno rilevato] questa nave entrare nel sistema Hi Yahr con un motore di salto," dice. Gli dici che è un vascello militare umano. "Pensi che il tuo esercito possa [stare assistendo, stare favorendo] gli Slegati?" chiede.`
+			choice
+				`	"È possibile, ma potrebbe anche essere una nave rubata. Non mi aspetterei che la Marina si schieri con gli Slegati."`
+					goto no
+				`	"Non lo escluderei. Potrebbe essere una specie di programma segreto per accedere a tecnologia aliena."`
+			`	Iktat Rek dice: "Capisco. Quindi o la tua [dirigenza, classe dirigente] è al corrente di questo segreto, oppure si tratta di un complotto militare [privato, separato]. In entrambi i casi, la cosa mi preoccupa."`
+			`	"Che cosa dovremmo fare?" chiedi.`
+				goto end
+			label no
+			`	"Spero che tu abbia ragione," dice Rek. "Non desidero che il nostro [conflitto, scontro] con gli Slegati ci porti a una guerra con gli umani. Dobbiamo [indagare, esplorare] più a fondo questa faccenda."`
+			`	"Come possiamo farlo?" chiedi.`
+			label end
+			`	"Devi rintracciare questa nave," dice Rek. "Un motore di salto crea un temporaneo [portale? identità? unità?] fra due [luoghi, regioni] dello spazio. Una specie che [crea, produce] motori di salto potrebbe essere in grado di [rintracciare, rilevare] il residuo di quei collegamenti. Sayari mi dice che una specie così [abita nello, confina con lo] spazio Hai. Forse ti aiuteranno."`
+			`	Accetti di fare visita al mondo ad anello dei Quarg nello spazio Hai, e lui ti augura buona fortuna per il viaggio.`
+				accept
+	
+	on complete
+		conversation
+			`Come sempre, è impossibile capire quale dei Quarg sia al comando qui o possa aiutarti. I primi a cui chiedi non sembrano affatto desiderosi di dare a un umano una tecnologia legata ai motori di salto, ma alla fine uno di loro ascolta la tua storia e dice: "Conosco gli Alphas. E gli Slegati. C'è uno che potrebbe essere disposto ad aiutarti." Dopo una breve conversazione in lingua Quarg tramite un dispositivo di comunicazione, il Quarg dice: "Torna allo spazioporto fra un'ora e uno ti incontrerà per ascoltare la tua petizione."`
+
+
+
+mission "Wanderers: Alpha Surveillance C (Naughty)"
+	name "Sorveglianza degli Alphas"
+	description "I Wanderers non hanno tecnologia per rintracciare una nave che usa un motore di salto, ma Iktat Rek pensa che i Quarg potrebbero riuscirci, e ti ha suggerito di andare da loro su <destination>."
+	source "Vara K'chrai"
+	destination "Alta Hai"
+	to offer
+		has "Wanderers: Alpha Surveillance B: done"
+		has "stole a wanderer micro-sat"
+		not "Wanderers: Alpha Surveillance C: offered"
+	on offer
+		conversation
+			`Iktat Rek arriva portando un dispositivo a mano con due lunghe antenne. "Devi [scusarmi, perdonarmi]," dice. "Pare che tu abbia [lasciato cadere, smarrito] uno dei dispositivi di tracciamento. Per fortuna ho i [mezzi, la capacità] per determinare dove sulla tua nave si [trovi, nasconda]. Ti aiuto a cercarlo?"`
+			choice
+				`	"No, ehm... scommetto che è solo caduto dalla scatola nella mia stiva. Mi guardo intorno e vedo se lo trovo."`
+				`	"Mi dispiace, ne ho tenuto uno per cercare di capire come funziona. Vado a prenderlo e te lo restituisco."`
+					goto apologized
+				`	(Torna sulla mia nave e fuggi.)`
+					goto fail
+			`	"Capisco," dice Rek. Vorresti saper leggere le espressioni dei Wanderers; non sei sicuro che ti creda. Entri nella nave, aspetti quanto basta perché sembri che tu abbia dovuto cercare, poi torni e gli restituisci il dispositivo.`
+				goto carrier
+			label apologized
+			action
+				clear "stole a wanderer micro-sat"
+			`	"Sono contento che tu l'abbia [ammesso, confessato]," dice Rek. "In futuro, ti prego di essere più [onesto, obbediente]." Recuperi il dispositivo di sorveglianza nascosto e glielo restituisci.`
+			label carrier
+			`	"Grazie," dice Rek. "Ora, ecco che cosa abbiamo scoperto." Ti mostra l'immagine di un Carrier della Marina. "I sensori [hanno osservato, hanno rilevato] questa nave entrare nel sistema Hi Yahr con un motore di salto," dice. Gli dici che è un vascello militare umano. "Pensi che il tuo esercito possa [stare assistendo, stare favorendo] gli Slegati?" chiede.`
+			choice
+				`	"È possibile, ma potrebbe anche essere una nave rubata. Non mi aspetterei che la Marina si schieri con gli Slegati."`
+					goto no
+				`	"Non lo escluderei. Potrebbe essere una specie di programma segreto per accedere a tecnologia aliena."`
+			`	Iktat Rek dice: "Capisco. Quindi o la tua [dirigenza, classe dirigente] è al corrente di questo segreto, oppure si tratta di un complotto militare [privato, separato]. In entrambi i casi, la cosa mi preoccupa."`
+			`	"Che cosa dovremmo fare?" chiedi.`
+				goto end
+			label no
+			`	"Spero che tu abbia ragione," dice Rek. "Non desidero che il nostro [conflitto, scontro] con gli Slegati ci porti a una guerra con gli umani. Dobbiamo [indagare, esplorare] più a fondo questa faccenda."`
+			`	"Come possiamo farlo?" chiedi.`
+			label end
+			`	"Devi rintracciare questa nave," dice Rek. "Un motore di salto crea un temporaneo [portale? identità? unità?] fra due [luoghi, regioni] dello spazio. Una specie che [crea, produce] motori di salto potrebbe essere in grado di [rintracciare, rilevare] il residuo di quei collegamenti. Sayari mi dice che una specie così [abita nello, confina con lo] spazio Hai. Forse ti aiuteranno."`
+			`	Accetti di fare visita al mondo ad anello dei Quarg nello spazio Hai, e lui ti augura buona fortuna per il viaggio.`
+				accept
+			label fail
+			`	Mentre la tua nave lascia l'atmosfera, il cubo di sorveglianza si accende di un rosso incandescente e collassa su se stesso, fondendosi in un mucchietto di scorie. Non solo hai tradito i Wanderers, ma non ti resta nulla da mostrare.`
+				flee
+	on decline
+		event "robbed the wanderers"
+	
+	on complete
+		conversation
+			`Come sempre, è impossibile capire quale dei Quarg sia al comando qui o possa aiutarti. I primi a cui chiedi non sembrano affatto desiderosi di dare a un umano una tecnologia legata ai motori di salto, ma alla fine uno di loro ascolta la tua storia e dice: "Conosco gli Alphas. E gli Slegati. C'è uno che potrebbe essere disposto ad aiutarti." Dopo una breve conversazione in lingua Quarg tramite un dispositivo di comunicazione, il Quarg dice: "Va' allo spazioporto, e uno ti incontrerà per ascoltare la tua petizione."`
+
+event "robbed the wanderers"
+	"reputation: Wanderer" = 1
+	planet "Vara K'chrai"
+		"required reputation" 5
+
+
+
+mission "Wanderers: Alpha Surveillance C (Pug)"
+	landing
+	source "Vara Pug"
+	to offer
+		or
+			has "Wanderers: Alpha Surveillance C: active"
+			has "Wanderers: Alpha Surveillance C (Naughty): active"
+	on offer
+		log `I Pug nello spazio dei Wanderers non sono interessati ad aiutare i Wanderers a combattere gli Alphas. Dicono che interferire negli affari degli Hai e degli umani è fuori dalla loro "giurisdizione".`
+		conversation
+			`Ricordi di aver sentito accenni al fatto che i Pug hanno aiutato gli umani del Deep in battaglia contro gli Alphas, quindi i Pug potrebbero essere alleati naturali nella tua missione attuale. Vuoi vedere se qualcuno di loro qui ti aiuterà?`
+			choice
+				`	(Sì.)`
+				`	(No.)`
+					decline
+			`	Cerchi di far parlare diversi Pug, ma la maggior parte ti ignora deliberatamente. Alla fine, probabilmente perché hai chiarito che non te ne andrai, uno di loro ti si avvicina portando una piccola scatola nera. Parla alla scatola nella sua lingua, e la scatola dice: "Ciao tu sei un umano tu vieni dal pianeta Terra non è vero." Sembra che la scatola sia un traduttore rudimentale, che parla con voce monotona e senza pause fra le frasi. Ascoltarlo è un po' stridente, ma capisci quello che viene detto.`
+			`	Dici: "Sì, è corretto."`
+			`	La scatola sembra tradurre le tue parole, e il Pug le risponde. La scatola dice: "Gli umani non sono nostra responsabilità perché sei venuto sul nostro pianeta."`
+			choice
+				`	"Gli Alphas stanno di nuovo creando problemi, e ho sentito che in passato ci avete aiutato a combatterli."`
+				`	"Gli Alphas si sono schierati con quelli che stanno invadendo i Wanderers. Potete aiutarci a rintracciarli?"`
+			`	Il Pug parla di nuovo. "Chi sono gli Alphas quel nome non ci è noto."`
+			`	Cerchi di spiegare come meglio puoi. Forse gli umani del Deep sbagliavano a credere che i Pug conoscessero gli Alphas. Il Pug risponde: "Possiamo difendere i Wanderers ma gli Hai e gli umani sono fuori dalla nostra giurisdizione non entreremo nel loro spazio."`
+			choice
+				`	(Rinuncia e vattene.)`
+					decline
+				`	(Prova a convincerli ad aiutarvi.)`
+			`	Fai del tuo meglio, ma i Pug qui non sono chiaramente interessati ad aiutarti. Alla fine rinunci e torni alla tua nave.`
+				decline
+
+
+
+ship "Carrier" "Carrier (Alpha)"
+	"display name" "Carrier modificata"
+	sprite "ship/modified carrier"
+	thumbnail "thumbnail/modified carrier"
+	add attributes
+		"weapon capacity" 120
+	outfits
+		"Ion Cannon" 2
+		"Hai Tracker Pod" 4
+		"Hai Tracker" 224
+		"Shield Disruptor Turret" 2
+		"Husk-Slice Turret" 2
+		
+		"Triple Plasma Core"
+		"Systems Core (Large)"
+		"Large Heat Shunt" 3
+		"Small Heat Shunt"
+		"Wanderer Ramscoop"
+		"Outfits Expansion" 4
+		"Laser Rifle" 120
+		
+		`"Bondir" Atomic Thruster`
+		"Steering (Stellar Class)"
+		"Jump Drive"
+	
+	gun -17 -179 "Ion Cannon"
+	gun 17 -179 "Ion Cannon"
+	gun -25 -168 "Hai Tracker Pod"
+	gun 25 -168 "Hai Tracker Pod"
+	gun -32.5 -163.5 "Hai Tracker Pod"
+	gun 32.5 -163.5 "Hai Tracker Pod"
+	turret 0 -49 "Shield Disruptor Turret"
+	turret 0 14 "Husk-Slice Turret"
+	turret -22 22 "Shield Disruptor Turret"
+	turret 22 22 "Husk-Slice Turret"
+	bay "Fighter" -38.5 -64.5
+		"launch effect" "human internal"
+	bay "Fighter" 38.5 -64.5
+		"launch effect" "human internal"
+	bay "Fighter" -50 40.5
+		"launch effect" "human internal"
+	bay "Fighter" 50 40.5
+		"launch effect" "human internal"
+	bay "Drone" -71.5 -49.5
+		"launch effect" "human internal"
+	bay "Drone" 71.5 -49.5
+		"launch effect" "human internal"
+	bay "Drone" -115 55
+		"launch effect" "human internal"
+	bay "Drone" 115 55
+		"launch effect" "human internal"
+	bay "Drone" -85 55
+		"launch effect" "human internal"
+	bay "Drone" 85 55
+		"launch effect" "human internal"
+
+mission "Wanderers: Alpha Surveillance D"
+	name "Trova gli Alphas"
+	description "Con l'aiuto di Elias Hanover e del suo dispositivo di tracciamento, individua la base degli Alphas e poi torna sul mondo ad anello dei Quarg, <planet>."
+	autosave
+	source "Alta Hai"
+	to offer
+		or
+			has "Wanderers: Alpha Surveillance C: done"
+			has "Wanderers: Alpha Surveillance C (Naughty): done"
+	passengers 1
+	blocked "Ti serve una cuccetta libera per accettare questa missione."
+	
+	on offer
+		log "Hai incontrato un umano di nome Elias Hanover, amico dei Quarg, a cui è stato concesso di usare la tecnologia Quarg per rintracciare la nave Alpha che vende motori di salto agli Slegati."
+		log "People" "Elias Hanover" `Elias vive con i Quarg nello spazio Hai da molto tempo, e loro si fidano di lui abbastanza da dargli accesso a parte della loro tecnologia riservata.`
+		"reputation: Alpha" <?= -1
+		conversation
+			`Allo spazioporto ti vengono incontro un umano di mezza età con la barba e un Quarg dalla pelle eccezionalmente rugosa. Il Quarg dice: "Sento che ti serve aiuto contro gli Alphas. Il mio amico Elias qui vive fra noi da molto tempo, e mi ha raccontato molto degli Alphas, delle loro guerre e delle loro depredazioni."`
+			`	L'umano ti stringe la mano e si presenta come Elias Hanover. Dice: "I Quarg sono molto restii a schierarsi in quello che considerano un conflitto interno agli umani. E sono altrettanto restii ad affidare la loro tecnologia a uno sconosciuto come te. Ma se gli Alphas stanno raccogliendo forze e accumulando tecnologia aliena, vanno fermati."`
+			`	Il Quarg dice: "Elias è un nostro amico fidato. Gli abbiamo dato un dispositivo per rintracciare una nave che viaggia con un motore di salto, e l'abbiamo programmato con i parametri di un Carrier umano. Non provare a prendere il dispositivo da lui. Sarà lui a condurti alla tua preda, e poi dovrai restituirci il dispositivo immediatamente."`
+			`	Elias chiede: "Se li troviamo, sei pronto ad affrontare un Carrier da solo?"`
+			choice
+				`	"Sì, la mia nave è più forte di qualsiasi cosa ci sia nello spazio umano."`
+					goto end
+				`	"Non credo. Sei sicuro che sarà necessario?"`
+			`	"Pensi che sia probabile che gli Alphas si arrendano senza combattere?" chiede. "Forse dovresti investire in una nave da guerra Hai prima di metterci a inseguirli."`
+			label end
+			`	Ringrazi il Quarg per la disponibilità ad aiutarti, e tu ed Elias tornate alla tua nave.`
+				accept
+	
+	mark "Hi Yahr"
+	on enter "Hi Yahr"
+		dialog `Mentre entri nel sistema, Elias controlla il suo dispositivo di tracciamento. "Sì, sto captando i segni di un Carrier dotato di motore di salto," dice. "La traccia va a est, oltre il confine dello spazio Hai."`
+		unmark "Hi Yahr"
+		mark "Celeborim"
+	on enter "Celeborim"
+		dialog `Elias controlla di nuovo il tracciante. "Da qui, verso sud-est," dice. Intanto le sirene d'allarme della tua nave cominciano a suonare: ci sono navi aliene qui, e non sembrano amichevoli.`
+		unmark "Celeborim"
+		mark "Asikafarnut"
+	on enter "Asikafarnut"
+		dialog `Elias controlla il tracciante. "Sempre verso sud-est," dice. "E spero che quelle navi Korath non stiano dalla stessa parte degli Alphas."`
+		unmark "Asikafarnut"
+		mark "Sobarati"
+		mark "Ferukistek"
+	on enter "Sobarati"
+		dialog `Elias armeggia con il suo dispositivo di tracciamento per un po', poi rinuncia. "Mi dispiace, qui non leggo alcun segnale. Forse hanno saltato direttamente oltre questo sistema?"`
+		unmark "Sobarati"
+	on enter "Ferukistek"
+		dialog `Elias dice: "Ho trovato la loro traccia. Hanno girato e sono andati di nuovo a est, e forse un po' a nord."`
+		unmark "Ferukistek"
+		unmark "Sobarati"
+		mark "Host"
+	on enter "Makferuti"
+		dialog `Elias aggrotta la fronte guardando il display del tracciante. "Credo che abbiamo sbagliato strada. In questo sistema non c'è segno di motori di salto usati," dice.`
+	on enter "Host"
+		dialog `Quando entri in questo sistema, i sensori rilevano un Carrier della Marina in orbita intorno a un pianeta simile alla Terra. Sembra che tu abbia trovato la base degli Alphas. "Sono loro," dice Hanover. "Spero che tu sia abbastanza forte da distruggerli." Il Carrier comincia a lanciare caccia: Korath, non navi umane. Potrebbe essere uno scontro difficile...`
+	
+	npc
+		government "Kor Sestor"
+		system "Celeborim"
+		personality heroic nemesis staying vindictive
+		fleet
+			names "kor sestor"
+			variant
+				"Kar Ik Vot 349 (Trapper)"
+				"Met Par Tek 53"
+				"Met Par Tek 53 (Sniper)"
+	npc kill
+		government "Alpha"
+		system "Host"
+		personality heroic nemesis staying vindictive target
+		ship "Carrier (Alpha)" "Giftbringer"
+		on kill
+			unmark "Host"
+			dialog "Il Carrier degli Alphas è stato distrutto. Ora puoi tornare sul mondo ad anello dei Quarg e pianificare i prossimi passi."
+	npc
+		government "Alpha"
+		system "Host"
+		personality heroic nemesis staying vindictive
+			confusion "kor sestor"
+		ship "Far Osk 27" "Dasher"
+		ship "Far Osk 27" "Dancer"
+		ship "Far Osk 27" "Prancer"
+		ship "Far Osk 27" "Vixen"
+		ship "Far Lek 14" "Cupid"
+		ship "Far Lek 14" "Comet"
+		ship "Far Lek 14" "Donner"
+		ship "Far Lek 14" "Blitzen"
+		ship "Far Lek 14" "Rudolph"
+		ship "Far Lek 14" "Ralph"
+	
+	on visit
+		dialog `Sei tornato su <planet>, ma hai la sensazione che il tuo lavoro non sia finito. O scopri dove si nascondono gli Alphas, oppure torna dove si nascondono e finisci quello che hai cominciato.`
+	on complete
+		log "Hai sconfitto un Carrier della Marina, presumibilmente condotto dagli Alphas, equipaggiato con caccia e droni Korath. Presumibilmente c'è una base Alpha nascosta da qualche parte sul pianeta simile alla Terra che il Carrier sorvegliava."
+		conversation
+			`Quando atterri di nuovo su <planet>, Elias dice che deve andare a restituire subito il dispositivo di tracciamento al suo amico Quarg. "Dopo di che," dice, "dovremo capire chi può aiutarci a individuare e aprire la base degli Alphas. Incontrami allo spazioporto quando sei pronto."`
+
+
+
+mission "Wanderers: Alpha Surveillance D (Avalon)"
+	landing
+	source "Avalon"
+	to offer
+		has "Wanderers: Alpha Surveillance D: active"
+	on offer
+		conversation
+			`Parcheggi la nave in alto su una montagna, da dove potrai vedere se qualche gigantesco rettile si avvicina. Quasi certamente è qui che gli Alphas hanno la loro base, ma i tuoi sensori non riescono a individuarla, e anche se ci riuscissero non hai con te una forza militare di terra. Per eliminare la minaccia una volta per tutte, dovrai tornare con una forza d'invasione.`
+				decline
+
+
+
+mission "Wanderers: Alpha Surveillance E"
+	name "Visita Danforth"
+	description "Visita l'ammiraglio Danforth su <planet> e vedi se può fornirti una forza d'attacco per individuare e distruggere la base degli Alphas."
+	source "Alta Hai"
+	destination "Farpoint"
+	passengers 1
+	to offer
+		has "Wanderers: Alpha Surveillance D: done"
+	
+	on offer
+		conversation
+			`Quando incontri Elias Hanover allo spazioporto, dice: "Non vedo altro modo di procedere: dobbiamo coinvolgere la Marina. Nessun altro ha la capacità di lanciare un attacco di terra."`
+			choice
+				`	"Sei sicuro che possiamo fidarci? Dopo tutto, gli Alphas erano su una nave della Marina."`
+				`	"Potremmo andare dall'ammiraglio Danforth. È un ufficiale della Marina di cui mi fido, sta dalla parte giusta."`
+					goto danforth
+			`	"Ti viene in mente qualche altra opzione?" dice.`
+			`	"C'è una branca della Marina chiamata 'Oathkeepers'," gli dici, "guidata dall'ammiraglio Danforth. Se c'è qualcuno della Marina di cui possiamo fidarci, sono loro."`
+			label danforth
+			`	"Danforth?" dice Elias. "William Danforth? L'Eroe di Hope? È ancora in servizio?" Annuisci. "Beh, allora sì, andiamo da lui," dice Elias.`
+			`	Risale sulla tua nave, e tu ti prepari a viaggiare verso la base di Danforth su <destination>.`
+				accept
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ti rendi conto che Elias è su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi prima di incontrare l'ammiraglio Danforth.`
+	on complete
+		conversation
+			`L'ammiraglio Danforth è molto contento di vederti, ma la sua espressione si fa cupa quando gli spieghi perché sei venuto. Quando nomini gli Alphas, ti zittisce. "Non parliamone, qui all'aperto," dice. "Non che non mi fidi dei miei uomini, ma è meglio andare sul sicuro. Radunerò truppe che so capaci di agire con discrezione e le terrò pronte a unirsi a noi in spedizione. Incontrami nel mio ufficio privato allo spazioporto quando sei pronto."`
+
+
+
+mission "Wanderers: Alpha Surveillance F"
+	name "Invadi Avalon"
+	description "Scorta il <npc model> della Marina dell'ammiraglio Danforth fino a <destination> e atterra sul pianeta con loro. Tenteranno di individuare ed eliminare la base degli Alphas."
+	autosave
+	source "Farpoint"
+	destination "Avalon"
+	passengers 1
+	to offer
+		has "Wanderers: Alpha Surveillance E: done"
+	
+	on offer
+		log "L'ammiraglio Danforth ha accettato di portare il suo incrociatore sul pianeta nello spazio Korath dove sembrano nascondersi gli Alphas, con truppe ed equipaggiamento sufficienti a lanciare un assalto alla base."
+		log "Factions" "Oathkeepers" `Il vero motivo per cui la potente flotta degli Oathkeepers è schierata nel Nord, però, non è solo tenere a bada i pirati, ma anche costituire l'ultima difesa nel caso gli Hai decidano di invadere lo spazio umano. A quanto pare la Marina sa degli Hai e del cunicolo che collega il loro spazio a quello umano da tempo, ma sceglie di non rendere pubblica questa informazione.`
+		conversation
+			`Danforth ti accoglie nel suo ufficio privato e usa un dispositivo per scansionare la stanza in cerca di microspie. "Perdonami la cautela," dice quando ha finito. "Ora, mostrami dove si trova questo pianeta."`
+			`	Gli mostri il pianeta sulla tua mappa. "È molto lontano dallo spazio umano," dice Danforth. "Addirittura dall'altra parte del territorio Hai. I ribelli Hai occupano ancora questi sistemi?" Indica i tre sistemi dove vivono gli Slegati.`
+			choice
+				`	"Sì."`
+					goto jump
+				`	"Aspetta, sai degli Hai?"`
+			`	Danforth ha un'aria divertita. "Vivo sulla loro soglia di casa? Certo che lo so. Perché pensi che la Marina mantenga una base così grande su Farpoint? Non è che gli anarchici umani del nord rappresentino una minaccia così seria."`
+			label jump
+			`	"Non è solo la distanza," dice Elias. "L'unico modo per arrivarci è con un motore di salto. Per fortuna il Capitano <last> ne ha uno."`
+			`	"Anch'io," dice Danforth, con una certa soddisfazione. Quando vede le vostre espressioni sorprese, spiega. "Recuperato dai Pug. Dimenticato per sbaglio di presentare le carte che lo segnalavano. Sapete come va. I vecchi come me possono essere distratti." Sorride. "I miei ingegneri lo stanno installando sulla mia ammiraglia proprio ora."`
+			choice
+				`	"Quindi sei disposto a venire con noi?"`
+				`	"Sei sicuro di voler correre il rischio di viaggiare con noi?"`
+			`	"Non me lo perderei per nulla al mondo," dice. "Con una missione così, se voglio che sia fatta bene, devo esserci di persona. Ora, muoviamoci prima che comincino a circolare le voci. Non è facile per tre squadroni prepararsi a una missione segreta senza che nessun altro se ne accorga."`
+				accept
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma hai lasciato indietro la nave di Danforth. Aspetta che arrivi (o torna indietro a rifornirla, se necessario) e poi torna qui."
+	
+	npc accompany save
+		government "Navy (Oathkeeper)"
+		personality escort timid
+			confusion "elite"
+		ship "Cruiser (Jump)" "N.S. Peacemaker"
+
+
+
+mission "Wanderers: Alpha Surveillance G"
+	landing
+	name "Ritorna su <planet>"
+	description "Scorta la nave dell'ammiraglio Danforth sana e salva fino a <destination>."
+	source "Avalon"
+	destination "Farpoint"
+	passengers 1
+	to offer
+		has "Wanderers: Alpha Surveillance F: done"
+	
+	on offer
+		log "Gli Alphas sono fuggiti dalla base su Avalon. Gli Oathkeepers hanno distrutto ciò che resta della base, il che si spera li farà arretrare parecchio."
+		conversation
+			`Alla squadra di Danforth non serve molto per individuare la base degli Alphas, sepolta in profondità in una rete di grotte calcaree. Tu e Danforth tenete le navi sospese sopra il sito per intercettare chiunque tenti di decollare e fuggire. Danforth ti aggiorna sui progressi delle truppe. "Superato il perimetro. Alle prese con alcune trappole esplosive. Esplosivi, gas velenoso. Roba brutta. Nessun segno di abitanti, ma erano qui di recente. Il posto sembra svuotato. Base estesa. Hangar, laboratori, magazzini. Probabilmente ci hanno messo un secolo a costruirla."`
+			`	Le sue truppe passano un po' di tempo a esplorare la base e alla fine concludono che gli Alphas hanno fatto i bagagli e se ne sono andati poco dopo che hai distrutto il Carrier. Una volta che il posto è stato esplorato a fondo e sono sicuri che non ci siano altri indizi da trovare, Danforth dice loro: "Bene, fatela saltare. Non ha senso lasciargli una base a cui tornare."`
+			choice
+				`	"Quindi è stato tutto inutile?"`
+				`	"Vorrei che fossimo riusciti a prenderli."`
+			`	"Non prendertela troppo," dice Danforth. "Almeno hai eliminato il loro Carrier. Se fossi venuto da me senza affrontarli, probabilmente avrebbero comunque capito che la copertura era saltata e sarebbero fuggiti. E adesso sono in fuga, il che limiterà la loro capacità di combinare guai."`
+			`	La nave di Danforth raccoglie le sue truppe e decolla. Pochi secondi dopo ti chiama. "Capitano, abbiamo navi in arrivo dall'altra parte del pianeta," dice. "La mia nave non è all'altezza. Andiamocene di qui." Sembra che questo mondo non sia del tutto disabitato, dopo tutto...`
+				launch
+	
+	npc accompany save
+		government "Navy (Oathkeeper)"
+		personality escort timid
+			confusion "elite"
+		ship "Cruiser (Jump)" "N.S. Peacemaker"
+	npc
+		government "Alpha"
+		personality heroic staying vindictive
+			confusion "kor sestor"
+		fleet
+			names "kor sestor"
+			variant
+				"Kar Ik Vot 349 (Offense)"
+				"Met Par Tek 53 (Sniper)" 2
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma hai lasciato indietro la nave di Danforth. Aspetta che arrivi (o torna indietro a rifornirla, se necessario) e poi torna qui."
+	
+	on complete
+		conversation
+			`Tu ed Elias tornate nell'ufficio privato di Danforth per il debriefing, ma pochi minuti dopo il vostro arrivo qualcuno bussa alla porta. Danforth accende un monitor video per controllare chi è, impreca, dà una rapida occhiata alla stanza come per verificare di non aver lasciato nulla di compromettente in vista, poi apre la porta. Entra un ufficiale in uniforme senza insegne, insieme a diverse guardie armate. "Ammiraglio Danforth," dice l'ufficiale, "spero che la sua spedizione sia andata bene?"`
+			`	Danforth borbotta qualcosa in risposta. "E lei, Capitano <last>," dice l'ufficiale, "sempre nel bel mezzo delle cose, eh?"`
+			choice
+				`	"Suppongo di sì."`
+				`	"Solo quando la galassia ha bisogno di essere salvata."`
+				`	"Cerco solo di fare la cosa giusta."`
+			`	L'ufficiale si volta verso Elias. "E signor Hanover," dice, "voglio ringraziarla personalmente per averci assistito nella lotta contro gli Alphas, ancora una volta."`
+			`	"Prego," dice Hanover, con diffidenza.`
+			`	"Lei è molto schivo davanti alle telecamere," dice l'ufficiale. "Non è rimasto abbastanza a lungo per ricevere i nostri ringraziamenti dopo aver contribuito a liberare quei mondi nella Dirt Belt nel 2894 d.C. Naturalmente, allora si faceva chiamare 'Jeremy Hanover'." Porge a Hanover una foto di alcuni ufficiali della Marina che parlano con un uomo che somiglia molto a Hanover stesso.`
+			`	"Era mio nonno," dice Hanover.`
+			`	"Capisco," dice l'ufficiale. "Certo, ciò per cui merita ancor più ringraziamenti è il suo aiuto durante la Seconda Guerra degli Alphas. Ecco una sua foto del 2461 d.C." Mostra un'altra foto, ancora apparentemente di Hanover stesso, con alcuni uomini in uniformi arcaiche, precedenti alla Repubblica. Le guardie alle vostre spalle alzano le armi e le puntano su di te e su Elias.`
+			choice
+				`	(Resta dove sono.)`
+					goto stay
+				`	(Prova a combattere.)`
+				`	(Prova a fuggire.)`
+			`	Balzi in piedi dal posto. Le guardie sparano, e tutto diventa nero.`
+				accept
+			label stay
+			`	Alzi le mani in segno di resa. Le guardie sparano, e tutto diventa nero.`
+				accept
+
+
+
+mission "Wanderers: Alpha Surveillance H"
+	name "Incontra Danforth"
+	description "Incontra l'ammiraglio Danforth allo spazioporto di <origin> e parla di che cosa fare adesso con gli Alphas."
+	landing
+	source "Farpoint"
+	"offer precedence" 100
+	to offer
+		has "Wanderers: Alpha Surveillance G: done"
+	
+	on offer
+		log "Sei stato preso prigioniero, insieme a Elias Hanover, da alcuni ufficiali della Repubblica senza nome che credevano che Elias fosse un Alpha. Hanno scoperto che non lo è, anche se sembra avere alcuni dei vantaggi da ingegneria genetica tipici degli Alphas."
+		log "People" "Elias Hanover" `Alcuni ufficiali della Marina credono che Elias possa avere più di cinque secoli, e che sia un individuo geneticamente modificato, forse progettato appositamente per avere capacità simili a quelle degli Alphas, così da poterli combattere.`
+		conversation
+			`Ti svegli con un mal di testa martellante e la sensazione stordita e intontita di chi è stato colpito con una pistola stordente militare. Sei legato a una sedia di metallo con almeno una dozzina di elettrodi collegati alla testa e al corpo. Elias è in una sedia simile, di fronte a te. Un tecnico sta dietro a una parete di schermi in un angolo, con l'ufficiale senza nome che osserva.`
+			choice
+				`	"Che cosa sta succedendo?"`
+					goto what
+				`	"Pretendo che mi lasciate andare!"`
+					goto demand
+				`	(Non dire nulla.)`
+			`	Vedendo che siete entrambi svegli, l'ufficiale si avvicina e ti guarda per un secondo con un'espressione fredda e valutativa. Poi, senza avvertire, ti sferra un pugno in faccia.`
+				goto punched
+			label what
+			`	"Procedura operativa standard," dice l'ufficiale, avvicinandosi a te. Poi, senza avvertire, ti sferra un pugno in faccia.`
+				goto punched
+			label demand
+			`	L'ufficiale si avvicina a te. "Mi dispiace, non posso lasciarvi andare, non ancora," dice. Poi, senza avvertire, ti sferra un pugno in faccia.`
+			label punched
+			`	Mentre sei ancora stordito dal colpo, l'ufficiale va da Elias e colpisce anche lui. Si ferma a sistemare uno degli elettrodi che il colpo ha allentato, poi torna da te e ti colpisce di nuovo. Il tecnico fissa gli schermi con un cipiglio intenso mentre l'ufficiale colpisce di nuovo Elias e poi torna da te.`
+			choice
+				`	"Che diavolo state facendo?"`
+					goto question
+				`	"Per favore, ditemi solo che cosa volete."`
+					goto question
+				`	(Sputagli in faccia.)`
+					goto spit
+				`	(Non fare nulla.)`
+			`	L'ufficiale lancia un'occhiata al tecnico, che dice: "<last> rientra ampiamente nei parametri umani, signore."`
+				goto human
+			label question
+			`	Ignora la tua domanda e lancia un'occhiata al tecnico, che dice: "<last> rientra ampiamente nei parametri umani, signore."`
+				goto human
+			label spit
+			`	"Interessante," dice, mentre si asciuga lo sputo dal viso con la manica. Poi lancia un'occhiata al tecnico. "Hai rilevato qualcosa?"`
+			`	"<last> rientra ampiamente nei parametri umani, signore," dice il tecnico.`
+			label human
+			`	L'ufficiale annuisce in segno di assenso, poi sgancia i tuoi fermagli per le braccia. "Mi dispiace di doverti chiedere scusa, Capitano," dice. "Vuoi restituirmi il colpo?" Si sporge verso di te per metterti la faccia a tiro.`
+			choice
+				`	"No, grazie."`
+				`	(Colpiscilo anche tu.)`
+					goto retaliate
+			`	"Che gentile," dice. Poi chiede al tecnico: "E Hanover?"`
+			`	Il tecnico dice: "Hanover non è umano. Né Alpha. Non ho mai visto letture così, se non forse in un empatico."`
+				goto hanover
+			label retaliate
+			`	Lo colpisci. Lui barcolla all'indietro, poi guarda il tecnico, che riferisce: "Hanover l'ha sentito, signore. Risposta empatica."`
+			label hanover
+			`	"Come?" dice l'ufficiale. Si avvicina e studia i monitor per un minuto, poi dice: "Signor Hanover, lei ha la pelle di un umano. Ha il fisico di un Alpha. Ma ha registrato più dolore simpatico vedendo colpire qualcun altro in faccia di quanto ne abbia registrato quando è stato colpito lei, il che rende il suo cervello l'esatto opposto di quello di un Alpha. Quindi, che diavolo è? Chi l'ha creato, e perché?"`
+			`	Elias non dice nulla.`
+			`	"Signore," dice il tecnico, "le storie potrebbero essere vere?" Lo sguardo nei suoi occhi è qualcosa che somiglia al timore reverenziale.`
+			`	"Sì, esistono le vecchie leggende," dice l'ufficiale, pensieroso. "Un'arma segreta contro gli Alphas. Creata nei laboratori del governo con tecnologia proibita. Simile agli Alphas per certi versi, ma progettata per servire, non per dominare. È questo che sei? Sei un Beta?" Elias non dice nulla.`
+			choice
+				`	"Se non è un Alpha, non avete il diritto di imprigionarci."`
+				`	"Se siete convinto che nessuno di noi due sia un Alpha, volete lasciarci andare?"`
+			`	"Suppongo di sì," dice l'ufficiale. Mentre vi liberano dalle sedie, dice a Elias: "Se sei quello che credo, possiamo aiutarti a completare finalmente il tuo lavoro. Raduna i tuoi fratelli. Unisciti a noi. Insieme possiamo porre fine agli Alphas." Elias, però, non dice nulla.`
+			`	Vi portano nel corridoio e ti rendi conto di essere a bordo di un incrociatore della Marina. Mentre lasciate la nave, l'ufficiale dice a Elias: "Pensaci."`
+			`	Elias resta in silenzio finché la nave è a portata d'orecchio, poi dice: "Incontriamo Danforth allo spazioporto e vediamo che cosa pensa che dobbiamo fare."`
+				accept
+
+
+
+mission "Wanderers: Alpha Surveillance I"
+	name "Riporta Elias su <planet>"
+	description "Porta Elias Hanover su <destination>, dove si spera sarà al sicuro da ritorsioni degli Alphas per averli scacciati dalla loro base su Avalon."
+	autosave
+	source "Farpoint"
+	destination "Alta Hai"
+	to offer
+		has "Wanderers: Alpha Surveillance G: done"
+	passengers 1
+	blocked "Non hai abbastanza spazio per passeggeri per accettare questa missione. Torna qui quando avrai una cuccetta libera."
+	
+	on offer
+		fail "Wanderers: Alpha Surveillance H"
+		conversation
+			`Danforth sembra sollevato nel vedervi vivi. "Maledetta Agenzia di Intelligence della Repubblica," dice. "Credono di essere al di sopra della legge. E dopo tutto questo hanno deciso che siete puliti entrambi?" Guarda Elias intensamente.`
+			choice
+				`	"Sì, e in effetti ora stanno cercando di farci collaborare con loro contro gli Alphas."`
+				`	"Sì, e pensano che Elias possa aiutarli contro gli Alphas."`
+			`	"Capisco," dice Danforth. "Vorrei poterti dire che ci si può fidare di loro. Vorrei poterti dire che non esiste posto più sicuro per un nemico degli Alphas che qui con me."`
+			branch know
+				has "event: death of nguyen"
+			`	Si ferma a prendere una tavoletta dati dalla scrivania e ad aprirvi un file. "Di recente," dice Danforth, "un mio ufficiale ha contribuito a smantellare un insediamento Alpha, come avete fatto voi." Sta guardando specificamente Elias mentre lo dice. "Un mese dopo è stato assassinato, non si sa come, proprio qui nella mia base navale. Ecco una sua foto." Danforth fa scivolare la tavoletta sulla scrivania. Mostra un uomo che non riconosci, ma Elias soffoca un grido di sgomento quando vede chi è. Danforth dice: "Non posso fingere che qui sareste al sicuro. Credo che la cosa più sicura per entrambi sia lasciare lo spazio umano per un po'."`
+				goto leave
+			label know
+			`	Si ferma a prendere una tavoletta dati dalla scrivania e ad aprirvi un file. "Di recente," dice Danforth, "un mio ufficiale ha contribuito a smantellare un insediamento Alpha, come avete fatto voi." Sta guardando specificamente Elias mentre lo dice. "Un mese dopo è stato assassinato, non si sa come, proprio qui nella mia base navale. Ecco una sua foto." Danforth fa scivolare la tavoletta sulla scrivania. Mostra una foto del comandante Nguyen, e con tua sorpresa Elias soffoca un grido di sgomento quando vede chi è. Danforth dice: "Non posso fingere che qui sareste al sicuro. Credo che la cosa più sicura per entrambi sia lasciare lo spazio umano per un po'."`
+				goto leave
+			label leave
+			`	Concordi che porterai Elias ad Alta Hai. Qualunque cosa sia Elias, chiunque possa volergli male, puoi solo sperare che un mondo ad anello dei Quarg sia il posto più sicuro per lui in questo momento.`
+				accept
+	on visit
+		dialog `Sei atterrato su <planet>, ma ti rendi conto che Elias è su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers: Alpha Surveillance J"
+	name "Torna da Iktat Rek su <planet>"
+	description "Presentati a Iktat Rek su <planet>, nel sistema <system>, ora che la base degli Alphas è stata eliminata."
+	landing
+	source "Alta Hai"
+	destination "Vara K'chrai"
+	to offer
+		has "Wanderers: Alpha Surveillance I: done"
+	
+	on offer
+		event "wanderers: first tech increase"
+		conversation
+			`Lasci Elias su <origin>. "Non preoccuparti per me," dice. "I Quarg mi tengono al sicuro qui da molto tempo. Grazie per essere stato disposto a rischiare la vita contro gli Alphas."`
+			choice
+				`	"Aspetta, non mi dirai se qualcosa di quello che quell'ufficiale ha detto su di te era vero?"`
+				`	(Lascialo andare senza insistere per avere altre informazioni.)`
+					goto end
+			`	Dice: "È vero che ho sei secoli. È vero che non sono strettamente umano. È vero che mi oppongo agli Alphas. Più di questo non dirò, sia per la mia sicurezza sia per la tua."`
+			label end
+			`	Auguri a Elias ogni bene e gli dici che speri di rivederlo un giorno. Ora probabilmente dovresti tornare nello spazio dei Wanderers e presentarti a Iktat Rek.`
+				accept
+	
+	on complete
+		"reputation: Wanderer" >?= 30
+		event "wanderers: heavy gust mass production" 30
+		event "wanderers: unfettered invasion starts" 64
+		log "Hai riferito ai Wanderers che gli Alphas, che vendevano motori di salto agli Slegati, sono stati indeboliti e costretti a nascondersi. I Wanderers stanno aumentando la produzione di navi militari per cercare di fronteggiare la continua offensiva degli Slegati."
+		conversation
+			`È difficile esserne certi, ma l'attività intorno allo spazioporto sembra più frenetica del solito, e i Wanderers sembrano aver avviato la produzione di nuovi modelli di nave. Quando chiedi spiegazioni a Iktat Rek, dice: "Quando gli Slegati [hanno invaso, hanno occupato] il nostro territorio per la prima volta, non avevamo quasi nessuna arma di [guerra, difesa]. Da allora abbiamo recuperato vecchi [progetti, istruzioni] e abbiamo cominciato a prepararci a ciò che verrà, per [spiacevole, increscioso] che sia."`
+			`	Mentre gli descrivi il tuo successo parziale con gli Alphas, scuote le ali e arruffa le piume in quello che sembra un gesto nervoso e agitato. "Questi [esseri, creature] Alpha sembrano più [pericolosi, irragionevoli, spietati] degli Slegati," dice. "Qualsiasi specie [sociale, gregaria] che si evolva naturalmente sviluppa certi [limiti, freni, vincoli] che una specie [artificiale, costruita] potrebbe non avere. Come possiamo [rispondere a, trattare con] loro nel modo migliore?"`
+			choice
+				`	"Forse è più saggio lasciarli in pace."`
+				`	"Credo che l'unica risposta sia essere abbastanza forti perché vi lascino in pace."`
+				`	"Prima o poi dovremo dar loro la caccia e distruggerli."`
+			`	"Probabilmente hai ragione," dice, incerto. Fissa il cielo con aria assente e si gratta un'ala con un artiglio. Qualche piuma cade. "Se solo l'Occhio si aprisse," dice. "Sento l'aria [carica, tesa] come nel momento prima di una tempesta. Come se [aspettassimo, attendessimo] qualcosa che dovrebbe essere qui e non c'è. Anche se potrebbe portare [catastrofe, sconvolgimento, transizione], vorrei che l'attesa finisse."`
+			`	Parlate ancora un po', ma sembra che per ora i Wanderers non abbiano altro bisogno di te. Iktat Rek accenna che dovresti passare dal fornitore prima di andartene, per vedere "i nostri [cupi, incresciosi] nuovi dispositivi", poi ti ringrazia ancora una volta e si allontana.`
+
+# Patching a mistake in 0.9.1:
+mission "Wanderers: Unfettered Invasion Patch"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "event: wanderers: unfettered invasion"
+	on offer
+		event "wanderers: unfettered invasion starts"
+		fail
+
+# Giving Heavy Gust to old saves:
+mission "Wanderers: Heavy Gust Patch"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "event: wanderers: unfettered invasion starts"
+		not "event: wanderers: heavy gust mass production"
+	on offer
+		event "wanderers: heavy gust mass production"
+		fail
+
+mission "Wanderers Invaded 0"
+	landing
+	name "Invasione degli Slegati"
+	description `Recati su <destination> per chiedere a Iktat Rek se puoi aiutare i Wanderers contro l'invasione degli Slegati.`
+	source
+		government "Wanderer"
+		near "Ka'ch'chrai" 1 100
+	destination "Vara K'chrai"
+	to offer
+		has "event: wanderers: unfettered invasion starts"
+		not "Wanderers Invaded 1: offered"
+	on offer
+		conversation
+			`I Wanderers su <origin> sono nel panico. A quanto pare gli Slegati sono finalmente riusciti a conquistare uno dei pianeti dei Wanderers, e ora stanno radunando lì una flotta da guerra. Probabilmente dovresti parlare con Iktat Rek e vedere se gli serve il tuo aiuto per respingere gli Slegati.`
+				accept
+
+
+
+mission "Wanderers Invaded 1"
+	landing
+	name "Evacua <planet>"
+	description `Scorta una flotta di mercantili, riadattati al trasporto di profughi, fino a <destination>.`
+	autosave
+	source "Vara K'chrai"
+	destination "Varu Mer'ek"
+	to offer
+		has "event: wanderers: unfettered invasion starts"
+	on offer
+		log "Gli Slegati hanno stabilito una testa di ponte su uno dei mondi dei Wanderers e ora usano apparentemente i pochi motori di salto che possiedono per far arrivare nello spazio dei Wanderers sempre più navi da guerra. La guerra è cominciata sul serio."
+		conversation
+			`Iktat Rek sembra più affannato e ansioso di quanto tu lo abbia mai visto: le piume, normalmente curatissime, gli spuntano ad angoli strani a chiazze sul viso e sulle spalle, e cammina avanti e indietro irrequieto mentre parlate. "Abbiamo cominciato a costruire navi da guerra," dice, "ma non abbiamo ancora la [forza, consistenza numerica] per resistere agli invasori. Dobbiamo ritirarci in una posizione più [stretta? difendibile?]. Ci aiuterai nell'evacuazione?"`
+			choice
+				`	"Sarò lieto di aiutarvi."`
+					goto end
+				`	"Perché non contrattaccare gli Slegati e scacciarli, prima che possano consolidare la loro posizione?"`
+			`	"Non è questo che siamo," dice. "Tu non sei un Wanderer. Non puoi [capire, comprendere]. Il nostro lavoro non è completo finché i mondi che abbiamo [curato, accudito] non sono [donati, lasciati in eredità] ad altri. [L'arte, La creazione] è senza vita finché altri non ne [godono, fanno esperienza]. Se gli Slegati sono quelli [destinati, scelti] a godere di ciò che abbiamo [creato, realizzato], allora daremo volentieri a loro il nostro [territorio, mondi]."`
+			choice
+				`	"Va bene, vi aiuterò a evacuare."`
+			label end
+			`	"Grazie," dice. "Abbiamo messo insieme una flotta di mercantili, riadattati a trasportare [profughi, sfollati]. Non sono navi ideali, ma per ora basteranno, finché non potremo produrre navi [da trasporto, per l'evacuazione] dedicate. Per favore scorta la flotta fino a <planet>. Riceverai altre [istruzioni, indicazioni] quando atterri."`
+				accept
+	npc accompany save
+		government "Wanderer"
+		personality timid escort
+		ship "Deep River Transport" "Espret Si'yakar"
+		ship "Deep River Transport" "Fel'tar Kor'meti'i"
+		ship "Deep River Transport" "Tok'tobar'tek La'a"
+		ship "Deep River Transport" "Eka'ta Turuk'ta"
+	on visit
+		dialog
+			`Hai raggiunto <planet>, ma i trasporti dei Wanderers non sono ancora arrivati tutti. Dovresti decollare e aspettare che ti raggiungano.`
+
+
+
+mission "Wanderers Invaded 1B"
+	landing
+	name "Evacua <origin>"
+	description `Scorta una flotta di mercantili, riadattati al trasporto di profughi, fino a <destination>.`
+	autosave
+	source "Varu Mer'ek"
+	destination "Var' Kar'i'i"
+	to offer
+		has "Wanderers Invaded 1: done"
+	on offer
+		conversation
+			`Una Wanderer di nome Emeka'a Isai ti incontra quando atterri con la flotta di mercantili. Da come gli altri eseguono i suoi ordini, diresti che è un governatore locale o qualcosa del genere. "Iktat Rek mi ha detto di aspettarti," dice. "Evacueremo prima i civili, poi i [difensori, guerrieri], poi i nostri [beni, averi] se ce ne sarà il tempo. Un [gruppo, drappello] di civili è già pronto a partire. Per favore scortali fino a <planet>." Si volta per parlare con qualcun altro. A quanto pare è troppo occupata per darti altri dettagli.`
+			choice
+				`	(Lasciala al suo lavoro e preparati a scortare i mercantili.)`
+					accept
+				`	"Potrei aiutarvi a combattere, invece?"`
+			`	Sorpresa, interrompe l'altra conversazione e si volta verso di te. "Non è ancora il momento [adatto, strategico] per combattere," dice. "Arrivano come una marea; dobbiamo arretrare su un terreno più alto, dove le loro ondate si [allungheranno, esauriranno] nel tentativo di raggiungerci."`
+			`	Ti scusi per l'interruzione e accetti di aiutare a scortare i profughi in salvo.`
+				accept
+	
+	npc evade
+		government "Hai (Unfettered)"
+		personality staying
+		system "Prakacha'a"
+		fleet
+			names "hai"
+			variant
+				"Shield Beetle"
+				"Shield Beetle (Tracker)"
+				"Shield Beetle (Pulse)"
+				"Water Bug" 3
+				"Water Bug (Pulse)" 4
+	
+	npc accompany save
+		government "Wanderer"
+		personality timid escort
+		ship "Deep River Transport" "Espret Si'yakar"
+		ship "Deep River Transport" "Fel'tar Kor'meti'i"
+		ship "Deep River Transport" "Tok'tobar'tek La'a"
+		ship "Deep River Transport" "Eka'ta Turuk'ta"
+	on visit
+		dialog
+			`Hai raggiunto <planet>, ma i trasporti dei Wanderers non sono ancora arrivati tutti. Dovresti decollare e aspettare che ti raggiungano.`
+	on complete
+		log "Hai aiutato a evacuare alcuni Wanderers da uno dei loro mondi più vicini allo spazio degli Slegati."
+		conversation
+			`Lasci i profughi Wanderer. Uno dei funzionari Wanderer venuti a riceverli ti dice: "Ti siamo grati per il tuo [aiuto, la tua amicizia]. Se sei [disponibile, disposto] ad aiutarci ancora, vai a parlare con Sobari Tele'ek, il comandante militare." Il funzionario Wanderer indica una sezione dello spazioporto dove molti Wanderers sono impegnati a caricare provviste su alcune navi Wanderer diverse da tutte quelle che hai visto finora.`
+
+
+
+event "battle for ik'kara'ka"
+	system "Ik'kara'ka"
+		fleet "Wanderer Flycatchers" 400
+
+mission "Wanderers Invaded 2"
+	name "Difendi <planet>"
+	description `Respingi la flotta degli Slegati che attacca <system> per dare ai Wanderers più tempo, poi atterra su <planet>.`
+	autosave
+	source "Var' Kar'i'i"
+	destination "Varu Mer'ek"
+	to offer
+		has "Wanderers Invaded 1B: done"
+	on offer
+		log "People" "Sobari Tele'ek" `Tele'ek è un comandante militare dei Wanderers. Non è chiaro quale sia il suo grado né se l'esercito dei Wanderers sia organizzato abbastanza perché gli individui abbiano gradi, ma gli è stato affidato il compito di trattenere gli Hai mentre vengono evacuati i restanti mondi Wanderer vicini al fronte.`
+		conversation
+			scene "scene/tempest"
+			`Le navi in questo angolo dello spazioporto sono davvero di un nuovo modello, più tozze e meno affusolate della maggior parte delle navi dei Wanderers. Sobari Tele'ek, che si rivela essere un comandante militare, ti saluta e dice: "Per la prima volta in diecimila anni abbiamo costruito navi [progettate, pensate] per la guerra. Come le [giudichi, valuti]?"`
+			choice
+				`	"È un progetto bellissimo."`
+				`	"Sembrano navi molto potenti."`
+			`	Le sue pupille si dilatano e si contraggono per qualche inscrutabile emozione Wanderer. "Sono navi brutte," dice, "[senza grazia, ineleganti, grezze], come tutte le cose di guerra. Una necessità [spiacevole, incresciosa]."`
+			`	Mentre parlate, il suo dispositivo di comunicazione emette un bip, e una voce urgente gli parla nella lingua dei Wanderers. Tele'ek si volta verso di te e dice: "<planet> è sotto attacco. Dobbiamo [respingere, far arretrare] gli Hai abbastanza a lungo da preparare altri nostri simili all'evacuazione. Ci aiuterai a [combatterli, resistere]?"`
+			choice
+				`	"Volentieri."`
+				`	"Mi dispiace, non voglio più aiutare i Wanderers."`
+					decline
+			`	"Sono contento del tuo [aiuto, della tua compagnia]," dice, "anche se non delle nostre circostanze. Le mie navi ti seguiranno nel sistema <system>. Lì dovremo respingere gli Hai finché il prossimo [convoglio, gruppo] non sarà pronto."`
+				accept
+	on accept
+		event "battle for ik'kara'ka"
+	on visit
+		dialog "Ci sono ancora navi da guerra degli Slegati là sopra. Dovresti decollare di nuovo e dare una mano nello scontro."
+	npc evade
+		personality staying
+		system "Ik'kara'ka"
+		government "Hai (Unfettered)"
+		fleet
+			names "hai"
+			variant
+				"Shield Beetle" 2
+				"Shield Beetle (Tracker)" 2
+				"Shield Beetle (Pulse)" 3
+				"Water Bug" 4
+				"Water Bug (Pulse)" 7
+	npc
+		personality heroic escort
+		government "Wanderer"
+		fleet
+			names "wanderer"
+			variant
+				"Tempest (Heavy)"
+				"Tempest"
+				"Tempest (Missile)"
+	npc
+		personality heroic staying
+		system "Ik'kara'ka"
+		government "Wanderer"
+		fleet
+			names "wanderer"
+			variant
+				"Heavy Gust" 1
+				"Autumn Leaf" 2
+				"Summer Leaf" 3
+	npc
+		personality staying derelict
+		system "Ik'kara'ka"
+		government "Wanderer"
+		fleet
+			names "wanderer"
+			variant
+				"Strong Wind" 1
+				"Autumn Leaf" 3
+				"Summer Leaf" 5
+
+
+
+event "capture of ik'kara'ka"
+	system "Ik'kara'ka"
+		government "Hai (Unfettered)"
+		fleet "Wanderer Defense" 1000
+		fleet "Small Unfettered" 600
+		fleet "Large Unfettered" 400
+	planet "Varu Mer'ek"
+		attributes "unfettered" "factory"
+		description `Questo mondo-fabbrica dei Wanderers è stato conquistato di recente dagli Hai Slegati, che ora sono impegnati a cercare di riadattare le fabbriche e le attrezzature lasciate indietro dai Wanderers per costruire altre navi per le loro flotte da guerra. I Wanderers non hanno avuto il tempo di demolire le loro attrezzature né di portarle fuori dal pianeta prima che il mondo fosse perduto. Di conseguenza hanno lasciato agli Slegati un vantaggio tecnologico notevole.`
+		spaceport `Gli Slegati sembrano trovarsi molto a proprio agio nelle case sugli alberi lasciate dai Wanderers, e i giovani Slegati che vivono qui si arrampicano sui tronchi e saltano da un albero all'altro con abbandono imprudente, esultando per questo nuovo mondo che hanno conquistato e cercando di superarsi a vicenda in imprese spericolate.`
+		shipyard clear
+		outfitter clear
+
+mission "Wanderers Invaded 3"
+	landing
+	name "Evacua <origin>"
+	description `Scorta un'altra flotta di trasporti di profughi Wanderer fino a <destination>.`
+	autosave
+	source "Varu Mer'ek"
+	destination "Var' Kar'i'i"
+	passengers 1
+	blocked "Ricevi un messaggio da Isai che indica che vorrebbe unirsi a te per la prossima missione, ma in questo momento non hai spazio. Torna quando avrai una cuccetta libera."
+	to offer
+		has "Wanderers Invaded 2: done"
+	on offer
+		log "Hai aiutato a difendere un pianeta dei Wanderers da un attacco degli Slegati. Ma ora i Wanderers intendono abbandonare quel pianeta. Sembrano molto restii a tenere davvero la posizione e a contrattaccare."
+		event "wanderers: varu mer'ek evacuated"
+		conversation
+			`Sembra che gli ultimi civili siano pronti al trasporto verso <planet>: una grande folla si è radunata nello spazioporto, ma quasi tutti gli edifici sono vuoti. In modo incongruo, alcuni Wanderers sono impegnati a spazzare i marciapiedi, annaffiare le piante e fare altri sforzi per rassettare lo scalo, come per renderlo il più presentabile possibile agli Slegati quando atterreranno.`
+			`	Isai ti saluta e chiede se può viaggiare con te. "Questi sono gli ultimi civili," dice. "I [guerrieri, difensori] resteranno indietro finché tutti non saranno [al sicuro, via], poi ci raggiungeranno su <planet>. Ma la cosa più importante è che i trasporti arrivino a <planet> incolumi. Li scorterai?"`
+			choice
+				`	"Lo farò. Mi dispiace che dobbiate abbandonare la vostra casa."`
+					goto end
+				`	"Sarei contento di restare a combattere, se volete."`
+			`	"Sei strano," dice. "Non sei tu quello che qui subisce [una perdita, un'umiliazione]. Non hai alcun [diritto, motivo] di desiderare di rispondere ai colpi. Combattere è forse per te un [piacere, divertimento] maggiore del salvare delle vite?"`
+			choice
+				`	"Va bene, aiuterò a proteggere i trasporti."`
+					goto end
+				`	"Mi dispiace, pensavo solo di potervi essere più utile combattendo che ritirandomi."`
+			`	"[Prevedo, Vedo] che avrai molte occasioni di aiutare con [i combattimenti, la violenza] prima che questa situazione si risolva," dice, "ma per ora il nostro obiettivo è [evitare, ridurre al minimo] il conflitto finché non capiremo meglio gli Hai."`
+			`	"Va bene," dici, "aiuterò a proteggere i trasporti."`
+			label end
+			`	"Grazie," dice. "Come prima, non [aspettare, indugiare] e non unirti ai combattimenti. Porta solo la nostra gente sana e salva su <planet>."`
+				launch
+	on accept
+		event "capture of ik'kara'ka" 2
+	
+	npc accompany save
+		government "Wanderer"
+		personality timid escort
+		ship "Deep River Transport" "Espret Si'yakar"
+		ship "Deep River Transport" "Fel'tar Kor'meti'i"
+		ship "Deep River Transport" "Tok'tobar'tek La'a"
+		ship "Deep River Transport" "Eka'ta Turuk'ta"
+	on visit
+		dialog
+			`Hai raggiunto <planet>, ma i trasporti dei Wanderers, o la tua nave che porta Isai, non sono ancora arrivati tutti. Dovresti decollare e aspettare che ti raggiungano.`
+
+
+
+event "wanderers: varu mer'ek evacuated"
+	planet "Varu Mer'ek"
+		remove spaceport
+		remove shipyard
+		remove outfitter
+		remove "required reputation"
+		remove tribute
+
+
+
+mission "Wanderers Invaded 3B"
+	landing
+	name "Riunione dei Wanderers"
+	description `Unisciti ai capi dei Wanderers su <planet> per una riunione sulla strategia contro gli Slegati.`
+	autosave
+	source "Var' Kar'i'i"
+	destination "Vara K'chrai"
+	passengers 1
+	to offer
+		has "Wanderers Invaded 3: done"
+	on offer
+		conversation
+			`Mentre i trasporti si avvicinano per atterrare, Isai riceve un messaggio che ti gira: "Un consiglio di capi si riunisce presto nella nostra capitale, e hanno accettato di [permetterti, invitarti] di unirti a noi perché sei una [parte interessata, parte in causa] in questo conflitto. Puoi trasportarmi su <planet>?"`
+			choice
+				`	"Certo."`
+				`	"Mi dispiace, non intendo più aiutare i Wanderers."`
+					decline
+			`	"Grazie," dice. "Dovremmo andarci in fretta, così potremo decidere la prossima [mossa, strategia] prima che gli Hai ci attacchino di nuovo."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Isai non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers Invaded 3C"
+	landing
+	name "In attesa dell'Occhio"
+	description `Scopri che cosa controlla il cunicolo che i Wanderers chiamano "l'Occhio", e cerca informazioni su quando si aprirà e dove.`
+	autosave
+	source "Vara K'chrai"
+	to offer
+		has "Wanderers Invaded 3B: done"
+	to complete
+		has "Wanderers Invaded 3C (Pug): offered"
+	on offer
+		conversation
+			`Atterri su <origin>, e Emeka'a Isai ti conduce nell'edificio dove si svolge il consiglio di guerra. Anche Sayari, la diplomatica Hai, è stata invitata, insieme a Iktat Rek e a vari altri capi. Rek sembra ancora più malconcio di prima: le ali gli pendono e molte più piume sono fuori posto.`
+			`	Non ti è del tutto chiaro chi abbia più autorità di chi nella riunione, né che ruolo abbiano i diversi partecipanti. A peggiorare le cose, ti viene ricordato in modo sgradevole che il tuo traduttore capisce solo la lingua Hai. Rek e Isai parlano per lo più in Hai perché tu e Sayari possiate essere inclusi, ma quando la conversazione si accende passano tutti alla lingua natia, una cacofonia di schiocchi e fischi.`
+			`	Stanno guardando una mappa dello spazio dei Wanderers, ed è chiaro dai loro gesti che la discussione riguarda fin dove possano permettersi di ritirarsi per formare una posizione più difendibile. Rek ti spiega: "Quando l'Occhio si aprirà, dovremo comunque lasciare questo [territorio, spazio], quindi un ritiro adesso ci metterà semplicemente in una posizione migliore per [imbarcarci, metterci in viaggio] quando verrà il momento."`
+			choice
+				`	"Ma se l'Occhio non si apre e restate intrappolati qui?"`
+					goto trapped
+				`	"Sapete quando si aprirà l'Occhio?"`
+			`	"No," dice Isai, "non lo sappiamo. Potrebbe non aprirsi per altri cento [anni]. L'Occhio è una cosa da [mito, mistero] e potrebbe non rispondere al nostro bisogno. Ecco perché dico che dove scegliamo di [tener duro, tracciare una linea], dobbiamo [tenere, difendere] quel punto con fermezza."`
+				goto end
+			label trapped
+			`	"È la mia stessa preoccupazione," dice Isai. "L'Occhio è una cosa da [mito, mistero] e potrebbe non rispondere al nostro bisogno. Non possiamo permetterci di fare piani [dando per scontato, aspettandoci] che si apra quest'anno, né fra cento anni. Quindi dobbiamo scegliere che cosa possiamo permetterci di [perdere, cedere, lasciare] adesso, e [tenere, difendere] con fermezza il resto del nostro territorio."`
+			label end
+			`	I capi dei Wanderers decidono di cominciare a evacuare altri quattro dei loro mondi più vicini agli Slegati, sperando che non vengano attaccati prima che l'evacuazione sia completa. Se necessario, arretreranno fino al sistema Ap'arak, immediatamente a est di questo, e lì terranno la loro ultima posizione.`
+			`	Nel frattempo l'intera strategia dei Wanderers dipende da dove e quando si aprirà il mitico Occhio, il portale che li condurrà alla loro prossima casa. Essendo l'unico alleato dei Wanderers con accesso a un motore di salto, forse sarai tu in grado di rispondere a quella domanda.`
+				accept
+	on accept
+		"reputation: Pug (Wanderer)" >?= 1
+	on visit
+		dialog `Torni su <planet> senza altre informazioni su chi o che cosa controlli l'Occhio. Forse la risposta è più vicina di quanto pensi.`
+	on complete
+		dialog
+			`Hai raccolto alcune informazioni utili sulla natura dell'"Occhio". Probabilmente dovresti andare allo spazioporto e incontrare Iktat Rek.`
+
+
+
+mission "Wanderers Invaded 3C (Pug)"
+	landing
+	source "Vara Pug"
+	to offer
+		has "Wanderers Invaded 3C: active"
+	on offer
+		log "Hai visitato il pianeta dei Pug adiacente allo spazio dei Wanderers per vedere se sono disposti a intervenire e aiutare i Wanderers, ora che gli Hai Slegati rappresentano una minaccia così grave e hanno conquistato diversi mondi Wanderer. Per qualche motivo, però, i Pug insistono che i Wanderers combattano da soli."
+		conversation
+			branch revisiting
+				has "Pug in Wanderer Space: offered"
+			`Questo mondo è popolato dai Pug, la stessa enigmatica specie che di recente ha invaso lo spazio umano, per poi andarsene senza dare alcuna risposta chiara sul perché. Sai già che i Pug sono in grado di controllare i cunicoli spaziali, quindi è molto probabile che abbiano a che fare con il cunicolo che i Wanderers chiamano "l'Occhio" e che sperano si apra presto.`
+				goto opening
+			label revisiting
+			`Torni su questo mondo dei Pug sperando di ottenere qualche risposta in più di quelle che ti hanno offerto l'ultima volta. Come prima, sembrano abbastanza pacifici, ma quasi tutti si comportano come se tu non esistessi.`
+			label opening
+			`	Dopo che sei rimasto lì in piedi per almeno 20 minuti, uno dei Pug si avvicina e dice: "A questo sembra che l'umano non abbia intenzione di tornare educatamente sulla sua nave e andarsene. Questo può aiutare l'umano ad affrettarsi per la sua strada?"`
+			choice
+				`	"Devo sapere: siete voi a controllare il cunicolo che i Wanderers chiamano l'Occhio?"`
+				`	"I Wanderers sono attaccati. Stanno morendo. Voi vi importa di loro?"`
+					goto care
+			`	"Sì, ci importa," dice.`
+				goto second
+			label care
+			`	"Ci importa molto," dice. "Sono insostituibili, e molto utili per noi."`
+			label second
+			choice
+				`	"Dovete aprire l'Occhio, così che i Wanderers possano sfuggire agli Slegati."`
+				`	"Potete dirmi quando avete intenzione di aprire il portale?"`
+					goto when
+			`	"Dobbiamo, umano? Dobbiamo proprio?"`
+			label when
+			`	Cominci a richiamare una folla. Altri due Pug si avvicinano. Uno è armato con un bastone. L'altro ti dice: "Di' ai modellatori di mondi che non è ancora tempo che il portale si apra. Devono prepararsi a combattere. Ora, vai."`
+			choice
+				`	(Torna alla mia nave.)`
+					decline
+				`	"Non sono abbastanza forti. Verranno uccisi."`
+			`	"Devono diventare abbastanza forti," dice il Pug con il bastone. "Devono ricordare come si combatte."`
+			choice
+				`	(Torna alla mia nave.)`
+					decline
+				`	"No. Sono un popolo pacifico. Non costringeteli a fare la guerra. Non costringeteli a uccidere."`
+			`	I Pug non rispondono. Si limitano ad allontanarsi.`
+			choice
+				`	(Torna alla mia nave.)`
+					decline
+				`	"Esigo che mi ascoltiate."`
+			`	Mentre cerchi di seguire il gruppo di Pug, il primo dice agli altri: "All'umano deve piacere essere colpito con il bastone della felicità." Quello con il bastone lo agita in modo minaccioso verso di te.`
+			choice
+				`	(Torna alla mia nave.)`
+					decline
+				`	(Continua a insistere perché ti ascoltino.)`
+			`	Con un gesto alquanto sprezzante il Pug punta il bastone verso il tuo viso, e un'onda di meravigliosa luce iridescente ti travolge e bagna il mondo intero di scintille opalescenti che saltano agili dai peli delle cose e si accoccolano nella tua coscienza soddisfatta come minuscoli pesciolini di pura gioia. Ti metti a saltellare inseguendo una scia di bolle fluttuanti che scoppiano con il suono di campanelli al vento e trombe lontane quando le tocchi, e l'odore di pesche mature riempie l'aria finché non barcolli attraverso il tuo portello e vomiti in un angolo.`
+			`	Forse è il momento di lasciare questo pianeta.`
+				decline
+
+
+
+mission "Wanderers Hai Assistance 1"
+	name "Assistenza agli Hai"
+	description `Recati su <planet> con l'ambasciatrice Sayari e vedi se riesce a convincere gli Hai ad aiutare a trattenere gli Slegati dall'attaccare i Wanderers.`
+	autosave
+	source "Vara K'chrai"
+	destination "Hai-home"
+	clearance
+	passengers 1
+	blocked "Per continuare ad aiutare i Wanderers ti serve una cuccetta libera per un passeggero. Torna qui quando avrai spazio disponibile."
+	to offer
+		has "Wanderers Invaded 3C: done"
+	on offer
+		conversation
+			`Incontri l'ambasciatrice Sayari e Iktat Rek e racconti loro che cosa hanno detto i Pug. "I Custodi dell'Occhio parlano [in modo sottile, con cautela]," dice Rek, "e nascondono la verità nelle [sfumature, distinzioni] delle loro parole. Che cosa hanno detto esattamente?"`
+			choice
+				`	"Non è ancora tempo che il portale si apra. Dovete prepararvi a combattere."`
+			`	"Dobbiamo [fare preparativi, essere pronti] a combattere," ripete Iktat Rek, lentamente. Si passa un artiglio fra le piume arruffate del capo, in qualcosa di simile al gesto umano di grattarsi la testa per la confusione. Parecchie piume cadono. "Capisco," dice, e le ali gli si abbassano ancora più di prima. "Dirò ai [capi di guerra, strateghi] di dire ai [costruttori, progettisti] che dobbiamo costruire più navi da guerra, e più grandi."`
+			choice
+				`	"Come posso aiutare nel frattempo?"`
+			`	Sayari dice: "Mi sono offerta di parlare con i governatori degli Hai, per vedere se possono fare qualcosa per trattenere gli Slegati dall'intraprendere altre incursioni nello spazio dei Wanderers. Saresti disposto a trasportarmi su <planet>?"`
+			`	"Certo," dici. Lei va a prendere il necessario per il viaggio e a incontrarti alla tua nave.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Sayari non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers Hai Assistance 2"
+	landing
+	name "Negoziato con gli Slegati"
+	description "Recati sul pianeta militare degli Slegati <destination>, e vedi se accettano di dare ai Wanderers il tempo di evacuare i loro mondi vicini al fronte."
+	autosave
+	source "Hai-home"
+	destination "Darkcloak"
+	clearance "After a long and tense conversation, Ambassador Sayari convinces the Unfettered war chiefs to let you land and meet with them."
+	passengers 1
+	to offer
+		has "Wanderers Hai Assistance 1: done"
+	on offer
+		log "Sei andato sul mondo d'origine degli Hai con l'ambasciatrice Sayari per vedere se riesce a convincere gli Hai ad agire per trattenere gli Slegati dall'attaccare i Wanderers. Il massimo che gli Hai erano disposti a fare era radunare una grande flotta da guerra vicino allo spazio degli Slegati, così che gli Slegati debbano dirottare lì delle navi da guerra per difendere i loro mondi d'origine."
+		conversation
+			`Gli Hai sono governati da un "consiglio degli anziani" eletto, che accetta di incontrarti insieme a Sayari. Dopo che hai descritto la situazione dei Wanderers, uno degli anziani dice: "Ne avevamo sentito delle voci. Gli Slegati hanno reclutato migliaia di nuovi guerrieri raccontando storie di pianeti da esplorare e colonizzare, e di un nemico codardo e sciocco da sconfiggere."`
+			`	Sayari dice: "Non possiamo permettere che gli Slegati commettano un genocidio in nome del popolo Hai."`
+			`	Un altro anziano risponde: "Ma negli Accordi di Frostmark abbiamo promesso che non saremmo intervenuti nello spazio degli Slegati."`
+			`	"Non hanno mai rispettato la loro parte del trattato," dice ancora un altro degli anziani, "e di certo impedire un genocidio è ragione sufficiente per infrangere la nostra."`
+			choice
+				`	"Potreste minacciare di tagliare gli aiuti agli Slegati se continuano la loro aggressione?"`
+				`	"Potreste sferrare un attacco agli Slegati, costringendoli a combattere una guerra su due fronti?"`
+					goto attack
+			`	"Temo che questo li spingerebbe solo ad altri atti di disperazione," dice Sayari.`
+				goto threaten
+			label attack
+			`	"Non autorizzerò violenze preventive contro il nostro stesso sangue," dice uno degli anziani. "Noi ci difendiamo soltanto da loro, non iniziamo mai volontariamente un attacco."`
+			label threaten
+			`	"Forse basterebbe minacciarli," dice un altro degli anziani. "Potremmo radunare una flotta da guerra enorme sopra Cloudfire. Gli Slegati dovrebbero radunare una flotta equivalente sopra Darkcloak. Questo allontanerebbe molte delle loro navi da guerra dal territorio alieno."`
+			`	Dopo oltre un'ora di discussione raggiungono il consenso che quella è la loro opzione migliore. Mentre lasciate la riunione, Sayari dice: "E ora vorrei far visita agli Slegati stessi. Forse riusciremo a far ragionare loro."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Sayari non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+mission "Wanderers Hai Assistance Fleet"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "Wanderers Hai Assistance 1: done"
+	on offer
+		event "hai blockade"
+	npc kill
+		government "Hai"
+		personality heroic staying uninterested frugal
+		system "Wah Ki"
+		fleet "Large Hai" 6
+
+# Unfettered raids no longer happen beyond Wah Ki.
+event "hai blockade"
+	system "Bore Fah"
+		remove raid
+	system "Bote Asu"
+		remove raid
+	system "Imo Dep"
+		remove raid
+	system "Zuba Zub"
+		remove raid
+
+# Compatibility mission for players who finished "Wanderers Hai Assistance Fleet" prior to 0.10.13.
+mission "Wanderers Hai Assistance Fleet patch"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "Wanderers Hai Assistance Fleet: offered"
+		not "event: hai blockade"
+	on offer
+		event "hai blockade"
+		fail
+
+
+mission "Wanderers Hai Assistance 3"
+	landing
+	name "Ritorna su <planet>"
+	description "Torna con Sayari su <destination>, e di' a Iktat Rek che hai avuto un po' di successo nel convincere gli Hai a interferire con gli Slegati."
+	autosave
+	source "Darkcloak"
+	destination "Vara K'chrai"
+	passengers 1
+	to offer
+		has "Wanderers Hai Assistance 2: done"
+	on offer
+		log "Gli Slegati non sono disposti ad accettare nemmeno un cessate il fuoco temporaneo con i Wanderers. Sembrano convinti che vinceranno questa guerra senza difficoltà."
+		event "wanderers: tempest mass production"
+		conversation
+			`I capi di guerra degli Slegati ascoltano la supplica di Sayari con sorrisi di sufficienza. Quando lei ha finito di parlare, uno di loro dice: "Questa è una guerra, non una cena di gala. Prenderemo ciò che vogliamo, quando vogliamo. Abbiamo finito di aspettare la carità altrui."`
+			`	"Ma morirà della gente, dalla vostra parte come dai Wanderers," dice Sayari. "Sono disposti a darvi questi mondi se solo concedete loro tempo, forse non più di qualche mese o un anno. Perché perdere la vita per rivendicare ciò che sarà vostro presto abbastanza?"`
+			`	"Meglio morire affermando la nostra forza che vivere con le mani tese a mendicare," dice un altro dei capi.`
+			`	Non riesci a convincerli a cambiare i loro piani, e appena la conversazione finisce insistono perché tu lasci il loro pianeta. "I nostri guerrieri in orbita non vedono l'ora di mettere alla prova la forza di questo umano," dice uno dei capi, ridendo.`
+				launch
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Sayari non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers Solifuge Recon 1"
+	landing
+	name "Presentati su <planet>"
+	description "Presentati alla base militare dei Wanderers su <destination>, e vedi se c'è qualcosa in cui puoi aiutarli."
+	autosave
+	source "Vara K'chrai"
+	destination "Vara Ke'sok"
+	passengers 1
+	to offer
+		has "Wanderers Hai Assistance 3: done"
+		not "Wanderers Pond Strider Recon 1: offered"
+	on offer
+		log `Sei tornato nello spazio dei Wanderers e hai scoperto che Iktat Rek ha iniziato la "Muta". Temo che, poiché l'Occhio non si è ancora aperto, la Muta non sarà vitale e finirà per ucciderlo.`
+		conversation
+			`Sei stato via per diverse settimane, e in quel tempo l'aspetto di Iktat Rek è cambiato drasticamente. Quasi metà della sua testa è calva, e mostra pelle grigia squamosa e rade piume bianche sotto, al posto del solito piumaggio. Anche su altre parti del corpo ha perso le piume. Il suo aspetto è scioccante. In un animale terrestre lo attribuiresti alla rogna... o a una muta.`
+			choice
+				`	"Che cosa ti sta succedendo? Sei malato?"`
+				`	"Stai facendo la muta?"`
+			`	Rek dice, stanco: "I medici credono che sia quello che voi chiamereste un cancro, e che la mia gente chiamerebbe una muta [prematura, non vitale]. Se è così, mi ucciderà. Ma spero che possa essere la vera Muta, arrivata prima di quanto le [storie, leggende] dicano sia possibile, perché l'Occhio non è ancora aperto."`
+			choice
+				`	"Non riesci a distinguere un cancro dalla Muta?"`
+			`	"Sono la stessa cosa," dice. "Solo il [risultato, esito] è diverso. La Muta è un cancro così [riuscito, virulento] che [consuma? sostituisce?] ogni cellula del corpo. Ma dal primo attacco degli Slegati, un [decennio] fa, centinaia di Wanderers hanno subito una falsa Muta. Sono morti tutti. Potrei essere uno sciocco a sperare di sopravvivere."`
+			choice
+				`	"Beh, spero che i tuoi medici si sbaglino a essere così pessimisti."`
+					goto end
+				`	"Non c'è proprio niente che i tuoi medici possano fare?"`
+			`	"Potrebbero provare a uccidere le cellule [mutanti, cancerose]," dice, "ma se è la vera Muta, ucciderla ucciderebbe il mio futuro, il mio [vero me? destino?]. E in ogni caso la cura mi indebolirebbe e non mi lascerebbe alcuna [forza, attenzione] per aiutare la mia gente in questo momento di necessità. Quindi per ora scelgo di non affrettare né di fermare il [processo, decorso]."`
+			`	"Beh," dici, "spero per te che sia una vera Muta."`
+			label end
+			`	"Grazie," dice. "E ora, se sei disposto ad aiutare ancora la mia gente, hanno chiesto il tuo [aiuto, contributo] su <planet>. Non preoccuparti per me; [affronterò, farò fronte a] qualunque futuro arrivi, quando arriverà."`
+			`	Mentre torni alla tua nave, Sayari ti si avvicina, avendo apparentemente ascoltato la tua conversazione con Rek. "Anche a me è stato detto che la mia presenza è richiesta su <planet>." Si ferma un momento prima di continuare. "E anche se questa 'Muta' per me è un mistero, spero che possa andare bene per il tuo amico." Ringrazi Sayari per gli auguri e ti prepari a partire per <planet>.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Sayari non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers Solifuge Recon 2"
+	landing
+	name "Nuove navi degli Slegati"
+	description "Nel sistema Prakacha'a sono state avvistate navi degli Slegati di un modello sconosciuto. Distruggile, poi torna su <destination>."
+	autosave
+	source "Vara Ke'sok"
+	mark "Prakacha'a"
+	to offer
+		not "Wanderers Pond Strider Recon 2: offered"
+		or
+			has "Wanderers Solifuge Recon 1: done"
+			has "Wanderers Pond Strider Recon 1: done"
+	on offer
+		log "Hai ottenuto il permesso di acquistare navi da guerra dai Wanderers, inclusa una nuova chiamata Tempest."
+		set "license: Wanderer Military"
+		conversation
+			`Sobari Tele'ek, il comandante militare che hai incontrato prima, accoglie te e Sayari all'atterraggio. "L'umano a cui piace prendere parte agli scontri!" dice. "E l'ambasciatrice Hai. Sono contento che siate venuti. Abbiamo due [notizie, cose] buone per te, umano. La prima è che abbiamo deciso che è [ammissibile? prudente?] permetterti di acquistare le nostre navi da guerra. Fra queste ci sarà quella nuova e [brutta, bestiale], la Tempest."`
+			`	"Grazie," dici.`
+			`	"L'altra notizia è ancora migliore!" dice. "Ti abbiamo [serbato, messo da parte] uno scontro. Navi degli Slegati di modello sconosciuto sono state [avvistate, scoperte] nel sistema Prakacha'a. Ti chiedo di distruggere tutte queste navi, poi di riferirmi quali siano le loro [capacità, punti di forza]. Io discuterò delle [situazione? difficoltà?] degli Slegati con Sayari mentre sei via."`
+			`	Gli dici che farai del tuo meglio. Ora che puoi acquistare navi da guerra dei Wanderers, dovresti essere in grado di tener testa a qualunque cosa gli Slegati ti lancino contro.`
+				accept
+	npc kill
+		personality staying heroic target
+		government "Hai (Unfettered)"
+		system "Prakacha'a"
+		fleet
+			names "hai"
+			variant
+				"Solifuge"
+				"Solifuge (Tracker)"
+				"Violin Spider" 6
+				"Violin Spider (Pulse)" 6
+		on kill
+			unmark "Prakacha'a"
+			dialog "Quelle erano le ultime delle nuove navi degli Slegati. Ora puoi riferire a Tele'ek su <planet>."
+	on visit
+		dialog `Tele'ek ti viene incontro all'atterraggio. "Ho [notizie, voce] che le navi degli Slegati sono ancora [presenti, attive] dentro Prakacha'a. Distruggile tutte prima di tornare."`
+
+
+
+mission "Wanderers Solifuge Recon 3"
+	landing
+	name "Nuove navi degli Slegati"
+	description "L'ambasciatrice Sayari teme che lo sviluppo del Solifuge possa diventare un problema per gli Hai, e ti ha chiesto di consegnare un messaggio al consiglio degli anziani su <destination>."
+	source "Vara Ke'sok"
+	destination "Hai-home"
+	clearance
+	to offer
+		not "Wanderers Evacuation 1: offered"
+		or
+			has "Wanderers Solifuge Recon 2: done"
+			has "Wanderers Pond Strider Recon 2: done"
+	on offer
+		conversation
+			`Tele'ek e Sayari ascoltano con attenzione mentre descrivi i punti di forza e di debolezza delle nuove portaerei degli Slegati. "Non sono molto [preoccupato, spaventato] da caccia minuscoli," dice Tele'ek. "L'arma che ci ha fatto più male sono i loro cannoni ionici, che nessuna nave così piccola può [impugnare, portare]. Ma grazie per il tuo aiuto."`
+			`	Sayari sembra più preoccupata da questa informazione. "Queste portaerei potrebbero non essere un problema per i Wanderers, ma questo sviluppo potrebbe causare guai agli Hai. Ho scritto un messaggio che descrive la situazione." Ti porge un chip dati. "Per favore consegnalo al consiglio degli anziani su <planet>."`
+			`	"Ti prego di fare in fretta se devi consegnare questo messaggio adesso," dice Tele'ek. "Non abbiamo altri [scontri, combattimenti] a cui farti partecipare in questo momento, ma una volta tornato qui troverai un'altra flotta di evacuazione che ha bisogno di una [scorta, protezione]."`
+				accept
+
+
+
+mission "Wanderers Solifuge Recon 4"
+	landing
+	name "Ritorna su <planet>"
+	description "Torna su <destination>, dove una flotta di evacuazione attende di essere scortata."
+	source "Hai-home"
+	destination "Vara Ke'sok"
+	to offer
+		has "Wanderers Solifuge Recon 3: done"
+	on offer
+		conversation "solifuge conversation"
+
+conversation "solifuge conversation"
+	branch "alt start"
+		has "Strider Alt Start: done"
+	`Consegni il messaggio di Sayari alle autorità dello spazioporto, perché possano recapitarlo al consiglio degli anziani. Dopo che il messaggio è stato consegnato, il consiglio chiede di incontrarti.`
+		goto start
+	label "alt start"
+	`	Quando arrivi su <planet>, vieni rapidamente scortato dallo spazioporto alle camere del consiglio.`
+	label start
+	`	"Di nuovo salve, <first> <last>," ti dice uno degli anziani. "Ci risulta che i nostri fratelli e le nostre sorelle Slegati abbiano creato una nave portaerei. Quanto è stato difficile per te combatterla?"`
+	choice
+		`	"La portaerei è forte, ma non abbastanza, e può essere abbattuta facilmente."`
+		`	"Per me è stato facile, ma non posso dire che sarà lo stesso per le vostre navi."`
+		`	"È stato uno scontro difficile, perché la portaerei è molto potente."`
+	`	Gli anziani mormorano fra loro su questa informazione, lanciando ogni tanto un'occhiata a quello che deve essere il messaggio di Sayari che descrive il Solifuge.`
+	`	"Raduniamo una grande flotta sopra Cloudfire," dice uno degli anziani, "e poco dopo gli Slegati svelano questa nuova nave. Forse è giusto che rispondiamo con una nave nostra."`
+	`	"Mio figlio è un ingegnere," dice un altro anziano. "Ha contribuito a creare le nostre navi Centipede e Geocoris, entrambe frutto degli umani che vivono fra noi. Forse potrebbe essere d'aiuto nel creare una nave per rispondere agli Slegati." L'anziano preme un pulsante e si sporge verso un microfono. "Per favore, fate entrare Osen nella camera del consiglio."`
+	`	Poco dopo, il figlio dell'anziano entra nella camera e si presenta al consiglio. Gli raccontano che gli Slegati hanno creato una portaerei e che serve una nuova nave in risposta, e gli occhi di Osen si spalancano.`
+	`	Osen comincia a parlare molto in fretta in lingua Hai, così in fretta che il tuo dispositivo di traduzione sembra a malapena riuscire a stargli dietro.`
+	`	"Ho [esattamente, precisamente] la nave! Il mio gruppo [sviluppa, produce] da molti [anni, cicli] una nave che trasporta una [flotta, squadriglia] di droni. Abbiamo [prototipi, modelli] [funzionanti, operativi], ma non sono ancora [finiti, completi]. Stiamo ancora [sviluppando, producendo] la tecnologia per riparare lo [scafo, corazza] di una nave in volo, che renderebbe questa nave e i suoi droni molto più [efficaci, potenti]."`
+	`	Il dispositivo continua a parlarti per quasi un minuto dopo che Osen ha smesso di parlare (cosa un po' imbarazzante, dato che tutti ti fissano). "Scusa, non sapevo che avessi un dispositivo di traduzione," dice Osen, non parlando più in Hai.`
+	choice
+		`	"Non importa."`
+			goto next
+		`	"Parli davvero in fretta."`
+	`	Osen alza le spalle e ti sorride. "Parlo in fretta quando sono emozionato."`
+	label next
+	`	"Quando è il prima possibile in cui potreste fornirci queste navi?" chiede il padre di Osen.`
+	`	"Ci vorrebbero solo poche settimane per avere pronti alcuni prototipi di nave, ma consiglio vivamente di aspettare di aver creato la tecnologia di riparazione dello scafo. Se questi Solifuge degli Slegati non hanno tale tecnologia, averla darà alla nostra nave un vantaggio, potendo ridistribuire droni danneggiati, ma crediamo che ci manchino ancora molti anni per sviluppare una tecnologia abbastanza valida da essere davvero utile."`
+	`	Gli anziani mormorano di nuovo fra loro. Continuano a fare a Osen diverse domande su questa nuova portaerei. Quanto è difficile produrne una? Quanto costa? Quali sono le capacità dei droni? Quanto sarebbe utile senza poter riparare lo scafo dei suoi droni?`
+	`	Dopo che hanno avuto risposta a tutte le domande, gli anziani sembrano interessati all'idea della nuova nave di Osen. "Questa tecnologia di riparazione dello scafo sembra davvero necessaria," dice un anziano. "Forniremo i fondi che possiamo per aiutarne lo sviluppo rapido."`
+	`	Il padre di Osen si volta verso di te. "Hai viaggiato in molti sistemi, <first> <last>. Forse potresti essere d'aiuto. Se sai di qualche popolo che abbia questa tecnologia altrove nella galassia, se esiste, allora forse potremmo incontrarlo."`
+	branch "alt end"
+		has "Strider Alt Start: done"
+	choice
+		`	"Mi dispiace, ma non posso aiutare adesso. Devo tornare dai Wanderers."`
+			goto busy
+		`	"Sarò lieto di aiutare. Sono sicuro che potrei trovare qualcuno con la tecnologia di riparazione dello scafo che potrebbe essere d'aiuto."`
+	
+	`	"Il messaggio di Sayari dice che i Wanderers hanno ancora bisogno di te," risponde il padre di Osen. "Forse dovresti tornare dove sei più necessario, ma quando potrai aiutarci, accetteremo volentieri." Gli anziani ti ringraziano tutti per aver portato il messaggio di Sayari e ti augurano buon viaggio per <planet>.`
+		accept
+	
+	label busy
+	`	"È comprensibile," risponde il padre di Osen. "Torna dove sei necessario, ma quando potrai aiutarci, accetteremo volentieri." Gli anziani ti ringraziano tutti per aver portato il messaggio di Sayari e ti augurano buon viaggio per <planet>.`
+		accept
+	
+	label "alt end"
+	choice
+		`	"Sarò lieto di aiutare. Sono sicuro che potrei trovare qualcuno con la tecnologia di riparazione dello scafo che potrebbe essere d'aiuto."`
+			goto glad
+		`	"Mi dispiace, ma in questo momento sono occupato."`
+	`	"È comprensibile," risponde il padre di Osen. "Ma possiamo aspettare. Se in futuro troverai il tempo di aiutarci, torna semplicemente su <origin> e informa le autorità portuali che hai ciò che cerchiamo, e ti incontreremo di nuovo." Gli anziani ti ringraziano tutti per aver dato loro più informazioni sul Solifuge degli Slegati e ti augurano buon viaggio.`
+		accept
+	
+	label glad
+	`	"Meraviglioso," risponde il padre di Osen. "Una volta finita la ricerca, torna semplicemente su <planet> e informa le autorità portuali che hai ciò che cerchiamo, e ti incontreremo di nuovo." Gli anziani ti ringraziano tutti per aver dato loro più informazioni sul Solifuge degli Slegati e ti augurano buon viaggio.`
+		accept
+
+
+
+event "eastern evacuation"
+	planet "Vara Ke'stai"
+		add attributes "evacuation"
+	planet "Var' Kar'i'i"
+		add attributes "evacuation"
+	planet "Vara Ke'sok"
+		add attributes "evacuation"
+	planet "Kort Vek'kri"
+		add attributes "evacuation"
+
+# Patch mission for v0.9.13 to make sure that some Wanderer jobs don't offer
+# after the number of Wanderer systems has decreased.
+mission "eastern evacuation"
+	landing
+	invisible
+	non-blocking
+	to offer
+		or
+			has "Wanderers Solifuge Recon 2: done"
+			has "Wanderers Pond Strider Recon 2: done"
+	on offer
+		event "eastern evacuation"
+		fail
+
+mission "Wanderers Evacuation 1"
+	landing
+	name "Evacua <planet>"
+	description `Scorta un'altra flotta di trasporti di profughi Wanderer fino a <destination>.`
+	autosave
+	source "Vara Ke'sok"
+	destination "Vara Ke'stai"
+	to offer
+		has "Wanderers Solifuge Recon 4: done"
+	on offer
+		conversation
+			`Quando torni nello spazio dei Wanderers, trovi quattro navi Wanderer che non hai mai visto parcheggiate vicino allo spazioporto. Devono essere le navi da trasporto dedicate di cui parlava Iktat Rek. Uno dei capitani ti si avvicina e dice: "Stiamo evacuando i mondi che resteranno [isolati, intrappolati] se gli Slegati guadagnano altro territorio. Ci scorterai su <planet>, e da lì alla capitale?"`
+			choice
+				`	"Ne sarò felice."`
+					accept
+				`	"Non adesso: tornerò quando sarò pronto."`
+					defer
+	npc accompany save
+		government "Wanderer"
+		personality timid escort
+		ship "Riptide" "Vek'sek Kach'ik"
+		ship "Riptide" "Fel'tar Kri'esei"
+		ship "Riptide" "Vori'yek'tek La'a"
+		ship "Riptide" "Iyik'ta Rei'ta"
+	npc
+		government "Hai (Unfettered)"
+		personality heroic staying
+		fleet "Large Unfettered" 2
+	on visit
+		dialog `Sei atterrato su <planet>, ma non tutti i trasporti Riptide con i profughi sono nel sistema. Meglio ripartire e aspettare che arrivino tutti.`
+
+
+
+# The Riptide was added after these missions, so it is triggered separately for backward compatibility.
+mission "Wanderers Riptide Patch"
+	invisible
+	non-blocking
+	landing
+	to offer
+		has "Wanderers Evacuation 1: offered"
+	on offer
+		event "wanderers: riptide mass production" 30
+		fail
+
+
+
+mission "Wanderers Evacuation 1B"
+	landing
+	name "Profughi per <planet>"
+	description `Scorta questi trasporti con i profughi Wanderer fino al loro mondo d'origine, <destination>, dove si spera saranno al sicuro.`
+	autosave
+	source "Vara Ke'stai"
+	destination "Vara K'chrai"
+	to offer
+		has "Wanderers Evacuation 1: done"
+	on offer
+		event "wanderers: vara ke'stai evacuated"
+		conversation
+			`I trasporti dei Wanderers atterrano nello spazioporto e cominciano a caricare passeggeri. Il villaggio sembra quasi vuoto: tutti tranne gli ultimi ritardatari se ne sono già andati. Come su Varu Mer'ek prima che fosse conquistato, sembrano essersi dati pena di lasciare il villaggio il più ordinato e pulito possibile. In circostanze simili un governo umano avrebbe probabilmente scelto di dare alle fiamme tutto ciò che aveva valore, piuttosto che lasciarlo cadere in mani nemiche.`
+				launch
+	npc accompany save
+		government "Wanderer"
+		personality timid escort
+		ship "Riptide" "Vek'sek Kach'ik"
+		ship "Riptide" "Fel'tar Kri'esei"
+		ship "Riptide" "Vori'yek'tek La'a"
+		ship "Riptide" "Iyik'ta Rei'ta"
+	npc
+		government "Hai (Unfettered)"
+		personality heroic staying
+		system "Sich'ka'ara"
+		fleet "Large Unfettered" 3
+	on visit
+		dialog `Sei atterrato su <planet>, ma non tutti i trasporti Riptide con i profughi sono nel sistema. Meglio ripartire e aspettare che arrivino tutti.`
+
+event "wanderers: vara ke'stai evacuated"
+	planet "Vara Ke'stai"
+		remove spaceport
+		remove outfitter
+		remove "required reputation"
+		remove tribute
+
+
+mission "Wanderers Evacuation 1C"
+	landing
+	name "Scorta per <planet>"
+	description `Scorta questi trasporti fino a <destination>.`
+	autosave
+	source "Vara K'chrai"
+	destination "Vara Ke'sok"
+	to offer
+		has "Wanderers Evacuation 1B: done"
+	on offer
+		conversation
+			`I trasporti scaricano i profughi, e uno dei capitani ti dice che li vogliono di nuovo su <planet>. Ma ora che sai che Iktat Rek potrebbe essere in fin di vita, forse dovresti andare a trovarlo finché sei qui.`
+			choice
+				`	(Fai visita a Iktat Rek.)`
+				`	(No, posso sempre andare a trovarlo la prossima volta che sono qui.)`
+					goto end
+			`	Contatti Rek, che ti invita a fargli visita nella casa dove alloggia, una casa sull'albero dei Wanderers vicino alla periferia della città. Sembra ancora più stanco di prima, e le chiazze di pelle nuda si stanno allargando. In qualche punto sembra crescere un nuovo strato di piume nere e unte, ma sono sottili come capelli, non abbastanza nemmeno a coprirgli la pelle, figurarsi a permettergli di volare.`
+			`	Ti siedi a parlare con lui per un po'. Si muove e parla più lentamente, ma sei contento di vedere che la sua mente è lucida come sempre, e per passare il tempo ti fa domande di ogni genere sulla cultura e la storia umana, a cui rispondi come meglio puoi. Alla fine vi salutate e torni allo spazioporto.`
+			label end
+			`	I trasporti finiscono di scaricare gli ultimi passeggeri e si preparano a seguirti di nuovo su <planet>.`
+				accept
+	npc accompany save
+		government "Wanderer"
+		personality timid escort
+		ship "Riptide" "Vek'sek Kach'ik"
+		ship "Riptide" "Fel'tar Kri'esei"
+		ship "Riptide" "Vori'yek'tek La'a"
+		ship "Riptide" "Iyik'ta Rei'ta"
+	npc
+		government "Hai (Unfettered)"
+		personality heroic staying
+		system "Sich'ka'ara"
+		fleet "Large Unfettered" 4
+	on visit
+		dialog `Sei atterrato su <planet>, ma non tutti i trasporti Riptide con i profughi sono nel sistema. Meglio ripartire e aspettare che arrivino tutti.`
+
+
+
+event "battle for sich'ka'ara begins"
+	system "Sich'ka'ara"
+		fleet "Wanderer Flycatchers" 300
+
+mission "Wanderers Defend Sich'ka'ara"
+	landing
+	name "Difendi <planet>"
+	description `Respingi la flotta degli Slegati che attacca <system>, poi atterra su <planet>.`
+	autosave
+	source "Vara Ke'sok"
+	to offer
+		has "Wanderers Evacuation 1C: done"
+	on offer
+		event "battle for sich'ka'ara begins"
+		conversation
+			`Poco dopo l'atterraggio dei trasporti inizia a suonare un allarme, e vedi molti Wanderers, soprattutto i guerrieri, precipitarsi a bordo delle loro navi. Sobari Tele'ek scende in picchiata e atterra accanto alla tua nave, e spiega in fretta: "Abbiamo rilevato una grande flotta degli Slegati [in arrivo, in avvicinamento]. Ti unirai alla difesa?"`
+			`	Accetti di aiutarli e cominci a preparare la nave al decollo...`
+				launch
+	on visit
+		dialog "Ci sono ancora navi da guerra degli Slegati là sopra. Dovresti decollare di nuovo e dare una mano nello scontro."
+	npc evade
+		personality staying coward
+		government "Hai (Unfettered)"
+		fleet
+			names "hai"
+			variant
+				"Shield Beetle" 2
+				"Shield Beetle (Tracker)" 1
+				"Shield Beetle (Pulse)" 2
+				"Water Bug" 3
+				"Water Bug (Pulse)" 4
+	npc evade
+		personality entering coward
+		government "Hai (Unfettered)"
+		fleet
+			names "hai"
+			variant
+				"Shield Beetle" 1
+				"Shield Beetle (Tracker)" 3
+				"Shield Beetle (Pulse)" 2
+				"Water Bug" 7
+				"Water Bug (Pulse)" 2
+	npc
+		personality heroic
+		government "Wanderer"
+		fleet
+			names "wanderer"
+			variant
+				"Tempest (Missile)" 2
+				"Autumn Leaf" 3
+				"Summer Leaf" 1
+	npc
+		personality heroic staying
+		government "Wanderer"
+		fleet
+			names "wanderer"
+			variant
+				"Tempest (Heavy)"
+				"Heavy Gust" 2
+				"Autumn Leaf" 2
+				"Summer Leaf" 3
+	on complete
+		log "Hai aiutato a difendere un mondo dei Wanderers da ennesimo attacco degli Slegati. Nel frattempo i Wanderers stanno cercando di riportare quanti più civili possibile sul loro mondo d'origine, dove saranno al sicuro. La loro strategia sembra però basata sulla speranza che presto si apra un cunicolo spaziale e permetta al popolo Wanderer di fuggire verso un nuovo territorio, lasciando i vecchi pianeti agli Slegati."
+		event "battle for sich'ka'ara ends"
+		event "solifuge deployment"
+		conversation
+			`La flotta degli Slegati è stata respinta. Tele'ek ti ringrazia per aver preso parte alla difesa di questo mondo. "Purtroppo," dice, "ho appena ricevuto notizia che questo era solo metà dell'[assalto, attacco] degli Slegati. Una flotta altrettanto grande ha attaccato il sistema Chirr'ay'akai e ha travolto le difese così [in fretta, inaspettatamente] che alcuni della nostra gente non hanno avuto il tempo di [fuggire, evacuare] e sono stati costretti a nascondersi. Se sei disposto ad aiutare a salvarli, incontrarmi allo spazioporto quando ho finito di [informare, ragguagliare] i guerrieri."`
+
+# Compatibility patch for users who completed "Wanderers Defend Sich'ka'ara"
+# before 0.10.3 when the "solifuge deployment" event was added.
+mission "Solifuge Shipyards Patch"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "event: battle for sich'ka'ara ends"
+		not "event: solifuge deployment"
+	on offer
+		event "solifuge deployment"
+		fail
+
+event "battle for sich'ka'ara ends"
+	system "Sich'ka'ara"
+		add fleet "Wanderer Freight" 900
+		add fleet "Wanderer Defense" 400
+		add fleet "Large Unfettered" 400
+	system "Chirr'ay'akai"
+		government "Hai (Unfettered)"
+		fleet "Wanderer Defense" 800
+		fleet "Large Unfettered" 400
+		fleet "Small Unfettered" 400
+	system "Prakacha'a"
+		government "Hai (Unfettered)"
+		fleet "Wanderer Defense" 2000
+		fleet "Large Unfettered" 600
+		fleet "Small Unfettered" 600
+	planet "Kort Vek'kri"
+		attributes "unfettered"
+		spaceport `Gli Slegati chiaramente non sanno bene che cosa farsi della stazione di ricerca dei Wanderers che hanno appena conquistato. Gli animali che facevano parte di vari esperimenti ora vagano liberi, e gli Slegati fanno solo saltuari tentativi di nutrirli adeguatamente. Ogni tanto uno di loro, spinto dalla fame più cruda, cerca di sfondare una delle casse di razioni militari che gli Slegati hanno ammucchiato all'ombra vicino alla piazzola principale.`
+		remove tribute
+
+# Patch mission for players who got these missions before 0.10.11 and didn't get tribute from Kort Vek'kri cleared.
+mission "Wanderers: Kort Vek'kri Tribute Patch"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "event: battle for sich'ka'ara ends"
+	on offer
+		event "kort vek'kri tribute clear"
+		fail
+
+event "kort vek'kri tribute clear"
+	planet "Kort Vek'kri"
+		remove tribute
+	
+event "solifuge deployment"
+	shipyard "Mon Ki o'Uden Advanced"
+		add "Solifuge"
+		add "Violin Spider"
+	fleet "Large Unfettered"
+		add variant 3
+			"Solifuge"
+			"Violin Spider" 3
+			"Violin Spider (Pulse)" 3
+		add variant 1
+			"Solifuge (Pulse)"
+			"Solifuge (Tracker)"
+			"Violin Spider" 6
+			"Violin Spider (Pulse)" 6
+		add variant 2
+			"Shield Beetle (Pulse)"
+			"Solifuge"
+			"Violin Spider" 3
+			"Violin Spider (Pulse)" 3
+		add variant 1
+			"Shield Beetle"
+			"Solifuge (Tracker)"
+			"Violin Spider" 2
+			"Violin Spider (Pulse)" 4
+		add variant 2
+			"Solifuge (Pulse)"
+			"Violin Spider" 4
+			"Violin Spider (Pulse)" 2
+			"Lightning Bug" 2
+
+
+
+mission "Wanderers Rescue 1"
+	name "Soccorso ai Wanderers"
+	description "Alcuni guerrieri Wanderer sono rimasti su <planet> quando gli Slegati hanno conquistato il pianeta. Atterra sul pianeta con due navi da guerra dei Wanderers e salvali."
+	autosave
+	source "Vara Ke'sok"
+	destination "Kort Vek'kri"
+	clearance
+	infiltrating
+	to offer
+		has "Wanderers Defend Sich'ka'ara: done"
+	on offer
+		conversation
+			`Sobari Tele'ek ti spiega la situazione. "Quasi un centinaio di guerrieri erano a terra su <planet> quando è stato conquistato," dice. "Si sono [sparsi, sottratti alla cattura] e sono volati via dallo spazioporto, poi si sono riuniti nascondendosi in una delle foreste. Mando due navi da guerra ad atterrare sul pianeta per [recuperarli, salvarli], e mi piacerebbe che tu ti [unissi, accompagnassi] a loro. Domande?"`
+			choice
+				`	"No, sono pronto a partire."`
+					accept
+				`	"Perché hai bisogno che prenda parte a questa missione?"`
+			`	Dice: "Per alcuni della nostra gente conta molto sapere che un membro di un'altra specie ci [assiste, accompagna] in questo conflitto. Non solo per [il morale? i rapporti pubblici?] ma perché la tua [approvazione? accettazione?] dà alla nostra [autodifesa, lotta] [peso morale? legittimità?]." Il tuo traduttore sembra in difficoltà con le sfumature esatte della sua spiegazione.`
+			`	Accetti di unirti alla spedizione, e lui ti presenta i capitani delle due navi che viaggeranno con te.`
+				accept
+	npc accompany save
+		personality escort heroic
+		government "Wanderer"
+		ship "Tempest (Heavy)" "Ka'asildi"
+		ship "Tempest" "Eska'ata'ka"
+	npc
+		personality staying
+		government "Hai (Unfettered)"
+		system "Chirr'ay'akai"
+		fleet
+			names "hai"
+			variant
+				"Shield Beetle (Tracker)" 5
+	on visit
+		dialog
+			"You have reached <planet>, but you will need to take off again and wait for both the Wanderer warships to be in-system as well."
+
+
+
+mission "Wanderers Rescue 1B"
+	landing
+	name "Soccorso ai Wanderers"
+	description "Scorta queste due navi da guerra dei Wanderers, con a bordo i guerrieri salvati da <origin>, sane e salve fino a <destination>."
+	source "Kort Vek'kri"
+	destination "Vara Ke'sok"
+	to offer
+		has "Wanderers Rescue 1: done"
+	on offer
+		log "Hai aiutato a salvare alcuni Wanderers che erano rimasti isolati e avevano dovuto nascondersi nella foresta quando il loro pianeta fu conquistato dagli Slegati."
+		conversation
+			`Le navi da guerra dei Wanderers si fermano sospese sopra una delle foreste più grandi del pianeta. Vedi il lampeggio di ali di molti colori diversi mentre i guerrieri Wanderer nascosti fra gli alberi volano su a incontrare le navi, che aprono i portelli per riceverli. Dopo meno di cinque minuti i capitani Wanderer ti segnalano che sono tutti a bordo, e puoi tornare su <planet>.`
+				launch
+	npc accompany save
+		personality escort heroic
+		government "Wanderer"
+		ship "Tempest (Heavy)" "Ka'asildi"
+		ship "Tempest" "Eska'ata'ka"
+	npc
+		personality staying
+		government "Hai (Unfettered)"
+		fleet
+			names "hai"
+			variant
+				"Lightning Bug" 12
+	on visit
+		dialog
+			"You have reached <planet>, but you will need to take off again and wait for both the Wanderer warships to be in-system as well."
+
+
+
+mission "Wanderers Rescue 1C"
+	landing
+	name "Visita Iktat Rek"
+	description "Torna su <destination>, dove le condizioni di Iktat Rek hanno continuato a peggiorare."
+	autosave
+	source "Vara Ke'sok"
+	destination "Vara K'chrai"
+	to offer
+		has "Wanderers Rescue 1B: done"
+	on offer
+		"reputation: Wanderer" >?= 40
+		conversation
+			`I Wanderers su <origin> sono estasiati per il successo del salvataggio, e molti ti ringraziano personalmente anche se ti sembra che il tuo ruolo nella missione sia stato piuttosto marginale. Mentre la festa continua, Tele'ek ti prende da parte e dice: "Dobbiamo andare in un posto [tranquillo, riservato] e parlare."`
+			`	Ti conduce in quella che sembra una sala per ufficiali, e ti siedi a un tavolo. "Rek, quello che era chiamato 'Iktat', era il tuo [contatto designato? guida culturale? compagno di specie?], giusto?" chiede. Annuisci, anche se è chiaro che il tuo traduttore non sa bene che cosa significhi quella parola. "Rek è molto malato e ha bisogno di cure mediche [avanzate, intensive]," dice. "Desidera che sia tu a trasportarlo al [centro medico, ospedale] su Tik Klai. Devi tornare su <planet> e incontrarlo."`
+			choice
+				`	"Va bene, ci andrò subito."`
+					accept
+				`	"Ma è solo la Muta. Starà bene."`
+			`	"Probabilmente è [utile, incoraggiante] per Rek mantenere quella speranza," dice, "ma le nostre [storie, leggende] dicono che mai prima d'ora una Muta è stata [vitale, riuscita] se è cominciata mentre l'Occhio non era aperto."`
+			`	Prometti che andrai a trovare Rek il prima possibile, e che lo porterai ovunque debba andare.`
+				accept
+
+
+
+mission "Wanderers Rek 0"
+	landing
+	name "Porta Rek su <planet>"
+	description "Porta Iktat Rek su <destination>, dove c'è una struttura medica avanzata che si spera possa curarlo."
+	autosave
+	source "Vara K'chrai"
+	destination "Tik Klai"
+	passengers 1
+	blocked "Ti serve una cuccetta libera per trasportare Iktat Rek."
+	to offer
+		has "Wanderers Rescue 1C: done"
+	on offer
+		conversation
+			`Quando Rek ti incontra allo spazioporto, è sull'equivalente Wanderer di una sedia a rotelle motorizzata. Ha perso ancora più piumaggio bruno e grigio, e al suo posto è cresciuto solo qualcosa di sottile, avvizzito e nero, come peli scuri su una pelle malata. Non sei sicuro che abbia perso peso, o che la perdita di piume lo faccia semplicemente sembrare più emaciato. "Sono contento che tu sia qui, <first> <last>," dice.`
+			choice
+				`	"Non preoccuparti, Iktat Rek. Ne uscirai."`
+			`	Sussulta quando dici il suo nome. "Non devi più chiamarmi così," dice. "'Iktat' era il mio nome di ruolo, e quel ruolo non posso più ricoprirlo. Ora sono conosciuto solo con il mio nome essenziale, Rek, o con il mio nome d'infanzia, Rek d' Esta'a i' Veruk. Se sopravvivrò alla Muta diventerò qualcuno di nuovo, e riceverò anche un nuovo nome di ruolo."`
+			choice
+				`	"Sei forte. Sono sicuro che sopravvivrai."`
+				`	"Hai un'idea di che cosa diventerai?"`
+					goto become
+			`	"Lo spero," dice, "ma non posso fare a meno di sentire i sussurri di chi mi sta intorno. E i medici dicono che la Muta sta riorganizzando e spegnendo alcuni dei miei organi interni. La mia speranza principale adesso è solo vivere abbastanza a lungo da sapere che la mia gente avrà un futuro."`
+				goto end
+			label become
+			`	"È impossibile saperlo," dice. "La Muta può farci diventare non solo un nuovo individuo, ma quasi una nuova specie, con capacità che nessun Wanderer aveva prima. Ho qualche sospetto su ciò che forse sta cambiando dentro di me, ma non voglio attirare la sfortuna dicendo ad alta voce quelle speranze."`
+			label end
+			`	Solo quando l'hai spinto per metà della rampa dentro la tua nave ti rendi conto di una cosa: per tutta la conversazione Rek ti ha parlato nella tua lingua, senza usare il traduttore. Non avevi capito che gli organi vocali dei Wanderers potessero imitare così perfettamente il parlato umano.`
+			choice
+				`	"Rek, quando hai imparato a parlare la mia lingua?"`
+			`	Emette un suono a metà fra una risata e un colpo di tosse, e dice: "Mentre il mio corpo decade, la mia mente si è fatta più acuta. Più ascoltavo la tua scatola che ti parlava, più le sue parole cominciavano ad avere senso per me."`
+			`	Sembra troppo stanco per rispondere ad altre domande. Ti assicuri che Rek stia comodo in una delle tue cabine, poi ti prepari a partire per <planet>.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Iktat Rek non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "Wanderers Rek 1"
+	landing
+	name "Visita Sko'karak"
+	description "Rek ti ha chiesto di visitare il sistema Sko'karak, poi di tornare su <planet> e dirgli che cosa ci hai trovato."
+	source "Tik Klai"
+	waypoint "Sko'karak"
+	to offer
+		has "Wanderers Rek 0: done"
+	on offer
+		log "Hai portato Iktat Rek in una struttura ospedaliera dei Wanderers. La sua malattia, o muta, sta avanzando, e si è molto indebolito. Ma la sua mente è lucida come sempre, e anzi è riuscito in qualche modo a imparare la lingua umana semplicemente ascoltando le parole della macchina per tradurre."
+		conversation
+			`Un ospedale dei Wanderers non è molto diverso da uno umano. Te ne stai in un angolo cercando di non intralciare mentre trasferiscono Rek su un letto e lo collegano a tubi e fili di vario genere. Senza le piume sembra incredibilmente fragile, quasi scheletrico, ma gli infermieri e i medici Wanderer lo trattano con la massima delicatezza.`
+			`	Alla fine resti solo con lui. Per un po' sembra fissare il vuoto in lontananza, con gli occhi sfocati. Poi sembra accorgersi che sei lì, e i suoi occhi acquistano una nuova profondità e attenzione mentre si volta a guardarti. Parlando di nuovo nella tua lingua, dice: "Va' a visitare il sistema Sko'karak e dimmi che cosa ci trovi." Poi chiude gli occhi e si addormenta.`
+				accept
+	on enter "Sko'karak"
+		dialog
+			`Entri in questo sistema con la forte speranza che Rek, nonostante le condizioni debilitate, abbia percepito che qui sta succedendo qualcosa di importante e ti abbia mandato a scoprirlo. I tuoi sensori, però, non rilevano nulla di straordinario.`
+	on visit
+		dialog `Sei tornato su <planet>, ma non sei ancora entrato nel sistema Sko'karak per indagare. Meglio ripartire e assicurarti di visitarlo prima di tornare.`
+
+
+
+mission "Wanderers Rek 2"
+	landing
+	name "Visita di nuovo Sko'karak"
+	description "Rek ti ha chiesto di visitare di nuovo il sistema Sko'karak e di vedere se qualcosa è cambiato. Poi torna su <destination>."
+	source "Tik Klai"
+	waypoint "Sko'karak"
+	to offer
+		has "Wanderers Rek 1: done"
+	on offer
+		event "wanderers: more systems lost"
+		conversation
+			`Quando arrivi, capisci che la gente del posto è agitata per qualcosa. Alla fine uno di loro passa alla lingua Hai e ti spiega che cosa succede. "Abbiamo appena saputo che gli Slegati ci hanno [rubato, conquistato] altri tre mondi," dice, "ma non dare la notizia a Rek."`
+			`	Vai a trovare Iktat Rek e gli dici che nel sistema Sko'karak non hai trovato nulla di straordinario. A malapena apre gli occhi mentre gli parli. "Torna e guarda di nuovo," dice.`
+			choice
+				`	"Va bene, andrò a guardare di nuovo."`
+					accept
+				`	"Dovresti saperlo: altri tre sistemi sono stati perduti a favore degli Slegati."`
+			`	Sospira. "Se solo l'Occhio si aprisse, non importerebbe. Non capisco perché i custodi del portale non lo aprano e ci lascino fuggire da questa guerra in un luogo sicuro. Torna a Sko'karak, e guarda."`
+				accept
+	on enter "Sko'karak"
+		dialog
+			`Entri di nuovo nel sistema e fai una scansione dei sensori ancora più dettagliata, nel caso ti sia sfuggito qualcosa la prima volta. Non trovi nulla.`
+	on visit
+		dialog `Sei tornato su <planet>, ma non sei ancora entrato nel sistema Sko'karak per indagare. Meglio ripartire e assicurarti di visitarlo prima di tornare.`
+
+
+
+mission "Wanderers Rek 3"
+	landing
+	name "Visita Sko'karak"
+	description "Visita il sistema Sko'karak per la terza volta e vedi se qualcosa è cambiato. Poi torna su <planet> per riferire a Rek."
+	source "Tik Klai"
+	waypoint "Sko'karak"
+	to offer
+		has "Wanderers Rek 2: done"
+	on offer
+		event "wanderers: the eye begins to open" 2
+		conversation
+			`Quando entri nello spazioporto, una Wanderer dal piumaggio bianco che somiglia in modo inquietante a Rek esce dall'ospedale per incontrarti. Per un breve momento di confusione ti chiedi se Rek abbia davvero completato la Muta e sia ora davanti a te, guarito; poi lei si presenta come Melaka Esta'a, la madre di Rek. "Rek dorme," dice. "Porti buone notizie?"`
+			choice
+				`	"No, non ho trovato nulla."`
+			`	Dice: "Il corpo di Rek si sta distruggendo [combattendo, resistendo] alla Muta. Presto dovremo dargli i farmaci che [disattiveranno, elimineranno] il suo sistema immunitario e permetteranno alle nuove cellule di completare la loro [conquista, invasione] del suo corpo. Per quella cura deve entrare in [isolamento, clausura] per proteggerlo dalle infezioni. Ma non ci andrà prima che tu gli porti la [parola, notizia] che aspetta."`
+			choice
+				`	"Tornerò ancora una volta e vedrò se qualcosa è cambiato."`
+					accept
+				`	"Dovrei mentirgli e dire che l'Occhio è aperto?"`
+			`	"No," dice, "torna ancora una volta e guarda. Se ancora non c'è nulla, [decideremo, valuteremo] che cosa fare."`
+				accept
+	on enter "Sko'karak"
+		dialog
+			`Questa volta, quando entri nel sistema, i tuoi sensori rilevano uno strano fenomeno astronomico oltre l'orbita del pianeta più lontano, un filo di luce come una nube temporalesca che si raccoglie. Non è un cunicolo spaziale, ma è un cambiamento. Forse basterà a dare speranza a Rek.`
+	on visit
+		dialog `Sei tornato su <planet>, ma non sei ancora entrato nel sistema Sko'karak per indagare. Meglio ripartire e assicurarti di visitarlo prima di tornare.`
+
+
+
+mission "Wanderers Ap'arak 1"
+	landing
+	name "Aiuta a difendere <planet>"
+	description "Torna su <destination>, dove i Wanderers hanno scelto di tenere la loro posizione contro l'incursione degli Slegati."
+	autosave
+	source "Tik Klai"
+	destination "Varu Tev'kei"
+	to offer
+		has "Wanderers Rek 3: done"
+	on offer
+		log "Iktat Rek è stato messo in quarantena protettiva in una stanza sterile, dove riceverà farmaci che sopprimeranno il suo sistema immunitario e permetteranno di completare il cambiamento genetico in corso nel suo corpo. Anche se sopravviverà al processo, potrebbe cambiarlo fino a renderlo irriconoscibile."
+		conversation
+			`Ti precipiti nella stanza d'ospedale. La pelle di Rek ora è quasi del tutto nuda, a parte le piume nere avvizzite e filiformi cresciute al posto del piumaggio un tempo rigoglioso. Gli occhi di Rek si spalancano quando entri. "Hai notizie," dice Rek. "Si vede dalla tua espressione. Che cosa hai visto?" Considerato quanto è difficile leggere le espressioni facciali aliene, sarebbe davvero notevole se Rek riuscisse a capire qualcosa guardandoti in faccia, ma non sarebbe educato dirlo.`
+			choice
+				`	"Qualcosa è cominciato nel sistema Sko'karak, un fenomeno cosmologico che i sensori della mia nave non hanno riconosciuto. Potrebbe essere l'Occhio, che comincia ad aprirsi."`
+				`	"C'è una specie di fenomeno cosmologico, ma non è un cunicolo spaziale. Non voglio darti false speranze."`
+			`	"È l'Occhio," dice Rek. "Ne sono certo. Arriva troppo tardi per salvarci dalle grandi perdite che abbiamo subito, ma forse non troppo tardi per preservare la nostra specie dalla distruzione. Quindi la mia attesa è finita."`
+			`	Rek chiama una delle infermiere. Il letto d'ospedale è su ruote, e lo staccano rapidamente dalle varie macchine attaccate alle pareti. Esta'a, la madre di Rek, entra nella stanza e ti spiega: "La stanza dell'[isolamento, clausura] è più in profondità, sottoterra. [Laveranno, sterilizzeranno] il corpo di Rek, poi aspetteranno una settimana per verificare eventuali contaminazioni [residue, nascoste], poi cominceranno a somministrare i farmaci che impediranno al corpo di Rek di [combattere, resistere] alla trasformazione. Anche se tutto andrà bene, non rivedremo Rek per molto tempo, e mai più in questo [corpo, forma]."`
+			choice
+				`	"Non preoccuparti. Rek è abbastanza forte da sopravvivere."`
+					goto hallway
+				`	"Mi farai sapere come va, qualunque sia l'esito?"`
+			`	"Lo farò," dice. "A meno che, naturalmente, qualche grande [calamità? sconvolgimento?] ci piombi addosso e siamo troppo presi da altre [faccende, necessità]."`
+			label hallway
+			`	Tre infermiere Wanderer arrivano e portano il letto di Rek fuori dalla porta e in un ascensore. Su richiesta di Rek ti unisci a loro. L'ascensore si apre su un corridoio ampio e a volta, fiancheggiato da Wanderers vestiti di nero, venuti a rendere l'ultimo omaggio a Rek. È come qualcosa uscito da un sogno: il passaggio sotterraneo denso delle forme solenni dei funzionari Wanderer, le ali ammantate di nero e le ombre in contrasto con il lino chiaro del letto d'ospedale e il piumaggio bianco della madre di Rek, che segue il carrello fino alla soglia della camera di isolamento.`
+			`	La porta della camera si chiude di scatto con un sibilo pneumatico, e risali verso lo spazioporto insieme agli altri visitatori. Una dei visitatori è Emeka'a Isai, l'ex governatrice di Varu Mer'ek. Ti prende da parte e dice: "Non dovresti [restare, indugiare] qui, umano. Avranno bisogno di te al [fronte, fronte di battaglia]. E la tua vista potrebbe essere sgradita ad alcuni dei [parenti? conoscenti?] di Rek che sono qui."`
+			choice
+				`	"Va bene, andrò su <planet> e aiuterò nella difesa."`
+					accept
+				`	"Aspetta, perché dovrebbe qualcuno essere arrabbiato con me dopo tutto l'aiuto che ho dato?"`
+			`	"Non arrabbiati con te," dice, "ma alcuni dicono che la Muta è [provocata, innescata] dall'esposizione a cose [aliene, estranee]: che è stata la tua venuta a far cominciare troppo presto il [cambiamento, la metamorfosi] del corpo di Rek." Resta in silenzio per un momento, poi dice: "Ti prego, non essere [preoccupato, addolorato]. Rek può ancora vivere, e diventare celebre come primo di una nuova [generazione, stirpe]. In ogni caso, quello è il passato. Va' ora, e aiutaci a [assicurarci, ottenere] un futuro."`
+				accept
+
+
+
+event "battle for ap'arak"
+	system "Ap'arak"
+		fleet "Wanderer Flycatchers" 400
+
+event "battle for ap'arak ends"
+	government "Wanderer"
+		"attitude toward"
+			"Pug (Wanderer)" .01
+	system "Ap'arak"
+		add fleet "Wanderer Freight" 2000
+		add fleet "Wanderer Drones" 4000
+		add fleet "Wanderer Defense" 600
+		add fleet "Large Unfettered" 700
+
+mission "pug defend wanderers"
+	invisible
+	non-blocking
+	landing
+	to offer
+		has "Wanderers Ap'arak 2: done"
+	on offer
+		event "pug defend wanderers"
+		fail
+
+event "pug defend wanderers"
+	government "Pug (Wanderer)"
+		"attitude toward"
+			"Wanderer" .01
+	government "Pug"
+		"attitude toward"
+			"Wanderer" .01
+
+mission "Wanderers Ap'arak 2"
+	landing
+	name "Aiuta a difendere <planet>"
+	description "Difendi <planet> da una flotta d'invasione degli Slegati, poi atterra di nuovo sul pianeta."
+	source "Varu Tev'kei"
+	to offer
+		has "Wanderers Ap'arak 1: done"
+	on offer
+		conversation
+			`Mentre ti avvicini per atterrare, ti sembra di vedere alcune navi Wanderer di un altro modello ancora sconosciuto, più grandi anche della Tempest. Il loro livello di tecnologia militare è cresciuto a un ritmo incredibile da quando è iniziata l'invasione degli Slegati, anche se è vero che stanno solo rimettendo in produzione antichi progetti di navi e armi invece di inventarne di nuovi.`
+			`	Ma la nuova tecnologia non può compensare del tutto il fatto che nessun Wanderer vivente abbia una vera esperienza militare. Così diversi dei loro capi qui sono ansiosi di parlare con te, e passi ore a raccontare loro episodi della tua recente esperienza nella guerra nello spazio umano. Fra loro c'è Sobari Tele'ek, il comandante militare. La conversazione viene interrotta quando le sirene cominciano a suonare nello spazioporto. "Gli Hai si avvicinano!" dice Tele'ek. "Unisciti a noi in battaglia, ancora una volta."`
+				launch
+	on accept
+		event "battle for ap'arak"
+	on complete
+		event "battle for ap'arak ends"
+	on visit
+		dialog "Ci sono ancora navi da guerra degli Slegati là sopra. Dovresti decollare di nuovo e dare una mano nello scontro."
+	npc evade
+		personality staying heroic
+		government "Hai (Unfettered)"
+		fleet
+			names "hai"
+			variant
+				"Shield Beetle" 2
+				"Shield Beetle (Tracker)" 1
+				"Shield Beetle (Pulse)" 2
+				"Water Bug" 3
+				"Water Bug (Pulse)" 2
+	npc evade
+		personality heroic
+		system "Sich'ka'ara"
+		government "Hai (Unfettered)"
+		fleet
+			names "hai"
+			variant
+				"Solifuge" 2
+				"Solifuge (Pulse)" 2
+				"Solifuge (Tracker)" 1
+				"Violin Spider" 12
+				"Violin Spider (Pulse)" 18
+	npc evade
+		personality heroic
+		system "Chy'chra"
+		government "Hai (Unfettered)"
+		fleet
+			names "hai"
+			variant
+				"Shield Beetle" 1
+				"Shield Beetle (Tracker)" 1
+				"Shield Beetle (Pulse)" 2
+				"Water Bug" 4
+				"Water Bug (Pulse)" 2
+				"Solifuge" 1
+				"Solifuge (Pulse)" 1
+				"Solifuge (Tracker)" 1
+				"Violin Spider" 8
+				"Violin Spider (Pulse)" 10
+	npc
+		personality heroic
+		government "Wanderer"
+		fleet
+			names "wanderer"
+			variant
+				"Derecho (Tough)"
+				"Tempest"
+				"Tempest (Heavy)"
+				"Strong Wind" 1
+				"Autumn Leaf" 3
+				"Summer Leaf" 4
+	npc
+		personality heroic staying
+		government "Wanderer"
+		fleet
+			names "wanderer"
+			variant
+				"Derecho (Turret)"
+				"Derecho"
+				"Heavy Gust" 2
+				"Autumn Leaf" 4
+				"Summer Leaf" 3
+	npc
+		personality staying derelict
+		government "Wanderer"
+		fleet
+			names "wanderer"
+			variant
+				"Strong Wind" 1
+				"Autumn Leaf" 2
+
+
+
+# TODO: When "complete anywhere" functionality is available,
+# condense the following three missions into a single mission
+mission "Wanderers Ap'arak 3: Pug 1"
+	landing
+	invisible
+	non-blocking
+	source "Varu Tev'kei"
+	to offer
+		has "Wanderers Ap'arak 2: done"
+		not "Wanderers Ap'arak 3: Pug: offered"
+	npc save
+		personality staying unconstrained uninterested
+		government "Pug (Wanderer)"
+		ship "Pug Arfecta" "Hork Ekekek Ptui"
+	to complete
+		never
+
+mission "Wanderers Ap'arak 3: Pug 2"
+	landing
+	invisible
+	non-blocking
+	source "Varu Tev'kei"
+	to offer
+		has "Wanderers Ap'arak 2: done"
+		not "Wanderers Ap'arak 3: Pug: offered"
+	npc save
+		personality staying unconstrained uninterested
+		government "Pug (Wanderer)"
+		ship "Pug Arfecta" "Graak Sput Kchoo"
+	to complete
+		never
+
+mission "Wanderers Pug Hostile"
+	landing
+	source
+		government "Wanderer"
+	to offer
+		has "Wanderers Ap'arak 3: Pug 1: failed"
+		has "Wanderers Ap'arak 3: Pug 2: failed"
+	on offer
+		set "Wanderers Ap'arak 3: Pug: done"
+		"reputation: Wanderer" <?= -1
+		conversation
+			`Ricevi un messaggio da Sobari Tele'ek: "Siamo [a conoscenza? increduli?] di rapporti secondo cui avresti [sterminato, eliminato] i nostri Custodi nel sistema Ap'arak. Questo è inaccettabile! Da questo momento non sei più il benvenuto nel nostro [territorio, spazio]."`
+				flee
+
+mission "Wanderers Ap'arak 3"
+	landing
+	name "Presentati su <planet>"
+	description "Torna nella capitale dei Wanderers su <destination>."
+	autosave
+	source "Varu Tev'kei"
+	destination "Vara K'chrai"
+	to offer
+		has "Wanderers Ap'arak 2: done"
+	on offer
+		log `I Wanderers hanno cominciato a produrre navi da guerra ancora più grandi, e sono riusciti a respingere l'ennesimo assalto degli Slegati. In seguito i Pug, che i Wanderers chiamano i "Custodi", hanno finalmente inviato aiuto... sotto forma di due navi, che sostengono essere abbastanza potenti da tenere a bada l'intera flotta degli Slegati.`
+		log "Factions" "Unfettered Hai" `Dopo aver ottenuto un numero sufficiente di motori di salto, gli Slegati si sono espansi nello spazio dei Wanderers e sono riusciti a conquistare sei mondi prima che la loro avanzata venisse fermata dall'interferenza dei Pug.`
+		conversation
+			`I Wanderers qui sembrano increduli di essere riusciti a respingere una forza d'attacco così potente degli Slegati. Mentre attraversi lo spazioporto, molti si fermano a ringraziarti per l'aiuto nella difesa della loro casa.`
+			`	Proprio quando raggiungi il padiglione dove si radunano i capi militari, un'ombra ti cade addosso e alzi lo sguardo per vedere due navi avvicinarsi con le inconfondibili sagome cornute delle navi da guerra dei Pug. In tutto lo spazioporto senti voci Wanderer levarsi eccitate, e centinaia di loro saltano in aria per accompagnare le navi dei Pug alla piazzola di atterraggio. Sobari Tele'ek ti dice: "È una [visita, apparizione] dei Custodi! Nella nostra ora del [bisogno, della disperazione] si fanno conoscere finalmente." Una piccola delegazione di Pug scende dalle navi e si avvicina a piedi al padiglione.`
+			choice
+				`	"Speriamo che vi offrano più aiuto di quanto ne abbiano offerto l'ultima volta che ho parlato con loro."`
+				`	"I Pug sono pericolosi e imprevedibili. Non dovreste fidarvi di loro."`
+				`	"Se ci tenessero davvero a voi, sarebbero intervenuti prima che tanti di voi morissero combattendo contro gli Slegati."`
+				`	(Ascolta quello che i Pug hanno da dire.)`
+					goto pug
+			`	"I Custodi sono [sottili, misteriosi]," dice Tele'ek, "ma il loro [intervento, agire] è sempre stato a nostro [vantaggio, bene]. Ora taci, e lascia che parlino."`
+			label pug
+			`	La delegazione dei Pug raggiunge il padiglione, e uno di loro comincia a parlare nella lingua dei Wanderers. Non hai idea di che cosa dicano, e sembrano tutti ignorare la tua presenza. Alcuni dei capi Wanderer rispondono. C'è un gran sbattere di ali, un agitare di code e un lisciarsi di piume. Potrebbe essere il modo dei Wanderers di fare buona impressione, oppure si stanno semplicemente compiacendo. O forse sono nervosi; è difficile dirlo.`
+			`	I Pug finiscono la conversazione con i Wanderers e tornano alle loro navi, e solo allora Sobari Tele'ek si volta verso di te e dice: "Ottime notizie! Dicono che le loro due navi [pattuglieranno, resteranno in] questo sistema e [tratterranno, terranno a bada] le flotte degli Hai. Inoltre," aggiunge, lisciandosi le piume, "sono molto soddisfatti di noi per essere [diventati, cresciuti] così forti. E dicono che non dobbiamo più [combattere contro? preoccuparci di?] gli Hai."`
+			choice
+				`	"Ho combattuto contro navi dei Pug. Due non possono reggere l'intera flotta da guerra degli Slegati."`
+				`	"Vuol dire che sono finalmente disposti ad aprire il cunicolo per voi?"`
+					goto eye
+			`	"Forse sono diventati più forti anche loro," dice Tele'ek. "In ogni caso, ora qui siamo [al sicuro, tranquilli], quindi non abbiamo bisogno del tuo [aiuto, sostegno]. Forse dovresti tornare nella nostra capitale e vedere se hanno bisogno di te là."`
+				goto end
+			label eye
+			`	La cresta di Tele'ek si abbassa un po'. "Suppongo che non abbiano fatto alcuna [promessa, previsione] al riguardo," dice. "Ma in ogni caso, ora qui siamo [al sicuro, tranquilli], quindi non abbiamo bisogno del tuo [aiuto, sostegno]. Forse dovresti tornare nella nostra capitale e vedere se hanno bisogno di te là."`
+			label end
+			choice
+				`	"Molto bene, andrò a vedere se hanno bisogno di me su <planet>."`
+					accept
+				`	"Pensi davvero che qui non possa andare niente storto, solo perché sono arrivati i Pug?"`
+			`	Cerchi di convincere Tele'ek che i Pug potrebbero non essere del tutto affidabili, ma è chiaro che non puoi fargli cambiare idea. Per i Wanderers i Pug devono avere lo status di dèi; parlare contro di loro è inutile. Alla fine rinunci e accetti di andare su <planet>.`
+				accept
+	
+	on complete
+		event "wanderers: the eye opens"
+		event "wanderers: derecho mass production" 16
+		event "wanderers: spera anatrusk colony" 40
+		conversation
+			`Pochi minuti dopo che atterri su <planet>, un improvviso trambusto attraversa i Wanderers nello spazioporto. È difficile esserne certo, ma ti sembra che suonino eccitati, non spaventati. Le navi cominciano a decollare, sempre più numerose, finché lo spazioporto resta quasi deserto, e nessuno di quelli che rimangono sembra minimamente interessato a parlare con te o a spiegarti che cosa sta succedendo. Probabilmente dovrai tornare alla tua nave e vedere di persona di che cosa si tratta.`

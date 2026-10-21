@@ -1,0 +1,330 @@
+{
+ "block": {
+  "path": "data/dialog phrases.txt",
+  "line_from": 16,
+  "line_to": 98,
+  "units": 29
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "phrase:generic arrived-without-npc dialog|You have reached <planet>, but you left the <npc> behind! Better depart and wait for them to arrive in this star system.|16|0",
+   "path": "data/dialog phrases.txt",
+   "line": 16,
+   "kind": "TEXT",
+   "context": "phrase:generic arrived-without-npc dialog",
+   "english": "You have reached <planet>, but you left the <npc> behind! Better depart and wait for them to arrive in this star system.",
+   "italian": "Hai raggiunto <planet>, ma hai lasciato indietro <npc>! Meglio ripartire e aspettare che arrivi in questo sistema stellare.",
+   "ratio": 1.025
+  },
+  {
+   "idx": 2,
+   "id": "phrase:generic safe escort completion dialog|The captain of the <npc> thanks you for escorting them safely, and pays you <payment>.|19|0",
+   "path": "data/dialog phrases.txt",
+   "line": 19,
+   "kind": "TEXT",
+   "context": "phrase:generic safe escort completion dialog",
+   "english": "The captain of the <npc> thanks you for escorting them safely, and pays you <payment>.",
+   "italian": "Il capitano di <npc> ti ringrazia per aver scortato la nave sana e salva e ti paga <payment>.",
+   "ratio": 1.081
+  },
+  {
+   "idx": 3,
+   "id": "phrase:generic pirate attack payment dialog|The government of <planet>|23|0",
+   "path": "data/dialog phrases.txt",
+   "line": 23,
+   "kind": "TEXT",
+   "context": "phrase:generic pirate attack payment dialog",
+   "english": "The government of <planet>",
+   "italian": "Il governo di <planet>",
+   "ratio": 0.846
+  },
+  {
+   "idx": 4,
+   "id": "phrase:generic pirate attack payment dialog| gratefully |26|0",
+   "path": "data/dialog phrases.txt",
+   "line": 26,
+   "kind": "TEXT",
+   "context": "phrase:generic pirate attack payment dialog",
+   "english": " gratefully ",
+   "italian": " ti ringrazia sentitamente e ",
+   "ratio": 2.417
+  },
+  {
+   "idx": 5,
+   "id": "phrase:generic pirate attack payment dialog|pays you <payment> for helping to|28|0",
+   "path": "data/dialog phrases.txt",
+   "line": 28,
+   "kind": "TEXT",
+   "context": "phrase:generic pirate attack payment dialog",
+   "english": "pays you <payment> for helping to",
+   "italian": "ti paga <payment> per aver contribuito a",
+   "ratio": 1.212
+  },
+  {
+   "idx": 6,
+   "id": "phrase:generic pirate attack payment dialog| drive off |30|0",
+   "path": "data/dialog phrases.txt",
+   "line": 30,
+   "kind": "TEXT",
+   "context": "phrase:generic pirate attack payment dialog",
+   "english": " drive off ",
+   "italian": " cacciare ",
+   "ratio": 0.909
+  },
+  {
+   "idx": 7,
+   "id": "phrase:generic pirate attack payment dialog| defeat |31|0",
+   "path": "data/dialog phrases.txt",
+   "line": 31,
+   "kind": "TEXT",
+   "context": "phrase:generic pirate attack payment dialog",
+   "english": " defeat ",
+   "italian": " sconfiggere ",
+   "ratio": 1.625
+  },
+  {
+   "idx": 8,
+   "id": "phrase:generic pirate attack payment dialog|the |33|0",
+   "path": "data/dialog phrases.txt",
+   "line": 33,
+   "kind": "TEXT",
+   "context": "phrase:generic pirate attack payment dialog",
+   "english": "the ",
+   "italian": "i ",
+   "ratio": 0.5
+  },
+  {
+   "idx": 9,
+   "id": "phrase:generic pirate attack payment dialog|pirates.|35|0",
+   "path": "data/dialog phrases.txt",
+   "line": 35,
+   "kind": "TEXT",
+   "context": "phrase:generic pirate attack payment dialog",
+   "english": "pirates.",
+   "italian": "pirati.",
+   "ratio": 0.875
+  },
+  {
+   "idx": 10,
+   "id": "phrase:generic pirate attack payment dialog|raiders.|36|0",
+   "path": "data/dialog phrases.txt",
+   "line": 36,
+   "kind": "TEXT",
+   "context": "phrase:generic pirate attack payment dialog",
+   "english": "raiders.",
+   "italian": "predoni.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "phrase:generic pirate attack payment dialog|attackers.|37|0",
+   "path": "data/dialog phrases.txt",
+   "line": 37,
+   "kind": "TEXT",
+   "context": "phrase:generic pirate attack payment dialog",
+   "english": "attackers.",
+   "italian": "razziatori.",
+   "ratio": 1.1
+  },
+  {
+   "idx": 12,
+   "id": "phrase:generic cargo delivery payment|You drop off your cargo of <commodity> and collect your payment of <payment>.|41|0",
+   "path": "data/dialog phrases.txt",
+   "line": 41,
+   "kind": "TEXT",
+   "context": "phrase:generic cargo delivery payment",
+   "english": "You drop off your cargo of <commodity> and collect your payment of <payment>.",
+   "italian": "Scarichi il tuo carico di <commodity> e incassi il pagamento di <payment>.",
+   "ratio": 0.961
+  },
+  {
+   "idx": 13,
+   "id": "phrase:generic cargo on visit|You have reached <planet>, but not all of the cargo is in the system! Better depart and wait for your escorts to arrive in this star system.|44|0",
+   "path": "data/dialog phrases.txt",
+   "line": 44,
+   "kind": "TEXT",
+   "context": "phrase:generic cargo on visit",
+   "english": "You have reached <planet>, but not all of the cargo is in the system! Better depart and wait for your escorts to arrive in this star system.",
+   "italian": "Hai raggiunto <planet>, ma non tutto il carico è nel sistema! Meglio ripartire e aspettare che le tue scorte arrivino in questo sistema stellare.",
+   "ratio": 1.036
+  },
+  {
+   "idx": 14,
+   "id": "phrase:generic passenger dropoff payment|You wish your <passengers> the best of luck on <planet>, and collect your payment of <payment>.|48|0",
+   "path": "data/dialog phrases.txt",
+   "line": 48,
+   "kind": "TEXT",
+   "context": "phrase:generic passenger dropoff payment",
+   "english": "You wish your <passengers> the best of luck on <planet>, and collect your payment of <payment>.",
+   "italian": "Auguri ai tuoi <passengers> ogni fortuna su <planet> e incassi il pagamento di <payment>.",
+   "ratio": 0.937
+  },
+  {
+   "idx": 15,
+   "id": "phrase:generic passenger dropoff payment|You say farewell to your <passengers> on <planet>, and collect your payment of <payment>.|49|0",
+   "path": "data/dialog phrases.txt",
+   "line": 49,
+   "kind": "TEXT",
+   "context": "phrase:generic passenger dropoff payment",
+   "english": "You say farewell to your <passengers> on <planet>, and collect your payment of <payment>.",
+   "italian": "Saluti i tuoi <passengers> su <planet> e incassi il pagamento di <payment>.",
+   "ratio": 0.843
+  },
+  {
+   "idx": 16,
+   "id": "phrase:generic passenger on visit|You have reached <planet>, but not all of the passengers are in the system! Better depart and wait for your escorts to arrive in this star system.|52|0",
+   "path": "data/dialog phrases.txt",
+   "line": 52,
+   "kind": "TEXT",
+   "context": "phrase:generic passenger on visit",
+   "english": "You have reached <planet>, but not all of the passengers are in the system! Better depart and wait for your escorts to arrive in this star system.",
+   "italian": "Hai raggiunto <planet>, ma non tutti i passeggeri sono nel sistema! Meglio ripartire e aspettare che le tue scorte arrivino in questo sistema stellare.",
+   "ratio": 1.034
+  },
+  {
+   "idx": 17,
+   "id": "phrase:generic cargo and passenger on visit|You have reached <planet>, but not all of the cargo and passengers are in the system! Better depart and wait for your escorts to arrive in this star system.|56|0",
+   "path": "data/dialog phrases.txt",
+   "line": 56,
+   "kind": "TEXT",
+   "context": "phrase:generic cargo and passenger on visit",
+   "english": "You have reached <planet>, but not all of the cargo and passengers are in the system! Better depart and wait for your escorts to arrive in this star system.",
+   "italian": "Hai raggiunto <planet>, ma non tutto il carico e non tutti i passeggeri sono nel sistema! Meglio ripartire e aspettare che le tue scorte arrivino in questo sistema stellare.",
+   "ratio": 1.109
+  },
+  {
+   "idx": 18,
+   "id": "phrase:generic mineral delivery payment|You drop off the <amount> tons of <mineral> and collect your payment of <payment>.|60|0",
+   "path": "data/dialog phrases.txt",
+   "line": 60,
+   "kind": "TEXT",
+   "context": "phrase:generic mineral delivery payment",
+   "english": "You drop off the <amount> tons of <mineral> and collect your payment of <payment>.",
+   "italian": "Scarichi le <amount> tonnellate di <mineral> e incassi il pagamento di <payment>.",
+   "ratio": 0.988
+  },
+  {
+   "idx": 19,
+   "id": "phrase:generic mineral on visit|You've returned to <origin>, but you are not carrying <amount> tons of <mineral> in your cargo hold.|64|0",
+   "path": "data/dialog phrases.txt",
+   "line": 64,
+   "kind": "TEXT",
+   "context": "phrase:generic mineral on visit",
+   "english": "You've returned to <origin>, but you are not carrying <amount> tons of <mineral> in your cargo hold.",
+   "italian": "Sei tornato a <origin>, ma non hai le <amount> tonnellate di <mineral> nella stiva.",
+   "ratio": 0.83
+  },
+  {
+   "idx": 20,
+   "id": "phrase:generic missing stopover or cargo and passengers|You have reached <planet>, but you're missing something! Either you haven't visited <stopovers>, or not all the cargo and passengers are in the system.|68|0",
+   "path": "data/dialog phrases.txt",
+   "line": 68,
+   "kind": "TEXT",
+   "context": "phrase:generic missing stopover or cargo and passengers",
+   "english": "You have reached <planet>, but you're missing something! Either you haven't visited <stopovers>, or not all the cargo and passengers are in the system.",
+   "italian": "Hai raggiunto <planet>, ma ti manca qualcosa! O non hai visitato <stopovers>, oppure non tutto il carico e non tutti i passeggeri sono nel sistema.",
+   "ratio": 0.974
+  },
+  {
+   "idx": 21,
+   "id": "phrase:generic missing stopover or passengers|You have reached <planet>, but you're missing something! Either you haven't visited <stopovers>, or not all the passengers are in the system.|71|0",
+   "path": "data/dialog phrases.txt",
+   "line": 71,
+   "kind": "TEXT",
+   "context": "phrase:generic missing stopover or passengers",
+   "english": "You have reached <planet>, but you're missing something! Either you haven't visited <stopovers>, or not all the passengers are in the system.",
+   "italian": "Hai raggiunto <planet>, ma ti manca qualcosa! O non hai visitato <stopovers>, oppure non tutti i passeggeri sono nel sistema.",
+   "ratio": 0.887
+  },
+  {
+   "idx": 22,
+   "id": "phrase:generic missing stopover or cargo|You have reached <planet>, but you're missing something! Either you haven't visited <stopovers>, or not all the cargo is in the system.|74|0",
+   "path": "data/dialog phrases.txt",
+   "line": 74,
+   "kind": "TEXT",
+   "context": "phrase:generic missing stopover or cargo",
+   "english": "You have reached <planet>, but you're missing something! Either you haven't visited <stopovers>, or not all the cargo is in the system.",
+   "italian": "Hai raggiunto <planet>, ma ti manca qualcosa! O non hai visitato <stopovers>, oppure non tutto il carico è nel sistema.",
+   "ratio": 0.881
+  },
+  {
+   "idx": 23,
+   "id": "phrase:generic missing stopover or escort|You have reached <planet>, but you're missing something! Either you haven't visited <stopovers>, or you left the <npc> behind.|77|0",
+   "path": "data/dialog phrases.txt",
+   "line": 77,
+   "kind": "TEXT",
+   "context": "phrase:generic missing stopover or escort",
+   "english": "You have reached <planet>, but you're missing something! Either you haven't visited <stopovers>, or you left the <npc> behind.",
+   "italian": "Hai raggiunto <planet>, ma ti manca qualcosa! O non hai visitato <stopovers>, oppure hai lasciato indietro <npc>.",
+   "ratio": 0.897
+  },
+  {
+   "idx": 24,
+   "id": "phrase:generic missing waypoint or cargo and passengers|You have reached <planet>, but you're missing something! Either you haven't passed through <waypoints>, or not all the cargo and passengers are in the system.|80|0",
+   "path": "data/dialog phrases.txt",
+   "line": 80,
+   "kind": "TEXT",
+   "context": "phrase:generic missing waypoint or cargo and passengers",
+   "english": "You have reached <planet>, but you're missing something! Either you haven't passed through <waypoints>, or not all the cargo and passengers are in the system.",
+   "italian": "Hai raggiunto <planet>, ma ti manca qualcosa! O non hai attraversato <waypoints>, oppure non tutto il carico e non tutti i passeggeri sono nel sistema.",
+   "ratio": 0.956
+  },
+  {
+   "idx": 25,
+   "id": "phrase:generic missing waypoint or passengers|You have reached <planet>, but you're missing something! Either you haven't passed through <waypoints>, or not all the passengers are in the system.|83|0",
+   "path": "data/dialog phrases.txt",
+   "line": 83,
+   "kind": "TEXT",
+   "context": "phrase:generic missing waypoint or passengers",
+   "english": "You have reached <planet>, but you're missing something! Either you haven't passed through <waypoints>, or not all the passengers are in the system.",
+   "italian": "Hai raggiunto <planet>, ma ti manca qualcosa! O non hai attraversato <waypoints>, oppure non tutti i passeggeri sono nel sistema.",
+   "ratio": 0.872
+  },
+  {
+   "idx": 26,
+   "id": "phrase:generic missing waypoint or cargo|You have reached <planet>, but you're missing something! Either you haven't passed through <waypoints>, or not all the cargo is in the system.|86|0",
+   "path": "data/dialog phrases.txt",
+   "line": 86,
+   "kind": "TEXT",
+   "context": "phrase:generic missing waypoint or cargo",
+   "english": "You have reached <planet>, but you're missing something! Either you haven't passed through <waypoints>, or not all the cargo is in the system.",
+   "italian": "Hai raggiunto <planet>, ma ti manca qualcosa! O non hai attraversato <waypoints>, oppure non tutto il carico è nel sistema.",
+   "ratio": 0.866
+  },
+  {
+   "idx": 27,
+   "id": "phrase:generic stopover on visit|You have reached <planet>, but you haven't visited all the planets yet! Better depart and make sure you visit <stopovers>.|90|0",
+   "path": "data/dialog phrases.txt",
+   "line": 90,
+   "kind": "TEXT",
+   "context": "phrase:generic stopover on visit",
+   "english": "You have reached <planet>, but you haven't visited all the planets yet! Better depart and make sure you visit <stopovers>.",
+   "italian": "Hai raggiunto <planet>, ma non hai ancora visitato tutti i pianeti! Meglio ripartire e assicurarti di visitare <stopovers>.",
+   "ratio": 1.008
+  },
+  {
+   "idx": 28,
+   "id": "phrase:generic waypoint on visit|You have reached <planet>, but you haven't visited all the systems yet! Better depart and make sure you visit <waypoints>.|93|0",
+   "path": "data/dialog phrases.txt",
+   "line": 93,
+   "kind": "TEXT",
+   "context": "phrase:generic waypoint on visit",
+   "english": "You have reached <planet>, but you haven't visited all the systems yet! Better depart and make sure you visit <waypoints>.",
+   "italian": "Hai raggiunto <planet>, ma non hai ancora visitato tutti i sistemi! Meglio ripartire e assicurarti di visitare <waypoints>.",
+   "ratio": 1.008
+  },
+  {
+   "idx": 29,
+   "id": "phrase:generic hunted bounty eliminated and payment dialog|The <npc> has been eliminated. Shortly afterwards, the government of <planet> sends you <payment> along with a message of gratitude.|98|0",
+   "path": "data/dialog phrases.txt",
+   "line": 98,
+   "kind": "TEXT",
+   "context": "phrase:generic hunted bounty eliminated and payment dialog",
+   "english": "The <npc> has been eliminated. Shortly afterwards, the government of <planet> sends you <payment> along with a message of gratitude.",
+   "italian": "<npc> è stata eliminata. Poco dopo il governo di <planet> ti invia <payment> insieme a un messaggio di ringraziamento.",
+   "ratio": 0.894
+  }
+ ]
+}

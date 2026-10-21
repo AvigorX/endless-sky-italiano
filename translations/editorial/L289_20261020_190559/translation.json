@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/gegno/gegno ships.txt",
+  "line_from": 1193,
+  "line_to": 1616,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Halite|description|1193|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1193,
+   "kind": "DESCRIPTION",
+   "context": "ship:Halite",
+   "english": "\tAble to bring a swarm of instant damage to slow-moving Vi warships while under protective shielding, a large number of these ships are seen aboard Scin carrier craft.",
+   "italian": "\tCapaci di portare uno sciame di danni istantanei contro le lente navi da guerra Vi mentre sono sotto uno scudo protettivo, un gran numero di queste navi si vede a bordo delle portaerei Scin.",
+   "ratio": 1.144
+  },
+  {
+   "idx": 2,
+   "id": "ship:Halite|description|1194|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1194,
+   "kind": "DESCRIPTION",
+   "context": "ship:Halite",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI velivoli da combattimento non sono dotati di iperguida. Non puoi trasportare un velivolo da combattimento se non hai nella tua flotta una nave con una baia di caccia.",
+   "ratio": 1.271
+  },
+  {
+   "idx": 3,
+   "id": "ship:Mica|description|1234|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1234,
+   "kind": "DESCRIPTION",
+   "context": "ship:Mica",
+   "english": "The Mica is the Gegno Scin's take on a shuttlecraft, and is based on the Shale and the Vi's Slate. It is ever so slightly smaller, since the Scin aren't as large, but carries newer engine systems so it is almost twice as fast as the Shale and the Slate.",
+   "italian": "Il Mica è la versione dei Gegno Scin di una navetta, ed è basato sullo Shale e sullo Slate dei Vi. È appena un po' più piccolo, dato che gli Scin non sono altrettanto grandi, ma monta sistemi motore più recenti, quindi è quasi due volte più veloce dello Shale e dello Slate.",
+   "ratio": 1.083
+  },
+  {
+   "idx": 4,
+   "id": "ship:Coesite|description|1288|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1288,
+   "kind": "DESCRIPTION",
+   "context": "ship:Coesite",
+   "english": "Coesites are smaller warships that the Scin use as screening vessels during battles with the Vi. They are speedy and carry two turret mounts which allow them to always be orbiting and firing on the move. Being a smaller design, these ships are relatively easy to manufacture, and are often fielded in groups so they may overtake vessels much larger than them.",
+   "italian": "I Coesite sono navi da guerra più piccole che gli Scin usano come schermo durante le battaglie con i Vi. Sono veloci e portano due supporti per torrette che permettono loro di orbitare e sparare sempre in movimento. Essendo un progetto più piccolo, queste navi sono relativamente facili da produrre e vengono spesso schierate in gruppi, così da poter sopraffare vascelli molto più grandi di loro.",
+   "ratio": 1.103
+  },
+  {
+   "idx": 5,
+   "id": "ship:Tridymite|description|1342|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1342,
+   "kind": "DESCRIPTION",
+   "context": "ship:Tridymite",
+   "english": "Built upon a similar frame to the Coesite, the Tridymite serves as a small luxury transport vessel for the Gegno Scin. Tridymites are typically used as research vessels, transporting crews of scientists from one location to another, or as private vessels for top ranking Scin scientists. Additionally, Tridymites can occasionally be seen used as a scout craft by the military, equipped with an early prototype scanner system built into the frame.",
+   "italian": "Costruito su una struttura simile a quella del Coesite, il Tridymite serve come piccolo vascello di trasporto di lusso per i Gegno Scin. I Tridymite sono di norma usati come navi da ricerca, che trasportano squadre di scienziati da un luogo all'altro, o come vascelli privati per gli scienziati Scin di grado più alto. Inoltre, i Tridymite si vedono a volte usati come vascello da ricognizione dall'esercito, dotati di un primo sistema di scanner prototipale integrato nella struttura.",
+   "ratio": 1.087
+  },
+  {
+   "idx": 6,
+   "id": "ship:Felsic|description|1395|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1395,
+   "kind": "DESCRIPTION",
+   "context": "ship:Felsic",
+   "english": "Felsics are based on Schists, but offer many upgrades in exchange for less durability. The Scin have opted for three turret mounts, as well as expanded capacity for outfits, weapons, and engines. All this allows these ships to perform logistical duties as well as doubling as a secondary combat vessel, making up for the lack of a dedicated Scin warship.",
+   "italian": "I Felsic sono basati sugli Schist, ma offrono molti miglioramenti in cambio di minore robustezza. Gli Scin hanno optato per tre supporti per torrette, oltre a una capacità ampliata per equipaggiamenti, armi e motori. Tutto questo permette a queste navi di svolgere compiti logistici e di fungere al tempo stesso da vascello da combattimento secondario, compensando l'assenza di una nave da guerra Scin dedicata.",
+   "ratio": 1.161
+  },
+  {
+   "idx": 7,
+   "id": "ship:Feldspar|description|1480|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1480,
+   "kind": "DESCRIPTION",
+   "context": "ship:Feldspar",
+   "english": "The mighty Feldspar is a Scin creation to behold. As a testbed for the new Halite fighters, Feldspars bring their own small fleets with them and overwhelm their enemy. They were also designed as a semi-experimental platform, built around a brand new multi-engine system and the latest in Gegno plasma technology.",
+   "italian": "Il poderoso Feldspar è una creazione Scin che vale la pena vedere. Come banco di prova per i nuovi velivoli Halite, i Feldspar portano con sé le proprie piccole flotte e travolgono il nemico. Sono stati progettati anche come piattaforma semi-sperimentale, costruita attorno a un sistema multi-motore nuovissimo e alla più recente tecnologia al plasma dei Gegno.",
+   "ratio": 1.157
+  },
+  {
+   "idx": 8,
+   "id": "ship:Feldspar|description|1481|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1481,
+   "kind": "DESCRIPTION",
+   "context": "ship:Feldspar",
+   "english": "\tAble to keep a decent stance away from a battle while putting down artillery fire, Feldspars are quite a dangerously well-rounded ship for their size. On the downside, they are more susceptible to hull damage like any other Scin warship, especially when alone. As such, they rely on their fighters to keep their enemies at a distance.",
+   "italian": "\tCapaci di mantenere una buona posizione lontano dalla battaglia mentre riversano fuoco d'artiglieria, i Feldspar sono una nave pericolosamente completa per le loro dimensioni. Di contro, sono più esposti ai danni allo scafo come ogni altra nave da guerra Scin, soprattutto quando sono soli. Per questo contano sui propri velivoli per tenere i nemici a distanza.",
+   "ratio": 1.081
+  },
+  {
+   "idx": 9,
+   "id": "ship:Epidote|description|1547|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1547,
+   "kind": "DESCRIPTION",
+   "context": "ship:Epidote",
+   "english": "Epidotes are large independent research platforms with adequately-sized cargo holds, allowing them to perform as a reliable heavy freighter for the Gegno Scin. A large number of bunks either help transport groups of Scin scientists to their project destinations, or allow for mobile on-board demonstrations and observations. Each Epidote is equipped with a rear fighter docking bay capable of carrying two Halites, typically used to ship Halite fighters around Scin space to resupply carriers. Thanks to these fighters and the Epidotes' three dorsal turrets, they can also be used as a secondary warship when needed.",
+   "italian": "Gli Epidote sono grandi piattaforme di ricerca indipendenti con stive di dimensioni adeguate, che permettono loro di funzionare come affidabile cargo pesante per i Gegno Scin. Un gran numero di cuccette serve a trasportare gruppi di scienziati Scin verso le destinazioni dei loro progetti, oppure consente dimostrazioni e osservazioni mobili a bordo. Ogni Epidote è dotato di una baia di attracco per velivoli nella parte posteriore, capace di trasportare due Halite, usata di norma per spostare i velivoli Halite attraverso lo spazio Scin e rifornire le portaerei. Grazie a questi velivoli e alle tre torrette dorsali degli Epidote, possono essere usati anche come nave da guerra secondaria quando serve.",
+   "ratio": 1.144
+  },
+  {
+   "idx": 10,
+   "id": "ship:Epidote|description|1548|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1548,
+   "kind": "DESCRIPTION",
+   "context": "ship:Epidote",
+   "english": "\tLike other Gegno Scin ships, Epidotes themselves are an experimental test bed; they are built around the same large engine system tested on Feldspars, making them notably fast for their size.",
+   "italian": "\tCome le altre navi dei Gegno Scin, gli Epidote stessi sono un banco di prova sperimentale; sono costruiti attorno allo stesso grande sistema motore provato sui Feldspar, il che li rende notevolmente veloci per le loro dimensioni.",
+   "ratio": 1.198
+  },
+  {
+   "idx": 11,
+   "id": "ship:Kyanite|description|1615|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1615,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kyanite",
+   "english": "Kyanites are intricately-built test platforms for Gegno Scin technology, equipped with an extensive built-in power system and energy reserve able to support many types of outfits. Weapon experimentation, the most common practice of Kyanites, is recorded by various scanner instruments littering the two long structures on the front of the hull. Despite being weapon research vessels, Kyanites are not combat-capable due to how exposed their systems are and how little hull covers them. These systems are also very expensive and difficult to produce, so only a small amount of Kyanites are found in service.",
+   "italian": "I Kyanite sono piattaforme di prova dalla costruzione complessa per la tecnologia dei Gegno Scin, dotate di un esteso sistema di alimentazione integrato e di una riserva di energia capace di sostenere molti tipi di equipaggiamenti. La sperimentazione delle armi, la pratica più comune dei Kyanite, viene registrata da vari strumenti di scansione disseminati sulle due lunghe strutture sulla parte anteriore dello scafo. Benché siano vascelli di ricerca sulle armi, i Kyanite non sono capaci di combattere, per quanto i loro sistemi siano esposti e per quanto poco scafo li copra. Questi sistemi sono anche molto costosi e difficili da produrre, quindi solo pochi Kyanite si trovano in servizio.",
+   "ratio": 1.145
+  },
+  {
+   "idx": 12,
+   "id": "ship:Kyanite|description|1616|0",
+   "path": "data/gegno/gegno ships.txt",
+   "line": 1616,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kyanite",
+   "english": "\tThe scanner system found on the Tridymite was originally developed and tested on Kyanite platforms, eventually becoming integrated into the hull as well.",
+   "italian": "\tIl sistema di scanner che si trova sul Tridymite fu sviluppato e provato in origine sulle piattaforme Kyanite, finendo poi per essere integrato anche nello scafo.",
+   "ratio": 1.058
+  }
+ ]
+}

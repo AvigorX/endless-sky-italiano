@@ -1,0 +1,286 @@
+{
+ "block": {
+  "path": "data/dialog phrases.txt",
+  "line_from": 102,
+  "line_to": 172,
+  "units": 25
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "phrase:generic hunted bounty eliminated dialog|The <npc> has been eliminated. You can claim the bounty payment by returning to <destination>.|102|0",
+   "path": "data/dialog phrases.txt",
+   "line": 102,
+   "kind": "TEXT",
+   "context": "phrase:generic hunted bounty eliminated dialog",
+   "english": "The <npc> has been eliminated. You can claim the bounty payment by returning to <destination>.",
+   "italian": "<npc> è stata eliminata. Puoi riscuotere il pagamento della taglia tornando a <destination>.",
+   "ratio": 0.979
+  },
+  {
+   "idx": 2,
+   "id": "phrase:generic bounty hunting payment dialog|The government of <planet> gratefully pays you <payment> for eliminating the <npc>.|105|0",
+   "path": "data/dialog phrases.txt",
+   "line": 105,
+   "kind": "TEXT",
+   "context": "phrase:generic bounty hunting payment dialog",
+   "english": "The government of <planet> gratefully pays you <payment> for eliminating the <npc>.",
+   "italian": "Il governo di <planet> ti paga <payment> con gratitudine per aver eliminato <npc>.",
+   "ratio": 0.988
+  },
+  {
+   "idx": 3,
+   "id": "phrase:generic bounty hunting on visit|You've landed on <planet>, but the <npc> has not been eliminated yet. Hunt it down and destroy it before returning.|108|0",
+   "path": "data/dialog phrases.txt",
+   "line": 108,
+   "kind": "TEXT",
+   "context": "phrase:generic bounty hunting on visit",
+   "english": "You've landed on <planet>, but the <npc> has not been eliminated yet. Hunt it down and destroy it before returning.",
+   "italian": "Sei atterrato su <planet>, ma <npc> non è ancora stata eliminata. Dalle la caccia e distruggila prima di tornare.",
+   "ratio": 0.983
+  },
+  {
+   "idx": 4,
+   "id": "phrase:generic bounty hunting boarding on visit|You've landed on <planet>, but you have not boarded the <npc> yet. Hunt it down and board it before returning.|111|0",
+   "path": "data/dialog phrases.txt",
+   "line": 111,
+   "kind": "TEXT",
+   "context": "phrase:generic bounty hunting boarding on visit",
+   "english": "You've landed on <planet>, but you have not boarded the <npc> yet. Hunt it down and board it before returning.",
+   "italian": "Sei atterrato su <planet>, ma non sei ancora salito a bordo di <npc>. Dalle la caccia e abbordala prima di tornare.",
+   "ratio": 1.045
+  },
+  {
+   "idx": 5,
+   "id": "phrase:generic hunted bounty fleet eliminated and payment dialog|The <npc> and their fleet have been eliminated. Shortly afterwards, the government of <planet> sends you <payment> along with a message of gratitude.|115|0",
+   "path": "data/dialog phrases.txt",
+   "line": 115,
+   "kind": "TEXT",
+   "context": "phrase:generic hunted bounty fleet eliminated and payment dialog",
+   "english": "The <npc> and their fleet have been eliminated. Shortly afterwards, the government of <planet> sends you <payment> along with a message of gratitude.",
+   "italian": "<npc> e la sua flotta sono state eliminate. Poco dopo il governo di <planet> ti invia <payment> insieme a un messaggio di ringraziamento.",
+   "ratio": 0.919
+  },
+  {
+   "idx": 6,
+   "id": "phrase:generic hunted bounty fleet eliminated dialog|The <npc> and their fleet have been eliminated. You can claim the bounty payment by returning to <destination>.|119|0",
+   "path": "data/dialog phrases.txt",
+   "line": 119,
+   "kind": "TEXT",
+   "context": "phrase:generic hunted bounty fleet eliminated dialog",
+   "english": "The <npc> and their fleet have been eliminated. You can claim the bounty payment by returning to <destination>.",
+   "italian": "<npc> e la sua flotta sono state eliminate. Puoi riscuotere il pagamento della taglia tornando a <destination>.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "phrase:generic fleet bounty hunting payment dialog|The government of <planet> gratefully pays you <payment> for eliminating the <npc> and their fleet.|122|0",
+   "path": "data/dialog phrases.txt",
+   "line": 122,
+   "kind": "TEXT",
+   "context": "phrase:generic fleet bounty hunting payment dialog",
+   "english": "The government of <planet> gratefully pays you <payment> for eliminating the <npc> and their fleet.",
+   "italian": "Il governo di <planet> ti paga <payment> con gratitudine per aver eliminato <npc> e la sua flotta.",
+   "ratio": 0.99
+  },
+  {
+   "idx": 8,
+   "id": "phrase:generic fleet bounty hunting on visit|You've landed on <planet>, but the <npc> and its fleet has not been eliminated yet. Hunt it down and destroy it before returning.|125|0",
+   "path": "data/dialog phrases.txt",
+   "line": 125,
+   "kind": "TEXT",
+   "context": "phrase:generic fleet bounty hunting on visit",
+   "english": "You've landed on <planet>, but the <npc> and its fleet has not been eliminated yet. Hunt it down and destroy it before returning.",
+   "italian": "Sei atterrato su <planet>, ma <npc> e la sua flotta non sono ancora state eliminate. Dalle la caccia e distruggile prima di tornare.",
+   "ratio": 1.023
+  },
+  {
+   "idx": 9,
+   "id": "phrase:generic pirate fleet battle on visit|You've landed on <planet>, but there are still pirates circling overhead. You should take off and help finish them off.|129|0",
+   "path": "data/dialog phrases.txt",
+   "line": 129,
+   "kind": "TEXT",
+   "context": "phrase:generic pirate fleet battle on visit",
+   "english": "You've landed on <planet>, but there are still pirates circling overhead. You should take off and help finish them off.",
+   "italian": "Sei atterrato su <planet>, ma ci sono ancora pirati che girano in cielo. Dovresti decollare e aiutare a finirli.",
+   "ratio": 0.941
+  },
+  {
+   "idx": 10,
+   "id": "phrase:generic completed pirate cargo mission|You find the contact at the edge of the spaceport. Your cargo of <commodity> is removed from your ship, and you collect your payment of <payment>.|133|0",
+   "path": "data/dialog phrases.txt",
+   "line": 133,
+   "kind": "TEXT",
+   "context": "phrase:generic completed pirate cargo mission",
+   "english": "You find the contact at the edge of the spaceport. Your cargo of <commodity> is removed from your ship, and you collect your payment of <payment>.",
+   "italian": "Trovi il contatto ai margini dello spazioporto. Il tuo carico di <commodity> viene scaricato dalla nave e incassi il pagamento di <payment>.",
+   "ratio": 0.959
+  },
+  {
+   "idx": 11,
+   "id": "phrase:generic completed highly illegal pirate cargo mission|You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship, and you collect your payment of <payment>.|137|0",
+   "path": "data/dialog phrases.txt",
+   "line": 137,
+   "kind": "TEXT",
+   "context": "phrase:generic completed highly illegal pirate cargo mission",
+   "english": "You find the contact outside of the main city. Your cargo of <commodity> is removed from your ship, and you collect your payment of <payment>.",
+   "italian": "Trovi il contatto fuori dalla città principale. Il tuo carico di <commodity> viene scaricato dalla nave e incassi il pagamento di <payment>.",
+   "ratio": 0.986
+  },
+  {
+   "idx": 12,
+   "id": "phrase:generic aborted pirate passenger mission|Your passenger never arrived at <destination>. This doesn't help to establish your reputation as a reliable, no-questions-asked transporter.|141|0",
+   "path": "data/dialog phrases.txt",
+   "line": 141,
+   "kind": "TEXT",
+   "context": "phrase:generic aborted pirate passenger mission",
+   "english": "Your passenger never arrived at <destination>. This doesn't help to establish your reputation as a reliable, no-questions-asked transporter.",
+   "italian": "Il tuo passeggero non è mai arrivato a <destination>. Non è il modo migliore per costruirti la reputazione di trasportatore affidabile che non fa domande.",
+   "ratio": 1.1
+  },
+  {
+   "idx": 13,
+   "id": "phrase:generic aborted pirate cargo mission|Your cargo of <commodity> never arrived at its destination. The pirates won't be happy to hear about this.|145|0",
+   "path": "data/dialog phrases.txt",
+   "line": 145,
+   "kind": "TEXT",
+   "context": "phrase:generic aborted pirate cargo mission",
+   "english": "Your cargo of <commodity> never arrived at its destination. The pirates won't be happy to hear about this.",
+   "italian": "Il tuo carico di <commodity> non è mai arrivato a destinazione. Ai pirati non farà piacere saperlo.",
+   "ratio": 0.934
+  },
+  {
+   "idx": 14,
+   "id": "phrase:generic completed pirate slave mission|After landing on <planet>, the pirates move the <bunks> slaves from your ship and pay you <payment>.|149|0",
+   "path": "data/dialog phrases.txt",
+   "line": 149,
+   "kind": "TEXT",
+   "context": "phrase:generic completed pirate slave mission",
+   "english": "After landing on <planet>, the pirates move the <bunks> slaves from your ship and pay you <payment>.",
+   "italian": "Dopo l'atterraggio su <planet>, i pirati fanno sbarcare dalla tua nave <bunks> schiavi e ti pagano <payment>.",
+   "ratio": 1.09
+  },
+  {
+   "idx": 15,
+   "id": "phrase:generic aborted pirate slave mission|Your slaves never arrived at <destination>. This doesn't help to establish your reputation as a reliable, no-questions-asked transporter.|153|0",
+   "path": "data/dialog phrases.txt",
+   "line": 153,
+   "kind": "TEXT",
+   "context": "phrase:generic aborted pirate slave mission",
+   "english": "Your slaves never arrived at <destination>. This doesn't help to establish your reputation as a reliable, no-questions-asked transporter.",
+   "italian": "I tuoi schiavi non sono mai arrivati a <destination>. Non è il modo migliore per costruirti la reputazione di trasportatore affidabile che non fa domande.",
+   "ratio": 1.124
+  },
+  {
+   "idx": 16,
+   "id": "phrase:free worlds failed|You have failed or aborted an essential Free Worlds mission. If you want to continue the story line, revert to the autosave or another earlier snapshot of your pilot.|157|0",
+   "path": "data/dialog phrases.txt",
+   "line": 157,
+   "kind": "TEXT",
+   "context": "phrase:free worlds failed",
+   "english": "You have failed or aborted an essential Free Worlds mission. If you want to continue the story line, revert to the autosave or another earlier snapshot of your pilot.",
+   "italian": "Hai fallito o interrotto una missione essenziale dei Free Worlds. Se vuoi proseguire la storia, torna al salvataggio automatico o a un'altra istantanea precedente del tuo pilota.",
+   "ratio": 1.072
+  },
+  {
+   "idx": 17,
+   "id": "phrase:free worlds declined|You have declined an essential Free Worlds mission. If you want to continue the story line, revert to the autosave or another earlier snapshot of your pilot.|161|0",
+   "path": "data/dialog phrases.txt",
+   "line": 161,
+   "kind": "TEXT",
+   "context": "phrase:free worlds declined",
+   "english": "You have declined an essential Free Worlds mission. If you want to continue the story line, revert to the autosave or another earlier snapshot of your pilot.",
+   "italian": "Hai rifiutato una missione essenziale dei Free Worlds. Se vuoi proseguire la storia, torna al salvataggio automatico o a un'altra istantanea precedente del tuo pilota.",
+   "ratio": 1.064
+  },
+  {
+   "idx": 18,
+   "id": "phrase:tribute pacifist undefined|This system is too small for wars and violence.|165|0",
+   "path": "data/dialog phrases.txt",
+   "line": 165,
+   "kind": "TEXT",
+   "context": "phrase:tribute pacifist undefined",
+   "english": "This system is too small for wars and violence.",
+   "italian": "Questo sistema è troppo piccolo per guerre e violenza.",
+   "ratio": 1.149
+  },
+  {
+   "idx": 19,
+   "id": "phrase:tribute pacifist undefined|Why do you wish to engage in pointless bloodshed?|166|0",
+   "path": "data/dialog phrases.txt",
+   "line": 166,
+   "kind": "TEXT",
+   "context": "phrase:tribute pacifist undefined",
+   "english": "Why do you wish to engage in pointless bloodshed?",
+   "italian": "Perché vuoi dare inizio a uno spargimento di sangue senza senso?",
+   "ratio": 1.306
+  },
+  {
+   "idx": 20,
+   "id": "phrase:tribute pacifist undefined|We will not fight. Join us in peace instead.|167|0",
+   "path": "data/dialog phrases.txt",
+   "line": 167,
+   "kind": "TEXT",
+   "context": "phrase:tribute pacifist undefined",
+   "english": "We will not fight. Join us in peace instead.",
+   "italian": "Non combatteremo. Unisciti invece a noi in pace.",
+   "ratio": 1.091
+  },
+  {
+   "idx": 21,
+   "id": "phrase:tribute pacifist undefined|We cannot fight you, nor would we choose to. Have peace.|168|0",
+   "path": "data/dialog phrases.txt",
+   "line": 168,
+   "kind": "TEXT",
+   "context": "phrase:tribute pacifist undefined",
+   "english": "We cannot fight you, nor would we choose to. Have peace.",
+   "italian": "Non possiamo combatterti, né sceglieremmo di farlo. Abbi pace.",
+   "ratio": 1.107
+  },
+  {
+   "idx": 22,
+   "id": "phrase:tribute pacifist undefined|Peace be with you, captain. There is no need to rend the skies with your guns.|169|0",
+   "path": "data/dialog phrases.txt",
+   "line": 169,
+   "kind": "TEXT",
+   "context": "phrase:tribute pacifist undefined",
+   "english": "Peace be with you, captain. There is no need to rend the skies with your guns.",
+   "italian": "La pace sia con te, capitano. Non c'è bisogno di squarciare i cieli con i tuoi cannoni.",
+   "ratio": 1.115
+  },
+  {
+   "idx": 23,
+   "id": "phrase:tribute pacifist undefined|We will not fight you. We will not kill you. But neither will we pay a single credit of tribute.|170|0",
+   "path": "data/dialog phrases.txt",
+   "line": 170,
+   "kind": "TEXT",
+   "context": "phrase:tribute pacifist undefined",
+   "english": "We will not fight you. We will not kill you. But neither will we pay a single credit of tribute.",
+   "italian": "Non ti combatteremo. Non ti uccideremo. Ma non ti pagheremo nemmeno un solo credito di tributo.",
+   "ratio": 0.99
+  },
+  {
+   "idx": 24,
+   "id": "phrase:tribute pacifist undefined|Why should we fight over a piddling sum when it would cause so much death and horror to do so?|171|0",
+   "path": "data/dialog phrases.txt",
+   "line": 171,
+   "kind": "TEXT",
+   "context": "phrase:tribute pacifist undefined",
+   "english": "Why should we fight over a piddling sum when it would cause so much death and horror to do so?",
+   "italian": "Perché dovremmo combattere per una somma irrisoria, quando farlo causerebbe tanta morte e tanto orrore?",
+   "ratio": 1.096
+  },
+  {
+   "idx": 25,
+   "id": "phrase:tribute pacifist undefined|We beg that you reconsider this rash decision.|172|0",
+   "path": "data/dialog phrases.txt",
+   "line": 172,
+   "kind": "TEXT",
+   "context": "phrase:tribute pacifist undefined",
+   "english": "We beg that you reconsider this rash decision.",
+   "italian": "Ti supplichiamo di ripensare a questa decisione avventata.",
+   "ratio": 1.261
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "block": {
+  "path": "data/drak/drak ships.txt",
+  "line_from": 97,
+  "line_to": 97,
+  "units": 1
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Archon|description|97|0",
+   "path": "data/drak/drak ships.txt",
+   "line": 97,
+   "kind": "DESCRIPTION",
+   "context": "ship:Archon",
+   "english": "The Archon's presence is chilling. The \"ship\" has an almost organic appearance, but your ship's scanners give you no discernible information on its construction. What exactly it is you do not know, but you can feel that it is powerful.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Archon's presence is chilling. The \"ship\" has an almost organic appearance, but your ship's scanners give you no discernible information on its construction. What exactly it is you do not know, but you can feel that it is powerful.`",
+   "english_hash": "0f5f3d884227a046"
+  }
+ ]
+}

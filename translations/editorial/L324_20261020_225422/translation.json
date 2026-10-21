@@ -1,0 +1,264 @@
+{
+ "block": {
+  "path": "data/incipias/incipias outfits.txt",
+  "line_from": 40,
+  "line_to": 388,
+  "units": 23
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Plasma Discharger|description|40|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 40,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Plasma Discharger",
+   "english": "The Incipias started to mine asteroids long before they began intrasystem travel due to the proximity of their home world's atmosphere to its rings. As a result this mining tool seems to be more advanced than their general technology, yet it is still not comparable to the efficiency of human weapons.",
+   "italian": "The Incipias started to mine asteroids long before they began intrasystem travel due to the proximity of their home world's atmosphere to its rings. As a result this mining tool seems to be more advanced than their general technology, yet it is still not comparable to the efficiency of human weapons.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Plasma Discharger|description|41|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 41,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Plasma Discharger",
+   "english": "\tThe discharger itself shoots bolts of high density plasma that split up into small particles after some time. Because of the plasma infuser the fire rate is exceptional, but the energy usage is severe.",
+   "italian": "\tThe discharger itself shoots bolts of high density plasma that split up into small particles after some time. Because of the plasma infuser the fire rate is exceptional, but the energy usage is severe.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Stagnation Beam|description|85|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 85,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Stagnation Beam",
+   "english": "The Stagnation Beam is one of the few technologies of the Incipias that surpasses anything humanity has made thus far - in fact, the first prototypes were built before the Incipias even dreamed of space travel. The weapon's origins lie in giant reactors that were constructed to pull asteroids out of their home planet's orbit, providing easy access to more resources. Naturally, a mechanism to slow the asteroids down was also implemented to prevent accidental asteroid strikes.",
+   "italian": "The Stagnation Beam is one of the few technologies of the Incipias that surpasses anything humanity has made thus far - in fact, the first prototypes were built before the Incipias even dreamed of space travel. The weapon's origins lie in giant reactors that were constructed to pull asteroids out of their home planet's orbit, providing easy access to more resources. Naturally, a mechanism to slow the asteroids down was also implemented to prevent accidental asteroid strikes.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Stagnation Beam|description|86|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 86,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Stagnation Beam",
+   "english": "\tAs the Incipias' mastery of spaceflight grew, so did the generators' efficiency, which allowed for more compact, ship-based tractor beams. Resource collection was greatly streamlined by these new models, much to the benefit of the Incipias' otherwise sluggish ships.",
+   "italian": "\tAs the Incipias' mastery of spaceflight grew, so did the generators' efficiency, which allowed for more compact, ship-based tractor beams. Resource collection was greatly streamlined by these new models, much to the benefit of the Incipias' otherwise sluggish ships.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Stagnation Beam|description|87|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 87,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Stagnation Beam",
+   "english": "\tThe secret of how these beams work is only known to a few scientists of the Incipias who are under the control of the state. Such knowledge, if made public, could have disastrous consequences for the Hicemus and their grip on power.",
+   "italian": "\tThe secret of how these beams work is only known to a few scientists of the Incipias who are under the control of the state. Such knowledge, if made public, could have disastrous consequences for the Hicemus and their grip on power.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Star Tail|description|133|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 133,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Star Tail",
+   "english": "Little to no information about this weapon has ever been made public. Rumors are that it shoots highly volatile plasma chunks.",
+   "italian": "Little to no information about this weapon has ever been made public. Rumors are that it shoots highly volatile plasma chunks.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Star Tail|description|134|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 134,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Star Tail",
+   "english": "\tCaptains that have used this weapon say that its projectiles could change direction mid-flight, and were able to follow their targets despite attempts by their victims to dodge the shots.",
+   "italian": "\tCaptains that have used this weapon say that its projectiles could change direction mid-flight, and were able to follow their targets despite attempts by their victims to dodge the shots.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Star Tail|description|135|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 135,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Star Tail",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Star Tail Cell|description|177|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 177,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Star Tail Cell",
+   "english": "The Star Tail needs an extreme amount of energy that the Incipias are not able to create in a short amount of time. To accommodate this, the Star Tail Cell contains an energy-rich substance that releases its energy when fired. One of these cells holds enough energy to fire exactly one shot.",
+   "italian": "The Star Tail needs an extreme amount of energy that the Incipias are not able to create in a short amount of time. To accommodate this, the Star Tail Cell contains an energy-rich substance that releases its energy when fired. One of these cells holds enough energy to fire exactly one shot.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Star Tail Storage|description|189|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 189,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Star Tail Storage",
+   "english": "Because Star Tail Cells are highly volatile, they need a robust storage system. This radial design is able to withstand minor explosions by using a variant of a shield that can be deployed temporarily.",
+   "italian": "Because Star Tail Cells are highly volatile, they need a robust storage system. This radial design is able to withstand minor explosions by using a variant of a shield that can be deployed temporarily.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Star Tail Storage|description|190|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 190,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Star Tail Storage",
+   "english": "\tOne layer of this easily expandable system is already shipped with the gun itself. To increase storage space, more layers are simply stacked on top.",
+   "italian": "\tOne layer of this easily expandable system is already shipped with the gun itself. To increase storage space, more layers are simply stacked on top.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Horizon Grappler|description|225|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 225,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Horizon Grappler",
+   "english": "The pinnacle of Incipian technology is represented by this mining utility. Perfected over centuries, this tractor beam is far beyond anything the Incipias have developed so far. The beam's name originates from its first prototypes developed before the advent of spaceflight, which gathered minerals by pulling asteroids from their homeworld's rings into its atmosphere.",
+   "italian": "The pinnacle of Incipian technology is represented by this mining utility. Perfected over centuries, this tractor beam is far beyond anything the Incipias have developed so far. The beam's name originates from its first prototypes developed before the advent of spaceflight, which gathered minerals by pulling asteroids from their homeworld's rings into its atmosphere.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Gas-Class Shield|description|246|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 246,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Gas-Class Shield",
+   "english": "Shield technology is one of the most recent developments of the Incipias. While this shield appears similar to a human shield device, it works on a completely different basis. In its core hydrogen is burned, providing energy for regeneration. This proved so effective that it became the main power source of all of their ships.",
+   "italian": "Shield technology is one of the most recent developments of the Incipias. While this shield appears similar to a human shield device, it works on a completely different basis. In its core hydrogen is burned, providing energy for regeneration. This proved so effective that it became the main power source of all of their ships.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Liquid-Class Shield|description|260|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 260,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Liquid-Class Shield",
+   "english": "This more advanced shield generator burns a liquid instead of a gas. This raises the efficiency considerably but also requires more space, making this outfit popular only on larger ships.",
+   "italian": "This more advanced shield generator burns a liquid instead of a gas. This raises the efficiency considerably but also requires more space, making this outfit popular only on larger ships.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Metallic Hydrogen Cell|description|271|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 271,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Metallic Hydrogen Cell",
+   "english": "Hydrogen energy storage was discovered early by the Incipias because of the great amount of metallic hydrogen on their homeworld. Because Incipias ships usually access their energy at the time it is produced, only a small amount of storage is needed. Most of their ships have only one cell installed as a consequence.",
+   "italian": "Hydrogen energy storage was discovered early by the Incipias because of the great amount of metallic hydrogen on their homeworld. Because Incipias ships usually access their energy at the time it is produced, only a small amount of storage is needed. Most of their ships have only one cell installed as a consequence.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:MH Blue-Class Thruster|description|289|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 289,
+   "kind": "DESCRIPTION",
+   "context": "outfit:MH Blue-Class Thruster",
+   "english": "In Incipian culture, blue is the weakest color. A thruster labeled as blue does not bode well for the speed of any ship using it.",
+   "italian": "In Incipian culture, blue is the weakest color. A thruster labeled as blue does not bode well for the speed of any ship using it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:MH Blue-Class Steering|description|303|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 303,
+   "kind": "DESCRIPTION",
+   "context": "outfit:MH Blue-Class Steering",
+   "english": "This steering barely provides the minimum force needed to turn a ship, but it is still used often because of how cheap it is.",
+   "italian": "This steering barely provides the minimum force needed to turn a ship, but it is still used often because of how cheap it is.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "outfit:MH Green-Class Thruster|description|320|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 320,
+   "kind": "DESCRIPTION",
+   "context": "outfit:MH Green-Class Thruster",
+   "english": "Green is a color of balance for the Incipias. This thruster balances the need for space with the need for powerful engines.",
+   "italian": "Green is a color of balance for the Incipias. This thruster balances the need for space with the need for powerful engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "outfit:MH Green-Class Steering|description|334|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 334,
+   "kind": "DESCRIPTION",
+   "context": "outfit:MH Green-Class Steering",
+   "english": "The Incipias seem to have something against turning their ships. Even though this steering is supposed to be an upgrade from the Blue-Class steering, it is barely an improvement.",
+   "italian": "The Incipias seem to have something against turning their ships. Even though this steering is supposed to be an upgrade from the Blue-Class steering, it is barely an improvement.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "outfit:MH Red-Class Thruster|description|351|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 351,
+   "kind": "DESCRIPTION",
+   "context": "outfit:MH Red-Class Thruster",
+   "english": "The abundance of metallic hydrogen on the Incipias home planet has led to the development of engines that utilize this potent source of energy, allowing for more efficient thrusters than what might be expected given the Incipias' short history of spaceflight.",
+   "italian": "The abundance of metallic hydrogen on the Incipias home planet has led to the development of engines that utilize this potent source of energy, allowing for more efficient thrusters than what might be expected given the Incipias' short history of spaceflight.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "outfit:MH Red-Class Steering|description|365|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 365,
+   "kind": "DESCRIPTION",
+   "context": "outfit:MH Red-Class Steering",
+   "english": "Even the Incipias realize that ships need to turn towards their target to be able to shoot it. This steering is specifically designed for combat, but captains with a lot of money find it very useful for mining.",
+   "italian": "Even the Incipias realize that ships need to turn towards their target to be able to shoot it. This steering is specifically designed for combat, but captains with a lot of money find it very useful for mining.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "outfit:Cloud Piercer|description|381|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 381,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Cloud Piercer",
+   "english": "When it comes to close combat, the Incipias are formidable opponents. This brutal weapon may not be the best to invade another ship with, but when it comes to defending, it quite literally shreds enemies.",
+   "italian": "When it comes to close combat, the Incipias are formidable opponents. This brutal weapon may not be the best to invade another ship with, but when it comes to defending, it quite literally shreds enemies.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "outfit:Hicemus Conflict License|description|388|0",
+   "path": "data/incipias/incipias outfits.txt",
+   "line": 388,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Hicemus Conflict License",
+   "english": "The Hicemus have trusted you enough to give you this license, allowing a glimpse at their most precious technology - technology that is meant to give them an advantage over other factions.",
+   "italian": "The Hicemus have trusted you enough to give you this license, allowing a glimpse at their most precious technology - technology that is meant to give them an advantage over other factions.",
+   "ratio": 1.0
+  }
+ ]
+}

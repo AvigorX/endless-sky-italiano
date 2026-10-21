@@ -1,0 +1,187 @@
+{
+ "block": {
+  "path": "data/drak/drak culture conversations.txt",
+  "line_from": 26,
+  "line_to": 79,
+  "units": 16
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Drak Revelations: Arachi|As the <ship> rises through the last layer of clouds, you're surprised to find yourself out of your ship altogether, underground.|26|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 26,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Arachi",
+   "english": "As the <ship> rises through the last layer of clouds, you're surprised to find yourself out of your ship altogether, underground.",
+   "italian": "Mentre la <ship> sale attraverso l'ultimo strato di nuvole, ti sorprendi a scoprirti del tutto fuori dalla nave, sottoterra.",
+   "ratio": 0.961
+  },
+  {
+   "idx": 2,
+   "id": "mission:Drak Revelations: Arachi|\tTiny holes allow only a minimal amount of light to penetrate the cramped tunnel complex, and it isn't enough to illuminate the forms of the various creatures hiding there. From what little you can see, they seem to be huddling together, shaking, cowering.|27|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 27,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Arachi",
+   "english": "\tTiny holes allow only a minimal amount of light to penetrate the cramped tunnel complex, and it isn't enough to illuminate the forms of the various creatures hiding there. From what little you can see, they seem to be huddling together, shaking, cowering.",
+   "italian": "\tPiccoli fori lasciano penetrare solo una quantità minima di luce nel complesso di tunnel angusti, e non basta a illuminare le forme delle varie creature che vi si nascondono. Da quel poco che riesci a vedere, sembrano stringersi insieme, tremare, acquattarsi.",
+   "ratio": 1.016
+  },
+  {
+   "idx": 3,
+   "id": "mission:Drak Revelations: Arachi|\tA continuous marching is occurring overhead, rumbling the tunnels. A few of the less timid creatures rush past you, wearing heavy plates of armor that completely cover their bodies and numerous legs. They dig up, and jump at the first pale-gold object that comes into sight, tumbling the giant.|28|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 28,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Arachi",
+   "english": "\tA continuous marching is occurring overhead, rumbling the tunnels. A few of the less timid creatures rush past you, wearing heavy plates of armor that completely cover their bodies and numerous legs. They dig up, and jump at the first pale-gold object that comes into sight, tumbling the giant.",
+   "italian": "\tSopra la testa si svolge una marcia continua, che fa rimbombare i tunnel. Alcune delle creature meno timide ti passano accanto di corsa, con pesanti piastre di corazza che coprono del tutto il corpo e le numerose zampe. Scavano verso l'alto e si lanciano contro il primo oggetto color oro pallido che giunge in vista, facendo cadere il gigante.",
+   "ratio": 1.169
+  },
+  {
+   "idx": 4,
+   "id": "mission:Drak Revelations: Arachi|\tYou never see any of them again, as more of the creatures continue to push and pour out of the hole, heading in all directions. Some take but a moment to speak with those in hiding, before moving upwards.|29|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 29,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Arachi",
+   "english": "\tYou never see any of them again, as more of the creatures continue to push and pour out of the hole, heading in all directions. Some take but a moment to speak with those in hiding, before moving upwards.",
+   "italian": "\tNon ne rivedrai più nessuno, mentre altre creature continuano a spingersi e a riversarsi fuori dal foro, dirigendosi in ogni direzione. Alcune si fermano solo un istante a parlare con quelli che si nascondono, prima di risalire.",
+   "ratio": 1.117
+  },
+  {
+   "idx": 5,
+   "id": "mission:Drak Revelations: Arachi|\tDuring one rush, all holes end up crowded with the sheer number of them, and everything goes dark. When light returns, you see you've just finished rising from the atmosphere.|30|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 30,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Arachi",
+   "english": "\tDuring one rush, all holes end up crowded with the sheer number of them, and everything goes dark. When light returns, you see you've just finished rising from the atmosphere.",
+   "italian": "\tDurante una di queste ondate tutti i fori si riempiono per il solo numero di creature, e tutto diventa buio. Quando la luce torna, vedi di aver appena finito di uscire dall'atmosfera.",
+   "ratio": 1.045
+  },
+  {
+   "idx": 6,
+   "id": "mission:Drak Revelations: Hai|You step off the <ship> and begin exploring your surroundings. You find a small puddle near the edge of the cliff where you've landed and look at it for a moment.|43|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 43,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Hai",
+   "english": "You step off the <ship> and begin exploring your surroundings. You find a small puddle near the edge of the cliff where you've landed and look at it for a moment.",
+   "italian": "Scendi dalla <ship> e cominci a esplorare ciò che ti circonda. Trovi una piccola pozzanghera vicino al bordo della scogliera dove sei atterrato e la guardi per un momento.",
+   "ratio": 1.056
+  },
+  {
+   "idx": 7,
+   "id": "mission:Drak Revelations: Hai|\tBy the time you realize you can no longer look away, small mounds of soil seem to be forming in the puddle, and it seems to grow far deeper. You notice minuscule vessels making their way from one of the \"islands\" to another.|44|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 44,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Hai",
+   "english": "\tBy the time you realize you can no longer look away, small mounds of soil seem to be forming in the puddle, and it seems to grow far deeper. You notice minuscule vessels making their way from one of the \"islands\" to another.",
+   "italian": "\tQuando ti accorgi che non riesci più a distogliere lo sguardo, nella pozzanghera sembrano formarsi piccoli cumuli di terra, e la pozzanghera sembra diventare molto più profonda. Noti minuscoli vascelli che si spostano da una delle \"isole\" all'altra.",
+   "ratio": 1.111
+  },
+  {
+   "idx": 8,
+   "id": "mission:Drak Revelations: Hai|\tThe ships spread far and away, and the archipelago starts bustling with activity. But the waves and the sunlight grow harsher, and soon the intense heat begins to scorch the islands and ships, and boil the seas. The waves grow taller and taller, swallowing ships and isles whole and attempting to reach up to snuff out the sun.|45|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 45,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Hai",
+   "english": "\tThe ships spread far and away, and the archipelago starts bustling with activity. But the waves and the sunlight grow harsher, and soon the intense heat begins to scorch the islands and ships, and boil the seas. The waves grow taller and taller, swallowing ships and isles whole and attempting to reach up to snuff out the sun.",
+   "italian": "\tLe navi si spargono lontano, e l'arcipelago comincia a brulicare di attività. Ma le onde e la luce del sole si fanno più aspre, e presto il calore intenso comincia a bruciare le isole e le navi e a far bollire i mari. Le onde diventano sempre più alte, inghiottono intere navi e isole e tentano di allungarsi per spegnere il sole.",
+   "ratio": 1.009
+  },
+  {
+   "idx": 9,
+   "id": "mission:Drak Revelations: Hai|\tWhen the seas finally calm down and the sun sets, all the islands lie in ruin, if they still exist at all, and very few ships are left to travel between them.|46|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 46,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Hai",
+   "english": "\tWhen the seas finally calm down and the sun sets, all the islands lie in ruin, if they still exist at all, and very few ships are left to travel between them.",
+   "italian": "\tQuando i mari finalmente si calmano e il sole tramonta, tutte le isole giacciono in rovina, se pure esistono ancora, e restano pochissime navi a viaggiare fra l'una e l'altra.",
+   "ratio": 1.107
+  },
+  {
+   "idx": 10,
+   "id": "mission:Drak Revelations: Hai|\tYou blink, and see the puddle is back to normal.|47|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 47,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Hai",
+   "english": "\tYou blink, and see the puddle is back to normal.",
+   "italian": "\tBatti le palpebre e vedi che la pozzanghera è tornata normale.",
+   "ratio": 1.286
+  },
+  {
+   "idx": 11,
+   "id": "mission:Drak Revelations: Humanity|The <ship> touches down on <origin> at nightfall, and after overseeing the refueling procedures and finishing the ship integrity checks, you retire to your quarters for some rest.|74|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 74,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Humanity",
+   "english": "The <ship> touches down on <origin> at nightfall, and after overseeing the refueling procedures and finishing the ship integrity checks, you retire to your quarters for some rest.",
+   "italian": "Al calare della notte la <ship> atterra su <origin> e, dopo aver sovrinteso alle procedure di rifornimento e completato i controlli di integrità della nave, ti ritiri nei tuoi alloggi per riposare.",
+   "ratio": 1.101
+  },
+  {
+   "idx": 12,
+   "id": "mission:Drak Revelations: Humanity|\tAs you doze off, a faint light taps at the borders of your vision, coiling around borders that you can't quite identify. All around you bars reach upwards and connect to support structures, like a cradle. The platform seems to slowly rotate in the darkness.|75|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 75,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Humanity",
+   "english": "\tAs you doze off, a faint light taps at the borders of your vision, coiling around borders that you can't quite identify. All around you bars reach upwards and connect to support structures, like a cradle. The platform seems to slowly rotate in the darkness.",
+   "italian": "\tMentre ti assopisco, una luce tenue bussa ai confini della tua vista, avvolgendosi attorno a bordi che non riesci bene a identificare. Tutt'intorno delle sbarre salgono verso l'alto e si collegano a strutture di sostegno, come una culla. La piattaforma sembra ruotare lentamente nel buio.",
+   "ratio": 1.12
+  },
+  {
+   "idx": 13,
+   "id": "mission:Drak Revelations: Humanity|\tSuddenly, a huge boulder is barreling down towards you, about to smash the cradle, when the light flashes brightly. It vanishes.|76|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 76,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Humanity",
+   "english": "\tSuddenly, a huge boulder is barreling down towards you, about to smash the cradle, when the light flashes brightly. It vanishes.",
+   "italian": "\tAll'improvviso un enorme masso precipita verso di te, sul punto di fracassare la culla, quando la luce lampeggia intensa. Il masso svanisce.",
+   "ratio": 1.093
+  },
+  {
+   "idx": 14,
+   "id": "mission:Drak Revelations: Humanity|\tThe cradle spins again. The darkness is overwhelmed by blood-red flames that eat at the cradle's edges, but just as the wood begins to crackle and creak, the light pulses once more around your sight, and the flames themselves begin to burn away.|77|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 77,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Humanity",
+   "english": "\tThe cradle spins again. The darkness is overwhelmed by blood-red flames that eat at the cradle's edges, but just as the wood begins to crackle and creak, the light pulses once more around your sight, and the flames themselves begin to burn away.",
+   "italian": "\tLa culla ruota di nuovo. Il buio è travolto da fiamme rosso sangue che rodono i bordi della culla, ma proprio quando il legno comincia a crepitare e a scricchiolare, la luce pulsa ancora una volta attorno al tuo sguardo, e le fiamme stesse cominciano a consumarsi.",
+   "ratio": 1.077
+  },
+  {
+   "idx": 15,
+   "id": "mission:Drak Revelations: Humanity|\tThere is only darkness for a long time. And then there is a battle, of formless entities clashing against one another all around the cradle, disregarding it with a dangerous dismissiveness. This time, the light erupts all around you and your eyes are forced shut.|78|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 78,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Humanity",
+   "english": "\tThere is only darkness for a long time. And then there is a battle, of formless entities clashing against one another all around the cradle, disregarding it with a dangerous dismissiveness. This time, the light erupts all around you and your eyes are forced shut.",
+   "italian": "\tPer molto tempo c'è solo buio. E poi c'è una battaglia: entità senza forma che si scontrano fra loro tutt'intorno alla culla, ignorandola con una sprezzante indifferenza. Questa volta la luce erompe tutt'intorno a te e i tuoi occhi sono costretti a chiudersi.",
+   "ratio": 0.985
+  },
+  {
+   "idx": 16,
+   "id": "mission:Drak Revelations: Humanity|\tYou open them again to find yourself lying down in your bed.|79|0",
+   "path": "data/drak/drak culture conversations.txt",
+   "line": 79,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Drak Revelations: Humanity",
+   "english": "\tYou open them again to find yourself lying down in your bed.",
+   "italian": "\tLi riapri e ti ritrovi sdraiato nel tuo letto.",
+   "ratio": 0.77
+  }
+ ]
+}

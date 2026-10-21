@@ -1,0 +1,176 @@
+{
+ "block": {
+  "path": "data/wanderer/wanderers.txt",
+  "line_from": 778,
+  "line_to": 1042,
+  "units": 15
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "event:wanderers: unfettered invasion starts|description|778|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 778,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: unfettered invasion starts",
+   "english": "Varu K'est is a spare, ancient planet of arid plateaus and deep, meandering canyons, with too little rainfall to support any but the hardiest of shrubs. Before the Unfettered invaded, the only Wanderer settlements remaining here were the military bases they had set up to defend their frontier. Now, it is home to an ever-growing number of Unfettered settlements, including many civilians who have come here just for the chance to live on a world that is not overcrowded and polluted.",
+   "italian": "Varu K'est è un pianeta antico e spoglio, fatto di altopiani aridi e di canyon profondi e sinuosi, con piogge troppo scarse perché vi cresca qualcosa oltre ai cespugli più resistenti. Prima dell'invasione degli Unfettered, gli unici insediamenti Wanderer rimasti qui erano le basi militari che avevano costruito per difendere la frontiera. Oggi è la casa di un numero sempre crescente di insediamenti Unfettered, compresi molti civili arrivati solo per la possibilità di vivere su un mondo che non è sovraffollato e inquinato.",
+   "ratio": 1.087
+  },
+  {
+   "idx": 2,
+   "id": "event:wanderers: unfettered invasion starts|spaceport|779|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 779,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: unfettered invasion starts",
+   "english": "The Unfettered are using the few jump drives they have to ferry more and more of their people into Wanderer space. When each wave of ships arrives here in the spaceport, technicians carefully remove the jump drives from all but a few of them. A few well guarded jump-capable ships then carry those spare jump drives back to Unfettered space, where they are used to bring more ships and people.",
+   "italian": "Gli Unfettered usano i pochi motori di salto che hanno per traghettare sempre più gente nello spazio dei Wanderer. Quando ogni ondata di navi arriva qui allo spazioporto, i tecnici smontano con cura i motori di salto da tutte tranne poche. Poi alcune navi con capacità di salto, ben scortate, riportano quei motori di salto in eccesso nello spazio Unfettered, dove servono a portare altre navi e altra gente.",
+   "ratio": 1.038
+  },
+  {
+   "idx": 3,
+   "id": "event:wanderers: more systems lost|description|883|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 883,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: more systems lost",
+   "english": "The Wanderers worked for years to make this desert world bloom: planting hardy shrubs and cacti that eventually transform the sand into a soil that can hold moisture. In some regions, especially closer to the poles, the deserts have given way to dense forests, but near the equator there are still large stretches of dry and barren sand, broken by the occasional belt of green where a narrow river winds between the dunes.",
+   "italian": "I Wanderer hanno lavorato per anni per far fiorire questo mondo desertico: piantando cespugli e cactus resistenti che alla fine trasformano la sabbia in un terreno capace di trattenere l'umidità. In alcune regioni, soprattutto più vicino ai poli, i deserti hanno lasciato il posto a foreste fitte, ma vicino all'equatore restano grandi distese di sabbia secca e brulla, rotte qua e là da una fascia verde dove un fiume stretto serpeggia fra le dune.",
+   "ratio": 1.064
+  },
+  {
+   "idx": 4,
+   "id": "event:wanderers: more systems lost|description|884|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 884,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: more systems lost",
+   "english": "\tNow that the Unfettered have taken over control of the planet, it may be only a matter of time before the deserts dominate it once again.",
+   "italian": "\tOra che gli Unfettered hanno preso il controllo del pianeta, è forse solo questione di tempo prima che i deserti lo dominino di nuovo.",
+   "ratio": 0.978
+  },
+  {
+   "idx": 5,
+   "id": "event:wanderers: more systems lost|spaceport|885|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 885,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: more systems lost",
+   "english": "The spaceport is in a forest village near the planet's north pole. The landing pads are massive stone monoliths laid on the ground in a nearby clearing. But aside from a few large warehouses at ground level, the village itself is entirely made of tree-houses. Although they are very different from Hai architecture, the Unfettered seem to be quite at home living in the tree-houses, and have not built many of their own structures yet.",
+   "italian": "Lo spazioporto si trova in un villaggio nella foresta, vicino al polo nord del pianeta. Le piazzole di atterraggio sono enormi monoliti di pietra posati al suolo in una radura lì vicino. A parte qualche grande magazzino a livello del terreno, però, il villaggio è fatto interamente di case sugli alberi. Benché siano molto diverse dall'architettura Hai, gli Unfettered sembrano trovarsi del tutto a loro agio nelle case sugli alberi, e non hanno ancora costruito molte strutture proprie.",
+   "ratio": 1.12
+  },
+  {
+   "idx": 6,
+   "id": "event:wanderers: more systems lost|description|890|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 890,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: more systems lost",
+   "english": "Of all the worlds that the Unfettered have captured, this is surely the one that the Wanderers will miss the most: a heavily forested planet that was once home to countless small villages and even a few cities. The Unfettered are clearly doing their best to tend the farms here, but they operate on a permaculture system that relies heavily on maintaining a delicate ecological balance, rather than on machines and pesticides.",
+   "italian": "Di tutti i mondi che gli Unfettered hanno conquistato, questo è senz'altro quello che i Wanderer rimpiangeranno di più: un pianeta molto boscoso che un tempo ospitava innumerevoli piccoli villaggi e perfino qualche città. Gli Unfettered stanno chiaramente facendo del loro meglio per curare le fattorie, ma queste si basano su un sistema di permacultura che dipende soprattutto dal mantenere un delicato equilibrio ecologico, più che dalle macchine e dai pesticidi.",
+   "ratio": 1.092
+  },
+  {
+   "idx": 7,
+   "id": "event:wanderers: more systems lost|spaceport|891|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 891,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: more systems lost",
+   "english": "A large number of Unfettered settlers have already arrived here and begun setting up a spaceport village, complete with markets, taverns, and military barracks. To the Unfettered, who have lived their whole lives on worlds where the local ecology is in shambles, this planet must seem like a paradise.",
+   "italian": "Un gran numero di coloni Unfettered è già arrivato e ha cominciato a costruire un villaggio con spazioporto, completo di mercati, taverne e caserme militari. Agli Unfettered, che hanno vissuto tutta la vita su mondi dove l'ecologia locale è a pezzi, questo pianeta deve sembrare un paradiso.",
+   "ratio": 0.967
+  },
+  {
+   "idx": 8,
+   "id": "event:wanderers: more systems lost|description|897|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 897,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: more systems lost",
+   "english": "The surface of this world is almost entirely ocean. The Wanderer settlements were built on massive floating algae mats, some of them the size of a small city. Engines are attached to some of these floating villages, allowing them to be slowly propelled from one part of the planet's surface to another, and the only native industries are fishing and seaweed farming.",
+   "italian": "La superficie di questo mondo è quasi tutta oceano. Gli insediamenti Wanderer sono costruiti su enormi zattere di alghe galleggianti, alcune grandi quanto una piccola città. Ad alcuni di questi villaggi galleggianti sono applicati dei motori, che permettono di spostarli lentamente da una parte all'altra della superficie; le uniche industrie autoctone sono la pesca e la coltivazione delle alghe.",
+   "ratio": 1.085
+  },
+  {
+   "idx": 9,
+   "id": "event:wanderers: more systems lost|spaceport|898|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 898,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: more systems lost",
+   "english": "The raft of algae that supports the spaceport is probably at least a dozen meters thick, but flexible enough that it bends as the ocean swells pass underneath, causing individual buildings to rise up or tilt slightly relative to their neighbors. Now that this world has been captured by the Unfettered, nearly all the buildings are empty; it appears that the Hai are not too fond of the idea of inhabiting a water world, so they are using it mostly as a military base.",
+   "italian": "La zattera di alghe che sostiene lo spazioporto sarà spessa almeno una dozzina di metri, ma è abbastanza flessibile da piegarsi quando le onde dell'oceano le passano sotto, facendo sollevare o inclinare leggermente i singoli edifici rispetto a quelli vicini. Ora che questo mondo è stato conquistato dagli Unfettered, quasi tutti gli edifici sono vuoti; pare che gli Hai non apprezzino molto l'idea di abitare un mondo acquatico, e lo usano soprattutto come base militare.",
+   "ratio": 1.009
+  },
+  {
+   "idx": 10,
+   "id": "event:wanderers: spera anatrusk colony|add|999|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 999,
+   "kind": "MISSION_TEXT",
+   "context": "event:wanderers: spera anatrusk colony",
+   "english": "\tHidden deep in a canyon, the Wanderers have begun establishing a military base here.",
+   "italian": "\tIn fondo a un canyon, i Wanderer hanno cominciato a costruire qui una base militare.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "event:wanderers: spera anatrusk colony|spaceport|1000|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 1000,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: spera anatrusk colony",
+   "english": "The Wanderers have hollowed out hangars and caves in the soft sandstone walls of this canyon and have begun to build a military base where they can store supplies and repair their ships while trying to decide how best to deal with the new challenges that face them in Korath space.",
+   "italian": "I Wanderer hanno scavato hangar e caverne nelle pareti di arenaria tenera di questo canyon e hanno cominciato a costruire una base militare dove immagazzinare rifornimenti e riparare le navi, mentre cercano di decidere come affrontare al meglio le nuove sfide che li attendono nello spazio Korath.",
+   "ratio": 1.057
+  },
+  {
+   "idx": 12,
+   "id": "event:wanderers: spera anatrusk colony|spaceport|1001|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 1001,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: spera anatrusk colony",
+   "english": "\tOddly enough, they have also found enough time to plant a large garden on a terrace near the base of the canyon, where they are experimenting to find out which plant species will best grow in this arid environment. The Wanderer drive to understand and transform the local ecology is strong, indeed.",
+   "italian": "\tStranamente, hanno anche trovato il tempo di piantare un grande giardino su un terrazzo vicino alla base del canyon, dove sperimentano quali specie vegetali crescano meglio in questo ambiente arido. La spinta dei Wanderer a capire e trasformare l'ecologia locale è davvero forte.",
+   "ratio": 0.936
+  },
+  {
+   "idx": 13,
+   "id": "event:wanderers: desi seledrak|description|1040|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 1040,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: desi seledrak",
+   "english": "Plumes of soot and ash rise from a cluster of several dozen volcanoes on this planet's main continent, shrouding the planet in a thick layer of clouds and choking out the sunlight. The ruins of several Korath cities and the geometric grids of cleared land surrounding them show that this was once a farming world, but now few plants are able to survive and kilometer-high glaciers have begun creeping down from the poles.",
+   "italian": "Colonne di fuliggine e cenere si alzano da un gruppo di alcune decine di vulcani sul continente principale di questo pianeta, avvolgendo il mondo in uno spesso strato di nubi e soffocando la luce del sole. Le rovine di diverse città Korath e le griglie geometriche di terreno dissodato che le circondano mostrano che un tempo questo era un mondo agricolo, ma ora poche piante riescono a sopravvivere e ghiacciai alti un chilometro hanno cominciato a scendere dai poli.",
+   "ratio": 1.112
+  },
+  {
+   "idx": 14,
+   "id": "event:wanderers: desi seledrak|description|1041|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 1041,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: desi seledrak",
+   "english": "\tWith some help from the Mereti drones, the Wanderers have set up factories here that are pumping out carbon dioxide and methane to warm the atmosphere. In a few decades, the glaciers may start to recede.",
+   "italian": "\tCon un po' di aiuto dai droni Mereti, i Wanderer hanno impiantato qui delle fabbriche che emettono anidride carbonica e metano per riscaldare l'atmosfera. Fra qualche decina d'anni, i ghiacciai potrebbero cominciare a ritirarsi.",
+   "ratio": 1.123
+  },
+  {
+   "idx": 15,
+   "id": "event:wanderers: desi seledrak|spaceport|1042|0",
+   "path": "data/wanderer/wanderers.txt",
+   "line": 1042,
+   "kind": "DESCRIPTION",
+   "context": "event:wanderers: desi seledrak",
+   "english": "This odd settlement was built half by the Wanderers and half by the Mereti drones. The layout of the streets is completely chaotic, and they have planted rows of trees and bushes everywhere: some inside greenhouses, and some hardier species out in the open air. The settlement is near the equator, but it is still not particularly warm.",
+   "italian": "Questo strano insediamento è stato costruito per metà dai Wanderer e per metà dai droni Mereti. La disposizione delle strade è del tutto caotica, e ovunque sono state piantate file di alberi e cespugli: alcuni dentro serre, altri, le specie più resistenti, all'aria aperta. L'insediamento è vicino all'equatore, ma non fa comunque particolarmente caldo.",
+   "ratio": 1.051
+  }
+ ]
+}

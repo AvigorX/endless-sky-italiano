@@ -1,0 +1,198 @@
+{
+ "block": {
+  "path": "data/human/engines.txt",
+  "line_from": 342,
+  "line_to": 487,
+  "units": 17
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Chipmunk Plasma Thruster|description|342|0",
+   "path": "data/human/engines.txt",
+   "line": 342,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Chipmunk Plasma Thruster",
+   "english": "This is the smallest of the plasma propulsion systems produced by Delta V Corporation, suitable for very light fighters and interceptors.",
+   "italian": "This is the smallest of the plasma propulsion systems produced by Delta V Corporation, suitable for very light fighters and interceptors.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Chipmunk Plasma Thruster|description|343|0",
+   "path": "data/human/engines.txt",
+   "line": 343,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Chipmunk Plasma Thruster",
+   "english": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "italian": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Greyhound Plasma Thruster|description|360|0",
+   "path": "data/human/engines.txt",
+   "line": 360,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Greyhound Plasma Thruster",
+   "english": "This thruster is intended for small ships and for freighters. It comes in a crate decorated with a stylized cartoon of a running greyhound.",
+   "italian": "This thruster is intended for small ships and for freighters. It comes in a crate decorated with a stylized cartoon of a running greyhound.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Greyhound Plasma Thruster|description|361|0",
+   "path": "data/human/engines.txt",
+   "line": 361,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Greyhound Plasma Thruster",
+   "english": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "italian": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Impala Plasma Thruster|description|378|0",
+   "path": "data/human/engines.txt",
+   "line": 378,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Impala Plasma Thruster",
+   "english": "Impala class thrusters produce a significant amount of force, and are suitable for smaller capital ships. But, your ship may need extra cooling systems in order to handle them.",
+   "italian": "Impala class thrusters produce a significant amount of force, and are suitable for smaller capital ships. But, your ship may need extra cooling systems in order to handle them.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Impala Plasma Thruster|description|379|0",
+   "path": "data/human/engines.txt",
+   "line": 379,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Impala Plasma Thruster",
+   "english": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "italian": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Orca Plasma Thruster|description|396|0",
+   "path": "data/human/engines.txt",
+   "line": 396,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Orca Plasma Thruster",
+   "english": "This engine draws enough power that a ship with anything short of a full-fledged nuclear reactor is unlikely to be able to use it, but the thrust it generates is impressive.",
+   "italian": "This engine draws enough power that a ship with anything short of a full-fledged nuclear reactor is unlikely to be able to use it, but the thrust it generates is impressive.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Orca Plasma Thruster|description|397|0",
+   "path": "data/human/engines.txt",
+   "line": 397,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Orca Plasma Thruster",
+   "english": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "italian": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Tyrant Plasma Thruster|description|414|0",
+   "path": "data/human/engines.txt",
+   "line": 414,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tyrant Plasma Thruster",
+   "english": "The enormous crate that this thruster is sold in comes decorated with a picture of a grinning Tyrannosaurus Rex with an improbable number of teeth. Only a handful of ships are large enough to require an engine of this size... or to have the capacity for one.",
+   "italian": "The enormous crate that this thruster is sold in comes decorated with a picture of a grinning Tyrannosaurus Rex with an improbable number of teeth. Only a handful of ships are large enough to require an engine of this size... or to have the capacity for one.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Tyrant Plasma Thruster|description|415|0",
+   "path": "data/human/engines.txt",
+   "line": 415,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tyrant Plasma Thruster",
+   "english": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "italian": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Chipmunk Plasma Steering|description|433|0",
+   "path": "data/human/engines.txt",
+   "line": 433,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Chipmunk Plasma Steering",
+   "english": "This is the smallest plasma steering system that Delta V produces. The packaging features a cartoon of what appears to be a very highly caffeinated rodent.",
+   "italian": "This is the smallest plasma steering system that Delta V produces. The packaging features a cartoon of what appears to be a very highly caffeinated rodent.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Chipmunk Plasma Steering|description|434|0",
+   "path": "data/human/engines.txt",
+   "line": 434,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Chipmunk Plasma Steering",
+   "english": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "italian": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Greyhound Plasma Steering|description|451|0",
+   "path": "data/human/engines.txt",
+   "line": 451,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Greyhound Plasma Steering",
+   "english": "The Greyhound class plasma propulsion systems are Delta V's most popular product, suitable for a wide range of small starships.",
+   "italian": "The Greyhound class plasma propulsion systems are Delta V's most popular product, suitable for a wide range of small starships.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Greyhound Plasma Steering|description|452|0",
+   "path": "data/human/engines.txt",
+   "line": 452,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Greyhound Plasma Steering",
+   "english": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "italian": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Impala Plasma Steering|description|469|0",
+   "path": "data/human/engines.txt",
+   "line": 469,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Impala Plasma Steering",
+   "english": "Impala class plasma steering systems are suitable for most freighters and all but the largest warships, and are also considerably more compact than the ion propulsion systems produced by the Syndicate.",
+   "italian": "Impala class plasma steering systems are suitable for most freighters and all but the largest warships, and are also considerably more compact than the ion propulsion systems produced by the Syndicate.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Impala Plasma Steering|description|470|0",
+   "path": "data/human/engines.txt",
+   "line": 470,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Impala Plasma Steering",
+   "english": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "italian": "\tPlasma engines are a bit more powerful than ion engines of the same size, but they are less energy efficient and produce more heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:Orca Plasma Steering|description|487|0",
+   "path": "data/human/engines.txt",
+   "line": 487,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Orca Plasma Steering",
+   "english": "An Orca class steering system will allow any mid-sized ship to turn as quickly as a fighter, and is powerful enough to serve even the largest of warships.",
+   "italian": "An Orca class steering system will allow any mid-sized ship to turn as quickly as a fighter, and is powerful enough to serve even the largest of warships.",
+   "ratio": 1.0
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "block": {
+  "path": "data/avgi/avgi news.txt",
+  "line_from": 197,
+  "line_to": 280,
+  "units": 15
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:avgi safety advisory|\"Caution. |197|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 197,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "\"Caution. ",
+   "italian": "\"Cautela. ",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "news:avgi safety advisory|\"Warning. |198|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 198,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "\"Warning. ",
+   "italian": "\"Avvertenza. ",
+   "ratio": 1.3
+  },
+  {
+   "idx": 3,
+   "id": "news:avgi safety advisory|\"Advisement. |199|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 199,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "\"Advisement. ",
+   "italian": "\"Avviso. ",
+   "ratio": 0.692
+  },
+  {
+   "idx": 4,
+   "id": "news:avgi safety advisory|\"Diligence. |200|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 200,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "\"Diligence. ",
+   "italian": "\"Diligenza. ",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "news:avgi safety advisory|\"Alert. |201|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 201,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "\"Alert. ",
+   "italian": "\"Allarme. ",
+   "ratio": 1.25
+  },
+  {
+   "idx": 6,
+   "id": "news:avgi safety advisory|\"Vigilance. |202|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 202,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "\"Vigilance. ",
+   "italian": "\"Vigilanza. ",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "news:avgi safety advisory|Large Aberration swarm reported to have entered the Tangled Shroud.\"|204|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 204,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "Large Aberration swarm reported to have entered the Tangled Shroud.\"",
+   "italian": "Segnalato un grande sciame di Aberrant entrato nel Tangled Shroud.\"",
+   "ratio": 0.985
+  },
+  {
+   "idx": 8,
+   "id": "news:avgi safety advisory|Missing convoy reported; suspected stranded in the Tangled Shroud.\"|205|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 205,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "Missing convoy reported; suspected stranded in the Tangled Shroud.\"",
+   "italian": "Convoglio disperso; si sospetta bloccato nel Tangled Shroud.\"",
+   "ratio": 0.91
+  },
+  {
+   "idx": 9,
+   "id": "news:avgi safety advisory|Missing convoy reported; suspected lost in the Tangled Shroud.\"|206|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 206,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "Missing convoy reported; suspected lost in the Tangled Shroud.\"",
+   "italian": "Convoglio disperso; si sospetta perduto nel Tangled Shroud.\"",
+   "ratio": 0.952
+  },
+  {
+   "idx": 10,
+   "id": "news:avgi safety advisory|Missing fleet reported; suspected stranded in the Tangled Shroud.\"|207|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 207,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "Missing fleet reported; suspected stranded in the Tangled Shroud.\"",
+   "italian": "Flotta dispersa; si sospetta bloccata nel Tangled Shroud.\"",
+   "ratio": 0.879
+  },
+  {
+   "idx": 11,
+   "id": "news:avgi safety advisory|Missing fleet reported; suspected lost in the Tangled Shroud.\"|208|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 208,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "Missing fleet reported; suspected lost in the Tangled Shroud.\"",
+   "italian": "Flotta dispersa; si sospetta perduta nel Tangled Shroud.\"",
+   "ratio": 0.919
+  },
+  {
+   "idx": 12,
+   "id": "news:avgi safety advisory|The defensive cordon at Arche is not impenetrable. Remain vigilant.\"|209|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 209,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "The defensive cordon at Arche is not impenetrable. Remain vigilant.\"",
+   "italian": "Il cordone difensivo di Arche non è impenetrabile. Restate vigili.\"",
+   "ratio": 0.985
+  },
+  {
+   "idx": 13,
+   "id": "news:avgi safety advisory|Report all Aberration sightings as soon as possible.\"|210|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 210,
+   "kind": "NEWS",
+   "context": "news:avgi safety advisory",
+   "english": "Report all Aberration sightings as soon as possible.\"",
+   "italian": "Segnalate ogni avvistamento di Aberrant il prima possibile.\"",
+   "ratio": 1.132
+  },
+  {
+   "idx": 14,
+   "id": "news:avgi missing advisory|\"|230|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 230,
+   "kind": "NEWS",
+   "context": "news:avgi missing advisory",
+   "english": "\"",
+   "italian": "\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "news:avgi missing advisory|.|280|0",
+   "path": "data/avgi/avgi news.txt",
+   "line": 280,
+   "kind": "NEWS",
+   "context": "news:avgi missing advisory",
+   "english": ".",
+   "italian": ".",
+   "ratio": 1.0
+  }
+ ]
+}

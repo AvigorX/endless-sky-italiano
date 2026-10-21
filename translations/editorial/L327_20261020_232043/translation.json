@@ -1,0 +1,319 @@
+{
+ "block": {
+  "path": "data/_ui/help.txt",
+  "line_from": 15,
+  "line_to": 69,
+  "units": 28
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "help:bank|This is the bank. Here, you can apply for new mortgages, if your income and credit history allows it. The bank is also a good place to get an overview of your daily expenses: mortgage payments, crew salaries, etc.|15|0",
+   "path": "data/_ui/help.txt",
+   "line": 15,
+   "kind": "HELP",
+   "context": "help:bank",
+   "english": "This is the bank. Here, you can apply for new mortgages, if your income and credit history allows it. The bank is also a good place to get an overview of your daily expenses: mortgage payments, crew salaries, etc.",
+   "italian": "This is the bank. Here, you can apply for new mortgages, if your income and credit history allows it. The bank is also a good place to get an overview of your daily expenses: mortgage payments, crew salaries, etc.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "help:bank|Paying off a mortgage early means you pay less interest to the bank, but it is sometimes wiser to instead use your money to buy a bigger ship which can earn you more income.|16|0",
+   "path": "data/_ui/help.txt",
+   "line": 16,
+   "kind": "HELP",
+   "context": "help:bank",
+   "english": "Paying off a mortgage early means you pay less interest to the bank, but it is sometimes wiser to instead use your money to buy a bigger ship which can earn you more income.",
+   "italian": "Paying off a mortgage early means you pay less interest to the bank, but it is sometimes wiser to instead use your money to buy a bigger ship which can earn you more income.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "help:bank advanced|When entering a credit value at the bank, you can put in an exact number, or use the suffixes K, M, B, and T as shorthand for thousands, millions, billions, and trillions. For example, entering a value such as \"100k\" would count as 100,000 credits.|19|0",
+   "path": "data/_ui/help.txt",
+   "line": 19,
+   "kind": "HELP",
+   "context": "help:bank advanced",
+   "english": "When entering a credit value at the bank, you can put in an exact number, or use the suffixes K, M, B, and T as shorthand for thousands, millions, billions, and trillions. For example, entering a value such as \"100k\" would count as 100,000 credits.",
+   "italian": "When entering a credit value at the bank, you can put in an exact number, or use the suffixes K, M, B, and T as shorthand for thousands, millions, billions, and trillions. For example, entering a value such as \"100k\" would count as 100,000 credits.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "help:bank advanced|Entering a number that is higher than what you or the bank have available will default to the maximum available value. For example, entering \"1m\" to pay off a 100,000 credit loan will completely pay off the loan without giving extra, should you have available credits.|20|0",
+   "path": "data/_ui/help.txt",
+   "line": 20,
+   "kind": "HELP",
+   "context": "help:bank advanced",
+   "english": "Entering a number that is higher than what you or the bank have available will default to the maximum available value. For example, entering \"1m\" to pay off a 100,000 credit loan will completely pay off the loan without giving extra, should you have available credits.",
+   "italian": "Entering a number that is higher than what you or the bank have available will default to the maximum available value. For example, entering \"1m\" to pay off a 100,000 credit loan will completely pay off the loan without giving extra, should you have available credits.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "help:dead|Uh-oh! You just died. The universe can be a dangerous place for new captains!|23|0",
+   "path": "data/_ui/help.txt",
+   "line": 23,
+   "kind": "HELP",
+   "context": "help:dead",
+   "english": "Uh-oh! You just died. The universe can be a dangerous place for new captains!",
+   "italian": "Uh-oh! You just died. The universe can be a dangerous place for new captains!",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "help:dead|Fortunately, your game is automatically saved every time you leave a planet. To load your most recent saved game, press <Show main menu> to return to the main menu, then click on \"Manage Pilots\" and \"Enter Ship.\"|24|0",
+   "path": "data/_ui/help.txt",
+   "line": 24,
+   "kind": "HELP",
+   "context": "help:dead",
+   "english": "Fortunately, your game is automatically saved every time you leave a planet. To load your most recent saved game, press <Show main menu> to return to the main menu, then click on \"Manage Pilots\" and \"Enter Ship.\"",
+   "italian": "Fortunately, your game is automatically saved every time you leave a planet. To load your most recent saved game, press <Show main menu> to return to the main menu, then click on \"Manage Pilots\" and \"Enter Ship.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "help:disabled|Your ship just got disabled! Before an enemy ship finishes you off, you should find someone to help you.|27|0",
+   "path": "data/_ui/help.txt",
+   "line": 27,
+   "kind": "HELP",
+   "context": "help:disabled",
+   "english": "Your ship just got disabled! Before an enemy ship finishes you off, you should find someone to help you.",
+   "italian": "Your ship just got disabled! Before an enemy ship finishes you off, you should find someone to help you.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "help:disabled|Press <Select next ship> to cycle through all the ships in this system. When you have a friendly one selected, press <Talk to selected ship> to hail it. You can then ask for help, and the ship will come over and patch you up.|28|0",
+   "path": "data/_ui/help.txt",
+   "line": 28,
+   "kind": "HELP",
+   "context": "help:disabled",
+   "english": "Press <Select next ship> to cycle through all the ships in this system. When you have a friendly one selected, press <Talk to selected ship> to hail it. You can then ask for help, and the ship will come over and patch you up.",
+   "italian": "Press <Select next ship> to cycle through all the ships in this system. When you have a friendly one selected, press <Talk to selected ship> to hail it. You can then ask for help, and the ship will come over and patch you up.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "help:disabled|If the ship that disabled you is still hanging around, you might need to hail them first and bribe them to leave you alone.|29|0",
+   "path": "data/_ui/help.txt",
+   "line": 29,
+   "kind": "HELP",
+   "context": "help:disabled",
+   "english": "If the ship that disabled you is still hanging around, you might need to hail them first and bribe them to leave you alone.",
+   "italian": "If the ship that disabled you is still hanging around, you might need to hail them first and bribe them to leave you alone.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "help:hiring|Hiring extra crew is only helpful if you plan on capturing enemy ships. Each crew member other than yourself is paid 100 credits per day. Larger ships require more than one crew member, but you will automatically hire the minimum number of crew when you buy those ships.|32|0",
+   "path": "data/_ui/help.txt",
+   "line": 32,
+   "kind": "HELP",
+   "context": "help:hiring",
+   "english": "Hiring extra crew is only helpful if you plan on capturing enemy ships. Each crew member other than yourself is paid 100 credits per day. Larger ships require more than one crew member, but you will automatically hire the minimum number of crew when you buy those ships.",
+   "italian": "Hiring extra crew is only helpful if you plan on capturing enemy ships. Each crew member other than yourself is paid 100 credits per day. Larger ships require more than one crew member, but you will automatically hire the minimum number of crew when you buy those ships.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "help:hiring|Crew members take up space that can otherwise be used for passengers.|33|0",
+   "path": "data/_ui/help.txt",
+   "line": 33,
+   "kind": "HELP",
+   "context": "help:hiring",
+   "english": "Crew members take up space that can otherwise be used for passengers.",
+   "italian": "Crew members take up space that can otherwise be used for passengers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "help:jobs|Taking on jobs is a safe way to earn money. Special missions are offered in the Spaceport; more mundane jobs are posted on the Job Board. Most special missions are only offered once: if you turn one down, it will not be offered to you again.|36|0",
+   "path": "data/_ui/help.txt",
+   "line": 36,
+   "kind": "HELP",
+   "context": "help:jobs",
+   "english": "Taking on jobs is a safe way to earn money. Special missions are offered in the Spaceport; more mundane jobs are posted on the Job Board. Most special missions are only offered once: if you turn one down, it will not be offered to you again.",
+   "italian": "Taking on jobs is a safe way to earn money. Special missions are offered in the Spaceport; more mundane jobs are posted on the Job Board. Most special missions are only offered once: if you turn one down, it will not be offered to you again.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "help:jobs|The payment for a job depends on how far you must travel and how much you are carrying. Jobs that have a time limit pay extra, but you are paid nothing if you miss the deadline.|37|0",
+   "path": "data/_ui/help.txt",
+   "line": 37,
+   "kind": "HELP",
+   "context": "help:jobs",
+   "english": "The payment for a job depends on how far you must travel and how much you are carrying. Jobs that have a time limit pay extra, but you are paid nothing if you miss the deadline.",
+   "italian": "The payment for a job depends on how far you must travel and how much you are carrying. Jobs that have a time limit pay extra, but you are paid nothing if you miss the deadline.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "help:jobs|As you gain a reputation for skill in combat, new jobs will become available, including escorting convoys and bounty hunting.|38|0",
+   "path": "data/_ui/help.txt",
+   "line": 38,
+   "kind": "HELP",
+   "context": "help:jobs",
+   "english": "As you gain a reputation for skill in combat, new jobs will become available, including escorting convoys and bounty hunting.",
+   "italian": "As you gain a reputation for skill in combat, new jobs will become available, including escorting convoys and bounty hunting.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "help:lost 1|There's nothing out here. The only way to get to another star system is by jumping through hyperspace. Unless you are out of fuel, you can jump by pressing <Initiate hyperspace jump>. To select which system you want to jump to, bring up the map by pressing <View star map>.|41|0",
+   "path": "data/_ui/help.txt",
+   "line": 41,
+   "kind": "HELP",
+   "context": "help:lost 1",
+   "english": "There's nothing out here. The only way to get to another star system is by jumping through hyperspace. Unless you are out of fuel, you can jump by pressing <Initiate hyperspace jump>. To select which system you want to jump to, bring up the map by pressing <View star map>.",
+   "italian": "There's nothing out here. The only way to get to another star system is by jumping through hyperspace. Unless you are out of fuel, you can jump by pressing <Initiate hyperspace jump>. To select which system you want to jump to, bring up the map by pressing <View star map>.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "help:lost 1|At any time, you can return to the main menu by pressing <Show main menu>. All the key controls can be viewed, and changed, in the Preferences.|42|0",
+   "path": "data/_ui/help.txt",
+   "line": 42,
+   "kind": "HELP",
+   "context": "help:lost 1",
+   "english": "At any time, you can return to the main menu by pressing <Show main menu>. All the key controls can be viewed, and changed, in the Preferences.",
+   "italian": "At any time, you can return to the main menu by pressing <Show main menu>. All the key controls can be viewed, and changed, in the Preferences.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "help:lost 2|You seem to be lost. The universe is a big and complicated place, and no one is going to hold your hand out here. You might want to review the key controls (press <Show main menu> to bring up the main menu, then click on \"Preferences\") to figure out what is going on. There is also a player's manual with much more information. To read it, go to endless-sky.github.io and click on \"Manual.\"|45|0",
+   "path": "data/_ui/help.txt",
+   "line": 45,
+   "kind": "HELP",
+   "context": "help:lost 2",
+   "english": "You seem to be lost. The universe is a big and complicated place, and no one is going to hold your hand out here. You might want to review the key controls (press <Show main menu> to bring up the main menu, then click on \"Preferences\") to figure out what is going on. There is also a player's manual with much more information. To read it, go to endless-sky.github.io and click on \"Manual.\"",
+   "italian": "You seem to be lost. The universe is a big and complicated place, and no one is going to hold your hand out here. You might want to review the key controls (press <Show main menu> to bring up the main menu, then click on \"Preferences\") to figure out what is going on. There is also a player's manual with much more information. To read it, go to endless-sky.github.io and click on \"Manual.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "help:lost 3|The void between the stars is cold and empty. Your ship, a tiny oasis of warmth, drifts alone out here illuminated only by the distant light of cold, uncaring suns. The distances between the stars are vast, beyond what the human mind can grasp; you could spend your whole life drifting out here and never reach another star.|48|0",
+   "path": "data/_ui/help.txt",
+   "line": 48,
+   "kind": "HELP",
+   "context": "help:lost 3",
+   "english": "The void between the stars is cold and empty. Your ship, a tiny oasis of warmth, drifts alone out here illuminated only by the distant light of cold, uncaring suns. The distances between the stars are vast, beyond what the human mind can grasp; you could spend your whole life drifting out here and never reach another star.",
+   "italian": "The void between the stars is cold and empty. Your ship, a tiny oasis of warmth, drifts alone out here illuminated only by the distant light of cold, uncaring suns. The distances between the stars are vast, beyond what the human mind can grasp; you could spend your whole life drifting out here and never reach another star.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "help:lost 3|Or, you could press <Initiate hyperspace jump> to use your hyperdrive. It will get you there a whole lot faster.|49|0",
+   "path": "data/_ui/help.txt",
+   "line": 49,
+   "kind": "HELP",
+   "context": "help:lost 3",
+   "english": "Or, you could press <Initiate hyperspace jump> to use your hyperdrive. It will get you there a whole lot faster.",
+   "italian": "Or, you could press <Initiate hyperspace jump> to use your hyperdrive. It will get you there a whole lot faster.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "help:lost 4|Out here in the endless sky, you have the freedom to do whatever you want in your tiny new spaceship. Become the captain of a merchant fleet. Or a bounty hunter. Discover strange alien societies and powerful new technology.|52|0",
+   "path": "data/_ui/help.txt",
+   "line": 52,
+   "kind": "HELP",
+   "context": "help:lost 4",
+   "english": "Out here in the endless sky, you have the freedom to do whatever you want in your tiny new spaceship. Become the captain of a merchant fleet. Or a bounty hunter. Discover strange alien societies and powerful new technology.",
+   "italian": "Out here in the endless sky, you have the freedom to do whatever you want in your tiny new spaceship. Become the captain of a merchant fleet. Or a bounty hunter. Discover strange alien societies and powerful new technology.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "help:lost 4|Or if you want, you can just keep drifting here in empty space. Unless you've been ignoring all these messages, you already know that you can jump to another star system by selecting it in the map (which you bring up by pressing <View star map>), then closing the map and pressing <Initiate hyperspace jump>.|53|0",
+   "path": "data/_ui/help.txt",
+   "line": 53,
+   "kind": "HELP",
+   "context": "help:lost 4",
+   "english": "Or if you want, you can just keep drifting here in empty space. Unless you've been ignoring all these messages, you already know that you can jump to another star system by selecting it in the map (which you bring up by pressing <View star map>), then closing the map and pressing <Initiate hyperspace jump>.",
+   "italian": "Or if you want, you can just keep drifting here in empty space. Unless you've been ignoring all these messages, you already know that you can jump to another star system by selecting it in the map (which you bring up by pressing <View star map>), then closing the map and pressing <Initiate hyperspace jump>.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "help:lost 5|The hum of your ship's engine is the only sound you hear. As you have traveled farther and farther away from the center of this star system, even the occasional plink of micrometeorites against your hull has stopped. Deep space is utterly quiet and strangely beautiful. A different captain might grow bored out here, but you find yourself content and at peace.|56|0",
+   "path": "data/_ui/help.txt",
+   "line": 56,
+   "kind": "HELP",
+   "context": "help:lost 5",
+   "english": "The hum of your ship's engine is the only sound you hear. As you have traveled farther and farther away from the center of this star system, even the occasional plink of micrometeorites against your hull has stopped. Deep space is utterly quiet and strangely beautiful. A different captain might grow bored out here, but you find yourself content and at peace.",
+   "italian": "The hum of your ship's engine is the only sound you hear. As you have traveled farther and farther away from the center of this star system, even the occasional plink of micrometeorites against your hull has stopped. Deep space is utterly quiet and strangely beautiful. A different captain might grow bored out here, but you find yourself content and at peace.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "help:lost 5|Or maybe you're just really, really bad at figuring out how to play this game.|57|0",
+   "path": "data/_ui/help.txt",
+   "line": 57,
+   "kind": "HELP",
+   "context": "help:lost 5",
+   "english": "Or maybe you're just really, really bad at figuring out how to play this game.",
+   "italian": "Or maybe you're just really, really bad at figuring out how to play this game.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "help:lost 6|You slip deeper and deeper into the zen-like calm of outer space. The Tao which can be spoken is not the true Tao. The game that must be played is not the true game. You let go of all desire: your desire to press <Show main menu> and check the game's preferences to find out how to control your ship. The desire to view the other places you can travel to by pressing <View star map>. You release even the desire to press <Initiate hyperspace jump> and initiate a random hyperjump in whatever direction you are facing in. Enlightenment hovers on the edge of your consciousness, so close you can almost grasp it.|60|0",
+   "path": "data/_ui/help.txt",
+   "line": 60,
+   "kind": "HELP",
+   "context": "help:lost 6",
+   "english": "You slip deeper and deeper into the zen-like calm of outer space. The Tao which can be spoken is not the true Tao. The game that must be played is not the true game. You let go of all desire: your desire to press <Show main menu> and check the game's preferences to find out how to control your ship. The desire to view the other places you can travel to by pressing <View star map>. You release even the desire to press <Initiate hyperspace jump> and initiate a random hyperjump in whatever direction you are facing in. Enlightenment hovers on the edge of your consciousness, so close you can almost grasp it.",
+   "italian": "You slip deeper and deeper into the zen-like calm of outer space. The Tao which can be spoken is not the true Tao. The game that must be played is not the true game. You let go of all desire: your desire to press <Show main menu> and check the game's preferences to find out how to control your ship. The desire to view the other places you can travel to by pressing <View star map>. You release even the desire to press <Initiate hyperspace jump> and initiate a random hyperjump in whatever direction you are facing in. Enlightenment hovers on the edge of your consciousness, so close you can almost grasp it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 25,
+   "id": "help:lost 7|The void whispers its secret to your soul: outer space, it says, is not about lasers or explosions. It is not about fighting space pirates or saving the galaxy. No, the true message of the void is the utter loneliness you have found while drifting here: one tiny speck of warmth, insignificant compared to the vasty nothingness between the stars and the trillions upon trillions of souls of proud humans and inscrutable aliens whom you will never meet.|64|0",
+   "path": "data/_ui/help.txt",
+   "line": 64,
+   "kind": "HELP",
+   "context": "help:lost 7",
+   "english": "The void whispers its secret to your soul: outer space, it says, is not about lasers or explosions. It is not about fighting space pirates or saving the galaxy. No, the true message of the void is the utter loneliness you have found while drifting here: one tiny speck of warmth, insignificant compared to the vasty nothingness between the stars and the trillions upon trillions of souls of proud humans and inscrutable aliens whom you will never meet.",
+   "italian": "The void whispers its secret to your soul: outer space, it says, is not about lasers or explosions. It is not about fighting space pirates or saving the galaxy. No, the true message of the void is the utter loneliness you have found while drifting here: one tiny speck of warmth, insignificant compared to the vasty nothingness between the stars and the trillions upon trillions of souls of proud humans and inscrutable aliens whom you will never meet.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 26,
+   "id": "help:lost 7|The inner voice urging you to do something, anything rather than just continuing to drift here, falls silent...|65|0",
+   "path": "data/_ui/help.txt",
+   "line": 65,
+   "kind": "HELP",
+   "context": "help:lost 7",
+   "english": "The inner voice urging you to do something, anything rather than just continuing to drift here, falls silent...",
+   "italian": "The inner voice urging you to do something, anything rather than just continuing to drift here, falls silent...",
+   "ratio": 1.0
+  },
+  {
+   "idx": 27,
+   "id": "help:map|This map shows all the star systems you know about and the hyperspace links between them. You can use the map to plot a hyperspace course by clicking on the system you want to travel to. To initiate a jump to that system, close the map and press <Initiate hyperspace jump>.|68|0",
+   "path": "data/_ui/help.txt",
+   "line": 68,
+   "kind": "HELP",
+   "context": "help:map",
+   "english": "This map shows all the star systems you know about and the hyperspace links between them. You can use the map to plot a hyperspace course by clicking on the system you want to travel to. To initiate a jump to that system, close the map and press <Initiate hyperspace jump>.",
+   "italian": "This map shows all the star systems you know about and the hyperspace links between them. You can use the map to plot a hyperspace course by clicking on the system you want to travel to. To initiate a jump to that system, close the map and press <Initiate hyperspace jump>.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 28,
+   "id": "help:map|You can also press F to search the map for a specific system or planet.|69|0",
+   "path": "data/_ui/help.txt",
+   "line": 69,
+   "kind": "HELP",
+   "context": "help:map",
+   "english": "You can also press F to search the map for a specific system or planet.",
+   "italian": "You can also press F to search the map for a specific system or planet.",
+   "ratio": 1.0
+  }
+ ]
+}

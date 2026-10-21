@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/human/marauders.txt",
+  "line_from": 62,
+  "line_to": 484,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Marauder Arrow|description|62|0",
+   "path": "data/human/marauders.txt",
+   "line": 62,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Arrow",
+   "english": "This Arrow has had numerous modifications to its hull and internal systems to make more room for outfits - mostly with combat in mind. More shields, weapons, engines, outfit space, and a turret mount nearly push this ship into classification as a light warship, and definitely make it one of the heaviest interceptors you're likely to find.",
+   "italian": "Questa Arrow ha subito numerose modifiche allo scafo e ai sistemi interni per fare più spazio agli equipaggiamenti - soprattutto in vista del combattimento. Più scudi, armi, motori, spazio per gli equipaggiamenti e un supporto per torrette spingono quasi questa nave nella categoria delle navi da guerra leggere, e la rendono senz'altro uno degli intercettori più pesanti che possiate trovare.",
+   "ratio": 1.156
+  },
+  {
+   "idx": 2,
+   "id": "ship:Marauder Arrow|description|84|0",
+   "path": "data/human/marauders.txt",
+   "line": 84,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Arrow",
+   "english": "With expanded engine mounts, this Arrow seems more like an oversized missile than a ship. The beefed-up engines, a little extra outfit capacity, extra shield emitters, and thicker hull plating make this vessel a very competent interceptor.",
+   "italian": "Con supporti motore ampliati, questa Arrow sembra più un missile sovradimensionato che una nave. Motori potenziati, un po' di capacità in più per gli equipaggiamenti, emettitori di scudi aggiuntivi e corazzatura più spessa rendono questo vascello un intercettore molto competente.",
+   "ratio": 1.172
+  },
+  {
+   "idx": 3,
+   "id": "ship:Marauder Arrow|description|111|0",
+   "path": "data/human/marauders.txt",
+   "line": 111,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Arrow",
+   "english": "The weapons systems on this Arrow have been enhanced to the point of competing with Lionheart's Headhunter, although it can still outrun all but the fastest ships, if things get a little too hairy.",
+   "italian": "I sistemi d'arma di questa Arrow sono stati potenziati al punto da competere con la Headhunter della Lionheart, anche se resta capace di seminare tutte le navi tranne le più veloci, se la situazione si fa un po' troppo calda.",
+   "ratio": 1.142
+  },
+  {
+   "idx": 4,
+   "id": "ship:Marauder Bounder|description|166|0",
+   "path": "data/human/marauders.txt",
+   "line": 166,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Bounder",
+   "english": "This Megaparsec Bounder has been modified from a courier-scout into a heavy escort interceptor - currently the largest in the class. A little extra outfit space, reinforced turret mounts, a new gun port in front of the pilot, and additional shield emitters grant this former transport both fearsome speed and armament.",
+   "italian": "Questa Megaparsec Bounder è stata trasformata da corriere-esploratore in un intercettore di scorta pesante - attualmente il più grande della classe. Un po' di spazio in più per gli equipaggiamenti, supporti per torrette rinforzati, un nuovo porto per cannoni davanti al pilota ed emettitori di scudi aggiuntivi danno a questo ex trasporto sia una velocità sia un armamento formidabili.",
+   "ratio": 1.211
+  },
+  {
+   "idx": 5,
+   "id": "ship:Marauder Bounder|description|193|0",
+   "path": "data/human/marauders.txt",
+   "line": 193,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Bounder",
+   "english": "The previous owner of this Bounder has modified an already fast courier-scout into an even faster heavy escort interceptor with some truly enormous engines, giving it incredible maneuverability for its size.",
+   "italian": "Il precedente proprietario di questa Bounder ha trasformato un corriere-esploratore già veloce in un intercettore di scorta pesante ancora più veloce, con motori davvero enormi, dandogli una manovrabilità incredibile per le sue dimensioni.",
+   "ratio": 1.155
+  },
+  {
+   "idx": 6,
+   "id": "ship:Marauder Bounder|description|223|0",
+   "path": "data/human/marauders.txt",
+   "line": 223,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Bounder",
+   "english": "Simultaneously the deadliest and most graceful interceptor in the galaxy, this former Bounder courier-scout has been equipped with incredibly powerful weapons for a ship of its size.",
+   "italian": "Al tempo stesso l'intercettore più letale e il più elegante della galassia, questo ex corriere-esploratore Bounder è stato dotato di armi incredibilmente potenti per una nave delle sue dimensioni.",
+   "ratio": 1.077
+  },
+  {
+   "idx": 7,
+   "id": "ship:Marauder Falcon|description|288|0",
+   "path": "data/human/marauders.txt",
+   "line": 288,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Falcon",
+   "english": "This Tarazed Falcon has been heavily modified by some very dedicated craftsmen. The hull is riddled with extra shield emitters and expanded equipment bays, adding bulk and definitely voiding the warranty.",
+   "italian": "Questa Tarazed Falcon è stata pesantemente modificata da artigiani molto scrupolosi. Lo scafo è disseminato di emettitori di scudi aggiuntivi e baie per equipaggiamenti ampliate, il che aggiunge massa e annulla senz'altro la garanzia.",
+   "ratio": 1.147
+  },
+  {
+   "idx": 8,
+   "id": "ship:Marauder Falcon|description|325|0",
+   "path": "data/human/marauders.txt",
+   "line": 325,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Falcon",
+   "english": "Whoever modified this Falcon clearly valued speed above all else. Major sections of the hull have been reconfigured to accommodate the largest possible engines. If hot-rodding across the galaxy in a 1000-ton warship that handles like a Flivver is your dream, look no further.",
+   "italian": "Chiunque abbia modificato questa Falcon dava chiaramente la priorità alla velocità su tutto il resto. Intere sezioni dello scafo sono state riconfigurate per ospitare i motori più grandi possibili. Se il tuo sogno è sfrecciare per la galassia su una nave da guerra da 1000 tonnellate che si guida come un Flivver, non cercare altro.",
+   "ratio": 1.207
+  },
+  {
+   "idx": 9,
+   "id": "ship:Marauder Falcon|description|364|0",
+   "path": "data/human/marauders.txt",
+   "line": 364,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Falcon",
+   "english": "Whoever modified this Falcon clearly believed that firepower was everything. Two additional gun ports have been integrated into the hull, and the ship's interior space has been reconfigured to accommodate nearly any set of weapons you can imagine.",
+   "italian": "Chiunque abbia modificato questa Falcon credeva chiaramente che la potenza di fuoco fosse tutto. Due porti per cannoni aggiuntivi sono stati integrati nello scafo, e lo spazio interno della nave è stato riconfigurato per ospitare quasi qualsiasi insieme di armi tu possa immaginare.",
+   "ratio": 1.142
+  },
+  {
+   "idx": 10,
+   "id": "ship:Marauder Firebird|description|423|0",
+   "path": "data/human/marauders.txt",
+   "line": 423,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Firebird",
+   "english": "By the looks of the modification that have taken place, you suspect that this ship contains no original parts. With extra shield emitters, hull plating, and outfit space, this half-millennium-old design is finding new life with its heavy modification.",
+   "italian": "A giudicare dalle modifiche effettuate, sospetti che questa nave non contenga più nessun pezzo originale. Con emettitori di scudi, corazzatura e spazio per gli equipaggiamenti in più, questo progetto vecchio di mezzo millennio trova nuova vita grazie alle sue pesanti modifiche.",
+   "ratio": 1.108
+  },
+  {
+   "idx": 11,
+   "id": "ship:Marauder Firebird|description|453|0",
+   "path": "data/human/marauders.txt",
+   "line": 453,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Firebird",
+   "english": "One of the biggest complaints about Betelgeuse's venerable classic from younger pilots is that it's heavy and slow. A previous owner of this ship also believed so, and has fitted another engine port, in addition to setting aside more space for outfits and giving the old ship some new hull plating and shield emitters.",
+   "italian": "Una delle lamentele più frequenti dei piloti più giovani sulla venerabile classica della Betelgeuse è che è pesante e lenta. Anche un precedente proprietario di questa nave la pensava così, e ha aggiunto un altro porto motore, oltre a ricavare più spazio per gli equipaggiamenti e a dare alla vecchia nave nuova corazzatura ed emettitori di scudi.",
+   "ratio": 1.091
+  },
+  {
+   "idx": 12,
+   "id": "ship:Marauder Firebird|description|484|0",
+   "path": "data/human/marauders.txt",
+   "line": 484,
+   "kind": "DESCRIPTION",
+   "context": "ship:Marauder Firebird",
+   "english": "The Firebird is known to have one of the heaviest armaments possible for a warship of its size, and this modified version makes it even heavier. With more outfit space, giant gun ports, extra hull plating, and more shield emitters, this blast from the past will make its targets history.",
+   "italian": "La Firebird è nota per avere uno degli armamenti più pesanti possibili per una nave da guerra delle sue dimensioni, e questa versione modificata lo rende ancora più pesante. Con più spazio per gli equipaggiamenti, porti per cannoni giganteschi, corazzatura aggiuntiva e altri emettitori di scudi, questa scheggia del passato farà passare a miglior vita i suoi bersagli.",
+   "ratio": 1.286
+  }
+ ]
+}

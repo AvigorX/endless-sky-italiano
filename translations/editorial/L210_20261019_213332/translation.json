@@ -1,0 +1,220 @@
+{
+ "block": {
+  "path": "data/coalition/coalition news.txt",
+  "line_from": 309,
+  "line_to": 400,
+  "units": 19
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:coalition vendor|\"Caught your eye, this necklace has? Real hedgelion quills, these are. Great luck, they bring, for those generous enough to make a purchase.\"|309|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 309,
+   "kind": "NEWS",
+   "context": "news:coalition vendor",
+   "english": "\"Caught your eye, this necklace has? Real hedgelion quills, these are. Great luck, they bring, for those generous enough to make a purchase.\"",
+   "italian": "\"Colpito il tuo occhio, questa collana ha? Veri aculei di hedgelion, questi sono. Grande fortuna, portano, a chi è abbastanza generoso da fare un acquisto.\"",
+   "ratio": 1.106
+  },
+  {
+   "idx": 2,
+   "id": "news:coalition vendor|\"Arcology miniatures? Arachi armor replicas? Multipurpose gardening tools? For all of those and more, the best prices I have!\"|310|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 310,
+   "kind": "NEWS",
+   "context": "news:coalition vendor",
+   "english": "\"Arcology miniatures? Arachi armor replicas? Multipurpose gardening tools? For all of those and more, the best prices I have!\"",
+   "italian": "\"Miniature di arcologie? Repliche di armature Arachi? Attrezzi da giardinaggio multiuso? Per tutto questo e altro, i prezzi migliori ho!\"",
+   "ratio": 1.087
+  },
+  {
+   "idx": 3,
+   "id": "news:coalition civilian expeditions past|\"Heard, I have, that come back from the outside, that Heliarch tribune did. Very lucky, she must be.\"|327|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 327,
+   "kind": "NEWS",
+   "context": "news:coalition civilian expeditions past",
+   "english": "\"Heard, I have, that come back from the outside, that Heliarch tribune did. Very lucky, she must be.\"",
+   "italian": "\"Sentito, ho, che è tornato dall'esterno, quel tribuno Heliarch. Molto fortunato, deve essere.\"",
+   "ratio": 0.941
+  },
+  {
+   "idx": 4,
+   "id": "news:coalition civilian expeditions past|\"Heard, I have, that come back from the outside, that Heliarch girl did. If you ask me, a lie that she ever left, it is.\"|328|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 328,
+   "kind": "NEWS",
+   "context": "news:coalition civilian expeditions past",
+   "english": "\"Heard, I have, that come back from the outside, that Heliarch girl did. If you ask me, a lie that she ever left, it is.\"",
+   "italian": "\"Sentito, ho, che è tornata dall'esterno, quella ragazza Heliarch. Se me lo chiedi, una bugia che sia mai partita, è.\"",
+   "ratio": 0.975
+  },
+  {
+   "idx": 5,
+   "id": "news:coalition civilian expeditions past|\"Seen the news, have you? Returned from the outside, a Saryd Heliarch has! Wonder how bad it was out there, I do.\"|329|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 329,
+   "kind": "NEWS",
+   "context": "news:coalition civilian expeditions past",
+   "english": "\"Seen the news, have you? Returned from the outside, a Saryd Heliarch has! Wonder how bad it was out there, I do.\"",
+   "italian": "\"Visto il notiziario, hai? Tornata dall'esterno, una Heliarch Saryd è! Quanto fosse brutto là fuori, me lo chiedo.\"",
+   "ratio": 1.009
+  },
+  {
+   "idx": 6,
+   "id": "news:coalition civilian expeditions past|\"The one that helped that Heliarch inspector in her expedition, you are. A very strong ship, you must have, if made it back, you two did.\"|330|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 330,
+   "kind": "NEWS",
+   "context": "news:coalition civilian expeditions past",
+   "english": "\"The one that helped that Heliarch inspector in her expedition, you are. A very strong ship, you must have, if made it back, you two did.\"",
+   "italian": "\"Quello che ha aiutato quell'ispettrice Heliarch nella sua spedizione, tu sei. Una nave molto forte, devi avere, se siete tornati, voi due l'avete fatto.\"",
+   "ratio": 1.116
+  },
+  {
+   "idx": 7,
+   "id": "news:coalition civilian expeditions past|\"Helped that Heliarch inspector come back from the outside, you have. Always thought that impossible, I did.\"|331|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 331,
+   "kind": "NEWS",
+   "context": "news:coalition civilian expeditions past",
+   "english": "\"Helped that Heliarch inspector come back from the outside, you have. Always thought that impossible, I did.\"",
+   "italian": "\"Aiutato quell'ispettrice Heliarch a tornare dall'esterno, hai. Sempre pensato che fosse impossibile, io l'ho fatto.\"",
+   "ratio": 1.073
+  },
+  {
+   "idx": 8,
+   "id": "news:heliarch expeditions past|\"Promoted to the rank of arbiter after her expedition, that Saryd inspector was. Very impressed by her findings on the outside, the consuls must have been.\"|343|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 343,
+   "kind": "NEWS",
+   "context": "news:heliarch expeditions past",
+   "english": "\"Promoted to the rank of arbiter after her expedition, that Saryd inspector was. Very impressed by her findings on the outside, the consuls must have been.\"",
+   "italian": "\"Promossa al rango di arbiter dopo la sua spedizione, quell'ispettrice Saryd è stata. Molto colpiti dalle sue scoperte sull'esterno, i consoli devono essere stati.\"",
+   "ratio": 1.051
+  },
+  {
+   "idx": 9,
+   "id": "news:heliarch expeditions past|\"Promoted to the rank of arbiter after her 'expedition,' that Saryd girl was, but what proof of her actually leaving do we have? Stupid enough to have tried that, nobody is.\"|344|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 344,
+   "kind": "NEWS",
+   "context": "news:heliarch expeditions past",
+   "english": "\"Promoted to the rank of arbiter after her 'expedition,' that Saryd girl was, but what proof of her actually leaving do we have? Stupid enough to have tried that, nobody is.\"",
+   "italian": "\"Promossa al rango di arbiter dopo la sua 'spedizione', quella ragazza Saryd è stata, ma quale prova che sia davvero partita abbiamo? Abbastanza stupido da provarci, nessuno è.\"",
+   "ratio": 1.017
+  },
+  {
+   "idx": 10,
+   "id": "news:heliarch expeditions past|\"Though a success, that Saryd inspector's expedition was, turned many of the consuls furious at one another, her return has. Expected her to make it back, many of them had not.\"|345|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 345,
+   "kind": "NEWS",
+   "context": "news:heliarch expeditions past",
+   "english": "\"Though a success, that Saryd inspector's expedition was, turned many of the consuls furious at one another, her return has. Expected her to make it back, many of them had not.\"",
+   "italian": "\"Per quanto un successo, la spedizione di quell'ispettrice Saryd è stata, ha reso molti consoli furiosi l'uno con l'altro, il suo ritorno. Che ce la facesse a tornare, molti di loro non se lo aspettavano.\"",
+   "ratio": 1.158
+  },
+  {
+   "idx": 11,
+   "id": "news:heliarch expeditions past|\"Our thanks for helping inspector Sedlitaris, you have. Finally found their way back, the last expedition's reports have.\"|346|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 346,
+   "kind": "NEWS",
+   "context": "news:heliarch expeditions past",
+   "english": "\"Our thanks for helping inspector Sedlitaris, you have. Finally found their way back, the last expedition's reports have.\"",
+   "italian": "\"La nostra gratitudine per aver aiutato l'ispettrice Sedlitaris, hai. Finalmente trovata la strada del ritorno, i rapporti dell'ultima spedizione hanno.\"",
+   "ratio": 1.254
+  },
+  {
+   "idx": 12,
+   "id": "news:heliarch expeditions past|\"The one who helped inspector Sedlitaris on her expedition you are, correct? Read her report on it, I have. Disconcerting, the fate of the last expedition is, but at least recovered their findings, we now have.\"|347|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 347,
+   "kind": "NEWS",
+   "context": "news:heliarch expeditions past",
+   "english": "\"The one who helped inspector Sedlitaris on her expedition you are, correct? Read her report on it, I have. Disconcerting, the fate of the last expedition is, but at least recovered their findings, we now have.\"",
+   "italian": "\"Quello che ha aiutato l'ispettrice Sedlitaris nella sua spedizione sei, giusto? Letto il suo rapporto, ho. Sconcertante, il destino dell'ultima spedizione è, ma almeno recuperato le loro scoperte, ora abbiamo.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "news:coalition games people|\"Going to see the Coalition Games, I am. Our biggest yearly event, it is.\"|381|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 381,
+   "kind": "NEWS",
+   "context": "news:coalition games people",
+   "english": "\"Going to see the Coalition Games, I am. Our biggest yearly event, it is.\"",
+   "italian": "\"Andare a vedere i Giochi della Coalizione, sto. Il nostro più grande evento annuale, è.\"",
+   "ratio": 1.203
+  },
+  {
+   "idx": 14,
+   "id": "news:coalition games people|\"Competing in the Coalition Games this year, a friend of mine is. Cheering for them, my whole family is.\"|382|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 382,
+   "kind": "NEWS",
+   "context": "news:coalition games people",
+   "english": "\"Competing in the Coalition Games this year, a friend of mine is. Cheering for them, my whole family is.\"",
+   "italian": "\"A gareggiare nei Giochi della Coalizione quest'anno, un mio amico sta. A tifare per lui, tutta la mia famiglia sta.\"",
+   "ratio": 1.114
+  },
+  {
+   "idx": 15,
+   "id": "news:coalition games people|\"Seen the latest transmission of the Coalition Games, have you? Throughout it all, on the edge I was!\"|383|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 383,
+   "kind": "NEWS",
+   "context": "news:coalition games people",
+   "english": "\"Seen the latest transmission of the Coalition Games, have you? Throughout it all, on the edge I was!\"",
+   "italian": "\"Visto l'ultima trasmissione dei Giochi della Coalizione, hai? Per tutta la durata, sul filo del rasoio ero!\"",
+   "ratio": 1.069
+  },
+  {
+   "idx": 16,
+   "id": "news:coalition games people|\"Checked the job board lately, have you? Eager to see the Coalition Games, tons of passengers are. A good season for business, this is.\"|384|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 384,
+   "kind": "NEWS",
+   "context": "news:coalition games people",
+   "english": "\"Checked the job board lately, have you? Eager to see the Coalition Games, tons of passengers are. A good season for business, this is.\"",
+   "italian": "\"Controllato la bacheca degli incarichi di recente, hai? Impazienti di vedere i Giochi della Coalizione, tantissimi passeggeri sono. Una buona stagione per gli affari, questa è.\"",
+   "ratio": 1.309
+  },
+  {
+   "idx": 17,
+   "id": "news:coalition games people|\"Watching the Coalition Games transmissions lately, I have been. Tried to become an athlete myself, I once did, but too rigorous, their training routine is! Made me appreciate the sports more, it has.\"|385|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 385,
+   "kind": "NEWS",
+   "context": "news:coalition games people",
+   "english": "\"Watching the Coalition Games transmissions lately, I have been. Tried to become an athlete myself, I once did, but too rigorous, their training routine is! Made me appreciate the sports more, it has.\"",
+   "italian": "\"Guardando le trasmissioni dei Giochi della Coalizione, ultimamente sono stato. Provato a diventare atleta io stesso, una volta ho, ma troppo rigoroso, il loro allenamento è! Farmi apprezzare di più lo sport, è riuscito.\"",
+   "ratio": 1.1
+  },
+  {
+   "idx": 18,
+   "id": "news:coalition games people|\"Just arrived from my first live viewing of the Coalition Games, I have. An incredible experience, it was. Go again next year, I for sure will!\"|386|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 386,
+   "kind": "NEWS",
+   "context": "news:coalition games people",
+   "english": "\"Just arrived from my first live viewing of the Coalition Games, I have. An incredible experience, it was. Go again next year, I for sure will!\"",
+   "italian": "\"Appena tornato dalla mia prima visione dal vivo dei Giochi della Coalizione, sono. Un'esperienza incredibile, è stata. Tornarci l'anno prossimo, di sicuro lo farò!\"",
+   "ratio": 1.146
+  },
+  {
+   "idx": 19,
+   "id": "news:coalition games planet heliarch|\"Heading to the Coalition Games, are you? If so, forgive us you must. Some trouble with organizing the crowds this morning, there was, so delayed by five minutes, the whole line is.\"|400|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 400,
+   "kind": "NEWS",
+   "context": "news:coalition games planet heliarch",
+   "english": "\"Heading to the Coalition Games, are you? If so, forgive us you must. Some trouble with organizing the crowds this morning, there was, so delayed by five minutes, the whole line is.\"",
+   "italian": "\"Diretto ai Giochi della Coalizione, sei? Se sì, perdonarci devi. Qualche problema a organizzare la folla stamattina, c'è stato, quindi in ritardo di cinque minuti, tutta la fila è.\"",
+   "ratio": 1.0
+  }
+ ]
+}

@@ -1,0 +1,165 @@
+{
+ "batch": "B003",
+ "results": [
+  {
+   "id": "help:bank|This is the bank. Here, you can apply for new mortgages, if your income and credit history allows it. The bank is also a good place to get an overview of your daily expenses: mortgage payments, crew salaries, etc.|15|0",
+   "it": "Questa è la banca. Qui puoi richiedere nuovi mutui, se il tuo reddito e la tua storia creditizia lo consentono. La banca è anche un buon posto per farti un'idea delle spese quotidiane: rate del mutuo, stipendi dell'equipaggio, ecc."
+  },
+  {
+   "id": "help:bank|Paying off a mortgage early means you pay less interest to the bank, but it is sometimes wiser to instead use your money to buy a bigger ship which can earn you more income.|16|0",
+   "it": "Estinguere un mutuo in anticipo significa pagare meno interessi alla banca, ma a volte è più saggio usare il denaro per comprare una nave più grande, che può farti guadagnare di più."
+  },
+  {
+   "id": "help:bank advanced|When entering a credit value at the bank, you can put in an exact number, or use the suffixes K, M, B, and T as shorthand for thousands, millions, billions, and trillions. For example, entering a value such as \"100k\" would count as 100,000 credits.|19|0",
+   "it": "Quando inserisci un valore in crediti alla banca, puoi scrivere un numero esatto oppure usare i suffissi K, M, B e T come abbreviazioni di migliaia, milioni, miliardi e trilioni. Per esempio, inserendo un valore come \"100k\" verranno contati 100.000 crediti."
+  },
+  {
+   "id": "help:bank advanced|Entering a number that is higher than what you or the bank have available will default to the maximum available value. For example, entering \"1m\" to pay off a 100,000 credit loan will completely pay off the loan without giving extra, should you have available credits.|20|0",
+   "it": "Se inserisci un numero superiore a quello disponibile per te o per la banca, verrà usato automaticamente il valore massimo disponibile. Per esempio, inserendo \"1m\" per estinguere un mutuo da 100.000 crediti, il mutuo verrà estinto del tutto senza pagare nulla in più, se hai i crediti necessari."
+  },
+  {
+   "id": "help:dead|Uh-oh! You just died. The universe can be a dangerous place for new captains!|23|0",
+   "it": "Ops! Sei appena morto. L'universo può essere un posto pericoloso per i capitani alle prime armi!"
+  },
+  {
+   "id": "help:dead|Fortunately, your game is automatically saved every time you leave a planet. To load your most recent saved game, press <Show main menu> to return to the main menu, then click on \"Manage Pilots\" and \"Enter Ship.\"|24|0",
+   "it": "Per fortuna la partita viene salvata automaticamente ogni volta che lasci un pianeta. Per caricare il salvataggio più recente, premi <Show main menu> per tornare al menu principale, poi clicca su \"Gestisci piloti\" e su \"Entra nella nave\"."
+  },
+  {
+   "id": "help:disabled|Your ship just got disabled! Before an enemy ship finishes you off, you should find someone to help you.|27|0",
+   "it": "La tua nave è appena stata neutralizzata! Prima che una nave nemica ti finisca, dovresti trovare qualcuno che ti aiuti."
+  },
+  {
+   "id": "help:disabled|Press <Select next ship> to cycle through all the ships in this system. When you have a friendly one selected, press <Talk to selected ship> to hail it. You can then ask for help, and the ship will come over and patch you up.|28|0",
+   "it": "Premi <Select next ship> per scorrere tutte le navi in questo sistema. Quando ne hai selezionata una amica, premi <Talk to selected ship> per contattarla. Puoi chiedere aiuto e la nave verrà a ripararti."
+  },
+  {
+   "id": "help:disabled|If the ship that disabled you is still hanging around, you might need to hail them first and bribe them to leave you alone.|29|0",
+   "it": "Se la nave che ti ha neutralizzato è ancora nei paraggi, potresti doverla contattare prima e pagarle una tangente per farti lasciare in pace."
+  },
+  {
+   "id": "help:hiring|Hiring extra crew is only helpful if you plan on capturing enemy ships. Each crew member other than yourself is paid 100 credits per day. Larger ships require more than one crew member, but you will automatically hire the minimum number of crew when you buy those ships.|32|0",
+   "it": "Assumere equipaggio aggiuntivo serve solo se hai intenzione di catturare navi nemiche. Ogni membro dell'equipaggio oltre a te viene pagato 100 crediti al giorno. Le navi più grandi richiedono più di un membro, ma assumerai automaticamente il numero minimo quando le compri."
+  },
+  {
+   "id": "help:hiring|Crew members take up space that can otherwise be used for passengers.|33|0",
+   "it": "I membri dell'equipaggio occupano spazio che altrimenti potrebbe essere usato per i passeggeri."
+  },
+  {
+   "id": "help:jobs|Taking on jobs is a safe way to earn money. Special missions are offered in the Spaceport; more mundane jobs are posted on the Job Board. Most special missions are only offered once: if you turn one down, it will not be offered to you again.|36|0",
+   "it": "Accettare incarichi è un modo sicuro di guadagnare. Le missioni speciali vengono offerte allo spazioporto; gli incarichi più comuni sono affissi sulla bacheca degli incarichi. La maggior parte delle missioni speciali viene offerta una sola volta: se la rifiuti, non ti verrà più proposta."
+  },
+  {
+   "id": "help:jobs|The payment for a job depends on how far you must travel and how much you are carrying. Jobs that have a time limit pay extra, but you are paid nothing if you miss the deadline.|37|0",
+   "it": "Il compenso di un incarico dipende da quanto devi viaggiare e da quanto trasporti. Gli incarichi con scadenza pagano di più, ma non ricevi nulla se perdi la scadenza."
+  },
+  {
+   "id": "help:jobs|As you gain a reputation for skill in combat, new jobs will become available, including escorting convoys and bounty hunting.|38|0",
+   "it": "Man mano che ti costruisci una reputazione in combattimento, si renderanno disponibili nuovi incarichi, compreso scortare convogli e dare la caccia ai ricercati."
+  },
+  {
+   "id": "help:lost 1|There's nothing out here. The only way to get to another star system is by jumping through hyperspace. Unless you are out of fuel, you can jump by pressing <Initiate hyperspace jump>. To select which system you want to jump to, bring up the map by pressing <View star map>.|41|0",
+   "it": "Qui fuori non c'è nulla. L'unico modo per raggiungere un altro sistema stellare è saltare attraverso l'iperspazio. Se non sei a secco di carburante, puoi saltare premendo <Initiate hyperspace jump>. Per scegliere il sistema in cui saltare, apri la mappa premendo <View star map>."
+  },
+  {
+   "id": "help:lost 1|At any time, you can return to the main menu by pressing <Show main menu>. All the key controls can be viewed, and changed, in the Preferences.|42|0",
+   "it": "In qualsiasi momento puoi tornare al menu principale premendo <Show main menu>. Tutti i comandi da tastiera possono essere visti e modificati nelle preferenze."
+  },
+  {
+   "id": "help:lost 2|You seem to be lost. The universe is a big and complicated place, and no one is going to hold your hand out here. You might want to review the key controls (press <Show main menu> to bring up the main menu, then click on \"Preferences\") to figure out what is going on. There is also a player's manual with much more information. To read it, go to endless-sky.github.io and click on \"Manual.\"|45|0",
+   "it": "Sembri esserti perso. L'universo è grande e complicato, e qui nessuno ti terrà per mano. Potresti rivedere i comandi (premi <Show main menu> per aprire il menu principale, poi clicca su \"Preferenze\") per capire cosa sta succedendo. Esiste anche un manuale del giocatore con molte più informazioni: per leggerlo vai su endless-sky.github.io e clicca su \"Manuale\"."
+  },
+  {
+   "id": "help:lost 3|The void between the stars is cold and empty. Your ship, a tiny oasis of warmth, drifts alone out here illuminated only by the distant light of cold, uncaring suns. The distances between the stars are vast, beyond what the human mind can grasp; you could spend your whole life drifting out here and never reach another star.|48|0",
+   "it": "Il vuoto tra le stelle è freddo e vuoto. La tua nave, una piccola oasi di calore, va alla deriva quaggiù, illuminata solo dalla luce lontana di soli freddi e indifferenti. Le distanze tra le stelle sono vastissime, oltre ciò che la mente umana può afferrare: potresti passare tutta la vita a vagare qui e non raggiungere mai un'altra stella."
+  },
+  {
+   "id": "help:lost 3|Or, you could press <Initiate hyperspace jump> to use your hyperdrive. It will get you there a whole lot faster.|49|0",
+   "it": "Oppure potresti premere <Initiate hyperspace jump> per usare il motore iperspaziale. Ti ci porterà molto più in fretta."
+  },
+  {
+   "id": "help:lost 4|Out here in the endless sky, you have the freedom to do whatever you want in your tiny new spaceship. Become the captain of a merchant fleet. Or a bounty hunter. Discover strange alien societies and powerful new technology.|52|0",
+   "it": "Qui, nel cielo sconfinato, sei libero di fare ciò che vuoi con la tua piccola nave nuova. Diventa il capitano di una flotta mercantile. O un cacciatore di taglie. Scopri società aliene sconosciute e tecnologie potenti."
+  },
+  {
+   "id": "help:lost 4|Or if you want, you can just keep drifting here in empty space. Unless you've been ignoring all these messages, you already know that you can jump to another star system by selecting it in the map (which you bring up by pressing <View star map>), then closing the map and pressing <Initiate hyperspace jump>.|53|0",
+   "it": "Oppure, se preferisci, puoi continuare a vagare qui nello spazio vuoto. A meno che tu non abbia ignorato tutti questi messaggi, sai già che puoi saltare in un altro sistema stellare selezionandolo sulla mappa (che apri premendo <View star map>), poi chiudendo la mappa e premendo <Initiate hyperspace jump>."
+  },
+  {
+   "id": "help:lost 5|The hum of your ship's engine is the only sound you hear. As you have traveled farther and farther away from the center of this star system, even the occasional plink of micrometeorites against your hull has stopped. Deep space is utterly quiet and strangely beautiful. A different captain might grow bored out here, but you find yourself content and at peace.|56|0",
+   "it": "Il ronzio del motore è l'unico suono che senti. Man mano che ti allontani dal centro di questo sistema stellare, è cessato anche il ticchettio occasionale dei micrometeoriti contro lo scafo. Lo spazio profondo è del tutto silenzioso e stranamente bello. Un altro capitano si annoierebbe, ma tu ti senti soddisfatto e in pace."
+  },
+  {
+   "id": "help:lost 5|Or maybe you're just really, really bad at figuring out how to play this game.|57|0",
+   "it": "O forse sei solo davvero, davvero scarso a capire come si gioca."
+  },
+  {
+   "id": "help:lost 6|You slip deeper and deeper into the zen-like calm of outer space. The Tao which can be spoken is not the true Tao. The game that must be played is not the true game. You let go of all desire: your desire to press <Show main menu> and check the game's preferences to find out how to control your ship. The desire to view the other places you can travel to by pressing <View star map>. You release even the desire to press <Initiate hyperspace jump> and initiate a random hyperjump in whatever direction you are facing in. Enlightenment hovers on the edge of your consciousness, so close you can almost grasp it.|60|0",
+   "it": "Scivoli sempre più a fondo nella calma zen dello spazio. Il Tao che può essere detto non è il vero Tao. Il gioco che deve essere giocato non è il vero gioco. Lasci andare ogni desiderio: il desiderio di premere <Show main menu> e controllare le preferenze per scoprire come pilotare la nave. Il desiderio di vedere gli altri luoghi raggiungibili premendo <View star map>. Lasci andare persino il desiderio di premere <Initiate hyperspace jump> e iniziare un salto casuale nella direzione in cui sei rivolto. L'illuminazione sfiora la soglia della tua coscienza, così vicina che quasi puoi afferrarla."
+  },
+  {
+   "id": "help:lost 7|The void whispers its secret to your soul: outer space, it says, is not about lasers or explosions. It is not about fighting space pirates or saving the galaxy. No, the true message of the void is the utter loneliness you have found while drifting here: one tiny speck of warmth, insignificant compared to the vasty nothingness between the stars and the trillions upon trillions of souls of proud humans and inscrutable aliens whom you will never meet.|64|0",
+   "it": "Il vuoto sussurra il suo segreto alla tua anima: lo spazio, dice, non parla di laser o esplosioni. Non parla di combattere pirati spaziali o salvare la galassia. No, il vero messaggio del vuoto è la solitudine assoluta che hai trovato vagando qui: un minuscolo granello di calore, insignificante rispetto al nulla immenso tra le stelle e ai trilioni su trilioni di anime di umani orgogliosi e alieni imperscrutabili che non incontrerai mai."
+  },
+  {
+   "id": "help:lost 7|The inner voice urging you to do something, anything rather than just continuing to drift here, falls silent...|65|0",
+   "it": "La voce interiore che ti spingeva a fare qualcosa, qualsiasi cosa invece di continuare a vagare qui, tace..."
+  },
+  {
+   "id": "help:map|This map shows all the star systems you know about and the hyperspace links between them. You can use the map to plot a hyperspace course by clicking on the system you want to travel to. To initiate a jump to that system, close the map and press <Initiate hyperspace jump>.|68|0",
+   "it": "Questa mappa mostra tutti i sistemi stellari che conosci e i collegamenti iperspaziali tra loro. Puoi usarla per tracciare una rotta cliccando sul sistema in cui vuoi andare. Per iniziare il salto verso quel sistema, chiudi la mappa e premi <Initiate hyperspace jump>."
+  },
+  {
+   "id": "help:map|You can also press F to search the map for a specific system or planet.|69|0",
+   "it": "Puoi anche premere F per cercare sulla mappa un sistema o un pianeta specifico."
+  },
+  {
+   "id": "help:map advanced|As you explore more of the galaxy, the star map will quickly become a very powerful tool. Clicking on a distant system will automatically plot the quickest route to it. You can Shift+click on systems to plot a route between them, or Control+click to select a system without setting a route to it.|72|0",
+   "it": "Man mano che esplori la galassia, la mappa stellare diventerà presto uno strumento molto potente. Cliccando su un sistema lontano verrà tracciata automaticamente la rotta più rapida. Puoi usare Shift+clic sui sistemi per tracciare una rotta tra loro, oppure Control+clic per selezionare un sistema senza impostare una rotta."
+  },
+  {
+   "id": "help:map advanced|There are many other useful modes the map can be set to. Click on one of the buttons in the lower right corner to learn more.|73|0",
+   "it": "Ci sono molte altre modalità utili. Clicca su uno dei pulsanti nell'angolo in basso a destra per saperne di più."
+  },
+  {
+   "id": "help:map advanced ports|The ports panel shows you where systems with spaceports are, as well as a plethora of other information. Clicking on the name of the system, the government of the system, the lines under the name of each planet, or any trade commodity will color the map differently, the key to which can be seen on the right side of the screen.|76|0",
+   "it": "Il pannello dei porti mostra dove si trovano i sistemi con spazioporti e molte altre informazioni. Cliccando sul nome del sistema, sul governo, sulle righe sotto il nome di ogni pianeta o su una merce, la mappa si colora in modo diverso; la legenda è sul lato destro dello schermo."
+  },
+  {
+   "id": "help:map advanced ports|Clicking the name of a planet, or clicking on a planet in the orbit map on the right side of the screen, will show that planet's description if you have visited it already. Clicking a planet on the orbit map will also tell your autopilot to land on that planet after you have arrived at that system at the end of your jump path.|77|0",
+   "it": "Cliccando sul nome di un pianeta, o su un pianeta nella mappa delle orbite a destra, vedrai la descrizione di quel pianeta se lo hai già visitato. Cliccare un pianeta nella mappa delle orbite dice anche al pilota automatico di atterrarvi una volta arrivato nel sistema alla fine della rotta."
+  },
+  {
+   "id": "help:map advanced ports|Right-clicking on a location in the orbit map will send your escorts to that location in the selected system.|78|0",
+   "it": "Il clic destro su un punto della mappa delle orbite manda le tue scorte in quel punto del sistema selezionato."
+  },
+  {
+   "id": "help:map advanced shops|The shipyard and outfitter map panels respectively display the ships and outfits sold on any planets that you have seen. Ships and outfits are displayed in categories which can be collapsed by clicking on the category name. Using Shift+click on a category name will collapse or uncollapse all the categories at once.|81|0",
+   "it": "I pannelli cantiere e fornitore mostrano rispettivamente le navi e gli equipaggiamenti venduti sui pianeti che hai visto. Sono raggruppati per categoria e puoi chiudere una categoria cliccandone il nome. Con Shift+clic sul nome di una categoria chiudi o apri tutte le categorie insieme."
+  },
+  {
+   "id": "help:map advanced shops|Each ship or outfit can be clicked on, displaying that item's stats while also highlighting any planets where it is sold. Using Shift+click on a ship or outfit after you already have one selected will display that item's stats side by side with the previously selected item.|82|0",
+   "it": "Puoi cliccare su ogni nave o equipaggiamento per vederne i dati, evidenziando anche i pianeti in cui è in vendita. Se usi Shift+clic su una nave o un equipaggiamento quando ne hai già selezionato uno, i dati vengono mostrati affiancati."
+  },
+  {
+   "id": "help:map advanced shops|You can also press F to search the shipyard and outfitter maps for a specific ship or outfit.|83|0",
+   "it": "Puoi anche premere F per cercare una nave o un equipaggiamento specifico nelle mappe cantiere e fornitore."
+  },
+  {
+   "id": "help:map advanced stars|The starry map mode displays the stars on the system map. This can also be enabled by pressing T. The stars present in a system affect the amount of solar power and solar wind available for use by solar collectors and ramscoops respectively.|86|0",
+   "it": "La modalità mappa stellata mostra le stelle sulla mappa del sistema. Si attiva anche premendo T. Le stelle presenti in un sistema influenzano la quantità di energia solare e di vento solare disponibile rispettivamente per i pannelli solari e per i ramscoop."
+  },
+  {
+   "id": "help:map advanced danger|The galaxy can be a dangerous place! Pirates raid some systems more frequently or in greater strength than others, and a poorly defended convoy risks attracting them in many systems. To get an idea of the relative danger of different systems, click on the alert icon next to the system name.|89|0",
+   "it": "La galassia può essere un posto pericoloso! I pirati attaccano alcuni sistemi più spesso o con forze maggiori, e un convoglio mal difeso rischia di attirarli in molti sistemi. Per farti un'idea del pericolo relativo dei sistemi, clicca sull'icona di allarme accanto al nome del sistema."
+  },
+  {
+   "id": "help:multiple ships|Now that you have more than one ship, you can reorder the ships in your fleet by clicking and dragging them in the shipyard, outfitter, or player info panel, as long as you are landed. You will use the first ship in the list as your flagship.|92|0",
+   "it": "Ora che hai più di una nave, puoi riordinarle nella flotta trascinandole nel cantiere, nel fornitore o nel pannello dati pilota, purché tu sia atterrato. La prima nave della lista sarà la tua ammiraglia."
+  },
+  {
+   "id": "help:multiple ships|You can also \"park\" escorts in the player info panel.|93|0",
+   "it": "Puoi anche \"parcheggiare\" le scorte nel pannello dati pilota."
+  }
+ ]
+}

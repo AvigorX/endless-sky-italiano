@@ -1,0 +1,330 @@
+{
+ "block": {
+  "path": "data/human/ships.txt",
+  "line_from": 2102,
+  "line_to": 3422,
+  "units": 29
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Gunboat|description|2102|0",
+   "path": "data/human/ships.txt",
+   "line": 2102,
+   "kind": "DESCRIPTION",
+   "context": "ship:Gunboat",
+   "english": "The Navy Gunboat is designed for engaging targets at short range, and also serves as the Navy's mobile sensor platform, scanning ships for illegal equipment or cargo.",
+   "italian": "Il Gunboat della Marina è progettato per ingaggiare bersagli a corto raggio, e serve anche come piattaforma sensoristica mobile della Marina, scansionando le navi alla ricerca di equipaggiamenti o carichi illegali.",
+   "ratio": 1.289
+  },
+  {
+   "idx": 2,
+   "id": "ship:Hauler|description|2162|0",
+   "path": "data/human/ships.txt",
+   "line": 2162,
+   "kind": "DESCRIPTION",
+   "context": "ship:Hauler",
+   "english": "Several centuries ago, in the early days of the Republic, the sudden increase in commerce and space travel led to high demand for cargo ships. Haulers were first created simply by bolting a cockpit and engine block onto a cargo container, and the basic design has not changed much since then.",
+   "italian": "Diversi secoli fa, ai primi tempi della Repubblica, il brusco aumento del commercio e dei viaggi spaziali portò a una forte domanda di navi da carico. Le Hauler nacquero semplicemente imbullonando un abitacolo e un blocco motore a un container da carico, e il progetto di base non è cambiato molto da allora.",
+   "ratio": 1.055
+  },
+  {
+   "idx": 3,
+   "id": "ship:Hauler II|description|2224|0",
+   "path": "data/human/ships.txt",
+   "line": 2224,
+   "kind": "DESCRIPTION",
+   "context": "ship:Hauler II",
+   "english": "This is a mid-sized freighter, designed for a balance between cargo capacity and defensive capability. Centuries ago, various Hauler models made up nearly half of the merchant vessels in service, but today the design is considered somewhat outdated.",
+   "italian": "Questa è una nave da carico di taglia media, progettata per un equilibrio tra capacità di carico e capacità difensiva. Secoli fa vari modelli di Hauler costituivano quasi metà delle navi mercantili in servizio, ma oggi il progetto è considerato un po' superato.",
+   "ratio": 1.048
+  },
+  {
+   "idx": 4,
+   "id": "ship:Hauler III|description|2286|0",
+   "path": "data/human/ships.txt",
+   "line": 2286,
+   "kind": "DESCRIPTION",
+   "context": "ship:Hauler III",
+   "english": "Considered by many to be outdated, there are nonetheless many Haulers still in service due to their combination of comparatively low price and simple construction. This large version of the Hauler provides the best tradeoff between price and cargo space.",
+   "italian": "Considerata da molti superata, ci sono comunque ancora molte Hauler in servizio grazie alla combinazione di prezzo relativamente basso e costruzione semplice. Questa versione grande della Hauler offre il miglior compromesso tra prezzo e spazio per il carico.",
+   "ratio": 1.016
+  },
+  {
+   "idx": 5,
+   "id": "ship:Hawk|description|2335|0",
+   "path": "data/human/ships.txt",
+   "line": 2335,
+   "kind": "DESCRIPTION",
+   "context": "ship:Hawk",
+   "english": "The Tarazed Hawk is an interceptor-class warship often used as an escort for freighters or in a planetary militia's patrol squadron. Hawks are fast enough to chase down most smaller ships, but are capable of mounting much more powerful weapons. They are also, of course, a favorite ship of pirate captains who have earned enough money to afford one.",
+   "italian": "La Tarazed Hawk è una nave da guerra di classe intercettore, spesso usata come scorta per le navi da carico o negli squadroni di pattuglia di una milizia planetaria. Le Hawk sono abbastanza veloci da raggiungere la maggior parte delle navi più piccole, ma possono montare armi molto più potenti. Sono anche, naturalmente, una nave preferita dai capitani pirata che hanno guadagnato abbastanza da potersela permettere.",
+   "ratio": 1.195
+  },
+  {
+   "idx": 6,
+   "id": "ship:Headhunter|description|2389|0",
+   "path": "data/human/ships.txt",
+   "line": 2389,
+   "kind": "DESCRIPTION",
+   "context": "ship:Headhunter",
+   "english": "The Headhunter is one of the newest ships designed by Lionheart: a versatile ship that can serve equally well for carrying cargo or for bounty hunting. As with many of Lionheart's designs, the hull is mostly composite fiber rather than metal, sacrificing armor strength for the sake of lighter weight and faster movement.",
+   "italian": "La Headhunter è una delle navi più recenti progettate dalla Lionheart: una nave versatile che va bene sia per trasportare carico sia per la caccia ai ricercati. Come in molti progetti Lionheart, lo scafo è in gran parte fibra composita anziché metallo, sacrificando la robustezza dell'armatura in favore di un peso minore e di un movimento più rapido.",
+   "ratio": 1.093
+  },
+  {
+   "idx": 7,
+   "id": "ship:Heavy Shuttle|description|2433|0",
+   "path": "data/human/ships.txt",
+   "line": 2433,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heavy Shuttle",
+   "english": "The Heavy Shuttle is an updated shuttle model from Betelgeuse Shipyards, attempting to improve on their perennial classic by offering slightly better cargo and passenger capacity, at the expense of some speed and maneuverability.",
+   "italian": "La Heavy Shuttle è un modello di shuttle aggiornato dei Betelgeuse Shipyards, che cerca di migliorare il loro classico senza tempo offrendo capacità di carico e di passeggeri leggermente superiori, a scapito di un po' di velocità e manovrabilità.",
+   "ratio": 1.074
+  },
+  {
+   "idx": 8,
+   "id": "ship:Hogshead|description|2490|0",
+   "path": "data/human/ships.txt",
+   "line": 2490,
+   "kind": "DESCRIPTION",
+   "context": "ship:Hogshead",
+   "english": "First manufactured by a forgotten shipyard many centuries ago, the Hogshead got its iconic name from the keg-like shape of its engine pods; its design was a hot topic of discussion for captains everywhere. The ship quickly became popular after first being released for consumer purchase and was commonly seen around various systems as the go-to \"space bus\" in human space.",
+   "italian": "Costruita per la prima volta da un cantiere ormai dimenticato molti secoli fa, la Hogshead ha preso il suo nome iconico dalla forma a botte dei suoi pod motore; il suo progetto fu un argomento di discussione molto acceso tra i capitani di ogni dove. La nave divenne rapidamente popolare dopo essere stata messa in vendita al pubblico, ed era comunemente vista nei vari sistemi come lo \"spazio-bus\" d'elezione nello spazio umano.",
+   "ratio": 1.151
+  },
+  {
+   "idx": 9,
+   "id": "ship:Hogshead|description|2491|0",
+   "path": "data/human/ships.txt",
+   "line": 2491,
+   "kind": "DESCRIPTION",
+   "context": "ship:Hogshead",
+   "english": "\tUnfortunately, only a few decades after introducing the ship, the shipyard went bankrupt and was never heard from again, leaving the Hogshead to history as their one-hit-wonder. In the current era, Hogsheads are much less common; they are considered \"unsightly\" compared to modern vessels such as the Star Queen, though a few places in human space still sell them.",
+   "italian": "\tPurtroppo, solo pochi decenni dopo l'introduzione della nave, il cantiere fallì e non se ne seppe più nulla, lasciando la Hogshead alla storia come il loro unico successo. Nell'epoca attuale le Hogshead sono molto meno comuni; sono considerate \"brutte\" rispetto a navi moderne come la Star Queen, anche se alcuni posti nello spazio umano le vendono ancora.",
+   "ratio": 0.978
+  },
+  {
+   "idx": 10,
+   "id": "ship:Jackal|description|2541|0",
+   "path": "data/human/ships.txt",
+   "line": 2541,
+   "kind": "DESCRIPTION",
+   "context": "ship:Jackal",
+   "english": "The Jackal is notable for being one of the earliest warships that was designed with \"freelancer\" pilots in mind, rather than for corporate or law enforcement use. In its heyday, the Jackal contended with the Berserker for the title of the most popular Interceptor-class ship in human space. However, the Jackal's age and inflexibility regarding new developments in weaponry led to a decline in sales that eventually saw its manufacturer absorbed by the shipyard of its age-old rival, the Betelgeuse Shipyards Berserker.",
+   "italian": "La Jackal è nota per essere una delle prime navi da guerra progettate pensando ai piloti \"freelance\", anziché all'uso aziendale o delle forze dell'ordine. Ai suoi tempi d'oro la Jackal contendeva alla Berserker il titolo di nave intercettore più diffusa nello spazio umano. Tuttavia l'età della Jackal e la sua rigidità di fronte ai nuovi sviluppi delle armi portarono a un calo delle vendite che finì per far assorbire il produttore dal cantiere del suo rivale di vecchia data, la Betelgeuse Shipyards Berserker.",
+   "ratio": 0.988
+  },
+  {
+   "idx": 11,
+   "id": "ship:Lance|description|2587|0",
+   "path": "data/human/ships.txt",
+   "line": 2587,
+   "kind": "DESCRIPTION",
+   "context": "ship:Lance",
+   "english": "The Lance is the primary fighter used by the Republic Navy. As with all fighters, it is weak by itself but very effective as part of a larger squadron.",
+   "italian": "La Lance è il caccia principale usato dalla Marina della Repubblica. Come tutti i caccia, è debole da sola ma molto efficace come parte di uno squadrone più grande.",
+   "ratio": 1.086
+  },
+  {
+   "idx": 12,
+   "id": "ship:Lance|description|2588|0",
+   "path": "data/human/ships.txt",
+   "line": 2588,
+   "kind": "DESCRIPTION",
+   "context": "ship:Lance",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI caccia non sono dotati di iperguida. Non puoi trasportare un caccia a meno che tu non abbia nella tua flotta una nave con una baia di caccia.",
+   "ratio": 1.083
+  },
+  {
+   "idx": 13,
+   "id": "ship:Leviathan|description|2649|0",
+   "path": "data/human/ships.txt",
+   "line": 2649,
+   "kind": "DESCRIPTION",
+   "context": "ship:Leviathan",
+   "english": "The Betelgeuse Shipyards Leviathan has been in service since long before the Republic existed. Although considered today to be an outdated and clunky model, it is still a force to be reckoned with.",
+   "italian": "La Betelgeuse Shipyards Leviathan è in servizio da molto prima che la Repubblica esistesse. Sebbene oggi sia considerata un modello superato e goffo, resta una forza con cui fare i conti.",
+   "ratio": 0.949
+  },
+  {
+   "idx": 14,
+   "id": "ship:Mammoth|description|2723|0",
+   "path": "data/human/ships.txt",
+   "line": 2723,
+   "kind": "DESCRIPTION",
+   "context": "ship:Mammoth",
+   "english": "This is a rare, extensively modified Behemoth used by some pirates and smugglers to transport large amounts of goods to systems both near and far. It is armed well enough to handle even a Navy Frigate if caught and fast enough to dash away from anything bigger.",
+   "italian": "Questa è una Behemoth rara e ampiamente modificata, usata da alcuni pirati e contrabbandieri per trasportare grandi quantità di merci verso sistemi vicini e lontani. È armata abbastanza bene da affrontare persino una Frigate della Marina se viene intercettata, e abbastanza veloce da fuggire da qualsiasi cosa più grande.",
+   "ratio": 1.23
+  },
+  {
+   "idx": 15,
+   "id": "ship:Manta|description|2780|0",
+   "path": "data/human/ships.txt",
+   "line": 2780,
+   "kind": "DESCRIPTION",
+   "context": "ship:Manta",
+   "english": "After their Quicksilver light warship with its armament of Particle Cannons became a large success with convoy escorts and planetary defense forces, Megaparsec decided to develop a larger ship with similar maneuverability but heavier firepower. The Manta is the result: a ship with enough long-range firepower that fleeing from a battle with it is almost impossible.",
+   "italian": "Dopo che la loro Quicksilver, nave da guerra leggera armata con cannoni a particelle, ebbe grande successo tra le scorte dei convogli e le forze di difesa planetarie, la Megaparsec decise di sviluppare una nave più grande con manovrabilità simile ma potenza di fuoco superiore. La Manta è il risultato: una nave con abbastanza potenza a lungo raggio che fuggire da uno scontro con lei è quasi impossibile.",
+   "ratio": 1.107
+  },
+  {
+   "idx": 16,
+   "id": "ship:Mining Drone|description|2816|0",
+   "path": "data/human/ships.txt",
+   "line": 2816,
+   "kind": "DESCRIPTION",
+   "context": "ship:Mining Drone",
+   "english": "The semi-autonomous Mining Drone is used by the Syndicate alongside the Sunder mining vessel in a supportive role. Not being much more than a Mining Laser with an engine stuck to the rear of it, these drones do not last long in combat with other ships due to how fragile they are.",
+   "italian": "Il Mining Drone semi-autonomo è usato dal Sindacato insieme alla nave mineraria Sunder in un ruolo di supporto. Non essendo molto più di un Mining Laser con un motore attaccato dietro, questi droni non durano a lungo in combattimento contro altre navi, tanto sono fragili.",
+   "ratio": 0.971
+  },
+  {
+   "idx": 17,
+   "id": "ship:Mining Drone|description|2817|0",
+   "path": "data/human/ships.txt",
+   "line": 2817,
+   "kind": "DESCRIPTION",
+   "context": "ship:Mining Drone",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "italian": "\tI droni non sono dotati di iperguida. Non puoi trasportare un drone a meno che tu non abbia nella tua flotta una nave con una baia per droni.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 18,
+   "id": "ship:Modified Argosy|plural|2822|0",
+   "path": "data/human/ships.txt",
+   "line": 2822,
+   "kind": "VALUE",
+   "context": "ship:Modified Argosy",
+   "english": "Modified Argosies",
+   "italian": "Modified Argosies",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "ship:Modified Argosy|description|2881|0",
+   "path": "data/human/ships.txt",
+   "line": 2881,
+   "kind": "DESCRIPTION",
+   "context": "ship:Modified Argosy",
+   "english": "The Argosy has long been a favorite ship for pirates, who have come up with many tricks for modifying them to be more suitable as warships.",
+   "italian": "L'Argosy è da tempo una nave preferita dai pirati, che hanno escogitato molti trucchi per modificarle e renderle più adatte alla guerra.",
+   "ratio": 0.978
+  },
+  {
+   "idx": 20,
+   "id": "ship:Monitor|description|2941|0",
+   "path": "data/human/ships.txt",
+   "line": 2941,
+   "kind": "DESCRIPTION",
+   "context": "ship:Monitor",
+   "english": "When the Republic first formed, planetary governments and corporations often fielded their own fleets; only the Deep had any form of a combined navy. Earth often found itself inefficiently directing those fleets to fight against pirates or defiant worlds. With a need to bring \"peace among the stars,\" per the Republic motto, the newly formed Republic Navy commissioned the shipyards on Luna to design a robust warship that would be able to project the power of a united Republic. The resulting ship, the Monitor, served as the mainstay of the Navy fleets until the introduction of the more advanced Frigate.",
+   "italian": "Quando la Repubblica si formò, i governi planetari e le corporazioni schieravano spesso flotte proprie; solo il Deep aveva una qualche forma di marina unificata. La Terra si trovava spesso a dirigere in modo inefficiente quelle flotte contro pirati o mondi ribelli. Con la necessità di portare \"pace tra le stelle\", secondo il motto della Repubblica, la neonata Marina della Repubblica commissionò ai cantieri di Luna una nave da guerra robusta, capace di proiettare la potenza di una Repubblica unita. La nave che ne risultò, la Monitor, fu il pilastro delle flotte della Marina fino all'introduzione della più avanzata Frigate.",
+   "ratio": 1.035
+  },
+  {
+   "idx": 21,
+   "id": "ship:Monitor|description|2942|0",
+   "path": "data/human/ships.txt",
+   "line": 2942,
+   "kind": "DESCRIPTION",
+   "context": "ship:Monitor",
+   "english": "The few Monitors that still fly today are remnants of those sold by the Navy to the government of Betelgeuse, before they joined the Republic. Of the Monitors that made it into private hands, some eventually found themselves passing through the black markets of the Far North.",
+   "italian": "I pochi Monitor che volano ancora oggi sono quel che resta di quelli venduti dalla Marina al governo di Betelgeuse, prima che si unisse alla Repubblica. Di quelli finiti in mani private, alcuni sono passati per i mercati neri dell'Estremo Nord.",
+   "ratio": 0.884
+  },
+  {
+   "idx": 22,
+   "id": "ship:Mule|description|3007|0",
+   "path": "data/human/ships.txt",
+   "line": 3007,
+   "kind": "DESCRIPTION",
+   "context": "ship:Mule",
+   "english": "The Mule is as much of a hodgepodge as its looks suggest. The Lionheart ship designers combined a good deal of cargo space with a decent amount of weaponry and even a fighter bay, and ended up with a ship that is mostly used as a freighter but can also be used as a warship because of its heavy armament and shields. This hodgepodge nature has its downside, though, namely its high crew requirement and the fact that any dedicated ship of the same cost will do better in a specialized role than the Mule will.",
+   "italian": "La Mule è un guazzabuglio quanto il suo aspetto suggerisce. I progettisti della Lionheart hanno unito un buon spazio per il carico a un armamento decente e persino a una baia di caccia, ottenendo una nave usata per lo più come cargo ma capace anche di combattere, grazie all'armamento pesante e agli scudi. Questa natura ibrida ha però il suo rovescio, cioè l'elevato fabbisogno di equipaggio e il fatto che qualsiasi nave specializzata dello stesso costo farà meglio della Mule nel suo ruolo.",
+   "ratio": 0.969
+  },
+  {
+   "idx": 23,
+   "id": "ship:Nest|description|3071|0",
+   "path": "data/human/ships.txt",
+   "line": 3071,
+   "kind": "DESCRIPTION",
+   "context": "ship:Nest",
+   "english": "Southbound Shipyards quickly answered the Free Worlds' call for a carrier by building modified cargo containers for Haulers - adding a pair of Fighter docking arms, some additional outfit space, and even a couple of bunks. Access to the fighters from within the ship is so inconvenient that most pilots opt to just stay aboard their fighters when in flight. While the technical name for this ship is \"Hauler I: Type F,\" Southbound assembly workers started calling the single container variant the \"Nest\" due to its complement of Finch Fighters, and the name stuck.",
+   "italian": "I Southbound Shipyards risposero in fretta alla richiesta di una portatrice da parte dei Mondi Liberi costruendo container da carico modificati per le Hauler: aggiunsero un paio di bracci di attracco per caccia, un po' di spazio per equipaggiamenti e persino un paio di cuccette. L'accesso ai caccia dall'interno della nave è così scomodo che la maggior parte dei piloti sceglie di restare a bordo dei propri caccia in volo. Sebbene il nome tecnico di questa nave sia \"Hauler I: Type F\", gli operai della linea di montaggio Southbound iniziarono a chiamare la variante a container singolo \"Nest\" per via del suo equipaggio di caccia Finch, e il nome rimase.",
+   "ratio": 1.165
+  },
+  {
+   "idx": 24,
+   "id": "ship:Nighthawk|description|3131|0",
+   "path": "data/human/ships.txt",
+   "line": 3131,
+   "kind": "DESCRIPTION",
+   "context": "ship:Nighthawk",
+   "english": "The Nighthawk is the result of modifications to increase a Blackbird's passenger capacity for transportation of both lawless individuals and slavery, sacrificing much of the original cargo space. Additionally, at the cost of some shield strength, hull conversions have given the ship a bit more armor plating, along with another turret mount. This gives Nighthawks a bit more defense for combat situations that a Blackbird would not want to find itself in.",
+   "italian": "La Nighthawk è il risultato di modifiche per aumentare la capacità passeggeri di una Blackbird, per il trasporto sia di individui fuorilegge sia di schiavi, sacrificando gran parte dello spazio per il carico originale. Inoltre, a costo di un po' di robustezza degli scudi, le conversioni dello scafo hanno dato alla nave un po' più di corazzatura e un altro alloggiamento per torretta. Questo dà alle Nighthawk un po' più di difesa nelle situazioni di combattimento in cui una Blackbird non vorrebbe trovarsi.",
+   "ratio": 1.116
+  },
+  {
+   "idx": 25,
+   "id": "ship:Osprey|description|3193|0",
+   "path": "data/human/ships.txt",
+   "line": 3193,
+   "kind": "DESCRIPTION",
+   "context": "ship:Osprey",
+   "english": "After the Blackbird gained surprising popularity as an agile light warship despite its original design as a transport, Tarazed decided to produce a new design specifically intended as a warship. The Osprey was the result. Although it is considered overpriced by most savvy pilots, it is nevertheless a perennial favorite among those who have the extra cash to spend on it.",
+   "italian": "Dopo che la Blackbird guadagnò una popolarità sorprendente come nave da guerra leggera e agile, nonostante il progetto originale da trasporto, la Tarazed decise di produrre un progetto pensato espressamente come nave da guerra. La Osprey fu il risultato. Sebbene sia considerata troppo cara dalla maggior parte dei piloti esperti, resta comunque una preferita di sempre tra chi ha soldi extra da spendere.",
+   "ratio": 1.089
+  },
+  {
+   "idx": 26,
+   "id": "ship:Protector|description|3258|0",
+   "path": "data/human/ships.txt",
+   "line": 3258,
+   "kind": "DESCRIPTION",
+   "context": "ship:Protector",
+   "english": "Voted the \"ugliest ship in the sky\" by Stars and Starships Magazine, the Protector is a typical example of brutally efficient Syndicate engineering. It is basically nothing more than eight turrets attached to a set of engines and crew's quarters, designed as a defense platform that can accompany merchant convoys.",
+   "italian": "Votata \"la nave più brutta del cielo\" dalla rivista Stars and Starships, la Protector è un tipico esempio dell'ingegneria del Sindacato, brutalmente efficiente. In pratica non è altro che otto torrette attaccate a un insieme di motori e alloggi dell'equipaggio, progettata come piattaforma di difesa che possa accompagnare i convogli mercantili.",
+   "ratio": 1.099
+  },
+  {
+   "idx": 27,
+   "id": "ship:Quicksilver|description|3305|0",
+   "path": "data/human/ships.txt",
+   "line": 3305,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quicksilver",
+   "english": "The Megaparsec Quicksilver is a warship built around a single concept: to design the smallest and fastest ship capable of carrying two Particle Cannons. Because of its speed, reverse thrusters, and long weapons range, the Quicksilver can keep a safe distance from most targets and bombard them with particle bursts until they are destroyed. The focus on its weaponry left the Quicksilver with no room for even the most basic shield generator. Unfortunately the Headhunter eventually surpassed the original design intent, but the Quicksilver's better durability to cost ratio, and the existence of long-term contracts, has kept it in use with Syndicate security forces.",
+   "italian": "La Megaparsec Quicksilver è una nave da guerra costruita attorno a un solo concetto: progettare la nave più piccola e veloce capace di portare due cannoni a particelle. Grazie alla velocità, ai propulsori inversi e alla lunga portata delle armi, la Quicksilver può tenersi a distanza di sicurezza dalla maggior parte dei bersagli e bombardarli con raffiche di particelle finché non sono distrutti. L'attenzione alle armi ha lasciato alla Quicksilver non spazio nemmeno per il più semplice generatore di scudi. Purtroppo la Headhunter finì per superare l'intento progettuale originale, ma il miglior rapporto durabilità-costo della Quicksilver, e l'esistenza di contratti a lungo termine, l'hanno mantenuta in uso presso le forze di sicurezza del Sindacato.",
+   "ratio": 1.132
+  },
+  {
+   "idx": 28,
+   "id": "ship:Rainmaker|description|3364|0",
+   "path": "data/human/ships.txt",
+   "line": 3364,
+   "kind": "DESCRIPTION",
+   "context": "ship:Rainmaker",
+   "english": "The Rainmaker is a missile boat built in the Republic Navy Yard. It comes equipped with four missile launchers and enough ammunition to destroy even ships many times its size. Because of their lack of maneuverability and relatively light shielding, Rainmakers serve best as long-range attack ships, and once their missile supply is spent, they are relatively useless in combat.",
+   "italian": "La Rainmaker è una lanciamissili costruita nell'Arsenale della Marina della Repubblica. Viene fornita con quattro lanciatori di missili e munizioni sufficienti a distruggere anche navi molte volte più grandi. A causa della scarsa manovrabilità e degli scudi relativamente leggeri, le Rainmaker rendono al meglio come navi d'attacco a lungo raggio, e una volta esaurite le munizioni sono relativamente inutili in combattimento.",
+   "ratio": 1.13
+  },
+  {
+   "idx": 29,
+   "id": "ship:Raven|description|3422|0",
+   "path": "data/human/ships.txt",
+   "line": 3422,
+   "kind": "DESCRIPTION",
+   "context": "ship:Raven",
+   "english": "The Lionheart Raven is their most popular warship, an agile and elegant vessel that can nevertheless deal out and absorb considerable damage. Ravens are a favorite ship for bounty hunters, because they are more than a match for pirate interceptors and can be used by a skilled pilot to take down much larger ships as well.",
+   "italian": "La Lionheart Raven è la loro nave da guerra più diffusa, un vascello agile ed elegante che però sa infliggere e assorbire danni considerevoli. Le Raven sono una nave preferita dai cacciatori di taglie, perché sono più che all'altezza degli intercettori pirata e un pilota abile può usarle per abbattere anche navi molto più grandi.",
+   "ratio": 1.028
+  }
+ ]
+}

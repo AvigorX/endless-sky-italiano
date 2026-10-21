@@ -1,0 +1,141 @@
+{
+ "block": {
+  "path": "data/incipias/incipias ships.txt",
+  "line_from": 15,
+  "line_to": 268,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Venta|plural|15|0",
+   "path": "data/incipias/incipias ships.txt",
+   "line": 15,
+   "kind": "VALUE",
+   "context": "ship:Venta",
+   "english": "Ventae",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\t\"plural\" \"Ventae\"",
+   "english_hash": "dc76363fedc0f1b3"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Venta|description|70|0",
+   "path": "data/incipias/incipias ships.txt",
+   "line": 70,
+   "kind": "DESCRIPTION",
+   "context": "ship:Venta",
+   "english": "When the Hicemus came to power they needed a ship to symbolize their strength. With six guns, the Venta is the most powerful ship in the Incipias' history. Thanks to its sleek and aerodynamic design it is as comfortable hunting down outlaws in space as in the clouds of a gas giant.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"When the Hicemus came to power they needed a ship to symbolize their strength. With six guns, the Venta is the most powerful ship in the Incipias' history. Thanks to its sleek and aerodynamic design it is as comfortable hunting down outlaws in space as in the clouds of a gas giant.\"",
+   "english_hash": "905aa911e649a27b"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Nimbus|plural|73|0",
+   "path": "data/incipias/incipias ships.txt",
+   "line": 73,
+   "kind": "VALUE",
+   "context": "ship:Nimbus",
+   "english": "Nimbi",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\t\"plural\" \"Nimbi\"",
+   "english_hash": "a693fd433bc7af40"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Nimbus|description|124|0",
+   "path": "data/incipias/incipias ships.txt",
+   "line": 124,
+   "kind": "DESCRIPTION",
+   "context": "ship:Nimbus",
+   "english": "The Nimbus is the first spaceship that the Incipias built that was truly able to navigate through a system. Since it was first manufactured it has been cherished among wealthier captains and a dream of captains just starting out.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Nimbus is the first spaceship that the Incipias built that was truly able to navigate through a system. Since it was first manufactured it has been cherished among wealthier captains and a dream of captains just starting out.\"",
+   "english_hash": "59c0174d91b79e7e"
+  },
+  {
+   "idx": 5,
+   "id": "ship:Nimbus|description|125|0",
+   "path": "data/incipias/incipias ships.txt",
+   "line": 125,
+   "kind": "DESCRIPTION",
+   "context": "ship:Nimbus",
+   "english": "\tAlthough the Nimbus is labeled as a medium warship, it is multipurpose; whether one uses it for mining, passenger transport or cargo, it will perform its job nicely. It is only occasionally used in combat because the Incipias are not currently fighting open wars.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tAlthough the Nimbus is labeled as a medium warship, it is multipurpose; whether one uses it for mining, passenger transport or cargo, it will perform its job nicely. It is only occasionally used in combat because the Incipias are not currently fighting open wars.\"",
+   "english_hash": "18e0c58b8f45d6f8"
+  },
+  {
+   "idx": 6,
+   "id": "ship:Nimbo Stratus|plural|147|0",
+   "path": "data/incipias/incipias ships.txt",
+   "line": 147,
+   "kind": "VALUE",
+   "context": "ship:Nimbo Stratus",
+   "english": "Nimbo Strati",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\t\"plural\" \"Nimbo Strati\"",
+   "english_hash": "9993b6a4d203ce3d"
+  },
+  {
+   "idx": 7,
+   "id": "ship:Nimbo Stratus|description|187|0",
+   "path": "data/incipias/incipias ships.txt",
+   "line": 187,
+   "kind": "DESCRIPTION",
+   "context": "ship:Nimbo Stratus",
+   "english": "Mining has always been a big business in Incipias society, which is why the Nimbo Stratus is the most common ship for beginning captains. Its cheap price tag and ability to bring money in quickly ensure its continuing popularity. While the Stratus could theoretically be used in combat, it stands no chance against the Nimbus and therefore has never been used by the Hicemus military forces.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Mining has always been a big business in Incipias society, which is why the Nimbo Stratus is the most common ship for beginning captains. Its cheap price tag and ability to bring money in quickly ensure its continuing popularity. While the Stratus could theoretically be used in combat, it stands no chance against the Nimbus and therefore has never been used by the Hicemus military forces.\"",
+   "english_hash": "9568810eeebde01c"
+  },
+  {
+   "idx": 8,
+   "id": "ship:Nimbo Cirrus|plural|190|0",
+   "path": "data/incipias/incipias ships.txt",
+   "line": 190,
+   "kind": "VALUE",
+   "context": "ship:Nimbo Cirrus",
+   "english": "Nimbo Cirri",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\t\"plural\" \"Nimbo Cirri\"",
+   "english_hash": "d5a396bc96aca7da"
+  },
+  {
+   "idx": 9,
+   "id": "ship:Nimbo Cirrus|description|228|0",
+   "path": "data/incipias/incipias ships.txt",
+   "line": 228,
+   "kind": "DESCRIPTION",
+   "context": "ship:Nimbo Cirrus",
+   "english": "When Pon'tes was built, the need arose for a ship that could carry large amounts of material and supplies into orbit. When the Nimbus proved insufficient at this task, the Nimbo Cirrus, a specialized cargo ship, was built. The inhabitants of Pon'tes rely on its regular deliveries for basic goods and equipment.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"When Pon'tes was built, the need arose for a ship that could carry large amounts of material and supplies into orbit. When the Nimbus proved insufficient at this task, the Nimbo Cirrus, a specialized cargo ship, was built. The inhabitants of Pon'tes rely on its regular deliveries for basic goods and equipment.\"",
+   "english_hash": "3e24a05e6f808f74"
+  },
+  {
+   "idx": 10,
+   "id": "ship:Gero|description|268|0",
+   "path": "data/incipias/incipias ships.txt",
+   "line": 268,
+   "kind": "DESCRIPTION",
+   "context": "ship:Gero",
+   "english": "The completion of Pon'tes caused a huge increase in travel between the station and Redias. Designers from Alto Shipyards quickly saw an opportunity and so the Incipias' first transport ship was built.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The completion of Pon'tes caused a huge increase in travel between the station and Redias. Designers from Alto Shipyards quickly saw an opportunity and so the Incipias' first transport ship was built.\"",
+   "english_hash": "e85988d844e85002"
+  }
+ ]
+}

@@ -1,0 +1,1718 @@
+# Copyright (c) 2014 by Michael Zahniser
+# Copyright (c) 2020 by @Karirawri
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Deep Archaeology 1"
+	name "Archeologia nel Deep"
+	description "Lascia questo archeologo su <destination>, prima di fare un viaggio su Midgard, nel Deep, per raccogliere dei campioni."
+	minor
+	source
+		attributes "paradise" "north" "near earth"
+		near Miaplacidus 1 20
+	destination Vinci
+	to offer
+		random < 15
+		"combat rating" > 15
+	passengers 1
+	
+	on offer
+		conversation
+			`Mentre attraversi lo spazioporto, un uomo in un abito costoso ti si avvicina. "Mi scusi, capitano," dice. "Mi chiedevo se sarebbe disposto a parlare in privato di un'opportunità di lavoro molto redditizia."`
+			choice
+				`	"Si tratta di qualcosa di illegale?"`
+				`	"Certo, torniamo sulla mia nave e parliamo lì."`
+					goto ship
+			`	"Non illegale," dice, "ma potrebbe aiutare a scoprire un segreto dalle enormi conseguenze. Un segreto che certa gente non vuole che si conosca."`
+			`	"Va bene," dici, "torniamo sulla mia nave e ti ascolto."`
+			label ship
+			`	Lo accompagni sulla tua nave. "Sono un archeologo," spiega, "e studio la storia antica dell'era spaziale. In particolare, una serie di leggende ricorrenti sui contatti con specie aliene. Molte di queste leggende riguardano la regione della galassia che chiamiamo il Deep. Ho bisogno di qualcuno che vada su Midgard a recuperare dei campioni da un sito antico."`
+			choice
+				`	"Perché non ci vai tu?"`
+				`	"Che tipo di campioni? Mi metterò nei guai?"`
+					goto samples
+			`	"Beh, diciamo che mi sono reso un po' impopolare nel Deep," dice. "Troppe domande. Se mi vedessero camminare per Midgard, probabilmente mi chiederebbero di andarmene subito."`
+			`	Dici: "E il lavoro che mi stai chiedendo mi renderà altrettanto impopolare?"`
+			label samples
+			`	"Non se sei discreto," dice. "Mi servono due campioni da un certo villaggio. Uno è semplice: legno di un albero vivo o morto da poco. Va bene qualsiasi albero."`
+			`	Si ferma un minuto, poi continua. "L'altro è più... delicato. Su Midgard c'è un sito storico, una chiesa antica. Non una di quelle che pubblicano nelle guide turistiche ufficiali, sia chiaro. Mi serve un piccolo campione del legno con cui è costruita la chiesa. Basterebbe una piccola scheggia."`
+			choice
+				`	"Certo, se è per la scienza, posso farlo."`
+					goto yes
+				`	"Mi stai chiedendo di vandalizzare un sito storico?"`
+			`	"Mi serve solo il più piccolo dei campioni," dice, "magari una scheggia di legno che si sta già staccando, o da un punto in cui il legno è consumato e crepato. E quello che scopriremo da quel campione potrebbe essere di immensa importanza."`
+			choice
+				`	"Mi dispiace, mi sembra un po' troppo losco."`
+					decline
+				`	"Va bene, sono disposto a farlo."`
+			label yes
+			`	"Grazie," dice. "Fidati, potrebbe darci informazioni molto importanti. Prima devo chiederti di lasciarmi su Vinci, per incontrare alcuni scienziati. Poi ci ritroveremo su Vinci quando avrai i campioni."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta con l'archeologo non è ancora entrata nel sistema. Meglio partire e aspettarla.`
+
+
+
+mission "Deep Archaeology 2"
+	landing
+	name "Archeologia nel Deep"
+	description "Viaggia verso <destination> e prendi campioni di fibra di legno da una chiesa antica e dagli alberi che crescono lì intorno."
+	source Vinci
+	destination Midgard
+	to offer
+		has "Deep Archaeology 1: done"
+	
+	on offer
+		conversation
+			`Lasci l'archeologo (che non ti ha ancora detto il suo nome) su <origin>. "Ricorda," dice, "mi serve solo una piccola scheggia. Assicurati che venga davvero dall'edificio e non da qualcosa di più recente."`
+				accept
+
+
+
+mission "Deep Archaeology 3"
+	landing
+	name "Archeologia nel Deep"
+	description "Torna su <destination> con i campioni di legno che hai prelevato dalla chiesa su <origin>."
+	source Midgard
+	destination Vinci
+	to offer
+		has "Deep Archaeology 2: done"
+	
+	on offer
+		conversation
+			`Seguendo la mappa che ti ha dato l'archeologo, raggiungi un piccolo villaggio tra le montagne di <origin>, con due buste in tasca per i campioni. Mentre ti avvicini alla chiesa, stacchi un rametto secco da uno degli alberi lungo il sentiero, lo metti nella prima busta e la infili in tasca. Un campione raccolto, ne manca uno.`
+			`	La chiesa in sé non somiglia a nessun edificio che tu abbia mai visto: chiaramente antichissima, costruita con legno tagliato grossolanamente, vecchio e consumato dalle intemperie. Sorprendentemente, le porte principali sono aperte, e da dentro arriva della musica.`
+			choice
+				`	(Entra nella chiesa.)`
+					goto inside
+				`	(Prendi un campione dall'esterno.)`
+				`	(Rinuncia a questa missione e vattene, prima che mi metta nei guai.)`
+					decline
+			`	Giri intorno all'edificio finché non trovi un angolo in cui il legno è stato scalfito di recente e qualche scheggia pende staccata. Stacchi con cura le schegge e le metti nella seconda busta. Poi torni alla tua nave. Anche se non vedi nessuno seguirti, non riesci a scuoterti di dosso la sensazione di essere osservato.`
+				accept
+			label inside
+			`	Questa chiesa deve essere ancora usata per le funzioni: ci sono candele accese davanti e un uomo in cotta bianca suona l'organo. Qualche persona siede sulle panche a capo chino. Cercando di essere il meno appariscente possibile, ti unisci a loro e ti guardi intorno tra colonne e pannelli di legno finemente intagliati. L'aria qui dentro sa di incenso e di legno ammuffito.`
+			choice
+				`	(Prendi un campione.)`
+				`	(Rinuncia a questa missione e vattene.)`
+					decline
+			`	Fingendo di pregare, ti inginocchi, prendi il temperino e raschi la scheggia più sottile dall'angolo inferiore della panca davanti a te. Resta una piccola cicatrice chiara nel legno scuro e consumato. Metti il campione in tasca, aspetti ancora qualche minuto, poi esci e torni allo spazioporto. Anche se non vedi nessuno seguirti, non riesci a scuoterti di dosso la sensazione di essere osservato.`
+				accept
+	
+	npc
+		personality waiting
+		government "Deep Security"
+		ship "Raven (Afterburner)" "D.S.S. Wyrd"
+		on kill
+			set "dps wyrd dead"
+	
+	npc
+		personality waiting
+		system "Aspidiske"
+		government "Deep Security"
+		ship "Raven (Afterburner)" "D.S.S. Skuld"
+		on kill
+			set "dps skuld dead"
+	
+	npc
+		personality waiting
+		system "Gomeisa"
+		government "Deep Security"
+		ship "Raven (Afterburner)" "D.S.S. Verthandi"
+		on kill
+			set "dps verthandi dead"
+	
+	on complete
+		payment 200000
+		log `Hai accettato di prendere un pezzo di legno da una chiesa su Midgard per un archeologo. La datazione al carbonio suggerisce che la chiesa fu costruita molti secoli prima della scoperta dell'iperpropulsore.`
+		conversation
+			`Torni al laboratorio dove hai lasciato l'archeologo anonimo. Poco dopo il tuo arrivo, compare e prende con entusiasmo i due campioni, dandoti un compenso di <payment> per il disturbo. "Ma per favore," dice, "resta abbastanza da sapere i risultati." Consegna le due buste a un tecnico di laboratorio e dice: "Ecco, John, dai un'occhiata e facci sapere cosa trovi."`
+			`	Dopo che il tecnico se n'è andato, spiega: "Vedi, il rapporto tra carbonio 12 e carbonio 14 varia da mondo a mondo, quindi una datazione accurata si può fare solo se hai un campione di controllo con cui confrontarla. Nel Deep sono stati fatti solo pochi studi archeologici, e sono stati fatti male: usavano le tabelle standard dei rapporti di carbonio terrestri invece di determinare le concentrazioni locali."`
+			choice
+				`	(Aspetta e vedi quali sono i risultati.)`
+			`	Una trentina di minuti dopo, John ricompare, visibilmente scosso. "Dove hai preso quei campioni?" chiede.`
+			`	"Non importa," dice l'archeologo. "Quali sono i tuoi risultati?"`
+			`	"Il secondo campione è impregnato di una specie di olio o catrame," dice. "Una vernice. Quindi viene da un mobile o da un edificio. Un manufatto. Il campione di controllo ha un rapporto isotopico diverso da quello terrestre, quindi, a meno che tu non mi stia prendendo in giro, questi campioni non vengono dalla Terra."`
+			`	"Continua," dice l'archeologo.`
+			`	"Però," dice il tecnico, "sempre supponendo che i due campioni vengano dallo stesso pianeta, il secondo ha tra millecinquecento e duemilacinquecento anni. Il che significa che precede la scoperta dell'iperpropulsore di almeno cinque secoli. Quindi te lo chiedo di nuovo: dove hai preso questi campioni?" Ha la voce alzata.`
+			`	"Intrigante, vero?" dice l'archeologo. "Capitano <last>, se vuoi aiutarci a vederci chiaro, assicurati di avere spazio per noi e per un po' di attrezzatura, e incontraci allo spazioporto."`
+
+
+
+mission "Deep Archaeology 4"
+	name "Archeologia nel Deep"
+	description "Torna su <destination> con un'attrezzatura specializzata per la mappatura del sottosuolo."
+	source Vinci
+	destination Midgard
+	to offer
+		has "Deep Archaeology 3: done"
+	cargo "mapping equipment" 4
+	passengers 2
+	
+	on offer
+		log "People" "Albert Foster" `Un archeologo famoso per i metodi discutibili: è stato bandito dallo spazio Quarg per aver cercato di prelevare un campione di lega dal loro ringworld, e si dice che sia stato coinvolto anche in un affare di fossili di dinosauro e un risequenziatore genetico illegale. Al momento si trova su Vinci, ai margini del settore Paradise.`
+		conversation
+			`Trovi John il tecnico in uno dei bar dello spazioporto, insieme all'archeologo, che dice: "Suppongo di dovermi presentare. Albert Foster. Forse hai sentito parlare di me." In effetti sì: una decina d'anni fa è finito sui giornali perché fu cacciato dallo spazio Quarg dopo aver tentato senza successo di prelevare un campione di lega dal loro ringworld.`
+			`	"Abbiamo comprato un'attrezzatura per la mappatura dei campi gravitazionali," dice, "oltre a un radar molto sensibile. Speriamo di mappare la zona intorno alla chiesa e vedere se ci sono segni di insediamenti antichi. Sei disposto ad aiutarci?"`
+			choice
+				`	"Certo, mi piacerebbe aiutare a risolvere questo mistero."`
+				`	"Mi dispiace, non posso. Temo che faremmo arrabbiare la gente del Deep."`
+					decline
+			`	"Eccellente," dice Albert. "Dobbiamo solo sorvolare <planet> e vedere cosa salta fuori dal radar."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta con Albert, John e l'attrezzatura di mappatura non è ancora entrata nel sistema. Meglio partire e aspettarla.`
+
+
+
+mission "Deep Archaeology 5"
+	landing
+	name "Archeologia nel Deep"
+	description "Eludi le navi che ti inseguono e torna su <destination>."
+	source Midgard
+	destination Vinci
+	to offer
+		has "Deep Archaeology 4: done"
+	cargo "mapping equipment" 4
+	passengers 2
+	
+	on offer
+		conversation
+			`Sorvoli la superficie di <origin> mentre John calibra i suoi strumenti. "Scusa se ci vuole così tanto," dice, "c'è una specie di glitch nei sensori gravitazionali che mi manda all'aria le misure."`
+			`	"Che tipo di glitch?" chiede Albert.`
+			`	"Solo un artefatto del sensore," dice, "una specie di eco. No, aspetta..." Si interrompe e comincia a girare le manopole dello strumento, poi sbianca.`
+			`	Albert si sporge sulla sua spalla per guardare il monitor, ma chiaramente non capisce cosa sta vedendo. "Che cos'è?" chiede.`
+			`	"Non è un glitch del sensore," dice John. "È una singolarità artificiale."`
+			choice
+				`	"Qualche tipo di ricerca illegale?"`
+					goto illegal
+				`	"Una che?"`
+					goto what
+			label illegal
+			`	"No, non illegale," dice Albert. "Non c'è bisogno di farne una legge contro, per il semplice motivo che nessuno sa come costruirle. È tecnologia aliena, molto avanzata."`
+				goto attack
+			label what
+			`	"Un buco nero in miniatura," dice John. "Una fonte di energia aliena. Molto più sofisticata di qualsiasi cosa gli esseri umani abbiano mai creato. A meno che qualcuno nel Deep non abbia trovato il modo di decodificare tecnologia aliena."`
+			label attack
+			`	Improvvisamente sul radar della nave si accende una spia d'allarme. Tre navi sono decollate dalla superficie del pianeta e puntano dritte verso di te. "Andiamocene da qui," dice Albert. "Torna su <planet>!"`
+				launch
+	
+	npc
+		personality heroic
+		government "Deep"
+		ship "Raven (Afterburner)" "D.S.S. Wyrd"
+		to despawn
+			has "dps wyrd dead"
+	npc
+		personality heroic
+		government "Deep"
+		ship "Raven (Afterburner)" "D.S.S. Skuld"
+		to despawn
+			has "dps skuld dead"
+	npc
+		personality heroic
+		government "Deep"
+		ship "Raven (Afterburner)" "D.S.S. Verthandi"
+		to despawn
+			has "dps verthandi dead"
+	npc
+		personality heroic
+		government "Deep"
+		ship "Corvette (Speedy)" "D.S.S. Wyrdson"
+		to despawn
+			not "dps wyrd dead"
+	npc
+		personality heroic
+		government "Deep"
+		ship "Corvette (Speedy)" "D.S.S. Skuldson"
+		to despawn
+			not "dps skuld dead"
+	npc
+		personality heroic
+		government "Deep"
+		ship "Corvette (Speedy)" "D.S.S. Verthandison"
+		to despawn
+			not "dps verthandi dead"
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta con Albert, John e l'attrezzatura di mappatura non è ancora entrata nel sistema. Meglio partire e aspettarla.`
+	on complete
+		payment 300000
+		log `Sei tornato su Midgard con l'archeologo Albert Foster per mappare la zona intorno alla chiesa. Gli strumenti hanno rilevato quello che sembrava una singolarità artificiale. Siete stati cacciati dalle navi del Deep prima di poter guardare più da vicino.`
+		conversation
+			`Tiri un sospiro di sollievo quando atterri sano e salvo allo spazioporto di <planet>. "Bene, che cosa è successo là fuori?" chiedi.`
+			`	"Sinceramente non lo so," dice Albert. "Posso dirti cosa sospetto, però. I libri di storia non dicono quando il Deep sia stato popolato per la prima volta. La prima spedizione documentata nel Deep è del XXIV secolo, e trovarono già diverse colonie umane nella regione, che dicevano di risalire agli albori del volo spaziale. Ma credo che i primi coloni siano stati portati lì molto prima. Portati lì su navi aliene."`
+			branch pug
+				or
+					has "FWC Pug 2: offered"
+					has "FW Pug 3: offered"
+			choice
+				`	"Con quale scopo?"`
+					goto purpose
+				`	"Quali alieni? I Quarg?"`
+					goto aliens
+			label pug
+			choice
+				`	"Con quale scopo?"`
+					goto purpose
+				`	"Pensi che siano stati i Pug?"`
+					goto surprise
+			label purpose
+			`	"Non ne sono sicuro," dice. "Ma ho cominciato a interessarmi al Deep mentre studiavo le Guerre Alpha. Conoscerai la storia: come l'umanità fu quasi ridotta in schiavitù da 'super' umani psicopatici che avevamo creato noi giocando con l'ingegneria genetica. In quel periodo il Deep fece un balzo tecnologico improvviso e improbabile, che gli permise di costruire armi e navi molto più potenti di quelle degli Alpha, e la guerra contro di loro fu vinta."`
+				goto end
+			label aliens
+			`	"Nel Deep ci sono leggende popolari sugli 'elfi'," dice Albert. "Creature sottili, pallide, aggraziate, con il sangue blu."`
+			`	John aggrotto la fronte. "Sangue emocianinico. Allora non sono Quarg. I loro polmoni sono strani, ma il sangue usa l'emoglobina per trasportare l'ossigeno, come il nostro."`
+				goto end
+			label surprise
+			`	Albert e John si scambiano uno sguardo confuso per un secondo, prima che Albert dica: "Gli alieni che hanno invaso lo spazio umano?"`
+			`	John sembra rifletterci intensamente prima di dire: "È certamente un collegamento interessante. Non so come non ci abbiamo pensato. Da quello che ho sentito su di loro, corrispondono quasi esattamente alle leggende del Deep sugli 'elfi'."`
+			`	"Sottili, pallidi e dal sangue blu, giusto? Beh, credo che tu abbia capito qualcosa, capitano <last>," risponde Albert.`
+			choice
+				`	"Ottimo, ma cosa significa per noi?"`
+					goto dangerous
+				`	"Da quello che so, esistono da un pezzo, e hanno parlato di interferenze passate nel Deep."`
+			`	"Beh, allora se i Pug hanno ammesso di aver 'interferito' con il Deep in passato, abbiamo buone ragioni per credere che rientrino nella nostra conoscenza attuale della cronologia di qui," risponde Albert. "Sfortunatamente non possiamo semplicemente chiedere ai Pug cosa hanno fatto esattamente e quando, ma sapere della loro presenza qui aiuta la nostra ricerca."`
+				goto final
+			label dangerous
+			`	"Niente di immediato," dice John, "ma comunque è almeno utile conoscere la cronologia degli eventi qui."`
+			`	"Infatti," risponde Albert, "sapere della loro presenza qui aiuta la nostra ricerca."`
+				goto final
+			label end
+			`	Albert continua: "Quello che penso è che una specie aliena sconosciuta sia stata coinvolta negli eventi del Deep fin dall'inizio, e forse lo è ancora oggi. Penso che almeno alcuni abitanti del Deep lo sappiano."`
+			label final
+			choice
+				`	"Allora, cosa facciamo adesso?"`
+				`	"Come possiamo scoprire di più?"`
+			`	"Beh," dice, "sfortunatamente, capitano, ti terranno d'occhio. Dovrò cercare qualcun altro per le prossime fasi della mia ricerca. Ma ti farò sapere se scopro altro."`
+			`	È una conclusione insoddisfacente per il tuo lavoro, con così tante domande senza risposta. Ma per compensarti, Albert ti dà <payment> come pagamento per i tuoi servizi. "Sentirai ancora parlare di me," promette.`
+
+
+
+ship "Timer Ship"
+	attributes
+		category "Game Mechanics"
+		"heat dissipation" 1
+		"hull" 3
+		"hull repair rate" .001
+		"mass" 100
+		"drag" 5
+		"automaton" 1
+		"thrust" 10
+		"turn" 600
+	outfits
+		"Timer Weapon"
+	gun 0 0
+
+outfit "Timer Weapon"
+	category "Guns"
+	thumbnail "outfit/unknown"
+	"gun ports" -1
+	weapon
+		"velocity" 10
+		"lifetime" 2
+		"reload" 100
+		"blast radius" 10
+		"split range" 200
+		"submunition" "Timer Submunition"
+
+outfit "Timer Submunition"
+	weapon
+		"lifetime" 20
+		"trigger radius" 200
+		"blast radius" 20
+		"hull damage" .15
+		"no damage scaling"
+
+mission "Sad Archie"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "There Might Be Riots part 3B: done"
+	destination "Zug"
+	
+	timer 7200 3600
+		"activation requirements"
+			system "Ildaria"
+			idle
+			uncloaked
+			peaceful
+		on timeup
+			conversation
+				`Mentre la tua nave va alla deriva nella nube di polvere che circonda Ildaria, ti viene in mente che dev'essere la "stella nuvolosa lungo il Bordo" di cui ti aveva parlato Ulrich dei There Might Be Riots. Ricordando la sua storia, chiudi gli occhi e provi a meditare. Ma invece ti addormenti e basta.`
+				scene "scene/eso0"
+				`Sogni di lasciare questo sistema stellare e tornare su Zug, ma quando atterri lì tutto è diverso: le città che ricordi sono sparite, e al loro posto ci sono altre città dall'architettura strana, abitate da creature gigantesche simili a draghi.`
+				`	Il tempo accelera e guardi le città dei draghi crescere e diffondersi. Vedi una città sepolta sotto una colata di lava enorme, con astronavi che le ronzano intorno come uno sciame di mosche per portare persone e merci in salvo. Altre città sono distrutte dalla guerra, e poi all'improvviso il popolo dei draghi non c'è più e le loro città restano vuote. Gli edifici crollano, e le foreste si riprendono la terra.`
+				`	Poi ti svegli e ti ritrovi sulla tua nave, nel sistema Ildaria. Strano.`
+	
+	on complete
+		log `Hai avuto una strana visione mentre andavi alla deriva nel sistema Ildaria, che sembrava la caduta di una civiltà di uomini-drago. Il terreno del pianeta Zug somiglia in modo impressionante a quella visione.`
+		conversation
+			branch tmbr
+				has "Deep Archaeology 5: done"
+			action
+				set "archaeology after TMBR"
+			label tmbr
+			`Per un capriccio, mentre atterri su Zug apri una mappa geologica del pianeta e scopri che la geografia che avevi sognato mentre andavi alla deriva nel sistema Ildaria era sorprendentemente vicina alla realtà. C'è perfino un enorme affioramento di basalto proprio dove hai visto una colata di lava seppellire una città. I sensori della nave, però, non hanno modo di dire cosa c'è sotto.`
+
+
+
+mission "Rim Archaeology Reminder"
+	landing
+	non-blocking
+	name "L'aiuto di Foster?"
+	description "Recati su <destination> e vedi se Albert Foster può aiutarti a scoprire il mistero di Zug."
+	source
+		not planet "Vinci"
+	destination "Vinci"
+	to offer
+		has "archaeology after TMBR"
+		has "Deep Archaeology 5: done"
+	on offer
+		conversation
+			`Mentre la nave si posa su <origin>, ricordi le visioni di una civiltà aliena che hai avuto a Ildaria, e come il terreno che vedevi somigliasse al paesaggio di Zug. Forse Albert Foster può aiutarti a indagare.`
+				accept
+
+
+
+mission "Rim Archaeology 1"
+	landing
+	name "Archeologia su <planet>"
+	description "Porta il famoso archeologo Albert Foster su <destination> per cercare segni di un'antica civiltà aliena."
+	source "Vinci"
+	destination "Zug"
+	passengers 1
+	blocked `Stai per raccontare ad Albert Foster quello che hai trovato su Zug, ma ti rendi conto di non avere una cuccetta libera per portarlo lì! Torna quando avrai spazio.`
+	to offer
+		has "Sad Archie: done"
+		has "Deep Archaeology 5: done"
+		or
+			not "archaeology after TMBR"
+			has "Rim Archaeology Reminder: offered"
+	
+	on offer
+		conversation
+			`Questo pianeta è dove l'archeologo Albert Foster ha il suo laboratorio, quello che ti ha mandato in missione a raccogliere campioni da un pianeta del Deep. Vuoi provare a convincerlo a cercare segni di un'antica civiltà aliena nei sistemi del Bordo?`
+			choice
+				`	(Certo!)`
+				`	(Non ora.)`
+					defer
+			branch recent
+				has "archaeology after TMBR"
+			`	Foster sembra contento di vederti. "È passato un po' di tempo, <first>. Qualcosa ti ha colpito di recente?"`
+				goto interest
+			label recent
+			`	Foster è un po' sorpreso dal tuo arrivo. "Mi scuso, ma non ho fatto progressi nel Deep da quando ci siamo parlati. A meno che tu non abbia qualcos'altro per me?"`
+			label interest
+			`	Fai del tuo meglio per stuzzicare il suo interesse senza dire nulla che gli faccia pensare che sei matto, ma chiaramente non ci crede. "Mi dispiace," dice, "ma non monto una spedizione solo perché hai un 'presentimento'. Quindi, a meno che tu non sia disposto a dirmi la fonte della tua informazione, non mi interessa." Torna a dedicarsi al tablet che stava leggendo prima che entrassi nel suo ufficio.`
+			choice
+				`	"Preferirei non dirlo."`
+				`	"Ho fatto un sogno su uomini-drago su Zug."`
+					goto dream
+				`	"Credo che un alieno telepatico dello spazio mi abbia parlato."`
+					goto telepath
+			`	"Allora preferisco non aiutarti," dice, senza alzare gli occhi dal tablet.`
+			choice
+				`	"Ho fatto un sogno su uomini-drago su Zug."`
+				`	"Credo che un alieno telepatico dello spazio mi abbia parlato."`
+					goto telepath
+			label dream
+			`	"Hai fatto un sogno," dice. "Mi dispiace, no. L'archeologia oneirologica è notoriamente inaffidabile." Dal tono, pensi che stia essere sarcastico.`
+			choice
+				`	"Credo che un alieno telepatico dello spazio mi abbia parlato."`
+					goto telepath
+			label telepath
+			`	Ti aspetti che rida di te, ma invece resta così scioccato che lascia cadere il tablet. "Un Archon?" dice. "Come diavolo hai fatto a finire invischiato con uno di quelli?" Gli racconti la storia, e lui ascolta con attenzione.`
+			`	"È plausibile," dice. "Dai Quarg ci sono arrivati rumori di una civiltà aliena che esisteva nel Bordo, centomila anni fa. Nessuna traccia, naturalmente: qualsiasi manufatto abbiano lasciato è stato distrutto dagli elementi, o forse rimosso di proposito. Ma se una città fosse stata racchiusa nella lava, potrebbe conservare delle tracce anche per un intervallo così lungo."`
+			`	Foster fa qualche telefonata per annullare i suoi prossimi impegni, poi si presenta alla tua nave con un grande set di strumenti per il rilevamento geologico. "Andiamo a dare un'occhiata," dice.`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta con Albert non è ancora entrata nel sistema. Meglio partire e aspettarla.`
+	on complete
+		log `Hai trovato l'archeologo Albert Foster e gli hai raccontato della visione degli uomini-drago su Zug. Foster ha suggerito che la visione sia opera di un Archon. Ha scoperto una città sepolta sotto le colate di lava di Zug; forse la visione era una vera immagine del passato.`
+		conversation
+			`Posi la nave sulla colata di lava, e Albert Foster accende la sua attrezzatura da rilevamento. "Questo mi darà un profilo di densità dei diversi strati di roccia sotto di noi," dice. Mentre abbassa gradualmente lo strumento verso strati sempre più profondi, sullo schermo compaiono alcune macchie bianche irregolari.`
+			choice
+				`	"Cosa sono?"`
+				`	(Sta' zitto e lascialo concentrare.)`
+					goto scan
+			`	"Sacche d'aria," dice, "alcune riempite di acqua sotterranea. Niente di straordinario."`
+			label scan
+			`	Quando la scansione arriva a una trentina di metri sotto la superficie, all'improvviso la vista cambia...`
+			scene "scene/geoscan"
+			`	"Per i grandi soli ardenti!" dice Foster. "C'è qualcosa laggiù! Strade disposte a griglia triangolare. Quella non è una città umana." Restate entrambi a fissare il monitor per un minuto, poi Foster dice: "Devo procurarmi dei permessi. Incontrami allo spazioporto tra un'ora, se sei disposto ad aiutarmi a prendere un po' della nostra altra attrezzatura."`
+
+
+
+mission "Rim Archaeology 2A"
+	name "Attrezzatura archeologica"
+	description "Recupera un'attrezzatura di scavo da <destination> e portala al sito di scavo su Zug."
+	source "Zug"
+	destination "Crossroads"
+	to offer
+		has "Rim Archaeology 1: done"
+	
+	on offer
+		conversation
+			`Quando ti incontri con Foster, ti dice: "La cosa sarà delicata. Dovremo scavare attraverso uno strato di basalto compatto spesso venti metri per arrivare a quelle rovine. Dobbiamo fare in fretta, o i miei concorrenti fiuteranno quello che stiamo facendo e ci batteranno sul tempo. Ma dobbiamo anche lavorare con delicatezza, o danneggeremo quello che c'è sotto. Con gli esplosivi non funzionerà. Credo però che l'attrezzatura per lo scavo a cielo aperto del Sindacato possa fare il lavoro. Riusciresti a prendere una ventina o una trentina di tonnellate di macchinari pesanti su <planet>?"`
+			choice
+				`	"Certo."`
+					accept
+				`	"Mi dispiace, non ho più tempo per aiutare."`
+			`	Sembra incredulo. "Niente tempo per partecipare a quella che potrebbe essere una delle più grandi scoperte degli ultimi cento anni? Sarai anche ben pagato per i tuoi servizi, se è questo che ti trattiene."`
+			choice
+				`	"Va bene, prenderò la tua attrezzatura su <planet>."`
+					accept
+				`	"Mi dispiace, non mi interessa."`
+					decline
+
+
+
+mission "Rim Archaeology 2B"
+	landing
+	name "Attrezzatura archeologica"
+	description "Consegna questa attrezzatura di scavo su <destination>."
+	source "Crossroads"
+	destination "Zug"
+	cargo "Excavation equipment" 28
+	to offer
+		has "Rim Archaeology 2A: done"
+	blocked "Non hai abbastanza spazio nel carico per trasportare l'attrezzatura per lo scavo archeologico di Albert Foster. Torna qui quando avrai almeno 28 tonnellate libere."
+	
+	on offer
+		conversation
+			`Quando arrivi su <origin>, i macchinari da scavo richiesti da Albert Foster ti aspettano già allo spazioporto. Sono tra i più grandi veicoli terrestri che tu abbia mai visto: un camion con enormi ruote dentate per tagliare la pietra, e una pala caricatrice per portare via la pietra sciolta. Riesci a malapena a farli passare dall'ingresso della tua stiva.`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta con l'attrezzatura di scavo non è ancora entrata nel sistema. Meglio partire e aspettarla.`
+	on complete
+		payment 300000
+
+
+
+mission "Rim Archaeology 3A"
+	landing
+	name "Attrezzatura archeologica"
+	description "Recupera un'attrezzatura di scavo da <destination> e portala al sito di scavo su Zug."
+	source "Zug"
+	destination "Asgard"
+	to offer
+		has "Rim Archaeology 2B: done"
+	
+	on offer
+		conversation
+			`Scarichi i macchinari da scavo al sito su Zug e ricevi il tuo pagamento di trecentomila crediti. Foster ha già tracciato le linee di dove vuole scavare e ha completato una scansione geologica molto più dettagliata. "Cominceremo con una trincea stretta," ti dice, "e poi allargheremo. Dovrà essere abbastanza larga da includere una rampa per i veicoli, naturalmente, quindi dovremo comunque spostare molta roccia. E quando arriveremo agli ultimi cinque metri, temo che le vibrazioni delle molatrici possano essere troppo distruttive. Perciò adesso mi serve un'attrezzatura di scavo laser da <planet>."`
+			`	Accetti di andare a prendere l'attrezzatura, e lui comincia a dirigere le squadre di scavo per far partire i lavori.`
+				accept
+
+
+
+mission "Rim Archaeology 3B"
+	landing
+	name "Attrezzatura archeologica"
+	description `Consegna questa attrezzatura di scavo su <destination>. Assicurati che la nave "Oxyrhynchus" non sia nel sistema quando atterri.`
+	source "Asgard"
+	destination "Zug"
+	cargo "Laser excavation equipment" 17
+	to offer
+		has "Rim Archaeology 3A: done"
+	blocked "Non hai abbastanza spazio nel carico per trasportare l'attrezzatura per lo scavo archeologico di Albert Foster. Torna qui quando avrai <capacity>."
+	
+	on offer
+		conversation
+			`Anche questa volta l'attrezzatura che serve a Foster ti aspetta quando atterri. È un camion che trasporta un generatore di corrente e un braccio articolato con un cannone laser montato in punta. Non puoi fare a meno di immaginare cosa succederebbe se si guastasse e cominciasse a sparare dentro la stiva, ma l'ingegnere che te lo consegna ti assicura che ha molti sistemi di sicurezza ridondanti.`
+			`	Ti aspetta anche un messaggio cifrato di Foster: "Ciao, <first>. Mi hanno detto che una mia concorrente, Sibyl Greythatch, sta chiedendo in giro per scoprire dov'è il mio sito di scavo. È una ladra di antichità: saccheggia siti archeologici e vende i reperti al mercato nero. Penso che il mio acquisto di attrezzatura su <origin> possa aver attirato la sua attenzione. Se è così, la sua nave, l'Oxyrhynchus, ti seguirà. Non tornare al sito finché non sei certo di essertela tolta di dosso."`
+				accept
+	
+	npc evade
+		government "Independent (Killable)"
+		personality waiting
+		ship "Marauder Falcon (Engines)" "Oxyrhynchus"
+	
+	on visit
+		dialog
+			`Mentre ti avvicini a Zug, noti sul radar che la nave di cui Foster ti aveva avvertito ti sta seguendo: l'Oxyrhynchus. Atterri allo spazioporto principale per non condurla al sito di scavo. Dovrai seminarla prima di consegnare l'attrezzatura.`
+	
+	on complete
+		payment 300000
+
+
+
+mission "Rim Archaeology 4A"
+	landing
+	name "Trasporta uno xenobiologo"
+	description "Viaggia verso la stazione Quarg <destination> e incontra uno xenobiologo che aiuterà a interpretare i ritrovamenti del sito di scavo di Albert Foster."
+	source "Zug"
+	destination "Lagrange"
+	to offer
+		has "Rim Archaeology 3B: done"
+	
+	on offer
+		conversation
+			`Quando torni allo scavo, la trincea di Foster è già quasi dieci metri di profondità. Gli dici che hai visto l'Oxyrhynchus sugli scanner, ma che sei riuscito a seminarla. "Bel lavoro," dice. "Ora ci serve uno xenobiologo che ci aiuti a dare un senso a quello che troviamo. Una mia amica, Amelia Lee, vive sul ringworld dei Quarg da una decina d'anni, e ha accettato di venire a visitare lo scavo, e anche di vedere cosa i Quarg possono dirci su questa vecchia civiltà aliena. Ecco anche il tuo compenso per il trasporto della taglierina laser." Ti consegna altri trecentomila crediti.`
+			`	Accetti di andare a prenderla, e lui torna a sovrintendere allo scavo.`
+				accept
+
+
+
+mission "Rim Archaeology 4B"
+	landing
+	name "Trasporta uno xenobiologo"
+	description `Trasporta la xenobiologa Amelia Lee e la sua amica Quarg Yarthis al sito di scavo su Zug.`
+	source "Lagrange"
+	destination "Zug"
+	passengers 2
+	to offer
+		has "Rim Archaeology 4A: done"
+	blocked "Ti servirà <capacity> per trasportare la xenobiologa che Albert Foster ti ha chiesto di andare a prendere. Torna qui quando avrai spazio."
+	
+	on offer
+		conversation
+			`Amelia Lee ti incontra allo spazioporto, insieme a un Quarg un po' più basso del normale, ma comunque abbastanza alto da torreggiare su di te. "Capitano <last>?" dice. "Ti presento la mia amica Yarthis Amorthee Dek-Farsook Nai," dice. "Yarthis ci accompagnerà al sito."`
+			choice
+				`	"Nessun problema. Benvenuti a bordo!"`
+					goto welcome
+				`	"Dobbiamo davvero coinvolgere direttamente i Quarg in questo?"`
+			`	Ai tuoi occhi umani, non abituati a leggere le loro espressioni, i Quarg sembrano quasi sempre cupi e seri. Ma Yarthis sembra particolarmente grave quando dice: "Stai scavando in un cimitero, capitano. Qualcuno deve essere presente per assicurarsi che ai morti sia dato il rispetto che meritano."`
+			label welcome
+			`	Mentre salgono entrambe sulla tua nave, Amelia chiacchiera con entusiasmo. "Un ringworld può sostenere una popolazione superiore al bilione," dice, "quindi i Quarg hanno bisogno di nomi lunghi per identificarsi senza ambiguità." Continua a farti domande sullo stato dello scavo, usando così tanti termini tecnici che a tratti sembra quasi che parli il linguaggio dei Quarg invece del tuo. È chiaramente molto preparata sullo studio delle società aliene, e ti sorprende sapere che in realtà è nata nello spazio Hai, nipote di alcuni dei primi umani che vi si stabilirono.`
+				accept
+	
+	npc
+		government Merchant
+		personality waiting
+		system Dabih
+		ship "Marauder Arrow (Engines)" "Naukratis"
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta con Amelia e Yarthis non è ancora entrata nel sistema. Meglio partire e aspettarla.`
+	on complete
+		payment 200000
+
+
+
+mission "Rim Archaeology 5A"
+	landing
+	name "Difendi Zug"
+	description "Scaccia i pirati che stanno attaccando Zug, o almeno distraili abbastanza da farti arrivare i rinforzi."
+	source "Zug"
+	to offer
+		has "Rim Archaeology 4B: done"
+	
+	on offer
+		conversation
+			`Foster accoglie Amelia con entusiasmo quando atterri, ma sembra meno entusiasta di avere anche Yarthis qui. Lo scavo ha quasi raggiunto la profondità prevista, e nella parte più profonda della trincea ora tagliano blocchi di pietra con il laser e li issano fuori dalla fossa invece di limitarsi a macinare la roccia. "Grazie di nuovo, capitano," dice, consegnandoti un gettone del valore di duecentomila crediti.`
+			`	Mentre Foster vi sta mostrando lo scavo, uno degli operai accorre. "Signor Foster," dice, "c'è un sacco di traffico sul canale di emergenza della milizia. Penso che il pianeta sia sotto attacco."`
+			`	Foster impreca e guarda il cielo come se si aspettasse che i pirati piombino giù da un momento all'altro a rubare i suoi preziosi reperti. "Capitano <last>," dice, "dobbiamo tenere quei pirati lontani dallo scavo a ogni costo, o potrebbero distruggere informazioni inestimabili. Puoi aiutarci a difendere il pianeta?"`
+			choice
+				`	"Certamente."`
+					goto end
+				`	"La mia nave non è una nave da guerra."`
+			`	"Allora sali lassù e portali in giro in circolo finché non arrivano i rinforzi," dice. "Non m'importa come, tieni solo occupato chiunque sia lassù."`
+			label end
+			`	Mentre corri verso la nave, vedi Yarthis tirare fuori una specie di dispositivo di comunicazione e parlarci dentro. Forse anche i Quarg parteciperanno a questa battaglia...`
+				launch
+	
+	npc evade
+		government Pirate
+		personality heroic waiting
+		ship "Marauder Falcon (Weapons)" "Akhetaten"
+		ship "Marauder Splinter (Weapons)" "Itjtawy"
+		ship "Marauder Firebird (Weapons)" "Tanis"
+		ship "Marauder Leviathan (Weapons)" "Buhen"
+		ship "Marauder Manta (Weapons)" "Athribis"
+		ship "Marauder Quicksilver (Weapons)" "Philae"
+		ship "Marauder Raven (Weapons)" "Esna"
+		dialog `Gli ultimi predoni pirata sono stati scacciati. È il momento di atterrare e controllare se lo scavo ha subito danni.`
+	
+	npc
+		government Quarg
+		system "Gamma Corvi"
+		personality heroic
+		ship "Quarg Wardragon" "Gloref Esa Kurayi"
+	
+	on visit
+		dialog
+			`Provi ad atterrare vicino allo scavo, ma le navi pirata stanno ancora girando lì intorno. Meglio occupartene prima di tornare a controllare Foster.`
+	
+	on complete
+		payment 400000
+		event "rim archaeology results" 97
+		log `Con l'aiuto di una nave Quarg, hai respinto un gruppo di ladri di antichità che volevano saccheggiare il sito archeologico scavato da Albert Foster. Foster avrà bisogno di tempo per studiare ciò che ha trovato e pubblicare i risultati.`
+		conversation
+			`Una colonna di fumo si alza dal sito di scavo. Temendo il peggio, atterri e scopri che un missile sparato da uno dei pirati ha distrutto una delle baracche dove vivevano gli operai, ma per fortuna in quel momento non c'era nessuno dentro. Foster è scosso ma ancora deciso a finire il lavoro. "Ci vorranno mesi prima di aver scavato abbastanza da poter pubblicare qualcosa," dice, "ma Yarthis mi ha detto che i Quarg stazioneranno qui un Guardiadraghi per il resto del progetto, per evitare altre scorrettezze." Foster ti dà un ultimo compenso: quattrocentomila crediti per il tuo aiuto a scacciare i pirati. "E mi assicurerò che ti sia dato il merito del tuo aiuto quando la notizia diventerà pubblica," dice.`
+
+
+
+mission "Rim Archaeology 5B"
+	landing
+	invisible
+	non-blocking
+	source Zug
+	to offer
+		has "Rim Archaeology 5A: done"
+	npc kill
+		government Quarg
+		personality heroic staying uninterested
+		ship "Quarg Wardragon" "Gloref Esa Kurayi"
+
+
+
+event "rim archaeology results"
+	planet Zug
+		add attributes "tourism"
+		description `Zug è un mondo piacevole, di colline ondulate, campi fertili e qualche piccolo oceano. Centinaia di milioni di persone vivono qui, con nuovi immigrati che arrivano ogni giorno, quasi più in fretta di quanto l'industria delle costruzioni riesca a stargli dietro. Oltre alle città più grandi, molta gente vive in piccoli villaggi agricoli, il che rende questo uno dei pochi mondi della regione davvero autosufficienti sia nell'industria sia nell'agricoltura.`
+		description `	L'industria più grande di Zug sono i Cantieri Southbound. Tuttavia, sulla scia di alcune straordinarie scoperte archeologiche di una civiltà perduta, Zug è diventata all'improvviso anche una meta turistica popolare.`
+
+
+
+mission "Rim Archaeology 6"
+	landing
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Independent" "Neutral"
+		near "Sol" 100
+		attributes spaceport
+	to offer
+		has "event: rim archaeology results"
+	on offer
+		log "Factions" "Sheragi" `Recenti scoperte archeologiche su Zug, un pianeta del bordo meridionale dello spazio umano, hanno portato alla luce prove di una civiltà aliena perduta. I Quarg dicono che le rovine sono state lasciate da una specie chiamata Sheragi.`
+		conversation
+			`Quando dai il tuo nome al controllo del traffico dello spazioporto, quello dice: "Aspetta, sei il capitano <first> <last>? Sei su tutti i notiziari in questo momento!"`
+			`	Atterri e scopri che Albert Foster ha pubblicato un primo rapporto sullo scavo di Zug. Le rovine sotto la colata di lava si sono rivelate davvero una città aliena. Le case sono costruite in scala gigantesca, con la maggior parte delle porte alta almeno dieci metri. Inoltre, alcuni edifici non hanno porte esterne a livello della strada, ma solo porte che danno su balconi o cortili interni, il che sostiene la teoria che gli abitanti fossero capaci di volare. La maggior parte dei reperti ritrovati sono semplici oggetti quotidiani, e in effetti la tecnologia sembra meno avanzata di quella della società umana attuale, ma gli scienziati studiano i reperti con avidità per ricavarne indizi su come vivevano questi alieni.`
+			`	I Quarg, che in altre occasioni sembrano ben disposti a condividere le loro conoscenze con gli esseri umani, sono sorprendentemente reticenti sulle informazioni riguardanti questa civiltà perduta. A parte dire a Foster che gli alieni erano noti come Sheragi, i loro unici commenti sono stati vaghi avvertimenti: se gli esseri umani continueranno a sviluppare armi da guerra, finiranno come gli Sheragi. Da questo Foster ha dedotto che la civiltà aliena fu molto probabilmente distrutta da una guerra civile, non da un disastro naturale o dall'attacco di un'altra specie.`
+			`	Potrebbe non portare a grandi progressi nella tecnologia umana, ma lo scavo fornirà indizi sulla storia della galassia per anni a venire, e puoi essere orgoglioso di avervi avuto un ruolo.`
+				decline
+
+
+
+mission "Sheragi Archaeology: The Box 1"
+	landing
+	name "Il bunker Sheragi"
+	description "Visita Albert Foster su <destination> per vedere cosa ha scoperto."
+	source
+		near "Zubeneschamali" 1 100
+	destination "Zug"
+	
+	to offer
+		has "event: rim archaeology results"
+		has "First Contact: Unfettered: offered"
+		has "main plot completed"
+		random < 4
+	
+	on offer
+		dialog
+			`Ricevi un messaggio cifrato da Albert Foster, l'archeologo che hai aiutato a riportare alla luce le misteriose rovine Sheragi su Zug. Sembra molto emozionato.`
+			`	"<first>! È passato un po' di tempo, eh? Ti ricordi del sito Sheragi? Abbiamo appena trovato qualcosa di incredibile qui. Per favore, vieni a trovarmi su Zug. Non credo di poter affidare questo a nessun altro."`
+
+
+
+mission "Sheragi Archaeology: The Box 2"
+	landing
+	name "La scatola misteriosa"
+	description "Porta la scatola misteriosa a uno scienziato di fiducia su <destination>."
+	source "Zug"
+	destination "Vinci"
+	
+	to offer
+		has "Sheragi Archaeology: The Box 1: done"
+	
+	on offer
+		conversation
+			`Atterri al sito di scavo e noti che Albert ti stava già aspettando, guardando la tua discesa. Ti saluta appena si aprono le porte della nave.`
+			`	"Ciao, <first>! Ti va di fare un piccolo giro del museo?"`
+			choice
+				`	"Museo? Quale museo?"`
+				`	"Certo, sono impaziente di vedere cosa hai scoperto."`
+					goto eager
+				`	"Dimmi solo cosa c'è di così importante."`
+					goto hurry
+			`	"Non lo sapevi? Ora c'è un museo aperto nel sito di scavo, pieno di reperti interessanti. L'abbiamo trasformato in una bella trappola per turisti. Vieni, ti faccio vedere."`
+			label eager
+			`	Cogli l'occasione per aggiornarvi mentre ti guida nelle rovine dell'antica città, parlando delle "minori" scoperte fatte finora, anche se insiste a tenere segreta la ragione per cui ti ha chiamato. Ti conduce a uno degli edifici Sheragi riportati alla luce, saltando una lunga fila davanti all'ingresso, e scopri che la sala è stata riempita di reperti in teche di vetro.`
+			`	È strano vedere tanti dispositivi tecnologici vecchi quanto alcuni degli utensili preistorici della Terra antica, la maggior parte dei quali così deteriorati che non riusciresti nemmeno a immaginare a cosa servissero, se non fosse per le descrizioni accanto alle teche. Uno dei reperti più intatti è una piccola statua metallica di un singolo Sheragi in volo, come i draghi di Skymoot, forse un trofeo per qualche evento, o magari solo una scultura di un personaggio popolare del loro tempo. Oggi è impossibile saperlo, ma una cosa è certa: è la rappresentazione più fedele disponibile di come apparivano. La figura corrisponde quasi perfettamente a quelle che hai visto nel tuo sogno, a Ildaria. Quando volti la testa per guardare quanto sono alte le porte di questa casa, e poi torni a guardare la statua, ti rendi conto di quanto dovessero essere grandi. È difficile immaginare quanto dovessero essere grandi le loro astronavi per sperare di contenere una creatura di quelle dimensioni.`
+			choice
+				`	"È una collezione impressionante."`
+			`	"Lo è! Ma non è nemmeno l'attrazione principale per te oggi. Seguimi."`
+			`	Finita la visita, ti conduce in un altro edificio, in una zona vietata al pubblico.`
+				goto "off limit"
+			label hurry
+			`	"Diretto al punto? Va bene, anch'io sono impaziente, ma passa qualche volta a visitare il museo in futuro. Ci sono tanti oggetti interessanti."`
+			`	Cogli l'occasione per aggiornarvi mentre ti guida nelle rovine dell'antica città, parlando delle "minori" scoperte fatte finora, come le statue Sheragi che mostrano come apparivano un tempo. "Forse non avremmo mai conosciuto il loro aspetto se non avessimo trovato qualcosa del genere. Ma queste piccole scoperte non sono l'attrazione principale per te oggi," dice Albert con un ampio sorriso. Ti conduce in uno degli edifici Sheragi riportati alla luce, in una zona vietata al pubblico.`
+			label "off limit"
+			`	"Eccolo qui!"`
+			`	Nella stanza c'è un tunnel che scende in profondità, ma Albert punta l'attenzione su una grande cassaforte. Mentre la apre, comincia a spiegare la situazione.`
+			`	"Dunque, da quello che sappiamo, gli Sheragi si estinsero in una guerra di proporzioni catastrofiche. Una delle nostre stagiste ha suggerito di fare un rilevamento più profondo, per cercare installazioni militari o bunker, anche se le nostre scansioni precedenti non mostravano nulla di interessante, così le abbiamo permesso di giocare con il radar penetrante. E non ci crederai: sotto la terra c'erano dei pezzi di metallo angolari. Chiaramente fatti dall'uomo. Beh... dagli Sheragi, in questo caso. Così abbiamo scavato più a fondo e trovato quello che possiamo solo supporre fosse un bunker, con i segni di essere stato colpito da un'arma cinetica potente. Nonostante i danni, siamo riusciti a recuperare alcuni reperti dalle macerie. In particolare, questa cosa."`
+			`	Albert apre la cassaforte e ti mostra un cubo di metallo rosso, consumato, di circa un quarto di metro per lato. Fatica per il peso, ma riesce a posarlo sul pavimento.`
+			`	"Questo sembra un dispositivo di archiviazione dati, di qualche tipo. Era collegato a quelli che pensiamo fossero computer, ma nient'altro era recuperabile dopo migliaia di anni sotto il terreno bagnato. Considerando quanto è robusto, è plausibile che alcuni dati siano sopravvissuti, come in una capsula del tempo.`
+			`	"Ho un contatto su Vinci che probabilmente saprebbe risolverlo, ed è qui che entri in gioco tu. Ti ricordi di John, vero? Non posso lasciare il sito di scavo, ma non ho nessun altro di cui mi fidi per portare un reperto così prezioso. Lo porteresti tu?"`
+			choice
+				`	"Certo, porto io il cubo da lui."`
+					goto take
+				`	"Chi è John, già?"`
+				`	"Mi dispiace, ma mi sembra più losco di tutti gli altri lavori che ho fatto per te. I Quarg sono stati molto chiari: certe cose non sono destinate a essere trovate."`
+					goto sketchy
+			`	"Oh, non lo ricordi? È lo scienziato che lavorava con noi quando indagavamo sulla chiesa di Midgard. Ha tutta l'attrezzatura sofisticata che serve per esaminare questo cubo."`
+				goto "final choice"
+			label sketchy
+			`	"Come?" Sembra incredulo. "Arrivati a questo punto, mi abbandoni? La conoscenza in sé non è pericolosa. Questo cubo potrebbe essere la chiave di eoni perduti di storia, di segreti sugli Sheragi che non potremmo nemmeno sognare!"`
+			label "final choice"
+			choice
+				`	"Va bene, glielo porto."`
+				`	"Mi dispiace, ma quella linea non la oltrepasso."`
+					decline
+			label take
+			`	"Splendido!"`
+			`	Metti il cubo in uno zaino poco appariscente e lo porti alla tua nave. Albert ti dà un indirizzo dove consegnarlo, ti ricorda che sarai pagato dopo il trasporto, e ti augura buon viaggio.`
+				accept
+	
+	on complete
+		payment 500000
+		event "cube stolen" 20 30
+		log `Hai portato un misterioso cubo dati Sheragi, scavato da Albert Foster su Zug, a un amico fidato su Vinci. John avrà bisogno di tempo per capire esattamente come funziona, e manderà un messaggio quando avrà finito.`
+		conversation
+			`Arrivi su Vinci e porti il cubo all'indirizzo che ti ha dato Foster. Trovi John che ti aspettava. "Quindi Foster è di nuovo nei guai, eh?" Ride mentre ti fa entrare nel suo laboratorio.`
+			choice
+				`	"Non sembra probabile che finiremo nei guai questa volta."`
+				`	"Anche io sono un po' preoccupato, ma sono sicuro che sa quello che fa."`
+			`	Posi lo zaino con il cubo su un tavolo e lo apri.`
+			`	"Beh, mi paga per aiutarlo, quindi per me nessun problema. Non capita a tutti di vedere in prima persona le cose esotiche che trova. Voglio dire, una singolarità artificiale..." si interrompe, ricordando l'avventura che avete vissuto tutti e tre nel Deep.`
+			`	John procede a esaminare il cubo. È abbastanza forte da sollevarlo senza problemi e guardarlo da angolazioni diverse, cercando qualche porta a cui collegarsi. Ne trova una, ma è così deteriorata che qualsiasi tentativo di usarla sarebbe inutile. Mette il cubo dentro una macchina per fare una scansione più profonda dell'oggetto, e la guarda lavorare in silenzio, fissando paziente lo schermo.`
+			`	"Sì, questo sembra un dispositivo di archiviazione dati di qualche tipo... è fatto per essere robusto, come una scatola nera, quindi è plausibile che possiamo recuperare dei dati. Però ci vorrà molto tempo."`
+			`	"Quanto tempo?" chiedi.`
+			`	"Un paio di mesi, probabilmente. Dipende da quanto è aliena questa cosa, e se è criptata o no, ma almeno dovrei capire se c'è dentro qualche dato recuperabile."`
+			`	John dice che ti manderà un messaggio quando avrà i risultati, e vi separate, tu torni alla tua nave.`
+
+event "cube stolen"
+
+
+
+mission "Sheragi Archaeology: The Box 3"
+	landing
+	name "Il venditore di informazioni"
+	description "Scopri dove si trova la scatola grazie a un intermediario di informazioni sul mondo pirata di <destination>."
+	source
+		government "Republic" "Free Worlds" "Syndicate" "Independent" "Neutral"
+		near "Sol" 100
+		attributes spaceport
+	destination "Stormhold"
+	
+	to offer
+		has "event: cube stolen"
+	
+	on offer
+		conversation
+			`Ricevi una chiamata urgente da John, che lavora alla misteriosa scatola nera Sheragi da circa un mese.`
+			`	"Capitano <last>! Ho una brutta notizia e una notizia peggiore. Quale vuoi sentire prima?"`
+			choice
+				`	"La brutta notizia."`
+					goto bad
+				`	"La notizia peggiore."`
+					goto worse
+			label bad
+			`	"La brutta notizia è che è molto più complicato di quanto pensassi. Ho scoperto che i dati nella scatola sono sopravvissuti e si possono ancora recuperare dopo tutto questo tempo, ma serviranno hardware specializzato e conoscenze che non abbiamo ancora."`
+			`	"E la notizia peggiore?" chiedi.`
+			`	"Beh... alcune persone hanno fatto irruzione nel mio laboratorio durante la notte e hanno rubato molte delle cose su cui stavo lavorando. Per fortuna l'assicurazione copre quasi tutto, e ho ancora la maggior parte delle mie attrezzature pesanti e costose, ma la scatola... è sparita."`
+				goto "what now"
+			label worse
+			`	"Beh... qualcuno si è intrufolato nel mio laboratorio stanotte e ha rubato molte delle cose su cui stavo lavorando. Per fortuna l'assicurazione copre quasi tutto, e ho ancora la maggior parte delle mie attrezzature pesanti e costose, ma la scatola... è sparita."`
+			`	"E la brutta notizia?" chiedi.`
+			`	"La notizia meno brutta è che è molto più complicato di quanto pensassi. Ho scoperto che i dati nella scatola sono sopravvissuti e si possono ancora recuperare dopo tutto questo tempo, ma serviranno hardware specializzato e conoscenze che non abbiamo ancora."`
+			label "what now"
+			`	Ti si stringe il cuore. "Cosa facciamo adesso? Hai idea di dove trovare la scatola? Hai contattato le autorità?"`
+			`	"Ho fatto quello che potevo, ma se è andata come sospetto, la polizia non aiuterà, e la scatola a quest'ora sarà probabilmente fuori dal pianeta. Però... se hai un po' di contanti e sei disposto a fare un passo in più per recuperarla, potrebbe esserci un modo."`
+			choice
+				`	"Che vuoi dire?"`
+					goto info
+				`	"Stai cercando di estorcermi?"`
+			`	"Cosa? No, certo che no! Pensi che ruberei il mio stesso lavoro? Fammi spiegare.`
+			label info
+			`	"I metodi di Albert sono... non standard, a dir poco, e una volta abbiamo avuto a che fare con un certo individuo. Un venditore di informazioni che vive su Stormhold. Persona losca, sembra avere informatori quasi ovunque e sa tutto. L'individuo in questione è noto come Mammon. Se vuoi trovare la scatola, trattare con Mammon è probabilmente la tua migliore possibilità."`
+			choice
+				`	"Grazie, vedrò se riesco a trovare questo Mammon."`
+				`	"Mi dispiace, ma credo che non possa venirne nulla di buono. Meglio dimenticare il cubo."`
+					decline
+			`	"Conoscendo i loro metodi, è probabile che ti trovino prima loro. Ma non allarmarti, non sono... malvagi, di per sé. Stai solo attento, va bene?"`
+				accept
+	
+	to complete
+		never
+
+
+
+mission "Sheragi Archaeology: The Box 4"
+	landing
+	name "Alla ricerca del reperto"
+	description "Affronta i mercenari che hanno rubato il cubo su <destination>."
+	source "Stormhold"
+	destination "Watcher"
+	
+	to offer
+		has "Sheragi Archaeology: The Box 3: offered"
+		
+	on offer
+		conversation
+			branch visited
+				has "visited mammon"
+			`Nonostante l'ostilità evidente che gli abitanti ti mostrano, sei entrato senza problemi nell'atmosfera di Stormhold. Sei ancora a metà della discesa quando una voce robotica e modulata ti chiama.`
+			`	"Ho sentito che mi stavi cercando, <first> <last>," dice la persona dall'altra parte.`
+			
+			choice
+				`	"Chi sei? Come conosci il mio nome?"`
+					goto who
+				`	"Davvero? Come?"`
+			`	"Nel mio mestiere devo sapere tutto. Compresa l'identità di eventuali clienti, come te. Altrimenti come speravi di trovarmi?`
+				goto intro
+			
+			label who
+			`	La persona misteriosa ride.`
+			`	"Sembra che io sappia di te più di quanto tu sappia di te stesso. Sono chi stai cercando, naturalmente.`
+			
+			label intro
+			`	"Mammon, venditore di informazioni. Al tuo servizio," dichiara la voce con tono sinistro. "Vieni a incontrarmi di persona per discutere i dettagli di quello che cerchi." La comunicazione si interrompe e ricevi le coordinate per atterrare in un punto apparentemente casuale, che sembra in mezzo al mare.`
+			``
+			`	Arrivi alle coordinate in mezzo al nulla, in condizioni di tempesta. Cominci a chiederti se hai ricevuto le coordinate giuste, finché dalle onde non emerge un sottomarino enorme. È un vascello gigantesco, e mentre le luci ti guidano ad atterrare sul ponte, noti che, nonostante le dimensioni della tua nave, ci sta comodamente, e vi viene bloccata in posizione da fermi magnetici. Uomini armati in abiti scuri circondano la nave, e quando sbarchi due di loro ti guidano dentro. Ti conducono in una stanza in penombra, con una mappa olografica della galassia sul soffitto e una scrivania, dietro la quale siede una figura incappucciata.`
+			`	"Eccoci, lontano da occhi indiscreti. Prego, accomodati," dice. La voce ha un tono strano, senza un genere distinguibile, con un accento sibilante e gutturale, e solo quando ti siedi noti un muso rettiliano che spunta dal cappuccio. Non sai se sia naturale o una modifica corporea estrema.`
+			choice
+				`	"Sei un..."`
+				`	(Non dire nulla.)`
+					goto middle
+			`	Ti interrompe, sogghignando. "Lascia perdere. Per quell'informazione dovresti rubare interi pianeti."`
+			
+			label middle
+			`	"Arriviamo a quello che conta. Vuoi trovare quel reperto alieno, giusto?" Annuisci in risposta. "Ho l'informazione che ti serve. Trovare oggetti perduti è il più banale dei miei servizi, ma come ogni cosa ha un prezzo.`
+			`	"Dieci milioni di crediti," dice. "Non negoziabile. E non provare scherzi."`
+			
+			branch cash
+				"credits" >= 10000000
+			choice
+				`	"Cosa? Non ho tutti quei soldi!"`
+					goto "no money"
+				`	"È caro. Se è un servizio così banale, non posso avere uno sconto?"`
+					goto haggle
+			
+			label visited
+			`Torni su Stormhold e ricevi nuove coordinate per incontrare Mammon. Vuoi andarci?`
+			choice
+				`	(Sì.)`
+				`	(No.)`
+					defer
+			`	Segui le nuove coordinate e arrivi di nuovo in un punto casuale del mare, di nuovo con il maltempo, che sembra essere la norma su questo pianeta. Il sottomarino emerge, atterri, e segui di nuovo gli uomini fino alla stanza di Mammon.`
+			`	"Bentornato," dice.`
+			`	"Spero che tu sia pronto a pagare."`
+			
+			label question
+			branch cash
+				"credits" >= 10000000
+			branch haggled
+				has "haggled"
+			choice
+				`	"Sai bene che non ho tutti quei soldi da parte."`
+					goto "no money"
+				`	"Sei pronto a farmi uno sconto?"`
+					goto haggle
+			label haggled
+			choice
+				`	"Sai bene che non ho tutti quei soldi da parte."`
+					goto "no money"
+				`	"Che ne dici se mi dici quello che voglio e io non faccio saltare in aria la tua nave e i tuoi amici pirati?"`
+					goto threat
+
+			label cash
+			branch "haggled cash"
+				has "haggled"
+			choice
+				`	"Devo pensarci. Dammi un po' di tempo."`
+					goto time
+				`	"Sono un sacco di soldi solo per un'informazione. Puoi farmi un prezzo migliore?"`
+					goto haggle
+				`	"Ecco i soldi."`
+					goto pay
+			label "haggled cash"
+			choice
+				`	"Devo pensarci. Dammi un po' di tempo."`
+					goto time
+				`	"Che ne dici se mi dici quello che voglio e io non faccio saltare in aria la tua nave e i tuoi amici pirati?"`
+					goto threat
+				`	"Ecco i soldi."`
+					goto pay
+
+			label "no money"
+			`	"Lo so che non li hai. Posso organizzare il pagamento in altri modi. Donazione di organi, prostituzione, volontariato come cavia... ma prima dovremo fare una valutazione."`
+			`	Rifiuti con cortesia.`
+			`	"Allora torna da me quando li avrai, e ti fornirò l'informazione. Abbiamo tutto il tempo dell'universo. Fino alla tua morte, o finché qualcuno non deciderà di distruggere il cubo, naturalmente."`
+				goto exit
+			
+			label time
+			`	"Allora torna quando sei pronto. Abbiamo tutto il tempo dell'universo. Fino alla tua morte, o finché qualcuno non deciderà di distruggere il cubo, naturalmente. Dipende tutto da te."`
+			
+			label exit
+			`	Fa un gesto, e gli uomini ti riaccompagnano prontamente e diligentemente alla tua nave.`
+				defer
+			
+			label haggle
+			action
+				set "haggled"
+			`	Mammon non sembra soddisfatto.`
+			`	"Quale parte di 'non negoziabile' non hai capito? Stai tirando troppo la corda, capitano <last>. Non pensavo che fossi così tirchio."`
+				goto question
+
+			label threat
+			`	Mammon si limita a sorridere, mostrando denti aguzzi e leccandoli con una lingua biforcuta, più divertito che intimidito.`
+			`	"Davvero? Pensi di potermi intimidire? Sarà il tuo funerale, umano. Se fossi intelligente, sapresti che il mio potere supera di gran lunga il tuo, soprattutto a casa mia. Sai che ora non posso lasciarti andare via vivo. Sarebbe un precedente negativo per me. La sicurezza è la mia priorità assoluta."`
+			`	Ti guardi intorno, e gli uomini in giacca ti stanno puntando delle pistole. Pistole aliene. Prima che tu possa reagire, Mammon ti spara da sotto il tavolo, ferendoti gravemente all'addome. Il tuo corpo semicosciente viene trascinato fuori dal sottomarino, e la tua nave che viene ridotta a pezzi da armi aliene è l'ultima cosa che vedi.`
+				die
+			
+			label pay
+			`	Fai scivolare i gettoni di credito verso Mammon, ma rifiuta, sogghignando con i denti aguzzi.`
+			`	"Non preoccuparti di pagare adesso. Mi serviva solo che accettassi l'accordo. Preleverò i crediti in futuro, quando vorrò.`
+			`	"Ora che abbiamo finito con questo, il reperto che cerchi è stato preso da alcuni mercenari. Mi sembra che il tuo amico abbia avuto a che fare con le persone sbagliate, ma divago. Non è questa l'informazione che hai pagato."`
+			`	Mammon alza le mani verso la mappa olografica della galassia sul soffitto. La mappa ingrandisce, riempiendo l'intera stanza di stelle. Davanti a te riconosci il confine tra il Deep e la Dirt Belt.`
+			`	"Hanno tenuto il reperto per sé per venderlo al mercato nero, e la loro base operativa è proprio... qui. Algieba."`
+			`	L'ologramma ingrandisce ancora su Watcher, una delle lune del sistema, e continua finché non si ferma su una grande foresta.`
+			`	"Li troverai su questa luna disabitata. Si nascondono in questa foresta, e il reperto è con loro. Le coordinate esatte saranno trasmesse alla tua nave. Aspettati ostilità."`
+			`	Ringrazi Mammon per il servizio e ti alzi per andartene.`
+			`	"Ci vediamo, capitano <last>. Ricorda che io mantengo sempre."`
+				accept
+	
+	on defer
+		set "visited mammon"
+	
+	on accept
+		set "paid mammon"
+		event "mammon impatient" 240
+		fail "Sheragi Archaeology: The Box 3"
+
+event "mammon impatient"
+
+
+
+mission "Mammon Payment"
+	landing
+	invisible
+
+	to offer
+		random < 10
+		or
+			has "Sheragi Archaeology: Epilogue: done"
+			has "event: mammon impatient"
+		has "paid mammon"
+		"credits" >= 12000000
+
+	on offer
+		payment -10000000
+		conversation
+			`Ricevi un messaggio che ti informa di una transazione molto grande: 10 milioni di crediti. Insieme c'è un messaggio contenente solo l'immagine di un logo a forma di occhio rettiliano. Sembra che l'equipaggio di Mammon abbia prelevato il denaro che avevi accettato di pagare per l'informazione sulla scatola nera Sheragi.`
+				decline
+
+
+
+mission "Sheragi Archaeology: The Box 5"
+	landing
+	name "La battaglia per il reperto"
+	description "Distruggi la flotta di mercenari, poi atterra su <planet>."
+	source "Watcher"
+	
+	to offer
+		has "Sheragi Archaeology: The Box 4: done"
+	
+	on offer
+		conversation
+			`Arrivi sulla luna disabitata di Watcher e perlustri la zona intorno alle coordinate che ti ha mandato Mammon. È relativamente facile trovare del fumo che sale da un fuoco da campo in una radura, ma mentre ti avvicini per controllare, vieni sorpreso da diverse navi grandi che decollano per accoglierti, abbandonando i teli verdi usati per nascondersi tra gli alberi. Sembra che non ti vogliano affatto qui.`
+				launch
+	
+	npc disable
+		government "Bounty Hunter"
+		personality unconstrained launching nemesis heroic plunders harvests target marked
+		system "Algieba"
+		fleet "Marauder fleet VIII"
+		dialog `Sei riuscito a sconfiggere l'intera flotta di mercenari. Ora non dovresti avere problemi ad atterrare nel loro campo e recuperare il cubo.`
+	
+	on visit
+		conversation
+			`Cerchi di eludere le navi mercenarie e di sferrare un attacco rapido al loro accampamento, ma le navi ti seguono attraverso l'atmosfera e il personale a terra comincia a spararti. Bombardare in un passaggio significa rischiare di distruggere il cubo. Non hai altra scelta che tornare nello spazio ed eliminare la flotta mercenaria.`
+				launch
+
+
+
+mission "Sheragi Archaeology: The Box 6a"
+	landing
+	invisible
+	source "Watcher"
+	destination "Vinci"
+	
+	to offer
+		has "Sheragi Archaeology: The Box 5: done"
+	
+	on offer
+		conversation
+			`Ti avvicini per atterrare, e i pochi mercenari rimasti a terra marciano verso la tua nave portando una bandiera bianca di fortuna. Decine di uomini e donne dall'aria tosta si avvicinano in uniforme ma disarmati. Restano calmi e organizzati. Questi non sembrano criminali comuni.`
+			`	"Sappiamo quando abbiamo perso," grida uno di loro alla tua nave con un megafono. "Che cosa vuoi?"`
+			choice
+				`	(Spara a loro.)`
+					goto shoot
+				`	(Parla con loro.)`
+			
+			`	Atterri e apri con cautela il portello per parlare con loro.`
+			`	"Per chi lavorate? Dov'è il cubo che avete rubato?" chiedi.`
+			`	"Quindi quella vecchia cosa era tua?" dice una donna in prima fila. "Sapevo che quella missione era losca... Siamo mercenari. Ci ha ingaggiati gente dall'aria elegante che ci ha pagato molto bene per rubarlo, ma quando siamo tornati con il cubo si sono limitati a scannerizzarlo e ci hanno detto di disfarci di lui. Hanno detto che una copia digitale andava bene, e che il disturbo era una punizione sufficiente. Non sappiamo chi fossero, non facciamo domande. Ma forse sta per cambiare.`
+			`	"Se volete il cubo, potete averlo se ci risparmiate. Non vale le nostre vite."`
+			choice
+				`	(Risparmiali.)`
+					goto spare
+				`	(Aprite il fuoco.)`
+					goto fire
+			
+			label fire
+			`	Diffidente, chiudi subito il portello e rientri nella nave mentre si disperdono.`
+			
+			label shoot
+			action
+				set "burned white flag"
+			`	Ignorando la loro resa, giri la nave verso di loro e apri il fuoco sul piccolo esercito. Usare le armi di bordo contro personale a terra è onestamente eccessivo, e non avevano alcuna possibilità. Al posto dove stavano ora c'è una radura fumante, e un incendio boschivo comincia a propagarsi.`
+			`	Entri nel campo, sparando ai mercenari rimasti nascosti, e saccheggi le loro tende. Trovi centinaia di migliaia di crediti, in gettoni e oggetti di valore, e alla fine trovi anche il cubo. Con quello in mano, torni alla tua nave, pronto a riportarlo a John.`
+				decline
+			
+			label spare
+			`	"Affare fatto. Portalo qui," dici.`
+			`	Mentre uno di loro va a prenderlo, aspetti in un silenzio scomodo, osservando ogni loro movimento mentre loro osservano i tuoi. Alla fine il giovane che è andato a prendere il cubo torna e te lo consegna. Lo esamini, confermando che è il reperto che cercavi.`
+			`	"Ce l'hai, ora vattene. Non ti intralceremo più," dice la donna che ha parlato prima, e gli altri mercenari cominciano a sciogliersi, tornando alle loro tende.`
+			`	Con il cubo tra le braccia, non hai più motivi per restare qui. Torni alla tua nave, pronto a riportarlo a John.`
+				accept
+	
+	on decline
+		payment 926621
+
+
+
+mission "Sheragi Archaeology: The Box 6b"
+	landing
+	name "La scatola recuperata"
+	description "Riporta il cubo a John su <destination>."
+	source "Watcher"
+	destination "Vinci"
+	
+	to offer
+		has "Sheragi Archaeology: The Box 5: done"
+	
+	on complete
+		conversation
+			`Con la misteriosa scatola di nuovo con te, ti dirigi al laboratorio di John. Ti fa entrare, e gli racconti quello che hai appena passato.`
+			`	"Quindi una punizione, eh? Pensi che siano stati i funzionari del Deep ad arrabbiarsi l'altra volta? O magari i concorrenti di Foster per quel sito di scavo? Avrei dovuto prevederlo."`
+			`	"Probabile," dici. "Non riesco a immaginare un altro motivo."`
+			`	"Almeno l'hai recuperato. Ma non so se sarebbe saggio continuare a lavorarci qui, e non posso lasciare il pianeta per un paio di mesi senza conseguenze. E non ho ancora idea di come leggere quei dati."`
+			`	"E allora, per caso hai un altro contatto losco che può aiutarci?" chiedi.`
+			`	"Purtroppo no. E ora sembra che stiamo correndo contro il tempo. Se solo i Quarg fossero disposti a lavorare con noi e a darci le informazioni che ci servono per aprire questa scatola..."`
+			`	Appena senti quella frase, ti viene in mente all'improvviso. Hai conosciuto gli Hai a nord, e hai saputo dagli Slegati che hanno incontrato gli Sheragi molti millenni fa. Forse gli Hai potrebbero aiutare.`
+			`	"Credo di sapere cosa fare. Non sei l'unica persona con contatti in posti strani."`
+			`	Raccogli le tue cose, rimettendo il cubo nello zaino.`
+			`	"Beh, vorrei poterlo studiare più a lungo, ma se hai una pista vale la pena seguirla. Confido che restituirai il cubo a me o ad Albert quando avrai finito. Buona fortuna, capitano. Non metterti nei guai più del necessario."`
+
+
+
+mission "Sheragi Archaeology: The Box 6c"
+	landing
+	name "La conoscenza degli Hai"
+	description "Chiedi agli Hai se sanno qualcosa di più sugli Sheragi."
+	source "Vinci"
+	destination "Allhome"
+	
+	to offer
+		has "Sheragi Archaeology: The Box 6b: done"
+
+
+
+mission "Sheragi Archaeology: The Box 7a"
+	landing
+	name "Il Museo di Storia Galattica"
+	description "Viaggia verso <destination> per visitare il Museo di Storia Galattica degli Hai."
+	source "Allhome"
+	destination "Mirrorlake"
+	
+	to offer
+		has "Sheragi Archaeology: The Box 6c: done"
+	
+	on offer
+		conversation
+			`Chiedi in giro allo spazioporto finché non riesci a trovare una guida turistica Hai. Gli chiedi se c'è un posto dove potresti trovare maggiori informazioni sugli Sheragi.`
+			`	"Un umano che sa di loro? Mi sorprendi. Questa è storia antica. Se c'è un posto dove puoi scoprire di più su di loro, è il Museo di Storia Galattica su <planet>."`
+			`	Ringrazi la guida e torni alla tua nave, impostando la rotta per il sistema <system>.`
+				accept
+
+
+
+mission "Sheragi Archaeology: The Box 7b"
+	landing
+	name "Il Ministero della Cultura degli Hai"
+	description "Atterra su <destination> per parlare con il Ministero della Cultura."
+	source "Mirrorlake"
+	destination "Hai-home"
+	clearance
+	
+	to offer
+		has "Sheragi Archaeology: The Box 7a: done"
+	
+	on offer
+		conversation
+			`Arrivando su Mirrorlake, chiedi in giro per un po', e alla fine qualcuno ti indirizza al Museo di Storia Galattica: un luogo enorme e molto importante, ma sorprendentemente non una meta turistica molto frequentata. Alla maggior parte degli Hai non piace granché guardare al passato, e la maggior parte degli umani non ha idea che questo posto esista. Il personale del museo è sorpreso di vedere una faccia umana, e mentre giri hai l'impressione di attirare più attenzione dai locali che i reperti stessi.`
+			`	Il posto ha un'architettura molto insolita, che ricorda vagamente la Grecia antica della Terra, ma chiaramente non si basa su alcun progetto umano. Tocchi di metallo, cemento, vetro e plastica aggiungono un aspetto moderno al disegno. Le sale espositive si diramano da un lungo corridoio che costituisce la maggior parte dell'edificio. Le sale sono disposte in modo che la storia proceda all'indietro mentre attraversi il museo, con gli eventi recenti davanti e i più antichi in fondo.`
+			branch alphas
+				has "Wanderers: Alpha Surveillance A: done"
+			
+			`	Una sala in cui entri è dominata da un murale che raffigura la storia dei contatti degli Hai con l'umanità. Quello che ti salta all'occhio è che i primi umani del murale hanno la pelle verde. Gli unici umani dalla pelle verde che conosci sono gli Alpha. Il murale sembra mostrare gli Alpha che rubano qualcosa agli Hai, seguiti da una serie di battaglie, alla fine delle quali gli Alpha sono mostrati in ritirata nel cunicolo. Poi delle navi tornano indietro dal cunicolo, ma questa volta con a bordo umani normali. Gli Hai del murale sembrano diffidenti all'inizio, ma è chiaro che si stabilì rapidamente un'amicizia.`
+			`	È sorprendente e spiacevole scoprire che il primo contatto che gli Hai abbiano mai avuto con l'umanità fu con gli Alpha.`
+				goto continue
+			
+			label alphas
+			`	Una sala in cui entri è dominata da un murale che raffigura la storia dei contatti degli Hai con l'umanità. Comincia con gli Alpha, proprio come ti aveva raccontato l'ambasciatore Hiyamaharu. Il murale sembra mostrare gli Alpha che rubano qualcosa agli Hai, seguiti da una serie di battaglie, alla fine delle quali gli Alpha sono mostrati in ritirata nel cunicolo. Poi delle navi tornano indietro dal cunicolo, ma questa volta con a bordo umani normali. Gli Hai del murale sembrano diffidenti all'inizio, ma è chiaro che si stabilì rapidamente un'amicizia.`
+			
+			label continue
+			`	Mentre continui a vagare lungo il corridoio, trovi sale dedicate alle incursioni Korath, alla loro guerra civile e al primo contatto con loro, insieme a un racconto molto poetico delle origini degli Slegati. Andando più a fondo trovi altre sezioni: una lunga che descrive la cultura Hai su diversi mondi e come è cambiata nel tempo, un'altra sulla caduta del governo Hai che un tempo abitava parte di quello che oggi è lo spazio umano e sulla decisione di ritirarsi in un territorio più piccolo, una sul completamento del ringworld Quarg, una sul commercio e la cultura militare Hai durante la loro fase imperiale, e una sala dall'aria molto cupa sulle Guerre Civili Hai. Infine, dopo una camminata molto lunga, arrivi a una sala quasi in fondo al corridoio, che racconta la storia degli Sheragi.`
+			choice
+				`	(Prosegui nella sala Sheragi.)`
+			`	Quello che vedi qui è molto più ricco di quanto il piccolo museo di Albert Foster potesse mai sperare di esporre. Ci sono immagini di funzionari militari Sheragi dell'epoca, con i loro nomi e i loro ruoli. Ci sono anche dettagli sulla loro cultura, sulla loro biologia e sui loro evidenti conflitti con gli Hai. Al centro della sala c'è un'enorme statua di un drago bipede, alta circa 8 metri, così grande che il soffitto ha dovuto essere rialzato. L'iscrizione sulla targa ai suoi piedi indica che è una riproduzione di uno Sheragi a grandezza naturale. Un ologramma interattivo più piccolo ne mostra dettagli sulla biologia e sul comportamento. I campioni di cultura sono scarsi, ma indicano che vivevano in una meritocrazia militare che metteva la forza e la capacità di comando al di sopra di tutto.`
+			`	Vedi immagini e progetti approssimativi delle loro navi, alcune delle quali raffigurano temibili flotte di enormi navi da guerra. Avevano un'armatura angolare a più strati che, per pura massa, rivaleggiava con la robustezza delle navi Hai moderne. Se le tue conversioni di misura sono corrette, le loro navi erano più grandi di qualsiasi cosa nello spazio umano, e facevano sembrare minuscola perfino la Portaerei della Marina. Alcune mostrano cannoni spinali altrettanto impressionanti, di capacità sconosciuta, con descrizioni cupe che suggeriscono che furono responsabili dell'estinzione degli Sheragi: armi di distruzione di massa nelle mani di una specie bellicosa e immatura che le usò con leggerezza.`
+			`	Mentre ti guardi intorno nella sala, uno dei curatori ti si avvicina, parlando la tua lingua, anche se con un forte accento.`
+			`	"Triste, vero? Non credo che abbiano mai avuto un momento di pace nella loro storia spaziale."`
+			choice
+				`	"È un peccato che abbiano dovuto concentrarsi così tanto sul conflitto. Sembravano molto capaci."`
+				`	"Vissero in fretta, morirono giovani e lasciarono bei cadaveri."`
+					goto approve
+			`	"Beh, non siamo certo noi a poter parlare. A quei tempi anche noi Hai eravamo una specie problematica. Abbiamo perfino provato a invadere il territorio Sheragi. Forse, se ci fossimo riusciti, si sarebbero uniti contro un nemico comune e avrebbero potuto perfino sopravvivere alla loro fase ribelle, a nostre spese.`
+				goto next
+			label approve
+			`	Il curatore ride nel modo inconfondibile degli Hai.`
+			`	"È un modo di dire. Non posso negare che la scala della loro ingegneria fosse una meraviglia anche per gli Hai di allora, e la nostra civiltà era già antica. Certe cose migliorano con le dimensioni, e loro non avevano scelta: dovevano costruire in grande. Ma resta un peccato. Immagina una capacità del genere usata per la pace.`
+			label next
+			`	"Comunque, è raro vedere una faccia umana qui, ed è ancora più intrigante che stia fissando reperti Sheragi. Cosa ti porta qui?"`
+			`	Spieghi delle rovine scoperte di recente su Zug.`
+			`	"Ohhh, giusto. Abitavano la parte dello spazio umano che oggi si chiama il Bordo. Cerchi qualcosa in particolare?"`
+			`	"Vorrei saperne di più sui computer Sheragi," rispondi.`
+			`	"Hmmm, i computer. Gli Sheragi costruivano hardware fatto per durare. Elettronica molto robusta con ridondanze, progettata per incassare un colpo e sopravvivere. Ma dubito che sarebbero sopravvissuti a tanti millenni. Se vuoi capire come funzionava il loro hardware, ci sono alcuni documenti e manuali che gli antichi Hai rubarono loro."`
+			`	"Sono in vendita?" chiedi.`
+			`	"Vuoi comprare una copia dei documenti? Adesso? Sono incuriosito. Hai davvero trovato qualcosa che funziona ancora?"`
+			choice
+				`	"Abbiamo trovato una specie di dispositivo di archiviazione che sembra ancora funzionante. Una scatola nera."`
+					goto truth
+				`	"Sono solo curioso. Studiare la loro tecnologia potrebbe permetterci di migliorare la nostra."`
+			`	"Capisco. Devo avvertirti, però: seguire le orme di una specie condannata può portarti solo fino a un certo punto.`
+				goto end
+			label truth
+			`	Mostri un'immagine del cubo che hai trovato sul tuo olopad. Il curatore la fissa, poi si volta lentamente verso di te con pietà negli occhi.`
+			`	"Questa scatola è rossa," dice con delicatezza. "Una volta ho letto una tesi sulla diffusione del daltonismo negli umani, ma..."`
+			`	Per non perdere tempo, interrompi il curatore e spieghi che "scatola nera", nella terminologia umana, indica un dispositivo usato per raccogliere e conservare i dati di volo in caso di guasto catastrofico.`
+			`	Sembra che capisca. "Una 'scatola nera' Sheragi, dici? È un ritrovamento incredibile! Però stai attento alle informazioni che contiene. Sono una specie condannata. Voi umani non avete una leggenda su una scatola maledetta? Come si chiamava... il vaso di Pandora?`
+			label end
+			`	"In ogni caso... non sono autorizzato a venderti documenti, io mi occupo solo dei reperti qui. Dare tecnologia Sheragi agli umani sarà probabilmente un processo molto burocratico. Ti suggerisco di contattare il Ministero della Cultura su Hai-home."`
+			`	Lo ringrazi per l'aiuto e torni allo spazioporto, preparandoti mentalmente a quello che sarà probabilmente un lungo incontro.`
+				accept
+
+	on complete
+		"reputation: Hai" += 10
+		"reputation: Hai (Wormhole Access)" += 10
+		"reputation: Hai Merchant" += 10
+		"reputation: Hai Merchant (Human)" += 10
+		"reputation: Hai Merchant (Sympathizers)" += 10
+		conversation
+			`Arrivando su Hai-home, riesci a contattare il Ministero della Cultura, esprimendo il tuo interesse a ottenere documenti e manuali Sheragi. Dopo un po' di attesa in linea, ti danno un appuntamento per incontrarli di persona.`
+			`	Ti prepari e ti dirigi al municipio, dove ha sede il Ministero, per incontrare i funzionari Hai, accompagnati da alcuni diplomatici. Vi sedete tutti a un tavolo rotondo. Descrivi loro la scoperta delle rovine Sheragi e cominciano a fare domande, curiosi dello stato di conservazione delle rovine e di quali reperti siano stati trovati. Sembrano molto emozionati.`
+			`	"È un'opportunità unica! Anche quando la nostra specie era in... contatto attivo, millenni fa, noi Hai non abbiamo mai avuto l'occasione di studiare da vicino le città Sheragi. Brevi scaramucce e incontri diplomatici furono il massimo a cui arrivarono i nostri antenati.`
+			`	"Capirai, però, che non possiamo semplicemente venderti i documenti che chiedi. Abbiamo invece una proposta: cooperazione fra le nostre specie, così che sia gli Hai sia gli umani possano trarne beneficio in modi più significativi di quello economico."`
+			`	Vista l'opportunità, racconti della scatola nera Sheragi trovata nel sito di scavo, e della possibilità di decifrarla e scoprirne i segreti.`
+			`	"Con gli strumenti giusti potremmo decodificarla. Ma in cambio vorremmo avere anche una copia del contenuto, e saperne di più sui vostri ritrovamenti."`
+			choice
+				`	"Aspetta, non posso semplicemente pagare per un aiuto?"`
+				`	"Mi sembra giusto."`
+					goto accept
+			`	"È un'ottima opportunità anche per noi, capitano <last>. Non ti toglieremo nulla, anzi: è un beneficio reciproco."`
+			`	Rifletti un momento sulle tue scelte. Non hai modo di risolvere questo enigma senza il loro aiuto. Sei arrivato fin qui, quindi accetti.`
+			label accept
+			`	"Eccellente!" esclama l'Hai.`
+			`	Chiacchierano ancora un po' con te, e il capo dei diplomatici si scusa un momento per fare una chiamata. Un attimo dopo torna.`
+			`	"Abbiamo organizzato l'incontro allo spazioporto, tra qualche ora, con una squadra di archeologi molto capaci. Sono specializzati in reperti Sheragi. Ti consiglio di fare spazio per tre passeggeri e un po' di carico per la loro attrezzatura."`
+			`	Li ringrazi per l'aiuto e lasci l'edificio, pronto a incontrare la tua nuova squadra allo spazioporto.`
+
+
+
+mission "Sheragi Archaeology: The Box 8"
+	name "Riunire la squadra"
+	description "Porta gli archeologi Hai a incontrare Albert Foster su <destination>."
+	source "Hai-home"
+	destination "Zug"
+	passengers 3
+	cargo "Archaeological Equipment" 1
+	blocked `Arrivi allo spazioporto, ma poi ti rendi conto che le tue navi non hanno abbastanza cuccette libere o spazio nel carico per portare con te la squadra di archeologi. Riesci a contattarli e, in una conversazione imbarazzante, chiedi loro di aspettarti mentre ti assicuri di essere pronto.`
+	
+	to offer
+		has "Sheragi Archaeology: The Box 7b: done"
+	
+	on offer
+		conversation
+			`Incontri gli archeologi Hai che ti accompagneranno nello spazio umano, una squadra tutta al femminile. Si presentano come Eyama, Rakei e Desyo.`
+			`	Eyama è una linguista specializzata nella lingua Sheragi. Ti saluta scherzosamente nella lingua gutturale dei draghi, con tonalità strane.`
+			`	Rakei è un'esperta di ingegneria archeologica, e prende subito in simpatia il cubo appena lo vede, esaminandone la struttura.`
+			`	Infine Desyo è un'esperta di xenoprogrammazione che studia software alieni, e sembra avere molta esperienza con il codice Sheragi. A quanto pare, i display della sala Sheragi del museo funzionano tutti in questa lingua esotica, invisibile al pubblico.`
+			`	Dopo la breve presentazione, ognuna prende la propria attrezzatura e la carica nella stiva della tua nave. Rakei ti si avvicina quando tutto è al suo posto.`
+			`	"Vogliamo incontrare l'archeologo umano che ha riportato alla luce le rovine nel Bordo. Puoi portarci da lui? Cominceremo a esaminare il cubo lungo la strada. Credo che quando arriveremo avremo qualcosa su cui lavorare."`
+				accept
+	
+	on visit
+		dialog phrase "generic cargo and passenger on visit"
+	on complete
+		event "cube decoded" 40 50
+		log "People" "Desyo" `Esperta di xenoprogrammazione Hai di grande talento, Desyo è specializzata nel codice e nel software Sheragi. Si interessa più di tecnologia ed elettronica che di persone, e coordina spesso il lavoro della squadra di archeologi Hai, nonostante la sua introversione e la mancanza di gerarchia. La sua dedizione è l'olio che tiene in moto quella macchina.`
+		log "People" "Rakei" `Rakei è un'esperta di ingegneria specializzata in reperti archeologici, ma anche molto interessata a tecnologia nuova e insolita, e spesso si entusiasma con Desyo sugli ultimi articoli scientifici. Fa parte della squadra di archeologi Hai incaricata di svelare il mistero della scatola nera Sheragi.`
+		log "People" "Eyama" `Poco attenta alle formalità e alla serietà, non diresti che Eyama è una linguista affermata specializzata nella lingua Sheragi. Si interessa anche di cultura e sociologia in generale, e sa molto più sulla cultura umana di quanto ti aspetteresti da un Hai, o anche dalla maggior parte degli umani. Il suo lavoro con la squadra di archeologi Hai è prezioso per decifrare i misteri Sheragi e mantenere i rapporti con i partner umani.`
+		conversation
+			`È stato un viaggio lungo, quasi metà della galassia. Gli archeologi Hai sono stati molto amichevoli e cordiali, e ti aggiornavano ogni volta che facevano un nuovo passo avanti. Nel frattempo il cubo, che si pensava impenetrabile, è stato smontato e ripulito. I componenti che nel corso degli eoni si erano ridotti a un ammasso di fili ossidati e pasta appiccicosa sono stati identificati e rimossi per sostituirli con altri equivalenti, e ha cominciato a prendere forma un progetto della scatola e dei suoi circuiti.`
+			`	Appena atterri, chiami Albert Foster, che non ti crede quando dici di aver trovato archeologi alieni disposti ad aiutarvi. Poi cerchi le tre Hai per capire come faranno a passare inosservate su un mondo umano. Ti sorprende trovare Eyama vestita con abiti umani lunghi, scuri ma colorati, con una felpa altrettanto oversize e un fazzoletto. Riconosci questo look, molto in voga tra i giovani di oggi, che la generazione precedente considera in genere dei delinquenti. Inoltre ha con sé altri due completi per le sue colleghe Hai. Nasconde il corpo molto bene, al prezzo di farla sembrare un ragazzino, e la statura relativamente bassa degli Hai non aiuta.`
+			`	"Chiamami Signorina Deus ex Machina, perché ci ho pensato prima e li ho comprati da un mercante a casa mia. Travestimenti perfetti. Gli umani non se ne accorgeranno mai. Come sto?"`
+			choice
+				`	"È... ingegnoso. Ti nasconde bene."`
+				`	"Beh, funziona, ma sembri una bambina."`
+					goto child
+			`	"Vero? Posso perfino nascondere la coda dietro il cappuccio!" Si gira su sé stessa contenta.`
+				goto anyway
+			label child
+			`	"Non è poi così male, no? Comunque mi sono sempre considerata giovane dentro!" ridacchia un po'.`
+			label anyway
+			`	"Comunque, puoi portarci al museo del signor Foster? Prenderemo il cubo e lo aggiorneremo sui dettagli."`
+			`	Accetti, e dopo che sono tutte pronte vi incamminate verso il sito di scavo. Sorprendentemente, le tre Hai non ricevono molti sguardi strani se camminano un po' più indietro di te. Arrivate al museo e rompono subito il personaggio, mostrandosi chiaramente entusiaste di vedere gli exhibit. Il che probabilmente è un sollievo per i passanti, che normalmente si aspetterebbero da quel tipo di ragazzino atti di vandalismo su reperti inestimabili.`
+			`	Alla fine arrivate all'officina di Albert. Lui smette di spazzolare gli strati di terra indurita da un oggetto che sembra essere stato un televisore, e ti guarda allarmato, insieme ai tre "ragazzini". Le Hai si tolgono cappucci e fazzoletti, e la sua mascella quasi gli cade a terra.`
+			`	"Che mi venga un colpo. Gli Hai esistono davvero!" esclama.`
+			`	"Certo che esistiamo," ride Eyama. "Non hai sentito tutte le storie?"`
+			`	"Avevo i miei dubbi. I mercanti non sono di solito le fonti più attendibili." Sorride. "Sono Albert Foster, archeologo, piacere di conoscervi."`
+			`	Si presentano, e molto presto la conversazione scivola in una specie di gergo che anche Albert fatica a seguire. Parlano della scatola e dei loro ritrovamenti, mentre Albert racconta la storia emersa dal sito di scavo e le sue intuizioni sulla vita quotidiana e la cultura Sheragi. Chiudi la porta per assicurarti che nessun altro stia ascoltando.`
+			`	"Siamo riusciti ad aprire la scatola e stiamo facendo un progetto," dice Desyo. "Quando avremo finito, potremmo essere in grado di ricostruire i pezzi rotti e recuperare i dati. Abbiamo già la documentazione su come funzionava il loro hardware."`
+			`	"Il punto è che ora è una collaborazione. Vi aiuteremo, se condividerete i vostri ritrovamenti con noi," continua Rakei.`
+			`	"Mi sembra un accordo giusto," dice Albert. "Definiremo i dettagli più avanti. <first>, grazie mille per il tuo aiuto. Continueremo a studiare questo reperto, e ti manderemo un messaggio quando avremo finito."`
+			`	Saluti Albert, Rakei, Eyama e Desyo, e torni alla tua nave. Mentre però stai tornando a bordo, senti una mano pesante sulla spalla. Ti volti, e sussulti vedendo un Quarg. È Yarthis, venuto in questo sistema per sorvegliare il sito Sheragi.`
+			choice
+				`	"Non mi aspettavo di vederti qui."`
+				`	"Posso aiutarti?"`
+			`	"Mi è giunto all'orecchio che i tuoi amici hanno trovato una scatola nera Sheragi, e l'hanno tenuta segreta. So bene che la tua specie ci guarda con diffidenza, ma cerca di capire: noi lavoriamo solo per impedire l'estinzione. Mi è stato detto di non interferire, ma devo consigliarti prudenza con il suo contenuto. Sarai condotto ad altri ricordi degli Sheragi, e a uno scorcio della loro distruzione. Ma quello che troverai va considerato solo una curiosità, non qualcosa da replicare o imitare."`
+			`	Si volta e ti lascia senza un'altra parola.`
+
+event "cube decoded"
+
+
+
+mission "Sheragi Archaeology: The Emerald Sword 1"
+	landing
+	name "Scatola nera decifrata"
+	description "Visita Albert Foster su Zug."
+	source
+		near "Zubeneschamali" 1 100
+	destination "Zug"
+	
+	to offer
+		has "event: cube decoded"
+	
+	on offer
+		dialog
+			`Sei ancora a metà dei controlli dopo il volo quando ricevi un nuovo messaggio cifrato da Albert Foster.`
+			`	"Ciao <first>. Ho buone notizie! Abbiamo decifrato ciò che c'è nella scatola nera. Dovresti venire a trovarci su Zug; abbiamo molto da raccontarti!"`
+
+
+
+mission "Sheragi Archaeology: The Emerald Sword 2"
+	landing
+	name "La Spada di Smeraldo"
+	description "Porta un motore di salto in più su Zug."
+	source "Zug"
+	to offer
+		has "Sheragi Archaeology: The Emerald Sword 1: done"
+	
+	on offer
+		conversation
+			`Arrivi su Zug, e dopo aver contattato Albert e le tre archeologhe Hai e aver seguito le loro indicazioni, li trovi in una gelateria. Indossano ancora i vestiti da ragazzini, ma non si preoccupano più di nascondere il viso con i fazzoletti. Sorprendentemente, nessuno sembra turbato dalla vista. Rakei ti fa cenno e si alza, venendoti incontro con i gelati in mano.`
+			`	"Ciao <first>! Sembra che il nostro travestimento abbia funzionato meglio del previsto. Gli umani qui intorno pensano che indossiamo un costume. A quanto pare ai giovani umani piace vestirsi da alieni?" dice confusa.`
+			`	"Avevo la sensazione che ci saremmo integrate bene nella fauna pelosa," risponde Eyama con orgoglio.`
+			`	"È stato uno scambio culturale interessante. Lo spazio umano potrebbe essere un ottimo posto per le vacanze, per noi. Ma non siamo ancora in vacanza. Abbiamo un mistero da risolvere," continua.`
+			`	Ti siedi con il gruppo su una panchina in un parco vicino, quasi vuoto, e Desyo riprende la conversazione.`
+			`	"Dunque, i file nella scatola nera erano per fortuna standard per gli Sheragi. Non molto difficili da decodificare, una volta che siamo riusciti a leggerli."`
+			choice
+				`	"Cosa conteneva?"`
+			`	Desyo risponde: "Erano tutti dati di movimento di flotte e dettagli di strategia militare. Questo sistema era apparentemente al confine del territorio di una delle fazioni. Negli ultimi istanti della registrazione, una grande flotta da trasporto era entrata nel sistema, navi disarmate. Le seguivano navi militari all'inseguimento. Non è dato sapere cosa pensassero allora, ma una flotta militare fu subito inviata a eliminare entrambe. Una nave in particolare, il cui nome Eyama ha tradotto come 'Spada di Smeraldo', cominciò a comportarsi in modo erratico quando ricevette gli ordini. Sparò e mancò alcuni colpi, finché alla fine si fermò e fuggì. Segni chiari di ammutinamento. Però la cosa più interessante è che, quando fuggì, lo fece in una direzione inaspettata, lontano da qualsiasi ipervia."`
+			`	Albert continua: "Pensiamo volessero fuggire dai combattimenti. Erano soldati segnati dagli orrori della guerra, e gli era appena stato ordinato di attaccare quelli che supponiamo fossero profughi. La Spada di Smeraldo era una nave grande, probabilmente con un equipaggio altrettanto numeroso, e dai dati di movimento i suoi motori erano anche molto potenti, forse capaci di coprire distanze interstellari nella vita di uno Sheragi. Questo ha implicazioni interessanti. La nave si dirigeva esattamente verso una stella chiamata Zubenelhakrabi. Non abbastanza importante da comparire nelle mappe stellari, ma abbiamo fatto un rilevamento, e c'è un pianeta potenzialmente abitabile, ma zero segni di vita intelligente. Pensiamo che abbiano fallito nel colonizzarlo, ma la nave potrebbe essere ancora lì. È un reperto inestimabile. Non possiamo saperlo con certezza finché non ci arriviamo. Il problema è che non c'è modo di farlo."`
+			`	"A meno che tu non abbia un motore di salto," aggiunge Rakei. "E ce l'hai, vero?"`
+			choice
+				`	"Ce l'ho."`
+				`	"Prima sì, ma non più."`
+					goto "not anymore"
+			`	"È perfetto! Pensi di poterne trovare un altro? Se andiamo lì e i resti della nave sono ancora al loro posto, ci servirà per installarlo sulla Spada di Smeraldo e riportarla a casa."`
+				goto return
+			label "not anymore"
+			`	"L'hai venduto?" risponde incredula. "Come si fa a vendere un pezzo di tecnologia così inestimabile? Beh, spero che ci sia un modo per procurarsene altri senza averne uno, perché per la prossima fase ce ne serviranno due. Uno per la tua nave, e un altro per la Spada di Smeraldo, se i suoi resti sono ancora lì."`
+			label return
+			`	"Che cosa ottengo in cambio?" chiedi.`
+			`	"Fama e fortuna, amico mio. E se la nave è ancora lì, credo che ti meriti di tenerla," risponde Albert. "Mi hai aiutato così tanto, e sei andato all'inferno e ritorno per far decifrare questa scatola nera. Dacci il tempo di mettere insieme un equipaggio per rilevare il sistema e aiutare a rimettere in sesto la nave, e nel frattempo vai a prendere un motore di salto per la Spada di Smeraldo. Torna da noi quando ce l'hai."`
+			choice
+				`	"Me la lasceresti e basta? Non è forse un reperto storico inestimabile?"`
+					goto "ask keep ship"
+				`	"Grazie."`
+					accept
+			label "ask keep ship"
+			`	Albert risponde: "Beh, sì, ma mi sentirei molto più tranquillo se fosse nelle tue mani invece di stare qui su <origin> ad aspettare di essere distrutta da un fuoco vagante durante un'incursione pirata. Oltre a questo, i Mondi Liberi lavorano sodo e hanno qui una presenza più forte di quanta ne abbia mai avuta la Marina, ma non possono fermare tutti quelli che potrebbero avere interesse per questa nave. Almeno con te è un bersaglio mobile."`
+				accept
+	
+	to complete
+		never
+
+
+
+
+event "zubenelhakrabi discovered"
+	system "Zubenelhakrabi"
+		remove hidden
+
+mission "Sheragi Archaeology: The Emerald Sword 3"
+	landing
+	name "La Spada di Smeraldo"
+	description "Cerca la Spada di Smeraldo."
+	source "Zug"
+	destination "Valley of the Damned"
+	cargo "Outfitting Equipment" 50
+	passengers 150
+	blocked `Arrivi per fare i preparativi del salto verso Zubenelhakrabi, ma Albert ti ferma. "Capitano, la Spada di Smeraldo è una nave aliena, e non abbiamo idea di quante persone servano per equipaggiarla, quindi mi sono preso la libertà di assumere altro equipaggio oltre alla squadra di specialisti. Ci serviranno 150 persone in più, noi compresi, e 50 tonnellate di carico per i nostri materiali e il motore di salto di riserva."`
+	
+	to offer
+		has "Sheragi Archaeology: The Emerald Sword 2: active"
+	
+	on offer
+		require "Jump Drive" 2
+		conversation
+			`Hai un motore di salto di riserva in tuo possesso. Vuoi darlo all'equipaggio di Albert?`
+			choice
+				`	(Sì.)`
+				`	(No.)`
+					defer
+			`	Chiami Albert e prendi accordi per incontrarvi e pianificare il passo successivo. Si presenta alla tua nave, ti saluta e comincia a caricare un po' di attrezzatura, insieme al motore di salto che hai portato. Ha messo insieme un equipaggio di circa 150 persone, tra cui una squadra specializzata di operai dei cantieri, un gran numero di membri esperti, lui stesso e le tre archeologhe Hai, che sono ben contente di liberarsi del travestimento una volta rientrate sulla tua nave.`
+			`	"<first>, ti presento le persone che ci aiuteranno a scoprire il destino della Spada di Smeraldo. Gli ho appena spiegato la situazione e cosa intendiamo fare. Oltre al motore di salto, porteremo con noi alcuni strumenti specializzati, che dovrebbero permetterci di riparare e attrezzare la nave su qualsiasi mondo dove possiamo atterrare. Potrebbe sembrare tanta gente, ma se vogliamo recuperare una nave in rovina, sospetto che ci servirà proprio questo numero. Se sei pronto a partire, ecco le coordinate di Zubenelhakrabi."`
+			`	Ringrazi Albert e fai i preparativi per il viaggio verso l'ignoto.`
+				accept
+	
+	on accept
+		fail "Sheragi Archaeology: The Emerald Sword 2"
+		outfit "Jump Drive" -1
+		event "zubenelhakrabi discovered"
+		"reputation: Sheragi" = 1
+
+	on enter "Zubenelhakrabi"
+		conversation
+			`Il viaggio verso Zubenelhakrabi è del tutto normale e tranquillo. Quando arrivi, una semplice scansione rivela che la stella del sistema è insignificante, vicina alla fine della sua fase di sequenza principale. Tra i pianeti che le orbitano, uno è nella zona abitabile e mostra evidenti segni di vita, coperto di macchie verde scuro sotto le nuvole.`
+			scene "scene/emeraldswordderelict"
+			`	Trovi anche la Spada di Smeraldo, ma stranamente non è sul pianeta: va alla deriva nello spazio. Nave enorme dal disegno angolare, la sua caratteristica più impressionante è un cannone incredibilmente grande che attraversa il centro della nave. È così grande che la nave potrebbe benissimo essere stata costruita intorno a esso; puoi solo chiederti quanto sia potente. Per fortuna non dovrai scoprirlo nel modo peggiore: la nave è inerte, in rovina, rovinata dalla mancanza di manutenzione e abbandonata alla mercé di micrometeoriti e del degrado. Sembra che potrebbe cadere a pezzi se la guardi nel modo sbagliato... per fortuna hai proprio l'equipaggio giusto per il lavoro.`
+			`	Ma prima che tu possa iniziare l'avvicinamento alla nave, ti investe una sensazione strana. Prima la sensazione di essere osservato da qualcosa di molto più grande. Poi un vuoto nel petto, un profondo timore che non riesci a scacciare. Nella tua mente si forma un pensiero, ma non è il tuo:`
+			`	"Sei arrivato, umano. Questo fu l'ultimo baluardo degli Sheragi prima della loro estinzione. Faresti bene a non disturbare questo luogo di memoria." Un brivido forte ti attraversa mentre le parole "estinzione" e "memoria" sono scandite da una sensazione indescrivibile. Come se ci fosse un freddo dentro le tue ossa.`
+			choice
+				`	"Chi sei?"`
+					goto who
+				`	"Che... che cos'è questa sensazione?"`
+			`	C'è una pausa. La sensazione di essere osservato diventa intensa, come se fossi studiato con attenzione.`
+			`	"Un umano la chiamerebbe... terrore. Rimpianto. Perdita. Sei in piedi nell'ultimo cimitero intatto di una civiltà perduta.`
+			label who
+			`	"Sono il guardiano di questo sito. Sono anche colui che ti ha guidato verso la città sepolta, perché la tua specie fosse testimone e tenesse conto delle lezioni di chi da tempo ha ceduto alla propria follia. Non intendevo che arrivassi così lontano.`
+			`	"Qui è dove gli Sheragi giunsero alla fine. Gli strumenti che li portarono all'estinzione sono spariti da tempo. Abbiamo assistito al momento in cui li gettarono nel cuore di questa stella."`
+			choice
+				`	"Intendi questa nave? I suoi sistemi d'arma sembrano intatti."`
+					goto cannon
+				`	"Quali strumenti?"`
+			`	"Quelli capaci di annientare tutta la vita di un intero mondo."`
+				goto next
+			label cannon
+			`	"Quella nave è solo un reperto, le sue armi un semplice gingillo. L'arma che distrusse gli Sheragi non distingueva tra amici e nemici. Una decisione irrazionale che presero per sé stessi, senza saper valutare il rischio."`
+			label next
+			`	Mentre questo viene detto, sei sopraffatto da scorci di ricordi che non sono tuoi, non abbastanza nitidi perché tu possa capire cosa sta succedendo esattamente, ma in essi senti un panico infernale.`
+			`	La voce continua: "So cosa cerchi qui. Il gingillo a cui ambisci ha poca rilevanza, anche per i tuoi standard umani. Ma se desideri possederlo, prendilo. Mostra rispetto a chi è perito qui, impara le loro lezioni, e lo permetterò. Forse la vista di quel vascello ricorderà alle razze viventi di quelli che sono venuti e se ne sono andati... e di come, nonostante i loro grandi successi, la loro decisione di fare la guerra li abbia ridotti a cimiteri, reperti, ricordi... e polvere."`
+			`	La voce, e le emozioni travolgenti che l'accompagnavano, spariscono misteriosamente come sono arrivate. Desyo, che ti ha visto parlare nel vuoto, ti chiede se stai bene. Sembra che nessun altro l'abbia sentita.`
+
+	npc assist
+		government "Sheragi"
+		personality derelict mute pacifist
+		system "Zubenelhakrabi"
+		ship "Emerald Sword" "Emerald Sword"
+		conversation
+			`Ti agganci alla Spada di Smeraldo e l'equipaggio comincia a lavorare per trovare con cautela un modo per entrare, sotto la guida delle archeologhe Hai. All'interno non c'è atmosfera, perché il supporto vitale ha smesso di funzionare da tempo.`
+			`	Dopo aver tappato tutti i fori da micrometeorite che riesci a trovare, usi il supporto vitale della tua nave per ripristinare l'atmosfera della Spada di Smeraldo, e colleghi l'energia della tua nave alla sua per rendere i sistemi minimamente funzionanti. Quando l'ambiente è respirabile, l'equipaggio sale a bordo e comincia a lavorare. Con l'atmosfera appena pressurizzata, non puoi fare a meno di pensare che sa di tomba.`
+			`	Foster divide l'equipaggio in vari gruppi per esplorare l'enorme vascello e riferire i ritrovamenti. "Potremmo restare qui un bel po'. Non si può dire quanto ci vorrà per rimetterla in funzione. Dopotutto sono passate molte migliaia di anni," dice. Foster comincia subito a ispezionare uno dei tanti resti Sheragi a bordo, mentre Eyama, Rakei e Desyo esplorano la nave ciascuna con il proprio gruppo.`
+			`	Nel giro di mezz'ora, l'intera nave brulica di membri dell'equipaggio che lavorano sodo studiando la nave (e i resti dei suoi precedenti abitanti) e cercando di rimetterla in funzione.`
+			label exploration
+			choice
+				`	(Cerca Foster per vedere cosa sta facendo.)`
+					to display
+						not "saes: spoke with foster"
+				`	(Cerca Eyama per vedere cosa sta facendo.)`
+					goto eyama
+					to display
+						not "saes: spoke with eyama"
+				`	(Cerca Rakei per vedere cosa sta facendo.)`
+					goto rakei
+					to display
+						not "saes: spoke with rakei"
+				`	(Cerca Desyo per vedere cosa sta facendo.)`
+					goto desyo
+					to display
+						not "saes: spoke with desyo"
+				`	(Torna alla mia nave e aspetta che la Spada di Smeraldo sia operativa.)`
+					goto end
+			
+			action
+				set "saes: spoke with foster"
+			`	Trovi Foster in una stanza che sembra essere stata ampliata oltre le sue dimensioni originali e convertita in una specie di impianto agricolo. Ci sono file di terra secca, da cui i nutrienti sono spariti da tempo, con lampade solari sospese sopra. Mentre la maggior parte dell'equipaggio con Foster è occupata a studiare l'impianto stesso, la sua attenzione sembra rivolta al corpo mummificato di uno Sheragi, riverso contro una delle pareti. Noti che il cadavere ha un'ala protesica attaccata, che è sopravvissuta molto meglio del suo ospite.`
+			`	"Che cosa hai trovato finora?" chiedi a Foster.`
+			`	Foster non risponde subito, così cominci a ripetere la domanda, ma poi si volta di scatto verso di te, e poi di nuovo verso il cadavere. "Scusa, stavo sognando a occhi aperti. Quello che abbiamo trovato. Quello che abbiamo trovato..." La voce di Foster si perde mentre si guarda intorno nella stanza. "Senti anche tu quel rumore di colpi?"`
+			choice
+				`	"Che rumore di colpi?"`
+				`	"Io non sento niente."`
+			`	"Strano. L'ho chiesto agli altri qui, ma nemmeno loro sentono nulla... Comunque, abbiamo trovato molte cose straordinarie. Questa fattoria è solo la punta dell'iceberg. Dato che la Spada di Smeraldo doveva essere in grado di sopravvivere al lungo volo nello spazio interstellare a velocità subluminale, non sorprende che l'equipaggio abbia dovuto rendere la nave autosufficiente. Sono sicuro che potremmo imparare molto, tecnologicamente, da questa nave. Ma abbiamo anche trovato molte... cose inquietanti..." la voce gli si perde di nuovo.`
+			`	"Questi corpi raccontano storie, <last>. Storie terribili. L'ingresso a questa zona della nave era saldato. Quasi tutti i cadaveri fuori da questa zona erano scheletri, mentre quelli dentro, come questo, erano mummificati. La mia ipotesi migliore è che a un certo punto dopo l'arrivo si siano resi conto che, anche con un impianto come questo, il cibo sarebbe finito col tempo." Foster si inginocchia per avvicinarsi al cadavere. "Ho visioni molto vivide di tutto questo, quasi come se fossi lì nel momento, ma succede tutto così in fretta... Si sono rivoltati gli uni contro gli altri, nella disperazione. Un piccolo gruppo ha deciso di chiudere fuori gli altri dalla scorta di cibo, lasciandoli morire di fame. Poi quelli qui dentro sono andati avanti con quello che restava finché i sistemi di supporto vitale non hanno ceduto.`
+			`	"In tutti i miei anni non mi sono mai sentito così toccato dal mio lavoro come adesso. Provo una sensazione molto... emotiva, del tutto inusuale per me, di fronte a tutto questo." Foster si volta dall'altra parte e si asciuga una lacrima.`
+			choice
+				`	"Hai tutto il diritto di essere emotivo. Abbiamo fatto una scoperta straordinaria e tragica."`
+				`	"L'Archon mi ha parlato quando siamo arrivati nel sistema. Forse sta avendo un effetto anche su di te."`
+					goto archon
+				`	"Pensi che sia perché quello che stiamo facendo potrebbe essere sbagliato? In fondo stiamo saccheggiando una tomba."`
+					goto wrong
+			
+			`	"Sì. Sì, l'abbiamo fatto," dice Foster, con un tono più allegro di prima. "Straordinaria, ma tragica. Ma straordinaria," ripete, come per rassicurarsi.`
+				goto "foster end"
+			
+			label archon
+			`	Foster ridacchia nervosamente al nome dell'Archon. "Forse," dice, poi si ferma. "No. Credo che la gravità della situazione parli da sé."`
+				goto "foster end"
+			
+			label wrong
+			`	"Ho pensato la stessa cosa durante il salto," dice Foster. "Ma siamo andati troppo avanti per tornare indietro."`
+			
+			label "foster end"
+			`	Foster si rialza e si allontana dal cadavere. "Dovrei tornare a esplorare il resto della nave. Non serve a nulla fissare cadaveri tutto il giorno."`
+			`	Lasci la zona e vedi che il grande portello che bloccava l'ingresso è appoggiato a una parete. Foster aveva detto che la porta era stata saldata, quindi l'equipaggio deve averla rimossa in qualche modo per indagare nella zona. Noti un'ammaccatura profonda al centro della porta. Non sai se sia dovuta all'equipaggio che è entrato nell'impianto, o ai precedenti abitanti della nave che cercavano di sfondarla.`
+				goto exploration
+			
+			label eyama
+			action
+				set "saes: spoke with eyama"
+			`	Trovi Eyama che sta esaminando gli alloggi della nave, costituiti da lunghi corridoi fiancheggiati da camerate. Molte porte sono già aperte, il che suggerisce che Eyama ne abbia già controllate molte. Esce da una delle camerate dopo averla ispezionata e ti nota. "Capitano <last>! Cosa ti porta qui?" chiede.`
+			`	"Mi chiedevo se avessi già trovato qualcosa di interessante," rispondi.`
+			`	"Oh, no. Niente di che," dice, con un tono un po' deluso. "Finora ho trovato solo stanze in gran parte vuote. Avrei pensato che tenessero oggetti personali nelle cuccette, ma sembra che non l'abbiano fatto. O forse sono stati spostati per qualche motivo."`
+			`	Eyama passa alla porta successiva del corridoio. Invece di un'altra camerata, però, la porta dà su una stanza più grande. A giudicare dalla vicinanza alle camerate, la supporresti una sala comune o una specie di mensa, ma il contenuto suggerisce altro. Le pareti sono coperte di scritte e dipinti Sheragi, e il pavimento è disseminato di vari oggetti dall'aspetto strano.`
+			`	"Questo è..." dice Eyama, perdendosi mentre si avvicina a una delle scritte sul muro.`
+			choice
+				`	"Che cos'è?"`
+			
+			`	Eyama passa la mano sulla scritta e comincia a parlare. I suoni corrispondono alla lingua gutturale con cui ti ha salutato all'inizio. Si ferma dopo ogni suono, come se leggesse singole parole o caratteri. "Questo è l'alfabeto Sheragi," dice con soggezione. Poi l'attenzione si sposta su altre scritte. Le legge, poi te le traduce. "Dice: 'Rekla abbia pietà di noi.'" Accanto alla scritta c'è un'impronta di mano Sheragi sul muro, una delle tante disseminate nella grande sala. Eyama vi appoggia la mano, quasi coprendola. "Questa è una mano giovane."`
+			choice
+				`	"Perché c'è tutto questo?"`
+					goto young
+				`	"Chi è Rekla?"`
+
+			`	"Da quello che sappiamo, Rekla era una guerriera divina tra gli Sheragi. Le leggende Sheragi dicevano che aveva unito le tribù Sheragi in guerra e le aveva guidate tutte verso le stelle.`
+			label young
+			`	"Questa nave deve aver viaggiato tra le stelle per molti dei vostri anni per raggiungere questo sistema senza un motore di salto. I motori sono potenti, quindi forse ci sono voluti 120 anni per arrivare qui. Molti degli Sheragi sarebbero sopravvissuti al viaggio, ma sarebbero stati molto vecchi all'arrivo. Il che avrebbe reso difficile colonizzare il pianeta."`
+			choice
+				`	"Quindi avrebbero dovuto riprodursi durante il tragitto?"`
+				`	"Vuol dire che questa era una specie di scuola materna?"`
+					goto daycare
+			
+			`	"Sì. Almeno una, forse due generazioni di Sheragi potrebbero essere nate in quel periodo."`
+				goto walls
+			
+			label daycare
+			`	Eyama va verso uno degli oggetti a terra e lo raccoglie. "Questi sono giocattoli. Quindi sì. Sembra davvero che questa zona sia stata convertita in una scuola materna."`
+			
+			label walls
+			`	Eyama si alza e guarda verso le pareti. "E queste scritte sui muri servivano a insegnare a loro. Queste impronte di mano sono le loro. Ce ne sono centinaia. E alcune di queste parole sono le loro preghiere finali." Eyama sembra andare in trance mentre cammina per la stanza dando un'occhiata alle molte scritte sul muro.`
+			`	Mentre Eyama vaga per la stanza, cominci a guardare gli oggetti a terra. Uno ti colpisce: un libro dalle proporzioni enormi, poco più del doppio in lunghezza e larghezza di un libro umano medio, anche se immagini che sarebbe perfetto per un giovane Sheragi. Provi ad aprire il libro ma scopri che le copertine sono chiuse insieme, e il lucchetto non cede.`
+			`	"Eyama, guarda questo," dici, scuotendola dalla trance.`
+			`	"Oh, un libro?" chiede. Raccoglie il libro e prova ad aprirlo. Senza esitare allunga la mano verso il lucchetto e lo stacca di netto, prima di spalancare l'enorme copertina.`
+			choice
+				`	"Come hai fatto ad aprirlo?"`
+				`	"Cosa dice?"`
+					goto diary
+			`	"Era chiuso?" chiede Eyama con un'espressione perplessa, prima di riportare subito l'attenzione sul libro.`
+			
+			label diary
+			`	Sfoglia le pagine. "Questo è un diario. Sembra scritto da uno Sheragi adolescente nato sulla nave. Racconta di non aver mai visto un pianeta o una stella da vicino, ma gli adulti a bordo gli raccontano storie di una terra promessa verso cui stanno viaggiando. Sembra che fossero vicini quando è stato scritto, forse a solo qualche settimana dal sistema."`
+			`	Gira le pagine, addentrandosi nel diario. "Quando sono arrivati nel sistema, sono rimasti in orbita intorno al pianeta. L'autore non sa tutto quello che succedeva, ma sembra che ci siano state discussioni se atterrare o no."`
+			`	Poi gira altre pagine. "Alcuni degli Sheragi sono partiti per il pianeta, mentre altri sono rimasti indietro. Non sembra che la separazione sia stata amichevole."`
+			`	Continua a sfogliare finché le pagine diventano bianche. Torna indietro e si ferma sull'ultima pagina scritta. "Parte dell'equipaggio rimasto si è chiusa nell'ala della fattoria idroponica della nave, lasciando al resto dell'equipaggio quantità limitate di cibo. 'Ho paura e non so cosa fare.'" Eyama smette di leggere e chiude il libro, con gli occhi lucidi. "Questa era l'ultima riga."`
+			`	Eyama si asciuga una lacrima. "Una storia triste, ma qui ci sono molte storie tristi. Non serve a nulla soffermarsi su questa." Mette il libro sotto il braccio ed esce nel corridoio, tornando a controllare gli alloggi.`
+				goto exploration
+			
+			label rakei
+			action
+				set "saes: spoke with rakei"
+			`	Mentre cerchi Rakei, senti un ronzio basso cominciare a diffondersi per la nave, seguito dal bagliore delle luci di emergenza sostituito dalla luce piena delle luci principali. Alla fine trovi Rakei con il suo gruppo che cammina nei corridoi della parte inferiore della nave. "Salve, capitano," dice. "Ti serve qualcosa?"`
+			`	"Avete trovato qualcosa di interessante quaggiù?" chiedi.`
+			`	"Niente di straordinario," risponde. "Abbiamo appena finito di rimettere in funzione l'energia. Abbiamo dovuto sostituire alcuni pezzi che sembrano essersi rotti per vecchiaia. Sembra che la generazione di energia fosse attiva fino alla fine.`
+			`	"A quanto pare la generazione di energia e i motori sono un unico blocco, quindi credo che sia così che sono riusciti a fare motori così potenti. Ora andiamo ai sistemi di supporto vitale per assicurarci che siano in linea, così puoi scollegare la tua nave in sicurezza."`
+			`	La segui ai sistemi di supporto vitale della nave, un'unità enorme progettata per filtrare l'anidride carbonica dall'atmosfera della nave, mantenere i livelli di ossigeno bilanciati e avvertire di eventuali perdite. Rakei trova il pannello di controllo principale e comincia a digitare. "Bisogna assicurarsi che non ci uccida quando lo accendiamo." Dopo un po' di lavoro sul pannello, si limita a tirare un interruttore e lo accende.`
+			`	"Hm," dice. "È stato un po' troppo facile."`
+			`	"Che vuoi dire?" chiedi.`
+			`	"Beh, abbiamo dovuto riparare la generazione di energia perché si era rotta per l'uso, ma i sistemi di supporto vitale funzionano perfettamente."`
+			choice
+				`	"Pensi che la generazione di energia sia ceduta prima dei sistemi di supporto vitale?"`
+				`	"Forse qualcuno ha spento i sistemi di supporto vitale."`
+					goto purposeful
+			`	"Potrebbe essere, ma di solito i sistemi di supporto vitale sono la prima serie di componenti da riparare o sostituire man mano che una nave invecchia, quindi forse qualcuno li ha spenti prima che la generazione di energia cedesse."`
+				goto follow
+			label purposeful
+			`	"Potrebbe essere. I sistemi di supporto vitale di solito sono la prima serie di componenti da riparare o sostituire man mano che una nave invecchia, quindi qualcuno che li ha spenti è un modo in cui hanno potuto funzionare quando l'energia no."`
+			label follow
+			`	Rakei sembra avere gli occhi improvvisamente attratti da qualcosa dall'altra parte della stanza. Segui il suo sguardo e noti una porta aperta, diversa da quella da cui siete entrati. La porta conduce a una camera di equilibrio sigillata. Rakei accede a un pannello accanto alla camera per verificare che l'altro lato sia pressurizzato, e la apre.`
+			`	Dall'altra parte della camera di equilibrio trovi una grande stanza con quella che sembra una pista che scende nel mezzo, verso un'apertura schermata sul vuoto dello spazio. Su entrambi i lati della stanza ci sono tre baie di hangar. Noti che ognuno degli hangar contiene una nave, tranne uno.`
+			`	"Caccia," dice Rakei mentre si avvicina a uno di essi e comincia a esaminarlo. "Sembrano pezzi di tecnologia interessanti. Mi chiedo come facessero gli Sheragi a entrarci." Passa la mano lungo lo scafo del caccia e vede delle scritte Sheragi sul fianco. "'Carro d'Onice'. È il suo nome."`
+			choice
+				`	"Sai leggerlo?"`
+					goto read
+				`	"Pensavo che la linguista fosse Eyama."`
+			`	"Lo è. Credo che mi abbia contagiata."`
+				goto fighter
+			label read
+			`	"Direi di sì."`
+			label fighter
+			`	Rakei salta in cima al caccia, cercando un modo per entrare. Trova un portello e lo apre, restando scioccata da quello che vede. "Aspetta. Penso che questi caccia siano autonomi. Non vedo segni di un sistema di supporto vitale, né un modo in cui uno Sheragi potrebbe pilotarlo. C'è a malapena spazio perché ci stia uno Sheragi giovane. Se gli Sheragi non potevano pilotarli, perché ne manca uno?"`
+			`	Rakei chiude il portello e salta giù dal caccia. "Dobbiamo ancora rimettere in funzione altri sistemi prima che la nave sia pienamente operativa, quindi potremo dare un'occhiata a questi caccia più avanti. E magari troveremo il caccia mancante sul pianeta."`
+				goto exploration
+			
+			label desyo
+			action
+				set "saes: spoke with desyo"
+			`	Trovi Desyo nella cabina di pilotaggio della nave, mentre sovrintende a un equipaggio che cerca di prendere il controllo dei sistemi informatici. Sono stati montati ponteggi improvvisati solo perché l'equipaggio possa raggiungere i comandi. "Salve, capitano," ti saluta Desyo mentre entri dal portale enorme. "Posso aiutarti in qualcosa?"`
+			`	"Sono solo curioso di sapere cosa hai trovato," rispondi.`
+			`	"Non molto, per ora. Abbiamo appena finito di montare queste strutture per poter accedere ai comandi della nave. Ora li stiamo esaminando per trovare una specie di punto di accesso principale. Da lì potremo prendere il controllo della nave."`
+			`	"Desyo, forse dovresti vedere questo," grida uno dei membri dell'equipaggio. Segui Desyo dal membro dell'equipaggio, che ha trovato un vano sotto una delle console. Dentro, in mezzo a un ammasso di componenti Sheragi, c'è una scatola nera che assomiglia esattamente a quella che ti ha portato qui, e anche in condizioni molto migliori rispetto a quella.`
+			`	Desyo estrae con entusiasmo la scatola nera dal vano, la stacca dall'elettronica della nave e la collega a un computer suo. "Non si può dire quali informazioni riusciremo a trovare con questa! Avere la scatola nera di questa nave ci dirà tutto di lei, dal suo viaggio a Zubeneschamali fino al momento in cui la nave ha perso energia!"`
+			choice
+				`	"Pensi che potremmo trovare un'altra nave da esplorare?"`
+				`	"È davvero una buona idea collegarla così?"`
+					goto "bad idea"
+			
+			`	"Non credo che questa scatola contenga informazioni che ci portino a un'altra nave. Ma c'è solo un modo per scoprirlo," dice Desyo mentre comincia a decifrare la scatola nera.`
+				goto explodes
+			
+			label "bad idea"
+			`	"Se pensi che potrebbe infettare il mio computer con un virus come contromisura, ci ho già pensato. Abbiamo dovuto sviluppare un firewall per combattere un virus che era nell'altra scatola nera," dice Desyo mentre comincia a decifrare la scatola nera.`
+			
+			label explodes
+			`	Mentre Desyo comincia a estrarre informazioni dalla scatola, cominci a sentire uno strano rumore simile a un bollitore. Il rumore aumenta di volume e individui che viene dalla scatola stessa, che ora emette strane particelle bianche e un'ondata di calore. Anche gli altri se ne sono accorti e si sono già messi al riparo. "Strano. Non l'ho mai visto succedere," dice Desyo. Prima che tu possa muoverti, qualcuno tira te e Desyo via dalla scatola. La scatola emette improvvisamente un forte botto e i pezzi volano ovunque in un'esplosione.`
+			choice
+				`	"Qualcuno è ferito?"`
+				`	"È successo anche con l'altra?"`
+					goto last
+			
+			`	Alla tua domanda risponde un coro di "No, sto bene", "Tutto a posto qui" e varie altre conferme di sicurezza da parte dell'equipaggio.`
+				goto "desyo end"
+			
+			label last
+			`	Desyo ti guarda come se fossi una specie di alieno. "No, niente del genere. Non credi che l'avrei previsto, se fosse successo?"`
+			
+			label "desyo end"
+			`	Tutti escono dai loro ripari per guardare le conseguenze. Per fortuna nessuno sembra essersi fatto male. Desyo va verso il grande segno di bruciatura sul pavimento lasciato dall'esplosione. "Non ho idea di cosa possa aver causato un'esplosione del genere," esclama.`
+			`	"Come sta il tuo computer?" chiedi.`
+			`	Desyo trova il computer dall'altra parte della stanza con lo schermo gravemente incrinato, ma in qualche modo ancora funzionante. "Hardware robusto, eh?" scherza. Comincia a battere sui tasti strizzando gli occhi verso lo schermo. "Riesco ancora a distinguere parte di quello che ero riuscita a estrarre dal cubo. Sembra che... quel cubo contenesse informazioni su un'arma. Una specie di... arma chimica? Sembra includere... un riferimento a delle coordinate. Ma è tutto quello che sono riuscita a ottenere. Qualunque fossero quelle coordinate, sono perse nel tempo."`
+			`	L'equipaggio è ancora lì intorno, sotto shock, mentre Desyo armeggia con il computer danneggiato. Alza lo sguardo e vede tutti che la fissano. "Beh, torniamo al lavoro. Non faremo progressi restando qui impalati."`
+				goto exploration
+			label end
+			`	Torni alla tua nave, e dopo qualche ora Foster ti contatta dicendo che la nave è in condizioni operative. Andrà però fatta atterrare sul pianeta di questo sistema perché si possa installare il motore di salto.`
+		
+	on visit
+		dialog `Atterrando su questo strano mondo, ti rendi conto che non tutto è al suo posto! Meglio assicurarsi che la Spada di Smeraldo sia presidiata, e che nessun membro dell'equipaggio o carico sia su scorte fuori dal sistema.`
+
+
+
+mission "Sheragi Archaeology: Epilogue"
+	landing
+	name "La Spada di Smeraldo"
+	description "Torna su Zug."
+	source "Valley of the Damned"
+	destination "Zug"
+	passengers 150
+	cargo "Outfitting Equipment" 25
+	to offer
+		has "Sheragi Archaeology: The Emerald Sword 3: done"
+	on offer
+		give ship "Emerald Sword (Fixed)" "Emerald Sword"
+		give ship "Black Diamond" "Stormheart"
+		give ship "Black Diamond" "Onyx Chariot"
+		give ship "Black Diamond" "Firebrand"
+		give ship "Black Diamond" "Frostherald"
+		give ship "Black Diamond" "Ivory Talon"
+		give ship "Black Diamond" "Skeleton Key"
+		conversation
+			`Mentre entri nell'atmosfera del mondo alieno, cominci a fare scansioni della qualità dell'aria per stabilire se sia sicuro respirarla. Scopri presto perché gli Sheragi perirono nello spazio: l'atmosfera ha un'alta concentrazione di cloro gassoso, letale per tutte le creature viventi tranne quelle che sembrano essersi evolute qui per miracolo. Le tute ambientali portate "per sicurezza" si rivelano molto utili qui. L'atmosfera sarebbe malsana da respirare a lungo, e molto scomoda nel breve periodo, se non le aveste portate.`
+			`	Passi un po' di tempo a cercare un punto di atterraggio adatto: abbastanza in alto da sfuggire alle concentrazioni più alte di cloro nell'atmosfera, ma abbastanza piatto da poterci atterrare. I tuoi scanner individuano alla fine una mesa piatta molto in alto rispetto al suolo. Scopri che gli Sheragi avevano trovato esattamente lo stesso posto: mentre ti avvicini per atterrare, diventa evidente che sulla mesa ci sono le rovine di un grande insediamento.`
+			`	Tra le rovine noti quella che sembra una piccola nave coperta di vegetazione. "Quello dev'essere il caccia mancante," dice Rakei.`
+			branch skip
+				has "saes: spoke with rakei"
+			`	Vedendo la tua confusione, spiega: "Abbiamo trovato cinque caccia sulla Spada di Smeraldo, ma c'è spazio per sei. Abbiamo pensato che l'ultimo potesse essere sul pianeta."`
+			label skip
+			`	"Beh, è proprio un bel colpo di scena," dice Foster guardando le rovine.`
+			choice
+				`	"Non ti aspettavi di trovare qualcosa qui?"`
+				`	"Pensi che troveremo qualcuno ancora vivo?"`
+					goto alive
+			`	"Non dopo aver visto cosa è successo sulla nave," risponde.`
+				goto landing
+			label alive
+			`	"Dopo migliaia di anni? Non trattengo il respiro," risponde.`
+			label landing
+			`	Posi la nave accanto alla Spada di Smeraldo e l'equipaggio si mette al lavoro per trasportare attrezzature pesanti dalla tua nave alla Spada di Smeraldo, per finire di rimetterla in funzione e installare il motore di salto.`
+			`	Foster ed Eyama si infilano nelle tute ambientali. "Vuoi unirti a noi a esaminare le rovine, <first>?" chiede Foster. "Rakei e Desyo resteranno qui a finire il lavoro sulla nave."`
+			choice
+				`	"Certo, vengo anch'io."`
+				`	"No, preferisco aspettare qui."`
+					goto end
+			`	Ti inoltri nell'insediamento con Foster ed Eyama. Non resta molto delle rovine, ma c'è comunque più di quanto ci si aspetterebbe di trovare dopo tanto tempo. Gli edifici erano tutti collegati tra loro per evitare l'atmosfera esterna. Erano fatti di vetro, rottami e una specie di plastica bianco-giallastra, la stessa plastica di cui sono fatti i carapaci degli animali di qui. È molto fortunato che la vita giovane di questo pianeta sembri ancora incapace di decomporre quei materiali, lasciando le rovine in balia solo del clima e dei processi geologici. Sembrano essere state fuse e plasmate in muri nel tempo, il che dà agli edifici un aspetto arrotondato e anacronistico, come capanne di fango fatte di materiali moderni. Tutt'intorno, all'interno, ci sono resti di tende e stracci appesi dal soffitto al pavimento. Un esame più attento rivela che gli stracci hanno tracce di sostanze chimiche esotiche, probabilmente fatte per reagire con il cloro nell'aria e mantenere respirabile l'atmosfera interna.`
+			`	Le stanze più piccole che incontri sembrano semplici case famigliari, con un interno semplice a una sola stanza, mentre quelle più grandi avevano altri usi, come quella che sembra essere stata un'aula, un magazzino di carapaci animali che conserva esoscheletri di molte specie diverse, una cucina comune con i resti di un forno solare e, cosa più notevole, una cova con letti relativamente piccoli, nidi e giocattoli improvvisati sparsi in giro. La maggior parte delle stanze è disseminata di scheletri e resti, dai più grandi cacciatori-raccoglitori ai più piccoli dei giovani, una scena cupa che suggerisce che qualche catastrofe sconosciuta pose fine alle loro vite tutte in una volta. Anche così, gli Sheragi in superficie sopravvissero apparentemente molto più a lungo di quelli sulla Spada di Smeraldo, forse per molte generazioni. Se la nave fosse atterrata, potrebbero essere sopravvissuti fino a oggi.`
+			`	Foster documenta e fotografa tutto quello che vede. Anche se ti aspetteresti che sia entusiasta di vedere tutto questo, come lo era quando esaminava le rovine Sheragi su Zug, il suo umore è estremamente cupo.`
+			`	Mentre siete in una delle stanze, Eyama nota lo scheletro di un giovane Sheragi steso a terra, che sembra stesse allungando la mano verso qualcosa quando è morto. Eyama si inginocchia accanto allo scheletro e allunga la mano per toccargli la mano. "Non farlo," dice Foster dall'altra parte della stanza, fermando Eyama. "Dobbiamo lasciare questo posto indisturbato. Abbiamo già fatto abbastanza prendendo la nave." Eyama si alza senza parlare, ma lancia a Foster uno sguardo d'intesa.`
+			`	Dopo aver passato abbastanza tempo tra le rovine, torni alle navi con Foster ed Eyama.`
+			label end
+			`	Le riparazioni finali sulla Spada di Smeraldo occupano quasi un'intera giornata, con l'equipaggio che lavora a turni per finire il lavoro. Una volta che la nave è rattoppata e tutti i sistemi sono funzionanti, si installa il motore di salto. Mentre si lavorava alla Spada di Smeraldo, Rakei è riuscita a mandare un gruppo a recuperare il caccia finale e a riportarlo alla nave. Ora non resta che portare la nave in orbita e tornare su <planet>.`
+				accept
+	on visit
+		dialog `Hai raggiunto <planet>, ma non tutta l'attrezzatura archeologica è tornata! Meglio partire e aspettare che le tue scorte arrivino in questo sistema stellare.`
+	on complete
+		log `Hai ottenuto un'antica nave da guerra Sheragi il cui nome si traduce in Spada di Smeraldo. Era equipaggiata da ammutinati che fuggirono dalla loro guerra civile e si rifugiarono nello spazio interstellare. Trovata in orbita intorno a una stella isolata, è una nave impressionantemente grande, adatta agli Sheragi, altrettanto grandi. La sua arma principale è un laser a raggi gamma a pompaggio di fusione chiamato 'Cannone Fiamma di Drago'. Nonostante gli allestimenti relativamente primitivi, resta una macchina da guerra molto capace grazie alle sue dimensioni.`
+		conversation
+			`La tua nuova ed esotica nave attira molta attenzione dai lavoratori del porto, in parte perché è unica e mai vista prima, ma probabilmente ancora di più per il cannone di dimensioni senza precedenti. Albert e le archeologhe Hai passano gran parte della giornata a esaminare la nave più in dettaglio e a recuperare i cadaveri, ora che è in uno spazioporto vero e possono accedere a strumenti più complessi. Tutto viene completato in un pomeriggio particolarmente intenso, e quando scende la notte le dimensioni immense dell'interno della nave permettono di installare altri piani, dandoti ancora più spazio abitabile.`
+			`	Torni nello stesso parco di prima con Albert e le tre Hai in parziale incognito, con gelati in mano e in zampa per commemorare la nuova acquisizione.`
+			`	"È una nave impressionante," osservi.`
+			`	"Vero," dice Desyo. "Non avevo mai visto un cannone così grande."`
+			choice
+				`	"Mi chiedo come funzioni."`
+					goto works
+				`	"Questo l'ha detto lei."`
+			`	Desyo non capisce, ma Eyama scoppia a ridere. "Battuta classica umana. Vedi, implica..."`
+			`	"Dio, non spiegarla," la interrompe Albert. "È stata terribile. Però ha ragione, non è una cosa che si vede tutti i giorni. Hai idea di come funzioni?"`
+			label works
+			`	Rakei, che è più preparata in materia, risponde. "È un laser a raggi gamma a pompaggio di fusione, o GRASER in breve. Il dispositivo è semplice come concetto, ma il costo e le proporzioni di tutto lo rendono impraticabile da sviluppare, senza contare che usarlo sarebbe probabilmente considerato un crimine di guerra in molte civiltà, il che rende la ricerca non conveniente. In sostanza usa un lampo nucleare per alimentare un raggio laser che penetra e fonde tutto. Affascinante, ma spero che lo userai solo per mantenere la pace."`
+			`	Eyama aggiunge: "Io lo chiamo Cannone Fiamma di Drago. Mi sembra appropriato, anche se tecnicamente non è una fiamma in senso chimico. I draghi delle leggende umane sapevano sputare fuoco, e anche se è improbabile che gli Sheragi sapessero davvero farlo, questo cannone compensa abbondantemente."`
+			choice
+				`	"Pensi che potrei mettermi nei guai usandolo?"`
+					goto trouble
+				`	"Non farà saltare in aria la mia nave, vero?"`
+			`	Rakei ride. "Non preoccuparti, gli Sheragi hanno fatto i compiti. Usavano materiali semplici, il che significa che il cannone può essere mantenuto e riparato per restare strutturalmente solido. Comunque molti dei componenti sono attivi solo per il breve tempo che il GRASER impiega a sparare. Ti sconsiglio solo di usarlo a distanza ravvicinata."`
+				goto catch
+			label trouble
+			`	"Non credo che ti metterai nei guai, a patto che tu non spari verso un pianeta. Non causa sofferenze inutili come il gas nervino, e non è indiscriminato come una bomba nucleare. È un raggio concentrato. Farà buchi da parte a parte in qualsiasi nave che subisca la sua ira."`
+			label catch
+			`	"E allora qual è il trucco?" chiedi.`
+			`	"Consuma un sacco di energia. Un sacco. E lo fa a ogni colpo. Nessun singolo reattore sarà capace di farlo sparare alla massima velocità possibile. Aspettati di investire molto in batterie e reattori se vuoi riattrezzare quella nave da guerra e continuare a usare il cannone."`
+			`	Desyo aggiunge: "E non pensare di essere invincibile adesso. La matrice di scudi di quella nave è incredibilmente primitiva. Quasi inesistente. Lo scafo è robusto, ma non farci troppo affidamento. La tecnologia umana potrebbe fare di meglio, se ci provasse. Senza offesa."`
+			`	"E voi cosa farete adesso?" chiedi.`
+			`	Eyama risponde: "Continueremo a lavorare con Albert. A questi due nerd piacciono la tecnologia e le navi, ma io sono molto più interessata al tesoro di reperti culturali che custodisce la città sepolta. Senza contare che gli umani di qui sono molto interessanti!"`
+			`	Finite tutti i gelati e continuate a chiacchierare ancora un po', prima che vi salutiate e torniate alla tua nave. Domani sarà in piena efficienza, pronta a lanciarsi nel vuoto infinito.`

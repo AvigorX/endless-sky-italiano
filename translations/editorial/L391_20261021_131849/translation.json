@@ -1,0 +1,33 @@
+{
+ "block": {
+  "path": "data/successors/successors.txt",
+  "line_from": 550,
+  "line_to": 551,
+  "units": 2
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "(root)|\"red gold\" armlets|550|0",
+   "path": "data/successors/successors.txt",
+   "line": 550,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"red gold\" armlets",
+   "italian": "bracciali in \"oro rosso\"",
+   "ratio": 1.333
+  },
+  {
+   "idx": 2,
+   "id": "(root)|\"red gold\" piercings|551|0",
+   "path": "data/successors/successors.txt",
+   "line": 551,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"red gold\" piercings",
+   "italian": "piercing in \"oro rosso\"",
+   "ratio": 1.15
+  }
+ ]
+}

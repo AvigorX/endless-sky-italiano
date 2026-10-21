@@ -1,0 +1,121 @@
+{
+ "block": {
+  "path": "data/quarg/quarg outfits.txt",
+  "line_from": 257,
+  "line_to": 579,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Peripheral Repair Hub|description|257|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 257,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Peripheral Repair Hub",
+   "english": "The repair systems employed by the Quarg operate in ways that seem to defy reality, somehow gathering matter and injecting it into a ship's hull and fuel systems. This provides essential maintenance that benefits core aspects of spaceflight - durability, longevity, and most importantly, survivability.",
+   "italian": "The repair systems employed by the Quarg operate in ways that seem to defy reality, somehow gathering matter and injecting it into a ship's hull and fuel systems. This provides essential maintenance that benefits core aspects of spaceflight - durability, longevity, and most importantly, survivability.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Central Repair Hub|description|271|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 271,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Central Repair Hub",
+   "english": "In a manner which is not easily discernible to humans, this system collects ambient matter in space and feeds it back to the ship from a large central hub of wires and tubes. The accumulated matter is then used to both regenerate the ship's hull and refill its fuel reserves.",
+   "italian": "In a manner which is not easily discernible to humans, this system collects ambient matter in space and feeds it back to the ship from a large central hub of wires and tubes. The accumulated matter is then used to both regenerate the ship's hull and refill its fuel reserves.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Skydagger|description|305|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 305,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Skydagger",
+   "english": "Where overwhelming force is not necessary, these beam weapons are used in place of more powerful weapons to simply provide defense to non-combatants. However, they remain a danger not to be taken lightly.",
+   "italian": "Where overwhelming force is not necessary, these beam weapons are used in place of more powerful weapons to simply provide defense to non-combatants. However, they remain a danger not to be taken lightly.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Skylance|description|336|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 336,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Skylance",
+   "english": "Despite being among the oldest and least specialized of Quarg weaponry, these immensely powerful beam weapons strike fear into the hearts of all who dare oppose them. With a design that has survived longer than humanity itself, the Skylance is an elegant weapon, one from a more civilized age.",
+   "italian": "Despite being among the oldest and least specialized of Quarg weaponry, these immensely powerful beam weapons strike fear into the hearts of all who dare oppose them. With a design that has survived longer than humanity itself, the Skylance is an elegant weapon, one from a more civilized age.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Stratospear|description|366|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 366,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Stratospear",
+   "english": "While those who can directly match the power of Quarg energy weapons are rare, some foolish younger races have attempted to oppose the Quarg with missile-based nuclear weapons, hoping for their destructive power to even the playing field. These Quarg anti-missile defenses, firing pinpoint beams of energy, have often dashed these hopes, targeting projectiles from considerable range and ensuring that only the most powerful missiles are capable of getting near a Quarg ship.",
+   "italian": "While those who can directly match the power of Quarg energy weapons are rare, some foolish younger races have attempted to oppose the Quarg with missile-based nuclear weapons, hoping for their destructive power to even the playing field. These Quarg anti-missile defenses, firing pinpoint beams of energy, have often dashed these hopes, targeting projectiles from considerable range and ensuring that only the most powerful missiles are capable of getting near a Quarg ship.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Elysian Ranseur|description|402|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 402,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Elysian Ranseur",
+   "english": "The technology behind this weapon is incomprehensibly complex, creating pulses of energy that bend spacetime itself. Powerful gravitational pulses are forced through the fold, penetrating through multiple targets with ease and delivering dangerous blows to those along the path. How the weapon is able to do any of this is only known to the Quarg.",
+   "italian": "The technology behind this weapon is incomprehensibly complex, creating pulses of energy that bend spacetime itself. Powerful gravitational pulses are forced through the fold, penetrating through multiple targets with ease and delivering dangerous blows to those along the path. How the weapon is able to do any of this is only known to the Quarg.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Celestial Culverin|description|449|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 449,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Celestial Culverin",
+   "english": "This weapon tangles with spacetime in ways beyond understanding, producing gravitational forces that slow the target down. As if fulfilling their own intended destiny, the projectiles are guided to their target, disrupting their fuel systems. This utility, on top of being almost unavoidable, allows the weapon to lock down the Quarg's more distant enemies.",
+   "italian": "This weapon tangles with spacetime in ways beyond understanding, producing gravitational forces that slow the target down. As if fulfilling their own intended destiny, the projectiles are guided to their target, disrupting their fuel systems. This utility, on top of being almost unavoidable, allows the weapon to lock down the Quarg's more distant enemies.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Astral Ribault|description|496|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 496,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Astral Ribault",
+   "english": "The rapid flurries shot by this turret cover a wide area at a long range, firing a storm of negative energy particles. Attractive forces guide these particles towards their target, dealing very high damage to enemies within the immediate vicinity while keeping those that flee within the Quarg's reach.",
+   "italian": "The rapid flurries shot by this turret cover a wide area at a long range, firing a storm of negative energy particles. Attractive forces guide these particles towards their target, dealing very high damage to enemies within the immediate vicinity while keeping those that flee within the Quarg's reach.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Slipstream Projector|description|566|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 566,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Slipstream Projector",
+   "english": "While the exact workings of graviton tech are a mystery, it's no secret that this device manipulates gravity in such a wondrous way that it even bends the massive architecture of ringworlds to its whim. While the force is not enough to harm the delicate structure, the negative energy is powerful enough to rip off the shielding of a ship in a remarkably short period of time.",
+   "italian": "While the exact workings of graviton tech are a mystery, it's no secret that this device manipulates gravity in such a wondrous way that it even bends the massive architecture of ringworlds to its whim. While the force is not enough to harm the delicate structure, the negative energy is powerful enough to rip off the shielding of a ship in a remarkably short period of time.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Phalanx System|description|579|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 579,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Phalanx System",
+   "english": "With an abundance of caution regarding the potential theft and misuse of their technology, Quarg ships are outfitted with special systems for repelling boarders in a manner that could be considered overkill. Because no one wants to be caught by the Quarg with stolen technology, these systems are pretty much worthless on the open market.",
+   "italian": "With an abundance of caution regarding the potential theft and misuse of their technology, Quarg ships are outfitted with special systems for repelling boarders in a manner that could be considered overkill. Because no one wants to be caught by the Quarg with stolen technology, these systems are pretty much worthless on the open market.",
+   "ratio": 1.0
+  }
+ ]
+}

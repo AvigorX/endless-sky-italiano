@@ -1,0 +1,88 @@
+{
+ "block": {
+  "path": "data/quarg/quarg.txt",
+  "line_from": 57,
+  "line_to": 65,
+  "units": 7
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "conversation:quarg imprisonment|You are immediately hailed by the Quarg in the system after they complete the scan of your ship.|57|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 57,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "You are immediately hailed by the Quarg in the system after they complete the scan of your ship.",
+   "italian": "Appena i Quarg completano la scansione della tua nave, vieni subito chiamato dal loro comando nel sistema.",
+   "ratio": 1.104
+  },
+  {
+   "idx": 2,
+   "id": "conversation:quarg imprisonment|\t\"<first> <last>, you are found to be in illegal possession of Quarg equipment. Our devices are precious and ours alone. Though it is regrettable, we must terminate you.\"|58|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 58,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "\t\"<first> <last>, you are found to be in illegal possession of Quarg equipment. Our devices are precious and ours alone. Though it is regrettable, we must terminate you.\"",
+   "italian": "\t\"<first> <last>, sei stato trovato in possesso illegale di equipaggiamento Quarg. I nostri dispositivi sono preziosi e solo nostri. Per quanto sia spiacevole, dobbiamo eliminarti.\"",
+   "ratio": 1.065
+  },
+  {
+   "idx": 3,
+   "id": "conversation:quarg imprisonment|\tThey close communications before you have a chance to respond, and you look to your radar to see their ships are already approaching, weapons readied...|59|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 59,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "\tThey close communications before you have a chance to respond, and you look to your radar to see their ships are already approaching, weapons readied...",
+   "italian": "\tChiudono le comunicazioni prima che tu abbia il tempo di rispondere, e guardi il radar: le loro navi ti stanno già venendo incontro, armi pronte...",
+   "ratio": 0.967
+  },
+  {
+   "idx": 4,
+   "id": "conversation:quarg imprisonment|Your ship loses all power immediately upon touching down on the landing pad. As you walk around to try and find the problem, you pass by your hatch. You find that it is already opened with dozens of Quarg coming in, all clad in elegant full-body armor suits.|62|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 62,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "Your ship loses all power immediately upon touching down on the landing pad. As you walk around to try and find the problem, you pass by your hatch. You find that it is already opened with dozens of Quarg coming in, all clad in elegant full-body armor suits.",
+   "italian": "La tua nave perde ogni alimentazione appena tocca la piattaforma di atterraggio. Mentre ti aggiri per cercare di capire il problema, passi davanti al tuo portello. Lo trovi già aperto, con decine di Quarg che stanno entrando, tutti vestiti con eleganti armature integrali.",
+   "ratio": 1.054
+  },
+  {
+   "idx": 5,
+   "id": "conversation:quarg imprisonment|\t\"<first> <last>, you are found to be in illegal possession of Quarg equipment. Our devices are precious and ours alone. Though it is regrettable, we must seize you.\"|63|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 63,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "\t\"<first> <last>, you are found to be in illegal possession of Quarg equipment. Our devices are precious and ours alone. Though it is regrettable, we must seize you.\"",
+   "italian": "\t\"<first> <last>, sei stato trovato in possesso illegale di equipaggiamento Quarg. I nostri dispositivi sono preziosi e solo nostri. Per quanto sia spiacevole, dobbiamo sequestrarti.\"",
+   "ratio": 1.102
+  },
+  {
+   "idx": 6,
+   "id": "conversation:quarg imprisonment|\tThey don't allow you to get as much as a word out before one of the guards has locked your arms behind your back, completely halting your attempts to fight back with surprisingly little effort. You are brought to something akin to a Quarg courtroom, where they lecture you for several hours on how dangerous it is for Quarg apparatuses to be stolen and used so blithely by others. At the end of it all, the jury sentences you to life imprisonment.|64|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 64,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "\tThey don't allow you to get as much as a word out before one of the guards has locked your arms behind your back, completely halting your attempts to fight back with surprisingly little effort. You are brought to something akin to a Quarg courtroom, where they lecture you for several hours on how dangerous it is for Quarg apparatuses to be stolen and used so blithely by others. At the end of it all, the jury sentences you to life imprisonment.",
+   "italian": "\tNon ti lasciano dire nemmeno una parola prima che una delle guardie ti blocchi le braccia dietro la schiena, fermando del tutto i tuoi tentativi di reagire con sorprendente facilità. Ti portano in qualcosa di simile a un tribunale quarg, dove ti fanno lezione per diverse ore su quanto sia pericoloso che gli apparecchi Quarg vengano rubati e usati con tanta leggerezza da altri. Alla fine la giuria ti condanna all'ergastolo.",
+   "ratio": 0.953
+  },
+  {
+   "idx": 7,
+   "id": "conversation:quarg imprisonment|\tYou spend the rest of your days in the same cell, which although large and comfortable, quickly proves plain and dull. You're kept in very good health and are well-fed, but the Quarg do not allow you to leave the cell and seldom entertain your attempts at striking up a conversation. You get few visitors and can only wonder what life would've been like had you had the chance to live out all these years in freedom, the captain of a starship.|65|0",
+   "path": "data/quarg/quarg.txt",
+   "line": 65,
+   "kind": "CONVERSATION",
+   "context": "conversation:quarg imprisonment",
+   "english": "\tYou spend the rest of your days in the same cell, which although large and comfortable, quickly proves plain and dull. You're kept in very good health and are well-fed, but the Quarg do not allow you to leave the cell and seldom entertain your attempts at striking up a conversation. You get few visitors and can only wonder what life would've been like had you had the chance to live out all these years in freedom, the captain of a starship.",
+   "italian": "\tTrascorri il resto dei tuoi giorni nella stessa cella che, benché grande e confortevole, si rivela presto monotona e noiosa. Ti tengono in ottima salute e ti nutrono bene, ma i Quarg non ti permettono di uscire e raramente danno seguito ai tuoi tentativi di attaccare discorso. Ricevi poche visite e puoi solo chiederti come sarebbe stata la vita se avessi avuto la possibilità di passare tutti questi anni in libertà, capitano di una nave stellare.",
+   "ratio": 1.014
+  }
+ ]
+}

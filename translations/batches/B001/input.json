@@ -1,0 +1,1960 @@
+{
+ "batch": "B001",
+ "name": "UI labels (interfaces.txt)",
+ "source_hash": "f0bfe8273184a66f",
+ "instructions": "return JSON array [{\"id\": ..., \"it\": ...}] with one entry per id",
+ "units": [
+  {
+   "id": "interface:performance info|label|248|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 248,
+   "kind": "UI_LABEL",
+   "context": "interface:performance info",
+   "english": "CPU: calculating..."
+  },
+  {
+   "id": "interface:performance info|label|252|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 252,
+   "kind": "UI_LABEL",
+   "context": "interface:performance info",
+   "english": "GPU: calculating..."
+  },
+  {
+   "id": "interface:performance info|label|256|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 256,
+   "kind": "UI_LABEL",
+   "context": "interface:performance info",
+   "english": "MEM: calculating..."
+  },
+  {
+   "id": "interface:map detail panel|button|280|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 280,
+   "kind": "UI_LABEL",
+   "context": "interface:map detail panel",
+   "english": "_Cancel order"
+  },
+  {
+   "id": "interface:main menu|button|327|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 327,
+   "kind": "UI_LABEL",
+   "context": "interface:main menu",
+   "english": "_Enter Ship"
+  },
+  {
+   "id": "interface:main menu|button|333|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 333,
+   "kind": "UI_LABEL",
+   "context": "interface:main menu",
+   "english": "_Gamerules"
+  },
+  {
+   "id": "interface:main menu|button|337|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 337,
+   "kind": "UI_LABEL",
+   "context": "interface:main menu",
+   "english": "_New Pilot"
+  },
+  {
+   "id": "interface:main menu|button|341|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 341,
+   "kind": "UI_LABEL",
+   "context": "interface:main menu",
+   "english": "_Reload Pilot"
+  },
+  {
+   "id": "interface:main menu|button|346|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 346,
+   "kind": "UI_LABEL",
+   "context": "interface:main menu",
+   "english": "_Manage Pilots..."
+  },
+  {
+   "id": "interface:main menu|button|351|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 351,
+   "kind": "UI_LABEL",
+   "context": "interface:main menu",
+   "english": "_Quit"
+  },
+  {
+   "id": "interface:main menu|button|354|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 354,
+   "kind": "UI_LABEL",
+   "context": "interface:main menu",
+   "english": "_Preferences..."
+  },
+  {
+   "id": "interface:menu player info|label|364|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 364,
+   "kind": "UI_LABEL",
+   "context": "interface:menu player info",
+   "english": "pilot:"
+  },
+  {
+   "id": "interface:menu player info|label|372|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 372,
+   "kind": "UI_LABEL",
+   "context": "interface:menu player info",
+   "english": "ship:"
+  },
+  {
+   "id": "interface:menu player info|label|380|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 380,
+   "kind": "UI_LABEL",
+   "context": "interface:menu player info",
+   "english": "planet:"
+  },
+  {
+   "id": "interface:menu player info|label|388|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 388,
+   "kind": "UI_LABEL",
+   "context": "interface:menu player info",
+   "english": "system:"
+  },
+  {
+   "id": "interface:menu player info|label|396|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 396,
+   "kind": "UI_LABEL",
+   "context": "interface:menu player info",
+   "english": "credits:"
+  },
+  {
+   "id": "interface:menu player info|label|402|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 402,
+   "kind": "UI_LABEL",
+   "context": "interface:menu player info",
+   "english": "date:"
+  },
+  {
+   "id": "interface:menu player info|label|408|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 408,
+   "kind": "UI_LABEL",
+   "context": "interface:menu player info",
+   "english": "playtime:"
+  },
+  {
+   "id": "interface:menu start info|label|422|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 422,
+   "kind": "UI_LABEL",
+   "context": "interface:menu start info",
+   "english": "name:"
+  },
+  {
+   "id": "interface:menu start info|label|428|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 428,
+   "kind": "UI_LABEL",
+   "context": "interface:menu start info",
+   "english": "date:"
+  },
+  {
+   "id": "interface:menu start info|label|434|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 434,
+   "kind": "UI_LABEL",
+   "context": "interface:menu start info",
+   "english": "planet:"
+  },
+  {
+   "id": "interface:menu start info|label|440|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 440,
+   "kind": "UI_LABEL",
+   "context": "interface:menu start info",
+   "english": "system:"
+  },
+  {
+   "id": "interface:menu start info|label|446|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 446,
+   "kind": "UI_LABEL",
+   "context": "interface:menu start info",
+   "english": "credits:"
+  },
+  {
+   "id": "interface:menu start info|label|452|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 452,
+   "kind": "UI_LABEL",
+   "context": "interface:menu start info",
+   "english": "debt:"
+  },
+  {
+   "id": "interface:start conditions menu|button|469|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 469,
+   "kind": "UI_LABEL",
+   "context": "interface:start conditions menu",
+   "english": "_Back to Menu"
+  },
+  {
+   "id": "interface:start conditions menu|button|473|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 473,
+   "kind": "UI_LABEL",
+   "context": "interface:start conditions menu",
+   "english": "_Start Game"
+  },
+  {
+   "id": "interface:start conditions menu|button|479|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 479,
+   "kind": "UI_LABEL",
+   "context": "interface:start conditions menu",
+   "english": "_Gamerules"
+  },
+  {
+   "id": "interface:load menu|button|521|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 521,
+   "kind": "UI_LABEL",
+   "context": "interface:load menu",
+   "english": "_New Pilot"
+  },
+  {
+   "id": "interface:load menu|button|525|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 525,
+   "kind": "UI_LABEL",
+   "context": "interface:load menu",
+   "english": "_Delete"
+  },
+  {
+   "id": "interface:load menu|button|532|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 532,
+   "kind": "UI_LABEL",
+   "context": "interface:load menu",
+   "english": "_Open Saves"
+  },
+  {
+   "id": "interface:load menu|button|537|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 537,
+   "kind": "UI_LABEL",
+   "context": "interface:load menu",
+   "english": "_Add Snapshot"
+  },
+  {
+   "id": "interface:load menu|button|541|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 541,
+   "kind": "UI_LABEL",
+   "context": "interface:load menu",
+   "english": "__Remove"
+  },
+  {
+   "id": "interface:load menu|button|546|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 546,
+   "kind": "UI_LABEL",
+   "context": "interface:load menu",
+   "english": "_Back to Menu"
+  },
+  {
+   "id": "interface:load menu|button|550|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 550,
+   "kind": "UI_LABEL",
+   "context": "interface:load menu",
+   "english": "_Load Game"
+  },
+  {
+   "id": "interface:load menu|button|557|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 557,
+   "kind": "UI_LABEL",
+   "context": "interface:load menu",
+   "english": "_Gamerules"
+  },
+  {
+   "id": "interface:controls|button|572|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 572,
+   "kind": "UI_LABEL",
+   "context": "interface:controls",
+   "english": "_Controls"
+  },
+  {
+   "id": "interface:controls|button|576|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 576,
+   "kind": "UI_LABEL",
+   "context": "interface:controls",
+   "english": "_Settings"
+  },
+  {
+   "id": "interface:controls|button|581|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 581,
+   "kind": "UI_LABEL",
+   "context": "interface:controls",
+   "english": "_Plugins"
+  },
+  {
+   "id": "interface:controls|button|586|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 586,
+   "kind": "UI_LABEL",
+   "context": "interface:controls",
+   "english": "_Audio"
+  },
+  {
+   "id": "interface:controls|label|592|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 592,
+   "kind": "UI_LABEL",
+   "context": "interface:controls",
+   "english": "Additional info"
+  },
+  {
+   "id": "interface:controls|wrapped label|599|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 599,
+   "kind": "UI_LABEL",
+   "context": "interface:controls",
+   "english": "Press '_x' over controls to unbind them. Controls can share the same keybind."
+  },
+  {
+   "id": "interface:controls|button|608|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 608,
+   "kind": "UI_LABEL",
+   "context": "interface:controls",
+   "english": "_Next"
+  },
+  {
+   "id": "interface:controls|button|614|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 614,
+   "kind": "UI_LABEL",
+   "context": "interface:controls",
+   "english": "P_revious"
+  },
+  {
+   "id": "interface:settings|button|627|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 627,
+   "kind": "UI_LABEL",
+   "context": "interface:settings",
+   "english": "_Controls"
+  },
+  {
+   "id": "interface:settings|button|632|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 632,
+   "kind": "UI_LABEL",
+   "context": "interface:settings",
+   "english": "_Settings"
+  },
+  {
+   "id": "interface:settings|button|636|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 636,
+   "kind": "UI_LABEL",
+   "context": "interface:settings",
+   "english": "_Plugins"
+  },
+  {
+   "id": "interface:settings|button|641|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 641,
+   "kind": "UI_LABEL",
+   "context": "interface:settings",
+   "english": "_Audio"
+  },
+  {
+   "id": "interface:settings|button|650|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 650,
+   "kind": "UI_LABEL",
+   "context": "interface:settings",
+   "english": "_Next"
+  },
+  {
+   "id": "interface:settings|button|656|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 656,
+   "kind": "UI_LABEL",
+   "context": "interface:settings",
+   "english": "P_revious"
+  },
+  {
+   "id": "interface:plugins|button|671|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 671,
+   "kind": "UI_LABEL",
+   "context": "interface:plugins",
+   "english": "_Controls"
+  },
+  {
+   "id": "interface:plugins|button|676|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 676,
+   "kind": "UI_LABEL",
+   "context": "interface:plugins",
+   "english": "_Settings"
+  },
+  {
+   "id": "interface:plugins|button|681|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 681,
+   "kind": "UI_LABEL",
+   "context": "interface:plugins",
+   "english": "_Plugins"
+  },
+  {
+   "id": "interface:plugins|button|685|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 685,
+   "kind": "UI_LABEL",
+   "context": "interface:plugins",
+   "english": "_Audio"
+  },
+  {
+   "id": "interface:plugins|button|690|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 690,
+   "kind": "UI_LABEL",
+   "context": "interface:plugins",
+   "english": "_Open Plugins"
+  },
+  {
+   "id": "interface:plugins|label|694|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 694,
+   "kind": "UI_LABEL",
+   "context": "interface:plugins",
+   "english": "Restart to apply changes"
+  },
+  {
+   "id": "interface:plugins|label|699|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 699,
+   "kind": "UI_LABEL",
+   "context": "interface:plugins",
+   "english": "Installed Plugins:"
+  },
+  {
+   "id": "interface:audio|button|720|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 720,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "_Controls"
+  },
+  {
+   "id": "interface:audio|button|725|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 725,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "_Settings"
+  },
+  {
+   "id": "interface:audio|button|730|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 730,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "_Plugins"
+  },
+  {
+   "id": "interface:audio|button|735|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 735,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "_Audio"
+  },
+  {
+   "id": "interface:audio|label|741|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 741,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "Music"
+  },
+  {
+   "id": "interface:audio|label|771|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 771,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "UI"
+  },
+  {
+   "id": "interface:audio|label|801|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 801,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "Anti-Missiles"
+  },
+  {
+   "id": "interface:audio|label|831|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 831,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "Weapons"
+  },
+  {
+   "id": "interface:audio|label|861|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 861,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "Engines"
+  },
+  {
+   "id": "interface:audio|label|891|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 891,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "Afterburners"
+  },
+  {
+   "id": "interface:audio|label|921|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 921,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "Hyperdrives"
+  },
+  {
+   "id": "interface:audio|label|951|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 951,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "Explosions"
+  },
+  {
+   "id": "interface:audio|label|981|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 981,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "Scans"
+  },
+  {
+   "id": "interface:audio|label|1011|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1011,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "Environment"
+  },
+  {
+   "id": "interface:audio|label|1041|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1041,
+   "kind": "UI_LABEL",
+   "context": "interface:audio",
+   "english": "Alerts"
+  },
+  {
+   "id": "interface:preferences|button|1073|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1073,
+   "kind": "UI_LABEL",
+   "context": "interface:preferences",
+   "english": "_Back to Menu..."
+  },
+  {
+   "id": "interface:gamerules|button|1111|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1111,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules",
+   "english": "_Back to Menu..."
+  },
+  {
+   "id": "interface:gamerules|button|1114|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1114,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules",
+   "english": "_Gamerules"
+  },
+  {
+   "id": "interface:gamerules|button|1119|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1119,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules",
+   "english": "_Presets"
+  },
+  {
+   "id": "interface:gamerules|label|1125|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1125,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules",
+   "english": "Additional info"
+  },
+  {
+   "id": "interface:gamerules|wrapped label|1132|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1132,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules",
+   "english": "Press '_x' over a rule to reset it to the value from the chosen preset."
+  },
+  {
+   "id": "interface:gamerules|button|1141|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1141,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules",
+   "english": "_Next"
+  },
+  {
+   "id": "interface:gamerules|button|1147|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1147,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules",
+   "english": "P_revious"
+  },
+  {
+   "id": "interface:gamerules presets|button|1159|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1159,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules presets",
+   "english": "_Back to Menu..."
+  },
+  {
+   "id": "interface:gamerules presets|button|1162|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1162,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules presets",
+   "english": "_Gamerules"
+  },
+  {
+   "id": "interface:gamerules presets|button|1167|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1167,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules presets",
+   "english": "_Presets"
+  },
+  {
+   "id": "interface:gamerules presets|label|1172|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1172,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules presets",
+   "english": "Gamerule Presets:"
+  },
+  {
+   "id": "interface:gamerules presets|label|1183|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1183,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules presets",
+   "english": "Additional info"
+  },
+  {
+   "id": "interface:gamerules presets|wrapped label|1190|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1190,
+   "kind": "UI_LABEL",
+   "context": "interface:gamerules presets",
+   "english": "Click the checkbox next to a preset to activate it."
+  },
+  {
+   "id": "interface:planet|button|1643|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1643,
+   "kind": "UI_LABEL",
+   "context": "interface:planet",
+   "english": "_Trading"
+  },
+  {
+   "id": "interface:planet|button|1653|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1653,
+   "kind": "UI_LABEL",
+   "context": "interface:planet",
+   "english": "_Job Board"
+  },
+  {
+   "id": "interface:planet|button|1663|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1663,
+   "kind": "UI_LABEL",
+   "context": "interface:planet",
+   "english": "Player _Info"
+  },
+  {
+   "id": "interface:planet|button|1673|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1673,
+   "kind": "UI_LABEL",
+   "context": "interface:planet",
+   "english": "_Bank"
+  },
+  {
+   "id": "interface:planet|button|1693|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1693,
+   "kind": "UI_LABEL",
+   "context": "interface:planet",
+   "english": "_Shipyard"
+  },
+  {
+   "id": "interface:planet|button|1703|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1703,
+   "kind": "UI_LABEL",
+   "context": "interface:planet",
+   "english": "_Outfitter"
+  },
+  {
+   "id": "interface:planet|button|1713|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1713,
+   "kind": "UI_LABEL",
+   "context": "interface:planet",
+   "english": "_Hire Crew"
+  },
+  {
+   "id": "interface:planet|button|1724|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1724,
+   "kind": "UI_LABEL",
+   "context": "interface:planet",
+   "english": "_Depart"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1748|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1748,
+   "kind": "UI_LABEL",
+   "context": "interface:planet (small screen)",
+   "english": "_Trading"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1758|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1758,
+   "kind": "UI_LABEL",
+   "context": "interface:planet (small screen)",
+   "english": "_Job Board"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1768|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1768,
+   "kind": "UI_LABEL",
+   "context": "interface:planet (small screen)",
+   "english": "Player _Info"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1778|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1778,
+   "kind": "UI_LABEL",
+   "context": "interface:planet (small screen)",
+   "english": "_Bank"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1798|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1798,
+   "kind": "UI_LABEL",
+   "context": "interface:planet (small screen)",
+   "english": "_Shipyard"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1808|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1808,
+   "kind": "UI_LABEL",
+   "context": "interface:planet (small screen)",
+   "english": "_Outfitter"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1818|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1818,
+   "kind": "UI_LABEL",
+   "context": "interface:planet (small screen)",
+   "english": "_Hire Crew"
+  },
+  {
+   "id": "interface:planet (small screen)|button|1829|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1829,
+   "kind": "UI_LABEL",
+   "context": "interface:planet (small screen)",
+   "english": "_Depart"
+  },
+  {
+   "id": "interface:boarding|label|1904|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1904,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "item"
+  },
+  {
+   "id": "interface:boarding|label|1907|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1907,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "value"
+  },
+  {
+   "id": "interface:boarding|label|1910|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1910,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "size"
+  },
+  {
+   "id": "interface:boarding|label|1914|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1914,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "cargo space free:"
+  },
+  {
+   "id": "interface:boarding|label|1921|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1921,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "crew"
+  },
+  {
+   "id": "interface:boarding|label|1924|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1924,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "attack"
+  },
+  {
+   "id": "interface:boarding|label|1927|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1927,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "defense"
+  },
+  {
+   "id": "interface:boarding|label|1931|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1931,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "your ship:"
+  },
+  {
+   "id": "interface:boarding|label|1944|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1944,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "enemy ship:"
+  },
+  {
+   "id": "interface:boarding|label|1957|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1957,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "capture odds (attacking):"
+  },
+  {
+   "id": "interface:boarding|label|1963|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1963,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "expected casualties:"
+  },
+  {
+   "id": "interface:boarding|label|1970|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1970,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "survival odds (defending):"
+  },
+  {
+   "id": "interface:boarding|label|1976|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1976,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "expected casualties:"
+  },
+  {
+   "id": "interface:boarding|button|1988|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1988,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "_Take"
+  },
+  {
+   "id": "interface:boarding|button|1993|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1993,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "_Done"
+  },
+  {
+   "id": "interface:boarding|button|1998|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 1998,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "Attempt _Capture"
+  },
+  {
+   "id": "interface:boarding|button|2003|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2003,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "_Attack"
+  },
+  {
+   "id": "interface:boarding|button|2008|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2008,
+   "kind": "UI_LABEL",
+   "context": "interface:boarding",
+   "english": "__Defend"
+  },
+  {
+   "id": "interface:hiring|label|2016|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2016,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "flagship"
+  },
+  {
+   "id": "interface:hiring|label|2020|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2020,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "entire fleet"
+  },
+  {
+   "id": "interface:hiring|label|2024|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2024,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "salary"
+  },
+  {
+   "id": "interface:hiring|label|2033|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2033,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "bunks"
+  },
+  {
+   "id": "interface:hiring|label|2043|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2043,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "required crew"
+  },
+  {
+   "id": "interface:hiring|label|2056|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2056,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "extra crew"
+  },
+  {
+   "id": "interface:hiring|button|2069|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2069,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "_Hire"
+  },
+  {
+   "id": "interface:hiring|button|2076|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2076,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "_Fire"
+  },
+  {
+   "id": "interface:hiring|label|2086|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2086,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "passenger space"
+  },
+  {
+   "id": "interface:hiring|label|2096|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2096,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "passengers"
+  },
+  {
+   "id": "interface:hiring|label|2103|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2103,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "(Extra crew for your flagship increases your odds of capturing ships,"
+  },
+  {
+   "id": "interface:hiring|label|2105|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2105,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring",
+   "english": "and once you capture a ship you need crew members to serve on it.)"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2113|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2113,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "flagship"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2117|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2117,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "entire fleet"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2121|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2121,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "salary"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2130|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2130,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "bunks"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2140|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2140,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "required crew"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2153|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2153,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "extra crew"
+  },
+  {
+   "id": "interface:hiring (small screen)|button|2166|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2166,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "_Hire"
+  },
+  {
+   "id": "interface:hiring (small screen)|button|2173|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2173,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "_Fire"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2183|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2183,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "passenger space"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2193|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2193,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "passengers"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2200|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2200,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "(Extra crew for your flagship increases your odds of capturing ships,"
+  },
+  {
+   "id": "interface:hiring (small screen)|label|2202|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2202,
+   "kind": "UI_LABEL",
+   "context": "interface:hiring (small screen)",
+   "english": "and once you capture a ship you need crew members to serve on it.)"
+  },
+  {
+   "id": "interface:trade|label|2222|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2222,
+   "kind": "UI_LABEL",
+   "context": "interface:trade",
+   "english": "Commodity"
+  },
+  {
+   "id": "interface:trade|label|2226|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2226,
+   "kind": "UI_LABEL",
+   "context": "interface:trade",
+   "english": "Price"
+  },
+  {
+   "id": "interface:trade|label|2231|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2231,
+   "kind": "UI_LABEL",
+   "context": "interface:trade",
+   "english": "Profit"
+  },
+  {
+   "id": "interface:trade|label|2244|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2244,
+   "kind": "UI_LABEL",
+   "context": "interface:trade",
+   "english": "In Hold"
+  },
+  {
+   "id": "interface:trade|label|2253|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2253,
+   "kind": "UI_LABEL",
+   "context": "interface:trade",
+   "english": "free:"
+  },
+  {
+   "id": "interface:trade|button|2265|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2265,
+   "kind": "UI_LABEL",
+   "context": "interface:trade",
+   "english": "__B_uy All"
+  },
+  {
+   "id": "interface:trade|button|2272|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2272,
+   "kind": "UI_LABEL",
+   "context": "interface:trade",
+   "english": "__S_ell All"
+  },
+  {
+   "id": "interface:trade|button|2279|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2279,
+   "kind": "UI_LABEL",
+   "context": "interface:trade",
+   "english": "Sto_re Outfits"
+  },
+  {
+   "id": "interface:trade|button|2286|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2286,
+   "kind": "UI_LABEL",
+   "context": "interface:trade",
+   "english": "Sell __Mi_nables"
+  },
+  {
+   "id": "interface:trade|button|2293|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2293,
+   "kind": "UI_LABEL",
+   "context": "interface:trade",
+   "english": "Sell __Out_fits"
+  },
+  {
+   "id": "interface:trade (small screen)|label|2314|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2314,
+   "kind": "UI_LABEL",
+   "context": "interface:trade (small screen)",
+   "english": "Commodity"
+  },
+  {
+   "id": "interface:trade (small screen)|label|2318|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2318,
+   "kind": "UI_LABEL",
+   "context": "interface:trade (small screen)",
+   "english": "Price"
+  },
+  {
+   "id": "interface:trade (small screen)|label|2323|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2323,
+   "kind": "UI_LABEL",
+   "context": "interface:trade (small screen)",
+   "english": "Profit"
+  },
+  {
+   "id": "interface:trade (small screen)|label|2336|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2336,
+   "kind": "UI_LABEL",
+   "context": "interface:trade (small screen)",
+   "english": "In Hold"
+  },
+  {
+   "id": "interface:trade (small screen)|label|2345|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2345,
+   "kind": "UI_LABEL",
+   "context": "interface:trade (small screen)",
+   "english": "free:"
+  },
+  {
+   "id": "interface:trade (small screen)|button|2357|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2357,
+   "kind": "UI_LABEL",
+   "context": "interface:trade (small screen)",
+   "english": "__B_uy All"
+  },
+  {
+   "id": "interface:trade (small screen)|button|2364|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2364,
+   "kind": "UI_LABEL",
+   "context": "interface:trade (small screen)",
+   "english": "__S_ell All"
+  },
+  {
+   "id": "interface:trade (small screen)|button|2371|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2371,
+   "kind": "UI_LABEL",
+   "context": "interface:trade (small screen)",
+   "english": "Sto_re Outfits"
+  },
+  {
+   "id": "interface:trade (small screen)|button|2378|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2378,
+   "kind": "UI_LABEL",
+   "context": "interface:trade (small screen)",
+   "english": "Sell __Mi_nables"
+  },
+  {
+   "id": "interface:trade (small screen)|button|2385|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2385,
+   "kind": "UI_LABEL",
+   "context": "interface:trade (small screen)",
+   "english": "Sell __Out_fits"
+  },
+  {
+   "id": "interface:bank|button|2402|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2402,
+   "kind": "UI_LABEL",
+   "context": "interface:bank",
+   "english": "Pay _All"
+  },
+  {
+   "id": "interface:bank (small screen)|button|2419|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2419,
+   "kind": "UI_LABEL",
+   "context": "interface:bank (small screen)",
+   "english": "Pay _All"
+  },
+  {
+   "id": "interface:mission|label|2436|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2436,
+   "kind": "UI_LABEL",
+   "context": "interface:mission",
+   "english": "cargo space free:"
+  },
+  {
+   "id": "interface:mission|label|2441|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2441,
+   "kind": "UI_LABEL",
+   "context": "interface:mission",
+   "english": "passenger space:"
+  },
+  {
+   "id": "interface:mission|label|2446|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2446,
+   "kind": "UI_LABEL",
+   "context": "interface:mission",
+   "english": "today's date:"
+  },
+  {
+   "id": "interface:mission|button|2452|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2452,
+   "kind": "UI_LABEL",
+   "context": "interface:mission",
+   "english": "_Accept Mission"
+  },
+  {
+   "id": "interface:mission|button|2457|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2457,
+   "kind": "UI_LABEL",
+   "context": "interface:mission",
+   "english": "__Abort"
+  },
+  {
+   "id": "interface:map buttons|button|2467|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2467,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons",
+   "english": "_Shipyards"
+  },
+  {
+   "id": "interface:map buttons|button|2473|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2473,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons",
+   "english": "_Outfitters"
+  },
+  {
+   "id": "interface:map buttons|button|2479|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2479,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons",
+   "english": "M_issions"
+  },
+  {
+   "id": "interface:map buttons|button|2485|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2485,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons",
+   "english": "_Ports"
+  },
+  {
+   "id": "interface:map buttons|button|2491|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2491,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons",
+   "english": "S_tars"
+  },
+  {
+   "id": "interface:map buttons|button|2497|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2497,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons",
+   "english": "_Done"
+  },
+  {
+   "id": "interface:map buttons|button|2503|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2503,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons",
+   "english": "_Find"
+  },
+  {
+   "id": "interface:map buttons|button|2509|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2509,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons",
+   "english": "_+"
+  },
+  {
+   "id": "interface:map buttons|button|2513|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2513,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons",
+   "english": "_-"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2522|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2522,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (small screen)",
+   "english": "_Shipyards"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2528|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2528,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (small screen)",
+   "english": "_Outfitters"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2534|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2534,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (small screen)",
+   "english": "M_issions"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2540|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2540,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (small screen)",
+   "english": "_Ports"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2546|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2546,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (small screen)",
+   "english": "S_tars"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2552|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2552,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (small screen)",
+   "english": "_Done"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2558|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2558,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (small screen)",
+   "english": "_Find"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2564|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2564,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (small screen)",
+   "english": "_+"
+  },
+  {
+   "id": "interface:map buttons (small screen)|button|2568|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2568,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (small screen)",
+   "english": "_-"
+  },
+  {
+   "id": "interface:map buttons (simplified)|button|2578|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2578,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (simplified)",
+   "english": "_Done"
+  },
+  {
+   "id": "interface:map buttons (simplified)|button|2584|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2584,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (simplified)",
+   "english": "_Find"
+  },
+  {
+   "id": "interface:map buttons (simplified)|button|2590|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2590,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (simplified)",
+   "english": "_+"
+  },
+  {
+   "id": "interface:map buttons (simplified)|button|2594|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2594,
+   "kind": "UI_LABEL",
+   "context": "interface:map buttons (simplified)",
+   "english": "_-"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2653|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2653,
+   "kind": "UI_LABEL",
+   "context": "interface:map: mission view: key",
+   "english": "Available job; can accept"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2658|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2658,
+   "kind": "UI_LABEL",
+   "context": "interface:map: mission view: key",
+   "english": "Available job; can accept"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2663|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2663,
+   "kind": "UI_LABEL",
+   "context": "interface:map: mission view: key",
+   "english": "Too little space to accept"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2668|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2668,
+   "kind": "UI_LABEL",
+   "context": "interface:map: mission view: key",
+   "english": "Too little space to accept"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2673|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2673,
+   "kind": "UI_LABEL",
+   "context": "interface:map: mission view: key",
+   "english": "Active job; go here to complete"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2678|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2678,
+   "kind": "UI_LABEL",
+   "context": "interface:map: mission view: key",
+   "english": "Active job; go here to complete"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2683|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2683,
+   "kind": "UI_LABEL",
+   "context": "interface:map: mission view: key",
+   "english": "Has unfinished requirements"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2688|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2688,
+   "kind": "UI_LABEL",
+   "context": "interface:map: mission view: key",
+   "english": "Has unfinished requirements"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2693|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2693,
+   "kind": "UI_LABEL",
+   "context": "interface:map: mission view: key",
+   "english": "System of importance"
+  },
+  {
+   "id": "interface:map: mission view: key|label|2698|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2698,
+   "kind": "UI_LABEL",
+   "context": "interface:map: mission view: key",
+   "english": "System of importance"
+  },
+  {
+   "id": "interface:info panel|label|2735|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2735,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "Ship Info"
+  },
+  {
+   "id": "interface:info panel|label|2738|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2738,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "Player _Info"
+  },
+  {
+   "id": "interface:info panel|label|2747|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2747,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "_Ship Info"
+  },
+  {
+   "id": "interface:info panel|label|2749|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2749,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "Player Info"
+  },
+  {
+   "id": "interface:info panel|button|2757|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2757,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "_Done"
+  },
+  {
+   "id": "interface:info panel|button|2760|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2760,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "_Missions..."
+  },
+  {
+   "id": "interface:info panel|button|2764|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2764,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "_Logbook..."
+  },
+  {
+   "id": "interface:info panel|button|2770|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2770,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "_Next"
+  },
+  {
+   "id": "interface:info panel|button|2773|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2773,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "_Previous"
+  },
+  {
+   "id": "interface:info panel|button|2781|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2781,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "Par_k"
+  },
+  {
+   "id": "interface:info panel|button|2789|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2789,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "Unpar_k"
+  },
+  {
+   "id": "interface:info panel|button|2796|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2796,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "__Disown"
+  },
+  {
+   "id": "interface:info panel|button|2803|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2803,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "_Rename"
+  },
+  {
+   "id": "interface:info panel|button|2812|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2812,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "Dump _Cargo"
+  },
+  {
+   "id": "interface:info panel|button|2816|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2816,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "_Jettison"
+  },
+  {
+   "id": "interface:info panel|button|2824|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2824,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "Park _All"
+  },
+  {
+   "id": "interface:info panel|button|2830|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2830,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "Unpark _All"
+  },
+  {
+   "id": "interface:info panel|button|2836|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2836,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "Park Lo_cal"
+  },
+  {
+   "id": "interface:info panel|button|2842|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2842,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "Unpark Lo_cal"
+  },
+  {
+   "id": "interface:info panel|button|2848|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2848,
+   "kind": "UI_LABEL",
+   "context": "interface:info panel",
+   "english": "Sa_ve Order"
+  },
+  {
+   "id": "interface:message log|button|2860|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2860,
+   "kind": "UI_LABEL",
+   "context": "interface:message log",
+   "english": "A"
+  },
+  {
+   "id": "interface:message log|wrapped label|2876|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2876,
+   "kind": "UI_LABEL",
+   "context": "interface:message log",
+   "english": "Hide less _important messages"
+  },
+  {
+   "id": "interface:message log|button|2884|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2884,
+   "kind": "UI_LABEL",
+   "context": "interface:message log",
+   "english": "_Clear"
+  },
+  {
+   "id": "interface:message log|label|2889|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2889,
+   "kind": "UI_LABEL",
+   "context": "interface:message log",
+   "english": "(The message log is empty.)"
+  },
+  {
+   "id": "interface:hail panel|button|2907|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2907,
+   "kind": "UI_LABEL",
+   "context": "interface:hail panel",
+   "english": "_Done"
+  },
+  {
+   "id": "interface:hail panel|button|2913|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2913,
+   "kind": "UI_LABEL",
+   "context": "interface:hail panel",
+   "english": "Offer _Bribe"
+  },
+  {
+   "id": "interface:hail panel|button|2918|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2918,
+   "kind": "UI_LABEL",
+   "context": "interface:hail panel",
+   "english": "Pay _Bribe"
+  },
+  {
+   "id": "interface:hail panel|button|2924|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2924,
+   "kind": "UI_LABEL",
+   "context": "interface:hail panel",
+   "english": "Demand _Tribute"
+  },
+  {
+   "id": "interface:hail panel|button|2928|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2928,
+   "kind": "UI_LABEL",
+   "context": "interface:hail panel",
+   "english": "Relinquish _Tribute"
+  },
+  {
+   "id": "interface:hail panel|button|2933|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2933,
+   "kind": "UI_LABEL",
+   "context": "interface:hail panel",
+   "english": "Ask For _Help"
+  },
+  {
+   "id": "interface:map: sales key|label|2971|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2971,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Has no shipyard"
+  },
+  {
+   "id": "interface:map: sales key|label|2974|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2974,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Has shipyard"
+  },
+  {
+   "id": "interface:map: sales key|label|2977|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2977,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Sells this ship"
+  },
+  {
+   "id": "interface:map: sales key|label|2980|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2980,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Ship parked here"
+  },
+  {
+   "id": "interface:map: sales key|label|2985|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2985,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Has no outfitter"
+  },
+  {
+   "id": "interface:map: sales key|label|2988|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2988,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Has outfitter"
+  },
+  {
+   "id": "interface:map: sales key|label|2991|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2991,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Sells this outfit"
+  },
+  {
+   "id": "interface:map: sales key|label|2994|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2994,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Outfit in storage"
+  },
+  {
+   "id": "interface:map: sales key|label|2999|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 2999,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Has no outfitter"
+  },
+  {
+   "id": "interface:map: sales key|label|3002|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 3002,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Has outfitter"
+  },
+  {
+   "id": "interface:map: sales key|label|3005|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 3005,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Mine this here"
+  },
+  {
+   "id": "interface:map: sales key|label|3008|0",
+   "path": "data/_ui/interfaces.txt",
+   "line": 3008,
+   "kind": "UI_LABEL",
+   "context": "interface:map: sales key",
+   "english": "Mineral in storage"
+  }
+ ]
+}

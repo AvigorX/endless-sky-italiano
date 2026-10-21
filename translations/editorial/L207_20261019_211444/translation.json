@@ -1,0 +1,198 @@
+{
+ "block": {
+  "path": "data/coalition/coalition news.txt",
+  "line_from": 95,
+  "line_to": 176,
+  "units": 17
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:heliarch agent|\"Seen those charity workers in blue on some of our worlds, have you? Noble intentions they may have, but understand it I do not. Why trouble themselves with it when taking care of everyone, we already are?\"|95|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 95,
+   "kind": "NEWS",
+   "context": "news:heliarch agent",
+   "english": "\"Seen those charity workers in blue on some of our worlds, have you? Noble intentions they may have, but understand it I do not. Why trouble themselves with it when taking care of everyone, we already are?\"",
+   "italian": "\"Visti quei volontari in blu su alcuni dei nostri mondi, li hai? Intenzioni nobili possono avere, ma capirlo io non riesco. Perché affannarsi, quando occuparci di tutti, già lo facciamo?\"",
+   "ratio": 0.908
+  },
+  {
+   "idx": 2,
+   "id": "news:heliarch candidate|\"Laws, history, theory, too much of it I have read, and still behind I am...\"|105|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 105,
+   "kind": "NEWS",
+   "context": "news:heliarch candidate",
+   "english": "\"Laws, history, theory, too much of it I have read, and still behind I am...\"",
+   "italian": "\"Leggi, storia, teoria, troppo ne ho letto, e ancora indietro sono...\"",
+   "ratio": 0.909
+  },
+  {
+   "idx": 3,
+   "id": "news:heliarch candidate|\"As part of my trials, read the works of consul Aulori, I had to. Exceeded my expectations, his books have.\"|106|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 106,
+   "kind": "NEWS",
+   "context": "news:heliarch candidate",
+   "english": "\"As part of my trials, read the works of consul Aulori, I had to. Exceeded my expectations, his books have.\"",
+   "italian": "\"Come parte delle mie prove, leggere le opere del consul Aulori, ho dovuto. Superato le mie aspettative, i suoi libri hanno.\"",
+   "ratio": 1.157
+  },
+  {
+   "idx": 4,
+   "id": "news:heliarch candidate|\"Meant to prove our dedication and show our potential, the trials we candidates go through are. Though difficult, we're sure to be apt to serve once passed, we have.\"|107|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 107,
+   "kind": "NEWS",
+   "context": "news:heliarch candidate",
+   "english": "\"Meant to prove our dedication and show our potential, the trials we candidates go through are. Though difficult, we're sure to be apt to serve once passed, we have.\"",
+   "italian": "\"Servire a dimostrare la nostra dedizione e a mostrare il nostro potenziale, le prove che noi candidati affrontiamo. Per quanto difficili, idonei al servizio una volta superate, siamo certi di essere.\"",
+   "ratio": 1.211
+  },
+  {
+   "idx": 5,
+   "id": "news:arach tourist|\"Ever since another child I had, extended my vacation period and increased my holiday pay, the government has.\"|132|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 132,
+   "kind": "NEWS",
+   "context": "news:arach tourist",
+   "english": "\"Ever since another child I had, extended my vacation period and increased my holiday pay, the government has.\"",
+   "italian": "\"Da quando un altro figlio ho avuto, allungato il periodo di ferie e aumentata la paga vacanze, il governo ha.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "news:arach tourist|\"Much better than I expected, the food here is. Still, beat longcow steak, nothing here does.\"|133|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 133,
+   "kind": "NEWS",
+   "context": "news:arach tourist",
+   "english": "\"Much better than I expected, the food here is. Still, beat longcow steak, nothing here does.\"",
+   "italian": "\"Molto meglio di quanto mi aspettassi, il cibo qui è. Comunque, battere la bistecca di longcow, niente qui riesce.\"",
+   "ratio": 1.223
+  },
+  {
+   "idx": 7,
+   "id": "news:arach tourist|\"That the streets here were too narrow for us Arachi, I had heard, but no problem so far I've had.\"|134|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 134,
+   "kind": "NEWS",
+   "context": "news:arach tourist",
+   "english": "\"That the streets here were too narrow for us Arachi, I had heard, but no problem so far I've had.\"",
+   "italian": "\"Che le strade qui fossero troppo strette per noi Arachi, l'avevo sentito, ma nessun problema finora ho avuto.\"",
+   "ratio": 1.121
+  },
+  {
+   "idx": 8,
+   "id": "news:kimek tourist|\"Come here with a caravan, I have. Cheaper it was, but stick together we must, and too tight the schedule they set up is. Barely appreciate the sights, I can!\"|146|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 146,
+   "kind": "NEWS",
+   "context": "news:kimek tourist",
+   "english": "\"Come here with a caravan, I have. Cheaper it was, but stick together we must, and too tight the schedule they set up is. Barely appreciate the sights, I can!\"",
+   "italian": "\"Venuto qui con una carovana, sono. Più economico è stato, ma uniti dobbiamo stare, e troppo stretto il programma che hanno organizzato è. A malapena godermi i panorami, riesco!\"",
+   "ratio": 1.119
+  },
+  {
+   "idx": 9,
+   "id": "news:kimek tourist|\"Asked me to bring them some gifts from my trip, my family has, but fit them all in my luggage I cannot, and only half of the gifts purchased I have!\"|147|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 147,
+   "kind": "NEWS",
+   "context": "news:kimek tourist",
+   "english": "\"Asked me to bring them some gifts from my trip, my family has, but fit them all in my luggage I cannot, and only half of the gifts purchased I have!\"",
+   "italian": "\"Chiesto di portare loro qualche regalo dal viaggio, la mia famiglia ha, ma farceli stare tutti nel bagaglio non posso, e solo metà dei regali comprati ho!\"",
+   "ratio": 1.04
+  },
+  {
+   "idx": 10,
+   "id": "news:kimek tourist|\"From an arcology I am, so to me twice the vacation, a trip to a planet without them is.\"|148|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 148,
+   "kind": "NEWS",
+   "context": "news:kimek tourist",
+   "english": "\"From an arcology I am, so to me twice the vacation, a trip to a planet without them is.\"",
+   "italian": "\"Da un'arcologia sono, quindi per me il doppio della vacanza, un viaggio su un pianeta senza, è.\"",
+   "ratio": 1.09
+  },
+  {
+   "idx": 11,
+   "id": "news:saryd tourist|\"From far away I've come, and for weeks sleeping in a ship I was. My first time traveling to another planet, it is, so not used to being so far from nature, I was. No idea how other Saryds make it as pilots, I have.\"|160|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 160,
+   "kind": "NEWS",
+   "context": "news:saryd tourist",
+   "english": "\"From far away I've come, and for weeks sleeping in a ship I was. My first time traveling to another planet, it is, so not used to being so far from nature, I was. No idea how other Saryds make it as pilots, I have.\"",
+   "italian": "\"Da molto lontano sono venuto, e per settimane dormendo in una nave sono stato. La mia prima volta che viaggio su un altro pianeta, è, quindi non abituato a stare così lontano dalla natura, ero. Nessuna idea di come altri Saryd facciano i piloti, ho.\"",
+   "ratio": 1.162
+  },
+  {
+   "idx": 12,
+   "id": "news:saryd tourist|\"Truly breathtaking, the sights of this world are. The cuisine, too, greatly enjoyed I have. If only the locals had a more civil sense of attire.\"|161|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 161,
+   "kind": "NEWS",
+   "context": "news:saryd tourist",
+   "english": "\"Truly breathtaking, the sights of this world are. The cuisine, too, greatly enjoyed I have. If only the locals had a more civil sense of attire.\"",
+   "italian": "\"Davvero mozzafiato, i panorami di questo mondo sono. Anche la cucina, molto apprezzata l'ho. Se solo i locali avessero un senso del vestire più civile.\"",
+   "ratio": 1.048
+  },
+  {
+   "idx": 13,
+   "id": "news:saryd tourist|\"Climb up walls, the denizens of this world can. Otherworldly it is, to see them do so in the distinct architecture of some buildings here.\"|162|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 162,
+   "kind": "NEWS",
+   "context": "news:saryd tourist",
+   "english": "\"Climb up walls, the denizens of this world can. Otherworldly it is, to see them do so in the distinct architecture of some buildings here.\"",
+   "italian": "\"Arrampicarsi sui muri, gli abitanti di questo mondo sanno. Di un altro mondo è, vederli farlo nell'architettura inconfondibile di alcuni edifici qui.\"",
+   "ratio": 1.079
+  },
+  {
+   "idx": 14,
+   "id": "news:coalition researcher|\"Pardon me, but providing me with a blood sample, would you mind? Interested in how the human immune system differs from our own, I am.\"|173|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 173,
+   "kind": "NEWS",
+   "context": "news:coalition researcher",
+   "english": "\"Pardon me, but providing me with a blood sample, would you mind? Interested in how the human immune system differs from our own, I am.\"",
+   "italian": "\"Scusami, ma fornirmi un campione di sangue, ti dispiacerebbe? Interessato a come il sistema immunitario umano differisce dal nostro, sono.\"",
+   "ratio": 1.029
+  },
+  {
+   "idx": 15,
+   "id": "news:coalition researcher|\"To Ring of Wisdom I frequently travel. Held there, many great conferences are.\"|174|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 174,
+   "kind": "NEWS",
+   "context": "news:coalition researcher",
+   "english": "\"To Ring of Wisdom I frequently travel. Held there, many great conferences are.\"",
+   "italian": "\"A Ring of Wisdom viaggio spesso. Tenute lì, molte grandi conferenze sono.\"",
+   "ratio": 0.938
+  },
+  {
+   "idx": 16,
+   "id": "news:coalition researcher|\"Move to Ring of Wisdom, I wish to. So many advanced facilities for testing it has, so much easier to get a hold of complex chemicals...\"|175|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 175,
+   "kind": "NEWS",
+   "context": "news:coalition researcher",
+   "english": "\"Move to Ring of Wisdom, I wish to. So many advanced facilities for testing it has, so much easier to get a hold of complex chemicals...\"",
+   "italian": "\"Trasferirmi a Ring of Wisdom, vorrei. Così tante strutture avanzate per i test ha, così tanto più facile procurarsi sostanze chimiche complesse...\"",
+   "ratio": 1.08
+  },
+  {
+   "idx": 17,
+   "id": "news:coalition researcher|\"A Saryd Traveler I recently purchased. Not much of a pilot I am, but being a science vessel, adequate facilities the model still has. More importantly, no rude neighbors to interrupt my team's research, a spaceship has.\"|176|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 176,
+   "kind": "NEWS",
+   "context": "news:coalition researcher",
+   "english": "\"A Saryd Traveler I recently purchased. Not much of a pilot I am, but being a science vessel, adequate facilities the model still has. More importantly, no rude neighbors to interrupt my team's research, a spaceship has.\"",
+   "italian": "\"Un Saryd Traveler ho comprato di recente. Non un gran pilota sono, ma essendo una nave scientifica, strutture adeguate il modello ha comunque. Soprattutto, nessun vicino maleducato che interrompa la ricerca del mio team, una nave spaziale ha.\"",
+   "ratio": 1.104
+  }
+ ]
+}

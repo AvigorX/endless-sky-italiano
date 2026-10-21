@@ -1,0 +1,55 @@
+{
+ "block": {
+  "path": "data/remnant/remnant.txt",
+  "line_from": 367,
+  "line_to": 370,
+  "units": 4
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "phrase:remnant uncontacted|\"If you value the continued survival of humanity, do not scan our ships,\" a strangely melodic voice says.|367|0",
+   "path": "data/remnant/remnant.txt",
+   "line": 367,
+   "kind": "TEXT",
+   "context": "phrase:remnant uncontacted",
+   "english": "\"If you value the continued survival of humanity, do not scan our ships,\" a strangely melodic voice says.",
+   "italian": "\"Se tieni alla sopravvivenza dell'umanità, non scansionare le nostre navi\", dice una voce stranamente melodiosa.",
+   "ratio": 1.067
+  },
+  {
+   "idx": 2,
+   "id": "phrase:remnant uncontacted|\"If you value your continued survival, do not scan our ships.\" The voice speaks with a tone reminiscent of singing.|368|0",
+   "path": "data/remnant/remnant.txt",
+   "line": 368,
+   "kind": "TEXT",
+   "context": "phrase:remnant uncontacted",
+   "english": "\"If you value your continued survival, do not scan our ships.\" The voice speaks with a tone reminiscent of singing.",
+   "italian": "\"Se tieni alla tua sopravvivenza, non scansionare le nostre navi.\" La voce parla con un tono che ricorda il canto.",
+   "ratio": 0.991
+  },
+  {
+   "idx": 3,
+   "id": "phrase:remnant uncontacted|\"We value our privacy, and will respond to scanning with deadly force.\" The voice is strangely melodic.|369|0",
+   "path": "data/remnant/remnant.txt",
+   "line": 369,
+   "kind": "TEXT",
+   "context": "phrase:remnant uncontacted",
+   "english": "\"We value our privacy, and will respond to scanning with deadly force.\" The voice is strangely melodic.",
+   "italian": "\"Teniamo alla nostra riservatezza e risponderemo alle scansioni con la forza letale.\" La voce è stranamente melodiosa.",
+   "ratio": 1.146
+  },
+  {
+   "idx": 4,
+   "id": "phrase:remnant uncontacted|\"Do not scan our ships,\" someone sings to you.|370|0",
+   "path": "data/remnant/remnant.txt",
+   "line": 370,
+   "kind": "TEXT",
+   "context": "phrase:remnant uncontacted",
+   "english": "\"Do not scan our ships,\" someone sings to you.",
+   "italian": "\"Non scansionare le nostre navi\", ti canta qualcuno.",
+   "ratio": 1.13
+  }
+ ]
+}

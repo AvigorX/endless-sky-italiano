@@ -1,0 +1,176 @@
+{
+ "block": {
+  "path": "data/starts.txt",
+  "line_from": 135,
+  "line_to": 171,
+  "units": 15
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "start:paradise|name|135|0",
+   "path": "data/starts.txt",
+   "line": 135,
+   "kind": "VALUE",
+   "context": "start:paradise",
+   "english": "Birthday Surprise",
+   "italian": "Birthday Surprise",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "start:paradise|description|136|0",
+   "path": "data/starts.txt",
+   "line": 136,
+   "kind": "DESCRIPTION",
+   "context": "start:paradise",
+   "english": "You grew up on Mainsail, an oceanic Paradise World terraformed to perfection. Only the richest live on such worlds; luckily, your father is a wealthy financier. But you've always found your pampered life boring, and are more interested in living a life among the stars. As your eighteenth birthday party winds down, your father takes you aside to talk...",
+   "italian": "Sei cresciuto su Mainsail, un Mondo del Paradiso oceanico terraformato alla perfezione. Solo i più ricchi vivono su mondi simili; per fortuna tuo padre è un finanziere facoltoso. Ma hai sempre trovato noiosa la tua vita viziata, e ti interessa di più vivere tra le stelle. Mentre la festa per il tuo diciottesimo compleanno volge al termine, tuo padre ti prende da parte per parlare...",
+   "ratio": 1.088
+  },
+  {
+   "idx": 3,
+   "id": "start:paradise|description|137|0",
+   "path": "data/starts.txt",
+   "line": 137,
+   "kind": "DESCRIPTION",
+   "context": "start:paradise",
+   "english": "\tThis start has no mortgage, leaving you free to explore the galaxy at your own pace.",
+   "italian": "\tQuesto inizio non prevede mutui, lasciandoti libero di esplorare la galassia al tuo ritmo.",
+   "ratio": 1.071
+  },
+  {
+   "idx": 4,
+   "id": "conversation:paradise intro|log|154|0",
+   "path": "data/starts.txt",
+   "line": 154,
+   "kind": "LOGBOOK",
+   "context": "conversation:paradise intro",
+   "english": "Got a pilot's license for my birthday, as well as 500,000 credits to purchase a starship. The galaxy is now at my fingertips.",
+   "italian": "Per il mio compleanno ho ricevuto una licenza di pilota e 500.000 crediti per comprare un'astronave. Ora la galassia è a portata di mano.",
+   "ratio": 1.096
+  },
+  {
+   "idx": 5,
+   "id": "conversation:paradise intro|log|155|0",
+   "path": "data/starts.txt",
+   "line": 155,
+   "kind": "LOGBOOK",
+   "context": "conversation:paradise intro",
+   "english": "Hundreds of years ago, the independent territories in different parts of human space agreed to join together into a single democratic government, with Earth as its capital. The rise of the Republic ushered in a long period of peace and prosperity in human history.",
+   "italian": "Centinaia di anni fa i territori indipendenti sparsi nello spazio umano accettarono di unirsi in un unico governo democratico, con la Terra come capitale. L'ascesa della Repubblica inaugurò un lungo periodo di pace e di prosperità nella storia umana.",
+   "ratio": 0.947
+  },
+  {
+   "idx": 6,
+   "id": "conversation:paradise intro|Representation in the Republic Parliament is based on population. That means that some individual \"Paradise Worlds\" have more representatives than entire regions of space like the Dirt Belt that are more sparsely settled.|156|0",
+   "path": "data/starts.txt",
+   "line": 156,
+   "kind": "CONVERSATION",
+   "context": "conversation:paradise intro",
+   "english": "Representation in the Republic Parliament is based on population. That means that some individual \"Paradise Worlds\" have more representatives than entire regions of space like the Dirt Belt that are more sparsely settled.",
+   "italian": "La rappresentanza in Parlamento repubblicano si basa sulla popolazione. Questo significa che alcuni singoli \"Mondi del Paradiso\" hanno più rappresentanti di intere regioni come il Dirt Belt, dove la popolazione è più rada.",
+   "ratio": 1.005
+  },
+  {
+   "idx": 7,
+   "id": "conversation:paradise intro|log|157|0",
+   "path": "data/starts.txt",
+   "line": 157,
+   "kind": "LOGBOOK",
+   "context": "conversation:paradise intro",
+   "english": "The Syndicate is a megacorporation, the largest employer in human space. People who cannot find steady work elsewhere flock to the Syndicate factory worlds, where they are almost guaranteed to find a job. Although the Syndicate is technically part of the Republic, Syndicate worlds are governed directly by the corporation.",
+   "italian": "Il Sindacato è una megacorporazione, il più grande datore di lavoro dello spazio umano. Chi non trova un lavoro stabile altrove accorre ai mondi-fabbrica del Sindacato, dove un impiego è quasi garantito. Sebbene il Sindacato faccia tecnicamente parte della Repubblica, i suoi mondi sono governati direttamente dalla corporazione.",
+   "ratio": 1.019
+  },
+  {
+   "idx": 8,
+   "id": "conversation:paradise intro|The Syndicate is a central part of the Republic's economy, but they are also well known for selling shoddy products and for doing damage to the environment on the worlds they control. Their treatment of workers is questionable, and their opposition to organized labor is legendary. Some Syndicate factory towns have even been accused of human rights abuses.|158|0",
+   "path": "data/starts.txt",
+   "line": 158,
+   "kind": "CONVERSATION",
+   "context": "conversation:paradise intro",
+   "english": "The Syndicate is a central part of the Republic's economy, but they are also well known for selling shoddy products and for doing damage to the environment on the worlds they control. Their treatment of workers is questionable, and their opposition to organized labor is legendary. Some Syndicate factory towns have even been accused of human rights abuses.",
+   "italian": "Il Sindacato è una parte centrale dell'economia repubblicana, ma è anche noto per vendere prodotti scadenti e per danneggiare l'ambiente dei mondi che controlla. Il trattamento riservato ai lavoratori è discutibile, e la sua opposizione al sindacalismo è leggendaria. Alcune cittadine-fabbrica del Sindacato sono state persino accusate di violazioni dei diritti umani.",
+   "ratio": 1.031
+  },
+  {
+   "idx": 9,
+   "id": "conversation:paradise intro|log|159|0",
+   "path": "data/starts.txt",
+   "line": 159,
+   "kind": "LOGBOOK",
+   "context": "conversation:paradise intro",
+   "english": "In poorer and more remote star systems, where the Navy seldom patrols, pirate attacks on merchant ships are frequent. Pirates are also known to attack large, unguarded convoys of freighters even in more populated areas. Most pirate fleets come from lawless worlds on the outskirts of human space.",
+   "italian": "Nei sistemi stellari più poveri e remoti, dove la Marina pattuglia di rado, gli attacchi pirata alle navi mercantili sono frequenti. I pirati sono noti anche per attaccare grandi convogli di mercantili senza scorta in zone più popolate. La maggior parte delle flotte pirata viene da mondi senza legge ai margini dello spazio umano.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 10,
+   "id": "conversation:paradise intro|\"I know you've wanted to be the captain of a starship for a long time now,\" your father says. \"So as my birthday gift to you, how about we go get you a pilot's license and a ship from the shipyard?\" You say yes without a second thought.|161|0",
+   "path": "data/starts.txt",
+   "line": 161,
+   "kind": "CONVERSATION",
+   "context": "conversation:paradise intro",
+   "english": "\"I know you've wanted to be the captain of a starship for a long time now,\" your father says. \"So as my birthday gift to you, how about we go get you a pilot's license and a ship from the shipyard?\" You say yes without a second thought.",
+   "italian": "\"So che vuoi essere capitano di un'astronave da molto tempo,\" dice tuo padre. \"Così, come regalo di compleanno, che ne dici di andare a prenderti una licenza di pilota e una nave al cantiere?\" Rispondi di sì senza pensarci due volte.",
+   "ratio": 0.987
+  },
+  {
+   "idx": 11,
+   "id": "conversation:paradise intro|\tYour father brings you to the Republic Department of Starship Licensing building in the spaceport. The lines are long, but your father walks right up to one of the desks. Before the person in the front of the line or the one behind the desk can complain, he flicks a credit chip at each of them - both worth a substantial amount. \"I'd like to get a pilot's license for my child.\"|162|0",
+   "path": "data/starts.txt",
+   "line": 162,
+   "kind": "CONVERSATION",
+   "context": "conversation:paradise intro",
+   "english": "\tYour father brings you to the Republic Department of Starship Licensing building in the spaceport. The lines are long, but your father walks right up to one of the desks. Before the person in the front of the line or the one behind the desk can complain, he flicks a credit chip at each of them - both worth a substantial amount. \"I'd like to get a pilot's license for my child.\"",
+   "italian": "\tTuo padre ti porta all'edificio del Dipartimento Repubblicano per le Licenze di Astronave, allo spazioporto. Le file sono lunghe, ma tuo padre va dritto verso uno dei banchi. Prima che la persona in testa alla fila o quella dietro al banco possano protestare, lancia un gettone di credito a ciascuna di loro, entrambi di valore sostanzioso. \"Vorrei una licenza di pilota per mio figlio.\"",
+   "ratio": 1.021
+  },
+  {
+   "idx": 12,
+   "id": "conversation:paradise intro|\t\"I'm sorry,\" the person behind the desk starts saying, \"but you'll need to go through the process of applying through the net first, then wait three to five business days before-\"|163|0",
+   "path": "data/starts.txt",
+   "line": 163,
+   "kind": "CONVERSATION",
+   "context": "conversation:paradise intro",
+   "english": "\t\"I'm sorry,\" the person behind the desk starts saying, \"but you'll need to go through the process of applying through the net first, then wait three to five business days before-\"",
+   "italian": "\t\"Mi dispiace,\" comincia a dire la persona dietro al banco, \"ma deve prima presentare domanda tramite la rete, poi aspettare da tre a cinque giorni lavorativi prima di-\"",
+   "ratio": 0.939
+  },
+  {
+   "idx": 13,
+   "id": "conversation:paradise intro|\tYour father tosses another credit chip at the person behind the desk, prompting them to hand you a stylus and a pad. \"Sign here, please. Your pilot's license will be here in a moment.\"|164|0",
+   "path": "data/starts.txt",
+   "line": 164,
+   "kind": "CONVERSATION",
+   "context": "conversation:paradise intro",
+   "english": "\tYour father tosses another credit chip at the person behind the desk, prompting them to hand you a stylus and a pad. \"Sign here, please. Your pilot's license will be here in a moment.\"",
+   "italian": "\tTuo padre lancia un altro gettone di credito alla persona dietro al banco, che ti porge uno stilo e una tavoletta. \"Firmi qui, prego. La sua licenza di pilota sarà pronta tra un momento.\"",
+   "ratio": 1.016
+  },
+  {
+   "idx": 14,
+   "id": "conversation:paradise intro|\tWithout any hesitation and after skipping past a number of pages of legal text, you sign your name:|165|0",
+   "path": "data/starts.txt",
+   "line": 165,
+   "kind": "CONVERSATION",
+   "context": "conversation:paradise intro",
+   "english": "\tWithout any hesitation and after skipping past a number of pages of legal text, you sign your name:",
+   "italian": "\tSenza esitare e dopo aver saltato diverse pagine di testo legale, firmi il tuo nome:",
+   "ratio": 0.85
+  },
+  {
+   "idx": 15,
+   "id": "conversation:paradise intro|\tYou enter the shipyard, your brand new pilot's license held tight in one hand and 500,000 credits from your father in the other. There are almost a dozen ship models for sale, but there are only four that you are able to afford. Which one you choose will determine your future...|167|0",
+   "path": "data/starts.txt",
+   "line": 167,
+   "kind": "CONVERSATION",
+   "context": "conversation:paradise intro",
+   "english": "\tYou enter the shipyard, your brand new pilot's license held tight in one hand and 500,000 credits from your father in the other. There are almost a dozen ship models for sale, but there are only four that you are able to afford. Which one you choose will determine your future...",
+   "italian": "\tEntri nel cantiere navale, con la licenza di pilota appena ottenuta stretta in una mano e i 500.000 crediti di tuo padre nell'altra. Ci sono quasi una dozzina di modelli di nave in vendita, ma solo quattro che puoi permetterti. Quale sceglierai determinerà il tuo futuro...",
+   "ratio": 0.979
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "batch": "B005",
+ "name": "Help smoke test",
+ "source_hash": "e94e2a6c4ff94070",
+ "instructions": "return JSON array [{\"id\": ..., \"it\": ...}] with one entry per id",
+ "units": [
+  {
+   "id": "help:try out fighters transfer cargo|You have a carrier which can use fighters to collect dropped materials if the fighter has cargo space.|145|0",
+   "path": "data/_ui/help.txt",
+   "line": 145,
+   "kind": "HELP",
+   "context": "help:try out fighters transfer cargo",
+   "english": "You have a carrier which can use fighters to collect dropped materials if the fighter has cargo space."
+  },
+  {
+   "id": "help:try out fighters transfer cargo|\tIn Preferences and Settings under the Gameplay section, turn on \"Fighters transfer cargo\" to learn more.|147|0",
+   "path": "data/_ui/help.txt",
+   "line": 147,
+   "kind": "HELP",
+   "context": "help:try out fighters transfer cargo",
+   "english": "\tIn Preferences and Settings under the Gameplay section, turn on \"Fighters transfer cargo\" to learn more."
+  },
+  {
+   "id": "help:navigation|Welcome to the sky! To travel to another star system, press <View star map> to view your map, and click on the system you want to travel to. Your hyperdrive can only travel along the \"links\" shown on your map. After selecting a destination, close your map and press <Initiate hyperspace jump> to jump to that system.|150|0",
+   "path": "data/_ui/help.txt",
+   "line": 150,
+   "kind": "HELP",
+   "context": "help:navigation",
+   "english": "Welcome to the sky! To travel to another star system, press <View star map> to view your map, and click on the system you want to travel to. Your hyperdrive can only travel along the \"links\" shown on your map. After selecting a destination, close your map and press <Initiate hyperspace jump> to jump to that system."
+  }
+ ]
+}

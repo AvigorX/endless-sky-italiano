@@ -1,0 +1,297 @@
+{
+ "block": {
+  "path": "data/successors/successor ships.txt",
+  "line_from": 1141,
+  "line_to": 1338,
+  "units": 26
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Veusade|description|1141|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1141,
+   "kind": "DESCRIPTION",
+   "context": "ship:Veusade",
+   "english": "The Veusade bristles with gun ports but has a small overall weapons capacity; in fact, it is just enough to saturate its hardpoints with drag cannons. Such a narrowly-focused design makes these ships ill-suited for multipurpose use, but they are frequently seen as auxiliary or police craft, owing to their ability to rapidly catch and immobilize fleeing vessels.",
+   "italian": "La Veusade è piena di feritoie per le armi, ma ha una capacità complessiva ridotta; è appena sufficiente, in effetti, a saturare i suoi punti d'attacco con cannoni a trascinamento. Un progetto così specializzato rende queste navi inadatte all'uso polivalente, ma vengono spesso impiegate come unità ausiliarie o di polizia, grazie alla capacità di raggiungere e immobilizzare rapidamente i vascelli in fuga.",
+   "ratio": 1.121
+  },
+  {
+   "idx": 2,
+   "id": "ship:Vujlet|plural|1146|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1146,
+   "kind": "VALUE",
+   "context": "ship:Vujlet",
+   "english": "Vujleten",
+   "italian": "Vujleten",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "ship:Vujlet|\"Ojet\" Bimodal Coilgun|1178|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1178,
+   "kind": "TEXT",
+   "context": "ship:Vujlet",
+   "english": "\"Ojet\" Bimodal Coilgun",
+   "italian": "\"Ojet\" Bimodal Coilgun",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Vujlet|\"Nnesa\" Fusion Core|1180|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1180,
+   "kind": "TEXT",
+   "context": "ship:Vujlet",
+   "english": "\"Nnesa\" Fusion Core",
+   "italian": "\"Nnesa\" Fusion Core",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "ship:Vujlet|OC-\"Mavra\" Betavoltaic Cell|1181|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1181,
+   "kind": "TEXT",
+   "context": "ship:Vujlet",
+   "english": "OC-\"Mavra\" Betavoltaic Cell",
+   "italian": "OC-\"Mavra\" Betavoltaic Cell",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Vujlet|\"Jaase\" Shield Cortex|1183|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1183,
+   "kind": "TEXT",
+   "context": "ship:Vujlet",
+   "english": "\"Jaase\" Shield Cortex",
+   "italian": "\"Jaase\" Shield Cortex",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "ship:Vujlet|\"Chyyra\" Inductive Thruster|1188|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1188,
+   "kind": "TEXT",
+   "context": "ship:Vujlet",
+   "english": "\"Chyyra\" Inductive Thruster",
+   "italian": "\"Chyyra\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "ship:Vujlet|\"Chyyra\" Inductive Steering|1189|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1189,
+   "kind": "TEXT",
+   "context": "ship:Vujlet",
+   "english": "\"Chyyra\" Inductive Steering",
+   "italian": "\"Chyyra\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "ship:Vujlet|\"Chyyra\" Inductive Reverser|1190|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1190,
+   "kind": "TEXT",
+   "context": "ship:Vujlet",
+   "english": "\"Chyyra\" Inductive Reverser",
+   "italian": "\"Chyyra\" Inductive Reverser",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "ship:Vujlet|gun|1193|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1193,
+   "kind": "TEXT",
+   "context": "ship:Vujlet",
+   "english": "\"Ojet\" Bimodal Coilgun",
+   "italian": "\"Ojet\" Bimodal Coilgun",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "ship:Vujlet|gun|1194|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1194,
+   "kind": "TEXT",
+   "context": "ship:Vujlet",
+   "english": "\"Ojet\" Bimodal Coilgun",
+   "italian": "\"Ojet\" Bimodal Coilgun",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "ship:Vujlet|description|1234|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1234,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vujlet",
+   "english": "Navigating the stars with the grace of a flitting bird, the compact Vujlet is a mass-produced High Houses warship flexible enough to serve in a variety of light-duty roles. Large enough to operate as a self-sufficient unit, these vessels serve as a useful bridge between short-ranged and relatively vulnerable interceptors, and larger, more resource-intensive warships that can be much more expensive to build and operate.",
+   "italian": "Con la grazia di un uccello che svolazza, la compatta Vujlet attraversa le stelle: è una nave da guerra prodotta in serie dalle Alte Case, abbastanza flessibile da ricoprire una varietà di ruoli leggeri. Essendo abbastanza grande da operare come unità autosufficiente, questi vascelli costituiscono un ponte utile tra gli intercettori a corto raggio e relativamente vulnerabili, e le navi da guerra più grandi e più esigenti in risorse, che possono essere molto più costose da costruire e da far operare.",
+   "ratio": 1.194
+  },
+  {
+   "idx": 13,
+   "id": "ship:Vujlet|description|1235|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1235,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vujlet",
+   "english": "\tThe design was originally employed by House Kaatrij as a stealth reconnaissance vessel that made use of their then-recently-developed cloaking technology. As the alliance between the New Houses strengthened, the plans for the Vujlet were distributed among them, and the light warship rapidly became a mainstay of their fleets. Unfortunately, without the materials present in their Predecessors' domain, House Kaatrij has been unable to manufacture stealth equipment for the Vujlet in the modern era.",
+   "italian": "\tIl progetto fu impiegato originariamente dalla Casa Kaatrij come nave da ricognizione furtiva che sfruttava la tecnologia di occultamento da poco sviluppata dalla Casa. Con il rafforzarsi dell'alleanza tra le Nuove Case, i progetti della Vujlet furono distribuiti tra loro, e la nave da guerra leggera divenne rapidamente un pilastro delle loro flotte. Purtroppo, senza i materiali presenti nel dominio dei Predecessori, la Casa Kaatrij non è stata in grado di produrre equipaggiamento occultante per la Vujlet nell'era moderna.",
+   "ratio": 1.058
+  },
+  {
+   "idx": 14,
+   "id": "ship:Vujlet|description|1239|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1239,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vujlet",
+   "english": "The compact Vujlet is a mass-produced High Houses warship flexible enough to serve in a variety of light-duty roles. Large enough to operate as a self-sufficient unit, these vessels serve as a useful bridge between short-ranged, relatively vulnerable interceptors, and larger, more resource-intensive warships that can be much more expensive to build and operate.",
+   "italian": "La compatta Vujlet è una nave da guerra prodotta in serie dalle Alte Case, abbastanza flessibile da ricoprire una varietà di ruoli leggeri. Essendo abbastanza grande da operare come unità autosufficiente, questi vascelli costituiscono un ponte utile tra gli intercettori a corto raggio, relativamente vulnerabili, e le navi da guerra più grandi e più esigenti in risorse, che possono essere molto più costose da costruire e da far operare.",
+   "ratio": 1.209
+  },
+  {
+   "idx": 15,
+   "id": "ship:Vujlet-Usaqri|plural|1245|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1245,
+   "kind": "VALUE",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "Vujleten-Usaqri",
+   "italian": "Vujleten-Usaqri",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "ship:Vujlet-Usaqri|\"Ojet\" Bimodal Coilgun|1279|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1279,
+   "kind": "TEXT",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "\"Ojet\" Bimodal Coilgun",
+   "italian": "\"Ojet\" Bimodal Coilgun",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "ship:Vujlet-Usaqri|\"Nnesa\" Fusion Core|1281|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1281,
+   "kind": "TEXT",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "\"Nnesa\" Fusion Core",
+   "italian": "\"Nnesa\" Fusion Core",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "ship:Vujlet-Usaqri|\"Jaase\" Shield Cortex|1283|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1283,
+   "kind": "TEXT",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "\"Jaase\" Shield Cortex",
+   "italian": "\"Jaase\" Shield Cortex",
+   "ratio": 1.0
+  },
+  {
+   "idx": 19,
+   "id": "ship:Vujlet-Usaqri|\"Veldt\" Combat Scanner|1285|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1285,
+   "kind": "TEXT",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "\"Veldt\" Combat Scanner",
+   "italian": "\"Veldt\" Combat Scanner",
+   "ratio": 1.0
+  },
+  {
+   "idx": 20,
+   "id": "ship:Vujlet-Usaqri|\"Chyyra\" Inductive Thruster|1291|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1291,
+   "kind": "TEXT",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "\"Chyyra\" Inductive Thruster",
+   "italian": "\"Chyyra\" Inductive Thruster",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "ship:Vujlet-Usaqri|\"Chyyra\" Inductive Steering|1292|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1292,
+   "kind": "TEXT",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "\"Chyyra\" Inductive Steering",
+   "italian": "\"Chyyra\" Inductive Steering",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "ship:Vujlet-Usaqri|\"Aqra\" Inductive Reverser|1293|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1293,
+   "kind": "TEXT",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "\"Aqra\" Inductive Reverser",
+   "italian": "\"Aqra\" Inductive Reverser",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "ship:Vujlet-Usaqri|gun|1296|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1296,
+   "kind": "TEXT",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "\"Ojet\" Bimodal Coilgun",
+   "italian": "\"Ojet\" Bimodal Coilgun",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "ship:Vujlet-Usaqri|gun|1297|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1297,
+   "kind": "TEXT",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "\"Ojet\" Bimodal Coilgun",
+   "italian": "\"Ojet\" Bimodal Coilgun",
+   "ratio": 1.0
+  },
+  {
+   "idx": 25,
+   "id": "ship:Vujlet-Usaqri|description|1337|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1337,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "The first prototype cloaks produced by the old House Kaatrij nearly eighteen hundred years ago were far from the adaptable and reliable technology they are today, each one consuming the power output of a large fusion reactor. Only once the House's engineers started to incorporate a ship's shielding into the cloak's operation was it made truly practical; hence, even today, the efficient cloak of the Vujlet-Usaqri relies on a steady stream of shield energy to operate. As a result, this modified variant of the Vujlet features a higher-capacity shield grid and more crew to maintain it.",
+   "italian": "I primi prototipi di occultamento prodotti dall'antica Casa Kaatrij quasi milleottocento anni fa erano ben lontani dalla tecnologia adattabile e affidabile di oggi: ognuno consumava la potenza di un grande reattore a fusione. Solo quando gli ingegneri della Casa iniziarono a integrare gli scudi di una nave nel funzionamento dell'occultamento questo divenne davvero praticabile; perciò, ancora oggi, l'efficiente occultamento della Vujlet-Usaqri dipende da un flusso costante di energia degli scudi per funzionare. Di conseguenza, questa variante modificata della Vujlet monta una rete di scudi di capacità superiore e un equipaggio più numeroso per mantenerla.",
+   "ratio": 1.126
+  },
+  {
+   "idx": 26,
+   "id": "ship:Vujlet-Usaqri|description|1338|0",
+   "path": "data/successors/successor ships.txt",
+   "line": 1338,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vujlet-Usaqri",
+   "english": "\tThe Vujlet-Usaqri's cloaking technology is integrated with its hull and cannot be removed. Optimized for general use, it draws a moderate amount of fuel and shields while active.",
+   "italian": "\tLa tecnologia di occultamento della Vujlet-Usaqri è integrata nello scafo e non può essere rimossa. Ottimizzata per l'uso generale, assorbe una quantità moderata di carburante e di scudi mentre è attiva.",
+   "ratio": 1.14
+  }
+ ]
+}

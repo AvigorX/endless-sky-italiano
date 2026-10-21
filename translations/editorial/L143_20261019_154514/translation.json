@@ -1,0 +1,341 @@
+{
+ "block": {
+  "path": "data/hai/unfettered 0 prologue.txt",
+  "line_from": 214,
+  "line_to": 317,
+  "units": 30
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Unfettered Jump Drive 2|name|214|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 214,
+   "kind": "VALUE",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "More Jump Drives",
+   "italian": "Altri motori di salto",
+   "ratio": 1.312
+  },
+  {
+   "idx": 2,
+   "id": "mission:Unfettered Jump Drive 2|description|215|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 215,
+   "kind": "DESCRIPTION",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "The Unfettered Hai have promised you rich rewards, and more information about their plans, if you bring them more jump drives.",
+   "italian": "Gli Hai Slegati ti hanno promesso ricompense ricche, e più informazioni sui loro piani, se porterai loro altri motori di salto.",
+   "ratio": 1.008
+  },
+  {
+   "idx": 3,
+   "id": "mission:Unfettered Jump Drive 2|As before, when you land on this Unfettered world with a jump drive, a large crowd gathers around your ship. Clearly they are hoping that once again you will arrange a sale. Do you want to bargain with them?|227|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 227,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "As before, when you land on this Unfettered world with a jump drive, a large crowd gathers around your ship. Clearly they are hoping that once again you will arrange a sale. Do you want to bargain with them?",
+   "italian": "Come prima, quando atterri su questo mondo Slegato con un motore di salto, una grande folla si raduna attorno alla tua nave. Chiaramente sperano che anche stavolta organizzi una vendita. Vuoi trattare con loro?",
+   "ratio": 1.014
+  },
+  {
+   "idx": 4,
+   "id": "mission:Unfettered Jump Drive 2|\t(No.)|229|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 229,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "\t(No.)",
+   "italian": "\t(No.)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "mission:Unfettered Jump Drive 2|\t(Yes.)|231|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 231,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "\t(Yes.)",
+   "italian": "\t(Sì.)",
+   "ratio": 0.857
+  },
+  {
+   "idx": 6,
+   "id": "mission:Unfettered Jump Drive 2|\tWhen you approach the crowd, one of them says, \"Greetings, human friend. We have made you known to all our brothers and sisters as one of the few creatures who have chosen to help the true Hai to gain their freedom. If you give us another jump drive, we will pay you another million credits, and make you one of our emissaries to collect the payments with which our frail brothers seek to buy peace. Will you accept this exchange?\"|232|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 232,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "\tWhen you approach the crowd, one of them says, \"Greetings, human friend. We have made you known to all our brothers and sisters as one of the few creatures who have chosen to help the true Hai to gain their freedom. If you give us another jump drive, we will pay you another million credits, and make you one of our emissaries to collect the payments with which our frail brothers seek to buy peace. Will you accept this exchange?\"",
+   "italian": "\tQuando ti avvicini alla folla, uno di loro dice: \"Salve, amico umano. Ti abbiamo fatto conoscere a tutti i nostri fratelli e sorelle come una delle poche creature che hanno scelto di aiutare i veri Hai a conquistare la libertà. Se ci dai un altro motore di salto, ti pagheremo un altro milione di crediti, e ti faremo uno dei nostri emissari per raccogliere i pagamenti con cui i nostri fragili fratelli cercano di comprare la pace. Accetti questo scambio?\"",
+   "ratio": 1.06
+  },
+  {
+   "idx": 7,
+   "id": "mission:Unfettered Jump Drive 2|\t\"Sorry, I need this jump drive right now, but I will come back later and sell it to you.\"|234|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 234,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "\t\"Sorry, I need this jump drive right now, but I will come back later and sell it to you.\"",
+   "italian": "\t\"Mi dispiace, mi serve questo motore di salto adesso, ma tornerò più tardi e te lo venderò.\"",
+   "ratio": 1.033
+  },
+  {
+   "idx": 8,
+   "id": "mission:Unfettered Jump Drive 2|\t\"Yes, I will sell you my jump drive.\"|236|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 236,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "\t\"Yes, I will sell you my jump drive.\"",
+   "italian": "\t\"Sì, vi venderò il mio motore di salto.\"",
+   "ratio": 1.079
+  },
+  {
+   "idx": 9,
+   "id": "mission:Unfettered Jump Drive 2|\tOnce again, they swap your jump drive for a hyperdrive, and pay you far more than you could sell a jump drive for anywhere else. \"We will tell the other true Hai to offer you jobs in our job boards,\" they tell you, \"and remember that we need still more jump drives.\"|243|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 243,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "\tOnce again, they swap your jump drive for a hyperdrive, and pay you far more than you could sell a jump drive for anywhere else. \"We will tell the other true Hai to offer you jobs in our job boards,\" they tell you, \"and remember that we need still more jump drives.\"",
+   "italian": "\tAncora una volta scambiano il tuo motore di salto con un iperpropulsore, e ti pagano molto più di quanto potresti venderlo altrove. \"Diremo agli altri veri Hai di offrirti lavoro nelle nostre bacheche,\" ti dicono, \"e ricorda che ci servono ancora altri motori di salto.\"",
+   "ratio": 1.015
+  },
+  {
+   "idx": 10,
+   "id": "mission:Unfettered Jump Drive 2|\t\"Then I will find more, and bring them to you.\"|245|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 245,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "\t\"Then I will find more, and bring them to you.\"",
+   "italian": "\t\"Allora ne troverò altri, e ve li porterò.\"",
+   "ratio": 0.917
+  },
+  {
+   "idx": 11,
+   "id": "mission:Unfettered Jump Drive 2|\t\"Can you tell me what you are using them for?\"|247|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 247,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "\t\"Can you tell me what you are using them for?\"",
+   "italian": "\t\"Potete dirmi a cosa vi servono?\"",
+   "ratio": 0.723
+  },
+  {
+   "idx": 12,
+   "id": "mission:Unfettered Jump Drive 2|\t\"Not yet. If you further prove your friendship, perhaps we will.\" You assure them that you will continue to do your best to assist them.|248|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 248,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 2",
+   "english": "\t\"Not yet. If you further prove your friendship, perhaps we will.\" You assure them that you will continue to do your best to assist them.",
+   "italian": "\t\"Non ancora. Se dimostrerai ancora la tua amicizia, forse lo faremo.\" Assicuri loro che continuerai a fare del tuo meglio per aiutarli.",
+   "ratio": 0.993
+  },
+  {
+   "idx": 13,
+   "id": "mission:Unfettered Jump Drive 3|You have another jump drive, and the Unfettered will certainly be willing to pay you well for it. They also hinted that they might be willing to give you more information about what they plan to use the jump drives for. Do you want to sell them another drive?|270|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 270,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "You have another jump drive, and the Unfettered will certainly be willing to pay you well for it. They also hinted that they might be willing to give you more information about what they plan to use the jump drives for. Do you want to sell them another drive?",
+   "italian": "Hai un altro motore di salto, e gli Slegati saranno senz'altro disposti a pagarlo bene. Hanno anche accennato che potrebbero darti più informazioni su che cosa intendono fare con i motori di salto. Vuoi vendergli un altro motore?",
+   "ratio": 0.884
+  },
+  {
+   "idx": 14,
+   "id": "mission:Unfettered Jump Drive 3|\t(No.)|272|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 272,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t(No.)",
+   "italian": "\t(No.)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "mission:Unfettered Jump Drive 3|\t(Yes.)|274|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 274,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t(Yes.)",
+   "italian": "\t(Sì.)",
+   "ratio": 0.857
+  },
+  {
+   "idx": 16,
+   "id": "mission:Unfettered Jump Drive 3|\tYou meet up with some local Unfettered leaders, and they again pay you a million credits and arrange for your jump drive to be swapped out of your ship. \"If you bring more, we will continue to pay you,\" they say.|275|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 275,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\tYou meet up with some local Unfettered leaders, and they again pay you a million credits and arrange for your jump drive to be swapped out of your ship. \"If you bring more, we will continue to pay you,\" they say.",
+   "italian": "\tTi incontri con alcuni capi locali degli Slegati, che ti pagano di nuovo un milione di crediti e fanno scambiare il motore di salto dalla tua nave. \"Se ne porterai altri, continueremo a pagarti,\" dicono.",
+   "ratio": 0.958
+  },
+  {
+   "idx": 17,
+   "id": "mission:Unfettered Jump Drive 3|\t\"Can you tell me what you are using the jump drives for?\"|277|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 277,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t\"Can you tell me what you are using the jump drives for?\"",
+   "italian": "\t\"Potete dirmi a cosa vi servono i motori di salto?\"",
+   "ratio": 0.897
+  },
+  {
+   "idx": 18,
+   "id": "mission:Unfettered Jump Drive 3|\t\"Thank you, I will certainly bring more of them when I am able.\"|278|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 278,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t\"Thank you, I will certainly bring more of them when I am able.\"",
+   "italian": "\t\"Grazie, ne porterò senz'altro altri quando potrò.\"",
+   "ratio": 0.8
+  },
+  {
+   "idx": 19,
+   "id": "mission:Unfettered Jump Drive 3|\tAfter a brief and hushed discussion in their own language, one of the leaders says, \"You have proven your worth, so we will share our secret. The Hai once owned many worlds on the galactic fringe, a territory we can only visit using the jump drive. Those worlds are fruitful and nearly uninhabited. We will reclaim them as our own, and there will be food there to feed the Unfettered for many thousands of years to come.\"|282|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 282,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\tAfter a brief and hushed discussion in their own language, one of the leaders says, \"You have proven your worth, so we will share our secret. The Hai once owned many worlds on the galactic fringe, a territory we can only visit using the jump drive. Those worlds are fruitful and nearly uninhabited. We will reclaim them as our own, and there will be food there to feed the Unfettered for many thousands of years to come.\"",
+   "italian": "\tDopo una breve discussione sussurrata nella loro lingua, uno dei capi dice: \"Hai dimostrato il tuo valore, quindi condivideremo il nostro segreto. Gli Hai possedevano un tempo molti mondi ai margini della galassia, un territorio che possiamo raggiungere solo con il motore di salto. Quei mondi sono fertili e quasi disabitati. Li rivendicheremo come nostri, e lì ci sarà cibo per sfamare gli Slegati per molte migliaia di anni a venire.\"",
+   "ratio": 1.038
+  },
+  {
+   "idx": 20,
+   "id": "mission:Unfettered Jump Drive 3|\t\"Is there any other way I can help you to reclaim those worlds?\"|288|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 288,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t\"Is there any other way I can help you to reclaim those worlds?\"",
+   "italian": "\t\"C'è un altro modo in cui posso aiutarvi a rivendicare quei mondi?\"",
+   "ratio": 1.046
+  },
+  {
+   "idx": 21,
+   "id": "mission:Unfettered Jump Drive 3|\t\"'Nearly uninhabited?' You mean another species inhabits some of those worlds now?\"|290|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 290,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t\"'Nearly uninhabited?' You mean another species inhabits some of those worlds now?\"",
+   "italian": "\t\"'Quasi disabitati?' Vuoi dire che un'altra specie abita oggi alcuni di quei mondi?\"",
+   "ratio": 1.012
+  },
+  {
+   "idx": 22,
+   "id": "mission:Unfettered Jump Drive 3|\tYou suspect that they are talking about the territory that is now inhabited by the Wanderers.|294|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 294,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\tYou suspect that they are talking about the territory that is now inhabited by the Wanderers.",
+   "italian": "\tSospetti che stiano parlando del territorio oggi abitato dai Wanderer.",
+   "ratio": 0.755
+  },
+  {
+   "idx": 23,
+   "id": "mission:Unfettered Jump Drive 3|\t\"Are you at war with the Wanderers? Can I help you to reclaim your territory?\"|296|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 296,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t\"Are you at war with the Wanderers? Can I help you to reclaim your territory?\"",
+   "italian": "\t\"Siete in guerra con i Wanderer? Posso aiutarvi a rivendicare il vostro territorio?\"",
+   "ratio": 1.076
+  },
+  {
+   "idx": 24,
+   "id": "mission:Unfettered Jump Drive 3|\t\"What are you going to do to the species that owns those worlds right now?\"|298|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 298,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t\"What are you going to do to the species that owns those worlds right now?\"",
+   "italian": "\t\"Che cosa farete alla specie che possiede quei mondi adesso?\"",
+   "ratio": 0.816
+  },
+  {
+   "idx": 25,
+   "id": "mission:Unfettered Jump Drive 3|\t\"Your help may indeed be beneficial to us,\" says the leader. \"I will tell the others to contact you if they have any particular missions you can undertake.\"|302|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 302,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t\"Your help may indeed be beneficial to us,\" says the leader. \"I will tell the others to contact you if they have any particular missions you can undertake.\"",
+   "italian": "\t\"Il tuo aiuto potrebbe davvero esserci utile,\" dice il capo. \"Dirò agli altri di contattarti se hanno missioni particolari che puoi svolgere.\"",
+   "ratio": 0.911
+  },
+  {
+   "idx": 26,
+   "id": "mission:Unfettered Jump Drive 3|\t\"I look forward to hearing from them.\"|304|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 304,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t\"I look forward to hearing from them.\"",
+   "italian": "\t\"Non vedo l'ora di sentire da loro.\"",
+   "ratio": 0.949
+  },
+  {
+   "idx": 27,
+   "id": "mission:Unfettered Jump Drive 3|\t\"What do you plan to do to the species that inhabits those worlds now?\"|306|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 306,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t\"What do you plan to do to the species that inhabits those worlds now?\"",
+   "italian": "\t\"Che cosa pensate di fare alla specie che abita quei mondi adesso?\"",
+   "ratio": 0.944
+  },
+  {
+   "idx": 28,
+   "id": "mission:Unfettered Jump Drive 3|\t\"Those worlds are now held by a species of scavengers, who feast on the ruin of proud civilizations. Our scouts tell us that these carrion-feeders have wiped away nearly every Hai artifact, melting down our cities to make metal for their ships and factories, and hiding the scars of our wars beneath newly planted forests. They are an old and strong species, but few in number, and those worlds are ours by right.\"|309|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 309,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t\"Those worlds are now held by a species of scavengers, who feast on the ruin of proud civilizations. Our scouts tell us that these carrion-feeders have wiped away nearly every Hai artifact, melting down our cities to make metal for their ships and factories, and hiding the scars of our wars beneath newly planted forests. They are an old and strong species, but few in number, and those worlds are ours by right.\"",
+   "italian": "\t\"Quei mondi sono ora tenuti da una specie di sciacalli, che banchettano sulle rovine di civiltà orgogliose. Le nostre sentinelle ci dicono che questi divoratori di carogne hanno cancellato quasi ogni artefatto Hai, fondendo le nostre città per ricavarne metallo per le loro navi e le loro fabbriche, e nascondendo le cicatrici delle nostre guerre sotto foreste appena piantate. Sono una specie antica e forte, ma poco numerosa, e quei mondi sono nostri di diritto.\"",
+   "ratio": 1.123
+  },
+  {
+   "idx": 29,
+   "id": "mission:Unfettered Jump Drive 3|\tYou try to press them for more information, but they tell you nothing useful, aside from promising you that they will seek out your help when it is time to reclaim their territory.|310|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 310,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\tYou try to press them for more information, but they tell you nothing useful, aside from promising you that they will seek out your help when it is time to reclaim their territory.",
+   "italian": "\tProvi a incalzarli per ottenere altre informazioni, ma non ti dicono nulla di utile, oltre a prometterti che cercheranno il tuo aiuto quando sarà il momento di rivendicare il loro territorio.",
+   "ratio": 1.061
+  },
+  {
+   "idx": 30,
+   "id": "mission:Unfettered Jump Drive 3|\t\"If you want to provide us with more jump drives, visit the job board from now on,\" says the leader. \"We will have warriors ready to receive them from you for the usual pay.\"|317|0",
+   "path": "data/hai/unfettered 0 prologue.txt",
+   "line": 317,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Unfettered Jump Drive 3",
+   "english": "\t\"If you want to provide us with more jump drives, visit the job board from now on,\" says the leader. \"We will have warriors ready to receive them from you for the usual pay.\"",
+   "italian": "\t\"Se vuoi fornirci altri motori di salto, d'ora in poi visita la bacheca degli incarichi,\" dice il capo. \"Avremo guerrieri pronti a riceverli da te per il solito compenso.\"",
+   "ratio": 0.983
+  }
+ ]
+}

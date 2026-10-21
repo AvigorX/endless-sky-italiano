@@ -1,0 +1,55 @@
+{
+ "block": {
+  "path": "data/gegno/gegno events.txt",
+  "line_from": 45,
+  "line_to": 51,
+  "units": 4
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "event:gegno: vi occupy zydee|description|45|0",
+   "path": "data/gegno/gegno events.txt",
+   "line": 45,
+   "kind": "DESCRIPTION",
+   "context": "event:gegno: vi occupy zydee",
+   "english": "There is evidence that the nearby Gegno Scin have attempted to establish a presence on this barren moon in the form of several partially-constructed buildings and landing zones scattered about the surface. In recent times, however, the opposing Gegno Vi have fielded their own forces to take control of the system, and have begun a number of operations to convert existing infrastructure and set up posts of their own, claiming the moon in their name.",
+   "italian": "Ci sono prove che i vicini Gegno Scin abbiano tentato di stabilire una presenza su questa luna sterile, sotto forma di diversi edifici parzialmente costruiti e zone di atterraggio sparse sulla superficie. Di recente, però, i rivali Gegno Vi hanno schierato le proprie forze per prendere il controllo del sistema, e hanno avviato una serie di operazioni per convertire le infrastrutture esistenti e installare postazioni proprie, reclamando la luna a proprio nome.",
+   "ratio": 1.027
+  },
+  {
+   "idx": 2,
+   "id": "event:gegno: vi occupy zydee|spaceport|46|0",
+   "path": "data/gegno/gegno events.txt",
+   "line": 46,
+   "kind": "DESCRIPTION",
+   "context": "event:gegno: vi occupy zydee",
+   "english": "The Vi have made makeshift landing zones and outposts, such as this one, for the group of warriors they've distributed across the moon. Although their numbers are no more than that of a small village, those who are present have accomplished a considerable amount during their time on the surface while the fleets above defend them.",
+   "italian": "I Vi hanno allestito zone di atterraggio e avamposti improvvisati, come questo, per il gruppo di guerrieri che hanno distribuito sulla luna. Benché il loro numero non superi quello di un piccolo villaggio, i presenti hanno fatto molto durante la loro permanenza sulla superficie, mentre le flotte lassù li difendono.",
+   "ratio": 0.955
+  },
+  {
+   "idx": 3,
+   "id": "event:gegno: vi occupy zydee|description|50|0",
+   "path": "data/gegno/gegno events.txt",
+   "line": 50,
+   "kind": "DESCRIPTION",
+   "context": "event:gegno: vi occupy zydee",
+   "english": "Ghneoe's orbital period is dominated by a very long dry season due to the binary stars at the system's center. However, during a short portion of the year, Ghneoe experiences an intense water cycle that results in a boom of greenery and wildlife activity, developing a short-lived but flourishing ecosystem. Much of the flora and fauna have adapted to such drastic shifts in climate, and return to a dormant state once the intense heat cycle returns.",
+   "italian": "Il periodo orbitale di Ghneoe è dominato da una lunghissima stagione secca a causa delle stelle binarie al centro del sistema. Per una breve parte dell'anno, però, Ghneoe vive un intenso ciclo dell'acqua che provoca un'esplosione di vegetazione e di attività della fauna, sviluppando un ecosistema effimero ma rigoglioso. Gran parte della flora e della fauna si è adattata a questi sbalzi climatici così drastici e torna in stato di quiescenza quando il ciclo di calore intenso ritorna.",
+   "ratio": 1.08
+  },
+  {
+   "idx": 4,
+   "id": "event:gegno: vi occupy zydee|description|51|0",
+   "path": "data/gegno/gegno events.txt",
+   "line": 51,
+   "kind": "DESCRIPTION",
+   "context": "event:gegno: vi occupy zydee",
+   "english": "\tUnlike its moon, Ghneoe sees few to no colonization efforts from either the Gegno Vi or Scin, perhaps due to the abnormal weather cycles, continued system warfare, or a combination of both.",
+   "italian": "\tA differenza della sua luna, Ghneoe vede pochi o nessun tentativo di colonizzazione da parte dei Gegno Vi o degli Scin, forse a causa dei cicli climatici anomali, della guerra continua nel sistema, o di entrambe le cose.",
+   "ratio": 1.163
+  }
+ ]
+}

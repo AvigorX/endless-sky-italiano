@@ -1,0 +1,128 @@
+{
+ "block": {
+  "path": "data/human/outfits.txt",
+  "line_from": 158,
+  "line_to": 233,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Small Radar Jammer|description|158|0",
+   "path": "data/human/outfits.txt",
+   "line": 158,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Radar Jammer",
+   "english": "This radar jammer is designed to interfere with Sidewinders and any other missiles that rely on radar for tracking their targets. Jamming will occasionally cause missiles to lose their target locks.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This radar jammer is designed to interfere with Sidewinders and any other missiles that rely on radar for tracking their targets. Jamming will occasionally cause missiles to lose their target locks.\"",
+   "english_hash": "a8b9271b3911874a"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Large Radar Jammer|description|169|0",
+   "path": "data/human/outfits.txt",
+   "line": 169,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Radar Jammer",
+   "english": "This high-power radar jammer will make it much more difficult for missiles that rely on radar to track you. It will not affect missiles that track you optically or that look for your ship's heat signature.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This high-power radar jammer will make it much more difficult for missiles that rely on radar to track you. It will not affect missiles that track you optically or that look for your ship's heat signature.\"",
+   "english_hash": "8139b817e93b4d21"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Ramscoop|description|181|0",
+   "path": "data/human/outfits.txt",
+   "line": 181,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ramscoop",
+   "english": "In the early days of space exploration, when ships could travel through half a dozen systems before encountering an established colony where they could refuel, ramscoops were an essential piece of equipment, harvesting plasma from the solar wind to refill your hyperspace fuel tanks. Although you can install more than one ramscoop, additional ramscoops on a single ship are not as effective as the first.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"In the early days of space exploration, when ships could travel through half a dozen systems before encountering an established colony where they could refuel, ramscoops were an essential piece of equipment, harvesting plasma from the solar wind to refill your hyperspace fuel tanks. Although you can install more than one ramscoop, additional ramscoops on a single ship are not as effective as the first.\"",
+   "english_hash": "0fd7c1133ace5106"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Ramscoop|description|182|0",
+   "path": "data/human/outfits.txt",
+   "line": 182,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ramscoop",
+   "english": "\tDifferent kinds of stars will generate varying levels of fuel in the solar wind, but in all cases the closer you are to the star, the faster fuel will accumulate. As a safety measure, all ships are able to harvest tiny amounts of fuel by flying close to a star, but this outfit allows you to accumulate fuel much more quickly.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tDifferent kinds of stars will generate varying levels of fuel in the solar wind, but in all cases the closer you are to the star, the faster fuel will accumulate. As a safety measure, all ships are able to harvest tiny amounts of fuel by flying close to a star, but this outfit allows you to accumulate fuel much more quickly.\"",
+   "english_hash": "18d72bac0ce15ce8"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Catalytic Ramscoop|description|193|0",
+   "path": "data/human/outfits.txt",
+   "line": 193,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Catalytic Ramscoop",
+   "english": "Ramscoop technology has been almost unchanged for centuries, because with nearly every system in human space settled there has not been a pressing need for ships to generate their own fuel. But with the Free Worlds war making travel once again more difficult, some engineers in the Deep recently invented a much-improved ramscoop for use in their merchant fleets.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Ramscoop technology has been almost unchanged for centuries, because with nearly every system in human space settled there has not been a pressing need for ships to generate their own fuel. But with the Free Worlds war making travel once again more difficult, some engineers in the Deep recently invented a much-improved ramscoop for use in their merchant fleets.\"",
+   "english_hash": "d220cc7d1a329a7b"
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Hyperdrive|description|206|0",
+   "path": "data/human/outfits.txt",
+   "line": 206,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Hyperdrive",
+   "english": "This mysterious box sits quietly at the heart of your ship, thinking its own inscrutable thoughts. When it comes time to travel between the stars it sets off a nuclear fusion reaction powerful enough to level an entire city, and then somehow tucks the resulting explosion in between the folds of regular space-time like a wasp stinging an oak leaf to lay her eggs inside. Your ship rides the resulting ripple in the fabric of space.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This mysterious box sits quietly at the heart of your ship, thinking its own inscrutable thoughts. When it comes time to travel between the stars it sets off a nuclear fusion reaction powerful enough to level an entire city, and then somehow tucks the resulting explosion in between the folds of regular space-time like a wasp stinging an oak leaf to lay her eggs inside. Your ship rides the resulting ripple in the fabric of space.\"",
+   "english_hash": "903640b647213ab9"
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Hyperdrive|description|207|0",
+   "path": "data/human/outfits.txt",
+   "line": 207,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Hyperdrive",
+   "english": "\tThey say that fewer than a dozen human beings alive today understand the inner workings of the hyperdrive.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tThey say that fewer than a dozen human beings alive today understand the inner workings of the hyperdrive.\"",
+   "english_hash": "45c0ddd75e957fd7"
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Scram Drive|description|220|0",
+   "path": "data/human/outfits.txt",
+   "line": 220,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Scram Drive",
+   "english": "A scram drive is a specially designed hyperdrive that works even if your ship is traveling at a much higher speed, at the expense of using more fuel. If you are being pursued by pirates (or just want to get somewhere in a hurry) that extra bit of speed can make a big difference.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"A scram drive is a specially designed hyperdrive that works even if your ship is traveling at a much higher speed, at the expense of using more fuel. If you are being pursued by pirates (or just want to get somewhere in a hurry) that extra bit of speed can make a big difference.\"",
+   "english_hash": "766a0ab99fb278f7"
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Jump Drive|description|233|0",
+   "path": "data/human/outfits.txt",
+   "line": 233,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Jump Drive",
+   "english": "The workings of the jump drive are a total mystery. The best that human scientists have been able to find out is that this device is a containment field for matter in a state that cannot normally exist in this universe; if the drive is opened up, the field collapses and its contents disappear. Therefore, even though a few jump drives have been captured over the years, it has so far proved impossible to reverse engineer them.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The workings of the jump drive are a total mystery. The best that human scientists have been able to find out is that this device is a containment field for matter in a state that cannot normally exist in this universe; if the drive is opened up, the field collapses and its contents disappear. Therefore, even though a few jump drives have been captured over the years, it has so far proved impossible to reverse engineer them.\"",
+   "english_hash": "e937f603642abfe3"
+  }
+ ]
+}

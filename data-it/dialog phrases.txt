@@ -1,0 +1,172 @@
+# Copyright (c) 2019 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+phrase "generic arrived-without-npc dialog"
+	word
+		`Hai raggiunto <planet>, ma hai lasciato indietro <npc>! Meglio ripartire e aspettare che arrivi in questo sistema stellare.`
+phrase "generic safe escort completion dialog"
+	word
+		`Il capitano di <npc> ti ringrazia per aver scortato la nave sana e salva e ti paga <payment>.`
+
+phrase "generic pirate attack payment dialog"
+	word
+		`Il governo di <planet>`
+	word
+		` `
+		` ti ringrazia sentitamente e `
+	word
+		`ti paga <payment> per aver contribuito a`
+	word
+		` cacciare `
+		` sconfiggere `
+	word
+		`i `
+	word
+		`pirati.`
+		`predoni.`
+		`razziatori.`
+
+phrase "generic cargo delivery payment"
+	word
+		`Scarichi il tuo carico di <commodity> e incassi il pagamento di <payment>.`
+phrase "generic cargo on visit"
+	word
+		`Hai raggiunto <planet>, ma non tutto il carico è nel sistema! Meglio ripartire e aspettare che le tue scorte arrivino in questo sistema stellare.`
+
+phrase "generic passenger dropoff payment"
+	word
+		`Auguri ai tuoi <passengers> ogni fortuna su <planet> e incassi il pagamento di <payment>.`
+		`Saluti i tuoi <passengers> su <planet> e incassi il pagamento di <payment>.`
+phrase "generic passenger on visit"
+	word
+		`Hai raggiunto <planet>, ma non tutti i passeggeri sono nel sistema! Meglio ripartire e aspettare che le tue scorte arrivino in questo sistema stellare.`
+
+phrase "generic cargo and passenger on visit"
+	word
+		`Hai raggiunto <planet>, ma non tutto il carico e non tutti i passeggeri sono nel sistema! Meglio ripartire e aspettare che le tue scorte arrivino in questo sistema stellare.`
+
+phrase "generic mineral delivery payment"
+	word
+		`Scarichi le <amount> tonnellate di <mineral> e incassi il pagamento di <payment>.`
+
+phrase "generic mineral on visit"
+	word
+		`Sei tornato a <origin>, ma non hai le <amount> tonnellate di <mineral> nella stiva.`
+
+phrase "generic missing stopover or cargo and passengers"
+	word
+		`Hai raggiunto <planet>, ma ti manca qualcosa! O non hai visitato <stopovers>, oppure non tutto il carico e non tutti i passeggeri sono nel sistema.`
+phrase "generic missing stopover or passengers"
+	word
+		`Hai raggiunto <planet>, ma ti manca qualcosa! O non hai visitato <stopovers>, oppure non tutti i passeggeri sono nel sistema.`
+phrase "generic missing stopover or cargo"
+	word
+		`Hai raggiunto <planet>, ma ti manca qualcosa! O non hai visitato <stopovers>, oppure non tutto il carico è nel sistema.`
+phrase "generic missing stopover or escort"
+	word
+		`Hai raggiunto <planet>, ma ti manca qualcosa! O non hai visitato <stopovers>, oppure hai lasciato indietro <npc>.`
+phrase "generic missing waypoint or cargo and passengers"
+	word
+		`Hai raggiunto <planet>, ma ti manca qualcosa! O non hai attraversato <waypoints>, oppure non tutto il carico e non tutti i passeggeri sono nel sistema.`
+phrase "generic missing waypoint or passengers"
+	word
+		`Hai raggiunto <planet>, ma ti manca qualcosa! O non hai attraversato <waypoints>, oppure non tutti i passeggeri sono nel sistema.`
+phrase "generic missing waypoint or cargo"
+	word
+		`Hai raggiunto <planet>, ma ti manca qualcosa! O non hai attraversato <waypoints>, oppure non tutto il carico è nel sistema.`
+
+phrase "generic stopover on visit"
+	word
+		`Hai raggiunto <planet>, ma non hai ancora visitato tutti i pianeti! Meglio ripartire e assicurarti di visitare <stopovers>.`
+phrase "generic waypoint on visit"
+	word
+		`Hai raggiunto <planet>, ma non hai ancora visitato tutti i sistemi! Meglio ripartire e assicurarti di visitare <waypoints>.`
+
+
+phrase "generic hunted bounty eliminated and payment dialog"
+	word
+		`<npc> è stata eliminata. Poco dopo il governo di <planet> ti invia <payment> insieme a un messaggio di ringraziamento.`
+
+phrase "generic hunted bounty eliminated dialog"
+	word
+		`<npc> è stata eliminata. Puoi riscuotere il pagamento della taglia tornando a <destination>.`
+phrase "generic bounty hunting payment dialog"
+	word
+		`Il governo di <planet> ti paga <payment> con gratitudine per aver eliminato <npc>.`
+phrase "generic bounty hunting on visit"
+	word
+		`Sei atterrato su <planet>, ma <npc> non è ancora stata eliminata. Dalle la caccia e distruggila prima di tornare.`
+phrase "generic bounty hunting boarding on visit"
+	word
+		`Sei atterrato su <planet>, ma non sei ancora salito a bordo di <npc>. Dalle la caccia e abbordala prima di tornare.`
+
+phrase "generic hunted bounty fleet eliminated and payment dialog"
+	word
+		`<npc> e la sua flotta sono state eliminate. Poco dopo il governo di <planet> ti invia <payment> insieme a un messaggio di ringraziamento.`
+
+phrase "generic hunted bounty fleet eliminated dialog"
+	word
+		`<npc> e la sua flotta sono state eliminate. Puoi riscuotere il pagamento della taglia tornando a <destination>.`
+phrase "generic fleet bounty hunting payment dialog"
+	word
+		`Il governo di <planet> ti paga <payment> con gratitudine per aver eliminato <npc> e la sua flotta.`
+phrase "generic fleet bounty hunting on visit"
+	word
+		`Sei atterrato su <planet>, ma <npc> e la sua flotta non sono ancora state eliminate. Dalle la caccia e distruggile prima di tornare.`
+
+phrase "generic pirate fleet battle on visit"
+	word
+		`Sei atterrato su <planet>, ma ci sono ancora pirati che girano in cielo. Dovresti decollare e aiutare a finirli.`
+
+phrase "generic completed pirate cargo mission"
+	word
+		`Trovi il contatto ai margini dello spazioporto. Il tuo carico di <commodity> viene scaricato dalla nave e incassi il pagamento di <payment>.`
+
+phrase "generic completed highly illegal pirate cargo mission"
+	word
+		`Trovi il contatto fuori dalla città principale. Il tuo carico di <commodity> viene scaricato dalla nave e incassi il pagamento di <payment>.`
+
+phrase "generic aborted pirate passenger mission"
+	word
+		`Il tuo passeggero non è mai arrivato a <destination>. Non è il modo migliore per costruirti la reputazione di trasportatore affidabile che non fa domande.`
+
+phrase "generic aborted pirate cargo mission"
+	word
+		`Il tuo carico di <commodity> non è mai arrivato a destinazione. Ai pirati non farà piacere saperlo.`
+
+phrase "generic completed pirate slave mission"
+	word
+		`Dopo l'atterraggio su <planet>, i pirati fanno sbarcare dalla tua nave <bunks> schiavi e ti pagano <payment>.`
+
+phrase "generic aborted pirate slave mission"
+	word
+		`I tuoi schiavi non sono mai arrivati a <destination>. Non è il modo migliore per costruirti la reputazione di trasportatore affidabile che non fa domande.`
+
+phrase "free worlds failed"
+	word
+		`Hai fallito o interrotto una missione essenziale dei Free Worlds. Se vuoi proseguire la storia, torna al salvataggio automatico o a un'altra istantanea precedente del tuo pilota.`
+
+phrase "free worlds declined"
+	word
+		`Hai rifiutato una missione essenziale dei Free Worlds. Se vuoi proseguire la storia, torna al salvataggio automatico o a un'altra istantanea precedente del tuo pilota.`
+
+phrase "tribute pacifist undefined"
+	word
+		`Questo sistema è troppo piccolo per guerre e violenza.`
+		`Perché vuoi dare inizio a uno spargimento di sangue senza senso?`
+		`Non combatteremo. Unisciti invece a noi in pace.`
+		`Non possiamo combatterti, né sceglieremmo di farlo. Abbi pace.`
+		`La pace sia con te, capitano. Non c'è bisogno di squarciare i cieli con i tuoi cannoni.`
+		`Non ti combatteremo. Non ti uccideremo. Ma non ti pagheremo nemmeno un solo credito di tributo.`
+		`Perché dovremmo combattere per una somma irrisoria, quando farlo causerebbe tanta morte e tanto orrore?`
+		`Ti supplichiamo di ripensare a questa decisione avventata.`

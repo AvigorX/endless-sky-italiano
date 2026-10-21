@@ -1,0 +1,198 @@
+{
+ "block": {
+  "path": "data/human/paradise world jobs.txt",
+  "line_from": 376,
+  "line_to": 522,
+  "units": 17
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Transport high-class tourists|description|376|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 376,
+   "kind": "DESCRIPTION",
+   "context": "mission:Transport high-class tourists",
+   "english": "Bring <bunks> outrageously wealthy tourists on a fabulous journey to the wild and exotic world of <destination>. They'll only consider thinking about your ship if you have the 'appropriate facilities' for a comfortable journey. Payment is <payment>.",
+   "italian": "Porta <bunks> turisti sfacciatamente ricchi in un viaggio favoloso verso il mondo selvaggio ed esotico di <destination>. Considereranno la tua nave solo se hai le 'strutture adeguate' per un viaggio confortevole. Il compenso è di <payment>.",
+   "ratio": 0.964
+  },
+  {
+   "idx": 2,
+   "id": "mission:Transport high-class tourists|dialog|392|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 392,
+   "kind": "DIALOG",
+   "context": "mission:Transport high-class tourists",
+   "english": "Your passengers begin to wander off, some of them sporting puzzled looks as the memories of glossy photos in the brochures give way to reality. You collect your payment of <payment>.",
+   "italian": "I tuoi passeggeri cominciano a disperdersi, alcuni con l'aria perplessa mentre i ricordi delle foto patinate delle brochure lasciano il posto alla realtà. Incassi il tuo compenso di <payment>.",
+   "ratio": 1.055
+  },
+  {
+   "idx": 3,
+   "id": "mission:Transport high-class tourist group|description|397|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 397,
+   "kind": "DESCRIPTION",
+   "context": "mission:Transport high-class tourist group",
+   "english": "Bring <bunks> outrageously wealthy tourists on a fabulous journey to the wild and exotic world of <destination>. They'll only consider thinking about your ship if you have the 'appropriate facilities' for a comfortable journey. Payment is <payment>.",
+   "italian": "Porta <bunks> turisti sfacciatamente ricchi in un viaggio favoloso verso il mondo selvaggio ed esotico di <destination>. Considereranno la tua nave solo se hai le 'strutture adeguate' per un viaggio confortevole. Il compenso è di <payment>.",
+   "ratio": 0.964
+  },
+  {
+   "idx": 4,
+   "id": "mission:Transport high-class tourist group|dialog|414|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 414,
+   "kind": "DIALOG",
+   "context": "mission:Transport high-class tourist group",
+   "english": "Your passengers begin to wander off, some of them sporting puzzled looks as the memories of glossy photos in the brochures give way to reality. You collect your payment of <payment>.",
+   "italian": "I tuoi passeggeri cominciano a disperdersi, alcuni con l'aria perplessa mentre i ricordi delle foto patinate delle brochure lasciano il posto alla realtà. Incassi il tuo compenso di <payment>.",
+   "ratio": 1.055
+  },
+  {
+   "idx": 5,
+   "id": "mission:Pleasure cruise security|description|419|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 419,
+   "kind": "DESCRIPTION",
+   "context": "mission:Pleasure cruise security",
+   "english": "Escort the <npc> on a pleasure cruise to the wild and exotic planet of <stopovers> along with <tons> of their <commodity>, then return to <destination>, where you will be paid <payment>.",
+   "italian": "Scorta il <npc> in una crociera di piacere verso il pianeta selvaggio ed esotico di <stopovers> insieme a <tons> del loro <commodity>, poi torna su <destination>, dove ti sarà pagato <payment>.",
+   "ratio": 1.038
+  },
+  {
+   "idx": 6,
+   "id": "mission:Pleasure cruise security|dialog|443|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 443,
+   "kind": "DIALOG",
+   "context": "mission:Pleasure cruise security",
+   "english": "The passengers of the <npc> wander off, bedecked in the most conspicuous tourist attire they seem to have been able to find, and begin oohing and aahing at the exoticism of this faraway world. Hopefully none of them gets robbed. You prepare for the return journey to <destination>.",
+   "italian": "I passeggeri del <npc> si disperdono, agghindati con il più vistoso abbigliamento da turista che sembrano essere riusciti a trovare, e cominciano a esclamare estasiate davanti all'esotismo di questo mondo lontano. Speriamo che nessuno di loro venga rapinato. Ti prepari al viaggio di ritorno verso <destination>.",
+   "ratio": 1.11
+  },
+  {
+   "idx": 7,
+   "id": "mission:Pleasure cruise security|dialog|445|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 445,
+   "kind": "DIALOG",
+   "context": "mission:Pleasure cruise security",
+   "english": "You have reached <planet>, but you can't complete this mission until the <npc> has visited <stopovers> with you and then joined you here.",
+   "italian": "Hai raggiunto <planet>, ma non puoi completare questa missione finché il <npc> non avrà visitato <stopovers> con te e poi non ti avrà raggiunto qui.",
+   "ratio": 1.08
+  },
+  {
+   "idx": 8,
+   "id": "mission:Pleasure cruise security|dialog|447|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 447,
+   "kind": "DIALOG",
+   "context": "mission:Pleasure cruise security",
+   "english": "You bid goodbye to the captain of the <npc> and accept your payment of <payment>.",
+   "italian": "Dai l'addio al capitano del <npc> e accetti il tuo compenso di <payment>.",
+   "ratio": 0.901
+  },
+  {
+   "idx": 9,
+   "id": "mission:Paradise Job: Parolees|name|453|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 453,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Parolees",
+   "english": "Parolees to <planet>",
+   "italian": "Liberati sulla parola per <planet>",
+   "ratio": 1.7
+  },
+  {
+   "idx": 10,
+   "id": "mission:Paradise Job: Parolees|description|456|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 456,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Parolees",
+   "english": "These <bunks> non-violent repeat offenders have accepted longer community service sentences in return for serving their time on the Paradise World of <destination>. They will need to be transported in a secure ship. Payment is <payment>.",
+   "italian": "Questi <bunks> recidivi non violenti hanno accettato condanne più lunghe ai lavori socialmente utili in cambio di scontare la pena sul Mondo del Paradiso di <destination>. Dovranno essere trasportati su una nave sicura. Il compenso è di <payment>.",
+   "ratio": 1.042
+  },
+  {
+   "idx": 11,
+   "id": "mission:Paradise Job: Parolees|dialog|473|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 473,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Parolees",
+   "english": "The passengers shuffle unhappily out of the ship under the watchful eye of a local security force as they prepare to repay their debts to society. A clerk on <planet> checks their condition as they're led off. He seems mostly pleased and hands you your payment of <payment>.",
+   "italian": "I passeggeri scendono dalla nave infelici e trascinando i piedi, sotto lo sguardo vigile di una forza di sicurezza locale, mentre si preparano a ripagare il loro debito verso la società. Un impiegato su <planet> ne controlla le condizioni mentre vengono portati via. Sembra per lo più soddisfatto e ti consegna il tuo compenso di <payment>.",
+   "ratio": 1.241
+  },
+  {
+   "idx": 12,
+   "id": "mission:Paradise Job: Debtors|name|477|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 477,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Debtors",
+   "english": "Debtors to <planet>",
+   "italian": "Debitori per <planet>",
+   "ratio": 1.105
+  },
+  {
+   "idx": 13,
+   "id": "mission:Paradise Job: Debtors|description|480|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 480,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Debtors",
+   "english": "These <bunks> poor souls have bankrupted themselves attempting to live beyond their means. In response, the local government will pay you <payment> to transport them securely to <destination> to \"make themselves useful.\"",
+   "italian": "Queste <bunks> povere anime si sono rovinate economicamente cercando di vivere al di sopra dei propri mezzi. In risposta, il governo locale ti pagherà <payment> per trasportarle in sicurezza su <destination> perché \"si rendano utili\".",
+   "ratio": 1.064
+  },
+  {
+   "idx": 14,
+   "id": "mission:Paradise Job: Debtors|dialog|496|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 496,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Debtors",
+   "english": "The passengers shuffle unhappily out of the ship under the watchful eye of immigration officials. A grinning job service provider is on hand to pay you the <payment> you are owed.",
+   "italian": "I passeggeri scendono dalla nave infelici e trascinando i piedi, sotto lo sguardo vigile dei funzionari dell'immigrazione. Un sorridente fornitore di servizi per il lavoro è lì pronto a pagarti il <payment> che ti spetta.",
+   "ratio": 1.235
+  },
+  {
+   "idx": 15,
+   "id": "mission:Paradise Job: Retirees|name|500|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 500,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Retirees",
+   "english": "Wealthy retirees to <planet>",
+   "italian": "Pensionati facoltosi per <planet>",
+   "ratio": 1.179
+  },
+  {
+   "idx": 16,
+   "id": "mission:Paradise Job: Retirees|description|503|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 503,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Retirees",
+   "english": "This coterie of <bunks> wealthy retirees is willing to pay <payment> to be transported in style to <destination>, along with <tons> of their most treasured possessions.",
+   "italian": "Questa cerchia di <bunks> pensionati benestanti è disposta a pagare <payment> per essere trasportata con stile su <destination>, insieme a <tons> dei loro averi più cari.",
+   "ratio": 1.012
+  },
+  {
+   "idx": 17,
+   "id": "mission:Paradise Job: Retirees|dialog|522|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 522,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Retirees",
+   "english": "You bid goodbye to the retirees, who were somewhat prone to spilling drinks or irritating you whilst attempting to do work. They were otherwise extremely polite and full of highly amusing, though often morally questionable, anecdotes. Once the last of their belongings have been safely unloaded your accounts receive the payment of <payment> from their travel broker.",
+   "italian": "Dai l'addio ai pensionati, che erano un po' inclini a rovesciare drink o a infastidirti mentre tentavano di darti una mano. Per il resto sono stati estremamente gentili e pieni di aneddoti divertentissimi, anche se spesso moralmente discutibili. Una volta scaricati al sicuro tutti i loro averi, i tuoi conti ricevono il pagamento di <payment> dal loro agente di viaggio.",
+   "ratio": 1.011
+  }
+ ]
+}

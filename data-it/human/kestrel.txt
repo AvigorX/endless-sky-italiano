@@ -1,0 +1,487 @@
+# Copyright (c) 2014-2015 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Kestrel Testing"
+	name "Warship Testing"
+	description "Recati nel sistema <waypoints> per combattere e neutralizzare una nave da guerra prototipo che la Tarazed Corporation sta collaudando. Non distruggere la nave, o perderai il pagamento e l'occasione di comprarne una."
+	source "Wayfarer"
+	waypoint "Umbral"
+	# The Kestrel is a secret that can only be unlocked after completing the rest of the game. Combat rating is used to track gameplay progression.
+	# After finding the Kestrel once, the threshold is lowered so players can use the ship during the human campaign on a later playthrough.
+	# Any requests to reduce the requirements will be rejected.
+	to offer
+		or
+			"combat rating" > 6000
+			and
+				"combat rating" > 2000
+				has "global: unlocked kestrel"
+	
+	on offer
+		conversation
+			`Mentre visiti uno dei bar dello spazioporto, un uomo ti riconosce. "<first> <last>!" dice. "È un onore conoscerti. Le tue imprese in battaglia sono famose." Prende il suo drink e viene a sedersi accanto a te. "Mi chiamo Charles Atinoda," dice, "sono il progettista capo delle astronavi della Tarazed Corporation. Senti, saresti disposto ad aiutarci a collaudare una nuova nave da guerra?"`
+			choice
+				`	"Dimmene di più."`
+				`	"Mi dispiace, non ho tempo adesso."`
+					defer
+			`	"Beh," dice, "ecco la storia. Sette anni fa, in un momento di profonda crisi personale, lasciai il mio lavoro alla Tarazed per vagare per la galassia con niente nello zaino se non un cambio di vestiti, una borraccia d'acqua e qualche scatola di razioni d'emergenza. Una comune anarchica su uno dei mondi di frontiera mi accolse. Dopo un mese che ero lì, l'anziano del villaggio, intuendo il mio tumulto interiore, mi invitò a una ricerca di visione nella loro capanna del sudore. Caddi in trance e la mia coscienza viaggiò attraverso molti universi, dove vidi cose strane. Vidi una spada fatta di luce. Vidi un sole blu. Vidi..." Si ferma un momento. "... un Welsh Corgi che entrava in un computer? Alcune cose erano difficili da capire."`
+			choice
+				`	"Affascinante."`
+					goto continue
+				`	"C'erano sostanze illecite in questa ricerca di visione?"`
+			`	Ignora la tua domanda. "Ma poi ho visto un'altra cosa," dice.`
+				goto kestrel
+			label continue
+			`	"Ma poi ho visto un'altra cosa," dice.`
+			label kestrel
+			`	Resta in silenzio a lungo, poi dice: "Vidi una nave scura, più aggraziata ed elegante di qualsiasi cosa avessi mai progettato, che combatteva contro un vascello alieno dallo scafo rosso maculato. E quando vidi quella nave, seppi che dovevo costruirne una simile. Tornai a Wayfarer con un passaggio, implorai di riavere il mio vecchio lavoro e mi misi all'opera. Sette anni dopo, la nave è quasi finita. Ha superato tutti i nostri test non distruttivi a pieni voti, quindi resta solo il collaudo in combattimento. E chi meglio del leggendario guerriero <first> <last> per combatterla?"`
+			choice
+				`	"Ne sarei felice."`
+					goto test
+				`	"E cosa riceverò in cambio?"`
+			`	"Un pagamento generoso," dice, "e il diritto di acquistare uno dei primissimi esemplari usciti dalla linea di produzione, se vuoi."`
+			`	"Mi sembra giusto," dici.`
+			label test
+			`	"Eccellente," dice. "Mi servirà la tua firma su qualche modulo. Liberatorie nel caso tu muoia, il permesso di usare il tuo nome e la tua immagine in certo materiale promozionale. Sai com'è, le solite cose legali."`
+			choice
+				`	"Nessun problema. Dove combatterò questa nave?"`
+				`	"Mi dispiace, non credo di poter accettare."`
+					decline
+			`	"Facciamo la maggior parte dei collaudi delle nostre astronavi nel sistema <waypoints>," dice. "La nave da collaudo è inconfondibile. Vai lì, neutralizzala senza distruggerla, poi torna qui e ti chiederemo quali punti deboli hai trovato o quali miglioramenti faresti. E se distruggi la nave o la rubi, naturalmente perderai il pagamento."`
+				accept
+	
+	npc disable save
+		government "Test Dummy"
+		personality disables staying nemesis heroic
+		system "Umbral"
+		ship "Unknown Ship Type" "Tarazed Prototype"
+	
+	on complete
+		payment 2000000
+		"global: unlocked kestrel" ++
+		conversation
+			`Atinoda ti raggiunge poco dopo che sei atterrato. "Vedo che sei sopravvissuto," dice. "È stata una battaglia difficile?"`
+			choice
+				`	"Sì, hai costruito una nave impressionante."`
+					goto yes
+				`	"No, temo che l'abbia liquidata in fretta."`
+					goto no
+			
+			label yes
+			`	"Mi fa piacere," dice. "Ora abbiamo l'occasione di fare qualche ritocco prima di iniziare a produrre questa nave in serie. Quali cambiamenti consiglieresti?"`
+				goto changes
+			
+			label no
+			`	"Beh," dice, "dopotutto sei il famigerato <first> <last>, quindi suppongo che una singola nave da guerra sia una minaccia minima per te. Ora abbiamo l'occasione di fare qualche ritocco prima di iniziare a produrre questa nave in serie. Quali cambiamenti consiglieresti?"`
+				goto changes
+			
+			label changes
+			choice
+				`	"Tanto spazio per le armi è sempre la mia prima priorità."`
+					goto weapons
+				`	"Dovresti assicurarti che ci sia spazio per qualsiasi motore."`
+					goto engines
+				`	"Forse dovresti lavorare sul miglioramento di scudi e scafo."`
+					goto shields
+				`	"Mi sembra che una nave così grande dovrebbe avere più baie di caccia."`
+					goto bays
+			
+			label weapons
+			action
+				set "kestrel: more weapons"
+			`	"Molto bene," dice, "vedremo se possiamo ampliare la capacità per le armi, così che ci stiano anche le più grandi."`
+				goto name
+			
+			label engines
+			action
+				set "kestrel: more engines"
+			`	"Molto bene," dice, "vedremo se possiamo ampliare la capacità dei motori abbastanza da farci stare anche i più grandi."`
+				goto name
+			
+			label shields
+			action
+				set "kestrel: more shields"
+			`	"D'accordo," dice, "ci concentreremo sul rafforzare lo scafo e la matrice degli scudi."`
+				goto name
+			
+			label bays
+			action
+				set "kestrel: more bays"
+			`	"Molto bene," dice, "vedremo se possiamo integrare più baie di caccia nello scafo."`
+				goto name
+			
+			label name
+			`	"Il modello ha già un nome?" chiedi.`
+			`	"Non ancora," dice. "Hai un suggerimento?"`
+			choice
+				`	"Il Wraith."`
+					goto wraith
+				`	"La Grey Goose."`
+					goto goose
+			
+			label wraith
+			`	"Non è un brutto nome, suppongo," dice, "ma alla Tarazed di solito diamo alle nostre navi nomi di animali. Altre idee?"`
+			choice
+				`	"Il Dire Wolf."`
+					goto wolf
+				`	"La Kestrel."`
+					goto kestrel
+			
+			label goose
+			`	"Suppongo che in volo somigli un po' a un'oca," dice, "ma non è certo un nome che intimorisce. Hai idee più spaventose?"`
+			choice
+				`	"Il Reaper."`
+					goto reaper
+				`	"La Kestrel."`
+					goto kestrel
+			
+			label wolf
+			`	"Non male," dice, "ma tutte le nostre altre navi - il Falcon, l'Osprey, il Hawk - sono uccelli. Magari un nome di uccello?"`
+			choice
+				`	"La Grey Goose."`
+					goto goose
+				`	"La Kestrel."`
+					goto kestrel
+			
+			label reaper
+			`	"Non so," dice, "mi sembra un po' troppo. Altri suggerimenti?"`
+			choice
+				`	"Il Wraith."`
+					goto wraith
+				`	"La Kestrel."`
+					goto kestrel
+			
+			label kestrel
+			`	Quando pronunci la parola 'Kestrel' sussulta come se fosse appena stato folgorato. "Sì," dice, "è quello! È il nome che sceglieremo. Grazie, capitano. Ti farò sapere appena la Kestrel sarà in vendita, e terremo conto dei tuoi consigli quando faremo le modifiche finali al progetto." Ti paga due milioni di crediti e ti augura buona fortuna per le tue future imprese.`
+
+
+
+mission "Kestrel: More Weapons"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "kestrel: more weapons"
+	on offer
+		event "kestrel available: more weapons" 50
+		fail
+
+
+
+mission "Kestrel: More Engines"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "kestrel: more engines"
+	on offer
+		event "kestrel available: more engines" 50
+		fail
+
+
+
+mission "Kestrel: More Shields"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "kestrel: more shields"
+	on offer
+		event "kestrel available: more shields" 50
+		fail
+
+
+
+mission "Kestrel: More Bays"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "kestrel: more bays"
+	on offer
+		event "kestrel available: more bays" 50
+		fail
+
+
+
+mission "Kestrel Available"
+	landing
+	source
+		near "Tarazed" 100
+	to offer
+		has "kestrel available"
+	destination "Wayfarer"
+	on offer
+		conversation
+			branch engines
+				has "kestrel: more engines"
+			
+			branch shields
+				has "kestrel: more shields"
+			
+			branch bays
+				has "kestrel: more bays"
+			
+			scene "thumbnail/kestrelw"
+			``
+				goto message
+			
+			label engines
+			scene "thumbnail/kestrele"
+			``
+				goto message
+			
+			label shields
+			scene "thumbnail/kestrels"
+			``
+				goto message
+				
+			label bays
+			scene "thumbnail/kestrelc"
+			``
+			label message
+			`Ricevi un messaggio da Charles Atinoda, il progettista di navi della Tarazed Corporation: "Capitano <last>, siamo lieti di informarti che la nostra ultima nave da guerra è ora in vendita qui su Wayfarer. Abbiamo tenuto conto di tutti i tuoi commenti nel progetto finale. Grazie ancora!"`
+				decline
+
+
+shipyard "Kestrel"
+
+event "kestrel available: more weapons"
+	set "kestrel available"
+	shipyard "Kestrel"
+		"Kestrel (More Weapons)"
+	planet Wayfarer
+		add shipyard "Kestrel"
+event "kestrel available: more engines"
+	set "kestrel available"
+	shipyard "Kestrel"
+		"Kestrel (More Engines)"
+	planet Wayfarer
+		add shipyard "Kestrel"
+event "kestrel available: more shields"
+	set "kestrel available"
+	shipyard "Kestrel"
+		"Kestrel (More Shields)"
+	planet Wayfarer
+		add shipyard "Kestrel"
+event "kestrel available: more bays"
+	set "kestrel available"
+	shipyard "Kestrel"
+		"Kestrel (More Bays)"
+	planet Wayfarer
+		add shipyard "Kestrel"
+
+
+ship "Unknown Ship Type"
+	sprite "ship/kestrel"
+	thumbnail "thumbnail/kestrel"
+	"administrative cost" 7
+	attributes
+		category "Heavy Warship"
+		"cost" 14700000
+		"shields" 19400
+		"hull" 7200
+		"required crew" 64
+		"bunks" 128
+		"mass" 2135
+		"drag" 20.9
+		"heat dissipation" .32
+		"fuel capacity" 500
+		"cargo space" 120
+		"outfit space" 810
+		"weapon capacity" 390
+		"engine capacity" 210
+		weapon
+			"blast radius" 260
+			"shield damage" 2600
+			"hull damage" 1300
+			"hit force" 3900
+	outfits
+		"Particle Cannon" 4
+		"Torpedo Launcher" 2
+		"Torpedo" 60
+		"Heavy Laser Turret" 4
+		
+		"Fusion Reactor"
+		"LP144a Battery Pack"
+		"D94-YV Shield Generator"
+		"Liquid Nitrogen Cooler"
+		"Tactical Scanner" 2
+		
+		"Orca Plasma Thruster"
+		"Orca Plasma Steering"
+		"Hyperdrive"
+	engine 13 170
+	engine -13 170
+	gun -73.5 46 "Torpedo Launcher"
+	gun 73.5 46 "Torpedo Launcher"
+	gun -51 49.5 "Particle Cannon"
+	gun 51 49.5 "Particle Cannon"
+	gun -29.5 52 "Particle Cannon"
+	gun 29.5 52 "Particle Cannon"
+	turret -8 -10.5 "Heavy Laser Turret"
+	turret 8 -10.5 "Heavy Laser Turret"
+	turret -20.5 9 "Heavy Laser Turret"
+	turret 20.5 9 "Heavy Laser Turret"
+	explode "small explosion" 25
+	explode "medium explosion" 35
+	explode "large explosion" 45
+	explode "huge explosion" 30
+	"final explode" "final explosion large"
+
+
+ship "Kestrel"
+	sprite "ship/kestrel"
+	thumbnail "thumbnail/kestrel"
+	"administrative cost" 7
+	attributes
+		category "Heavy Warship"
+		"cost" 14700000
+		"shields" 19400
+		"hull" 7200
+		"required crew" 64
+		"bunks" 128
+		"mass" 2135
+		"drag" 20.9
+		"heat dissipation" .32
+		"fuel capacity" 500
+		"cargo space" 120
+		"outfit space" 810
+		"weapon capacity" 390
+		"engine capacity" 210
+		weapon
+			"blast radius" 260
+			"shield damage" 2600
+			"hull damage" 1300
+			"hit force" 3900
+	outfits
+		"Particle Cannon" 4
+		"Torpedo Launcher" 2
+		"Torpedo" 60
+		"Heavy Laser Turret" 4
+		
+		"Fusion Reactor"
+		"LP144a Battery Pack"
+		"D94-YV Shield Generator"
+		"Liquid Nitrogen Cooler"
+		"Tactical Scanner" 2
+		
+		"Orca Plasma Thruster"
+		"Orca Plasma Steering"
+		"Hyperdrive"
+	engine 13 170
+	engine -13 170
+	gun -73.5 46 "Torpedo Launcher"
+	gun 73.5 46 "Torpedo Launcher"
+	gun -51 49.5 "Particle Cannon"
+	gun 51 49.5 "Particle Cannon"
+	gun -29.5 52 "Particle Cannon"
+	gun 29.5 52 "Particle Cannon"
+	turret -8 -10.5 "Heavy Laser Turret"
+	turret 8 -10.5 "Heavy Laser Turret"
+	turret -20.5 9 "Heavy Laser Turret"
+	turret 20.5 9 "Heavy Laser Turret"
+	bay "Fighter" -46 106 under
+		"launch effect" "human internal"
+	bay "Fighter" 46 106 under
+		"launch effect" "human internal"
+	explode "small explosion" 25
+	explode "medium explosion" 35
+	explode "large explosion" 45
+	explode "huge explosion" 30
+	"final explode" "final explosion large"
+	description "Qualche anno fa, mentre visitava una capanna del sudore in cerca di rinnovamento spirituale, il progettista capo delle navi della Tarazed cadde in trance e viaggiò in una realtà separata dalla nostra. Lì vide le visioni di un'astronave strana ed elegante. Tornato al lavoro con rinnovato proposito, passò i sette anni successivi a rendere reale la Kestrel."
+
+
+ship "Kestrel" "Kestrel (More Engines)"
+	sprite "ship/kestrele"
+	thumbnail "thumbnail/kestrele"
+	add attributes
+		"drag" -1.9
+		"fuel capacity" 100
+		"engine capacity" 30
+	engine 13 170
+	engine -13 170
+	engine 24.5 160 0.4
+	engine -24.5 160 0.4
+
+ship "Kestrel" "Kestrel (More Shields)"
+	sprite "ship/kestrels"
+	thumbnail "thumbnail/kestrels"
+	add attributes
+		"shields" 3000
+		"hull" 1500
+		"heat dissipation" .032
+
+ship "Kestrel" "Kestrel (More Weapons)"
+	sprite "ship/kestrelw"
+	thumbnail "thumbnail/kestrelw"
+	add attributes
+		"weapon capacity" 40
+	gun -76.5 49
+	gun 76.5 49
+	gun -73.5 46 "Torpedo Launcher"
+	gun 73.5 46 "Torpedo Launcher"
+	gun -55.5 52.5
+	gun 55.5 52.5
+	gun -51 49.5 "Particle Cannon"
+	gun 51 49.5 "Particle Cannon"
+	gun -33 55
+	gun 33 55
+	gun -29.5 52 "Particle Cannon"
+	gun 29.5 52 "Particle Cannon"
+	turret -8 -10.5 "Heavy Laser Turret"
+	turret 8 -10.5 "Heavy Laser Turret"
+	turret -20.5 9 "Heavy Laser Turret"
+	turret 20.5 9 "Heavy Laser Turret"
+
+ship "Kestrel" "Kestrel (More Bays)"
+	sprite "ship/kestrelc"
+	thumbnail "thumbnail/kestrelc"
+	add attributes
+		"mass" 60
+		"weapon capacity" -20
+	outfits
+		"Particle Cannon" 2
+		"Torpedo Launcher" 2
+		"Torpedo" 60
+		"Heavy Laser Turret" 4
+		
+		"Fusion Reactor"
+		"LP144a Battery Pack"
+		"D94-YV Shield Generator"
+		"Liquid Nitrogen Cooler"
+		"Tactical Scanner" 2
+		
+		"Orca Plasma Thruster"
+		"Orca Plasma Steering"
+		"Hyperdrive"
+	gun -73.5 46 "Torpedo Launcher"
+	gun 73.5 46 "Torpedo Launcher"
+	gun -29.5 52 "Particle Cannon"
+	gun 29.5 52 "Particle Cannon"
+	turret -8 -10.5 "Heavy Laser Turret"
+	turret 8 -10.5 "Heavy Laser Turret"
+	turret -20.5 9 "Heavy Laser Turret"
+	turret 20.5 9 "Heavy Laser Turret"
+	bay "Fighter" -46 106
+		"launch effect" "human internal"
+	bay "Fighter" 46 106
+		"launch effect" "human internal"
+	bay "Fighter" -62 78
+		"launch effect" "human internal"
+	bay "Fighter" 62 78
+		"launch effect" "human internal"
+	bay "Fighter" -56 70
+		"launch effect" "human internal"
+	bay "Fighter" 56 70
+		"launch effect" "human internal"

@@ -1,0 +1,297 @@
+{
+ "block": {
+  "path": "data/hai/hai jobs.txt",
+  "line_from": 1579,
+  "line_to": 1750,
+  "units": 26
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Swiftsong Business Convention [2]|dialog|1579|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1579,
+   "kind": "DIALOG",
+   "context": "mission:Swiftsong Business Convention [2]",
+   "english": "During the trip, your passengers appeared to be practicing a presentation for the convention. You sense a tinge of nervousness as they give you <payment> and leave your ship.",
+   "italian": "Durante il viaggio i tuoi passeggeri sono sembrati intenti a provare una presentazione per la convention. Percepisci un pizzico di nervosismo mentre ti consegnano <payment> e lasciano la tua nave.",
+   "ratio": 1.126
+  },
+  {
+   "idx": 2,
+   "id": "mission:Swiftsong Film Festival [1]|name|1586|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1586,
+   "kind": "VALUE",
+   "context": "mission:Swiftsong Film Festival [1]",
+   "english": "<planet> film festival",
+   "italian": "<planet> film festival",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "mission:Swiftsong Film Festival [1]|description|1587|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1587,
+   "kind": "DESCRIPTION",
+   "context": "mission:Swiftsong Film Festival [1]",
+   "english": "A group of <bunks> Hai movie buffs will pay you <payment> in exchange for transporting them to <planet>, where a film festival is taking place.",
+   "italian": "Un gruppo di <bunks> Hai appassionati di cinema ti pagherà <payment> in cambio del trasporto su <planet>, dove si tiene un festival del cinema.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "mission:Swiftsong Film Festival [1]|dialog|1600|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1600,
+   "kind": "DIALOG",
+   "context": "mission:Swiftsong Film Festival [1]",
+   "english": "The Hai chitter excitedly as they give you <payment> and step off your ship. Some of the movie plots they discussed during the trip were bewildering.",
+   "italian": "Gli Hai cinguettano eccitati mentre ti consegnano <payment> e scendono dalla tua nave. Alcune delle trame dei film di cui hanno parlato durante il viaggio erano sconcertanti.",
+   "ratio": 1.168
+  },
+  {
+   "idx": 5,
+   "id": "mission:Swiftsong Film Festival [2]|name|1607|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1607,
+   "kind": "VALUE",
+   "context": "mission:Swiftsong Film Festival [2]",
+   "english": "<planet> film festival",
+   "italian": "<planet> film festival",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "mission:Swiftsong Film Festival [2]|description|1608|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1608,
+   "kind": "DESCRIPTION",
+   "context": "mission:Swiftsong Film Festival [2]",
+   "english": "A group of <bunks> Hai movie buffs will pay you <payment> in exchange for transporting them to <planet>, where a large film festival is taking place.",
+   "italian": "Un gruppo di <bunks> Hai appassionati di cinema ti pagherà <payment> in cambio del trasporto su <planet>, dove si tiene un grande festival del cinema.",
+   "ratio": 1.007
+  },
+  {
+   "idx": 7,
+   "id": "mission:Swiftsong Film Festival [2]|dialog|1621|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1621,
+   "kind": "DIALOG",
+   "context": "mission:Swiftsong Film Festival [2]",
+   "english": "The Hai chitter excitedly as they give you <payment> and step off your ship. Some of the movie plots they discussed during the trip were bewildering.",
+   "italian": "Gli Hai cinguettano eccitati mentre ti consegnano <payment> e scendono dalla tua nave. Alcune delle trame dei film di cui hanno parlato durante il viaggio erano sconcertanti.",
+   "ratio": 1.168
+  },
+  {
+   "idx": 8,
+   "id": "mission:Swiftsong Music Festival [1]|name|1628|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1628,
+   "kind": "VALUE",
+   "context": "mission:Swiftsong Music Festival [1]",
+   "english": "<planet> music festival",
+   "italian": "<planet> music festival",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "mission:Swiftsong Music Festival [1]|description|1629|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1629,
+   "kind": "DESCRIPTION",
+   "context": "mission:Swiftsong Music Festival [1]",
+   "english": "A group of <bunks> Hai will pay you <payment> in exchange for transporting them to <planet>, where a music festival is taking place.",
+   "italian": "Un gruppo di <bunks> Hai ti pagherà <payment> in cambio del trasporto su <planet>, dove si tiene un festival musicale.",
+   "ratio": 0.894
+  },
+  {
+   "idx": 10,
+   "id": "mission:Swiftsong Music Festival [1]|dialog|1642|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1642,
+   "kind": "DIALOG",
+   "context": "mission:Swiftsong Music Festival [1]",
+   "english": "The Hai chitter excitedly as they give you <payment> and step off your ship. You can hear the music blasting all the way from the spaceport.",
+   "italian": "Gli Hai cinguettano eccitati mentre ti consegnano <payment> e scendono dalla tua nave. Si sente la musica a tutto volume già dallo spazioporto.",
+   "ratio": 1.021
+  },
+  {
+   "idx": 11,
+   "id": "mission:Swiftsong Music Festival [2]|name|1649|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1649,
+   "kind": "VALUE",
+   "context": "mission:Swiftsong Music Festival [2]",
+   "english": "<planet> music festival",
+   "italian": "<planet> music festival",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "mission:Swiftsong Music Festival [2]|description|1650|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1650,
+   "kind": "DESCRIPTION",
+   "context": "mission:Swiftsong Music Festival [2]",
+   "english": "A group of <bunks> Hai will pay you <payment> in exchange for transporting them to <planet>, where a large music festival is taking place.",
+   "italian": "Un gruppo di <bunks> Hai ti pagherà <payment> in cambio del trasporto su <planet>, dove si tiene un grande festival musicale.",
+   "ratio": 0.906
+  },
+  {
+   "idx": 13,
+   "id": "mission:Swiftsong Music Festival [2]|dialog|1663|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1663,
+   "kind": "DIALOG",
+   "context": "mission:Swiftsong Music Festival [2]",
+   "english": "The Hai chitter excitedly as they give you <payment> and step off your ship. You can hear the music blasting all the way from the spaceport.",
+   "italian": "Gli Hai cinguettano eccitati mentre ti consegnano <payment> e scendono dalla tua nave. Si sente la musica a tutto volume già dallo spazioporto.",
+   "ratio": 1.021
+  },
+  {
+   "idx": 14,
+   "id": "mission:Swiftsong Computer Security Conference [1]|name|1670|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1670,
+   "kind": "VALUE",
+   "context": "mission:Swiftsong Computer Security Conference [1]",
+   "english": "<planet> computer security conference",
+   "italian": "<planet> computer security conference",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "mission:Swiftsong Computer Security Conference [1]|description|1671|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1671,
+   "kind": "DESCRIPTION",
+   "context": "mission:Swiftsong Computer Security Conference [1]",
+   "english": "A group of <bunks> Hai will pay you <payment> in exchange for transporting them to <planet>, where a computer security conference is taking place.",
+   "italian": "Un gruppo di <bunks> Hai ti pagherà <payment> in cambio del trasporto su <planet>, dove si tiene una conferenza sulla sicurezza informatica.",
+   "ratio": 0.959
+  },
+  {
+   "idx": 16,
+   "id": "mission:Swiftsong Computer Security Conference [1]|dialog|1684|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1684,
+   "kind": "DIALOG",
+   "context": "mission:Swiftsong Computer Security Conference [1]",
+   "english": "The Hai chitter excitedly as they give you <payment> and step off your ship. Your passengers' conversations went mostly over your head, but they were otherwise pleasant the entire trip.",
+   "italian": "Gli Hai cinguettano eccitati mentre ti consegnano <payment> e scendono dalla tua nave. Le conversazioni dei tuoi passeggeri ti sono per lo più passate sopra la testa, ma per il resto sono stati piacevoli per tutto il viaggio.",
+   "ratio": 1.216
+  },
+  {
+   "idx": 17,
+   "id": "mission:Swiftsong Computer Security Conference [2]|name|1691|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1691,
+   "kind": "VALUE",
+   "context": "mission:Swiftsong Computer Security Conference [2]",
+   "english": "<planet> computer security conference",
+   "italian": "<planet> computer security conference",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "mission:Swiftsong Computer Security Conference [2]|description|1692|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1692,
+   "kind": "DESCRIPTION",
+   "context": "mission:Swiftsong Computer Security Conference [2]",
+   "english": "A group of <bunks> Hai will pay you <payment> in exchange for transporting them to <planet>, where a large computer security conference is taking place.",
+   "italian": "Un gruppo di <bunks> Hai ti pagherà <payment> in cambio del trasporto su <planet>, dove si tiene una grande conferenza sulla sicurezza informatica.",
+   "ratio": 0.967
+  },
+  {
+   "idx": 19,
+   "id": "mission:Swiftsong Computer Security Conference [2]|dialog|1705|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1705,
+   "kind": "DIALOG",
+   "context": "mission:Swiftsong Computer Security Conference [2]",
+   "english": "The Hai chitter excitedly as they give you <payment> and step off your ship. Your passengers' conversations went mostly over your head, but they were otherwise pleasant the entire trip.",
+   "italian": "Gli Hai cinguettano eccitati mentre ti consegnano <payment> e scendono dalla tua nave. Le conversazioni dei tuoi passeggeri ti sono per lo più passate sopra la testa, ma per il resto sono stati piacevoli per tutto il viaggio.",
+   "ratio": 1.216
+  },
+  {
+   "idx": 20,
+   "id": "mission:Swiftsong Science Fiction Convention [1]|name|1711|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1711,
+   "kind": "VALUE",
+   "context": "mission:Swiftsong Science Fiction Convention [1]",
+   "english": "<planet> science fiction convention",
+   "italian": "<planet> science fiction convention",
+   "ratio": 1.0
+  },
+  {
+   "idx": 21,
+   "id": "mission:Swiftsong Science Fiction Convention [1]|description|1712|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1712,
+   "kind": "DESCRIPTION",
+   "context": "mission:Swiftsong Science Fiction Convention [1]",
+   "english": "A group of <bunks> Hai will pay you <payment> in exchange for transporting them to <planet>, where a science fiction convention is taking place.",
+   "italian": "Un gruppo di <bunks> Hai ti pagherà <payment> in cambio del trasporto su <planet>, dove si tiene una convention di fantascienza.",
+   "ratio": 0.889
+  },
+  {
+   "idx": 22,
+   "id": "mission:Swiftsong Science Fiction Convention [1]|dialog|1725|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1725,
+   "kind": "DIALOG",
+   "context": "mission:Swiftsong Science Fiction Convention [1]",
+   "english": "The Hai chitter excitedly as they give you <payment> and step off your ship. As they leave, one of them gives you a hand gesture that you recognize from an old human sci-fi program.",
+   "italian": "Gli Hai cinguettano eccitati mentre ti consegnano <payment> e scendono dalla tua nave. Mentre se ne vanno, uno di loro ti fa un gesto con la mano che riconosci da una vecchia serie di fantascienza umana.",
+   "ratio": 1.122
+  },
+  {
+   "idx": 23,
+   "id": "mission:Swiftsong Science Fiction Convention [2]|name|1732|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1732,
+   "kind": "VALUE",
+   "context": "mission:Swiftsong Science Fiction Convention [2]",
+   "english": "<planet> science fiction convention",
+   "italian": "<planet> science fiction convention",
+   "ratio": 1.0
+  },
+  {
+   "idx": 24,
+   "id": "mission:Swiftsong Science Fiction Convention [2]|description|1733|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1733,
+   "kind": "DESCRIPTION",
+   "context": "mission:Swiftsong Science Fiction Convention [2]",
+   "english": "A group of <bunks> Hai will pay you <payment> in exchange for transporting them to <planet>, where a large science fiction convention is taking place.",
+   "italian": "Un gruppo di <bunks> Hai ti pagherà <payment> in cambio del trasporto su <planet>, dove si tiene una grande convention di fantascienza.",
+   "ratio": 0.9
+  },
+  {
+   "idx": 25,
+   "id": "mission:Swiftsong Science Fiction Convention [2]|dialog|1746|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1746,
+   "kind": "DIALOG",
+   "context": "mission:Swiftsong Science Fiction Convention [2]",
+   "english": "The Hai chitter excitedly as they give you <payment> and step off your ship. As they leave, one of them gives you a hand gesture that you recognize from an old human sci-fi program.",
+   "italian": "Gli Hai cinguettano eccitati mentre ti consegnano <payment> e scendono dalla tua nave. Mentre se ne vanno, uno di loro ti fa un gesto con la mano che riconosci da una vecchia serie di fantascienza umana.",
+   "ratio": 1.122
+  },
+  {
+   "idx": 26,
+   "id": "mission:Superstitious Hai [1]|name|1750|0",
+   "path": "data/hai/hai jobs.txt",
+   "line": 1750,
+   "kind": "VALUE",
+   "context": "mission:Superstitious Hai [1]",
+   "english": "Superstitious Hai to <planet>",
+   "italian": "Hai superstiziosi per <planet>",
+   "ratio": 1.034
+  }
+ ]
+}

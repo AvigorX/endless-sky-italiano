@@ -1,0 +1,183 @@
+# Copyright (c) 2024 by Quantumshark
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Wanderers: Mereti: The Plant 1"
+	landing
+	name "La pianta per <planet>"
+	description "Questa pianta sembra avere una qualche importanza per i Mereti. Porta la pianta e due 'mentori' Wanderer a <destination>, così che i Wanderer possano provare a capire come farla crescere."
+	source "Korbatri Eska"
+	destination "Vara Kehi'ki"
+	passengers 2
+	cargo "strange plant" 1
+	to offer
+		has "event: wanderers: sestor planets unrestricted"
+	on offer
+		conversation
+			`I Mereti hanno chiaramente ampliato le loro serre da quando hai visitato l'ultima volta questo mondo. Qualche drone più piccolo si raduna mentre la tua nave atterra, e ti danno il benvenuto quando scendi.`
+			`	Poi, senza darti il tempo di rispondere come si deve, ti accompagnano in una serra in particolare, un po' più grande delle altre. Dentro, una sola pianta sta in un vaso imponente al centro, illuminata da un fascio di luce che scende dalle finestre in alto. È piccola, con petali vibranti di blu intenso e foglie verde acqua, e anche se non la conosci riesci a capire che non sta crescendo bene.`
+			`	Uno dei droni ti parla, molto più piano dell'ultima volta che avete parlato. "Tu sei nostro amico. Ci hai aiutato a [difenderci, proteggerci] quando siamo stati attaccati. Ci hai portato i nostri [genitori? antenati?]. Ti preghiamo, aiutaci ancora."`
+			choice
+				`	"Vi aiuterò."`
+				`	"Che cosa devo fare?"`
+			`	Il drone parla di nuovo. "Questa pianta è importante per noi. È la nostra..." Il drone si ferma per qualche secondo, e delle luci gli lampeggiano addosso. "È importante per noi. I nostri [insegnanti, mentori] dicono che non è [nativa, originaria] di questo mondo, e che qui non può sopravvivere." Mentre lo dice, entrano due Wanderer accompagnati da un altro drone Mereti, che parlano fra loro a voce bassa. Alzano lo sguardo quando il drone con cui stai parlando li nomina, e ti si avvicinano in fretta.`
+			choice
+				`	"Puoi aiutarli?"`
+				`	"Che cosa dovremmo fare?"`
+			`	Uno dei Wanderer prende la parola. "Questa pianta... ha somiglianze cruciali con alcune delle piante che [coltiviamo, curiamo] su <planet>, quindi portiamola lì per ora. Ci saranno [differenze, complicazioni], ma è il [migliore, più probabile] [piano, approccio] nel breve periodo. Però vogliamo comunque lasciare questi mondi agli Slegati, quindi non possiamo [ospitare, coltivare] questa pianta lì per sempre."`
+			`	I droni, che hanno ascoltato in silenzio i due Wanderer, sollevano con cura il vaso con la pianta e volano verso la tua nave, seguiti dai due Wanderer. Li segui e ti prepari a partire per <planet>.`
+				accept
+	on complete
+		conversation
+			`Le navi Mereti che ti seguivano hanno destato un certo allarme fra la popolazione locale mentre atterravi, soprattutto nel controllo del traffico dello spazioporto, che non è abituato al modo in cui sfrecciano a meno di un metro dalle navi dei Wanderer a velocità quasi massima durante la discesa.`
+			`	I tuoi passeggeri scendono dalla nave quasi subito dopo l'atterraggio, e gli addetti dello spazioporto scaricano con cura la pianta dalla stiva. "Incontraci allo spazioporto e ti informeremo dei nostri prossimi [piani, passi]."`
+		
+	on enter Chimitarp
+		dialog `Mentre decolli da <origin>, noti che alcuni piccoli droni Mereti decollano con te e seguono la tua nave di fianco.`
+	npc
+		government "Kor Mereti"
+		personality timid launching
+		system Chimitarp
+		fleet
+			names "kor mereti"
+			variant
+				"Model 16" 3
+
+mission "Wanderers: Mereti: The Plant 2"
+	name "Una casa per la pianta"
+	description "Porta Keti Va'ika sui pianeti Korath che ha indicato, per stabilire se qualcuno di essi sia una dimora adatta alla pianta dei Mereti."
+	source "Vara Kehi'ki"
+	destination "Solima Skarati"
+	passengers 1
+	to offer
+		has "Wanderers: Mereti: The Plant 1: done"
+	on offer
+		conversation
+			`I due Wanderer di prima ti aspettano allo spazioporto, ma questa volta con loro c'è un altro Wanderer. Si presenta come Keti Va'ika, specialista in xenobotanica. Gli altri due se ne vanno mentre lei comincia a spiegarti la situazione.`
+			`	"Abbiamo [ripristinato, guarito] la pianta, e per ora sopravvive qui, ma presto lasceremo questi sistemi. Questa pianta [ha origine, appartiene] allo spazio Korath, quindi dobbiamo trovare il modo di riportarcela."`
+			`	Va'ika si ferma e riflette un momento prima di continuare. "I Korath non mi sembrano il tipo da [creare, progettare] un fiore simile con mezzi [artificiali, innaturali]. Sospetto che abbia origine su uno dei loro mondi. Se siamo fortunati, potrebbe ancora [crescere, prosperare] lì. A prima vista, [crediamo, sospettiamo] che sia nativa di <planet>, di Sopi Lefarkata o forse di uno di quei mondi così [danneggiati, distrutti] che è difficile [vedere, immaginare] come potessero essere un tempo."`
+			choice
+				`	"Quindi sei davvero deciso a dare questi mondi agli Slegati?"`
+				`	"Che cosa suggerisci di fare?"`
+					goto end
+			`	Va'ika risponde seccamente. "È il nostro [scopo, modo]. Guariamo i mondi, e poi li cediamo ad altre specie. Non [immagineremmo, considereremmo] nessun'altra linea d'azione."`
+			label end
+			`	Va'ika indica una mappa e segna il sistema <system>. "Prima [cerchiamo, visitiamo] <planet>. È vicino ai mondi dei Mereti e non è nel [territorio, dominio] dei loro [rivali, nemici], quindi sembra più probabile che questa pianta [abbia avuto origine, sia cresciuta] lì."`
+				accept
+
+mission "Wanderers: Mereti: The Plant 3"
+	landing
+	name "Una casa per la pianta"
+	description "Porta Keti Va'ika sui pianeti Korath che ha indicato, per stabilire se qualcuno di essi sia una dimora adatta alla pianta dei Mereti."
+	source "Solima Skarati"
+	destination "Sopi Lefarkata"
+	passengers 1
+	to offer
+		has "Wanderers: Mereti: The Plant 2: done"
+	on offer
+		conversation
+			`Va'ika ti guida verso una zona di steppe alte e fresche mentre ti avvicini. Trovi un posto adatto per far atterrare la nave, e lei scende. L'aria che entra dalla porta aperta ti pizzica gli occhi, ma Va'ika sembra troppo immersa nei suoi pensieri per accorgersene. "Sarebbe [cresciuta, nata] qui, ne sono certa. Ma non lo farà più, non per molti [anni, cicli]." Va'ika china il capo e tiene un'ala davanti a sé in silenzio per un momento prima di continuare. "Dobbiamo trovare un mondo con [regioni, ambienti] simili in cui introdurla. Forse avremo più fortuna su Sopi Lefarkata."`
+				accept
+
+mission "Wanderers: Mereti: The Plant 4"
+	landing
+	name "Ritorno su <planet>"
+	description "Riporta Va'ika a <destination> per prendere la pianta dei Mereti e portarla a <origin>."
+	source "Sopi Lefarkata"
+	destination "Vara Kehi'ki"
+	passengers 1
+	to offer
+		has "Wanderers: Mereti: The Plant 3: done"
+	on offer
+		conversation
+			`Questa volta Va'ika ti guida in una pianura equatoriale: una distesa arida ed erbosa su cui soffia un vento fresco. Ne senti la somiglianza con la steppa che hai visitato su Solima Skarati, ma questa volta respiri liberamente, senza che l'aria ti pizzichi occhi e bocca. Va'ika prende un po' di terra e la mette in un piccolo dispositivo, lo guarda per un momento e poi si volta verso di te. "Qui. Qui [crescerà, attecchirà]."`
+			choice
+				`	"C'è altro che posso fare per aiutare?"`
+					goto "next steps"
+				`	"Come puoi esserne così sicura?"`
+			`	"Abbiamo già raccolto dati significativi sul clima di questo mondo. L'unica domanda a cui dovevo rispondere di persona era se la [composizione, natura] del terreno fosse adatta."`
+			label "next steps"
+			`	"Torniamo a Vara Kehi'ki. Manderemo un piccolo distaccamento di [guaritori, giardinieri] su <planet>, per assicurarci che queste piante attecchiscano. A lungo termine, le riporteremo su <origin> quando sarà guarito."`
+				accept
+	on complete
+		dialog `I droni Mereti di prima ti aspettano ancora allo spazioporto quando arrivi. Va'ika sbarca in fretta e comincia a conversare con la gente del posto, fermandosi solo un attimo per dirti di raggiungerla allo spazioporto.`
+
+mission "Wanderers: Mereti: The Plant 5"
+	name "La pianta per <planet>"
+	description "Scorta la nave Wanderer che trasporta la pianta e una squadra di Wanderer pronta ad aiutarla a crescere, fino a <destination>."
+	source "Vara Kehi'ki"
+	destination "Sopi Lefarkata"
+	on visit
+		dialog `Sei arrivato su <planet>, ma hai lasciato indietro la <npc>. Sta trasportando la pianta, quindi dovresti decollare e aspettare che arrivi.`
+	to offer
+		has "Wanderers: Mereti: The Plant 4: done"
+	on offer
+		conversation
+			`Arrivi allo spazioporto appena in tempo per vedere la pianta caricata con delicatezza su una Strong Wind. I droni Mereti restano immobili sulla piazzola, e hai la netta sensazione che ti stiano osservando con attenzione.`
+			`	Va'ika ti sta accanto mentre guardi, fissando la distanza quasi con tristezza, prima di parlare. "È deplorevole che siamo stati [costretti, obbligati] a usare queste navi per la guerra. Questo è molto più vicino allo scopo per cui le avevamo [concepite, progettate] e che dovevano [servire, adempiere]." Intravedi una piuma che cade a terra mentre parla. Poi si interrompe. "No, non dovrei essere così [scoraggiata?]. I droni Korath hanno voltato le spalle ai [desideri, progetti] dei loro creatori e cercano di [guarire, curare] questi mondi insieme a noi. È qualcosa che possiamo apprezzare tutti."`
+			choice
+				`	"Sei sicuro che funzionerà?"`
+			`	Va'ika si raddrizza e parla con chiara sicurezza. "È una situazione [fortunata, favorevole]. <planet> ha bisogno di relativamente poca guarigione, quindi [ospitare, tenere] queste piante qui non creerà [difficoltà, disagi] al nostro lavoro. Abbiamo mandato un piccolo [gruppo, team] di specialisti a [coltivare, accudire] le piante. Ho la massima fiducia nelle loro [conoscenze, capacità]."`
+				accept
+	on complete
+		event "mereti visiting eneremprukt" 5
+		event "field of mereti plants" 700
+		conversation
+			`I droni Mereti ti seguono, insieme alla <npc>, fino al pianeta e atterrano lì vicino. Tu e Va'ika guardate mentre la pianta viene presa con cura, quasi con cerimonia, e deposta nel terreno.`
+			`	Dopo che la pianta è stata sistemata come si deve, Va'ika si volta verso di te. "Resterò qui per un po' a [sovrintendere, osservare] il lavoro, ma presto sarà tempo che io [parta, torni] a sorvegliare la guarigione di altri mondi. Ti ringrazio molto [gratamente, sinceramente] per il tuo aiuto, <first>."`
+	npc
+		government "Kor Mereti"
+		personality timid launching
+		system "Iyech'yek"
+		fleet
+			names "kor mereti"
+			variant
+				"Model 16" 3
+	npc accompany save
+		government Wanderer
+		personality escort
+		system "Iyech'yek"
+		fleet
+			names "wanderer"
+			variant
+				"Strong Wind"
+
+event "mereti visiting eneremprukt"
+	system Eneremprukt
+		fleet "Small Kor Mereti" 800
+
+event "field of mereti plants"
+
+mission "Wanderers: Mereti: The Plant Epilogue"
+	minor
+	landing
+	invisible
+	source "Sopi Lefarkata"
+	to offer
+		has "event: field of mereti plants"
+	on offer
+		conversation
+			`Mentre ti avvicini a <planet>, ricordi che questo è il pianeta su cui tu e i Wanderer avete piantato il fiore che i Mereti ti avevano dato. Mentre scendi fra le nuvole, scorgi un minuscolo puntino blu in fondo a una valle, esattamente dove hai lasciato i Wanderer anni fa.`
+			choice
+				`	(Guarda più da vicino.)`
+				`	(Non ora.)`
+					defer
+			`	Il puntino si ingrandisce man mano che ti avvicini, finché vedi la Strong Wind parcheggiata in mezzo a un campo di fiori, i cui petali brillano di un bellissimo blu intenso.`
+			`	Posi con cura la nave fuori dal campo, e un piccolo drone Mereti ti vola incontro, parlando con una voce molto più sommessa di quanto ti aspetti. "Grazie, <first> <last>. Hai [salvato, riportato in vita] il sitrasanir." Il tuo traduttore non prova nemmeno a rendere l'ultima parola, e non somiglia a nessuna parola che tu abbia sentito nella lingua Hai o in quella dei Wanderer.`
+			choice
+				`	"Sitrasanir?"`
+				`	"Di niente."`
+					goto end
+			`	"Questo fiore si chiama sitrasanir. Il suo [simbolo, aspetto] era di [importanza, rilevanza] per i nostri creatori quando erano [presenti? vivi?]. Lo abbiamo [abbandonato, ignorato] per anni, ma i nostri [genitori, antenati] ci hanno aiutato a ricordarlo."`
+			label end
+			`	Il drone resta in un silenzio contemplativo, guardando il campo. Il sole sale più in alto nel cielo, e il campo risplende di tonalità blu che quasi coincidono con le vernici blu delle navi Mereti lassù nel cielo.`
+				decline

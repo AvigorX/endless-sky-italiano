@@ -1,0 +1,363 @@
+{
+ "block": {
+  "path": "data/starts.txt",
+  "line_from": 18,
+  "line_to": 134,
+  "units": 32
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "start:default|name|18|0",
+   "path": "data/starts.txt",
+   "line": 18,
+   "kind": "VALUE",
+   "context": "start:default",
+   "english": "Endless Sky",
+   "italian": "Endless Sky",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "start:default|description|19|0",
+   "path": "data/starts.txt",
+   "line": 19,
+   "kind": "DESCRIPTION",
+   "context": "start:default",
+   "english": "You grew up on New Boston, an uninteresting world in the Dirt Belt. You've dreamed of owning a starship ever since your first visit to the spaceport. After years of working at a textile mill, you've saved enough credits to apply for a pilot's license from the Republic. Now you must take out a loan on your first ship...",
+   "italian": "Sei cresciuto su New Boston, un mondo senza niente di interessante nel Dirt Belt. Sogni di possedere un'astronave dal tuo primo giorno allo spazioporto. Dopo anni di lavoro in una tessitura, hai messo da parte abbastanza crediti per richiedere una licenza di pilota alla Repubblica. Ora devi accendere un mutuo sulla tua prima nave...",
+   "ratio": 1.044
+  },
+  {
+   "idx": 3,
+   "id": "start:default|description|20|0",
+   "path": "data/starts.txt",
+   "line": 20,
+   "kind": "DESCRIPTION",
+   "context": "start:default",
+   "english": "\tThis is the classic Endless Sky experience. You will begin in debt, and must use your new starship to pay off your mortgage.",
+   "italian": "\tQuesta è la classica esperienza di Endless Sky. Comincerai indebitato e dovrai usare la tua nuova astronave per estinguere il mutuo.",
+   "ratio": 1.064
+  },
+  {
+   "idx": 4,
+   "id": "conversation:default intro|log|74|0",
+   "path": "data/starts.txt",
+   "line": 74,
+   "kind": "LOGBOOK",
+   "context": "conversation:default intro",
+   "english": "Finally scraped together enough money to buy a pilot's license. The interest on the mortgage for my starship is exorbitant.",
+   "italian": "Finalmente sono riuscito a mettere insieme abbastanza soldi per comprare una licenza di pilota. Gli interessi sul mutuo della mia astronave sono esorbitanti.",
+   "ratio": 1.276
+  },
+  {
+   "idx": 5,
+   "id": "conversation:default intro|log|75|0",
+   "path": "data/starts.txt",
+   "line": 75,
+   "kind": "LOGBOOK",
+   "context": "conversation:default intro",
+   "english": "Hundreds of years ago, the independent territories in different parts of human space agreed to join together into a single democratic government, with Earth as its capital. The rise of the Republic ushered in a long period of peace and prosperity in human history.",
+   "italian": "Centinaia di anni fa i territori indipendenti sparsi nello spazio umano accettarono di unirsi in un unico governo democratico, con la Terra come capitale. L'ascesa della Repubblica inaugurò un lungo periodo di pace e di prosperità nella storia umana.",
+   "ratio": 0.947
+  },
+  {
+   "idx": 6,
+   "id": "conversation:default intro|Representation in the Republic Parliament is based on population. That means that some individual \"Paradise Worlds\" have more representatives than entire regions of space like the Dirt Belt that are more sparsely settled.|76|0",
+   "path": "data/starts.txt",
+   "line": 76,
+   "kind": "CONVERSATION",
+   "context": "conversation:default intro",
+   "english": "Representation in the Republic Parliament is based on population. That means that some individual \"Paradise Worlds\" have more representatives than entire regions of space like the Dirt Belt that are more sparsely settled.",
+   "italian": "La rappresentanza in Parlamento repubblicano si basa sulla popolazione. Questo significa che alcuni singoli \"Mondi del Paradiso\" hanno più rappresentanti di intere regioni come il Dirt Belt, dove la popolazione è più rada.",
+   "ratio": 1.005
+  },
+  {
+   "idx": 7,
+   "id": "conversation:default intro|log|77|0",
+   "path": "data/starts.txt",
+   "line": 77,
+   "kind": "LOGBOOK",
+   "context": "conversation:default intro",
+   "english": "The Syndicate is a megacorporation, the largest employer in human space. People who cannot find steady work elsewhere flock to the Syndicate factory worlds, where they are almost guaranteed to find a job. Although the Syndicate is technically part of the Republic, Syndicate worlds are governed directly by the corporation.",
+   "italian": "Il Sindacato è una megacorporazione, il più grande datore di lavoro dello spazio umano. Chi non trova un lavoro stabile altrove accorre ai mondi-fabbrica del Sindacato, dove un impiego è quasi garantito. Sebbene il Sindacato faccia tecnicamente parte della Repubblica, i suoi mondi sono governati direttamente dalla corporazione.",
+   "ratio": 1.019
+  },
+  {
+   "idx": 8,
+   "id": "conversation:default intro|The Syndicate is a central part of the Republic's economy, but they are also well known for selling shoddy products and for doing damage to the environment on the worlds they control. Their treatment of workers is questionable, and their opposition to organized labor is legendary. Some Syndicate factory towns have even been accused of human rights abuses.|78|0",
+   "path": "data/starts.txt",
+   "line": 78,
+   "kind": "CONVERSATION",
+   "context": "conversation:default intro",
+   "english": "The Syndicate is a central part of the Republic's economy, but they are also well known for selling shoddy products and for doing damage to the environment on the worlds they control. Their treatment of workers is questionable, and their opposition to organized labor is legendary. Some Syndicate factory towns have even been accused of human rights abuses.",
+   "italian": "Il Sindacato è una parte centrale dell'economia repubblicana, ma è anche noto per vendere prodotti scadenti e per danneggiare l'ambiente dei mondi che controlla. Il trattamento riservato ai lavoratori è discutibile, e la sua opposizione al sindacalismo è leggendaria. Alcune cittadine-fabbrica del Sindacato sono state persino accusate di violazioni dei diritti umani.",
+   "ratio": 1.031
+  },
+  {
+   "idx": 9,
+   "id": "conversation:default intro|log|79|0",
+   "path": "data/starts.txt",
+   "line": 79,
+   "kind": "LOGBOOK",
+   "context": "conversation:default intro",
+   "english": "In poorer and more remote star systems, where the Navy seldom patrols, pirate attacks on merchant ships are frequent. Pirates are also known to attack large, unguarded convoys of freighters even in more populated areas. Most pirate fleets come from lawless worlds on the outskirts of human space.",
+   "italian": "Nei sistemi stellari più poveri e remoti, dove la Marina pattuglia di rado, gli attacchi pirata alle navi mercantili sono frequenti. I pirati sono noti anche per attaccare grandi convogli di mercantili senza scorta in zone più popolate. La maggior parte delle flotte pirata viene da mondi senza legge ai margini dello spazio umano.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 10,
+   "id": "conversation:default intro|The bank's architecture is what you would have called \"futuristic\" back when you dreamed that the future would be less squalid than the present: story above story of curves and spires and balconies, all in gleaming metal. A doorman stands by each of the heavy glass doors. You are wearing your very best clothes, but you feel shabby next to them.|81|0",
+   "path": "data/starts.txt",
+   "line": 81,
+   "kind": "CONVERSATION",
+   "context": "conversation:default intro",
+   "english": "The bank's architecture is what you would have called \"futuristic\" back when you dreamed that the future would be less squalid than the present: story above story of curves and spires and balconies, all in gleaming metal. A doorman stands by each of the heavy glass doors. You are wearing your very best clothes, but you feel shabby next to them.",
+   "italian": "L'architettura della banca è quella che avresti chiamato \"futuristica\" quando sognavi che il futuro fosse meno squallido del presente: piani su piani di curve, guglie e balconi, tutto in metallo lucente. Un portiere sta accanto a ciascuna delle pesanti porte di vetro. Indossi il tuo vestito migliore, ma accanto a loro ti senti sciatto.",
+   "ratio": 0.974
+  },
+  {
+   "idx": 11,
+   "id": "conversation:default intro|\tThe loan broker's office is equally intimidating. Large computer monitors fill the walls, with stock quotes and other information spilling down them almost too fast to read. You occasionally glimpse the names of places that you have only seen in movies: Aldebaran. Tarazed. Earth.|82|0",
+   "path": "data/starts.txt",
+   "line": 82,
+   "kind": "CONVERSATION",
+   "context": "conversation:default intro",
+   "english": "\tThe loan broker's office is equally intimidating. Large computer monitors fill the walls, with stock quotes and other information spilling down them almost too fast to read. You occasionally glimpse the names of places that you have only seen in movies: Aldebaran. Tarazed. Earth.",
+   "italian": "\tL'ufficio del mediatore di prestiti è altrettanto intimidatorio. Grandi monitor occupano le pareti, con quotazioni di borsa e altre informazioni che scorrono quasi troppo in fretta per essere lette. Ogni tanto intravedi nomi di luoghi che hai visto solo nei film: Aldebaran. Tarazed. Terra.",
+   "ratio": 1.036
+  },
+  {
+   "idx": 12,
+   "id": "conversation:default intro|\tThe pen is heavy as lead but glides almost without friction as you print your initials on the bottom of page after page of ominous legal documents and sign several dozen statements, notices, and agreements. The banker, a balding middle-aged man in a suit that you suspect costs more than the spaceship you are about to purchase, flips the pages past you quickly, uttering a curt, \"Sign here. Now here,\" as he points to each page. He moves swiftly, mechanically.|83|0",
+   "path": "data/starts.txt",
+   "line": 83,
+   "kind": "CONVERSATION",
+   "context": "conversation:default intro",
+   "english": "\tThe pen is heavy as lead but glides almost without friction as you print your initials on the bottom of page after page of ominous legal documents and sign several dozen statements, notices, and agreements. The banker, a balding middle-aged man in a suit that you suspect costs more than the spaceship you are about to purchase, flips the pages past you quickly, uttering a curt, \"Sign here. Now here,\" as he points to each page. He moves swiftly, mechanically.",
+   "italian": "\tLa penna è pesante come il piombo, ma scorre quasi senza attrito mentre apponi le iniziali in fondo a pagina dopo pagina di sinistri documenti legali e firmi diverse decine di dichiarazioni, avvisi e accordi. Il banchiere, un uomo di mezza età stempiato in un abito che sospetti costare più dell'astronave che stai per comprare, sfoglia le pagine davanti a te in fretta, emettendo un secco \"Firmi qui. Ora qui\" mentre indica ogni pagina. Si muove rapido, meccanico.",
+   "ratio": 1.009
+  },
+  {
+   "idx": 13,
+   "id": "conversation:default intro|\tThe only moment when he becomes truly animated is when explaining the Truth in Lending statement to you. \"You are borrowing 480,000 credits,\" he says, \"to be repaid over the course of one year. Your daily interest rate is 0.4%, which means that your daily payments are 2,503 credits, and by the end of the year you will have paid... 433,567 credits in interest. Sign here.\" He grins.|84|0",
+   "path": "data/starts.txt",
+   "line": 84,
+   "kind": "CONVERSATION",
+   "context": "conversation:default intro",
+   "english": "\tThe only moment when he becomes truly animated is when explaining the Truth in Lending statement to you. \"You are borrowing 480,000 credits,\" he says, \"to be repaid over the course of one year. Your daily interest rate is 0.4%, which means that your daily payments are 2,503 credits, and by the end of the year you will have paid... 433,567 credits in interest. Sign here.\" He grins.",
+   "italian": "\tL'unico momento in cui si anima davvero è quando ti spiega il prospetto sulla verità del prestito. \"Stai prendendo in prestito 480.000 crediti,\" dice, \"da restituire nell'arco di un anno. Il tuo tasso d'interesse giornaliero è dello 0,4%, il che significa che i tuoi pagamenti giornalieri sono di 2.503 crediti, e alla fine dell'anno avrai pagato... 433.567 crediti di interessi. Firma qui.\" Sorride.",
+   "ratio": 1.044
+  },
+  {
+   "idx": 14,
+   "id": "conversation:default intro|\tYou sign your name one final time:|85|0",
+   "path": "data/starts.txt",
+   "line": 85,
+   "kind": "CONVERSATION",
+   "context": "conversation:default intro",
+   "english": "\tYou sign your name one final time:",
+   "italian": "\tScrivi il tuo nome un'ultima volta:",
+   "ratio": 1.029
+  },
+  {
+   "idx": 15,
+   "id": "conversation:default intro|\tThe elevator is so well-tuned that you do not even realize it is moving until it has deposited you back in the lobby. But as you leave the bank, you are smiling. This crazy adventure suddenly feels real to you. You are going to do it. You are finally going to get off this planet.|87|0",
+   "path": "data/starts.txt",
+   "line": 87,
+   "kind": "CONVERSATION",
+   "context": "conversation:default intro",
+   "english": "\tThe elevator is so well-tuned that you do not even realize it is moving until it has deposited you back in the lobby. But as you leave the bank, you are smiling. This crazy adventure suddenly feels real to you. You are going to do it. You are finally going to get off this planet.",
+   "italian": "\tL'ascensore è così ben calibrato che non ti accorgi nemmeno che si muove, finché non ti ha riportato nella hall. Ma mentre esci dalla banca, stai sorridendo. Questa folle avventura ti sembra d'un tratto reale. Lo farai davvero. Finalmente lascerai questo pianeta.",
+   "ratio": 0.94
+  },
+  {
+   "idx": 16,
+   "id": "conversation:default intro|\tCompared to the bank, you feel much more at home in the shipyard, walking among the rusted out hulks and newer ships that gleam in the sunlight. You smell grease and dirt and rocket fuel; wonderful smells. There are three ship models within your price range. Which one you choose will determine your future...|88|0",
+   "path": "data/starts.txt",
+   "line": 88,
+   "kind": "CONVERSATION",
+   "context": "conversation:default intro",
+   "english": "\tCompared to the bank, you feel much more at home in the shipyard, walking among the rusted out hulks and newer ships that gleam in the sunlight. You smell grease and dirt and rocket fuel; wonderful smells. There are three ship models within your price range. Which one you choose will determine your future...",
+   "italian": "\tRispetto alla banca, ti senti molto più a casa nel cantiere navale, camminando tra scafi arrugginiti e navi più nuove che brillano al sole. Senti odore di grasso, sporco e carburante per razzi; odori meravigliosi. Ci sono tre modelli di nave nel tuo budget. Quale sceglierai determinerà il tuo futuro...",
+   "ratio": 0.981
+  },
+  {
+   "idx": 17,
+   "id": "start:deep|name|93|0",
+   "path": "data/starts.txt",
+   "line": 93,
+   "kind": "VALUE",
+   "context": "start:deep",
+   "english": "Deep Desire",
+   "italian": "Deep Desire",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "start:deep|description|94|0",
+   "path": "data/starts.txt",
+   "line": 94,
+   "kind": "DESCRIPTION",
+   "context": "start:deep",
+   "english": "You grew up on Midgard, a world in the advanced Deep region. Most pursue higher education, but you've always wanted to be a starship captain. After finishing primary education, you learn that the Deep provides low-interest loans for prospecting captains with high enough grades, and you made the mark! You make your way to the capital city of New Reykjavik...",
+   "italian": "Sei cresciuto su Midgard, un mondo della regione avanzata del Deep. La maggior parte delle persone intraprende studi superiori, ma tu hai sempre voluto essere capitano di un'astronave. Finiti gli studi primari, scopri che il Deep offre prestiti a basso interesse ai capitani che si dedicano alla prospezione e hanno voti abbastanza alti, e tu ce l'hai fatta! Ti dirigi verso la capitale, New Reykjavik...",
+   "ratio": 1.125
+  },
+  {
+   "idx": 19,
+   "id": "start:deep|description|95|0",
+   "path": "data/starts.txt",
+   "line": 95,
+   "kind": "DESCRIPTION",
+   "context": "start:deep",
+   "english": "\tThis start provides a lower interest rate and more credits to upgrade your ship.",
+   "italian": "\tQuesto inizio offre un tasso d'interesse più basso e più crediti per potenziare la tua nave.",
+   "ratio": 1.148
+  },
+  {
+   "idx": 20,
+   "id": "conversation:deep intro|log|116|0",
+   "path": "data/starts.txt",
+   "line": 116,
+   "kind": "LOGBOOK",
+   "context": "conversation:deep intro",
+   "english": "Applied for the Deep's starship captain program, and was accepted. The program included a pilot's license and low-interest loan.",
+   "italian": "Ho fatto domanda per il programma di capitani del Deep, e sono stato accettato. Il programma comprendeva una licenza di pilota e un prestito a basso interesse.",
+   "ratio": 1.242
+  },
+  {
+   "idx": 21,
+   "id": "conversation:deep intro|log|117|0",
+   "path": "data/starts.txt",
+   "line": 117,
+   "kind": "LOGBOOK",
+   "context": "conversation:deep intro",
+   "english": "Hundreds of years ago, the independent territories in different parts of human space agreed to join together into a single democratic government, with Earth as its capital. The rise of the Republic ushered in a long period of peace and prosperity in human history.",
+   "italian": "Centinaia di anni fa i territori indipendenti sparsi nello spazio umano accettarono di unirsi in un unico governo democratico, con la Terra come capitale. L'ascesa della Repubblica inaugurò un lungo periodo di pace e di prosperità nella storia umana.",
+   "ratio": 0.947
+  },
+  {
+   "idx": 22,
+   "id": "conversation:deep intro|Representation in the Republic Parliament is based on population. That means that some individual \"Paradise Worlds\" have more representatives than entire regions of space like the Dirt Belt that are more sparsely settled.|118|0",
+   "path": "data/starts.txt",
+   "line": 118,
+   "kind": "CONVERSATION",
+   "context": "conversation:deep intro",
+   "english": "Representation in the Republic Parliament is based on population. That means that some individual \"Paradise Worlds\" have more representatives than entire regions of space like the Dirt Belt that are more sparsely settled.",
+   "italian": "La rappresentanza in Parlamento repubblicano si basa sulla popolazione. Questo significa che alcuni singoli \"Mondi del Paradiso\" hanno più rappresentanti di intere regioni come il Dirt Belt, dove la popolazione è più rada.",
+   "ratio": 1.005
+  },
+  {
+   "idx": 23,
+   "id": "conversation:deep intro|log|119|0",
+   "path": "data/starts.txt",
+   "line": 119,
+   "kind": "LOGBOOK",
+   "context": "conversation:deep intro",
+   "english": "The Syndicate is a megacorporation, the largest employer in human space. People who cannot find steady work elsewhere flock to the Syndicate factory worlds, where they are almost guaranteed to find a job. Although the Syndicate is technically part of the Republic, Syndicate worlds are governed directly by the corporation.",
+   "italian": "Il Sindacato è una megacorporazione, il più grande datore di lavoro dello spazio umano. Chi non trova un lavoro stabile altrove accorre ai mondi-fabbrica del Sindacato, dove un impiego è quasi garantito. Sebbene il Sindacato faccia tecnicamente parte della Repubblica, i suoi mondi sono governati direttamente dalla corporazione.",
+   "ratio": 1.019
+  },
+  {
+   "idx": 24,
+   "id": "conversation:deep intro|The Syndicate is a central part of the Republic's economy, but they are also well known for selling shoddy products and for doing damage to the environment on the worlds they control. Their treatment of workers is questionable, and their opposition to organized labor is legendary. Some Syndicate factory towns have even been accused of human rights abuses.|120|0",
+   "path": "data/starts.txt",
+   "line": 120,
+   "kind": "CONVERSATION",
+   "context": "conversation:deep intro",
+   "english": "The Syndicate is a central part of the Republic's economy, but they are also well known for selling shoddy products and for doing damage to the environment on the worlds they control. Their treatment of workers is questionable, and their opposition to organized labor is legendary. Some Syndicate factory towns have even been accused of human rights abuses.",
+   "italian": "Il Sindacato è una parte centrale dell'economia repubblicana, ma è anche noto per vendere prodotti scadenti e per danneggiare l'ambiente dei mondi che controlla. Il trattamento riservato ai lavoratori è discutibile, e la sua opposizione al sindacalismo è leggendaria. Alcune cittadine-fabbrica del Sindacato sono state persino accusate di violazioni dei diritti umani.",
+   "ratio": 1.031
+  },
+  {
+   "idx": 25,
+   "id": "conversation:deep intro|log|121|0",
+   "path": "data/starts.txt",
+   "line": 121,
+   "kind": "LOGBOOK",
+   "context": "conversation:deep intro",
+   "english": "In poorer and more remote star systems, where the Navy seldom patrols, pirate attacks on merchant ships are frequent. Pirates are also known to attack large, unguarded convoys of freighters even in more populated areas. Most pirate fleets come from lawless worlds on the outskirts of human space.",
+   "italian": "Nei sistemi stellari più poveri e remoti, dove la Marina pattuglia di rado, gli attacchi pirata alle navi mercantili sono frequenti. I pirati sono noti anche per attaccare grandi convogli di mercantili senza scorta in zone più popolate. La maggior parte delle flotte pirata viene da mondi senza legge ai margini dello spazio umano.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 26,
+   "id": "conversation:deep intro|The train from your hometown rocks side-to-side at a steady rhythm, bringing you ever closer to the capital. Several seats forward, a young couple close to your age eagerly discuss their move to a new apartment as their legs kick their luggage. Behind you, a much older man in greasy overalls exchanges farewells with an acquaintance.|123|0",
+   "path": "data/starts.txt",
+   "line": 123,
+   "kind": "CONVERSATION",
+   "context": "conversation:deep intro",
+   "english": "The train from your hometown rocks side-to-side at a steady rhythm, bringing you ever closer to the capital. Several seats forward, a young couple close to your age eagerly discuss their move to a new apartment as their legs kick their luggage. Behind you, a much older man in greasy overalls exchanges farewells with an acquaintance.",
+   "italian": "Il treno dalla tua città natale ondeggia avanti e indietro con un ritmo costante, portandoti sempre più vicino alla capitale. Qualche fila più avanti, una giovane coppia della tua età parla con entusiasmo del trasloco nel nuovo appartamento, mentre le loro gambe urtano i bagagli. Dietro di te, un uomo molto più anziano in una tuta da lavoro unta si congeda da un conoscente.",
+   "ratio": 1.126
+  },
+  {
+   "idx": 27,
+   "id": "conversation:deep intro|\tBefore long, you arrive in New Reykjavik at the government office responsible for handling starship loans. The reception is buzzing with activity as other fresh-faced graduates chat among themselves while waiting for their turn. Sunlight falls through the slitted ceiling windows onto a three-dimensional representation of the Deep's insignia in the lobby's center, a red tree with branches forming the shape of a brain. A circle of text surrounds the sculpture, proclaiming the Deep's core values: Peace. Prosperity. Progress.|124|0",
+   "path": "data/starts.txt",
+   "line": 124,
+   "kind": "CONVERSATION",
+   "context": "conversation:deep intro",
+   "english": "\tBefore long, you arrive in New Reykjavik at the government office responsible for handling starship loans. The reception is buzzing with activity as other fresh-faced graduates chat among themselves while waiting for their turn. Sunlight falls through the slitted ceiling windows onto a three-dimensional representation of the Deep's insignia in the lobby's center, a red tree with branches forming the shape of a brain. A circle of text surrounds the sculpture, proclaiming the Deep's core values: Peace. Prosperity. Progress.",
+   "italian": "\tPoco dopo arrivi a New Reykjavik, all'ufficio governativo che gestisce i prestiti per le astronavi. La reception è un brusio di attività: altri neolaureati dalla faccia fresca chiacchierano tra loro in attesa del proprio turno. La luce del sole cade dalle finestre a fessura del soffitto su una rappresentazione tridimensionale dell'emblema del Deep al centro della hall, un albero rosso i cui rami formano la sagoma di un cervello. Un cerchio di testo circonda la scultura, proclamando i valori fondamentali del Deep: Pace. Prosperità. Progresso.",
+   "ratio": 1.038
+  },
+  {
+   "idx": 28,
+   "id": "conversation:deep intro|\tEventually your number is called, and after reading over your application the office worker hands you two cards. One of them is your Certificate of Eligibility for a low-interest loan at a nearby bank. The other is your pilot's license, fully paid for. Your ticket to the stars.|125|0",
+   "path": "data/starts.txt",
+   "line": 125,
+   "kind": "CONVERSATION",
+   "context": "conversation:deep intro",
+   "english": "\tEventually your number is called, and after reading over your application the office worker hands you two cards. One of them is your Certificate of Eligibility for a low-interest loan at a nearby bank. The other is your pilot's license, fully paid for. Your ticket to the stars.",
+   "italian": "\tAlla fine chiamano il tuo numero, e dopo aver letto la tua domanda l'impiegato ti consegna due tessere. Una è il tuo Certificato di idoneità per un prestito a basso interesse presso una banca vicina. L'altra è la tua licenza di pilota, già pagata per intero. Il tuo biglietto per le stelle.",
+   "ratio": 1.043
+  },
+  {
+   "idx": 29,
+   "id": "conversation:deep intro|\tYou insert the card into an automatic clerk at the bank, and after a soft ping, a large document fills its screen. A synthesized voice says, \"You are borrowing 680,000 credits to be repaid over the course of a year. Your daily interest rate is 0.2%, which means that your daily payments are 2,627 credits, and by the end of the year you will have paid 278,760 credits in interest. Please sign your name on the screen when you are ready.\"|126|0",
+   "path": "data/starts.txt",
+   "line": 126,
+   "kind": "CONVERSATION",
+   "context": "conversation:deep intro",
+   "english": "\tYou insert the card into an automatic clerk at the bank, and after a soft ping, a large document fills its screen. A synthesized voice says, \"You are borrowing 680,000 credits to be repaid over the course of a year. Your daily interest rate is 0.2%, which means that your daily payments are 2,627 credits, and by the end of the year you will have paid 278,760 credits in interest. Please sign your name on the screen when you are ready.\"",
+   "italian": "\tInserisci la tessera in uno sportello automatico della banca e, dopo un leggero ping, un grande documento riempie lo schermo. Una voce sintetica dice: \"Stai prendendo in prestito 680.000 crediti, da restituire nell'arco di un anno. Il tuo tasso d'interesse giornaliero è dello 0,2%, il che significa che i tuoi pagamenti giornalieri sono di 2.627 crediti, e alla fine dell'anno avrai pagato 278.760 crediti di interessi. Scrivi il tuo nome sullo schermo quando sei pronto.\"",
+   "ratio": 1.082
+  },
+  {
+   "idx": 30,
+   "id": "conversation:deep intro|\tAfter carefully rereading every page of the loan agreement, you sign your name:|127|0",
+   "path": "data/starts.txt",
+   "line": 127,
+   "kind": "CONVERSATION",
+   "context": "conversation:deep intro",
+   "english": "\tAfter carefully rereading every page of the loan agreement, you sign your name:",
+   "italian": "\tDopo aver riletto con cura ogni pagina del contratto di prestito, firmi il tuo nome:",
+   "ratio": 1.062
+  },
+  {
+   "idx": 31,
+   "id": "conversation:deep intro|\tYou rush out of the bank and hop on the metro towards the shipyard. As the rest of the carriage look blankly out the windows and at their devices, you are barely able to keep a straight face, flipping over your pilot's license at least a hundred times before the ride is over. You consider throwing away your transport pass as soon as you get off, but change your mind at the last minute. There won't be much else tying you to this planet soon.|129|0",
+   "path": "data/starts.txt",
+   "line": 129,
+   "kind": "CONVERSATION",
+   "context": "conversation:deep intro",
+   "english": "\tYou rush out of the bank and hop on the metro towards the shipyard. As the rest of the carriage look blankly out the windows and at their devices, you are barely able to keep a straight face, flipping over your pilot's license at least a hundred times before the ride is over. You consider throwing away your transport pass as soon as you get off, but change your mind at the last minute. There won't be much else tying you to this planet soon.",
+   "italian": "\tEsci di corsa dalla banca e salti sulla metro verso il cantiere navale. Mentre il resto della carrozza guarda fuori dai finestrini o i propri dispositivi con aria assente, tu riesci a malapena a restare serio, rigirando la licenza di pilota almeno cento volte prima della fine del viaggio. Pensi di buttare via l'abbonamento ai trasporti appena sceso, ma all'ultimo momento cambi idea. Non resterà molto altro a legarti a questo pianeta.",
+   "ratio": 0.984
+  },
+  {
+   "idx": 32,
+   "id": "conversation:deep intro|\tYou had pored over footage of New Reykjavik's shipyard in your younger days, but seeing the place in-person blows your wildest expectations out of the water. Salespeople use holographic displays to showcase a variety of vessels to sharply-dressed clients while skyscraper-sized ships loom silently in the shadows of the yard, waiting for the wealthiest of merchants to claim them. Although most of the ships are far outside of your price range, you spot four models that you'll be able to purchase. Which one you choose will determine your future...|130|0",
+   "path": "data/starts.txt",
+   "line": 130,
+   "kind": "CONVERSATION",
+   "context": "conversation:deep intro",
+   "english": "\tYou had pored over footage of New Reykjavik's shipyard in your younger days, but seeing the place in-person blows your wildest expectations out of the water. Salespeople use holographic displays to showcase a variety of vessels to sharply-dressed clients while skyscraper-sized ships loom silently in the shadows of the yard, waiting for the wealthiest of merchants to claim them. Although most of the ships are far outside of your price range, you spot four models that you'll be able to purchase. Which one you choose will determine your future...",
+   "italian": "\tAvevi studiato i filmati del cantiere di New Reykjavik nei tuoi anni più giovani, ma vedere il posto di persona supera ogni tua più sfrenata aspettativa. I venditori usano display olografici per mostrare varie navi a clienti vestiti con eleganza, mentre astronavi alte come grattacieli incombono silenziose nell'ombra del cantiere, in attesa che i mercanti più ricchi se ne impossessino. Anche se la maggior parte delle navi è ben fuori dalla tua portata, ne individui quattro modelli che potrai comprare. Quale sceglierai determinerà il tuo futuro...",
+   "ratio": 1.004
+  }
+ ]
+}

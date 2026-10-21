@@ -1,0 +1,132 @@
+{
+ "block": {
+  "path": "data/human/weapons.txt",
+  "line_from": 341,
+  "line_to": 589,
+  "units": 11
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Heavy Laser|description|341|0",
+   "path": "data/human/weapons.txt",
+   "line": 341,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Heavy Laser",
+   "english": "The Heavy Laser is an upgraded Beam Laser with a significantly longer range and higher power. It is mostly intended for larger ships, where energy and space are plentiful, but some pilots consider a single Heavy Laser to be a worthwhile alternative to a pair of Beam Lasers, because the longer range makes up for the fact that it does not quite deal twice as much damage.",
+   "italian": "The Heavy Laser is an upgraded Beam Laser with a significantly longer range and higher power. It is mostly intended for larger ships, where energy and space are plentiful, but some pilots consider a single Heavy Laser to be a worthwhile alternative to a pair of Beam Lasers, because the longer range makes up for the fact that it does not quite deal twice as much damage.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Heavy Laser Turret|description|370|0",
+   "path": "data/human/weapons.txt",
+   "line": 370,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Heavy Laser Turret",
+   "english": "For ships with enough space to install one, the Heavy Laser Turret is a powerful weapon, equally useful for driving off fighters and for bombarding larger targets with continuous fire without having to worry about pointing your ship in the right direction.",
+   "italian": "For ships with enough space to install one, the Heavy Laser Turret is a powerful weapon, equally useful for driving off fighters and for bombarding larger targets with continuous fire without having to worry about pointing your ship in the right direction.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Mining Laser|description|407|0",
+   "path": "data/human/weapons.txt",
+   "line": 407,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Mining Laser",
+   "english": "The development of the Beam Laser in the mid-2400s not only led to advancements in space warfare, but also to the field of asteroid mining, as the traditional but inefficient method of towing asteroids to bases for extraction was supplanted by individual spacecraft that could precisely extract the ore from asteroids themselves.",
+   "italian": "The development of the Beam Laser in the mid-2400s not only led to advancements in space warfare, but also to the field of asteroid mining, as the traditional but inefficient method of towing asteroids to bases for extraction was supplanted by individual spacecraft that could precisely extract the ore from asteroids themselves.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Mining Laser|description|408|0",
+   "path": "data/human/weapons.txt",
+   "line": 408,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Mining Laser",
+   "english": "\tThe modern Mining Laser is a derivative of the Beam Laser engineered to optimize mineral yield and extraction rates at the expense of range and shield damage.",
+   "italian": "\tThe modern Mining Laser is a derivative of the Beam Laser engineered to optimize mineral yield and extraction rates at the expense of range and shield damage.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Mining Laser Turret|description|440|0",
+   "path": "data/human/weapons.txt",
+   "line": 440,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Mining Laser Turret",
+   "english": "While asteroid miners typically prefer more nimble ships that can keep speed with asteroids, the Mining Laser Turret makes it easier for large and slow ships with spacious cargo holds to mine.",
+   "italian": "While asteroid miners typically prefer more nimble ships that can keep speed with asteroids, the Mining Laser Turret makes it easier for large and slow ships with spacious cargo holds to mine.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Mining Laser Turret|description|441|0",
+   "path": "data/human/weapons.txt",
+   "line": 441,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Mining Laser Turret",
+   "english": "\tMining Laser Turrets are designed to be used in conjunction with asteroid scanners, as being unable to target asteroids means you have to aim the weapon manually as if it were a fixed gun.",
+   "italian": "\tMining Laser Turrets are designed to be used in conjunction with asteroid scanners, as being unable to target asteroids means you have to aim the weapon manually as if it were a fixed gun.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Tractor Beam|description|465|0",
+   "path": "data/human/weapons.txt",
+   "line": 465,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tractor Beam",
+   "english": "The anti-gravity properties of repulsor engines started a revolution in human spaceflight during the 24th century, but it was only relatively recently that engineers began experimenting with gravitational attraction. Tractor beams utilize rudimentary attractor technology to allow ships to attract space debris, be that the ores from a recently mined asteroid, or the dumped cargo from a merchant ship fleeing for its life. This has led to tractor beams being a popular outfit among asteroid miners and pirates alike.",
+   "italian": "The anti-gravity properties of repulsor engines started a revolution in human spaceflight during the 24th century, but it was only relatively recently that engineers began experimenting with gravitational attraction. Tractor beams utilize rudimentary attractor technology to allow ships to attract space debris, be that the ores from a recently mined asteroid, or the dumped cargo from a merchant ship fleeing for its life. This has led to tractor beams being a popular outfit among asteroid miners and pirates alike.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Electron Beam|description|496|0",
+   "path": "data/human/weapons.txt",
+   "line": 496,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Electron Beam",
+   "english": "The Electron Beam is a recent development by the Deep Sky labs, a more powerful weapon with a design similar to their perennially popular laser guns.",
+   "italian": "The Electron Beam is a recent development by the Deep Sky labs, a more powerful weapon with a design similar to their perennially popular laser guns.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Electron Turret|description|525|0",
+   "path": "data/human/weapons.txt",
+   "line": 525,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Electron Turret",
+   "english": "This turret places two of Deep Sky's recently developed electron beam weapons onto a rotating turret, providing unsurpassed accuracy and power for shooting down fast-moving targets.",
+   "italian": "This turret places two of Deep Sky's recently developed electron beam weapons onto a rotating turret, providing unsurpassed accuracy and power for shooting down fast-moving targets.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Anti-Missile Turret|description|557|0",
+   "path": "data/human/weapons.txt",
+   "line": 557,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Anti-Missile Turret",
+   "english": "Centuries ago, space battles were fought mostly with missiles, with the outcome dependent only on which ship had more shielding or ammunition. Lovelace Labs was originally founded to remedy that situation by developing a protective system that could shoot missiles out of the air, defending freighter convoys from pirates who could otherwise simply bombard them into submission without ever venturing within range of their guns.",
+   "italian": "Centuries ago, space battles were fought mostly with missiles, with the outcome dependent only on which ship had more shielding or ammunition. Lovelace Labs was originally founded to remedy that situation by developing a protective system that could shoot missiles out of the air, defending freighter convoys from pirates who could otherwise simply bombard them into submission without ever venturing within range of their guns.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Heavy Anti-Missile Turret|description|589|0",
+   "path": "data/human/weapons.txt",
+   "line": 589,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Heavy Anti-Missile Turret",
+   "english": "The Heavy Anti-Missile Turret has a longer range, higher power, and shorter reload time than its smaller sibling. The only way to overcome it is by firing missiles in a cluster so that while one is being targeted, the others can get through, and as a result all missile systems on the market now default to firing in clusters if multiple copies of the same launcher are installed, rather than staggering their fire as ordinary guns do.",
+   "italian": "The Heavy Anti-Missile Turret has a longer range, higher power, and shorter reload time than its smaller sibling. The only way to overcome it is by firing missiles in a cluster so that while one is being targeted, the others can get through, and as a result all missile systems on the market now default to firing in clusters if multiple copies of the same launcher are installed, rather than staggering their fire as ordinary guns do.",
+   "ratio": 1.0
+  }
+ ]
+}

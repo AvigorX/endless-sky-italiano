@@ -1,0 +1,187 @@
+{
+ "block": {
+  "path": "data/pug/pug outfits.txt",
+  "line_from": 15,
+  "line_to": 400,
+  "units": 16
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Pug Zapper|description|39|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 39,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Zapper",
+   "english": "This is a formidable beam weapon, more damaging than even the most advanced energy beams that humanity has developed. Pug ships have integrated power plants that produce the considerable amount of energy that is needed to drive weapons like this one.",
+   "italian": "This is a formidable beam weapon, more damaging than even the most advanced energy beams that humanity has developed. Pug ships have integrated power plants that produce the considerable amount of energy that is needed to drive weapons like this one.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Pug Zapper Turret|description|69|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 69,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Zapper Turret",
+   "english": "Mounted on a turret, this Pug weapon becomes even more devastatingly powerful. However, its energy requirements are higher than most human ships can support.",
+   "italian": "Mounted on a turret, this Pug weapon becomes even more devastatingly powerful. However, its energy requirements are higher than most human ships can support.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Pug Seeker|description|114|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 114,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Seeker",
+   "english": "You have no idea how this weapon works. It requires no ammunition, but its energy-based projectiles have the ability to home in on a target ship.",
+   "italian": "You have no idea how this weapon works. It requires no ammunition, but its energy-based projectiles have the ability to home in on a target ship.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Pug Anti-Missile|description|146|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 146,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Anti-Missile",
+   "english": "This anti-missile system designed by the Pug draws a lot of energy, but its fast firing rate makes it twice as effective as anything that Lovelace Labs has been able to come up with. A ship with one of these turrets will be very difficult to hit with missiles.",
+   "italian": "This anti-missile system designed by the Pug draws a lot of energy, but its fast firing rate makes it twice as effective as anything that Lovelace Labs has been able to come up with. A ship with one of these turrets will be very difficult to hit with missiles.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Tier 3 Anti-Missile|description|179|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 179,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Tier 3 Anti-Missile",
+   "english": "This powerful anti-missile turret is capable of destroying even the strongest of missiles.",
+   "italian": "This powerful anti-missile turret is capable of destroying even the strongest of missiles.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Pug Gridfire Turret|description|226|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 226,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Gridfire Turret",
+   "english": "No one understands how the Gridfire Turret works, and the Pug aren't interested in explaining.",
+   "italian": "No one understands how the Gridfire Turret works, and the Pug aren't interested in explaining.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Pug Akfar Thruster|description|271|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 271,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Akfar Thruster",
+   "english": "This is a small thruster designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "italian": "This is a small thruster designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Pug Akfar Steering|description|288|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 288,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Akfar Steering",
+   "english": "This is a small steering system designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "italian": "This is a small steering system designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Pug Cormet Thruster|description|305|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 305,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Cormet Thruster",
+   "english": "This is a medium-sized thruster designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "italian": "This is a medium-sized thruster designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Pug Cormet Steering|description|322|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 322,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Cormet Steering",
+   "english": "This is a medium-sized steering system designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "italian": "This is a medium-sized steering system designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Pug Lohmar Thruster|description|339|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 339,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Lohmar Thruster",
+   "english": "This is a large thruster designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "italian": "This is a large thruster designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Pug Lohmar Steering|description|356|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 356,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Lohmar Steering",
+   "english": "This is a large steering system designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "italian": "This is a large steering system designed by the Pug. It is not quite as powerful as a similarly sized atomic engine, but it makes up for that by being almost as energy efficient as ion engines.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Pug Biodefenses|plural|361|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 361,
+   "kind": "VALUE",
+   "context": "outfit:Pug Biodefenses",
+   "english": "Pug Biodefenses",
+   "italian": "Pug Biodefenses",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Pug Biodefenses|description|370|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 370,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Biodefenses",
+   "english": "This semi-organic defense system is designed to release a highly lethal bioengineered virus capable of rapidly infecting any foreign entities present on the ship that it is installed on while leaving the crew of the ship unharmed. The virus, when combined with the defense system itself, is highly accurate at automatically determining friend from foe.",
+   "italian": "This semi-organic defense system is designed to release a highly lethal bioengineered virus capable of rapidly infecting any foreign entities present on the ship that it is installed on while leaving the crew of the ship unharmed. The virus, when combined with the defense system itself, is highly accurate at automatically determining friend from foe.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Pug Peacekeeping Staff|plural|373|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 373,
+   "kind": "VALUE",
+   "context": "outfit:Pug Peacekeeping Staff",
+   "english": "Pug Peacekeeping Staves",
+   "italian": "Pug Peacekeeping Staves",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Pug Peacekeeping Staff|description|383|0",
+   "path": "data/pug/pug outfits.txt",
+   "line": 383,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pug Peacekeeping Staff",
+   "english": "Though designed for planetary population control, the peacekeeping staff also works exceptionally well for ship defense. The staff emits a short-ranged beam that incapacitates anyone it touches by causing them to enter a euphoric and hallucinogenic state, wandering off to somewhere where they won't cause any trouble. Coming down from the state of euphoria is never pleasant.",
+   "italian": "Though designed for planetary population control, the peacekeeping staff also works exceptionally well for ship defense. The staff emits a short-ranged beam that incapacitates anyone it touches by causing them to enter a euphoric and hallucinogenic state, wandering off to somewhere where they won't cause any trouble. Coming down from the state of euphoria is never pleasant.",
+   "ratio": 1.0
+  }
+ ]
+}

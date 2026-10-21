@@ -1,0 +1,375 @@
+# Copyright (c) 2015 by Michael Zahniser
+# Copyright (c) 2021 by Amazinite
+# Copyright (c) 2024 by Hurleveur
+# Copyright (c) 2025 by Anarchist2
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+start "default"
+	name "Endless Sky"
+	description `Sei cresciuto su New Boston, un mondo senza niente di interessante nel Dirt Belt. Sogni di possedere un'astronave dal tuo primo giorno allo spazioporto. Dopo anni di lavoro in una tessitura, hai messo da parte abbastanza crediti per richiedere una licenza di pilota alla Repubblica. Ora devi accendere un mutuo sulla tua prima nave...`
+	description `	Questa è la classica esperienza di Endless Sky. Comincerai indebitato e dovrai usare la tua nuova astronave per estinguere il mutuo.`
+	thumbnail "scene/new boston"
+	date 16 11 3013
+	system "Rutilicus"
+	planet "New Boston"
+	conversation "default intro"
+	account
+		credits 480000
+		score 400
+		mortgage Mortgage
+			principal 480000
+			interest 0.004
+			term 365
+	set "license: Pilot's"
+	set "species: human"
+	set "human space start"
+	set "start: default"
+	set "start: vanilla"
+
+
+# Patch for if the player started a game before 0.10.17
+mission "Start: Default Patch"
+	invisible
+	landing
+	non-blocking
+	to offer
+		has "Intro [0]: offered"
+		not "start: default"
+	on offer
+		set "species: human"
+		set "human space start"
+		set "start: default"
+		fail
+
+# Patch for if the player started a game before 0.11.3
+mission "Start: Vanilla Patch"
+	invisible
+	landing
+	non-blocking
+	to offer
+		not "start: vanilla"
+		or
+			has "start: default"
+			has "start: deep"
+			has "start: paradise"
+			has "start: syndicate"
+			has "start: hai"
+	on offer
+		set "start: vanilla"
+		fail
+
+
+conversation "default intro"
+	action
+		log "Finalmente sono riuscito a mettere insieme abbastanza soldi per comprare una licenza di pilota. Gli interessi sul mutuo della mia astronave sono esorbitanti."
+		log "Factions" "Republic" `Centinaia di anni fa i territori indipendenti sparsi nello spazio umano accettarono di unirsi in un unico governo democratico, con la Terra come capitale. L'ascesa della Repubblica inaugurò un lungo periodo di pace e di prosperità nella storia umana.`
+			`La rappresentanza in Parlamento repubblicano si basa sulla popolazione. Questo significa che alcuni singoli "Mondi del Paradiso" hanno più rappresentanti di intere regioni come il Dirt Belt, dove la popolazione è più rada.`
+		log "Factions" "Syndicate" `Il Sindacato è una megacorporazione, il più grande datore di lavoro dello spazio umano. Chi non trova un lavoro stabile altrove accorre ai mondi-fabbrica del Sindacato, dove un impiego è quasi garantito. Sebbene il Sindacato faccia tecnicamente parte della Repubblica, i suoi mondi sono governati direttamente dalla corporazione.`
+			`Il Sindacato è una parte centrale dell'economia repubblicana, ma è anche noto per vendere prodotti scadenti e per danneggiare l'ambiente dei mondi che controlla. Il trattamento riservato ai lavoratori è discutibile, e la sua opposizione al sindacalismo è leggendaria. Alcune cittadine-fabbrica del Sindacato sono state persino accusate di violazioni dei diritti umani.`
+		log "Factions" "Pirates" `Nei sistemi stellari più poveri e remoti, dove la Marina pattuglia di rado, gli attacchi pirata alle navi mercantili sono frequenti. I pirati sono noti anche per attaccare grandi convogli di mercantili senza scorta in zone più popolate. La maggior parte delle flotte pirata viene da mondi senza legge ai margini dello spazio umano.`
+	scene "scene/lobby"
+	`L'architettura della banca è quella che avresti chiamato "futuristica" quando sognavi che il futuro fosse meno squallido del presente: piani su piani di curve, guglie e balconi, tutto in metallo lucente. Un portiere sta accanto a ciascuna delle pesanti porte di vetro. Indossi il tuo vestito migliore, ma accanto a loro ti senti sciatto.`
+	`	L'ufficio del mediatore di prestiti è altrettanto intimidatorio. Grandi monitor occupano le pareti, con quotazioni di borsa e altre informazioni che scorrono quasi troppo in fretta per essere lette. Ogni tanto intravedi nomi di luoghi che hai visto solo nei film: Aldebaran. Tarazed. Terra.`
+	`	La penna è pesante come il piombo, ma scorre quasi senza attrito mentre apponi le iniziali in fondo a pagina dopo pagina di sinistri documenti legali e firmi diverse decine di dichiarazioni, avvisi e accordi. Il banchiere, un uomo di mezza età stempiato in un abito che sospetti costare più dell'astronave che stai per comprare, sfoglia le pagine davanti a te in fretta, emettendo un secco "Firmi qui. Ora qui" mentre indica ogni pagina. Si muove rapido, meccanico.`
+	`	L'unico momento in cui si anima davvero è quando ti spiega il prospetto sulla verità del prestito. "Stai prendendo in prestito 480.000 crediti," dice, "da restituire nell'arco di un anno. Il tuo tasso d'interesse giornaliero è dello 0,4%, il che significa che i tuoi pagamenti giornalieri sono di 2.503 crediti, e alla fine dell'anno avrai pagato... 433.567 crediti di interessi. Firma qui." Sorride.`
+	`	Scrivi il tuo nome un'ultima volta:`
+	name
+	`	L'ascensore è così ben calibrato che non ti accorgi nemmeno che si muove, finché non ti ha riportato nella hall. Ma mentre esci dalla banca, stai sorridendo. Questa folle avventura ti sembra d'un tratto reale. Lo farai davvero. Finalmente lascerai questo pianeta.`
+	`	Rispetto alla banca, ti senti molto più a casa nel cantiere navale, camminando tra scafi arrugginiti e navi più nuove che brillano al sole. Senti odore di grasso, sporco e carburante per razzi; odori meravigliosi. Ci sono tre modelli di nave nel tuo budget. Quale sceglierai determinerà il tuo futuro...`
+
+
+
+start "deep"
+	name "Deep Desire"
+	description `Sei cresciuto su Midgard, un mondo della regione avanzata del Deep. La maggior parte delle persone intraprende studi superiori, ma tu hai sempre voluto essere capitano di un'astronave. Finiti gli studi primari, scopri che il Deep offre prestiti a basso interesse ai capitani che si dedicano alla prospezione e hanno voti abbastanza alti, e tu ce l'hai fatta! Ti dirigi verso la capitale, New Reykjavik...`
+	description `	Questo inizio offre un tasso d'interesse più basso e più crediti per potenziare la tua nave.`
+	thumbnail "scene/midgard"
+	date 16 11 3013
+	system "Aludra"
+	planet "Midgard"
+	conversation "deep intro"
+	account
+		credits 680000
+		score 400
+		mortgage Mortgage
+			principal 680000
+			interest 0.002
+			term 365
+	set "license: Pilot's"
+	set "species: human"
+	set "human space start"
+	set "start: deep"
+	set "start: vanilla"
+
+conversation "deep intro"
+	action
+		log "Ho fatto domanda per il programma di capitani del Deep, e sono stato accettato. Il programma comprendeva una licenza di pilota e un prestito a basso interesse."
+		log "Factions" "Republic" `Centinaia di anni fa i territori indipendenti sparsi nello spazio umano accettarono di unirsi in un unico governo democratico, con la Terra come capitale. L'ascesa della Repubblica inaugurò un lungo periodo di pace e di prosperità nella storia umana.`
+			`La rappresentanza in Parlamento repubblicano si basa sulla popolazione. Questo significa che alcuni singoli "Mondi del Paradiso" hanno più rappresentanti di intere regioni come il Dirt Belt, dove la popolazione è più rada.`
+		log "Factions" "Syndicate" `Il Sindacato è una megacorporazione, il più grande datore di lavoro dello spazio umano. Chi non trova un lavoro stabile altrove accorre ai mondi-fabbrica del Sindacato, dove un impiego è quasi garantito. Sebbene il Sindacato faccia tecnicamente parte della Repubblica, i suoi mondi sono governati direttamente dalla corporazione.`
+			`Il Sindacato è una parte centrale dell'economia repubblicana, ma è anche noto per vendere prodotti scadenti e per danneggiare l'ambiente dei mondi che controlla. Il trattamento riservato ai lavoratori è discutibile, e la sua opposizione al sindacalismo è leggendaria. Alcune cittadine-fabbrica del Sindacato sono state persino accusate di violazioni dei diritti umani.`
+		log "Factions" "Pirates" `Nei sistemi stellari più poveri e remoti, dove la Marina pattuglia di rado, gli attacchi pirata alle navi mercantili sono frequenti. I pirati sono noti anche per attaccare grandi convogli di mercantili senza scorta in zone più popolate. La maggior parte delle flotte pirata viene da mondi senza legge ai margini dello spazio umano.`
+	scene "scene/train"
+	`Il treno dalla tua città natale ondeggia avanti e indietro con un ritmo costante, portandoti sempre più vicino alla capitale. Qualche fila più avanti, una giovane coppia della tua età parla con entusiasmo del trasloco nel nuovo appartamento, mentre le loro gambe urtano i bagagli. Dietro di te, un uomo molto più anziano in una tuta da lavoro unta si congeda da un conoscente.`
+	`	Poco dopo arrivi a New Reykjavik, all'ufficio governativo che gestisce i prestiti per le astronavi. La reception è un brusio di attività: altri neolaureati dalla faccia fresca chiacchierano tra loro in attesa del proprio turno. La luce del sole cade dalle finestre a fessura del soffitto su una rappresentazione tridimensionale dell'emblema del Deep al centro della hall, un albero rosso i cui rami formano la sagoma di un cervello. Un cerchio di testo circonda la scultura, proclamando i valori fondamentali del Deep: Pace. Prosperità. Progresso.`
+	`	Alla fine chiamano il tuo numero, e dopo aver letto la tua domanda l'impiegato ti consegna due tessere. Una è il tuo Certificato di idoneità per un prestito a basso interesse presso una banca vicina. L'altra è la tua licenza di pilota, già pagata per intero. Il tuo biglietto per le stelle.`
+	`	Inserisci la tessera in uno sportello automatico della banca e, dopo un leggero ping, un grande documento riempie lo schermo. Una voce sintetica dice: "Stai prendendo in prestito 680.000 crediti, da restituire nell'arco di un anno. Il tuo tasso d'interesse giornaliero è dello 0,2%, il che significa che i tuoi pagamenti giornalieri sono di 2.627 crediti, e alla fine dell'anno avrai pagato 278.760 crediti di interessi. Scrivi il tuo nome sullo schermo quando sei pronto."`
+	`	Dopo aver riletto con cura ogni pagina del contratto di prestito, firmi il tuo nome:`
+	name
+	`	Esci di corsa dalla banca e salti sulla metro verso il cantiere navale. Mentre il resto della carrozza guarda fuori dai finestrini o i propri dispositivi con aria assente, tu riesci a malapena a restare serio, rigirando la licenza di pilota almeno cento volte prima della fine del viaggio. Pensi di buttare via l'abbonamento ai trasporti appena sceso, ma all'ultimo momento cambi idea. Non resterà molto altro a legarti a questo pianeta.`
+	`	Avevi studiato i filmati del cantiere di New Reykjavik nei tuoi anni più giovani, ma vedere il posto di persona supera ogni tua più sfrenata aspettativa. I venditori usano display olografici per mostrare varie navi a clienti vestiti con eleganza, mentre astronavi alte come grattacieli incombono silenziose nell'ombra del cantiere, in attesa che i mercanti più ricchi se ne impossessino. Anche se la maggior parte delle navi è ben fuori dalla tua portata, ne individui quattro modelli che potrai comprare. Quale sceglierai determinerà il tuo futuro...`
+
+
+
+start "paradise"
+	name "Birthday Surprise"
+	description `Sei cresciuto su Mainsail, un Mondo del Paradiso oceanico terraformato alla perfezione. Solo i più ricchi vivono su mondi simili; per fortuna tuo padre è un finanziere facoltoso. Ma hai sempre trovato noiosa la tua vita viziata, e ti interessa di più vivere tra le stelle. Mentre la festa per il tuo diciottesimo compleanno volge al termine, tuo padre ti prende da parte per parlare...`
+	description `	Questo inizio non prevede mutui, lasciandoti libero di esplorare la galassia al tuo ritmo.`
+	thumbnail "scene/mainsail"
+	date 16 11 3013
+	system "Alhena"
+	planet "Mainsail"
+	conversation "paradise intro"
+	account
+		credits 500000
+		score 600
+	set "license: Pilot's"
+	set "species: human"
+	set "human space start"
+	set "start: paradise"
+	set "start: vanilla"
+
+conversation "paradise intro"
+	action
+		log "Per il mio compleanno ho ricevuto una licenza di pilota e 500.000 crediti per comprare un'astronave. Ora la galassia è a portata di mano."
+		log "Factions" "Republic" `Centinaia di anni fa i territori indipendenti sparsi nello spazio umano accettarono di unirsi in un unico governo democratico, con la Terra come capitale. L'ascesa della Repubblica inaugurò un lungo periodo di pace e di prosperità nella storia umana.`
+			`La rappresentanza in Parlamento repubblicano si basa sulla popolazione. Questo significa che alcuni singoli "Mondi del Paradiso" hanno più rappresentanti di intere regioni come il Dirt Belt, dove la popolazione è più rada.`
+		log "Factions" "Syndicate" `Il Sindacato è una megacorporazione, il più grande datore di lavoro dello spazio umano. Chi non trova un lavoro stabile altrove accorre ai mondi-fabbrica del Sindacato, dove un impiego è quasi garantito. Sebbene il Sindacato faccia tecnicamente parte della Repubblica, i suoi mondi sono governati direttamente dalla corporazione.`
+			`Il Sindacato è una parte centrale dell'economia repubblicana, ma è anche noto per vendere prodotti scadenti e per danneggiare l'ambiente dei mondi che controlla. Il trattamento riservato ai lavoratori è discutibile, e la sua opposizione al sindacalismo è leggendaria. Alcune cittadine-fabbrica del Sindacato sono state persino accusate di violazioni dei diritti umani.`
+		log "Factions" "Pirates" `Nei sistemi stellari più poveri e remoti, dove la Marina pattuglia di rado, gli attacchi pirata alle navi mercantili sono frequenti. I pirati sono noti anche per attaccare grandi convogli di mercantili senza scorta in zone più popolate. La maggior parte delle flotte pirata viene da mondi senza legge ai margini dello spazio umano.`
+	scene "scene/reception"
+	`"So che vuoi essere capitano di un'astronave da molto tempo," dice tuo padre. "Così, come regalo di compleanno, che ne dici di andare a prenderti una licenza di pilota e una nave al cantiere?" Rispondi di sì senza pensarci due volte.`
+	`	Tuo padre ti porta all'edificio del Dipartimento Repubblicano per le Licenze di Astronave, allo spazioporto. Le file sono lunghe, ma tuo padre va dritto verso uno dei banchi. Prima che la persona in testa alla fila o quella dietro al banco possano protestare, lancia un gettone di credito a ciascuna di loro, entrambi di valore sostanzioso. "Vorrei una licenza di pilota per mio figlio."`
+	`	"Mi dispiace," comincia a dire la persona dietro al banco, "ma deve prima presentare domanda tramite la rete, poi aspettare da tre a cinque giorni lavorativi prima di-"`
+	`	Tuo padre lancia un altro gettone di credito alla persona dietro al banco, che ti porge uno stilo e una tavoletta. "Firmi qui, prego. La sua licenza di pilota sarà pronta tra un momento."`
+	`	Senza esitare e dopo aver saltato diverse pagine di testo legale, firmi il tuo nome:`
+	name
+	`	Entri nel cantiere navale, con la licenza di pilota appena ottenuta stretta in una mano e i 500.000 crediti di tuo padre nell'altra. Ci sono quasi una dozzina di modelli di nave in vendita, ma solo quattro che puoi permetterti. Quale sceglierai determinerà il tuo futuro...`
+
+
+
+start "syndicate"
+	name "Escaping Squalor"
+	description `Sei cresciuto sulla Terra, un mondo sovrappopolato con poche opportunità. Ma hai firmato un contratto per lavorare al servizio del Sindacato, e loro ti hanno dato un posto dove vivere, da mangiare a sufficienza e un salario decoroso lontano dalla Terra. Dopo te ne sei andato ad Antipode, un mondo di frontiera economico, ma hai scoperto che non era molto meglio della Terra. Esasperato, hai usato quel che ti restava per viaggiare fino a Delve, il pianeta più vicino con un cantiere navale...`
+	description `	È un inizio più difficile, con rate giornaliere più alte.`
+	thumbnail "scene/earth"
+	date 16 11 3013
+	system "Scheat"
+	planet "Delve"
+	conversation "syndicate intro"
+	account
+		credits 480000
+		score 200
+		mortgage Mortgage
+			principal 600000
+			interest 0.005
+			term 365
+	set "license: Pilot's"
+	set "species: human"
+	set "human space start"
+	set "start: syndicate"
+	set "start: vanilla"
+
+conversation "syndicate intro"
+	action
+		log "Ho comprato una licenza di pilota e una nave, ma ho dovuto accendere un mutuo schiacciante. Un'ultima stoccata del Sindacato, avida come sempre, prima della mia libertà."
+		log "Factions" "Republic" `Centinaia di anni fa i territori indipendenti sparsi nello spazio umano accettarono di unirsi in un unico governo democratico, con la Terra come capitale. L'ascesa della Repubblica inaugurò un lungo periodo di pace e di prosperità nella storia umana.`
+			`La rappresentanza in Parlamento repubblicano si basa sulla popolazione. Questo significa che alcuni singoli "Mondi del Paradiso" hanno più rappresentanti di intere regioni come il Dirt Belt, dove la popolazione è più rada.`
+		log "Factions" "Syndicate" `Il Sindacato è una megacorporazione, il più grande datore di lavoro dello spazio umano. Chi non trova un lavoro stabile altrove accorre ai mondi-fabbrica del Sindacato, dove un impiego è quasi garantito. Sebbene il Sindacato faccia tecnicamente parte della Repubblica, i suoi mondi sono governati direttamente dalla corporazione.`
+			`Il Sindacato è una parte centrale dell'economia repubblicana, ma è anche noto per vendere prodotti scadenti e per danneggiare l'ambiente dei mondi che controlla. Il trattamento riservato ai lavoratori è discutibile, e la sua opposizione al sindacalismo è leggendaria. Alcune cittadine-fabbrica del Sindacato sono state persino accusate di violazioni dei diritti umani.`
+		log "Factions" "Pirates" `Nei sistemi stellari più poveri e remoti, dove la Marina pattuglia di rado, gli attacchi pirata alle navi mercantili sono frequenti. I pirati sono noti anche per attaccare grandi convogli di mercantili senza scorta in zone più popolate. La maggior parte delle flotte pirata viene da mondi senza legge ai margini dello spazio umano.`
+	scene "scene/icy opening"
+	`Delve non assomiglia a nessun pianeta su cui sia mai stato: l'intero spazioporto è scavato in una colossale caverna montana, con un lato aperto all'aria. Le travi e gli edifici che formano il porto fanno sembrare misere le strutture di Antipode, eppure sono lontani dai paesaggi urbani opprimenti della Terra.`
+	`	Consegni gli ultimi crediti al capitano che ti ha portato qui. Prima di andarsene, ti dà qualche consiglio. "Un avvertimento: se non hai voglia di morire presto, dopo il decollo punta a nord. A sud di qui non c'è altro che sistemi disabitati e pirati. Non dureresti a lungo con una nave che puoi permetterti." La ringrazi per il passaggio e per il consiglio, poi vi separate.`
+	`	Prima passi dal cantiere per vedere che cosa hanno. Ti nota un venditore che sbuffa quando ti avvicini, forse per la trasandatezza dei tuoi vestiti rispetto a quelli intorno a te. Gli chiedi che cosa servirebbe per comprare una nave qui. Ti accenna alla necessità di una licenza di pilota prima di cominciare il suo sproloquio sui modelli più economici, ma lo interrompi e dici che ti bastava sapere quello.`
+	`	Per fortuna la banca al momento non è molto affollata. Uno dei cassieri ti misura da capo a piedi mentre entri. "Come possiamo aiutarla?" chiede con una gioia sfrenata. Dici che ti serve un prestito per comprare un'astronave; 600.000 crediti dovrebbero bastare per la licenza e per la nave. Dopo aver consegnato i dati del tuo conto Syndicated Systems e aver scansionato l'impronta digitale, il cassiere torna con un foglio di carta.`
+	`	"Per tua fortuna, i tassi adesso sono ottimi!" Dai un'occhiata al foglio: il tasso d'interesse giornaliero è dello 0,5%, il che significa rate giornaliere di 3.580 crediti per un anno intero. Se non restituisci in anticipo nessuna parte del prestito, avrai pagato 706.571 crediti di interessi, più dei 600.000 del prestito stesso. "Firmi qui." Il cassiere sorride.`
+	`	Gli interessi sono tremendi, ma non puoi farci niente. Firmi il tuo nome:`
+	name
+	`	Dopo aver lasciato la banca, passi un'ora in fila per richiedere una licenza di pilota. La procedura è stranamente semplice, e quando è finita ti restano 480.000 crediti. Non riesci a scuoterti di dosso la sensazione che il Sindacato ti stia di nuovo prendendo in giro.`
+	`	Torni al cantiere, questa volta con un gettone di credito in mano per attirare l'attenzione del venditore. "Eccoti di nuovo! Spero che possiamo trovarti il modello perfetto," dice. Il cantiere è pieno di navi che non puoi comprare, ma il venditore trova tre modelli nel tuo budget: un intercettore, un mercantile leggero e una nave da trasporto. Quale sceglierai determinerà il tuo futuro...`
+
+
+
+start "hai space"
+	name "Hai Origins"
+	description `Sei cresciuto su Greenwater, un mondo Hai dalla cultura ricca e mista grazie al suo clima. Sogni di possedere una flotta tutta tua da quando, bambino, ti hanno regalato astronavi giocattolo. Per raggiungere quell'obiettivo hai lavorato sodo in un'agenzia di viaggi, consigliando destinazioni nello spazio umano.`
+	description `	Ora, mentre il traghetto attracca allo spazioporto principale, senti che questo è l'inizio di una nuova vita come capitano.`
+	thumbnail "scene/greenwater"
+	system "Fah Soom"
+	planet "Greenwater"
+	date 16 11 3013
+	on display
+		description `Questo inizio è bloccato.`
+	to reveal
+		has "Ask the Hai about the Unfettered"
+	on reveal
+		name "Hai Origins"
+		description `Sei cresciuto su Greenwater, un mondo Hai dalla cultura ricca e mista grazie al suo clima. Sogni di possedere una flotta tutta tua da quando, bambino, ti hanno regalato astronavi giocattolo, e hai lavorato sodo in un'agenzia di viaggi per raggiungere quell'obiettivo.`
+		description `	Ora, mentre il traghetto attracca allo spazioporto principale, senti che questo è l'inizio di una nuova vita come capitano.`
+		description `	Per sbloccare questo inizio devi completare la campagna umana principale.`
+		system "Fah Soom"
+		planet "Greenwater"
+		date 16 11 3013
+		credits 1431000
+		debt 1431000
+	to unlock
+		has "Hai Start Unlocked"
+	conversation "hai intro"
+	account
+		credits 1431000
+		score 400
+		mortgage Mortgage
+			principal 1431000
+			interest 0.003
+			term 730
+	set "license: Pilot's"
+	set "species: human"
+	set "hai space start"
+	set "start: hai"
+	set "start: vanilla"
+	# need to set it here to not have it trigger alongside the invisible mission
+	set "First Contact: Hai: offered"
+	set "First Contact: Hai: declined"
+	set "First Contact: Unfettered: offered"
+	set "First Contact: Unfettered: declined"
+	set "Ask the Hai about the Unfettered: offered"
+	set "Ask the Hai about the Unfettered: declined"
+
+
+# Patch for if the player started a Hai space game before 0.10.17
+mission "Start: Hai Patch"
+	invisible
+	landing
+	non-blocking
+	to offer
+		has "hai space start"
+		not "start: hai"
+	on offer
+		set "species: human"
+		set "hai space start"
+		set "start: hai"
+		fail
+
+
+conversation "hai intro"
+	scene "scene/hai shipyard"
+	action
+		log "Finalmente ho messo insieme abbastanza soldi per un anticipo su un'astronave. Gli interessi sul mutuo sono esorbitanti."
+		log "Factions" "Republic" `Centinaia di anni fa i territori indipendenti sparsi nello spazio umano accettarono di unirsi in un unico governo democratico, con la Terra come capitale. L'ascesa della Repubblica inaugurò un lungo periodo di pace e di prosperità nella storia umana.`
+			`La rappresentanza in Parlamento repubblicano si basa sulla popolazione. Questo significa che alcuni singoli "Mondi del Paradiso" hanno più rappresentanti di intere regioni come il Dirt Belt, dove la popolazione è più rada.`
+		log "Factions" "Syndicate" `Il Sindacato è una megacorporazione, il più grande datore di lavoro dello spazio umano. Chi non trova un lavoro stabile altrove accorre ai mondi-fabbrica del Sindacato, dove un impiego è quasi garantito. Sebbene il Sindacato faccia tecnicamente parte della Repubblica, i suoi mondi sono governati direttamente dalla corporazione.`
+			`Il Sindacato è una parte centrale dell'economia repubblicana, ma è anche noto per vendere prodotti scadenti e per danneggiare l'ambiente dei mondi che controlla. Il trattamento riservato ai lavoratori è discutibile, e la sua opposizione al sindacalismo è leggendaria. Alcune cittadine-fabbrica del Sindacato sono state persino accusate di violazioni dei diritti umani.`
+		log "Factions" "Pirates" `Nei sistemi stellari più poveri e remoti, dove la Marina pattuglia di rado, gli attacchi pirata alle navi mercantili sono frequenti. I pirati sono noti anche per attaccare grandi convogli di mercantili senza scorta in zone più popolate. La maggior parte delle flotte pirata viene da mondi senza legge ai margini dello spazio umano.`
+		log "Factions" "Hai" `Gli Hai sono una specie di roditori giganti e intelligenti, che vivono a nord dello spazio umano. Permettono a qualunque umano scopra il loro territorio di vivere accanto a loro, di commerciare con loro e di acquistare la loro tecnologia.`
+		log "Factions" "Unfettered Hai" `Gli "Unfettered" sono una fazione interna alla specie Hai, meno pacifica del resto e di norma non amichevole verso gli umani. Sostengono che molto tempo fa i Drak alterarono gli Hai per renderli docili e pacifici, e che gli Unfettered discendono da quegli Hai che evitarono quell'alterazione. Cercano motori di salto per fuggire dalla "prigione" in cui sono ora bloccati: alcuni mondi in degrado sul confine più settentrionale dello spazio Hai.`
+		log "Factions" "Sheragi" `Una specie estinta da tempo, simile a un drago, chiamata "Sheragi" viveva nello spazio umano, quando gran parte di quello che oggi è territorio umano era occupato dagli Hai.`
+	
+	`Andare al Polo Nord ti fa già sentire come su un altro mondo; anche solo all'interno della banchina del tuo traghetto vedi più Hai di quanti ce ne siano nella tua città natale. Dopo qualche annuncio dall'impianto audio, tu e gli altri passeggeri sbarcate, e il flusso di umanità si infrange contro la folla di Hai.`
+	`	Mentre ti dirigi verso il cantiere navale, apri la versione in lingua umana del tuo contratto di prestito per rileggerlo: hai preso in prestito 1,431 milioni di crediti, da restituire nell'arco di due anni. Il tuo tasso d'interesse è dello 0,3%, il che rende le tue rate 4.836 crediti al giorno.`
+	`	Alzi lo sguardo dal tablet appena prima di andare a sbattere contro un Hai dal pelo grigio in tuta da volo, facendolo cadere. Mentre ti chini per aiutarlo, lui dà un'occhiata ai documenti del tuo mutuo. "Stai per diventare capitano, vero?" dice dopo essersi spolverato.`
+	
+	choice
+		`	"Sì, è così."`
+		`	"Come hai fatto a capirlo?"`
+			goto tell
+		`	"Chi ha detto che potevi guardare?"`
+			goto look
+	
+	`	"Allora forse posso aiutarti. Seguimi."`
+		goto help
+	
+	label tell
+	`	"Dal tuo prestito," risponde. "C'è una sola ragione per avere esattamente quel numero di crediti. A proposito, credo di poterti aiutare."`
+		goto help
+	
+	label look
+	`	Si gratta la nuca. "Scusa. Volevo solo aiutare, ma se ti sto creando troppo disturbo, mi tolgo di mezzo.`
+	choice
+		`	"Non mi dispiace."`
+			goto happy
+		`	"Preferisco cavarmela da solo."`
+			goto leave
+	label happy
+	`	Si inchina. "Grazie."`
+	
+	label help
+	`	L'Hai ti porta alle piazzole di Greenwater, dove una gran folla di umani e Hai si è radunata attorno a diverse navi. Dalla folla un altro Hai si avvicina al tuo compagno e gli parla in Hai. L'Hai dal pelo grigio si limita a fare un cenno e consegna all'altro un mazzo di chiavi in cambio di un gettone di credito. L'altro Hai si inchina in fretta e corre verso una delle navi atterrate.`
+	`	"Sto vendendo la mia flotta prima di andare in pensione," dice l'Hai. "Certo, potrei semplicemente andare al cantiere navale, ma non avrei mai potuto cominciare se un altro capitano in pensione non mi avesse venduto una nave a poco prezzo quando ero giovane. Così ho deciso di restituire il favore e aiutare altri futuri capitani."`
+	`	L'Hai si avvicina a una delle navi più piccole della flotta, un intercettore Grasshopper. "Questa è la Pristine Jewel. Mi ha servito bene nell'ultimo secolo, ma sono certo che sarà al sicuro nelle tue mani."`
+	choice
+		`	"Me la stai regalando?"`
+		`	"C'è un mercantile che potrei prendere al suo posto?"`
+			goto freighter
+		`	"E le altre persone qui? Non dovrebbero avere la precedenza?"`
+			goto pick
+	
+	`	L'Hai ridacchia. "Sarebbe bello, vero? Purtroppo la pensione non è economica. Sarei però felice di separarmene per 1,132 milioni di crediti; meno di un Aphid, figuriamoci di un Grasshopper nuovo.`
+		goto deal
+	
+	label freighter
+	`	"Purtroppo tutti i miei Aphid sono stati comprati stamattina. Comunque sono certo che sopravviverai; gli Unfettered saranno un osso duro, ma i pirati nello spazio umano non saranno un gran problema. E se proprio non ce la fai, puoi sempre venderla. Ti costerà solo 1,132 milioni di crediti, e potrai usare i pezzi vecchi della Pristine Jewel per comprare un Aphid con uno sconto.`
+		goto deal
+	
+	label pick
+	`	L'Hai scuote la testa. "Non preoccuparti. La maggior parte della folla sono solo spettatori. Di solito è un capitano umano a fare un colpo di testa come vendere pubblicamente la propria flotta; la maggior parte degli Hai in pensione dona la flotta al governo. E non sto esattamente regalando queste navi. Se la vuoi, la Pristine Jewel costa 1,132 milioni di crediti.`
+	
+	label deal
+	`	"Allora, affare fatto?"`
+	choice
+		`	"Affare fatto!"`
+		`	"Credo che mi converrebbe comprare dal cantiere navale."`
+			goto leave
+	
+	`	"Ottimo!" Tende un tablet. "Firma qui e sarà tua."`
+	name
+	action
+		set "hai space start: Grasshopper"
+		give ship "Grasshopper (Hai Start)" "Pristine Jewel"
+		payment -1132000
+	`	L'Hai ti dà le chiavi del Grasshopper dopo che gli hai consegnato il tablet e il pagamento. "Sembra che questo sia il tuo primo passo per diventare un imprenditore interstellare. Direi che ci rivedremo un giorno, ma preferisco non mentire. In tutti questi anni non ho mai più incontrato il capitano che mi ha venduto la prima nave. Non che importi: questa è la tua storia, non la mia."`
+	`	Ti fa un ultimo saluto e torna tra la folla a vendere un'altra nave.`
+		decline
+	
+	label leave
+	`	Fa un cenno col capo mentre ti avvii verso il cantiere navale.`
+	`	All'ingresso c'è un chiosco di sicurezza automatico. Compili in fretta il modulo sullo schermo, poi prendi lo stilo e firmi il tuo nome:`
+	name
+	`	Attraversi porte scorrevoli di vetro ed entri nel cantiere di Greenwater. Nella maggior parte delle banchine gli operai sono impegnati a rimettere a nuovo vecchie navi per la rivendita, ma in alcune baie più lontane vedi il lampo delle torce di saldatura su scheletri di navi nuove di zecca. Navi di ogni dimensione sono allineate nel cantiere, ma per te c'è una sola opzione...`
+
+
+
+# This ship uses the most expensive loadout possible so its sell price is roughly equal to the buy price.
+ship "Grasshopper" "Grasshopper (Hai Start)"
+	outfits
+		`"Benga" Atomic Thruster`
+		`"Biroo" Atomic Steering`
+		"Fuel Pod"
+		"Hai Chasm Batteries"
+		"Hai Corundum Regenerator"
+		"Hai Williwaw Cooling"
+		Hyperdrive
+		"Ion Cannon"
+		"Pebble Core"
+		"Pulse Rifle"
+		"Quantum Keystone" 2

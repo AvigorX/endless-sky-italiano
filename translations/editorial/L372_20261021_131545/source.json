@@ -1,0 +1,115 @@
+{
+ "block": {
+  "path": "data/avgi/windjammers.txt",
+  "line_from": 121,
+  "line_to": 497,
+  "units": 8
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Pinecone Launcher|description|121|0",
+   "path": "data/avgi/windjammers.txt",
+   "line": 121,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pinecone Launcher",
+   "english": "When there is no one left to speak for the trees, these cannons will do all the talking.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"When there is no one left to speak for the trees, these cannons will do all the talking.\"",
+   "english_hash": "a712dc337e48feb2"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Pollen|plural|125|0",
+   "path": "data/avgi/windjammers.txt",
+   "line": 125,
+   "kind": "VALUE",
+   "context": "outfit:Pollen",
+   "english": "Pollen",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tplural \"Pollen\"",
+   "english_hash": "076d13b3d76331f2"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Pollen|description|134|0",
+   "path": "data/avgi/windjammers.txt",
+   "line": 134,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pollen",
+   "english": "This granule of exotic Windjammer pollen is not only replete with nutritious proteins, but also appears to contain valuable platinum group elements bound in organic molecules. This includes a collection of complex enzymes, which appear to be capable of catalyzing many difficult reactions with ease.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This granule of exotic Windjammer pollen is not only replete with nutritious proteins, but also appears to contain valuable platinum group elements bound in organic molecules. This includes a collection of complex enzymes, which appear to be capable of catalyzing many difficult reactions with ease.\"",
+   "english_hash": "52567531297b13de"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Pollen|description|135|0",
+   "path": "data/avgi/windjammers.txt",
+   "line": 135,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Pollen",
+   "english": "\tAchoo!",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tAchoo!\"",
+   "english_hash": "1c7645bbb2ca81a2"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Jamfruit|description|147|0",
+   "path": "data/avgi/windjammers.txt",
+   "line": 147,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Jamfruit",
+   "english": "Closer to a berry than a fruit, this tart prize of a Windjammer tree is not only delicious, but is rich in nutrients. It can be refined to extract a variety of useful medicinal compounds, giving it value both as a delicacy and as a remedy.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Closer to a berry than a fruit, this tart prize of a Windjammer tree is not only delicious, but is rich in nutrients. It can be refined to extract a variety of useful medicinal compounds, giving it value both as a delicacy and as a remedy.\"",
+   "english_hash": "94ad5cf207f89d07"
+  },
+  {
+   "idx": 6,
+   "id": "ship:Bluejacket|display name|309|0",
+   "path": "data/avgi/windjammers.txt",
+   "line": 309,
+   "kind": "VALUE",
+   "context": "ship:Bluejacket",
+   "english": "Windjammer",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\t\"display name\" \"Windjammer\"",
+   "english_hash": "0535d13520e88e9b"
+  },
+  {
+   "idx": 7,
+   "id": "ship:Pollen|description|461|0",
+   "path": "data/avgi/windjammers.txt",
+   "line": 461,
+   "kind": "DESCRIPTION",
+   "context": "ship:Pollen",
+   "english": "This allergenic menace is dreaded by captains across the galaxy. Only the most powerful civilizations could hope to contend with even a single granule.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This allergenic menace is dreaded by captains across the galaxy. Only the most powerful civilizations could hope to contend with even a single granule.\"",
+   "english_hash": "e37cf4a86896afa7"
+  },
+  {
+   "idx": 8,
+   "id": "ship:Sprout|description|497|0",
+   "path": "data/avgi/windjammers.txt",
+   "line": 497,
+   "kind": "DESCRIPTION",
+   "context": "ship:Sprout",
+   "english": "Marginally tamer than a free floating pollen granule, this sprouting terror is still not to be underestimated.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Marginally tamer than a free floating pollen granule, this sprouting terror is still not to be underestimated.\"",
+   "english_hash": "e0ef4bbfaebeb707"
+  }
+ ]
+}

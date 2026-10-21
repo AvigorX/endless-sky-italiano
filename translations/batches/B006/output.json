@@ -1,0 +1,53 @@
+{
+ "batch": "B006",
+ "results": [
+  {
+   "id": "tip:cloaking fuel:|Fuel consumed per second when cloaked.|139|0",
+   "it": "Carburante consumato al secondo mentre la nave è occultata."
+  },
+  {
+   "id": "tip:cloaking heat:|Heat generated per second when cloaked.|142|0",
+   "it": "Calore generato al secondo mentre la nave è occultata."
+  },
+  {
+   "id": "tip:cloaking shields:|Shields consumed per second while cloaked.|145|0",
+   "it": "Scudi consumati al secondo mentre la nave è occultata."
+  },
+  {
+   "id": "tip:cloaking shield delay:|This ship is unable to regenerate shields whilst cloaked, instead its shield regeneration will suffer a delay that will grow the longer it is cloaked|148|0",
+   "it": "Questa nave non può rigenerare gli scudi mentre è occultata: la rigenerazione subisce un ritardo che cresce quanto più a lungo resta occultata"
+  },
+  {
+   "id": "tip:cloaking hull:|Hull consumed per second while cloaked.|151|0",
+   "it": "Scafo consumato al secondo mentre la nave è occultata."
+  },
+  {
+   "id": "tip:cloaking repair delay:|This ship is unable to regenerate hull whilst cloaked, instead its hull regeneration will suffer a delay that will grow the longer it is cloaked.|154|0",
+   "it": "Questa nave non può rigenerare lo scafo mentre è occultata: la rigenerazione subisce un ritardo che cresce quanto più a lungo resta occultata."
+  },
+  {
+   "id": "tip:cloak hull protection:|Protection provided against weapons that do hull damage when the cloak is active. Increases by the given factor how much hull damage a ship can withstand before it loses as much energy as an unprotected ship.|157|0",
+   "it": "Protezione contro le armi che danneggiano lo scafo quando l'occultamento è attivo. Aumenta del fattore indicato la quantità di danni allo scafo che la nave sopporta prima di perdere tutta l'energia che perderebbe una nave non protetta."
+  },
+  {
+   "id": "tip:cloak shield protection:|Protection provided against weapons that do shield damage when the cloak is active. Increases by the given factor how much shield damage a ship can withstand before it loses as much energy as an unprotected ship.|160|0",
+   "it": "Protezione contro le armi che danneggiano gli scudi quando l'occultamento è attivo. Aumenta del fattore indicato la quantità di danni agli scudi che la nave sopporta prima di perdere tutta l'energia che perderebbe una nave non protetta."
+  },
+  {
+   "id": "tip:cloak phasing:|When cloaked, weapons cannot affect this ship, and pass right through.|163|0",
+   "it": "Mentre è occultata, le armi non possono colpire questa nave e la attraversano."
+  },
+  {
+   "id": "tip:cloaked firing:|This device is so efficient at hiding you that you may shoot when cloaking, losing this amount of cloaking in the process, before being cloaked again. A negative value means shooting does not even hinder your cloak.|166|0",
+   "it": "Questo dispositivo è così efficiente nel nasconderti che puoi sparare mentre ti occulti, perdendo questa quantità di occultamento prima di tornare occultato. Un valore negativo significa che sparare non ostacola affatto l'occultamento."
+  },
+  {
+   "id": "tip:cloak hull threshold:|If you have hull lower than this value (seen as a % between 0 and 1) the cloaking device can no longer operate.|169|0",
+   "it": "Se lo scafo scende sotto questo valore (espresso come percentuale tra 0 e 1) il dispositivo di occultamento non può più funzionare."
+  },
+  {
+   "id": "tip:cooling:|Heat dissipated per second. This is for when your ship's built-in heat dissipation is not sufficient to keep it from overheating.|172|0",
+   "it": "Calore dissipato al secondo. Serve quando la dissipazione termica integrata della nave non basta a evitare il surriscaldamento."
+  }
+ ]
+}

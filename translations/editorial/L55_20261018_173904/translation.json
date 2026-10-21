@@ -1,0 +1,319 @@
+{
+ "block": {
+  "path": "data/gegno/gegno intro missions.txt",
+  "line_from": 677,
+  "line_to": 954,
+  "units": 28
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Gegno Exploration Nudge|name|706|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 706,
+   "kind": "VALUE",
+   "context": "mission:Gegno Exploration Nudge",
+   "english": "Find ways to interact with the Gegno",
+   "italian": "Trova modi per interagire con i Gegno",
+   "ratio": 1.028
+  },
+  {
+   "idx": 2,
+   "id": "mission:Gegno Exploration Nudge|description|707|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 707,
+   "kind": "DESCRIPTION",
+   "context": "mission:Gegno Exploration Nudge",
+   "english": "Although the Gegno seem disinterested in you as a whole, there might be other chances to encounter them in their space to learn more about them.",
+   "italian": "Per quanto i Gegno sembrino disinteressati a te nel complesso, potrebbero esserci altre occasioni di incontrarli nel loro spazio per saperne di più.",
+   "ratio": 1.028
+  },
+  {
+   "idx": 3,
+   "id": "mission:Gegno Exploration Nudge|As you leave the planet's atmosphere, the Scin ship breaks formation with you and goes their separate way. While the Gegno may not be interested in associating with you overall, it seemed like the few Scin you met were interested in some capacity. There may be other opportunities to encounter the Gegno elsewhere in their space and learn more about them.|720|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 720,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Exploration Nudge",
+   "english": "As you leave the planet's atmosphere, the Scin ship breaks formation with you and goes their separate way. While the Gegno may not be interested in associating with you overall, it seemed like the few Scin you met were interested in some capacity. There may be other opportunities to encounter the Gegno elsewhere in their space and learn more about them.",
+   "italian": "Mentre lasci l'atmosfera del pianeta, la nave Scin esce dalla formazione e va per la sua strada. Per quanto i Gegno possano non essere interessati in generale ad avere a che fare con te, i pochi Scin che hai incontrato sembravano interessati in qualche misura. Potrebbero esserci altre occasioni di incontrare i Gegno altrove nel loro spazio e di saperne di più.",
+   "ratio": 1.02
+  },
+  {
+   "idx": 4,
+   "id": "mission:Gegno Exploration Nudge|\tStill, it might be best to listen to what the Quarg said and exercise caution going forward.|721|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 721,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Exploration Nudge",
+   "english": "\tStill, it might be best to listen to what the Quarg said and exercise caution going forward.",
+   "italian": "\tTuttavia forse è meglio ascoltare quello che hanno detto i Quarg e procedere con prudenza.",
+   "ratio": 0.978
+  },
+  {
+   "idx": 5,
+   "id": "mission:Gegno Exploration Nudge|The Scin ships following you off the planet show little hesitation before firing their weapons at you, likely feeling provoked by your choice of actions with them during the encounter. Still, they must have some sort of interest in you if they led you to them, meaning that there could be other possibilities to get involved with the Gegno at other locations in their space.|725|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 725,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Exploration Nudge",
+   "english": "The Scin ships following you off the planet show little hesitation before firing their weapons at you, likely feeling provoked by your choice of actions with them during the encounter. Still, they must have some sort of interest in you if they led you to them, meaning that there could be other possibilities to get involved with the Gegno at other locations in their space.",
+   "italian": "Le navi Scin che ti seguono fuori dal pianeta esitano poco prima di aprire il fuoco su di te, probabilmente provocate dalle tue scelte durante l'incontro. Eppure, se ti hanno condotto da loro un qualche interesse devono averlo, il che significa che potrebbero esserci altre possibilità di avere a che fare con i Gegno in altre zone del loro spazio.",
+   "ratio": 0.93
+  },
+  {
+   "idx": 6,
+   "id": "mission:Gegno Exploration Nudge|\tStill, the Gegno already have qualms with outsiders. It might be a good idea to listen to what the Quarg said about exercising caution, especially if it leads to hostile encounters.|726|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 726,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Exploration Nudge",
+   "english": "\tStill, the Gegno already have qualms with outsiders. It might be a good idea to listen to what the Quarg said about exercising caution, especially if it leads to hostile encounters.",
+   "italian": "\tTuttavia i Gegno hanno già riserve verso gli estranei. Forse è una buona idea ascoltare quello che i Quarg hanno detto sulla prudenza, soprattutto se porta a incontri ostili.",
+   "ratio": 0.962
+  },
+  {
+   "idx": 7,
+   "id": "mission:Gegno Genocide Defense|As soon as you land your ship, you suddenly receive an incoming hail. \"It was incredibly unwise to engage in the unnecessary destruction of noncombatants belonging to a species not of your own.\" You recognize the voice belonging to that of a Quarg, though it sounds quite displeased. \"A species that is still learning from themselves is vulnerable to outside influence, and your aggressive actions against civilians of the Gegno have resulted in needless events.\"|792|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 792,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "As soon as you land your ship, you suddenly receive an incoming hail. \"It was incredibly unwise to engage in the unnecessary destruction of noncombatants belonging to a species not of your own.\" You recognize the voice belonging to that of a Quarg, though it sounds quite displeased. \"A species that is still learning from themselves is vulnerable to outside influence, and your aggressive actions against civilians of the Gegno have resulted in needless events.\"",
+   "italian": "Appena posi la nave ricevi all'improvviso una chiamata in arrivo. \"È stato incredibilmente imprudente darsi alla distruzione superflua di non combattenti appartenenti a una specie che non è la tua.\" Riconosci la voce di un Quarg, anche se suona piuttosto scontenta. \"Una specie che sta ancora imparando da sé è vulnerabile alle influenze esterne, e le tue azioni aggressive contro i civili dei Gegno hanno causato eventi inutili.\"",
+   "ratio": 0.929
+  },
+  {
+   "idx": 8,
+   "id": "mission:Gegno Genocide Defense|\t\"It was an accident!\"|794|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 794,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "\t\"It was an accident!\"",
+   "italian": "\t\"È stato un incidente!\"",
+   "ratio": 1.091
+  },
+  {
+   "idx": 9,
+   "id": "mission:Gegno Genocide Defense|\t\"What are you talking about?\"|795|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 795,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "\t\"What are you talking about?\"",
+   "italian": "\t\"Di che cosa stai parlando?\"",
+   "ratio": 0.967
+  },
+  {
+   "idx": 10,
+   "id": "mission:Gegno Genocide Defense|\t\"I do not care.\"|797|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 797,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "\t\"I do not care.\"",
+   "italian": "\t\"Non mi importa.\"",
+   "ratio": 1.059
+  },
+  {
+   "idx": 11,
+   "id": "mission:Gegno Genocide Defense|\t\"It is greatly unlikely for violence upon unarmed victims to be accidental. Regardless of the cause, the effect has already occurred. The Gegno have banded together under one flag in an effort to deter any more outside interference. You are no longer welcome in their space, and you are advised not to visit again, lest the Gegno show you the same belligerent behavior you have exhibited to their citizens.\"|799|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 799,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "\t\"It is greatly unlikely for violence upon unarmed victims to be accidental. Regardless of the cause, the effect has already occurred. The Gegno have banded together under one flag in an effort to deter any more outside interference. You are no longer welcome in their space, and you are advised not to visit again, lest the Gegno show you the same belligerent behavior you have exhibited to their citizens.\"",
+   "italian": "\t\"È molto improbabile che la violenza su vittime inermi sia accidentale. Qualunque sia la causa, l'effetto si è già prodotto. I Gegno si sono uniti sotto un'unica bandiera nel tentativo di scoraggiare altre interferenze esterne. Non sei più gradito nel loro spazio, e ti si consiglia di non tornare, affinché i Gegno non ti mostrino lo stesso comportamento belligerante che hai riservato ai loro cittadini.\"",
+   "ratio": 0.998
+  },
+  {
+   "idx": 12,
+   "id": "mission:Gegno Genocide Defense|label|801|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 801,
+   "kind": "UI_LABEL",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "what",
+   "italian": "what",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "mission:Gegno Genocide Defense|\t\"Your behavior has caused the Gegno to unite their fleets and deter any more presence from outsiders. It is a great shame. The time they would use to resolve their inner conflicts is now wasted upon hostility towards strangers due to your negligence. You are no longer welcome in Gegno space, and if you dare visit again, the Gegno will demonstrate the same treatment you gave their citizens.\"|802|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 802,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "\t\"Your behavior has caused the Gegno to unite their fleets and deter any more presence from outsiders. It is a great shame. The time they would use to resolve their inner conflicts is now wasted upon hostility towards strangers due to your negligence. You are no longer welcome in Gegno space, and if you dare visit again, the Gegno will demonstrate the same treatment you gave their citizens.\"",
+   "italian": "\t\"Il tuo comportamento ha spinto i Gegno a unire le loro flotte e a scoraggiare ogni altra presenza di estranei. È una grande vergogna. Il tempo che avrebbero usato per risolvere i loro conflitti interni è ora sprecato in ostilità verso gli stranieri per la tua negligenza. Non sei più gradito nello spazio Gegno, e se oserai tornare, i Gegno ti riserveranno lo stesso trattamento che hai riservato ai loro cittadini.\"",
+   "ratio": 1.061
+  },
+  {
+   "idx": 14,
+   "id": "mission:Gegno Genocide Defense|label|804|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 804,
+   "kind": "UI_LABEL",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "care",
+   "italian": "care",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "mission:Gegno Genocide Defense|\tThe Quarg makes an unpleasant sound - one you have not heard from any Quarg before. \"Should you be seen in Gegno space once more, expect the same sentiment.\"|805|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 805,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "\tThe Quarg makes an unpleasant sound - one you have not heard from any Quarg before. \"Should you be seen in Gegno space once more, expect the same sentiment.\"",
+   "italian": "\tIl Quarg emette un suono sgradevole, uno che non hai mai sentito da nessun Quarg. \"Se ti si vedrà ancora una volta nello spazio Gegno, aspettati lo stesso sentimento.\"",
+   "ratio": 1.063
+  },
+  {
+   "idx": 16,
+   "id": "mission:Gegno Genocide Defense|label|808|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 808,
+   "kind": "UI_LABEL",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "corroboration provocation",
+   "italian": "corroboration provocation",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "mission:Gegno Genocide Defense|As soon as you land your ship, you suddenly receive an incoming hail. \"It was incredibly unwise to fire upon guardians of the Gegno homeworld.\" The voice belongs to that of a Quarg, though it sounds quite displeased. \"They simply were present to quell unease of your foreign involvement, yet you chose hostility above their most sacred of planets. You shall find yourself no longer welcome in Gegno space, as well as at the end of our patience.\"|811|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 811,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "As soon as you land your ship, you suddenly receive an incoming hail. \"It was incredibly unwise to fire upon guardians of the Gegno homeworld.\" The voice belongs to that of a Quarg, though it sounds quite displeased. \"They simply were present to quell unease of your foreign involvement, yet you chose hostility above their most sacred of planets. You shall find yourself no longer welcome in Gegno space, as well as at the end of our patience.\"",
+   "italian": "Appena posi la nave ricevi all'improvviso una chiamata in arrivo. \"È stato incredibilmente imprudente aprire il fuoco sui guardiani del mondo natale dei Gegno.\" La voce è quella di un Quarg, anche se suona piuttosto scontenta. \"Erano lì semplicemente per sedare il malcontento per il tuo coinvolgimento straniero, eppure hai scelto l'ostilità sopra il loro pianeta più sacro. Ti ritroverai non più gradito nello spazio Gegno, e al limite della nostra pazienza.\"",
+   "ratio": 1.036
+  },
+  {
+   "idx": 18,
+   "id": "mission:Gegno Genocide Defense|\t\"I was worried they would attack me with their fleets!\"|813|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 813,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "\t\"I was worried they would attack me with their fleets!\"",
+   "italian": "\t\"Temevo che mi attaccassero con le loro flotte!\"",
+   "ratio": 0.875
+  },
+  {
+   "idx": 19,
+   "id": "mission:Gegno Genocide Defense|\t\"I do not care.\"|814|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 814,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "\t\"I do not care.\"",
+   "italian": "\t\"Non mi importa.\"",
+   "ratio": 1.059
+  },
+  {
+   "idx": 20,
+   "id": "mission:Gegno Genocide Defense|\t\"Your concerns matter not when weighed against those of an entire species. As a result of such behavior, the Gegno have banded together to unite their fleets and deter any more presence from outsiders. It is a great shame. The time they would use to resolve their inner conflicts is now wasted upon hostility towards strangers due to your negligence. Leave Gegno space, for you no longer have reason to be here.\"|816|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 816,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "\t\"Your concerns matter not when weighed against those of an entire species. As a result of such behavior, the Gegno have banded together to unite their fleets and deter any more presence from outsiders. It is a great shame. The time they would use to resolve their inner conflicts is now wasted upon hostility towards strangers due to your negligence. Leave Gegno space, for you no longer have reason to be here.\"",
+   "italian": "\t\"Le tue preoccupazioni non contano se pesate contro quelle di un'intera specie. In conseguenza di tale comportamento i Gegno si sono uniti, mettendo insieme le loro flotte e scoraggiando ogni altra presenza di estranei. È una grande vergogna. Il tempo che avrebbero usato per risolvere i loro conflitti interni è ora sprecato in ostilità verso gli stranieri per la tua negligenza. Lascia lo spazio Gegno, perché non hai più motivo di restare.\"",
+   "ratio": 1.075
+  },
+  {
+   "idx": 21,
+   "id": "mission:Gegno Genocide Defense|label|819|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 819,
+   "kind": "UI_LABEL",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "corroboration provocation homeworld",
+   "italian": "corroboration provocation homeworld",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "mission:Gegno Genocide Defense|Following your assault on the Gegno fleet, you still attempt to land on the Gegno homeworld, but a large number of hostile ships are already guarding the planet's surface. Suddenly, you receive an incoming hail, though not from the Gegno.|820|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 820,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "Following your assault on the Gegno fleet, you still attempt to land on the Gegno homeworld, but a large number of hostile ships are already guarding the planet's surface. Suddenly, you receive an incoming hail, though not from the Gegno.",
+   "italian": "Dopo il tuo assalto alla flotta dei Gegno provi comunque ad atterrare sul loro mondo natale, ma un gran numero di navi ostili sta già sorvegliando la superficie del pianeta. All'improvviso ricevi una chiamata in arrivo, ma non dai Gegno.",
+   "ratio": 0.996
+  },
+  {
+   "idx": 23,
+   "id": "mission:Gegno Genocide Defense|\t\"It was incredibly unwise to fire upon guardians of the Gegno homeworld.\" The frigid voice belongs to that of a Quarg, though it sounds quite displeased. \"They simply are present to quell unease of your foreign involvement, yet you chose hostility with them above the most sacred of planets.\" A Quarg ship then appears from the horizon, quickly flying over to your ship as you receive another hail. \"You shall find yourself no longer welcome in Gegno space, as well as at the end of our patience.\"|821|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 821,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "\t\"It was incredibly unwise to fire upon guardians of the Gegno homeworld.\" The frigid voice belongs to that of a Quarg, though it sounds quite displeased. \"They simply are present to quell unease of your foreign involvement, yet you chose hostility with them above the most sacred of planets.\" A Quarg ship then appears from the horizon, quickly flying over to your ship as you receive another hail. \"You shall find yourself no longer welcome in Gegno space, as well as at the end of our patience.\"",
+   "italian": "\t\"È stato incredibilmente imprudente aprire il fuoco sui guardiani del mondo natale dei Gegno.\" La voce gelida è quella di un Quarg, anche se suona piuttosto scontenta. \"Erano lì semplicemente per sedare il malcontento per il tuo coinvolgimento straniero, eppure hai scelto l'ostilità con loro davanti al pianeta più sacro.\" Una nave Quarg compare allora dall'orizzonte e vola rapidamente verso la tua mentre ricevi un'altra chiamata. \"Ti ritroverai non più gradito nello spazio Gegno, e al limite della nostra pazienza.\"",
+   "ratio": 1.046
+  },
+  {
+   "idx": 24,
+   "id": "mission:Gegno Genocide Defense|\tWithout giving pause, the Quarg ship escorts you back into the atmosphere, and the Gegno ships hesitantly pull back for the time being. As you leave the planet, they hail you one last time. \"Your actions will have certainly caused instability with the Gegno. Your best course of action is to leave this space at once. We shall be watching.\" After that, the ship disappears.|822|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 822,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Genocide Defense",
+   "english": "\tWithout giving pause, the Quarg ship escorts you back into the atmosphere, and the Gegno ships hesitantly pull back for the time being. As you leave the planet, they hail you one last time. \"Your actions will have certainly caused instability with the Gegno. Your best course of action is to leave this space at once. We shall be watching.\" After that, the ship disappears.",
+   "italian": "\tSenza concedere pause, la nave Quarg ti scorta di nuovo nell'atmosfera e le navi Gegno si ritirano esitanti per il momento. Mentre lasci il pianeta ti chiamano un'ultima volta. \"Le tue azioni avranno certamente causato instabilità tra i Gegno. La cosa migliore che puoi fare è lasciare subito questo spazio. Ti osserveremo.\" Dopo di che la nave scompare.",
+   "ratio": 0.949
+  },
+  {
+   "idx": 25,
+   "id": "mission:Gegno Unwelcoming|You are greeted by a large force of aliens on the surface of the planet, though they don't seem too happy to welcome you on their world - in fact, several squads in numbers you can't quickly determine rush towards you, equipped with advanced looking combat gear and weapons. As they do, countless ships begin to descend in formations from the sky above.|847|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 847,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Unwelcoming",
+   "english": "You are greeted by a large force of aliens on the surface of the planet, though they don't seem too happy to welcome you on their world - in fact, several squads in numbers you can't quickly determine rush towards you, equipped with advanced looking combat gear and weapons. As they do, countless ships begin to descend in formations from the sky above.",
+   "italian": "Sulla superficie del pianeta ti accoglie una grande forza di alieni, anche se non sembrano affatto felici di averti sul loro mondo: anzi, diverse squadre in numero che non riesci a valutare in fretta ti corrono incontro, equipaggiate con attrezzature da combattimento e armi dall'aspetto avanzato. Mentre lo fanno, innumerevoli navi cominciano a scendere in formazione dal cielo.",
+   "ratio": 1.074
+  },
+  {
+   "idx": 26,
+   "id": "mission:Gegno Unwelcoming|You are greeted by a large group of Gegno on the surface of the planet, though they don't seem too happy to welcome you on their world - in fact, several squads in numbers you can't quickly determine rush towards you, equipped with advanced looking combat gear and weapons. As they do, countless ships belonging to both the Vi and Scin factions begin to descend in formations from the sky above.|850|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 850,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Unwelcoming",
+   "english": "You are greeted by a large group of Gegno on the surface of the planet, though they don't seem too happy to welcome you on their world - in fact, several squads in numbers you can't quickly determine rush towards you, equipped with advanced looking combat gear and weapons. As they do, countless ships belonging to both the Vi and Scin factions begin to descend in formations from the sky above.",
+   "italian": "Sulla superficie del pianeta ti accoglie un grande gruppo di Gegno, anche se non sembrano affatto felici di averti sul loro mondo: anzi, diverse squadre in numero che non riesci a valutare in fretta ti corrono incontro, equipaggiate con attrezzature da combattimento e armi dall'aspetto avanzato. Mentre lo fanno, innumerevoli navi appartenenti sia alla fazione Vi sia a quella Scin cominciano a scendere in formazione dal cielo.",
+   "ratio": 1.086
+  },
+  {
+   "idx": 27,
+   "id": "mission:Gegno Unwelcoming|\tIt probably wasn't the smartest plan to purposefully land here after assaulting civilians. There's no room for talk as they immediately begin to attack, and you do your best to fight as many off as you can. While you are able to fend off several with your pistol, you are eventually overwhelmed, and the last thing you experience is a cold, sharp pain through your upper body.|853|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 853,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Gegno Unwelcoming",
+   "english": "\tIt probably wasn't the smartest plan to purposefully land here after assaulting civilians. There's no room for talk as they immediately begin to attack, and you do your best to fight as many off as you can. While you are able to fend off several with your pistol, you are eventually overwhelmed, and the last thing you experience is a cold, sharp pain through your upper body.",
+   "italian": "\tProbabilmente non era il piano più intelligente atterrare qui di proposito dopo aver assalito dei civili. Non c'è spazio per parlare: cominciano subito ad attaccare e tu fai del tuo meglio per respingerne il più possibile. Riesci a tenerne a bada diversi con la pistola, ma alla fine sei sopraffatto, e l'ultima cosa che provi è un dolore freddo e acuto attraverso la parte superiore del corpo.",
+   "ratio": 1.048
+  },
+  {
+   "idx": 28,
+   "id": "conversation:interfered with duel|You begin to receive numerous hails from Gegno Vi ships that are very aggravated in tone. It seems you've interrupted a tradition rather important to them, considering their ships are now appearing hostile on your radar.|954|0",
+   "path": "data/gegno/gegno intro missions.txt",
+   "line": 954,
+   "kind": "CONVERSATION",
+   "context": "conversation:interfered with duel",
+   "english": "You begin to receive numerous hails from Gegno Vi ships that are very aggravated in tone. It seems you've interrupted a tradition rather important to them, considering their ships are now appearing hostile on your radar.",
+   "italian": "Cominci a ricevere numerose chiamate da navi dei Gegno Vi dal tono molto esasperato. A quanto pare hai interrotto una tradizione piuttosto importante per loro, visto che ora le loro navi compaiono ostili sul tuo radar.",
+   "ratio": 0.991
+  }
+ ]
+}

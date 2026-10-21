@@ -1,0 +1,275 @@
+{
+ "block": {
+  "path": "data/human/paradise world jobs.txt",
+  "line_from": 719,
+  "line_to": 987,
+  "units": 24
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Martini Evacuation (Resident Group)|name|719|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 719,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Resident Group)",
+   "english": "Evacuate Martini residents to <planet>",
+   "italian": "Evacua i residenti di Martini su <planet>",
+   "ratio": 1.079
+  },
+  {
+   "idx": 2,
+   "id": "mission:Martini Evacuation (Resident Group)|description|720|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 720,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Resident Group)",
+   "english": "These <bunks> residents from Martini had their <martini house> destroyed in the nuclear bombing and wish to leave immediately. Transport them and their <cargo> to <planet>, where they have accommodation. They will pay you <payment>.",
+   "italian": "Questi <bunks> residenti di Martini hanno visto la propria <martini house> distrutta nel bombardamento nucleare e vogliono andarsene subito. Trasportali insieme al loro <cargo> su <planet>, dove hanno un alloggio. Ti pagheranno <payment>.",
+   "ratio": 1.026
+  },
+  {
+   "idx": 3,
+   "id": "mission:Martini Evacuation (Resident)|name|748|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 748,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Resident)",
+   "english": "Evacuate Martini resident to <planet>",
+   "italian": "Evacua un residente di Martini su <planet>",
+   "ratio": 1.135
+  },
+  {
+   "idx": 4,
+   "id": "mission:Martini Evacuation (Resident)|description|749|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 749,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Resident)",
+   "english": "This resident from Martini had their <martini house> destroyed in the nuclear bombing and wishes to leave immediately. Transport them and their <cargo> to <planet>, where they have accommodation. They will pay you <payment>.",
+   "italian": "Questo residente di Martini ha visto la propria <martini house> distrutta nel bombardamento nucleare e vuole andarsene subito. Trasportalo insieme al suo <cargo> su <planet>, dove ha un alloggio. Ti pagherà <payment>.",
+   "ratio": 0.969
+  },
+  {
+   "idx": 5,
+   "id": "mission:Martini Evacuation (Family, Luxury)|name|777|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 777,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Family, Luxury)",
+   "english": "Evacuate Martini residents to <planet>",
+   "italian": "Evacua i residenti di Martini su <planet>",
+   "ratio": 1.079
+  },
+  {
+   "idx": 6,
+   "id": "mission:Martini Evacuation (Family, Luxury)|description|778|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 778,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Family, Luxury)",
+   "english": "This family of <bunks> from Martini had their <martini house> destroyed in the nuclear bombing, and wish to leave immediately on a luxury ship. Transport them and their <cargo> to <planet>, where they have accommodation. They will pay you <payment>.",
+   "italian": "Questa famiglia di <bunks> di Martini ha visto la propria <martini house> distrutta nel bombardamento nucleare e vuole andarsene subito su una nave di lusso. Trasportali insieme al loro <cargo> su <planet>, dove hanno un alloggio. Ti pagheranno <payment>.",
+   "ratio": 1.024
+  },
+  {
+   "idx": 7,
+   "id": "mission:Martini Evacuation (Singular, Luxury)|name|808|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 808,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Singular, Luxury)",
+   "english": "Evacuate Martini resident to <planet>",
+   "italian": "Evacua un residente di Martini su <planet>",
+   "ratio": 1.135
+  },
+  {
+   "idx": 8,
+   "id": "mission:Martini Evacuation (Singular, Luxury)|description|809|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 809,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Singular, Luxury)",
+   "english": "This resident from Martini had their <martini house> destroyed in the nuclear bombing, and wishes to leave immediately on a luxury ship. Transport them and their <cargo> to <planet>, where they have accommodation. They will pay you <payment>.",
+   "italian": "Questo residente di Martini ha visto la propria <martini house> distrutta nel bombardamento nucleare e vuole andarsene subito su una nave di lusso. Trasportalo insieme al suo <cargo> su <planet>, dove ha un alloggio. Ti pagherà <payment>.",
+   "ratio": 0.983
+  },
+  {
+   "idx": 9,
+   "id": "mission:Martini Evacuation (Tourist)|name|839|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 839,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Tourist)",
+   "english": "Evacuate tourist to <planet>",
+   "italian": "Evacua un turista su <planet>",
+   "ratio": 1.036
+  },
+  {
+   "idx": 10,
+   "id": "mission:Martini Evacuation (Tourist)|description|840|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 840,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Tourist)",
+   "english": "This tourist from <planet>, who was on Martini to see its sights when the nuclear bombings occurred, wishes to leave immediately. Transport them back to their home on <planet>, where they will pay you <payment>.",
+   "italian": "Questo turista di <planet>, che si trovava su Martini per vederne le bellezze quando sono avvenuti i bombardamenti nucleari, vuole andarsene subito. Riportalo a casa sua su <planet>, dove ti pagheranno <payment>.",
+   "ratio": 1.005
+  },
+  {
+   "idx": 11,
+   "id": "mission:Martini Evacuation (Tourist Couple)|name|860|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 860,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Tourist Couple)",
+   "english": "Evacuate tourist couple to <planet>",
+   "italian": "Evacua una coppia di turisti su <planet>",
+   "ratio": 1.143
+  },
+  {
+   "idx": 12,
+   "id": "mission:Martini Evacuation (Tourist Couple)|description|861|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 861,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Tourist Couple)",
+   "english": "This tourist couple from <planet>, who was on Martini to see its sights when the nuclear bombings occurred, wishes to leave immediately. Transport them back to their home on <planet>, where they will pay you <payment>.",
+   "italian": "Questa coppia di turisti di <planet>, che si trovava su Martini per vederne le bellezze quando sono avvenuti i bombardamenti nucleari, vuole andarsene subito. Riportala a casa sua su <planet>, dove ti pagheranno <payment>.",
+   "ratio": 1.018
+  },
+  {
+   "idx": 13,
+   "id": "mission:Martini Evacuation (Tourist Family)|name|881|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 881,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Tourist Family)",
+   "english": "Evacuate tourist family to <planet>",
+   "italian": "Evacua una famiglia di turisti su <planet>",
+   "ratio": 1.2
+  },
+  {
+   "idx": 14,
+   "id": "mission:Martini Evacuation (Tourist Family)|description|882|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 882,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Tourist Family)",
+   "english": "This family of <bunks> tourists from <planet>, who were on Martini to see its sights when the nuclear bombings occurred, wish to leave immediately. Transport them back to their home on <planet>, where they will pay you <payment>.",
+   "italian": "Questa famiglia di <bunks> turisti di <planet>, che si trovava su Martini per vederne le bellezze quando sono avvenuti i bombardamenti nucleari, vuole andarsene subito. Riportali a casa loro su <planet>, dove ti pagheranno <payment>.",
+   "ratio": 1.017
+  },
+  {
+   "idx": 15,
+   "id": "mission:Martini Evacuation (Tourist Group)|name|901|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 901,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Tourist Group)",
+   "english": "Evacuate tourist group to <planet>",
+   "italian": "Evacua un gruppo di turisti su <planet>",
+   "ratio": 1.147
+  },
+  {
+   "idx": 16,
+   "id": "mission:Martini Evacuation (Tourist Group)|description|902|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 902,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Tourist Group)",
+   "english": "This group of <bunks> tourists from <planet>, who were on Martini to see its sights when the nuclear bombings occurred, wish to leave immediately. Transport them back to their homes on <planet>, where they will pay you <payment>.",
+   "italian": "Questo gruppo di <bunks> turisti di <planet>, che si trovava su Martini per vederne le bellezze quando sono avvenuti i bombardamenti nucleari, vuole andarsene subito. Riportali alle loro case su <planet>, dove ti pagheranno <payment>.",
+   "ratio": 1.022
+  },
+  {
+   "idx": 17,
+   "id": "mission:Martini Evacuation (Businessman Group)|name|922|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 922,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Businessman Group)",
+   "english": "Evacuate group of businessmen from Martini to <planet>",
+   "italian": "Evacua un gruppo di uomini d'affari da Martini a <planet>",
+   "ratio": 1.056
+  },
+  {
+   "idx": 18,
+   "id": "mission:Martini Evacuation (Businessman Group)|description|923|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 923,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Businessman Group)",
+   "english": "This group of <bunks> businessmen, who were on Martini conducting a business trip when the nuclear bombings occurred, wish to leave immediately. Transport them back to their homes on <planet>, where they will pay you <payment>.",
+   "italian": "Questo gruppo di <bunks> uomini d'affari, che si trovava su Martini per un viaggio di lavoro quando sono avvenuti i bombardamenti nucleari, vuole andarsene subito. Riportali alle loro case su <planet>, dove ti pagheranno <payment>.",
+   "ratio": 1.018
+  },
+  {
+   "idx": 19,
+   "id": "mission:Martini Evacuation (Businessman)|name|944|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 944,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Businessman)",
+   "english": "Evacuate businessman to <planet>",
+   "italian": "Evacua un uomo d'affari su <planet>",
+   "ratio": 1.094
+  },
+  {
+   "idx": 20,
+   "id": "mission:Martini Evacuation (Businessman)|description|945|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 945,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Businessman)",
+   "english": "This businessman, who was on Martini conducting a business trip when the nuclear bombings occurred, wishes to leave immediately. Transport them back to their home on <planet>, where they will pay you <payment>.",
+   "italian": "Questo uomo d'affari, che si trovava su Martini per un viaggio di lavoro quando sono avvenuti i bombardamenti nucleari, vuole andarsene subito. Riportalo a casa sua su <planet>, dove ti pagheranno <payment>.",
+   "ratio": 0.986
+  },
+  {
+   "idx": 21,
+   "id": "mission:Martini Evacuation (Exhausted Doctors)|name|965|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 965,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Exhausted Doctors)",
+   "english": "Transport discharged doctors to <planet>",
+   "italian": "Trasporta i medici congedati su <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 22,
+   "id": "mission:Martini Evacuation (Exhausted Doctors)|description|966|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 966,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Exhausted Doctors)",
+   "english": "These <bunks> doctors have been constantly treating patients on Martini after the bombings, and now have been discharged. Transport them back to their home on <planet>, where they will pay you <payment>.",
+   "italian": "Questi <bunks> medici hanno curato senza sosta i pazienti su Martini dopo i bombardamenti, e ora sono stati congedati. Riportali a casa loro su <planet>, dove ti pagheranno <payment>.",
+   "ratio": 0.901
+  },
+  {
+   "idx": 23,
+   "id": "mission:Martini Evacuation (Exhausted Search and Rescue Team)|name|986|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 986,
+   "kind": "VALUE",
+   "context": "mission:Martini Evacuation (Exhausted Search and Rescue Team)",
+   "english": "Transport discharged search and rescue team to <planet>",
+   "italian": "Trasporta una squadra di ricerca e soccorso congedata su <planet>",
+   "ratio": 1.182
+  },
+  {
+   "idx": 24,
+   "id": "mission:Martini Evacuation (Exhausted Search and Rescue Team)|description|987|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 987,
+   "kind": "DESCRIPTION",
+   "context": "mission:Martini Evacuation (Exhausted Search and Rescue Team)",
+   "english": "These <bunks> search and rescue operatives have been searching for victims of the nuclear bombings in Martini's capital city, and now have been discharged. Transport them back to their home on <planet>, where they will pay you <payment>.",
+   "italian": "Questi <bunks> operatori di ricerca e soccorso hanno cercato le vittime dei bombardamenti nucleari nella capitale di Martini, e ora sono stati congedati. Riportali a casa loro su <planet>, dove ti pagheranno <payment>.",
+   "ratio": 0.92
+  }
+ ]
+}

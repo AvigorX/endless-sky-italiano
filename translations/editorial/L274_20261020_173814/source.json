@@ -1,0 +1,128 @@
+{
+ "block": {
+  "path": "data/korath/korath ships.txt",
+  "line_from": 364,
+  "line_to": 602,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:'olofez|plural|364|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 364,
+   "kind": "VALUE",
+   "context": "ship:'olofez",
+   "english": "'olofezes",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tplural \"'olofezes\"",
+   "english_hash": "5d19a608d660212b"
+  },
+  {
+   "idx": 2,
+   "id": "ship:'olofez|description|400|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 400,
+   "kind": "DESCRIPTION",
+   "context": "ship:'olofez",
+   "english": "The 'olofez-Class Carried Chaser, named for a renowned artist who painted their visions of ancient hunts, is a fighter carried by most Exile capital ships.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The 'olofez-Class Carried Chaser, named for a renowned artist who painted their visions of ancient hunts, is a fighter carried by most Exile capital ships.\"",
+   "english_hash": "acaa77acf2e7b583"
+  },
+  {
+   "idx": 3,
+   "id": "ship:'olofez|description|401|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 401,
+   "kind": "DESCRIPTION",
+   "context": "ship:'olofez",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.\"",
+   "english_hash": "58c9699be6829723"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Kas'ik Tek 7|description|442|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 442,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kas'ik Tek 7",
+   "english": "These small probes are primarily deployed by larger Korath Exile ships to scan for intruders, evaluate foreign vessels, and analyze system bodies. Their secondary function is to retrieve small debris and deactivated microbots spread across Korath space which have fallen off their ships, been fired from Shunt-Strikes, or were even deliberately deployed. Although the data observed and logged by an individual microbot is extremely limited, processing them in bulk yields a valuable gestalt of information. More importantly, the microbots can be recycled for use afterwards.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `These small probes are primarily deployed by larger Korath Exile ships to scan for intruders, evaluate foreign vessels, and analyze system bodies. Their secondary function is to retrieve small debris and deactivated microbots spread across Korath space which have fallen off their ships, been fired from Shunt-Strikes, or were even deliberately deployed. Although the data observed and logged by an individual microbot is extremely limited, processing them in bulk yields a valuable gestalt of information. More importantly, the microbots can be recycled for use afterwards.`",
+   "english_hash": "516a472c73300a72"
+  },
+  {
+   "idx": 5,
+   "id": "ship:Kas'ik Tek 7|description|443|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 443,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kas'ik Tek 7",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\tdescription `\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.`",
+   "english_hash": "c8c9805082fbcc16"
+  },
+  {
+   "idx": 6,
+   "id": "ship:Rai'alorej|description|524|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 524,
+   "kind": "DESCRIPTION",
+   "context": "ship:Rai'alorej",
+   "english": "Although fierce in battle and highly adaptable, Korath do not easily recover from injury. Without the aid of a surgeon or more equipment than fits into a standard escape pod, a stranded, injured Korath faces poor odds of survival. Therefore, Korath who leave their home territory have placed great importance on the construction of hospital ships that can quickly locate, recover, and treat the survivors of wrecked ships.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"Although fierce in battle and highly adaptable, Korath do not easily recover from injury. Without the aid of a surgeon or more equipment than fits into a standard escape pod, a stranded, injured Korath faces poor odds of survival. Therefore, Korath who leave their home territory have placed great importance on the construction of hospital ships that can quickly locate, recover, and treat the survivors of wrecked ships.\"",
+   "english_hash": "2c44a8f8ac2c7541"
+  },
+  {
+   "idx": 7,
+   "id": "ship:Rai'alorej|description|525|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 525,
+   "kind": "DESCRIPTION",
+   "context": "ship:Rai'alorej",
+   "english": "\tThe Rai'alorej-Class Refuge, named for a pioneer in the field of microbot-assisted surgery, is thoroughly appointed with lifeform scanners, locator beacon receivers, ambulances, and search-and-rescue teams. Once onboard, crash victims are greeted with the finest hospital facilities, microbot treatments, and stores of medicine the Exiles have at hand. Even incubators and nurseries are available to treat the young who grow up aboard ship.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tThe Rai'alorej-Class Refuge, named for a pioneer in the field of microbot-assisted surgery, is thoroughly appointed with lifeform scanners, locator beacon receivers, ambulances, and search-and-rescue teams. Once onboard, crash victims are greeted with the finest hospital facilities, microbot treatments, and stores of medicine the Exiles have at hand. Even incubators and nurseries are available to treat the young who grow up aboard ship.\"",
+   "english_hash": "acc934b18cd17a87"
+  },
+  {
+   "idx": 8,
+   "id": "ship:Ikatila'ej|description|601|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 601,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ikatila'ej",
+   "english": "For most of their manufacturing needs, the Korath rely, as even some terrestrial species do, upon their space station and asteroid infrastructure. Due to their spacebound existence, however, the acceptability for failure and downtime is slim to nonexistent. Should equipment aboard a station or a world-ship fail, the Ikatila'ej, named for an inventor famously proficient in a variety of fields, is called in to provide critical support. Its microbot-run factory produces basic living supplies, machine parts, and systems cores, and may assist in continuing stalled production.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"For most of their manufacturing needs, the Korath rely, as even some terrestrial species do, upon their space station and asteroid infrastructure. Due to their spacebound existence, however, the acceptability for failure and downtime is slim to nonexistent. Should equipment aboard a station or a world-ship fail, the Ikatila'ej, named for an inventor famously proficient in a variety of fields, is called in to provide critical support. Its microbot-run factory produces basic living supplies, machine parts, and systems cores, and may assist in continuing stalled production.\"",
+   "english_hash": "b25f68e34b3fa505"
+  },
+  {
+   "idx": 9,
+   "id": "ship:Ikatila'ej|description|602|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 602,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ikatila'ej",
+   "english": "\tWhen not assisting with damaged ships and stations, or replenishing its own stores, the Ikatila'ej serves as an all-in-one recycling, mining, refining, and factory ship, using its microbot-powered grinder to rapidly turn asteroids and garbage into whatever products the civilian economic planning committees have determined to be in the most dire need.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tWhen not assisting with damaged ships and stations, or replenishing its own stores, the Ikatila'ej serves as an all-in-one recycling, mining, refining, and factory ship, using its microbot-powered grinder to rapidly turn asteroids and garbage into whatever products the civilian economic planning committees have determined to be in the most dire need.\"",
+   "english_hash": "10fe5e0e573dcf78"
+  }
+ ]
+}

@@ -1,0 +1,352 @@
+{
+ "block": {
+  "path": "data/coalition/coalition culture conversations.txt",
+  "line_from": 1,
+  "line_to": 66,
+  "units": 31
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Coalition Folklore: Saryd|Walking through the spaceport, you're approached by a Saryd in unusually traditional clothing, even by Saryd standards. Silk robes not too different from human kimonos cover most of his body, and thin ropes tightly wrap around the fabric near his hoofs.|24|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 24,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "Walking through the spaceport, you're approached by a Saryd in unusually traditional clothing, even by Saryd standards. Silk robes not too different from human kimonos cover most of his body, and thin ropes tightly wrap around the fabric near his hoofs.",
+   "italian": "Attraversando lo spazioporto, venite avvicinati da un Saryd vestito in modo insolitamente tradizionale, anche per gli standard Saryd. Vesti di seta non troppo diverse dai kimono umani gli coprono gran parte del corpo, e sottili corde stringono saldamente il tessuto vicino agli zoccoli.",
+   "ratio": 1.13
+  },
+  {
+   "idx": 2,
+   "id": "mission:Coalition Folklore: Saryd|\t\"Greetings, Captain. Interested in participating in a cultural celebration, would you be?\" he asks.|25|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 25,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\t\"Greetings, Captain. Interested in participating in a cultural celebration, would you be?\" he asks.",
+   "italian": "\t\"Salute, Capitano. Interessati a partecipare a una celebrazione culturale, sareste?\" chiede.",
+   "ratio": 0.93
+  },
+  {
+   "idx": 3,
+   "id": "mission:Coalition Folklore: Saryd|\t\"What sort of celebration?\"|27|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 27,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\t\"What sort of celebration?\"",
+   "italian": "\t\"Che tipo di celebrazione?\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "mission:Coalition Folklore: Saryd|\t\"Sorry, I'm busy right now.\"|28|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 28,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\t\"Sorry, I'm busy right now.\"",
+   "italian": "\t\"Mi dispiace, in questo momento ho da fare.\"",
+   "ratio": 1.552
+  },
+  {
+   "idx": 5,
+   "id": "mission:Coalition Folklore: Saryd|\t\"A celebration of Saryd folklore, it is,\" he explains. \"Though for a long time among the stars we've lived, timeless classics from before our spacefaring age, we still celebrate. A set of theatrical plays about some of them, today we are hosting. Watch them for free, anyone can.\"|30|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 30,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\t\"A celebration of Saryd folklore, it is,\" he explains. \"Though for a long time among the stars we've lived, timeless classics from before our spacefaring age, we still celebrate. A set of theatrical plays about some of them, today we are hosting. Watch them for free, anyone can.\"",
+   "italian": "\t\"Una celebrazione del folklore Saryd, è\", spiega. \"Benché da molto tempo fra le stelle viviamo, i classici senza tempo di prima della nostra età spaziale, ancora celebriamo. Una serie di spettacoli teatrali su alcuni di essi, oggi ospitiamo. Guardarli gratis, chiunque può.\"",
+   "ratio": 0.979
+  },
+  {
+   "idx": 6,
+   "id": "mission:Coalition Folklore: Saryd|\t\"I've always got time for a story. Lead the way.\"|32|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 32,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\t\"I've always got time for a story. Lead the way.\"",
+   "italian": "\t\"Ho sempre tempo per una storia. Fate strada.\"",
+   "ratio": 0.94
+  },
+  {
+   "idx": 7,
+   "id": "mission:Coalition Folklore: Saryd|\t\"I'm not really up for a story now. I'll pass.\"|33|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 33,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\t\"I'm not really up for a story now. I'll pass.\"",
+   "italian": "\t\"Non è proprio il momento per una storia. Passo.\"",
+   "ratio": 1.042
+  },
+  {
+   "idx": 8,
+   "id": "mission:Coalition Folklore: Saryd|\tYou follow him outside the spaceport city and deep into a nearby forest. On the way there, several other Saryds in similar ancient garbs are guiding others who were also intrigued by the offer.|35|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 35,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tYou follow him outside the spaceport city and deep into a nearby forest. On the way there, several other Saryds in similar ancient garbs are guiding others who were also intrigued by the offer.",
+   "italian": "\tLo seguite fuori dalla città-spazioporto e nel profondo di una foresta vicina. Lungo la strada, altri Saryd con abiti antichi simili guidano altre persone che l'offerta aveva incuriosito.",
+   "ratio": 0.969
+  },
+  {
+   "idx": 9,
+   "id": "mission:Coalition Folklore: Saryd|\tYou arrive at a clearing with three different paths to take, and you can make out a faint light from deep within each of them. After a few minutes, it seems as if all the Saryds involved in the celebration have arrived. They grab three caskets from behind a bush and lay them before you and the others they brought here.|36|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 36,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tYou arrive at a clearing with three different paths to take, and you can make out a faint light from deep within each of them. After a few minutes, it seems as if all the Saryds involved in the celebration have arrived. They grab three caskets from behind a bush and lay them before you and the others they brought here.",
+   "italian": "\tArrivate a una radura da cui si diramano tre sentieri diversi, e in fondo a ciascuno distinguete una luce fioca. Dopo qualche minuto, sembra che tutti i Saryd coinvolti nella celebrazione siano arrivati. Prendono tre scrigni da dietro un cespuglio e li depongono davanti a voi e agli altri che hanno condotto fin lì.",
+   "ratio": 0.988
+  },
+  {
+   "idx": 10,
+   "id": "mission:Coalition Folklore: Saryd|\t\"Now friends, choose your path, you must,\" one of the Saryds says, and many from the crowd grab small objects from the caskets, seemingly already familiar with this. You move forward to look into the caskets and see that each one has different things inside: the left one is full of seeds, the middle one full of seashells, and the right one full of feathers.|37|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 37,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\t\"Now friends, choose your path, you must,\" one of the Saryds says, and many from the crowd grab small objects from the caskets, seemingly already familiar with this. You move forward to look into the caskets and see that each one has different things inside: the left one is full of seeds, the middle one full of seashells, and the right one full of feathers.",
+   "italian": "\t\"Ora amici, scegliere il vostro sentiero, dovete\", dice uno dei Saryd, e molti fra la folla prendono piccoli oggetti dagli scrigni, evidentemente già pratici del rito. Vi avvicinate a guardare dentro gli scrigni e vedete che ognuno contiene cose diverse: quello di sinistra è pieno di semi, quello centrale di conchiglie e quello di destra di piume.",
+   "ratio": 0.972
+  },
+  {
+   "idx": 11,
+   "id": "mission:Coalition Folklore: Saryd|\t(Grab a seed.)|39|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 39,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\t(Grab a seed.)",
+   "italian": "\t(Prendi un seme.)",
+   "ratio": 1.2
+  },
+  {
+   "idx": 12,
+   "id": "mission:Coalition Folklore: Saryd|\t(Grab a seashell.)|41|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 41,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\t(Grab a seashell.)",
+   "italian": "\t(Prendi una conchiglia.)",
+   "ratio": 1.316
+  },
+  {
+   "idx": 13,
+   "id": "mission:Coalition Folklore: Saryd|\t(Grab a feather.)|43|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 43,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\t(Grab a feather.)",
+   "italian": "\t(Prendi una piuma.)",
+   "ratio": 1.111
+  },
+  {
+   "idx": 14,
+   "id": "mission:Coalition Folklore: Saryd|\tOnce you have the feather in your hands, the organizers tell you to go through the path on the right.|44|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 44,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tOnce you have the feather in your hands, the organizers tell you to go through the path on the right.",
+   "italian": "\tQuando avete la piuma fra le mani, gli organizzatori vi dicono di imboccare il sentiero di destra.",
+   "ratio": 0.971
+  },
+  {
+   "idx": 15,
+   "id": "mission:Coalition Folklore: Saryd|\tThe light you had seen turns out to be a bonfire near a wooden stage, about a third of the size of human opera stages, and you find a spot to sit on one of the logs positioned near the fire. Several lights shine onto the stage, and as you look up, you can only barely see some spotlights hidden high up in the trees. After the audience is all gathered, the curtains of the stage open to reveal many small figures made out of what looks like paper in a style that loosely resembles origami. They are supported either by thin wooden poles from below or strings from above. There are figures close to where the curtains were and others further away on the stage, the various layers granting depth to the scenery. After a brief moment, the show begins:|45|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 45,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tThe light you had seen turns out to be a bonfire near a wooden stage, about a third of the size of human opera stages, and you find a spot to sit on one of the logs positioned near the fire. Several lights shine onto the stage, and as you look up, you can only barely see some spotlights hidden high up in the trees. After the audience is all gathered, the curtains of the stage open to reveal many small figures made out of what looks like paper in a style that loosely resembles origami. They are supported either by thin wooden poles from below or strings from above. There are figures close to where the curtains were and others further away on the stage, the various layers granting depth to the scenery. After a brief moment, the show begins:",
+   "italian": "\tLa luce che avevate visto si rivela un falò accanto a un palco di legno, grande circa un terzo dei palcoscenici d'opera umani, e trovate posto su uno dei tronchi disposti vicino al fuoco. Diverse luci illuminano il palco e, alzando lo sguardo, riuscite appena a scorgere alcuni riflettori nascosti in alto fra gli alberi. Quando il pubblico è radunato, il sipario si apre e rivela molte piccole figure fatte di quello che sembra carta, in uno stile che ricorda alla lontana gli origami. Sono sostenute da sottili aste di legno dal basso o da fili dall'alto. Alcune figure sono vicine al punto in cui era il sipario, altre più in fondo al palco: i vari strati danno profondità alla scena. Dopo un breve momento, lo spettacolo comincia:",
+   "ratio": 0.981
+  },
+  {
+   "idx": 16,
+   "id": "mission:Coalition Folklore: Saryd|\tEntering a clearing, a Saryd huntress with gray hair stalks a large bird resting on a rock. She moves on the borders of the clearing, hiding behind bushes and small trees. She looks for the best spot from which to snipe at the bird, her bow and arrow ready in her hands. It's only when she is nearing a large entrance to the clearing, on the opposite side of where she entered, that she finds the spot, and takes aim.|46|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 46,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tEntering a clearing, a Saryd huntress with gray hair stalks a large bird resting on a rock. She moves on the borders of the clearing, hiding behind bushes and small trees. She looks for the best spot from which to snipe at the bird, her bow and arrow ready in her hands. It's only when she is nearing a large entrance to the clearing, on the opposite side of where she entered, that she finds the spot, and takes aim.",
+   "italian": "\tEntrando in una radura, una cacciatrice Saryd dai capelli grigi si avvicina furtiva a un grande uccello posato su una roccia. Si muove lungo i bordi della radura, nascondendosi dietro cespugli e alberelli. Cerca il punto migliore da cui colpire l'uccello con una freccia, arco e freccia pronti fra le mani. Solo quando si avvicina a un grande ingresso della radura, sul lato opposto a quello da cui è entrata, trova il punto e prende la mira.",
+   "ratio": 1.06
+  },
+  {
+   "idx": 17,
+   "id": "mission:Coalition Folklore: Saryd|\tShe is disrupted when she hears a loud roar and jumps to the ground, narrowly avoiding the beast that had come from behind her. You're unsure how accurate the paper's depiction of the creature is, but you can only describe it as a \"hedge-lion\": slightly larger than lions from Earth, with various quills where its mane should be. The quills continue in a line on its back, reaching the tip of the tail.|47|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 47,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tShe is disrupted when she hears a loud roar and jumps to the ground, narrowly avoiding the beast that had come from behind her. You're unsure how accurate the paper's depiction of the creature is, but you can only describe it as a \"hedge-lion\": slightly larger than lions from Earth, with various quills where its mane should be. The quills continue in a line on its back, reaching the tip of the tail.",
+   "italian": "\tViene interrotta da un ruggito fragoroso e si getta a terra, evitando per un soffio la bestia che le era arrivata alle spalle. Non sapete quanto fedele sia la raffigurazione di carta della creatura, ma non potete descriverla altrimenti che come un \"leone da siepe\": un po' più grande dei leoni della Terra, con aculei al posto della criniera. Gli aculei proseguono in fila lungo la schiena fino alla punta della coda.",
+   "ratio": 1.037
+  },
+  {
+   "idx": 18,
+   "id": "mission:Coalition Folklore: Saryd|\tHaving dodged the pounce, the huntress runs past the bird, looking for cover, but the forest isn't dense enough to block the beast's advance. It attacks again, and wounds the top of one of her frontal legs. She kicks it with another leg and readies an arrow, but only manages to scratch its face. The animal gets on its hind legs to swipe down at her but is stunned; the bird has attacked its eyes, blinding it! The huntress is swift to take aim in the opening granted, and an arrow pierces the creature's torso. Once the hedge-lion has fallen, the bird flies away, and the curtains close.|48|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 48,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tHaving dodged the pounce, the huntress runs past the bird, looking for cover, but the forest isn't dense enough to block the beast's advance. It attacks again, and wounds the top of one of her frontal legs. She kicks it with another leg and readies an arrow, but only manages to scratch its face. The animal gets on its hind legs to swipe down at her but is stunned; the bird has attacked its eyes, blinding it! The huntress is swift to take aim in the opening granted, and an arrow pierces the creature's torso. Once the hedge-lion has fallen, the bird flies away, and the curtains close.",
+   "italian": "\tSchivato l'assalto, la cacciatrice corre oltre l'uccello in cerca di copertura, ma la foresta non è abbastanza fitta per fermare l'avanzata della bestia. La belva attacca di nuovo e la ferisce in cima a una delle zampe anteriori. Lei la colpisce con un'altra zampa e prepara una freccia, ma riesce solo a graffiarle il muso. L'animale si solleva sulle zampe posteriori per colpirla dall'alto, ma resta stordito: l'uccello gli ha attaccato gli occhi, accecandolo! La cacciatrice è rapida a prendere la mira nello spiraglio che le si offre, e una freccia trafigge il torso della creatura. Caduto il leone da siepe, l'uccello vola via e il sipario si chiude.",
+   "ratio": 1.112
+  },
+  {
+   "idx": 19,
+   "id": "mission:Coalition Folklore: Saryd|\tOnce you have the seed in your hands, the organizers tell you to go through the path on the left.|51|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 51,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tOnce you have the seed in your hands, the organizers tell you to go through the path on the left.",
+   "italian": "\tQuando avete il seme fra le mani, gli organizzatori vi dicono di imboccare il sentiero di sinistra.",
+   "ratio": 1.02
+  },
+  {
+   "idx": 20,
+   "id": "mission:Coalition Folklore: Saryd|\tThe light you had seen turns out to be a bonfire near a wooden stage, about a third of the size of human opera stages, and you find a spot to sit on one of the logs positioned near the fire. Several lights shine onto the stage, and as you look up, you can only barely see some spotlights hidden high up in the trees. After the audience is all gathered, the curtains of the stage open to reveal many small figures made out of what looks like paper in a style that loosely resembles origami. They are supported either by thin wooden poles from below or strings from above. There are figures close to where the curtains were and others further away on the stage, the various layers granting depth to the scenery. After a brief moment, the show begins:|52|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 52,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tThe light you had seen turns out to be a bonfire near a wooden stage, about a third of the size of human opera stages, and you find a spot to sit on one of the logs positioned near the fire. Several lights shine onto the stage, and as you look up, you can only barely see some spotlights hidden high up in the trees. After the audience is all gathered, the curtains of the stage open to reveal many small figures made out of what looks like paper in a style that loosely resembles origami. They are supported either by thin wooden poles from below or strings from above. There are figures close to where the curtains were and others further away on the stage, the various layers granting depth to the scenery. After a brief moment, the show begins:",
+   "italian": "\tLa luce che avevate visto si rivela un falò accanto a un palco di legno, grande circa un terzo dei palcoscenici d'opera umani, e trovate posto su uno dei tronchi disposti vicino al fuoco. Diverse luci illuminano il palco e, alzando lo sguardo, riuscite appena a scorgere alcuni riflettori nascosti in alto fra gli alberi. Quando il pubblico è radunato, il sipario si apre e rivela molte piccole figure fatte di quello che sembra carta, in uno stile che ricorda alla lontana gli origami. Sono sostenute da sottili aste di legno dal basso o da fili dall'alto. Alcune figure sono vicine al punto in cui era il sipario, altre più in fondo al palco: i vari strati danno profondità alla scena. Dopo un breve momento, lo spettacolo comincia:",
+   "ratio": 0.981
+  },
+  {
+   "idx": 21,
+   "id": "mission:Coalition Folklore: Saryd|\tThe central figure is a young Saryd boy, galloping through a dense forest. Sound effects of thunder begin and grow increasingly frequent, echoing around you as if in a real thunderstorm. A white piece of paper, shaped like a lightning bolt, comes down swiftly and strikes one of the trees in the boy's way. Flame-shaped folds rain down from the top of the stage and stick to the tree as it falls, blocking the boy's path. He turns to run elsewhere. Another lightning bolt, and another tree falls. After a few more repetitions, the boy is too tired to run anymore. Hurt by some of the flames, he is now limping through the forest.|53|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 53,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tThe central figure is a young Saryd boy, galloping through a dense forest. Sound effects of thunder begin and grow increasingly frequent, echoing around you as if in a real thunderstorm. A white piece of paper, shaped like a lightning bolt, comes down swiftly and strikes one of the trees in the boy's way. Flame-shaped folds rain down from the top of the stage and stick to the tree as it falls, blocking the boy's path. He turns to run elsewhere. Another lightning bolt, and another tree falls. After a few more repetitions, the boy is too tired to run anymore. Hurt by some of the flames, he is now limping through the forest.",
+   "italian": "\tLa figura al centro è un giovane Saryd che galoppa in una foresta fitta. Cominciano effetti sonori di tuono, sempre più frequenti, che echeggiano intorno a voi come in un vero temporale. Un pezzo di carta bianca a forma di fulmine scende rapido e colpisce uno degli alberi sulla strada del ragazzo. Pieghe a forma di fiamma piovono dall'alto del palco e si attaccano all'albero che cade, bloccando il passaggio. Il ragazzo si volta e corre altrove. Un altro fulmine, un altro albero che crolla. Dopo qualche ripetizione, il ragazzo è troppo stanco per correre. Ferito da alcune fiamme, ora zoppica nella foresta.",
+   "ratio": 0.973
+  },
+  {
+   "idx": 22,
+   "id": "mission:Coalition Folklore: Saryd|\tWhimpering as the thunder grows closer once more, he spots a tree unlike the others, a great oak with branches thicker than the other trees around him. He goes to it and lays down at its base, and soon he falls asleep as the curtain closes.|54|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 54,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tWhimpering as the thunder grows closer once more, he spots a tree unlike the others, a great oak with branches thicker than the other trees around him. He goes to it and lays down at its base, and soon he falls asleep as the curtain closes.",
+   "italian": "\tMentre guaisce e il tuono si avvicina di nuovo, scorge un albero diverso dagli altri: una grande quercia con rami più spessi di quelli degli alberi intorno. La raggiunge, si sdraia alla sua base e poco dopo si addormenta, mentre il sipario si chiude.",
+   "ratio": 1.041
+  },
+  {
+   "idx": 23,
+   "id": "mission:Coalition Folklore: Saryd|\tIt opens once again after a few moments, with the boy waking up in darkness. When he gets up, rumbling sounds are accompanied by rays of light reaching the ground, and he realizes the great oak had lowered its branches around him. As it lifts them up, the several smaller trees that had fallen on the mighty oak's branches during the storm are scattered away. The sun as his guide, the boy manages to leave the forest, and the curtains close again.|55|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 55,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tIt opens once again after a few moments, with the boy waking up in darkness. When he gets up, rumbling sounds are accompanied by rays of light reaching the ground, and he realizes the great oak had lowered its branches around him. As it lifts them up, the several smaller trees that had fallen on the mighty oak's branches during the storm are scattered away. The sun as his guide, the boy manages to leave the forest, and the curtains close again.",
+   "italian": "\tSi riapre dopo qualche istante, con il ragazzo che si sveglia nel buio. Quando si alza, ai rumori profondi si accompagnano raggi di luce che raggiungono il suolo, e capisce che la grande quercia aveva abbassato i rami intorno a lui. Sollevandoli, i vari alberelli caduti sui rami della quercia durante la tempesta vengono scagliati lontano. Con il sole come guida, il ragazzo riesce a uscire dalla foresta e il sipario si chiude di nuovo.",
+   "ratio": 0.978
+  },
+  {
+   "idx": 24,
+   "id": "mission:Coalition Folklore: Saryd|\tOnce you have the seashell in your hands, the organizers tell you to go through the path in the middle.|58|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 58,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tOnce you have the seashell in your hands, the organizers tell you to go through the path in the middle.",
+   "italian": "\tQuando avete la conchiglia fra le mani, gli organizzatori vi dicono di imboccare il sentiero centrale.",
+   "ratio": 0.99
+  },
+  {
+   "idx": 25,
+   "id": "mission:Coalition Folklore: Saryd|\tThe light you had seen turns out to be a bonfire near a wooden stage, about a third of the size of human opera stages, and you find a spot to sit on one of the logs positioned near the fire. Several lights shine onto the stage, and as you look up, you can only barely see some spotlights hidden high up in the trees. After the audience is all gathered, the curtains of the stage open to reveal many small figures made out of what looks like paper in a style that loosely resembles origami. They are supported either by thin wooden poles from below or strings from above. There are figures close to where the curtains were and others further away on the stage, the various layers granting depth to the scenery. After a brief moment, the show begins:|59|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 59,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tThe light you had seen turns out to be a bonfire near a wooden stage, about a third of the size of human opera stages, and you find a spot to sit on one of the logs positioned near the fire. Several lights shine onto the stage, and as you look up, you can only barely see some spotlights hidden high up in the trees. After the audience is all gathered, the curtains of the stage open to reveal many small figures made out of what looks like paper in a style that loosely resembles origami. They are supported either by thin wooden poles from below or strings from above. There are figures close to where the curtains were and others further away on the stage, the various layers granting depth to the scenery. After a brief moment, the show begins:",
+   "italian": "\tLa luce che avevate visto si rivela un falò accanto a un palco di legno, grande circa un terzo dei palcoscenici d'opera umani, e trovate posto su uno dei tronchi disposti vicino al fuoco. Diverse luci illuminano il palco e, alzando lo sguardo, riuscite appena a scorgere alcuni riflettori nascosti in alto fra gli alberi. Quando il pubblico è radunato, il sipario si apre e rivela molte piccole figure fatte di quello che sembra carta, in uno stile che ricorda alla lontana gli origami. Sono sostenute da sottili aste di legno dal basso o da fili dall'alto. Alcune figure sono vicine al punto in cui era il sipario, altre più in fondo al palco: i vari strati danno profondità alla scena. Dopo un breve momento, lo spettacolo comincia:",
+   "ratio": 0.981
+  },
+  {
+   "idx": 26,
+   "id": "mission:Coalition Folklore: Saryd|\tA Saryd is on top of some sort of long, wooden platform, with a deep blue background under it. Only when you see the fishing rod do you realize that he is on a boat, fishing at sea. He feels a bite, but when he reels it in, there is nothing on the hook. He feels another bite and again finds nothing. Time and again, he looks at the hook to find the bait still there, intact, yet he continues to feel bites, some so powerful even the boat moves a little. The day moves by quickly, with a piece of paper representing the sun moving swiftly from one side of the \"sky\" to the other.|60|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 60,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tA Saryd is on top of some sort of long, wooden platform, with a deep blue background under it. Only when you see the fishing rod do you realize that he is on a boat, fishing at sea. He feels a bite, but when he reels it in, there is nothing on the hook. He feels another bite and again finds nothing. Time and again, he looks at the hook to find the bait still there, intact, yet he continues to feel bites, some so powerful even the boat moves a little. The day moves by quickly, with a piece of paper representing the sun moving swiftly from one side of the \"sky\" to the other.",
+   "italian": "\tUn Saryd sta in cima a una specie di lunga piattaforma di legno, con uno sfondo blu profondo sotto di essa. Solo quando vedete la canna da pesca capite che è su una barca, a pescare in mare. Sente un morso, ma quando tira su non c'è nulla sull'amo. Sente un altro morso e di nuovo non trova nulla. Più e più volte guarda l'amo e trova l'esca ancora lì, intatta, eppure continua a sentire morsi, alcuni così forti che persino la barca si muove un po'. La giornata passa in fretta, con un pezzo di carta che rappresenta il sole che si sposta rapido da un lato del \"cielo\" all'altro.",
+   "ratio": 1.002
+  },
+  {
+   "idx": 27,
+   "id": "mission:Coalition Folklore: Saryd|\tOnce it is night, the waves grow increasingly stronger, and the Saryd stops fishing altogether. He puts the rod on the boat and tries to steer it back to shore, but he can't find his way. A huge wave that goes beyond the stage's top approaches, and engulfs the boat.|61|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 61,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tOnce it is night, the waves grow increasingly stronger, and the Saryd stops fishing altogether. He puts the rod on the boat and tries to steer it back to shore, but he can't find his way. A huge wave that goes beyond the stage's top approaches, and engulfs the boat.",
+   "italian": "\tQuando scende la notte, le onde si fanno sempre più forti e il Saryd smette del tutto di pescare. Posa la canna sulla barca e cerca di dirigerla verso la riva, ma non trova la via. Si avvicina un'onda enorme che supera l'altezza del palco e inghiotte la barca.",
+   "ratio": 0.978
+  },
+  {
+   "idx": 28,
+   "id": "mission:Coalition Folklore: Saryd|\tThe fisherman kicks and struggles for air, having lost his boat and still at the mercy of the great waves. The view on the stage starts going down, following the kicks, and something starts rising up to meet the Saryd's legs. As it raises the view back with it, a creature reminiscent of a whale, only with much larger, longer flippers that almost link to its tail, comes to the surface. It rises gently and with care, as if trying to serve as ground for the sailor. Another wave is approaching, large enough to engulf them both, but the whale keeps on going up until it is out of the water.|62|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 62,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tThe fisherman kicks and struggles for air, having lost his boat and still at the mercy of the great waves. The view on the stage starts going down, following the kicks, and something starts rising up to meet the Saryd's legs. As it raises the view back with it, a creature reminiscent of a whale, only with much larger, longer flippers that almost link to its tail, comes to the surface. It rises gently and with care, as if trying to serve as ground for the sailor. Another wave is approaching, large enough to engulf them both, but the whale keeps on going up until it is out of the water.",
+   "italian": "\tIl pescatore scalcia e lotta per l'aria, avendo perso la barca ed essendo ancora in balia delle grandi onde. La scena sul palco comincia a scendere, seguendo i calci, e qualcosa comincia a salire incontro alle zampe del Saryd. Mentre riporta la scena verso l'alto, una creatura che ricorda una balena, ma con pinne molto più grandi e lunghe che quasi si collegano alla coda, affiora in superficie. Sale piano e con cura, come se cercasse di offrire un terreno al marinaio. Si avvicina un'altra onda, grande abbastanza da inghiottirli entrambi, ma la balena continua a salire finché non è fuori dall'acqua.",
+   "ratio": 1.024
+  },
+  {
+   "idx": 29,
+   "id": "mission:Coalition Folklore: Saryd|\tAs it flies through the night sky, the whale is careful to not drop the Saryd, always waiting for him to find stable footing before turning. For the rest of the night, the whale slowly dances in the sky, and when morning comes and the waves subside, it goes back to the sea and swims close to shore. Once the Saryd is at the beach, he turns back to see the whale's tail hitting the water as it dives deep once again, and the curtains close.|63|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 63,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tAs it flies through the night sky, the whale is careful to not drop the Saryd, always waiting for him to find stable footing before turning. For the rest of the night, the whale slowly dances in the sky, and when morning comes and the waves subside, it goes back to the sea and swims close to shore. Once the Saryd is at the beach, he turns back to see the whale's tail hitting the water as it dives deep once again, and the curtains close.",
+   "italian": "\tMentre vola nel cielo notturno, la balena bada a non far cadere il Saryd, aspettando sempre che trovi un appoggio stabile prima di virare. Per il resto della notte danza lentamente nel cielo e, quando arriva il mattino e le onde si calmano, torna al mare e nuota vicino alla riva. Quando il Saryd è sulla spiaggia, si volta e vede la coda della balena colpire l'acqua mentre si tuffa di nuovo negli abissi, e il sipario si chiude.",
+   "ratio": 0.977
+  },
+  {
+   "idx": 30,
+   "id": "mission:Coalition Folklore: Saryd|\tPeople in the audience start getting up and performing a short bow toward the stage, with both hands clenched together close to their chests, as if silently applauding the performance. Once most of them are done, they prepare to leave, and you follow them. Once you're back at the clearing, you return the small object back to its casket after seeing others do the same, and the organizers guide everyone back to the spaceport.|65|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 65,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tPeople in the audience start getting up and performing a short bow toward the stage, with both hands clenched together close to their chests, as if silently applauding the performance. Once most of them are done, they prepare to leave, and you follow them. Once you're back at the clearing, you return the small object back to its casket after seeing others do the same, and the organizers guide everyone back to the spaceport.",
+   "italian": "\tIl pubblico comincia ad alzarsi e a fare un breve inchino verso il palco, con le mani strette insieme vicino al petto, come per applaudire in silenzio lo spettacolo. Quando quasi tutti hanno finito, si preparano ad andarsene e voi li seguite. Tornati alla radura, rimettete il piccolo oggetto nel suo scrigno dopo aver visto gli altri fare lo stesso, e gli organizzatori riaccompagnano tutti allo spazioporto.",
+   "ratio": 0.958
+  },
+  {
+   "idx": 31,
+   "id": "mission:Coalition Folklore: Saryd|\tOnce there, the Saryd who first approached you says, \"That you enjoyed the spectacle, I hope,\" and bids you farewell.|66|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 66,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Saryd",
+   "english": "\tOnce there, the Saryd who first approached you says, \"That you enjoyed the spectacle, I hope,\" and bids you farewell.",
+   "italian": "\tArrivati là, il Saryd che vi aveva avvicinato per primo dice: \"Che lo spettacolo vi sia piaciuto, spero\", e vi saluta.",
+   "ratio": 1.008
+  }
+ ]
+}

@@ -1,0 +1,341 @@
+{
+ "block": {
+  "path": "data/coalition/coalition jobs.txt",
+  "line_from": 16,
+  "line_to": 293,
+  "units": 30
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "phrase:coalition ringworld workers|You drop off the workers on the <planet>. A few minutes later you receive a transfer of <payment>.|16|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 16,
+   "kind": "TEXT",
+   "context": "phrase:coalition ringworld workers",
+   "english": "You drop off the workers on the <planet>. A few minutes later you receive a transfer of <payment>.",
+   "italian": "Scarichi gli operai sul <planet>. Pochi minuti dopo ricevi un bonifico di <payment>.",
+   "ratio": 0.857
+  },
+  {
+   "idx": 2,
+   "id": "mission:Coalition: Ringworld Workers 1|name|21|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 21,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Workers 1",
+   "english": "Workers to the <planet>",
+   "italian": "Lavoratori per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "mission:Coalition: Ringworld Workers 1|description|22|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 22,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Workers 1",
+   "english": "Transport this crew of <bunks> workers to the Heliarch <planet>, where they will help in the efforts to maintain and expand the ringworld. Payment will be <payment>.",
+   "italian": "Trasporta questo equipaggio di <bunks> operai sul <planet> degli Heliarch, dove aiuteranno negli sforzi per mantenere ed espandere il mondo ad anello. Il compenso sarà di <payment>.",
+   "ratio": 1.097
+  },
+  {
+   "idx": 4,
+   "id": "mission:Coalition: Ringworld Workers 2|name|42|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 42,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Workers 2",
+   "english": "Workers to the <planet>",
+   "italian": "Lavoratori per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "mission:Coalition: Ringworld Workers 2|description|43|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 43,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Workers 2",
+   "english": "Transport this crew of <bunks> workers to the Heliarch <planet>, where they will help in the efforts to maintain and expand the ringworld. Payment will be <payment>.",
+   "italian": "Trasporta questo equipaggio di <bunks> operai sul <planet> degli Heliarch, dove aiuteranno negli sforzi per mantenere ed espandere il mondo ad anello. Il compenso sarà di <payment>.",
+   "ratio": 1.097
+  },
+  {
+   "idx": 6,
+   "id": "mission:Coalition: Ringworld Workers 3|name|63|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 63,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Workers 3",
+   "english": "Workers to the <planet>",
+   "italian": "Lavoratori per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "mission:Coalition: Ringworld Workers 3|description|64|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 64,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Workers 3",
+   "english": "Transport this crew of <bunks> workers to the Heliarch <planet>, where they will help in the efforts to maintain and expand the ringworld. Payment will be <payment>.",
+   "italian": "Trasporta questo equipaggio di <bunks> operai sul <planet> degli Heliarch, dove aiuteranno negli sforzi per mantenere ed espandere il mondo ad anello. Il compenso sarà di <payment>.",
+   "ratio": 1.097
+  },
+  {
+   "idx": 8,
+   "id": "phrase:coalition ringworld volunteers|You drop off the volunteers on the <planet>, where they are met by a Heliarch agent. A few minutes later you receive a transfer of <payment>.|84|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 84,
+   "kind": "TEXT",
+   "context": "phrase:coalition ringworld volunteers",
+   "english": "You drop off the volunteers on the <planet>, where they are met by a Heliarch agent. A few minutes later you receive a transfer of <payment>.",
+   "italian": "Scarichi i volontari sul <planet>, dove vengono ricevuti da un agente degli Heliarch. Pochi minuti dopo ricevi un bonifico di <payment>.",
+   "ratio": 0.965
+  },
+  {
+   "idx": 9,
+   "id": "mission:Coalition: Ringworld Volunteers 1|name|89|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 89,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Volunteers 1",
+   "english": "Volunteers to the <planet>",
+   "italian": "Volontari per <planet>",
+   "ratio": 0.846
+  },
+  {
+   "idx": 10,
+   "id": "mission:Coalition: Ringworld Volunteers 1|description|90|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 90,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Volunteers 1",
+   "english": "The government will pay you <payment> to bring these <bunks> volunteer workers to the <planet>, where they will assist in the construction effort in return for room and board.",
+   "italian": "Il governo ti pagherà <payment> per portare questi <bunks> lavoratori volontari sul <planet>, dove daranno una mano nella costruzione in cambio di vitto e alloggio.",
+   "ratio": 0.937
+  },
+  {
+   "idx": 11,
+   "id": "mission:Coalition: Ringworld Volunteers 2|name|110|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 110,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Volunteers 2",
+   "english": "Volunteers to the <planet>",
+   "italian": "Volontari per <planet>",
+   "ratio": 0.846
+  },
+  {
+   "idx": 12,
+   "id": "mission:Coalition: Ringworld Volunteers 2|description|111|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 111,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Volunteers 2",
+   "english": "The government will pay you <payment> to bring these <bunks> volunteer workers to the <planet>, where they will assist in the construction effort in return for room and board.",
+   "italian": "Il governo ti pagherà <payment> per portare questi <bunks> lavoratori volontari sul <planet>, dove daranno una mano nella costruzione in cambio di vitto e alloggio.",
+   "ratio": 0.937
+  },
+  {
+   "idx": 13,
+   "id": "mission:Coalition: Ringworld Volunteers 3|name|131|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 131,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Volunteers 3",
+   "english": "Volunteers to the <planet>",
+   "italian": "Volontari per <planet>",
+   "ratio": 0.846
+  },
+  {
+   "idx": 14,
+   "id": "mission:Coalition: Ringworld Volunteers 3|description|132|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 132,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Volunteers 3",
+   "english": "The government will pay you <payment> to bring these <bunks> volunteer workers to the <planet>, where they will assist in the construction effort in return for room and board.",
+   "italian": "Il governo ti pagherà <payment> per portare questi <bunks> lavoratori volontari sul <planet>, dove daranno una mano nella costruzione in cambio di vitto e alloggio.",
+   "ratio": 0.937
+  },
+  {
+   "idx": 15,
+   "id": "phrase:coalition ringworld materials|You drop off the construction materials and receive <payment> in payment.|152|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 152,
+   "kind": "TEXT",
+   "context": "phrase:coalition ringworld materials",
+   "english": "You drop off the construction materials and receive <payment> in payment.",
+   "italian": "Scarichi i materiali da costruzione e ricevi <payment> come compenso.",
+   "ratio": 0.945
+  },
+  {
+   "idx": 16,
+   "id": "mission:Coalition: Ringworld Materials 1|name|157|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 157,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Materials 1",
+   "english": "Materials to the <planet>",
+   "italian": "Materiali per <planet>",
+   "ratio": 0.88
+  },
+  {
+   "idx": 17,
+   "id": "mission:Coalition: Ringworld Materials 1|description|158|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 158,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Materials 1",
+   "english": "Deliver these <tons> of construction materials to the Heliarch <planet> by <date>. Payment will be <payment>.",
+   "italian": "Consegna queste <tons> di materiali da costruzione sul <planet> degli Heliarch entro il <date>. Il compenso sarà di <payment>.",
+   "ratio": 1.156
+  },
+  {
+   "idx": 18,
+   "id": "mission:Coalition: Ringworld Materials 2|name|179|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 179,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Materials 2",
+   "english": "Materials to the <planet>",
+   "italian": "Materiali per <planet>",
+   "ratio": 0.88
+  },
+  {
+   "idx": 19,
+   "id": "mission:Coalition: Ringworld Materials 2|description|180|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 180,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Materials 2",
+   "english": "Deliver these <tons> of construction materials to the Heliarch <planet> by <date>. Payment will be <payment>.",
+   "italian": "Consegna queste <tons> di materiali da costruzione sul <planet> degli Heliarch entro il <date>. Il compenso sarà di <payment>.",
+   "ratio": 1.156
+  },
+  {
+   "idx": 20,
+   "id": "mission:Coalition: Ringworld Materials 3|name|201|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 201,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Materials 3",
+   "english": "Materials to the <planet>",
+   "italian": "Materiali per <planet>",
+   "ratio": 0.88
+  },
+  {
+   "idx": 21,
+   "id": "mission:Coalition: Ringworld Materials 3|description|202|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 202,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Materials 3",
+   "english": "Deliver these <tons> of construction materials to the Heliarch <planet> by <date>. Payment will be <payment>.",
+   "italian": "Consegna queste <tons> di materiali da costruzione sul <planet> degli Heliarch entro il <date>. Il compenso sarà di <payment>.",
+   "ratio": 1.156
+  },
+  {
+   "idx": 22,
+   "id": "phrase:coalition ringworld supplies|You drop off the donation of <commodity> and receive <payment> in payment.|223|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 223,
+   "kind": "TEXT",
+   "context": "phrase:coalition ringworld supplies",
+   "english": "You drop off the donation of <commodity> and receive <payment> in payment.",
+   "italian": "Scarichi la donazione di <commodity> e ricevi <payment> come compenso.",
+   "ratio": 0.946
+  },
+  {
+   "idx": 23,
+   "id": "mission:Coalition: Ringworld Supplies 1|name|228|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 228,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Supplies 1",
+   "english": "Supplies to the <planet>",
+   "italian": "Provviste per <planet>",
+   "ratio": 0.917
+  },
+  {
+   "idx": 24,
+   "id": "mission:Coalition: Ringworld Supplies 1|description|229|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 229,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Supplies 1",
+   "english": "This shipment of <tons> of supplies is a donation from the government of <origin> to help support the Heliarch <planet>. You will be paid <payment> on delivery.",
+   "italian": "Questa partita di <tons> di forniture è una donazione del governo di <origin> per sostenere il <planet> degli Heliarch. Ti verranno pagati <payment> alla consegna.",
+   "ratio": 1.019
+  },
+  {
+   "idx": 25,
+   "id": "mission:Coalition: Ringworld Supplies 2|name|249|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 249,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Supplies 2",
+   "english": "Supplies to the <planet>",
+   "italian": "Provviste per <planet>",
+   "ratio": 0.917
+  },
+  {
+   "idx": 26,
+   "id": "mission:Coalition: Ringworld Supplies 2|description|250|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 250,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Supplies 2",
+   "english": "This shipment of <tons> of supplies is a donation from the government of <origin> to help support the Heliarch <planet>. You will be paid <payment> on delivery.",
+   "italian": "Questa partita di <tons> di forniture è una donazione del governo di <origin> per sostenere il <planet> degli Heliarch. Ti verranno pagati <payment> alla consegna.",
+   "ratio": 1.019
+  },
+  {
+   "idx": 27,
+   "id": "mission:Coalition: Ringworld Supplies 3|name|270|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 270,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Ringworld Supplies 3",
+   "english": "Supplies to the <planet>",
+   "italian": "Provviste per <planet>",
+   "ratio": 0.917
+  },
+  {
+   "idx": 28,
+   "id": "mission:Coalition: Ringworld Supplies 3|description|271|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 271,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Ringworld Supplies 3",
+   "english": "This shipment of <tons> of supplies is a donation from the government of <origin> to help support the Heliarch <planet>. You will be paid <payment> on delivery.",
+   "italian": "Questa partita di <tons> di forniture è una donazione del governo di <origin> per sostenere il <planet> degli Heliarch. Ti verranno pagati <payment> alla consegna.",
+   "ratio": 1.019
+  },
+  {
+   "idx": 29,
+   "id": "mission:Coalition: Heliarch Candidate|name|292|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 292,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Heliarch Candidate",
+   "english": "Candidate to the <planet>",
+   "italian": "Candidato per <planet>",
+   "ratio": 0.88
+  },
+  {
+   "idx": 30,
+   "id": "mission:Coalition: Heliarch Candidate|description|293|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 293,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Heliarch Candidate",
+   "english": "You will be paid <payment> for transporting this candidate for elevation to the rank of Heliarch to the <planet> by <date>.",
+   "italian": "Ti verranno pagati <payment> per trasportare questo candidato all'elevazione al rango di Heliarch sul <planet> entro il <date>.",
+   "ratio": 1.033
+  }
+ ]
+}

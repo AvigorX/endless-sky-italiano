@@ -1,0 +1,66 @@
+{
+ "block": {
+  "path": "data/bunrodea/bunrodea missions.txt",
+  "line_from": 207,
+  "line_to": 219,
+  "units": 5
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tAs the small creature translates for you, the Queen looks as if she is smiling. \"An apology. Such an... unexpected response,\" the creature continues to translate for the Queen. \"Normally, those who have offended the Queen attempt to make excuses for themselves. Your apology is accepted.\"|207|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 207,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tAs the small creature translates for you, the Queen looks as if she is smiling. \"An apology. Such an... unexpected response,\" the creature continues to translate for the Queen. \"Normally, those who have offended the Queen attempt to make excuses for themselves. Your apology is accepted.\"",
+   "italian": "\tMentre la piccola creatura traduce per te, la Regina sembra sorridere. \"Una scusa. Una risposta davvero... inattesa,\" continua a tradurre la creatura per la Regina. \"Di solito, chi ha offeso la Regina cerca di giustificarsi. Le tue scuse sono accettate.\"",
+   "ratio": 0.882
+  },
+  {
+   "idx": 2,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tThe Queen motions to one of the guards and says something to them that the creature does not translate. She then speaks to you, and the creature translates: \"Since you have apologized, you will be allowed to live. My guards have been ordered to leave you be, and you may come and go on a small number of our worlds. But this is only so that you do not cause further trouble, and to allow you to refuel if you are passing through my systems. Your presence will only be tolerated, not welcomed. Now please leave my court.\"|208|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 208,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tThe Queen motions to one of the guards and says something to them that the creature does not translate. She then speaks to you, and the creature translates: \"Since you have apologized, you will be allowed to live. My guards have been ordered to leave you be, and you may come and go on a small number of our worlds. But this is only so that you do not cause further trouble, and to allow you to refuel if you are passing through my systems. Your presence will only be tolerated, not welcomed. Now please leave my court.\"",
+   "italian": "\tLa Regina fa cenno a una delle guardie e le dice qualcosa che la creatura non traduce. Poi parla a te, e la creatura traduce: \"Poiché ti sei scusato, ti sarà permesso vivere. Alle mie guardie è stato ordinato di lasciarti in pace, e potrai entrare e uscire da un piccolo numero dei nostri mondi. Ma questo solo perché tu non causi altri guai e per permetterti di rifornire, se stai attraversando i miei sistemi. La tua presenza sarà soltanto tollerata, non gradita. Ora, per favore, lascia la mia corte.\"",
+   "ratio": 0.969
+  },
+  {
+   "idx": 3,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tThe Queen motions to one of the guards and says something to them that the creature does not translate. She then speaks to you, and the creature translates: \"Since I have shown you mercy, you will be allowed to live. My guards have been ordered to leave you be, and you may come and go on a small number of our worlds. But this is only so that you do not cause further trouble, and to allow you to refuel if you are passing through my systems. Your presence will only be tolerated, not welcomed. Now please leave my court.\"|212|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 212,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tThe Queen motions to one of the guards and says something to them that the creature does not translate. She then speaks to you, and the creature translates: \"Since I have shown you mercy, you will be allowed to live. My guards have been ordered to leave you be, and you may come and go on a small number of our worlds. But this is only so that you do not cause further trouble, and to allow you to refuel if you are passing through my systems. Your presence will only be tolerated, not welcomed. Now please leave my court.\"",
+   "italian": "\tLa Regina fa cenno a una delle guardie e le dice qualcosa che la creatura non traduce. Poi parla a te, e la creatura traduce: \"Poiché ti ho mostrato clemenza, ti sarà permesso vivere. Alle mie guardie è stato ordinato di lasciarti in pace, e potrai entrare e uscire da un piccolo numero dei nostri mondi. Ma questo solo perché tu non causi altri guai e per permetterti di rifornire, se stai attraversando i miei sistemi. La tua presenza sarà soltanto tollerata, non gradita. Ora, per favore, lascia la mia corte.\"",
+   "ratio": 0.981
+  },
+  {
+   "idx": 4,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tThe Queen motions to one of the guards and says something to them that the creature does not translate. She then speaks to you, and the creature translates: \"Since it is my guards that have shown you disrespect, you will be allowed to live. My guards have been ordered to leave you be, and you may come and go on a small number of our worlds. But this is only so that you do not cause further trouble, and to allow you to refuel if you are passing through my systems. Your presence will only be tolerated, not welcomed. Now please leave my court.\"|216|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 216,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tThe Queen motions to one of the guards and says something to them that the creature does not translate. She then speaks to you, and the creature translates: \"Since it is my guards that have shown you disrespect, you will be allowed to live. My guards have been ordered to leave you be, and you may come and go on a small number of our worlds. But this is only so that you do not cause further trouble, and to allow you to refuel if you are passing through my systems. Your presence will only be tolerated, not welcomed. Now please leave my court.\"",
+   "italian": "\tLa Regina fa cenno a una delle guardie e le dice qualcosa che la creatura non traduce. Poi parla a te, e la creatura traduce: \"Poiché sono le mie guardie ad averti mostrato mancanza di rispetto, ti sarà permesso vivere. Alle mie guardie è stato ordinato di lasciarti in pace, e potrai entrare e uscire da un piccolo numero dei nostri mondi. Ma questo solo perché tu non causi altri guai e per permetterti di rifornire, se stai attraversando i miei sistemi. La tua presenza sarà soltanto tollerata, non gradita. Ora, per favore, lascia la mia corte.\"",
+   "ratio": 1.004
+  },
+  {
+   "idx": 5,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tYou're escorted out of the throne room and told by the small creature to leave as soon as you reach your ship. You exit the palace, and realize that you must once again face the stairs. You take a deep breath, and prepare yourself for the long journey down.|219|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 219,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tYou're escorted out of the throne room and told by the small creature to leave as soon as you reach your ship. You exit the palace, and realize that you must once again face the stairs. You take a deep breath, and prepare yourself for the long journey down.",
+   "italian": "\tSei accompagnato fuori dalla sala del trono e la piccola creatura ti dice di andartene appena raggiungi la nave. Esci dal palazzo e ti rendi conto che devi affrontare di nuovo le scale. Fai un respiro profondo e ti prepari alla lunga discesa.",
+   "ratio": 0.942
+  }
+ ]
+}

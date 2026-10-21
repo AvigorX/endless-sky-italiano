@@ -1,0 +1,128 @@
+{
+ "block": {
+  "path": "data/wanderer/wanderer missions.txt",
+  "line_from": 169,
+  "line_to": 182,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|As you approach <planet>, you recall that this is the planet on which you and the Wanderers planted the flower that the Mereti gave you. As you descend through the clouds, you spot a tiny blue dot in the depths of a valley, exactly where you left the Wanderers years ago.|169|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 169,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "As you approach <planet>, you recall that this is the planet on which you and the Wanderers planted the flower that the Mereti gave you. As you descend through the clouds, you spot a tiny blue dot in the depths of a valley, exactly where you left the Wanderers years ago.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t\t`As you approach <planet>, you recall that this is the planet on which you and the Wanderers planted the flower that the Mereti gave you. As you descend through the clouds, you spot a tiny blue dot in the depths of a valley, exactly where you left the Wanderers years ago.`",
+   "english_hash": "58b4f8762583908c"
+  },
+  {
+   "idx": 2,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\t(Take a closer look.)|171|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 171,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\t(Take a closer look.)",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t\t`\t(Take a closer look.)`",
+   "english_hash": "972edf3e9faa314b"
+  },
+  {
+   "idx": 3,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\t(Not right now.)|172|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 172,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\t(Not right now.)",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t\t`\t(Not right now.)`",
+   "english_hash": "269ee499add62269"
+  },
+  {
+   "idx": 4,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\tThe spot grows larger as you get closer, until you see the Strong Wind parked in the middle of a field of flowers, their petals gleaming a beautiful deep blue.|174|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 174,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\tThe spot grows larger as you get closer, until you see the Strong Wind parked in the middle of a field of flowers, their petals gleaming a beautiful deep blue.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\tThe spot grows larger as you get closer, until you see the Strong Wind parked in the middle of a field of flowers, their petals gleaming a beautiful deep blue.`",
+   "english_hash": "35034b9ffbf65d64"
+  },
+  {
+   "idx": 5,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\tYou carefully set your ship down outside the field, and a small Mereti drone flies up to you, speaking in a voice that is far more subdued than you expect. \"Thank you, <first> <last>. You have [saved, restored] the sitrasanir.\" Your translator makes no attempt at the last word, and it doesn't sound like any word you have heard in either the Hai or Wanderer language.|175|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 175,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\tYou carefully set your ship down outside the field, and a small Mereti drone flies up to you, speaking in a voice that is far more subdued than you expect. \"Thank you, <first> <last>. You have [saved, restored] the sitrasanir.\" Your translator makes no attempt at the last word, and it doesn't sound like any word you have heard in either the Hai or Wanderer language.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\tYou carefully set your ship down outside the field, and a small Mereti drone flies up to you, speaking in a voice that is far more subdued than you expect. \"Thank you, <first> <last>. You have [saved, restored] the sitrasanir.\" Your translator makes no attempt at the last word, and it doesn't sound like any word you have heard in either the Hai or Wanderer language.`",
+   "english_hash": "6ff4127e3f8d273d"
+  },
+  {
+   "idx": 6,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\t\"Sitrasanir?\"|177|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 177,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\t\"Sitrasanir?\"",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t\t`\t\"Sitrasanir?\"`",
+   "english_hash": "8a11f450fcdcf599"
+  },
+  {
+   "idx": 7,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\t\"You're welcome.\"|178|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 178,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\t\"You're welcome.\"",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t\t`\t\"You're welcome.\"`",
+   "english_hash": "1c5c7cf6de547d66"
+  },
+  {
+   "idx": 8,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\t\"This flower is called the sitrasanir. Its [symbol, appearance] was of [importance, significance] to our creators when they were [present? alive?]. We [abandoned, ignored] it for years, but our [parents, ancestors] helped us to remember it.\"|180|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 180,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\t\"This flower is called the sitrasanir. Its [symbol, appearance] was of [importance, significance] to our creators when they were [present? alive?]. We [abandoned, ignored] it for years, but our [parents, ancestors] helped us to remember it.\"",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\t\"This flower is called the sitrasanir. Its [symbol, appearance] was of [importance, significance] to our creators when they were [present? alive?]. We [abandoned, ignored] it for years, but our [parents, ancestors] helped us to remember it.\"`",
+   "english_hash": "56122da6fc2000d0"
+  },
+  {
+   "idx": 9,
+   "id": "mission:Wanderers: Mereti: The Plant Epilogue|\tThe drone sits in a contemplative silence, looking out into the field. The sun rises higher into the sky, and the field shines in blue hues that almost exactly match the blue paints on the Mereti ships in the sky above.|182|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 182,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant Epilogue",
+   "english": "\tThe drone sits in a contemplative silence, looking out into the field. The sun rises higher into the sky, and the field shines in blue hues that almost exactly match the blue paints on the Mereti ships in the sky above.",
+   "delimiter": "backtick",
+   "leading_tab": true,
+   "raw": "\t\t\t`\tThe drone sits in a contemplative silence, looking out into the field. The sun rises higher into the sky, and the field shines in blue hues that almost exactly match the blue paints on the Mereti ships in the sky above.`",
+   "english_hash": "40e9792566c03885"
+  }
+ ]
+}

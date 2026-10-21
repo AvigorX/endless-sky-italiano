@@ -1,0 +1,308 @@
+{
+ "block": {
+  "path": "data/coalition/coalition culture conversations.txt",
+  "line_from": 191,
+  "line_to": 250,
+  "units": 27
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Coalition Folklore: Kimek|\t(Go with the others and check the back gate.)|192|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 192,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Go with the others and check the back gate.)",
+   "italian": "\t(Vai con gli altri a controllare il cancello posteriore.)",
+   "ratio": 1.261
+  },
+  {
+   "idx": 2,
+   "id": "mission:Coalition Folklore: Kimek|\tOnce you get to the back gate, you and the Kimek there stay quiet and try to listen for anyone approaching this side of the fort. Sure enough, you hear scuttling Kimek legs swishing through the grass as the attackers come circling around. Fortunately, not many came to this gate, so, with your help, your Kimek teammates don't have much trouble keeping the gate closed. The group at the front gate isn't so lucky, however, and after a brief minute, the whistle sounds again. Your group comes back to the courtyard to find that the gate has been busted open and that the attackers with their blue sashes have won.|193|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 193,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tOnce you get to the back gate, you and the Kimek there stay quiet and try to listen for anyone approaching this side of the fort. Sure enough, you hear scuttling Kimek legs swishing through the grass as the attackers come circling around. Fortunately, not many came to this gate, so, with your help, your Kimek teammates don't have much trouble keeping the gate closed. The group at the front gate isn't so lucky, however, and after a brief minute, the whistle sounds again. Your group comes back to the courtyard to find that the gate has been busted open and that the attackers with their blue sashes have won.",
+   "italian": "\tArrivati al cancello posteriore, voi e i Kimek restate in silenzio e tendete l'orecchio a chiunque si avvicini da quel lato del forte. In effetti, sentite le zampe Kimek frusciare nell'erba mentre gli attaccanti aggirano il forte. Per fortuna non molti sono venuti a questo cancello, così, con il vostro aiuto, i compagni Kimek non fanno molta fatica a tenerlo chiuso. Il gruppo al cancello principale non è altrettanto fortunato, però, e dopo un breve minuto il fischietto risuona di nuovo. Il vostro gruppo torna nel cortile e trova il cancello sfondato: gli attaccanti con le fasce blu hanno vinto.",
+   "ratio": 0.982
+  },
+  {
+   "idx": 3,
+   "id": "mission:Coalition Folklore: Kimek|label|195|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 195,
+   "kind": "UI_LABEL",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "defend ww",
+   "italian": "defend ww",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "mission:Coalition Folklore: Kimek|\tAt first, holding the gate isn't too troublesome, but after a few minutes pass, it starts being pounded by some form of battering ram, and before long the group there can't hold it closed. At the same time, you hear a commotion from behind the shack, and as you and others go there to check, you arrive to see the small gate open. The attackers having made their way inside via both gates, the whistle sounds again, marking the end of the battle and the victory of the other side.|196|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 196,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tAt first, holding the gate isn't too troublesome, but after a few minutes pass, it starts being pounded by some form of battering ram, and before long the group there can't hold it closed. At the same time, you hear a commotion from behind the shack, and as you and others go there to check, you arrive to see the small gate open. The attackers having made their way inside via both gates, the whistle sounds again, marking the end of the battle and the victory of the other side.",
+   "italian": "\tAll'inizio tenere il cancello non è troppo difficile, ma dopo qualche minuto comincia a essere martellato da una specie di ariete, e in poco tempo il gruppo là non riesce più a tenerlo chiuso. Nello stesso tempo sentite un trambusto da dietro la baracca e, andando a controllare con gli altri, arrivate a vedere il cancello piccolo aperto. Con gli attaccanti entrati da entrambi i cancelli, il fischietto risuona di nuovo, segnando la fine della battaglia e la vittoria dell'altra parte.",
+   "ratio": 1.015
+  },
+  {
+   "idx": 5,
+   "id": "mission:Coalition Folklore: Kimek|\tHe brings you to the nearby camp, where many Kimek, Arachi, and even a few Saryds are gathered for the event. Most of them are waiting in anticipation inside one of the tents, or looking up at the fort; all of them have long, blue strips of cloth over their own clothing. Once she notices you two, another Kimek organizer, donning what looks like a thin gambeson, comes to say hello. She greets her colleague, who then introduces you and tells her you have chosen to join the attackers, before leaving the camp to welcome a family who has come to watch the event.|199|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 199,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tHe brings you to the nearby camp, where many Kimek, Arachi, and even a few Saryds are gathered for the event. Most of them are waiting in anticipation inside one of the tents, or looking up at the fort; all of them have long, blue strips of cloth over their own clothing. Once she notices you two, another Kimek organizer, donning what looks like a thin gambeson, comes to say hello. She greets her colleague, who then introduces you and tells her you have chosen to join the attackers, before leaving the camp to welcome a family who has come to watch the event.",
+   "italian": "\tVi conduce all'accampamento vicino, dove molti Kimek, Arach e perfino qualche Saryd si sono radunati per l'evento. Quasi tutti aspettano con impazienza dentro una delle tende, o guardano verso il forte; tutti portano lunghe strisce di stoffa blu sopra i vestiti. Quando nota voi due, un'altra organizzatrice Kimek, con addosso quello che sembra un farsetto imbottito, viene a salutarvi. Saluta il collega, che vi presenta e le dice che avete scelto di unirvi agli attaccanti, poi lascia l'accampamento per accogliere una famiglia venuta ad assistere all'evento.",
+   "ratio": 0.996
+  },
+  {
+   "idx": 6,
+   "id": "mission:Coalition Folklore: Kimek|\t\"Honored to have you fight alongside us, our company is,\" the armored Kimek begins. \"Told about our objective, I assume you have been. Break into the fort, we must, before up the time is. Ten minutes, we have, once started, the battle has.\" She tells you to follow her to the \"war tent,\" one that's slightly larger than the others around it. There she gives you a long piece of blue cloth and informs you that it is meant to be worn so that others can tell what team you are on. Wrapping it around your neck like a scarf while you look around the main tent, you see that there is a stumpy log reinforced with metal bits stored here, which the Kimek tells you will be used as a battering ram to force open the gates. She then has you follow her to the edge of the camp to show you the limits of this \"set,\" which is marked by patches of vegetation meant to indicate the boundaries of the game. \"Also, discourage anyone from trying it, the thorns should, but against the rules, it is, to crawl up the walls of the fort, so-\" She pauses, looking at you as if just realizing that such a thing is impossible for you. \"Sorry, out of habit, I said it. Participate in this event, not many groundlocked people do; few Saryds here I've met. Even fewer humans, as imagine, you can.\"|200|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 200,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t\"Honored to have you fight alongside us, our company is,\" the armored Kimek begins. \"Told about our objective, I assume you have been. Break into the fort, we must, before up the time is. Ten minutes, we have, once started, the battle has.\" She tells you to follow her to the \"war tent,\" one that's slightly larger than the others around it. There she gives you a long piece of blue cloth and informs you that it is meant to be worn so that others can tell what team you are on. Wrapping it around your neck like a scarf while you look around the main tent, you see that there is a stumpy log reinforced with metal bits stored here, which the Kimek tells you will be used as a battering ram to force open the gates. She then has you follow her to the edge of the camp to show you the limits of this \"set,\" which is marked by patches of vegetation meant to indicate the boundaries of the game. \"Also, discourage anyone from trying it, the thorns should, but against the rules, it is, to crawl up the walls of the fort, so-\" She pauses, looking at you as if just realizing that such a thing is impossible for you. \"Sorry, out of habit, I said it. Participate in this event, not many groundlocked people do; few Saryds here I've met. Even fewer humans, as imagine, you can.\"",
+   "italian": "\t\"Onorate di avervi a combattere al nostro fianco, la nostra compagnia è\", esordisce la Kimek corazzata. \"Informati sul nostro obiettivo, immagino che siate. Entrare nel forte, dobbiamo, prima che il tempo scada. Dieci minuti, abbiamo, una volta iniziata, la battaglia è.\" Vi dice di seguirla fino alla \"tenda da guerra\", un po' più grande delle altre intorno. Lì vi consegna un lungo pezzo di stoffa blu e vi spiega che va indossato, così che gli altri capiscano a quale squadra appartenete. Mentre ve lo avvolgete attorno al collo come una sciarpa e vi guardate intorno nella tenda principale, vedete che qui è custodito un tronco tozzo rinforzato con pezzi di metallo, che la Kimek dice servirà da ariete per forzare i cancelli. Vi fa poi seguire fino al bordo dell'accampamento per mostrarvi i confini di questo \"gruppo\", segnati da chiazze di vegetazione che indicano i limiti del gioco. \"Inoltre, scoraggiare chiunque dal provarci, le spine dovrebbero, ma contro le regole, è, arrampicarsi sulle mura del forte, quindi...\" Si interrompe, guardandovi come se solo ora si rendesse conto che per voi una cosa del genere è impossibile. \"Scusate, per abitudine, l'ho detto. Partecipare a questo evento, non molti di voi legati al suolo lo fanno; pochi Saryd qui ho incontrato. Ancor meno umani, come potete immaginare.\"",
+   "ratio": 1.038
+  },
+  {
+   "idx": 7,
+   "id": "mission:Coalition Folklore: Kimek|\tOnce she's done, she says you're free to roam the camp as you wait for the \"battle\" to begin. A few minutes pass before a loud whistle blows, and the Kimek in charge of the camp tells everyone that the time has come. She leads the charge up the hill, with most of those from the camp following her. Others split into smaller groups and instead move up along the trees that separate the sets, trying to approach the fort from the sides.|201|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 201,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tOnce she's done, she says you're free to roam the camp as you wait for the \"battle\" to begin. A few minutes pass before a loud whistle blows, and the Kimek in charge of the camp tells everyone that the time has come. She leads the charge up the hill, with most of those from the camp following her. Others split into smaller groups and instead move up along the trees that separate the sets, trying to approach the fort from the sides.",
+   "italian": "\tQuando ha finito, vi dice che siete liberi di girare per l'accampamento mentre aspettate che la \"battaglia\" cominci. Passano alcuni minuti prima che risuoni un fischietto acuto, e la Kimek a capo dell'accampamento annuncia a tutti che è arrivato il momento. Guida la carica su per il pendio, con quasi tutti quelli dell'accampamento dietro di lei. Altri si dividono in gruppi più piccoli e salgono lungo gli alberi che separano i gruppi, cercando di avvicinarsi al forte dai lati.",
+   "ratio": 1.103
+  },
+  {
+   "idx": 8,
+   "id": "mission:Coalition Folklore: Kimek|\t(Charge with the main group.)|203|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 203,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Charge with the main group.)",
+   "italian": "\t(Carica con il gruppo principale.)",
+   "ratio": 1.167
+  },
+  {
+   "idx": 9,
+   "id": "mission:Coalition Folklore: Kimek|\t(Take the longer side route.)|205|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 205,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Take the longer side route.)",
+   "italian": "\t(Prendi la strada più lunga, di lato.)",
+   "ratio": 1.3
+  },
+  {
+   "idx": 10,
+   "id": "mission:Coalition Folklore: Kimek|label|207|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 207,
+   "kind": "UI_LABEL",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "attack w",
+   "italian": "attack w",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "mission:Coalition Folklore: Kimek|\tYou follow the lead of the Kimek and start to run straight up the hill, directly at the fort. Once you get closer, however, you see the defenders, garbed in strips of green cloth as opposed to your blue, pouring out buckets of what looks like water. As it flows down the hill to meet your steps, though, you immediately lose your balance and your feet slip out from under you, and you slide a short distance back down the hill. You get up, but, try it as you may, you cannot find stable footing in the wet grass, instead having to step on the few tufts that have grown too high for the liquid to cover them. Even with all their legs, the Kimek and Saryds fare no better, and find themselves in similar trouble, losing their balance again and again. Only the Arachi can press onward, digging down into the dirt beneath the grass with half their legs at each step. They slowly but surely help you and the others move up, and eventually you reach the gate, only to find that the groups that came from the sides are already working on busting it open. You can also see what the Kimek meant when she spoke of \"thorns;\" tufts of vicious, reddish barbs nearly as long as your arm cover the logs that make up the walls.|208|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 208,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tYou follow the lead of the Kimek and start to run straight up the hill, directly at the fort. Once you get closer, however, you see the defenders, garbed in strips of green cloth as opposed to your blue, pouring out buckets of what looks like water. As it flows down the hill to meet your steps, though, you immediately lose your balance and your feet slip out from under you, and you slide a short distance back down the hill. You get up, but, try it as you may, you cannot find stable footing in the wet grass, instead having to step on the few tufts that have grown too high for the liquid to cover them. Even with all their legs, the Kimek and Saryds fare no better, and find themselves in similar trouble, losing their balance again and again. Only the Arachi can press onward, digging down into the dirt beneath the grass with half their legs at each step. They slowly but surely help you and the others move up, and eventually you reach the gate, only to find that the groups that came from the sides are already working on busting it open. You can also see what the Kimek meant when she spoke of \"thorns;\" tufts of vicious, reddish barbs nearly as long as your arm cover the logs that make up the walls.",
+   "italian": "\tSeguite l'esempio della Kimek e cominciate a correre dritto su per il pendio, verso il forte. Avvicinandovi, però, vedete i difensori, con le strisce di stoffa verde invece che blu, versare secchi di quello che sembra acqua. Quando il liquido scende lungo il pendio incontro ai vostri passi, però, perdete subito l'equilibrio e i piedi scivolano via da sotto, e scivolate per un breve tratto giù per il pendio. Vi rialzate, ma per quanto proviate non trovate un appoggio stabile nell'erba bagnata, e dovete mettere i piedi sui pochi ciuffi cresciuti troppo alti perché il liquido li coprisse. Anche con tutte le loro zampe, i Kimek e i Saryd non se la cavano meglio e si trovano in difficoltà simili, perdendo l'equilibrio ancora e ancora. Solo gli Arach riescono ad avanzare, scavando nella terra sotto l'erba con metà delle zampe a ogni passo. Piano ma con sicurezza aiutano voi e gli altri a salire, e alla fine raggiungete il cancello, per scoprire che i gruppi arrivati dai lati stanno già lavorando per sfondarlo. Vedete anche che cosa intendeva la Kimek parlando di \"spine\": ciuffi di barbe rossastre e insidiose, lunghe quasi quanto un braccio, coprono i tronchi che formano le mura.",
+   "ratio": 0.983
+  },
+  {
+   "idx": 12,
+   "id": "mission:Coalition Folklore: Kimek|\t(Try and find another way in.)|210|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 210,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Try and find another way in.)",
+   "italian": "\t(Prova a trovare un altro modo per entrare.)",
+   "ratio": 1.452
+  },
+  {
+   "idx": 13,
+   "id": "mission:Coalition Folklore: Kimek|\t(Help the others bust the gate open.)|212|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 212,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Help the others bust the gate open.)",
+   "italian": "\t(Aiuta gli altri a sfondare il cancello.)",
+   "ratio": 1.105
+  },
+  {
+   "idx": 14,
+   "id": "mission:Coalition Folklore: Kimek|\tYou start pushing along with the others, the Saryds joining you from below, and the Kimek and Arachi crawling up to push at the top of the gate. They take turns with each others when one gets tired so that someone is always pushing, even though their attempts aren't the most effective. After a while, you hear a cracking noise, and the gate finally begins budging slightly, as if something barricading it had broken off. As the latecomers of the main force come up, bringing with them the battering ram, everyone makes way for them to begin hammering it against the gate. The gate shudders with each hit and gradually begins to give even more, but even the battering ram team cannot break through fast enough as the whistle from the start of the event sounds again. Evidently this means that time has run out, and the defenders have won.|213|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 213,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tYou start pushing along with the others, the Saryds joining you from below, and the Kimek and Arachi crawling up to push at the top of the gate. They take turns with each others when one gets tired so that someone is always pushing, even though their attempts aren't the most effective. After a while, you hear a cracking noise, and the gate finally begins budging slightly, as if something barricading it had broken off. As the latecomers of the main force come up, bringing with them the battering ram, everyone makes way for them to begin hammering it against the gate. The gate shudders with each hit and gradually begins to give even more, but even the battering ram team cannot break through fast enough as the whistle from the start of the event sounds again. Evidently this means that time has run out, and the defenders have won.",
+   "italian": "\tCominciate a spingere insieme agli altri: i Saryd si uniscono dal basso, i Kimek e gli Arach salgono strisciando per spingere sulla parte alta del cancello. Si danno il cambio quando qualcuno si stanca, così c'è sempre chi spinge, anche se i loro tentativi non sono dei più efficaci. Dopo un po' sentite uno schiocco e il cancello comincia finalmente a cedere di poco, come se qualcosa che lo sbarrava si fosse spezzato. Quando arrivano gli ultimi della forza principale, portando l'ariete, tutti si fanno da parte perché comincino a batterlo contro il cancello. Il cancello trema a ogni colpo e via via cede sempre di più, ma nemmeno la squadra dell'ariete riesce a sfondare in tempo: il fischietto che segna l'inizio dell'evento risuona di nuovo. Evidentemente significa che il tempo è scaduto e che i difensori hanno vinto.",
+   "ratio": 0.986
+  },
+  {
+   "idx": 15,
+   "id": "mission:Coalition Folklore: Kimek|label|215|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 215,
+   "kind": "UI_LABEL",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "attack wr",
+   "italian": "attack wr",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "mission:Coalition Folklore: Kimek|\tYou and a part of the group stick close to the walls and follow along them to the other side, careful not to scratch yourself on the thorns along the fort. You soon find another, smaller gate, and begin pushing. Unlike what you can see of the efforts you left at the main gate, you can feel this one budging immediately, and there is no slick ground to worry about. Once they realize the vulnerability of this gate, the Saryds in the group ask others to move out of the way. You are a bit startled as they suddenly charge it in unison, almost forcing it open with a single concerted effort. More defenders come to hold it, though, and the gate becomes increasingly difficult to move any further. One Arach heads back to the main group to call for more help, but when they arrive, so do more defenders. The struggle continues for many minutes, with the attackers alongside you unable to make a final breakthrough. The whistle sounds again, marking the end of the battle, announcing that the defenders have won.|216|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 216,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tYou and a part of the group stick close to the walls and follow along them to the other side, careful not to scratch yourself on the thorns along the fort. You soon find another, smaller gate, and begin pushing. Unlike what you can see of the efforts you left at the main gate, you can feel this one budging immediately, and there is no slick ground to worry about. Once they realize the vulnerability of this gate, the Saryds in the group ask others to move out of the way. You are a bit startled as they suddenly charge it in unison, almost forcing it open with a single concerted effort. More defenders come to hold it, though, and the gate becomes increasingly difficult to move any further. One Arach heads back to the main group to call for more help, but when they arrive, so do more defenders. The struggle continues for many minutes, with the attackers alongside you unable to make a final breakthrough. The whistle sounds again, marking the end of the battle, announcing that the defenders have won.",
+   "italian": "\tVoi e una parte del gruppo restate vicini alle mura e le seguite fino all'altro lato, attenti a non graffiarvi con le spine lungo il forte. Trovate presto un altro cancello, più piccolo, e cominciate a spingere. A differenza di quanto potete vedere degli sforzi lasciati al cancello principale, sentite che questo cede subito, e non c'è terreno scivoloso di cui preoccuparvi. Quando si accorgono della vulnerabilità di questo cancello, i Saryd del gruppo chiedono agli altri di farsi da parte. Trasalite un po' quando lo caricano all'improvviso all'unisono, quasi forzandolo con un solo sforzo concertato. Arrivano però altri difensori a tenerlo, e il cancello diventa sempre più difficile da muovere. Un Arach torna al gruppo principale a chiedere altro aiuto, ma quando arrivano, arrivano anche altri difensori. La lotta continua per molti minuti, e gli attaccanti al vostro fianco non riescono a sfondare. Il fischietto risuona di nuovo, segnando la fine della battaglia e annunciando che i difensori hanno vinto.",
+   "ratio": 1.007
+  },
+  {
+   "idx": 17,
+   "id": "mission:Coalition Folklore: Kimek|label|218|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 218,
+   "kind": "UI_LABEL",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "attack r",
+   "italian": "attack r",
+   "ratio": 1.0
+  },
+  {
+   "idx": 18,
+   "id": "mission:Coalition Folklore: Kimek|\tYou follow a group to the edges of this set, losing some time before beginning your run up the hill. Once you finally start making your way up, you turn to see the main group repeatedly tripping and falling back. It seems the defenders, who are wearing green identifiers instead of blue, are pouring some slippery liquid down from the battlements above the gate, slowing those that are coming along a direct path. You reach the top while the main force still struggles, and your group makes its way to the gate. On your way, you see what the Kimek meant when she spoke of \"thorns,\" with closely-spaced tufts of vicious, reddish barbs nearly as long as your arm covering the logs that make up the walls. You reach the gate, but as you push and push, it refuses to budge even the slightest bit, clearly having been barricaded from the inside. The main group eventually catches up to you, but even with many more people pushing now, the gate still holds firm and unmoving.|219|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 219,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tYou follow a group to the edges of this set, losing some time before beginning your run up the hill. Once you finally start making your way up, you turn to see the main group repeatedly tripping and falling back. It seems the defenders, who are wearing green identifiers instead of blue, are pouring some slippery liquid down from the battlements above the gate, slowing those that are coming along a direct path. You reach the top while the main force still struggles, and your group makes its way to the gate. On your way, you see what the Kimek meant when she spoke of \"thorns,\" with closely-spaced tufts of vicious, reddish barbs nearly as long as your arm covering the logs that make up the walls. You reach the gate, but as you push and push, it refuses to budge even the slightest bit, clearly having been barricaded from the inside. The main group eventually catches up to you, but even with many more people pushing now, the gate still holds firm and unmoving.",
+   "italian": "\tSeguite un gruppo fino ai bordi di questo gruppo, perdendo un po' di tempo prima di cominciare la corsa su per il pendio. Quando alla fine partite, vi voltate e vedete il gruppo principale inciampare e cadere all'indietro più e più volte. Sembra che i difensori, che portano contrassegni verdi invece che blu, stiano versando del liquido scivoloso dai merli sopra il cancello, rallentando chi arriva lungo la via diretta. Raggiungete la cima mentre la forza principale sta ancora lottando, e il vostro gruppo si dirige al cancello. Lungo la strada vedete che cosa intendeva la Kimek parlando di \"spine\": ciuffi ravvicinati di barbe rossastre e insidiose, lunghe quasi quanto un braccio, coprono i tronchi che formano le mura. Arrivate al cancello, ma per quanto spingiate non cede di un millimetro, chiaramente sbarrato dall'interno. Alla fine il gruppo principale vi raggiunge, ma anche con molte più persone a spingere il cancello resta saldo e immobile.",
+   "ratio": 0.987
+  },
+  {
+   "idx": 19,
+   "id": "mission:Coalition Folklore: Kimek|\t(Try and find another way in.)|221|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 221,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Try and find another way in.)",
+   "italian": "\t(Prova a trovare un altro modo per entrare.)",
+   "ratio": 1.452
+  },
+  {
+   "idx": 20,
+   "id": "mission:Coalition Folklore: Kimek|\t(Continue trying to bust the gate open.)|223|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 223,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\t(Continue trying to bust the gate open.)",
+   "italian": "\t(Continua a cercare di sfondare il cancello.)",
+   "ratio": 1.122
+  },
+  {
+   "idx": 21,
+   "id": "mission:Coalition Folklore: Kimek|\tYou start pushing along with the others, the Saryds joining you from below, and the Kimek and Arachi crawling up to push at the top of the gate. They take turns with each others when one gets tired so that someone is always pushing, even though their attempts aren't the most effective. After a while, you hear a cracking noise, and the gate finally begins budging slightly, as if something barricading it had broken off. As the latecomers of the main force come up, bringing with them the battering ram, everyone makes way for them to begin hammering it against the gate. The gate shudders with each hit and gradually begins to give even more, but even the battering ram team cannot break through fast enough as the whistle from the start of the event sounds again. Evidently this means that time has run out, and the defenders have won.|224|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 224,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tYou start pushing along with the others, the Saryds joining you from below, and the Kimek and Arachi crawling up to push at the top of the gate. They take turns with each others when one gets tired so that someone is always pushing, even though their attempts aren't the most effective. After a while, you hear a cracking noise, and the gate finally begins budging slightly, as if something barricading it had broken off. As the latecomers of the main force come up, bringing with them the battering ram, everyone makes way for them to begin hammering it against the gate. The gate shudders with each hit and gradually begins to give even more, but even the battering ram team cannot break through fast enough as the whistle from the start of the event sounds again. Evidently this means that time has run out, and the defenders have won.",
+   "italian": "\tCominciate a spingere insieme agli altri: i Saryd si uniscono dal basso, i Kimek e gli Arach salgono strisciando per spingere sulla parte alta del cancello. Si danno il cambio quando qualcuno si stanca, così c'è sempre chi spinge, anche se i loro tentativi non sono dei più efficaci. Dopo un po' sentite uno schiocco e il cancello comincia finalmente a cedere di poco, come se qualcosa che lo sbarrava si fosse spezzato. Quando arrivano gli ultimi della forza principale, portando l'ariete, tutti si fanno da parte perché comincino a batterlo contro il cancello. Il cancello trema a ogni colpo e via via cede sempre di più, ma nemmeno la squadra dell'ariete riesce a sfondare in tempo: il fischietto che segna l'inizio dell'evento risuona di nuovo. Evidentemente significa che il tempo è scaduto e che i difensori hanno vinto.",
+   "ratio": 0.986
+  },
+  {
+   "idx": 22,
+   "id": "mission:Coalition Folklore: Kimek|label|226|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 226,
+   "kind": "UI_LABEL",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "attack rr",
+   "italian": "attack rr",
+   "ratio": 1.0
+  },
+  {
+   "idx": 23,
+   "id": "mission:Coalition Folklore: Kimek|\tYou and a part of the group stick close to the walls and follow along them to the other side, careful not to scratch yourself on the thorns along the fort. You soon find another, smaller gate, and begin pushing. Unlike what you can see of the efforts you left at the main gate, you can feel this one budging immediately, and there is no slick ground to worry about. Once they realize the vulnerability of this gate, the Saryds in the group ask others to move out of the way. You are a bit startled as they suddenly charge it in unison, almost forcing it open with a single concerted effort. More defenders come to hold it, though, and the gate becomes increasingly difficult to move any further. One Arach heads back to the main group to call for more help, but when they arrive, so do more defenders. The struggle continues for a while, before you hear loud bangs from the other side of the fort. The Kimek organizer comes around the back to tell everyone to return to the main entrance. As you come to the main gate, you see the battering ram has forced the main gate open, something that must've been made easier with so many leaving it unguarded to instead defend the back gate. With that, the whistle sounds again, marking the end of the battle, announcing that the attackers have won.|227|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 227,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tYou and a part of the group stick close to the walls and follow along them to the other side, careful not to scratch yourself on the thorns along the fort. You soon find another, smaller gate, and begin pushing. Unlike what you can see of the efforts you left at the main gate, you can feel this one budging immediately, and there is no slick ground to worry about. Once they realize the vulnerability of this gate, the Saryds in the group ask others to move out of the way. You are a bit startled as they suddenly charge it in unison, almost forcing it open with a single concerted effort. More defenders come to hold it, though, and the gate becomes increasingly difficult to move any further. One Arach heads back to the main group to call for more help, but when they arrive, so do more defenders. The struggle continues for a while, before you hear loud bangs from the other side of the fort. The Kimek organizer comes around the back to tell everyone to return to the main entrance. As you come to the main gate, you see the battering ram has forced the main gate open, something that must've been made easier with so many leaving it unguarded to instead defend the back gate. With that, the whistle sounds again, marking the end of the battle, announcing that the attackers have won.",
+   "italian": "\tVoi e una parte del gruppo restate vicini alle mura e le seguite fino all'altro lato, attenti a non graffiarvi con le spine lungo il forte. Trovate presto un altro cancello, più piccolo, e cominciate a spingere. A differenza di quanto potete vedere degli sforzi lasciati al cancello principale, sentite che questo cede subito, e non c'è terreno scivoloso di cui preoccuparvi. Quando si accorgono della vulnerabilità di questo cancello, i Saryd del gruppo chiedono agli altri di farsi da parte. Trasalite un po' quando lo caricano all'improvviso all'unisono, quasi forzandolo con un solo sforzo concertato. Arrivano però altri difensori a tenerlo, e il cancello diventa sempre più difficile da muovere. Un Arach torna al gruppo principale a chiedere altro aiuto, ma quando arrivano, arrivano anche altri difensori. La lotta continua per un po', finché non sentite forti colpi dall'altro lato del forte. L'organizzatrice Kimek gira sul retro per dire a tutti di tornare all'ingresso principale. Arrivati al cancello principale, vedete che l'ariete l'ha sfondato: cosa che dev'essere stata più facile perché in tanti l'avevano lasciato incustodito per difendere il cancello posteriore. A quel punto il fischietto risuona di nuovo, segnando la fine della battaglia e annunciando che gli attaccanti hanno vinto.",
+   "ratio": 1.012
+  },
+  {
+   "idx": 24,
+   "id": "mission:Coalition Folklore: Kimek|\tThe Kimek organizer in charge of your side starts a cheer, which quickly spreads to the others. After the leaders of both teams meet to greet each other, everyone is asked to return the colored cloth they were given and make their way down the hill. Your group is pointed to a nearby building to wash off any dirt, if needed. Once you're all cleaned up, you head back to the camp, where the Kimek who brought you here is waiting to guide your group to many short tables with plates on them; apparently, the reward for winning is a feast. As most of those who participate are Kimek, almost all of the food comes the way they prefer it: a soupy, half-digested mess. Thankfully there are a few meals prepared the way the other species like them, meaning you can pick one prepared for Saryds; their meals are the closest you can get to human cuisine here.|229|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 229,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tThe Kimek organizer in charge of your side starts a cheer, which quickly spreads to the others. After the leaders of both teams meet to greet each other, everyone is asked to return the colored cloth they were given and make their way down the hill. Your group is pointed to a nearby building to wash off any dirt, if needed. Once you're all cleaned up, you head back to the camp, where the Kimek who brought you here is waiting to guide your group to many short tables with plates on them; apparently, the reward for winning is a feast. As most of those who participate are Kimek, almost all of the food comes the way they prefer it: a soupy, half-digested mess. Thankfully there are a few meals prepared the way the other species like them, meaning you can pick one prepared for Saryds; their meals are the closest you can get to human cuisine here.",
+   "italian": "\tL'organizzatrice Kimek a capo della vostra parte lancia un evviva, che si diffonde rapidamente fra gli altri. Dopo che i capi delle due squadre si sono incontrati per salutarsi, a tutti viene chiesto di restituire la stoffa colorata ricevuta e di scendere dal pendio. Il vostro gruppo viene indirizzato a un edificio vicino per lavarsi via la terra, se serve. Una volta puliti, tornate all'accampamento, dove il Kimek che vi ha portato qui vi aspetta per guidarvi a molti tavoli bassi con i piatti sopra; a quanto pare, la ricompensa per la vittoria è un banchetto. Dato che quasi tutti i partecipanti sono Kimek, quasi tutto il cibo è preparato come piace a loro: una poltiglia brodosa e parzialmente digerita. Per fortuna ci sono alcuni pasti preparati come piacciono alle altre specie, quindi potete sceglierne uno pensato per i Saryd; i loro piatti sono quanto di più vicino alla cucina umana ci sia, qui.",
+   "ratio": 1.068
+  },
+  {
+   "idx": 25,
+   "id": "mission:Coalition Folklore: Kimek|\tThe Saryd first course offered consists of many cooked vegetables, arranged in a little mound on the plate, with a thin trail of steam still coming from them. Talking with the organizers, you learn that the meals are meant to represent the produce of the fort's \"farm,\" and that those who win earn the right to the banquet. Once you're done eating, you return to where the train dropped you off and get on the next one heading back to the spaceport.|230|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 230,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tThe Saryd first course offered consists of many cooked vegetables, arranged in a little mound on the plate, with a thin trail of steam still coming from them. Talking with the organizers, you learn that the meals are meant to represent the produce of the fort's \"farm,\" and that those who win earn the right to the banquet. Once you're done eating, you return to where the train dropped you off and get on the next one heading back to the spaceport.",
+   "italian": "\tIl primo piatto Saryd offerto è fatto di molte verdure cotte, disposte in un piccolo mucchio sul piatto, con un sottile filo di vapore che ancora sale. Parlando con gli organizzatori, venite a sapere che i pasti vogliono rappresentare i raccolti della \"fattoria\" del forte, e che chi vince si guadagna il diritto al banchetto. Finito di mangiare, tornate dove il treno vi ha lasciati e salite sul successivo, diretto allo spazioporto.",
+   "ratio": 0.967
+  },
+  {
+   "idx": 26,
+   "id": "mission:Coalition Folklore: Kimek|\tThe Kimek organizer of the other side starts a cheer, which quickly spreads to the others. After the leaders of both teams meet to greet each other, everyone is asked to return the colored cloth they were given and make their way down the hill. Your group is pointed to a nearby building to wash off any dirt, if needed. Once you're all cleaned up, the Kimek who brought you here is waiting by the camp to guide your opponents to many short tables with plates on them; apparently, the reward for winning is a feast. \"A shame it is, that lost the battle your team has,\" he says. \"But hopefully, still fun with the event you had.\"|233|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 233,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tThe Kimek organizer of the other side starts a cheer, which quickly spreads to the others. After the leaders of both teams meet to greet each other, everyone is asked to return the colored cloth they were given and make their way down the hill. Your group is pointed to a nearby building to wash off any dirt, if needed. Once you're all cleaned up, the Kimek who brought you here is waiting by the camp to guide your opponents to many short tables with plates on them; apparently, the reward for winning is a feast. \"A shame it is, that lost the battle your team has,\" he says. \"But hopefully, still fun with the event you had.\"",
+   "italian": "\tL'organizzatore Kimek dell'altra parte lancia un evviva, che si diffonde rapidamente fra gli altri. Dopo che i capi delle due squadre si sono incontrati per salutarsi, a tutti viene chiesto di restituire la stoffa colorata ricevuta e di scendere dal pendio. Il vostro gruppo viene indirizzato a un edificio vicino per lavarsi via la terra, se serve. Una volta puliti, il Kimek che vi ha portato qui vi aspetta accanto all'accampamento per guidare i vostri avversari ai molti tavoli bassi con i piatti; a quanto pare, la ricompensa per la vittoria è un banchetto. \"Un peccato, è, che la battaglia la vostra squadra abbia perso\", dice. \"Ma spero che, comunque, l'evento vi sia piaciuto.\"",
+   "ratio": 1.091
+  },
+  {
+   "idx": 27,
+   "id": "mission:Coalition Folklore: Kimek|\tBefore he leaves with the victors, he explains a bit more about the event, telling you that the meals that will be served at the banquet are meant to represent the produce of the fort's \"farm,\" and that those who win earn the right to it. Finally, he thanks you for participating, and goes with the winners to the tables. You return to where the train dropped you off and get on the next one heading back to the spaceport.|234|0",
+   "path": "data/coalition/coalition culture conversations.txt",
+   "line": 234,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Coalition Folklore: Kimek",
+   "english": "\tBefore he leaves with the victors, he explains a bit more about the event, telling you that the meals that will be served at the banquet are meant to represent the produce of the fort's \"farm,\" and that those who win earn the right to it. Finally, he thanks you for participating, and goes with the winners to the tables. You return to where the train dropped you off and get on the next one heading back to the spaceport.",
+   "italian": "\tPrima di andarsene con i vincitori, vi spiega qualcosa in più sull'evento, dicendovi che i pasti serviti al banchetto vogliono rappresentare i raccolti della \"fattoria\" del forte, e che chi vince se ne guadagna il diritto. Infine vi ringrazia per aver partecipato e va con i vincitori ai tavoli. Voi tornate dove il treno vi ha lasciati e salite sul successivo, diretto allo spazioporto.",
+   "ratio": 0.917
+  }
+ ]
+}

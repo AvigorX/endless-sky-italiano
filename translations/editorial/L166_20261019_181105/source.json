@@ -1,0 +1,89 @@
+{
+ "block": {
+  "path": "data/avgi/avgi outfits.txt",
+  "line_from": 616,
+  "line_to": 654,
+  "units": 6
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Optical Laser Rifle|description|616|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 616,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Optical Laser Rifle",
+   "english": "This slim laser rifle can be tuned to produce a beam across a wide spectrum of settings, resulting in a versatile small arm suitable for both ground combat and boarding operations. A solid-state emitter works anywhere between the near-infrared to blue-green, and with a wide range of power and pulse length settings. While the low end of the near-infrared range is nominally eye-safe, even a diffuse reflection of the visible light beam can cause instant blindness, so users of this rifle must wear specialized goggles that darken when exposed to bright light. Incidentally, this makes the Optical Laser Rifle especially dangerous for unprepared foes, such as unwelcome intruders or enemy boarding parties.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This slim laser rifle can be tuned to produce a beam across a wide spectrum of settings, resulting in a versatile small arm suitable for both ground combat and boarding operations. A solid-state emitter works anywhere between the near-infrared to blue-green, and with a wide range of power and pulse length settings. While the low end of the near-infrared range is nominally eye-safe, even a diffuse reflection of the visible light beam can cause instant blindness, so users of this rifle must wear specialized goggles that darken when exposed to bright light. Incidentally, this makes the Optical Laser Rifle especially dangerous for unprepared foes, such as unwelcome intruders or enemy boarding parties.\"",
+   "english_hash": "8c23f9390bfca087"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Optical Laser Rifle|description|617|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 617,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Optical Laser Rifle",
+   "english": "\tBoth the aiming scope and laser aperture share the same focusing mirror, eliminating scope parallax and allowing auto-focusing optics to easily aim the beam at anything the user can see in the scope.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tBoth the aiming scope and laser aperture share the same focusing mirror, eliminating scope parallax and allowing auto-focusing optics to easily aim the beam at anything the user can see in the scope.\"",
+   "english_hash": "cfdd60d2673b528f"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Trefoil Board|description|631|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 631,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Trefoil Board",
+   "english": "A fine board for the Avgi game of Trefoil, handcrafted from rare Integral Wood and gifted to you by Speaker Wisteria. The wood is engraved and inlaid with bands of silver, while the three sets of stones are made from polished lapis, jade, and garnet, well-worn from countless games.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"A fine board for the Avgi game of Trefoil, handcrafted from rare Integral Wood and gifted to you by Speaker Wisteria. The wood is engraved and inlaid with bands of silver, while the three sets of stones are made from polished lapis, jade, and garnet, well-worn from countless games.\"",
+   "english_hash": "0efd247428c2c9cb"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Trefoil Board|description|632|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 632,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Trefoil Board",
+   "english": "\tYou suppose the dense wood would make an adequate blunt weapon in a pinch, though it would be a shame to damage such a fine piece in something so crass as melee combat.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tYou suppose the dense wood would make an adequate blunt weapon in a pinch, though it would be a shame to damage such a fine piece in something so crass as melee combat.\"",
+   "english_hash": "9097d8b716b010b2"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Damselflyman|description|641|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 641,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Damselflyman",
+   "english": "This mysterious radioactive tumor, while benign, has grown unnaturally in the center of your chest, creating a glowing dragonfly-shaped patch in the middle of your sternum. Enemies panic and flee at the sight of it, but only when possession of a disabled starship is contested. Also, you really shouldn't be able to see this 'outfit.'",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This mysterious radioactive tumor, while benign, has grown unnaturally in the center of your chest, creating a glowing dragonfly-shaped patch in the middle of your sternum. Enemies panic and flee at the sight of it, but only when possession of a disabled starship is contested. Also, you really shouldn't be able to see this 'outfit.'\"",
+   "english_hash": "518a656e7311ec56"
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Lancet Adamant|description|654|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 654,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Lancet Adamant",
+   "english": "A purely ceremonial weapon, this sleek shortspear is made from a continuous piece of adamantine, or nanodiamond. While not particularly useful in the realities of modern ranged combat, it certainly looks impressive.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"A purely ceremonial weapon, this sleek shortspear is made from a continuous piece of adamantine, or nanodiamond. While not particularly useful in the realities of modern ranged combat, it certainly looks impressive.\"",
+   "english_hash": "b1ede41a14b6982f"
+  }
+ ]
+}

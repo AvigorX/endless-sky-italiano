@@ -1,0 +1,24 @@
+{
+ "block": {
+  "path": "data/_deprecated/deprecated events.txt",
+  "line_from": 37,
+  "line_to": 37,
+  "units": 1
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:HR Removed|When you updated your game, you were in the middle of the Hai Reveal intro, which has since been removed. You will receive no further missions for this storyline.|37|0",
+   "path": "data/_deprecated/deprecated events.txt",
+   "line": 37,
+   "kind": "MISSION_TEXT",
+   "context": "mission:HR Removed",
+   "english": "When you updated your game, you were in the middle of the Hai Reveal intro, which has since been removed. You will receive no further missions for this storyline.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\t\t\t`When you updated your game, you were in the middle of the Hai Reveal intro, which has since been removed. You will receive no further missions for this storyline.`",
+   "english_hash": "cfe7cf3d863e609a"
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/kahet/kahet ships.txt",
+  "line_from": 15,
+  "line_to": 586,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Maeri'het|plural|15|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 15,
+   "kind": "VALUE",
+   "context": "ship:Maeri'het",
+   "english": "Maeri'heta",
+   "italian": "Maeri'heta",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Maeri'het|description|78|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 78,
+   "kind": "DESCRIPTION",
+   "context": "ship:Maeri'het",
+   "english": "The Maeri is the smallest Het ship created by the Builders' stations, a prime example of the genetic technology they once possessed. Its small size is compensated by the fact that it can hide its location from most types of sensors.",
+   "italian": "La Maeri è la più piccola nave Het creata dalle stazioni dei Costruttori, esempio principe della tecnologia genetica che un tempo possedevano. Le sue dimensioni ridotte sono compensate dal fatto che può nascondere la propria posizione alla maggior parte dei tipi di sensori.",
+   "ratio": 1.181
+  },
+  {
+   "idx": 3,
+   "id": "ship:Telis'het|plural|118|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 118,
+   "kind": "VALUE",
+   "context": "ship:Telis'het",
+   "english": "Telis'heta",
+   "italian": "Telis'heta",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Telis'het|description|183|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 183,
+   "kind": "DESCRIPTION",
+   "context": "ship:Telis'het",
+   "english": "When the Builders designed the exoskeleton of the Telis, they came to the conclusion that it would have been impossible to make it resilient enough without compromising its agility and integrity. Instead, they focused heavily on improving their shield technology, giving the Telis many of their regenerators.",
+   "italian": "Quando i Costruttori progettarono l'esoscheletro del Telis, arrivarono alla conclusione che sarebbe stato impossibile renderlo abbastanza resistente senza comprometterne l'agilità e l'integrità. Puntarono invece con forza a migliorare la tecnologia degli scudi, dotando il Telis di molti dei loro rigeneratori.",
+   "ratio": 1.006
+  },
+  {
+   "idx": 5,
+   "id": "ship:Vareti'het|plural|257|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 257,
+   "kind": "VALUE",
+   "context": "ship:Vareti'het",
+   "english": "Vareti'heta",
+   "italian": "Vareti'heta",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Vareti'het|description|327|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 327,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vareti'het",
+   "english": "The Vareti was the strongest Het the Builders were able to complete, starting its mass production only a year before the beginning of the invasion. It relies on shield matrixes even more than its little brothers, using larger and more effective restorers that were developed alongside this project.",
+   "italian": "Il Vareti è il più forte Het che i Costruttori riuscirono a completare: la produzione di serie cominciò appena un anno prima dell'inizio dell'invasione. Si affida alle matrici di scudi ancora più dei suoi fratelli minori, usando rigeneratori più grandi ed efficaci sviluppati insieme a questo progetto.",
+   "ratio": 1.013
+  },
+  {
+   "idx": 7,
+   "id": "ship:Selii'mar|description|487|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 487,
+   "kind": "DESCRIPTION",
+   "context": "ship:Selii'mar",
+   "english": "The Selii'mar was a common Builder mining drone, one of the few automated ships they ever produced. The Het stations still produce them, in order to harvest the materials they need to keep working.",
+   "italian": "Il Selii'mar era un comune drone minerario dei Costruttori, una delle poche navi automatizzate che abbiano mai prodotto. Le stazioni Het li producono ancora, per raccogliere i materiali di cui hanno bisogno per continuare a funzionare.",
+   "ratio": 1.193
+  },
+  {
+   "idx": 8,
+   "id": "ship:Selii'mar|description|488|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 488,
+   "kind": "DESCRIPTION",
+   "context": "ship:Selii'mar",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "italian": "\tI droni non vengono forniti con un motore iperspaziale. Non puoi trasportare un drone se non hai nella flotta una nave con una baia per droni.",
+   "ratio": 1.126
+  },
+  {
+   "idx": 9,
+   "id": "ship:Faes'mar|description|522|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 522,
+   "kind": "DESCRIPTION",
+   "context": "ship:Faes'mar",
+   "english": "The Mar were the last and most successful ships of the Builders in their attempts at creating automatic drones. Today only the Het stations are still aware of their blueprints, and keep producing the Faes'mar to transport the resources mined to the station's cargo bay.",
+   "italian": "I Mar furono le ultime e più riuscite navi dei Costruttori nei loro tentativi di creare droni automatici. Oggi solo le stazioni Het conoscono ancora i loro progetti, e continuano a produrre i Faes'mar per trasportare le risorse estratte alla stiva della stazione.",
+   "ratio": 0.978
+  },
+  {
+   "idx": 10,
+   "id": "ship:Faes'mar|description|523|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 523,
+   "kind": "DESCRIPTION",
+   "context": "ship:Faes'mar",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "italian": "\tI droni non vengono forniti con un motore iperspaziale. Non puoi trasportare un drone se non hai nella flotta una nave con una baia per droni.",
+   "ratio": 1.126
+  },
+  {
+   "idx": 11,
+   "id": "ship:Fetri'sei|plural|534|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 534,
+   "kind": "VALUE",
+   "context": "ship:Fetri'sei",
+   "english": "Fetri'seia",
+   "italian": "Fetri'seia",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "ship:Fetri'sei|description|586|0",
+   "path": "data/kahet/kahet ships.txt",
+   "line": 586,
+   "kind": "DESCRIPTION",
+   "context": "ship:Fetri'sei",
+   "english": "The Fetri is a self replicating probe, built to harvest iridium away from the Graveyard and transport it back to the Builders.",
+   "italian": "Il Fetri è una sonda autoriproducente, costruita per raccogliere iridio lontano dal Cimitero e riportarlo ai Costruttori.",
+   "ratio": 0.96
+  }
+ ]
+}

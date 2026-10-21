@@ -1,0 +1,165 @@
+{
+ "batch": "B002",
+ "results": [
+  {
+   "id": "tip:parked|(parked)|16|0",
+   "it": "(parcheggiata)"
+  },
+  {
+   "id": "tip:acceleration:|How quickly this ship gains speed. The higher a ship's mass (including the mass of any cargo or fighters it is carrying), the slower it accelerates.|22|0",
+   "it": "Quanto rapidamente questa nave guadagna velocità. Più alta è la massa della nave (compresa quella del carico o dei caccia trasportati), più lenta è l'accelerazione."
+  },
+  {
+   "id": "tip:acceleration multiplier:|Modifies the ship's acceleration by the given factor.|25|0",
+   "it": "Modifica l'accelerazione della nave del fattore indicato."
+  },
+  {
+   "id": "tip:active cooling:|Cooling provided per second when running at full strength. Active cooling requires energy, but if your heat level is low it runs at a lower cooling rate and lower energy draw. The amount of cooling is proportional to the temperature of your ship, reaching the full level only if you are about to overheat.|28|0",
+   "it": "Raffreddamento fornito al secondo alla massima potenza. Il raffreddamento attivo richiede energia, ma se il livello di calore è basso funziona a un ritmo ridotto e con minor consumo. La quantità di raffreddamento è proporzionale alla temperatura della nave e raggiunge il massimo solo quando stai per surriscaldarti."
+  },
+  {
+   "id": "tip:afterburner energy:|Energy consumed per second when firing this afterburner.|31|0",
+   "it": "Energia consumata al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner shields:|Shield damage dealt to the ship per second when firing this afterburner.|34|0",
+   "it": "Danni agli scudi inflitti alla nave al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner hull:|Hull damage dealt to the ship per second when firing this afterburner.|37|0",
+   "it": "Danni allo scafo inflitti alla nave al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner fuel:|Fuel consumed per second when firing this afterburner.|40|0",
+   "it": "Carburante consumato al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner discharge:|Accumulated shield discharging per second when firing this afterburner.|43|0",
+   "it": "Scarica accumulata sugli scudi al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner corrosion:|Accumulated hull corrosion per second when firing this afterburner.|46|0",
+   "it": "Corrosione accumulata sullo scafo al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner ion:|Accumulated ionization per second when firing this afterburner.|49|0",
+   "it": "Ionizzazione accumulata al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner scramble:|Accumulated scrambling per second when firing this afterburner.|52|0",
+   "it": "Disturbo accumulato al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner leakage:|Accumulated leaking fuel per second when firing this afterburner.|55|0",
+   "it": "Perdita di carburante accumulata al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner burn:|Accumulated exothermic interactions per second when firing this afterburner.|58|0",
+   "it": "Interazioni esotermiche accumulate al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner slowing:|Accumulated engine interference per second when firing this afterburner.|61|0",
+   "it": "Interferenza sui motori accumulata al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner disruption:|Accumulated shield interference per second when firing this afterburner.|64|0",
+   "it": "Interferenza sugli scudi accumulata al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner heat:|Heat created per second when firing this afterburner.|67|0",
+   "it": "Calore generato al secondo quando si attiva questo postbruciatore."
+  },
+  {
+   "id": "tip:afterburner thrust:|Thrust produced by this afterburner.|70|0",
+   "it": "Spinta prodotta da questo postbruciatore."
+  },
+  {
+   "id": "tip:asteroid scan power:|Allows scanning of asteroids. The range of this asteroid scanner is proportional to the square root of this value.|73|0",
+   "it": "Consente la scansione degli asteroidi. La portata di questo scanner è proporzionale alla radice quadrata di questo valore."
+  },
+  {
+   "id": "tip:atmosphere scan:|This type of scanning cannot be performed by your ship, but this outfit might be useful for certain missions.|76|0",
+   "it": "Questo tipo di scansione non può essere eseguita dalla tua nave, ma questo equipaggiamento può essere utile in alcune missioni."
+  },
+  {
+   "id": "tip:automaton:|A ship with this attribute does not need any crew to operate, even if it has outfits that normally require additional crew. However, you cannot use it as your flagship in this state.|79|0",
+   "it": "Una nave con questo attributo non richiede equipaggio per funzionare, anche se monta equipaggiamenti che normalmente richiedono personale aggiuntivo. In questo stato, però, non puoi usarla come ammiraglia."
+  },
+  {
+   "id": "tip:bunks:|The number of people (passengers or crew) your ship can hold.|82|0",
+   "it": "Il numero di persone (passeggeri o equipaggio) che la nave può ospitare."
+  },
+  {
+   "id": "tip:burn protection:|Protection provided against burn damage. Increases by the given factor how much burn damage a ship can withstand before its heat rises as much as an unprotected ship.|85|0",
+   "it": "Protezione contro i danni da ustione. Aumenta del fattore indicato la quantità di danni da ustione che la nave sopporta prima che il calore salga come in una nave non protetta."
+  },
+  {
+   "id": "tip:burn resistance:|Burn damage resisted per second.|88|0",
+   "it": "Danni da ustione resistiti al secondo."
+  },
+  {
+   "id": "tip:burn resistance energy:|Energy consumed per second when resisting burn damage.|91|0",
+   "it": "Energia consumata al secondo per resistere ai danni da ustione."
+  },
+  {
+   "id": "tip:burn resistance fuel:|Fuel consumed per second when resisting burn damage.|94|0",
+   "it": "Carburante consumato al secondo per resistere ai danni da ustione."
+  },
+  {
+   "id": "tip:burn resistance heat:|Heat generated per second when resisting burn damage.|97|0",
+   "it": "Calore generato al secondo per resistere ai danni da ustione."
+  },
+  {
+   "id": "tip:capture attack:|Increases the \"strength\" of one crew member when attacking another ship to capture it. Each crew member can only wield one weapon at a time, but they will use whichever weapons provide the highest power.|100|0",
+   "it": "Aumenta la \"forza\" di un membro dell'equipaggio quando attacca un'altra nave per catturarla. Ogni membro può impugnare una sola arma alla volta, ma userà quella che offre la potenza maggiore."
+  },
+  {
+   "id": "tip:capture defense:|Increases the \"strength\" of one crew member when defending against an attempt to capture this ship. Each crew member can only wield one weapon at a time, but they will use whichever weapons provide the highest power.|103|0",
+   "it": "Aumenta la \"forza\" di un membro dell'equipaggio quando difende questa nave da un tentativo di cattura. Ogni membro può impugnare una sola arma alla volta, ma userà quella che offre la potenza maggiore."
+  },
+  {
+   "id": "tip:cargo:|Tons of cargo this ship is carrying right now, out of its maximum.|106|0",
+   "it": "Tonnellate di carico trasportate in questo momento, sul massimo disponibile."
+  },
+  {
+   "id": "tip:cargo scan:|Allows scanning of your target ship's cargo from up to this distance away.|109|0",
+   "it": "Consente la scansione del carico della nave bersaglio fino a questa distanza."
+  },
+  {
+   "id": "tip:cargo scan power:|Allows scanning of your target ship's cargo. The range of this cargo scanner is proportional to the square root of this value.|112|0",
+   "it": "Consente la scansione del carico della nave bersaglio. La portata di questo scanner è proporzionale alla radice quadrata di questo valore."
+  },
+  {
+   "id": "tip:cargo scan speed:|Determines how long it takes to perform a cargo scan. A higher value will correspond to a quicker scan.|115|0",
+   "it": "Determina quanto tempo richiede una scansione del carico. Un valore più alto corrisponde a una scansione più rapida."
+  },
+  {
+   "id": "tip:cargo scan efficiency:|The maximum speed of this cargo scanner is proportional to the square root of this value. The observed scan speed will be impacted by multiple factors. Targets which are farther away or have a larger cargo hold will take longer to scan.|118|0",
+   "it": "La velocità massima di questo scanner del carico è proporzionale alla radice quadrata di questo valore. La velocità di scansione osservata dipende da più fattori: i bersagli più lontani o con una stiva più grande richiedono più tempo."
+  },
+  {
+   "id": "tip:cargo scan opacity:|Increases the time required for other ships to perform a cargo scan of this ship. A value of one has the same influence on the time taken as adding one more ton of cargo space to scan.|121|0",
+   "it": "Aumenta il tempo necessario alle altre navi per scansionare il carico di questa nave. Un valore di uno ha lo stesso effetto sul tempo di una tonnellata in più di carico da scansionare."
+  },
+  {
+   "id": "tip:cargo space:|Tons of cargo (commodities, mission cargo, and plundered outfits) this ship can carry.|124|0",
+   "it": "Tonnellate di carico (merci, carico di missione ed equipaggiamenti saccheggiati) che questa nave può trasportare."
+  },
+  {
+   "id": "tip:cargo space needed:|Tons of cargo space this outfit uses up.|127|0",
+   "it": "Tonnellate di spazio carico occupate da questo equipaggiamento."
+  },
+  {
+   "id": "tip:cloak:|This outfit allows your ship to cloak. The value represents how long it takes to fully activate or deactivate cloaking. Ships cannot fire while cloaked, except if they have the related \"cloaked firing\" attribute.|130|0",
+   "it": "Questo equipaggiamento consente alla nave di occultarsi. Il valore indica quanto tempo serve per attivare o disattivare completamente l'occultamento. Le navi non possono sparare mentre sono occultate, a meno che non abbiano il relativo attributo \"sparo in occultamento\"."
+  },
+  {
+   "id": "tip:cloak by mass:|This outfit allows your ship to cloak. The value represents how long it takes to fully activate or deactivate cloaking for a ship with 1000 mass. The higher a ship's mass, the slower the cloak works, the lower its mass, the faster the cloak works. Ships cannot fire while cloaked, except if they have the related \"cloaked firing\" attribute.|133|0",
+   "it": "Questo equipaggiamento consente alla nave di occultarsi. Il valore indica quanto tempo serve per attivare o disattivare completamente l'occultamento su una nave di 1000 di massa. Più alta è la massa, più lento è l'occultamento; più bassa è, più rapido è. Le navi non possono sparare mentre sono occultate, a meno che non abbiano il relativo attributo \"sparo in occultamento\"."
+  },
+  {
+   "id": "tip:cloaking energy:|Energy consumed per second when cloaked.|136|0",
+   "it": "Energia consumata al secondo mentre la nave è occultata."
+  }
+ ]
+}

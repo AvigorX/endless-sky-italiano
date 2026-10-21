@@ -1,0 +1,463 @@
+# Copyright (c) 2024 by Daeridanii
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Successors: Predecessor Research 1"
+	minor
+	landing
+	name "Assisti la ricerca sui Predecessori"
+	description "Trasporta questi <bunks> studiosi che indagano sui Predecessori fino a <planet stopovers> e poi a casa, su <destination>, entro il <date>."
+	clearance
+	passengers 7
+	deadline 30
+	to offer
+		has "trusted by the successors"
+		"flagship attribute: quantum keystone" > 0
+		random < 40
+	to fail
+		has "Successors: Unified Defense: offered"
+	source "Staja-Kella-Oa"
+	stopover "Myiara-Aret-Iir"
+	on offer
+		conversation
+			branch "has deferred"
+				has "Successors: Predecessor Research 1: deferred"
+			`Mentre atterri sulla piazzola dello spazioporto, vedi avvicinarsi un volto noto: è Sieasej, lo studioso Successore che ti ha fatto da traduttore durante il tuo primo contatto con i Successori e ti ha assistito nella missione per Casa Sioeora. Si stanno muovendo verso di te con un piccolo gruppo di individui vestiti allo stesso modo, che supponi essere anche loro studiosi.`
+			`	"Capitano! Gioisco nel vederti tornare; sono venuto qui in fretta appena ho visto che stavi per arrivare!"`
+			`	Saluti Sieasej, e ti spiegano che gli studiosi con loro sono ricercatori dei Predecessori in cerca di un passaggio su una nave che attraversi i wormhole.`
+			`	"Le modifiche necessarie alla nave sono deplorevolmente costose," continua uno dei ricercatori. "Se dovessimo chiedere a Sioeora e all'Accademia una nave attrezzata come si deve, potremmo essere costretti ad aspettare anni, un ritmo fin troppo lento per la nostra ricerca. Se invece ci trasportassi tu, anche per poco tempo, faresti progredire molto il nostro studio."`
+			choice
+				`	"Certo, ne sarei felice."`
+					goto accept
+				`	"Posso tornare un'altra volta?"`
+					goto deferred
+				`	"Mi dispiace, ma dovrai trovare qualcun altro che vi porti."`
+					decline
+			label deferred
+			action
+				set "Successors: Predecessor Research 1: deferred"
+			`	"Hm, probabilmente. Siamo stati pazienti abbastanza a lungo, ma ti esorto a cercarci di nuovo in fretta."`
+				defer
+			label accept
+			`	"La nostra più profonda gratitudine!" Diversi membri del gruppo di ricerca sorridono in modo complice, chiaramente entusiasti di saltare la fila. Anche Sieasej ti ringrazia e ti fa capire che terrà "gli occhi aperti per altre occasioni interessanti".`
+				accept
+			label "has deferred"
+			`	Ti rendi conto che il gruppo di ricerca sui Predecessori di Casa Sioeora sta probabilmente ancora aspettando di sapere se puoi trasportarli su <planet stopovers>. Vuoi contattarli?`
+			choice
+				`	(Sì.)`
+				`	(Non ora.)`
+					defer
+				`	(Mai.)`
+					decline
+			`	Riesci a metterti in contatto con il capo del gruppo di ricerca, che è molto entusiasta di sapere che hai finalmente l'occasione di trasportare loro e il loro gruppo. Dopo circa un'ora di attesa nello spazioporto, i ricercatori arrivano a incontrarti e alla fine riesci a farli salire sulla nave, pronti a partire.`
+				accept
+	on stopover
+		conversation
+			`Relativamente calmi e composti durante il viaggio di andata, i ricercatori schizzano fuori dal portello quasi nell'istante in cui il carrello della nave tocca terra, con le braccia cariche di una miriade di opuscoli, cataloghi e strani congegni che non perdono tempo a sollevare in aria o a spingere verso rocce e terreno.`
+			`	Mentre sul pianeta comincia a scendere la notte, i ricercatori tornano di malavoglia alla nave, impolverati e stanchi ma in fermento per le loro scoperte.`
+			`	Mentre ti prepari a partire, ti rendi conto che sarebbe un buon momento per sapere qualcosa sui Predecessori dagli esperti, soprattutto considerando che probabilmente li ascolterai parlare dei loro nuovi dati per tutto il viaggio di ritorno.`
+			choice
+				`	"Che cosa puoi dirmi dei Predecessori?"`
+					goto who
+				`	(Non chiedere loro nulla.)`
+					launch
+			label questions
+			choice
+				`	"Chi erano i Predecessori?"`
+					to display
+						not "Successors: who"
+				`	"In realtà, non avevo domande, alla fine."`
+					to display
+						not "Successors: who"
+					goto end
+				`	"Che cosa ha causato il crollo?"`
+					to display
+						has "Successors: who"
+						not "Successors: collapse"
+					goto collapse
+				`	"Quanto era grande il loro impero?"`
+					to display
+						has "Successors: who"
+						not "Successors: empire"
+					goto empire
+				`	"Com'era la loro tecnologia?"`
+					to display
+						has "Successors: who"
+						not "Successors: tech"
+					goto tech
+				`	"Non ho altre domande."`
+					to display
+						has "Successors: who"
+					goto end
+			label who
+			action
+				set "Successors: who"
+			`	"I nostri Predecessori erano i nostri antenati ormai scomparsi. Fino a millecinquecento anni fa dominavano questo spazio e molto altro come parte del loro impero. Molti perirono insieme alle loro discendenze quando gran parte dell'impero cadde in rovina, ma alcuni passarono attraverso il wormhole fino all'ammasso che noi, loro Successori, chiamiamo ora casa."`
+				goto questions
+			label collapse
+			action
+				set "Successors: collapse"
+			`	Il ricercatore sospira. "Non lo sappiamo; o meglio, la pienezza della verità resta ancora oscurata. La carne dello spazio stesso fu lacerata, distorta; gli effetti rimangono oggi: i buchi incastonati nei cieli, lo spegnersi della luce e perfino delle ipervie. Fu un tempo di guerre; le Casate si rivoltarono l'una contro l'altra o fuggirono, e lo spazio stesso fu acceso dai lampi degli spari e dei motori..."`
+			`	Il ricercatore si ferma un momento, ricomponendosi.`
+			`	"Divago e mi scuso. È difficile separare la verità dalla finzione, in questo. I nostri Predecessori esercitavano un potere molto oltre le nostre imitazioni moderne, di quella specie che semina pace o caos in fondo al tessuto del mondo, di quella specie che fruga e punge in luoghi che devono restare intatti. 'Che cosa ha causato il crollo?' chiedi? Tracotanza, direi."`
+				goto questions
+			label empire
+			action
+				set "Successors: empire"
+			`	"Il dispositivo di traduzione che porti addosso dice molto delle loro dimensioni. Sieasej mi dice che al culmine dell'impero i nostri studiosi avevano perfino posato gli occhi sul tuo mondo, così lontano a nord! Questi sistemi morti che restano dove un tempo sorgeva il cuore del loro impero sono solo una piccola frazione di ciò che c'era. Alcuni, è certo, appartengono ora ad altre specie, e altri, a quanto pare, sono stati oscurati. Non sappiamo come né perché, solo che le mappe stellari dei nostri Predecessori non rispecchiano quelle che vediamo oggi."`
+				goto questions
+			label tech
+			action
+				set "Successors: tech"
+			`	"Gloriosa e bella, era; tanto arte quanto ingegneria. Le opere dei nostri Predecessori erano invidiate perfino dai Quarg, la cui padronanza di arte e scienza pochi possono eguagliare. Erano esotiche per natura e uniche nelle applicazioni: metallo vivo coltivato nelle stelle, punti sottili per trapassare lo spazio stesso. Abbiamo descrizioni, abbastanza per fare imitazioni rudimentali dei loro processi, ma anche con una comprensione perfetta di ciò che erano, lo spazio dei nostri nuovi sistemi sembra inadatto a manifestare quella padronanza. Falliamo perfino nel replicare i cimeli conservati dalle Alte Casate; i materiali e le tecniche che usano restano sempre fuori portata."`
+				goto questions
+			label end
+			`	Lasci i ricercatori a studiare i loro risultati.`
+			action
+				clear "Successors: who"
+				clear "Successors: collapse"
+				clear "Successors: empire"
+				clear "Successors: tech"
+	on complete
+		"successor jobs" += 2
+		"old houses jobs" += 2
+		payment 250000
+		conversation
+			`Come previsto, gli studiosi sono rimasti molto loquaci durante il viaggio di ritorno, commentando insolite misurazioni di radiazioni e facendo festa a diversi piccoli frammenti metallici raccolti da un membro del gruppo particolarmente fortunato.`
+			`	Quasi dimenticano di darti il pagamento quando li riporti a <destination>, ma il capo ricercatore ti mette in mano un chip da <payment> e ti ringrazia prima di addentrarsi nello spazioporto.`
+
+mission "Successors: Biology Research 1"
+	minor
+	name "Assisti il biologo dei Predecessori"
+	description "Trasporta un biologo Successore fino a <stopovers> e poi a casa, su <destination>, entro il <date>."
+	passengers 1
+	deadline 20
+	to offer
+		has "known to the successors"
+		random < 30
+	to fail
+		has "Successors: Unified Defense: offered"
+	source
+		attributes "successor"
+		attributes "education"
+	stopover "Naph-Naap-Kella"
+	on offer
+		conversation
+			`Mentre sei seduto nello spazioporto, ti si avvicina un Successore con un curioso abito verde, che porta diversi pezzi di attrezzatura apparentemente sofisticata, tanti da sembrare sul punto di cadergli dalle braccia. Ti spiegano che sono un biologo Successore che aveva noleggiato un volo per andare a esaminare la vita primordiale su <planet stopovers>, un pianeta giovane e ancora in formazione, ma che il loro pilota è stato trattenuto, lasciandoli bloccati qui.`
+			`	"Se potessi fornire un passaggio fino a quel pianeta, potrei ancora raccogliere i miei dati prima che scada il mio congedo di ricerca."`
+			choice
+				`	"Certo, ne sarei felice."`
+					goto accept
+				`	"Mi dispiace, ma dovrai trovare qualcun altro che vi porti."`
+					decline
+			label accept
+			`	"Hai la mia profonda e certa gratitudine. Non dirlo a nessuno, ma le Alte Casate sono bestiali con noi accademici." Il biologo, che si presenta come "Kaatiora", carica la loro collezione di attrezzature sulla tua nave, non senza quasi far cadere un oggetto dall'aria particolarmente fragile, e alla fine è pronto a partire.`
+				accept
+	on stopover
+		conversation
+			`Durante il viaggio Kaatiora è stato di una curiosità impressionante, facendoti continuamente domande sulla biologia umana con un entusiasmo e un brio che prima avresti creduto impossibili. Esaurita la tua conoscenza di ogni dettaglio della biologia umana, sono passati senza esitazione a ogni altra specie terrestre che conoscevano dai documenti dei Predecessori, dalle mucche alle rane fino ad altre molto più esotiche di cui non hai mai sentito parlare ma che evidentemente vanno di moda nei circoli di xenobiologia dei Successori.`
+			`	È un certo sollievo quando arrivate finalmente sul pianeta e Kaatiora si allontana per un momento, portando ancora una volta le braccia stracolme di attrezzatura e scansionando con eccitazione ma con cura le pozze di acqua calda vulcanica e i piccoli laghi intorno al punto di atterraggio, esclamando di tanto in tanto per l'entusiasmo.`
+			`	Alla fine tornano alla tua nave, soddisfatti della quantità di dati raccolti, ma ancora evidentemente carichi dell'esperienza.`
+			`	Prima di partire, ti rendi conto che sarebbe un buon momento per saperne di più sui Successori da un esperto. Del resto, avendo passato la maggior parte del viaggio di andata a rispondere alle domande di Kaatiora, hai probabilmente diritto a farne qualcuna tua.`
+			choice
+				`	(Chiedi della biologia dei Successori.)`
+				`	(Non chiedere nulla.)`
+					goto end
+			`	Come previsto, Kaatiora è più che felice di condividere le proprie conoscenze biologiche, e chiede se c'è qualcosa in particolare che vorresti sapere.`
+			label questions
+			choice
+				`	"Che cosa puoi dirmi dei Successori?"`
+					to display
+						not "Successors: successor"
+					goto successor
+				`	"I Predecessori erano diversi dagli attuali Successori, biologicamente parlando?"`
+					to display
+						not "Successors: predecessor"
+					goto predecessor
+				`	"Com'è la vita in questo ammasso stellare?"`
+					to display
+						not "Successors: cluster"
+					goto cluster
+				`	"Non ho altre domande."`
+					goto end
+			label successor
+			action
+				set "Successors: successor"
+			`	"Gran parte della nostra storia evolutiva l'abbiamo passata sotto le onde del nostro pianeta natale, e anche se ora vedi chiaramente che respiriamo la stessa aria che respiri tu, conserviamo ancora le nostre tendenze fredde e amanti dell'acqua. La nostra respirazione funziona bene sia sommersa sia sulla terraferma, anche se dobbiamo mantenere un certo grado di umidità sulla pelle.`
+			`	"A parte questo, siamo una specie ermafrodita, come la maggior parte di quelle del nostro pianeta natale, e quando siamo andati fra le stelle abbiamo scoperto che questo è insolito ma non raro, e c'è quindi una certa curiosità sul perché il nostro pianeta avesse una tale diversità di specie simili mentre la maggior parte non ce l'ha. Forse, essendo cresciuti sotto un sole aspro, la ridondanza offerta dal nostro divorzio dal sesso biologico è stata vantaggiosa per la nostra evoluzione.`
+			`	"E naturalmente, a quest'ora avrai notato il camuffamento naturale della nostra pelle. Oggi il suo uso è la comunicazione, ma molto tempo fa era uno strumento utile per sfuggire ai predatori che cacciavano a vista, finché, naturalmente, non abbiamo acquisito la saggezza di superare in astuzia i nostri predatori invece di nasconderci da loro."`
+				goto questions
+			label predecessor
+			action
+				set "Successors: predecessor"
+			`	"Dato che la brevità è l'anima dell'arguzia, allora no: i nostri Predecessori non differivano molto da noi nella biologia di fondo. Un erede delle Alte Casate dei tempi del crollo non si distinguerebbe da uno qualunque di noi oggi. Detto questo, la loro comprensione era molto superiore: la loro scienza medica era molto più avanzata della nostra, e gran parte della loro tecnologia era codificata geneticamente per funzionare solo per famiglie specifiche."`
+				goto questions
+			label cluster
+			action
+				set "Successors: cluster"
+			`	"Chiedi al momento giusto! Questo pianeta, e la vita che vi abita, potrebbero darci una risposta migliore a quella domanda. Molte delle stelle qui sono calde e giovani, e quindi aspre per la vita nascente, eppure hai certamente visto i mondi verdissimi che le orbitano! Se parte di questo deriva dagli insediamenti dei primi tempi dell'antico impero, molto non ne deriva, e resta quindi un punto fastidioso. Come può essersi sviluppata la vita, qui? Se riusciamo a tracciare il percorso seguito dalla vita di questo pianeta, potremmo trovare la risposta che cerchiamo entrambi."`
+				goto questions
+			label end
+			`	Lasci Kaatiora alle loro faccende e ti prepari a decollare quando sei pronto.`
+			action
+				clear "Successors: successor"
+				clear "Successors: predecessor"
+				clear "Successors: cluster"
+	on complete
+		"successor jobs" += 2
+		payment 200000
+		conversation
+			`	Kaatiora resta entusiasta e loquace durante il viaggio di ritorno, anche se un po' meno ora che ha esaurito la totalità delle tue conoscenze delle scienze biologiche e ha l'analisi dei dati appena raccolti a tenerlo occupato.`
+			`	All'atterraggio su <destination>, scendono dalla nave, portando ancora una volta l'eccesso di attrezzatura, ma non prima di darti il pagamento di <payment> e di ringraziarti di nuovo per il trasporto.`
+
+mission "Successors: Stargazing 1"
+	minor
+	name "Trasporta gli osservatori di stelle Successori"
+	description "Trasporta due osservatori di stelle Successori fino a <planet stopovers> e riportali a casa, su <destination>, entro il <date>."
+	source
+		attributes "successor"
+		not attributes "crime" "tourism" "uninhabited"
+	stopover "Khosa-Kella-Oa"
+	to offer
+		has "known to the successors"
+		random < 40
+	to fail
+		has "Successors: Unified Defense: offered"
+	passengers 2
+	cargo "Vacuum Tents" 1
+	deadline 20
+	on offer
+		conversation
+			`Mentre sei nello spazioporto di <origin>, noti due Successori dall'aria stanca che trascinano un carretto con un curioso materiale piegato, alternandosi nel tirare sul pavimento il loro bagaglio evidentemente pesante. Entrambi si rianimano parecchio quando vedono te e la tua nave, però, e tirano l'attrezzatura verso di te con rinnovato vigore, riuscendo infine ad avvicinarsi abbastanza da parlare.`
+			`	Il più grande dei due comincia: "Oh! Sei quell'alieno recente, no? È una nave bellissima quella che comandi..."`
+			`	"Quello che volevamo dire è..."`
+			`	"Scusa, è solo che..."`
+			`	"Accetti missioni passeggeri?"`
+			choice
+				`	"Sì."`
+					goto immediate
+				`	"Dipende dallo scopo."`
+			`	Uno dei Successori assume quella che potresti definire un'aria imbarazzata, arrossendo di un verde spento. L'altro risponde.`
+			`	"Osservazione delle stelle. C'è un mondo al bordo della galassia, il bordo più lontano; ha la vista più bella..."`
+			`	"Abbiamo portato la nostra attrezzatura."`
+			`	"Il cielo, lì, è diviso fra notte stellata e vuoto assoluto. Potresti portarci?"`
+			`	"E riportarci indietro, naturalmente. E il nostro carico," dice l'altro, indicando il carretto di tessuto piegato.`
+			`	"E ritorno. E il nostro carico. Possiamo darti un compenso modesto."`
+			choice
+				`	"Certo, posso portarvi."`
+					goto yes
+				`	"Dovrete trovare un altro pilota."`
+					decline
+			label immediate
+			`	"Oh! È perfetto! Cercavamo un trasporto privato. Siamo osservatori di stelle..."`
+			`	"C'è un pianeta al bordo della galassia con la vista perfetta..."`
+			`	"Il cielo, lì, è diviso fra notte stellata e vuoto assoluto. Potresti portarci?"`
+			`	"E riportarci indietro, naturalmente. E anche il nostro carico," dice l'altro, indicando il carretto di tessuto piegato.`
+			`	"E ritorno. E il nostro carico. Possiamo darti un compenso modesto."`
+			choice
+				`	"Certo, posso portarvi."`
+					goto yes
+				`	"Mi dispiace, ma dovrete trovare un altro pilota."`
+					decline
+			label yes
+			`	I due sembrano rapiti, e il più grande diventa di un rosa spento. "Oh! Sei davvero onorevole, nobile alieno. Io sono Nnesa."`
+			`	"Jaasora. Grazie, capitano. Quasi nessun pilota qui ha voglia di andare nei sistemi disabitati."`
+			`	"Sì, devi raccontarci di tutti i posti in cui sei stato..."`
+			choice
+				`	"Prima facciamo salire voi a bordo."`
+			`	Nnesa va in confusione ancora una volta, ma Jaasora offre un braccio di sostegno, avvolgendolo intorno al suo corpo. I due ti chiedono aiuto per caricare il loro carretto di attrezzatura, che è molto più pesante di quanto sembri, ma insieme riuscite infine a sistemare il loro bagaglio nella stiva della <ship> e a essere pronti a partire.`
+				accept
+	on stopover
+		conversation
+			`Nnesa e Jaasora sono stati semplicemente rapiti durante il viaggio; la coppia inseparabile ha passato, a quanto pare, ogni momento di veglia a guardare fuori dai finestrini della <ship> le stelle che scorrevano. All'arrivo nel sistema Maspa-Mavra, però, il loro entusiasmo si è ridotto a quella che potresti chiamare una soggezione sommessa davanti all'intera galassia spiegata nel cielo.`
+			`	Khosa-Kella-Oa in sé è freddo, scuro e roccioso: a tutti gli effetti identico a qualunque altro degli innumerevoli mondi disabitati e senz'aria della galassia. I tuoi passeggeri sembrano comunque soddisfatti; Nnesa fa notare che la stella locale "è così fioca che non c'è quasi alcun bagliore!" e Jaasora concorda con energia. Attivano il carretto di attrezzatura piegata nella stiva della <ship>, che lentamente si gonfia e si dispiega in qualcosa a metà fra una tenda e un sollevatore a repulsione. Scivola sul pavimento come ghiaccio che si scioglie, sbattendo piano contro le pareti interne un paio di volte prima che Jaasora riesca a fermarne il movimento.`
+			`	"Grazie ancora, capitano, per averci trasportato," dice Jaasora mentre carica un fascio di telescopi all'interno.`
+			`	"Oh! Il pianeta è perfetto; nessun'aria a intorbidire la vista e nessun'altra nave a offuscare i cieli..."`
+			`	"Dovremmo essere di ritorno fra un paio d'ore. Ti prego di aspettarci."`
+			`	La coppia parte nella loro tenda planante, che mentre esce mostra diverse macchie trasparenti sulla superficie, con una serie di telescopi che vengono spostati all'interno.`
+			choice
+				`	(Aspetta.)`
+			`	Nnesa e Jaasora tornano dopo un paio d'ore come promesso, con la loro strana tenda che rientra nella stiva della <ship> con la stessa scorrevolezza con cui era uscita. La coppia scarica diversi quaderni di foto e disegni e chiacchiera con eccitazione delle varie costellazioni e dei fenomeni stellari che hanno osservato. Nnesa è particolarmente su di giri e, tirando fuori in fretta dal disordine di fogli una mappa stellare sorprendentemente accurata e ben costruita, te la sventola in faccia con orgoglio. Non puoi fare a meno di notare che diversi disegni nella pila ritraggono Jaasora invece di qualche fenomeno stellare.`
+			`	"Da quale punto della mappa vieni, capitano?" Nnesa indica con un gesto approssimativo una zona della loro mappa che riconosci come spazio umano.`
+			choice
+				`	(Indica <home system>.)`
+					to display
+						has "human space start"
+					goto rutilicus
+				`	(Indica Sol.)`
+					to display
+						has "species: human"
+					goto sol
+				`	(Indica <home system>.)`
+					to display
+						has "hai space start"
+					goto "fah soom"
+				`	(Indica con un gesto ampio la distesa di spazio raffigurata sulla mappa.)`
+			`	"Oh!" dice Nnesa, "sei un erede delle costellazioni, prima di tutto alle stelle? È giusto. Hai una galassia da vagare, un cielo quasi senza fine. Le cose che ci devono essere da vedere..."`
+				goto interrupt
+			label rutilicus
+			`	"Oh!" dice Nnesa, "non sono sicuro di conoscere il nome di quella, capitano. Come chiami la tua casa?"`
+			`	"<home system>," rispondi.`
+				goto "novel name"
+			label sol
+			`	"Oh!" dice Nnesa, "Sol." Si fanno silenziosamente strada nella parola un paio di volte, cercando di pronunciarla bene. "Il nostro nome per questo è Saaqa-Viirja. Era uno dei limiti più a nord dei viaggi dei nostri Predecessori. Ah. Ma tu questo lo sai già, di sicuro."`
+				goto interrupt
+			label "fah soom"
+			`	"Oh!" dice Nnesa. "Così lontano a nord? La tua specie deve essersi diffusa molto perché tu abbia un posto del genere come casa. Come lo chiami?"`
+			`	"<home system>," rispondi.`
+			label "novel name"
+			`	Nnesa ti chiede di ripetere la parola una seconda volta, seguendo lentamente la tua pronuncia e trascrivendo sul loro una breve sequenza di lettere fluenti. "È un nome piacevole," dicono.`
+			label interrupt
+			`	Venite interrotti da Jaasora, che ha bisogno dell'aiuto di Nnesa per richiudere nella cesta la tenda ora sgonfia, e quando hanno finito ti fanno capire che sono pronti a tornare a casa.`
+	on complete
+		"successor jobs" += 2
+		payment 78000
+		conversation
+			`Nnesa e Jaasora continuano a meravigliarsi delle stelle sulla via del ritorno, oltre a passare molto tempo chini sulla loro collezione comune di foto, disegni e mappe di Maspa-Mavra. "La nostra più profonda gratitudine, capitano," ti dice Jaasora una volta atterrati nello spazioporto, mentre Nnesa lotta con la tenda e il carretto. "È stato un viaggio vero e gioioso." Nnesa li chiama; la tenda richiede chiaramente almeno due persone. Jaasora ti porge il pagamento di <payment> e va ad aiutare, e i due portano fuori l'attrezzatura dalla stiva prima di gridarti un frettoloso ma allegro saluto.`
+
+mission "Successors: People's Houses: First Contact"
+	landing
+	source "Kasii-Tuur-Saqru"
+	to offer
+		has "known to the successors"
+	to fail
+		has "Successors: Unified Defense: offered"
+	on offer
+		conversation
+			`Rispetto alla maggior parte degli spazioporti in cui sei stato nello spazio dei Successori, questo è squallido, affollato e scomodo. La maggior parte dei Successori che vedi sembra ugualmente sporca e infelice, e la maggior parte delle poche navi che hai visto atterrare è dipinta di una tonalità di rosso diversa, più scura.`
+			`	Vuoi chiedere a qualcuno, qui, informazioni su questo posto?`
+			choice
+				`	(Sì.)`
+				`	(Non ora.)`
+					defer
+				`	(Mai.)`
+					decline
+			`	Ti avvicini a uno dei membri dell'equipaggio che sbarca da una delle navi dipinte di rosso, e che, avvicinandoti, vedi coperta di diverse bruciature e cicatrici profonde.`
+			`	"Mi scusi, mi chiedevo se potesse dirmi qualcosa di questo posto. Sembra diverso dal resto dello spazio dei Successori che ho attraversato."`
+			`	Il Successore guarda lo spazioporto per un momento, poi grugnisce piano e decide di rispondere. La loro voce è più bassa e più cupa di quella della maggior parte dei Successori che hai sentito, e la pelle cambia colore e consistenza rapidamente, quasi a ogni parola.`
+			branch kaatrij
+				has "successors kaatrij patron"
+			`	"Sei l'alieno visitatore portato dalle Vecchie Casate, non è vero? Il loro 'ospite nobile' che si portano in giro con tanto piacere?"`
+				goto affirm
+			label kaatrij
+			`	"Sei l'alieno visitatore portato in giro fra le Casate, non è vero? Il loro 'ospite nobile' o 'furfante volubile', a seconda di chi ti parla?`
+			label affirm
+			choice
+				`	"Sì."`
+				`	"Si può dire."`
+			`	Nonostante l'accusa di essere "portato in giro", il Successore grugnisce di nuovo alla tua risposta; con approvazione o con disgusto non sapresti dire. Si appoggia a uno dei container da carico sul pavimento dello spazioporto e continua.`
+			`	"Allora sei un altro stolto indolente, senza dubbio ingannato dalle loro belle promesse, di ricchezza e potere finché te ne starai in riga? Beh, guardati intorno e vedi quanto vale la loro parola nobile! Alle Casate non importa nulla di te, di me, o di nessuno di loro." Il Successore indica la folla con un ampio gesto circolare.`
+			choice
+				`	"Chi sono?"`
+					goto who
+				`	"Non penso di essere uno stolto."`
+			`	"Allora lo sei due volte, perché il tuo tempo in questo spazio è nuovo e breve, e quindi i pensieri nella tua testa sono come quelli di un bambino, ancora cieco al mondo. Ma tieniti i tuoi amici, se sembrano così gentili; e trova il tempo di ripensare a ciò che ho detto quando il loro pugnale ti niderà nella schiena."`
+			`	Detto questo, il Successore se ne va, alzandosi dai container e dirigendosi in silenzio verso lo spazioporto.`
+				decline
+			label who
+			`	"Sono i reietti delle Casate Nuove, che, come gli altri, sono stati costretti a venire qui quando l'antico impero si è ridotto in cenere. Ma mentre il resto delle Nuove Casate aveva ricchezze sufficienti per spostarsi e crescere nei nuovi domini, non tutti noi siamo riusciti a sfuggire a questo luogo intermedio in cui ci hanno spinto mentre aspettavamo. Mille anni, e ancora ci dipingono con il loro disprezzo e demonizzano il nostro desiderio di essere liberi."`
+			choice
+				`	"Liberi?"`
+					goto free
+				`	"Grazie. Non ho altre domande."`
+			`	"Faresti bene, se possiedi quell'arte rara, a guardarti le spalle dai tuoi nuovi e infidi 'amici'.`
+			`	"Oppure no. Un altro stolto sepolto fa poca differenza."`
+			`	Detto questo, il Successore se ne va, alzandosi dai container e dirigendosi in silenzio verso lo spazioporto.`
+				decline
+			label free
+			`	"Liberi, o più liberi di quanto le Vecchie e le Nuove permettano. Le Casate del Popolo non stanno dalla parte dei ricchi e di chi ha sangue nobile, ma degli eredi veri e onesti di ciò che è stato."`
+			`	Il Successore guarda verso lo spazioporto, prima di rivolgerti l'attenzione un'ultima volta.`
+			`	"Faresti bene, se possiedi quell'arte rara, a guardarti le spalle dai tuoi nuovi e infidi 'amici'.`
+			`	"Oppure no. Un altro stolto sepolto fa poca differenza."`
+			`	Detto questo, il Successore se ne va, alzandosi dai container e dirigendosi in silenzio verso lo spazioporto.`
+				decline
+
+mission "Successors: Unified Defense"
+	invisible
+	landing
+	non-blocking
+	infiltrating
+	source
+		attributes "successor"
+	to offer
+		has "Successors: First Contact 1: offered"
+		or
+			"reputation: Successor" < 0
+			"reputation: New Houses" < 0
+			"reputation: Old Houses" < 0
+	to complete
+		never
+	on offer
+		"reputation: Successor" <?= -999
+		"reputation: Old Houses" <?= -999
+		"reputation: House Chydiyi" <?= -999
+		"reputation: House Myurej" <?= -999
+		"reputation: House Sioeora" <?= -999
+		"reputation: New Houses" <?= -999
+		"reputation: House Aqrabe" <?= -999
+		"reputation: House Kaatrij" <?= -999
+		"reputation: House Seineq" <?= -999
+		"reputation: People's Houses" <?= -999
+		event "successors: unified defense"
+		conversation
+			branch uninhabited
+				has "flagship planet attribute: uninhabited"
+			branch "populated language"
+				has "language: Successor"
+			`Dopo l'atterraggio noti che l'equipaggio dello spazioporto non fa alcuno sforzo per rifornire o riparare la tua nave, e che un folto contingente di ufficiali militari Successori si sta radunando intorno alla tua piazzola, con le armi puntate sulla nave. Mentre anche diversi intercettori cominciano a librarsi sopra la nave con le armi pronte, sei costretto a decollare.`
+				flee
+			label "populated language"
+			`Dopo l'atterraggio noti che l'equipaggio dello spazioporto non fa alcuno sforzo per rifornire o riparare la tua nave, e che un folto contingente di ufficiali militari Successori si sta radunando intorno alla tua piazzola.`
+			`	Ricevi presto una trasmissione instradata attraverso lo spazioporto locale. "Le tue recenti azioni contro il nostro popolo rendono molto chiaro che è stato imprudente permetterti l'accesso al nostro spazio. Le Casate hanno decretato in consiglio che sei un nemico, e da ora in poi sarai trattato come tale."`
+			choice
+				`	"È stato un incidente!"`
+					goto accident
+				`	"Chiedo scusa per la trasgressione. Non lo farò più."`
+					goto "never again"
+				`	"Se lo meritavano."`
+					goto "deserved it"
+			label uninhabited
+			branch "uninhabited language"
+				has "language: Successor"
+			`Poco dopo l'atterraggio ricevi una trasmissione a lungo raggio dai Successori. Anche se non riesci a dare un senso a nessuna delle parole, hai la netta impressione che siano arrabbiati con te.`
+				goto end
+			label "uninhabited language"
+			`Poco dopo l'atterraggio ricevi una trasmissione a lungo raggio dai Successori. "Le tue recenti azioni contro il nostro popolo rendono molto chiaro che è stato imprudente permetterti l'accesso al nostro spazio. Le Casate hanno decretato in consiglio che sei un nemico, e da ora in poi sarai trattato come tale."`
+			choice
+				`	"È stato un incidente!"`
+					goto accident
+				`	"Chiedo scusa per la trasgressione. Non lo farò più."`
+					goto "never again"
+				`	"Se lo meritavano."`
+					goto "deserved it"
+			label accident
+			`	Macchie di arancione fiammeggiante compaiono sulla pelle del Successore. "Qualunque creatura incline a simili 'incidenti' non ha posto fra i nostri mondi." Chiudono lì la trasmissione.`
+				goto end
+			label "never again"
+			`	Il Successore lampeggia di un rosso scuro. "Le nostre flotte se ne assicureranno." Chiudono lì la trasmissione.`
+				goto end
+			label "deserved it"
+			`	Un'onda di nero irto corre sul corpo del Successore prima che chiudano la trasmissione.`
+			label end
+			branch decline
+				has "flagship planet attribute: uninhabited"
+			`	Il tuo permesso di atterraggio viene revocato e il contingente di ufficiali punta le armi sulla nave. Mentre diversi intercettori cominciano a librarsi sopra la tua piazzola, con le armi pronte, sei costretto a decollare.`
+				flee
+		
+	npc
+		government "New Houses"
+		personality heroic staying vindictive
+		system Kella-Uoasa
+		ship "Aaulqra" "Kijria-Sol"
+		ship "Aaulqra" "Aret-I"
+		ship "Veusade" "Nosola-o-Kasja"
+		ship "Veusade" "Saqra-Vasa"

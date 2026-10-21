@@ -1,0 +1,121 @@
+{
+ "block": {
+  "path": "data/quarg/quarg outfits.txt",
+  "line_from": 138,
+  "line_to": 243,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Large Graviton Steering|description|138|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 138,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Graviton Steering",
+   "english": "\tThey also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships with these engines accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "italian": "\tThey also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships with these engines accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Quantum Vacuum Battery|description|153|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 153,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Quantum Vacuum Battery",
+   "english": "Human engineers who first came into contact with the Quarg were astonished by the sheer energy density of their technology. This Quarg battery holds enough energy to level a small city, rumored to be stored in the negative quantum vacuum pressure between innumerable tiny plates. Somehow, the battery chills itself as energy is drained from it, seemingly in defiance of the human understanding of thermodynamics.",
+   "italian": "Human engineers who first came into contact with the Quarg were astonished by the sheer energy density of their technology. This Quarg battery holds enough energy to level a small city, rumored to be stored in the negative quantum vacuum pressure between innumerable tiny plates. Somehow, the battery chills itself as energy is drained from it, seemingly in defiance of the human understanding of thermodynamics.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Antimatter Core|description|166|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 166,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Antimatter Core",
+   "english": "Although humanity is now capable of producing antimatter in relatively significant quantities when compared to a thousand years ago, it is still nothing next to the output of the Quarg, who can produce enough antimatter to outfit even civilian ships with an extremely compact Antimatter Core. This device releases extreme amounts of energy in a simple, elegant package, all while producing surprisingly little waste heat.",
+   "italian": "Although humanity is now capable of producing antimatter in relatively significant quantities when compared to a thousand years ago, it is still nothing next to the output of the Quarg, who can produce enough antimatter to outfit even civilian ships with an extremely compact Antimatter Core. This device releases extreme amounts of energy in a simple, elegant package, all while producing surprisingly little waste heat.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Singularity Core|description|180|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 180,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Singularity Core",
+   "english": "According to little more than vague allusions by the Quarg, these generators contain a minuscule black hole, spewing radiation as it is fed a trickle of mass. This black hole is small enough to output a truly staggering amount of energy via Hawking radiation, which grows in power as a black hole shrinks, something that suggests the black hole within the Singularity Core is truly microscopic.",
+   "italian": "According to little more than vague allusions by the Quarg, these generators contain a minuscule black hole, spewing radiation as it is fed a trickle of mass. This black hole is small enough to output a truly staggering amount of energy via Hawking radiation, which grows in power as a black hole shrinks, something that suggests the black hole within the Singularity Core is truly microscopic.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Singularity Core|description|181|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 181,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Singularity Core",
+   "english": "\tFurther wild guesses by scientists and conspiracy theorists alike allege that the Quarg are able to somehow trick the laws of physics themselves to make this black hole weigh far less than it otherwise should, bringing its mass from that of a small moon to something a ship could have a hope of moving.",
+   "italian": "\tFurther wild guesses by scientists and conspiracy theorists alike allege that the Quarg are able to somehow trick the laws of physics themselves to make this black hole weigh far less than it otherwise should, bringing its mass from that of a small moon to something a ship could have a hope of moving.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Quasar Core|description|195|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 195,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Quasar Core",
+   "english": "This larger generator appears similar to the Singularity Core, only even more powerful. Little is known about its exact function, but purely based on its name, some have speculated that the Quasar Core's increased output is the result of the black hole at its core being fed enough mass to form a small accretion disk, releasing light and heat as it falls towards the event horizon and is compressed to an unimaginable degree.",
+   "italian": "This larger generator appears similar to the Singularity Core, only even more powerful. Little is known about its exact function, but purely based on its name, some have speculated that the Quasar Core's increased output is the result of the black hole at its core being fed enough mass to form a small accretion disk, releasing light and heat as it falls towards the event horizon and is compressed to an unimaginable degree.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Quasar Core|description|196|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 196,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Quasar Core",
+   "english": "\tWhile this process should be far less fuel-efficient than simply capturing the Hawking radiation emitted by the black hole alone, the staggering power density of this generator appears to be evidence it was worth the trade.",
+   "italian": "\tWhile this process should be far less fuel-efficient than simply capturing the Hawking radiation emitted by the black hole alone, the staggering power density of this generator appears to be evidence it was worth the trade.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Aspis Shield Generator|description|213|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 213,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Aspis Shield Generator",
+   "english": "Even the smallest example of Quarg shield generation displays defensive powers greater than what humans would normally consider to be sufficient.",
+   "italian": "Even the smallest example of Quarg shield generation displays defensive powers greater than what humans would normally consider to be sufficient.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Ancile Shield Generator|description|228|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 228,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ancile Shield Generator",
+   "english": "In addition to being able to recover their shields more quickly and efficiently than any other technology of considerable size, Quarg shield generators also provide an impressive degree of protection against weapons designed to bypass shields entirely.",
+   "italian": "In addition to being able to recover their shields more quickly and efficiently than any other technology of considerable size, Quarg shield generators also provide an impressive degree of protection against weapons designed to bypass shields entirely.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Aegis Shield Generator|description|243|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 243,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Aegis Shield Generator",
+   "english": "The first humans who met the Quarg thought that their technology worked on magic, and many even think so to this day. The mechanism by which this Quarg shield generator works is completely unknown to humanity, providing an astounding amount of protection, and the Quarg aren't interested in giving up the secrets behind it.",
+   "italian": "The first humans who met the Quarg thought that their technology worked on magic, and many even think so to this day. The mechanism by which this Quarg shield generator works is completely unknown to humanity, providing an astounding amount of protection, and the Quarg aren't interested in giving up the secrets behind it.",
+   "ratio": 1.0
+  }
+ ]
+}

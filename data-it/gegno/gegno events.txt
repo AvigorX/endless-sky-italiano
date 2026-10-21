@@ -1,0 +1,102 @@
+# Copyright (c) 2022 by Saugia
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+
+event "gegno space label"
+	galaxy "label gegno"
+		sprite label/gegno
+
+
+event "gegno: civilian suspicion"
+	government "Gegno"
+		"send untranslated hails"
+		"friendly hail" "gegno untranslated"
+
+
+event "gegno: quarg talks"
+
+
+event "gegno: apprehension"
+
+
+event "gegno: vi occupy zydee"
+	system "Vesvii"
+		fleet "Scin Warfleet" 2700
+		fleet "Vi Warfleet" 2400
+	system "Kneirc"
+		government "Gegno Vi"
+		attributes "gegno" "vi"
+		fleet "Small Vi" 1400
+		fleet "Vi Warfleet" 3300
+		fleet "Small Scin" 1900
+		fleet "Scin Warfleet" 3000
+	planet "Zydee"
+		attributes "gegno" "vi" "moon"
+		description `Ci sono prove che i vicini Gegno Scin abbiano tentato di stabilire una presenza su questa luna sterile, sotto forma di diversi edifici parzialmente costruiti e zone di atterraggio sparse sulla superficie. Di recente, però, i rivali Gegno Vi hanno schierato le proprie forze per prendere il controllo del sistema, e hanno avviato una serie di operazioni per convertire le infrastrutture esistenti e installare postazioni proprie, reclamando la luna a proprio nome.`
+		spaceport `I Vi hanno allestito zone di atterraggio e avamposti improvvisati, come questo, per il gruppo di guerrieri che hanno distribuito sulla luna. Benché il loro numero non superi quello di un piccolo villaggio, i presenti hanno fatto molto durante la loro permanenza sulla superficie, mentre le flotte lassù li difendono.`
+		government "Gegno Vi"
+		"required reputation" 1
+	planet "Ghneoe"
+		description `Il periodo orbitale di Ghneoe è dominato da una lunghissima stagione secca a causa delle stelle binarie al centro del sistema. Per una breve parte dell'anno, però, Ghneoe vive un intenso ciclo dell'acqua che provoca un'esplosione di vegetazione e di attività della fauna, sviluppando un ecosistema effimero ma rigoglioso. Gran parte della flora e della fauna si è adattata a questi sbalzi climatici così drastici e torna in stato di quiescenza quando il ciclo di calore intenso ritorna.`
+		description `	A differenza della sua luna, Ghneoe vede pochi o nessun tentativo di colonizzazione da parte dei Gegno Vi o degli Scin, forse a causa dei cicli climatici anomali, della guerra continua nel sistema, o di entrambe le cose.`
+
+
+event "gegno: unified defense"
+	government "Gegno Vi"
+		"attitude toward"
+			"Gegno Scin" 1
+	government "Gegno Scin"
+		"attitude toward"
+			"Gegno Vi" 1
+	government "Gegno"
+		"attitude toward"
+			"Gegno Scin" 1
+			"Gegno Vi" 1
+	government "Quarg (Gegno)"
+		"attitude toward"
+			"Gegno" 1
+			"Gegno Vi" 1
+			"Gegno Scin" 1
+	system "Vesvii"
+		remove fleet "Vi Warfleet"
+		remove fleet "Scin Warfleet"
+		add fleet "Gegno Miners" 1000
+	system "Zeinar"
+		add fleet "Scin Warfleet" 600
+		add fleet "Quarg (Gegno)" 1000
+	system "Scija"
+		add fleet "Vi Warfleet" 600
+		add fleet "Quarg (Gegno)" 1000
+	system "Heutesl"
+		add fleet "Scin Warfleet" 600
+		add fleet "Vi Warfleet" 600
+		add fleet "Large Quarg (Gegno)" 600
+
+
+event "gegno leave quarg space"
+	system "Aleit"
+		remove fleet "Gegno Basic"
+		remove fleet "Gegno Cargo"
+	system "Elifennka"
+		remove fleet "Gegno Miners"
+	system "Yllke"
+		remove fleet "Gegno Basic"
+		remove fleet "Gegno Cargo"
+		remove fleet "Gegno Miners"
+	system "Heutesl"
+		remove fleet "Quarg (Gegno)"
+
+
+# Will be defined in the future.
+
+event "Vesvii War"

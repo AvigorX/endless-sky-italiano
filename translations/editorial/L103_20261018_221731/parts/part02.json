@@ -1,0 +1,23 @@
+{
+ "22": "Andate su <stopovers> a ritirare <cargo>, poi portate tutto su <destination>, dove i Quarg si preparano ad aprire ai visitatori umani la prima sezione del loro mondo ad anello.",
+ "23": "Nello spazioporto un gruppo di Quarg sta parlando con decine di capitani umani. Alcuni annuiscono e tornano subito alle loro navi, mentre pochi altri restano e sembrano discutere ancora un po' con i Quarg.",
+ "24": "\t(Unitevi a loro per vedere cosa succede.)",
+ "25": "\t(Ignorateli.)",
+ "26": "\tVi unite al gruppo, e uno dei Quarg rivolge la sua attenzione a voi, mentre gli altri continuano a parlare con i mercanti umani.",
+ "27": "\t\"Anche tu saresti qualcuno disposto a fornirci un servizio di trasporto merci, Capitano?\" chiede, continuando intanto a controllare un datapad che sembra riguardare le navi attraccate qui. \"Non molti di voi umani in questa regione hanno lo spazio di carico necessario, e ancor meno difese adeguate per i convogli merci. Siamo disposti a pagare adeguatamente chi soddisfa i criteri ed è disposto ad aiutarci.\"",
+ "28": "\t\"Anche gli altri capitani lo stanno facendo? Perché vi serve tanto carico?\"",
+ "29": "\t\"Non cerco altri lavori di trasporto adesso, mi dispiace.\"",
+ "30": "\t\"Molti hanno già accettato di aiutarci, ma ne servono molti altri. Quelli che hanno accettato sono diretti in parti diverse dello spazio umano, per portarci in sicurezza i materiali che abbiamo ordinato.",
+ "31": "\t\"Il nostro mondo ad anello, in costruzione intorno alla stella di <system>, avrà presto una sezione speciale aperta ai visitatori umani. Vorremmo che lo stile e l'arredamento interno di quella sezione fossero più vicini agli standard umani, quindi chiediamo a ogni capitano capace di aiutarci. Tu sei uno di questi capitani: sei disposto ad aiutarci?\"",
+ "32": "\t\"Va bene, mi interessa. Dove devo andare a ritirare il carico?\"",
+ "33": "\t\"Mi dispiace, non cerco lavori di trasporto adesso, ero solo curioso.\"",
+ "34": "\tArmeggia ancora un po' con il datapad, poi dice: \"Devi ritirare <cargo> su <stopovers>, poi consegnare quel carico su <destination>. Sarai pagato <payment> per il servizio. Stammi bene, umano.\"",
+ "35": "\tVi fa un inchino con un gesto, poi si allontana a parlare con un altro capitano mercantile che è diventato curioso anche lui.",
+ "36": "Il <cargo> viene caricato sulla vostra nave sotto stretta sorveglianza, ogni cassa accuratamente contata.",
+ "37": "Proprio come la vostra nave, diversi altri mercantili umani e convogli stanno arrivando, e il carico viene meticolosamente controllato dai Quarg, che usano i propri macchinari per scaricare quello che devono essere decine di migliaia di tonnellate da tutte le navi.",
+ "38": "\tA metà circa dello scarico del vostro carico, un Quarg si avvicina e vi consegna <payment>.",
+ "39": "Human Construction Materials",
+ "40": "Andate su <stopovers> a ritirare <cargo>, poi portate tutto su <destination>, dove i Quarg si preparano ad aprire ai visitatori umani la prima sezione del loro mondo ad anello.",
+ "41": "Il <cargo> viene caricato sulla vostra nave sotto stretta sorveglianza, ogni cassa accuratamente contata.",
+ "42": "A metà circa del meticoloso scarico del carico, un Quarg si avvicina e vi consegna <payment>."
+}

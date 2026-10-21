@@ -1,0 +1,141 @@
+{
+ "block": {
+  "path": "data/avgi/avgi outfits.txt",
+  "line_from": 112,
+  "line_to": 193,
+  "units": 10
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Cryogenic Deuterium Tank|description|112|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 112,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Cryogenic Deuterium Tank",
+   "english": "This insulated pressure vessel is designed to store hyperspace fuel under cryogenic temperatures for bulk transport. While not quite as efficient as a deuterium slush tank, this outfit is designed to fit into a ship's cargo space with minimal intrusion into space reserved for other systems, allowing many to be installed simultaneously without the need for deep cryocoolers.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This insulated pressure vessel is designed to store hyperspace fuel under cryogenic temperatures for bulk transport. While not quite as efficient as a deuterium slush tank, this outfit is designed to fit into a ship's cargo space with minimal intrusion into space reserved for other systems, allowing many to be installed simultaneously without the need for deep cryocoolers.\"",
+   "english_hash": "cc2de89fc85829da"
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Heatsink Partition|description|125|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 125,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Heatsink Partition",
+   "english": "This lightweight modification partitions off a section of a ship's fuel tanks with an insulating membrane. This section can then be filled with a lithium hydride nanofluid with a high specific heat capacity, which coolant lines can be routed around. As a heatsink, it does not assist with cooling a ship, but allows it to temporarily take greater thermal loads while remaining at a safe temperature.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This lightweight modification partitions off a section of a ship's fuel tanks with an insulating membrane. This section can then be filled with a lithium hydride nanofluid with a high specific heat capacity, which coolant lines can be routed around. As a heatsink, it does not assist with cooling a ship, but allows it to temporarily take greater thermal loads while remaining at a safe temperature.\"",
+   "english_hash": "551d2c2a1bb1ad95"
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Multispectral Scanner|description|139|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 139,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Multispectral Scanner",
+   "english": "The Multispectral Scanner is a veritable suite of instruments, including an active scanning phased array radar, a combined infrared/optical/ultraviolet telescope, an array of semiconductor gamma detectors, and a bundle of neutron-detecting helium-3 tubes. With this plethora of instruments, distant ships can be detected, ranged, and tracked, despite any attempts to hide.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Multispectral Scanner is a veritable suite of instruments, including an active scanning phased array radar, a combined infrared/optical/ultraviolet telescope, an array of semiconductor gamma detectors, and a bundle of neutron-detecting helium-3 tubes. With this plethora of instruments, distant ships can be detected, ranged, and tracked, despite any attempts to hide.\"",
+   "english_hash": "7b3162eb2bf9c291"
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Multispectral Scanner|description|140|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 140,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Multispectral Scanner",
+   "english": "\tTo increase the sensitivity of the instruments, certain components are cryocooled to temperatures ranging in the low microkelvins. The heat pump system responsible for maintaining this requires a surprising amount of power, while also producing a significant amount of waste heat.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tTo increase the sensitivity of the instruments, certain components are cryocooled to temperatures ranging in the low microkelvins. The heat pump system responsible for maintaining this requires a surprising amount of power, while also producing a significant amount of waste heat.\"",
+   "english_hash": "081f2d8403496323"
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Spectrometer Array|description|158|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 158,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Spectrometer Array",
+   "english": "This array of spectrometers is capable of analyzing the spectral signatures of materials in order to determine their composition. A small laser can speed this process up for asteroids by ablating a small surface sample and then analyzing the spectral lines of the emitted light, but this is sadly less useful against shielded ships and their internal systems.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This array of spectrometers is capable of analyzing the spectral signatures of materials in order to determine their composition. A small laser can speed this process up for asteroids by ablating a small surface sample and then analyzing the spectral lines of the emitted light, but this is sadly less useful against shielded ships and their internal systems.\"",
+   "english_hash": "b62f67460a96cc17"
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Spectrometer Array|description|159|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 159,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Spectrometer Array",
+   "english": "\tUnfortunately, while these sensors excel in reading basic physical and chemical information, such as the elemental composition of an object, the amount of sensor data required to predict an outfit's functionality means this sensor can be quite slow when scanning a ship's complex systems or cargo.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tUnfortunately, while these sensors excel in reading basic physical and chemical information, such as the elemental composition of an object, the amount of sensor data required to predict an outfit's functionality means this sensor can be quite slow when scanning a ship's complex systems or cargo.\"",
+   "english_hash": "4a7c9c025ae981a4"
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Diffuse Deflector|description|175|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 175,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Diffuse Deflector",
+   "english": "The Avgi never developed shields indigenously, instead being first introduced to the technology by lost explorers from the Deep. Directly copying the technique used in human shields proved unappealing to Avgi scientists, in part due to the totally alien principles involved, so instead they attempted to tap into the shield effect via enormous superconducting magnets, for them a much more mature technology commonly used in efficient energy storage.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Avgi never developed shields indigenously, instead being first introduced to the technology by lost explorers from the Deep. Directly copying the technique used in human shields proved unappealing to Avgi scientists, in part due to the totally alien principles involved, so instead they attempted to tap into the shield effect via enormous superconducting magnets, for them a much more mature technology commonly used in efficient energy storage.\"",
+   "english_hash": "f89bab6fd1f2bf4a"
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Diffuse Deflector|description|176|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 176,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Diffuse Deflector",
+   "english": "\tUnfortunately, for its size, you would expect this shield generator to be far more powerful than it actually is. While it is nearly as large as the heaviest human shield generators, it is only about half as strong, while also consuming far more power. Much of this power ends up being shed as waste heat instead of being used to efficiently regenerate a shield, resulting in a generator that can be generously described as anemic.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tUnfortunately, for its size, you would expect this shield generator to be far more powerful than it actually is. While it is nearly as large as the heaviest human shield generators, it is only about half as strong, while also consuming far more power. Much of this power ends up being shed as waste heat instead of being used to efficiently regenerate a shield, resulting in a generator that can be generously described as anemic.\"",
+   "english_hash": "76d1d919ba978509"
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Specular Deflector|description|192|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 192,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Specular Deflector",
+   "english": "The largest shield generator manufactured by the Avgi is impressive, if only because of how far the Avgi have pushed their fledgling understanding of shielding principles. While their engineering ingenuity is admirable, there is a limit to how far you can take an incomplete picture of the base physics behind shields, and this generator approaches it.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The largest shield generator manufactured by the Avgi is impressive, if only because of how far the Avgi have pushed their fledgling understanding of shielding principles. While their engineering ingenuity is admirable, there is a limit to how far you can take an incomplete picture of the base physics behind shields, and this generator approaches it.\"",
+   "english_hash": "27c5ba70b36b99f9"
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Specular Deflector|description|193|0",
+   "path": "data/avgi/avgi outfits.txt",
+   "line": 193,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Specular Deflector",
+   "english": "\tThe limited success of the Avgi shield replication attempts are mitigated somewhat by the fact that the enormous superconducting coils in their shield generators store a similarly enormous amount of energy, making them effectively superconducting magnetic energy storage devices that slowly regenerate shields as a bonus.",
+   "delimiter": "quote",
+   "leading_tab": true,
+   "raw": "\tdescription \"\tThe limited success of the Avgi shield replication attempts are mitigated somewhat by the fact that the enormous superconducting coils in their shield generators store a similarly enormous amount of energy, making them effectively superconducting magnetic energy storage devices that slowly regenerate shields as a bonus.\"",
+   "english_hash": "3c84d20c24e39ea1"
+  }
+ ]
+}

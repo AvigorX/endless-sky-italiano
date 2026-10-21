@@ -1,0 +1,22 @@
+{
+ "block": {
+  "path": "data/human/deep jobs.txt",
+  "line_from": 683,
+  "line_to": 683,
+  "units": 1
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Deep Security Package Reveal|label|683|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 683,
+   "kind": "UI_LABEL",
+   "context": "mission:Deep Security Package Reveal",
+   "english": "blind acceptance",
+   "italian": "blind acceptance",
+   "ratio": 1.0
+  }
+ ]
+}

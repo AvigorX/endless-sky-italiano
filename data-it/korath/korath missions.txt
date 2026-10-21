@@ -1,0 +1,580 @@
+# Copyright (c) 2016 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "First Contact: Korati Efreti"
+	landing
+	source "Korati Efreti"
+	to offer
+		not "Wanderers: Rek To Kor Efret: offered"
+	on offer
+		conversation
+			`Alcuni dei Korath che abitano questa stazione vi salutano quando atterrate, sollevando entrambe le mani con i palmi verso di voi. Uno di loro dice qualcosa che suona come: "Humani efreti, naskoor amasavarkta." È chiaro che nessuno di loro parla la vostra lingua, ma sembrano amichevoli e disposti a commerciare con voi.`
+				decline
+
+mission "First Contact: Laki Nemparu"
+	landing
+	source "Laki Nemparu"
+	to offer
+		not "Wanderers: Rek To Kor Efret: offered"
+	on offer
+		conversation
+			`Alcuni dei Korath in questo spazioporto vi salutano quando atterrate, sollevando entrambe le mani con i palmi verso di voi. Uno di loro dice qualcosa che suona come: "Humani efreti, naskoor amasavarkta." È chiaro che nessuno di loro parla la vostra lingua, ma sembrano amichevoli e disposti a commerciare con voi.`
+				decline
+
+mission "First Contact: Karek Fornati"
+	landing
+	source "Karek Fornati"
+	to offer
+		not "Wanderers: Rek To Kor Efret: offered"
+	on offer
+		conversation
+			`Alcuni dei Korath in questo spazioporto vi salutano quando atterrate, sollevando entrambe le mani con i palmi verso di voi. Uno di loro dice qualcosa che suona come: "Humani efreti, naskoor amasavarkta." È chiaro che nessuno di loro parla la vostra lingua, ma sembrano amichevoli e disposti a commerciare con voi.`
+				decline
+
+mission "First Contact: Setar Fort"
+	landing
+	source "Setar Fort"
+	to offer
+		not "Wanderers: Rek To Kor Efret: offered"
+	on offer
+		conversation
+			`Alcuni dei Korath in questo spazioporto vi salutano quando atterrate, sollevando entrambe le mani con i palmi verso di voi. Uno di loro dice qualcosa che suona come: "Humani efreti, naskoor amasavarkta." È chiaro che nessuno di loro parla la vostra lingua, ma sembrano amichevoli e disposti a commerciare con voi.`
+				decline
+
+mission "Discovered Korath Space"
+	landing
+	invisible
+	non-blocking
+	source
+		attributes "efret"
+	on offer
+		event "label korath space"
+		log "Factions" "Korath" `I Korath sono alieni rettiliani e bipedi, il cui territorio è quasi interamente in rovina: città distrutte e interi pianeti segnati da quella che sembra essere stata una feroce guerra civile. Sopravvivono diverse fazioni di Korath. I "Kor Efreti" vivono al riparo di un mondo ad anello dei Quarg e sono in rapporti pacifici con loro. Altri Korath, che vivono in esilio vicino al nucleo galattico, hanno saccheggiato i mondi umani per rubare cibo e provviste. E più in profondità nello spazio Korath, due enormi eserciti di droni da guerra automatici, noti come Kor Mereti e Kor Sestor, sono bloccati in una lotta senza fine. Attaccano chiunque visiti la loro regione di spazio, compresi i Quarg.`
+		fail
+
+event "label korath space"
+	galaxy "label korath"
+		sprite "label/korath"
+		
+mission "Setar Fort Heating"
+	name "Provviste per <planet>"
+	description "Porta <cargo> dai Wanderer ai Kor Efreti su <destination>. Il pagamento è <payment>."
+	minor
+	cargo "heating supplies" 30
+	source
+		government "Wanderer"
+		near "Kaliptari" 100
+	destination "Setar Fort"
+	to offer
+		has "wanderers sestor done"
+		random < 60
+	on offer
+		conversation
+			`Mentre esplorate lo spazioporto, un Wanderer che non avete mai incontrato vi fa cenno di fermarvi. Dice: "Lei è il Capitano <last>, giusto?"`
+			choice
+				`	"Sì, sono io."`
+				`	"L'unico e solo."`
+			`	"Sono [sollevato, felice] di vederla, Capitano. Abbiamo sentito del suo aiuto nella nostra migrazione qui, e [credo, suppongo] che abbia passato un po' di tempo sui mondi Korath. Le interesserebbe portare <tons> di [provviste, aiuti] su <planet>? Posso offrirle <payment>."`
+			choice
+				`	"Posso farlo. Caricate, e sarò pronto a partire."`
+					goto agree
+				`	"Solo <payment>? È un pagamento insolitamente basso per la quantità di carico che trasporterò."`
+					goto payment
+				`	"Che cosa trasporterei esattamente?"`
+				`	"Mi dispiace, ma al momento sono troppo impegnato per prendere un altro lavoro."`
+					goto decline
+			
+			`	"Come di certo saprà, <planet> è freddo - scomodamente freddo per la maggior parte delle specie. In base alle nostre [ricerche, informazioni], il pianeta sta vivendo una [discesa, transizione] accelerata verso un'era glaciale. I Kor Efreti non hanno mezzi efficaci per fermarla, e il loro [orgoglio, onore] fa sì che non accetteranno il nostro aiuto nella terraformazione finché non avranno altre opzioni. Ci pagheranno però per attrezzature che compensino questa [discesa, transizione]. Le sue [provviste, aiuti] includerebbero indumenti più caldi, materiale per costruire serre, [isolamento, ripari] e altra tecnologia che i Korath potranno usare. Il pagamento, per quanto [purtroppo, tristemente] basso, è tutto ciò che i Korath sono riusciti a offrire.`
+			`	"Avevo intenzione di fare il viaggio io stesso, ma la mia nave ha avuto [errori, complicazioni] per un componente difettoso. Ho bisogno di qualcuno che vada al mio posto."`
+			choice
+				`	"Ne sarei felice, soprattutto perché è per una buona causa. Può caricare sulla mia nave."`
+					goto agree
+				`	"Mi dispiace, ma al momento sono troppo impegnato per prendere un altro lavoro."`
+					goto decline
+			
+			label payment
+			`	Il Wanderer ha un leggero sussulto, quasi avesse sperato che non lo chiedeste. "Beh... sì, è basso. Il resto del pagamento dei Kor Efreti è stato usato per [comprare, acquisire] le provviste, e sembra che non potessero permettersi di pagare molto più di quanto avessero già fatto. Vista la loro situazione, abbiamo trovato [ragionevole, giustificabile] accettare il pagamento più basso, dato che il carico è una [collezione, accozzaglia] di attrezzature per aiutare con il clima che si raffredda su <planet>, e senza di esso i Kor Efreti potrebbero... [perire? spegnersi?]."`
+			choice
+				`	"Capisco, e i soldi non sono un problema enorme. Ero solo curioso. Caricate sulla mia nave, e sarò pronto a partire."`
+					goto agree
+				`	"Oh. Beh, farò un'eccezione anch'io. Caricate, e parto."`
+					goto agree
+				`	"Mi dispiace, ma non posso fare quel viaggio per soli <payment>. Dovrete trovare qualcun altro."`
+			
+			label decline
+			`	Il Wanderer si sgonfia un po' quando sente la vostra risposta. "Oh. Capisco. Grazie del tempo, Capitano <last>," dice, poi si allontana in cerca di un altro pilota.`
+				decline
+			
+			label agree
+			`	Il Wanderer è felice di sentire la vostra risposta. "Meraviglioso! Farò in modo che le provviste siano caricate sulla vostra nave [subito, in fretta]. Grazie, Capitano." Si affretta verso un gruppo di Wanderer lì vicino e comincia a impartire ordini. Il gruppo si separa, e nel giro di pochi minuti sono alla vostra nave a caricare le provviste.`
+				accept
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 5000
+		conversation
+			`Quando arrivate su <planet>, un gruppo di Korath aspetta per scaricare il carico. Provate a imitare il loro gesto di saluto, sollevando le mani con i palmi verso il gruppo. Sembrano sorpresi ma sibilano in segno di approvazione.`
+			`	Ben presto tutte le provviste sono fuori dalla nave. I Korath vi fanno un gesto di apprezzamento, poi cominciano a disimballarle proprio in mezzo allo spazioporto. Una folla si è già radunata intorno alle attrezzature. Sembra che qui saranno usate bene. Quando tornate alla nave, vedete che il Wanderer che vi aveva offerto il lavoro vi ha trasferito il pagamento di <payment>.`
+			
+mission "Korath Family to Ringworld"
+	name "Korath per <planet>"
+	description "Una famiglia Korath di <bunks> persone vi ha pagato <payment> per portarla al mondo ad anello dei Quarg di <destination>."
+	minor
+	passengers 3
+	source "Laki Nemparu"
+	destination "Kuwaru Efreti"
+	to offer
+		random < 60
+	on offer
+		conversation
+			`La foschia è così fitta su Laki Nemparu che anche le ore più luminose del giorno vi sembrano sera. Tutto qui è così sporco che la maggior parte dei Korath sembra di qualche tonalità più scura rispetto a quelli di altri pianeti. Nel giro di pochi minuti anche sulla vostra pelle si attacca un sottile strato di fuliggine.`
+			`	Mentre osservate ciò che vi circonda, un Kor Efret vi si avvicina, seguito da altri due: uno, a giudicare dalla taglia, è probabilmente un bambino, e l'altro è curvo su un bastone che usa per sostegno, probabilmente anziano. Quello davanti parla in lingua Korath e capisce presto che non la capite affatto. Il Kor Efret si ferma a prendere un respiro profondo, poi scoppia in un accesso di tosse per aver aspirato troppa foschia. Passa quasi un minuto intero prima che si riprenda.`
+			`	Il Korath indica il cielo e dice: "<planet>, <planet>," mentre gesticola verso i due Korath che sono con lui. Vi premono 500 crediti nelle mani e continuano a borbottare in lingua Korath. <planet> è il nome del mondo ad anello dei Quarg nello spazio Korath. Devono volere un passaggio fin lì. 500 crediti sono scandalosamente pochi per qualunque lavoro di trasporto, ma a giudicare dal loro aspetto non possono permettersi di pagarvi di più. Volete portarli su <planet>?`
+			choice
+				`	(Sì.)`
+				`	(Sì, e restituite loro i crediti.)`
+					goto free
+				`	(No.)`
+					goto heartless
+			`	Vi mettete i crediti in tasca e fate segno di seguirvi alla nave. Quando il Korath capisce che avete accettato, sospira di sollievo e gesticola rapidamente in segno di gratitudine. Li accompagnate alle loro cuccette... e alla doccia.`
+				accept
+			
+			label free
+			`	Le spalle del Korath si abbassano quando gli restituite i crediti, ma la delusione diventa sorpresa quando fate segno verso la nave. Quando capiscono che state cercando di rifiutare il denaro, gonfiano il petto e vi spingono di nuovo i crediti in mano. Non accettano un no come risposta, così vi mettete i crediti in tasca e li portate alla nave. Li accompagnate alle loro cuccette... e alla doccia.`
+				accept
+			
+			label heartless
+			`	Restituite i crediti al Korath e le loro spalle si abbassano. Guardate il terzetto allontanarsi finché la foschia fitta non li nasconde. Non potete fare a meno di sentirvi un po' in colpa.`
+				decline
+	on accept
+		payment 500
+	on complete
+		conversation
+			`Vi piace la nuova compagnia sulla nave. Il bambino vi ha insegnato un gioco in cui a turno si lancia una palla contro la parete. Passate un'ora o due a giocare con loro nella stiva.`
+			`	Quando arrivate, decidete di accompagnare la famiglia nello spazioporto. Vicino alla baia di attracco aspettano altri due Korath, uno adulto e uno anziano, e i tre che avete trasportato corrono a incontrarli. Quando la felice riunione si calma, il Korath che vi aveva chiesto il passaggio si volta verso un Quarg lì vicino e dice qualcosa. Il Quarg risponde, poi si volta verso di voi.`
+			`	"Questo individuo orgogliosissimo ha dichiarato che riguardava con reverenza la mia traduzione debitrice e chiede che il mio uso di essa sia preferito. Sono incline ad acconsentire alla sua richiesta felicemente." Questo Quarg non sembra avere una presa particolarmente salda della vostra lingua, ma dovreste riuscire più o meno a capire quello che viene detto. "Il camerata dice: 'Ti ringrazio sproporzionatamente per aver riunificato il mio famigliare, in servizio fatidico alla nostra camerataggine.' Aggiunge inoltre che non c'era metodo in cui questa accozzaglia sarebbe vicinata se la vostra presenza fosse stata assenziata. È tutto."`
+			choice
+				`	"Ditegli che non è affatto un problema."`
+				`	"Ditegli che ha una famiglia meravigliosa, e che sono stato felice di aiutare."`
+			`	Il Quarg annuisce e si volta a tradurre. Il Korath risponde tenendo i palmi verso di voi e muovendoli in un ampio movimento circolare. "Questo sta a indicare gratitudine di misura sanissima. Ti ringrazia per le tue parole fortunate e ti augura viaggi gentili," dice il Quarg. Accogliete la risposta, ringraziate il Quarg per i suoi servizi di traduzione (approssimativi) e tornate alla nave.`
+		
+mission "Korath Livestock"
+	name "Bestiame per <planet>"
+	description "Trasporta <bunks> agricoltori Korath e il loro <cargo> su <destination>. Ti hanno già pagato parte dei 10.000 crediti concordati."
+	minor
+	passengers 7
+	cargo "livestock and supplies" 40
+	source "Setar Fort"
+	destination "Karek Fornati"
+	to offer
+		random < 65
+	on offer
+		conversation
+			`Un Kor Efret che indossa diversi strati di un tessuto simile alla lana vi si avvicina. Solleva entrambi i palmi verso di voi, poi vi fa cenno di seguirlo in un vicolo. Non pensate che rappresenti una minaccia, ma non fa male essere prudenti.`
+			choice
+				`	(Seguilo nel vicolo.)`
+				`	(Fai il sicuro e vattene.)`
+					decline
+			`	Il Korath si infila fra gli edifici, addentrandosi in una zona abbandonata della città. Il Korath gira un angolo, e mentre un vento freddo vi investe, da dietro l'angolo arriva un belato allarmante.`
+			choice
+				`	(Gira l'angolo.)`
+				`	(Voltati e prova a correre allo spazioporto.)`
+			`	Sentite uno scalpiccio dietro di voi e vi voltate. Tre Korath torreggianti, con indosso abiti pesanti simili, sono usciti da una porta lì vicino e vi vengono incontro. Il belato torna, e vi voltate di nuovo, solo per vedere il Kor Efret di prima tornato da dietro l'angolo. Qualunque possibilità aveste di uscirne, ora è sparita.`
+			`	Quello davanti si volta verso la direzione da cui è venuto, e il Korath dietro di voi sibila e fa segno di andare avanti. Sembra che dobbiate seguirli. Vi preparate e girate l'angolo per vedere... animali?`
+			`	Gli edifici arrugginiti hanno lasciato il posto a una enorme piazza abbandonata, e tutto lo spazio è occupato da un misto di bestiame di grossa taglia e provviste. Vi ricordano delle pecore, ma sono circa cinque volte più grandi, hanno sei zampe e vengono in una varietà di colori bruno-neri. Ognuna ha un manto folto e una coperta aggiuntiva fatta del loro stesso tessuto simile alla lana. È lo stesso materiale che indossano questi Korath. Anche con la coperta in più, le "pecore" stanno accalcate in piccoli gruppi e sembrano soffrire il freddo. Belano di tanto in tanto, forte, ogni volta che un vento freddo attraversa la piazza. Per fortuna, questi Kor Efreti sembrano agricoltori, non rapinatori. Questo dev'essere l'unico posto vicino allo spazioporto dove potevano tenere insieme tutto il gregge.`
+			`	Quello che vi ha portato qui, che sembra anche essere il capo, vi fa cenno di avvicinarvi. Ha aperto una mappa di carta, una vista rara nell'era dei viaggi interstellari. Quando date un'occhiata, capite che non è della zona locale, ma dello spazio; sembra mostrare i sistemi circostanti. Il Korath ne indica uno, si ferma e gesticola ampiamente verso il misto di bestiame e provviste, poi porta il dito su un altro sistema e dice qualcosa che suona all'incirca come <planet>. "<planet>?" confermate, e il Korath sibila in approvazione. Sembra che vogliano un trasporto fin lì. Scommettete che il bestiame e le provviste occuperanno più o meno <tons>, e che nel gruppo ci siano <bunks> agricoltori Korath.`
+			`	Tira fuori dalla tasca un mazzo di 200 crediti e lo posa a terra, poi ci disegna intorno un cerchio con un pezzo di gesso. Ne disegna altri quattro, fa un grande cerchio intorno ai cinque più piccoli, poi disegna altri nove grandi cerchi. La vostra ipotesi migliore è che offra 10.000 crediti per il trasporto.`
+			choice
+				`	(Accetta di portarli.)`
+				`	(Rifiuta il lavoro.)`
+					decline
+			`	Indicate il vostro accordo puntando <planet> sulla mappa e gesticolando verso di voi. Quando capisce che avete accettato, il Korath tiene i palmi verso di voi e li muove in un movimento circolare. Ne portate uno alla nave mentre gli altri restano a preparare gli animali. Quando arrivate, si mette subito al lavoro stendendo teli sul pavimento e spargendoci sopra una specie di paglia. Dopo un po', notate che una delle "pecore" esce da un vicolo guidata da un agricoltore rimasto indietro. Dietro c'è un altro animale, poi un altro. La fila di bestiame, intervallata dagli agricoltori che tengono il passo, si fa lentamente strada nel vostro hangar nell'ora successiva.`
+			`	Mentre entrano nella nave a clima controllato, gli agricoltori tolgono le pesanti coperte simili alla lana dalle "pecore" e si tolgono gran parte dei loro strati. Uno porta l'intero mucchio di tessuto a un venditore lì vicino e lo scambia per crediti, mentre gli altri tornano a prendere le provviste ancora nella piazza. Al calare della notte, tutto e tutti sono finalmente caricati sulla nave. Il Korath che aveva venduto i vestiti al mercante vi consegna l'intero mazzo di 4.100 crediti. Sperate di ricevere il resto una volta arrivati su <planet>.`
+				accept
+	on accept
+		payment 4100
+	on visit
+		dialog phrase "generic cargo and passenger on visit"
+	on complete
+		payment 5900
+		conversation
+			`Gli animali stanno sorprendentemente comodi sulla nave, ma i Korath faticano. A giudicare da quante volte entrano ed escono dal bagno durante il viaggio di un salto, nessuno di loro è mai stato nell'iperspazio. Quando si riprendono dal mal di spazio, si danno da fare a radere il pelo simile alla lana dagli animali e a raccoglierlo.`
+			`	Mentre atterrate e aprite le porte del carico rivelando il caldo mondo di <planet>, gli animali si agitano eccitati. Sembrano molto più energici di qualsiasi momento precedente, tanto che i Korath fanno fatica a tenerli tutti insieme mentre escono dalla nave. La lenta desertificazione di questo pianeta è di certo motivo di preoccupazione, ma sembra offrire un ambiente molto più sano a questi animali di quanto facciano le temperature gelide di Setar Fort. Una volta che tutto è fuori dalla nave, un Korath porta la lana a un altro venditore e la vende di nuovo, poi torna e vi consegna 5.900 crediti. Con i 4.100 crediti che vi ha dato prima di partire, avete ricevuto tutti i 10.000 crediti promessi. Solleva le mani con i palmi verso di voi e poi se ne va a raggiungere gli altri agricoltori.`
+
+phrase "kor efret small package offer"
+	word
+		`Un Korath`
+		`Un Kor Efret`
+		`Un locale`
+	word
+		` `
+	word
+		`con gesti ti comunica che devi`
+		`con gesti ti chiede di`
+	word
+		` `
+	word
+		`portare una piccola cassa`
+		`portare un pacco`
+		`accettare una spedizione che pesa meno di una tonnellata`
+		`portare una scatola`
+	word
+		` `
+	word
+		`a <destination> per <payment>.`
+	word
+		` `
+	word
+		`Non dovrebbe occupare spazio di rilievo sulla vostra nave.`
+		`È abbastanza piccolo da stare sotto il vostro sedile.`
+		`L'oggetto è abbastanza piccolo da stare nelle vostre mani.`
+		`È abbastanza piccolo da non occupare spazio di carico.`
+
+mission "Small Scale Delivery"
+	name "Pacco per <planet>"
+	repeat
+	description "Porta una piccola consegna a <destination> per <payment> per un Kor Efret."
+	minor
+	to offer
+		has "wanderers sestor done"
+		random < 10
+	source
+		government "Kor Efret"
+	destination
+		government "Kor Efret"
+		distance 1 8
+	on offer
+		dialog phrase "kor efret small package offer"
+	on complete
+		payment 1000
+		dialog `Trovate un Korath che sembra avervi atteso nello spazioporto. Vi saluta mostrando i palmi, poi tende le mani come se aspettasse di ricevere il pacco. Consegnate la piccola spedizione e ricevete in cambio un piccolo pagamento di <payment>.`
+
+
+substitutions
+	"<EDC-ship>" "Esketari"
+
+mission "Efreti: Distress Call 1"
+	minor
+	landing
+	name "Chiamata di soccorso dalla <EDC-ship>"
+	description "I Quarg vi hanno chiesto di rispondere a una chiamata di soccorso della nave Efreti <EDC-ship>, precipitata su <destination>. Ci sono 40 superstiti da salvare."
+	source "Karek Fornati"
+	destination "Seleptra Nak"
+
+	to offer
+		not "event: wanderers: kor mereti friendly"
+		has "First Contact: Karek Fornati: offered"
+		has "First Contact: Hai: offered"
+		has "visited system: Fah Soom"
+		random < 30
+		"combat rating" > 250
+		
+	on offer
+		conversation
+			`I lampi azzurri occasionali delle navi Quarg non sono una novità mentre attraversate lo spazio Efreti. Di solito è tutto ciò che vedete di questi alieni enigmatici. Oggi però, mentre atterrate, ricevete una chiamata urgente da una di loro.`
+			`	"Salute, Capitano della <ship>. Vittime di sorte incerta esigono il vostro zelo più diligente, perché molte famiglie non abbiano a piangere i morti. I droni Mereti hanno teso un agguato alla nave Efreti <EDC-ship> presso <planet> prima che potesse sottrarsi. Quaranta Korath vivono ancora, in attesa di soccorso."`
+			choice
+				`	"Vado subito lì."`
+					accept
+				`	"Non possono intervenire i Quarg?"`
+					goto quarg
+				`	"I Korath non mi interessano."`
+					goto careless
+			
+			label quarg
+			`	"Abbiamo vinto i Mereti, ma al suo atterraggio la <EDC-ship> è caduta oltre la nostra portata. Senza una corazza robusta, su un mondo pesante si patisce assai. Un umano può raggiungerli giorni prima di una spedizione da Kuwaru Efreti."`
+			choice
+				`	"Allora vado ad aiutarli."`
+					accept
+				`	"Non rischio la mia nave per i Korath."`
+					goto careless
+
+			label careless
+			`	Il Quarg tace per un po'. Alla fine risponde: "La vita è rara e preziosa nella vastità dello spazio. Guarda i mondi Korath e vedi ciò che resta quando non ci si cura di ciò che gli altri soffrono."`
+				decline
+
+
+mission "Efreti: Distress Call 2"
+	landing
+	name "Riporta i superstiti della <EDC-ship>"
+	description "Trasporta i <bunks> superstiti della <EDC-ship> su <planet>."
+	source "Seleptra Nak"
+	destination "Laki Nemparu"
+	passengers 40
+	blocked `Guardando la <EDC-ship> abbattuta, vi rendete conto all'improvviso di aver dimenticato le <bunks> cuccette che vi servono per gli evacuati.`
+	to offer
+		has "Efreti: Distress Call 1: done"
+	on offer
+		conversation
+			`Vi serve un po' di tempo per trovare la <EDC-ship>. Vi aspettavate un qualche faro di segnalazione, ma o tacciono per non attirare i Mereti, oppure non ci sono superstiti. Quando riuscite ad aprire il portello, vi trovate di fronte un fucile termico puntato.`
+			`	Il Korath vi urla qualcosa addosso, e voi allungate le mani con i palmi in avanti. Zoppicando indietreggia di qualche passo, ma tiene l'arma puntata su di voi. Tirando fuori lentamente un comunicatore, riproducete una registrazione della trasmissione Quarg ricevuta prima. Appena il Korath sente la voce del Quarg, si entusiasma e abbassa il fucile. "<planet>?" chiede più volte. Fate un cenno col capo e mostrate di nuovo i palmi.`
+			`	Vi conduce dentro la nave, urlando in un comunicatore il cui messaggio viene poi diffuso dagli altoparlanti in tutta la nave. Mentre attraversate la sezione di ingegneria riuscite solo a dare un'occhiata intorno, ma è chiaro che vanno con l'energia di emergenza, e diversi sistemi dall'aria importante sono distrutti. La zona abitativa è un ospedale di fortuna. Non vedete corpi, ma qui ci sono molti meno Korath di quanti ne servirebbero per equipaggiare una nave di questa dimensione. È evidente che tutto l'equipaggio superstite è ferito in qualche misura, e più della metà è inabile o incosciente. Anche se la nave è in grado di volare nello spazio, non c'è equipaggio abbastanza per pilotarla.`
+			`	Contate in fretta i superstiti e comunicate alla vostra guida che potete portarli tutti. Lui imita il vostro cenno del capo, vi mostra i palmi e traccia cerchi rapidi. Pensate che sia d'accordo e che voglia fare in fretta. Chiamate il vostro equipaggio ad aiutare, e i superstiti vengono trasferiti a bordo della <ship>. Nel giro di un paio d'ore siete pronti a partire.`
+				to display
+					"flagship crew" > 1
+				accept
+			`	Contate in fretta i superstiti e comunicate alla vostra guida che potete portarli tutti. Lui imita il vostro cenno del capo, vi mostra i palmi e traccia cerchi rapidi. Pensate che sia d'accordo e che voglia fare in fretta. Senza nessuno del vostro equipaggio ad aiutarvi, ci vogliono diverse ore per trasferire i superstiti sulla <ship>.`
+				accept
+	npc
+		government "Kor Mereti"
+		personality staying
+		system "Seketra"
+		to spawn
+			random < 30
+		fleet "Small Kor Mereti"
+	on complete
+		payment 300000
+		conversation
+			`Squadre mediche vi aspettano appena atterrate, e ci vogliono diverse ore per evacuare i feriti. Dottori, o forse paramedici, si riversano su di loro per il triage, le cure e i preparativi per il trasporto. Tre che sono morti durante il volo vengono trattati con rispetto e portati fuori dalla <ship>.`
+			`	Quando arrivate allo spazioporto, trovate un messaggio dei Quarg. "Umano audace! Con copiosa gratitudine vi ricompensiamo per aver aiutato i Korath rimasti in secca. I Korath piangono da sempre la perdita dei loro mondi e, di tanto in tanto, sfidano i loro pericoli. Recuperano ciò che possono fra le rovine e cercano mondi dove un giorno possano vivere di nuovo. Ai giovani questo dà speranza, ma a volte vengono presi, e agli Efreti si ricorda perché vivono pigiati intorno a queste poche stelle."`
+			`	Il vostro comunicatore vi notifica un pagamento di <payment>.`
+
+
+mission "Efreti: Distress Call 3"
+	landing
+	name "Recupera l'equipaggio caduto della <EDC-ship>"
+	description "Recupera i corpi dell'equipaggio morto della <EDC-ship> su <destination> e riportali a <origin>."
+	source "Laki Nemparu"
+	destination "Seleptra Nak"
+	cargo "efreti coffins" 13
+
+	to offer
+		has "Efreti: Distress Call 2: done"
+
+	on offer
+		conversation
+			`Prima che possiate partire, una delegazione di Korath vi si avvicina con una certa esitazione. Indossano abiti che sembrano molto più raffinati di quelli della maggior parte dei Korath che avete incontrato, di certo nulla che mettereste per lavorare in uno spazioporto. Mentre fanno il tradizionale gesto di saluto, che ricambiate, siete incuriositi sia da ciò che vogliono sia da come lo chiederanno.`
+			`	Uno di loro tira fuori da una tasca una piccola custodia e ne estrae un dispositivo nero che sembra tre triangoli agganciati insieme. Ci sibila sopra per un momento e quello si solleva dalla sua mano. L'aria intorno comincia a tremolare, seguita dalla comparsa di un ologramma a grandezza naturale di un Quarg.`
+			`	"Salute, viaggiatore lontano," romba il Quarg. "Questi Amici dei Korath sono i principi del clan che avete soccorso. Grati per i vivi, non possono però piangere del tutto coloro che giacciono morti. Vi supplicano di tornare su <planet> e di riportare i loro perduti a casa, su <origin>."`
+			choice
+				`	"Li riporterò a casa."`
+					goto home
+				`	"Lo farò, se mi pagano."`
+					goto pay
+				`	"Non rischio la mia nave per i morti."`
+			`	Il capo del gruppo si affloscia visibilmente mentre il Quarg traduce le vostre parole. Due Korath più giovani lo sorreggono mentre il gruppo si volta e se ne va.`
+				decline
+
+			label home
+			`	Non avevate capito quanto fosse teso il gruppo finché non li avete visti rilassarsi appena le vostre parole li raggiungono. Sembrano sollevati dalla vostra risposta.`
+				goto title
+
+			label pay
+			`	Il gruppo si distende in fretta, e vedete passare tra loro un'onda di sollievo e di orgoglio.`
+
+			label title
+			`	Il capo si volta e parla direttamente a voi. I suoi occhi non si staccano mai dai vostri mentre aspettate la traduzione. "Gli equipaggi Efreti hanno famiglie, perché i bambini imparano lavorando con i genitori. Per alcune famiglie sono andate perdute tre generazioni. Non tenteremo di recuperare la nave, perché nessuno ha il cuore di pilotarla. Vi offriamo il titolo per recuperare la <EDC-ship> e per portare il nostro lutto lontano da qui."`
+				accept
+	npc
+		government "Kor Mereti"
+		personality staying
+		system "Seketra"
+		to spawn
+			random < 30
+		fleet "Small Kor Mereti"
+
+mission "Efreti: Distress Call 4"
+	landing
+	name "Recupera i caduti della <EDC-ship>"
+	description "Riporta i corpi dell'equipaggio morto della <EDC-ship> su <planet>."
+	source "Seleptra Nak"
+	destination "Karek Fornati"
+	cargo "efreti deceased" 13
+	to offer
+		has "Efreti: Distress Call 3: done"
+	on offer
+		conversation
+			`Trovata la <EDC-ship>, voi e il vostro equipaggio vi entrate indossando tute ambientali. Sono passati diversi giorni dallo schianto, e le navi Korath sono roventi. Sarà un compito sgradevole con le tute, e forse impossibile senza.`
+				to display
+					"flagship crew" > 1
+			`Trovata la <EDC-ship>, vi entrate indossando una tuta ambientale. Sono passati diversi giorni dallo schianto, e le navi Korath sono roventi. Sarà un compito sgradevole con la tuta, e forse impossibile senza, soprattutto senza nessuno del vostro equipaggio ad aiutarvi.`
+				to display
+					"flagship crew" == 1
+
+			`	Mentre il vostro ingegnere lavora per rinfrescare l'atmosfera con aria esterna, il resto dell'equipaggio raccoglie i corpi e li depone nelle bare fibrose e vagamente a forma di uovo che i Korath hanno fornito. Mentre le spostate nella stiva, scoprite che si incastrano insieme come una covata di uova in un nido.`
+				to display
+					"flagship crew" > 2
+			`	Mentre il vostro compagno di equipaggio lavora per rinfrescare l'atmosfera con aria esterna, voi raccogliete i corpi e li deponete nelle bare fibrose e vagamente a forma di uovo che i Korath hanno fornito. Mentre le spostate nella stiva, scoprite che si incastrano insieme come una covata di uova in un nido.`
+				to display
+					"flagship crew" == 2
+			`	Uno alla volta, raccogliete i corpi e li deponete in bare fibrose e vagamente a forma di uovo che i Korath hanno fornito. Mentre le spostate nella stiva, scoprite che si incastrano insieme come una covata di uova in un nido. Ci vuole un po' perché l'aria esterna rinfreschi l'atmosfera e l'odore diventi tollerabile.`
+				to display
+					"flagship crew" < 2
+
+			`	Tornati sulla nave Korath, raccogliete con cura tutti gli effetti personali che riuscite a trovare negli alloggi e li imballate per il trasporto. Non avete modo di sapere se i Korath delle fotografie che trovate si stiano ora riprendendo al sicuro o giacciano nella vostra stiva.`
+
+			`	L'equipaggio fa un ultimo giro per spostare le macerie, sia per valutare eventuali riparazioni future sia per assicurarsi di non aver dimenticato nessuno, o parti di qualcuno. Pulite e disinfettate come meglio potete e tornate alla vostra nave per il viaggio verso <destination>.`
+				to display
+					"flagship crew" > 1
+			`	Per precauzione, fate un ultimo giro per spostare le macerie, sia per valutare eventuali riparazioni future sia per assicurarvi di non aver dimenticato nessuno, o parti di qualcuno. Pulite e disinfettate come meglio potete e tornate alla vostra nave per il viaggio verso <destination>.`
+				to display
+					"flagship crew" <= 1
+			branch accept
+	npc
+		government "Kor Mereti"
+		personality staying
+		system "Seketra"
+		to spawn
+			random < 30
+		fleet "Small Kor Mereti"
+	on complete
+		conversation
+			`Una folla si riversa dallo spazioporto quando atterrate. Ci vuole un po' perché gli operai stabiliscano sbarramenti e aprano un passaggio per far arrivare i trasporti alla vostra stiva. Una squadra in uniforme vi saluta formalmente quando aprite il portello, e contate le bare insieme a loro. Poi mostrate loro le scatole degli effetti personali, che maneggiano con cura. Un ufficiale vi ringrazia e vi consegna un chip dati che vi ricorda vagamente una licenza.`
+			`	La folla è stata composta, ma quando la prima bara esce dalla nave scoppia in una cacofonia di suoni che abbaiano. Alcuni Korath cercano di precipitarsi avanti ma vengono trattenuti da altri, presumibilmente i loro familiari.`
+			`	Invece di intromettervi nel loro dolore, tornate alla vostra nave e inserite il chip dati ricevuto nei vostri sistemi. Purtroppo le informazioni sono in una lingua aliena, così lo mettete da parte e lavorate a un piano per recuperare la <EDC-ship>. Mettendo insieme qualche nota sulla nave e sul numero di persone che trasportava, è chiaro che vi serviranno almeno 66 membri d'equipaggio in più con cui poter comunicare per riuscire a recuperarla. Il sistema più vicino che vi venga in mente con molti parlanti umani è su Greenwater, nello spazio Hai.`
+
+mission "Efreti: Distress Call 5"
+	name "<EDC-ship> salvage team"
+	description "Assolda una squadra di recupero di <bunks> persone su <destination> per recuperare la nave Efreti <EDC-ship>."
+	source "Karek Fornati"
+	destination "Greenwater"
+	landing
+	passengers 66
+	blocked `Vi servono <bunks> cuccette libere per trasportare la squadra di recupero.`
+	
+	to offer
+		has "Efreti: Distress Call 4: done"
+	
+	on complete
+		conversation
+			`Molte storie parlano di Hai a cui piacciono il cambiamento e l'eccitazione, ma il loro entusiasmo sembra morto. Il pensiero della specie che li ha invasi ispira ancora paura. Nessun Hai ha il coraggio di recuperare una nave finita nel fuoco incrociato della guerra fra Mereti e Sestor.`
+			`	Per fortuna ci sono molti umani disposti a rischiare per il giusto compenso, anche con la vita comoda che hanno nello spazio Hai. Accompagnate i nuovi membri dell'equipaggio alle loro cuccette e vi preparate a recuperare la <EDC-ship>.`
+
+ship "Charm-Shallop" "Charm-Shallop (Distressed)"
+	outfits
+		"Digger Mining Beam" 2
+		"Fuel Processor"
+		"Generator (Furnace Class)"
+		"Large Heat Shunt"
+		"Plasma Core"
+		"Scram Drive"
+		"Small Heat Shunt"
+		"Steering (Planetary Class)"
+		"Thermal Repeater Rifle" 19
+		"Thruster (Lunar Class)"
+		"Warder Anti-Missile"
+	gun 0 -118 "Digger Mining Beam"
+	gun -16.5 -114.5 "Digger Mining Beam"
+	gun 16.5 -114.5
+	turret 0 -35 "Warder Anti-Missile"
+	turret 0 97
+
+mission "Efreti: Distress Call 6"
+	landing
+	name "Salvage the <EDC-ship>"
+	description "Recupera la <EDC-ship> e riportala su <planet> per rivendicarne la proprietà."
+	source "Greenwater"
+	destination "Seleptra Nak"
+	passengers 66
+	blocked "Devi poter trasportare <bunks> membri d'equipaggio in più per recuperare la nave. Torna qui quando avrai capienza sufficiente per l'equipaggio."
+
+	to offer
+		has "Efreti: Distress Call 5: done"
+
+
+mission "Efreti: Distress Call 6 Ships"
+	landing
+	invisible
+	non-blocking
+	source "Greenwater"
+	to offer
+		has "Efreti: Distress Call 5: done"
+	to accept
+		has "Efreti: Distress Call 6: active"
+	to fail
+		or
+			has "Efreti: Distress Call 7: failed"
+			has "Efreti: Distress Call 7: aborted"
+			has "Efreti: Distress Call 7: done"
+	npc kill
+		government "Kor Mereti"
+		personality staying
+		system "Seketra"
+		fleet "Small Kor Mereti" 2
+
+
+mission "Efreti: Distress Call 7"
+	landing
+	name "Salvage the <EDC-ship>"
+	description "Recupera la <EDC-ship> e riportala su <planet> per rivendicarne la proprietà."
+	source "Seleptra Nak"
+	destination "Karek Fornati"
+	to offer
+		has "Efreti: Distress Call 6: done"
+	on offer
+		conversation
+			`Grazie al lavoro del vostro equipaggio, l'atmosfera della nave viene portata agli standard umani, anche se un po' tropicali. Mentre il recupero prosegue, voi e il vostro equipaggio cominciate a familiarizzare con la nave. Lo scafo robusto sembra in grado di volare nello spazio, ma la nave non ha quasi armi, i sistemi delle batterie sono irrecuperabili e la rigenerazione degli scudi è impossibile. Se i Mereti attaccano, la <EDC-ship> non sopravviverà a lungo.`
+			choice
+				`	(Porta la <EDC-ship> a casa.)`
+					goto runforit
+				`	(Abbandona la nave.)`
+					goto abandon
+			
+			label abandon
+			action
+				fail
+			`	Il vostro equipaggio abbandona la nave Korath alle intemperie, solo un'altra storia tragica fra le rovine della loro civiltà.`
+				flee
+			
+			label runforit
+			`	Riuscite ad attivare gli scudi, almeno all'inizio, usando la <ship>. Il vostro equipaggio sulla <EDC-ship> prende posizione mentre vi preparate a evitare le pattuglie Mereti sulla strada per <destination>.`
+				launch
+	on visit
+		dialog "Arrivate, ma notate che la <EDC-ship> non c'è. Dovrete portarla qui per completare la missione di recupero."
+
+	npc accompany save
+		government "Kor Efret"
+		personality timid escort
+		ship "Charm-Shallop (Distressed)" "Esketari"
+
+	on complete
+		conversation
+			action
+				give ship "Charm-Shallop (Distressed)" "Esketari"
+			`Questa volta non ci sono folle ad aspettarvi quando atterrate; piuttosto, le squadre di terra sembrano stupite di vedere la nave. Vi serve un po' di tempo per organizzare riparazioni aggiuntive, ma quando avete finito un padiglione è stato montato vicino alla <EDC-ship>, e piccoli gruppi di Korath si fermano lì di tanto in tanto.`
+			choice
+				`	(Dai un'occhiata.)`
+				`	(Ho altro da fare.)`
+					decline
+				
+			`	La tenda è più grande di quanto vi aspettaste. In fondo c'è un gruppo di Korath disposti come un coro, ma stranamente immobili. Un Korath in una specie di veste sta accanto a un tavolo ingombro di dolciumi e di coppe colme di una bevanda densa. Avvicinandovi, capite che il "coro" è fatto di ologrammi. Fate un rapido conto mentale e supponete che siano i Korath morti sulla nave; probabilmente è una specie di memoriale. Il Korath in veste vi saluta e vi preme una coppa in mano.`
+			choice
+				`	(Bevi.)`
+					goto drink
+				`	(Fai il gesto di bere.)`
+			`	O gli Efret non si accorgono del vostro trucco, o sono troppo educati per dirlo. Vi insistono con i dolciumi, così li prendete. Vedete alcuni gruppi dello spazioporto seguire lo stesso rituale, anche se alcuni si avvicinano al "coro" e gli dicono qualcosa. Quando avete finito il cibo, vi congedate e tornate alla vostra nave.`
+				goto end
+			label drink
+			`	La bevanda è fermentata e ha un sapore agrodolce che lascia le labbra e la bocca formicolanti, finché non le intorpidisce. Poi il Korath vi insiste con i dolciumi, e voi li accettate con umiltà. Alcuni gruppi dello spazioporto seguono lo stesso rituale, anche se alcuni si avvicinano al "coro" e gli dicono qualcosa. Quando avete finito il cibo, vi congedate e tornate alla vostra nave.`
+			label end
+
+mission "Efreti: Distress Call 8"
+	landing
+	invisible
+	source
+		attributes quarg
+	to offer
+		has "Efreti: Distress Call 7: done"
+	on offer
+		conversation
+			`In passato i Quarg vi hanno tradotto la lingua Korath. Avete il chip dati di quando avete aiutato gli Efret a recuperare la <EDC-ship>. Volete vedere se i Quarg possono dirvi cosa c'è scritto nel chip?`
+			choice
+				`	(Chiedi ai Quarg di tradurre il chip dati.)`
+				`	(Magari un'altra volta.)`
+					defer
+				`	(Non m'importa cosa dice.)`
+					decline
+			
+			`	Vi avvicinate a uno dei Quarg nello spazioporto e chiedete aiuto con il chip dati. Si ferma e vi riconosce, ma non parla. Esita qualche istante dopo la vostra richiesta, poi tende la mano. Preso il chip dati, lo inserisce in una specie di comunicatore, annuisce lentamente fra sé e ve lo restituisce.`
+			`	Tornate alla vostra nave e provate a inserire di nuovo il chip nei vostri sistemi, che ora mostrano due file: uno in lingua Korath e uno nella vostra. Aprite il file nella vostra lingua e legge: "La <EDC-ship> è una nave di dolore, che porta grande pena in memorie che cantano per generazioni. L'amore è un vuoto nell'anima di molti. Sappiate tutti che <first> <last> è un Efret autentico di cuore, se non di pelle. La <EDC-ship> è sua, per salvare vite e custodire memorie."`
+			`	Riponete con cura il chip in un posto sicuro.`

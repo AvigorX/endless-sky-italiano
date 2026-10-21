@@ -1,0 +1,99 @@
+{
+ "block": {
+  "path": "data/human/far north jobs.txt",
+  "line_from": 15,
+  "line_to": 88,
+  "units": 8
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Betelgeuse Shipment [0]|name|15|0",
+   "path": "data/human/far north jobs.txt",
+   "line": 15,
+   "kind": "VALUE",
+   "context": "mission:Betelgeuse Shipment [0]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione a <planet>",
+   "ratio": 1.05
+  },
+  {
+   "idx": 2,
+   "id": "mission:Betelgeuse Shipment [0]|description|16|0",
+   "path": "data/human/far north jobs.txt",
+   "line": 16,
+   "kind": "DESCRIPTION",
+   "context": "mission:Betelgeuse Shipment [0]",
+   "english": "Deliver <cargo> to <planet>, the home of Betelgeuse Shipyards, a well-respected ship manufacturer in the region. Payment is <payment>.",
+   "italian": "Consegna <cargo> a <planet>, sede dei Betelgeuse Shipyards, un produttore di navi molto rispettato nella regione. Il pagamento è <payment>.",
+   "ratio": 1.037
+  },
+  {
+   "idx": 3,
+   "id": "mission:Betelgeuse Shipment [1]|name|39|0",
+   "path": "data/human/far north jobs.txt",
+   "line": 39,
+   "kind": "VALUE",
+   "context": "mission:Betelgeuse Shipment [1]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione a <planet>",
+   "ratio": 1.05
+  },
+  {
+   "idx": 4,
+   "id": "mission:Betelgeuse Shipment [1]|description|40|0",
+   "path": "data/human/far north jobs.txt",
+   "line": 40,
+   "kind": "DESCRIPTION",
+   "context": "mission:Betelgeuse Shipment [1]",
+   "english": "Deliver <cargo> to <planet>, the home of Betelgeuse Shipyards, a well-respected ship manufacturer in the region. Payment is <payment>.",
+   "italian": "Consegna <cargo> a <planet>, sede dei Betelgeuse Shipyards, un produttore di navi molto rispettato nella regione. Il pagamento è <payment>.",
+   "ratio": 1.037
+  },
+  {
+   "idx": 5,
+   "id": "mission:Betelgeuse Shipment [2]|name|63|0",
+   "path": "data/human/far north jobs.txt",
+   "line": 63,
+   "kind": "VALUE",
+   "context": "mission:Betelgeuse Shipment [2]",
+   "english": "Shipment to <planet>",
+   "italian": "Spedizione a <planet>",
+   "ratio": 1.05
+  },
+  {
+   "idx": 6,
+   "id": "mission:Betelgeuse Shipment [2]|description|64|0",
+   "path": "data/human/far north jobs.txt",
+   "line": 64,
+   "kind": "DESCRIPTION",
+   "context": "mission:Betelgeuse Shipment [2]",
+   "english": "Deliver <cargo> to <planet>, the home of Betelgeuse Shipyards, a well-respected ship manufacturer in the region. Payment is <payment>.",
+   "italian": "Consegna <cargo> a <planet>, sede dei Betelgeuse Shipyards, un produttore di navi molto rispettato nella regione. Il pagamento è <payment>.",
+   "ratio": 1.037
+  },
+  {
+   "idx": 7,
+   "id": "mission:Navy resupply [0]|name|87|0",
+   "path": "data/human/far north jobs.txt",
+   "line": 87,
+   "kind": "VALUE",
+   "context": "mission:Navy resupply [0]",
+   "english": "Resupply Navy base on <planet>",
+   "italian": "Rifornimento della base della Marina su <planet>",
+   "ratio": 1.6
+  },
+  {
+   "idx": 8,
+   "id": "mission:Navy resupply [0]|description|88|0",
+   "path": "data/human/far north jobs.txt",
+   "line": 88,
+   "kind": "DESCRIPTION",
+   "context": "mission:Navy resupply [0]",
+   "english": "The Navy base on <destination> is running low on equipment, but Navy supply ships are currently held up elsewhere and cannot assist. Deliver <cargo> to <planet> by <date>, for <payment>.",
+   "italian": "La base della Marina su <destination> ha scorte di equipaggiamento in esaurimento, ma le navi di rifornimento della Marina sono al momento bloccate altrove e non possono aiutare. Consegna <cargo> a <planet> entro <date>, per <payment>.",
+   "ratio": 1.263
+  }
+ ]
+}

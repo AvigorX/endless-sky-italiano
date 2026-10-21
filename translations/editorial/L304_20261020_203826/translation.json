@@ -1,0 +1,132 @@
+{
+ "block": {
+  "path": "data/quarg/quarg outfits.txt",
+  "line_from": 37,
+  "line_to": 137,
+  "units": 11
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Small Graviton Thruster|description|37|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 37,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Graviton Thruster",
+   "english": "How exactly Quarg thrusters work is unknown, but the mechanism that powers even this small set of engines consumes more energy than some human warships. Where all this energy goes is a complete mystery.",
+   "italian": "How exactly Quarg thrusters work is unknown, but the mechanism that powers even this small set of engines consumes more energy than some human warships. Where all this energy goes is a complete mystery.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Small Graviton Thruster|description|38|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 38,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Graviton Thruster",
+   "english": "\tThese engines also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships equipped with them accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "italian": "\tThese engines also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships equipped with them accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Small Graviton Steering|description|54|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 54,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Graviton Steering",
+   "english": "Despite their small size, these Quarg steering engines can turn their ships on a dime. It is rumored that, unlike human steering thrusters, the Quarg do not care where on the hull these are installed, producing the same rotational moment even if directly in line with the ship's center of mass.",
+   "italian": "Despite their small size, these Quarg steering engines can turn their ships on a dime. It is rumored that, unlike human steering thrusters, the Quarg do not care where on the hull these are installed, producing the same rotational moment even if directly in line with the ship's center of mass.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Small Graviton Steering|description|55|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 55,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Graviton Steering",
+   "english": "\tThey also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships with these engines accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "italian": "\tThey also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships with these engines accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Medium Graviton Thruster|description|77|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 77,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Medium Graviton Thruster",
+   "english": "Quarg thrusters are quite powerful for their size and produce very little heat, but at the cost of consuming immense amounts of energy. The mechanism by which they produce thrust is unknown, but it is rumored that the passing of a Quarg ship wreaks havoc on every gravitational wave antenna in the system.",
+   "italian": "Quarg thrusters are quite powerful for their size and produce very little heat, but at the cost of consuming immense amounts of energy. The mechanism by which they produce thrust is unknown, but it is rumored that the passing of a Quarg ship wreaks havoc on every gravitational wave antenna in the system.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Medium Graviton Thruster|description|78|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 78,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Medium Graviton Thruster",
+   "english": "\tThey also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships with these engines accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "italian": "\tThey also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships with these engines accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Medium Graviton Steering|description|95|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 95,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Medium Graviton Steering",
+   "english": "According to rumor, some Quarg ships have their steering engines installed internally, with no need for external thrusters. Much like a gyroscope, they can seemingly orient a ship from anywhere, but unlike them they never seem to saturate or become locked.",
+   "italian": "According to rumor, some Quarg ships have their steering engines installed internally, with no need for external thrusters. Much like a gyroscope, they can seemingly orient a ship from anywhere, but unlike them they never seem to saturate or become locked.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Medium Graviton Steering|description|96|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 96,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Medium Graviton Steering",
+   "english": "\tThey also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships with these engines accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "italian": "\tThey also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships with these engines accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Large Graviton Thruster|description|119|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 119,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Graviton Thruster",
+   "english": "This large set of Quarg thrusters is both powerful and subtle, leaving behind no bright exhaust trail nor emitting any detectable radiation aside from a faint violet glow. This is juxtaposed with the extreme amount of energy these engines consume, enough to power entire stations.",
+   "italian": "This large set of Quarg thrusters is both powerful and subtle, leaving behind no bright exhaust trail nor emitting any detectable radiation aside from a faint violet glow. This is juxtaposed with the extreme amount of energy these engines consume, enough to power entire stations.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Large Graviton Thruster|description|120|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 120,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Graviton Thruster",
+   "english": "\tThey also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships with these engines accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "italian": "\tThey also have strange capabilities which seem to violate the laws of physics as humanity understands them. Ships with these engines accelerate faster under their own power than one would expect, while also taking less impact from external forces.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Large Graviton Steering|description|137|0",
+   "path": "data/quarg/quarg outfits.txt",
+   "line": 137,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Graviton Steering",
+   "english": "Quarg ships are famed for their ability to turn quickly and precisely, as though oriented by a divine hand rather than the flickering exhaust of human steering thrusters. According to some guesses on their mode of operation, this may be closer to the truth than not.",
+   "italian": "Quarg ships are famed for their ability to turn quickly and precisely, as though oriented by a divine hand rather than the flickering exhaust of human steering thrusters. According to some guesses on their mode of operation, this may be closer to the truth than not.",
+   "ratio": 1.0
+  }
+ ]
+}

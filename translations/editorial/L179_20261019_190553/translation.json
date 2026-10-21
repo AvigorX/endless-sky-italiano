@@ -1,0 +1,66 @@
+{
+ "block": {
+  "path": "data/avgi/avgi ships.txt",
+  "line_from": 2716,
+  "line_to": 2770,
+  "units": 5
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Optikon|description|2716|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2716,
+   "kind": "DESCRIPTION",
+   "context": "ship:Optikon",
+   "english": "The Optikon Sensor Platform is the latest iteration of a long line of exploration probes developed shortly after the discovery of the hyperdrive. Previously, surveying star systems involved launching thousands of laser-propelled starwisp probes, no larger than a few hundred grams each. The hyperdrive turned this paradigm on its head, allowing the Avgi to build sizable probes designed to quickly map out newly accessible star systems. Over the decades, these gradually shrank as the duty of carrying them between star systems was offloaded onto dedicated exploration vessels, the precursors to the Polari-class Scout. This left the modern Optikon as a highly capable and deployable sensor platform, used in both scientific and combat information roles.",
+   "italian": "L'Optikon Sensor Platform è l'ultima iterazione di una lunga serie di sonde esplorative sviluppate poco dopo la scoperta dell'iperguida. In precedenza, il rilevamento dei sistemi stellari comportava il lancio di migliaia di sonde starwisp a propulsione laser, ciascuna non più grande di qualche centinaio di grammi. L'iperguida capovolse questo paradigma, permettendo agli Avgi di costruire sonde di dimensioni rispettabili progettate per mappare rapidamente i sistemi stellari di nuovo accesso. Nel corso dei decenni queste si ridussero gradualmente, man mano che il compito di trasportarle fra i sistemi stellari passava a navi esplorative dedicate, i precursori del ricognitore classe Polari. Questo ha lasciato l'Optikon moderno come una piattaforma sensoriale altamente capace e dispiegabile, usata sia in ruoli scientifici sia di informazione da combattimento.",
+   "ratio": 1.149
+  },
+  {
+   "idx": 2,
+   "id": "ship:Optikon|description|2717|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2717,
+   "kind": "DESCRIPTION",
+   "context": "ship:Optikon",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "italian": "\tI droni non sono dotati di iperguida. Non puoi trasportare un drone a meno che tu non abbia nella tua flotta una nave con una baia per droni.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 3,
+   "id": "ship:Sonikis|plural|2721|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2721,
+   "kind": "VALUE",
+   "context": "ship:Sonikis",
+   "english": "Sonikis",
+   "italian": "Sonikis",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Sonikis|description|2769|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2769,
+   "kind": "DESCRIPTION",
+   "context": "ship:Sonikis",
+   "english": "The Sonikis Utility Drone was built as a cheap interorbital cargo drone, originally designed to carry modular cargo containers between stations and small moons. It is now commonly used by large freighters to assist in loading and unloading cargo, as well as to collect ores while asteroid mining.",
+   "italian": "Il Sonikis Utility Drone fu costruito come drone cargo interorbitale economico, originariamente progettato per trasportare container cargo modulari fra stazioni e piccole lune. Oggi è usato comunemente dai grandi mercantili per assistere nelle operazioni di carico e scarico, oltre che per raccogliere minerali durante l'estrazione dagli asteroidi.",
+   "ratio": 1.176
+  },
+  {
+   "idx": 5,
+   "id": "ship:Sonikis|description|2770|0",
+   "path": "data/avgi/avgi ships.txt",
+   "line": 2770,
+   "kind": "DESCRIPTION",
+   "context": "ship:Sonikis",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "italian": "\tI droni non sono dotati di iperguida. Non puoi trasportare un drone a meno che tu non abbia nella tua flotta una nave con una baia per droni.",
+   "ratio": 1.118
+  }
+ ]
+}

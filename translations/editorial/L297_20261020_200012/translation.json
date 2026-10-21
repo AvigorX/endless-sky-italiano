@@ -1,0 +1,176 @@
+{
+ "block": {
+  "path": "data/coalition/coalition outfits.txt",
+  "line_from": 26,
+  "line_to": 187,
+  "units": 15
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Small Collector Module|description|26|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 26,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Collector Module",
+   "english": "Solar power is the mainstay of the Coalition's merchant marine. The design of these panels has been refined over the millennia, growing ever more efficient.",
+   "italian": "Solar power is the mainstay of the Coalition's merchant marine. The design of these panels has been refined over the millennia, growing ever more efficient.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Large Collector Module|description|40|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 40,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Collector Module",
+   "english": "One of these solar panels is enough to meet the energy needs of a medium-sized Coalition civilian ship, especially given the energy efficiency of their engines and the fact that under their laws only Heliarch ships are allowed to have weapons.",
+   "italian": "One of these solar panels is enough to meet the energy needs of a medium-sized Coalition civilian ship, especially given the energy efficiency of their engines and the fact that under their laws only Heliarch ships are allowed to have weapons.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Small Reactor Module|description|54|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 54,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Reactor Module",
+   "english": "Solar power is sufficient for commerce, but excessive thriftiness is seldom a winning strategy in warfare. For ships that must have a reliable energy source to power weapons, the Heliarchs use compact nuclear reactors.",
+   "italian": "Solar power is sufficient for commerce, but excessive thriftiness is seldom a winning strategy in warfare. For ships that must have a reliable energy source to power weapons, the Heliarchs use compact nuclear reactors.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Small Reactor Module|description|55|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 55,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Reactor Module",
+   "english": "\tA beam of antiprotons triggers fusion in tiny injected fuel pellets, allowing for a complete burnup far more efficient than would otherwise be possible.",
+   "italian": "\tA beam of antiprotons triggers fusion in tiny injected fuel pellets, allowing for a complete burnup far more efficient than would otherwise be possible.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Large Reactor Module|description|69|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 69,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Reactor Module",
+   "english": "Though still unable to replicate Quarg power generation technology, Heliarch science teams are constantly looking to realize their most recent guess on how they work. For this larger module, a steady stream of injected antiprotons catalyzes reactions in carefully confined fusion plasma, extracting as much power as physically possible.",
+   "italian": "Though still unable to replicate Quarg power generation technology, Heliarch science teams are constantly looking to realize their most recent guess on how they work. For this larger module, a steady stream of injected antiprotons catalyzes reactions in carefully confined fusion plasma, extracting as much power as physically possible.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Large Reactor Module|description|70|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 70,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Reactor Module",
+   "english": "\tThis advanced fusion reactor was designed for the most powerful Heliarch warships. Its structure has not changed significantly in the millennia since the first battle with the Quarg, but each generation of reactors is made slightly more efficient than the previous ones.",
+   "italian": "\tThis advanced fusion reactor was designed for the most powerful Heliarch warships. Its structure has not changed significantly in the millennia since the first battle with the Quarg, but each generation of reactors is made slightly more efficient than the previous ones.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Small Cogeneration Module|description|84|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 84,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Cogeneration Module",
+   "english": "The Kimek originally created much larger versions of this module, intended to provide energy for their hunger towers.",
+   "italian": "The Kimek originally created much larger versions of this module, intended to provide energy for their hunger towers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Small Cogeneration Module|description|85|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 85,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Cogeneration Module",
+   "english": "\tThis compact design recovers much of what would otherwise be waste heat, making it a very efficient fuel cell.",
+   "italian": "\tThis compact design recovers much of what would otherwise be waste heat, making it a very efficient fuel cell.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Large Cogeneration Module|description|99|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 99,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Cogeneration Module",
+   "english": "Without much exciting work available in peacetime, many Coalition engineers take to tinkering with existing equipment to improve its efficiency.",
+   "italian": "Without much exciting work available in peacetime, many Coalition engineers take to tinkering with existing equipment to improve its efficiency.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Small Battery Module|description|112|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 112,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Battery Module",
+   "english": "Because Coalition ships rely on solar power, they must also be able to store a substantial amount of energy. This small battery pack is much more efficient than comparable human technology.",
+   "italian": "Because Coalition ships rely on solar power, they must also be able to store a substantial amount of energy. This small battery pack is much more efficient than comparable human technology.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Large Battery Module|description|125|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 125,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Battery Module",
+   "english": "This battery pack stores enough power to allow a Coalition ship to continue maneuvering even when its solar panels are only producing a fraction of their peak output.",
+   "italian": "This battery pack stores enough power to allow a Coalition ship to continue maneuvering even when its solar panels are only producing a fraction of their peak output.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Small Shield Module|description|141|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 141,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Shield Module",
+   "english": "Although combat is almost unheard of in Coalition space, almost all of their ships are able to recharge their shields when necessary.",
+   "italian": "Although combat is almost unheard of in Coalition space, almost all of their ships are able to recharge their shields when necessary.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Large Shield Module|description|156|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 156,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Large Shield Module",
+   "english": "The Coalition manufactures heavy shield generators for their ships in case they ever face aggression from the Quarg or another species.",
+   "italian": "The Coalition manufactures heavy shield generators for their ships in case they ever face aggression from the Quarg or another species.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Overcharged Shield Module|description|172|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 172,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Overcharged Shield Module",
+   "english": "These modular shield generators are the most powerful emitters produced in Coalition space, and as such they are strictly controlled and exclusively used by the Heliarchs. The additions made to the Large Shield Module more than tripled its shield generation, but at the cost of it requiring a constant supply of energy to stabilize it.",
+   "italian": "These modular shield generators are the most powerful emitters produced in Coalition space, and as such they are strictly controlled and exclusively used by the Heliarchs. The additions made to the Large Shield Module more than tripled its shield generation, but at the cost of it requiring a constant supply of energy to stabilize it.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Small Repair Module|description|187|0",
+   "path": "data/coalition/coalition outfits.txt",
+   "line": 187,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Small Repair Module",
+   "english": "Arach ships, which rely more on strong hull than on energy shields, often carry one of these repair modules to allow damaged hull plating to be patched back together on the fly.",
+   "italian": "Arach ships, which rely more on strong hull than on energy shields, often carry one of these repair modules to allow damaged hull plating to be patched back together on the fly.",
+   "ratio": 1.0
+  }
+ ]
+}

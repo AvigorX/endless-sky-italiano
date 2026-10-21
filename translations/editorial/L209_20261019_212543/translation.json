@@ -1,0 +1,242 @@
+{
+ "block": {
+  "path": "data/coalition/coalition news.txt",
+  "line_from": 247,
+  "line_to": 308,
+  "units": 21
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "news:coalition merchant|\"Jealous of you, I am. If a jump drive I had, bypass the gap between Saryd and Arach space, I could, and quickly earn a fortune, I would.\"|247|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 247,
+   "kind": "NEWS",
+   "context": "news:coalition merchant",
+   "english": "\"Jealous of you, I am. If a jump drive I had, bypass the gap between Saryd and Arach space, I could, and quickly earn a fortune, I would.\"",
+   "italian": "\"Invidioso di te, sono. Se un jump drive avessi, aggirare la distanza tra lo spazio Saryd e quello Arach, potrei, e in fretta una fortuna guadagnare, guadagnerei.\"",
+   "ratio": 1.181
+  },
+  {
+   "idx": 2,
+   "id": "news:coalition merchant|\"Agreed to transport some Saryd graduates for a 'field trip,' I once did. Almost arrested, I was.\"|248|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 248,
+   "kind": "NEWS",
+   "context": "news:coalition merchant",
+   "english": "\"Agreed to transport some Saryd graduates for a 'field trip,' I once did. Almost arrested, I was.\"",
+   "italian": "\"Accettato di trasportare alcuni laureati Saryd per una 'gita di studio', una volta ho fatto. Quasi arrestato, sono stato.\"",
+   "ratio": 1.255
+  },
+  {
+   "idx": 3,
+   "id": "news:coalition merchant|\"Used to fly with me, my brother did, but now become a Heliarch, he has.\"|250|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 250,
+   "kind": "NEWS",
+   "context": "news:coalition merchant",
+   "english": "\"Used to fly with me, my brother did, but now become a Heliarch, he has.\"",
+   "italian": "\"Volare con me, mio fratello faceva, ma ora diventato un Heliarch, è.\"",
+   "ratio": 0.959
+  },
+  {
+   "idx": 4,
+   "id": "news:arach civilian|\"Arrested close to where my cousins work, the terrorists on the news were. Notice anything wrong with them, they never did.\"|261|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 261,
+   "kind": "NEWS",
+   "context": "news:arach civilian",
+   "english": "\"Arrested close to where my cousins work, the terrorists on the news were. Notice anything wrong with them, they never did.\"",
+   "italian": "\"Arrestati vicino a dove lavorano i miei cugini, i terroristi del notiziario erano. Notare niente di strano in loro, non l'hanno mai fatto.\"",
+   "ratio": 1.129
+  },
+  {
+   "idx": 5,
+   "id": "news:arach civilian|\"Always rising, the sun in these broadcasts is, but a night shift I work, so see it for myself, I never can...\"|262|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 262,
+   "kind": "NEWS",
+   "context": "news:arach civilian",
+   "english": "\"Always rising, the sun in these broadcasts is, but a night shift I work, so see it for myself, I never can...\"",
+   "italian": "\"Sempre a sorgere, il sole in queste trasmissioni è, ma di turno di notte lavoro, quindi vederlo con i miei occhi, non posso mai...\"",
+   "ratio": 1.189
+  },
+  {
+   "idx": 6,
+   "id": "news:arach civilian|\"To Ring of Wisdom, a researcher friend of mine has gone. Always there, our wisest mingle, but remain here, few do. Difficult for us, sometimes it is.\"|263|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 263,
+   "kind": "NEWS",
+   "context": "news:arach civilian",
+   "english": "\"To Ring of Wisdom, a researcher friend of mine has gone. Always there, our wisest mingle, but remain here, few do. Difficult for us, sometimes it is.\"",
+   "italian": "\"A Ring of Wisdom, un mio amico ricercatore è andato. Sempre lì, i nostri più saggi si incontrano, ma restare qui, pochi lo fanno. Difficile per noi, a volte è.\"",
+   "ratio": 1.066
+  },
+  {
+   "idx": 7,
+   "id": "news:arach civilian|\"Always mixing up our Houses, Kimek and Saryd tourists are. Mind it, I do not, but angry, sometimes my friends get.\"|264|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 264,
+   "kind": "NEWS",
+   "context": "news:arach civilian",
+   "english": "\"Always mixing up our Houses, Kimek and Saryd tourists are. Mind it, I do not, but angry, sometimes my friends get.\"",
+   "italian": "\"Sempre a confondere le nostre Case, i turisti Kimek e Saryd stanno. Dargli peso, io non lo faccio, ma arrabbiati, a volte i miei amici si fanno.\"",
+   "ratio": 1.259
+  },
+  {
+   "idx": 8,
+   "id": "news:arach civilian|\"Learnt my language, some Kimek friends have, but so fast they speak, that difficult to understand them, it is.\"|265|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 265,
+   "kind": "NEWS",
+   "context": "news:arach civilian",
+   "english": "\"Learnt my language, some Kimek friends have, but so fast they speak, that difficult to understand them, it is.\"",
+   "italian": "\"Imparato la mia lingua, alcuni amici Kimek hanno, ma così in fretta parlano, che difficile capirli, è.\"",
+   "ratio": 0.929
+  },
+  {
+   "idx": 9,
+   "id": "news:kimek civilian|\"Arrested close to where my cousins work, the terrorists on the news were. Notice anything wrong with them, they never did.\"|276|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 276,
+   "kind": "NEWS",
+   "context": "news:kimek civilian",
+   "english": "\"Arrested close to where my cousins work, the terrorists on the news were. Notice anything wrong with them, they never did.\"",
+   "italian": "\"Arrestati vicino a dove lavorano i miei cugini, i terroristi del notiziario erano. Notare niente di strano in loro, non l'hanno mai fatto.\"",
+   "ratio": 1.129
+  },
+  {
+   "idx": 10,
+   "id": "news:kimek civilian|\"Always rising, the sun in these broadcasts is, but a night shift I work, so see it for myself, I never can...\"|277|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 277,
+   "kind": "NEWS",
+   "context": "news:kimek civilian",
+   "english": "\"Always rising, the sun in these broadcasts is, but a night shift I work, so see it for myself, I never can...\"",
+   "italian": "\"Sempre a sorgere, il sole in queste trasmissioni è, ma di turno di notte lavoro, quindi vederlo con i miei occhi, non posso mai...\"",
+   "ratio": 1.189
+  },
+  {
+   "idx": 11,
+   "id": "news:kimek civilian|\"To Ring of Wisdom, a researcher friend of mine has gone. Always there, our wisest mingle, but remain here, few do. Difficult for us, sometimes it is.\"|278|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 278,
+   "kind": "NEWS",
+   "context": "news:kimek civilian",
+   "english": "\"To Ring of Wisdom, a researcher friend of mine has gone. Always there, our wisest mingle, but remain here, few do. Difficult for us, sometimes it is.\"",
+   "italian": "\"A Ring of Wisdom, un mio amico ricercatore è andato. Sempre lì, i nostri più saggi si incontrano, ma restare qui, pochi lo fanno. Difficile per noi, a volte è.\"",
+   "ratio": 1.066
+  },
+  {
+   "idx": 12,
+   "id": "news:kimek civilian|\"Tired of dealing with faulty translation boxes, my sister got, so learning to speak Arachi, she is.\"|279|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 279,
+   "kind": "NEWS",
+   "context": "news:kimek civilian",
+   "english": "\"Tired of dealing with faulty translation boxes, my sister got, so learning to speak Arachi, she is.\"",
+   "italian": "\"Stanca di avere a che fare con traduttori difettosi, mia sorella si è, così imparare a parlare l'Arachi, sta.\"",
+   "ratio": 1.099
+  },
+  {
+   "idx": 13,
+   "id": "news:kimek civilian|\"Much more reserved than us, the Saryds are. So long do they live for, that difficult to understand their habits, it can be.\"|280|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 280,
+   "kind": "NEWS",
+   "context": "news:kimek civilian",
+   "english": "\"Much more reserved than us, the Saryds are. So long do they live for, that difficult to understand their habits, it can be.\"",
+   "italian": "\"Molto più riservati di noi, i Saryd sono. Così a lungo vivono, che difficile capire le loro abitudini, può essere.\"",
+   "ratio": 0.928
+  },
+  {
+   "idx": 14,
+   "id": "news:saryd civilian|\"Arrested close to where my cousins work, the terrorists on the news were. Notice anything wrong with them, they never did.\"|291|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 291,
+   "kind": "NEWS",
+   "context": "news:saryd civilian",
+   "english": "\"Arrested close to where my cousins work, the terrorists on the news were. Notice anything wrong with them, they never did.\"",
+   "italian": "\"Arrestati vicino a dove lavorano i miei cugini, i terroristi del notiziario erano. Notare niente di strano in loro, non l'hanno mai fatto.\"",
+   "ratio": 1.129
+  },
+  {
+   "idx": 15,
+   "id": "news:saryd civilian|\"Always rising, the sun in these broadcasts is, but a night shift I work, so see it for myself, I never can...\"|292|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 292,
+   "kind": "NEWS",
+   "context": "news:saryd civilian",
+   "english": "\"Always rising, the sun in these broadcasts is, but a night shift I work, so see it for myself, I never can...\"",
+   "italian": "\"Sempre a sorgere, il sole in queste trasmissioni è, ma di turno di notte lavoro, quindi vederlo con i miei occhi, non posso mai...\"",
+   "ratio": 1.189
+  },
+  {
+   "idx": 16,
+   "id": "news:saryd civilian|\"To Ring of Wisdom, a researcher friend of mine has gone. Always there, our wisest mingle, but remain here, few do. Difficult for us, sometimes it is.\"|293|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 293,
+   "kind": "NEWS",
+   "context": "news:saryd civilian",
+   "english": "\"To Ring of Wisdom, a researcher friend of mine has gone. Always there, our wisest mingle, but remain here, few do. Difficult for us, sometimes it is.\"",
+   "italian": "\"A Ring of Wisdom, un mio amico ricercatore è andato. Sempre lì, i nostri più saggi si incontrano, ma restare qui, pochi lo fanno. Difficile per noi, a volte è.\"",
+   "ratio": 1.066
+  },
+  {
+   "idx": 17,
+   "id": "news:saryd civilian|\"Troubling it is, when their children, Kimek and Arach tourists bring. Climb up everywhere, they try.\"|294|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 294,
+   "kind": "NEWS",
+   "context": "news:saryd civilian",
+   "english": "\"Troubling it is, when their children, Kimek and Arach tourists bring. Climb up everywhere, they try.\"",
+   "italian": "\"Preoccupante è, quando i loro bambini, i turisti Kimek e Arach portano. Arrampicarsi ovunque, provano.\"",
+   "ratio": 1.02
+  },
+  {
+   "idx": 18,
+   "id": "news:saryd civilian|\"Travel to new places, I used to, but infinite, our planets are not, so seen them all by now I have.\"|295|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 295,
+   "kind": "NEWS",
+   "context": "news:saryd civilian",
+   "english": "\"Travel to new places, I used to, but infinite, our planets are not, so seen them all by now I have.\"",
+   "italian": "\"Viaggiare in posti nuovi, ero solito, ma infiniti, i nostri pianeti non sono, quindi visti tutti ormai li ho.\"",
+   "ratio": 1.099
+  },
+  {
+   "idx": 19,
+   "id": "news:coalition vendor|\"Purchase some Saryd cakes, would you like to? Homemade, they are.\"|306|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 306,
+   "kind": "NEWS",
+   "context": "news:coalition vendor",
+   "english": "\"Purchase some Saryd cakes, would you like to? Homemade, they are.\"",
+   "italian": "\"Comprare un po' di dolci Saryd, ti piacerebbe? Fatti in casa, sono.\"",
+   "ratio": 1.03
+  },
+  {
+   "idx": 20,
+   "id": "news:coalition vendor|\"Interested in this tapestry, are you? Of the finest longcow hide, it is made. A special discount, for you I could make.\"|307|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 307,
+   "kind": "NEWS",
+   "context": "news:coalition vendor",
+   "english": "\"Interested in this tapestry, are you? Of the finest longcow hide, it is made. A special discount, for you I could make.\"",
+   "italian": "\"Interessato a questo arazzo, sei? Della più pregiata pelle di longcow, è fatto. Uno sconto speciale, per te potrei fare.\"",
+   "ratio": 1.008
+  },
+  {
+   "idx": 21,
+   "id": "news:coalition vendor|\"Interested in these ringworld keychains, are you? For you, only 30 credits!\"|308|0",
+   "path": "data/coalition/coalition news.txt",
+   "line": 308,
+   "kind": "NEWS",
+   "context": "news:coalition vendor",
+   "english": "\"Interested in these ringworld keychains, are you? For you, only 30 credits!\"",
+   "italian": "\"Interessato a questi portachiavi del ringworld, sei? Per te, solo 30 crediti!\"",
+   "ratio": 1.026
+  }
+ ]
+}

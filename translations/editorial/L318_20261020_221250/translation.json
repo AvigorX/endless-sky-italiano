@@ -1,0 +1,198 @@
+{
+ "block": {
+  "path": "data/korath/korath weapons.txt",
+  "line_from": 53,
+  "line_to": 603,
+  "units": 17
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Grab-Strike Turret|description|53|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 53,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Grab-Strike Turret",
+   "english": "Korath Grab-Strike projectiles are designed to pull a target closer to the Korath ship, to keep it from escaping.",
+   "italian": "Korath Grab-Strike projectiles are designed to pull a target closer to the Korath ship, to keep it from escaping.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Shunt-Strike Turret|description|108|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 108,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Shunt-Strike Turret",
+   "english": "This weapon fires homing balls of microbots that pass through a target's shields and attempt to convert its hull into raw materials or useful items such as heat shunts. As Exile microbots contain safety circuits that prevent them from becoming independent of their Systems Core, they will fail after a short time, but not before wreaking havoc on the ship.",
+   "italian": "This weapon fires homing balls of microbots that pass through a target's shields and attempt to convert its hull into raw materials or useful items such as heat shunts. As Exile microbots contain safety circuits that prevent them from becoming independent of their Systems Core, they will fail after a short time, but not before wreaking havoc on the ship.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Shunt-Strike Turret|description|109|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 109,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Shunt-Strike Turret",
+   "english": "\tBecause the same property that allows the microbots through a target's shields disrupts the shields of the ship firing them, it should never be used without an appropriately large Systems Core. Given adequate shield generation, however, the microbots make fantastic miners.",
+   "italian": "\tBecause the same property that allows the microbots through a target's shields disrupts the shields of the ship firing them, it should never be used without an appropriately large Systems Core. Given adequate shield generation, however, the microbots make fantastic miners.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Banisher Grav-Turret|description|154|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 154,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Banisher Grav-Turret",
+   "english": "The Korath like to keep their enemies close... but not too close.",
+   "italian": "The Korath like to keep their enemies close... but not too close.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Expeller Grav-Ray|description|180|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 180,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Expeller Grav-Ray",
+   "english": "This low-power version of the Banisher is used on Korath fighters to push enemy vessels away from carriers and civilians.",
+   "italian": "This low-power version of the Banisher is used on Korath fighters to push enemy vessels away from carriers and civilians.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Warder Anti-Missile|description|211|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 211,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Warder Anti-Missile",
+   "english": "This anti-missile system helps defend Korath warships from long-range attacks.",
+   "italian": "This anti-missile system helps defend Korath warships from long-range attacks.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Fire-Lance|description|249|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 249,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Fire-Lance",
+   "english": "The Korath Fire-Lance is a medium-range beam weapon designed to be used by their fighters.",
+   "italian": "The Korath Fire-Lance is a medium-range beam weapon designed to be used by their fighters.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Blaze-Pike Turret|description|287|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 287,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Blaze-Pike Turret",
+   "english": "The seeming reverence the Korath have for fire appears embodied in this weapon. This pair of Fire-Lances mounted together in a turret do not merely create twin lances of fire: Rather, they begin to form a gestalt - a single, longer, hotter, and almost hypnotic column of fire.",
+   "italian": "The seeming reverence the Korath have for fire appears embodied in this weapon. This pair of Fire-Lances mounted together in a turret do not merely create twin lances of fire: Rather, they begin to form a gestalt - a single, longer, hotter, and almost hypnotic column of fire.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Korath Inferno|description|327|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 327,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Korath Inferno",
+   "english": "Some Korath consider the Inferno the crowning achievement of Exile weapon design. Three Fire-Lances mounted together in precisely the right manner combine synergistically, creating a longer, more powerful beam than three would individually.",
+   "italian": "Some Korath consider the Inferno the crowning achievement of Exile weapon design. Three Fire-Lances mounted together in precisely the right manner combine synergistically, creating a longer, more powerful beam than three would individually.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Thermal Repeater|description|368|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 368,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thermal Repeater",
+   "english": "This is the smallest and simplest Korath projectile weapon, designed mostly for use on fighters and drones. As with most Korath technology, it generates a large amount of heat, enough that the gun must pause briefly after every few shots to cool down.",
+   "italian": "This is the smallest and simplest Korath projectile weapon, designed mostly for use on fighters and drones. As with most Korath technology, it generates a large amount of heat, enough that the gun must pause briefly after every few shots to cool down.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Thermal Repeater Turret|description|412|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 412,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Thermal Repeater Turret",
+   "english": "Thermal Repeaters fire compact bolts of superheated plasma at their targets. For every one of these turrets installed on a ship, an auxiliary cooling system is typically required to cope with its heat output.",
+   "italian": "Thermal Repeaters fire compact bolts of superheated plasma at their targets. For every one of these turrets installed on a ship, an auxiliary cooling system is typically required to cope with its heat output.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Piercer Missile|description|423|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 423,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Piercer Missile",
+   "english": "This missile is fired from a Piercer Missile Launcher.",
+   "italian": "This missile is fired from a Piercer Missile Launcher.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Piercer Missile Rack|description|435|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 435,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Piercer Missile Rack",
+   "english": "The Piercer Missile Rack is used to store extra ammunition for Piercer Missile Launchers.",
+   "italian": "The Piercer Missile Rack is used to store extra ammunition for Piercer Missile Launchers.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 14,
+   "id": "outfit:Piercer Missile Launcher|description|472|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 472,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Piercer Missile Launcher",
+   "english": "Korath Piercer Missiles carry a pair of warheads. The first, a smaller one in the very tip of the missile, explodes on impact to blast a hole in the ship's shields to allow some of the subsequent, larger explosion to pierce through.",
+   "italian": "Korath Piercer Missiles carry a pair of warheads. The first, a smaller one in the very tip of the missile, explodes on impact to blast a hole in the ship's shields to allow some of the subsequent, larger explosion to pierce through.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 15,
+   "id": "outfit:Piercer Missile Launcher|description|473|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 473,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Piercer Missile Launcher",
+   "english": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "italian": "\tAmmunition for this weapon can be restocked at any outfitter.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "outfit:Korath Detainer|description|563|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 563,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Korath Detainer",
+   "english": "Although not the most damaging weapon of its size, the Korath Detainer is feared for two reasons: its exceptionally long range, and its ability to interfere with the propulsion systems of any ship it strikes. Its reputation has earned it the honor of being named for the Korath themselves.",
+   "italian": "Although not the most damaging weapon of its size, the Korath Detainer is feared for two reasons: its exceptionally long range, and its ability to interfere with the propulsion systems of any ship it strikes. Its reputation has earned it the honor of being named for the Korath themselves.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 17,
+   "id": "outfit:Cluster Mine|description|603|0",
+   "path": "data/korath/korath weapons.txt",
+   "line": 603,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Cluster Mine",
+   "english": "This is ammunition for a Cluster Mine Layer. Each mine splits into eleven submunitions after it is deployed.",
+   "italian": "This is ammunition for a Cluster Mine Layer. Each mine splits into eleven submunitions after it is deployed.",
+   "ratio": 1.0
+  }
+ ]
+}

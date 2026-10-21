@@ -1,0 +1,50 @@
+{
+ "block": {
+  "path": "data/map beyond patir.txt",
+  "line_from": 225,
+  "line_to": 231,
+  "units": 3
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "planet:Chanai Structure|description|225|0",
+   "path": "data/map beyond patir.txt",
+   "line": 225,
+   "kind": "DESCRIPTION",
+   "context": "planet:Chanai Structure",
+   "english": "This alien station is as vast as it is mysterious, concealing more secrets than you could ever hope to find. Its only discernible feature is a giant barrel, but what it was built for - or what it could still do - is impossible to say.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `This alien station is as vast as it is mysterious, concealing more secrets than you could ever hope to find. Its only discernible feature is a giant barrel, but what it was built for - or what it could still do - is impossible to say.`",
+   "english_hash": "e55ab5bbe76d1e22"
+  },
+  {
+   "idx": 2,
+   "id": "planet:Magic Asteroid Planet|display name|229|0",
+   "path": "data/map beyond patir.txt",
+   "line": 229,
+   "kind": "VALUE",
+   "context": "planet:Magic Asteroid Planet",
+   "english": "???",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\t\"display name\" \"???\"",
+   "english_hash": "a03b221c6c6eae71"
+  },
+  {
+   "idx": 3,
+   "id": "planet:Magic Asteroid Planet|description|231|0",
+   "path": "data/map beyond patir.txt",
+   "line": 231,
+   "kind": "DESCRIPTION",
+   "context": "planet:Magic Asteroid Planet",
+   "english": "The dosimeter on your suit doesn't seem to know what to think of this place, going back and forth even if you stay in the same location. Short valleys are covered with impact craters of all shapes and sizes, with pink-colored veins resurfacing from their edges. In spite of the vacuum, you would swear you can see a purplish hue surrounding the asteroid.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The dosimeter on your suit doesn't seem to know what to think of this place, going back and forth even if you stay in the same location. Short valleys are covered with impact craters of all shapes and sizes, with pink-colored veins resurfacing from their edges. In spite of the vacuum, you would swear you can see a purplish hue surrounding the asteroid.`",
+   "english_hash": "7a9390301d9ae669"
+  }
+ ]
+}

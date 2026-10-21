@@ -1,0 +1,339 @@
+# Copyright (c) 2017 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Historical field trip to <planet>"
+	job
+	repeat
+	description `Questi <bunks> studenti devono arrivare a <destination> entro <date> per una gita scolastica storica. La scuola ti pagherà <payment>.`
+	passengers 15 5 .1
+	deadline
+	to offer
+		random < 10
+	source
+		attributes "deep" "paradise"
+	destination
+		distance 4 12
+		attributes "near earth"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		payment 10000
+		dialog `Gli studenti si precipitano giù dalla nave entusiasti, fotografando tutto ciò che vedono. La scuola deposita <payment> sul tuo conto.`
+
+
+mission "To Earth Day celebration [0]"
+	name `Festa della Terra`
+	job
+	repeat
+	description `Porta <fare> a <destination> entro <date> per la Festa della Terra del 22 aprile. Il pagamento è <payment>.`
+	passengers 4 4 .5
+	deadline 0 2
+	to offer
+		or
+			and
+				random < 60
+				month == 2
+				day >= 6
+			and
+				random < 80
+				month == 3
+			and
+				random < 20
+				month == 4
+				day < 22
+		"days until year end" - 2 * "hyperjumps to system: Sol" > 253
+		has "landing access: Earth"
+	to fail
+		month * 100 + day >= 422
+	source
+		near "Sol" 1 15
+		government "Republic" "Free Worlds" "Syndicate" "Neutral"
+	destination "Earth"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 1000 180
+		dialog "Auguri ai tuoi <passengers> per il loro soggiorno su <planet>. Dopo aver ritirato il pagamento di <payment>, i tuoi <passengers> si mettono i cappelli della Festa della Terra e se ne vanno con le loro cose."
+
+
+mission "To Earth Day celebration [1]"
+	name `Festa della Terra`
+	job
+	repeat
+	description `Consegna <cargo> a <destination> entro <date>, in preparazione della Festa della Terra del 22 aprile. Il pagamento è <payment>.`
+	cargo random 5 2 .1
+	deadline 0 2
+	to offer
+		or
+			and
+				random < 60
+				month == 2
+				day >= 6
+			and
+				random < 80
+				month == 3
+			and
+				random < 20
+				month == 4
+				day < 22
+		"days until year end" - 2 * "hyperjumps to system: Sol" > 253
+		has "landing access: Earth"
+	to fail
+		month * 100 + day >= 422
+	source
+		near "Sol" 1 15
+		government "Republic" "Free Worlds" "Syndicate" "Neutral"
+	destination "Earth"
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 1000 180
+		dialog `Gli operai dello spazioporto, già vestiti a festa per la Festa della Terra, scaricano dalla tua nave il carico di <commodity> e ti consegnano il pagamento di <payment>.`
+
+
+mission "To Earth Day celebration [2]"
+	name `Festa della Terra`
+	job
+	repeat
+	description `Porta <fare> a <destination> entro <date> per la Festa della Terra del 22 aprile. Il pagamento è <payment>.`
+	passengers 15 5 .1
+	deadline 0 2
+	to offer
+		random < ( "passenger space" - 30 ) * 2
+		or
+			and
+				random < 60
+				month == 2
+				day >= 6
+			and
+				random < 80
+				month == 3
+			and
+				random < 20
+				month == 4
+				day < 22
+		"days until year end" - 2 * "hyperjumps to system: Sol" > 253
+		has "landing access: Earth"
+	to fail
+		month * 100 + day >= 422
+	source
+		near "Sol" 1 15
+		government "Republic" "Free Worlds" "Syndicate" "Neutral"
+	destination "Earth"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 1000 120
+		dialog "Auguri ai tuoi <passengers> per il loro soggiorno su <planet>. Dopo aver ritirato il pagamento di <payment>, i tuoi <passengers> si mettono i cappelli della Festa della Terra e se ne vanno con le loro cose."
+
+
+mission "From Earth Day celebration [0]"
+	name `Ritorno dalla Festa della Terra`
+	job
+	repeat
+	description `Riporta <fare> a casa, su <destination>, dopo la Festa della Terra. Il pagamento è <payment>.`
+	passengers 4 4 .5
+	to offer
+		or
+			and
+				random < 70
+				month == 4
+				day > 22
+			and
+				random < 50
+				month == 5
+			and
+				random < 30
+				month == 6
+				day <= 22
+	source "Earth"
+	destination
+		distance 1 15
+		government "Republic" "Free Worlds" "Syndicate" "Neutral"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		payment 1000
+		dialog `I tuoi passeggeri ti ringraziano per averli riportati su <planet>, e ritiri il pagamento di <payment>.`
+
+
+mission "From Earth Day celebration [1]"
+	name `Ritorno dalla Festa della Terra`
+	job
+	repeat
+	description `Riporta <fare> a casa, su <destination>, dopo la Festa della Terra. Il pagamento è <payment>.`
+	passengers 4 4 .3
+	to offer
+		or
+			and
+				random < 50
+				month == 4
+				day > 22
+			and
+				random < 30
+				month == 5
+			and
+				random < 10
+				month == 6
+				day <= 22
+	source "Earth"
+	destination
+		distance 1 15
+		government "Republic" "Free Worlds" "Syndicate" "Neutral"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		payment 1000
+		dialog `I tuoi passeggeri ti ringraziano per averli riportati su <planet>, e ritiri il pagamento di <payment>.`
+
+
+mission "From Earth Day celebration [2]"
+	name `Ritorno dalla Festa della Terra`
+	job
+	repeat
+	description `Riporta <fare> a casa, su <destination>, dopo la Festa della Terra. Il pagamento è <payment>.`
+	passengers 15 5 .1
+	to offer
+		random < ( "passenger space" - 30 ) * 2
+		or
+			and
+				random < 50
+				month == 4
+				day > 22
+			and
+				random < 30
+				month == 5
+			and
+				random < 10
+				month == 6
+				day <= 22
+	source "Earth"
+	destination
+		distance 1 15
+		government "Republic" "Free Worlds" "Syndicate" "Neutral"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment 1000 100
+		dialog `I tuoi passeggeri ti ringraziano per averli riportati su <planet>, e ritiri il pagamento di <payment>.`
+
+
+mission "Transport farmers to Mars"
+	job
+	repeat
+	description "Questo gruppo di <bunks> operai di fabbrica spera di ricominciare da zero su <planet> come agricoltori. Ti pagheranno <payment> per portarli lì."
+	passengers 2 2 .8
+	to offer
+		random < 50
+		has "landing access: Mars"
+	source "Earth"
+	destination "Mars"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		payment 2000
+		dialog "Auguri agli agricoltori per il loro soggiorno su <planet>, e ritiri il pagamento di <payment>."
+
+
+mission "Transport tourists to Luna"
+	job
+	repeat
+	description "Questa famiglia di <bunks> vorrebbe vedere i luoghi storici di Luna. Ti pagheranno <payment> per portarli lì."
+	passengers 2 2 .8
+	to offer
+		random < 50
+		has "landing access: Luna"
+	source "Earth"
+	destination "Luna"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		payment 2000
+		dialog "Auguri ai turisti per il loro soggiorno su <planet>, e ritiri il pagamento di <payment>."
+
+mission "Transport seasonal workers to Earth"
+	job
+	repeat
+	description "Questo gruppo di <bunks> braccianti stagionali cerca un passaggio per tornare a casa, sulla Terra. Ti pagheranno <payment> per portarli lì."
+	passengers 2 2 .8
+	to offer
+		random < 50
+		has "landing access: Earth"
+	source "Mars"
+	destination "Earth"
+	on visit
+		dialog phrase "generic passenger on visit"
+	on complete
+		payment
+		payment 2000
+		dialog "Auguri ai lavoratori per il loro soggiorno su <planet>, e ritiri il pagamento di <payment>."
+
+
+mission "Tycho Crater Shipyards Shipment [0]"
+	name "Spedizione a <planet>"
+	description "Consegna <cargo> a <destination>, sede dei Tycho Crater Shipyards, parte dell'Arsenale della Marina della Repubblica. Il pagamento è <payment>."
+	cargo "weapons" 5 2 .1
+	job
+	repeat
+	to offer
+		random < 10
+	source
+		near Sol 2 10
+		attributes factory
+	destination Luna
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 160
+		dialog phrase "generic cargo delivery payment"
+
+mission "Tycho Crater Shipyards Shipment [1]"
+	name "Spedizione a <planet>"
+	description "Consegna <cargo> a <destination>, sede dei Tycho Crater Shipyards, parte dell'Arsenale della Marina della Repubblica. Il pagamento è <payment>."
+	cargo "Ship Alloys" 5 2 .1
+	job
+	repeat
+	to offer
+		random < 10
+	source
+		near Sol 2 10
+		attributes factory mining
+	destination Luna
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 160
+		dialog phrase "generic cargo delivery payment"
+
+mission "Tycho Crater Shipyards Shipment [2]"
+	name "Spedizione a <planet>"
+	description "Consegna <cargo> a <destination>, sede dei Tycho Crater Shipyards, parte dell'Arsenale della Marina della Repubblica. Il pagamento è <payment>."
+	cargo "Ship Systems" 5 2 .1
+	job
+	repeat
+	to offer
+		random < 10
+	source
+		near Sol 2 10
+		attributes factory
+	destination Luna
+	on visit
+		dialog phrase "generic cargo on visit"
+	on complete
+		payment 0 160
+		dialog phrase "generic cargo delivery payment"

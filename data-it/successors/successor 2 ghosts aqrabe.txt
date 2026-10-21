@@ -1,0 +1,478 @@
+# Copyright (c) 2026 by Daeridanii
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Successors: Ghosts Aqrabe 1"
+	invisible
+	landing
+	source "Kasii-Cavasaa-Oa"
+	destination "Kasii-Cavasaa-Oa"
+	to offer
+		has "Successors: Ghosts 4: offered"
+	on offer
+		conversation
+			`Poco dopo essere atterrato, ti si avvicina un Successore alto, in un abito insolito: scuro, ma scintilla alla luce di molte piccole pagliuzze dorate. Non somiglia a nessun altro abito di Successore che tu abbia visto. "Salve, capitano," dicono, con una voce curiosamente sonora. "La nobile Casa Aqrabe chiede cortesemente la tua presenza nel reliquiario dello spazioporto orientale. Mi è stato ordinato di accompagnarti, se tu lo desideri, naturalmente."`
+			choice
+				`	"Molto bene."`
+					goto reliquary
+				`	"No, grazie."`
+					decline
+			label reliquary
+			`	Ti guidano attraverso diverse aree riservate dello spazioporto fino a una torre sottile alla periferia. La stanza in cui entri è enorme e circolare; un gigantesco serbatoio emisferico è sospeso sopra una depressione poco profonda al centro, quasi a sfiorare il pavimento bagnato mentre scende verso il basso. Il contenuto del serbatoio è però ancora più impressionante: lentamente, quelli che sembrano gli arti recisi di Successori cominciano a scendere, ciascuno legato a diversi filamenti dorati e scintillanti che serpeggiano su nell'abisso scuro dell'acqua sovrastante. Ti guardi intorno per chiedere alla tua guida che cosa stia succedendo, ma se n'è già andata. Al margine della tua vista, un braccio striscia contro il vetro, e le sue ventose non morte producono deboli schiocchi mentre passano.`
+			choice
+				`	(Allunga la mano per toccarlo.)`
+				`	(Lascialo stare.)`
+					goto interrupt
+			`	Sfiorando il vetro con la punta delle dita, i bracci senza corpo si agitano e si contorcono. Da sotto di te, un coro di voci artificiali prende a parlare.`
+			`	"quattro zampe? straniero?"`
+			`		"straniero."`
+			`	"straniero curioso. alieno."`
+			`			"la curiosità, la quarantesima virtù."`
+			`		"può un alieno essere virtuoso? discutiamo."`
+			`	"no, penso io, perché..."`
+			`	Le voci sono interrotte da un'altra, questa spaventosamente vicina e reale.`
+			label interrupt
+			`	"Vedo che hai incontrato i nostri santi, capitano." Un altro Successore emerge da dietro di te. Indossano un abito simile al precedente, con l'unica differenza di un luccichio di tonalità un po' più rossa. I "santi" ora li seguono in giro, tastando e picchiando sul vetro.`
+			choice
+				`	"Santi?"`
+					goto saints
+				`	"Sono vivi?"`
+				`	"Chi sei?"`
+					goto identity
+			`	"No, né li ha avvolti il manto della morte. Sono fra le cose. Come neonati che non temono di crescere; come dormienti a metà che non temono di svegliarsi."`
+			label saints
+			`	"Sono santi, o reliquie," dicono. "Frammenti di menti non viventi, libere dal dolore e dalla morte, che sopravvivono in parti. Ognuna era un tempo una mente di grande fama, degna di essere conservata anche solo come ricordo. Sono incuriositi da te. Solo uno di loro ha mai visto qualcosa della tua specie, e non si aspettava di rivederne uno, nemmeno nell'eternità."`
+			`	"E tu chi sei?" chiedi.`
+			label identity
+			`	Aprono le braccia, con un gesto un po' più discreto di quello della maggior parte dei Successori che hai visto. "Aqrabe I- Sola. E tu sei il capitano <first> <last>. Che strana presentazione è per te, visto che sei l'unico qui per cui sarebbe necessaria." Fanno un rumore che sei certo sia un ridacchiare. "Un erede della Casa di Aqrabe, per matrimonio, non per sangue. Ma per poco. Ma ora dimmi: come mai il nostro wormhole ti concede il passaggio senza una nostra nave ben attrezzata?"`
+			choice
+				`	"Porto sulla nave una pietra chiave quantistica che mi permette di attraversare ogni sorta di wormhole instabile."`
+					goto keystone
+				`	"Non è una cosa che mi sento di condividere."`
+			action
+				"successors: ghosts suspicion" ++
+			`	"Oh, non pensare che non abbiamo scansionato la tua nave, capitano! La segretezza da dilettanti non ti porterà da nessuna parte." Una lenta increspatura di azzurro pallido scende sul loro volto.`
+			label keystone
+			`	Sola annuisce. "In breve, vogliamo conoscere meglio queste tue pietre. La loro struttura, la loro funzione, la loro natura. E grazie a questa comprensione di un altro grande mistero, un giorno produrre le nostre, meno intensive e meno esigenti della formatura delle nostre corazze. Aqrabe è disposta a pagarti perché gliene consegni cinquanta, più che sufficienti a compensare qualunque costo tu debba sostenere per procurartele."`
+			choice
+				`	"Molto bene, accetto."`
+				`	"Preferirei non lavorare con Aqrabe."`
+					decline
+			`	L'erede scintilla di piacere e ti fa un lieve inchino. "Che gioia sentirlo, capitano. Torna quando puoi, allora. Ti vedremo ricompensato."`
+				accept
+	to complete
+		or
+			has "Successors: Ghosts Aqrabe Remnant: done"
+			has "Successors: Ghosts Aqrabe Hai: done"
+	on complete
+		log "Hai consegnato a Casa Aqrabe una partita di pietre chiave quantistiche perché le studino e le installino sulle loro navi."
+
+conversation "successor keystone delivery"
+	`	Appena comunichi al controllo del traffico che stai tornando con le cinquanta pietre chiave richieste da Casa Aqrabe, la tua nave viene indirizzata a un hangar laterale circondato da diversi piccoli vani di allestimento. La maggior parte è chiusa, ma uno è ben illuminato e pieno di attività. Sembra il dominio di alcune delle ricerche più eterodosse di Casa Aqrabe: le pareti sono drappeggiate di tessuti dall'aspetto strano, e un paio di statue inusuali e astratte punteggiano l'interno. Al centro, uno scanner montato su nave è in fase di smontaggio; mentre entri, un Successore sporge la testa da dietro.`
+	`	"Capitano <last>?" chiedono.`
+	`	"Sì?"`
+	`	Scivolano verso di te e aprono le braccia nel gesto tradizionale. "Tiliia," si presentano. "Mi avevano detto di aspettare il tuo arrivo. Hai portato," e si fermano per pronunciare bene la parola, "pietre chiave, giusto?"`
+	`	"Sì," dici. "Cinquanta pietre chiave, come richiesto." Tiliia ti accompagna alla <ship> per esaminare il carico; quando è sufficientemente soddisfatta che tu abbia portato la quantità giusta, tira fuori un datapad e inserisce un paio di valori. Sebbene gli occhi si allarghino quando gli porgi le ricevute, confermano comunque pochi istanti dopo che Casa Aqrabe ti ha accreditato il prezzo d'acquisto delle pietre chiave, più un bonus di trecentomila crediti.`
+	`	Mentre cominciano a dirigere le squadre di terra per lo scarico delle pietre chiave, Tiliia si volta un momento verso di te e ti chiede di incontrarli allo spazioporto entro la fine della giornata: "il tuo aiuto potrebbe essere un vantaggio per noi nella prossima parte di questo viaggio," dicono.`
+
+mission "Successors: Ghosts Aqrabe Remnant"
+	landing
+	name "Procurati le pietre chiave dai Remnant"
+	description "Casa Aqrabe vuole un totale di 50 Pietre Chiave Quantistiche su <destination>, che si possono ottenere in grandi quantità dai Remnant."
+	source "Kasii-Cavasaa-Oa"
+	mark "Pantica"
+	to fail
+		or
+			has "Successors: Ghosts Aqrabe Hai: done"
+			has "Successors: Ghosts Aqrabe 1: declined"
+	to offer
+		has "Successors: Ghosts 4: offered"
+		has "license: Remnant"
+	on complete
+		conversation "successor keystone delivery"
+		outfit "Quantum Key Stone" -50
+		payment 12300000
+
+mission "Successors: Ghosts Aqrabe Hai"
+	landing
+	name "Procurati le pietre chiave dagli Hai"
+	description "Casa Aqrabe vuole un totale di 50 Pietre Chiave Quantistiche su <destination>, che si possono ottenere in grandi quantità dagli Hai."
+	source "Kasii-Cavasaa-Oa"
+	mark "Ya Hai"
+	to fail
+		or
+			has "Successors: Ghosts Aqrabe Remnant: done"
+			has "Successors: Ghosts Aqrabe 1: declined"
+	to offer
+		has "Successors: Ghosts 4: offered"
+		has "First Contact: Hai: offered"
+	on complete
+		conversation "successor keystone delivery"
+		outfit "Quantum Keystone" -50
+		payment 900000
+
+
+mission "Successors: Ghosts Aqrabe 2"
+	name "Prova delle pietre chiave"
+	description "Scorta due navi di Casa Aqrabe attraverso il wormhole e radunati con loro a <stopovers> prima di tornare su <planet>."
+	source "Kasii-Cavasaa-Oa"
+	stopover "Myiara-Aret-Iir"
+	destination "Kasii-Cavasaa-Oa"
+	passengers 1
+	to offer
+		or
+			has "Successors: Ghosts Aqrabe Remnant: done"
+			has "Successors: Ghosts Aqrabe Hai: done"
+	on offer
+		log "People" "Tiliia" "Tiliia is an engineer belonging to the Successor House Aqrabe."
+		conversation
+			`Tiliia ti incontra in un'altra parte nascosta dello spazioporto, piena di statue strane, dove sono in conversazione con un piccolo gruppo di Successori. Si illuminano quando ti vedono avvicinare e offrono un rapido gesto delle braccia. "Capitano, capitano," dicono. "Torni senza tempo da perdere. Vogliamo intraprendere un viaggio di comprensione attraverso il wormhole; un capitano qui vuole usare una delle tue pietre chiave, l'altro la nostra corazza tessuta. La tua nave sarebbe preziosa come punto di raccolta dati sulle altre due, per vedere come si comportano attraverso la frattura."`
+			choice
+				`	"Non potreste farlo senza di me?"`
+				`	"Dove andiamo esattamente?"`
+					goto destination
+			`	Tiliia scintilla di ilarità. "Certo," dicono. "Ma se ci trovassimo con delle domande, bisognosi di conoscenze che tu potresti fornire, sarebbe prezioso averti al nostro fianco in quel momento. Contiamo di radunarci sul mondo polveroso appena oltre la porta; spero di vederti lì."`
+				accept
+			label destination
+			`	Increspature blu avvolgono il corpo di Tiliia. "Il più breve tratto possibile. Possiamo radunarci sul mondo bruciato oltre il wormhole."`
+				accept
+	npc save
+		government "House Aqrabe"
+		personality escort launching appeasing unconstrained
+		ship "Seiitej (Keystone)" "Veusa-Birja"
+		ship "Seiitej (Armor Keystone)" "Airi-o-Ijta"
+	on stopover
+		conversation
+			`I due Seiitejen si posano insieme alla <ship> sul bordo di un lago prosciugato, e Tiliia va subito a comunicare con i loro capitani via radio. Dopo un paio di minuti si uniscono a te sulla plancia, annotando dati su una tavoletta metallica. "Le altre navi riferiscono pochi problemi nel viaggio," dicono. "E una lieve differenza fra le tue pietre e la nostra corazza. Ma servirà tornare per capirci qualcosa: non oso farlo qui."`
+	on complete
+		dialog `Tiliia si congeda in fretta e ti chiede di incontrarli più tardi allo spazioporto, quando avranno avuto il tempo di elaborare i loro dati.`
+		log "Hai scortato attraverso il wormhole dei Successori una nave con pietre chiave e una con corazza plurimodale."
+
+mission "Successors: Ghosts Aqrabe 3"
+	name "Visita il giardino stellare"
+	description "Tenta di atterrare sul giardino di metallo stellare in orbita attorno alla stella Kasii-Cavaasa."
+	source "Kasii-Cavasaa-Oa"
+	stopover "Exotic Metal Garden"
+	destination "Kasii-Cavasaa-Oa"
+	passengers 1
+	to offer
+		has	"Successors: Ghosts Aqrabe 2: done"
+	on offer
+		event "successors: ghosts star unrestrict"
+		conversation
+			`Incontri Tiliia nella loro officina, dove ti fanno cenno di entrare. Lo scanner sul tavolo è stato sostituito da una collezione di pietre chiave quantistiche sospese in macchine varie che pungolano e scansionano le pietre senza posa. "Buone notizie per te, capitano, e per tutti noi," dice Tiliia. "I dati della nostra spedizione hanno rivelato un po' del mistero delle tue pietre. Sono una specie di oscillatori, che cantano all'unisono con le increspature del wormhole..." Tiliia si ferma un momento. "Ma avremo tempo di parlarne dopo. Per ora, quello che ti serve sapere è questo: con i materiali giusti, potremmo riuscire ad amplificarne l'effetto. Sei mai stato nel sistema Kasii-Cavaasa, dentro i Tangles?"`
+			choice
+				`	"Ci sono stato."`
+				`	"Dove vuoi arrivare?"`
+			`	Tiliia continua. "La stella di quel sistema è circondata da diversi giardini di metallo stellare, enormi stazioni dove, nella radiazione aspra della stella, si coltivano i metalli rari necessari ai nostri lavori. Il loro raccolto è la chiave del nostro successo. Una quarantina di tonnellate basterebbero a suddividere quelle pietre per rifornire tutte le Nuove Casate. Potremmo rendere obsoleta la nostra corazza per attraversare i wormhole: migliorare le sonde, fare più archeologia." Si fermano, e un'onda di colore scende lungo le loro membra. "Potrebbe perfino aiutare a risolvere questo nostro mistero attuale. Allora, che ne pensi?"`
+			choice
+				`	"Vuoi che voli dentro una stella? Sei pazzo?"`
+					goto shocked
+				`	"E come pensi che riusciremo ad avvicinarci tanto da raccoglierlo?"`
+			`	"Gli scudi della tua nave potrebbero bastare," dice Tiliia, con macchie viola sul volto. "E se no, avremo un avviso prima che cedano. Dovremo agire con cautela e vedere di persona che cosa è possibile."`
+				accept
+
+			label shocked
+			`	Macchie viola punteggiano il volto di Tiliia. "Non 'dentro', non alla lettera. Ma sì, non so se la tua nave sia all'altezza dell'impresa. Dovremo vedere di persona che cosa è possibile."`
+				accept
+	on stopover
+		event "successors: ghosts star restrict"
+		conversation
+			branch "no shields"
+				"flagship shields" <= 0
+			`La tua nave protesta già mentre ti avvicini a Kasii-Cavaasa, con gli allarmi che suonano senza sosta e i termometri che schizzano. Il giardino di metallo stellare è ancora poco più di un punto contro la massa ribollente della stella. Mentre scendi verso di esso, l'abitacolo diventa caldo in modo sgradevole e si riempie di un forte odore di ozono; Tiliia sembra stare anche peggio di te, con quel caldo. All'improvviso, qualcosa succede agli scudi, e il calore intenso della stella comincia a raschiare via pezzi dello scafo della <ship>. Alla fine Tiliia parla: "Basta, capitano. Dovremo riorganizzarci e trovare una strategia diversa."`
+			choice
+				`	(Ritirata.)`
+				`	(Insisti.)`
+					goto onward
+			label retreat
+			`	Ordini alla <ship> di risalire dalla stella, e alla fine gli allarmi tacciono. "Riportaci a <origin>," dice Tiliia, con l'aria un po' abbattuta. "Dobbiamo decidere lì che cosa fare."`
+				flee
+
+			label onward
+			`	"Sei impazzito?" grida Tiliia, con il terrore evidente sulla pelle. "Dobbiamo ritirarci!"`
+			choice
+				`	(Ritirata.)`
+					goto retreat
+				`	(Continua.)`
+			`	La <ship> sfida il calore per un altro minuto circa, nonostante le proteste di Tiliia. Gli scudi non cedono del tutto finché un'eruzione solare non inghiotte all'improvviso la nave, vaporizzando in un istante te, Tiliia e la nave stessa, e disperdendo i vostri atomi fra le stelle fredde e indifferenti.`
+				die
+
+			label "no shields"
+			`	Anche solo avvicinarsi alla stella Kasii-Cavaasa basta a portare l'interno della <ship> a una temperatura soffocante e sgradevole. Senza alcun tipo di scudo, lo scafo si avvicina rapidamente al cedimento termico e, per insistenza di Tiliia, sei costretto a risalire su un'orbita più alta.`
+				flee
+	on complete
+		log "Hai tentato di recuperare metallo stellare dallo spazio dei Predecessori per Casa Aqrabe, ma il calore intenso ti ha respinto."
+		conversation
+			`Tiliia ha passato gran parte del viaggio rintanata, immersa nei dati raccolti dalla vostra spedizione nella stella, ma non passa molto tempo da quando il carrello della <ship> tocca il suolo dello spazioporto della <planet> che sono già fuori, a sgranchirsi le braccia all'aria aperta. Restano lì vicino finché non hai finito i controlli post-volo e ti ringraziano per il trasporto, ora circondati da diversi Successori in abiti da studiosi. Prima di andarsene, ti chiedono di tornare allo spazioporto al tramonto.`
+			`	Poco prima che ti addentri anche tu nel porto, senti per caso alcuni del personale di terra che commentano lo scafo bruciacchiato della <ship>.`
+
+mission "Successors: Ghosts Aqrabe 4"
+	name "Ritira la nave da Kaatrij"
+	description "Ritira un Vujlet modificato da Casa Kaatrij su <destination>."
+	clearance
+	source "Kasii-Cavasaa-Oa"
+	destination "Raaqa-Puan-Uuoru"
+	to offer
+		has	"Successors: Ghosts Aqrabe 3: done"
+	on offer
+		conversation
+			`Tiliia ti aspetta nello stesso giardino di statue dove ti hanno incontrato prima, anche se questa volta sono da soli, e tamburellano su una tavoletta metallica sotto una luce pensile. Ti salutano con un cenno di colori secco quando ti vedono. "Ho notizie, una cattiva e una buona," dicono. "La tua nave non è adatta al nostro compito. Forse con un anno di studio potrebbe essere adattata ai nostri scopi, ma Aqrabe ed io conveniamo che non andrebbe bene."`
+			choice
+				`	"E allora qual è la buona notizia?"`
+				`	"Quindi finisce qui?"`
+			`	"Per fortuna," continuano, "potremmo allestire una delle nostre navi per questo scopo. O meglio, una di Casa Kaatrij."`
+			`	Ti porgono la tavoletta. Mostra uno schema di cui fatichi a capire qualcosa; un piccolo congegno appare impiantato in un Vujlet, con i suoi lunghi viticci che serpeggiano nei vari sistemi della nave come una specie di infezione. Se dovessi azzardare una ipotesi sulla sua funzione, potresti descriverlo come una sorta di dispositivo di occultamento: è chiaramente raffigurato mentre riflette e rifrange la luce in qualche modo, ma i dettagli di che cosa esattamente ottenga sfuggono al tuo giudizio.`
+			`	"Ho parlato con il nostro ufficiale di collegamento con la flotta," dice Tiliia, "che ha parlato con quello di Kaatrij, e hanno accettato di concederti un Vujlet modificato." Si fermano prima di aggiungere, in tono più sommesso e più cinico, "estraendo senza dubbio qualche favore da Aqrabe per la strada. Dobbiamo chiederti di ritirarlo su <planet> e di riportarlo qui per l'allestimento. Una volta pronto con la nostra corazza e il tuo motore di salto, potremo tornare a Kasii-Cavaasa."`
+			choice
+				`	"Sembrano modifiche piuttosto complesse."`
+					goto suspicious
+				`	"L'ultima volta che ho controllato, non ero in ottimi rapporti con Kaatrij."`
+					to display
+						has "successors sioeora patron"
+					goto tense
+				`	"Andiamo, allora."`
+					goto end
+			label suspicious
+			action
+				"successors: ghosts suspicion" ++
+			`	Una lieve increspatura arancione passa su Tiliia. "Lo sono, capitano. Mi dicono che Kaatrij tenga alcuni Vujlet per la ricerca... no, non sta a me dirlo."`
+			`	Anche se cerchi di insistere, Tiliia non offre altre informazioni sulle modifiche di Kaatrij.`
+				goto end
+			label tense
+			`	Tiliia gargarizza in una lieve esibizione di risate, con macchie rosa che affiorano sulle punte delle braccia. "Chi lo è?" dicono. "Ora più che mai."`
+				goto end
+			label end
+			`	"Oh," dice Tiliia poco prima che tu parta, "e inoltre Kaatrij vuole mandare con te un osservatore. Forse hanno motivo di essere sospettosi. Ugh, forse sono sospettosi per natura."`
+				accept
+
+mission "Successors: Ghosts Aqrabe 5"
+	name "Ritorna a Kasii-Cavasaa-Oa"
+	description "Scorta il Nnesa ti-a-Oj fino a <destination>."
+	landing
+	source "Raaqa-Puan-Uuoru"
+	destination "Kasii-Cavasaa-Oa"
+	npc save
+		government "House Kaatrij"
+		personality escort unconstrained launching
+		ship "Vujlet (Stellar Light Armor)" "Nnesa ti-a-Oj"
+	to offer
+		has	"Successors: Ghosts Aqrabe 4: done"
+	on offer
+		conversation
+			`Lo spazioporto di <origin> è inzuppato quando arrivi, nel pieno di un temporale enorme, con le sue sporgenze simili a vele che sbattono al vento e grondano acqua. Dalla tua piazzola, una serie di guide automatiche ti indirizzano verso un hangar costruito dentro una depressione circolare nel terreno; la sua sommità si chiude come una bolla, traslucida e in modo inquietante elastica contro le intemperie. Entrando dalla porta laterale, vedi la sagoma sfocata di un Vujlet parcheggiato all'interno.`
+			`	Vicino all'ingresso dell'hangar, una sfera di dati gorgoglia piano, in attesa del tuo tocco. Quando la raccogli, rigurgita il suo messaggio:`
+			branch friendly
+				has "successors kaatrij patron"
+			`	"Abbi cura di questa nave, capitano. Sei stato un alleato per noi, e per i nostri stessi alleati, fin qui, così Kaatrij ti offre questo dono in amicizia. Usalo bene.`
+			`	Questo io stesso attesto, come K- I- Saajret, di Somber Sejra."`
+				goto introduction
+			label friendly
+			`	"Scuse, caro capitano, per non essere venuto a vederti di persona. Vorrei che i nostri alleati nel Nuovo ti abbiano trattato con gentilezza, con tutta la franchezza e la chiarezza dovute. Ti offriamo questo, in amicizia. Usalo bene.`
+			`	Questo io stesso attesto, come K- I- Saajret, di Somber Sejra."`
+			label introduction
+			`	Un solo Successore esce dal fianco della nave; il suo abito non somiglia a quello di un archivista quanto a quello di un soldato, con tessuti intessuti di corazza e un fucile cinetico tenuto al fianco. "Capitano <first> <last>?" dicono, e quando confermi continuano: "Ti accompagnerò come osservatore."`
+			choice
+				`	"Mi avevano detto di aspettarmi un archivista."`
+				`	"Molto bene."`
+					goto end
+			`	"La tua aspettativa non è più accurata," rispondono, senza tradire alcuna emozione.`
+			label end
+			`	Ti fanno strada a bordo. L'interno delle navi militari dei Successori è molto diverso dalle loro navi civili: la plancia è sepolta in profondità al centro della nave, sotto strati di corazza, una piccola stanza circolare con una vasca piena d'acqua al centro e display in metallo liquido che ne orlano il perimetro. Allo stesso modo, alloggi e spazi operativi compatti si aprono a ventaglio da lì, ciascuno ben attrezzato.`
+			`	Dopo che ti sei guardato intorno, l'osservatore di Kaatrij ti accompagna fuori dalla nave. "Io e un equipaggio di Kaatrij piloteremo la nave fino ad Aqrabe. Una volta lì, dovresti installare a bordo il tuo motore di salto."`
+				accept
+	on visit
+		dialog "Sei tornato a Kasii-Cavasaa-Oa, ma il Vujlet che stai scortando non è ancora arrivato."
+	on complete
+		give ship "Vujlet (Stellar)" "Nnesa ti-a-Oj"
+		conversation
+			`Sia la tua nave sia il Vujlet sono indirizzati a un'enorme baia di allestimento nello spazioporto di <planet>, abbastanza grande per contenere dieci volte entrambe le navi. Mentre sbarchi, noti che diversi Successori stanno entrando nel Vujlet atterrato con grandi carrelli di attrezzature al seguito, molte delle quali chiuse in casse metalliche senza contrassegni. In particolare, il rappresentante di Kaatrij resta a bordo, tenendosi a distanza dagli equipaggi di terra di Aqrabe. Tiliia ti individua da un balcone sporgente e ti fa cenno di avvicinarti.`
+			`	"Una bella nave, non è vero, capitano? Non hai mai pilotato una delle nostre navi da guerra, vero?."`
+			choice
+				`	"È stato affascinante. Dev'essere molto efficiente da comandare."`
+				`	"Una nave è una nave, in fondo."`
+					goto unimpressed
+				`	"Non è la mia prima nave dei Successori, sai."`
+					to display
+						or
+							has "ship model (all): Ejniisde"
+							has "ship model (all): Kvelqde"
+							has "ship model (all): Kvelqde-Khora"
+							has "ship model (all): Myaede"
+							has "ship model (all): Nnaatej"
+							has "ship model (all): Nnesaarau"
+							has "ship model (all): Ojde"
+							has "ship model (all): Stolsaqra"
+					goto experienced
+			`	Tiliia emette un breve ronzio. "Tale è l'intenzione per tutte le nostre navi da guerra," dicono. "Forse non sono artistiche quanto dovrebbero, ma sospetto che troverai questa nave efficiente quanto immagini."`
+				goto next
+			label unimpressed
+			`	Tiliia emette un breve suono gorgogliante. "Forse," dicono. "Avrai presto l'occasione di deciderlo da te."`
+				goto next
+			label experienced
+			`	Tiliia ondeggia di un'emozione difficile da collocare; i suoi colori sembrano alludere a orgoglio e soddisfazione.`
+			label next
+			`	Il processo di nuova corazzatura comincia poco dopo, con enormi braccia metalliche che si piegano giù dalla sommità della baia per scansionare la superficie della nave. In certi momenti, droni in volo escono dai lati dell'hangar per depositare altro materiale sulla nave o per eseguire scansioni, proiettando forma dopo forma sullo scafo gorgogliante con luce laser multicolore. Dopo un po' che guardi, Tiliia si china verso di te. "Il processo richiederà ancora qualche ora," dicono. "La corazza per attraversare il wormhole è di un tipo più complicato delle altre. Per ora ti lascio ai tuoi impegni... anche se conto di passare un po' di tempo nel giardino di statue, e se ti fa piacere puoi unirti a me lì."`
+			choice
+				`	"Ne sarei felice."`
+				`	"Grazie, ma ho i miei preparativi da fare."`
+					goto alone
+			action
+				log "People" "Tiliia" "Tiliia sees their role in current events as offering them the opportunity to make their mark on future generations."
+			`	Il giardino di statue non è molto lontano dalla baia di allestimento dove è parcheggiato il Vujlet. È uno spazio circolare, ricavato nella struttura dello spazioporto ed esposto alle intemperie: la luce del primo mattino splende attraverso la nevicata leggera e scintilla sulle forme metalliche inquietanti delle statue. La maggior parte è puramente astratta, ma una su dieci circa ha qualche forma organica che emerge dal metallo liscio come se fosse intrappolata dietro un velo: foglie di piante, volti di animali, o perfino quelli che sembrano pezzi del corpo di un Successore.`
+			`	"Sono curioso, capitano," dice Tiliia. "Che cosa ti motiva a fare questo? Entrare in una stella, voglio dire. L'ultima volta che ci siamo visti, eri sulla tua nave, che conosci bene; ora metti la tua vita in un'ingegneria aliena che non hai mai visto all'opera. Perché prenderla in considerazione?"`
+			choice
+				`	"Ho fatto altre cose pericolose, e sono sempre andate bene."`
+					goto lucky
+				`	"Ho visto abbastanza ingegneria dei Successori da fidarmene."`
+					goto confident
+				`	"Forse mi piace il pericolo."`
+			`	"Pericolo, pericolo," dice Tiliia, rigirando la parola in bocca. "I nostri giovani sogneranno di essere piloti valorosi, di dimostrare il loro valore in catene di pericoli, e poi da adulti si sveglieranno invece al comando di una nave da carico travestita da qualcos'altro dalla corazza di Casa. Forse questo lo capisco, per te, capitano."`
+				goto hbu
+			label lucky
+			`	Un rossore divertito passa su Tiliia. "Senza dubbio l'hai fatto," dicono. "Per aver viaggiato lontano come hai fatto, attraverso vuoti così pericolosi... speriamo che la tua fortuna regga, allora, capitano."`
+				goto hbu
+			label confident
+			`	"Davvero?" dice Tiliia. Si guardano intorno fra le sculture, osservandole. "È giusto per te. Forse non siamo più quello che eravamo molto tempo fa, ma conserviamo ancora alcune arti sottili. Hai ragione, se conta, a fidarti di noi in questo. Nulla dura quanto noi se non essendo volubile."`
+			label hbu
+			`	"E tu," chiedi, "perché lo fai?"`
+			`	Tiliia emette un ronzio lungo mentre riflettono. "Abbiamo una tradizione, qui... almeno a Aqrabe, ma so che altri ne hanno di simili. Nell'ultima ora della loro vita, i figli di un genitore decidono per loro un compito da portare a termine: un'opera d'arte da fare, un viaggio da compiere, un cambiamento di sé da realizzare, o un'altra cosa del genere. Gran parte della nostra vita è già formata dagli atti e dal rango dei nostri antenati, quindi è giusto offrire un po' di forma alla nostra discendenza in cambio."`
+			`	"Quindi i tuoi figli ti stanno chiedendo di volare dentro una stella?"`
+			`	Un'esplosione di ilarità travolge Tiliia, che si appoggiano a una delle statue per sostenersi. "No, no," dicono, "sono fin troppo giovane, e non sarebbe comunque la cosa giusta da chiedere. No, lo dicevo perché il compito che ho deciso per il mio genitore maggiore è questo intorno a noi." Indicano le sculture. "Per dieci anni hanno formato i pilastri che stanno qui, e ora, anche morti, un po' della loro esistenza indugia fra quelli, e nell'aria. Se riusciremo, allora allo stesso modo parti di noi vivranno nel futuro di questa Casa."`
+			choice
+				`	"Capisco il desiderio di fare la differenza."`
+					goto difference
+				`	"Pensi davvero che gli eredi della Casa saranno così riconoscenti?"`
+			`	"Non si tratta di gratitudine, né degli eredi. È una questione di... continuità. Le nostre vite sono onde sulla riva luminosa, plasmate dai predecessori, che plasmano i conseguenti. Nel corso degli eoni, i nomi diventano parole nella lingua comune, e poi vengono scelti di nuovo come nomi quando nuovi figli diventano adulti. Fra mille anni, il tuo nome potrebbe diventare la parola per quelle tue 'pietre chiave', e fra altri mille potrebbe essere invocato da una nuova schiera in un mondo nuovo."`
+			choice
+				`	"Mi sembra un po' inverosimile."`
+					goto far-fetched
+				`	"Non mi dispiacerebbe."`
+					goto egoist
+				`	"A volte temo che lo invocheranno come una maledizione. I Successori non si sono comportati bene con tutti, dopo tutto."`
+					to display
+						has "Successors: People's Houses: First Contact: offered"
+			action
+				set "successors confronted tiliia"
+			`	Tiliia ti guarda con interesse. "Forse immagino che cosa intendi, ma dimmi di più, se ti fa piacere."`
+			`	"Beh," dici, "le Casate del Popolo non sembrano felici della loro sorte, e i pianeti dei Predecessori che ho visto non sembrano molto confortevoli. Non che gli umani non abbiano i propri problemi, ma sembra che nemmeno migliaia di anni di 'onde sulla riva luminosa' abbiano reso i Successori del tutto illuminati. Fornirvi delle pietre chiave potrebbe aiutare noi due adesso, ma chissà che cosa ne verrà in futuro?"`
+			`	Una scintilla di rabbia guizza sul volto di Tiliia, ma solo per un attimo, e sembrano riportare la pelle al suo colore più neutro. "Non si può disfare ciò che è già compiuto," dicono. "Per triste che sia." Si fermano un momento. "Spero comunque di vederti allo spazioporto, capitano."`
+				goto end
+			label far-fetched
+			`	L'ilarità torna a scintillare sulla pelle di Tiliia. "Probabilmente sì," dicono, e dopo una pausa: "grazie per esserti unito a me, capitano. Ora dovresti prepararti: raggiungici allo spazioporto quando sei pronto."`
+				goto end
+			label egoist
+			`	Tiliia mantiene un'espressione pensosa. "In qualche modo lo sospettavo," dicono, e dopo una pausa: "grazie per esserti unito a me, capitano. Ora dovresti prepararti: raggiungici allo spazioporto quando sei pronto."`
+				goto end
+			label difference
+			`	"È una bella sensazione," dicono, "vero?" Si fermano per un po', guardando il cielo. Le nuvole sopra cominciano ad aprirsi e la nevicata si dirada. Noti per la prima volta che il terreno è leggermente riscaldato: nessuna della neve che cade si è accumulata, si scioglie invece in piccoli canali nella roccia. "Grazie per esserti unito a me, capitano," dice Tiliia. "Ora dovresti prepararti: raggiungici allo spazioporto quando sei pronto."`
+				goto end
+			label alone
+			`	"Certo. Raggiungimi qui allo spazioporto, allora, fra quattro ore."`
+			label end
+			`	Detto questo, Tiliia si avvia. Dovresti assicurarti che il Vujlet che ti è stato prestato sia attrezzato per il viaggio che vi aspetta.`
+
+mission "Successors: Ghosts Aqrabe 6"
+	name "Visita di nuovo il giardino di metallo esotico"
+	description "Tenta un atterraggio sul giardino di metallo stellare di <system> usando il Vujlet modificato."
+	source "Kasii-Cavasaa-Oa"
+	destination "Exotic Metal Garden"
+	cargo "Reserved space" 40
+	passengers 2
+	to offer
+		has	"Successors: Ghosts Aqrabe 5: done"
+	blocked "Ti servirà <capacity> per riportare abbastanza metallo stellare da <destination>."
+	on offer
+		conversation
+			`Incontri Tiliia e l'osservatore di Casa Kaatrij nella baia dell'hangar, con il Vujlet attrezzato appositamente, che ora riluce ovunque di un lustro oleoso e iridescente. Tiliia e l'osservatore sono nel mezzo di una conversazione accesa; senti un pezzo di frase che finisce con "...sciocco fidarsi di un alieno," pronunciata dall'osservatore.`
+			`	Tiliia ti fa cenno di avvicinarti. "Bene, capitano. Il nostro alleato stava appena esprimendo l'importanza della tua puntualità in questo compito. Kaatrij non desidera restare a lungo separato dal suo ninnolo."`
+			`	"Bene," dici. "C'è altro che devo sapere?"`
+			`	L'osservatore ti scruta con uno sguardo senza emozioni. "I nostri sforzi proteggeranno la nave dal calore della stella, ma poco altro. Sarebbe saggio non indugiare nei Tangles."`
+			`	Tiliia si strofina le braccia e un impulso di blu elettrico le attraversa. "È ora di andare, allora, capitano!"`
+				accept
+
+mission "Successors: Ghosts Aqrabe 7"
+	name "Ritorna a Kasii-Cavasaa-Oa"
+	description "Fuggi dalla nave drone e torna a <destination> con il metallo stellare."
+	landing
+	source "Exotic Metal Garden"
+	destination "Kasii-Cavasaa-Oa"
+	cargo "Stellar metal" 40
+	passengers 2
+	to offer
+		has	"Successors: Ghosts Aqrabe 6: done"
+	blocked "Ti servirà <capacity> per raccogliere il metallo stellare. Torna con il Vujlet modificato quando avrai lo spazio libero."
+	on offer
+		conversation
+			`Passano diversi minuti dall'atterraggio prima che lo scafo della <ship> sia abbastanza freddo da permetterti di uscire: nonostante la tecnologia prestata da Kaatrij, la corazza della nave è ancora rovente. L'interno della baia di carico del giardino è immenso, con i fili metallici aggrovigliati avvolti su enormi bobine, ciascuna larga molti metri.`
+			`	Il tuo equipaggio si mette al lavoro sotto la supervisione di Tiliia e dell'osservatore di Kaatrij, staccando piccoli pezzi di metallo dai rotoli e portandoli sulla nave uno per uno. Presto Tiliia ti chiama in una sezione laterale dell'impianto e ti indica una delle bobine: a differenza delle altre, questa è completamente vuota.`
+			`	"Mi sembra di capire che la nostra visita qui non sia la prima, capitano," dicono.`
+			choice
+				`	"Chi può essere stato?"`
+					goto who
+				`	"Come hanno fatto ad atterrare qui?"`
+			label how
+			`	"È impossibile saperlo. Forse avevano qualche scudo come il nostro, o forse la loro nave era abbastanza robusta da sopportare l'ira della stella. In entrambi i casi è un cattivo segno."`
+				goto asked
+			label who
+			`	Tiliia freme di colore. "Se siamo stati fortunati, erano i Quarg o qualcuno della loro natura, venuto qui a ispezionare in solitudine. Ma se la fortuna ci manca, può darsi che l'aggressore di Kaatrij cerchi anche lui questo bottino, e che ci abbia preceduti."`
+			label asked
+			`	"In ogni caso," dicono, "dobbiamo affrettarci a riportare questa notizia ad Aqrabe."`
+				accept
+
+	on enter "Kasii-Cavaasa"
+		"successors: ghosts suspicion" ++
+		"successors: ghosts met solitude enforcers" ++
+		dialog `Mentre decolli dal giardino di metallo stellare, gli allarmi di prossimità della tua nave cominciano a suonare. Anche un'altra nave sta decollando, e le sue armi sono puntate dritte su di te!`
+
+	npc evade
+		ship "Hasur, Vowsworn" "Hasur-riita 4-1"
+		government "Solitude Enforcer"
+		personality launching heroic nemesis ramming unconstrained
+		on kill
+			set "Successors: Ghosts Hasur transmission"
+			dialog "Quando la nave drone esplode, trasmette dei dati alla tua nave. Non possono essere decifrati per ora."
+
+	on complete
+		outfit "Radiant Shield Shunt" -1
+		outfit "Multimodal Armor: Keystone" -1
+		event "successors: ghosts keystones finished" 50
+		payment 400000
+		"successors: ghosts houses dealt with" ++
+		set "successors: ghosts dealt with aqrabe"
+		log "Hai recuperato metallo stellare per Casa Kaatrij con una nave attrezzata allo scopo, sfuggendo per un soffio a navi da guerra all'inseguimento."
+		conversation
+			`Posi la nave su <planet> in mezzo a un mare di scaricatori, che cominciano a togliere il prezioso metallo stellare dalla stiva della <ship> quasi subito, sotto lo sguardo vigile dell'osservatore di Kaatrij. Tiliia, dopo aver inserito qualche dato sul proprio pad, finalmente si rilassa, recitando piano una serie di parole dall'aspetto aspro e apparentemente intraducibili.`
+			`	"Sai qualcosa di quelle navi?" chiedi, provocando un lungo gemito e un'onda di nero oleoso sulla loro pelle.`
+			`	"Questo è ciò che ci guadagnamo a devastare un nido, andando dove non dovremmo," dicono. "Era un drone, un guardiano automatico dei giorni in cui quel giardino era nuovo. Senza dubbio destinato a scacciare gli intrusi, come noi. Ma..."`
+			choice
+				`	"Ma che cosa?"`
+				`	"Dillo e basta!"`
+			`	"Una cosa del genere non dovrebbe esistere. Nessuna Casata avrebbe lasciato indietro una nave così, a marcire, non per un po' di metallo da poco. I cimeli di quell'epoca sono preziosi: non capisco perché una cosa simile sia stata buttata via con tanta facilità." Alla fine si rilassano un po', e l'onda nera si placa.`
+			`	"Ci hai comunque reso un servizio. Presto vedrai il tuo conto più pieno."`
+			choice
+				`	"E adesso che succede?"`
+				`	"E questa nave? Posso tenermela?"`
+					goto ship
+			label now
+			`	"Ora mettiamo al lavoro questo bottino, capitano. Io e gli altri qui abbiamo un lungo compito davanti: credo che riusciremo a dividere le pietre chiave e ad amplificarne gli effetti con il metallo stellare; è solo questione di quanto e di quanto bene. Ora c'è poco che tu possa fare per aiutarci, ma sarò certa di segnalare ad Aqrabe la tua utilità in questo compito."`
+			choice
+				`	"E questa nave? Posso tenermela?`
+			label ship
+			`	Tiliia annuisce. "Prima di partire ho sentito il nostro ufficiale di collegamento con Kaatrij. La nave non ha armi né nulla di troppo pericoloso perché tu la tenga, e Kaatrij ha senza dubbio già cominciato a rimuovere il suo congegno. Potresti considerarla un bonus sul tuo compenso, un favore della Casata nei tuoi confronti."`
+			branch "not confronted"
+				not "successors confronted tiliia"
+			label confronted
+			`	Tiliia si volta per andarsene, ma si ferma. "Ho delle scuse da farti prima di separarci, capitano," dicono. "Ti ho mostrato una certa mancanza di rispetto quando abbiamo parlato prima di partire. È strano essere accusati da qualcuno così estraneo ai nostri modi. Ma siamo isolati da molto tempo ormai, credo, e ascoltiamo solo noi stessi e i fantasmi degli altri. Si muovono cose più grandi di entrambi, ora, ma puoi credermi se dico che sarò cauta con il nostro tesoro. Non posso prometterti altro, ma almeno hai ragione a ricordarmelo."`
+			label "not confronted"
+			`	Venite interrotti dall'osservatore di Kaatrij, che vi informa che lo scarico del metallo è completo. Tiliia, pronta a cominciare la fase successiva del progetto, se ne va con loro, offrendoti un rapido inchino e un cortese "arrivederci".`
+			`	Pochi minuti dopo, ti viene notificato che hai ricevuto un pagamento di <payment> crediti da Casa Aqrabe.`

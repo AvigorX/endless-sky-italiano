@@ -1,0 +1,110 @@
+{
+ "block": {
+  "path": "data/korath/korath ships.txt",
+  "line_from": 364,
+  "line_to": 602,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:'olofez|plural|364|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 364,
+   "kind": "VALUE",
+   "context": "ship:'olofez",
+   "english": "'olofezes",
+   "italian": "'olofezes",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:'olofez|description|400|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 400,
+   "kind": "DESCRIPTION",
+   "context": "ship:'olofez",
+   "english": "The 'olofez-Class Carried Chaser, named for a renowned artist who painted their visions of ancient hunts, is a fighter carried by most Exile capital ships.",
+   "italian": "Il cacciatore imbarcato di classe 'olofez, intitolato a un rinomato artista che dipingeva le proprie visioni di antiche cacce, è un caccia trasportato dalla maggior parte delle navi capitali dell'Esilio.",
+   "ratio": 1.31
+  },
+  {
+   "idx": 3,
+   "id": "ship:'olofez|description|401|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 401,
+   "kind": "DESCRIPTION",
+   "context": "ship:'olofez",
+   "english": "\tFighters do not come equipped with a hyperdrive. You cannot carry a fighter unless you have a ship in your fleet with a fighter bay.",
+   "italian": "\tI caccia non sono dotati di iperguida. Non puoi trasportare un caccia a meno che tu non abbia nella tua flotta una nave con una baia di caccia.",
+   "ratio": 1.083
+  },
+  {
+   "idx": 4,
+   "id": "ship:Kas'ik Tek 7|description|442|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 442,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kas'ik Tek 7",
+   "english": "These small probes are primarily deployed by larger Korath Exile ships to scan for intruders, evaluate foreign vessels, and analyze system bodies. Their secondary function is to retrieve small debris and deactivated microbots spread across Korath space which have fallen off their ships, been fired from Shunt-Strikes, or were even deliberately deployed. Although the data observed and logged by an individual microbot is extremely limited, processing them in bulk yields a valuable gestalt of information. More importantly, the microbots can be recycled for use afterwards.",
+   "italian": "Queste piccole sonde vengono schierate soprattutto dalle navi Korath dell'Esilio più grandi, per cercare intrusi, valutare vascelli stranieri e analizzare i corpi del sistema. La loro funzione secondaria è recuperare piccoli detriti e microbot disattivati sparsi per lo spazio Korath, caduti dalle loro navi, lanciati dai Colpi Shunt o addirittura schierati di proposito. Benché i dati osservati e registrati da un singolo microbot siano estremamente limitati, elaborarli in massa produce una preziosa sintesi d'informazioni. E soprattutto i microbot possono essere riciclati per essere riusati.",
+   "ratio": 1.037
+  },
+  {
+   "idx": 5,
+   "id": "ship:Kas'ik Tek 7|description|443|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 443,
+   "kind": "DESCRIPTION",
+   "context": "ship:Kas'ik Tek 7",
+   "english": "\tDrones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay.",
+   "italian": "\tI droni non sono dotati di iperguida. Non puoi trasportare un drone a meno che tu non abbia nella tua flotta una nave con una baia per droni.",
+   "ratio": 1.118
+  },
+  {
+   "idx": 6,
+   "id": "ship:Rai'alorej|description|524|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 524,
+   "kind": "DESCRIPTION",
+   "context": "ship:Rai'alorej",
+   "english": "Although fierce in battle and highly adaptable, Korath do not easily recover from injury. Without the aid of a surgeon or more equipment than fits into a standard escape pod, a stranded, injured Korath faces poor odds of survival. Therefore, Korath who leave their home territory have placed great importance on the construction of hospital ships that can quickly locate, recover, and treat the survivors of wrecked ships.",
+   "italian": "Benché feroci in battaglia e molto adattabili, i Korath non si riprendono facilmente dalle ferite. Senza l'aiuto di un chirurgo o di più attrezzature di quante ne stiano in una capsula di salvataggio standard, un Korath ferito e isolato ha scarse probabilità di sopravvivere. Per questo i Korath che lasciano il loro territorio d'origine hanno dato grande importanza alla costruzione di navi ospedale capaci di localizzare, recuperare e curare in fretta i superstiti delle navi distrutte.",
+   "ratio": 1.156
+  },
+  {
+   "idx": 7,
+   "id": "ship:Rai'alorej|description|525|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 525,
+   "kind": "DESCRIPTION",
+   "context": "ship:Rai'alorej",
+   "english": "\tThe Rai'alorej-Class Refuge, named for a pioneer in the field of microbot-assisted surgery, is thoroughly appointed with lifeform scanners, locator beacon receivers, ambulances, and search-and-rescue teams. Once onboard, crash victims are greeted with the finest hospital facilities, microbot treatments, and stores of medicine the Exiles have at hand. Even incubators and nurseries are available to treat the young who grow up aboard ship.",
+   "italian": "\tIl rifugio di classe Rai'alorej, intitolato a una pioniera della chirurgia assistita da microbot, è dotato di tutto: scanner per forme di vita, ricevitori di radiofari di localizzazione, ambulanze e squadre di ricerca e soccorso. Una volta a bordo, i naufraghi trovano le migliori strutture ospedaliere, i trattamenti con i microbot e le scorte di medicine che gli Esiliati hanno a disposizione. Ci sono perfino incubatrici e nidi per curare i piccoli che crescono a bordo.",
+   "ratio": 1.075
+  },
+  {
+   "idx": 8,
+   "id": "ship:Ikatila'ej|description|601|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 601,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ikatila'ej",
+   "english": "For most of their manufacturing needs, the Korath rely, as even some terrestrial species do, upon their space station and asteroid infrastructure. Due to their spacebound existence, however, the acceptability for failure and downtime is slim to nonexistent. Should equipment aboard a station or a world-ship fail, the Ikatila'ej, named for an inventor famously proficient in a variety of fields, is called in to provide critical support. Its microbot-run factory produces basic living supplies, machine parts, and systems cores, and may assist in continuing stalled production.",
+   "italian": "Per la maggior parte delle proprie esigenze manifatturiere i Korath si affidano, come fanno anche alcune specie terrestri, alle loro stazioni spaziali e alle loro infrastrutture sugli asteroidi. Data la loro esistenza legata allo spazio, però, la tolleranza verso guasti e fermi di produzione è scarsa o nulla. Se un'apparecchiatura a bordo di una stazione o di una nave-mondo si guasta, l'Ikatila'ej, intitolato a un inventore famoso per la competenza in svariati campi, viene chiamato a fornire un supporto critico. La sua fabbrica gestita da microbot produce provviste di base, parti meccaniche e Systems Core, e può aiutare a riprendere produzioni bloccate.",
+   "ratio": 1.146
+  },
+  {
+   "idx": 9,
+   "id": "ship:Ikatila'ej|description|602|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 602,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ikatila'ej",
+   "english": "\tWhen not assisting with damaged ships and stations, or replenishing its own stores, the Ikatila'ej serves as an all-in-one recycling, mining, refining, and factory ship, using its microbot-powered grinder to rapidly turn asteroids and garbage into whatever products the civilian economic planning committees have determined to be in the most dire need.",
+   "italian": "\tQuando non assiste navi e stazioni danneggiate o non rifornisce le proprie scorte, l'Ikatila'ej funge da nave tuttofare: riciclaggio, estrazione, raffinazione e fabbrica, usando il suo macinatore alimentato dai microbot per trasformare in fretta asteroidi e rifiuti in qualunque prodotto i comitati civili di pianificazione economica abbiano stabilito essere più urgentemente necessario.",
+   "ratio": 1.099
+  }
+ ]
+}

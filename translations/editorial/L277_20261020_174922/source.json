@@ -1,0 +1,102 @@
+{
+ "block": {
+  "path": "data/korath/korath ships.txt",
+  "line_from": 2010,
+  "line_to": 2363,
+  "units": 7
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Model 8|description|2010|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 2010,
+   "kind": "DESCRIPTION",
+   "context": "ship:Model 8",
+   "english": "The primary role of the smallest Kor Mereti drones is asteroid mining, but their lasers can also be employed as offensive weapons when necessary.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The primary role of the smallest Kor Mereti drones is asteroid mining, but their lasers can also be employed as offensive weapons when necessary.\"",
+   "english_hash": "c32c94e715079bb5"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Model 16|description|2065|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 2065,
+   "kind": "DESCRIPTION",
+   "context": "ship:Model 16",
+   "english": "The Kor Mereti war drones are constructed in a modular fashion, which allows them to grow over time as more materials become available. This one is recently built, and relatively small.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Kor Mereti war drones are constructed in a modular fashion, which allows them to grow over time as more materials become available. This one is recently built, and relatively small.\"",
+   "english_hash": "45e9eb59f052dfeb"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Model 32|description|2121|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 2121,
+   "kind": "DESCRIPTION",
+   "context": "ship:Model 32",
+   "english": "The Kor Mereti built their drones to mimic life: capable of growth and development throughout their life cycles. Their automated factories can convert the drones from one configuration to another by adding or removing modules.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Kor Mereti built their drones to mimic life: capable of growth and development throughout their life cycles. Their automated factories can convert the drones from one configuration to another by adding or removing modules.\"",
+   "english_hash": "d2eeb9e344819d6b"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Model 64|description|2179|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 2179,
+   "kind": "DESCRIPTION",
+   "context": "ship:Model 64",
+   "english": "This medium-sized drone serves the Kor Mereti fleets in much the same way as a human Frigate, but in terms of total firepower it is far beyond anything humans have constructed.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This medium-sized drone serves the Kor Mereti fleets in much the same way as a human Frigate, but in terms of total firepower it is far beyond anything humans have constructed.\"",
+   "english_hash": "9da66d5b10f69f31"
+  },
+  {
+   "idx": 5,
+   "id": "ship:Model 128|description|2238|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 2238,
+   "kind": "DESCRIPTION",
+   "context": "ship:Model 128",
+   "english": "As Kor Mereti drones continue to grow and develop into their final form, they split down the middle. At the same time, their shielding and weaponry continue to become stronger.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"As Kor Mereti drones continue to grow and develop into their final form, they split down the middle. At the same time, their shielding and weaponry continue to become stronger.\"",
+   "english_hash": "0c5f3245da325a33"
+  },
+  {
+   "idx": 6,
+   "id": "ship:Model 256|description|2299|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 2299,
+   "kind": "DESCRIPTION",
+   "context": "ship:Model 256",
+   "english": "There is a saying among the Quarg that every species which insists on studying war will eventually construct a weapon that outlives its creators. For the Korath, their war drones have very nearly done so.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"There is a saying among the Quarg that every species which insists on studying war will eventually construct a weapon that outlives its creators. For the Korath, their war drones have very nearly done so.\"",
+   "english_hash": "d8c9afa8fdb9aff2"
+  },
+  {
+   "idx": 7,
+   "id": "ship:Model 512|description|2363|0",
+   "path": "data/korath/korath ships.txt",
+   "line": 2363,
+   "kind": "DESCRIPTION",
+   "context": "ship:Model 512",
+   "english": "This is the final state in the evolution of a Kor Mereti war drone: a perfect ring, with incredibly powerful shields and turrets firing in every direction.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"This is the final state in the evolution of a Kor Mereti war drone: a perfect ring, with incredibly powerful shields and turrets firing in every direction.\"",
+   "english_hash": "d84a11566525c350"
+  }
+ ]
+}

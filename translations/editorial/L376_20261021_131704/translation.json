@@ -1,0 +1,165 @@
+{
+ "block": {
+  "path": "data/successors/successor hails.txt",
+  "line_from": 18,
+  "line_to": 1109,
+  "units": 14
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "phrase:successor friendly hail|Art thou the \"noble visitor\" of whom the Houses speak?|18|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 18,
+   "kind": "TEXT",
+   "context": "phrase:successor friendly hail",
+   "english": "Art thou the \"noble visitor\" of whom the Houses speak?",
+   "italian": "Sei tu il \"nobile visitatore\" di cui parlano le Casate?",
+   "ratio": 1.019
+  },
+  {
+   "idx": 2,
+   "id": "phrase:successor friendly hail|Art thou the \"honored guest\" the Houses do parade?|19|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 19,
+   "kind": "TEXT",
+   "context": "phrase:successor friendly hail",
+   "english": "Art thou the \"honored guest\" the Houses do parade?",
+   "italian": "Sei tu l'\"ospite onorato\" che le Casate ostentano?",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "phrase:successor friendly disabled hail|\"Help!\" we ask, fair visitor,|367|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 367,
+   "kind": "TEXT",
+   "context": "phrase:successor friendly disabled hail",
+   "english": "\"Help!\" we ask, fair visitor,",
+   "italian": "\"Aiuto!\", ti chiediamo, nobile visitatore,",
+   "ratio": 1.448
+  },
+  {
+   "idx": 4,
+   "id": "phrase:high houses friendly hail|\"Noble friend,\" thou art by our decree|399|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 399,
+   "kind": "TEXT",
+   "context": "phrase:high houses friendly hail",
+   "english": "\"Noble friend,\" thou art by our decree",
+   "italian": "\"Nobile amico\", tu sei per nostro decreto",
+   "ratio": 1.079
+  },
+  {
+   "idx": 5,
+   "id": "phrase:high houses friendly hail|\"Honored guest,\" within our skies thou art|400|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 400,
+   "kind": "TEXT",
+   "context": "phrase:high houses friendly hail",
+   "english": "\"Honored guest,\" within our skies thou art",
+   "italian": "\"Ospite onorato\", nei nostri cieli tu sei",
+   "ratio": 0.976
+  },
+  {
+   "idx": 6,
+   "id": "phrase:high houses friendly hail|\"Regal sojourner,\" thy name shall be with us|401|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 401,
+   "kind": "TEXT",
+   "context": "phrase:high houses friendly hail",
+   "english": "\"Regal sojourner,\" thy name shall be with us",
+   "italian": "\"Sovrano viandante\", il tuo nome resterà con noi",
+   "ratio": 1.091
+  },
+  {
+   "idx": 7,
+   "id": "phrase:aqrabe friendly hail|\"Feed not the yawning maw of idleness.\"|1102|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 1102,
+   "kind": "TEXT",
+   "context": "phrase:aqrabe friendly hail",
+   "english": "\"Feed not the yawning maw of idleness.\"",
+   "italian": "\"Non nutrire la bocca spalancata dell'ozio.\"",
+   "ratio": 1.128
+  },
+  {
+   "idx": 8,
+   "id": "phrase:aqrabe friendly hail|\"Prosperity enacts its own virtues.\"|1103|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 1103,
+   "kind": "TEXT",
+   "context": "phrase:aqrabe friendly hail",
+   "english": "\"Prosperity enacts its own virtues.\"",
+   "italian": "\"La prosperità mette in atto le proprie virtù.\"",
+   "ratio": 1.306
+  },
+  {
+   "idx": 9,
+   "id": "phrase:aqrabe friendly hail|\"Strength is the enabler of virtue.\"|1104|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 1104,
+   "kind": "TEXT",
+   "context": "phrase:aqrabe friendly hail",
+   "english": "\"Strength is the enabler of virtue.\"",
+   "italian": "\"La forza rende possibile la virtù.\"",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "phrase:aqrabe friendly hail|\"Resilience is the egg of success.\"|1105|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 1105,
+   "kind": "TEXT",
+   "context": "phrase:aqrabe friendly hail",
+   "english": "\"Resilience is the egg of success.\"",
+   "italian": "\"La resilienza è l'uovo del successo.\"",
+   "ratio": 1.086
+  },
+  {
+   "idx": 11,
+   "id": "phrase:aqrabe friendly hail|\"Ostentation is the skin of the false.\"|1106|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 1106,
+   "kind": "TEXT",
+   "context": "phrase:aqrabe friendly hail",
+   "english": "\"Ostentation is the skin of the false.\"",
+   "italian": "\"L'ostentazione è la pelle del falso.\"",
+   "ratio": 0.974
+  },
+  {
+   "idx": 12,
+   "id": "phrase:aqrabe friendly hail|\"Security enables prosperity.\"|1107|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 1107,
+   "kind": "TEXT",
+   "context": "phrase:aqrabe friendly hail",
+   "english": "\"Security enables prosperity.\"",
+   "italian": "\"La sicurezza rende possibile la prosperità.\"",
+   "ratio": 1.5
+  },
+  {
+   "idx": 13,
+   "id": "phrase:aqrabe friendly hail|\"Betterment is not wrought without well-built tools.\"|1108|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 1108,
+   "kind": "TEXT",
+   "context": "phrase:aqrabe friendly hail",
+   "english": "\"Betterment is not wrought without well-built tools.\"",
+   "italian": "\"Il miglioramento non si forgia senza strumenti ben costruiti.\"",
+   "ratio": 1.189
+  },
+  {
+   "idx": 14,
+   "id": "phrase:aqrabe friendly hail|\"Let thy gold be thread, not statue.\"|1109|0",
+   "path": "data/successors/successor hails.txt",
+   "line": 1109,
+   "kind": "TEXT",
+   "context": "phrase:aqrabe friendly hail",
+   "english": "\"Let thy gold be thread, not statue.\"",
+   "italian": "\"Che il tuo oro sia filo, non statua.\"",
+   "ratio": 1.027
+  }
+ ]
+}

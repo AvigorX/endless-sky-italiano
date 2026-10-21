@@ -1,0 +1,209 @@
+{
+ "block": {
+  "path": "data/wanderer/wanderer missions.txt",
+  "line_from": 93,
+  "line_to": 136,
+  "units": 18
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Wanderers: Mereti: The Plant 4|name|93|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 93,
+   "kind": "VALUE",
+   "context": "mission:Wanderers: Mereti: The Plant 4",
+   "english": "Return to <planet>",
+   "italian": "Ritorno su <planet>",
+   "ratio": 1.056
+  },
+  {
+   "idx": 2,
+   "id": "mission:Wanderers: Mereti: The Plant 4|description|94|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 94,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderers: Mereti: The Plant 4",
+   "english": "Bring Va'ika back to <destination> in order to collect the Mereti plant and bring it to <origin>.",
+   "italian": "Riporta Va'ika a <destination> per prendere la pianta dei Mereti e portarla a <origin>.",
+   "ratio": 0.897
+  },
+  {
+   "idx": 3,
+   "id": "mission:Wanderers: Mereti: The Plant 4|This time, Va'ika guides you down into an equatorial lowland - a dry, grassy plain over which a cool wind blows. You can feel its similarity to the steppe you visited on Solima Skarati, but this time you can breathe freely, without the air stinging your eyes and mouth. Va'ika takes some soil and places it in a small device, looking at it for a moment before turning to you. \"Here. It will [grow, prosper] here.\"|102|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 102,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant 4",
+   "english": "This time, Va'ika guides you down into an equatorial lowland - a dry, grassy plain over which a cool wind blows. You can feel its similarity to the steppe you visited on Solima Skarati, but this time you can breathe freely, without the air stinging your eyes and mouth. Va'ika takes some soil and places it in a small device, looking at it for a moment before turning to you. \"Here. It will [grow, prosper] here.\"",
+   "italian": "Questa volta Va'ika ti guida in una pianura equatoriale: una distesa arida ed erbosa su cui soffia un vento fresco. Ne senti la somiglianza con la steppa che hai visitato su Solima Skarati, ma questa volta respiri liberamente, senza che l'aria ti pizzichi occhi e bocca. Va'ika prende un po' di terra e la mette in un piccolo dispositivo, lo guarda per un momento e poi si volta verso di te. \"Qui. Qui [crescerà, attecchirà].\"",
+   "ratio": 1.031
+  },
+  {
+   "idx": 4,
+   "id": "mission:Wanderers: Mereti: The Plant 4|\t\"Is there anything else I can do to help?\"|104|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 104,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant 4",
+   "english": "\t\"Is there anything else I can do to help?\"",
+   "italian": "\t\"C'è altro che posso fare per aiutare?\"",
+   "ratio": 0.93
+  },
+  {
+   "idx": 5,
+   "id": "mission:Wanderers: Mereti: The Plant 4|\t\"How can you be so sure?\"|106|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 106,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant 4",
+   "english": "\t\"How can you be so sure?\"",
+   "italian": "\t\"Come puoi esserne così sicura?\"",
+   "ratio": 1.269
+  },
+  {
+   "idx": 6,
+   "id": "mission:Wanderers: Mereti: The Plant 4|\t\"We have already collected significant data on the climate of this world. The only question I needed to answer in person was whether the [composition, nature] of the soil was suitable.\"|107|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 107,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant 4",
+   "english": "\t\"We have already collected significant data on the climate of this world. The only question I needed to answer in person was whether the [composition, nature] of the soil was suitable.\"",
+   "italian": "\t\"Abbiamo già raccolto dati significativi sul clima di questo mondo. L'unica domanda a cui dovevo rispondere di persona era se la [composizione, natura] del terreno fosse adatta.\"",
+   "ratio": 0.962
+  },
+  {
+   "idx": 7,
+   "id": "mission:Wanderers: Mereti: The Plant 4|label|108|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 108,
+   "kind": "UI_LABEL",
+   "context": "mission:Wanderers: Mereti: The Plant 4",
+   "english": "next steps",
+   "italian": "next steps",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "mission:Wanderers: Mereti: The Plant 4|\t\"Let us return to Vara Kehi'ki. We will send a small detachment of [healers, gardeners] to <planet>, to ensure that these plants become established. In the long term, we will return them to <origin> when it is healed.\"|109|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 109,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant 4",
+   "english": "\t\"Let us return to Vara Kehi'ki. We will send a small detachment of [healers, gardeners] to <planet>, to ensure that these plants become established. In the long term, we will return them to <origin> when it is healed.\"",
+   "italian": "\t\"Torniamo a Vara Kehi'ki. Manderemo un piccolo distaccamento di [guaritori, giardinieri] su <planet>, per assicurarci che queste piante attecchiscano. A lungo termine, le riporteremo su <origin> quando sarà guarito.\"",
+   "ratio": 0.991
+  },
+  {
+   "idx": 9,
+   "id": "mission:Wanderers: Mereti: The Plant 4|dialog|112|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 112,
+   "kind": "DIALOG",
+   "context": "mission:Wanderers: Mereti: The Plant 4",
+   "english": "The Mereti drones from earlier are still waiting at the spaceport when you arrive. Va'ika quickly disembarks and starts conversing with the locals, pausing only briefly to tell you to meet her in the spaceport.",
+   "italian": "I droni Mereti di prima ti aspettano ancora allo spazioporto quando arrivi. Va'ika sbarca in fretta e comincia a conversare con la gente del posto, fermandosi solo un attimo per dirti di raggiungerla allo spazioporto.",
+   "ratio": 1.033
+  },
+  {
+   "idx": 10,
+   "id": "mission:Wanderers: Mereti: The Plant 5|name|115|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 115,
+   "kind": "VALUE",
+   "context": "mission:Wanderers: Mereti: The Plant 5",
+   "english": "Plant to <planet>",
+   "italian": "La pianta per <planet>",
+   "ratio": 1.294
+  },
+  {
+   "idx": 11,
+   "id": "mission:Wanderers: Mereti: The Plant 5|description|116|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 116,
+   "kind": "DESCRIPTION",
+   "context": "mission:Wanderers: Mereti: The Plant 5",
+   "english": "Escort the Wanderer ship, carrying the plant and a team of Wanderers ready to help it grow, to <destination>.",
+   "italian": "Scorta la nave Wanderer che trasporta la pianta e una squadra di Wanderer pronta ad aiutarla a crescere, fino a <destination>.",
+   "ratio": 1.156
+  },
+  {
+   "idx": 12,
+   "id": "mission:Wanderers: Mereti: The Plant 5|dialog|120|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 120,
+   "kind": "DIALOG",
+   "context": "mission:Wanderers: Mereti: The Plant 5",
+   "english": "You have arrived on <planet>, but you have left the <npc> behind. It's carrying the plant, so you ought to take off and wait for it to arrive.",
+   "italian": "Sei arrivato su <planet>, ma hai lasciato indietro la <npc>. Sta trasportando la pianta, quindi dovresti decollare e aspettare che arrivi.",
+   "ratio": 0.972
+  },
+  {
+   "idx": 13,
+   "id": "mission:Wanderers: Mereti: The Plant 5|You arrive in the spaceport just in time to see the plant being delicately loaded onto a Strong Wind. The Mereti drones sit stationary on the landing pad, and you get a distinct feeling that they are watching you intently.|125|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 125,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant 5",
+   "english": "You arrive in the spaceport just in time to see the plant being delicately loaded onto a Strong Wind. The Mereti drones sit stationary on the landing pad, and you get a distinct feeling that they are watching you intently.",
+   "italian": "Arrivi allo spazioporto appena in tempo per vedere la pianta caricata con delicatezza su una Strong Wind. I droni Mereti restano immobili sulla piazzola, e hai la netta sensazione che ti stiano osservando con attenzione.",
+   "ratio": 0.991
+  },
+  {
+   "idx": 14,
+   "id": "mission:Wanderers: Mereti: The Plant 5|\tVa'ika stands beside you as you watch, staring into the distance almost morosely, before speaking. \"It is regrettable that we have been [forced, made] to use these ships for war. This is far closer to the purpose we originally [conceived, designed] them to [serve, fulfill].\" You catch a glimpse of a feather falling to the ground as she speaks. Then, she interrupts herself. \"No, I should not be so [disheartened?]. The Korath drones have turned their back on their creators' [wishes, design] and seek to [heal, tend] these worlds alongside us. That is something we can all appreciate.\"|126|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 126,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant 5",
+   "english": "\tVa'ika stands beside you as you watch, staring into the distance almost morosely, before speaking. \"It is regrettable that we have been [forced, made] to use these ships for war. This is far closer to the purpose we originally [conceived, designed] them to [serve, fulfill].\" You catch a glimpse of a feather falling to the ground as she speaks. Then, she interrupts herself. \"No, I should not be so [disheartened?]. The Korath drones have turned their back on their creators' [wishes, design] and seek to [heal, tend] these worlds alongside us. That is something we can all appreciate.\"",
+   "italian": "\tVa'ika ti sta accanto mentre guardi, fissando la distanza quasi con tristezza, prima di parlare. \"È deplorevole che siamo stati [costretti, obbligati] a usare queste navi per la guerra. Questo è molto più vicino allo scopo per cui le avevamo [concepite, progettate] e che dovevano [servire, adempiere].\" Intravedi una piuma che cade a terra mentre parla. Poi si interrompe. \"No, non dovrei essere così [scoraggiata?]. I droni Korath hanno voltato le spalle ai [desideri, progetti] dei loro creatori e cercano di [guarire, curare] questi mondi insieme a noi. È qualcosa che possiamo apprezzare tutti.\"",
+   "ratio": 1.022
+  },
+  {
+   "idx": 15,
+   "id": "mission:Wanderers: Mereti: The Plant 5|\t\"Are you sure this will work?\"|128|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 128,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant 5",
+   "english": "\t\"Are you sure this will work?\"",
+   "italian": "\t\"Sei sicuro che funzionerà?\"",
+   "ratio": 0.935
+  },
+  {
+   "idx": 16,
+   "id": "mission:Wanderers: Mereti: The Plant 5|\tVa'ika straightens up, and speaks with clear confidence. \"It is a [fortunate, convenient] situation. <planet> needs relatively little healing, so [housing, growing] these plants here will not create [difficulties, inconveniences] for our work. We have sent a small specialist [group, team] to [cultivate, look after] the plants. I have the utmost confidence in their [knowledge, abilities].\"|129|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 129,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant 5",
+   "english": "\tVa'ika straightens up, and speaks with clear confidence. \"It is a [fortunate, convenient] situation. <planet> needs relatively little healing, so [housing, growing] these plants here will not create [difficulties, inconveniences] for our work. We have sent a small specialist [group, team] to [cultivate, look after] the plants. I have the utmost confidence in their [knowledge, abilities].\"",
+   "italian": "\tVa'ika si raddrizza e parla con chiara sicurezza. \"È una situazione [fortunata, favorevole]. <planet> ha bisogno di relativamente poca guarigione, quindi [ospitare, tenere] queste piante qui non creerà [difficoltà, disagi] al nostro lavoro. Abbiamo mandato un piccolo [gruppo, team] di specialisti a [coltivare, accudire] le piante. Ho la massima fiducia nelle loro [conoscenze, capacità].\"",
+   "ratio": 0.997
+  },
+  {
+   "idx": 17,
+   "id": "mission:Wanderers: Mereti: The Plant 5|The Mereti drones follow you and the <npc> down to the planet, landing nearby. You and Va'ika watch as the plant is carefully, almost ceremoniously, taken and placed in the ground.|135|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 135,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant 5",
+   "english": "The Mereti drones follow you and the <npc> down to the planet, landing nearby. You and Va'ika watch as the plant is carefully, almost ceremoniously, taken and placed in the ground.",
+   "italian": "I droni Mereti ti seguono, insieme alla <npc>, fino al pianeta e atterrano lì vicino. Tu e Va'ika guardate mentre la pianta viene presa con cura, quasi con cerimonia, e deposta nel terreno.",
+   "ratio": 1.05
+  },
+  {
+   "idx": 18,
+   "id": "mission:Wanderers: Mereti: The Plant 5|\tAfter the plant has been suitably placed, Va'ika turns to you. \"I will stay here for some time to [supervise, observe] the work, but it will soon be time for me to [depart, return] and oversee the healing of other worlds. I thank you most [gratefully, sincerely] for your help, <first>.\"|136|0",
+   "path": "data/wanderer/wanderer missions.txt",
+   "line": 136,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Wanderers: Mereti: The Plant 5",
+   "english": "\tAfter the plant has been suitably placed, Va'ika turns to you. \"I will stay here for some time to [supervise, observe] the work, but it will soon be time for me to [depart, return] and oversee the healing of other worlds. I thank you most [gratefully, sincerely] for your help, <first>.\"",
+   "italian": "\tDopo che la pianta è stata sistemata come si deve, Va'ika si volta verso di te. \"Resterò qui per un po' a [sovrintendere, osservare] il lavoro, ma presto sarà tempo che io [parta, torni] a sorvegliare la guarigione di altri mondi. Ti ringrazio molto [gratamente, sinceramente] per il tuo aiuto, <first>.\"",
+   "ratio": 1.059
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "block": {
+  "path": "data/pug/pug ships.txt",
+  "line_from": 62,
+  "line_to": 238,
+  "units": 4
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Pug Zibruka|description|62|0",
+   "path": "data/pug/pug ships.txt",
+   "line": 62,
+   "kind": "DESCRIPTION",
+   "context": "ship:Pug Zibruka",
+   "english": "The Zibruka is the smallest Pug warship that you know of. Despite having only two gun ports, its two advanced guns combined with its fast and efficient engine systems make it a fearsome ship to face off against, especially in swarms.",
+   "italian": "Lo Zibruka è la più piccola nave da guerra Pug che tu conosca. Benché abbia solo due porti per cannoni, i suoi due cannoni avanzati combinati con i motori veloci ed efficienti ne fanno una nave temibile da affrontare, soprattutto in sciami.",
+   "ratio": 1.03
+  },
+  {
+   "idx": 2,
+   "id": "ship:Pug Enfolta|description|118|0",
+   "path": "data/pug/pug ships.txt",
+   "line": 118,
+   "kind": "DESCRIPTION",
+   "context": "ship:Pug Enfolta",
+   "english": "The Enfolta is a medium-sized Pug warship. It has a formidable armament of advanced weaponry supported by powerful integrated energy generation. A single Enfolta can take on multiple smaller human ships.",
+   "italian": "L'Enfolta è una nave da guerra Pug di taglia media. Ha un formidabile armamento di armi avanzate sostenute da una potente generazione di energia integrata. Un solo Enfolta può affrontare più navi umane più piccole.",
+   "ratio": 1.054
+  },
+  {
+   "idx": 3,
+   "id": "ship:Pug Maboro|description|176|0",
+   "path": "data/pug/pug ships.txt",
+   "line": 176,
+   "kind": "DESCRIPTION",
+   "context": "ship:Pug Maboro",
+   "english": "The Maboro appears to be the Pug's capital warship. Its shield matrix and hull are much weaker than human capital ships; however, it is able to regenerate its shields quickly. Its fearsome ordnance and advanced anti-missile defenses make it a ship that only the strongest human capital ships are able to oppose.",
+   "italian": "Il Maboro sembra essere la nave da guerra capitale dei Pug. La sua matrice di scudi e lo scafo sono molto più deboli di quelli delle navi capitali umane; è però capace di rigenerare rapidamente gli scudi. Il suo armamento temibile e le difese antimissile avanzate ne fanno una nave che solo le navi capitali umane più potenti riescono a contrastare.",
+   "ratio": 1.122
+  },
+  {
+   "idx": 4,
+   "id": "ship:Pug Arfecta|description|238|0",
+   "path": "data/pug/pug ships.txt",
+   "line": 238,
+   "kind": "DESCRIPTION",
+   "context": "ship:Pug Arfecta",
+   "english": "This is a Pug \"tier 3\" warship, intended for use in combat against either a species on par with the Quarg, or a lesser species that has decided to be particularly meddlesome.",
+   "italian": "È una nave da guerra Pug di \"terzo livello\", pensata per combattere contro una specie pari ai Quarg, o contro una specie minore che abbia deciso di essere particolarmente invadente.",
+   "ratio": 1.04
+  }
+ ]
+}

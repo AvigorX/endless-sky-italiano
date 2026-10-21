@@ -1,0 +1,253 @@
+{
+ "block": {
+  "path": "data/human/deep jobs.txt",
+  "line_from": 333,
+  "line_to": 453,
+  "units": 22
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Transport scientists|dialog|333|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 333,
+   "kind": "DIALOG",
+   "context": "mission:Transport scientists",
+   "english": "The scientists have been giddily discussing the results of their research during the entire trip. You're happy for a bit of peace and quiet as they make tracks for a prominent research lab to have the results analyzed. You prepare for the return journey to <planet>.",
+   "italian": "Per tutto il viaggio gli scienziati hanno discusso con entusiasmo i risultati delle loro ricerche. Sei contento di un po' di quiete mentre si dirigono verso un laboratorio di ricerca importante per far analizzare i risultati. Ti prepari al viaggio di ritorno su <planet>.",
+   "ratio": 1.019
+  },
+  {
+   "idx": 2,
+   "id": "mission:Transport scientists|dialog|337|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 337,
+   "kind": "DIALOG",
+   "context": "mission:Transport scientists",
+   "english": "You bid goodbye to the scientists and accept your payment of <payment>.",
+   "italian": "Saluti gli scienziati e accetti il pagamento di <payment>.",
+   "ratio": 0.817
+  },
+  {
+   "idx": 3,
+   "id": "mission:Transport science department|description|345|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 345,
+   "kind": "DESCRIPTION",
+   "context": "mission:Transport science department",
+   "english": "A department of <bunks> scientists needs some research notes analyzed at the facility on <stopovers>. Take the scientists there and then return them to <planet> for <payment>.",
+   "italian": "Un dipartimento di <bunks> scienziati ha bisogno che alcune note di ricerca siano analizzate nella struttura su <stopovers>. Porta lì gli scienziati e poi riportali su <planet> per <payment>.",
+   "ratio": 1.091
+  },
+  {
+   "idx": 4,
+   "id": "mission:Transport science department|dialog|356|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 356,
+   "kind": "DIALOG",
+   "context": "mission:Transport science department",
+   "english": "The scientists have been giddily sharing and discussing the results of each of their research teams during the entire trip. You're happy for a bit of peace and quiet as they make tracks for a prominent research lab to have the results analyzed. You prepare for the return journey to <planet>.",
+   "italian": "Per tutto il viaggio gli scienziati hanno condiviso e discusso con entusiasmo i risultati di ciascuno dei loro gruppi di ricerca. Sei contento di un po' di quiete mentre si dirigono verso un laboratorio di ricerca importante per far analizzare i risultati. Ti prepari al viaggio di ritorno su <planet>.",
+   "ratio": 1.034
+  },
+  {
+   "idx": 5,
+   "id": "mission:Transport science department|dialog|360|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 360,
+   "kind": "DIALOG",
+   "context": "mission:Transport science department",
+   "english": "You bid goodbye to the scientists and accept your payment of <payment>.",
+   "italian": "Saluti gli scienziati e accetti il pagamento di <payment>.",
+   "ratio": 0.817
+  },
+  {
+   "idx": 6,
+   "id": "mission:Escort science vessel|description|367|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 367,
+   "kind": "DESCRIPTION",
+   "context": "mission:Escort science vessel",
+   "english": "The crew of the science vessel <npc> requests an escort to <stopovers> where they plan to study some unusual phenomena. Escort them there and then return them to <planet> for <payment>.",
+   "italian": "L'equipaggio della nave scientifica <npc> chiede una scorta fino a <stopovers>, dove intende studiare alcuni fenomeni insoliti. Scortali lì e poi riportali su <planet> per <payment>.",
+   "ratio": 0.984
+  },
+  {
+   "idx": 7,
+   "id": "mission:Escort science vessel|dialog|395|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 395,
+   "kind": "DIALOG",
+   "context": "mission:Escort science vessel",
+   "english": "The <npc> lands alongside you and teams of scientists wearing crisp white lab coats and serious-looking boots and gloves descend on the test site with all manner of exotic equipment. As they take their measurements, you prepare for the return journey to <planet>.",
+   "italian": "La <npc> atterra accanto a te e squadre di scienziati in canditi camici bianchi, con stivali e guanti dall'aria severa, si riversano sul sito di prova con ogni sorta di attrezzatura esotica. Mentre prendono le loro misure, ti prepari al viaggio di ritorno su <planet>.",
+   "ratio": 1.019
+  },
+  {
+   "idx": 8,
+   "id": "mission:Escort science vessel|dialog|397|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 397,
+   "kind": "DIALOG",
+   "context": "mission:Escort science vessel",
+   "english": "You have reached <planet>, but you can't complete this mission until the <npc> has visited <stopovers> with you and then joined you here.",
+   "italian": "Hai raggiunto <planet>, ma non puoi completare questa missione finché la <npc> non avrà visitato <stopovers> con te e poi non ti avrà raggiunto qui.",
+   "ratio": 1.08
+  },
+  {
+   "idx": 9,
+   "id": "mission:Escort science vessel|dialog|399|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 399,
+   "kind": "DIALOG",
+   "context": "mission:Escort science vessel",
+   "english": "You bid goodbye to the captain of the <npc> and accept your payment of <payment>.",
+   "italian": "Saluti il capitano della <npc> e accetti il pagamento di <payment>.",
+   "ratio": 0.827
+  },
+  {
+   "idx": 10,
+   "id": "phrase:academic conference recording payment|You touch down on <planet> and make your way to the conference hall at a grand university. The provided credentials gain you access and you set up the recording equipment at the back of the room.|405|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 405,
+   "kind": "TEXT",
+   "context": "phrase:academic conference recording payment",
+   "english": "You touch down on <planet> and make your way to the conference hall at a grand university. The provided credentials gain you access and you set up the recording equipment at the back of the room.",
+   "italian": "Atterri su <planet> e ti dirigi verso l'aula conferenze di una grande università. Le credenziali fornite ti danno accesso e sistemi l'attrezzatura di registrazione in fondo alla sala.",
+   "ratio": 0.938
+  },
+  {
+   "idx": 11,
+   "id": "phrase:academic conference recording payment|The panelists are electrifying, speaking eloquently on a variety of cutting-edge topics in the sciences and humanities. The experience leaves you feeling remarkably optimistic about the future of humanity here in the stars.|409|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 409,
+   "kind": "TEXT",
+   "context": "phrase:academic conference recording payment",
+   "english": "The panelists are electrifying, speaking eloquently on a variety of cutting-edge topics in the sciences and humanities. The experience leaves you feeling remarkably optimistic about the future of humanity here in the stars.",
+   "italian": "I relatori sono elettrizzanti e parlano con eloquenza di temi all'avanguardia nelle scienze e nelle discipline umanistiche. L'esperienza ti lascia notevolmente ottimista sul futuro dell'umanità tra le stelle.",
+   "ratio": 0.933
+  },
+  {
+   "idx": 12,
+   "id": "phrase:academic conference recording payment|You transmit the video to your contact on <origin> and receive your payment of <payment>.|413|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 413,
+   "kind": "TEXT",
+   "context": "phrase:academic conference recording payment",
+   "english": "You transmit the video to your contact on <origin> and receive your payment of <payment>.",
+   "italian": "Trasmeti il video al tuo contatto su <origin> e ricevi il pagamento di <payment>.",
+   "ratio": 0.91
+  },
+  {
+   "idx": 13,
+   "id": "mission:Record academic conference|description|418|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 418,
+   "kind": "DESCRIPTION",
+   "context": "mission:Record academic conference",
+   "english": "Record an academic conference on <destination> for professors who cannot attend. Credentials and recording equipment will be provided. Payment is <payment>.",
+   "italian": "Registra una conferenza accademica su <destination> per i professori che non possono partecipare. Credenziali e attrezzatura di registrazione saranno fornite. Il pagamento è <payment>.",
+   "ratio": 1.179
+  },
+  {
+   "idx": 14,
+   "id": "phrase:secure package pickup|As instructed, you|436|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 436,
+   "kind": "TEXT",
+   "context": "phrase:secure package pickup",
+   "english": "As instructed, you",
+   "italian": "Come da istruzioni, tu",
+   "ratio": 1.222
+  },
+  {
+   "idx": 15,
+   "id": "phrase:secure package pickup|You|437|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 437,
+   "kind": "TEXT",
+   "context": "phrase:secure package pickup",
+   "english": "You",
+   "italian": "Tu",
+   "ratio": 0.667
+  },
+  {
+   "idx": 16,
+   "id": "phrase:secure package pickup|collect the package from a secure baggage counter|441|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 441,
+   "kind": "TEXT",
+   "context": "phrase:secure package pickup",
+   "english": "collect the package from a secure baggage counter",
+   "italian": "ritiri il pacco da un banco bagagli sorvegliato",
+   "ratio": 0.959
+  },
+  {
+   "idx": 17,
+   "id": "phrase:secure package pickup|take possession of the package from a security desk|442|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 442,
+   "kind": "TEXT",
+   "context": "phrase:secure package pickup",
+   "english": "take possession of the package from a security desk",
+   "italian": "prendi in consegna il pacco da un banco di sicurezza",
+   "ratio": 1.02
+  },
+  {
+   "idx": 18,
+   "id": "phrase:secure package pickup|in a quiet part of the spaceport.|446|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 446,
+   "kind": "TEXT",
+   "context": "phrase:secure package pickup",
+   "english": "in a quiet part of the spaceport.",
+   "italian": "in una zona tranquilla dello spazioporto.",
+   "ratio": 1.242
+  },
+  {
+   "idx": 19,
+   "id": "phrase:secure package pickup|near your landing site.|447|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 447,
+   "kind": "TEXT",
+   "context": "phrase:secure package pickup",
+   "english": "near your landing site.",
+   "italian": "vicino al tuo punto di atterraggio.",
+   "ratio": 1.522
+  },
+  {
+   "idx": 20,
+   "id": "phrase:secure package pickup|It is a large box on a built-in secure antigrav trolley.|451|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 451,
+   "kind": "TEXT",
+   "context": "phrase:secure package pickup",
+   "english": "It is a large box on a built-in secure antigrav trolley.",
+   "italian": "È una cassa grande su un carrello antigravità di sicurezza integrato.",
+   "ratio": 1.232
+  },
+  {
+   "idx": 21,
+   "id": "phrase:secure package pickup|It is a small box with a complex, electronic combination lock.|452|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 452,
+   "kind": "TEXT",
+   "context": "phrase:secure package pickup",
+   "english": "It is a small box with a complex, electronic combination lock.",
+   "italian": "È una scatola piccola con una serratura elettronica a combinazione.",
+   "ratio": 1.081
+  },
+  {
+   "idx": 22,
+   "id": "phrase:secure package pickup|It is a soft but tightly wrapped package that makes a disquieting sound if you squeeze it.|453|0",
+   "path": "data/human/deep jobs.txt",
+   "line": 453,
+   "kind": "TEXT",
+   "context": "phrase:secure package pickup",
+   "english": "It is a soft but tightly wrapped package that makes a disquieting sound if you squeeze it.",
+   "italian": "È un pacco morbido ma avvolto stretto, che emette un suono inquietante se lo strizzi.",
+   "ratio": 0.944
+  }
+ ]
+}

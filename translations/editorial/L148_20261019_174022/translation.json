@@ -1,0 +1,187 @@
+{
+ "block": {
+  "path": "data/coalition/coalition jobs.txt",
+  "line_from": 309,
+  "line_to": 435,
+  "units": 16
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Coalition: Heliarch Candidate|dialog|309|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 309,
+   "kind": "DIALOG",
+   "context": "mission:Coalition: Heliarch Candidate",
+   "english": "Heliarch agents meet your ship as soon as it docks and receive the candidate whom you have been transporting, in a small ceremony. A few minutes later you receive a transfer of <payment>.",
+   "italian": "Gli agenti Heliarch vengono incontro alla tua nave appena attracca e ricevono il candidato che hai trasportato, con una piccola cerimonia. Pochi minuti dopo ricevi un bonifico di <payment>.",
+   "ratio": 1.011
+  },
+  {
+   "idx": 2,
+   "id": "phrase:coalition interpreters dialog|You drop off the interpreters on <planet>. A few minutes later you receive a transfer of <payment>.|314|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 314,
+   "kind": "TEXT",
+   "context": "phrase:coalition interpreters dialog",
+   "english": "You drop off the interpreters on <planet>. A few minutes later you receive a transfer of <payment>.",
+   "italian": "Scarichi gli interpreti su <planet>. Pochi minuti dopo ricevi un bonifico di <payment>.",
+   "ratio": 0.879
+  },
+  {
+   "idx": 3,
+   "id": "mission:Coalition: Interpreters 1|name|319|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 319,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Interpreters 1",
+   "english": "Interpreters to <planet>",
+   "italian": "Interpreti per <planet>",
+   "ratio": 0.958
+  },
+  {
+   "idx": 4,
+   "id": "mission:Coalition: Interpreters 1|description|320|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 320,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Interpreters 1",
+   "english": "Bring these <bunks> Heliarch agents, trained as interpreters and mediators, to <destination>. Payment is <payment>.",
+   "italian": "Porta questi <bunks> agenti Heliarch, addestrati come interpreti e mediatori, a <destination>. Il compenso è di <payment>.",
+   "ratio": 1.061
+  },
+  {
+   "idx": 5,
+   "id": "mission:Coalition: Interpreters 2|name|340|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 340,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Interpreters 2",
+   "english": "Interpreters to <planet>",
+   "italian": "Interpreti per <planet>",
+   "ratio": 0.958
+  },
+  {
+   "idx": 6,
+   "id": "mission:Coalition: Interpreters 2|description|341|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 341,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Interpreters 2",
+   "english": "Bring these <bunks> Heliarch agents, trained as interpreters and mediators, to <destination>. Payment is <payment>.",
+   "italian": "Porta questi <bunks> agenti Heliarch, addestrati come interpreti e mediatori, a <destination>. Il compenso è di <payment>.",
+   "ratio": 1.061
+  },
+  {
+   "idx": 7,
+   "id": "mission:Coalition: Interpreters 3|name|361|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 361,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Interpreters 3",
+   "english": "Interpreters to <planet>",
+   "italian": "Interpreti per <planet>",
+   "ratio": 0.958
+  },
+  {
+   "idx": 8,
+   "id": "mission:Coalition: Interpreters 3|description|362|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 362,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Interpreters 3",
+   "english": "Bring these <bunks> Heliarch agents, trained as interpreters and mediators, to <destination>. Payment is <payment>.",
+   "italian": "Porta questi <bunks> agenti Heliarch, addestrati come interpreti e mediatori, a <destination>. Il compenso è di <payment>.",
+   "ratio": 1.061
+  },
+  {
+   "idx": 9,
+   "id": "phrase:coalition peacekeepers dialog|You drop off the peacekeepers on <planet>. A few minutes later you receive a transfer of <payment>.|382|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 382,
+   "kind": "TEXT",
+   "context": "phrase:coalition peacekeepers dialog",
+   "english": "You drop off the peacekeepers on <planet>. A few minutes later you receive a transfer of <payment>.",
+   "italian": "Scarichi i peacekeeper su <planet>. Pochi minuti dopo ricevi un bonifico di <payment>.",
+   "ratio": 0.869
+  },
+  {
+   "idx": 10,
+   "id": "mission:Coalition: Peacekeepers 1|name|387|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 387,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Peacekeepers 1",
+   "english": "Peacekeepers to <planet>",
+   "italian": "Peacekeeper per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "mission:Coalition: Peacekeepers 1|description|388|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 388,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Peacekeepers 1",
+   "english": "Transport this corps of <bunks> peacekeepers to <destination> to investigate reports of Lunarium activity. Payment is <payment>.",
+   "italian": "Trasporta questo corpo di <bunks> peacekeeper a <destination> per indagare su segnalazioni di attività dei Lunarium. Il compenso è di <payment>.",
+   "ratio": 1.125
+  },
+  {
+   "idx": 12,
+   "id": "mission:Coalition: Peacekeepers 2|name|408|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 408,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Peacekeepers 2",
+   "english": "Peacekeepers to <planet>",
+   "italian": "Peacekeeper per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "mission:Coalition: Peacekeepers 2|description|409|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 409,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Peacekeepers 2",
+   "english": "Transport this corps of <bunks> peacekeepers to <destination> to investigate reports of Lunarium activity. Payment is <payment>.",
+   "italian": "Trasporta questo corpo di <bunks> peacekeeper a <destination> per indagare su segnalazioni di attività dei Lunarium. Il compenso è di <payment>.",
+   "ratio": 1.125
+  },
+  {
+   "idx": 14,
+   "id": "phrase:coalition interspecies settlers|You drop off the settlers on <planet>. A few minutes later you receive a transfer of <payment>.|429|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 429,
+   "kind": "TEXT",
+   "context": "phrase:coalition interspecies settlers",
+   "english": "You drop off the settlers on <planet>. A few minutes later you receive a transfer of <payment>.",
+   "italian": "Scarichi i coloni su <planet>. Pochi minuti dopo ricevi un bonifico di <payment>.",
+   "ratio": 0.853
+  },
+  {
+   "idx": 15,
+   "id": "mission:Coalition: Saryd Interspecies 1|name|434|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 434,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Saryd Interspecies 1",
+   "english": "Saryds to <planet>",
+   "italian": "Saryd per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 16,
+   "id": "mission:Coalition: Saryd Interspecies 1|description|435|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 435,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Saryd Interspecies 1",
+   "english": "As part of the Interspecies Exchange Program, these <bunks> volunteer settlers need transportation to <destination>. The government will pay their transport fee of <payment>.",
+   "italian": "Nell'ambito del Programma di Scambio tra Specie, questi <bunks> coloni volontari hanno bisogno di essere trasportati a <destination>. Il governo pagherà la loro tariffa di trasporto di <payment>.",
+   "ratio": 1.121
+  }
+ ]
+}

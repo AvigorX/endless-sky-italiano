@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/bunrodea/bunrodea outfits.txt",
+  "line_from": 135,
+  "line_to": 236,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:Solar Battery|plural|135|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 135,
+   "kind": "VALUE",
+   "context": "outfit:Solar Battery",
+   "english": "Solar Batteries",
+   "italian": "Solar Batteries",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:Solar Battery|description|146|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 146,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Solar Battery",
+   "english": "Bunrodean solar batteries are required for the installation of solar cells, but solar batteries are perfectly capable of going without solar cells. Many captains will install batteries to store energy gained from normal reactors without ever installing solar cells.",
+   "italian": "Bunrodean solar batteries are required for the installation of solar cells, but solar batteries are perfectly capable of going without solar cells. Many captains will install batteries to store energy gained from normal reactors without ever installing solar cells.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Solar Cell|description|159|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 159,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Solar Cell",
+   "english": "Bunrodean solar panels are extremely efficient, and are even capable of powering smaller or less powerful warships. But be warned: while these solar cells can provide significant energy, that is not without the drawback of also generating waste heat that scales with the energy generated, which can be especially hazardous when near bright stars.",
+   "italian": "Bunrodean solar panels are extremely efficient, and are even capable of powering smaller or less powerful warships. But be warned: while these solar cells can provide significant energy, that is not without the drawback of also generating waste heat that scales with the energy generated, which can be especially hazardous when near bright stars.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "outfit:Solar Cell|description|160|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 160,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Solar Cell",
+   "english": "\tThese cells must be installed on the mounting platform that comes with a solar battery to be used.",
+   "italian": "\tThese cells must be installed on the mounting platform that comes with a solar battery to be used.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:Reactor Overclocker|description|175|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 175,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reactor Overclocker",
+   "english": "The Reactor Overclocker is a component that can be installed into a Bunrodea reactor in order to modify its effectiveness. Overclockers increase the strength of the energy generation of a reactor, but at the cost of reduced heat efficiency.",
+   "italian": "The Reactor Overclocker is a component that can be installed into a Bunrodea reactor in order to modify its effectiveness. Overclockers increase the strength of the energy generation of a reactor, but at the cost of reduced heat efficiency.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:Reactor Limiter|description|188|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 188,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Reactor Limiter",
+   "english": "The Reactor Limiter is a component that can be installed into a Bunrodea reactor in order to modify its effectiveness. Limiters increase the heat efficiency of a reactor, but at the cost of reducing the strength of its energy generation.",
+   "italian": "The Reactor Limiter is a component that can be installed into a Bunrodea reactor in order to modify its effectiveness. Limiters increase the heat efficiency of a reactor, but at the cost of reducing the strength of its energy generation.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:Quark Reactor|description|203|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 203,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Quark Reactor",
+   "english": "Bunrodean reactors appear to be named after types of exotic stars that either once were or still are considered theoretical to humanity. A quark star was first discovered by humanity near the Polaris system during the 28th century, a star with core temperatures and pressures so extreme that quark matter is produced.",
+   "italian": "Bunrodean reactors appear to be named after types of exotic stars that either once were or still are considered theoretical to humanity. A quark star was first discovered by humanity near the Polaris system during the 28th century, a star with core temperatures and pressures so extreme that quark matter is produced.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:Quark Reactor|description|204|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 204,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Quark Reactor",
+   "english": "\tBunrodean reactors are able to be upgraded by installing Reactor Overclockers or Limiters, which alter the performance of the reactor. Each reactor only has a limited number of slots for these upgrades, though.",
+   "italian": "\tBunrodean reactors are able to be upgraded by installing Reactor Overclockers or Limiters, which alter the performance of the reactor. Each reactor only has a limited number of slots for these upgrades, though.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:Electroweak Reactor|description|219|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 219,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Electroweak Reactor",
+   "english": "The existence of the exotic stars that this Bunrodean reactor bears the name of is still unknown to humanity. An electroweak star is an exotic star that would be prevented from collapsing by the electroweak force as quarks are converted to leptons in the star's core.",
+   "italian": "The existence of the exotic stars that this Bunrodean reactor bears the name of is still unknown to humanity. An electroweak star is an exotic star that would be prevented from collapsing by the electroweak force as quarks are converted to leptons in the star's core.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:Electroweak Reactor|description|220|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 220,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Electroweak Reactor",
+   "english": "\tBunrodean reactors are able to be upgraded by installing Reactor Overclockers or Limiters, which alter the performance of the reactor. Each reactor only has a limited number of slots for these upgrades, though.",
+   "italian": "\tBunrodean reactors are able to be upgraded by installing Reactor Overclockers or Limiters, which alter the performance of the reactor. Each reactor only has a limited number of slots for these upgrades, though.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Dark Reactor|description|235|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 235,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Dark Reactor",
+   "english": "The term \"dark star\" can have different meanings, but one definition of it is a star whose core is formed around a large amount of dark matter. Such exotic stars are theorized by humanity to have possibly existed among the first generations of stars in the universe, with concentrations of dark matter acting as nucleation sites.",
+   "italian": "The term \"dark star\" can have different meanings, but one definition of it is a star whose core is formed around a large amount of dark matter. Such exotic stars are theorized by humanity to have possibly existed among the first generations of stars in the universe, with concentrations of dark matter acting as nucleation sites.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Dark Reactor|description|236|0",
+   "path": "data/bunrodea/bunrodea outfits.txt",
+   "line": 236,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Dark Reactor",
+   "english": "\tBunrodean reactors are able to be upgraded by installing Reactor Overclockers or Limiters, which alter the performance of the reactor. Each reactor only has a limited number of slots for these upgrades, though.",
+   "italian": "\tBunrodean reactors are able to be upgraded by installing Reactor Overclockers or Limiters, which alter the performance of the reactor. Each reactor only has a limited number of slots for these upgrades, though.",
+   "ratio": 1.0
+  }
+ ]
+}

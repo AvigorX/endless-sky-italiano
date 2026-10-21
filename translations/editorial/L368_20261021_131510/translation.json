@@ -1,0 +1,88 @@
+{
+ "block": {
+  "path": "data/vyrmeid/vyrmeid.txt",
+  "line_from": 16,
+  "line_to": 239,
+  "units": 7
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Vyrmeid|plural|16|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 16,
+   "kind": "VALUE",
+   "context": "ship:Vyrmeid",
+   "english": "Vyrmeid",
+   "italian": "Vyrmeid",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "ship:Vyrmeid|description|54|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 54,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vyrmeid",
+   "english": "These are tiny space creatures that feed on solar energy, storing it into two receptors found at the front of their bodies. They are extremely docile, and are found in large groups, almost never seen alone.",
+   "italian": "Sono minuscole creature spaziali che si nutrono di energia solare, immagazzinandola in due recettori che si trovano nella parte anteriore del corpo. Sono estremamente docili e vivono in grandi gruppi, quasi mai da sole.",
+   "ratio": 1.063
+  },
+  {
+   "idx": 3,
+   "id": "ship:Vyrmeid|plural|75|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 75,
+   "kind": "VALUE",
+   "context": "ship:Vyrmeid",
+   "english": "Vyrmeid",
+   "italian": "Vyrmeid",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "ship:Vyrmeid|description|109|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 109,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vyrmeid",
+   "english": "Oddly shaped like a boomerang, these space creatures are in a constant rotary motion caused by a small internal organ. The motion provides a natural defense against small debris and projectiles that threaten to intercept the creature, which is harmless otherwise.",
+   "italian": "Stranamente a forma di boomerang, queste creature spaziali sono in costante movimento rotatorio, prodotto da un piccolo organo interno. Il movimento offre una difesa naturale contro i piccoli detriti e i proiettili che rischiano di intercettare la creatura, che per il resto è innocua.",
+   "ratio": 1.084
+  },
+  {
+   "idx": 5,
+   "id": "ship:Vyrmeid|plural|128|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 128,
+   "kind": "VALUE",
+   "context": "ship:Vyrmeid",
+   "english": "Vyrmeid",
+   "italian": "Vyrmeid",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "ship:Vyrmeid|description|167|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 167,
+   "kind": "DESCRIPTION",
+   "context": "ship:Vyrmeid",
+   "english": "This species of space life is found around hotter stars and feeds on solar energy, storing it in four organs that give off the appearance of eyes. Due to all of the internal energy and pressure, these creatures explode violently upon death, which may surprise aggressors.",
+   "italian": "Questa specie di vita spaziale si trova attorno alle stelle più calde e si nutre di energia solare, immagazzinandola in quattro organi che danno l'impressione di occhi. A causa di tutta l'energia e la pressione interne, queste creature esplodono violentemente alla morte, il che può sorprendere chi le aggredisce.",
+   "ratio": 1.155
+  },
+  {
+   "idx": 7,
+   "id": "ship:Astral Cetacean|description|239|0",
+   "path": "data/vyrmeid/vyrmeid.txt",
+   "line": 239,
+   "kind": "DESCRIPTION",
+   "context": "ship:Astral Cetacean",
+   "english": "Only a few captains have had the chance to observe this illustrious creature. Its natural attenuation to the depths of space allows it to travel beyond where most ships are able, and its appearance reflects both the beauty and mystery of the void itself.",
+   "italian": "Solo pochi capitani hanno avuto la possibilità di osservare questa illustre creatura. La sua naturale affinità con gli abissi dello spazio le permette di viaggiare oltre i confini in cui la maggior parte delle navi è in grado di arrivare, e il suo aspetto riflette tanto la bellezza quanto il mistero del vuoto stesso.",
+   "ratio": 1.252
+  }
+ ]
+}

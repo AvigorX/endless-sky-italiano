@@ -1,0 +1,319 @@
+{
+ "block": {
+  "path": "data/human/paradise world jobs.txt",
+  "line_from": 16,
+  "line_to": 221,
+  "units": 28
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Paradise Job: Care Package|name|16|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 16,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Care Package",
+   "english": "Care package to <planet>",
+   "italian": "Pacco di conforto per <planet>",
+   "ratio": 1.25
+  },
+  {
+   "idx": 2,
+   "id": "mission:Paradise Job: Care Package|description|20|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 20,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Care Package",
+   "english": "An anxious mother will pay you <payment> to deliver a care package of <cargo> to her child studying on <destination> by <date>.",
+   "italian": "Una madre ansiosa ti pagherà <payment> per consegnare un pacco di generi di conforto con <cargo> a suo figlio che studia su <destination> entro il <date>.",
+   "ratio": 1.213
+  },
+  {
+   "idx": 3,
+   "id": "mission:Paradise Job: Care Package|dialog|35|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 35,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Care Package",
+   "english": "Still wondering why one university student would possibly need such a large quantity of <commodity>, you deliver the interstellar care package and collect your payment of <payment>.",
+   "italian": "Ancora chiedendoti perché mai uno studente universitario possa aver bisogno di una quantità così grande di <commodity>, consegni il pacco interstellare di generi di conforto e incassi il tuo compenso di <payment>.",
+   "ratio": 1.177
+  },
+  {
+   "idx": 4,
+   "id": "mission:Paradise Job: Birthday Supplies|name|39|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 39,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Birthday Supplies",
+   "english": "Birthday supplies to <planet>",
+   "italian": "Provviste per il compleanno per <planet>",
+   "ratio": 1.379
+  },
+  {
+   "idx": 5,
+   "id": "mission:Paradise Job: Birthday Supplies|description|43|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 43,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Birthday Supplies",
+   "english": "An elderly couple wishes to contribute <cargo> for their grandchild's birthday bash on <destination> by <date>. Payment is <payment>.",
+   "italian": "Una coppia anziana desidera contribuire con <cargo> alla festa di compleanno del nipote su <destination> entro il <date>. Il compenso è di <payment>.",
+   "ratio": 1.12
+  },
+  {
+   "idx": 6,
+   "id": "mission:Paradise Job: Birthday Supplies|dialog|58|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 58,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Birthday Supplies",
+   "english": "You deliver the cargo to the garden of an imposing mansion in the countryside, wherein some pouty young sprout is throwing a very conspicuous fit at the center of a swarm of guests. The parents sheepishly hand you your payment of <payment>.",
+   "italian": "Consegni il carico nel giardino di una villa imponente in campagna, dove un ragazzino imbronciato sta facendo una scenata fin troppo visibile al centro di uno sciame di invitati. I genitori, un po' imbarazzati, ti consegnano il tuo compenso di <payment>.",
+   "ratio": 1.058
+  },
+  {
+   "idx": 7,
+   "id": "mission:Paradise Job: Art Delivery|name|62|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 62,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Art Delivery",
+   "english": "Art delivery to <planet>",
+   "italian": "Consegna d'arte per <planet>",
+   "ratio": 1.167
+  },
+  {
+   "idx": 8,
+   "id": "mission:Paradise Job: Art Delivery|description|66|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 66,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Art Delivery",
+   "english": "Deliver <cargo> for an upcoming art exhibition on <destination> by <date>. Payment is <payment>.",
+   "italian": "Consegna <cargo> per una prossima mostra d'arte su <destination> entro il <date>. Il compenso è di <payment>.",
+   "ratio": 1.135
+  },
+  {
+   "idx": 9,
+   "id": "mission:Paradise Job: Art Delivery|dialog|81|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 81,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Art Delivery",
+   "english": "Your ship is directed to the rear loading dock of a palatial complex where your cargo of <commodity> is unloaded. You collect your payment of <payment>.",
+   "italian": "La tua nave viene indirizzata alla banchina di carico posteriore di un complesso da reggia, dove il tuo carico di <commodity> viene scaricato. Incassi il tuo compenso di <payment>.",
+   "ratio": 1.184
+  },
+  {
+   "idx": 10,
+   "id": "mission:Paradise Job: Newlyweds|name|85|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 85,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Newlyweds",
+   "english": "Newlyweds to <planet>",
+   "italian": "Sposini per <planet>",
+   "ratio": 0.952
+  },
+  {
+   "idx": 11,
+   "id": "mission:Paradise Job: Newlyweds|description|89|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 89,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Newlyweds",
+   "english": "This pair of newlyweds seeks passage on a luxurious ship to reach their honeymoon on <destination> by <date>, along with <tons> of their wedding gifts. They will pay you <payment> to take them there.",
+   "italian": "Questa coppia di sposi cerca passaggio su una nave di lusso per raggiungere la luna di miele su <destination> entro il <date>, insieme a <tons> di regali di nozze. Ti pagheranno <payment> per portarli lì.",
+   "ratio": 1.025
+  },
+  {
+   "idx": 12,
+   "id": "mission:Paradise Job: Newlyweds|dialog|106|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 106,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Newlyweds",
+   "english": "You bid the two lovebirds goodbye on <planet> and collect your payment of <payment>.",
+   "italian": "Dai l'addio ai due piccioncini su <planet> e incassi il tuo compenso di <payment>.",
+   "ratio": 0.976
+  },
+  {
+   "idx": 13,
+   "id": "mission:Paradise Job: Theater Props|name|110|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 110,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Theater Props",
+   "english": "Theater props to <planet>",
+   "italian": "Attrezzeria teatrale per <planet>",
+   "ratio": 1.32
+  },
+  {
+   "idx": 14,
+   "id": "mission:Paradise Job: Theater Props|description|114|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 114,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Theater Props",
+   "english": "A theater troupe on <destination> needs a delivery of <tons> of special <commodity> to use as props in an upcoming performance on <date>. Payment is <payment>.",
+   "italian": "Una compagnia teatrale su <destination> ha bisogno di una consegna di <tons> di <commodity> speciale da usare come oggetti di scena in uno spettacolo imminente il <date>. Il compenso è di <payment>.",
+   "ratio": 1.245
+  },
+  {
+   "idx": 15,
+   "id": "mission:Paradise Job: Theater Props|dialog|129|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 129,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Theater Props",
+   "english": "Your ship is directed to the rear loading dock of a sprawling entertainment complex where your cargo of <commodity> is unloaded. You collect your payment of <payment>.",
+   "italian": "La tua nave viene indirizzata alla banchina di carico posteriore di un vasto complesso di divertimenti, dove il tuo carico di <commodity> viene scaricato. Incassi il tuo compenso di <payment>.",
+   "ratio": 1.15
+  },
+  {
+   "idx": 16,
+   "id": "mission:Paradise Job: Fine Food|name|133|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 133,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Fine Food",
+   "english": "Fine food to <planet>",
+   "italian": "Cibo pregiato per <planet>",
+   "ratio": 1.238
+  },
+  {
+   "idx": 17,
+   "id": "mission:Paradise Job: Fine Food|description|137|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 137,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Fine Food",
+   "english": "A highly-rated restaurant on <destination> seeks to acquire <tons> of fine <commodity> by <date>. Payment is <payment>.",
+   "italian": "Un ristorante molto quotato su <destination> cerca di procurarsi <tons> di <commodity> pregiato entro il <date>. Il compenso è di <payment>.",
+   "ratio": 1.176
+  },
+  {
+   "idx": 18,
+   "id": "mission:Paradise Job: Fine Food|dialog|152|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 152,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Fine Food",
+   "english": "Your ship is directed to the rear loading dock of a very impressive eatery. White-gloved waiters gingerly unload the cargo of <commodity> and relay your payment of <payment>.",
+   "italian": "La tua nave viene indirizzata alla banchina di carico posteriore di un locale davvero impressionante. Camerieri in guanti bianchi scaricano con delicatezza il carico di <commodity> e ti consegnano il tuo compenso di <payment>.",
+   "ratio": 1.299
+  },
+  {
+   "idx": 19,
+   "id": "mission:Transport partiers [1]|name|156|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 156,
+   "kind": "VALUE",
+   "context": "mission:Transport partiers [1]",
+   "english": "Party-goers to <planet>",
+   "italian": "Festaioli per <planet>",
+   "ratio": 0.957
+  },
+  {
+   "idx": 20,
+   "id": "mission:Transport partiers [1]|description|159|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 159,
+   "kind": "DESCRIPTION",
+   "context": "mission:Transport partiers [1]",
+   "english": "This group of <bunks> university students is willing to pay <payment> for a deluxe ride to a huge party on <destination>, along with <tons> of their completely legal pharmaceuticals.",
+   "italian": "Questo gruppo di <bunks> studenti universitari è disposto a pagare <payment> per un passaggio di lusso verso un'enorme festa su <destination>, insieme a <tons> dei loro farmaci del tutto legali.",
+   "ratio": 1.066
+  },
+  {
+   "idx": 21,
+   "id": "mission:Transport partiers [1]|illegal|162|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 162,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Transport partiers [1]",
+   "english": "It turns out that the \"completely legal pharmaceuticals\" in your hold are not so completely legal after all. The officers who confiscate the goods spend a long time talking with one of the students, whom you suspect to be politically connected. You're not surprised by the small size of the fine you receive as well as the fact that nobody was arrested.",
+   "italian": "Si scopre che i \"farmaci del tutto legali\" nella tua stiva non sono poi così legali. Gli ufficiali che confiscano la merce passano molto tempo a parlare con uno degli studenti, che sospetti abbia agganci politici. Non ti sorprende la piccola entità della multa che ricevi, né il fatto che nessuno venga arrestato.",
+   "ratio": 0.887
+  },
+  {
+   "idx": 22,
+   "id": "mission:Transport partiers [1]|dialog|178|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 178,
+   "kind": "DIALOG",
+   "context": "mission:Transport partiers [1]",
+   "english": "You're not sorry to say goodbye to the rowdy and uncouth troublemakers you've been transporting. Their parents send you your payment of <payment> with not a word of acknowledgment.",
+   "italian": "Non ti dispiace affatto dire addio ai piantagrane chiassosi e maleducati che hai trasportato. I loro genitori ti mandano il tuo compenso di <payment> senza una parola di riconoscenza.",
+   "ratio": 1.017
+  },
+  {
+   "idx": 23,
+   "id": "mission:Transport partiers [2]|name|182|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 182,
+   "kind": "VALUE",
+   "context": "mission:Transport partiers [2]",
+   "english": "Party-goers to <planet>",
+   "italian": "Festaioli per <planet>",
+   "ratio": 0.957
+  },
+  {
+   "idx": 24,
+   "id": "mission:Transport partiers [2]|description|185|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 185,
+   "kind": "DESCRIPTION",
+   "context": "mission:Transport partiers [2]",
+   "english": "This group of <bunks> university students is willing to pay <payment> for a deluxe ride to a huge party on <destination>, along with <tons> of their snacks and school supplies.",
+   "italian": "Questo gruppo di <bunks> studenti universitari è disposto a pagare <payment> per un passaggio di lusso verso un'enorme festa su <destination>, insieme a <tons> dei loro snack e del materiale scolastico.",
+   "ratio": 1.148
+  },
+  {
+   "idx": 25,
+   "id": "mission:Transport partiers [2]|dialog|202|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 202,
+   "kind": "DIALOG",
+   "context": "mission:Transport partiers [2]",
+   "english": "You bid goodbye to the students, who behaved surprisingly well during the journey - yielding many fascinating conversations on subjects as diverse as philosophy, microfluidics, and intergalactic economics. Their proud parents send you your payment of <payment>.",
+   "italian": "Dai l'addio agli studenti, che durante il viaggio si sono comportati sorprendentemente bene - regalandoti molte conversazioni affascinanti su argomenti tanto diversi come la filosofia, la microfluidica e l'economia intergalattica. I loro genitori orgogliosi ti mandano il tuo compenso di <payment>.",
+   "ratio": 1.142
+  },
+  {
+   "idx": 26,
+   "id": "mission:Paradise Job: Food Donations|name|205|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 205,
+   "kind": "VALUE",
+   "context": "mission:Paradise Job: Food Donations",
+   "english": "Food donations to <planet>",
+   "italian": "Donazioni di cibo per <planet>",
+   "ratio": 1.154
+  },
+  {
+   "idx": 27,
+   "id": "mission:Paradise Job: Food Donations|description|208|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 208,
+   "kind": "DESCRIPTION",
+   "context": "mission:Paradise Job: Food Donations",
+   "english": "The fine citizens of <origin> seek a compassionate captain for a mission of mercy to donate <cargo> to the undernourished souls of <destination>. Payment is <payment>.",
+   "italian": "Gli illustri cittadini di <origin> cercano un capitano compassionevole per una missione di misericordia: donare <cargo> alle anime denutrite di <destination>. Il compenso è di <payment>.",
+   "ratio": 1.114
+  },
+  {
+   "idx": 28,
+   "id": "mission:Paradise Job: Food Donations|dialog|221|0",
+   "path": "data/human/paradise world jobs.txt",
+   "line": 221,
+   "kind": "DIALOG",
+   "context": "mission:Paradise Job: Food Donations",
+   "english": "You collect your payment of <payment>, but not before noticing the general robustness and ample bellies of the dockworkers unloading the donation of <commodity>.",
+   "italian": "Incassi il tuo compenso di <payment>, non prima però di aver notato la robustezza generale e le pance ampie degli scaricatori che scaricano la donazione di <commodity>.",
+   "ratio": 1.043
+  }
+ ]
+}

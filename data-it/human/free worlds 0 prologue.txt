@@ -1,0 +1,2515 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Pact Recon 0"
+	minor
+	name "Ricognizione pirata"
+	description "Attraversa i sistemi <waypoints>, poi presenta il rapporto a <destination> così che il Patto di Difesa Reciproca del Sud possa analizzare i tuoi registri sull'attività dei pirati (se ce n'è stata)."
+	source
+		attributes "rim" "south"
+		not government "Pirate"
+		not system "Alniyat" "Atria" "Lesath" "Han"
+		not planet "Glaze"
+	destination "Glaze"
+	waypoint "Alniyat"
+	waypoint "Atria"
+	waypoint "Han"
+	waypoint "Lesath"
+	to offer
+		random < 60
+		not "event: war begins"
+	
+	on offer
+		conversation
+			`Non puoi fare a meno di notare che il mercantile parcheggiato accanto al <ship> è in pessime condizioni: lo scafo è crivellato di segni di blaster, oltre a bozzi più grandi che forse vengono da missili. L'equipaggio e diversi uomini in uniforme della milizia sono indaffarati a saldare nuove lastre di scafo; il capitano sta avendo una conversazione animata con una giovane ufficiale della milizia.`
+			choice
+				`	(Avvicinati e scopri che cosa è successo.)`
+				`	(Ignorali.)`
+					decline
+			`	Senti abbastanza della conversazione da capire che il mercantile è stato attaccato dai pirati e che la milizia sta aiutando a rimetterlo in condizioni di funzionare. "Con una lucidata andrà come nuovo," dice l'ufficiale, ma il capitano della nave non sembra convinto e si avvicina alla sua nave per lavorare insieme all'equipaggio.`
+			`	L'ufficiale della milizia si guarda alle spalle e, vedendoti ascoltare, ti fa cenno di avvicinarti. "Non c'è bisogno di essere timidi," dice. "Immagino che tu non sia di queste parti."`
+			choice
+				`	"Come fai a dirlo?"`
+				`	"I pirati sono violenti da queste parti?"`
+					goto pirates
+			`	"Perché i capitani di queste parti non si fermano a guardare una cosa che succede tutti i giorni. Dopo le prime dodici navi danneggiate, ci fai l'abitudine e tiri dritto."`
+			`	"I pirati sono violenti da queste parti?" chiedi.`
+			label pirates
+			`	"Più violenti di quanto tu sia abituato, se vieni da molto più a nord. La Marina non pattuglia queste zone, non a meno che non ci sia qualche signore della guerra di alto profilo sul loro radar. Per questo i pirati hanno più libertà di terrorizzarci quaggiù." Si ferma un momento mentre si volta di nuovo verso il mercantile. "E le flotte dei pirati diventano più forti ogni anno," dice, preoccupata.`
+			choice
+				`	"C'è qualcosa che posso fare per aiutare?"`
+				`	"Vorrei aiutare, ma la mia nave non è una nave da guerra."`
+					goto warship
+			`	"Certo che c'è," dice. "Hai mai sentito parlare del Patto di Difesa Reciproca del Sud?"`
+				goto pact
+			label warship
+			`	"Ci sono altri modi in cui potresti aiutarci," dice. "Hai mai sentito parlare del Patto di Difesa Reciproca del Sud?"`
+			label pact
+			choice
+				`	"No. Che cos'è?"`
+				`	"Sì."`
+					goto eyes
+			`	Dice: "Siamo un insieme di mondi che ha deciso che, dato che la Marina non pattuglia più questa parte della galassia, tocca a noi tenere a freno i pirati. L'idea è che, se i pirati provano qualcosa di grosso, tipo conquistare un intero pianeta, quel pianeta può chiamare tutto il Patto in suo aiuto. E, come vedi, facciamo anche la nostra parte per aiutare i mercanti del posto, quando possiamo."`
+			`	"Sembra una buona idea," dici.`
+			label eyes
+			`	"Il Patto sta lanciando una nuova iniziativa, guidata da me," dice. "La chiamiamo 'Mille Occhi'. Chiediamo ai capitani dei mercantili di darci accesso ai registri dei loro scanner, in pratica usando i mercanti come rete di sorveglianza. Non devi combattere i pirati, devi solo farci sapere se li vedi. Ti interessa?"`
+			choice
+				`	"Certo, sarò lieto di aiutare."`
+				`	"Mi dispiace, mi sembra troppo rischioso."`
+					decline
+			`	"Ottimo!" dice. "Al momento ci servono più occhi su alcuni sistemi ai margini dello spazio del Sud. Ti basta attraversare quei sistemi, poi presentarti alla nostra base su <destination>. Ti segno i sistemi bersaglio sulla mappa della nave. E comunque, mi chiamo Freya Winters."`
+			`	"<first> <last>," rispondi, stringendole la mano.`
+			`	"Piacere di conoscerti, Capitano <last>. Sono contenta di avere un altro paio di mani. Andrò su <planet> dopo aver sbrigato i miei affari su <origin>, quindi ci vediamo là."`
+				accept
+	
+	on accept
+		log "Ti sei offerto di aiutare il Patto di Difesa Reciproca del Sud a tenere d'occhio l'attività dei pirati nella loro regione di spazio. Gli attacchi dei pirati sembrano peggiorare perché la Marina non si degna più di pattugliare quaggiù."
+	
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on complete
+		payment 25000
+		event "pact recon 0" 1
+		dialog `Quando atterri su <planet>, ti viene incontro Freya Winters. Ti dà <payment> in cambio dei registri dei tuoi scanner sui sistemi del Sud. "Grazie, Capitano. Confido che i pirati non ti abbiano dato troppo fastidio," dice. "Ti farò sapere quando avremo un nuovo incarico per te, sempre che tu sia ancora interessato."`
+
+
+event "pact recon 0"
+
+
+mission "Pact Recon 1"
+	landing
+	name "Ricognizione pirata"
+	description "Attraversa i sistemi <waypoints>, poi presenta il rapporto a <destination> così che il Patto di Difesa Reciproca del Sud possa analizzare i tuoi registri sull'attività dei pirati (se ce n'è stata)."
+	source
+		attributes "dirt belt" "near earth" "rim" "south"
+		not government "Pirate"
+	destination "Glaze"
+	waypoint "Alnasl"
+	waypoint "Alpha Arae"
+	waypoint "Eber"
+	waypoint "Wei"
+	to offer
+		random < 40
+		has "event: pact recon 0"
+		not "event: war begins"
+	
+	on offer
+		dialog `Ricevi un messaggio da Freya, l'ufficiale della milizia incaricata di seguire l'attività dei pirati. "Salve, Capitano <last>. Confido che tu sia ancora interessato a far parte del nostro programma Mille Occhi. Ci servono altre informazioni sui sistemi vuoti nel mezzo della Fascia di Terra," dice. "La paga sarebbe un po' migliore dell'ultima volta, dato che questi sistemi sono un po' più fuori mano. Come prima, torna a <destination> quando hai finito."`
+	
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on complete
+		payment 35000
+		event "pact recon 1" 1
+		dialog `Trasferisci i registri dei sensori a Freya. Ti ringrazia per il lavoro e ti paga <payment>. "Ti farò sapere quando avremo di nuovo bisogno dei tuoi servizi," dice.`
+
+
+event "pact recon 1"
+
+
+mission "Pact Recon 2"
+	landing
+	name "Ricognizione pirata"
+	description "Attraversa i sistemi <waypoints>, poi presenta il rapporto a <destination> così che il Patto di Difesa Reciproca del Sud possa analizzare i tuoi registri sull'attività dei pirati (se ce n'è stata)."
+	source
+		attributes "dirt belt" "near earth" "rim" "south"
+		not government "Pirate"
+	destination "Glaze"
+	waypoint "Antares"
+	waypoint "Men"
+	waypoint "Nunki"
+	waypoint "Shaula"
+	to offer
+		random < 40
+		has "event: pact recon 1"
+		not "event: war begins"
+	
+	on offer
+		dialog `Ricevi un altro messaggio da Freya: "Salve, Capitano! Questa volta ho un incarico più impegnativo e più redditizio per te. Ci serve qualcuno che faccia un sorvolo di quattro sistemi pirata al confine con il Sud, per valutare la loro forza. Di nuovo, non serve combattere: entra ed esci dai sistemi il più in fretta possibile, e siamo disposti a pagare molto più dell'ultimo lavoro, visto il pericolo. Che ne dici?"`
+	
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on complete
+		payment 70000
+		event "pact recon 2" 1
+		dialog `Freya Winters ti viene incontro di persona poco dopo che atterri. "Sono contenta di vedere che sei ancora tutto intero. Confido che tu non abbia avuto troppi problemi," dice, porgendoti un chip di credito per <payment>. "Ci sei stato di grande aiuto. Ti contatterò di sicuro la prossima volta che avremo bisogno di un esploratore."`
+
+
+event "pact recon 2"
+
+
+mission "Pact Recon 3"
+	landing
+	name "Ricognizione pirata"
+	description "Attraversa i sistemi <marks> cercando una flotta pirata in raduno. Presenta il rapporto al Patto su <destination> quando l'hai individuata."
+	source
+		attributes "dirt belt" "near earth" "rim" "south"
+		not government "Pirate"
+	destination "Glaze"
+	mark "Boral"
+	mark "Hintar"
+	mark "Naper"
+	mark "Orvala"
+	to offer
+		random < 40
+		has "event: pact recon 2"
+		not "event: war begins"
+	on offer
+		dialog `Ancora una volta ricevi un messaggio da Freya Winters. "Abbiamo un altro incarico per te," dice, "e questo è un po' più pericoloso. Abbiamo sentito voci di una flotta pirata che si sta radunando in uno dei sistemi poco visitati della Fascia di Terra, e dobbiamo sapere dove sono. Ti interessa aiutarci a rintracciarli? Come prima, non devi combattere, devi solo osservarli."`
+	
+	npc
+		government "Pirate"
+		personality staying plunders disables
+		system "Naper"
+		fleet "Small Southern Pirates" 3
+		fleet "Large Northern Pirates"
+
+	on enter "Boral"
+		unmark "Boral"
+	on enter "Hintar"
+		unmark "Hintar"
+	on enter "Orvala"
+		unmark "Orvala"
+	on enter "Naper"
+		unmark "Boral"
+		unmark "Hintar"
+		unmark "Orvala"
+		unmark "Naper"
+		set "fw located pirate fleet"
+		dialog `Hai individuato la flotta pirata. È tempo di tornare su <planet> e riferire a Freya che cosa hai trovato.`
+	on visit
+		dialog `Hai raggiunto <planet>, ma non hai ancora individuato la flotta pirata! Meglio ripartire e assicurarti di aver controllato <marks>.`
+	to complete
+		has "fw located pirate fleet"
+	on complete
+		clear "fw located pirate fleet"
+		payment 80000
+		dialog `Riferisci a Freya di aver trovato una flotta pirata considerevole nel sistema Naper, e di aver avvistato altri pirati altrove. Ti ringrazia e ti paga <payment>. "Grazie per il tuo aiuto," dice. "Di nuovo, ti contatterò se avremo bisogno di te."`
+
+
+
+mission "Pact Questioning"
+	landing
+	source
+		attributes "near earth" "paradise"
+		government "Republic"
+	to offer
+		not "chosen sides"
+		not "FW Katya 1B: active"
+		random < 7 * ( "Pact Recon 1: done" + "Pact Recon 2: done" + "Pact Recon 3: done" )
+	
+	on offer
+		log "A quanto pare la Marina diffida di chiunque abbia lavorato con il Patto di Difesa Reciproca del Sud; un ufficiale ti ha fatto delle domande in proposito. Non era chiaro quale fosse il suo grado o la sua posizione nella Marina."
+		conversation
+			`Mentre completi le solite pratiche di atterraggio con l'ispettore della Marina fuori dalla nave, un altro ufficiale, un uomo di mezza età con la stessa uniforme, si avvicina da dietro. Passando, fa un cenno secco all'ispettore, che se ne va in fretta senza dire nulla, nemmeno un "buongiorno" a te o a questo nuovo ufficiale. Deve avere una qualche anzianità rispetto all'ispettore.`
+			`	Quando l'ispettore si è allontanato, il nuovo ufficiale si volta verso di te e dice: "Mi scusi, Capitano <last>. Vorrei parlarle per qualche minuto."`
+			choice
+				`	"Va bene."`
+					goto branch
+				`	"Mi dispiace, adesso sono davvero occupato."`
+			`	"Purtroppo non può aspettare," risponde.`
+			label branch
+			branch free
+				has "event: war begins"
+			`	"È corretto che lei abbia aiutato il Patto di Difesa Reciproca del Sud?"`
+				goto start
+			label free
+			`	"È corretto che lei abbia svolto alcune missioni per il Patto di Difesa Reciproca del Sud, prima che diventasse le Free Worlds?"`
+			label start
+			`	La sua voce è molto amichevole, e non è armato né accompagnato da altri ufficiali che tu possa vedere, quindi non sembra che tu sia nei guai né in pericolo di arresto, tanto più che il tuo lavoro per il Patto era perfettamente legale.`
+			choice
+				`	"Non so di che cosa stia parlando."`
+				`	"Ho accettato qualche incarico per aiutare le milizie locali, sì."`
+					goto pact
+				`	"Sì, ho svolto diverse missioni per il Patto."`
+					goto pact
+				`	"Mi dispiace, ma non voglio parlarne con lei."`
+					goto quit
+			`	Ti sta guardando intensamente negli occhi, e quando gli menti si acciglia. "Non c'è davvero bisogno di mentirmi," dice. Non sai bene che cosa rispondere, quindi resti in silenzio.`
+			label pact
+			`	"Mi dica," dice, "c'era un particolare ufficiale della milizia a cui lei faceva rapporto, o era ogni volta qualcuno di diverso?" Mentre parla, cerchi indizi su chi sia e perché ti stia interrogando, e noti una cosa molto strana. L'ispettore della Marina di prima, e tutto il personale della Marina che hai incontrato in passato, portava un distintivo col nome sul bavero e le insegne di grado sul colletto. L'uniforme di questo ufficiale è completamente vuota.`
+			choice
+				`	"Non ricordo il nome di nessuno in particolare."`
+				`	"Preferirei non fare nomi."`
+				`	"Di solito facevo rapporto a un'ufficiale di nome Freya Winters."`
+					goto freya
+				`	"Non voglio parlare di questo. Me ne vado."`
+					goto quit
+			`	"Pazienza," dice, "valeva la pena chiedere. Sarebbe almeno disposto a dirmi la natura delle missioni che svolgeva?"`
+				goto missions
+			label freya
+			`	"Ah, sì, la signorina Winters," dice. "Una donna molto capace, anche se è più abile come ingegnere che come comandante. Può dirmi che tipo di lavoro svolgeva per lei?"`
+			label missions
+			choice
+				`	"Preferirei non dirlo."`
+					goto quit
+				`	"Lei chi è? Perché mi fa queste domande?"`
+					goto questions
+				`	"Missioni di ricognizione, per seguire i movimenti dei pirati."`
+					goto recon
+				`	"Mi dispiace, ho finito di parlare con lei."`
+					goto quit
+			label recon
+			`	"È certo che la sua ricognizione fosse rivolta solo ai pirati?" chiede. "Raccoglievano solo i suoi registri sulle navi pirata, o su ogni nave che vedeva?"`
+			choice
+				`	"Sinceramente non lo so."`
+				`	"Credo che fossero solo le navi pirata."`
+				`	"Ho dato loro tutti i miei registri. Non so bene quali parti abbiano finito per usare."`
+			`	"Capisco," dice. "Mi chiedo perché non le abbiano condiviso più dettagli del loro lavoro."`
+			`	"Perché mi fa tutte queste domande?" dici.`
+			label questions
+			`	"Sto solo raccogliendo informazioni," dice. "Qualunque cosa lei mi dica è interessante per me." Poi, con un sorriso malizioso, aggiunge: "Anche qualunque cosa si rifiuti di dirmi è interessante. Comunque non la trattengo oltre. Grazie per il suo tempo." Sorride e si allontana, lasciandoti senza idea di che cosa stia succedendo.`
+				decline
+			label quit
+			`	"Ho capito," dice. "Grazie per il suo tempo." Non fa nulla per trattenerti, e si allontana in direzione della guarnigione della Marina.`
+				decline
+
+
+
+mission "FW Recon 0"
+	minor
+	repeat
+	name "Trasporta un ufficiale della milizia"
+	description "Trasporta un ufficiale della milizia delle Free Worlds fino a <destination>."
+	source
+		government "Free Worlds"
+		near "Aldhibain" 1 10
+	destination "Glaze"
+	passengers 1
+	to offer
+		has "event: initial deployment 4"
+		or
+			random < 35 + 5 * "assisted free worlds" * "assisted free worlds"
+			has "flagship planet: Deep"
+		or
+			not "FW Recon 0: offered"
+			and
+				has "FW Katya 7C: done"
+				not "FW Recon 0: active"
+				not "FW Recon 0: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Nello spazioporto ti si avvicina un uomo. "Salve. Potrebbe darmi un passaggio fino a <destination>? Le pagherei <payment>." Noti che indossa l'uniforme della milizia.`
+			choice
+				`	"Certo, sarò lieto di aiutare!"`
+					accept
+				`	"Mi dispiace, al momento sono occupato con altro."`
+					defer
+				`	"Hai legami con le Free Worlds?"`
+			`	"Sì, sono un ufficiale della loro milizia." L'uomo fa mezzo passo indietro. "È un problema?"`
+			choice
+				`	"Nessun problema. Sarò lieto di aiutare la vostra causa!"`
+					accept
+				`	"Nessun problema, ma temo di non avere spazio per te adesso."`
+					defer
+				`	"Non aiuto i ribelli. Cerca qualcun altro."`
+					decline
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che l'ufficiale della milizia è su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		payment
+		dialog `L'ufficiale della milizia ti ringrazia per il passaggio e ti paga <payment>. Mentre se ne va, dice: "Se ti interessa fare altro lavoro per noi, vai al bar dello spazioporto e cerca il mio comandante. Gli dirò di tenere gli occhi aperti per te."`
+
+
+
+mission "FW Recon 1"
+	name "Ricognizione per le Free Worlds"
+	description "Esegui una scansione dell'equipaggiamento sull'incrociatore <npc>, che al momento pattuglia <system>, poi presenta il rapporto a un ufficiale delle Free Worlds su <planet>."
+	source "Glaze"
+	to offer
+		has "FW Recon 0: done"
+	to fail
+		has "chosen sides"
+	on abort
+		log "Hai rinunciato a un lavoro di ricognizione per le Free Worlds."
+		dialog phrase "free worlds failed"
+	on decline
+		log "Hai rifiutato un lavoro di ricognizione per le Free Worlds."
+		dialog phrase "free worlds declined"
+	
+	on offer
+		conversation
+			`Quando entri nel bar dello spazioporto, un uomo in uniforme della milizia ti fa cenno e dice: "Capitano <last>. Uno dei miei ufficiali mi ha detto di tenere gli occhi aperti per te. Saresti disposto a fare un altro piccolo servizio per le Free Worlds?"`
+			choice
+				`	"Forse. Che cosa vuoi che faccia?"`
+				`	"Ho accettato solo un lavoro di trasporto. Non voglio avere niente a che fare con la vostra ribellione."`
+					decline
+			`	"È una cosa piuttosto semplice," dice. "La maggior parte delle navi della Repubblica che sono passate per questo sistema sembra equipaggiata per la sorveglianza, non per il combattimento. Ma ce n'è una in orbita proprio ora, la <npc>, che sembra attrezzata come nave da guerra. Saresti disposto a scansionarne l'equipaggiamento e a riferirci che cosa trovi? Il negozio di equipaggiamento tiene gli scanner, se non ne hai, anche se potresti volerne installare più di uno per migliorare le prestazioni. Pagheremo <payment>."`
+			choice
+				`	"Certo, sembra abbastanza semplice."`
+					accept
+				`	"Perché non puoi scansionare la nave da solo?"`
+			`	"Sono sicuro che capisci le... tensioni fra le Free Worlds e la Repubblica in questo momento. Stiamo solo cercando di badare a noi stessi, ma non vogliamo provocare nulla con la Marina. Sarebbe molto più semplice se un mercante comprensivo scansionasse la nave per noi."`
+			choice
+				`	"Mi sembra abbastanza ragionevole. Lo farò."`
+					accept
+				`	"Se 'aiutare le Free Worlds' vuol dire lavori loschi come questo, allora lasciami fuori."`
+					decline
+	
+	npc "scan outfits"
+		government "Republic"
+		personality staying uninterested target
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Heavy)"
+		conversation
+			`Appena scansionate la <npc>, il suo capitano ti chiama. "Mi scusi, capitano," dice, "posso esserle utile in qualcosa?"`
+			choice
+				`	"Mi chiedevo che tipo di motori abbiate, per muovervi così veloci."`
+					goto engines
+				`	"Non importa, signore, stavo solo ammirando il vostro... equipaggiamento impressionante."`
+					goto equipment
+			label engines
+			`	"Belli, vero?" dice. "Motori atomici, l'ultimissima tecnologia di propulsione della Deep Sky. Sono così fluidi e reattivi che mi sembra di essere tornato a pilotare una navetta."`
+			`	Si ferma, poi aggiunge: "Mi pagano mille crediti ogni volta che dico questa frase."`
+				goto close
+			label equipment
+			`	Sembra terribilmente soddisfatto di sé. "Sì, immagino che una nave così farà girare qualche testa. La prossima volta che siamo sullo stesso pianeta, passa dal mio posto di attracco e sarò lieto di farti fare un... giro privato." Ti fa l'occhiolino.`
+
+			label close
+			`	Chiudi la comunicazione e tiri un sospiro di sollievo che la conversazione sia finita.`
+	
+	on visit
+		dialog `Atterri su <planet>, ma non hai ancora scansionato l'incrociatore della Marina che pattuglia il sistema. Decolla e scansiona l'equipaggiamento dell'incrociatore prima di tornare.`
+	on complete
+		log "Hai scansionato un incrociatore della Repubblica come parte di un lavoro di ricognizione per le Free Worlds."
+		payment 10000
+		dialog `Poco dopo che atterri, il capitano della milizia viene alla tua nave e ti paga <payment> in cambio dei registri dei sensori sulla <npc>. Dice: "Se ti interessa continuare a lavorare per noi, incontrami al bar dello spazioporto fra un'ora."`
+
+
+
+mission "FW Recon 2"
+	name "Ricognizione per le Free Worlds"
+	description "Scansiona i sistemi <waypoints> cercando navi equipaggiate come l'incrociatore da combattimento che hai scansionato prima, poi torna a <destination>."
+	source "Glaze"
+	waypoint "Menkent"
+	to offer
+		has "FW Recon 1: done"
+	to fail
+		has "chosen sides"
+	on abort
+		log "Hai rifiutato ogni ulteriore lavoro di ricognizione per le Free Worlds."
+		dialog phrase "free worlds failed"
+	on decline
+		log "Hai rifiutato ogni ulteriore lavoro di ricognizione per le Free Worlds."
+		dialog phrase "free worlds declined"
+	
+	on offer
+		conversation
+			`Incontri il capitano della milizia al bar dello spazioporto. "Sono contento che ti sia presentato," dice, "io sono Jean-Jacques, comunque, ma puoi chiamarmi JJ."`
+			`	Ti presenti a tua volta, e lui continua. "Il punto è questo. Sono il comandante della milizia su Glaze. Finora noi e la Marina non ci stiamo sparando, perché nessuno vuole esplodere il primo colpo. Ma se si stanno preparando a cambiare le cose, cominceranno a riarmare i loro incrociatori con armi pesanti invece che con apparecchiature di sorveglianza. Quindi devo sapere quante altre loro navi sono equipaggiate come quella che hai appena scansionato."`
+			`	Continua: "Vorrei che andassi su <waypoints>, dove secondo i nostri rapporti si sta concentrando un numero crescente di navi della Marina. Scansiona le navi che pensi corrispondano all'incrociatore che abbiamo appena visto, poi porta qui i registri dei tuoi scanner perché io li guardi."`
+			choice
+				`	"Certo, lo farò volentieri."`
+					accept
+				`	"Mi dispiace. Dopo come ha reagito l'ultimo capitano a cui ho scansionato la nave, non rischio più la testa per le Free Worlds."`
+					decline
+	
+	npc "scan outfits"
+		government "Republic"
+		personality staying uninterested target
+		system "Menkent"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Heavy)" 4
+		dialog `Hai scansionato tutte le navi che riesci a trovare qui che sembrano potenziate per il combattimento. È tempo di tornare su <planet> a ritirare il pagamento.`
+	
+	on visit
+		dialog `Atterri su <planet>, ma non hai ancora scansionato gli incrociatori della Marina che pattugliano Menkent. Decolla e scansiona l'equipaggiamento degli incrociatori prima di tornare.`
+	on complete
+		payment 50000
+		dialog `JJ ti viene incontro appena atterri, e tu gli consegni i dati degli scanner in cambio di <payment>. "Grazie ancora," dice. "Se sei disposto ad accettare un'altra missione di ricognizione, incontrami al bar."`
+
+
+
+mission "FW Recon 3"
+	name "Ricognizione per le Free Worlds"
+	description "Atterra su <destination> e raccogli di nascosto informazioni sulla base della Marina che stanno costruendo lì."
+	source "Glaze"
+	destination "New Wales"
+	to offer
+		has "FW Recon 2: done"
+	to fail
+		has "chosen sides"
+	on abort
+		log "Hai rifiutato ogni ulteriore lavoro di ricognizione per le Free Worlds."
+		dialog phrase "free worlds failed"
+	on decline
+		log "Hai rifiutato ogni ulteriore lavoro di ricognizione per le Free Worlds."
+		dialog phrase "free worlds declined"
+	
+	on offer
+		conversation
+			`Incontri di nuovo JJ al bar. "Ho ancora una missione di ricognizione per te," dice. "La Marina sta costruendo una base su New Wales, accanto allo spazioporto esistente. Da quanto ho capito, stanno assumendo migliaia di persone del posto per costruirla, quindi un operaio in più che gira non sembrerebbe fuori luogo. Mi serve che tu cammini per la base, prenda nota del numero e delle dimensioni delle piazzole di atterraggio e degli hangar, scatti qualche foto se puoi, e poi mi riferisca. Che ne dici?"`
+			choice
+				`	"Certo, posso farlo."`
+					accept
+				`	"E se mi arrestano?"`
+			`	"Da quanto ho capito," dice JJ, "la base non è davvero chiusa ai civili. Quindi, finché stai fuori dalle aree segnalate come off limits, non commetterai nessun reato."`
+			choice
+				`	"Va bene, lo farò."`
+					accept
+				`	"Questo è troppo. Non mi intrufolo in una proprietà della Marina per te."`
+			`	"Mi dispiace molto sentirlo," dice JJ. "Avevamo grandi speranze per te." Esce dal bar.`
+				decline
+
+
+
+mission "FW Recon 3B"
+	name "Ricognizione per le Free Worlds"
+	description "Torna a <destination> con le informazioni sulla base della Marina su <origin>."
+	landing
+	source "New Wales"
+	destination "Glaze"
+	to offer
+		has "FW Recon 3: done"
+	to fail
+		has "chosen sides"
+	on abort
+		log "Hai rifiutato ogni ulteriore lavoro di ricognizione per le Free Worlds."
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Attraversi la nuova sezione dello spazioporto che la Marina sta costruendo, cercando di sembrare uno dei tanti. Quando ti pare che nessuno ti stia guardando, scatti qualche fotografia. Conti sette hangar abbastanza grandi da ospitare una Carrier, e gli operai stanno livellando e facendo brillare superfici piane per molti altri. Lì vicino è spuntato un intero villaggio nuovo di case prefabbricate tutte uguali. E ogni pochi minuti una nave da guerra passa sopra la testa con un rombo che fa tremare tutta la montagna. È una vista che intimorisce.`
+			`	Mentre torni alla tua nave dopo aver preso nota di tutto ciò che pensi possa interessare a JJ, due ufficiali ti passano accanto e senti uno dei due dire all'altro: "Messaggio segreto dal comando della flotta."`
+			`	Ti fermi a legarti una scarpa e provi ad ascoltare. "Qual è il messaggio?" chiede l'altro.`
+			`	"Non posso dirtelo qui," dice il primo, e si infilano dietro uno dei capannoni.`
+			choice
+				`	(Ignorali e torna alla mia nave.)`
+					accept
+				`	(Seguili e ascolta.)`
+			
+			action
+				set "fw recon: caught"
+			`	Segui gli ufficiali in un deposito di rifornimenti e ti nascondi dietro una grande pila di casse. "Tenente," dice uno dei due, "ci è appena arrivata voce che le Free Worlds hanno ingaggiato qualcuno per spiare questa struttura."`
+			`	"Un professionista, signore?"`
+			`	"Macché. Mia nonna sarebbe una spia migliore. È un capitano mercantile, chiaramente un dilettante." Parlano entrambi piuttosto forte; non hai alcuna difficoltà ad ascoltare.`
+			`	"Che cosa facciamo, signore?" chiede il tenente.`
+			`	"Niente. Se sbirciare le nostre navi fosse un reato, a quest'ora avremmo metà della popolazione locale in prigione. Ma se questo capitano accettasse altri incarichi, potremmo dover intervenire."`
+			`	"Dovremmo almeno informare questo individuo che quelle casse sono un nascondiglio pessimo?" chiede il tenente, sogghignando.`
+			`	"Su, su," dice l'altro ufficiale, "non c'è bisogno di essere dispettosi." Se ne vanno, lasciandoti profondamente imbarazzato.`
+				accept
+	
+	npc evade
+		government "Republic"
+		personality timid
+		fleet
+			names "republic capital"
+			variant
+				"Gunboat"
+	
+	on visit
+		set "fw recon: obvious gunboat"
+		dialog `Un minuto dopo che atterri, una cannoniera della Repubblica, la <npc>, atterra proprio accanto a te. JJ non ti si avvicina. Dai registri della nave noti che questa cannoniera ti segue da quando hai lasciato <origin>; prima di poter consegnare le informazioni, dovrai sfuggire al suo inseguimento.`
+	on complete
+		payment 80000
+		"assisted free worlds" ++
+		log "Hai dato alle Free Worlds alcune foto e informazioni sulla base della Marina a New Wales. Jean-Jacques, il contatto della milizia, è stato molto grato per l'aiuto."
+		conversation
+			`JJ ti viene incontro appena atterri. "Bel lavoro, a seminare quella cannoniera della Marina," dice.`
+			branch caught
+				has "fw recon: caught"
+			branch obvious
+				has "fw recon: obvious gunboat"
+			
+			choice
+				`	"Cannoniera? Quale cannoniera?"`
+				`	"Sapevo di avere la sensazione di essere seguito."`
+					goto followed
+			`	"Non te ne sei accorto? Ho esploratori che mi riferiscono che eri seguito da una cannoniera di nome <npc> da quando hai lasciato <origin>. Tenevano d'occhio dove andavi, senza dubbio.`
+				goto followed
+			
+			label caught
+			choice
+				`	"Sapevano che stavo raccogliendo informazioni sulla base. Non c'è da stupirsi che avessero qualcuno che mi seguisse."`
+					goto followed
+				`	"Come facevano a sapere che avevo a che fare con voi?"`
+					goto followed
+			
+			label obvious
+			choice
+				`	"Sapevo di avere la sensazione di essere seguito."`
+				`	"Come facevano a sapere che avevo a che fare con voi?"`
+			
+			label followed
+			`	"Le capacità di raccolta informazioni della Repubblica sono vaste, molto oltre qualsiasi cosa possiamo mettere insieme noi. Posso solo immaginare come abbiano saputo che eri coinvolto e ti abbiano tenuto d'occhio."`
+			choice
+				`	"Che cosa devo fare adesso che la Repubblica mi tiene d'occhio?"`
+				`	"Sapendo questo, come puoi pensare di opporti alla Repubblica?"`
+					goto odds
+			`	"Tieni la testa bassa. Sei compromesso, quindi non posso chiederti altro lavoro di ricognizione. Finché non gli causi problemi, probabilmente prima o poi ti lasceranno in pace. Abbiamo un gran numero di mercanti che ci aiutano, e per quanto la Repubblica sia capace, può tenere d'occhio solo un certo numero di persone alla volta."`
+				goto info
+			
+			label odds
+			`	"Prego che non dobbiamo farlo," risponde JJ. "Al momento stiamo cercando di dimostrare la nostra innocenza per gli attentati su Geminus e Martini. Ma se si arrivasse alla guerra, se continueremo ad avere l'aiuto di mercanti come te, allora, se Dio vuole, potremmo anche avere qualche possibilità. La Repubblica sarà pure forte, ma non è onnipotente."`
+			
+			label info
+			`	JJ prende le informazioni e le foto che hai raccolto e ti paga <payment> in cambio. "Mi assicurerò di far sapere al resto del Consiglio delle Free Worlds quanto sei stato utile."`
+			choice
+				`	"Grazie."`
+					goto end
+				`	"Che cosa farete con queste informazioni?"`
+				`	"Consiglio delle Free Worlds? Che cos'è?"`
+					goto council
+			
+			`	"Quante domande, eh?" JJ ridacchia. "Non attaccheremo questa base navale, quindi non devi preoccuparti che qualcuno si faccia male per quello che hai fatto oggi. Ma se le Free Worlds e la Repubblica dovessero entrare in guerra, le informazioni saranno una risorsa vitale, comprese quelle che mi hai fornito, quindi grazie.`
+				goto end
+			
+			label council
+			`	"Quante domande, eh?" JJ ridacchia. "Il Consiglio è un insieme di leader nati da quello che una volta era il Patto di Difesa Reciproca del Sud. Ne faccio parte anch'io insieme a qualche altro. Al momento siamo responsabili del comando delle milizie delle Free Worlds e, se dovesse servire, saremo noi gli ufficiali al comando in una guerra contro la Repubblica.`
+				goto end
+			
+			label end
+			`	"Ora, se vuoi scusarmi, Capitano, ho altro lavoro da sbrigare," dice JJ. "Se desideri continuare ad aiutarci, sono sicuro che ci sono altri che potrebbero chiamarti, se vai a cercarli."`
+				decline
+
+
+
+mission "FW Escort 0"
+	autosave
+	minor
+	name "Scorta per le Free Worlds"
+	description "Dirigiti verso <destination> per incontrarti con un convoglio di mercantili delle Free Worlds."
+	source
+		government "Free Worlds"
+		near "Sabik" 1 100
+	destination "Longjump"
+	to offer
+		has "assisted free worlds"
+		not "FW Escort 1: offered"
+		or
+			random < 20 * "assisted free worlds"
+			has "flagship planet: Glaze"
+	to fail
+		has "chosen sides"
+	on decline
+		log "Hai rifiutato un'offerta di lavoro come scorta da parte di Tomek Voigt, ufficiale al comando della milizia delle Free Worlds."
+	
+	on offer
+		conversation
+			`Mentre attraversi lo spazioporto, ti si avvicina un uomo in uniforme della milizia. A giudicare dai segni sull'uniforme, sospetti che abbia un grado molto alto nella milizia.`
+			`	"Capitano <last>?" chiede. Annuisci. "Sono contento di incontrarti finalmente. Sono Tomek Voigt, ufficiale al comando delle milizie libere. Ho ufficiali e amici che hanno parlato molto bene di te. Mi dicono che ti sei dato molto da fare per aiutarci. Te ne sono grato."`
+			choice
+				`	"Oh, non è stato niente. Aiuto la gente dove posso."`
+					goto humble
+				`	"Mi sono dato da fare perché credo che la vostra sia una grande causa."`
+					goto cause
+				`	"Voglio solo essere pagato, e le Free Worlds pagano bene."`
+			`	Tomek alza un sopracciglio. "Un capitano che non le manda a dire, vedo. Beh, se quello che cerchi è la paga, ho un altro lavoro per te a nome delle Free Worlds.`
+				goto mission
+			label humble
+			`	Tomek sorride. "Un capitano modesto, vedo. Beh, se quello che cerchi è solo aiutare la gente, ho un altro lavoro per te a nome delle Free Worlds.`
+				goto mission
+			label cause
+			`	Tomek sogghigna. "Ah, un compagno combattente per la libertà. Sono sempre contento di vedere altri capitani che si uniscono sul serio alla causa. Ho un altro lavoro per te a nome delle Free Worlds.`
+			label mission
+			`	"Cerchiamo navi che aiutino a scortare un convoglio di mercantili diretto a Tarazed per caricare rifornimenti. Gli ultimi convogli sono stati attaccati dai pirati, e sospettiamo che lo sarà anche questo. Abbiamo già alcuni capitani sul lavoro, ma un aiuto in più fa sempre comodo. Ti interessa?"`
+			choice
+				`	"Certo, sarò lieto di dare una mano nella scorta."`
+					goto accept
+				`	"Che tipo di rifornimenti?"`
+				`	"Mi dispiace, ma non è il tipo di lavoro che cerco."`
+					decline
+			
+			`	"Equipaggiamento, armi e altri materiali vari necessari per costruire nuove navi. Le Free Worlds vogliono rafforzare le proprie forze, e stiamo già sfruttando al massimo la nostra industria locale, quindi abbiamo cominciato a importare materiali da aziende che non si preoccupano di trattare con quella che la Repubblica definisce un'organizzazione terroristica," dice Tomek con un sorriso beffardo.`
+			choice
+				`	"Beh, allora sarò lieto di aiutare."`
+				`	"Mi dispiace, ma non è il tipo di lavoro che cerco."`
+					decline
+			
+			label accept
+			`	"Ottimo!" dice. "Il convoglio partirà da <destination> appena tutte le scorte saranno arrivate. Ti consiglio di andarci subito."`
+				accept
+
+
+
+# Deprecated in v0.10.11. This event is preserved in case an older version of the mission "FW Escort 1B" is already active upon updating.
+event "fw escorts abandon timer"
+
+
+
+mission "FW Escort: Escorts"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "FW Escort 0: done"
+	to fail
+		has "chosen sides"
+	to complete
+		never
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		system "Sabik"
+		fleet
+			cargo 0
+			names "free worlds small"
+			variant
+				"Hawk"
+				"Sparrow" 3
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		system "Sabik"
+		to despawn
+			has "FW Escort 1B: done"
+		fleet
+			cargo 0
+			names "free worlds small"
+			variant
+				"Hawk"
+				"Sparrow" 2
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		system "Tarazed"
+		to spawn
+			has "FW Escort 1: done"
+		to despawn
+			has "FW Escort 1B: done"
+		fleet
+			cargo 0
+			names "free worlds capital"
+			variant
+				"Falcon"
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		system "Sabik"
+		to spawn
+			has "FW Escort 1B: done"
+		fleet
+			cargo 0
+			names "free worlds small"
+			variant
+				"Fury" 3
+
+
+
+mission "FW Escort 1"
+	autosave
+	landing
+	name "Scorta per le Free Worlds"
+	description "Scorta un convoglio di rifornimenti delle Free Worlds sano e salvo fino a <destination>."
+	source "Longjump"
+	destination "Wayfarer"
+	to offer
+		has "FW Escort 0: done"
+	to fail
+		has "chosen sides"
+	on offer
+		conversation
+			`Ti incontri con il convoglio su <origin>, nello spazioporto: sei mercantili con una scorta di... sette intercettori. Visto quanto è diffusa la pirateria in questa regione e quanto possono essere forti alcune flotte pirata, ti saresti aspettato una scorta più numerosa, ma sembra che al momento le Free Worlds non riescano a mettere insieme altro. Non c'è da stupirsi che chiedano una mano a capitani mercantili come te.`
+			`	Poco dopo il tuo arrivo, il convoglio è pronto a partire e traccia una rotta per <destination>.`
+				accept
+	
+	on accept
+		log "Stai facendo da scorta a un convoglio di rifornimenti delle Free Worlds diretto a Tarazed. Pare che ultimamente i pirati stiano prendendo di mira proprio i loro convogli, e le Free Worlds non hanno molte navi da spendere per difenderli."
+	
+	npc accompany save
+		government "Merchant"
+		personality escort timid
+		ship "Freighter" "F.S. Raleigh"
+		ship "Freighter" "F.S. Scott"
+		ship "Freighter" "F.S. Hudson"
+		ship "Freighter" "F.S. Drake"
+		ship "Freighter" "F.S. Magellan"
+		ship "Freighter" "F.S. Franklin"
+	npc
+		government "Pirate"
+		personality plunders entering
+		fleet "Large Southern Pirates"
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Alpha Arae"
+		fleet "Large Southern Pirates"
+	npc
+		personality plunders staying
+		government "Pirate"
+		system "Lesath"
+		fleet "Large Southern Pirates"
+	npc
+		government "Pirate"
+		personality plunders waiting
+		system "Tarazed"
+		fleet "Large Southern Pirates" 2
+	
+	on abort
+		log "Hai interrotto un lavoro di scorta per le Free Worlds."
+		fail "FW Escort: Escorts"
+	on fail
+		log "Non sei riuscito a proteggere un convoglio di mercantili delle Free Worlds. Il loro ufficiale al comando non ne sarà contento."
+		set "fw intro escort failed"
+		fail "FW Escort: Escorts"
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivi in questo sistema.`
+
+
+
+mission "FW Escort 1B"
+	autosave
+	landing
+	name "Scorta per le Free Worlds"
+	description "Scorta il convoglio di rifornimenti sano e salvo fino a <destination>, nel territorio delle Free Worlds."
+	source "Wayfarer"
+	destination "Longjump"
+	to offer
+		has "FW Escort 1: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Il tuo convoglio di mercantili raggiunge <origin> intatto, nonostante i numerosi incontri con i pirati. La scorta di intercettori è bastata appena a respingerli. I capitani mercantili vendono le loro merci e si riforniscono di armi e equipaggiamenti che serviranno a costruire nuove navi per le Free Worlds.`
+			`	Prima che tu parta, ti si avvicina un ufficiale della milizia delle Free Worlds che non era arrivato con te: dice che ha finito i suoi affari con la Tarazed Corporation e che si unirà al convoglio per tornare su <planet>. L'ufficiale comanda un Falcon, una nave da guerra molto più temibile del tuo gruppo di intercettori. Il che è un bene, visto che, ora che i mercantili trasportano un carico molto più prezioso, è probabile che gli attacchi dei pirati peggiorino ancora...`
+				accept
+	
+	npc accompany save
+		government "Merchant"
+		personality escort timid
+		"cargo settings"
+			outfitters "Common Outfits" "Kraz Advanced" "Delta V Advanced"
+		ship Freighter "F.S. Raleigh"
+		ship Freighter "F.S. Scott"
+		ship Freighter "F.S. Hudson"
+		ship Freighter "F.S. Drake"
+		ship Freighter "F.S. Magellan"
+		ship Freighter "F.S. Franklin"
+	npc
+		government "Pirate"
+		personality plunders entering
+		fleet "Large Southern Pirates"
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Alpha Arae"
+		fleet "Large Southern Pirates"
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Lesath"
+		fleet "Large Southern Pirates"
+	npc
+		government "Pirate"
+		personality plunders waiting
+		system "Sabik"
+		fleet "Large Southern Pirates" 2
+	
+	on abort
+		log "Hai interrotto un lavoro di scorta per le Free Worlds."
+		fail "FW Escort: Escorts"
+	on fail
+		log "Non sei riuscito a proteggere un convoglio di mercantili delle Free Worlds. Il loro ufficiale al comando non ne sarà contento."
+		set "fw intro escort failed"
+		fail "FW Escort: Escorts"
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivi in questo sistema.`
+	on complete
+		payment 400000
+
+
+
+mission "FW Escort 2"
+	autosave
+	landing
+	name "Scorta per le Free Worlds"
+	description "Scorta un convoglio di rifornimenti delle Free Worlds sano e salvo fino a <destination>."
+	source "Longjump"
+	destination "Wayfarer"
+	to offer
+		has "FW Escort 1B: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Tomek aspetta nello spazioporto di <origin> per ricevere i mercantili. Dopo aver ricontrollato che il carico sia intatto, si volta verso di te e gli altri capitani della scorta e dice: "Tutti voi avete reso un grande servizio alle Free Worlds." Passa accanto a ciascun capitano e gli consegna personalmente un chip di credito.`
+			`	Dopo aver consegnato il tuo pagamento, Tomek annuncia: "Il convoglio riparte subito per <planet>. Stesse condizioni di prima: 400.000 crediti per il ritorno sicuro dei mercantili, del loro equipaggio e del loro carico. E giuro che il vostro coraggio non sarà mai dimenticato dal Consiglio né dalle Free Worlds. Se siete disposti a offrirvi una seconda volta, restate qui."`
+			`	Tomek se ne va, presumibilmente a cercare sostituti per i capitani che sono già scappati.`
+			choice
+				`	(Offriti volontario.)`
+				`	(Pianta il gruppo di scorta.)`
+					decline
+			
+			`	Resti lì con alcuni degli altri piloti della scorta e guardi la maggior parte degli altri allontanarsi. Presto Tomek torna, per fortuna con qualche faccia nuova al seguito. "Sapete come funziona," dice. "Non possiamo permetterci di perdere nessuno di questi mercantili. Buona fortuna a tutti voi, e prego di rivedervi tutti qui sani e salvi fra un paio di settimane."`
+				accept
+	
+	on decline
+		log "Hai rifiutato un'offerta di altro lavoro come scorta da parte di Tomek Voigt, ufficiale al comando della milizia delle Free Worlds."
+		fail "FW Escort: Escorts"
+	
+	npc accompany save
+		government "Merchant"
+		personality escort timid
+		ship Freighter "F.S. Raleigh"
+		ship Freighter "F.S. Scott"
+		ship Freighter "F.S. Hudson"
+		ship Freighter "F.S. Drake"
+		ship Freighter "F.S. Magellan"
+		ship Freighter "F.S. Franklin"
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Alpha Arae"
+		fleet "Large Southern Pirates"
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Lesath"
+		fleet "Large Southern Pirates"
+	npc
+		government "Pirate"
+		personality plunders waiting
+		system "Tarazed"
+		fleet "Large Southern Pirates" 3
+	
+	on abort
+		log "Hai interrotto un lavoro di scorta per le Free Worlds."
+		fail "FW Escort: Escorts"
+	on fail
+		log "Non sei riuscito a proteggere un convoglio di mercantili delle Free Worlds. Il loro ufficiale al comando non ne sarà contento."
+		set "fw intro escort failed"
+		fail "FW Escort: Escorts"
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivi in questo sistema.`
+
+
+
+mission "FW Escort 2B"
+	autosave
+	landing
+	name "Scorta per le Free Worlds"
+	description "Scorta un convoglio di rifornimenti delle Free Worlds sano e salvo fino a <destination>."
+	source "Wayfarer"
+	destination "Longjump"
+	to offer
+		has "FW Escort 2: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Ancora una volta il convoglio si rifornisce di armi ed equipaggiamenti e comincia a prepararsi per il viaggio di ritorno. Ma questa volta, purtroppo, non c'è nessun ufficiale della milizia con una nave da guerra a rinforzarvi. Non puoi fare a meno di preoccuparti che, più questi convogli continuano, più pirati scopriranno la loro rotta e cominceranno a tendere imboscate.`
+				accept
+	
+	npc accompany save
+		government "Merchant"
+		personality escort timid
+		"cargo settings"
+			outfitters "Common Outfits" "Kraz Advanced" "Delta V Advanced"
+		ship Freighter "F.S. Raleigh"
+		ship Freighter "F.S. Scott"
+		ship Freighter "F.S. Hudson"
+		ship Freighter "F.S. Drake"
+		ship Freighter "F.S. Magellan"
+		ship Freighter "F.S. Franklin"
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Alpha Arae"
+		fleet "Large Southern Pirates" 2
+		fleet "Small Southern Pirates" 2
+	npc
+		government "Pirate"
+		personality plunders staying
+		system "Lesath"
+		fleet "Large Southern Pirates" 2
+		fleet "Small Southern Pirates" 2
+	npc
+		government "Pirate"
+		personality plunders waiting
+		system "Sabik"
+		fleet "Large Southern Pirates"
+		fleet "Small Southern Pirates" 2
+	
+	on abort
+		log "Hai interrotto un lavoro di scorta per le Free Worlds."
+		fail "FW Escort: Escorts"
+	on fail
+		log "Non sei riuscito a proteggere un convoglio di mercantili delle Free Worlds. Il loro ufficiale al comando non ne sarà contento."
+		set "fw intro escort failed"
+		fail "FW Escort: Escorts"
+	on visit
+		dialog `Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivi in questo sistema.`
+	on complete
+		fail "FW Escort: Escorts"
+		payment 400000
+
+
+
+mission "FW Escort 3"
+	autosave
+	landing
+	name "Mercantile in avaria"
+	description "Ripara la <npc>, rimasta in avaria nel sistema <waypoints>, e scortala sana e salva fino a <destination>."
+	source "Longjump"
+	waypoint "Lesath"
+	to offer
+		has "FW Escort 2B: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Ancora una volta Tomek Voigt ti incontra insieme al resto del convoglio allo spazioporto, ringrazia tutti per il coraggio e la dedizione e paga a ciascuno 400.000 crediti. Poi ti prende da parte e dice: "Capitano <last>, mi segua, per favore."`
+			`	Tomek ti porta in uno dei bar dello spazioporto, scambia saluti con gli avventori e si siede al bancone. "Il punto è questo," dice. "Uno dei nostri mercantili, la <npc>, è appena stato messo fuori uso nel sistema <waypoints>. Dobbiamo che tu voli subito là, lo ripari e lo riporti qui prima che i pirati possano catturarlo. Te la senti di farlo?"`
+			choice
+				`	"Certo!"`
+				`	"No, mi dispiace. Sono un capitano mercantile con delle bollette da pagare. Non vado a cercare le vostre navi disperse in mezzo al nulla."`
+					decline
+		
+			`	"Sono contento di sentirlo," dice. "L'equipaggio di quel mercantile conta su di te. So che non devo dirti che cosa succederà se i pirati li abbordano prima che tu arrivi, quindi muoviti in fretta."`
+				accept
+	
+	npc accompany save
+		government "Merchant"
+		personality escort derelict timid
+		"cargo settings"
+			outfitters "Common Outfits" "Kraz Advanced" "Delta V Advanced"
+		system "Lesath"
+		ship "Freighter" "F.S. Shackleton"
+	
+	on decline
+		log "Hai rifiutato un'offerta di altro lavoro come scorta da parte di Tomek Voigt, ufficiale al comando della milizia delle Free Worlds."
+	on abort
+		log "Hai interrotto un lavoro di scorta per le Free Worlds."
+	on fail
+		log "Hai fallito una missione per salvare un mercantile delle Free Worlds. Tomek non ne sarà contento."
+		set "fw intro escort failed"
+	on visit
+		dialog `Sei tornato su <planet>, ma la <npc> non è con te. Se non l'hai ancora riparata, vai su <waypoints> a farlo, oppure decolla e aspetta che arrivi in questo sistema se ce l'hai già fatta.`
+	on complete
+		payment 200000
+		"assisted free worlds" ++
+		log "Hai aiutato a salvare un mercantile delle Free Worlds messo fuori uso dai pirati. Ti sei guadagnato la gratitudine di Tomek Voigt, il membro del Consiglio responsabile dei convogli di rifornimento."
+		conversation
+			`Tomek è immensamente sollevato nel vedere la <npc> tornata a casa sana e salva. "Oggi ci hai reso un grande servizio, Capitano," dice, porgendoti i chip di credito per <payment>. "Mi assicurerò di far sapere al resto del Consiglio quanto sei stato utile, e prego che possiamo chiamarti in futuro."`
+			choice
+				`	"Sarò pronto a rispondere alla chiamata, quando arriverà."`
+					decline
+				`	"Che cos'è esattamente il Consiglio?"`
+			
+			`	Tomek si ferma a riflettere un momento. "Prima delle Free Worlds c'era il Patto di Difesa Reciproca del Sud, poco più di un accordo di difesa fra i mondi che ora formano le Free Worlds. Ogni gruppo ha bisogno di una guida, e il Consiglio è quello che un tempo era la guida del Patto.`
+			`	"Abbiamo conservato tutti i poteri che avevamo sotto il Patto, essendo gli organizzatori e gli ufficiali al comando delle varie milizie delle Free Worlds. Ma ora che le Free Worlds si sono dichiarate un governo formale e che le tensioni con la Repubblica sono così alte, le milizie sono obbligate a rispondere al Consiglio come autorità di emergenza, al contrario dell'accordo precedente in cui i mondi potevano rifiutarsi di rispondere al Patto, se per qualsiasi ragione sceglievano di non farlo.`
+			`	"Ma il Consiglio è solo un'organizzazione di transizione; con l'istituzione del Senato delle Free Worlds, che è già in preparazione, il Consiglio sarà sciolto e tutte le sue responsabilità passeranno al Senato.`
+			`	"Questo risponde alla tua domanda?" chiede Tomek.`
+			`	"Sì, questo risponde," dici. "Grazie."`
+
+
+
+mission "FW Escort Second Chance"
+	minor
+	name "Seconda possibilità"
+	description "Torna a <destination> per incontrare Tomek Voigt e vedere se ti perdonerà per aver fallito la missione di scorta che ti aveva affidato."
+	source
+		near "Sabik" 1 100
+		government "Free Worlds"
+	destination "Longjump"
+	to offer
+		has "fw intro escort failed"
+		not "chosen sides"
+		"assisted free worlds" == 2
+		has "FW Katya 7C: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Poco dopo che esci dalla nave ti si avvicina un uomo. "Capitano <last>?" chiede. Annuisci. "Mi chiamo Alondo," dice. "Sono un membro del Consiglio delle Free Worlds. Katya parla così bene di te che vorrei vederti entrare ufficialmente nella milizia delle Free Worlds, anche se hai fatto un pasticcio con quella missione di scorta che ti era stata affidata."`
+			choice
+				`	"Sì, me ne dispiace molto."`
+				`	"Mi dispiace, ma ho deciso che non voglio comunque aiutare le Free Worlds."`
+					decline
+			
+			`	"Ne sono sicuro," dice, "ma non sono io quello a cui devi dirlo. Al momento Tomek rifiuta di lasciarci offrirti un incarico, ma se parli con lui di persona potrebbe cambiare idea. O potrebbe non cambiarla. Ma se vuoi davvero lavorare per noi, dovresti andare a trovarlo su <planet>, prenderti la piena responsabilità di quello che è successo e scusarti. È solo un suggerimento." Si allontana.`
+				accept
+
+	on decline
+		log "Hai rifiutato un colloquio con Tomek Voigt sulla missione di scorta fallita."
+	on abort
+		log "Hai rifiutato un colloquio con Tomek Voigt sulla missione di scorta fallita."
+	
+	on complete
+		conversation
+			`Con una certa apprensione, contatti Tomek e gli chiedi se sarebbe disposto a incontrarti. Dopo una lunga pausa dice: "Va bene. Ci vediamo alla cantina fra quindici minuti." Aspetti una ventina di minuti prima che finalmente si presenti e dica, senza preamboli: "Ebbene, che cosa hai da dire a tua discolpa?"`
+			choice
+				`	"Mi prendo la piena responsabilità della perdita di quel mercantile. Mi dispiace."`
+					goto responsible
+				`	"Non potevo davvero fare nulla contro così tanti pirati."`
+				`	"Mi dispiace per quello che è successo. Non succederà più."`
+			`	Non sembra del tutto soddisfatto di quella risposta. "Ho dovuto scrivere lettere a cinque famiglie diverse per spiegare perché il loro figlio o la loro figlia o il loro marito è stato ucciso in una normale missione di trasporto merci. Avevi promesso di tenerli al sicuro, e hai fallito. Lo capisci, vero?"`
+			choice
+				`	"Beh, lo spazio è un posto pericoloso. Succedono cose brutte. Non posso impedirlo."`
+				`	"Sì, so di aver fallito, e mi dispiace molto per la loro perdita."`
+					goto responsible
+			action
+				log "Ti sei incontrato con Tomek sul tuo fallimento nel proteggere un mercantile delle Free Worlds. Hai cercato di fargli notare che non potevi fare nulla, ma non ne è stato contento."
+				set "fw escort: mistrusted"
+			`	"Questa non è una risposta appropriata," dice. "Se ti affidiamo una missione, dobbiamo poter contare sul fatto che la porterai a termine, senza scuse. Mi dispiace, ma non ho alcun interesse a lavorare con te in futuro. Addio, Capitano." Si allontana.`
+				decline
+			
+			label responsible
+			`	"Se in futuro ti affidiamo una missione," dice, "dobbiamo poter contare sul fatto che la porterai a termine. Niente scuse, niente secondi tentativi. Hai capito?" Annuisci. "Bene," dice, con un lungo sospiro. "Katya ha detto che si fida di te, quindi questa volta ti do una seconda possibilità. Ma cerca di essere più responsabile in futuro, va bene?"`
+			choice
+				`	"Lo sarò. Grazie per avermi dato una seconda possibilità, signore."`
+				`	"Farò del mio meglio."`
+			`	Ti stringe la mano e se ne va, senza ordinare niente da bere. Ti resta la sensazione che continui a non stimarti molto.`
+			action
+				log "Ti sei scusato con Tomek per la missione di scorta fallita. Sembra che ti abbia perdonato."
+				"assisted free worlds" ++
+
+
+
+mission "FW Bounty 1"
+	minor
+	name "Taglie per le Free Worlds"
+	description `Dai la caccia e distruggi la "Rat Pack", una banda di navi pirata guidata da una nave ammiraglia di nome "Cluny" che ha tormentato i mercanti nello spazio delle Free Worlds. Sono stati visti l'ultima volta a nord-est di Kornephoros. Dopo averli sconfitti, torna a <destination>.`
+	source
+		government "Free Worlds"
+	to offer
+		"combat rating" > 148
+		not "chosen sides"
+		random < 20 + 5 * "assisted free worlds" * "assisted free worlds"
+	on decline
+		log "Hai detto a un ufficiale della milizia che non avresti dato la caccia a nessun ricercato per le Free Worlds."
+		dialog phrase "free worlds declined"
+	on fail
+		clear "FW Bounty 1: offered"
+	
+	on offer
+		conversation
+			`Mentre attraversi lo spazioporto, ti si avvicina una donna in uniforme della milizia. "È lei il Capitano <last>?" chiede. Annuisci. "Sono una comandante della milizia locale," dice. "C'è una flotta pirata che negli ultimi mesi ha attaccato più volte i mercantili in questo settore, ma ora sembra che si sia spostata fuori dallo spazio delle Free Worlds. Vorrei colpirla prima che torni a fare altri danni qui, ma al momento il Consiglio delle Free Worlds non permette che le navi della milizia siano usate per attacchi preventivi, quindi stiamo cercando di reclutare un capitano mercantile, e mi hanno detto che lei è un pilota formidabile."`
+			choice
+				`	"Beh, sarò lieto di distruggerli per voi."`
+					goto accept
+				`	"Quanto è potente la flotta di questi pirati?"`
+				`	"Quanto mi pagherete per eliminare questa flotta?"`
+					goto payment
+				`	"Non voglio avere niente a che fare con le Free Worlds."`
+					decline
+			
+			`	"Beh, non è esattamente una flotta potente. È solo un insieme di intercettori, ma sono abbastanza numerosi e rapidi che abbiamo avuto difficoltà a eliminarli prima che riuscissero a fuggire o ad avventarsi sulle nostre navi più grandi. Possiamo pagarle <payment> se riesce a eliminarli."`
+			choice
+				`	"Solo un gruppo di intercettori? Non dovrebbe essere un problema per me distruggerli."`
+					goto accept
+				`	"Se non ci riuscite voi, non so come potrei riuscirci io. Arrangiatevi."`
+					defer
+			
+			label payment
+			`	"Dato che questi pirati sono stati particolarmente molesti, abbiamo messo una taglia di <payment> sulle loro teste. Eliminali per noi e quei crediti sono tutti tuoi."`
+			choice
+				`	"Mi sembra abbastanza ragionevole. Va bene, li distruggerò per voi."`
+				`	"Solo <payment>? Dovrete trovare qualcun altro per questo lavoro."`
+					defer
+			
+			label accept
+			`	"Eccellente," dice. "Si fanno chiamare 'Rat Pack', e li riconoscerai perché la maggior parte delle loro navi porta il nome di qualche parassita, anche se per qualche ragione sconosciuta la loro ammiraglia si chiama solo 'Cluny'. Le nostre fonti dicono che sono appena a nord-est del sistema Kornephoros. Grazie in anticipo per il tuo aiuto."`
+				accept
+	
+	npc kill
+		government "Bounty"
+		personality heroic staying marked target tracked
+		system
+			near "Seginus" 1 1
+		ship "Hawk (Rocket)" "Cluny"
+		ship "Hawk (Speedy)" "Ferret"
+		ship "Berserker (Afterburner)" "Weasel"
+		ship "Wasp (Proton)" "Vixen"
+		ship "Fury (Laser)" "Stoat"
+		ship "Sparrow" "Rat"
+		dialog `La "Rat Pack" è stata eliminata. Puoi riscuotere la taglia tornando a <destination>.`
+	
+	on visit
+		dialog phrase "generic fleet bounty hunting on visit"
+	on complete
+		log "Hai dato la caccia a una flotta di pirati chiamata Rat Pack che stava creando problemi alle Free Worlds."
+		payment 200000
+		dialog `L'ufficiale della milizia che ti aveva chiesto di dare la caccia alla "Rat Pack" arriva alla tua nave poco dopo che atterri e ti ringrazia profusamente. "Ora non dovremo più preoccuparci che diano fastidio alle navi di questo settore." Ti paga la taglia di <payment> e dice che racconterà agli altri capi della milizia quanto sei stato utile.`
+
+
+
+ship "Mammoth" "Mammoth (Moonless)"
+	outfits
+		"Modified Blaster Turret" 2
+		"Heavy Laser Turret" 6
+		
+		"Fission Reactor"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		"Large Radar Jammer"
+		"Cooling Ducts"
+		"Laser Rifle" 18
+		
+		"A250 Atomic Thruster"
+		"A375 Atomic Steering"
+		"Scram Drive"
+
+	turret "Heavy Laser Turret"
+	turret "Heavy Laser Turret"
+	turret "Heavy Laser Turret"
+	turret "Heavy Laser Turret"
+	turret "Heavy Laser Turret"
+	turret "Heavy Laser Turret"
+	turret "Modified Blaster Turret"
+	turret "Modified Blaster Turret"
+
+
+
+mission "FW Bounty 2"
+	minor
+	name "Taglie per le Free Worlds"
+	description `Un ufficiale della milizia delle Free Worlds di <destination> ti ha chiesto di dare la caccia alla <npc>, una nave pirata che saccheggia le navi dirette a Tarazed. L'ufficiale della milizia ha suggerito di provare ad attaccarla da lontano.`
+	source
+		government "Free Worlds"
+	to offer
+		has "FW Bounty 1: done"
+		not "chosen sides"
+		random < 25 + 5 * "assisted free worlds" * "assisted free worlds"
+	on fail
+		clear "FW Bounty 2: offered"
+	
+	on offer
+		conversation
+			`Un ufficiale delle Free Worlds ti fa un cenno mentre attraversi lo spazioporto. "Salve, Capitano <last>," dice. "Ho saputo che in passato ci hai aiutato a fronteggiare le minacce dei pirati. Ti interessa un'altra missione di caccia al ricercato?"`
+			choice
+				`	"Di che si tratta questa volta?"`
+				`	"Certo, adoro distruggere i pirati!"`
+					goto accept
+				`	"Mi dispiace, adesso sono troppo occupato."`
+					defer
+			
+			`	"C'è un mercantile pesante riadattato di nome <npc> che sta rubando grandi quantità di carico ai nostri convogli di rifornimento diretti a Tarazed. Ti avverto che questa nave è tosta: monta più laser pesanti di quanti ne abbia mai visti installati su una sola nave, ma è lenta come un bradipo, quindi potresti riuscire a colpirla da lontano. La taglia su di essa è <payment>."`
+			choice
+				`	"Non sembra troppo difficile. Ci sto."`
+				`	"Potrei cavarmela con un gruppo di intercettori, ma questa mi sembra troppo per me. Dovrete trovare qualcun altro."`
+					defer
+			
+			`	Sogghigna. "Sono contento che tu sia dei nostri. Buona fortuna, Capitano."`
+				accept
+			
+			label accept
+			`	Sogghigna. "Il tuo bersaglio è un mercantile pesante riadattato di nome <npc> che sta rubando grandi quantità di carico ai nostri convogli di rifornimento. È stato visto l'ultima volta nel sistema Delta Sagittarii. Ti avverto che questa nave è tosta: monta più laser pesanti di quanti ne abbia mai visti installati su una sola nave, ma è lenta come un bradipo, quindi potresti riuscire a colpirla da lontano. Buona fortuna, Capitano."`
+				accept
+	
+	npc kill
+		government "Bounty"
+		personality heroic staying marked target tracked
+		system
+			near "Delta Sagittarii" 1 1
+		ship "Mammoth (Moonless)" "Moonless Night"
+		dialog phrase "generic hunted bounty eliminated dialog"
+	
+	on visit
+		dialog phrase "generic bounty hunting on visit"
+	on complete
+		log `Hai dato la caccia alla Moonless Night, un mercantile pesante riadattato che terrorizzava le rotte di rifornimento delle Free Worlds.`
+		payment 300000
+		dialog `L'ufficiale della milizia che ti aveva chiesto di dare la caccia alla <npc> ti incontra nello spazioporto e ti paga <payment>. "Ancora una volta, grazie per il tuo aiuto," dice.`
+
+
+
+mission "FW Bounty 3"
+	name "Taglie per le Free Worlds"
+	description `Un ufficiale della milizia delle Free Worlds di <destination> ti ha chiesto di dare la caccia alla <npc>, una potente nave pirata vista l'ultima volta nel sistema Shaula.`
+	source
+		government "Free Worlds"
+	to offer
+		has "FW Bounty 2: done"
+		not "chosen sides"
+		random < 30 + 5 * "assisted free worlds" * "assisted free worlds"
+	on decline
+		log "Hai detto a un ufficiale della milizia che non avresti dato la caccia ad altri ricercati per le Free Worlds."
+		dialog phrase "free worlds declined"
+	on fail
+		clear "FW Bounty 3: offered"
+	
+	on offer
+		conversation
+			`Ancora una volta, mentre attraversi lo spazioporto, un ufficiale delle Free Worlds ti fa cenno di fermarti. "Abbiamo un'altra missione di caccia al ricercato per te," dice. "Questa è un po' più pericolosa: questa nave pirata ha armi che non abbiamo mai visto, forse di origine aliena. Ti interessa aiutarci a distruggerla?"`
+			choice
+				`	"Sì, sono sicuro che la mia nave sarà all'altezza della sfida."`
+					goto accept
+				`	"Di origine aliena? Che tipo di armi ha?"`
+				`	"Mi dispiace, non ho intenzione di dare altre mano alle Free Worlds."`
+					decline
+			
+			`	"Ha un paio di cannoni strani che sembrano interferire con i sistemi elettrici di una nave, prosciugandone l'energia e facendo funzionare male le armi. È simile ai laser che hanno i Quarg, ed è per questo che pensiamo che siano tecnologia aliena."`
+			choice
+				`	"Beh, ti sei rivolto alla persona giusta. La eliminerò per voi."`
+				`	"Mi dispiace, ma sembra un lavoro per qualcun altro."`
+					defer
+			
+			label accept
+			`	"Ottimo," dice. "Il tuo bersaglio si chiama <npc>. Dopo che l'abbiamo quasi distrutta, è andata a nascondersi nel sistema Shaula, il che significa che probabilmente dovrai vedertela anche con altri pirati nello stesso momento. Buona fortuna, Capitano."`
+				accept
+	
+	npc kill
+		government "Bounty"
+		personality heroic staying marked target tracked
+		system "Shaula"
+		ship "Osprey (Alien Weapons)" "Silverhawk"
+		dialog phrase "generic hunted bounty eliminated dialog"
+	
+	on visit
+		dialog phrase "generic bounty hunting on visit"
+	on complete
+		payment 500000
+		"assisted free worlds" ++
+		log "Hai sconfitto la Silverhawk, un Osprey armato con tecnologia aliena, e ti sei guadagnato una buona reputazione con la milizia delle Free Worlds dando la caccia ad altri pirati pericolosi."
+		dialog `L'ufficiale della milizia che ti aveva chiesto di dare la caccia alla <npc> ti contatta poco dopo che atterri. "Ci hai reso un grande servizio," dice. "Dirò al Consiglio quanto sei stato utile." Ti consegna un pagamento di <payment>.`
+
+
+
+# Because these missions can also be failed by having "chosen sides", this mission handles the failure messages for FW Katya.
+mission "FW Katya Failed"
+	non-blocking
+	landing
+	invisible
+	to offer
+		not "chosen sides"
+		or
+			"FW Katya 1: failed"
+			"FW Katya 1B: failed"
+			"FW Katya Alt 2: failed"
+			"FW Katya 2: failed"
+			"FW Katya 2B: failed"
+			"FW Katya 2C: failed"
+			"FW Katya 3: failed"
+			"FW Katya 4: failed"
+			"FW Katya 5: failed"
+			"FW Katya 5B: failed"
+			"FW Katya 5C: failed"
+			"FW Katya 6: failed"
+			"FW Katya 6B: failed"
+			"FW Katya 6C: failed"
+			"FW Katya 7: failed"
+			"FW Katya 7B: failed"
+			"FW Katya 7C: failed"
+	on accept
+		log "Non sei riuscito a completare una missione affidatati da Katya, un'ufficiale delle Free Worlds."
+		dialog phrase "free worlds failed"
+		fail
+
+
+
+mission "FW Katya 1"
+	minor
+	name "Aiuta le Free Worlds"
+	description "Passa da <destination>, prendi a bordo due passeggeri e un po' di carico, e distrai la Repubblica da uno scambio di merci più importante che avviene nello stesso momento."
+	source
+		government "Free Worlds"
+	destination "Glory"
+	to offer
+		or
+			random < 10 + 7 * "assisted free worlds" * "assisted free worlds"
+			has "flagship planet: Zug"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Mentre giri per lo spazioporto, ti sei fermato un momento a leggere il menù affisso davanti a un ristorante, quando i tuoi pensieri vengono interrotti dal clic di una pistola che viene armata proprio dietro la testa, e da una voce di donna che dice: "Pensa in fretta, Capitano."`
+			choice
+				`	(Fai quella mossa di karate che ho visto una volta in un video.)`
+					goto karate
+				`	(Alza le mani lentamente e scopri che cosa vuole.)`
+			
+			`	"Buona scelta," dice. "Ora girati, lentamente, e non provare scherzi. Ho una pistola semiautomatica puntata dritta alla tua testa."`
+			choice
+				`	(Ora, prova quella mossa di karate.)`
+					goto karate
+				`	(Girati lentamente.)`
+			
+			`	Ti giri e ti trovi davanti una donna in uniforme delle Free Worlds. I galloni sul colletto la indicano come una specie di ufficiale. Ti sta sorridendo. "Magnificamente fatto, Capitano," dice. "Che autocontrollo. Che straordinaria freddezza. Non è una cosa che vedo spesso da queste parti. Se questa fosse carica, parecchi zotici di provincia negli ultimi mesi si sarebbero fatti aprire il cranio prima che riuscissi ad arrivare a reclutarli." Abbassa la pistola.`
+			choice
+				`	"Vuoi dire che era una specie di prova? Non stai cercando di rapinarmi?"`
+					goto explanation
+				`	(Prova quella mossa di karate, tanto per ridere.)`
+			
+			`	Provi a strapparle la pistola. Un secondo dopo ti ha già bloccato il braccio dietro la schiena, usando appena la forza necessaria a farti capire che le cose potrebbero diventare molto dolorose se continui a divincolarti. "Sveglio, e anche giocherellone," dice, "mi piace. Ma dovrà nevicare all'inferno prima che un ragazzino come te mi colga di sorpresa. Ora, parliamo?" Ti lascia andare, e tu ti massaggi il braccio con prudenza.`
+			
+			label explanation
+			`	"Mi serve un civile per un lavoro da corriere," dice. "Niente di illegale, almeno niente che la Repubblica possa appiopparti. Deve solo essere fatto da una nave che non vola con i nostri colori, e da un capitano che non si metta a urlare 'Morte a tutti i tiranni!' e ad aprire il fuoco la prima volta che il tuo carico viene scansionato. Che ne dici?"`
+			choice
+				`	"Non sono sicuro di essere pronto a schierarmi in questa guerra, non ancora."`
+				`	"Perché dovrei aiutare un gruppo di terroristi?"`
+					goto terrorists
+				`	"Va bene, dimmi di più."`
+					goto more
+			
+			`	"Senti, ragazzino," dice. "Quando ti chiederò di schierarti, quando ti offrirò una missione che ti brucerà qualche ponte, non userò sotterfugi. Ti dirò esattamente a che cosa stai andando incontro. Quello che ti offro adesso è solo la possibilità di conoscerci, e di farci conoscere te, senza aspettative. Accidenti, puoi anche fare missioni per i Repubblicani nello stesso tempo."`
+			choice
+				`	"Mi sembra giusto. Ti ascolto."`
+					goto more
+				`	"Non mi piace lavorare con chi comincia una conversazione puntandomi una pistola alla testa. Anche se scarica. Trova qualcun altro per questo lavoro."`
+					decline
+			
+			label terrorists
+			`	"Senti, ragazzino," dice. "So che la situazione sembra brutta, ma dico la verità quando affermo che non sono state le Free Worlds a sganciare quelle bombe, e non sappiamo nemmeno chi sia stato. Quindi accetterò con orgoglio di essere chiamata traditrice per essermi separata dalla Repubblica, ma non tollererò di essere chiamata terrorista."`
+			choice
+				`	"E quale motivo avrei di crederti?"`
+				`	"Non sono convinto. Dovrai trovare qualche altro sprovveduto per farti fare il lavoro sporco."`
+					decline
+			
+			`	Si ferma un momento. "Non hai nessun motivo," dice con un sospiro. "A volte bisogna solo avere fede."`
+			choice
+				`	"Va bene, sono disposto ad ascoltarti."`
+				`	"Beh, non ho molta fede nelle persone che cominciano una conversazione puntandomi una pistola alla testa. Anche se scarica. Trova qualcun altro per questo lavoro."`
+					decline
+			
+			label more
+			`	"Va bene, il punto è questo. Dobbiamo far arrivare un carico da <planet> a Skymoot. Sono solo rifornimenti medici: niente bombe, niente contrabbando. Ma lo caricheremo sulla tua nave nel cuore della notte, cercando in ogni modo di non farci notare. Però i Repubblicani hanno gli occhi più acuti della galassia, quindi verrai notato comunque. E dato che qualunque cosa fatta nel cuore della notte è probabile che insospettisca, ti fermeranno e ti perquisiranno. Nel frattempo il carico vero sarà stato caricato su una delle nostre navi in pieno giorno, e passerà attraverso lo spazio della Repubblica del tutto inosservato."`
+			choice
+				`	"Mi piace come ragioni. Ci sto."`
+					goto details
+				`	"Mi dispiace, mi sembra un po' troppo losco per i miei gusti. Per favore, non offrirmi altro lavoro in futuro."`
+			
+			`	"Peccato," dice, "mi stavi simpatico. Non vedevo l'ora di averti nella mia squadra." Sembra davvero delusa. "Ma quel che è giusto è giusto. Sei libero di andare, e dirò ai miei colleghi che non ti interessa lavorare per noi."`
+				decline
+			
+			label details
+			`	"Ottimo," dice, sorridendo ancora più apertamente. "Comunque mi chiamo Katya Reynolds. Sono contenta che lavoreremo insieme." Comincia ad allontanarsi, poi sembra ricordarsi qualcosa. "Un'ultima cosa: alcuni miei amici su <planet>, turisti, hanno bisogno di un passaggio per uscire da quel posto, e io gli devo un favore. Ti dispiacerebbe tenere libere due cuccette per loro?"`
+			choice
+				`	"Certo, nessun problema."`
+			
+			`	"Eccellente. Non vedo l'ora di fare affari con te, Capitano."`
+				accept
+			
+			label karate
+			`	Scarti di lato e ti giri in fretta. Mentre lo fai senti un clic sonoro, ma la pistola non spara. Con una mano scosti l'arma. Con l'altra sferri un colpo di karate che, se avessi studiato karate, le avrebbe frantumato la clavicola lasciandola piegata dal dolore. Ma dato che non hai studiato karate, il tuo colpo rimbalza innocuo sulla sua spalla sorprendentemente muscolosa.`
+			`	Il tuo aggressore si rivela vestito con un'uniforme delle Free Worlds e con un'espressione delusa. "Beh, ma sei proprio un bastardo stupido e imprudente!" dice. "Speravo qualcosa di meglio da te. Prima di tutto, se questa pistola fosse carica, il tuo cervello sarebbe spalmato su tutto il marciapiede. E secondo, combatti come una ragazza. Non ho alcun uso per le teste calde come te." Si allontana a grandi passi, lasciandoti molto confuso. Sembra che tu abbia appena fallito una specie di prova.`
+			choice
+				`	(Lasciala andare.)`
+					decline
+				`	"Ah sì? Beh, tu SEI una ragazza!"`
+			
+			`	Si volta di nuovo, con un bagliore terribile negli occhi, e ti si avvicina fino ad avere i visi a pochi centimetri. "Sì, ma io non combatto come una ragazza," dice. "Io... combatto come una femmina di tasso."`
+			choice
+				`	"Una femmina di... tasso?"`
+			
+			`	"Creature terrificanti." Se ne va, lasciandoti ancora più confuso.`
+				decline
+	
+	on decline
+		event "FW Katya Alt 2: ready" 21
+		log "Sei stato minacciato con una pistola da una donna della milizia, in una specie di mal concepita prova di reclutamento delle Free Worlds."
+	
+	on accept
+		log "Hai accettato di fare da diversivo per le Free Worlds fingendo di essere un contrabbandiere mentre trasportavi in realtà rifornimenti medici innocui. Sembra che possa essere un trucco per far fare brutta figura alla Marina."
+
+
+
+mission "FW Katya 1B"
+	landing
+	name "Aiuta le Free Worlds"
+	description "Porta un carico (innocuo ma fatto per sembrare sospetto) e due turisti fino a <destination>."
+	source "Glory"
+	destination "Skymoot"
+	passengers 2
+	cargo "surgical gear" 10
+	blocked `Hai raggiunto <origin>, ma ti serve <capacity> per accettare la missione di Katya per le Free Worlds. Torna qui quando avrai libero lo spazio necessario.`
+	to offer
+		has "FW Katya 1: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Poco dopo che atterri, ti si avvicina una coppia di turisti di mezza età e ti chiede se saresti disposto a portarli a Skymoot, "a vedere i draghi. Ce l'ha consigliata Katerina." Dici che ne sarai lieto.`
+			`	L'uomo, che indossa pantaloncini a fiori e porta una macchina fotografica assurdamente grande, si presenta come Marty. "E questa è mia moglie, Sarah," aggiunge. "Le dispiacerebbe farci una foto?" Si mettono in posa davanti alla tua nave. "Meglio farne due, in caso chiuda gli occhi," dice Marty. Mentre li aiuti a portare a bordo le loro valigie smisurate, non puoi fare a meno di chiederti perché Katya sia amica di una coppia così tipica di ricchi buzzurri senza cultura.`
+			`	Molto più tardi quella notte, come previsto, tre figure nell'ombra caricano una serie di casse senza contrassegni nella tua stiva. Katya ti ha assicurato che il contenuto è innocuo, serve solo a distrarre gli ufficiali della sicurezza della Repubblica, ma non puoi fare a meno di sentirti coinvolto in qualcosa di losco.`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Marty, Sarah e i rifornimenti medici non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		payment 100000
+		conversation
+			`Quando atterri su <planet>, prima ancora che i motori abbiano avuto il tempo di raffreddarsi, Katya sale sulla tua nave. Quando vede i tuoi passeggeri, si apre in un sorriso largo. "Lynn!" dice, correndo ad abbracciare la donna che si era presentata come "Sarah". Poi si volta verso "Marty" e dice: "E Henry! Che bello vedervi entrambi. Capitano <last>, permettimi di presentarti la professoressa Lynn Anderson, una delle massime scienziate planetarie della galassia, e suo marito Henry, ex ufficiale dell'intelligence della Marina."`
+			choice
+				`	"Piacere di conoscervi. Perché tutto questo inganno?"`
+				`	"Aspetta un momento... erano loro il carico segreto?"`
+			
+			`	Katya spiega: "Gli Anderson stanno passando dalla parte delle Free Worlds. Il loro sogno è rendere il terraformaggio un servizio pubblico, finanziato dal governo, invece di un lusso riservato ai pianeti più ricchi. Abbiamo lavorato per anni perché il Parlamento accettasse quell'idea, ma senza successo. E a causa del passato di Henry e delle sue conoscenze sull'ambiente dell'intelligence, la Repubblica li avrebbe fermati se avesse saputo che stavano defezionando."`
+			`	Aggiunge: "Il vero carico segreto, che è arrivato diversi giorni fa con una nave più veloce, erano i loro beni personali e le attrezzature e gli strumenti di laboratorio di Lynn, caricati su una nave diretta, ufficialmente, verso Hestia."`
+			`	"Avevamo appena affittato un cottage là," dice Henry, "dicendo che ci riducevamo a una casa più piccola. Perderemo la caparra, naturalmente, ma ci ha dato una scusa per fare i bagagli e trasferirci."`
+			`	Katya dice: "Non lo diresti dall'abbigliamento che indossa, ma Henry è un vero genio della sottigliezza e del depistaggio. Ha organizzato tutto lui." Ti porge un chip di credito per <payment>. "Grazie mille per l'aiuto. Se sei disposto a continuare ad aiutare le Free Worlds, incontrami al bar dello spazioporto fra mezz'ora."`
+
+
+
+mission "FW Katya 1C"
+	invisible
+	landing
+	source
+		government "Republic"
+		attributes spaceport
+	to offer
+		has "FW Katya 1B: active"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Quando atterri su <origin> e apri il portello principale della nave, ti trovi davanti un ufficiale della Marina con diverse guardie armate al seguito. Dice: "Mi dispiace, capitano, ma è stato selezionato per un controllo casuale del carico."`
+			choice
+				`	(Lasciali entrare.)`
+					goto enter
+				`	(Attaccali.)`
+				`	(Chiudi il portello e fuggi nello spazio.)`
+					goto flee
+			
+			`	Estrai la pistola urlando "Morte a tutti i tiranni!" L'ufficiale grida allarmato e si butta di lato. I suoi compagni, che si scoprono indossare giubbotti antiproiettile, aprono il fuoco. Muori in fretta. Katya sarà molto delusa.`
+				die
+			
+			label flee
+			`	Sbattici il portello in faccia, accendi in fretta i motori e fuggi verso il cielo. Prima ancora di essere uscito dall'atmosfera, il tuo comunicatore capta un messaggio che ti segnala come ricercato. Inoltre il radar ti informa che diverse navi della Marina ti stanno alle calcagna.`
+				launch
+			
+			label enter
+			`	Fai entrare l'ufficiale e i suoi compagni nella stiva. Si dirigono subito verso le casse caricate durante la notte. Una delle guardie fa una scansione veloce e dice: "Niente esplosivi, niente radiazioni."`
+			`	L'ufficiale della Marina dice: "Le dispiace dirci che cosa c'è in queste casse?"`
+			choice
+				`	"Solo rifornimenti medici. Per lo più strumenti chirurgici."`
+				`	"Solo un po' di cose segrete e illegali."`
+					goto illegal
+				`	"Non ho mai visto quelle casse in vita mia. Non so da dove vengano."`
+					goto denial
+			
+			`	"Materiale biologico o farmaci soggetti a restrizioni?" chiede.`
+			`	"No, signore," dici.`
+				goto search
+			
+			label illegal
+			`	Ride. "Mi dispiace," dice, "probabilmente pensa che siamo solo paranoici, ma le regole sono regole." Chiaramente ha preso la tua risposta come uno scherzo.`
+				goto search
+			
+			label denial
+			`	Si acciglia. "Dovremo perquisirla," dice. Una delle guardie ti palpa e ti prende la pistola e il coltellino tascabile. "Si accomodi," dice l'ufficiale. Ti costringono a sederti per terra, e una delle guardie ti punta contro un fucile molto grande.`
+				goto search
+			
+			label search
+			`	Dice: "Temo che dovremo perquisire queste casse." Le guardie prendono un paio di piedi di porco e cominciano a scoperchiarle. Il contenuto si rivela relativamente innocuo, anche se una scatola piena di bisturi e altri strumenti chirurgici li fa esitare. Mentre aprono cassa dopo cassa senza trovare niente di compromettente, ti accorgi che l'ufficiale è sempre più frustrato e a disagio. Quando l'ultima cassa si rivela contenere solo bende e garze, la sua frustrazione diventa imbarazzo. Richiudono le casse e inchiodano di nuovo i coperchi.`
+			`	"Mi dispiace," dice l'ufficiale, "dobbiamo aver reagito a una soffiata sbagliata. Mi dispiace molto per questa invasione della sua privacy, Capitano."`
+			choice
+				`	"Non importa, so che sta solo facendo il suo lavoro."`
+				`	"Da quando la Repubblica è diventata così manesca nel perquisire le navi civili?"`
+					goto angry
+			
+			`	"È molto cortese, Capitano. Non la tratteniamo oltre." Se ne vanno.`
+				decline
+			
+			label angry
+			`	"Mi dispiace, Capitano. Dopo gli attentati tutti sono nervosi. Spero che non penserà male di noi." Se ne vanno.`
+				decline
+	
+	on accept
+		"reputation: Republic" <?= -10
+	
+	npc kill
+		government "Republic"
+		personality nemesis
+		fleet "Small Republic" 2
+
+
+
+event "FW Katya Alt 2: ready"
+
+mission "FW Katya Alt 2"
+	minor
+	name "Trasporta Mr. Eyes"
+	description "Katya Reynolds ti ha chiesto di andare su <destination>, dove ti aspetta il suo amico Mr. Eyes."
+	source
+		government "Free Worlds"
+	destination "Foundry"
+	passengers 1
+	to offer
+		has "event: FW Katya Alt 2: ready"
+		has "assisted free worlds"
+		or
+			random < 25 * "assisted free worlds"
+			has "flagship planet: Zug"
+	to fail
+		has "chosen sides"
+	on decline
+		log "Hai rifiutato una missione dall'ufficiale delle Free Worlds che ti ha minacciato. Se vogliono qualcuno che li aiuti, possono cercare altrove."
+		dialog phrase "free worlds declined"
+	
+	on offer
+		conversation
+			`Mentre attraversi lo spazioporto, qualcuno chiama: "Capitano <last>!" Ti si avvicina un'ufficiale delle Free Worlds; la riconosci: è la stessa donna che prima ti ha puntato una pistola per "mettersi alla prova". "Mi scuso per quel trucco di prima," dice. "Mi chiamo Katya Reynolds. Ho sentito parlare molto bene di te da altri membri del Consiglio delle Free Worlds, e spero che tu voglia riconsiderare l'idea di lavorare con me."`
+			choice
+				`	"Va bene, purché tu non mi punti più nessuna pistola addosso."`
+				`	"No. Semplicemente non mi piaci tu. Né le Free Worlds."`
+					decline
+			`	"Ottimo," dice. "Il punto è questo. Ho un amico di nome Mr. Eyes, che ha bisogno di un passaggio da <destination>. Per la sua sicurezza preferirei non dirti niente del suo lavoro, ma ti assicuro che è un cittadino irreprensibile. Un po' impopolare presso le grandi aziende e certi governi locali corrotti, questo sì. Puoi dargli un passaggio?"`
+			choice
+				`	"Certo, con piacere."`
+					accept
+				`	"Mi sembra troppo losco. Trova qualcun altro che ti aiuti."`
+					decline
+	
+	on visit
+		dialog `Atterri su <planet>, ma la tua scorta con lo spazio per Mr. Eyes non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		set "FW Katya 2: done"
+
+
+
+mission "FW Katya 2"
+	name "Trasporta Mr. Eyes"
+	description "Katya Reynolds ti ha chiesto di andare su <destination>, dove ti aspetta il suo amico Mr. Eyes."
+	source "Skymoot"
+	destination "Foundry"
+	passengers 1
+	to offer
+		has "FW Katya 1B: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Quando entri nel bar, Katya ti fa cenno di avvicinarti al suo tavolo. "Ho un altro amico che ha bisogno di essere trasportato," dice. "Questo è su un pianeta sperduto vicino al Nucleo, al momento."`
+			choice
+				`	"Certo, sarò lieto di trasportarlo."`
+				`	"Mi dispiace, ma ho deciso che lavorare per le Free Worlds non vale il rischio."`
+					decline
+			
+			`	"Ottimo!" dice. "Si chiama Mr. Eyes, e ti incontrerà su <destination>. Per la sua sicurezza preferirei non dirti niente del suo lavoro, ma ti assicuro che è un cittadino irreprensibile. Un po' impopolare presso le grandi aziende e certi governi planetari corrotti, questo sì."`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma la tua scorta con lo spazio per Mr. Eyes non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Katya 2B"
+	landing
+	name "Trasporta Mr. Eyes"
+	description "Trasporta Mr. Eyes fino a <destination>, dove è avvenuto il recente attentato."
+	source "Foundry"
+	destination "Geminus"
+	clearance
+	passengers 1
+	to offer
+		has "FW Katya 2: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		log "People" "Katya Reynolds" `Ex membro del Parlamento in rappresentanza dei mondi impoveriti della Fascia di Terra, Katya è ora una leader del movimento delle Free Worlds. È nota per difendere la "gente comune" quando viene trascurata o maltrattata dal governo o dalle aziende.`
+		log "People" "Ijs Springborn" `Noto anche come "Mr. Eyes", Ijs ha lavorato per anni come "ispettore nucleare autonomo", cercando di scoprire e denunciare gli abusi ambientali che i funzionari governativi fingevano di non vedere. Ora ha accettato di unirsi al movimento delle Free Worlds.`
+		conversation
+			`Appena atterri e apri il portello della nave, un uomo con gli occhiali da sole, un cappello ridicolo e una grande valigia di metallo ti passa accanto di corsa ed entra nella nave, lanciando una rapida occhiata furtiva alle spalle per vedere se qualcuno lo segua.`
+			choice
+				`	(Estrai l'arma per difendermi da lui.)`
+				`	(Chiudi in fretta il portello e scopri se sta bene.)`
+					goto okay
+			
+			`	Chiudi il portello per impedire a chiunque altro di salire senza invito, poi lo affronti. "Chi sei e che cosa ci fai sulla mia nave?" chiedi.`
+				goto name
+			
+			label okay
+			`	Chiudi il portello per impedire a chiunque altro di salire, poi ti giri per scoprire chi sia il tuo visitatore. "Mi chiamo <first>," dici. "Come posso aiutarti?"`
+			
+			label name
+			`	"Sono Ijs Springborn," dice, pronunciando il nome come "Eyes". Si toglie gli occhiali e il cappello. "La consigliera Reynolds mi ha detto di incontrarti qui."`
+			choice
+				`	"Aspetta, 'consigliera' Reynolds? Vuoi dire che Katya è in Parlamento?"`
+			
+			`	Sembra davvero scioccato. "Non lo sapevi? Quella donna è una leggenda. Ha fatto due mandati in rappresentanza della Fascia di Terra. Difensore dei piccoli mondi e della gente comune. In certi ambienti il suo lavoro l'ha resa quasi impopolare quanto me. Ma si è stancata di lavorare per le riforme e ha deciso di creare un governo tutto suo."`
+			`	"E tu che lavoro fai?" chiedi.`
+			`	"Ispettore nucleare autonomo," dice, con nonchalance.`
+			choice
+				`	"Ehm... come?"`
+				`	"E come funzionerebbe, esattamente?"`
+				`	"È anche legale?"`
+			
+			`	"Vado di mondo in mondo a controllare le emissioni degli impianti, per vedere se perdono isotopi nell'aria, nel mare o nelle falde acquifere. E se lo fanno, gli mando contro il Dipartimento per la Sicurezza Atomica. Il Sindacato mi odia con tutto il cuore, in questo momento."`
+			`	"Allora, che cosa ti ha chiesto Katya di fare per le Free Worlds?" chiedi.`
+			`	"Non è ovvio?" dice. "Diamo la caccia a certi personaggi poco raccomandabili che stanno sviluppando armi nucleari, e le Free Worlds li consegneranno alla Repubblica. Così la Repubblica saprà che non sono state le Free Worlds a fare gli attentati, e fermeremo tutto questo pasticcio prima che degeneri in una guerra civile."`
+			choice
+				`	"Quindi sei convinto che le Free Worlds siano innocenti?"`
+				`	"Va bene, e qual è il nostro piano per farlo?"`
+					goto plan
+			
+			`	"Assolutamente," dice. "Non ha alcun senso. Prima di tutto, quell'attacco ha danneggiato la loro causa più di quanto l'abbia aiutata. E secondo, conosco Katerina e i suoi amici delle Free Worlds da molto tempo. Non accetterebbero mai una cosa del genere. Quindi chi è responsabile è là fuori da qualche parte, e le Free Worlds lo porteranno davanti alla giustizia."`
+			choice
+				`	"Beh, allora qual è il nostro piano?"`
+			
+			label plan
+			`	"Primo," dice, "dobbiamo andare su Geminus, dove è avvenuto l'attacco. Potrò spiegarti di più quando saremo là. Nel frattempo devo anche avvertirti che sembro avere una sfortuna terribile: i pirati compaiono ovunque io vada. È quasi come se qualcuno avesse messo una taglia sulla mia testa." Sorride.`
+				accept
+	
+	on accept
+		log `Ti sei incontrato con un'amica di Katya di nome Mr. Eyes, che si definisce "ispettore nucleare autonomo". Pensa di poter aiutare a dare la caccia a chi ha bombardato Geminus e Martini, per dimostrare che le Free Worlds non c'entravano.`
+	
+	npc
+		government "Bounty Hunter"
+		personality nemesis plunders staying waiting
+		fleet "Small Core Pirates" 2
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Mr. Eyes è su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Katya 2C"
+	landing
+	name "Trasporta Mr. Eyes"
+	description "Porta Mr. Eyes fino a <destination>, dove incontrerai Katya (e speriamo ti paghi)."
+	source "Geminus"
+	destination "Rand"
+	passengers 1
+	to offer
+		has "FW Katya 2B: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Salta fuori che la valigia che Mr. Eyes porta con sé è piena di sensori portatili. Li accende mentre ti spiega che cosa sta facendo. "Ogni mondo, e persino ogni miniera, ha una miscela leggermente diversa di isotopi nei suoi elementi fissili," spiega. "Quindi quello che sto facendo adesso è più o meno come prendere un'impronta digitale. Una volta che l'abbiamo, possiamo cercare una corrispondenza su un altro pianeta. Scommetterei che il materiale viene semplicemente dal nucleo di un reattore civile, quindi risalire alla miniera non incriminerebbe necessariamente nessuno. Ma sviluppare ordigni nucleari è complicato, quindi probabilmente hanno fatto dei test. E se troviamo il sito dei test, questo può portarci ai responsabili."`
+			`	Pochi minuti dopo, le sue misurazioni sono finite. "Fatto," dice. "È ora di cominciare la caccia. Katya ha detto di incontrarla su <planet>. Non è la nostra pista migliore, ma è sulla lista dei sospetti."`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Mr. Eyes è su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		payment 100000
+		conversation
+			`Appena atterri, Mr. Eyes accende i sensori e comincia a raccogliere dati. Pochi minuti dopo arriva Katya. "Eyes!" dice. "Che bello rivederti."`
+			`	"Anche per me, consigliera," dice lui.`
+			`	Katya ti porge un chip di credito per altri <payment>. "Grazie ancora, Capitano. Eyes ti ha spiegato il piano?" Annuisci. "Beh," dice, "se hai spazio per noi due e vuoi far parte di questa storia di giustizia, incontriamoci allo spazioporto quando Eyes ha finito di analizzare i suoi dati."`
+
+
+
+mission "FW Katya 3"
+	name "Caccia ai droni"
+	description `Metti fuori uso un drone da sorveglianza (idealmente quando nessun incrociatore sta guardando), abbordalo, "recupera" il suo equipaggiamento di sorveglianza e torna a <destination>. (Finché non lasci il sistema dove hai messo fuori uso il drone, altre navi della Repubblica potrebbero attaccarti.)`
+	source "Rand"
+	to offer
+		has "FW Katya 2C: done"
+	to fail
+		has "chosen sides"
+	on decline
+		log "Hai rifiutato una missione mal concepita di Katya ed Eyes per saccheggiare proprietà della Repubblica."
+		dialog phrase "free worlds declined"
+	
+	on offer
+		conversation
+			`Trovi Eyes e Katya seduti all'ombra di uno dei pochi alberi del porto, che bevono una specie di frullato ghiacciato mentre guardano il deserto e parlano a voce bassa. Quando ti unisci a loro, Katya dice: "Stavo solo aggiornando Eyes sulla recente mobilitazione della flotta della Marina. Metà della Fascia di Terra brulica di incrociatori e droni da sorveglianza, in questo momento. È difficile credere che possiamo trovare gli attentatori prima di loro, a meno che non siano da qualche parte dove la Marina non ha pensato di guardare."`
+			`	"D'accordo," dice Eyes, "e per peggiorare le cose, i loro sensori sono probabilmente molto migliori dei miei."`
+			`	Katya sembra colpita da un'idea improvvisa. "I sensori dei loro droni," dice, "i loro droni senza equipaggio..."`
+			`	Eyes le lancia un'occhiata, vede la sua espressione e dice: "No, consigliera, non pensarci nemmeno. È un'idea orribile."`
+			`	"No," dice lei, "è geniale. Capitano <last>, conosci la Legge sull'abbandono e il recupero del 2976?"`
+			choice
+				`	"No, non ne ho mai sentito parlare."`
+					goto no
+				`	"Certo. Leggo gli atti parlamentari ogni sera, quando cerco di prendere sonno."`
+			
+			`	"Beh, allora," dice, "sarai d'accordo che, giuridicamente parlando, i droni da sorveglianza della Marina contano come beni abbandonati nel momento in cui i loro proprietari hanno lasciato il sistema."`
+				goto response
+			
+			label no
+			`	"Beh," dice, "è cominciato quando il Sindacato ha cominciato a sperimentare strutture minerarie completamente automatizzate su pianeti inabitabili. I pirati hanno cominciato a saccheggiare le miniere per rubare l'equipaggiamento, e il Sindacato sosteneva che quegli impianti erano 'colonie' e che spettava alla Marina difenderli. La Legge è stata la risposta del Parlamento: prendere beni da un essere umano è pirateria, ma se il proprietario o un suo rappresentante vivente non è presente nel sistema, prendere quei beni è una legale operazione di recupero. Lo scopo era evitare che la Marina fosse obbligata a difendere ogni deposito di equipaggiamento o stazione abbandonata della galassia. Ma per la stessa legge, quei droni da sorveglianza della Marina diventano beni abbandonati nel momento in cui le loro navi madri lasciano il sistema."`
+			
+			label response
+			choice
+				`	"Già. Per me ha perfettamente senso."`
+					goto agree
+				`	"Quindi prima mi fai contrabbandare persone per la galassia, e ora vuoi che attacchi navi della Marina? La prossima volta mi chiederai di fare prigionieri."`
+				`	"Mi sembra un'idea terribile."`
+					goto terrible
+			
+			`	Eyes ride, sputando fuori il frullato mentre lo fa. "Non ti chiederemo niente del genere," risponde Katya, in modo piuttosto aggressivo. "Senti, se vogliamo scoprire chi ha sganciato quelle bombe, dobbiamo mettere le mani su un equipaggiamento di scansione migliore, quello che la Marina tiene sui suoi droni da sorveglianza senza equipaggio, e tu sei quello con una nave non collegata alle Free Worlds. Ti basta trovare un drone da sorveglianza isolato da saccheggiare. Legalmente la Marina non può fare nulla, e nessuno si farà male. Se riusciamo a scoprire chi è responsabile degli attentati, potremmo evitare una guerra fra la Repubblica e le Free Worlds, salvando migliaia o addirittura milioni di vite. Quindi sei con noi o no?"`
+				goto decision
+			
+			label terrible
+			`	"Stai dicendo che dovremo trovare un altro capitano con cui lavorare?" dice Katya. "Se vogliamo scoprire chi ha sganciato quelle bombe, dobbiamo mettere le mani su un equipaggiamento di scansione migliore, quello che la Marina tiene sui suoi droni da sorveglianza senza equipaggio. Ti basta trovare un drone da sorveglianza isolato da saccheggiare. Legalmente la Marina non può fare nulla, e nessuno si farà male. Se riusciamo a scoprire chi è responsabile degli attentati, potremmo evitare una guerra fra la Repubblica e le Free Worlds, salvando migliaia o addirittura milioni di vite. Quindi sei con noi o no?"`
+			label decision
+			choice
+				`	"Va bene, lo farò. Ma continuo a pensare che sia un'idea poco saggia."`
+				`	"Anche così, questo non giustifica distruggere proprietà della Marina. Lasciatemi fuori."`
+					decline
+				`	"Se è su questo tipo di ragionamento che si reggono le Free Worlds, allora potete dire addio per sempre all'idea di lavorare con me."`
+					decline
+			
+			label agree
+			`	"Ottimo!" dice Katya. "Dobbiamo solo mettere fuori uso un drone, abbordarlo, strappargli via l'equipaggiamento di sorveglianza e riportarlo qui per provarlo."`
+			`	Ijs dice: "Capitano, dobbiamo avvertirla: quando attaccherai un drone, tutti i Repubblicani in quel sistema si arrabbieranno con te. Ma appena salterai fuori dal sistema si calmeranno di nuovo."`
+				accept
+	
+	on accept
+		log "Il piano di Katya per dare la caccia ai terroristi nucleari prevede di rubare l'equipaggiamento dei sensori da un drone da sorveglianza della Marina. A quanto pare, prendere l'equipaggiamento da un drone conta come operazione di recupero, purché nessuno dei suoi proprietari sia presente, grazie a una scappatoia legale in un'antica legge del Parlamento."
+	
+	on visit
+		dialog `Atterri su <planet>, ma non hai una capsula di sorveglianza. Devi mettere fuori uso un drone da sorveglianza della Marina e saccheggiargli l'equipaggiamento prima di tornare.`
+	on complete
+		outfit "Surveillance Pod" -1
+		conversation
+			`Consegni l'equipaggiamento "recuperato" a Mr. Eyes e a Katya. Eyes comincia a trafficarci e presto scopre come far funzionare lo scanner atmosferico. "Roba davvero ottima!" dice, entusiasta.`
+			`	Katya dice: "Abbiamo trovato un ristorante decente nel villaggio dello spazioporto. Se vuoi continuare a lavorare con noi, incontraci lì stasera."`
+
+
+
+mission "FW Katya 4"
+	name "Katya e Mr. Eyes"
+	description "Fermati su <destination> e controlla il pianeta cercando segni di test nucleari."
+	source "Rand"
+	destination "Oblivion"
+	passengers 2
+	blocked `Ti servono cuccette sia per Katya sia per Eyes per continuare questa missione.`
+	substitutions
+		"<dirt belt origin>" ""
+		"<dirt belt origin>" " like yourself,"
+			has "start: default"
+	to offer
+		has "FW Katya 3: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		log "People" "Katya Reynolds" `Katya è cresciuta su Hope, un mondo della Fascia di Terra non più abitato a causa dell'eruzione di un supervulcano che ha innescato una nuova era glaciale. Nonostante diffidi della Repubblica, ha grande stima della Marina, perché è stata la Marina, agendo senza l'autorizzazione del Parlamento, ad aiutare i coloni di Hope a evacuare in sicurezza.`
+		conversation
+			`Raggiungi Katya e Mr. Eyes al ristorante e ordini il tuo pasto. Sono entrambi di ottimo umore. Mentre aspettate che arrivi il cibo, Mr. Eyes alza il bicchiere di vino e dice: "Un brindisi al Capitano <last> e al nostro meraviglioso giocattolo nuovo. Che ci porti buone informazioni e una giustizia rapida."`
+			`	"Stavamo pensando che, visto che siamo in zona, dovremmo fare tappa su <planet>," dice Katya, "e poi proseguire verso il Bordo."`
+			`	Arrivano i pasti. Il cibo è ottimo, e passate una serata rilassata raccontandovi le vostre infanzie. Katya viene dalla Fascia di Terra<dirt belt origin>, da un pianeta chiamato Hope. "Non più abitato," spiega. "Un supervulcano. Era già un pianeta freddo all'inizio, e l'eruzione lo ha spinto in un'era glaciale che potrebbe durare millenni. La mia città natale ormai è sotto trenta metri di ghiacciaio."`
+			choice
+				`	"È morto qualcuno?"`
+				`	"Come sei riuscita a scappare?"`
+			
+			`	"L'eruzione è stata sull'altro continente," spiega, "quindi nessuno è morto nell'esplosione. È stato un disastro lento. Abbiamo avuto sei mesi circa per spostare due milioni di coloni fuori dal pianeta prima che le temperature scendessero troppo per viverci. Più di metà della Marina è stata mobilitata per trasportare la nostra gente su altri pianeti."`
+			`	"Questa è la parte migliore," dice Eyes. "La Marina opera con una certa autonomia. Salta fuori che, quando hanno saputo del disastro, si sono mobilitati senza nemmeno aspettare l'autorizzazione del Parlamento. Il che era tecnicamente nel loro mandato, trattandosi di un disastro naturale. Ma la Marina è finanziata con le tasse, e i Mondi Paradisiaci pagano dieci volte le tasse della Fascia di Terra."`
+			`	"I Mondi Paradisiaci consideravano la Marina una loro forza di sicurezza privata," dice Katya, "quindi si sono arrabbiati moltissimo quando metà della Marina è improvvisamente sparita per assistere dei sudici profughi. E dato che quegli ammiragli hanno dato l'ordine di aiutarci, milioni di vite sono state salvate. E poi il Parlamento li ha licenziati."`
+			choice
+				`	"Mi stai facendo sembrare la Marina una banda di eroi. Pensavo che fossero i vostri nemici."`
+				`	"Mi hai quasi convinto a entrare nella Marina."`
+			
+			`	"La nostra battaglia non è con la Marina," dice Katya. "La maggior parte di loro sono brave persone. Sono sicura che non vogliono la guerra più di noi. Sono come agenti di polizia a cui improvvisamente viene chiesto di combattere proprio contro le persone che avevano giurato di proteggere e servire."`
+			`	"Io ero un bambino su Vinci mentre succedeva tutto questo," dice Eyes. "Un Mondo Paradisiaco. Ascoltavo le notizie e non riuscivo mai a capire perché tutti gli adulti intorno a me fossero così tanto, tanto arrabbiati perché la Marina se n'era andata a salvare due milioni di persone dal morire assiderate. Ma mi dicevano che vivevamo su una piccola isola di sicurezza in una galassia pericolosa, e che senza la protezione della Marina i pirati o magari persino gli alieni sarebbero piombati dentro a distruggere le nostre case e a prendersi i nostri soldi. Che eravamo noi contro tutta la galassia."`
+			branch paradise
+				not "start: paradise"
+			
+			`	Parli con Eyes della tua infanzia su Mainsail, di come hai sempre sognato di andare fra le stelle invece di occuparti dell'attività di famiglia, e di come tuo padre ti abbia comprato la licenza di pilota per il tuo diciottesimo compleanno.`
+			`	"Sembra che anche tu abbia fatto molta strada dai Mondi Paradisiaci," dice Eyes. "Se non ti dispiace che te lo chieda, che cosa pensi che direbbe tuo padre se ti vedesse aiutare le Free Worlds?"`
+			choice
+				`	"Sono sicuro che sarebbe contento della strada che ho scelto."`
+					goto quiet
+				`	"Non credo che gli piacerebbe."`
+				`	"A dire il vero, non ne sono sicuro nemmeno io."`
+				`	"Preferirei non dirlo."`
+					goto quiet
+			`	Eyes alza un sopracciglio, ma tiene la bocca chiusa e annuisce.`
+				goto paradise
+
+			label quiet
+			`	Eyes ti guarda e annuisce.`
+				goto paradise
+			
+			label paradise
+			`	"Non vorrei mai essere ricco," dice Katya. "Troppe cose da temere."`
+			`	Finisci il pasto (il conto lo paga Katya) e concordate di partire per <planet> la mattina dopo.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Katya e Mr. Eyes sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Katya 5"
+	landing
+	name "Raccolta di informazioni"
+	description "Porta Katya e Mr. Eyes fino a <destination>, dove alcuni monaci potrebbero aiutarti a negoziare con i pirati per ottenere informazioni."
+	source "Oblivion"
+	destination "Harmony"
+	passengers 2
+	to offer
+		has "FW Katya 4: done"
+	to fail
+		has "chosen sides"
+	on decline
+		log "Hai rinunciato a cercare prove di test nucleari per scagionare le Free Worlds."
+		dialog phrase "free worlds declined"
+	
+	on offer
+		conversation
+			`Atterri su <origin>, e Mr. Eyes accende il nuovo equipaggiamento di sorveglianza della Marina per fare misurazioni atmosferiche. "Qui non c'è niente," dice dopo qualche minuto. "Credo che dovremmo andare avanti."`
+			choice
+				`	"Cercheremo su ogni pianeta di questo settore? Non ci vorranno mesi?"`
+				`	"Ci sono altre navi che ci aiutano nella ricerca, o siamo solo noi?"`
+					goto search
+			
+			`	"Hai ragione," dice Eyes. "E non sappiamo nemmeno per certo che i terroristi vengano da queste parti. Senza altre informazioni, stiamo cercando un ago in un pagliaio grande quanto la galassia."`
+				goto pirates
+			
+			label search
+			`	"No," dice Eyes, "abbiamo cercato di tenere segreta questa ricerca, così i terroristi non sapranno che li stiamo cercando. Qualsiasi gruppo con le risorse per sviluppare armi nucleari probabilmente ha anche le risorse per coprire le proprie tracce, e se sapessero che stiamo arrivando potrebbero rendere il nostro compito ancora più difficile di quanto già sia."`
+			
+			label pirates
+			`	Katya dice: "Quello che ci serve sono delle piste da seguire. Scommetto che potremmo comprare informazioni su Greenrock. Ogni volta che qualcuno fa qualcosa di illegale in questo settore, ci sono buone probabilità che i pirati lo stiano aiutando."`
+			`	Mr. Eyes dice: "A meno che tu non abbia navi intere di soldi da dare ai pirati, ci serve qualcuno che sia in buoni rapporti con loro, che possa convincerli a parlare gratis. Dovremmo andare dai Fratelli su Harmony."`
+			`	"Non è una cattiva idea," dice Katya, "purché non mi costringano a sorbirmi una delle loro funzioni religiose. Di solito sono favorevole alle funzioni, ma le loro mi fanno sempre addormentare."`
+			`	"Che ne dici, Capitano?" chiede Eyes. "Ti va di visitare un monastero?"`
+			choice
+				`	"Certo, sembra divertente."`
+					accept
+				`	"Avete amici interessanti, voi due. Come fate a conoscere questi monaci?"`
+				`	"Sembra noioso. Non possiamo invece andare ad abbattere altri droni da sorveglianza?"`
+					goto shoot
+			
+			`	"Quando sono cresciuto e ho lasciato il settore Paradiso, da giovane idealista," dice Eyes, "ho deciso che volevo prendere il voto di povertà, così sono andato a vivere con i Fratelli. Ma salta fuori che volevano che prendessi anche il voto di obbedienza. E di castità. Non proprio il mio genere." Fa l'occhiolino a Katya.`
+			`	"I monaci sono davvero noiosi come dice Katya?" chiedi.`
+			
+			label shoot
+			`	"Mi dispiace, ragazzino," dice Eyes. "Credimi, lavorare per la giustizia non è sempre emozionante."`
+			choice
+				`	"Va bene, ci sto."`
+					accept
+				`	"Mi dispiace, ma credo di aver finito di aiutare le Free Worlds. Preferisco andare per la mia strada."`
+					decline
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Katya e Mr. Eyes sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Katya 5B"
+	landing
+	name "Raccolta di informazioni"
+	description "Va' su <planet> con fratello Greg e vedi se riesce a ottenere qualche informazione dai pirati che ci sono. (Chiama il pianeta perché sia lui a negoziare il permesso di atterraggio.)"
+	source "Harmony"
+	destination "Greenrock"
+	clearance `Fratello Greg parla brevemente con il controllore di traffico dello spazioporto. Quando capiscono chi è, accettano di lasciarti atterrare "senza pagare la solita tassa".`
+	passengers 2
+	to offer
+		has "FW Katya 5: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		log "Factions" "Pirates" `Le navi pirata hanno spesso equipaggi composti da ragazzi, l'equivalente di bande di strada o di bambini soldato. Molti mondi senza legge sono così poveri che unirsi a una banda di pirati è una delle poche opzioni attraenti per guadagnarsi da vivere.`
+		conversation
+			`Katya ed Eyes ti guidano al monastero. Mentre vi avvicinate, incontrate un monaco che indossa una lunga veste nera ed è inginocchiato in un piccolo orto, a strappare erbacce. Quando alza lo sguardo e vi vede, salta in piedi e corre verso di voi. "Katya! E Ijs! Bentornati!" Poi si volta verso di te. "Io sono David," dice.`
+			choice
+				`	"Io sono <first>. Piacere di conoscerti."`
+			
+			`	Katya chiede: "C'è fratello Greg?"`
+			`	"Sì, c'è," dice David. "Entrate." L'edificio del monastero è una struttura in pietra e mattoni che somiglia alle immagini che hai visto dell'antica Terra. Vi guida lungo un lungo corridoio fino a un salotto con mobili altrettanto antichi, poi se ne va.`
+			`	Mentre aspettate, Eyes spiega: "Fratello Greg è responsabile dell'assistenza e del ministero del monastero verso i membri degli equipaggi pirata."`
+			choice
+				`	"Sembra ancora più strano che fare l'ispettore nucleare autonomo."`
+				`	"Perché mai qualcuno dovrebbe voler tendere la mano ai pirati?"`
+					goto outreach
+			
+			`	Eyes ride. "Sì, i monaci hanno avuto una grande influenza nell'aiutarmi a pensare in modo creativo alla mia vocazione."`
+			
+			label outreach
+			`	"Considera questo," dice Katya. "Nel sud della galassia, l'età media di un membro di un equipaggio pirata è di diciassette anni. E molti sono molto più giovani. Sono più simili a ragazzini di strada che a criminali incalliti."`
+			`	Proprio in quel momento entra fratello Greg. Mr. Eyes ti presenta a lui e gli spiega la vostra situazione. Greg si acciglia, pensieroso. "Che cosa abbiamo da offrire in cambio di quelle informazioni?" chiede.`
+			`	Katya dice: "Da quando ci sono stati gli attentati, lo spazio del Sud è pieno non solo di una presenza maggiore della milizia, ma di tutta la Marina della Repubblica. Dev'essere terribilmente difficile fare il pirata. Sembra che i pirati sarebbero contenti se la Marina ottenesse quello che cerca e tornasse a nord."`
+			`	Fratello Greg annuisce. "Vale la pena provare. Perché non vi unite a noi per cena, e domani mattina partiamo per Greenrock. Quando arriviamo, chiamate il pianeta e lasciate parlare me, e probabilmente riuscirò a ottenere il permesso di atterrare gratis."`
+			`	Ti unisci ai fratelli per una cena semplice ma deliziosa, zuppa e insalata fatti interamente con i loro orti. Dopo cena, Greg ti chiede: "Vuoi unirti a noi per la preghiera serale?"`
+			choice
+				`	"Certo, ne sarò lieto."`
+					goto prayer
+				`	"Mi dispiace, ho altre cose da sbrigare stasera."`
+			
+			`	"Nessun problema," dice. "Ci vediamo domattina."`
+				goto morning
+			
+			label prayer
+			`	La "preghiera serale" si rivela una lunga funzione religiosa che a quanto pare comincia con i monaci che elencano ogni cosa brutta che riescono a immaginare e pregano perché non accada: "Dal fulmine e dalla tempesta; dal terremoto, dal fuoco e dall'inondazione; dalla peste, dal morbo e dalla carestia, buon Signore, liberaci. Da ogni oppressione, cospirazione e ribellione; dalla violenza, dalla battaglia, dall'omicidio e dalla guerra; e dal morire all'improvviso e senza preparazione, buon Signore, liberaci..." È molto monotono.`
+			`	A un certo punto passano a pregare per persone diverse: per il Parlamento della Repubblica e per tutti quelli che hanno autorità; per il governatore di <origin>, il loro mondo; per i Quarg e per tutte le specie senzienti; per i prigionieri, per i senzatetto e i poveri, per gli orfani, per le donne incinte e i bambini piccoli, per i viaggiatori, per gli equipaggi e i capitani delle astronavi, per i minatori e le squadre petrolifere, per gli operai delle fabbriche e dei mulini; per gli abusati; per i malati di mente; per i pirati e le bande di strada; per tutte le creature e i pianeti vulnerabili allo sfruttamento o alla distruzione ecologica. (Eyes, che è seduto accanto a te, risponde a quest'ultima petizione con un fervente "Amen!") La litania è così dettagliata e specifica che la trovi insieme estenuante e affascinante.`
+			`	Quando la funzione finisce, i monaci si ritirano nelle loro stanze in silenzio, e Eyes, con un breve cenno verso di te, fa lo stesso.`
+			
+			label morning
+			`	A colazione nel monastero, Mr. Eyes ti dice: "Io resto qui finché non tornate. Greenrock non è un posto per un uomo con una taglia sulla testa. Ma Katya verrà con te." Riporti Katya e Greg alla tua nave e ti prepari a decollare.`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Katya e fratello Greg sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Katya 5C"
+	landing
+	name "Raccolta di informazioni"
+	description "Torna su <planet> con Katya e fratello Greg."
+	source "Greenrock"
+	destination "Harmony"
+	passengers 2
+	to offer
+		has "FW Katya 5B: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Fratello Greg sparisce per diverse ore a parlare con i suoi vari contatti, poi torna e riferisce a te e a Katya. "Nessuno ha sentito niente di specifico," dice, "e dicono che tenere segreto un programma nucleare richiederebbe una quantità incredibile di risorse, o un luogo molto remoto con una sicurezza molto buona."`
+			`	"Qualche indizio su dove dovremmo guardare?" chiede Katya.`
+			`	"Qualcuno. Ho parlato con un amico che aveva fatto ricerche sullo sviluppo nucleare 'per ragioni puramente accademiche', e ha detto che solo un folle farebbe test atmosferici: l'Intelligence se ne accorgerebbe subito, su qualunque mondo tu sia. Dice che il luogo ideale per lo sviluppo sarebbe un pianeta scarsamente popolato con qualche miniera abbandonata in profondità."`
+			`	"Qualcos'altro?" chiedi.`
+			`	"Solo un'altra cosa," dice Greg. "Diverse persone hanno detto che pensano che la Marina stessa possa avere un arsenale nucleare, e che un rinnegato possa aver rubato loro le armi. Molto più facile che svilupparle da soli."`
+			`	"Beh, torniamo su <planet> e vediamo che cosa pensa Eyes," dice Katya, "ma non riesco a immaginare che la Marina abbia un arsenale del genere. Cercare sui pianeti minerari mi sembra la nostra migliore possibilità per ora."`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Katya e fratello Greg sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		payment 100000
+		conversation
+			`Quando atterri su <planet>, mentre fratello Greg raccoglie i suoi bagagli, Katya ti porge un altro chip di credito per <payment>. "Grazie per aver rischiato la vita con i pirati," dice. "Hai davvero fegato."`
+			`	Torni al monastero e condividi le nuove informazioni con Mr. Eyes. La sua reazione è la stessa di Katya. "Impossibile che la Marina abbia ordigni nucleari," dice. "Magari qualche altro ramo segreto del governo, ma non la Marina. Offenderebbe il loro senso dell'onore."`
+			`	"Comunque," dice Katya, "se esistesse un programma del genere e le armi fossero state rubate, questo spiegherebbe perché l'Intelligence non ha ancora fatto il nome di un sospetto. Dovrebbero rivelare l'esistenza del programma."`
+			`	Eyes scuote la testa. "Questa non è una pista produttiva," dice. "Se fossero terroristi locali, avremmo qualche speranza di rintracciarli. Se è qualche organizzazione governativa nell'ombra, non c'è modo di trovarli. Quindi la pista dei terroristi locali è l'unica che vale la pena seguire."`
+			`	"Molto bene," dice Katya. "Capitano <last>, incontraci allo spazioporto se sei disposto a continuare a lavorare con noi."`
+
+
+
+mission "FW Katya 6"
+	name "La caccia continua"
+	description "Porta Katya ed Eyes fino a <destination>."
+	source "Harmony"
+	destination "Sinter"
+	passengers 2
+	to offer
+		has "FW Katya 5C: done"
+	to fail
+		has "chosen sides"
+	on decline
+		log "Hai rinunciato a cercare prove di test nucleari per scagionare le Free Worlds."
+		dialog phrase "free worlds declined"
+	
+	on offer
+		conversation
+			`Trovi Katya e Mr. Eyes seduti a un tavolo nell'angolo di un piccolo caffè, che parlano a voce bassa ed esaminano una mappa galattica aperta davanti a loro. Diversi sistemi vicini sono cerchiati. Katya dice: "Di nuovo salve, Capitano. Abbiamo scelto tre pianeti che pensiamo siano le nostre opzioni migliori: <planet>, Hopper e New Iceland. Dovrebbero bastare solo un paio di settimane per visitarli tutti. Che ne dici?"`
+			choice
+				`	"Certo, ci tengo davvero a risolvere questo caso!"`
+					goto sure
+				`	"Perché proprio questi mondi? Perché non controllare i mondi nello spazio delle Free Worlds, se la Repubblica pensa che siate stati voi?"`
+				`	"Ho chiuso con l'aiutare le Free Worlds. Non credo che abbiamo qualche possibilità di battere la Marina sul tempo."`
+					decline
+			
+			`	"Suppongo che dimostrare l'assenza di test nucleari sui pianeti delle Free Worlds sarebbe per noi una prova indiziaria," dice Eyes, "ma stiamo cercando specificamente il colpevole, quindi questi sono i nostri candidati migliori fra i mondi minerari qui vicino. E cercare su questi tre mondi sarebbe più rapido che cercare in tutto lo spazio delle Free Worlds."`
+			`	"Un'altra cosa da tenere presente è che potremmo non essere in grado di operare fuori dallo spazio delle Free Worlds per sempre," risponde Katya. "Prego che troviamo delle risposte prima che si arrivi a quel punto, ma una guerra fra le Free Worlds e la Repubblica ci taglierebbe fuori dalla possibilità di cercare liberamente in gran parte della galassia."`
+			choice
+				`	"Va bene, vi aiuterò a cercare su questi mondi."`
+				`	"Non credo che sia la strada migliore. Dovrete trovare qualcun altro che vi aiuti."`
+					decline
+			
+			label sure
+			`	"Ottimo!" dice Katya. "Ci fermiamo prima su <destination>, poi passiamo da Hopper e proseguiamo per New Iceland. Se a quel punto non avremo ancora trovato niente, cominceremo a risalire lungo il Bordo."`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Katya e Mr. Eyes sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Katya 6B"
+	landing
+	name "La caccia continua"
+	description "Porta Katya ed Eyes fino a <destination>."
+	source "Sinter"
+	destination "Hopper"
+	passengers 2
+	to offer
+		has "FW Katya 6: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Mr. Eyes accende i suoi strumenti e guarda i risultati per qualche minuto. "Niente," dice. "Anche un test sotterraneo avrebbe sollevato una colonna di detriti abbastanza grande da misurarne le tracce. Ma non rilevo nulla."`
+			`	"Nessun problema," dice Katya. "Proseguiamo per <planet>."`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Katya e Mr. Eyes sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Katya 6C"
+	landing
+	name "La caccia continua"
+	description "Porta Katya ed Eyes fino a <destination>."
+	source "Hopper"
+	destination "New Iceland"
+	passengers 2
+	to offer
+		has "FW Katya 6B: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		conversation
+			`Ancora una volta Eyes fa i suoi test, e ancora una volta non salta fuori niente. "Manca un pianeta," dice. "È ora di provare <planet>." Ti accorgi che stanno cominciando entrambi a scoraggiarsi, e ti senti sopraffatto al pensiero di quanti pianeti in questo settore potresti dover cercare se non arriva presto un colpo di fortuna.`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Katya e Mr. Eyes sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Katya 7"
+	landing
+	name "La caccia continua"
+	description "Porta Katya ed Eyes fino a <destination> per controllare se ci sono segni di test subacquei."
+	source "New Iceland"
+	destination "Deep"
+	passengers 2
+	to offer
+		has "FW Katya 6C: done"
+	to fail
+		has "chosen sides"
+	on decline
+		log "Hai rinunciato a cercare prove di test nucleari per scagionare le Free Worlds."
+		dialog phrase "free worlds declined"
+	
+	on offer
+		conversation
+			`<origin> non si rivela diverso dai due precedenti. "Dobbiamo cambiare strategia," dice Katya. "Abbiamo parlato di una cosa mentre eravamo in viaggio."`
+			`	Eyes dice: "Mi è venuto in mente che un test subacqueo potrebbe essere ancora più facile di uno sotterraneo: non serve scavare né trovare un pozzo di miniera. E i sensori della Marina sono per l'atmosfera, non per gli oceani. Ma ho ancora con me i miei vecchi kit per analizzare l'acqua di mare."`
+			`	Katya dice: "Allora ci siamo chiesti: su che tipo di mondo andresti se volessi che i boati nell'oceano passassero inosservati? O su uno disabitato, o su uno con molta attività di meteoriti. E questo ci porta a... <planet>." Indica il sistema sulla tua mappa. "Ondate di marea moderate quasi ogni settimana, per via degli impatti di tutti gli asteroidi del sistema. Il posto perfetto per nascondere un'esplosione sottomarina."`
+			choice
+				`	"Sembra una buona possibilità. Proviamo!"`
+					goto agree
+				`	"Ma <planet> fa parte delle Free Worlds. Che succede se ci troviamo delle prove?"`
+				`	"Ho altre missioni da sbrigare invece di continuare questa caccia al tesoro."`
+					decline
+			
+			`	"Il piano non è cambiato," risponde Eyes. "Troviamo dove sono avvenuti i test, e questo ci porterà ai colpevoli. Anche se saltasse fuori che è responsabile qualcuno legato alle Free Worlds, sarà consegnato alla Repubblica."`
+			`	"Prego però che nessuno dentro le Free Worlds c'entri qualcosa," dice Katya a voce bassa. "Quasi spero che non troviamo niente."`
+			choice
+				`	"Giusto, mi sembra ragionevole. Proviamo."`
+				`	"Le Free Worlds sembrano sempre più colpevoli man mano che cerchiamo. Me ne vado."`
+					decline
+			
+			label agree
+			`	"Apprezzo il tuo aiuto, Capitano <last>," dice Katya. "Andiamo."`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Katya e Mr. Eyes sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Katya 7B"
+	landing
+	name "La caccia continua"
+	description "Porta Katya ed Eyes sulla luna mineraria <planet>."
+	source "Deep"
+	destination "Clink"
+	passengers 2
+	to offer
+		has "FW Katya 7: done"
+	to fail
+		has "chosen sides"
+	on decline
+		log "Hai rinunciato a cercare prove di test nucleari per scagionare le Free Worlds."
+		dialog phrase "free worlds declined"
+	
+	on offer
+		conversation
+			`Dopo l'atterraggio vai a fare una passeggiata sulla spiaggia con Katya ed Eyes. Camminano entrambi a piedi nudi, nell'acqua bassa. Eyes raccoglie sassolini e conchiglie da sotto l'acqua, e a un certo punto, invece di prendere un sassolino, si abbassa di nascosto e riempie una fiala con l'acqua di mare.`
+			`	Tornati alla nave, fa i suoi test, con te e Katya che guardate impazienti. Guarda i risultati, si acciglia, poi ripete tutta la procedura con un secondo kit. Alla fine sospira. "Niente," dice.`
+			`	Katya urla di frustrazione e batte i pugni sulle paratie. "Non troveremo mai niente," dice. "Lascia perdere, vado a farmi una passeggiata." Esce dalla nave.`
+			`	Mr. Eyes mette via i suoi strumenti, poi uscite e la trovate seduta sulla piazzola di atterraggio vicino alla nave, a guardare la luna che sorge sul mare. Sembra molto più calma.`
+			choice
+				`	(Siediti accanto a lei e cerca di consolarla.)`
+				`	"Che cosa facciamo adesso?"`
+					goto last
+			
+			`	Ti siedi da un lato, ed Eyes si siede dall'altro. "È davvero ammirevole, quello che stai facendo," dici. "Stai cercando di lavorare per la pace e per la giustizia. È un lavoro prezioso. Non perderti d'animo."`
+				goto last
+			
+			label last
+			`	"Un ultimo tentativo," dice. "Un ultimo mondo, e poi rinunciamo. Voglio che mi porti... là." Indica la luna, sospesa appena sopra l'orizzonte.`
+			`	Eyes dice: "Mondo minerario. Atmosfera polverosa. Impatti frequenti di meteoriti. Potresti far esplodere un ordigno sul lato opposto di quel mondo e i minatori probabilmente dormirebbero lo stesso."`
+			choice
+				`	"Va bene, ti porto su quest'ultimo mondo, e poi abbiamo finito."`
+				`	"Mi dispiace, 'un altro mondo' è quello che hai detto due pianeti fa. Ho chiuso con questa storia."`
+					decline
+			`	"Prometto che sarà l'ultimo," dice Katya.`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Katya e Mr. Eyes sono su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Katya 7C"
+	landing
+	name "Porta Eyes su <planet>"
+	description "Mentre Katya è sotto copertura su <origin>, porta Mr. Eyes a <destination> per riferire alle Free Worlds."
+	source "Clink"
+	destination "Zug"
+	passengers 1
+	to offer
+		has "FW Katya 7B: done"
+	to fail
+		has "chosen sides"
+	
+	on offer
+		log "Hai trovato prove di test nucleari su Clink, una luna mineraria ai margini del territorio delle Free Worlds. È strano che i responsabili abbiano lasciato dietro prove così evidenti: i droni della Marina le avranno di sicuro scoperte prima di noi. Katya è rimasta indietro per cercare di infiltrarsi nel complesso minerario e raccogliere altre informazioni."
+		conversation
+			`Atterri a una certa distanza dall'insediamento minerario, e Mr. Eyes entra nella camera di equilibrio con una tuta pressurizzata, facendola ciclare per raccogliere un po' dell'atmosfera sottile della luna e poterla analizzare. "Accendo gli strumenti adesso," dice attraverso il collegamento. Segue una lunga pausa, e poi comincia a vomitare una lunga serie di imprecazioni creative. Katya corre alla finestra della camera di equilibrio per vedere che succede.`
+			`	Alla fine Eyes si calma abbastanza da dire: "Corrisponde! Non solo qui c'è stato un test recente, ma la firma corrisponde a quella che abbiamo rilevato su Geminus. È questo il posto."`
+			`	Fa ciclare la camera di equilibrio e rientra. "Voliamo in cerchio e vediamo se riusciamo a trovare il sito," dice. Dopo qualche ora di volo radente sulla superficie e di scansione delle firme di radiazione, trovate un punto che sembra come tutti gli altri crateri meteoritici ma è pieno di radiazioni. Katya ed Eyes guardano le immagini della superficie quasi increduli.`
+			`	"In base ai tassi di decadimento isotopico, questa esplosione è avvenuta a metà giugno," dice Eyes. "Poco prima che avvenissero gli attentati."`
+			`	"Non ha alcun senso," dice Katya. "È un test atmosferico sfacciato. Impossibile che la Marina non l'abbia trovato. La Marina potrebbe agire su questa cosa da un momento all'altro."`
+			choice
+				`	"Che cosa facciamo adesso che abbiamo trovato il sito dei test?"`
+					goto now
+				`	"Quindi sono le Free Worlds dietro a tutto questo! Questo è uno dei vostri pianeti!"`
+			
+			`	"Sì, questo è un pianeta delle Free Worlds, ma questa prova è fin troppo sfacciata," risponde Eyes. "Il fatto che qui abbiamo trovato una corrispondenza non significa che sia qui che sono avvenuti tutti i test. Sto rilevando isotopi sufficienti solo per una esplosione, e non faresti un test una volta sola. Semmai, questo dimostra che qualcuno sta incastrando le Free Worlds, e ha usato un ordigno qui prima di bombardare Geminus e Martini per far sembrare che siano state le Free Worlds a farlo."`
+			`	"Giuro davanti a Dio che le Free Worlds non c'entrano niente con questo, Capitano," dice Katya. "Ma troveremo chi è responsabile e lo porteremo davanti alla giustizia."`
+			
+			label now
+			`	Katya riflette un momento. "Capitano, l'avamposto segnala qualche posto di lavoro aperto?"`
+			`	Controlli il computer. "Un posto, come inserviente nella mensa."`
+			`	Fa una smorfia. "Va bene, è meglio di niente. Prenderò il lavoro per andare sotto copertura e vedere che cosa riesco a scoprire. Tu porta Eyes su <planet>, dove potrà mettersi in contatto con il Consiglio delle Free Worlds. Troverò il modo di mandarti un messaggio quando avrò trovato i responsabili."`
+			`	"Katerina," dice Eyes, "è troppo pericoloso. Come ho detto, se siamo riusciti a rilevarlo noi, allora può farlo anche la Marina, e probabilmente l'ha già fatto. Potrebbero decidere di occupare Clink da un momento all'altro, e tu rimarresti intrappolata qui senza via d'uscita."`
+			`	"Non c'è altro modo," dice lei. "Non abbiamo tempo da perdere. Sono disposta a rischiare."`
+			`	Con molte riserve, la lasci all'avamposto. Katya si scompiglia i capelli e si strofina un po' di polvere lunare sul viso per confondersi mentre chiede del lavoro, che le viene offerto subito. "Non sono molti quelli che hanno voglia di lavorare quassù," dice il caposquadra, "quindi il tuo aiuto sarà molto apprezzato." Tu ed Eyes tornate alla nave e vi preparate a viaggiare verso <planet> con le prove.`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che Mr. Eyes è su una delle tue scorte che non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		payment 250000
+		"assisted free worlds" ++
+		conversation
+			`Eyes è stato davvero zitto per tutto il viaggio; sei sicuro che sia preoccupato per Katya. Quando atterri, ti porge <payment> e dice: "Grazie per tutto il tuo aiuto, Capitano. Prego che questo porti alla giustizia."`
+			`	Comincia ad allontanarsi, poi torna indietro. "A proposito, Katya voleva tenere la cosa segreta, ma penso che dovresti saperlo." Indica i chip di credito che ti ha appena dato. "Katya ha finanziato tutto questo di tasca propria. Quelli erano gli ultimi suoi risparmi, quelli che ti ha appena pagato."`
+			choice
+				`	"Non ne avevo idea."`
+				`	"Caspita, è davvero dedita a questo lavoro, vero?"`
+			`	"È una donna fuori dal comune," dice Eyes. "Spero di rivederla presto. Per ora addio, <first>."`
+
+
+
+mission "FW Commitment"
+	minor
+	landing
+	name "Unisciti alle Free Worlds"
+	description "Se vuoi unirti alle Free Worlds, presentati al loro quartier generale su <destination>."
+	source
+		government "Free Worlds"
+	destination "Bourne"
+	to offer
+		"assisted free worlds" >= 3
+		has "FW Katya 7C: done"
+	to fail
+		has "chosen sides"
+	to complete
+		never
+	on fail
+		# Do nothing.
+	on abort
+		log "Hai rifiutato un'offerta di unirti alle Free Worlds."
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Sei stato invitato a unirti alle Free Worlds. È un'occasione preziosa, ma sarebbe anche un modo rapido per diventare nemico della Repubblica."
+		conversation
+			`Poco dopo che atterri, un corriere arriva alla tua nave e ti consegna una lettera dall'aspetto formale. Dice:`
+			``
+			`Gentile Capitano <last>,`
+			`	Il Consiglio delle Free Worlds desidera ringraziarla per l'inestimabile aiuto che ci ha recentemente offerto. Siamo pronti a offrirle un posto come ufficiale nella nostra milizia, mantenendo il comando della sua nave. Il suo stipendio iniziale sarà di 1.100 crediti al giorno. Se desidera unirsi a noi, voglia presentarsi al nostro quartier generale su Bourne appena le sarà possibile.`
+			`	Distinti saluti,`
+			`				Tomek Voigt`
+			`				Jean-Jacques Soleau`
+			`				Freya Winters`
+			`				Alondo Gruyere`
+			`				Katerina Reynolds`
+			``
+			`	Noti che il nome di Katya è stampato, invece che firmato come gli altri; dev'essere ancora sotto copertura su Clink.`
+				accept
+
+
+
+mission "Rescue Katya 1"
+	landing
+	name "Salva Katya"
+	description "Salva Katya da <planet>, prima che la Marina la scopra, e portala sana e salva a Longjump."
+	source "Bourne"
+	destination "Clink"
+	to offer
+		has "FW Commitment: offered"
+		not "chosen sides"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Sei su Bourne, la capitale delle Free Worlds. Accetti la loro offerta di lavoro e ti offri volontario per unirti ufficialmente a loro? Con le tensioni fra le Free Worlds e la Repubblica così alte, non è impensabile che possano entrare in guerra fra loro, quindi sarebbe una buona idea avere una nave da guerra e un po' di fondi di riserva prima di schierarti con le Free Worlds.`
+			choice
+				`	(Sì.)`
+				`	(Non ancora.)`
+					defer
+			
+			branch mistrust
+				has "fw escort: mistrusted"
+			
+			`	Trovi gli uffici delle Free Worlds e dai il tuo nome alla persona alla reception. Pochi minuti dopo Tomek Voigt, che gestisce i rifornimenti e i movimenti della flotta per il Consiglio, scende le scale per salutarti. "Sono così contento che tu abbia accettato di unirti a noi, Capitano <last>," dice.`
+				goto next
+			
+			label mistrust
+			`	Trovi gli uffici delle Free Worlds e dai il tuo nome alla persona alla reception. Pochi minuti dopo Tomek Voigt, che gestisce i rifornimenti e i movimenti della flotta per il Consiglio, scende le scale per salutarti. "Capitano <last>," dice con uno sguardo severo. "Se dipendesse solo da me, oggi non sarebbe qui davanti a me, ma pare che il suo continuo aiuto le abbia guadagnato abbastanza benevolenza da superare la mia diffidenza verso di lei.`
+			`	"Ma sono un uomo ragionevole," continua, con l'espressione che si scioglie in un sorriso. "Se i miei amici si fidano di te, allora ti darò una seconda possibilità, anche se va contro il mio miglior giudizio. Ora, per favore, unisciti a noi."`
+			
+			label next
+			`	Quella sera ti vengono presentati gli altri membri del Consiglio: Alondo Gruyere, capo diplomatico del Consiglio; Freya Winters, ingegnere esperta e responsabile della logistica del Consiglio; e Jean-Jacques "JJ" Soleau, ex ufficiale della Marina che ora guida l'addestramento delle milizie delle Free Worlds. Katya Reynolds, l'ultimo membro del Consiglio, non è presente.`
+			`	Ti portano a cena in un ristorante molto raffinato. A metà della terza portata, il comunicatore di Tomek emette un bip. Allunga la mano per spegnerlo, poi vede il messaggio e impallidisce. Cala il silenzio sul tavolo. "La Marina ha conquistato <system>," annuncia.`
+			`	Dopo un lungo silenzio, JJ chiede: "Quante vittime?"`
+			`	"Nessuna," dice Tomek. "La Marina ha sostenuto che <system> era la fonte dell'attentato terroristico, e dopo che hanno mostrato le prove al comandante della milizia su Deep, si è arreso e ha ceduto loro il controllo del sistema senza combattere."`
+			choice
+				`	"Katya era ancora là? Dobbiamo salvarla!"`
+				`	"Non possiamo permettere che facciano questo. Dovremmo radunare le nostre flotte e attaccare."`
+					goto attack
+			
+			`	"Esatto," dice Freya. "Questa dovrebbe essere la nostra prima priorità."`
+				goto help
+			
+			label attack
+			`	JJ dice: "Calmati, Capitano. Il combattimento è la nostra ultima opzione, non la prima. E se la loro affermazione è corretta, avevano il diritto di prendere il sistema."`
+			`	Freya dice: "Unire le milizie potrebbe richiedere settimane. Una questione molto più urgente è che Katya è ancora su Clink, a meno che qualcuno non abbia avuto sue notizie."`
+			
+			label help
+			`	"Beh," dice Alondo, "è un bene che non abbiamo ancora annunciato pubblicamente che il Capitano <last> lavora per noi. Capitano, abbiamo una missione finale per lei come capitano mercantile indipendente. Deve fare tappa su Clink, trovare Katya e portarla sana e salva a Longjump senza essere fermato dalla Marina."`
+				accept
+	
+	on accept
+		set "chosen sides"
+		event "capture of Kornephoros"
+		log "People" "Alondo Gruyere" `Alondo è cresciuto su Bourne, il pianeta relativamente prospero ai margini del Bordo che ora è la capitale delle Free Worlds. Ha servito per anni come diplomatico della Repubblica prima di convincersi che il Parlamento lo stesse solo usando per "pacificare" i mondi meno sviluppati del Sud con promesse vuote. Si è unito al Patto di Difesa Reciproca del Sud nei primi tempi, prima che diventasse le Free Worlds, e ora è membro del Consiglio.`
+		log "People" "Tomek Voigt" `Tomek è un comandante della milizia giovane e ambizioso. La sua brillante guida tattica e la sua personalità carismatica gli hanno guadagnato un notevole seguito nella regione della Fascia di Terra già prima che le Free Worlds esistessero. È stato invitato a far parte del Consiglio anche per la sua popolarità presso le milizie locali di tutta la regione.`
+		log "People" "Freya Winters" `Freya è un'ingegnere specializzata in apparecchiature di sorveglianza, ma con un ventaglio di talenti molto ampio. Ha organizzato il programma "Mille Occhi" gestito dal Patto di Difesa Reciproca del Sud, un tentativo di ridurre la potenza delle flotte pirata della regione seguendone i movimenti. Nonostante il suo scarso interesse per la politica, è stata invitata a far parte del Consiglio delle Free Worlds per la sua competenza nell'ottimizzare la distribuzione e la gestione delle risorse.`
+		log "People" "Jean-Jacques Soleau" `Noto ai più semplicemente come "JJ", Jean-Jacques è cresciuto nella Fascia di Terra e ha servito per anni nella Marina prima di dimettersi, frustrato dal fatto che la Marina non difendesse più la sua regione di spazio d'origine. Ora fa parte del Consiglio delle Free Worlds, dove ha il compito di coordinare le azioni fra le milizie locali e di trasformarle in un'unica forza combattente capace di agire in modo concertato.`
+
+
+
+mission "Rescue Katya 2"
+	autosave
+	landing
+	name "Salva Katya"
+	description "Torna su <planet> e riferisci al Consiglio delle Free Worlds che non sei riuscito a trovare Katya."
+	source "Clink"
+	destination "Longjump"
+	to offer
+		has "Rescue Katya 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`L'avamposto minerario su Clink brulica di ufficiali della Marina; supponi che siano in numero maggiore dei minatori. Non sei sicuro di come entrare e contattare Katya senza che la Marina se ne accorga.`
+			choice
+				`	(Aspetta nella mia nave e vedi se si avvicina.)`
+				`	(Controlla se mi sta aspettando fuori, presso il sito dei test.)`
+					goto site
+				`	(Inventa una scusa per entrare nell'avamposto.)`
+					goto enter
+			
+			label wait
+			`	Aspetti sulla piazzola di atterraggio per diverse ore. Katya non si fa viva. Ogni quarto d'ora circa passano vicino alla tua nave ufficiali della Marina in tuta pressurizzata, senza dubbio chiedendosi che cosa ci fai qui.`
+			choice
+				`	(Controlla se mi sta aspettando fuori, presso il sito dei test.)`
+				`	(Inventa una scusa per entrare nell'avamposto.)`
+					goto enter
+				`	(Rinuncia e riferisci il mio fallimento al Consiglio.)`
+					goto fail
+			
+			label site
+			`	Sorvoli il sito dei test cercando segni di vita o firme energetiche, ma non c'è nulla. E del resto Katya avrebbe poche possibilità di vivere quassù a lungo, perché avrebbe bisogno di una fonte di ossigeno.`
+			choice
+				`	(Aspetta sulla piazzola e vedi se si avvicina.)`
+					goto wait
+				`	(Inventa una scusa per entrare nell'avamposto.)`
+				`	(Rinuncia e riferisci il mio fallimento al Consiglio.)`
+					goto fail
+			
+			label enter
+			`	Indossi una tuta pressurizzata, lasci la nave e ti avvicini all'avamposto. Appena varchi la camera di equilibrio vieni fermato da un ufficiale della Marina. "Che cosa fa qui?" chiede.`
+			`	"Mio fratello è un minatore qui," dici. "Nostra madre mi ha mandato a vedere come sta."`
+			`	L'ufficiale dice: "Non si preoccupi, qui nessuno è stato ferito, e tutti saranno liberi di riprendere il lavoro a breve. Ma per ora devo chiederle di lasciare questo mondo." Chiama diverse guardie in tuta pressurizzata; ti scortano alla tua nave e ti ordinano di decollare.`
+			
+			label fail
+			`	Non hai altra scelta che tornare su <planet> senza Katya. Il Consiglio sarà molto deluso.`
+				launch
+	
+	on accept
+		log "La Marina ha invaso Kornephoros, mentre Katya era ancora sotto copertura su Clink. Nessuna traccia di dove sia. Potrebbe essere stata presa prigioniera."
+
+
+
+mission "Defend Sabik"
+	landing
+	name "Difendi Sabik"
+	description "Aiuta a respingere un attacco della Marina su Sabik, poi atterra su Longjump per il debriefing."
+	source "Longjump"
+	to offer
+		has "Rescue Katya 2: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		set "license: Militia"
+		"salary: Free Worlds" = 1100
+		"reputation: Republic" <?= -10
+		event "start of hostilities"
+		event "joined the free worlds"
+		conversation
+			`Quando atterri su <planet>, scopri che Tomek ha già trovato un passaggio fin qui; ti viene incontro quasi appena la tua nave tocca terra. Quando esci dal portello da solo, senza Katya, si volta altrove per il dolore. "Mi dispiace," dici, "non sono riuscito a trovarla. Tutto il posto è sotto sorveglianza."`
+			`	"Molto bene," dice, "dovremo pregare che sia ancora nascosta là da qualche parte. Nel frattempo dobbiamo rendere ufficiale la tua appartenenza, così potrai combattere al nostro fianco se dovesse servire."`
+			`	Porta con sé un pennello e un barattolo molto grande di vernice verde. "Vuoi fare gli onori?" chiede.`
+			choice
+				`	"Certo."`
+					goto paint
+				`	"Non posso continuare a volare con i colori dei mercanti?"`
+			
+			`	"No," dice, "sarebbe disonesto, e se combattessi al nostro fianco saresti classificato come partigiano, un criminale invece che un combattente nemico. Che tu ci creda o no, se mai dovessi essere catturato staresti meglio come prigioniero di guerra ufficiale che come partigiano. Quindi è ora di cominciare a verniciare."`
+			
+			label paint
+			`	Prendi il pennello, ti arrampichi sopra la nave e cominci a dipingerla con il verde e l'oro delle Free Worlds. All'improvviso senti un grido da una delle altre navi parcheggiate lì vicino; qualcuno ha visto che cosa stai facendo e sta urlando: "Per la libertà! Un'altra nave per la libertà!" Presto ti vedono anche altri, e in poco tempo sembra che tutto il porto abbia raccolto quel grido.`
+			`	Tomek resta lì in silenzio finché non hai finito, poi ti si avvicina con il braccio teso che regge una licenza. "Ecco. Ti servirà. Sono sicuro che il tuo aiuto sarà inestimabile per la nostra causa," dice mentre ritiri la licenza della milizia. "Ora, se vuoi scusarmi, devo radunare la milizia per la battaglia che verrà."`
+			choice
+				`	(Lascialo andare.)`
+					goto end
+				`	"Non ho mai combattuto insieme a un'altra flotta. Che consiglio puoi darmi?"`
+			`	Si ferma mentre stava per andarsene. "Certo, probabilmente non hai passato molto tempo in una flotta della milizia a difendere un pianeta o un sistema." Dopo qualche momento di riflessione, continua: "Quando si combatte al fianco di una grande flotta, di solito è meglio lavorare in gruppo e sparare sugli stessi bersagli degli altri. Vedrai le navi intorno a te collaborare per mettere fuori uso un bersaglio alla volta, invece che ognuna impegnata nel proprio duello. Non ci aspettiamo che tu sconfigga da solo ogni nave della Marina. E cerca anche di non avvicinarti troppo alle loro navi: probabilmente non vuoi che un gruppo scelga proprio te come bersaglio." Si ferma un momento. "Però, se ti senti coraggioso, potresti provare a farti seguire da un gruppo numeroso di navi e portarle a spasso, lasciando una forza più piccola a tutti gli altri da affrontare prima di passare al tuo gruppo. Sarà un inseguimento breve, però, se non riesci a restare fuori dalla portata delle loro armi e a schivare i loro missili. Se si arriva a difendere proprio questo sistema, la Marina potrebbe mandare altre navi dopo la prima ondata. Molto probabilmente arriveranno da Kornephoros, quindi anche trovarti sulla loro linea di fuoco, da quel lato del sistema, prima che arrivino è una cosa da evitare.`
+			`	"Ora devo davvero andare a preparare tutti gli altri."`
+			label end
+			`	Scopri che la milizia si sta radunando al bar dello spazioporto. Alcuni ti fanno i complimenti per esserti unito alle Free Worlds, ma la maggior parte sta lì in silenzio, aspettando che succeda qualcosa. Con il passare del tempo se ne aggiungono altri, al punto che il bar diventa sovraffollato e i miliziani aspettano nelle strade fuori dall'edificio.`
+			`	Un'ora dopo, mentre sei fuori dal bar, alzi lo sguardo e noti le luci lampeggianti del fuoco delle armi delle navi in lontananza, sopra il pianeta. Alcuni miliziani cominciano a correre verso le loro navi, ma la maggior parte resta lì impietrita come un cervo nei fari. Proprio allora torna Tomek con un megafono e comincia a gridare ordini. "La Marina è entrata nel sistema! Non possiamo lasciarglielo prendere, o ci avranno completamente imbottigliati. È qui che comincia. Dobbiamo combattere! Correte alle vostre navi, in fretta! Abbiamo altri rinforzi in arrivo dal profondo del Bordo!`
+			`	"E se potete, mettete fuori uso le loro navi invece di distruggerle. Sono navi della Marina, dopotutto, e la maggior parte di loro non vuole la guerra più di noi. Ora andate! I vostri mondi hanno bisogno di voi!" Ti affretti a unirti a tutte le altre navi che decollano per difendere il sistema.`
+				launch
+	
+	on accept
+		log "Ti sei unito ufficialmente alle Free Worlds. Stai aiutando a difendere Sabik, che ora è sotto attacco della Marina. Questo lavoro per le Free Worlds potrebbe significare finire coinvolto in molte altre battaglie come questa."
+	
+	npc evade
+		government "Republic"
+		personality waiting heroic
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser"
+				"Combat Drone" 4
+				"Frigate"
+				"Gunboat" 2
+				"Rainmaker"
+	npc evade
+		government "Republic"
+		personality heroic
+		system "Kornephoros"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier"
+				"Lance" 8
+				"Combat Drone" 6
+				"Frigate" 2
+				"Gunboat" 3
+				"Rainmaker" 3
+	
+	npc
+		government "Free Worlds"
+		personality heroic disables
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon"
+				"Hawk" 2
+		fleet
+			names "free worlds small"
+			variant
+				"Hawk"
+				"Sparrow" 2
+		fleet
+			names "free worlds small"
+			variant
+				"Hawk"
+				"Fury" 2
+	npc
+		government "Free Worlds"
+		personality heroic disables
+		system "Zubenelgenubi"
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon"
+				"Osprey" 2
+				"Hawk" 3
+				"Sparrow" 4
+	npc
+		government "Free Worlds"
+		personality heroic disables
+		system "Zubeneschamali"
+		fleet
+			names "free worlds capital"
+			variant
+				"Bastion" 2
+				"Argosy" 3
+				"Fury" 2
+	npc
+		government "Free Worlds"
+		personality heroic disables
+		system "Unukalhai"
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon"
+	npc
+		government "Free Worlds"
+		personality heroic waiting disables
+		fleet
+			names "free worlds small"
+			variant
+				"Hawk" 2
+				"Sparrow"
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi della Marina che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		dialog `La Marina è stata respinta, ma a un costo elevato. Probabilmente dovresti passare dallo spazioporto e vedere se c'è Tomek, o qualcun altro che possa dirti che cosa fare adesso.`
+
+
+
+mission "FW License Fix"
+	invisible
+	non-blocking
+	landing
+	to offer
+		has "license: Militia Carrier"
+	on offer
+		set "license: Militia"
+		clear "license: Militia Carrier"
+		fail

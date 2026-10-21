@@ -1,0 +1,154 @@
+{
+ "block": {
+  "path": "data/avgi/avgi weapons.txt",
+  "line_from": 716,
+  "line_to": 969,
+  "units": 13
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "outfit:\"Nettle\" KKV|description|716|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 716,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Nettle\" KKV",
+   "english": "The Nettle missile is a cheap, single-stage kinetic kill vehicle designed for situations where a nuclear warhead would be unnecessary. Little more than a payload of tungsten rods, an octaazacubane thruster package, and a nose mounted sensor array, they can be manufactured in bulk at minimal cost. Upon closing in on a target, the missile unwraps into dozens of thin tungsten rods to create a cone-shaped area of effect. While only a fraction of the payload actually impacts a target, the cloud of projectiles is difficult to completely eliminate.",
+   "italian": "The Nettle missile is a cheap, single-stage kinetic kill vehicle designed for situations where a nuclear warhead would be unnecessary. Little more than a payload of tungsten rods, an octaazacubane thruster package, and a nose mounted sensor array, they can be manufactured in bulk at minimal cost. Upon closing in on a target, the missile unwraps into dozens of thin tungsten rods to create a cone-shaped area of effect. While only a fraction of the payload actually impacts a target, the cloud of projectiles is difficult to completely eliminate.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "outfit:\"Nettle\" KKV|description|717|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 717,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Nettle\" KKV",
+   "english": "\tThe Nettle KKV is ammunition for the Vertical Launch Array; without a Vertical Launch Array to store them in you cannot purchase or use Nettle KKVs.",
+   "italian": "\tThe Nettle KKV is ammunition for the Vertical Launch Array; without a Vertical Launch Array to store them in you cannot purchase or use Nettle KKVs.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "outfit:Nettle Flecks|plural|742|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 742,
+   "kind": "VALUE",
+   "context": "outfit:Nettle Flecks",
+   "english": "Nettle Flecks",
+   "italian": "Nettle Flecks",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "(root)|\"Nettle\" KKV|788|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 788,
+   "kind": "TEXT",
+   "context": "(root)",
+   "english": "\"Nettle\" KKV",
+   "italian": "\"Nettle\" KKV",
+   "ratio": 1.0
+  },
+  {
+   "idx": 5,
+   "id": "outfit:\"Orchid\" Nuclear Missile|description|801|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 801,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Orchid\" Nuclear Missile",
+   "english": "Unlike humanity, the Avgi do not have a strong taboo against the use of nuclear weapons in space. To them, nuclear weapons are simply another tool, albeit one with a particularly high energy density, to be used when the occasion calls for it. They have been the Avgi's trump card against the Aberrant, the one weapon they have capable of reliably breaking their advanced shields and atomizing their armor.",
+   "italian": "Unlike humanity, the Avgi do not have a strong taboo against the use of nuclear weapons in space. To them, nuclear weapons are simply another tool, albeit one with a particularly high energy density, to be used when the occasion calls for it. They have been the Avgi's trump card against the Aberrant, the one weapon they have capable of reliably breaking their advanced shields and atomizing their armor.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "outfit:\"Orchid\" Nuclear Missile|description|802|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 802,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Orchid\" Nuclear Missile",
+   "english": "\tThis particular missile carries a powerful thermonuclear warhead, a staged device with a far higher yield to weight ratio than anything humanity has developed. It seems to be the product of centuries of development of nuclear devices, as opposed to humanity's long abstention from nuclear weapons research.",
+   "italian": "\tThis particular missile carries a powerful thermonuclear warhead, a staged device with a far higher yield to weight ratio than anything humanity has developed. It seems to be the product of centuries of development of nuclear devices, as opposed to humanity's long abstention from nuclear weapons research.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 7,
+   "id": "outfit:\"Orchid\" Nuclear Missile|description|803|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 803,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Orchid\" Nuclear Missile",
+   "english": "\tThe Orchid Missile is ammunition for the External Launch Tube; without a External Launch Tube to store them in you cannot purchase or use Orchid Missiles.",
+   "italian": "\tThe Orchid Missile is ammunition for the External Launch Tube; without a External Launch Tube to store them in you cannot purchase or use Orchid Missiles.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 8,
+   "id": "outfit:\"Ophrys\" Nuclear Torpedo|description|949|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 949,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Ophrys\" Nuclear Torpedo",
+   "english": "The Ophrys is a minimally-guided nuclear torpedo derived from the Orchid Nuclear Missile. Little more than the Orchid's terminal stage with a layer of ablative armor added to the front, it allows even small drones to pose a credible threat to a capital warship.",
+   "italian": "The Ophrys is a minimally-guided nuclear torpedo derived from the Orchid Nuclear Missile. Little more than the Orchid's terminal stage with a layer of ablative armor added to the front, it allows even small drones to pose a credible threat to a capital warship.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "outfit:\"Ophrys\" Nuclear Torpedo|description|950|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 950,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Ophrys\" Nuclear Torpedo",
+   "english": "\tUnlike the nuclear missiles employed by the Avgi, the Ophrys carries only enough propellant to make small adjustments to its trajectory. It instead relies on the speed of the bomber carrying it, trading an independent propulsive capability for enough armor to improve the odds of surviving antimissile fire during its terminal path.",
+   "italian": "\tUnlike the nuclear missiles employed by the Avgi, the Ophrys carries only enough propellant to make small adjustments to its trajectory. It instead relies on the speed of the bomber carrying it, trading an independent propulsive capability for enough armor to improve the odds of surviving antimissile fire during its terminal path.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "outfit:\"Ophrys\" Nuclear Torpedo|description|951|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 951,
+   "kind": "DESCRIPTION",
+   "context": "outfit:\"Ophrys\" Nuclear Torpedo",
+   "english": "\tThe Ophrys Torpedo is ammunition for the External Launch Rail; without an External Launch Rail or Ophrys Stockpile to store them in you cannot purchase or use Ophrys Torpedoes.",
+   "italian": "\tThe Ophrys Torpedo is ammunition for the External Launch Rail; without an External Launch Rail or Ophrys Stockpile to store them in you cannot purchase or use Ophrys Torpedoes.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "outfit:Ophrys Stockpile|ammo|967|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 967,
+   "kind": "TEXT",
+   "context": "outfit:Ophrys Stockpile",
+   "english": "\"Ophrys\" Nuclear Torpedo",
+   "italian": "\"Ophrys\" Nuclear Torpedo",
+   "ratio": 1.0
+  },
+  {
+   "idx": 12,
+   "id": "outfit:Ophrys Stockpile|description|968|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 968,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ophrys Stockpile",
+   "english": "This remotely operated reloading bay, intended for use on carriers, can quickly replenish a docked fighter or drone with Ophrys Torpedoes. A generous stockpile of torpedoes allows a carrier to support multiple sorties before needing to resupply.",
+   "italian": "This remotely operated reloading bay, intended for use on carriers, can quickly replenish a docked fighter or drone with Ophrys Torpedoes. A generous stockpile of torpedoes allows a carrier to support multiple sorties before needing to resupply.",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "outfit:Ophrys Stockpile|description|969|0",
+   "path": "data/avgi/avgi weapons.txt",
+   "line": 969,
+   "kind": "DESCRIPTION",
+   "context": "outfit:Ophrys Stockpile",
+   "english": "\tThe restocking system requires oversight by a small team of specialists to ensure no accidents occur during the loading process.",
+   "italian": "\tThe restocking system requires oversight by a small team of specialists to ensure no accidents occur during the loading process.",
+   "ratio": 1.0
+  }
+ ]
+}

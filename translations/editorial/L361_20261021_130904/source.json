@@ -1,0 +1,89 @@
+{
+ "block": {
+  "path": "data/quarg/quarg ships.txt",
+  "line_from": 63,
+  "line_to": 331,
+  "units": 6
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Quarg Lindwyrm|description|63|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 63,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Lindwyrm",
+   "english": "The Quarg use the Lindwyrm as a heavy freighter, transporting in its ample cargo bays items both mundane and fantastical. In the days before the advent of modern cargo scanners revealed some measure of their contents, \"the inside of a Quarg cargo hold\" was slang used to describe any thing or place thought to be unknowable.",
+   "delimiter": "backtick",
+   "leading_tab": false,
+   "raw": "\tdescription `The Quarg use the Lindwyrm as a heavy freighter, transporting in its ample cargo bays items both mundane and fantastical. In the days before the advent of modern cargo scanners revealed some measure of their contents, \"the inside of a Quarg cargo hold\" was slang used to describe any thing or place thought to be unknowable.`",
+   "english_hash": "c6ad55e42da1c985"
+  },
+  {
+   "idx": 2,
+   "id": "ship:Quarg Guivre|description|114|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 114,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Guivre",
+   "english": "The Quarg employ these unusual craft as one of their primary tools for building and maintaining their ringworlds, each one operating continuously for hundreds or thousands of years on its planet-scale tasks. Each Guivre is equipped with a graviton slipstream projector, similar in usage to human-built tractor beams, but capable of shifting much, much larger objects with uncanny elegance and precision.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Quarg employ these unusual craft as one of their primary tools for building and maintaining their ringworlds, each one operating continuously for hundreds or thousands of years on its planet-scale tasks. Each Guivre is equipped with a graviton slipstream projector, similar in usage to human-built tractor beams, but capable of shifting much, much larger objects with uncanny elegance and precision.\"",
+   "english_hash": "826003d59fbebc9b"
+  },
+  {
+   "idx": 3,
+   "id": "ship:Quarg Drake|description|167|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 167,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Drake",
+   "english": "The Drake is an older ship used by the Quarg for reconnaissance and initial contact with emerging spacefaring species. A popular legend states that a Drake surveyed Sol while humans began to discover spaceflight.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Drake is an older ship used by the Quarg for reconnaissance and initial contact with emerging spacefaring species. A popular legend states that a Drake surveyed Sol while humans began to discover spaceflight.\"",
+   "english_hash": "a9283f1806b23749"
+  },
+  {
+   "idx": 4,
+   "id": "ship:Quarg Wardragon|description|219|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 219,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Wardragon",
+   "english": "The Wardragon is used by the Quarg as a light warship. It is an older design within the Quarg's fleets, supposedly less intimidating compared to their larger warships and thus more suitable for dealings with particularly nascent species.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The Wardragon is used by the Quarg as a light warship. It is an older design within the Quarg's fleets, supposedly less intimidating compared to their larger warships and thus more suitable for dealings with particularly nascent species.\"",
+   "english_hash": "0025cf98ba536524"
+  },
+  {
+   "idx": 5,
+   "id": "ship:Quarg Wyvern|description|272|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 272,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Wyvern",
+   "english": "When humans first encountered Quarg vessels, with their bizarre, scaly-looking hulls and alien forms, the comparisons to dragons of different sorts rapidly proliferated. The Wyvern is a midsize warship of the Quarg, though the distinction between the Quarg warship classes is insignificant to all but the most powerful forces in the galaxy.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"When humans first encountered Quarg vessels, with their bizarre, scaly-looking hulls and alien forms, the comparisons to dragons of different sorts rapidly proliferated. The Wyvern is a midsize warship of the Quarg, though the distinction between the Quarg warship classes is insignificant to all but the most powerful forces in the galaxy.\"",
+   "english_hash": "687e627a17e748c1"
+  },
+  {
+   "idx": 6,
+   "id": "ship:Quarg Hydra|description|331|0",
+   "path": "data/quarg/quarg ships.txt",
+   "line": 331,
+   "kind": "DESCRIPTION",
+   "context": "ship:Quarg Hydra",
+   "english": "The many-headed mythological Hydra was supposedly venomous enough to kill mortals with nothing but the scent of its breath or a single drop of its blood. Any captain foolish enough to arouse the fury of the Quarg's heavy warships will no doubt quickly come to understand the exact significance of this part of the Hydra's legend.",
+   "delimiter": "quote",
+   "leading_tab": false,
+   "raw": "\tdescription \"The many-headed mythological Hydra was supposedly venomous enough to kill mortals with nothing but the scent of its breath or a single drop of its blood. Any captain foolish enough to arouse the fury of the Quarg's heavy warships will no doubt quickly come to understand the exact significance of this part of the Hydra's legend.\"",
+   "english_hash": "f13fd1a232844b8c"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+# part03: unita' 24-41 (Forest Fire, Local Politics, Military Response Test, Missed Mugging).
+import json
+import os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+P = {
+24: "L'odore di fumo bruciato impregna l'aria mentre scendi dal mezzo, facendoti correre verso il riparo più vicino, tossendo per la strada. Una volta lì, trovi gente che urla e si affanna a incollare nastro adesivo sulle finestre. Nessuno sembra aver notato il tuo arrivo e nessuno dà spiegazioni.",
+25: "\"Ehi! Cosa succede? Posso aiutare!\"",
+26: "(Cerca qualcuno che non stia correndo.)",
+27: "Cerchi una donna incinta seduta su una sedia, con una maschera addosso, che spiega: \"È scoppiato un grande incendio qui vicino, e il vento lo sta spingendo verso lo spazioporto. Potrebbe essere stato qualche sciocco che giocava col fuoco, o qualche pirata che manda un messaggio a un locale. Non lo sappiamo, qui può essere qualsiasi cosa davvero. Ci stiamo barricando e speriamo che si spenga prima di fare troppi danni.\"",
+28: "\"Ho una nave là fuori. Lasciami aiutare.\"",
+29: "Le si spalancano gli occhi e si guarda intorno, attirando bruscamente l'attenzione di una delle tante persone che si affannano.",
+30: "Un giovane che sospetti fosse al controllo del traffico aereo venti minuti fa ti guarda e frena di colpo. \"Oh, sei un pilota! La tua nave può aiutare?\"",
+31: "\"Sì.\"",
+32: "Dopo la tua dichiarazione gli addetti al molo si affannano a caricare l'attrezzatura antincendio sulla nave, istruendoti a sganciare i ritardanti sul perimetro dell'incendio. Riesci a malapena a ricordare cosa fa ogni pulsante prima che il controllore del traffico aereo ti dia il via, e dirigi il mezzo verso le fiamme.",
+33: "L'incendio infuria come un inferno e solleva fumo nero in ondate profonde mentre ti avvicini. Mentre lasci cadere i ritardanti, attento a tenere bassa la velocità, gli animali scappano verso terreni più sicuri. Cerchi di assicurarti di non aver svuotato il carico proprio sopra di loro ogni volta che torni per un altro giro.",
+34: "Ore dopo guardi il tuo lavoro: una lunga linea rossa che trattiene le fiamme mentre l'incendio comincia a spegnersi. Comunichi i tuoi progressi via radio e ricevi una risposta allegra che ti ringrazia per l'aiuto.",
+35: "Mentre atterri sulla piattaforma noti un'assenza generale intorno allo spazioporto. Nessuno si è precipitato ad agganciare la nave, né qualcun altro ha riconosciuto il tuo arrivo. Invece, quando esci dalla nave, trovi solo un biglietto nello spazioporto che spiega dove i loro \"signori\" possono trovare il tributo annuale.",
+36: "Decidi di non scoprire dove siano finiti gli abitanti.",
+37: "Con una serie di istruzioni strana, il controllore del traffico aereo ti fa inserire un insieme di coordinate che ti porta vicino a un'enorme base militare lungo la strada per la zona di atterraggio. Lasci fare al pilota automatico mentre guardi il panorama dal finestrino, sperando che le torrette della base non ti sparino giù.",
+38: "Da dove guardi, vedi una donna sola in piedi nel piazzale della parata, con una mano alzata come se guardasse l'orologio. Passano secondi prima che alzi l'altra mano e faccia un pollice in su a chiunque la stia guardando. All'improvviso una sirena forte risuona su tutta la base, udibile anche dalla nave che passa a quota ragionevole. Guardi i soldati lasciare cadere tutto quello che stanno facendo: alcuni corrono negli edifici, altri verso i veicoli corazzati. In pochi minuti i veicoli della base rotolano verso il piazzale mentre i soldati in equipaggiamento completo corrono a schierarsi in file ordinate.",
+39: "Non sei sicuro se quello che facevano fosse in programma o una risposta al tuo volo.",
+40: "Il sole è già tramontato quando esci dallo spazioporto, cercando un ristorante vicino per assaggiare quello che offrono. Guardandoti intorno, l'unica fonte di luce viene dall'edificio da cui sei appena uscito, un faro in mezzo a un mare di buio.",
+41: "Scegliendo una direzione a caso, decidi di percorrere la strada silenziosa, godendoti la vista. Vieni interrotto quando due uomini sbucano da un vicolo e ti passano accanto spingendoti. Prima che tu possa reagire, vedi una donna uscire di corsa, con i vestiti in disordine, che insegue i due senza successo. Solo in ritardo capisci che avevano una borsetta, molto dopo che sono spariti, dissolti nel nero oltre.",
+}
+
+json.dump({str(k): v for k, v in sorted(P.items())},
+          open(os.path.join(HERE, 'parts', 'part03.json'), 'w', encoding='utf-8'),
+          ensure_ascii=False, indent=1)
+print('part03:', len(P), 'unita', min(P), '-', max(P))

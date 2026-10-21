@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/remnant/remnant ships.txt",
+  "line_from": 807,
+  "line_to": 1291,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "ship:Heron|description|807|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 807,
+   "kind": "DESCRIPTION",
+   "context": "ship:Heron",
+   "english": "\tThe few Herons in existence are carefully guarded secrets that embody the Remnant's core tactics of speed, stealth, and survival. Given the tiny number that exist, they are never available for discretionary use by Remnant captains and are always operated under the authority and direction of a prefect.",
+   "italian": "\tLe poche Heron esistenti sono segreti custoditi con cura, che incarnano la tattica fondamentale dei Remnant: velocità, furtività e sopravvivenza. Dato il numero esiguo, non sono mai a disposizione dei capitani Remnant per usi discrezionali e sono sempre impiegate sotto l'autorità e la direzione di un prefetto.",
+   "ratio": 1.03
+  },
+  {
+   "idx": 2,
+   "id": "ship:Ibis|plural|812|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 812,
+   "kind": "VALUE",
+   "context": "ship:Ibis",
+   "english": "Ibises",
+   "italian": "Ibises",
+   "ratio": 1.0
+  },
+  {
+   "idx": 3,
+   "id": "ship:Ibis|description|892|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 892,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ibis",
+   "english": "The Ibis is a multipurpose carrier that serves as a mobile mining platform, an escort ship for Pelican fleets, and a combat platform using Terns for screening. It is capable of fielding a single wing of support craft, consisting of two Petrels and four Terns.",
+   "italian": "L'Ibis è un vettore multiuso che serve da piattaforma mineraria mobile, da nave di scorta per le flotte di Pelican e da piattaforma da combattimento che usa i Tern come schermo. Può schierare un solo stormo di mezzi di supporto, composto da due Petrel e quattro Tern.",
+   "ratio": 1.031
+  },
+  {
+   "idx": 4,
+   "id": "ship:Ibis|description|893|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 893,
+   "kind": "DESCRIPTION",
+   "context": "ship:Ibis",
+   "english": "\tThe Ibis was designed shortly after the Albatross as a means of extending the range of resource collection efforts after the Remnant realized that an Alpha invasion might not be as imminent as originally believed.",
+   "italian": "\tL'Ibis fu progettata poco dopo l'Albatross per estendere il raggio delle operazioni di raccolta di risorse, dopo che i Remnant capirono che un'invasione degli Alpha forse non era così imminente come avevano creduto.",
+   "ratio": 1.009
+  },
+  {
+   "idx": 5,
+   "id": "ship:Merganser|description|981|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 981,
+   "kind": "DESCRIPTION",
+   "context": "ship:Merganser",
+   "english": "The Merganser is the first production ship the Remnant deem to be truly alive, and are considered to be equivalent to dolphins in reasoning tests. These interceptors, deemed for short range operations by Remnant standards, are designed to patrol the upper atmosphere of gas giants and use their decisive speed advantage to conduct hit-and-run attacks on threats in nearby systems.",
+   "italian": "La Merganser è la prima nave di serie che i Remnant considerano davvero viva, e nei test di ragionamento viene giudicata pari a un delfino. Questi intercettori, per gli standard Remnant destinati a operazioni a corto raggio, sono progettati per pattugliare gli strati superiori dell'atmosfera dei giganti gassosi e per sfruttare il decisivo vantaggio di velocità in attacchi mordi e fuggi contro le minacce nei sistemi vicini.",
+   "ratio": 1.121
+  },
+  {
+   "idx": 6,
+   "id": "ship:Merganser|description|982|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 982,
+   "kind": "DESCRIPTION",
+   "context": "ship:Merganser",
+   "english": "\tThe cloaking technology is built into the Merganser's hull; it cannot be removed or transferred to another ship.",
+   "italian": "\tLa tecnologia di occultamento è incorporata nello scafo della Merganser; non può essere rimossa né trasferita a un'altra nave.",
+   "ratio": 1.124
+  },
+  {
+   "idx": 7,
+   "id": "ship:Pelican|description|1072|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 1072,
+   "kind": "DESCRIPTION",
+   "context": "ship:Pelican",
+   "english": "The Pelican is closely based on the original semi-organic materials the Remnant found in the Ember Waste. While they are not technically alive, their internal mechanisms and method of construction bear such a close resemblance to living organisms that they are often considered as such. One key feature of this living resemblance is the innate sensory capabilities they possess, akin to sensor suites less advanced ships require for detailed scanning. These ships serve as the backbone of Remnant bulk salvage efforts, as well as their fast-logistics distribution network.",
+   "italian": "La Pelican si basa strettamente sui materiali semi-organici originali che i Remnant trovarono nell'Ember Waste. Pur non essendo tecnicamente vive, i loro meccanismi interni e il metodo di costruzione somigliano così tanto a organismi viventi che spesso vengono considerate tali. Una caratteristica chiave di questa somiglianza con la vita sono le capacità sensoriali innate che possiedono, simili ai pacchetti di sensori che navi meno avanzate richiedono per scansionare in dettaglio. Queste navi costituiscono la spina dorsale delle operazioni di recupero di massa dei Remnant, oltre che della loro rete di distribuzione logistica rapida.",
+   "ratio": 1.117
+  },
+  {
+   "idx": 8,
+   "id": "ship:Penguin|description|1201|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 1201,
+   "kind": "DESCRIPTION",
+   "context": "ship:Penguin",
+   "english": "Inspired by close contact with void sprites and the reinvigoration of xenobiology, the Penguin is a prototype designed to serve the dual roles of testing new starship technology while exploring hostile planets throughout the Ember Waste. One of this ship's distinguishing features is that it is truly alive and has a mind that approaches self-awareness.",
+   "italian": "Ispirata dal contatto ravvicinato con gli spiriti del vuoto e dalla rinascita della xenobiologia, la Penguin è un prototipo pensato per assolvere due compiti: collaudare nuova tecnologia per le astronavi ed esplorare pianeti ostili in tutto l'Ember Waste. Una delle caratteristiche distintive di questa nave è che è davvero viva e possiede una mente vicina all'autocoscienza.",
+   "ratio": 1.062
+  },
+  {
+   "idx": 9,
+   "id": "ship:Penguin|description|1202|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 1202,
+   "kind": "DESCRIPTION",
+   "context": "ship:Penguin",
+   "english": "\tThe cloaking technology is built into the Penguin's hull; it cannot be removed or transferred to another ship.",
+   "italian": "\tLa tecnologia di occultamento è incorporata nello scafo della Penguin; non può essere rimossa né trasferita a un'altra nave.",
+   "ratio": 1.126
+  },
+  {
+   "idx": 10,
+   "id": "ship:Peregrine|description|1289|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 1289,
+   "kind": "DESCRIPTION",
+   "context": "ship:Peregrine",
+   "english": "The Peregrine is the first capital warship designed by Taely using fresh insights garnered from recent experimentation as well as renewed studies of the void sprites. Encompassing over a century of development since the last generation of warships was built, it is the forerunner of a new breed of Remnant ships.",
+   "italian": "La Peregrine è la prima nave da guerra capitale progettata da Taely, con le intuizioni nuove ricavate da recenti esperimenti e da rinnovati studi sugli spiriti del vuoto. Racchiude oltre un secolo di sviluppo dal tempo in cui fu costruita l'ultima generazione di navi da guerra, ed è l'antesignana di una nuova stirpe di navi Remnant.",
+   "ratio": 1.071
+  },
+  {
+   "idx": 11,
+   "id": "ship:Peregrine|description|1290|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 1290,
+   "kind": "DESCRIPTION",
+   "context": "ship:Peregrine",
+   "english": "\tThe Peregrine was designed along the lines of old-earth's fast-attack cruisers. Drawing on inspiration from its namesake, famed for being the fastest self-propelled lifeform on Earth, it is designed to strike hard and fast. It closes quickly with enemies to unleash devastating barrages in the opening seconds of combat.",
+   "italian": "\tLa Peregrine è stata progettata sul modello degli incrociatori d'attacco rapido della vecchia Terra. Ispirandosi al proprio omonimo, celebre per essere la forma di vita semovente più veloce della Terra, è fatta per colpire forte e in fretta. Si avvicina rapidamente ai nemici per scatenare raffiche devastanti nei primi secondi di combattimento.",
+   "ratio": 1.078
+  },
+  {
+   "idx": 12,
+   "id": "ship:Peregrine|description|1291|0",
+   "path": "data/remnant/remnant ships.txt",
+   "line": 1291,
+   "kind": "DESCRIPTION",
+   "context": "ship:Peregrine",
+   "english": "\tThe cloaking technology is built into the Peregrine's hull; it cannot be removed or transferred to another ship.",
+   "italian": "\tLa tecnologia di occultamento è incorporata nello scafo della Peregrine; non può essere rimossa né trasferita a un'altra nave.",
+   "ratio": 1.124
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "block": {
+  "path": "data/avgi/avgi culture conversations.txt",
+  "line_from": 260,
+  "line_to": 270,
+  "units": 9
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Avgi Culture: Fencing|\tAt the announcer's word, the duelists leap into the air with incredible speed, circling around each other and clashing blades. The two spiral upwards into the far upper areas of the arena, and quickly drop back down, darting in and out of each others' reach multiple times per second. Less than a minute later, you hear a loud ding, and one of the duelists falls to the floor with their wing collapsed. The crowd, who hadn't stopped buzzing the entire duel, erupts with even louder wing fluttering.|260|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 260,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tAt the announcer's word, the duelists leap into the air with incredible speed, circling around each other and clashing blades. The two spiral upwards into the far upper areas of the arena, and quickly drop back down, darting in and out of each others' reach multiple times per second. Less than a minute later, you hear a loud ding, and one of the duelists falls to the floor with their wing collapsed. The crowd, who hadn't stopped buzzing the entire duel, erupts with even louder wing fluttering.",
+   "italian": "\tAl segnale dell'annunciatore, i duellanti balzano in aria a una velocità incredibile, girandosi intorno e incrociando le lame. I due salgono a spirale fino alle zone più alte dell'arena e ridiscendono in fretta, entrando e uscendo dalla portata dell'altro più volte al secondo. Meno di un minuto dopo senti un ding sonoro, e uno dei duellanti cade a terra con l'ala ripiegata. La folla, che non aveva smesso di ronzare per tutto il duello, esplode in un frullare d'ali ancora più forte.",
+   "ratio": 0.976
+  },
+  {
+   "idx": 2,
+   "id": "mission:Avgi Culture: Fencing|\t\"Astonishment. Zomp wins round one,\" the announcer states. \"Repose. Shall we begin round two?\"|261|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 261,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t\"Astonishment. Zomp wins round one,\" the announcer states. \"Repose. Shall we begin round two?\"",
+   "italian": "\t\"Stupore. Zomp vince il primo round,\" dichiara l'annunciatore. \"Riposo. Cominciamo il secondo round?\"",
+   "ratio": 1.074
+  },
+  {
+   "idx": 3,
+   "id": "mission:Avgi Culture: Fencing|\tOnce more the contestants line up and spring into the air in a duel of eye-watering speed and agility. And once more, Zomp wins to the thunderous applause of the crowd.|262|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 262,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tOnce more the contestants line up and spring into the air in a duel of eye-watering speed and agility. And once more, Zomp wins to the thunderous applause of the crowd.",
+   "italian": "\tAncora una volta i contendenti si mettono in fila e balzano in aria in un duello di velocità e agilità da lacrime agli occhi. E ancora una volta Zomp vince, fra gli applausi tonanti della folla.",
+   "ratio": 1.154
+  },
+  {
+   "idx": 4,
+   "id": "mission:Avgi Culture: Fencing|\t\"Bewilderment. It seems as though Zomp has defeated our reigning champion!\" the announcer proclaims.|263|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 263,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t\"Bewilderment. It seems as though Zomp has defeated our reigning champion!\" the announcer proclaims.",
+   "italian": "\t\"Sconcerto. Pare che Zomp abbia sconfitto il nostro campione in carica!\" proclama l'annunciatore.",
+   "ratio": 0.97
+  },
+  {
+   "idx": 5,
+   "id": "mission:Avgi Culture: Fencing|\t\"Hysteria. I knew he would win! I'm up 10 to 1 on this bet!\" a nearby Avgi says with exuberance as they buzz around you wildly, holding various pink papers in their many arms.|264|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 264,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\t\"Hysteria. I knew he would win! I'm up 10 to 1 on this bet!\" a nearby Avgi says with exuberance as they buzz around you wildly, holding various pink papers in their many arms.",
+   "italian": "\t\"Isteria. Sapevo che avrebbe vinto! Sono in vantaggio dieci a uno su questa scommessa!\" dice con esuberanza un Avgi lì vicino, ronzandoti intorno con foga e tenendo varie carte rosa nelle sue molte braccia.",
+   "ratio": 1.176
+  },
+  {
+   "idx": 6,
+   "id": "mission:Avgi Culture: Fencing|\tAcross the arena you hear a shout from a pink Avgi, \"Adoration! I love you, Zomp!\"|265|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 265,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tAcross the arena you hear a shout from a pink Avgi, \"Adoration! I love you, Zomp!\"",
+   "italian": "\tDall'altra parte dell'arena senti l'urlo di un Avgi rosa: \"Adorazione! Ti amo, Zomp!\"",
+   "ratio": 1.036
+  },
+  {
+   "idx": 7,
+   "id": "mission:Avgi Culture: Fencing|\tThe entire arena appears to be in a chaos of cheers, boos and rumbling wing flapping for minutes after the match has ended. You can't remember a single instance of fencing back in human space having this much passion and energy within the crowd.|266|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 266,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tThe entire arena appears to be in a chaos of cheers, boos and rumbling wing flapping for minutes after the match has ended. You can't remember a single instance of fencing back in human space having this much passion and energy within the crowd.",
+   "italian": "\tL'intera arena sembra in un caos di acclamazioni, fischi e frullii sordi d'ali per minuti dopo la fine dell'incontro. Non ricordi un solo caso, nello spazio umano, in cui la scherma abbia avuto tanta passione ed energia nel pubblico.",
+   "ratio": 0.951
+  },
+  {
+   "idx": 8,
+   "id": "mission:Avgi Culture: Fencing|\tAfter the hubbub and celebration die down, you find no issue leaving the crowded arena - most Avgi simply fly over your head.|267|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 267,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tAfter the hubbub and celebration die down, you find no issue leaving the crowded arena - most Avgi simply fly over your head.",
+   "italian": "\tDopo che il chiasso e i festeggiamenti si calmano, non hai problemi a lasciare l'arena affollata - la maggior parte degli Avgi ti vola semplicemente sopra la testa.",
+   "ratio": 1.31
+  },
+  {
+   "idx": 9,
+   "id": "mission:Avgi Culture: Fencing|\tYou let the two fly away, continuing on your own business.|270|0",
+   "path": "data/avgi/avgi culture conversations.txt",
+   "line": 270,
+   "kind": "MISSION_TEXT",
+   "context": "mission:Avgi Culture: Fencing",
+   "english": "\tYou let the two fly away, continuing on your own business.",
+   "italian": "\tLasci che i due volino via, e prosegui per i fatti tuoi.",
+   "ratio": 0.966
+  }
+ ]
+}

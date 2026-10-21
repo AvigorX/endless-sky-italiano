@@ -1,0 +1,2419 @@
+# Copyright (c) 2014 by Michael Zahniser
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "FW Diplomacy 1"
+	landing
+	name "Diplomazia per le Free Worlds"
+	description "Va' su <planet> per incontrarti con Alondo, che ti spiegherà di più."
+	source
+		near "Sabik" 1 100
+	destination "Longjump"
+	to offer
+		has "event: navy occupying the south"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "catalytic ramscoop available"
+		event "joined the free worlds"
+		event "fw abandoned Greenrock" 60
+		event "Greenrock recovered" 420
+		conversation
+			`Mentre atterri, ricevi un messaggio da JJ, a nome del Consiglio. Il messaggio dice:`
+			branch suspended
+				or
+					has "FW Pirates 4.1: offered"
+					has "event: fw stripped of service"
+			`	Capitano <last>, scusa se siamo stati irraggiungibili. Abbiamo di nuovo bisogno del tuo aiuto, per una missione diplomatica. Incontra Alondo su <planet> il prima possibile. Ti darà più informazioni.`
+				goto end
+			
+			label suspended
+			`	Capitano <last>. La tua sospensione dalle Free Worlds è appena terminata. Il Senato non è ancora contento di quello che hai fatto, e quindi non ha reintegrato il tuo stipendio, ma ti ha permesso di continuare a lavorare per noi. Non causare altri problemi e riavrai la paga. Incontra Alondo su <planet> il prima possibile. Ti darà più informazioni.`
+			label end
+			`			Cordiali saluti,`
+			`				Jean-Jacques e Freya`
+				accept
+	
+	on complete
+		dialog `Mentre atterri, Alondo ti contatta e ti chiede di incontrarlo allo spazioporto appena avrai preparato una cuccetta per lui.`
+
+
+
+mission "FW Diplomacy 1B"
+	name "Diplomazia per le Free Worlds"
+	description "Porta Alondo su <planet> per incontrare il Parlamento. Il tuo salvacondotto scadrà il <day>."
+	autosave
+	source "Longjump"
+	destination "Earth"
+	deadline 24
+	to offer
+		has "FW Diplomacy 1: done"
+	passengers 1
+	blocked "Non hai una cuccetta libera per Alondo. Torna qui quando ne avrai una."
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Incontri Alondo, che insiste per non dirti nulla finché non siete al sicuro sulla tua nave. Dopo che l'hai portato nella sua cabina, dice: "Il punto è questo. Il Senato ha contattato in segreto altri mondi, e quattro hanno deciso di unirsi a noi: Harmony, New Portland, Dancer e New India."`
+			choice
+				`	"È un'ottima notizia!"`
+				`	"Perché non ne ho saputo niente?"`
+					goto heard
+			`	"Lo è davvero," dice Alondo. "Qualsiasi mondo si unisse a noi sarebbe motivo di festa, ma questi quattro sono particolarmente importanti perché sono sulla rotta commerciale per Tarazed. Se controlliamo quei sistemi, i nostri convogli di rifornimento saranno molto più al sicuro."`
+			`	"Perché non è ancora di pubblico dominio?" chiedi.`
+			label heard
+			`	"Beh," dice Alondo, "a quanto pare il Senato non era così riservato come credeva. In qualche modo la voce è arrivata alla Repubblica, che quei mondi stavano defezionando, e una grande flotta della Marina si è mossa per occupare quei sistemi. Il che significa che siamo sull'orlo di un'altra sanguinosa battaglia."`
+			choice
+				`	"Non preoccuparti, sono sicuro che possiamo sconfiggerli."`
+					goto defeat
+				`	"C'è un modo per evitare uno scontro?"`
+					goto avoid
+			label defeat
+			`	"Sono sicuro che possiamo," dice Alondo, "ma con gravi perdite da entrambe le parti. Vogliamo evitarlo se è minimamente possibile. Ed è qui che entri in gioco tu."`
+				goto plan
+			label avoid
+			`	"È quello che speriamo," dice, "ed è qui che entri in gioco tu."`
+				goto plan
+			label plan
+			`	"In che senso?" chiedi.`
+			`	Dice: "Abbiamo fatto in modo che ti fosse concesso un salvacondotto attraverso lo spazio della Repubblica per le prossime tre settimane. È il tempo sufficiente per portarmi sulla Terra e tornare. Se riesco a incontrare il Parlamento di persona, forse riuscirò a trovare un accordo."`
+			choice
+				`	"Va bene, andiamo sulla Terra!"`
+					accept
+				`	"Come facciamo a sapere che non è una trappola? Sei disposto a rischiare la vita per questo?"`
+			`	"Se possiamo salvare migliaia di vite da una battaglia inutile, vale la pena rischiare," dice. "Ora andiamo, il tempo stringe. Dobbiamo essere al sicuro nello spazio delle Free Worlds prima che scada il tuo salvacondotto."`
+				accept
+	
+	on accept
+		event "fw safe passage starts"
+		event "fw safe passage ends" 24
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Alondo non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Diplomacy 1C"
+	landing
+	name "Diplomazia per le Free Worlds"
+	description "Porta Alondo su <planet> per incontrare gli alti ufficiali della Marina. Prendi la rotta più diretta possibile, perché il tuo salvacondotto sta per scadere."
+	source "Earth"
+	destination "New Wales"
+	clearance
+	to offer
+		has "FW Diplomacy 1B: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Ti sei fermato sulla Terra con Alondo per parlare al Parlamento e cercare di scongiurare un'altra sanguinosa battaglia. Purtroppo non erano disposti a negoziare."
+		conversation
+			`Lasci scendere Alondo e gli auguri buona fortuna. Passano le ore, e cominci a temere che sia stato preso prigioniero o ucciso. Ma alla fine torna, molto scoraggiato. "Non ha alcun senso," dice. "Le entrate fiscali che ricavano da quei quattro mondi non si avvicinano nemmeno a coprire il costo di difenderli. Dovrebbero essere contenti di lasciarli andare."`
+			choice
+				`	"Quindi il Parlamento non cederà quei mondi senza combattere?"`
+					goto fight
+				`	"Forse temono il precedente che creerebbe se cedessero a noi."`
+					goto precedent
+			label fight
+			`	"Esatto," dice. "Sorprendente quanto possano essere sconsiderati, seduti nella loro comoda sede del Parlamento a decidere il destino degli altri."`
+				goto next
+			label precedent
+			`	"Sì, sembra che sia questo in gioco," dice. "Ma ormai dovrebbero vedere la scritta sul muro. Sorprendente quanto possano essere insensibili alla vita degli equipaggi della Marina che seguono i loro ordini."`
+			label next
+			`	"Quindi torniamo a casa sconfitti?" chiedi.`
+			`	"Non proprio," dice. "Finché ne abbiamo la possibilità, voglio parlare direttamente con il comando della Marina. Atterrare vicino alla base segreta su New Austria sarebbe troppo provocatorio, quindi ho preso accordi per incontrarli sulla loro base su <planet>."`
+			choice
+				`	"Va bene, se è questo che serve per evitare un'altra sanguinosa battaglia, ti ci porto."`
+					accept
+				`	"Sei pazzo? Volare dritto nella più grande base della Marina del settore?"`
+			`	"Non preoccuparti," dice. "La Marina prende l'onore molto sul serio. Se promettono la nostra sicurezza, saremo al sicuro. Almeno finché non scade il salvacondotto." Hai seri dubbi, ma non hai altra scelta che obbedirgli.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Alondo non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Diplomacy 1D"
+	landing
+	name "Diplomazia per le Free Worlds"
+	description "Riporta Alondo a <destination>. Prendi la rotta più diretta possibile, perché il tuo salvacondotto sta per scadere."
+	source "New Wales"
+	destination Longjump
+	to offer
+		has "FW Diplomacy 1C: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Quando atterri su <origin>, Alondo dice: "Dovresti unirti a me per questo incontro. Potrebbe aprirti gli occhi."`
+			`	Quattro degli ammiragli della Marina di stanza qui hanno accettato di incontrarvi. Scopri che uno di loro viene dalla Fascia di Terra. Un altro è cresciuto nel Bordo, e ti ammette che, se non servisse la Marina, combatterebbe per le Free Worlds. Tutti e quattro sembrano solidali con la vostra causa, ed esprimono un sincero rammarico non solo per le vite della Marina perdute, ma anche per le perdite delle Free Worlds.`
+			`	E tutti e quattro dichiarano, senza esitazione né ambiguità, che se il Parlamento ordinerà loro di continuare a combattere le Free Worlds, combatteranno finché ogni possibilità di vittoria non sarà svanita.`
+			`	Alondo li ringrazia per il tempo e per l'onestà, e tornate alla vostra nave. "Beh, valeva la pena provare. Ora dobbiamo solo tornare a casa sani e salvi," dice.`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Alondo non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		dialog `Fatichi ancora a credere di essere andato sulla Terra e tornato tutto intero. Alondo ti ringrazia per il trasporto e dice: "Ora devo solo dare la brutta notizia al Senato. JJ e io ti incontreremo al bar dello spazioporto fra qualche ora, quando avremo deciso i prossimi passi."`
+		event "navy using mark ii ships"
+
+
+
+mission "FW Southern Recon 1"
+	name "Ricognizione"
+	description "Sorvola <waypoints> per farti un'idea della forza della Marina in quei sistemi, poi riferisci a <destination>."
+	autosave
+	source "Longjump"
+	waypoint "Rastaban"
+	waypoint "Delta Sagittarii"
+	waypoint "Albaldah"
+	destination "Trinket"
+	to offer
+		has "FW Diplomacy 1D: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "fw safe passage ends"
+		conversation
+			`Alondo e JJ sono di umore cupo quando li incontri al bar. Non puoi fare a meno di ricordare che Tomek faceva sempre parte di questi incontri, prima di schierarsi contro il Senato. E ora sembra che la vostra prossima grande battaglia sarà combattuta senza la sua guida esperta.`
+			`	JJ dice: "Abbiamo fatto tutto il possibile. Prima o poi dovremo combattere la Marina per quei sistemi stellari. Quindi, per cominciare, <first>, vorremmo che li esplorassi e ci riferissi sulla presenza della Marina. Freya è su Trinket, a radunare una flotta. Riferisci a lei quando hai finito."`
+				accept
+	on visit
+		dialog phrase "generic waypoint on visit"
+
+
+
+mission "FW Southern Recon 1B"
+	landing
+	name "Fascio di elettroni"
+	description "Ruba un fascio di elettroni da una cannoniera della Marina e riportalo su <planet> perché Freya lo esamini. Pensava che il posto migliore per trovare cannoniere isolate fossero i sistemi Wei o Alnasl."
+	autosave
+	source "Trinket"
+	destination "Trinket"
+	mark "Alnasl"
+	mark "Wei"
+	to offer
+		has "FW Southern Recon 1: done"
+	
+	on offer
+		log "Sembra che la Marina abbia cominciato a usare armi a fascio e siluri più potenti. Ti è stato affidato il compito di saccheggiare una di quelle armi a fascio di elettroni perché Freya possa esaminarla più da vicino."
+		conversation
+			`Freya ti ringrazia per la missione di ricognizione, e tu le dai una copia dei registri della nave da analizzare. Mentre li scorre, quasi subito qualcosa le salta all'occhio. "Sembra che la Marina stia schierando nuove armi," dice. "Alcuni siluri a resa più alta, e un'arma a fascio ancora più potente dei laser pesanti. Quelle armi a fascio in particolare mi preoccupano."`
+			choice
+				`	"Sì, questo annulla in un colpo il vantaggio che speravamo di avere con le nostre nuove torrette al plasma."`
+				`	"Vuol dire che non li attaccheremo dopo tutto?"`
+					goto attack
+			`	"Beh," dice, "le torrette al plasma non erano il nostro unico asso nella manica, ma resta frustrante che la Marina abbia ancora un vantaggio tecnologico così netto su di noi."`
+			`	"Che cosa dovremmo fare?" chiedi.`
+			label attack
+			`	"Dovremo combatterli prima o poi, ma prima ci serve più informazione possibile sui loro nuovi sistemi d'arma. Vorrei che trovassi una delle loro cannoniere con i nuovi fasci di elettroni installati, ne rubassi uno e lo portassi qui. Immagino che non possa essere molto più grande di venti o trenta tonnellate, quindi dovresti riuscire a trovargli spazio. Pensi di poterlo fare?"`
+			choice
+				`	"Come faccio a trovare una cannoniera tutta sola? Di solito fanno parte di una flotta più grande."`
+				`	"Ho già saccheggiato una di queste nuove armi in passato. Posso dartela adesso."`
+					goto gun
+					to display
+						has "outfit (removable): Electron Beam"
+				`	"Ho già saccheggiato una di queste nuove torrette in passato. Posso dartela adesso."`
+					goto turret
+					to display
+						has "outfit (removable): Electron Turret"
+				`	"So come procurarmene una. Te ne prendo un'altra."`
+					to display
+						or
+							has "outfit (all): Electron Beam"
+							has "outfit (all): Electron Turret"
+					accept
+			
+			`	Ci pensa un momento, poi dice: "La Marina ha spostato la maggior parte delle navi capitali nei sistemi che stanno defezionando, a sud. Questo significa che alcuni sistemi a nord avranno difese più leggere. Potresti provare a Wei o ad Alnasl. Buona fortuna, Capitano."`
+				accept
+			
+			label gun
+			action
+				outfit "Electron Beam" -1
+				set "FW Southern Recon 1B: done"
+			branch end
+			
+			label turret
+			action
+				outfit "Electron Turret" -1
+				set "FW Southern Recon 1B (Turret): done"
+			
+			label end
+			`	"Oh! È un'ottima notizia. Dirò subito alla mia squadra di prendersene carico."`
+			`	Consegni l'arma alla squadra scientifica di Freya quando arriva. Freya ti dice che ti aspetterà in un caffè dello spazioporto dopo aver avuto modo di esaminarla più da vicino.`
+				decline
+	on accept
+		event "gunboats in Alnasl"
+	npc
+		government "Republic"
+		system "Alnasl"
+		personality heroic opportunistic staying
+		fleet
+			names "republic small"
+			variant
+				"Gunboat (Mark II)"
+	on enter "Alnasl"
+		unmark "Alnasl"
+	on enter "Wei"
+		unmark "Wei"
+	to complete
+		not "FW Southern Recon 1B (Turret): done"
+	to fail
+		has "FW Southern Recon 1B (Turret): done"
+	on visit
+		dialog `Sei tornato su <planet>, ma non hai un fascio di elettroni. Prova a trovare navi della Marina isolate a Wei o ad Alnasl, mettile fuori uso e saccheggiale.`
+	on complete
+		fail "FW Southern Recon 1B (Turret)"
+		outfit "Electron Beam" -1
+		event "normal in Alnasl"
+		dialog `Consegni il fascio di elettroni alla squadra scientifica di Freya. Ti dicono che ti aspetta in un caffè dello spazioporto.`
+
+
+
+mission "FW Southern Recon 1B (Turret)"
+	landing
+	invisible
+	non-blocking
+	source Trinket
+	destination Trinket
+	to offer
+		has "FW Southern Recon 1: done"
+	to complete
+		not "FW Southern Recon 1B: done"
+	to fail
+		has "FW Southern Recon 1B: done"
+	on complete
+		fail "FW Southern Recon 1B"
+		outfit "Electron Turret" -1
+		event "normal in Alnasl"
+		dialog `Consegni la torretta a elettroni alla squadra scientifica di Freya. Ti dicono che ti aspetta in un caffè dello spazioporto.`
+
+
+
+mission "FW Southern Recon 1B: Alnasl Hint 1"
+	landing
+	source
+		government "Free Worlds"
+		near "Wei" 2
+	to offer
+		has "FW Southern Recon 1B: active"
+	on offer
+		conversation
+			`Mentre fai rifornimento su <planet>, ti si avvicina un capitano delle Free Worlds. "Capitano <last>, ho sentito che sei a caccia di uno di quei nuovi laser che usa la Marina."`
+			choice
+				`	"Sì, è vero."`
+				`	"Hai qualche informazione su di loro?"`
+					goto information
+			`	"Bene, perché abbiamo qualche informazione che potrebbe aiutarti.`
+			label information
+			`	"Abbiamo dovuto fermare tutte le squadre di esplorazione nello spazio della Repubblica per via della potenza di queste nuove armi, quindi voliamo alla cieca su dove sia la Marina, ma per fortuna abbiamo avuto notizie da simpatizzanti nella Fascia di Terra. La Marina ha radunato forze con queste nuove armi ad Alioth e Seginus, ed entra spesso nel sistema Wei.`
+			`	"Non sono entrati a Kornephoros, quindi probabilmente stanno solo pattugliando la zona per dissuaderci da mosse improvvise. Questo significa che Wei, con tutto quel traffico, probabilmente non è il posto migliore per rubare un'arma, ma sento dire che le cose non vanno molto meglio oltre Lesath. Vorrei avere qualche nave da darti, ma al momento non abbiamo questo tipo di libertà."`
+			`	Ringrazi il capitano per le informazioni e lui ti augura buona fortuna.`
+				decline
+
+
+
+mission "FW Southern Recon 1B: Alnasl Hint 2"
+	landing
+	source "Hope"
+	to offer
+		has "FW Southern Recon 1B: active"
+	on offer
+		conversation
+			`Decidi di scansionare le navi della Marina che entrano ed escono dal sistema collegandoti agli apparecchi di sorveglianza che avevi aiutato Freya a installare tanto tempo fa. Molte navi della Marina sono armate con questi nuovi fasci di elettroni, ma compaiono in flotte troppo grandi per affrontarle da soli. Noti però che quasi tutto il traffico della Marina va e viene da Alioth e Seginus, mentre solo cannoniere isolate viaggiano da e per Alnasl. Forse potresti tendere un'imboscata a una di queste navi più piccole, da sola, ad Alnasl.`
+				decline
+
+
+
+mission "FW Southern Battle 1"
+	name "Scorta la flotta da battaglia"
+	description "Va' su <planet> per radunare una flotta di nuove navi da guerra sperimentali e scortale fino a Trinket."
+	source Trinket
+	destination Zug
+	to offer
+		has "FW Southern Recon 1: done"
+	to accept
+		or
+			has "FW Southern Recon 1B: done"
+			has "FW Southern Recon 1B (Turret): done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Dato che questo mondo è una meta turistica, nello spazioporto ci sono innumerevoli caffè eleganti. Ti incontri con Freya in uno dei più piccoli. "Grazie per averci procurato quel campione d'arma," dice. "È tipico equipaggiamento della Repubblica: molto più efficiente di qualsiasi cosa sappiamo fare noi, e progettato benissimo. I miei ingegneri sono rimasti quasi a bocca aperta mentre lo smontavano."`
+			choice
+				`	"Hai qualche consiglio tattico per combattere navi che ne montano uno?"`
+					goto advice
+				`	"C'è qualche possibilità di fare ingegneria inversa e costruirne uno nostro?"`
+					goto reverse
+			label advice
+			`	"Beh," dice, "la sua gittata è leggermente inferiore a quella delle nostre torrette al plasma. Potresti sfruttarlo, se riesci a posizionare la nave nel punto giusto per colpire un bersaglio nemico senza che lui possa colpirti. Potrebbe esserti utile nella battaglia che ci aspetta."`
+				goto battle
+			label reverse
+			`	"Forse, anche se non abbiamo ancora imparato a costruire nemmeno i laser pesanti," dice. "Di certo non avremo tempo prima della battaglia che ci aspetta."`
+			label battle
+			`	"Quindi attaccheremo davvero la Marina?" chiedi.`
+			`	"Non abbiamo scelta," dice. "Abbiamo provato la diplomazia. Se non mostriamo la volontà di sostenere i nuovi mondi che vogliono unirsi a noi, o se non sembriamo abbastanza forti da difenderli, alcuni di quelli che si sono già uniti potrebbero cominciare a tornare alla Repubblica."`
+			choice
+				`	"Va bene, sono pronto a combattere."`
+				`	"Vorrei che non si fosse arrivati a questo, ma se pensi che sia la nostra unica opzione, mi unisco alla battaglia."`
+			`	"Grazie," dice. "Ma c'è ancora una cosa da fare per prepararci alla battaglia. Ti avevo detto che avevamo un asso nella manica. È una nuova nave da guerra progettata dai cantieri Southbound, pensata per essere all'altezza di un incrociatore. Ne hanno finite solo tre. Vorrei che andassi su Zug e le scortassi fino a qui. Quando torni, ci prepareremo alla battaglia."`
+				accept
+
+
+
+mission "FW Southern Battle 1B"
+	landing
+	name "Scorta la flotta da battaglia"
+	description "Scorta una flotta di navi da guerra sperimentali fino a <destination>."
+	autosave
+	source Zug
+	destination Trinket
+	to offer
+		has "FW Southern Battle 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "flamethrower available" 10
+		conversation
+			`Quando atterri su <origin>, un dirigente dei cantieri Southbound ti guida in un hangar. L'hangar è enorme, ma chiaramente non era pensato per contenere una nave grande come quella che ora ospita. C'è appena lo spazio per le gru e le passerelle usate dalle squadre di costruzione.`
+			`	"Il Dreadnought è un progetto nuovo, la nave più grande che abbiamo mai costruito. Finora ne sono state completate solo tre." La dimensione del Dreadnought è impressionante: massiccio come un incrociatore, sembra un incrocio fra una Bastion e un mercantile Argosy. Dopo averti lasciato un momento per assorbire la vista, ti guida in una sezione dello spazioporto dove sono parcheggiati tre Dreadnought. Accanto a loro, e minuscole in confronto, ci sono cinque Fury. Chiedi: "Anche quei Fury fanno parte della flotta da battaglia?"`
+			branch untested
+				not "FW Flamethrower 2: done"
+			`	"Sì," dice, "equipaggiati con alcune nuove armi stravaganti di Barmy Edward, lassù alla Kraz Cybernetics, che mi ha detto che le hai aiutate a provare. Non le ho ancora viste in azione, ma lui è convinto che saranno utili contro la Marina."`
+				goto end
+			label untested
+			`	"Sì," dice, "equipaggiati con alcune nuove armi stravaganti di Barmy Edward, lassù alla Kraz Cybernetics, su cui ha appena finito di lavorare. Ha detto che dovrebbero entrare in produzione di massa a breve. Lanciafiamme, il pazzo bastardo. Non le ho ancora viste in azione, ma lui è convinto che saranno utili contro la Marina."`
+			label end
+			`	Lo ringrazi per il tempo che ti ha dedicato e ti incontri con i capitani della flotta da battaglia, accordandoti perché ti seguano fino a Trinket.`
+				accept
+	
+	npc accompany save
+		government "Free Worlds"
+		personality timid escort
+		ship "Dreadnought" "F.S. Sequoia"
+		ship "Dreadnought" "F.S. Sitka"
+		ship "Dreadnought" "F.S. Rosewood"
+		ship "Fury (Flamethrower)" "F.S. Montag"
+		ship "Fury (Flamethrower)" "F.S. Faber"
+		ship "Fury (Flamethrower)" "F.S. Beatty"
+		ship "Fury (Flamethrower)" "F.S. Mildred"
+		ship "Fury (Flamethrower)" "F.S. Clarisse"
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivi in questo sistema."
+	
+	on complete
+		dialog `Atterri su <planet> con la flotta da battaglia. È tempo di incontrare Freya allo spazioporto.`
+
+
+
+event "battle for Rastaban"
+	"reputation: Republic" = -1000
+	system Rastaban
+		fleet "Small Free Worlds" 10000
+	system Lesath
+		fleet "Small Southern Merchants" 800
+		fleet "Large Southern Merchants" 1600
+		fleet "Small Free Worlds" 800
+		fleet "Large Free Worlds" 1100
+	system Sargas
+		fleet "Small Southern Merchants" 600
+		fleet "Large Southern Merchants" 2500
+		fleet "Small Free Worlds" 1000
+		fleet "Large Free Worlds" 1500
+
+mission "FW Southern Battle 2"
+	name "Attacca Rastaban"
+	description "Va' direttamente nel sistema <system>, così da arrivare il <day> e unirti alla battaglia contro la Marina. Metti fuori uso o distruggi tutte le navi della Marina nel sistema."
+	source Trinket
+	destination Dancer
+	clearance
+	to offer
+		has "FW Southern Battle 1B: done"
+	deadline 3
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Ti stai preparando a un'altra grande battaglia con la Marina, questa volta nel sistema Rastaban, che proprio di recente ha espresso l'interesse di unirsi alle Free Worlds ma non è riuscito a farlo per la presenza della Marina. In questa battaglia le Free Worlds useranno un nuovo modello di nave da guerra, il Dreadnought."
+		event "battle for Rastaban"
+		conversation
+			`Quando incontri Freya al caffè, sembra che non dorma da diversi giorni. "Non riesco a credere che stiamo andando verso un'altra grande battaglia," dice. "Continuo a sperare che la Marina si ritiri e non ci costringa a combattere."`
+			choice
+				`	"Non sembra probabile che il Parlamento lo permetta."`
+				`	"Sì, il loro senso dell'onore a volte è ammirevole, ma adesso è fastidioso."`
+			`	"Esatto," dice. "Anche se, da quanto ha detto Alondo, la Marina ha lasciato intendere che, se mostrassimo una forza tale che non avrebbero alcuna possibilità di vincere, potrebbero scegliere con onore di ritirarsi. Quindi, se cominciano a ritirarsi, lasciali andare. Ma sospetto che sarà una battaglia difficile da vincere."`
+			`	"Qual è il piano di battaglia?" chiedi.`
+			`	"La flotta dei cantieri Southbound viaggerà con te," dice. "Altre flotte con altri comandanti convergeranno su Rastaban separatamente, più o meno nello stesso momento. Quindi non hai tempo da perdere. Devi andare dritto a Rastaban da qui, o arriverai troppo tardi per unirti allo scontro. Buona fortuna, capitano."`
+				accept
+	
+	npc
+		government "Free Worlds"
+		personality heroic disables escort
+		ship "Dreadnought" "F.S. Sequoia"
+		ship "Dreadnought" "F.S. Sitka"
+		ship "Dreadnought" "F.S. Rosewood"
+		ship "Fury (Flamethrower)" "F.S. Montag"
+		ship "Fury (Flamethrower)" "F.S. Faber"
+		ship "Fury (Flamethrower)" "F.S. Beatty"
+		ship "Fury (Flamethrower)" "F.S. Mildred"
+		ship "Fury (Flamethrower)" "F.S. Clarisse"
+	
+	npc
+		system Rastaban
+		personality heroic uninterested staying disables
+		government "Free Worlds"
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Plasma)"
+				"Osprey" 2
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Plasma)"
+				"Osprey (Missile)" 2
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Heavy)"
+				"Osprey (Laser)" 2
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Plasma)"
+		fleet
+			names "free worlds capital"
+			variant
+				"Bastion" 2
+		fleet
+			names "free worlds capital"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Skein" 2
+				"Finch" 12
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon" 2
+	
+	npc evade
+		system Rastaban
+		personality heroic uninterested staying
+		government "Republic"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+		fleet 3
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+		fleet 3
+			names "republic small"
+			variant
+				"Rainmaker (Mark II)" 2
+		fleet 2
+			names "republic small"
+			variant
+				"Gunboat (Mark II)" 3
+		fleet 2
+			names "republic small"
+			variant
+				"Gunboat (Mark II)" 2
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi della Marina che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		event "fw southern expansion"
+
+
+
+mission "FW Southern Battle 3"
+	landing
+	name "Bonifica dai resti della Marina"
+	description "Attraversa i sistemi vicini a Rastaban e assicurati che il resto della flotta di occupazione della Marina si stia ritirando. (Se stanno fuggendo, lasciali fuggire.)"
+	autosave
+	source "Dancer"
+	to offer
+		has "FW Southern Battle 2: done"
+	waypoint Girtab
+	waypoint Albaldah
+	waypoint "Delta Sagittarii"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "La Marina è stata scacciata dal sistema Rastaban. Questo permetterà alla gente di Harmony, Dancer, New Portland e New India di unirsi alle Free Worlds."
+		conversation
+			`Appena atterri su <origin>, contatti Freya e le fai sapere che il sistema è nostro. "È un'ottima notizia," dice. "Ora dobbiamo assicurarci che si siano ritirati anche dai sistemi vicini. Prendi qualche nave e setaccia Delta Sagittarii e Albaldah per assicurarti che siano liberi. Lascia il resto della flotta su Dancer a gestire i prigionieri e le riparazioni."`
+			choice
+				`	"Che cosa devo fare se incontro navi della Marina durante la pattuglia?"`
+					goto patrol
+				`	"Che cosa faremo con i prigionieri?"`
+					goto prisoners
+			label patrol
+			`	"Se stanno fuggendo, lasciali fuggire," dice, "ma se scopri che in uno di quei sistemi resta una forte presenza della Marina, riferisci su Dancer prima di attaccarli. Nel frattempo chiederò ad Alondo di contattare gli ammiragli della Marina e vedere se possiamo riavere Katya in cambio di quei prigionieri."`
+				goto katya
+			label prisoners
+			`	"Beh," dice, "la mia speranza è di scambiarli con qualcuno dei nostri che è stato catturato finora in questa guerra. Compresa Katya."`
+				goto katya
+			label katya
+			`	"Pensi che sia ancora viva?" chiedi.`
+			`	"Certamente, e avere tutti questi prigionieri della Marina ci dà un'ottima merce di scambio per negoziare la sua libertà. Ora raduna la pattuglia, e quando torni spero che avremo organizzato la sua liberazione."`
+				accept
+	
+	npc
+		government "Republic"
+		personality fleeing uninterested
+		system "Delta Sagittarii"
+		fleet "Large Republic" 2
+	npc
+		government "Republic"
+		personality fleeing uninterested
+		system "Girtab"
+		fleet "Large Republic" 2
+	npc
+		government "Republic"
+		personality fleeing uninterested
+		system "Albaldah"
+		fleet "Large Republic" 2
+	
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on complete
+		dialog `Hai finito di pattugliare i sistemi vicini. Ora puoi incontrare Freya allo spazioporto, e speriamo che abbia buone notizie su Katya.`
+
+
+
+mission "FW Southern Prisoners - Release"
+	name "Restituisci i prigionieri"
+	description "Come gesto di buona volontà, restituisci i prigionieri della Marina a <destination> invece di imprigionarli su Clink. Il tuo salvacondotto scade il <day>."
+	source Dancer
+	clearance
+	destination "New Iceland"
+	to offer
+		has "FW Southern Battle 3: done"
+	to fail
+		has "FW Southern Prisoners - Keep: done"
+	deadline 7
+	
+	on offer
+		conversation
+			`Trovi Freya e Alondo che sorvegliano un grande hangar dove diverse centinaia di membri degli equipaggi e del personale di supporto della Marina sono tenuti sotto scorta. Alondo dice: "Ho contattato gli ammiragli della Marina. Dicono che Katya non è sotto il loro controllo; è prigioniera dell'Ufficio dell'Intelligence, e organizzare la sua liberazione potrebbe richiedere settimane. Ma hanno promesso che, se restituiamo loro i prigionieri adesso, si assicureranno della liberazione di Katya e ce la restituiranno presto."`
+			choice
+				`	"Come facciamo a sapere che non tradiranno quella promessa?"`
+				`	"Perché non teniamo i prigionieri finché non avremo Katya di nuovo al sicuro?"`
+			`	Freya sospira. "Alondo sostiene che gli ammiragli tengono così tanto al loro onore che possiamo fidarci della loro promessa. Io non ne sono così sicura. Anche se gli ammiragli faranno del loro meglio, e se l'Intelligence rifiutasse di onorare l'accordo che facciamo?"`
+			`	Alondo dice: "D'altra parte, se rilasciamo questi prigionieri sulla parola come gesto di buona fede, potrebbe avvicinarci molto a una fine diplomatica di questa guerra. Il che sarebbe di gran lunga preferibile a un'altra battaglia sanguinosa come questa."`
+			`	Freya dice: "E nel frattempo JJ è via in una missione top secret. Il che significa che non è disponibile per un consulto, e dobbiamo prendere questa decisione adesso."`
+			`	"E dato che non riusciamo a metterci d'accordo," dice Alondo, "diamo a te il voto decisivo."`
+			choice
+				`	"Che cosa vuoi dire?"`
+			`	"Ti metteremo a capo del convoglio dei prigionieri," dice Alondo, "e organizzeremo una settimana di salvacondotto per te. Se pensi che dovremmo restituire i prigionieri come gesto di buona volontà per migliorare le nostre possibilità di una fine diplomatica di questa guerra, porta il convoglio su <planet>."`
+			`	"Ma se pensi che dovremmo tenere i prigionieri finché non avremo Katya di nuovo al sicuro," dice Freya, "porta il convoglio su Clink. Chiaro?"`
+			`	È una scelta seria quella che ti trovi davanti, senza una decisione chiaramente giusta. Li ringrazi per la fiducia e cominci i preparativi per scortare i prigionieri.`
+				accept
+	
+	on accept
+		event "fw safe passage starts"
+		event "fw safe passage ends" 7
+	
+	npc accompany save
+		government "Escort"
+		personality timid escort
+		ship "Blackbird (Prisoner Transport)" "F.S. Charity"
+		ship "Blackbird (Prisoner Transport)" "F.S. Good Hope"
+		ship "Blackbird (Prisoner Transport)" "F.S. Stoutheart"
+		ship "Blackbird (Prisoner Transport)" "F.S. Nightingale"
+		ship "Blackbird (Prisoner Transport)" "F.S. Turtledove"
+	npc
+		government Republic
+		personality staying uninterested
+		system "Kaus Borealis"
+		fleet "Large Republic" 4
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivi in questo sistema."
+	
+	on complete
+		karma ++
+		log "Ti è stata data la scelta di che cosa fare dei prigionieri della Marina dalla battaglia per Rastaban, e hai deciso di rilasciarli sulla parola invece di imprigionarli. Speriamo che questo ci guadagni un po' di benevolenza dalla Marina in futuro."
+
+
+
+mission "FW Southern Prisoners - Keep"
+	name "Trattieni i prigionieri"
+	description "Invece di rilasciare i prigionieri della Marina, consegnali alle miniere su Clink, perché siano tenuti lì finché Katya non ti sarà restituita."
+	source Dancer
+	destination Clink
+	to offer
+		has "FW Southern Battle 3: done"
+	to fail
+		has "FW Southern Prisoners - Release: done"
+	
+	on complete
+		karma --
+		event "fw prison on Clink"
+		log "Ti è stata data la scelta di che cosa fare dei prigionieri della Marina dalla battaglia per Rastaban, e hai deciso di imprigionarli su Clink. Speriamo che questo indebolisca la Marina, almeno un po'."
+
+
+
+mission "FW Southern Prisoners - Released"
+	landing
+	name "Riferisci a Dancer"
+	description "Riferisci a Freya e Alondo su Dancer che hai scelto di rilasciare i prigionieri."
+	source "New Iceland"
+	destination Dancer
+	to offer
+		has "FW Southern Prisoners - Release: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`<origin> è diventata la sede di una grande base della Marina quasi da un giorno all'altro; il numero di navi e di persone qui è quasi schiacciante. Restituisci i prigionieri, che hanno tutti prestato giuramento di non prendere più parte alla guerra contro le Free Worlds. Uno dei quattro ammiragli della Marina che tu e Alondo avevate incontrato è qui, e mentre scaricate i prigionieri dice: "Altri volontari per gli 'Oathkeepers', vedo."`
+			choice
+				`	"Chi sono gli 'Oathkeepers'?"`
+			`	"Gli ufficiali a cui avete concesso la parola mesi fa. Li abbiamo riassegnati tutti al servizio a nord, a pattugliare contro i pirati."`
+			`	"Vuoi dire che onorano davvero la promessa di non combatterci?" chiedi.`
+			`	"Certo. Hanno fatto un giuramento, dopotutto." Sospetti che non sia così semplice, ma decidi che mettere in dubbio la parola di questo ammiraglio sarebbe inutile. Mentre ti prepari a partire, dice: "Non preoccuparti, vi restituiremo la signorina Reynolds a breve. La nave che la porta dovrebbe arrivare qui fra una settimana o due."`
+			`	Speri che dica la verità. Ora è tempo di incontrare Freya e Alondo e decidere che cosa fare.`
+				launch
+	
+	npc accompany save
+		government "Escort"
+		personality timid escort
+		ship "Blackbird" "F.S. Charity"
+		ship "Blackbird" "F.S. Good Hope"
+		ship "Blackbird" "F.S. Stoutheart"
+		ship "Blackbird" "F.S. Nightingale"
+		ship "Blackbird" "F.S. Turtledove"
+	npc
+		government Republic
+		personality staying uninterested
+		system "Kaus Borealis"
+		fleet "Large Republic" 4
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivi in questo sistema."
+	on complete
+		set "fw delivered prisoners"
+
+
+
+mission "FW Southern Prisoners - Kept"
+	landing
+	name "Riferisci a Dancer"
+	description "Riferisci a Freya e Alondo su Dancer che hai scelto di tenere i prigionieri su Clink."
+	source Clink
+	destination Dancer
+	to offer
+		has "FW Southern Prisoners - Keep: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Lasci i prigionieri alle miniere di Clink, perché siano tenuti lì finché la Marina non ti restituirà Katya. Ora è tempo di incontrare Freya e Alondo e decidere che cosa fare.`
+				accept
+	on complete
+		set "fw delivered prisoners"
+
+
+
+mission "FW Southern Break"
+	landing
+	source Dancer
+	autosave
+	to offer
+		has "fw delivered prisoners"
+	
+	on offer
+		log "Ancora una volta non c'è lavoro immediato da fare per le Free Worlds. Questo sarebbe un buon momento per guadagnare qualche soldo per una nave migliore, se possibile."
+		event "fw occupying the north" 50
+		event "Deep memorial expansion 1"
+		"salary: Free Worlds" >?= 2100
+		conversation
+			`Atterri su Dancer e riferisci ad Alondo e Freya che il trasferimento dei prigionieri è concluso. "Che cosa facciamo adesso?" chiedi.`
+			`	Freya dice: "Beh, spero che per un po' abbiamo finito di combattere. Resteremo qui a tenere questo sistema contro qualsiasi rappresaglia della Marina. E continueremo a sperare che il Parlamento torni in sé e accetti una fine diplomatica di questo conflitto. Nel frattempo ti suggerisco di passare un po' di tempo a fare quello che fai per guadagnare soldi per conto tuo: trasportare passeggeri o merci, o dare la caccia ai pirati. Ti contatteremo quando le cose ricominceranno a muoversi."`
+			choice
+				`	"Mi sembra bene. Spero di avere vostre notizie presto."`
+					goto salary
+				`	"Sei sicuro che non ci sia altro che posso fare per le Free Worlds adesso?"`
+			`	Alondo dice: "Potresti avere notizie da altra gente a cui potrebbe servire il tuo aiuto, ma quanto al Consiglio, credo che per noi sia un momento di attesa. Per favore non pensare che non siamo grati del tuo aiuto, Capitano. Stiamo solo dicendo che speriamo, almeno per qualche mese, di poter tutti prendere una pausa dai combattimenti e tornare a vivere davvero le nostre vite."`
+			
+			label salary
+			branch end
+				not "FW Pirates 4.1: offered"
+				not "event: fw stripped of service"
+			`	"Prima che tu parta, Capitano," dice Freya. "Il Senato ha deciso di reintegrare il tuo stipendio dopo gli eventi recenti. Ora dovresti avere una paga di 2.100 crediti, come prima."`
+			
+			label end
+			`	Alondo ti fa un cenno. "Ti contatteremo appena le cose torneranno interessanti."`
+				decline
+
+
+
+mission "FW Southern Break Ends"
+	name "Ritorna su <planet>"
+	description "Recati il più in fretta possibile su <destination> per riunirti alla flotta principale delle Free Worlds."
+	landing
+	source
+		near Rastaban 1 100
+	destination Dancer
+	to offer
+		has "event: fw occupying the north"
+		not "FW Northern 1: offered"
+	
+	on offer
+		conversation
+			`Poco dopo che atterri su <origin>, ricevi un messaggio da Freya: "Salve, Capitano <last>! Spero che tu abbia fatto buon uso del tempo libero, perché stiamo per essere di nuovo nel pieno della mischia. Appena puoi, per favore raggiungici alla flotta su Dancer. Abbiamo del lavoro urgente e delicato da fare."`
+				accept
+
+
+
+mission "FW Northern 1"
+	landing
+	name "Espansione a nord"
+	description "Porta una flotta su <destination> (passando per <waypoints>), mettendo in sicurezza quei sistemi perché possano defezionare a favore delle Free Worlds."
+	autosave
+	source "Dancer"
+	destination "New Tibet"
+	waypoint "Alphecca"
+	waypoint "Seginus"
+	clearance
+	to offer
+		has "event: fw occupying the north"
+	passengers 1
+	blocked `Ricevi un messaggio da Freya: "Capitano, per favore raggiungici appena avrai una cuccetta libera per Alondo." Non hai cuccette libere, quindi dovresti tornare qui quando ne avrai resa disponibile una.`
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Altri tre pianeti hanno deciso di defezionare a favore delle Free Worlds: Clark, New Tibet e New Holland."
+		conversation
+			`Quando atterri su Dancer, la flotta delle Free Worlds sembra prepararsi a un'altra battaglia: missili e siluri vengono caricati sulle navi e i membri degli equipaggi corrono qua e là. Alla fine trovi Freya e Alondo, e chiedi che cosa succede.`
+			`	"Altri tre mondi ci hanno detto in segreto che sono pronti a defezionare," dice Alondo, "e questa volta vogliamo arrivarci prima della Marina."`
+			`	Freya dice: "Dobbiamo che tu porti Alondo, insieme alle navi che siamo riusciti a radunare, attraverso i sistemi <waypoints>, poi atterri su <destination>. Se tutto va bene, arriverai su <planet> prima che la Repubblica possa radunare rinforzi. Scaccia qualsiasi nave della Repubblica che incontri lungo la strada."`
+				accept
+	
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		fleet "Large Free Worlds" 3
+	npc
+		government "Republic"
+		personality fleeing uninterested
+		system "Wei"
+		fleet "Large Republic" 2
+	npc
+		government "Republic"
+		personality fleeing uninterested
+		system "Seginus"
+		fleet "Large Republic" 2
+	npc
+		government "Republic"
+		personality fleeing uninterested
+		system "Alphecca"
+		fleet "Large Republic" 2
+	
+	on visit
+		dialog phrase "generic waypoint on visit"
+	on complete
+		event "fw northern expansion"
+		dialog
+			`Appena atterri, Alondo si precipita fuori dalla tua nave per incontrare il governatore di <planet> e "far firmare questi documenti prima che cambino idea". Ti dice di rivederlo allo spazioporto fra un'ora.`
+
+
+
+mission "FW Northern 2"
+	name "Incontra Freya"
+	description "Ora che i sistemi stellari a nord sono al sicuro, torna su <planet> per incontrare Freya e lavorare con lei per rimuovere le apparecchiature di sorveglianza che la Marina ha installato nel sistema Wei o altrove."
+	source "New Tibet"
+	destination "Dancer"
+	to offer
+		has "FW Northern 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Aspetti un po' nel bar dello spazioporto. La tua uniforme delle Free Worlds ha attirato parecchia attenzione fra la gente del posto: alcuni ti hanno salutato con la mano quando sei entrato, o ti hanno fatto altri segni discreti di approvazione, ma nessuno si siede con te. Probabilmente vogliono evitare guai con la Repubblica, nel caso le Free Worlds non riescano a tenere questo pianeta.`
+			`	Alla fine arriva Alondo. "Vieni," dice. "Parliamo fuori." Sembra stanco, ma non spaventato.`
+			choice
+				`	"Va tutto bene?"`
+				`	"Hanno accettato di unirsi a noi?"`
+			`	"Sì, sì, certo," dice. "Ma prendere altri sei mondi tutto d'un colpo... spero solo che non sia più di quanto possiamo gestire. Quando la Marina si riprenderà dalla battaglia di Rastaban e contrattaccherà, ora abbiamo molta meno idea di dove cadrà quel colpo."`
+			`	"Allora, che cosa facciamo adesso?" chiedi.`
+			`	"Dobbiamo spostare altre navi della nostra flotta quassù, al fronte," dice, "ma scommetterei che la Marina ha installato apparecchiature di sorveglianza su Hope, e forse su qualche altro pianeta di questo settore. Cosa a cui avrei dovuto pensare prima, perché per essere sicuri di averle trovate tutte quante ci serve l'esperienza di Freya in segnali e sensori. Quindi ti mando a incontrarla su Dancer."`
+			choice
+				`	"Nessun problema. Non preoccuparti, sapremo gestirlo benissimo."`
+					accept
+				`	"Non temi che la Marina attacchi mentre sono via a prenderla?"`
+			`	"Certo," dice. "Ma ho parlato con JJ, e pensa che si stiano ancora riprendendo dall'ultima battaglia. E se tutti i loro sensori si spengono, sarà un forte deterrente per trattenerli dall'attaccare: di sicuro un deterrente maggiore di quello che potresti aggiungere restando qui con la nostra flotta."`
+			`	"Capito," dici. "Vado a prendere Freya."`
+				accept
+
+
+
+mission "FW Northern 2A"
+	landing
+	name "Bonifica Hope"
+	description "Porta Freya su <planet> e distruggi tutte le installazioni di sensori della Marina che trova lì."
+	source "Dancer"
+	destination "Hope"
+	to offer
+		has "FW Northern 2: done"
+	passengers 1
+	blocked "Per continuare questa missione ti serve una cuccetta libera per Freya. Torna qui quando ne avrai resa disponibile una."
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Appena atterri, Freya si presenta alla tua nave con una piccola valigia piena di vestiti. "Non c'è tempo da perdere," dice. "Andiamo. Il nostro primo bersaglio sarà <planet>, dato che sappiamo per certo che ci stavano installando qualcosa."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Freya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Northern 2B"
+	landing
+	name "Bonifica Clark"
+	description "Porta Freya su <planet> per controllare se ci sono stazioni di sorveglianza della Marina."
+	source "Hope"
+	destination "Clark"
+	to offer
+		has "FW Northern 2A: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Mentre ti avvicini al pianeta, Freya si siede alla consolle dei sensori della tua nave e comincia a smanettare con impostazioni di cui non sapevi nemmeno l'esistenza. Sembra completamente concentrata, e chiaramente sa quello che fa. Ricordi di aver sentito dire che è un'ingegnere, non una politica né una comandante militare, il che rende ancora più notevole il fatto che sia riuscita a diventare una leader così forte nel Consiglio.`
+			`	"Esatto, otto stazioni diverse," dice alla fine, "compresa questa che quasi mi sfuggiva, sepolta dieci metri sotto il ghiaccio, che funge da ripetitore per loro." Ti indica ogni stazione sulla mappa, e tu voli accanto a ciascuna e la distruggi. "Ora," dice, "era questa che mi preoccupava di più, ma per completezza dovremmo passare al setaccio anche gli altri nuovi mondi. Andiamo su <planet> adesso."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Freya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Northern 2C"
+	landing
+	name "Bonifica New Holland"
+	description "Porta Freya su <planet> per controllare se ci sono stazioni di sorveglianza della Marina."
+	source "Clark"
+	destination "New Holland"
+	to offer
+		has "FW Northern 2B: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Ancora una volta Freya fa una specie di magia con i sensori della tua nave e riesce a localizzare un'altra stazione di sorveglianza. "Proprio in mezzo alla città," dice. "Dovremo andarci a piedi e disattivarla."`
+			choice
+				`	"Temi che possa essere sorvegliata?"`
+					goto guard
+				`	"Va bene, prendo le mie armi ed esplosivi preferiti!"`
+					goto guns
+			label guard
+			`	"Un po'," dice. "Dovremmo essere armati, per sicurezza. Ma non rilevo nessuna firma termica umana dall'edificio, e non sarebbe da Marina lasciare qualcuno dei suoi lì per farselo catturare."`
+				goto destroy
+			label guns
+			`	"Calma, calma," dice, "abbiamo appena convinto questo mondo a unirsi a noi, non mettiamoci a far saltare in aria tutto il loro distretto industriale. Non vedo firme termiche umane, ma puoi portare le armi comunque, per sicurezza."`
+			label destroy
+			`	Con cautela ti avvicini all'installazione dei sensori, sfondando la porta di un vecchio magazzino abbandonato. Freya ha ragione: non è sorvegliata. Spegne il trasmettitore, poi ti chiede aiuto per portare sulla tua nave alcuni dei sensori e delle altre attrezzature. "Adoro sempre avere la possibilità di dare un'occhiata alla tecnologia della Marina," dice. "Ora andiamo su <planet>."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Freya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Northern 2D"
+	landing
+	name "Bonifica New Tibet"
+	description "Porta Freya su <planet> per controllare se ci sono stazioni di sorveglianza della Marina."
+	source "New Holland"
+	destination "New Tibet"
+	to offer
+		has "FW Northern 2C: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Passi parecchio tempo a volare avanti e indietro sopra la superficie di <origin>, ma Freya non riesce a localizzare nessun segnale della Marina proveniente dalla superficie. Alla fine rinuncia. "È un pianeta fuori mano," dice. "Qualsiasi flotta che venga qui passerebbe prima da Alioth o Seginus. Quindi immagino che non si siano presi la briga di metterci niente. È ora di andare su New Tibet e incontrare Alondo!"`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Freya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Northern 3"
+	landing
+	name "Freya a Zug"
+	description "Porta Freya su <destination> per aiutare ad accelerare la produzione dei Dreadnought."
+	source "New Tibet"
+	destination "Zug"
+	to offer
+		has "FW Northern 2D: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Il cantiere su Zug sta ancora cercando di accelerare la produzione dei Dreadnought. Finora sono state costruite solo poche navi, ma Freya aiuterà a velocizzare il processo."
+		conversation
+			`Mentre ti avvicini a <origin>, Freya localizza rapidamente due stazioni di sorveglianza della Marina e contatta Alondo, chiedendogli di mandare personale delle Free Worlds a distruggerle. Poi atterri, e Alondo sale sulla tua nave per discutere di persona i prossimi passi.`
+			`	"È molto probabile che ci siamo occupati di tutti i sensori di questo settore," dice Freya, "quindi possiamo cominciare a spostare le nostre flotte da queste parti senza allertare la Marina. E ho appena saputo dai cantieri Southbound che hanno altre due Dreadnought pronte al servizio."`
+			choice
+				`	"Solo due? Speravo di averne presto una mia, di Dreadnought!"`
+					goto two
+				`	"Non dobbiamo difendere anche Rastaban e gli altri sistemi a est?"`
+					goto east
+			label two
+			`	"Pazienza, Capitano," dice Freya. "Costruire prototipi è molto diverso dalla produzione di massa."`
+				goto zug
+			label east
+			`	"Sì," dice Freya. "Il che significa che le nostre flotte saranno tirate per la coperta. Abbiamo davvero bisogno che accelerino la produzione dei Dreadnought."`
+			label zug
+			`	Alondo chiede a Freya: "Pensi di poterli aiutare nei cantieri? Dopotutto eri una straordinaria responsabile degli approvvigionamenti di flotta, ai tempi del Patto di Difesa."`
+			`	"Farò quello che posso, se pensi che qui siate a posto," dice Freya.`
+			`	"Sto bene," dice Alondo, "e JJ è su Rastaban adesso, a guardare l'altro nostro fianco. Quindi puoi prenderti una pausa dal fronte." Torna fuori, e tu e Freya vi preparate a visitare i cantieri su <planet>.`
+				accept
+	
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Freya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	on complete
+		log "Hai accettato di diventare membro del Consiglio delle Free Worlds, prendendo il posto di Tomek."
+		"salary: Free Worlds" = 6800
+		conversation
+			`Mentre stai atterrando su <planet>, Freya dice: "Mi manca Katya. È dura essere l'unica donna nel Consiglio."`
+			choice
+				`	"Non preoccuparti, la Marina ha detto che stanno cercando di trovarla e di restituircela."`
+				`	"Pensi che la Marina abbia rinnegato la promessa di liberarla?"`
+			`	"Non lo so," dice. "Spero che la Marina mantenga la promessa. Ma nel frattempo tre persone nel Consiglio sono troppo poche. Non volevamo dirti niente finché il Senato non avesse approvato, ma ti abbiamo nominato per prendere il posto di Tomek nel Consiglio. Che cosa ne dici?"`
+			choice
+				`	"Sarebbe un onore. Grazie."`
+			`	Sorride. "Non c'è di che. Sei con noi dall'inizio, e abbiamo tutti imparato a fidarci di quello che dici. Vorrei poterti offrire una bella cena o qualcosa del genere per festeggiare, ma... beh, siamo tutti impegnati con la guerra, al momento. Però Alondo e JJ mi hanno detto entrambi di dirti che sono contenti di averti a bordo. E avrai un aumento di stipendio, naturalmente. Cosa che dovresti festeggiare offrendoci da bere a entrambi nel bar dello spazioporto prima di partire. Va bene?"`
+			choice
+				`	"Va bene, ci vediamo allo spazioporto fra qualche ora."`
+			`	"Ottimo," dice, sorridendo. "A dopo." Prende la sua valigia e si affretta verso il cantiere.`
+
+
+
+mission "FW Northern 3B"
+	name "Dreadnought per <planet>"
+	description "Scorta altre due Dreadnought fino a <destination> per aiutare a difendere il fronte da qualsiasi incursione della Marina."
+	autosave
+	source "Zug"
+	destination "Clark"
+	to offer
+		has "FW Northern 3: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Scopri che Freya beve whisky. Quando ha finito il primo drink, sta già chiacchierando con passione del progetto delle astronavi: bilanciamento dei carichi, linee di stress, matrici degli scudi, computer di bordo. Più che offuscare la sua intelligenza, l'alcol sembra solo ridurre la sua capacità di spiegare le cose in modo comprensibile a un non specialista. Cerchi di portare la conversazione su qualcosa di meno tecnico...`
+			choice
+				`	"Allora, perché all'inizio sei entrata nel Consiglio?"`
+					goto council
+				`	"Qual è il tuo pianeta natale?"`
+					goto home
+				`	"Quanto pensi che ci vorrà prima che producano Dreadnought in serie?"`
+					goto dreadnoughts
+			label council
+			`	"Beh," dice, "conosci il Consiglio. Visionari, gente da quadro generale. Avevano bisogno di qualcuno che si occupasse dei dettagli concreti. Analisi dei dati per il nostro programma dei Mille Occhi, che traccia i movimenti delle flotte pirata. Gestione della catena di approvvigionamento. Questo ai tempi del Patto, naturalmente, prima che ci separassimo ufficialmente dalla Repubblica. E avevo già lavorato con JJ in passato, quindi mi ha chiesto di venire con lui e aiutare su scala più ampia."`
+				goto leave
+			label home
+			`	"Sono cresciuta sulla Terra," dice, "nel profondo delle viscere di una delle grandi città. Già da bambina odiavo quel vecchio pianeta sporco e sapevo che la mia unica possibilità di andarmene era essere più intelligente di tutti gli altri. Solo anni dopo, quando sono tornata a visitarla con qualche soldo in tasca e un po' più di prospettiva, ho potuto viaggiare nelle poche parti della Terra che sono ancora belle e rendermi conto di quanto sia prezioso il nostro mondo d'origine."`
+			`	Racconti a Freya della tua infanzia sulla Terra, e condividete le vostre storie. Scoprite che siete cresciuti entrambi nel Nord America: Freya lungo la costa del Pacifico, mentre tu vivevi più vicino alla costa atlantica.`
+				to display
+					has "start: syndicate"
+				goto leave
+			label dreadnoughts
+			`	"Uff," dice, "non parliamo di lavoro mentre ci rilassiamo." Ti astieni dal commentare che tutto il suo discorso sul progetto delle astronavi sembrava molto più lavoro che un argomento di conversazione divertente e rilassante.`
+				goto leave
+			label leave
+			`	Restate al bar per un'altra ora circa, poi lei dice al barista: "Due bottiglie di champagne da portare via, per favore." Lui le lancia uno sguardo strano, ma il Consiglio è abbastanza rispettato perché non le faccia domande.`
+			`	Andate al cantiere, dove le due Dreadnought appena completate sono parcheggiate fianco a fianco. "È ora di battezzare le nostre nuove navi," dice, porgendoti una delle bottiglie. Lanciate ciascuno una bottiglia contro una delle navi, e gridate...`
+			choice
+				`	"Per la vittoria!"`
+				`	"Per la pace!"`
+				`	"Per la giustizia!"`
+			`	"Che arrivi presto," fa eco Freya. "Ora, domani mattina gli equipaggi di queste navi saranno pronti, e avremo bisogno che le scorti fino a <planet>. Io resto qui e faccio del mio meglio per gestire la catena di approvvigionamento delle attrezzature e le squadre di costruzione." Vi date la buonanotte, e ti augura buon viaggio per il giorno dopo.`
+				accept
+	
+	npc accompany save
+		government "Free Worlds"
+		personality timid escort
+		ship Dreadnought "F.S. Bartlett"
+		ship Dreadnought "F.S. Magnolia"
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma senza entrambe le Dreadnought che dovevi scortare! Meglio ripartire e aspettare che arrivino in questo sistema."
+
+
+
+mission "FW Northern 4"
+	landing
+	name "Incontra la flotta"
+	description "Recati su <destination> per scortare un convoglio di forniture mediche. Attento agli attacchi della Repubblica."
+	autosave
+	source "Clark"
+	destination "New Kansas"
+	to offer
+		has "FW Northern 3B: done"
+	clearance
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Su <origin> ti aspetta un messaggio di Alondo: "Salve, Capitano! Abbiamo un'altra piccola crisi: una flotta mercantile doveva portarci una spedizione di forniture mediche da nord, dato che molti dei nostri mondi ne hanno carenza. Ma la Repubblica minaccia di attaccare il convoglio se prova a entrare nel nostro spazio, quindi stanno aspettando su <planet>, appena dentro il territorio della Repubblica. Per favore raggiungi la flotta e portala su New Tibet."`
+				accept
+
+
+
+mission "FW Northern 4.1A"
+	landing
+	name "Convoglio medico"
+	description "Scorta un convoglio che trasporta forniture mediche fino a <planet>, in sicurezza. Non sparare sulla nave Oathkeeper della Marina che è in orbita lì."
+	autosave
+	source "New Kansas"
+	destination "New Tibet"
+	to offer
+		has "FW Northern 4: done"
+		not "FW Northern 4.2A: offered"
+		karma >= 2
+		"reputation: Navy (Oathkeeper)" >= 0
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Atterri su <origin> e incontri la flotta che dovrai scortare. Pochi minuti dopo arriva un messaggio urgente di Alondo: "Abbiamo una situazione assurda qui. Torna subito su New Tibet con il convoglio. Troverai una nave Oathkeeper della Marina in orbita. Non attaccarla, limita a far atterrare il convoglio in sicurezza." Gli Oathkeepers sono ufficiali della Marina che hanno giurato di non combattere le Free Worlds, quindi non puoi fare a meno di chiederti che cosa ci facciano su <planet>.`
+				accept
+	
+	npc accompany save
+		personality escort timid
+		government Merchant
+		fleet
+			names "civilian"
+			cargo 4
+			variant
+				Freighter 4
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio! Meglio ripartire e aspettare che arrivi in questo sistema."
+	
+	npc save
+		government "Navy (Oathkeeper)"
+		personality heroic staying uninterested
+			confusion "elite"
+		system Alioth
+		ship "Cruiser (Mark II)" "N.S. Peacemaker"
+
+
+
+mission "FW Northern 4.2A"
+	landing
+	name "Convoglio medico"
+	description "Scorta un convoglio che trasporta forniture mediche fino a <planet>, in sicurezza."
+	autosave
+	source "New Kansas"
+	destination "New Tibet"
+	to offer
+		has "FW Northern 4: done"
+		not "FW Northern 4.1A: offered"
+		or
+			karma < 2
+			"reputation: Navy (Oathkeeper)" < 0
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Atterri su <origin> e incontri la flotta che dovrai scortare. Pochi minuti dopo arriva un messaggio urgente di Alondo: "Abbiamo una situazione assurda qui. Torna subito su New Tibet con il convoglio." Non fornisce altre informazioni.`
+				accept
+	
+	npc accompany save
+		personality escort timid
+		government Merchant
+		fleet
+			names "civilian"
+			cargo 4
+			variant
+				Freighter 4
+	npc
+		government Republic
+		personality heroic
+		system Sarin
+		fleet "Small Republic"
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma hai lasciato indietro una parte del convoglio. Meglio ripartire e aspettare che arrivi in questo sistema."
+
+
+
+mission "FW Alphas 1.1"
+	landing
+	name "Libera Poisonwood"
+	description "Distruggi le navi pirata che occupano il sistema <system> con l'aiuto degli Oathkeepers della Marina, poi atterra sul pianeta e lascia che le truppe della Marina eliminino gli Alphas."
+	autosave
+	source "New Tibet"
+	destination Poisonwood
+	clearance
+	to offer
+		has "FW Northern 4.1A: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Il mondo della Repubblica di Poisonwood, a sud, è apparentemente stato conquistato da signori della guerra Alpha. La minaccia è così grave che, nonostante la guerra, gli Oathkeepers della Marina hanno accettato di combattere al fianco delle Free Worlds per liberare il pianeta."
+		event "alphas capture Poisonwood"
+		conversation
+			`Fai atterrare il convoglio su <origin> in sicurezza, ma tutti sembrano impegnati con qualunque nuova crisi avesse accennato Alondo; nessuno ti si avvicina per aiutare a scaricare le navi. Alla fine trovi Alondo e gli chiedi che cosa succede, e perché in orbita ci sia una nave neutrale della Marina. "Abbiamo appena saputo che Poisonwood è stata conquistata dai pirati, mentre tutte le nostre flotte erano impegnate a difendere il fronte," dice Alondo. Ricordi che Poisonwood è rimasto leale alla Repubblica, anche se si trova nel cuore del territorio delle Free Worlds.`
+			choice
+				`	"Se li liberiamo, passeranno dalla nostra parte?"`
+					goto loyalty
+				`	"Se non è uno dei nostri mondi, perché dovremmo aiutarli?"`
+					goto help
+			label loyalty
+			`	"Forse," dice Alondo. "Ma non è questo l'importante. Prima che venissero travolti dalle truppe pirata, uno dei coloni è riuscito a fotografare il capo dei pirati."`
+				goto photo
+			label help
+			`	"Perché uno dei coloni ha fatto una foto al capo dei pirati che li hanno attaccati," dice Alondo.`
+				goto photo
+			label photo
+			`	Ti porge una piccola stampa fotografica. È un'immagine un po' sfocata di un gruppo di pirati armati che corre lungo una strada in una città del deserto. Quello che ti colpisce subito è che diversi pirati sembrano avere la pelle verde. Riconosci quel segno: sono gli Alphas, i superuomini sociopatici e geneticamente modificati che cinque secoli fa, durante le Guerre Alpha, ridussero in schiavitù interi pianeti.`
+			choice
+				`	"Dev'essere un trucco. Non possono esserci ancora degli Alphas in giro. Magari i pirati si sono tinti la pelle di verde per farsi temere."`
+				`	"Come è possibile che alcuni Alphas siano ancora vivi?"`
+			`	Alondo dice: "Potrebbe essere un trucco, ma non possiamo permetterci quel rischio. Gli Alphas sono stati la più grande minaccia che l'umanità abbia mai affrontato. E prima di contattare noi per chiedere aiuto, Poisonwood si è rivolta alla Marina." Mentre parla, un'ombra passa sopra di voi. Alzi lo sguardo e vedi l'inconfondibile sagoma di un incrociatore della Marina che si prepara ad atterrare.`
+			choice
+				`	"Sei impazzito? Lasci atterrare qui la Marina?"`
+				`	"Collaboreremo con la Marina subito dopo quella battaglia orribile?"`
+			`	Alondo spiega: "È solo un incrociatore, una nave 'Oathkeeper', vincolata a non prendere parte alla nostra guerra. Le Free Worlds non hanno quasi nessuna truppa addestrata al combattimento a terra, quindi senza l'aiuto della Marina avremmo poche speranze di eliminare gli Alphas."`
+			`	La nave della Marina atterra, e ne scende un uomo che riconosci subito: l'ammiraglio William Danforth, una specie di eroe popolare in tutto lo spazio umano, che hai sentito essere il comandante dell'intero reggimento degli Oathkeeper. Con lui c'è un uomo che ti presenta come comandante Aaron Nguyen del Corpo Umanitario della Marina. Mentre Nguyen ti stringe la mano, ti colpisce il fatto che, pur essendo tuo nemico, non vedi alcuna traccia di ostilità nei suoi occhi: anzi, la sua espressione è sorprendentemente calda e affettuosa.`
+			`	"Non possiamo permetterci errori," dice Danforth. "Questi Alphas vanno eliminati, e non dobbiamo lasciare che scappino. Su questo, almeno, possiamo essere tutti d'accordo."`
+			`	Alondo dice: "Il capitano <last> guiderà l'attacco." Fa cenno a due capitani delle Free Worlds. "Marco, Emily, li accompagnerete con i vostri Falcon. Distruggete tutte le navi pirata in orbita, poi atterrate e mettete in sicurezza la struttura. Chiaro?" Fai un cenno, e ti prepari a decollare per il sistema <system>.`
+				accept
+	
+	npc accompany save
+		government "Navy (Oathkeeper)"
+		personality escort heroic
+			confusion "elite"
+		ship "Cruiser (Mark II)" "N.S. Peacemaker"
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		ship "Falcon (Plasma)" "F.S. Alder"
+		ship "Falcon" "F.S. Starry Warrior"
+	npc kill
+		government "Alpha"
+		personality heroic staying target
+			confusion "pirate"
+		system Graffias
+		ship "Leviathan (Heavy)" "Dread Lord"
+		ship "Leviathan" "Dominator"
+		ship "Firebird (Plasma)" "Vengeance"
+		ship "Firebird (Missile)" "Revenant"
+		ship "Firebird" "Draugbreath"
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma la battaglia non è finita: o non hai ucciso uno dei pirati, o hai lasciato una delle tue navi in un altro sistema."
+
+	on complete
+		event "liberation of Poisonwood"
+		conversation
+			`Le navi in orbita sono eliminate, ma a terra restano ancora gli Alphas e i loro servi di cui occuparsi. La nave di Danforth sbarca una squadriglia di truppe in pesanti tute da battaglia. Le truppe della Marina si muovono con una precisione e una determinazione che non hai mai visto fra i soldati delle Free Worlds, addestrati alla bell'e meglio.`
+			`	Passano al setaccio la città e accertano rapidamente che gli Alphas si sono barricati in una grande fabbrica. Le truppe circondano l'edificio e sfondano le porte, e presto senti il suono di esplosioni e spari all'interno. Aspetti con il comandante Nguyen in un vicolo di fronte all'edificio. "Sono del Corpo Umanitario," spiega. "Uccidere non è nella mia descrizione del lavoro."`
+			`	Proprio allora una delle finestre del secondo piano va in frantumi e una figura ne esce rotolando, si rialza e comincia a correre verso di te. Poi fa qualcosa che giureresti nessun essere umano essere capace di fare: senza smettere di avanzare verso di te, comincia a saltare da una parete all'altra del vicolo con la stessa facilità con cui tu saliresti una scala, guadagnando quota a ogni salto, così che presto ti passerà due o tre metri sopra la testa. Diverse truppe della Marina gli corrono dietro, ma trattengono il fuoco per non colpire te e Nguyen.`
+			choice
+				`	(Prova a sparargli.)`
+					goto shoot
+				`	(Prova ad afferrarlo.)`
+					goto grab
+			label shoot
+			`	Apri il fuoco, ma salta avanti e indietro così in fretta che è quasi impossibile colpirlo. Poi però vedi il comandante Nguyen salire su un cassonetto lì vicino e lanciarsi in aria, riuscendo ad afferrare la creatura per una gamba mentre gli passa accanto.`
+				goto pin
+			label grab
+			`	Purtroppo ormai la creatura è fuori dalla tua portata. Poi però vedi il comandante Nguyen salire su un cassonetto lì vicino e lanciarsi in aria, riuscendo ad afferrare la creatura per una gamba mentre gli passa accanto.`
+				goto pin
+			label pin
+			`	I due cadono a terra e rotolano più e più volte in un groviglio di arti. Tu e le truppe della Marina correte dietro a loro, timorosi di sparare per paura di colpire Nguyen. Ma in qualche modo Nguyen prende il sopravvento, bloccando la creatura con una presa completa, con le gambe avvolte intorno al corpo per impedirle di scalciare. "Uccidila!" grida.`
+			choice
+				`	(Uccidila.)`
+					goto kill
+				`	(Lascia che se ne occupino le truppe della Marina.)`
+					goto navy
+			label kill
+			`	Mentre Nguyen tiene ferma la creatura, le metti una pistola alla testa e premi il grilletto. Nemmeno un Alpha può sopravvivere a questo; la creatura si affloscia. Ora che puoi guardarla bene, vedi che ha davvero la pelle verde.`
+				goto end
+			label navy
+			`	Mentre Nguyen tiene ferma la creatura, un soldato della Marina le mette una pistola alla testa e preme il grilletto. Nemmeno un Alpha può sopravvivere a questo; la creatura si affloscia. Ora che puoi guardarla bene, vedi che ha davvero la pelle verde.`
+				goto end
+			label end
+			`	Nguyen si alza a fatica, tremante; ha l'aria sconvolta e molto pallida. "Grazie," dice. I suoni degli spari dentro la fabbrica alla fine si spengono. "Continueremo a pattugliare la città," dice Nguyen, "nel caso ce ne siano altri. Poi ci vediamo allo spazioporto." Si allontana verso la città.`
+
+
+
+mission "FW Alphas 1.2"
+	landing
+	name "Libera Poisonwood"
+	description "Distruggi tutte le navi pirata in orbita intorno a <planet>, poi atterra ed elimina gli Alphas e i loro servi che hanno occupato la città."
+	autosave
+	source "New Tibet"
+	destination Poisonwood
+	clearance
+	to offer
+		has "FW Northern 4.2A: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Il mondo della Repubblica di Poisonwood, a sud, è apparentemente stato conquistato da signori della guerra Alpha. Speriamo che le Free Worlds riescano a liberare il pianeta e a catturare o uccidere i capi Alpha."
+		event "alphas capture Poisonwood"
+		conversation
+			`Fai atterrare il convoglio su <origin> in sicurezza, ma tutti sembrano impegnati con qualunque nuova crisi avesse accennato Alondo; nessuno ti si avvicina per aiutare a scaricare le navi. Alla fine trovi Alondo e gli chiedi che cosa succede. "Abbiamo appena saputo che Poisonwood è stata conquistata dai pirati, mentre tutte le nostre flotte erano impegnate altrove," dice Alondo. Ricordi che Poisonwood è rimasto leale alla Repubblica, anche se si trova nel cuore del territorio delle Free Worlds.`
+			choice
+				`	"Se li liberiamo, passeranno dalla nostra parte?"`
+					goto loyalty
+				`	"Se non è uno dei nostri mondi, perché dovremmo aiutarli?"`
+					goto help
+			label loyalty
+			`	"Forse," dice Alondo. "Ma non è questo l'importante. Prima che venissero travolti dalle truppe pirata, uno dei coloni è riuscito a fotografare il capo dei pirati."`
+				goto photo
+			label help
+			`	"Perché uno dei coloni ha fatto una foto al capo dei pirati che li hanno attaccati," dice Alondo.`
+				goto photo
+			label photo
+			`	Ti porge una piccola stampa fotografica. È un'immagine un po' sfocata di un gruppo di pirati armati che corre lungo una strada in una città del deserto. Quello che ti colpisce subito è che diversi pirati sembrano avere la pelle verde. Riconosci quel segno: sono gli Alphas, i superuomini sociopatici e geneticamente modificati che cinque secoli fa, durante le Guerre Alpha, ridussero in schiavitù interi pianeti.`
+			choice
+				`	"Dev'essere un trucco. Non possono esserci ancora degli Alphas in giro. Magari i pirati si sono tinti la pelle di verde per farsi temere."`
+				`	"Come è possibile che alcuni Alphas siano ancora vivi?"`
+			`	Alondo dice: "Potrebbe essere un trucco, ma non possiamo permetterci quel rischio. Gli Alphas sono stati la più grande minaccia che l'umanità abbia mai affrontato. Abbiamo pochissima gente addestrata al combattimento a terra, ma ho radunato alcuni dei nostri migliori e li ho caricati su una flotta che ti accompagnerà. Distruggi tutte le navi pirata in orbita, poi atterra e metti in sicurezza la struttura. Chiaro? E non lasciar morire nessuna delle tue scorte: trasportano le truppe che ti serviranno per la battaglia a terra." Fai un cenno, e ti prepari a decollare per il sistema <system>.`
+				accept
+	
+	npc accompany save
+		government "Free Worlds"
+		personality heroic escort
+		ship "Falcon (Plasma)" "F.S. Oak"
+		ship "Falcon (Plasma)" "F.S. Alder"
+		ship "Falcon" "F.S. Starry Warrior"
+	npc kill
+		government "Alpha"
+		personality heroic staying target
+			confusion "pirate"
+		system Graffias
+		ship "Leviathan (Heavy)" "Dread Lord"
+		ship "Leviathan" "Dominator"
+		ship "Firebird (Plasma)" "Vengeance"
+		ship "Firebird (Missile)" "Revenant"
+		ship "Firebird" "Draugbreath"
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma la battaglia non è finita: o non hai ucciso uno dei pirati, o hai lasciato una delle tue navi in un altro sistema."
+
+
+
+mission "FW Alphas 1.1A"
+	name "Danforth per <planet>"
+	description "Scorta la nave dell'ammiraglio Danforth fino a <destination>, perché possa lasciare lo spazio delle Free Worlds senza essere attaccato per errore."
+	autosave
+	source Poisonwood
+	destination "New Tibet"
+	to offer
+		has "FW Alphas 1.1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	npc accompany save
+		government "Navy (Oathkeeper)"
+		personality escort heroic
+			confusion "elite"
+		ship "Cruiser (Mark II)" "N.S. Peacemaker"
+	
+	on visit
+		dialog phrase "generic arrived-without-npc dialog"
+	
+	on offer
+		log "Con l'aiuto degli Oathkeepers, hai liberato Poisonwood dagli invasori Alpha."
+		event "death of nguyen" 35
+		conversation
+			`Quando incontri Nguyen, sembra ancora molto preoccupato. "Crediamo di averli uccisi tutti," dice, "ma non possiamo esserne certi. Inoltre abbiamo recuperato dalla fabbrica alcuni strumenti per la manipolazione genetica. Gli Alphas non possono riprodursi normalmente, perché se la prole eredita alcune mutazioni Alpha ma non altre, il risultato è raramente vitale, e anche quelli che vivono abbastanza da nascere non hanno tutti i tratti Alpha. Quindi si affidano all'inseminazione artificiale."`
+			choice
+				`	"Beh, allora è una buona notizia che abbiate recuperato quegli strumenti."`
+			`	"Lo sarebbe," dice Nguyen, "se non avessimo anche scoperto che diverse decine delle donne prese come schiave... sono ora incinte. Dovremo chiedere loro di interrompere le gravidanze. È l'unica decisione sicura, ma continua a non piacermi." Sospira. "Sono buddista, sai. Impegnato a non fare del male a nessun essere vivente. Per questo mi sono unito al Corpo Umanitario. Mi avevano promesso che non mi sarebbe mai stato chiesto di togliere una vita."`
+			choice
+				`	"È per questo che non hai ucciso tu quell'Alpha, per strada?"`
+					goto street
+				`	"Questo non mi sembra un dilemma morale. Sappiamo che quei bambini diventeranno dei mostri."`
+					goto kill
+				`	"Non potremmo lasciar nascere i bambini, se è quello che vogliono le donne, e poi imprigionarli o qualcosa del genere se si rivelano davvero degli Alphas?"`
+					goto live
+			label street
+			`	"Sì," dice. "Sciocco, vero? Comunque, è compito mio occuparmene; tu devi andare a trovare Danforth."`
+				goto end
+			label kill
+			`	"Beh," dice, "ti invidio per vivere in un universo dove decisioni così sono facili. Per me resta una scelta dolorosa. Comunque, è un problema mio, non tuo; tu devi andare a trovare Danforth."`
+				goto end
+			label live
+			`	"Gli Alphas sono stati allevati originariamente come supersoldati," dice, "un'arma nelle mani di un governo dispotico. Per quanto mi dispiaccia ammetterlo, ci sono certi ambienti della Repubblica che sarebbero felicissimi di mettere le mani su un piccolo esercito di bambini Alpha impressionabili. Molto meglio che muoiano, piuttosto che accada questo. Comunque, è compito mio occuparmene; tu devi andare a trovare Danforth."`
+				goto end
+			label end
+			`	Se ne va, e tu torni alla nave di Danforth. Danforth dice: "Salve, alleato temporaneo. È stato un onore combattere al tuo fianco, finché è durato."`
+			choice
+				`	"Altrettanto. Vorrei che potessimo porre fine a questa guerra."`
+				`	"Se la Repubblica ci lasciasse semplicemente in pace, non avremmo bisogno di essere nemici."`
+			`	"Lo so," dice. "Ma per ora devo tornare alla mia flotta. Il che significa che avrò bisogno di una scorta per uscire dal vostro territorio, giusto per assicurarmi che nessuno mi attacchi. Magari potresti portarci passando per New Tibet? Sono sicuro che il comandante Nguyen apprezzerebbe un'ultima visita ai monasteri buddisti di là, prima che quel mondo ci sia completamente chiuso." Sei d'accordo, e lui comincia a preparare la sua nave al decollo.`
+				accept
+	
+	on complete
+		set "fw alphas done"
+
+
+
+mission "FW Death of Nguyen"
+	landing
+	source
+		near Sol 100
+	to offer
+		has "event: death of nguyen"
+	
+	on offer
+		conversation
+			`Poco dopo essere atterrato su <origin>, ricevi un messaggio in codice dall'ammiraglio Danforth, il capo degli Oathkeepers. "Capitano <last>," dice, "vorrei ringraziarti ancora una volta per averci permesso di aiutarvi su Poisonwood. Purtroppo ho una brutta notizia che potrebbe riguardarti. Il comandante Nguyen, che era con te quando uno degli Alphas è stato catturato, è stato assassinato, ucciso con un colpo alla testa a bruciapelo. Il suo aggressore non è stato trovato. Temiamo che possa essere una rappresaglia per la sua parte nell'azione su Poisonwood, e ti esortiamo, insieme al tuo equipaggio, alla massima prudenza. Con la massima stima, Danforth."`
+				decline
+
+
+
+mission "FW Alphas 1.2A"
+	landing
+	name "Ritorno al fronte"
+	description "Recati su <destination> per rinforzare le difese."
+	source Poisonwood
+	destination "New Tibet"
+	to offer
+		has "FW Alphas 1.2: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Hai liberato Poisonwood dagli invasori Alpha. Si è dovuto bombardarli dall'orbita, e molti civili sono morti nel processo, ma almeno il pianeta è di nuovo libero."
+		event "Poisonwood reverts to Republic"
+		conversation
+			`Le navi in orbita sono eliminate, ma a terra restano ancora gli Alphas e i loro servi di cui occuparsi. Le tue scorte sbarcano le truppe, che si diffondono per la città e stabiliscono rapidamente che, per quanto ne sanno gli abitanti, gli Alphas si sono tutti barricati in una grande fabbrica alla periferia. Gli abitanti ti informano anche che gli Alphas hanno preso diverse decine di prigionieri e li tengono dentro la fabbrica.`
+			`	Mentre stai cercando di preparare le truppe delle Free Worlds all'assalto dell'edificio, all'improvviso una delle tue scorte, la Starry Warrior, decolla. Chiami via radio il capitano, che risponde: "Scusa, Capitano, ma seguo gli ordini. Alondo sospettava che non ti sarebbe piaciuto." Poi apre il fuoco sulla fabbrica, distruggendo tutto nel raggio di diversi isolati con colpi di blaster e siluri. Non smette di sparare finché in tutta quella zona della città non resta altro che macerie fumanti.`
+			`	Presumibilmente gli Alphas sono morti. Lo sono anche i loro prigionieri, e tutti gli abitanti che hanno avuto la sfortuna di trovarsi vicino alla fabbrica quando è stata distrutta. Il governatore di Poisonwood, incapace di nascondere la rabbia, ti chiede di prendere le tue truppe e le tue navi e di lasciare immediatamente il suo mondo.`
+			`	Mandi un messaggio al Consiglio per chiedere che cosa fare, e ti dicono di lasciare il pianeta e di raggiungere Alondo su <planet>, per aiutare a rinforzare le difese. Lasci <origin> con il cuore pesante, contento che gli Alphas se ne siano andati ma desiderando che le cose qui su <origin> fossero finite diversamente.`
+				launch
+	
+	on complete
+		set "fw alphas done"
+
+
+
+mission "FW Bloodsea 1"
+	landing
+	name "Alondo per <planet>"
+	description "Porta Alondo su <planet> per cercare di convincere la gente del posto a unirsi alle Free Worlds."
+	source "New Tibet"
+	destination "Bloodsea"
+	clearance `Alondo riesce a convincere lo spazioporto a lasciarvi atterrare "gratis".`
+	to offer
+		has "fw alphas done"
+	passengers 1
+	blocked `Alondo ti contatta e chiede: "Hai una cuccetta pronta per me?" Non ce l'hai, quindi dovrai liberarne una per continuare questa missione.`
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Riferisci ad Alondo, che ascolta la tua descrizione della battaglia per Poisonwood con un'espressione cupa. "Non è la fine, naturalmente," dice. "Sembra che, per quante battaglie vinciamo contro gli Alphas, ce ne siano sempre altri là fuori. Ma sono contento che la crisi immediata sia stata gestita."`
+			choice
+				`	"Non c'è proprio modo di rintracciare il resto degli Alphas?"`
+				`	"Qual è la nostra prossima missione adesso?"`
+					goto next
+			`	"Non davvero," dice. "Probabilmente ci sono piccole enclavi in tutto lo spazio umano, e forse anche oltre i nostri confini. Tutto quello che possiamo fare è rendere loro più difficile diventare potenti."`
+			`	"E come lo facciamo?" chiedi.`
+			label next
+			`	"Il Senato ha autorizzato una missione diplomatica su Bloodsea," dice. "È il più piccolo dei mondi pirata, e andremo a vedere che cosa dobbiamo offrire per convincerli a unirsi alle Free Worlds. Gli insediamenti ufficiali laggiù contano solo qualche migliaio di persone, quindi non dovrebbe essere troppo difficile convincerli che unirsi a noi è meglio che resisterci."`
+			choice
+				`	"Va bene, sembra divertente!"`
+					accept
+				`	"Aspetta, l'ultima volta che ci abbiamo provato le cose non sono andate storte piuttosto in fretta?"`
+			`	Alondo sorride. "Sì, ma le Free Worlds adesso sono in una posizione molto più forte, e i mondi pirata sanno che è solo questione di tempo prima che siano costretti a civilizzarsi. E l'incidente di Poisonwood ha dimostrato che non possiamo permetterci una guerra su due fronti. Dobbiamo eliminare la minaccia pirata, e una soluzione diplomatica è l'unica che durerà. Quindi, andiamo!"`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Alondo non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Bloodsea 1.1"
+	landing
+	name "Navi da <planet>"
+	description "Per lavorare a un trattato di pace con Bloodsea, incontra un convoglio di navi mercantili pesantemente armate su <planet>."
+	autosave
+	source Bloodsea
+	destination Zug
+	to offer
+		has "FW Bloodsea 1: done"
+	to fail
+		has "FW Bloodsea 1.2: done"
+	passengers 1
+	
+	on offer
+		log "I capi locali del mondo senza legge di Bloodsea hanno detto che si uniranno alle Free Worlds e smetteranno di sostenere la pirateria, in cambio dell'equipaggiamento per costruire uno spazioporto più moderno. Potrebbero però stare solo cercando di rubare i materiali da costruzione; forse sarebbe più semplice attaccarli e conquistarli."
+		conversation
+			`I capi locali non vogliono incontrarvi a bordo della tua nave, e Alondo teme che finireste in un'imboscata se vi allontanaste troppo, quindi alla fine accettano di montare una tenda sulla piazzola di atterraggio accanto alla tua e di incontrarvi lì. Fuori infuria una tempesta, e la pioggia si mescola agli spruzzi salati del mare rosso sangue lì vicino.`
+			branch peaceful
+				not "FW Pirates: Attack 2: done"
+			`	Ai capi locali basta vederti per fare una smorfia. "Che cosa ci fa qui l'invasore?" chiede uno di loro ad Alondo.`
+			`	"Il capitano <last> stava solo eseguendo gli ordini, ma l'ufficiale responsabile di quegli ordini è stato giustamente punito," dice Alondo. "Questa volta veniamo in pace." I capi non sembrano convinti da quella risposta, ma accettano di continuare.`
+			label peaceful
+			`	Mentre parlate, diventa chiaro che gli abitanti di Bloodsea si vergognano di quanto sia misero e arretrato il loro mondo. Diversi di loro hanno visitato lo spazioporto sull'isola di Deep e, dopo aver girato intorno alla questione per un po', avanzano una richiesta: se le Free Worlds costruiranno per loro un vero spazioporto moderno sull'isola, si uniranno alle Free Worlds.`
+			`	Uno di loro elenca una lista dettagliata delle dotazioni che il porto deve avere: frangiflutti in cemento, piazzole di atterraggio rialzate, darsene galleggianti, hangar e magazzini solidi, e vari sistemi di difesa "per quando gli altri scopriranno che abbiamo deciso di unirci a voi". Inoltre l'accordo salta se vi presentate in orbita con una flotta che "sembra una flotta d'invasione invece di una flotta di costruzione".`
+			`	Li ringrazi e torni alla tua nave. Alondo chiede: "Che cosa ne pensi?"`
+			choice
+				`	"Beh, costruire uno spazioporto costa probabilmente meno di una grande battaglia."`
+					goto port
+				`	"Chiedono molto. Perché non li invadiamo e basta?"`
+					goto invade
+			label port
+			`	"Sì," dice, "solo che ti posso quasi garantire che, quando ci presenteremo alla loro porta con tutto quello che hanno chiesto, qualche signore della guerra locale attaccherà le nostre navi, ruberà i nostri rifornimenti, ridurrà in schiavitù i nostri operai e si costruirà una bella fortezza sull'isola."`
+			`	"Quindi li attacchiamo?" chiedi.`
+			label invade
+			branch hostile
+				not "FW Pirates: Attack 2: done"
+			`	"Non erano molto contenti che lo facessi la prima volta. Ma..." Alondo si ferma un momento.`
+			label hostile
+			`	"È certamente l'opzione più semplice," dice. "Tomek è stato punito per aver disubbidito agli ordini del Senato, ma ora la situazione è diversa. I nostri numeri sono cresciuti grazie alle vittorie e al nuovo territorio, e ora abbiamo i Dreadnought a disposizione, quindi occupare Bloodsea è un'opzione praticabile.`
+			`	"Ora sei tu nel Consiglio," dice. "Lascio decidere a te. Opzione uno: portiamo loro i rifornimenti e gli operai, su navi mercantili, ma usando navi mercantili pesantemente armate nel caso ci tradiscano. Opzione due: andiamo su Dancer e vediamo se JJ può prestarci una flotta d'invasione, mentre io convinco il Senato che attaccare Bloodsea è la decisione migliore."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Alondo non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+mission "FW Bloodsea 1.1A"
+	landing
+	name "Rifornimenti da <planet>"
+	description "Fermati su <planet> perché le navi che stai scortando possano caricare altri rifornimenti e operai, poi portale su Bloodsea per aiutare a costruire un nuovo spazioporto."
+	autosave
+	source Zug
+	destination Deep
+	to offer
+		has "FW Bloodsea 1.1: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Nello spazioporto di <origin> ti aspettano due Behemoth, mercantili pesanti che trasporteranno l'attrezzatura e gli operai su Bloodsea. Non puoi fare a meno di notare che quasi un terzo del loro spazio di carico è stato convertito in spazio per gli equipaggiamenti, e che entrambe le navi montano una coppia di torrette al plasma, e quello che sembra essere anche dei lanciatori di siluri.`
+			`	Mentre sei su Zug, tu e Alondo incontrate Freya e le chiedete come va la produzione dei Dreadnought. "Ci siamo quasi," dice, "resta solo un problema o due da risolvere. Hanno prodotto altri due prototipi, ma non abbastanza per cominciare a venderli. Lo so, non vedi l'ora di pilotarne uno tuo. Credimi, stiamo lavorando il più in fretta possibile."`
+			`	La tua prossima tappa è su <destination>, per caricare altri operai e materiali da costruzione.`
+				accept
+	
+	npc accompany save
+		government Merchant
+		personality escort heroic
+		ship "Behemoth (Heavy)" "F.S. Bungles"
+		ship "Behemoth (Heavy)" "F.S. Humble"
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma hai lasciato indietro i mercantili! Meglio ripartire e aspettare che arrivino in questo sistema."
+
+
+
+mission "FW Bloodsea 1.1B"
+	landing
+	name "Rifornimenti per <planet>"
+	description "Scorta questi due mercantili fino a <destination> per aiutare a costruire un nuovo spazioporto. Potrebbe essere solo un pretesto perché i pirati ti attacchino."
+	autosave
+	source Deep
+	destination Bloodsea
+	clearance
+	to offer
+		has "FW Bloodsea 1.1A: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Ti fermi su <origin>, e aspetti che altri rifornimenti vengano caricati sui due Behemoth che stai scortando. La tua ultima tappa è <planet>. Alondo pensava probabile che alcuni pirati cercassero di intercettare il convoglio e rubarne il carico, ma finché entrambi i mercantili atterrano sul pianeta senza essere catturati né distrutti, potrai cominciare il progetto di costruzione e soddisfare così le richieste degli abitanti di <planet>, convincendoli a unirsi alle Free Worlds.`
+				accept
+	
+	npc accompany save
+		government Merchant
+		personality escort heroic
+		ship "Behemoth (Heavy)" "F.S. Bungles"
+		ship "Behemoth (Heavy)" "F.S. Humble"
+	
+	on visit
+		dialog "Hai raggiunto <planet>, ma hai lasciato indietro i mercantili! Meglio ripartire e aspettare che arrivino in questo sistema."
+	
+	npc
+		government Pirate
+		personality plunders staying disables
+		system Antares
+		fleet
+			names pirate
+			variant
+				"Raven (Afterburner)" 2
+				Hawk 2
+				"Fury (Flamethrower)" 3
+				Sparrow 5
+	
+	on complete
+		set "fw bloodsea done"
+		event "dreadnoughts for sale"
+		event "dreadnought deployment" 40
+		event "bloodsea joins free worlds"
+		event "bloodsea spaceport completed" 100
+		log "Hai portato i materiali da costruzione che la gente di Bloodsea aveva chiesto, e hanno accettato di unirsi alle Free Worlds."
+		conversation
+			`Alcuni degli abitanti di Bloodsea sembrano sorpresi che abbiate davvero portato i rifornimenti per un nuovo spazioporto, e che siate arrivati con tutto il carico intatto. Ma dopo essersi incontrati con Alondo, accettano di mantenere la loro parte dell'accordo: da ora in poi Bloodsea farà parte delle Free Worlds, con tutti i diritti e le responsabilità che questo comporta. Il che significa che si rifiuteranno di ospitare consapevolmente flotte pirata o altri criminali noti.`
+			`	Alondo ti dice che tornerà con i mercantili quando ripartiranno. "Ma probabilmente vorrai andartene prima," dice, "perché ho una buona notizia per te. Freya mi ha appena contattato per dire che ora sono pronti a cominciare a vendere i Dreadnought ad alcuni membri scelti delle Free Worlds, te compreso. Il che significa anche che ha finito il suo lavoro su Zug, quindi avrà bisogno che tu la vada a prendere."`
+				accept
+
+
+
+mission "Ijs catches another ride"
+	landing
+	to offer
+		has "fw bloodsea done"
+		has "FW Conservatory 1: active"
+	on offer
+		payment 10000
+		event "fw conservatory founded" 30
+		conversation
+			`Ijs ti si avvicina con il suo borsone mentre scendi dalla <ship>.`
+			`	"Grazie per avermi portato fin qui, ma devo davvero arrivare su Winter il prima possibile. Spero che non ti offenda se ho prenotato un passaggio su un altro trasporto. Ecco <payment> per avermi portato fin qua, comunque. Spero di rivederti presto, capitano <last>."`
+				decline
+		fail "FW Conservatory 1"
+
+
+
+mission "FW Bloodsea 1.2"
+	landing
+	name "Flotta d'invasione"
+	description "Invece di cercare un accordo diplomatico, incontra JJ su <planet> e raduna una flotta per invadere e sottomettere Bloodsea."
+	source Bloodsea
+	destination Dancer
+	to offer
+		has "FW Bloodsea 1: done"
+	to fail
+		has "FW Bloodsea 1.1: done"
+
+
+
+mission "FW Bloodsea 1.2A"
+	landing
+	name "Cattura Bloodsea"
+	description "Porta una flotta delle Free Worlds a invadere il sistema <system> ed eliminare qualsiasi resistenza pirata, poi atterra su <planet>."
+	source "Dancer"
+	destination "Bloodsea"
+	clearance
+	to offer
+		has "FW Bloodsea 1.2: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		event "battle for bloodsea"
+		karma --
+		conversation
+			`Quando incontrate JJ, Alondo spiega che avete bisogno di una flotta d'invasione per Bloodsea. JJ sembra confuso dalla richiesta. "Come? Che fine ha fatto la diplomazia? Avevo solo sentito che il Senato aveva approvato una missione diplomatica. Tomek non è stato punito proprio per questo tipo di trovata?"`
+			choice
+				`	"Alondo mi ha convinto che gli abitanti di Bloodsea stavano solo progettando di tradirci."`
+				`	"Non credo che i pirati capiranno altro linguaggio che la forza schiacciante."`
+			`	"Stai cominciando a somigliare parecchio a Tomek," osserva JJ.`
+			`	"Ho anche contattato il Senato mentre venivo qui," dice Alondo, "e hanno approvato l'invasione. Siamo molto più forti di prima, il che rende l'invasione un'opzione praticabile."`
+			`	"Forse," dice JJ. "Ti darò qualche nave, ma la cosa non mi piace. Devo tenere qui la maggior parte della mia flotta, per difenderci dalla Marina, ma sceglierò alcune delle navi più forti perché ti accompagnino su Bloodsea. Assicurati però che tornino a casa sane e salve. Avremo bisogno di ogni nave che riusciremo a mettere insieme quando la Marina attaccherà. Buona fortuna, Capitano."`
+				accept
+	
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		ship "Dreadnought" "F.S. Bombastic"
+		ship "Falcon (Plasma)" "F.S. Equalizer"
+		ship "Falcon (Plasma)" "F.S. Enforcer"
+	
+	npc evade
+		personality heroic staying
+		government "Pirate"
+		system "Antares"
+		fleet
+			names pirate
+			variant
+				"Firebird (Plasma)"
+				"Raven (Afterburner)" 2
+				"Hawk (Rocket)" 2
+				"Fury (Flamethrower)" 3
+				Sparrow 5
+		ship "Leviathan" "Freedom"
+		ship "Manta" "Lucifer"
+		ship "Bastion (Heavy)" "Punisher"
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora pirati che difendono il sistema. Tutti i pirati nel sistema devono essere eliminati prima che <planet> possa essere preso.`
+	on complete
+		log "Hai conquistato Bloodsea in nome delle Free Worlds. Con abbastanza navi della milizia a pattugliare il loro sistema stellare, dovrebbero pensarci due volte prima di tornare alla pirateria."
+		set "fw bloodsea done"
+		event "dreadnoughts for sale"
+		event "dreadnought deployment" 40
+		event "bloodsea independent"
+		conversation
+			`Atterri allo spazioporto principale di Bloodsea con le navi delle Free Worlds che girano in orbita, pronte a bombardare la gente del posto al minimo segno di resistenza. L'atmosfera è tesa, e i capi accettano di malavoglia di dare alle Free Worlds accesso al loro pianeta e di evitare consapevolmente di sostenere la pirateria o altre attività criminali. Hai vinto questo mondo, ma chiaramente non hai conquistato il cuore degli abitanti.`
+			`	Un po' più tardi ricevi nuovi ordini da Alondo. "Ho una buona notizia per te," dice. "Freya mi ha appena contattato per dire che ora sono pronti a cominciare a vendere i Dreadnought ad alcuni membri scelti delle Free Worlds, te compreso. Il che significa anche che ha finito il suo lavoro su Zug, quindi avrà bisogno che tu la vada a prendere."`
+				accept
+
+
+
+
+mission "Pirates Use Cutthroats"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "fw bloodsea done"
+	on offer
+		event "pirates use cutthroat"
+		fail
+
+event "pirates use cutthroat"
+	fleet "Large Southern Pirates"
+		add variant 2
+			"Cutthroat" 3
+		add variant 1
+			"Modified Argosy (Blaster)"
+			"Fury (Gatling)"
+			"Cutthroat"
+
+# For save files which have the "Pirate Use Jousting Cutthroat" mission active prior to its removal in v0.10.14.
+event "pirate use jousting cutthroat"
+
+
+
+mission "FW Dreadnoughts Ready"
+	landing
+	name "Incontra Freya su <planet>"
+	description "Freya ha finito di sovrintendere al primo ciclo di produzione dei Dreadnought nel cantiere su Zug. Raggiungila lì, per darle un passaggio dove sarà assegnata dopo."
+	source Bloodsea
+	destination Zug
+	to offer
+		has "fw bloodsea done"
+	on fail
+		dialog phrase "free worlds failed"
+	on offer
+		log "Freya ha annunciato che i Dreadnought sono ora in vendita su Zug. Finalmente le Free Worlds hanno una nave da guerra capace di reggere il confronto con le navi capitali della Marina."
+
+
+
+mission "FW Albatross 1"
+	landing
+	name "Freya per <planet>"
+	description "Porta Freya su <planet> per incontrarti con JJ e fare piani per convincere Albatross a rinunciare alla pirateria e unirsi alle Free Worlds."
+	autosave
+	source "Zug"
+	destination "Dancer"
+	to offer
+		has "FW Dreadnoughts Ready: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Freya viene alla tua nave poco dopo l'atterraggio. Raiante, sembra più rilassata di quanto tu l'abbia vista in mesi. "I cantieri Southbound stanno sfornando Dreadnought adesso!" dice. "Ancora solo al ritmo di una a settimana circa, ma per una nave di questa dimensione è piuttosto notevole. E significa che ora puoi comprarne una tua, se hai abbastanza risparmi. Davvero, anche se ancora non puoi permettertela, passa dal cantiere a darci un'occhiata." È chiaramente molto fiera.`
+			choice
+				`	"Ottimo lavoro, Freya! Sono davvero contento di avere un'ingegnere così brava nel Consiglio che aiuta a far succedere le cose."`
+				`	"Sono contento di sentirlo. Ora, qual è la nostra prossima mossa contro i pirati?"`
+					goto pirates
+			`	Sorride. "Grazie. È stato davvero rinfrescante potermi occupare di un problema concreto e risolvibile, per cambiare, invece di tutta questa roba politica nebulosa. A proposito, il nostro prossimo passo sarà andare a trovare JJ. Sarà lui a occuparsi dell'apertura diplomatica verso Albatross."`
+				goto alondo
+			label pirates
+			`	"Giusto, giusto, torniamo al lavoro," dice. "Beh, sembra che il prossimo ordine del giorno sia che tu mi porti su <planet> a prendere il posto di JJ, mentre lui fa una visita diplomatica su Albatross."`
+				goto alondo
+			label alondo
+			`	Chiedi: "Aspetta, non è Alondo che di solito si occupa della diplomazia?"`
+			`	"Di solito sì," dice. "Ma la gente di Albatross ha chiesto specificamente JJ. Sono una popolazione molto tradizionalista, e JJ è benvoluto sia come padre di famiglia sia come soldato coraggioso. Mentre Alondo è... Alondo."`
+			choice
+				`	"Giusto. Andiamo su <planet>!"`
+					accept
+				`	"Aspetta, non capisco. Perché non gli piace Alondo?"`
+			`	Sembra sinceramente sorpresa che tu non lo sappia. "Alondo è gay," dice. "Qui a sud ci sono pochi mondi in cui questo darebbe fastidio a qualcuno, ma Albatross è uno di quelli. Quindi Alondo si prende una pausa per andare dal Senato, mentre JJ si occupa di questa particolare situazione diplomatica."`
+			choice
+				`	"Va bene, mi sento sciocco anche solo ad averlo chiesto. Andiamo a incontrare JJ!"`
+					accept
+				`	"A dire il vero, sono gay anch'io."`
+					goto "me too"
+				`	"Ah. Questo spiega certamente alcune cose."`
+				`	"Mi sembra assurdo che qualcuno possa darsi fastidio per questo oggigiorno."`
+			`	"Sì," dice. "Sì, è assurdo. Ora andiamo a incontrare JJ."`
+				accept
+			label "me too"
+			action
+				set "gay"
+			`	Freya alza un sopracciglio. "Non lo sapevo. Non abbiamo tempo di trovare qualcun altro per questa missione, quindi dovrai essere tu a trasportare JJ. Stai attento."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta Freya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+mission "FW Albatross 2"
+	landing
+	name "Visita Albatross"
+	description "Porta JJ su Albatross per negoziare con i capi locali e magari convincerli a unirsi alle Free Worlds e a rinunciare al loro sostegno alla pirateria."
+	autosave
+	source Dancer
+	destination Albatross
+	clearance
+	to offer
+		has "FW Albatross 1: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			`Quando incontri JJ, sembra esausto. "I nostri esploratori riferiscono che la Marina sta costruendo una base enorme su New Iceland," dice, "a solo qualche salto da qui. Quindi ogni giorno guardo il cielo e mi chiedo se oggi sarà il giorno in cui invaderanno."`
+			`	Parlate per un po' e concordate che, nonostante la minaccia della Marina, occuparsi dei pirati è importante. JJ spiega che Albatross è nato come una specie di comune agricola: indipendente, ma non legata ad alcuna attività illegale. Poi però è stata dominata dai pirati, e da allora un signore della guerra pirata dopo l'altro ha tenuto in pugno il pianeta. Quindi, almeno in linea di principio, la gente del posto dovrebbe accogliere con favore l'idea della protezione delle Free Worlds.`
+			`	Mentre viaggi con JJ, Freya accetta di restare qui e lavorare a una rete di sorveglianza migliore, per dare a Dancer un avvertimento anticipato se la Marina decidesse di invadere.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta JJ non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	
+	npc
+		system Nunki
+		government Pirate
+		personality staying disables plunders
+		fleet "Small Southern Pirates" 2
+
+
+
+mission "FW Albatross 2A"
+	landing
+	name "Dai la caccia a Ryk Bartlett"
+	description "Dai la caccia al signore della guerra pirata Ryk Bartlett, che ha saccheggiato convogli mercantili nei dintorni di Zeta Aquilae. (Deve essere distrutta solo la sua nave personale, la Dread.) Poi torna su Albatross."
+	autosave
+	source "Albatross"
+	clearance
+	to offer
+		has "FW Albatross 2: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		conversation
+			branch meeting
+				not "gay"
+			action
+				clear "gay"
+			`Prima di lasciare la nave, JJ ti mette una mano sulla spalla. "Freya mi ha informato. Solo per ragioni di sicurezza, naturalmente. Puoi restare qui se non ti senti a tuo agio."`
+			choice
+				`	"No, vengo con te."`
+				`	"Grazie. Resto io."`
+					goto alt
+			label meeting
+			`L'incontro con gli anziani di Albatross avviene in segreto, di notte. Temono che, se il loro attuale signore della guerra, Ryk Bartlett, scoprisse che vi hanno incontrato, subirebbero una rappresaglia. JJ comincia descrivendo l'offerta delle Free Worlds: tutti i benefici del patto di difesa reciproca, in cambio dell'impegno a rispettare i diritti umani e lo stato di diritto, più un sostegno finanziario alle Free Worlds.`
+			`	"Con il vostro permesso," dice uno degli anziani, "che cosa vi rende diversi da qualsiasi organizzazione pirata che arriva qui a chiederci soldi in cambio di 'protezione'?"`
+			choice
+				`	(Lascia che risponda JJ.)`
+					goto jj
+				`	(Prova a dare una spiegazione io.)`
+			`	"Siamo un governo rappresentativo," dici, "con bilanci pubblici e chiare linee guida sui diritti umani che rispettiamo."`
+				goto unconvinced
+			label jj
+			`	JJ spiega come funziona il Senato, che ogni mondo ha voce in capitolo su come vengono spesi i proventi delle Free Worlds. "E," dice, "non prenderemo i vostri figli come schiavi, né vi costringeremo a lavorare in fabbriche che producono droghe illegali."`
+			label unconvinced
+			`	L'anziano che ha parlato sembra non convinto. "A me pare che voi del 'Consiglio' siate i veri governanti, e che il vostro 'Senato' sia solo una facciata," dice. "Quindi non la chiamerei vera democrazia."`
+			`	"Forse," dice un altro degli anziani, "ma sono comunque meglio di Bartlett. Io dico che, se le Free Worlds riescono a liberarci da lui, almeno daremo una possibilità al loro nuovo governo." Qualche altro annuisce.`
+			`	Spiegano che, per quanto ne sanno, Bartlett passa la maggior parte del tempo nei pressi del sistema Zeta Aquilae, saccheggiando convogli mercantili di metalli pesanti in uscita da Rand e Oblivion. Se riesci a distruggere Bartlett e la sua ammiraglia, la Dread, i suoi seguaci probabilmente si disperderanno.`
+				accept
+			label alt
+			`	L'incontro con gli anziani di Albatross avviene in segreto, di notte. Temono che, se il loro attuale signore della guerra, Ryk Bartlett, scoprisse che vi hanno incontrato, subirebbero una rappresaglia. Aspetti nella tua nave mentre JJ cerca di convincere gli anziani a unirsi alle Free Worlds. Dopo qualche ora, JJ torna.`
+			`	"Sono interessati," ti dice JJ, "ma vogliono morto l'attuale signore della guerra."`
+			`	Hanno spiegato che, per quanto ne sanno, Bartlett passa la maggior parte del tempo nei pressi del sistema Zeta Aquilae, saccheggiando convogli mercantili di metalli pesanti in uscita da Rand e Oblivion. Se riesci a distruggere Bartlett e la sua ammiraglia, la Dread, i suoi seguaci probabilmente si disperderanno.`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che o non hai distrutto la nave di Ryk Bartlett, la Dread, o la tua scorta che porta JJ non è ancora entrata nel sistema. Meglio ripartire e assicurarti di aver fatto tutto quello che serve per completare questa missione.`
+	
+	npc kill
+		personality staying plunders disables heroic marked target
+		system "Orvala"
+		government "Pirate"
+		ship "Bulwark (Heavy)" "Dread"
+		dialog "Hai distrutto la nave di Ryk Bartlett. Speriamo che ora gli anziani di Albatross siano più disposti a trattare con le Free Worlds."
+	
+	npc
+		personality staying plunders disables marked
+		system "Orvala"
+		government "Pirate"
+		fleet
+			names "pirate"
+			variant
+				"Modified Argosy (Gatling)"
+				"Hawk (Plasma)"
+				"Hawk"
+				"Sparrow" 3
+	npc
+		personality timid staying plunders coward disables marked
+		system "Orvala"
+		government "Pirate"
+		"cargo settings"
+			commodities "Heavy Metals"
+		fleet
+			names "pirate"
+			variant
+				"Argosy (Proton)"
+
+
+
+mission "FW Albatross 2B"
+	landing
+	name "Torna su Dancer"
+	description "Torna su Dancer con JJ e incontra Freya."
+	autosave
+	source Albatross
+	destination Dancer
+	clearance
+	to offer
+		has "FW Albatross 2A: done"
+	passengers 1
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "La gente di Albatross, un altro mondo anarchico, ha accettato di unirsi alle Free Worlds in segno di gratitudine per essere stata liberata da Ryk Bartlett, un signore della guerra che la estorceva con il denaro della protezione."
+		event "albatross joins free worlds"
+		conversation
+			`Quando gli anziani di Albatross scoprono che hai distrutto Ryk Bartlett e li hai liberati dal suo dominio, accettano di malavoglia di unirsi alle Free Worlds, "almeno in via di prova". Speri di riuscire a mantenere le promesse che hai fatto loro.`
+			`	Dopo che sei tornato alla nave, JJ dice: "Finora Freya dice che non ci sono indizi di un attacco della Marina contro Dancer, e ha messo in funzione una nuova serie di satelliti di sorveglianza ad Alpha Arae per monitorare l'attività delle flotte. Quindi andiamo a incontrarla e decidiamo quali sono i prossimi passi."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta JJ non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+
+
+
+event "battle for zeta aquilae"
+	"reputation: Republic" = -1000
+	system "Zeta Aquilae"
+		fleet "Small Southern Merchants" 5000
+
+mission "FW Rand 1"
+	landing
+	name "Occupa Zeta Aquilae"
+	description "Porta una flotta delle Free Worlds a Zeta Aquilae, scaccia le navi della Marina che ci sono, poi atterra su Rand, che ha deciso di unirsi alle Free Worlds."
+	autosave
+	source "Dancer"
+	destination "Rand"
+	clearance
+	passengers 2
+	blocked "Per continuare questa missione ti serve una cuccetta libera per Freya (oltre a quella di JJ)."
+	to offer
+		has "FW Albatross 2B: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Altri due pianeti, Rand e Oblivion, hanno espresso l'interesse di unirsi alle Free Worlds. Sono però piuttosto lontani dal resto del territorio delle Free Worlds, quindi JJ teme che creerebbero una posizione tattica indifendibile."
+		event "battle for zeta aquilae"
+		conversation
+			`Quando atterri su Dancer, Freya ha appena ricevuto una notizia entusiasmante. "A quanto pare eliminare Bartlett ha avuto effetti collaterali inattesi," dice. "Bartlett perseguitava da anni i sistemi al margine nord-orientale della Fascia di Terra, e aveva molti nemici. I governi di Rand e Oblivion ti sono così grati per averlo eliminato che ci hanno contattato per cominciare la procedura di adesione alle Free Worlds! E anche diversi altri mondi di quella regione ora sono interessati."`
+			`	JJ aggrotto le sopracciglia. "È davvero un momento pessimo," dice, "e ci metterebbe in una posizione tattica davvero brutta: sparsi, con la Marina proprio in mezzo."`
+			choice
+				`	"Stai dicendo che non dovremmo lasciarli entrare, anche se vogliono?"`
+				`	"Beh, io dico che, se vogliono unirsi a noi, dovremmo lasciarglielo fare. Chissà se saranno ancora così entusiasti delle Free Worlds più avanti, se li deludiamo adesso."`
+			`	JJ ci pensa un momento, poi dice: "Beh, credo che dovremmo lasciarli entrare. Significherà che potremmo dover lanciare un assalto per scacciare la Marina da New Iceland. Ma se lo facciamo, la nostra posizione tattica passa da peggiore di quella attuale a molto migliore. Freya, hanno detto se c'è qualche segno che la Marina ne sia venuta a conoscenza?"`
+			`	"Ci sono alcune portaerei in orbita intorno a Rand," dice, "quindi devono sospettare qualcosa. Ma il grosso della flotta della Marina è ancora a nord e a est da qui."`
+			`	JJ dice: "Va bene, Capitano, ecco che cosa propongo. Lasceremo qui il grosso della nostra flotta a difendere Dancer e New Portland, ma porteremo qualche nostra nave migliore a Zeta Aquilae e scacceremo la Marina. Freya e io viaggeremo con te, così se dovremo prendere decisioni avremo la maggior parte del Consiglio lì di persona. Che ne dici?"`
+			choice
+				`	"Mi sembra un buon piano. Facciamolo!"`
+					accept
+				`	"Resto comunque preoccupato che ci stiamo allungando troppo."`
+			`	"Potresti aver ragione," dice. "Freya, tu che ne pensi?"`
+			`	"Penso che dobbiamo cogliere questa occasione finché è disponibile," dice. "Scusa, Capitano, ma su questo sto con JJ." Salgono entrambi sulla tua nave, e ti prepari a partire per Zeta Aquilae.`
+				accept
+	
+	npc
+		government "Free Worlds"
+		personality heroic disables escort
+		ship "Dreadnought" "F.S. Jean Bart"
+		ship "Dreadnought" "F.S. Elder"
+		ship "Falcon (Plasma)" "F.S. Reliant"
+		ship "Falcon (Heavy)" "F.S. Bismark"
+		ship "Skein" "F.S. Lapwing"
+		ship "Finch" "Bravo 8-4"
+		ship "Finch" "Bravo 0-9"
+		ship "Finch" "Bravo 6-2"
+		ship "Finch" "Bravo 3-1"
+		ship "Finch" "Bravo 1-5"
+		ship "Finch" "Bravo 9-1"
+		ship "Hawk (Rocket)" "F.S. Echo"
+		ship "Hawk" "F.S. Shadow"
+	npc
+		government "Free Worlds"
+		personality heroic disables
+		system "Kochab"
+		ship "Dreadnought" "F.S. Linden"
+	
+	npc evade
+		government "Republic"
+		system "Zeta Aquilae"
+		personality staying heroic
+		fleet 2
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Gunboat (Mark II)"
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi della Marina che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		event "fw expanded and cut"
+
+
+
+mission "FW Rand 1B"
+	landing
+	name "Raggruppati su Wayfarer"
+	description "La flotta delle Free Worlds è stata dispersa da un'invasione della Marina. Raggruppati con le navi fuggite su <destination> e pianifica la prossima mossa."
+	autosave
+	source Rand
+	destination Wayfarer
+	passengers 2
+	to offer
+		has "FW Rand 1: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "La Marina ha invaso Rastaban e Delta Sagittarii, tagliando di fatto in due il territorio delle Free Worlds e dividendo la loro flotta."
+		conversation
+			`Incontri il governatore di Rand e firmi i documenti che rendono il suo pianeta parte delle Free Worlds. I sistemi vicini non segnalano interferenze della Marina: sembra che sia stato permesso loro di cambiare schieramento senza che la Repubblica tentasse di fermarle. Naturalmente, questo potrebbe in parte dipendere dal fatto che sono pianeti minerari, meno necessari alla sopravvivenza della Repubblica dei mondi agricoli all'altro capo della Fascia di Terra.`
+			`	Freya lascia la riunione per controllare la sua rete di sorveglianza, e qualche minuto dopo rientra di corsa nella stanza. JJ le guarda un istante l'espressione e si scusa subito dal tavolo. Lo raggiungi fuori nel corridoio, e lui chiede a Freya che cosa succede.`
+			`	"La Marina ha appena invaso Delta Sagittarii e Rastaban," dice. "Siamo tagliati fuori dal resto dello spazio delle Free Worlds. La nostra flotta di difesa era tragicamente in inferiorità numerica. Molte navi sono state distrutte, e il resto è fuggito verso il Bordo, o verso Tarazed."`
+			`	"Temevo che sarebbe successo," dice JJ, "ma non pensavo così in fretta. Mi chiedo se sapessero che questi nuovi mondi si stavano unendo a noi, e li abbiano deliberatamente usati come diversivo."`
+			choice
+				`	"Che cosa facciamo adesso?"`
+			`	JJ dice: "Freya, hai detto che una parte della nostra flotta è fuggita verso Tarazed?"`
+			`	"Sì," dice. "Probabilmente però non una flotta abbastanza forte da scacciarli."`
+			`	"Beh, credo che dovremmo raggrupparci con loro," dice. "Speriamo di poter poi pianificare un attacco coordinato. O, se necessario, possiamo abbandonare questo settore e riportare la flotta sul Bordo senza perdere troppe navi. Capitano <last>, puoi portarci su <destination>?"`
+			choice
+				`	"Certo."`
+					accept
+				`	"E se la Marina seguisse la flotta fino a Wayfarer? Siamo tre dei quattro membri del Consiglio. Non dovremmo evitare una situazione in cui potremmo essere uccisi tutti?"`
+			`	Dall'espressione di JJ è chiaro che non vuole nemmeno degnare quella domanda di una risposta. "Se moriamo, le Free Worlds vivranno lo stesso," dice, "e non abbandoneremo un'intera sezione della flotta solo per salvare la nostra pelle. Quindi andiamo su Wayfarer."`
+				accept
+	on visit
+		dialog `Atterri su <planet>, ma ti rendi conto che la tua scorta che porta JJ e Freya non è ancora entrata nel sistema. Meglio ripartire e aspettare che arrivi.`
+	
+	npc
+		government "Free Worlds"
+		personality staying timid
+		system Tarazed
+		ship "Dreadnought" "F.S. Holly"
+		ship "Falcon (Plasma)" "F.S. Nebula"
+		ship "Skein" "F.S. Larkspur"
+		ship "Finch" "Charlie 6-2"
+		ship "Finch" "Charlie 0-9"
+		ship "Finch" "Charlie 3-1"
+		ship "Finch" "Charlie 9-1"
+		ship "Finch" "Charlie 1-5"
+		ship "Finch" "Charlie 8-4"
+		ship "Skein" "F.S. Ironwood"
+		ship "Finch" "Echo 5-3"
+		ship "Finch" "Echo 4-1"
+		ship "Finch" "Echo 2-3"
+		ship "Finch" "Echo 5-8"
+		ship "Finch" "Echo 2-4"
+		ship "Finch" "Echo 6-9"
+		ship "Argosy" "F.S. Nightingale"
+
+
+
+event "battle of alioth"
+	system Rutilicus
+		fleet "Small Southern Merchants" 600
+		fleet "Large Southern Merchants" 2000
+		fleet "Small Southern Pirates" 8000
+		fleet "Small Republic" 1000
+	system Cebalrai
+		fleet "Small Southern Merchants" 600
+		fleet "Large Southern Merchants" 2000
+		fleet "Small Southern Pirates" 4000
+		fleet "Small Republic" 1000
+	system Alioth
+		fleet "Small Southern Merchants" 400
+		fleet "Large Northern Merchants" 600
+		fleet "Small Southern Pirates" 1200
+		fleet "Large Southern Pirates" 2400
+		fleet "Small Republic" 3000
+		
+event "end battle of alioth"
+	system Rutilicus
+		fleet "Small Southern Merchants" 600
+		fleet "Large Southern Merchants" 2000
+		fleet "Small Southern Pirates" 8000
+		fleet "Small Republic" 1000
+		fleet "Large Republic" 2000
+		fleet "Navy Surveillance" 1600
+	system Cebalrai
+		fleet "Small Southern Merchants" 600
+		fleet "Large Southern Merchants" 2000
+		fleet "Small Southern Pirates" 4000
+		fleet "Small Republic" 1000
+		fleet "Large Republic" 2000
+		fleet "Navy Surveillance" 1600
+	system Alioth
+		fleet "Small Southern Merchants" 400
+		fleet "Large Northern Merchants" 600
+		fleet "Small Southern Pirates" 1200
+		fleet "Large Southern Pirates" 2400
+		fleet "Small Republic" 3000
+		fleet "Large Republic" 4000
+		fleet "Navy Surveillance" 1600
+
+
+
+government "Syndicate (Hostile)"
+	swizzle 4
+	color 0 .41 .71
+	"display name" "Sindacato"
+	"player reputation" -1000
+	"attitude toward"
+		"Free Worlds" -.3
+		"Pirate" -.01
+		"Korath" -.01
+	"friendly hail" "friendly syndicate"
+	"hostile hail" "hostile syndicate"
+
+mission "FW Defend New Tibet"
+	landing
+	name "Il disertore"
+	description "Recati su New Tibet per interrogare il Sindacato sul disertore che presumibilmente porta prove e informazioni vitali sul fatto che sono stati loro a orchestrare gli attentati."
+	source Wayfarer
+	destination "New Tibet"
+	passengers 2
+	to offer
+		has "FW Rand 1B: done"
+	on fail
+		dialog phrase "free worlds failed"
+	
+	on offer
+		log "Come membro del Consiglio, devi esprimere il voto decisivo su una decisione difficile. Un disertore del Sindacato sostiene di avere le prove che il Sindacato è dietro gli attentati a Martini e Geminus. Se è vero, la Repubblica potrebbe accettare di fare la pace con le Free Worlds. Ma rifiutarsi di restituire il disertore al Sindacato ci guadagnerebbe certamente la loro inimicizia."
+		conversation
+			`La flotta in orbita intorno a Wayfarer è miserevolmente piccola, di certo non abbastanza per affrontare più di un paio di navi capitali della Marina. JJ ordina a uno dei suoi ufficiali delle comunicazioni di cercare di stabilire un collegamento sicuro con Bourne o con qualsiasi presidio delle Free Worlds dall'altra parte del blocco della Marina. Dopo una decina di minuti, l'ufficiale torna e dice: "Signore, abbiamo ricevuto delle comunicazioni da New Tibet, inviate oggi. Dovete sentirle."`
+			`	"La nostra flotta è là?" chiede JJ.`
+			`	"No, signore, è il Sindacato. Il Sindacato ha una flotta da guerra ad Alioth."`
+			`	"Come?" dice JJ. Si precipita nella sala delle comunicazioni, e tu e Freya lo seguite. "Riproduci la comunicazione," dice JJ. Sullo schermo video c'è un monaco buddista in tunica color bordeaux; dietro di lui vedi altri monaci che corrono qua e là, senza nulla della serenità che di solito ti aspetteresti da loro.`
+			`	Il monaco spiega: "Prego che questa comunicazione raggiunga il Consiglio. Ieri una nave del Sindacato è atterrata vicino al nostro monastero, e il pilota ha cercato rifugio da noi. Sostiene di avere le prove che il Sindacato, o una qualche fazione al suo interno, è dietro gli attacchi a Geminus e Martini. Prove che una certa fazione del Sindacato tiene la crescita economica al di sopra di ogni altra cosa," dice il monaco, "e che ha incitato questa guerra proprio per questo."`
+			`	"È assurdo," dice Freya.`
+			`	"Ma non del tutto inverosimile," dice JJ.`
+			choice
+				`	(Continua a guardare la comunicazione.)`
+			`	Il video del monaco prosegue: "Non è stato in grado di mostrarci queste prove, ma ha affermato di avere progetti per un ordigno nucleare. Dopo essere arrivato ha nascosto la sua nave in una grotta, poco prima che una flotta del Sindacato comparisse in orbita. Non sanno dove sia atterrato il disertore, quindi hanno cominciato a perquisire insediamento per insediamento, nel presupposto che qualcuno lo stia ospitando. In questo momento sono qui, e stanno demolendo il monastero durante le ricerche."`
+			`	Dopo un momento, JJ dice: "Se queste accuse sono vere, se riusciamo a dimostrare che le Free Worlds sono innocenti da qualsiasi coinvolgimento in quegli attentati, la Repubblica potrebbe fare la pace con noi, o almeno accettare un cessate il fuoco. Io voto per dare rifugio a questo disertore e ascoltare la sua storia."`
+			`	"E se fosse una bugia," dice Freya, "e noi rifiutassimo la richiesta del Sindacato, perderemmo il nostro unico alleato. Molti altri civili moriranno se continuiamo a combattere senza il loro appoggio, e non sappiamo nemmeno che cosa siano davvero queste presunte prove. Mi interessa la giustizia, ma barattare un alleato certo per una magra possibilità di pace è un investimento poco saggio. Io voto per consegnare quest'uomo al Sindacato."`
+			choice
+				`	(Continua a guardare la comunicazione.)`
+			`	Torni a guardare lo schermo video e vedi che il monaco è sparito, sostituito da un uomo in uniforme della Sicurezza del Sindacato. "Salve, membri del Consiglio. Mi scuso per la confusione, ma per favore cercate di capire. Stiamo dando la caccia a un terrorista. Quest'uomo che sostiene che siamo stati noi a causare gli attentati è, in realtà, il capo del gruppo estremista che li ha causati. Ha sviluppato gli ordigni con l'aiuto di una fazione di pirati desiderosa di approfittare dell'instabilità, e ora, quando finalmente siamo vicini a catturarlo, tenta di attribuirci i suoi stessi crimini contro l'umanità. Lasciate che lo troviamo, e noi..."`
+			`	Il collegamento si interrompe. "Il messaggio finiva lì," dice l'ufficiale delle comunicazioni. La stanza cade nel silenzio.`
+			`	JJ rompe il silenzio. "Continuo a dire che dovremmo salvare questo disertore. Il Sindacato potrebbe mentirci. Non è che abbiano proprio una reputazione di moralità integerrima, dopotutto."`
+			`	"O questo 'disertore' potrebbe facilmente essere quello che mente," dice Freya. "Io dico di lasciarglielo, mentre ci concentriamo a difenderci dalla Marina. Se il Sindacato mette le mani sul vero terrorista, il loro appoggio ci scagionerà di sicuro. Il Parlamento non potrà ignorare il Sindacato che ci dichiara innocenti."`
+			`	Come terzo membro del Consiglio presente, hai tu il voto decisivo, e l'intero corso di questa guerra potrebbe dipendere dalla tua decisione.`
+			choice
+				`	"Io dico che salviamo il disertore, anche se significa la guerra con il Sindacato."`
+					goto rescue
+				`	"Io dico che lasciamo il terrorista al Sindacato, e concentriamoci a vincere la battaglia contro la Repubblica."`
+					goto surrender
+			label rescue
+			`	"Ne sei sicuro?" chiede Freya. "Il Sindacato ha fatto molto per noi in passato."`
+			choice
+				`	"Sì, ne sono sicuro. Salviamo il disertore."`
+					goto "definitely rescue"
+				`	"Va bene, glielo consegniamo. Ma non credo sia la cosa giusta da fare."`
+					goto "definitely surrender"
+			label surrender
+			`	"Se Katya fosse qui," dice JJ, "ci direbbe di scegliere la giustizia invece dell'opportunità politica."`
+			choice
+				`	"Beh, non è qui, e io dico che non possiamo permetterci di perdere il Sindacato come alleato."`
+					goto "definitely surrender"
+				`	"Immagino che tu abbia ragione. Organizziamo un'operazione di salvataggio."`
+					goto "definitely rescue"
+			
+			label "definitely surrender"
+			action
+				set "fw did not rescue defector"
+			`	"Molto bene," dice JJ. "In tal caso, dovremo incontrare i capitani della flotta e capire come affrontare la Marina. Ci vediamo al bar dello spazioporto fra un'ora."`
+				decline
+			
+			label "definitely rescue"
+			`	JJ sembra molto sollevato dalla tua scelta. "Penso che sia la scelta giusta, Capitano," dice. "Possiamo prendere la flotta che abbiamo qui, risalire a nord per evitare la parte più densa della flotta di occupazione della Marina, e puntare su New Tibet per interrogare il Sindacato di persona."`
+				accept
+	
+	on accept
+		event "battle of alioth"
+	
+	on enter "Alioth"
+		"reputation: Syndicate" = -1000
+		event "fw at war with Syndicate"
+		dialog "Entrando nel sistema, avvisti la flotta del Sindacato in orbita sopra New Tibet, ma con tua sorpresa comincia a prendere di mira la tua nave. Non sembrano molto interessati a rispondere a domande sul disertore."
+	
+	npc evade
+		government "Syndicate (Hostile)"
+		personality heroic staying
+		system Alioth
+		fleet
+			names "syndicate capital"
+			variant
+				"Splinter (Mark II)" 2
+				"Manta (Mark II)" 3
+				"Quicksilver (Mark II)" 5
+	npc
+		government "Free Worlds"
+		personality heroic escort disables
+		ship "Dreadnought" "F.S. Holly"
+		ship "Falcon (Plasma)" "F.S. Nebula"
+		ship "Skein" "F.S. Larkspur"
+		ship "Finch" "Charlie 6-2"
+		ship "Finch" "Charlie 0-9"
+		ship "Finch" "Charlie 3-1"
+		ship "Finch" "Charlie 9-1"
+		ship "Finch" "Charlie 1-5"
+		ship "Finch" "Charlie 8-4"
+		ship "Skein" "F.S. Ironwood"
+		ship "Finch" "Echo 5-3"
+		ship "Finch" "Echo 4-1"
+		ship "Finch" "Echo 2-3"
+		ship "Finch" "Echo 5-8"
+		ship "Finch" "Echo 2-4"
+		ship "Finch" "Echo 6-9"
+		ship "Argosy" "F.S. Nightingale"
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi del Sindacato che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		"reputation: Republic" = 1
+		event "fw armistice"
+		event "fw tarazed republic"
+		event "end battle of alioth"
+		log "People" "Sawyer" `Un disertore del Sindacato che ha deciso di rischiare la vita per fermare la guerra tra la Repubblica e le Free Worlds.`
+		conversation
+			`Non ci vuole molto a trovare il monastero che vi aveva contattato; non ne resta altro che lo scheletro bruciato degli edifici. Ti affretti ad atterrare e cerchi superstiti. Trovi diversi cadaveri vestiti di tuniche bordeaux, alcuni gravemente bruciati, ma nessuna traccia del disertore né del monaco che aveva inviato il messaggio.`
+			choice
+				`	(Aspetta di vedere se qualcuno si avvicina ora che la flotta del Sindacato se n'è andata.)`
+				`	(Rinuncia e contatta il resto della flotta delle Free Worlds per capire che cosa fare adesso.)`
+					goto leave
+			`	Aspetti un po', ma questa valle di montagna sembra del tutto desolata. Poi, alla fine, quando stai per perdere ogni speranza, Freya scorge in lontananza le figure di qualche decina di persone che scendono dal fianco di una delle montagne.`
+				goto gunboat
+			label leave
+			`	Stai per andartene quando Freya nota qualcosa e la indica. "Guarda," dice, "qualcuno sta scendendo dal versante verso di noi." In effetti è un gruppo di diverse decine di persone che indossano le inconfondibili tuniche dei monaci.`
+			label gunboat
+			`	Mentre aspetti che si avvicinino, JJ riceve un messaggio da uno degli equipaggi della milizia. "Signore, arriva qualcosa verso di voi! Una nave esploratrice, con i contrassegni della Repubblica. Apparentemente disarmata. La intercettiamo?"`
+			`	"Oathkeepers?" chiede JJ. "O Marina normale? Chi sono?"`
+			`	La voce dall'altro capo esita. "Nessuno dei due. Intelligence della Marina."`
+			`	JJ ci pensa un secondo, poi dice: "Lasciali atterrare. Ma seguili fino a terra, e se vedi anche solo un accenno che caricano le armi, abbattili. Chiaro?" L'ufficiale conferma l'ordine e chiude.`
+			`	Mentre il gruppo di monaci si avvicina dal versante, la nave esploratrice si prepara ad atterrare e si ferma sollevando polvere a qualche decina di metri. Ne scende una donna. Ha la pelle scura ed è vestita interamente di nero. Persino il bianco dei suoi occhi è nero: quando si avvicina, vedi che in realtà è un tatuaggio sclerale, un intricato disegno di nodi celtici inciso nel bianco degli occhi. Si accorge che la stai fissando e ti fa l'occhiolino con un sorriso amichevole.`
+			choice
+				`	"Sono il capitano <last> delle Free Worlds. Che cosa ci fai qui?"`
+				`	"Chi sei, e chi ti dà il diritto di atterrare sul nostro pianeta?"`
+					goto hostile
+			`	"Mi chiamo Raven," dice. "Sono qui per interrogare questo disertore. Se dice la verità, la nostra guerra con voi finirà oggi." Si ferma, poi aggiunge, cupa: "E comincerà un'altra guerra."`
+				goto questioning
+			label hostile
+			`	Aggrotta la fronte. "Mi chiamo Raven," dice. "Sono qui per interrogare questo disertore. Se vi interessa conoscere la verità, mi lascerete farlo."`
+			label questioning
+			`	I monaci si avvicinano, e vedi che fra loro c'è un uomo in abiti più comuni, che dev'essere il disertore. "Ora," dice Raven, "lo interrogherò da sola, sulla mia nave."`
+			choice
+				`	"No, insistiamo per essere presenti al tuo interrogatorio."`
+					goto present
+				`	"Molto bene, aspetteremo fuori."`
+			`	"No!" dice JJ. "Restiamo qui."`
+			label present
+			`	Esita a lungo. Questo probabilmente va contro qualsiasi ordine stia seguendo. Ma alla fine dice: "Va bene." I monaci si fanno da parte. Si avvicina al disertore e gli tende le mani. Lui, esitando, prende le sue. È una scena stranamente intima, i due che si tengono le mani in silenzio e si guardano negli occhi: niente a che vedere con qualsiasi interrogatorio tu abbia mai visto. "Ora," dice lei, "raccontami la tua storia."`
+			`	"Mi chiamo Sawyer," dice l'uomo. "Sono un fisico, dipendente del Sindacato. Avevamo un progetto segreto su Mutiny, un pianeta in un sistema pirata. Stavamo sviluppando armi nucleari." Esita, e distoglie lo sguardo per un secondo, poi dice: "Mi avevano detto che servivano per combattere i pirati. Non ho capito che era altro finché..."`
+			`	"Questa è una bugia," dice Raven, con calma.`
+			`	Sembra confuso. "Va bene, non mi avevano detto a cosa servivano le armi, e io non ho chiesto."`
+			choice
+				`	"Perché il Sindacato dovrebbe attaccare la Repubblica?"`
+				`	"Perché hai aspettato tanto a denunciare questa cosa?"`
+					goto wait
+			`	Entrambi sembrano sorpresi che tu abbia fatto una domanda. Sawyer dice: "La guerra fa bene agli affari, soprattutto se il tuo business è fabbricare armi. I profitti del Sindacato sono più che raddoppiati da quando è cominciato questo conflitto."`
+			`	"Che cosa ti ha spinto a denunciare questa cosa?" chiede Raven.`
+			label wait
+			`	Dice: "È stato quando ho sentito che c'era stata un'altra grande battaglia. Fino a quel momento mi ero detto che il peggio del danno era fatto. Ma dopo quella battaglia ho capito che altri milioni potevano morire a causa del nostro crimine, e che avevo il potere di fermarlo."`
+			`	Raven continua a fare domande: chi era coinvolto, come era stato nascosto l'impianto, da dove venivano le materie prime. A un certo punto, JJ ti tira da parte e dice: "Dev'essere una degli Interrogatori. Il loro modo di operare è un segreto ben custodito. Avevo sempre pensato che i loro metodi fossero... un po' più medievali."`
+			`	Alla fine Raven è soddisfatta, e chiama la sua nave via radio. "Dice la verità," li avverte. "Mandate subito parola agli ammiragli. E liberate il prigioniero."`
+			`	La porta della sua nave scorre e ne esce un'altra donna, tremante, esitante, che si fa schermo con la mano contro la luce del sole. Ti ci vogliono un paio di secondi per capire che è Katya.`
+			`	Mentre vi precipitate tutti a salutare Katya, Raven ti tocca la spalla e dice sottovoce: "Incontrami allo spazioporto principale fra qualche ora e decideremo che cosa succederà adesso." Torna alla sua nave.`
+
+
+
+mission "FW Liberate Delta Sagittarii"
+	name "Libera Delta Sagittarii"
+	description "Guida una flotta delle Free Worlds a scacciare la Marina da Delta Sagittarii. Un'altra flotta dovrebbe arrivare dal Bordo più o meno nello stesso momento."
+	source Wayfarer
+	destination "New Portland"
+	clearance
+	passengers 2
+	to offer
+		has "FW Rand 1B: done"
+		not "FW Defend New Tibet: done"
+	to accept
+		has "fw did not rescue defector"
+	
+	on offer
+		event "fwc southern battle"
+		conversation
+			`Quando tu e Freya entrate nel bar dello spazioporto, JJ sta parlando con qualcuno al comunicatore. "La parola d'ordine è 'scompiglio'," dice. "Sì, ne sono certo. È l'unica opzione che ci resta. Buona fortuna."`
+			`	"Di che cosa si trattava?" chiede Freya.`
+			`	JJ dice: "Stavo chiamando dei rinforzi," spiega. "Un gruppo di ex miliziani e cacciatori di taglie che vogliono sostenere la causa delle Free Worlds, ma farlo da freelance invece di prendere ordini da noi o dal Senato. Si fanno chiamare il 'Branco di Lupi'. Ne hai mai sentito parlare?"`
+			branch know
+				has "FW Wolf Pack 2: offered"
+			choice
+				`	"No, mai sentiti."`
+			`	"Peccato," dice JJ, "sono riusciti a mettere le mani su una tecnologia che mi piacerebbe avere. Comunque, hanno accettato di fare un primo attacco mordi e fuggi contro la flotta della Marina per ammorbidirla, prima che arrivi la nostra."`
+				goto plan
+			label know
+			choice
+				`	"Sì, li ho aiutati a procurarsi una tecnologia migliore per i collettori ramscoop da Deep."`
+					goto yes
+				`	"No, non ho mai avuto a che fare con loro."`
+			`	"Strano," dice JJ, "pensavo avessero detto che li avevi aiutati a mettere le mani sul Ramscoop Catalitico. Comunque, hanno accettato di fare un primo attacco mordi e fuggi contro la flotta della Marina per ammorbidirla, prima che arrivi la nostra."`
+				goto plan
+			label yes
+			`	"Ah già," dice JJ, "un eccellente pezzo di spionaggio industriale. Un po' losco e sottobanco, naturalmente, ed è per questo che lasciamo che il Branco di Lupi si occupi di cose simili invece di farlo per canali ufficiali. Comunque, hanno accettato di fare un primo attacco mordi e fuggi contro la flotta della Marina per ammorbidirla, prima che arrivi la nostra."`
+			
+			label plan
+			`	"Dovrà essere un attacco coi fiocchi perché serva a qualcosa," dice Freya.`
+			`	"Non preoccuparti," dice JJ, "lo sarà. Sono mesi che non vedono l'ora di entrare nella mischia. Capitano <last>, vorremmo che tu volassi insieme alla flotta e aiutassi a ripulire quello che il Branco di Lupi lascia dietro di sé nel sistema Delta Sagittarii. Poi atterreremo su New Portland e decideremo quali sono i prossimi passi. Freya e io viaggeremo sulla tua nave."`
+				accept
+	
+	on visit
+		dialog `Sei atterrato su <planet>, ma ci sono ancora navi della Marina che girano là sopra. Dovresti decollare e aiutare a finirle.`
+	on complete
+		event "fwc southern liberation"
+	
+	npc
+		government "Free Worlds"
+		personality heroic escort
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Plasma)"
+				"Osprey"
+		fleet
+			names "free worlds capital"
+			variant
+				"Falcon (Heavy)"
+		fleet
+			names "free worlds capital"
+			fighters
+				names "free worlds fighters"
+			variant
+				"Skein" 2
+				"Finch" 12
+		fleet
+			names "free worlds capital"
+			variant
+				"Dreadnought"
+	
+	npc evade
+		personality staying heroic
+		system "Delta Sagittarii"
+		government "Republic"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Lance" 8
+				"Combat Drone" 6
+				"Gunboat (Mark II)" 3
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Combat Drone" 4
+				"Rainmaker (Mark II)" 2
+	
+	npc
+		personality staying derelict
+		system "Delta Sagittarii"
+		government "Republic"
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Carrier (Mark II)"
+				"Frigate" 2
+		fleet
+			names "republic capital"
+			fighters
+				names "republic fighter"
+			variant
+				"Cruiser (Mark II)"
+				"Frigate" 4
+	
+	npc
+		personality staying heroic
+		system "Rastaban"
+		government "Free Worlds"
+		fleet "Large Free Worlds" 4
+	npc
+		personality staying derelict
+		system "Rastaban"
+		government "Republic"
+		fleet "Large Republic" 2
+	npc
+		personality staying heroic
+		system "Rastaban"
+		government "Republic"
+		fleet "Large Republic" 2

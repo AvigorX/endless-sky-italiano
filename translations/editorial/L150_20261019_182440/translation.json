@@ -1,0 +1,165 @@
+{
+ "block": {
+  "path": "data/coalition/coalition jobs.txt",
+  "line_from": 639,
+  "line_to": 794,
+  "units": 14
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:Coalition: Tourists Out 1|name|639|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 639,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Tourists Out 1",
+   "english": "Vacationers to <planet>",
+   "italian": "Vacanzieri per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "mission:Coalition: Tourists Out 1|description|640|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 640,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Tourists Out 1",
+   "english": "These <bunks> tourists will pay you <payment> to bring them to <destination> and desire to travel in a very comfortable ship. Payment is void if they do not arrive by <date>.",
+   "italian": "Questi <bunks> turisti ti pagheranno <payment> per portarli a <destination> e desiderano viaggiare su una nave molto confortevole. Il compenso decade se non arrivano entro il <date>.",
+   "ratio": 1.046
+  },
+  {
+   "idx": 3,
+   "id": "mission:Coalition: Tourists Out 2|name|664|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 664,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Tourists Out 2",
+   "english": "Vacationers to <planet>",
+   "italian": "Vacanzieri per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 4,
+   "id": "mission:Coalition: Tourists Out 2|description|665|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 665,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Tourists Out 2",
+   "english": "These <bunks> tourists will pay you <payment> to bring them to <destination> and desire to travel in a very comfortable ship. Payment is void if they do not arrive by <date>.",
+   "italian": "Questi <bunks> turisti ti pagheranno <payment> per portarli a <destination> e desiderano viaggiare su una nave molto confortevole. Il compenso decade se non arrivano entro il <date>.",
+   "ratio": 1.046
+  },
+  {
+   "idx": 5,
+   "id": "mission:Coalition: Tourists Out 3|name|689|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 689,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Tourists Out 3",
+   "english": "Vacationers to <planet>",
+   "italian": "Vacanzieri per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 6,
+   "id": "mission:Coalition: Tourists Out 3|description|690|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 690,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Tourists Out 3",
+   "english": "These <bunks> tourists will pay you <payment> to bring them to <destination> and desire to travel in a very comfortable ship. Payment is void if they do not arrive by <date>.",
+   "italian": "Questi <bunks> turisti ti pagheranno <payment> per portarli a <destination> e desiderano viaggiare su una nave molto confortevole. Il compenso decade se non arrivano entro il <date>.",
+   "ratio": 1.046
+  },
+  {
+   "idx": 7,
+   "id": "phrase:coalition tourists homebound|The tourists thank you for bringing them home and pay you <payment>.|714|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 714,
+   "kind": "TEXT",
+   "context": "phrase:coalition tourists homebound",
+   "english": "The tourists thank you for bringing them home and pay you <payment>.",
+   "italian": "I turisti ti ringraziano per averli riportati a casa e ti pagano <payment>.",
+   "ratio": 1.103
+  },
+  {
+   "idx": 8,
+   "id": "mission:Coalition: Tourists Home 1|name|719|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 719,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Tourists Home 1",
+   "english": "Vacationers to <planet>",
+   "italian": "Vacanzieri per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 9,
+   "id": "mission:Coalition: Tourists Home 1|description|720|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 720,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Tourists Home 1",
+   "english": "These <bunks> tourists will pay you <payment> to bring them home to <destination> and desire to travel in a very comfortable ship. Payment is void if they do not arrive by <date>.",
+   "italian": "Questi <bunks> turisti ti pagheranno <payment> per riportarli a casa a <destination> e desiderano viaggiare su una nave molto confortevole. Il compenso decade se non arrivano entro il <date>.",
+   "ratio": 1.067
+  },
+  {
+   "idx": 10,
+   "id": "mission:Coalition: Tourists Home 2|name|744|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 744,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Tourists Home 2",
+   "english": "Vacationers to <planet>",
+   "italian": "Vacanzieri per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 11,
+   "id": "mission:Coalition: Tourists Home 2|description|745|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 745,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Tourists Home 2",
+   "english": "These <bunks> tourists will pay you <payment> to bring them home to <destination> and desire to travel in a very comfortable ship. Payment is void if they do not arrive by <date>.",
+   "italian": "Questi <bunks> turisti ti pagheranno <payment> per riportarli a casa a <destination> e desiderano viaggiare su una nave molto confortevole. Il compenso decade se non arrivano entro il <date>.",
+   "ratio": 1.067
+  },
+  {
+   "idx": 12,
+   "id": "mission:Coalition: Tourists Home 3|name|769|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 769,
+   "kind": "VALUE",
+   "context": "mission:Coalition: Tourists Home 3",
+   "english": "Vacationers to <planet>",
+   "italian": "Vacanzieri per <planet>",
+   "ratio": 1.0
+  },
+  {
+   "idx": 13,
+   "id": "mission:Coalition: Tourists Home 3|description|770|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 770,
+   "kind": "DESCRIPTION",
+   "context": "mission:Coalition: Tourists Home 3",
+   "english": "These <bunks> tourists will pay you <payment> to bring them home to <destination> and desire to travel in a very comfortable ship. Payment is void if they do not arrive by <date>.",
+   "italian": "Questi <bunks> turisti ti pagheranno <payment> per riportarli a casa a <destination> e desiderano viaggiare su una nave molto confortevole. Il compenso decade se non arrivano entro il <date>.",
+   "ratio": 1.067
+  },
+  {
+   "idx": 14,
+   "id": "phrase:coalition fast courier|The recipient thanks you for bringing the <commodity> here so quickly, and pays you <payment>.|794|0",
+   "path": "data/coalition/coalition jobs.txt",
+   "line": 794,
+   "kind": "TEXT",
+   "context": "phrase:coalition fast courier",
+   "english": "The recipient thanks you for bringing the <commodity> here so quickly, and pays you <payment>.",
+   "italian": "Il destinatario ti ringrazia per aver portato il <commodity> qui così in fretta e ti paga <payment>.",
+   "ratio": 1.064
+  }
+ ]
+}

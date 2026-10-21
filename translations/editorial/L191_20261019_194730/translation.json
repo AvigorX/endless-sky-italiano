@@ -1,0 +1,143 @@
+{
+ "block": {
+  "path": "data/bunrodea/bunrodea missions.txt",
+  "line_from": 16,
+  "line_to": 52,
+  "units": 12
+ },
+ "note": "",
+ "units": [
+  {
+   "idx": 1,
+   "id": "mission:First Contact: Bunrodea (Hostile)|name|16|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 16,
+   "kind": "VALUE",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "An Intriguing Invitation",
+   "italian": "An Intriguing Invitation",
+   "ratio": 1.0
+  },
+  {
+   "idx": 2,
+   "id": "mission:First Contact: Bunrodea (Hostile)|description|17|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 17,
+   "kind": "DESCRIPTION",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "You have received an invitation, or summons, to the marked system by some mantis-like aliens who seem to have been following you around human space.",
+   "italian": "Hai ricevuto un invito, o forse una convocazione, nel sistema indicato da parte di alieni simili a mantidi che sembrano averti seguito in giro per lo spazio umano.",
+   "ratio": 1.101
+  },
+  {
+   "idx": 3,
+   "id": "mission:First Contact: Bunrodea (Hostile)|When you depart your ship, you're startled by a small alien ship uncloaking right in front of you. Two elegant mantis-like creatures step off it, each holding a strange looking weapon pointed directly at you. They have four long insectoid legs and two arms. Although their arms end in what look like hands, they also have strange claw-like features that partially enclose them, extending outward from their forearms to grasp their weapons. You look around to see if there's anyone else witnessing this, but you've landed at <origin>'s main spaceport in the middle of the night, leaving you as the only human in sight.|38|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 38,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "When you depart your ship, you're startled by a small alien ship uncloaking right in front of you. Two elegant mantis-like creatures step off it, each holding a strange looking weapon pointed directly at you. They have four long insectoid legs and two arms. Although their arms end in what look like hands, they also have strange claw-like features that partially enclose them, extending outward from their forearms to grasp their weapons. You look around to see if there's anyone else witnessing this, but you've landed at <origin>'s main spaceport in the middle of the night, leaving you as the only human in sight.",
+   "italian": "Quando scendi dalla nave, sussulti: una piccola astronave aliena si sta rendendo visibile proprio davanti a te. Ne scendono due eleganti creature simili a mantidi, ognuna con un'arma dall'aspetto strano puntata dritta verso di te. Hanno quattro lunghe zampe da insetto e due braccia. Sebbene le braccia terminino in qualcosa che sembra una mano, hanno anche strane strutture simili ad artigli che le racchiudono in parte, estendendosi in avanti dall'avambraccio per impugnare le armi. Ti guardi intorno per vedere se qualcun altro stia assistendo alla scena, ma sei atterrato nello spazioporto principale di <origin> nel cuore della notte, e sei l'unico umano in vista.",
+   "ratio": 1.084
+  },
+  {
+   "idx": 4,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tThe aliens begin speaking to you in a language you don't understand, their words interspersed with clicking noises. As one of them speaks, they sound almost robotic, as if they are speaking through a synthesizer. Taking a closer look, you spot what you can only guess are cybernetic modifications to parts of the alien's body; the alien's throat and one of its eyes look non-organic, as well as the joints of its legs. The other one has no such visible modifications, though.|39|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 39,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tThe aliens begin speaking to you in a language you don't understand, their words interspersed with clicking noises. As one of them speaks, they sound almost robotic, as if they are speaking through a synthesizer. Taking a closer look, you spot what you can only guess are cybernetic modifications to parts of the alien's body; the alien's throat and one of its eyes look non-organic, as well as the joints of its legs. The other one has no such visible modifications, though.",
+   "italian": "\tGli alieni cominciano a parlarti in una lingua che non capisci, le loro parole intervallate da rumori di clic. Quando uno dei due parla, suona quasi robotico, come se parlasse attraverso un sintetizzatore. Guardando meglio, noti quelle che puoi solo supporre siano modifiche cibernetiche su alcune parti del corpo dell'alieno: la gola e uno degli occhi sembrano non organici, così come le articolazioni delle zampe. L'altro però non ha modifiche visibili di questo tipo.",
+   "ratio": 0.989
+  },
+  {
+   "idx": 5,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\t\"Do you come in peace?\"|41|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 41,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\t\"Do you come in peace?\"",
+   "italian": "\t\"Vieni in pace?\"",
+   "ratio": 0.708
+  },
+  {
+   "idx": 6,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\t\"I don't understand a word you're saying.\"|42|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 42,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\t\"I don't understand a word you're saying.\"",
+   "italian": "\t\"Non capisco una parola di quello che dici.\"",
+   "ratio": 1.047
+  },
+  {
+   "idx": 7,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\t\"Don't shoot! I'll take you to my leader.\"|43|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 43,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\t\"Don't shoot! I'll take you to my leader.\"",
+   "italian": "\t\"Non sparare! Ti porto dal mio capo.\"",
+   "ratio": 0.884
+  },
+  {
+   "idx": 8,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tThe aliens look at each other and say a few words. One of them grabs a small device from a belt and throws it on the ground in front of you.|44|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 44,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tThe aliens look at each other and say a few words. One of them grabs a small device from a belt and throws it on the ground in front of you.",
+   "italian": "\tGli alieni si guardano e si scambiano qualche parola. Uno di loro prende un piccolo dispositivo da una cintura e lo getta a terra davanti a te.",
+   "ratio": 1.021
+  },
+  {
+   "idx": 9,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\t(Pick it up.)|46|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 46,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\t(Pick it up.)",
+   "italian": "\t(Raccoglilo.)",
+   "ratio": 1.0
+  },
+  {
+   "idx": 10,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\t(Dodge for cover.)|47|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 47,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\t(Dodge for cover.)",
+   "italian": "\t(Schiva e mettiti al riparo.)",
+   "ratio": 1.579
+  },
+  {
+   "idx": 11,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tYou pick up the device and look at it. It springs open in your hand, causing you to drop it. After it falls to the ground, it begins projecting a holographic star map. You recognize some of the systems on the map as those where you fought an alien fleet, made up of ships similar to the one in front of you. A single system within that region is highlighted. The aliens return to their ship, which becomes invisible again, and although you can't see it, you hear it take off and fly away.|49|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 49,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tYou pick up the device and look at it. It springs open in your hand, causing you to drop it. After it falls to the ground, it begins projecting a holographic star map. You recognize some of the systems on the map as those where you fought an alien fleet, made up of ships similar to the one in front of you. A single system within that region is highlighted. The aliens return to their ship, which becomes invisible again, and although you can't see it, you hear it take off and fly away.",
+   "italian": "\tRaccogli il dispositivo e lo guardi. Ti scatta aperto in mano, facendoti sobbalzare e cadere. Dopo che è caduto a terra, inizia a proiettare una mappa stellare olografica. Riconosci alcuni dei sistemi sulla mappa: sono quelli dove hai combattuto una flotta aliena, fatta di navi simili a quella davanti a te. Un solo sistema in quella regione è evidenziato. Gli alieni tornano sulla loro nave, che diventa di nuovo invisibile, e anche se non riesci a vederla, la senti decollare e allontanarsi.",
+   "ratio": 1.012
+  },
+  {
+   "idx": 12,
+   "id": "mission:First Contact: Bunrodea (Hostile)|\tYou dodge for cover behind your ship. After a few seconds, you hear a springing sound. When you look back out from behind your ship, the aliens are gone, and the device they threw at you is now projecting a holographic star map. You recognize some of the systems on the map as those where you fought an alien fleet, made up of ships similar to the one in front of you. A single system within that region is highlighted. The alien ship becomes invisible once again, and although you can't see it, you hear it take off and fly away.|52|0",
+   "path": "data/bunrodea/bunrodea missions.txt",
+   "line": 52,
+   "kind": "MISSION_TEXT",
+   "context": "mission:First Contact: Bunrodea (Hostile)",
+   "english": "\tYou dodge for cover behind your ship. After a few seconds, you hear a springing sound. When you look back out from behind your ship, the aliens are gone, and the device they threw at you is now projecting a holographic star map. You recognize some of the systems on the map as those where you fought an alien fleet, made up of ships similar to the one in front of you. A single system within that region is highlighted. The alien ship becomes invisible once again, and although you can't see it, you hear it take off and fly away.",
+   "italian": "\tSchivi e ti metti al riparo dietro la tua nave. Dopo qualche secondo senti un rumore di scatto. Quando ti affacci da dietro la nave, gli alieni sono spariti e il dispositivo che ti hanno lanciato sta proiettando una mappa stellare olografica. Riconosci alcuni dei sistemi sulla mappa: sono quelli dove hai combattuto una flotta aliena, fatta di navi simili a quella davanti a te. Un solo sistema in quella regione è evidenziato. La nave aliena diventa di nuovo invisibile, e anche se non riesci a vederla, la senti decollare e allontanarsi.",
+   "ratio": 1.019
+  }
+ ]
+}

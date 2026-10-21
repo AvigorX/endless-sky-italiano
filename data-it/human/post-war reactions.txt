@@ -1,0 +1,265 @@
+# Copyright (c) 2022-2023 by an anonymous author
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+mission "Main Plot Completed Date"
+	landing
+	invisible
+	non-blocking
+	to offer
+		has "main plot completed"
+	on offer
+		"main plot completed date" = "days since start"
+		fail
+
+
+
+mission "War Reactions: Asteroid Miners"
+	minor
+	landing
+	source
+		government "Republic"
+		attributes "deep" "paradise" "north"
+		attributes "spaceport"
+	to offer
+		has "main plot completed date"
+		"days since start" - "main plot completed date" > 30
+		random < 30
+	on offer
+		"war reactions" ++
+		conversation
+			`Mentre scendi dalla nave, vedi una folla che guarda uno schermo video non lontano dal punto di atterraggio. Il video salta tra una tavola rotonda e le riprese dell'ammiraglio Danforth incalzato dal Parlamento. Quando arrivi è già finito, e molti dei curiosi se ne sono già andati per i fatti loro. Restano però due capitani che, a sentire, stanno discutendo animatamente del video.`
+			choice
+				`	"Ehi. Di che parlava quel video?"`
+				`	(Lasciali stare.)`
+					decline
+			`	Sussulti quando i due capitani si voltano verso di te: sono gemelli, con basettoni assurdi e baffi da topo. È impossibile capire se stiano sorridendo o aggrottando le ciglia, perché la coppia vive in pieno nella valle perturbante.`
+			`	Il gemello di sinistra chiede: "Ci credi? Sono passate settimane e tutti sono ancora ossessionati dall'invasione dei Pug. All'inizio le notizie erano tutte esperti e funzionari, ora vediamo solo teste parlanti e complottisti."`
+			`	Il gemello di destra risponde, incredulo: "È solo un esercizio di propaganda per gonfiare le vendite del Sindacato. Anche se questi sfuggenti 'Pug' esistessero, non la smetteremo di sentirne parlare finché la storia farà salire la popolarità del Sindacato."`
+			choice
+				`	"È stato forse l'evento più grande del secolo. Ovvio che la gente continui a parlarne."`
+				`	"Ah, i Pug erano veri eccome. Ne ho incontrati e ci ho combattuto."`
+					goto nobody
+				`	"Secondo me dovreste radervi, tutti e due."`
+					goto scowl
+			`	Un gemello alza gli occhi al cielo mentre l'altro fa guizzare i baffi con imbarazzo. Riavvolge il video fino alla discussione parlamentare, dove Danforth rassicura i consiglieri sulla capacità della Marina di pattugliare i margini dello spazio umano.`
+			`	Il gemello di sinistra dice: "Guarda questo pagliaccio! Il consigliere di Bounty, Maduena Kabiru, non fa che sbraitare contro questo tipo della Marina, ehm, questo ammiraglio..." Schiocca le dita cercando di ricordare il nome.`
+			`	"Ammiraglio Danforth", dice il gemello di destra.`
+			`	"Già. Danforth. Questo consigliere vuole che Danforth ci difenda dai 'pericoli sconosciuti ai margini dello spazio umano'. Non abbiamo già abbastanza problemi immediati senza immaginarne di nuovi?"`
+			`	"Come i terroristi con la bomba", dice il gemello di destra.`
+			choice
+				`	"La Marina è capace e onorevole. Mi fido di loro per proteggerci."`
+					goto eyes
+				`	"No, non preoccuparti. Ho posto fine alla minaccia della bomba."`
+					to display
+						has "free worlds reconciliation"
+				`	"Forse hai ragione."`
+					goto shrug
+				`	"Possiamo solo andare avanti con la nostra vita, no?"`
+					goto shrug
+				`	"Se non vi radete presto, la gente penserà che portiate delle maschere."`
+					goto scowl
+			label nobody
+			`	Ridono entrambi di gusto, e i loro baffi ondeggiano nella brezza del loro stesso respiro.`
+			`	Il gemello di sinistra dice: "E tu chi saresti, ammiraglio Danforts?"`
+			`	Il gemello lo corregge: "Danforth. Ammiraglio Danforth. La Marina ti ha licenziato o sei qui in vacanza?"`
+			choice
+				`	"Sei vissuto sotto un sasso per tutta la guerra? Sono il capitano <first> <last>!"`
+				`	"Lascia stare."`
+					goto shrug
+				`	"Almeno io non ho un criceto arruffato incollato al labbro superiore."`
+					goto scowl
+			`	Entrambi i gemelli sembrano confusi, e quello di sinistra risponde: "Abbiamo estratto minerali dagli asteroidi per tutta la guerra. La guerra è stata un evento enorme, ma quasi tutti noi dovevamo continuare a vivere. Credi che abbiamo tempo di tenere traccia di ogni capitano in guerra?"`
+			`	Quello di destra dice, con aria di scusa: "Grazie per il tuo servizio, capitano <last>."`
+			`	Fanno entrambi un saluto goffo ma pieno di buone intenzioni e tornano alle loro navi.`
+				decline
+			label eyes
+			`	Il gemello di sinistra ride e dice: "Perdonaci se teniamo gli occhi aperti e ci affidiamo ai nostri cannoni." Entrambi i gemelli annuiscono e tornano alle loro navi.`
+				decline
+			label shrug
+			`	I gemelli alzano le spalle e tornano alle navi.`
+				decline
+			label scowl
+			`	Le facce di entrambi i gemelli si torcono in un modo che potrebbe indicare imbarazzo o fastidio. È difficile dirlo, perché i loro peli del viso bloccano ogni capacità espressiva. Si allontanano verso le loro navi.`
+				decline
+
+
+
+mission "War Reactions: Navy and Free Worlds Captains"
+	minor
+	source
+		government "Republic" "Syndicate" "Free Worlds"
+		attributes "spaceport"
+		near "Sirius" 5 100
+	to offer
+		has "main plot completed date"
+		"days since start" - "main plot completed date" > 30
+		random < 30
+	on offer
+		"war reactions" ++
+		conversation
+			`Ti stai rilassando in un bar mentre la tua nave fa rifornimento, e due capitani di mezza età si avvicinano al tuo tavolo. Uno è della Marina, l'altro dei Free Worlds, e si somigliano in modo impressionante.`
+			`	"Capitano Rain, R.N.S. Camuy", dice uno. "Come va la <ship>, capitano <last>?"`
+			`	"Capitano Fiona, F.S. Baobab", dice l'altra. "Ti abbiamo visto entrambi in battaglia contro i Pug. Sei il capitano più valente della guerra!`
+			`	"Stavamo pattugliando insieme e abbiamo visto la tua nave, così siamo venuti a salutarti."`
+			label questions
+			action
+				"WR: Captains: question" ++
+			choice
+				`	"Perché dei capitani della Marina e dei Free Worlds viaggiano insieme?"`
+					goto navy
+					to display
+						not "WR: Captains: navy"
+				`	"Avete trovato nuovi alieni?"`
+					goto aliens
+					to display
+						not "WR: Captains: aliens"
+						has "WR: Captains: navy"
+				`	"Avete combattuto su fronti opposti nella guerra?"`
+					goto sister
+					to display
+						not "WR: Captains: sister"
+				`	"Eravate su fronti opposti, pur essendo sorelle!?"`
+					goto opposite
+					to display
+						has "WR: Captains: sister"
+						not "WR: Captains: opposite"
+				`	"È stato bello conoscervi entrambi, ma ora devo tornare ai miei affari."`
+					decline
+					to display
+						"WR: Captains: question" > 1
+				`	"Salve. Scusa, ma non ho molto tempo per parlare."`
+					to display
+						"WR: Captains: question" <= 1
+			`	"Ah, avremmo dovuto capire che eri troppo impegnato per chiacchierare", dice il capitano Rain.`
+			`	"La guerra sarà anche finita, ma sono sicura che ci sia ancora molto lavoro per un capitano come te", dice il capitano Fiona. "Beh, almeno è stato bello conoscerti. Stammi bene."`
+				decline
+			
+			label navy
+			action
+				set "WR: Captains: navy"
+			`	"Un'operazione di polizia congiunta", dice il capitano Rain. "È più comune di quanto tu possa pensare."`
+			`	Il capitano Fiona annuisce. "Stiamo smantellando un'operazione di contrabbando di Spider Funk su scala galattica. È un allucinogeno illegale. Non dà dipendenza, ma resta pericoloso. L'organizzazione che lo gestisce è enorme, ben finanziata e ben armata."`
+			`	"Però non è alla pari di una corazzata e di un'ausiliaria", si vanta Rain.`
+			`	"Dobbiamo volare per tutto lo spazio della Repubblica e dei Free Worlds, così pattugliamo insieme con una nave per stato."`
+			`	"Certo, abbiamo un'altra missione", dice Fiona. "Ovunque andiamo, teniamo d'occhio nuove attività aliene."`
+				goto questions
+			
+			label aliens
+			action
+				set "WR: Captains: aliens"
+			`	"Solo il solito campionario di bufale", dice Rain. Ridono entrambe.`
+			`	"Scherzi a parte, sia il Senato dei Free Worlds sia il Parlamento della Repubblica sono sul piede di guerra per paura degli alieni", dice Fiona. Rain aggiunge: "Sul piede di guerra solo in senso metaforico, questa volta.`
+			`	"Se troviamo nuovi alieni, avviseremo le autorità competenti il prima possibile. Fai lo stesso anche tu. Sii discreto, evita i conflitti e chiedi aiuto se ti serve."`
+				goto questions
+			
+			label sister
+			action
+				set "WR: Captains: sister"
+			`	"Già", dice Fiona, "essere mia sorella non mi ha impedita di far saltare il suo incrociatore! Però abbiamo recuperato le capsule della sua nave: puntavano verso una stella in modo preoccupante."`
+			`	Rain continua: "Immagina la mia sorpresa quando mi sono svegliata sulla nuova corazzata di mia sorella."`
+			`	"Ehi, dopo ti hanno dato il comando di una nuova ausiliaria", risponde Fiona, dando un colpetto a Rain mentre lo dice, "e tutto il tuo equipaggio è sopravvissuto. Ora ci scortiamo a vicenda le navi durante le indagini!"`
+				goto questions
+			
+			label opposite
+			action
+				set "WR: Captains: opposite"
+			`	"Beh, anni fa Rain è partita per la Terra per entrare all'Accademia della Marina", dice il capitano Fiona.`
+			`	"E Fiona è rimasta su Longjump e si è unita alla milizia locale prima che si formassero i Free Worlds", dice il capitano Rain. "Non è che volessimo combatterci, ma credevamo entrambe nelle nostre parti."`
+				goto questions
+
+
+
+mission "War Reactions: Syndicate Orphan"
+	minor
+	landing
+	source
+		government "Syndicate"
+		attributes "spaceport"
+		not attributes "station"
+	to offer
+		has "main plot completed date"
+		"days since start" - "main plot completed date" > 20
+		random < 30
+	on offer
+		"war reactions" ++
+		conversation
+			`Quando esci dall'area di atterraggio, senti il rumore di pugni sulla pelle e un ragazzo che grida aiuto. Dietro l'angolo ci sono tre ragazzi dall'aria trasandata che picchiano un quarto, appena caduto a terra. Non è chiaro se smetteranno di attaccarlo.`
+			choice
+				`	"Basta così, ragazzi."`
+				`	(Ignorali e continua a camminare.)`
+					decline
+			`	I tre aggressori si voltano, furiosi. Danno un'occhiata alla pistola nella tua fondina e scappano.`
+			`	Il ragazzo a terra si rialza lentamente. Dimostra una dozzina d'anni. Gli servono alcuni secondi per riprendersi. "Grazie. Non sono molti, qui in giro, quelli che aiuterebbero così. Sono Gus." Sembra preoccupato e chiede: "Mi accompagni all'officina? Sono già in ritardo per il lavoro, e temo che mi attacchino di nuovo."`
+			label questions
+			choice
+				`	"Perché quei ragazzi ti stavano attaccando?"`
+					goto attacking
+					to display
+						not "WR: Orphan: attacking"
+				`	"Non sei un po' giovane per lavorare in un'officina?"`
+					goto young
+				`	"Ho fretta. Arrangiati da solo."`
+					decline
+					to display
+						not "WR: Orphan: attacking"
+				`	"È dura, amico, ma ho fretta. Arrangiati da solo."`
+					decline
+					to display
+						has "WR: Orphan: attacking"
+			label attacking
+			action
+				set "WR: Orphan: attacking"
+			`	"Mio fratello è un soldato semplice di terza classe del Servizio di Sicurezza Ausiliario del Sindacato." Sorride con orgoglio: si vede che ha provato quella battuta. "Controlla i luoghi di lavoro del Sindacato e la settimana scorsa ha denunciato quei ragazzi perché fumavano durante il turno. Immagino che ora si siano presi una pausa dall'officina e siano venuti a cercare me, dato che non possono far male a mio fratello."`
+				goto questions
+			label young
+			`	Mentre cominci a camminare, risponde. "No, sono orfano." Vede che sei confuso e spiega. "Il Sindacato lascia che alcuni di noi orfani lavorino nell'industria. In cambio ci dà una scuola migliore, una casa più bella e le visite mediche." Si gonfia di orgoglio. "Solo i più svegli di noi possono farlo. E tutti i lavori per gli orfani sono sicuri: non usiamo macchinari grandi e pericolosi. Solo roba normale, come martelli, saldatori o macchine da cucire.`
+			`	"Aspetta un attimo!" All'improvviso ti guarda con gli occhi sgranati. "Sei un capitano, vero? Hai partecipato alle grandi battaglie? Ero su Maker quando ho visto delle navi Pug combattere contro le nostre sul grande schermo didattico della scuola."`
+			choice
+				`	"Sì, sono il capitano <first> <last>."`
+					goto me
+				`	"Ho fatto saltare la mia parte di navi Pug."`
+					goto blew
+				`	"A dire il vero, ho guidato io la battaglia."`
+			`	"Oh, aspetta", dice, tirando fuori un tablet dall'aria robusta con l'etichetta "Dispositivo per l'Infanzia del Sindacato". Dopo aver digitato e sfogliato un po', dichiara: "Sei il capitano <first> <last>! Wow! È un onore conoscerti. Posso stringerti la mano?" Ti tende la mano e tu la stringi.`
+				goto next
+			label me
+			`	"Oh, aspetta", dice, tirando fuori un tablet dall'aria robusta con l'etichetta "Dispositivo per l'Infanzia del Sindacato". Dopo aver digitato e sfogliato un po', dichiara: "Hai guidato tu l'attacco! Wow! È un onore conoscerti. Posso stringerti la mano?" Ti tende la mano e tu la stringi.`
+				goto next
+			label blew
+			`	"Ci scommetto! Vorrei essere su una delle nostre navi da guerra, a difenderci tutti con coraggio. Far saltare i Pug, prendere lo stipendio. Dev'essere fantastico!"`
+			label next
+			`	"Com'era combattere quei Pug cattivi e malvagi?"`
+			choice
+				`	"La guerra è un inferno, ragazzo. Non ho intenzione di abbellirtela."`
+					goto hell
+				`	"A dire il vero, non sono malvagi. La loro 'guerra' era un trucco per farci smettere di combattere tra noi. Molti Pug hanno dato la vita di buon grado per salvarci dall'autodistruzione."`
+				`	"Guidare una battaglia è come giocare a scacchi con cannoni e motori. È la sensazione più esaltante che abbia mai provato."`
+					goto chess
+				`	"È stato un onore proteggere la razza umana dai nostri aggressori."`
+					goto honor
+			`	"Uau, parli proprio da intelligente. Come uno di quegli esperti assennati dei video! Però, senza gente come te, il piano dei Pug non avrebbe potuto funzionare. Resta il fatto che sei stato il migliore, capitano."`
+				goto salute
+			label hell
+			`	"Ci sei passato davvero all'inferno, eh? Sembra meno divertente di quanto pensassi... Forse è meglio che continui con la scuola e diventi un ingegnere invece di un pilota. Boh."`
+				goto salute
+			label chess
+			`	"Il Sindacato mi sta addestrando alla manutenzione, e quando sarò più grande mi addestreranno anche a pilotare le loro navi da combattimento! Un giorno combatterò gli alieni come hai fatto tu."`
+				goto salute
+			label honor
+			`	"Onore... e servizio. Il Sindacato addestra ragazzi come me, ma ho pensato di entrare nella Marina. Non è altrettanto redditizio, però sembra più nobile."`
+			label salute
+			`	Arrivate all'officina e un ragazzo più grande, forse diciassettenne, vi viene incontro. Gus scatta sull'attenti e ti fa un saluto ben esercitato. Tu ricambi con cortesia.`
+			`	Appena Gus finisce il saluto, il ragazzo lo attacca da dietro e gli fa una presa al collo. Si vede che ci sta andando con estrema attenzione. "Sei uscito dal distretto dell'infanzia? Stavolta era l'area di atterraggio dello spazioporto? Vedo graffi e lividi dappertutto." Gus risponde: "Scusa, Calvin! Ero curioso."`
+			`	Calvin lo libera dalla presa e dice a te: "Grazie per aver salvato mio fratello. È l'unica famiglia che mi resta, e spero", gli dà un pizzicotto, "che smetta di rischiare la vita per curiosità." Guarda Gus con affetto. "Dai, andiamo dal medico."`
+			`	Calvin ti saluta con la mano mentre accompagna dentro il fratello.`
+				decline
